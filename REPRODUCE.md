@@ -22,11 +22,18 @@ make flake-check       # nix flake check -L
 Proof (2026-10-14, x86_64-linux): `nix flake check -L` prints
 
 ```
-srcml-identity-check> srcml, python3, cregit-python, cregit-perl, git and libsrcml match the dataset build
+cregit-dataset-tools-check> devenv 2.4.0 (x86_64-linux)
+devenv-identity-check> devenv matches the dataset build
 all checks passed!
 ```
 
-The check compares these store paths with the paths of the dataset build:
+and `nix build --rebuild -L .#checks.x86_64-linux.srcml-identity` prints
+
+```
+srcml-identity-check> srcml, python3, cregit-python, cregit-perl, git and libsrcml match the dataset build
+```
+
+The checks compare these store paths with the paths of the dataset build:
 
 | Package | Store path |
 |---|---|
@@ -35,21 +42,61 @@ The check compares these store paths with the paths of the dataset build:
 | cregit python (duckdb 1.5.5, pytest) | `/nix/store/5gnikzfb2hkysq9d45mjl74h7vj4c5ad-python3-3.14.7-env` |
 | cregit perl | `/nix/store/kq15zjik5prghj8xl3slaq1crxni4kfb-perl-5.42.0-env` |
 | git 2.55.0 | `/nix/store/8wxs6573l730vxkqd6wp58kvxa19csll-git-2.55.0` |
+| devenv 2.4.0 | `/nix/store/5sbcspxmvsj6g41dmv20flpvj9v8pzi8-devenv-2.4.0` |
 
-It also checks the sha256 of `libsrcml.so.1.1.0`:
+They also check the sha256 of `libsrcml.so.1.1.0`:
 `dea4467bb1b0a435e4536be13367325564b82e14ff69b478ad31bf144a8455f3`.
+
+The devenv command comes from a second input, `nixpkgs-devenv`. The run machines installed
+devenv with `nix profile add nixpkgs#devenv`. Their profile manifest records the locked
+nixpkgs (NixOS/nixpkgs `39ad350a0602fa0a58a544344e3e9187526ea45c`, the channel tarball
+`nixpkgs-26.11pre1087089.39ad350a0602`). The local machine and the three EC2 machines that
+ran on 2026-10-14 have the same devenv store path. ctp runs devenv from the fixed path
+`~/.nix-profile/bin/devenv`. The dev shell puts devenv on PATH. For ctp, also install it
+into the profile:
+
+```
+nix profile add .#devenv
+```
+
+`nix develop -c <tool> --version` on x86_64-linux (2026-10-14) gives: devenv 2.4.0, git
+2.55.0, srcml 1.1.0, perl 5.42.0, python3 3.14.7 (`CREGIT_PYTHON`: duckdb 1.5.5), ctp
+python 3.12.14 (`CTP_PYTHON`: duckdb 1.5.5), java 21.0.12, `LEGACY_JAVA_HOME` java
+1.8.0_492, sbt 2.0.6 (launcher), sqlite3 3.53.3, GNU Make 4.4.1, gcc 15.3.0, Universal
+Ctags 6.2.1, git-filter-repo, xz 5.8.3, GNU tar 1.35, and GNU coreutils 9.11, awk, sed and
+grep.
+
+The cregit jars. `run_pipeline_process.sh` runs 4 jars: blobExec, slickGitLog, persons
+and remapCommits. sbt downloads their dependencies at build time, so they are not pure
+Nix builds. `packages.cregit-jars` pins the jar files of the dataset build by sha256
+(`requireFile`) and puts them in the directory layout of a cregit checkout. The jar files
+are in the tool bundle set (`jars/`, with `jars/SHA256SUMS`). Add them to the Nix store
+first:
+
+```
+nix-store --add-fixed sha256 jars/*.jar
+nix build .#cregit-jars
+cp -rL --no-preserve=mode result/. <cregit checkout>/
+```
+
+Each run machine built its own jars. The blobExec jar has the same sha256 on all machines
+that were checked. The other three jars have a different sha256 on each machine, but the
+same entries (name, CRC-32 and size): only the zip time stamps of their nested jar differ.
+`tools/jars/jar_content_sha256.py` computes this content sha256. `tools.lock` gives both
+values for each machine.
+
+The ctp venv. `tools/ctp-venv/` gives the package list of the ctp venv on spot a, on the
+big EC2 and on the local machine (`pip freeze --all`). All venvs on one machine have the
+same list. EC2 and local differ only in Python (3.12.14 and 3.12.13) and pip (23.2.1 and
+25.0.1). `packages.ctp-python` of the flake is Python 3.12.14 with duckdb 1.5.5 and pytest
+9.1.1. Its other packages have different versions (`tools.lock`, rows ctp-venv). ctp.py
+itself uses the standard library only.
 
 Platforms: the outputs are per system (x86_64-linux, aarch64-linux, x86_64-darwin,
 aarch64-darwin). Only x86_64-linux is tested. devenv-nixpkgs patches nixpkgs in a
 derivation at evaluation time, so a system evaluates only on a machine (or a builder) of
-that system. The store paths above are for x86_64-linux.
-
-Not in the flake yet (see section 8):
-
-- The cregit jars (blobExec, persons, remapCommits, slickGitLog). sbt downloads their
-  dependencies at build time, so they are not pure Nix builds. `tools.lock` gives the
-  sha256 of the blobExec jar.
-- The devenv command. ctp runs each cregit step through `devenv shell` from a fixed path.
+that system. The store paths above are for x86_64-linux. The jar files do not depend on
+the system.
 
 ## 2. Repository checks
 
@@ -137,6 +184,21 @@ also 57551d7. Batches 19-26, L23 and L1r used 57551d7. One project (local-d) use
 ctp was ca113e3 on every run. srcML was the same build on every run, except the batch 1
 local run (157cf8b). The L1r run reruns the projects of that run.
 
+Each cregit commit has a git bundle in `tools.lock`. The bundles of 9ccead6, 1f17663,
+57551d7 and 23e4ccb need 95cdc88 first (`cregit-ec2.bundle`, a complete bundle). 157cf8b
+is an ancestor of 95cdc88, so `cregit-ec2.bundle` holds it. The bundle
+`srcml-543fed6a.bundle` holds the two srcML fork commits (50a63193 and 543fed6a). It needs
+srcML d382719 first (upstream, public). The patch `tools/cregit/nix/srcml-nontermination.patch`
+is byte-identical to `git diff d382719 543fed6a`. Each bundle was checked on 2026-10-14 in
+a new repository: fetch the base, fetch the bundle, check out the commit, and compare
+`git rev-parse HEAD^{tree}` with the source.
+
+The cregit jars, devenv and the ctp venv were the same on every run (section 1). The jar
+files have a different sha256 by machine, but the same content. The tokenizer programs
+`srcml2token` and `rust_tokenizer` were built on each machine too. Their sha256 differs
+between the local machine and EC2 (`tools.lock`, row tokenizer-bin). The libexpat gate had
+the same sha256 on each machine.
+
 ### 4.4 Cost and time
 
 | Item | Value | Kind |
@@ -166,8 +228,13 @@ Steps 4 and 5 are not written, for these reasons:
 
 - The per-project ledger (the cregit commit and the pinned commit of each published file)
   is not in this repository. It goes into the dataset release.
-- ctp runs each cregit step through a devenv command at a fixed path, and it needs a
-  cregit checkout with the built jars.
+- ctp runs each cregit step through devenv at the fixed path `~/.nix-profile/bin/devenv`,
+  in a cregit checkout with the built jars. The flake now gives the two parts
+  (`nix profile add .#devenv` and `packages.cregit-jars`, section 1). The script does not
+  use them yet.
+
+Step 2 checks only the git bundles. The flake checks the jar files (by their sha256, when
+you build `packages.cregit-jars`).
 
 Two facts limit a byte-for-byte comparison:
 
@@ -203,15 +270,20 @@ directories. It is not the final merge. It reads local paths of the run machines
 
 | Item | Why |
 |---|---|
-| Bundle of cregit 23e4ccb (file, sha256, size) | The local-d run used a local clone. No bundle was made. The commit is in the public fork. |
-| Bundle of cregit 157cf8b | The batch 1 local run used a local checkout. No bundle was made. |
 | libexpat gate of cregit 157cf8b | No gate file was found for this commit. |
-| Bundle of the srcML fork commits 50a63193 and 543fed6a | They are on a local branch only. The patch in `tools/cregit/nix/` holds their diff, and the flake builds from it. |
-| sha256 of the ctp bundle in object storage | Not downloaded. Its size equals the local file, whose sha256 is in `tools.lock`. |
-| Python packages of the ctp venv on EC2, other than duckdb, pytest and coverage | No freeze was recorded. ctp.py uses the standard library only. |
+| The cregit jars, the tokenizer programs and the ctp venv on the run machines that were terminated before 2026-10-14 | Only the local machine, spot a, spot b and the big EC2 were checked. All jars of these four machines have the same content. |
 | Run time of each selection stage | Not recorded in this repository. |
 | Byte identity of a rerun with other worker, blame-job or memory flags | Not measured. |
 | Equality of "95cdc88 run plus the trailer post-fix" and "a run on 1f17663 or later" | Not measured on all projects. |
+
+Found on 2026-10-14 (no longer UNKNOWN):
+
+- The bundles of cregit 23e4ccb and of the srcML fork commits: `tools.lock` gives the
+  file, the sha256, the size and the base. cregit 157cf8b is in `cregit-ec2.bundle`.
+- The ctp bundle in object storage: the storage records no sha256. Its size, its ETag (the
+  MD5 of a one-part upload) and its CRC64NVME checksum are equal to the values of the local
+  file. So it is the same file, with the sha256 of `tools.lock`.
+- The packages of the ctp venv on EC2: `tools/ctp-venv/`.
 
 ## 8. Left for later
 
