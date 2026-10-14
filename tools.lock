@@ -1,0 +1,45 @@
+# tools.lock: the exact tools of the dataset v1 build.
+#
+# Format: tab-separated values. Lines that start with "#" are comments.
+# One row for each tool version. Columns:
+#   tool            the tool: ctp (the runner), cregit (the token blame), srcml (the tokenizer),
+#                   blobexec-jar, env (the Nix environment).
+#   repo            a generic repository name.
+#   commit          the full commit SHA (or the version, for env rows).
+#   bundle_file     the git bundle file that the build ran ("-" if no bundle was used).
+#   bundle_sha256   the sha256 of that bundle file.
+#   bundle_bytes    the size of that bundle file in bytes.
+#   bundle_requires the commit that must be present before "git fetch" from the bundle
+#                   ("-" for a complete bundle).
+#   used_by         the runs (batches) that used this version.
+#   gate_sha256     the sha256 of the libexpat gate Parquet file (libexpat at commit
+#                   a76b1174c1ea52abb639a4c69d52b630a8a106a2, fixed flags). Each run machine
+#                   made this file first and compared it before the dataset build started.
+#   gate_bytes      the size of the gate Parquet file in bytes.
+#   notes           other facts.
+#
+# Each value was checked on 2026-10-14 against a file, a git object or a recorded
+# SHA256SUMS. "UNKNOWN" means that no file or object was found to check the value.
+# REPRODUCE.md lists each UNKNOWN value.
+#
+# Caveat (in-place swap): on 2026-10-11 from 20:05 UTC, about 26 running copies at cregit
+# 95cdc88 or 1f17663 got the blameRepo/formatBlame.pl file of 57551d7 (sha256 788acb9a...)
+# while they ran. Their ledgers still name the old commit. Files that started after the
+# swap used the 57551d7 blame code. pipeline/s7-run/blame-time-limit.md gives the details.
+#
+tool	repo	commit	bundle_file	bundle_sha256	bundle_bytes	bundle_requires	used_by	gate_sha256	gate_bytes	notes
+ctp	ctp (runner)	ca113e362486697b423ac5a90c25b8891740f9ea	ctp.bundle	a0c0f6efcbe81c6f5cbd1b6f56ccc5833c3893262b62b438b0b956330bd7d602	3817787	-	all runs	-	-	complete bundle; head refs/heads/feat/e2e-runner; ctp.py uses the standard library only; ctp venv: Python 3.12.13 (local) or 3.12.14 (EC2), duckdb==1.5.5
+cregit	cregit fork	157cf8bcbdcc287beafa7f717753e9fb82a67c9a	-	-	-	-	batch 1 local (superseded: run L1r reruns its projects)	UNKNOWN	UNKNOWN	srcML d382719 without the non-termination patch; ran from a local checkout, no bundle; not in v1 after the L1r rerun
+cregit	cregit fork	95cdc881e5c8f736c87487139849388575f20d91	cregit-ec2.bundle	2029db86dd87e7503166a4f4420392d0e2bcae1802eb9ba959f6000067f2f306	22024984	-	batch1rest, batch2, batch3, batch3L, batch4, batch5, batch5L, batch6, batch6L	40511e0de1a285b5bbc4ae0ff277e4775c5d67709966dd7c64dc9163c638fc5d	2184432	complete bundle; the footer_* columns of these Parquet files were rewritten after the run (pipeline/s7-run/rewrite_footer_columns.py)
+cregit	cregit fork	9ccead6716a619a7e3ddc7bad9234f14deae865c	cregit-9ccead6.bundle	64a4f3f081a91694b1976d531883c6ad547c54116a625d384c0d03785d935e06	5575	95cdc881e5c8f736c87487139849388575f20d91	batch6 (1 project)	40511e0de1a285b5bbc4ae0ff277e4775c5d67709966dd7c64dc9163c638fc5d	2184432	95cdc88 plus the -C100 time limit in formatBlame.pl
+cregit	cregit fork	1f176633675eb836e322bf66bcf87343e98c98e1	cregit-1f17663.bundle	a827082e73bb435fcf05c1a97380e39ee467ca45c4a8d9e1045a3f3afe153486	18143	95cdc881e5c8f736c87487139849388575f20d91	batch7-batch10, part of batch11-batch18, L7-20, L7-20b, L22, local-a	14eb5d728ca6fa50623cb89088ab59348e646f1205ed3cf9f48bff0142eab799	2196248	footer_* columns from the original log DB, one entry per person
+cregit	cregit fork	57551d7ad82a784615c1490623d72cb9dc994ba1	cregit-57551d7.bundle	18b1bf1c87230460f59e433f0c5106f21dde77bfbc057a42776acb592a6eb71e	23445	95cdc881e5c8f736c87487139849388575f20d91	part of batch11-batch18, batch19-batch26, L23, L1r, local-b, local-c	14eb5d728ca6fa50623cb89088ab59348e646f1205ed3cf9f48bff0142eab799	2196248	1f17663 plus the -C100 time limit (3600 s, then plain blame)
+cregit	cregit fork	23e4ccb2919e435dc6636c958d7fd69147836a50	UNKNOWN	UNKNOWN	UNKNOWN	95cdc881e5c8f736c87487139849388575f20d91	local-d (batch25 part a4, 1 project)	14eb5d728ca6fa50623cb89088ab59348e646f1205ed3cf9f48bff0142eab799	2196248	57551d7 plus plain blame after a git exit 128 of -C100; ran from a local clone, no bundle was made; the commit is in the public fork
+srcml	srcML (upstream)	d382719161daa1d035b594fcd3639ff376b4bb83	-	-	-	-	all cregit rows except 157cf8b	-	-	built by cregit nix/srcml.nix with patch nix/srcml-nontermination.patch (sha256 ff21c1970823ec99b609273c03e4ae1cde1fcb932f2f24c1981256ce69a758b4); source hash sha256-SRUvvsMLenVadNOG3S49Rwe0eDEf3AidTxvo3RtZPHg=; output libsrcml.so.1.1.0 sha256 dea4467bb1b0a435e4536be13367325564b82e14ff69b478ad31bf144a8455f3 (2412192 B); version string "srcml: 1.1.0"
+srcml	srcML fork (patch source)	50a63193fe406ce0a268b72a20ac397868b1e3f4	UNKNOWN	UNKNOWN	UNKNOWN	d382719161daa1d035b594fcd3639ff376b4bb83	the patch in nix/srcml-nontermination.patch	-	-	lexer fix; local branch only, no bundle; the patch equals "git diff d382719 543fed6a" of the fork
+srcml	srcML fork (patch source)	543fed6affb64dd6d9d7ae2fb1c540b6c497fd23	UNKNOWN	UNKNOWN	UNKNOWN	50a63193fe406ce0a268b72a20ac397868b1e3f4	the patch in nix/srcml-nontermination.patch	-	-	parser fix; local branch only, no bundle
+blobexec-jar	cregit fork	blobExec-0.1.0-assembly.jar	-	-	-	-	all runs of 95cdc88, 9ccead6, 1f17663, 57551d7, 23e4ccb	-	-	jar sha256 3daa120111958bce27d296308ea8341a377312712371baa9b3ba6dccdc43ad16 (29056971 B); built with sbt 1.10.7, Scala 2.13.16, JDK 21
+env	cregit devenv.lock: nixpkgs	c8f90650c15282fa8656a041bfbbd2403997a9a7	-	-	-	-	all cregit rows	-	-	NixOS/nixpkgs narHash sha256-pRGOQSClnXNI2iLUG6DYpsGvYcuw0drOutVZFTJNw90=; python3 = /nix/store/3n4qphl9s728sz8frmpqqrv9b1m87g68-python3-3.14.7
+env	cregit devenv.lock: devenv-nixpkgs	256551e45f6303e142ab4a98be1bf243feb77dc0	-	-	-	-	all cregit rows	-	-	cachix/devenv-nixpkgs narHash sha256-Tl77VbWyAKrOfRNQhL6JbQtb/MLzbYa/1RG1gWWfICk=
+env	cregit devenv.lock: devenv	3d2c030b7ba3da63bd68619c510aedd68cde11c9	-	-	-	-	all cregit rows	-	-	cachix/devenv narHash sha256-RcTIzJeO86DUS48m2IXQznconZJ5MmL1H9gMegFZ04c=
+env	runtime versions	python 3.14.7, duckdb 1.5.5, git 2.55.0	-	-	-	-	all cregit rows	-	-	duckdb writes the Parquet file (footer created_by "DuckDB version v1.5.5 (build d8cdaa33fd)")
