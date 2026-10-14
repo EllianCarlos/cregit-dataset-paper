@@ -26,7 +26,7 @@ rows = [json.loads(l) for l in open(H / "measure.jsonl")]
 rows = [r for r in rows if r.get("status") == "ok" and r["dp3"] and not r["dp8l"]]
 out = []
 for r in rows:
-    t = tempfile.mkdtemp(dir="/local/home/ellianco/tmp-gitlab"); d = Path(t) / "r.git"
+    t = tempfile.mkdtemp(dir=os.path.expanduser("~/tmp-gitlab")); d = Path(t) / "r.git"
     try:
         git(["init", "-q", "--bare", str(d)], cwd=t)
         oid = r["head_oid"]

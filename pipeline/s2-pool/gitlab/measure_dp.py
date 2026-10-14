@@ -20,7 +20,7 @@ out_p = H / "measure.jsonl"; done = {json.loads(l)["url"] for l in open(out_p)} 
 out = open(out_p, "a")
 for u in urls:
     if u in done: continue
-    t = tempfile.mkdtemp(dir="/local/home/ellianco/tmp-gitlab"); d = Path(t) / "r.git"
+    t = tempfile.mkdtemp(dir=os.path.expanduser("~/tmp-gitlab")); d = Path(t) / "r.git"
     rec = dict(url=u)
     try:
         git(["init", "-q", "--bare", str(d)])

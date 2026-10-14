@@ -7,9 +7,17 @@
 # Flags of the fed parts, except the memory flags of this machine (30 GB RAM; the spots use
 # --memory-limit 16GB --min-free-mem-gb 24): --memory-limit 6GB --min-free-mem-gb 8, as census-local-b.
 # Beside the census, publish_done.py copies the finished project to batch25/a4/done/<name>/ every
-# 60 s, and once more at the end. Stop after the running project: touch /home/ellianco/Projects/cregit-workspace/census-local-d/ctp/STOP.
+# 60 s, and once more at the end. Stop after the running project: touch $CREGIT_PROJECTS/cregit-workspace/census-local-d/ctp/STOP.
 set -uo pipefail
-L=/home/ellianco/Projects/cregit-workspace/census-local-d
+# CREGIT_PROJECTS: the directory that holds cregit-workspace and the clones of ctp and cregit.
+# Default: the nearest parent directory of this script that holds cregit-workspace.
+if [ -z "${CREGIT_PROJECTS:-}" ]; then
+  CREGIT_PROJECTS=$(cd "$(dirname "$0")" && pwd)
+  while [ "$CREGIT_PROJECTS" != / ] && [ ! -d "$CREGIT_PROJECTS/cregit-workspace" ]; do
+    CREGIT_PROJECTS=$(dirname "$CREGIT_PROJECTS")
+  done
+fi
+L=$CREGIT_PROJECTS/cregit-workspace/census-local-d
 export CTP_CONFIG=$L/census.cfg
 cd $L/ctp
 echo "=== $(date -u +%FT%TZ) census-local-d start on $(hostname) (cregit $(git -C $L/cregit rev-parse --short HEAD), ctp $(git rev-parse --short HEAD), $(grep -c -v -e '^#' -e '^[[:space:]]*$' $L/manifest.local-d.tsv) projects, parts: $(tr '\n' ' ' < $L/parts.taken))"

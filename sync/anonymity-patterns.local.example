@@ -4,7 +4,7 @@
 # The first kind that matches a line wins.
 study-repo-name	<name of the private study repository>
 aws-profile	<AWS CLI profile name>
-home-path	<home directory>|~/Projects|\$HOME/Projects
+home-path	<home directory>|<projects directory in the forms with ~ and with $HOME>
 bucket	<S3 bucket name>
 aws-account	<12-digit AWS account id>
 email	<e-mail address>

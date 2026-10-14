@@ -305,7 +305,8 @@ Found on 2026-10-14 (no longer UNKNOWN):
   `projects.json` that S5 reads) and `sources/company-pages/raw/`, and the Spinellis
   dataset tarball (Zenodo record 3742962, `sources/spinellis-2020/FETCH.tsv` gives its
   MD5). They are third-party pages and files, about 250 MB.
-- Work through `ANONYMIZATION-TODO.md`, including the kind census-name.
+- Work through `ANONYMIZATION-TODO.md`: the deferred hits (after the build ends, and at the
+  export) and the kind census-name.
 
 ## 9. How `pipeline/` and `tools/` are made again
 
@@ -318,3 +319,6 @@ sync/anonymity-scan.sh                       # write ANONYMIZATION-TODO.md again
 
 `sync/rules.tsv` selects the files. `sync/sources.local.conf` (local only) gives the local
 clone of each source.
+`sync/anonymity-allow.tsv` lists the scan hits that are not identifying text (checked by hand).
+`sync/anonymity-deferred.tsv` lists the hits that wait: files that active jobs run until the
+dataset build ends, and pinned tool copies to redact at the export.

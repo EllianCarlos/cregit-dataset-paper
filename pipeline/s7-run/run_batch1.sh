@@ -11,7 +11,15 @@
 # runs that were stopped on purpose.
 set -euo pipefail
 here=$(dirname "$(readlink -f "$0")")
-CTP=${CTP:-$HOME/Projects/cregit-token-pipeline/.claude/worktrees/agent-a0a3254f563a6a4b5}
+# CREGIT_PROJECTS: the directory that holds cregit-workspace and the clones of ctp and cregit.
+# Default: the nearest parent directory of this script that holds cregit-workspace.
+if [ -z "${CREGIT_PROJECTS:-}" ]; then
+  CREGIT_PROJECTS=$(cd "$(dirname "$0")" && pwd)
+  while [ "$CREGIT_PROJECTS" != / ] && [ ! -d "$CREGIT_PROJECTS/cregit-workspace" ]; do
+    CREGIT_PROJECTS=$(dirname "$CREGIT_PROJECTS")
+  done
+fi
+CTP=${CTP:-$CREGIT_PROJECTS/cregit-token-pipeline/.claude/worktrees/agent-a0a3254f563a6a4b5}
 export CTP_CONFIG="$here/census.cfg"
 cd "$CTP"
 exec .venv/bin/python ctp.py census --manifest "$here/manifest.batch1.tsv" \

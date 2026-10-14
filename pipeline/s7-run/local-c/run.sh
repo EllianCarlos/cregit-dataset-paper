@@ -8,9 +8,17 @@
 # The manifest is in LPT order (longest old duration first).
 # Beside the census, publish_done.py copies each finished project to batch1/done/<name>/ every
 # 60 s, and once more at the end. The old outputs in census-2026-10/ do not change.
-# Stop after the running projects: touch /home/ellianco/Projects/cregit-workspace/census-local-c/ctp/STOP.
+# Stop after the running projects: touch $CREGIT_PROJECTS/cregit-workspace/census-local-c/ctp/STOP.
 set -uo pipefail
-L=/home/ellianco/Projects/cregit-workspace/census-local-c
+# CREGIT_PROJECTS: the directory that holds cregit-workspace and the clones of ctp and cregit.
+# Default: the nearest parent directory of this script that holds cregit-workspace.
+if [ -z "${CREGIT_PROJECTS:-}" ]; then
+  CREGIT_PROJECTS=$(cd "$(dirname "$0")" && pwd)
+  while [ "$CREGIT_PROJECTS" != / ] && [ ! -d "$CREGIT_PROJECTS/cregit-workspace" ]; do
+    CREGIT_PROJECTS=$(dirname "$CREGIT_PROJECTS")
+  done
+fi
+L=$CREGIT_PROJECTS/cregit-workspace/census-local-c
 export CTP_CONFIG=$L/census.cfg
 cd $L/ctp
 echo "=== $(date -u +%FT%TZ) census-local-c start on $(hostname) (cregit $(git -C $L/cregit rev-parse --short HEAD), ctp $(git rev-parse --short HEAD), $(grep -c -v -e '^#' -e '^[[:space:]]*$' $L/manifest.local-c.tsv) projects, parts: $(tr '\n' ' ' < $L/parts.taken))"

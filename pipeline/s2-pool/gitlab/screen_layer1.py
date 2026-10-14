@@ -59,7 +59,7 @@ for f in sys.argv[1:]:
             if d == "FAIL" or d is None: res = "commit screen failed"
             elif not d: res = "< 5,000 commits"
             else:
-                t = tempfile.mkdtemp(dir="/local/home/ellianco/tmp-gitlab") 
+                t = tempfile.mkdtemp(dir=os.path.expanduser("~/tmp-gitlab")) 
                 g = Path(t) / "r.git"
                 p = subprocess.run(["git", "clone", "-q", "--bare", "--filter=tree:0", r["url"], str(g)], capture_output=True, timeout=3600)
                 if p.returncode: res = "clone failed"

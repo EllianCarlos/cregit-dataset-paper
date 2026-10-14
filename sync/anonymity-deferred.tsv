@@ -1,0 +1,11 @@
+# anonymity-deferred.tsv: scan hits that cannot be fixed now. anonymity-scan.sh lists them apart.
+# Columns (tab-separated): kind, file, when, reason.
+# - kind: a kind of anonymity-patterns.local, or "*" for all kinds (also census-name, for the rename pass B6).
+# - when: "after build end" (fix in the source repository when the dataset build ends) or
+#   "fix at export" (the file is a pinned tool copy; redact it in the anonymous export).
+*	pipeline/s7-run/fetch_done.sh	after build end	An active user timer or service runs it from the study working tree (census-fetch.timer)
+*	pipeline/s7-run/footer_fix_again.sh	after build end	An active user timer or service runs it from the study working tree (footer-fix-again.timer)
+*	pipeline/s7-run/split_run_ledgers.py	after build end	An active user timer or service runs it from the study working tree (footer_fix_again.sh calls it)
+*	pipeline/s7-run/footer_fix_batches.py	after build end	An active user timer or service runs it from the study working tree (footer_fix_again.sh and the unit footer-fix call it)
+*	s7-run/step_monitor.py (not copied)	after build end	An active user timer or service runs it from the study working tree (census-step-monitor.service)
+source-org	tools/cregit/devenv.nix	fix at export	A copy of the cregit fork at the pinned commit (the cachix cache name); do not change the copy

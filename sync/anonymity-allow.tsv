@@ -1,0 +1,11 @@
+# anonymity-allow.tsv: scan hits that are not identifying text. anonymity-scan.sh reads this file.
+# Columns (tab-separated): kind, file, line pattern, reason.
+# - line pattern: an extended regular expression. A hit of this kind in this file is allowed when its line matches.
+# The patterns do not repeat the matched word, so this file adds no identifying text.
+# Checked by hand on 2026-10-14.
+employer	pipeline/s2-pool/slugs.csv	^m[a-z]+js/m[a-z]+,cncf-landscape:not-hosted$	project data: a GitHub repository name in the S2 slug list
+employer	pipeline/s2-pool/v2/pages/8e2ae57bf304c35e7d027bc12b902b1d1906acf8.html	"git" row is m[a-z]+ down the$	third-party page text (Savannah help page): a common English word
+employer	pipeline/s4-filter/frame_status.v2.csv	^gh:(140669486|342884320),	project data: two GitHub repository names in the frame status
+employer	pipeline/s4-filter/frame_status.v3.csv	^gh:(140669486|342884320),	project data: two GitHub repository names in the frame status
+employer	pipeline/s4-filter/frame_status.v4.csv	^gh:(140669486|342884320),	project data: two GitHub repository names in the frame status
+employer	pipeline/sources/cncf-landscape/landscape_repos.csv	^M[a-z]+ Serverless,https://github\.com/	project data: a CNCF landscape entry

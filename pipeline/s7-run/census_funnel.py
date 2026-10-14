@@ -20,9 +20,37 @@ import tempfile
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-LOCAL_LEDGER = os.path.expanduser(
-    "~/Projects/cregit-token-pipeline/.claude/worktrees/agent-a0a3254f563a6a4b5/ledger.jsonl")
-BUCKET = "s3://cregit-census-905418043997-usw2"
+
+
+def projects_dir():
+    """CREGIT_PROJECTS: the directory that holds cregit-workspace and the clones of ctp and cregit.
+    Default: the nearest parent directory of this file that holds cregit-workspace."""
+    if os.environ.get("CREGIT_PROJECTS"):
+        return os.environ["CREGIT_PROJECTS"]
+    d = HERE
+    while d != os.path.dirname(d) and not os.path.isdir(os.path.join(d, "cregit-workspace")):
+        d = os.path.dirname(d)
+    return d
+
+
+def runner_value(name):
+    """The value of NAME: the environment, else runner/runner.env (local only; the file
+    runner/runner.env.example gives the names). Lines are NAME=VALUE or NAME='VALUE'."""
+    if os.environ.get(name):
+        return os.environ[name]
+    path = os.path.join(HERE, "runner", "runner.env")
+    if os.path.exists(path):
+        with open(path, encoding="utf-8") as f:
+            for line in f:
+                key, _, value = line.strip().partition("=")
+                if key == name:
+                    return value[1:-1] if len(value) >= 2 and value[0] == value[-1] == "'" else value
+    sys.exit(f"error: set {name}, or give it in {path} (see runner/runner.env.example)")
+
+
+LOCAL_LEDGER = os.path.join(
+    projects_dir(), "cregit-token-pipeline/.claude/worktrees/agent-a0a3254f563a6a4b5/ledger.jsonl")
+BUCKET = "s3://" + runner_value("RUNNER_BUCKET")
 STAGES = ["resolve", "clone", "pipeline", "firm", "validate", "schema", "join"]
 
 # batch -> (manifests, local ledgers, S3 prefixes). Under each prefix the script reads every
@@ -40,7 +68,7 @@ BATCHES = [
 
 
 def aws(*args):
-    env = dict(os.environ, AWS_PROFILE="ellianco-personal", AWS_REGION="us-west-2", AWS_PAGER="")
+    env = dict(os.environ, AWS_PROFILE=runner_value("RUNNER_AWS_PROFILE"), AWS_REGION="us-west-2", AWS_PAGER="")
     return subprocess.run(["aws", *args], env=env, capture_output=True, text=True)
 
 

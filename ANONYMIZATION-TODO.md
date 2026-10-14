@@ -14,17 +14,22 @@ So fix them in the source repository, commit there, and sync again.
 
 | kind | files | lines |
 |---|---:|---:|
-| study-repo-name | 1 | 1 |
-| aws-profile | 5 | 5 |
-| home-path | 30 | 66 |
-| bucket | 6 | 12 |
+| study-repo-name | 0 | 0 |
+| aws-profile | 0 | 0 |
+| home-path | 0 | 0 |
+| bucket | 0 | 0 |
 | aws-account | 0 | 0 |
 | email | 0 | 0 |
 | user-name | 0 | 0 |
-| employer | 6 | 9 |
-| ec2-id | 2 | 13 |
-| source-org | 1 | 1 |
-| census-name | 484 | 11720 occurrences |
+| employer | 0 | 0 |
+| ec2-id | 0 | 0 |
+| source-org | 0 | 0 |
+| census-name | 485 | 11706 occurrences |
+
+The table counts the open hits. These hits are not in the table:
+
+- Allowed (sync/anonymity-allow.tsv, checked by hand, not identifying): 9 lines.
+- Deferred (sync/anonymity-deferred.tsv): 7 lines. The section "Deferred" lists them.
 
 Kind census-name: identifiers and words that contain "census". The repository says
 "dataset" (stages: selection, build, merge, validate). Rename them later in one pass,
@@ -39,79 +44,18 @@ in the source repositories. The section "census-name" below lists them.
   public repositories, so a search by SHA can find their owners. Decide before the
   mirror: keep the SHAs and publish the bundles only, or mirror the forks anonymously.
 
+## Deferred
+
+Do not fix these hits now. Column "when" of sync/anonymity-deferred.tsv tells when.
+
+- `pipeline/s7-run/fetch_done.sh` (kind *): after build end. An active user timer or service runs it from the study working tree (census-fetch.timer). Hit lines now: 3.
+- `pipeline/s7-run/footer_fix_again.sh` (kind *): after build end. An active user timer or service runs it from the study working tree (footer-fix-again.timer). Hit lines now: 3.
+- `pipeline/s7-run/split_run_ledgers.py` (kind *): after build end. An active user timer or service runs it from the study working tree (footer_fix_again.sh calls it). Hit lines now: 0.
+- `pipeline/s7-run/footer_fix_batches.py` (kind *): after build end. An active user timer or service runs it from the study working tree (footer_fix_again.sh and the unit footer-fix call it). Hit lines now: 0.
+- `s7-run/step_monitor.py (not copied)` (kind *): after build end. An active user timer or service runs it from the study working tree (census-step-monitor.service). Hit lines now: 0.
+- `tools/cregit/devenv.nix` (kind source-org): fix at export. A copy of the cregit fork at the pinned commit (the cachix cache name); do not change the copy. Hit lines now: 1.
+
 ## Hits
-
-### study-repo-name
-
-- `pipeline/s2-pool/gitlab/README.md`: lines 95
-
-### aws-profile
-
-- `pipeline/s7-run/build_run.sh`: lines 101
-- `pipeline/s7-run/census_funnel.py`: lines 43
-- `pipeline/s7-run/failed-projects.md`: lines 13
-- `pipeline/s7-run/fetch_done.sh`: lines 13
-- `pipeline/s7-run/footer_fix_again.sh`: lines 22
-
-### home-path
-
-- `pipeline/S3-MEASUREMENT.md`: lines 134
-- `pipeline/s2-pool/gitlab/measure_dp.py`: lines 23
-- `pipeline/s2-pool/gitlab/near_miss_gitlab.py`: lines 29
-- `pipeline/s2-pool/gitlab/recheck_same_name.py`: lines 29
-- `pipeline/s2-pool/gitlab/screen_layer1.py`: lines 62
-- `pipeline/s7-run/README.md`: lines 250, 259, 261, 263, 273, 278, 280, 286, 346, 351, 411, 412
-- `pipeline/s7-run/build_run.sh`: lines 8
-- `pipeline/s7-run/census.cfg`: lines 4, 5
-- `pipeline/s7-run/census_funnel.py`: lines 24
-- `pipeline/s7-run/failed-projects.md`: lines 17, 53, 60
-- `pipeline/s7-run/fetch_done.sh`: lines 15
-- `pipeline/s7-run/footer_fix_again.sh`: lines 14
-- `pipeline/s7-run/local-a/census.cfg`: lines 1, 3, 4
-- `pipeline/s7-run/local-a/gate.sh`: lines 3, 5, 8
-- `pipeline/s7-run/local-a/run.sh`: lines 7, 9
-- `pipeline/s7-run/local-b/census.cfg`: lines 1, 3, 4
-- `pipeline/s7-run/local-b/gate.sh`: lines 5, 9
-- `pipeline/s7-run/local-b/run.sh`: lines 8, 10
-- `pipeline/s7-run/local-c/census.cfg`: lines 1, 3, 4
-- `pipeline/s7-run/local-c/gate.sh`: lines 5, 9
-- `pipeline/s7-run/local-c/run.sh`: lines 11, 13
-- `pipeline/s7-run/local-d/census.cfg`: lines 1, 3, 4
-- `pipeline/s7-run/local-d/gate.sh`: lines 5, 9
-- `pipeline/s7-run/local-d/run.sh`: lines 10, 12
-- `pipeline/s7-run/prelim_merge.py`: lines 4, 5, 11
-- `pipeline/s7-run/run_batch1.sh`: lines 14
-- `pipeline/s7-run/srcml-fix-20261009.md`: lines 41, 45
-- `pipeline/s7-run/superseded-20261007.tsv`: lines 2, 3, 4
-- `pipeline/s7-run/test_rewrite_footer_columns.py`: lines 5
-- `sync/anonymity-patterns.local.example`: lines 7
-
-### bucket
-
-- `pipeline/s7-run/README.md`: lines 163, 195, 228
-- `pipeline/s7-run/blame-time-limit.md`: lines 28, 88, 137, 160, 163
-- `pipeline/s7-run/census_funnel.py`: lines 25
-- `pipeline/s7-run/failed-projects.md`: lines 15
-- `pipeline/s7-run/fetch_done.sh`: lines 14
-- `pipeline/s7-run/footer_fix_again.sh`: lines 23
-
-### employer
-
-- `pipeline/s2-pool/slugs.csv`: lines 18178
-- `pipeline/s2-pool/v2/pages/8e2ae57bf304c35e7d027bc12b902b1d1906acf8.html`: lines 343
-- `pipeline/s4-filter/frame_status.v2.csv`: lines 37821, 91101
-- `pipeline/s4-filter/frame_status.v3.csv`: lines 37821, 91101
-- `pipeline/s4-filter/frame_status.v4.csv`: lines 37821, 91101
-- `pipeline/sources/cncf-landscape/landscape_repos.csv`: lines 702
-
-### ec2-id
-
-- `pipeline/s7-run/README.md`: lines 95, 108, 109, 137, 145, 146, 148, 149, 153, 154
-- `pipeline/s7-run/blame-time-limit.md`: lines 69, 74, 76
-
-### source-org
-
-- `tools/cregit/devenv.nix`: lines 70
 
 ### census-name
 
@@ -337,15 +281,10 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `-/usr/local/bin/census-fed-part-init`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-feeder`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-1.sh`
 - `-census-L1r.service`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-firm`
 - `-census-fed`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-feeder`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-1.sh`
+- `../../../../cregit-workspace/census-2026-10`: 1, `pipeline/s7-run/census.cfg`
 - `.orig-4census`: 2, `pipeline/s7-run/runner/ec2-batch6/README.md`, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-L2.sh`
-- `//cregit-census-905418043997-usw2`: 12, 6 files
+- `//cregit-census-905418043997-usw2`: 2, `pipeline/s7-run/fetch_done.sh`, `pipeline/s7-run/footer_fix_again.sh`
 - `//github.com/GoogleCloudPlatform/opencensus-jetty-demo.git`: 3, `pipeline/s7-run/frame.layer5.csv`, `pipeline/s7-run/manifest.layer5.tsv`, `pipeline/s7-run/project_meta.layer5.json`
-- `/Projects/cregit-workspace/census-local-`: 1, `pipeline/s7-run/prelim_merge.py`
-- `/Projects/cregit-workspace/census-local-a/logs/census-local-a.log`: 1, `pipeline/s7-run/README.md`
-- `/Projects/cregit-workspace/census-local-a`: 5, `pipeline/s7-run/README.md`, `pipeline/s7-run/prelim_merge.py`
-- `/Projects/cregit-workspace/census-local-b`: 2, `pipeline/s7-run/README.md`, `pipeline/s7-run/failed-projects.md`
-- `/Projects/cregit-workspace/census-local-c`: 2, `pipeline/s7-run/README.md`
-- `/Projects/cregit-workspace/census-local-d`: 2, `pipeline/s7-run/README.md`, `pipeline/s7-run/failed-projects.md`
 - `/b4p1/census-2026-10-batch4`: 15, 15 files
 - `/b4p2/census-2026-10-batch4`: 15, 15 files
 - `/b4p3/census-2026-10-batch4`: 15, 15 files
@@ -549,12 +488,6 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `/home/ec2-user/census-batch5L.cfg`: 8, 5 files
 - `/home/ec2-user/census-batch6L-check.cfg`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/L1-setup.sh`
 - `/home/ec2-user/census-batch6L.cfg`: 8, 5 files
-- `/home/ellianco/Projects/cregit-workspace/census-2026-10`: 3, `pipeline/s7-run/superseded-20261007.tsv`
-- `/home/ellianco/Projects/cregit-workspace/census-local-a`: 7, `pipeline/s7-run/local-a/census.cfg`, `pipeline/s7-run/local-a/gate.sh`, `pipeline/s7-run/local-a/run.sh`
-- `/home/ellianco/Projects/cregit-workspace/census-local-b`: 6, `pipeline/s7-run/local-b/census.cfg`, `pipeline/s7-run/local-b/gate.sh`, `pipeline/s7-run/local-b/run.sh`
-- `/home/ellianco/Projects/cregit-workspace/census-local-c`: 6, `pipeline/s7-run/local-c/census.cfg`, `pipeline/s7-run/local-c/gate.sh`, `pipeline/s7-run/local-c/run.sh`
-- `/home/ellianco/Projects/cregit-workspace/census-local-d`: 5, `pipeline/s7-run/local-d/census.cfg`, `pipeline/s7-run/local-d/run.sh`
-- `/local/home/ellianco/Projects/cregit-workspace/census-2026-10`: 1, `pipeline/s7-run/census.cfg`
 - `/path/to/census.cfg`: 1, `tools/ctp/docs/E2E.md`
 - `/root/ssm/census-backup.payload`: 3, `pipeline/s7-run/runner/census-backup/deploy-big.sh`, `pipeline/s7-run/runner/census-backup/install-big.sh`
 - `/run/census-L1r-firm.status`: 9, 9 files
@@ -1035,6 +968,13 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `CENSUSES-`: 5, 5 files
 - `CENSUSES`: 48, 9 files
 - `CENSUS_CLOUD_DIR`: 2, `pipeline/s7-run/fetch_done.sh`
+- `CREGIT_PROJECTS/cregit-workspace/census-2026-10`: 3, `pipeline/s7-run/superseded-20261007.tsv`
+- `CREGIT_PROJECTS/cregit-workspace/census-cloud-fixed`: 2, `pipeline/s7-run/README.md`
+- `CREGIT_PROJECTS/cregit-workspace/census-local-a/logs/census-local-a.log`: 1, `pipeline/s7-run/README.md`
+- `CREGIT_PROJECTS/cregit-workspace/census-local-a`: 9, `pipeline/s7-run/README.md`, `pipeline/s7-run/local-a/gate.sh`, `pipeline/s7-run/local-a/run.sh`, `pipeline/s7-run/prelim_merge.py`
+- `CREGIT_PROJECTS/cregit-workspace/census-local-b`: 5, `pipeline/s7-run/README.md`, `pipeline/s7-run/failed-projects.md`, `pipeline/s7-run/local-b/gate.sh`, `pipeline/s7-run/local-b/run.sh`
+- `CREGIT_PROJECTS/cregit-workspace/census-local-c`: 5, `pipeline/s7-run/README.md`, `pipeline/s7-run/local-c/gate.sh`, `pipeline/s7-run/local-c/run.sh`
+- `CREGIT_PROJECTS/cregit-workspace/census-local-d`: 4, `pipeline/s7-run/README.md`, `pipeline/s7-run/failed-projects.md`, `pipeline/s7-run/local-d/run.sh`
 - `Census.`: 4, `pipeline/s7-run/README.md`, `pipeline/s7-run/runner/ec2-L22/README.md`, `pipeline/s7-run/runner/ec2-L7-20/README.md`, `pipeline/s7-run/runner/ec2-L7-20b/README.md`
 - `Census`: 39, 32 files
 - `E/censuses`: 15, `pipeline/s7-run/runner/ec2-batch5/scripts/s3-start-a.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s3-start-b.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s3-start.sh`
@@ -1196,7 +1136,6 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `EOF_census-steps`: 16, 8 files
 - `GoogleCloudPlatform/opencensus-jetty-demo`: 2, `pipeline/s7-run/frame.layer5.csv`, `pipeline/s7-run/manifest.layer5.order.tsv`
 - `GoogleCloudPlatform__opencensus-jetty-demo`: 3, `pipeline/s7-run/manifest.layer5.order.tsv`, `pipeline/s7-run/manifest.layer5.tsv`, `pipeline/s7-run/project_meta.layer5.json`
-- `HOME/Projects/cregit-workspace/census-cloud-fixed`: 2, `pipeline/s7-run/README.md`
 - `HOME/Projects/cregit-workspace/census-cloud`: 1, `pipeline/s7-run/fetch_done.sh`
 - `HOME/s3-work/census-watchdog`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/W1-watch-entries.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/W1-watch-entries.sh`
 - `K/census-2026-10-batch4`: 3, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-run`
@@ -1421,21 +1360,24 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `census-fedtest-batch99a3.service`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/t1-feeder-stub.sh`
 - `census-fedtest-hold.service`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/t1-feeder-stub.sh`
 - `census-fedtw-`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/t5-feeder-workers.sh`
+- `census-fetch.timer`: 1, `sync/anonymity-deferred.tsv`
 - `census-fetch`: 5, `pipeline/s7-run/README.md`, `pipeline/s7-run/fetch_done.sh`, `pipeline/s7-run/footer_fix_again.sh`, `pipeline/s7-run/prelim_merge.py`
 - `census-funnel-`: 1, `pipeline/s7-run/census_funnel.py`
+- `census-local-`: 1, `pipeline/s7-run/prelim_merge.py`
 - `census-local-a.`: 1, `pipeline/s7-run/local-a/build_run_manifest.py`
-- `census-local-a`: 16, 9 files
+- `census-local-a`: 17, 9 files
 - `census-local-b.`: 1, `pipeline/s7-run/local-d/run.sh`
-- `census-local-b`: 13, 7 files
-- `census-local-c`: 15, 8 files
-- `census-local-d`: 11, 7 files
+- `census-local-b`: 14, 7 files
+- `census-local-c`: 16, 8 files
+- `census-local-d`: 12, 7 files
 - `census-name.`: 2, `PLAN.md`, `REPRODUCE.md`
-- `census-name`: 8, `PLAN.md`, `sync/anonymity-scan.sh`
+- `census-name`: 9, `PLAN.md`, `sync/anonymity-deferred.tsv`, `sync/anonymity-scan.sh`
 - `census-other-done`: 202, 73 files
 - `census-other`: 1, `pipeline/s7-run/runner/ec2-L7-20b/scripts/P2-probe.sh`
 - `census-spot-decide.`: 3, `pipeline/s7-run/runner/ec2-batch5/README.md`, `pipeline/s7-run/runner/ec2-batch6/README.md`
 - `census-spot-decide.orig-b3b5`: 2, `pipeline/s7-run/runner/ec2-batch6/README.md`, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-s6-files.sh`
 - `census-spot-decide`: 58, 33 files
+- `census-step-monitor.service`: 1, `sync/anonymity-deferred.tsv`
 - `census-step-monitor`: 1, `pipeline/s7-run/README.md`
 - `census-steps`: 33, 30 files
 - `census-watchdog.timer.`: 1, `pipeline/s7-run/runner/census-watchdog/watchdog.sh`
@@ -1443,7 +1385,7 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `census-watchdog`: 24, `pipeline/s7-run/runner/INVENTORY.tsv`, `pipeline/s7-run/runner/README.md`, `pipeline/s7-run/runner/census-watchdog/README.md`
 - `census.`: 45, 40 files
 - `census.cfg`: 1, `pipeline/s7-run/README.md`
-- `census_funnel.py`: 1, `pipeline/s7-run/census_funnel.py`
+- `census_funnel.py`: 2, `pipeline/s7-run/README.md`, `pipeline/s7-run/census_funnel.py`
 - `census_funnel`: 1, `sync/rules.tsv`
 - `census`: 1538, 355 files
 - `censuses`: 77, 59 files

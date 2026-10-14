@@ -34,6 +34,29 @@ done
 # Keep the first kind for each (file, line).
 awk -F'\t' '!seen[$2 FS $3]++' "$hits" > "$hits.1" && mv "$hits.1" "$hits"
 
+# Allowed hits (anonymity-allow.tsv): a hit of the kind in the file whose line matches the pattern.
+# Deferred hits (anonymity-deferred.tsv): a hit of the kind (or "*") in the file. Both leave the
+# open list. The report counts them apart.
+allow="$here/anonymity-allow.tsv"
+deferred="$here/anonymity-deferred.tsv"
+allowed=$(mktemp); later=$(mktemp)
+trap 'rm -f "$hits" "$allowed" "$later"' EXIT
+if [ -f "$allow" ]; then
+  grep -v '^#' "$allow" | while IFS=$'\t' read -r k f re why; do
+    [ -f "$f" ] || continue
+    grep -n -E -- "$re" "$f" | cut -d: -f1 | awk -v k="$k" -v f="$f" '{ print k "\t" f "\t" $1 }'
+  done > "$allowed.lines"
+  awk -F'\t' 'NR == FNR { a[$0] = 1; next } ($0 in a)' "$allowed.lines" "$hits" > "$allowed"
+  awk -F'\t' 'NR == FNR { a[$0] = 1; next } !($0 in a)' "$allowed.lines" "$hits" > "$hits.1" && mv "$hits.1" "$hits"
+  rm -f "$allowed.lines"
+fi
+if [ -f "$deferred" ]; then
+  awk -F'\t' 'NR == FNR { if ($0 !~ /^#/) { d[$1 FS $2] = $3 }; next }
+    { w = ($1 FS $2) in d ? d[$1 FS $2] : (("*" FS $2) in d ? d["*" FS $2] : "") }
+    w != "" { print $0 "\t" w > "/dev/stderr"; next } { print }' "$deferred" "$hits" 2> "$later" > "$hits.1"
+  mv "$hits.1" "$hits"
+fi
+
 # The kind "census-name": the repository says "dataset", not "census". Copied scripts keep
 # their identifiers for now. This pass lists each identifier that contains "census", in file
 # contents and in file paths, for one rename pass later. It is separate from the kinds above,
@@ -41,7 +64,7 @@ awk -F'\t' '!seen[$2 FS $3]++' "$hits" > "$hits.1" && mv "$hits.1" "$hits"
 # identifying text, so the report shows them.
 cre='[A-Za-z0-9_./-]*[Cc][Ee][Nn][Ss][Uu][Ss][A-Za-z0-9_.-]*'
 names=$(mktemp)
-trap 'rm -f "$hits" "$names"' EXIT
+trap 'rm -f "$hits" "$names" "$allowed" "$later"' EXIT
 # Skip project data: third-party project names such as "opencensus" are not our identifiers.
 # So skip the data tables of the selection stages (S1 to S6, sources, rosters), and skip
 # words that hold "opencensus" or "uscensus".
@@ -77,6 +100,11 @@ echo "$files" | grep -E -- "$cre" | awk '{ print "(file path)\t" $0 }' >> "$name
   ni=$(awk -F'\t' '$1 != "(file path)"' "$names" | wc -l)
   echo "| census-name | $nf | $ni occurrences |"
   echo
+  echo "The table counts the open hits. These hits are not in the table:"
+  echo
+  echo "- Allowed (sync/anonymity-allow.tsv, checked by hand, not identifying): $(wc -l < "$allowed") lines."
+  echo "- Deferred (sync/anonymity-deferred.tsv): $(wc -l < "$later") lines. The section \"Deferred\" lists them."
+  echo
   echo "Kind census-name: identifiers and words that contain \"census\". The repository says"
   echo "\"dataset\" (stages: selection, build, merge, validate). Rename them later in one pass,"
   echo "in the source repositories. The section \"census-name\" below lists them."
@@ -89,6 +117,17 @@ echo "$files" | grep -E -- "$cre" | awk '{ print "(file path)\t" $0 }' >> "$name
   echo "- Commit SHAs of tools.lock and sync/sources.tsv. The ctp and cregit commits are in"
   echo "  public repositories, so a search by SHA can find their owners. Decide before the"
   echo "  mirror: keep the SHAs and publish the bundles only, or mirror the forks anonymously."
+  echo
+  echo "## Deferred"
+  echo
+  echo "Do not fix these hits now. Column \"when\" of sync/anonymity-deferred.tsv tells when."
+  echo
+  if [ -f "$deferred" ]; then
+    grep -v '^#' "$deferred" | while IFS=$'\t' read -r k f w why; do
+      n=$(awk -F'\t' -v f="$f" -v k="$k" '$2 == f && (k == "*" || $1 == k)' "$later" | wc -l)
+      echo "- \`$f\` (kind $k): $w. $why. Hit lines now: $n."
+    done
+  fi
   echo
   echo "## Hits"
   for kind in $kinds; do

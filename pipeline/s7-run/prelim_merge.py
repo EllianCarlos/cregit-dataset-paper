@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """Build a preliminary DuckDB file over the census Parquets that are on this machine now.
 
-    PY=~/Projects/cregit-workspace/census-local-a/ctp/.venv/bin/python   # has duckdb 1.5.5
-    $PY -I prelim_merge.py [--out ~/Projects/cregit-workspace/merge-prelim/prelim.duckdb]
+    PY=$CREGIT_PROJECTS/cregit-workspace/census-local-a/ctp/.venv/bin/python   # has duckdb 1.5.5
+    $PY -I prelim_merge.py [--out $CREGIT_PROJECTS/cregit-workspace/merge-prelim/prelim.duckdb]
 
 This is not the final merge (task 6). It copies no token data: the view `tokens` reads the Parquet
 files in place. Run it again to add the projects that arrived since (census-fetch timer, footer-fix).
 
 Sources, one candidate per project directory <owner>__<repo>:
-  local-a/b/c/d      ~/Projects/cregit-workspace/census-local-{a,b,c,d}/<wl>[/<part>]/done/<p>/ (reruns; OK needed)
+  local-a/b/c/d      census-local-{a,b,c,d}/<wl>[/<part>]/done/<p>/ (reruns; OK needed)
   fixed              census-cloud-fixed/<rel>/  (95cdc88 runs after the trailer post-fix; status ok)
   cloud              census-cloud/<run>/.../done/<p>/  (only with .checked: sha256 equal to OK)
   batch1-local       census-2026-10/<p>/  (cregit 157cf8b, old srcML: must be retokenized)

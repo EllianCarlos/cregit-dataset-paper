@@ -131,7 +131,7 @@ least 5% of the code bytes.
 ## 4. The mask and its version
 
 The script imports `UNIVERSAL_MASK` from
-`~/Projects/cregit-token-pipeline/file_mask.py`, the same mask that the
+`$CREGIT_PROJECTS/cregit-token-pipeline/file_mask.py`, the same mask that the
 pipeline uses. At start, `run.log` records:
 
 - the SHA-256 of the mask string: `665c23c0…`;

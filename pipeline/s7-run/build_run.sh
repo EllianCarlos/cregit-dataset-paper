@@ -5,7 +5,15 @@
 # batch1 = the first 5% of layer 1 (>= 5,000 commits), rounded up.
 set -euo pipefail
 cd "$(dirname "$0")"
-CTP=${CTP:-$HOME/Projects/cregit-token-pipeline/.claude/worktrees/agent-a0a3254f563a6a4b5}
+# CREGIT_PROJECTS: the directory that holds cregit-workspace and the clones of ctp and cregit.
+# Default: the nearest parent directory of this script that holds cregit-workspace.
+if [ -z "${CREGIT_PROJECTS:-}" ]; then
+  CREGIT_PROJECTS=$(pwd)
+  while [ "$CREGIT_PROJECTS" != / ] && [ ! -d "$CREGIT_PROJECTS/cregit-workspace" ]; do
+    CREGIT_PROJECTS=$(dirname "$CREGIT_PROJECTS")
+  done
+fi
+CTP=${CTP:-$CREGIT_PROJECTS/cregit-token-pipeline/.claude/worktrees/agent-a0a3254f563a6a4b5}
 # batch6..batch20 (2026-10-09): `bash build_run.sh batch N` builds batch N alone and exits. It takes
 # rows (N-1)*limit+1 .. N*limit of frame.layer1.csv (batch 20 gets the 149 left), builds the
 # manifest and sidecar with build_manifest.py, then enrich_meta.py --in-place fills license,
@@ -98,7 +106,7 @@ python3 "$CTP/build_manifest.py" frame.layer1.csv --manifest manifest.batch1.tsv
     --project-meta project_meta.batch1.json --limit "$limit"
 sha256sum ../s4-filter/frame.csv frame.layer*.csv manifest.*.tsv project_meta.*.json > SHA256SUMS
 # batch2 (2026-10-09) = the next 5% of layer 1 (frame.layer1.csv rows limit+1 .. 2*limit),
-# for the EC2 run in ellianco-personal (m6id.24xlarge, us-west-2).
+# for the EC2 run in the AWS account of the dataset build (m6id.24xlarge, us-west-2).
 python3 - "$limit" <<'P'
 import csv, sys
 limit = int(sys.argv[1])

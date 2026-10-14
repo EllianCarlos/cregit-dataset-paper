@@ -3,6 +3,14 @@
 This directory turns the frame (`../s4-filter/frame.csv`, 25,263 projects) into
 run manifests, and holds the commands and records of the cregit census.
 
+The names below stand for local and account values:
+
+- `$CREGIT_PROJECTS`: the directory that holds `cregit-workspace` and the clones of ctp and cregit.
+  The scripts find it themselves: it is the nearest parent directory that holds `cregit-workspace`.
+- `$RUNNER_BUCKET`, `$RUNNER_AWS_PROFILE` and `$RUNNER_EC2_*`: the bucket, the AWS profile and the
+  EC2 ids of the dataset build. `runner/runner.env` gives them (local only, see
+  `runner/runner.env.example`). `census_funnel.py` reads it.
+
 ## Files
 
 | File | What it is |
@@ -92,7 +100,7 @@ run manifests, and holds the commands and records of the cregit census.
   `blameRepoFiles.pl` parent was paused, the 2 git blame processes stopped, the 2 `.blame` files
   replaced with plain-blame copies, the parent resumed. Details and the formatBlame exit-code
   defect: runs-20261009.md, update 04:30 UTC.
-- 2026-10-11 06:46 UTC: spot a reclaimed; watchdog restart 3 of 6 on i-0dfc3836fcf8aa2ea. After the
+- 2026-10-11 06:46 UTC: spot a reclaimed; watchdog restart 3 of 6 on $RUNNER_EC2_SPOT_A5. After the
   relaunch, `batch22 a3` and `batch21 a5` (local run census-local-a) were removed from the new fed
   queue again (`local-a/queue-edit2.ssm.json`). Do this after every spot a relaunch until the local
   run ends and its outputs are merged. Details: runs-20261009.md, update 07:30 UTC.
@@ -105,8 +113,8 @@ run manifests, and holds the commands and records of the cregit census.
   template `/data/cregit-ec2`, and the script never changes the template. Thus the b3 parts keep
   the old file. If the script ends with "FAILED or incomplete", run it again by hand. Details:
   runs-20261009.md, update 01:35 UTC 2026-10-12.
-- 2026-10-12 06:07 UTC: AWS reclaimed spot b (i-04b62267244b4b264, "Spot instance termination").
-  The watchdog launched i-0512de18b0355171f (us-west-2d) at 06:18 UTC, restart 3 of 10. 163 projects
+- 2026-10-12 06:07 UTC: AWS reclaimed spot b ($RUNNER_EC2_SPOT_B4, "Spot instance termination").
+  The watchdog launched $RUNNER_EC2_SPOT_B5 (us-west-2d) at 06:18 UTC, restart 3 of 10. 163 projects
   were left. The gate gave 40511e0d (b5 parts) and 14eb5d72 (fed parts). `post_relaunch.sh` swapped
   `formatBlame.pl` in the copy of census-b5@batch1restb2 (arangodb). The feeder started fed parts
   from 06:32 UTC. The projects that ran at the reclaim start again. batch15 b1 (BRL-CAD, gone) is in
@@ -134,7 +142,7 @@ Runbook with every command: `~/s3-work/ec2-batch3/README.md`. In short:
   `manifest.batch3b.tsv` (79) take alternate S+M rows in u order. `manifest.batch3a1..a4.tsv`
   are batch3a's 4 parts for the A/B test (rows k, k+4, ...). The spot instance writes the same
   files itself, and they were sha256-identical.
-- batch3L runs on the batch 2 on-demand instance i-0e8a7ff7149693a14, with its own ctp clone and
+- batch3L runs on the batch 2 on-demand instance $RUNNER_EC2_BIG, with its own ctp clone and
   output and 5 workers. A waiter starts it when batch 2 has no unstarted project left and runs at
   most 15 projects. The instance powers off only after both batch 2 and batch3L have finalized,
   whichever finishes second.
@@ -142,16 +150,16 @@ Runbook with every command: `~/s3-work/ec2-batch3/README.md`. In short:
   16GB`, because lagadic__visp failed in firm at 8 GB on batch 2. Each finished project is copied
   to `batch3/<a|b>/done/<project>/` with an `OK` marker. A watcher acts on a spot notice.
   `restart_spot.sh a|b` reruns what has no `OK` yet.
-  Restart 2026-10-09 23:31 UTC: AWS reclaimed spot b (i-01069b2188da46598, notice 23:21 UTC).
-  The watchdog launched i-0046e8ea3ed3afab9 and `restart_spot.sh` ended OK at 23:45 UTC; the
+  Restart 2026-10-09 23:31 UTC: AWS reclaimed spot b ($RUNNER_EC2_SPOT_B2, notice 23:21 UTC).
+  The watchdog launched $RUNNER_EC2_SPOT_B3 and `restart_spot.sh` ended OK at 23:45 UTC; the
   feeder queued the batch 6 b parts again. Half b has used 1 of its 3 restarts.
-  Restart 2026-10-10 07:16 UTC: AWS reclaimed spot a (i-09b590a5b5682fb73). The watchdog launched
-  i-0bef31507078750dd (m5d.24xlarge, 384 GiB, 4 x 838 GB); restart OK at 07:37 UTC. Two feeder fixes
+  Restart 2026-10-10 07:16 UTC: AWS reclaimed spot a ($RUNNER_EC2_SPOT_A2). The watchdog launched
+  $RUNNER_EC2_SPOT_A3 (m5d.24xlarge, 384 GiB, 4 x 838 GB); restart OK at 07:37 UTC. Two feeder fixes
   followed (tar race in part-init; slots 5 and worker_slots 16 on this smaller type), see
   runs-20261009.md. Half a has used 1 of its 3 restarts.
   Restart 2026-10-10 12:31 UTC: AWS reclaimed the m5d spot a; the watchdog launched
-  i-0fda073eb0dec07e6 (i4i.24xlarge); restart OK at 12:53 UTC. Half a has used 2 of its 3 restarts.
-  Restart 2026-10-10 16:32 UTC: AWS reclaimed spot b; the watchdog launched i-04b62267244b4b264
+  $RUNNER_EC2_SPOT_A4 (i4i.24xlarge); restart OK at 12:53 UTC. Half a has used 2 of its 3 restarts.
+  Restart 2026-10-10 16:32 UTC: AWS reclaimed spot b; the watchdog launched $RUNNER_EC2_SPOT_B4
   (i4i.24xlarge); it ran at 16:50 UTC. Half b has used 2 of its 3 restarts.
 - A/B test: batch3a uses one XFS filesystem per instance-store disk, with one census part per
   filesystem and the 20 workers split evenly. Run 2 (from 12:27 UTC, EC2 Fleet, both on
@@ -160,7 +168,7 @@ Runbook with every command: `~/s3-work/ec2-batch3/README.md`. In short:
   batch3b keeps one RAID0 with 20 workers. The reason is that step 2 on batch 2 waited on
   cross-directory `rename()`, which Linux serialises per filesystem (`ec2-load-20261009.md`).
   `ab_compare.py` compares step-2 commits/s and projects/hour from `done/`.
-- Watch: `aws s3 cp s3://cregit-census-905418043997-usw2/<batch2|batch3L|batch3/a|batch3/b>/live/progress.txt -`;
+- Watch: `aws s3 cp s3://$RUNNER_BUCKET/<batch2|batch3L|batch3/a|batch3/b>/live/progress.txt -`;
   for batch 2, `steps.txt` shows each running project's cregit step and lists LineageOS first.
 - Stop: `touch STOP` in the census's ctp clone (via SSM). `NO_SHUTDOWN` in /home/ec2-user keeps
   an instance up after its finalize.
@@ -192,7 +200,7 @@ The runbook with every command is `~/s3-work/ec2-batch4/README.md`. In short:
 - **Power-off rule.** The instance now powers off only when batch 2, batch3L and batch 4 have ALL
   finalized: every `final/DONE` is in S3 and no census unit is active (`census-other-done`). Tested
   with dry runs, and nothing powered off.
-- **Watch:** `aws s3 cp s3://cregit-census-905418043997-usw2/batch4/live/progress.txt -`, and
+- **Watch:** `aws s3 cp s3://$RUNNER_BUCKET/batch4/live/progress.txt -`, and
   `steps.txt` for all 3 parts, with the L projects first.
 
 ## Batch 5 and batch 1 rest on EC2 (2026-10-09)
@@ -225,7 +233,7 @@ The runbook with every command is `~/s3-work/ec2-batch5/README.md`. In short:
   remaining = share minus done/OK. The watchdog keeps its cap of 3 restarts per half. Tested with stubs.
 - **Watch:** `status_all.sh` (it also shows `batch5L`, `batch5/a1` and `batch5/b1`: the combined
   view of each spot instance), or
-  `aws s3 cp s3://cregit-census-905418043997-usw2/batch5/a1/live/progress.txt -`.
+  `aws s3 cp s3://$RUNNER_BUCKET/batch5/a1/live/progress.txt -`.
 
 ## Local supplement run (2026-10-11)
 
@@ -247,7 +255,7 @@ Spot b does not change. No part moves between the two spot instances.
   The unit runs `local-a/run.sh`, with 2 workers, `--retries 3 --skip-html --latest
   --tokenizer-worker --blame-jobs 4 --memory-limit 6GB --min-free-mem-gb 8 --disk-floor-gb 300`.
   The memory limit is 6GB, not 16GB, because the budget of this machine is 14 GB.
-- **Files.** Everything is in `~/Projects/cregit-workspace/census-local-a/`:
+- **Files.** Everything is in `$CREGIT_PROJECTS/cregit-workspace/census-local-a/`:
   - `ctp/` is the ctp clone and `cregit/` is the cregit copy.
   - `out/` holds the outputs.
   - `logs/census-local-a.log` and `logs/publish.log` are the logs.
@@ -256,11 +264,11 @@ Spot b does not change. No part moves between the two spot instances.
     `<sha256>  <name>-dataset.parquet`.
   - `publish_done.py` writes these folders every 60 s and once more at the end.
 - **Check.** Use `systemctl --user status census-local-a` and
-  `tail ~/Projects/cregit-workspace/census-local-a/logs/census-local-a.log`.
+  `tail $CREGIT_PROJECTS/cregit-workspace/census-local-a/logs/census-local-a.log`.
   To count the finished projects, use
-  `find ~/Projects/cregit-workspace/census-local-a/batch2? -path '*/done/*' -name OK | wc -l`.
+  `find $CREGIT_PROJECTS/cregit-workspace/census-local-a/batch2? -path '*/done/*' -name OK | wc -l`.
 - **Stop.** To stop after the running projects, run
-  `touch ~/Projects/cregit-workspace/census-local-a/ctp/STOP`. `systemctl --user stop` sends
+  `touch $CREGIT_PROJECTS/cregit-workspace/census-local-a/ctp/STOP`. `systemctl --user stop` sends
   SIGTERM to the running projects.
 - **Spot a restart.** `restart_spot.sh a` computes the remaining work from S3 `done/OK`. These 19
   projects have no `OK` in S3, so after a reclaim of spot a, `census-fed-enqueue` adds
@@ -270,20 +278,20 @@ Spot b does not change. No part moves between the two spot instances.
   `census-local-a/<workload>/<part>/done/`.
 - **Rerun census-local-b (2026-10-12).** The same setup reran objectteams (batch11 a4) with ctp
   ca113e3, cregit 57551d7 and 1 worker. The gate gave libexpat 14eb5d72...b799. The project is done.
-  The output is in `~/Projects/cregit-workspace/census-local-b/batch11/a4/done/`, and the scripts
+  The output is in `$CREGIT_PROJECTS/cregit-workspace/census-local-b/batch11/a4/done/`, and the scripts
   and records are in `local-b/`. The merge must also read `census-local-b/<workload>/<part>/done/`.
 - **Rerun census-local-c (2026-10-12).** The same setup reruns 49 of the 51 batch 1 projects that
   ran with the old cregit 157cf8b (not torvalds__linux and SAP__project-foxhound). It uses ctp
   ca113e3, cregit 57551d7, 2 workers and the LPT order. The gate gave libexpat 14eb5d72...b799. The
-  unit started at 13:53:56 UTC. The output goes to `~/Projects/cregit-workspace/census-local-c/batch1/done/`,
+  unit started at 13:53:56 UTC. The output goes to `$CREGIT_PROJECTS/cregit-workspace/census-local-c/batch1/done/`,
   and the scripts and records are in `local-c/`. To stop after the running projects, run
-  `touch ~/Projects/cregit-workspace/census-local-c/ctp/STOP`.
+  `touch $CREGIT_PROJECTS/cregit-workspace/census-local-c/ctp/STOP`.
 - **Rerun census-local-d (2026-10-14).** The same setup reran gitlab.inria.fr__cedar__connectionlens
   (batch25 a4). All 4 spot attempts failed in blame: git -C100 exits 128 ("unable to generate diff")
   when a commit moves a blob over 1 GiB. The user chose a rerun with the fix: cregit 23e4ccb (57551d7 plus
   plain blame after a -C100 git exit 128, branch fix/blame-exit128-fallback). ctp ca113e3, 1 worker, the
   local-b memory flags. The gate gave libexpat 14eb5d72...b799. The project is done (15:01:47 UTC), with 2
-  PLAIN-BLAME files. The output is in `~/Projects/cregit-workspace/census-local-d/batch25/a4/done/`, and the
+  PLAIN-BLAME files. The output is in `$CREGIT_PROJECTS/cregit-workspace/census-local-d/batch25/a4/done/`, and the
   scripts and records are in `local-d/`. prelim_merge.py reads it.
 
 ## Second L queue L7-20b on the big EC2 (2026-10-11)
@@ -343,12 +351,12 @@ The user decided on 2026-10-12 at about 14:10 UTC: "Big EC2 L queue". The runboo
 
 ## Preliminary merge for queries (2026-10-12)
 
-`prelim_merge.py` builds `~/Projects/cregit-workspace/merge-prelim/prelim.duckdb` from the Parquets on
+`prelim_merge.py` builds `$CREGIT_PROJECTS/cregit-workspace/merge-prelim/prelim.duckdb` from the Parquets on
 this machine. It copies no token data: the view `tokens` reads the chosen Parquets in place. It is
 not the final merge (task 6). Run it again to add new arrivals (about 30 s):
 
 ```
-~/Projects/cregit-workspace/census-local-a/ctp/.venv/bin/python -I prelim_merge.py
+$CREGIT_PROJECTS/cregit-workspace/census-local-a/ctp/.venv/bin/python -I prelim_merge.py
 ```
 
 - One Parquet per project. Order: local-b/local-a reruns, then the 1f17663/57551d7 cloud files and
@@ -408,8 +416,8 @@ The user approved this on 2026-10-11.
   - New arrivals: remove `STOP`, then start the unit again with the same command (it skips
     the done ones; `--retry-failed` tries the failed ones again):
     `systemd-run --user --unit=footer-fix -p OOMPolicy=continue -p MemoryMax=12G
-    -p StandardOutput=append:$HOME/Projects/cregit-workspace/census-cloud-fixed/footer-fix.log
-    -p StandardError=append:$HOME/Projects/cregit-workspace/census-cloud-fixed/footer-fix.log
+    -p StandardOutput=append:$CREGIT_PROJECTS/cregit-workspace/census-cloud-fixed/footer-fix.log
+    -p StandardError=append:$CREGIT_PROJECTS/cregit-workspace/census-cloud-fixed/footer-fix.log
     --setenv=HOME=$HOME --setenv=PATH="$PATH" <python with duckdb> -I <this dir>/footer_fix_batches.py --jobs 2`.
     `--retry-transient` tries again only the statuses that can change (clone_failed, error,
     no_persons_db, input_mismatch), not `refused`.

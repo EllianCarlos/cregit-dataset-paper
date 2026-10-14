@@ -1,5 +1,8 @@
 # Deploy plan: the blame time limit (not deployed)
 
+`$RUNNER_BUCKET` and `$RUNNER_EC2_*` stand for the bucket and the EC2 ids of the dataset build
+(`runner/runner.env`, local only; `runner/runner.env.example` gives the names).
+
 Written 2026-10-11 19:10 UTC. User decision 2026-10-11 16:45 UTC: "Swap now + time limit".
 Nothing in this plan ran on an instance. The inventory below comes from read-only SSM
 commands at 18:59-19:05 UTC.
@@ -25,7 +28,7 @@ commands at 18:59-19:05 UTC.
   `state/<project>/logs/pipeline-<stamp>.log`. `census-fed-finalize` uploads the `state/*/logs`
   files with each part.
 - Upload first (the user runs it): `bash ~/s3-work/upload-cregit-blamelimit.sh`. It must
-  print `ALL OK`. The objects go to `s3://cregit-census-905418043997-usw2/cregit/`.
+  print `ALL OK`. The objects go to `s3://$RUNNER_BUCKET/cregit/`.
 
 ## What a swap changes and what it does not change
 
@@ -66,14 +69,14 @@ Inventory at 18:59 UTC (active units and their copies):
 
 | Machine | Unit | Copy | HEAD |
 |---|---|---|---|
-| spot a i-0dfc3836fcf8aa2ea | census-fed@batch6a1, batch6a4 | /w/batch6a1/cregit-ec2, /w/batch6a4/cregit-ec2 | 95cdc88 |
+| spot a $RUNNER_EC2_SPOT_A5 | census-fed@batch6a1, batch6a4 | /w/batch6a1/cregit-ec2, /w/batch6a4/cregit-ec2 | 95cdc88 |
 | spot a | census-fed@batch8a2, batch9a1, batch9a3, batch9a5 | /w/batch8a2/…, /w/batch9a1/…, /w/batch9a3/…, /w/batch9a5/cregit-ec2 | 1f17663 |
 | spot a | census-fed@batch10a1, batch10a2, batch10a3 | /w/batch10a1/…, /w/batch10a2/…, /w/batch10a3/cregit-ec2 | 1f17663 |
 | spot a | census-b5@batch1resta2 | /w/batch1resta2/cregit-ec2 | 95cdc88 |
 | spot a | census-b3@a2 (brave-core) | /data1/cregit-ec2 | 95cdc88 |
-| spot b i-04b62267244b4b264 | census-fed@batch11b1, batch15b4, batch16b3, batch17b1, batch17b2, batch17b4, batch17b5 | /w/<id>/cregit-ec2 | 1f17663 |
+| spot b $RUNNER_EC2_SPOT_B4 | census-fed@batch11b1, batch15b4, batch16b3, batch17b1, batch17b2, batch17b4, batch17b5 | /w/<id>/cregit-ec2 | 1f17663 |
 | spot b | census-b5@batch1restb2 | /w/batch1restb2/cregit-ec2 | 95cdc88 |
-| big EC2 i-0e8a7ff7149693a14 | census-batch5L (firefox) | /b5L/cregit-ec2 | 95cdc88 |
+| big EC2 $RUNNER_EC2_BIG | census-batch5L (firefox) | /b5L/cregit-ec2 | 95cdc88 |
 | big EC2 | census-L7-20 | /bL7/cregit-ec2 | 1f17663 |
 | big EC2 | census-L22 (gcc, emacs) | /bL22/cregit-ec2 | 1f17663 |
 
@@ -85,7 +88,7 @@ AWS-RunShellScript, as root, on each machine, with `DIRS` set to the copies of t
 
 ```bash
 set -uo pipefail
-B=s3://cregit-census-905418043997-usw2/cregit
+B=s3://$RUNNER_BUCKET/cregit
 bf=/data/input/cregit-57551d7.bundle; BSHA=18b1bf1c87230460f59e433f0c5106f21dde77bfbc057a42776acb592a6eb71e
 NEW=788acb9abac05782058c6b0b599b349caf63b85fa49b8375af9240be7bc0b435
 DIRS="/w/batch6a1/cregit-ec2 ..."   # the copies of this machine, from the table
@@ -134,7 +137,7 @@ Queue at 19:05 UTC:
 
   ```bash
   /usr/local/bin/census-fed-workload batchN --commit 57551d7ad82a784615c1490623d72cb9dc994ba1 \
-    --bundle s3://cregit-census-905418043997-usw2/cregit/cregit-57551d7.bundle \
+    --bundle s3://$RUNNER_BUCKET/cregit/cregit-57551d7.bundle \
     --bundle-sha256 18b1bf1c87230460f59e433f0c5106f21dde77bfbc057a42776acb592a6eb71e \
     --want-pq 14eb5d728ca6fa50623cb89088ab59348e646f1205ed3cf9f48bff0142eab799
   ```
@@ -157,10 +160,10 @@ A relaunched spot is a new instance from the batch 3 AMI (`/data/cregit-ec2` at 
 parts and no refusal. Edit `feed.tsv` on this machine after the upload prints `ALL OK`:
 
 - `batch6`: `base - - -` becomes
-  `9ccead6716a619a7e3ddc7bad9234f14deae865c  s3://cregit-census-905418043997-usw2/cregit/cregit-9ccead6.bundle  64a4f3f081a91694b1976d531883c6ad547c54116a625d384c0d03785d935e06  40511e0de1a285b5bbc4ae0ff277e4775c5d67709966dd7c64dc9163c638fc5d`
+  `9ccead6716a619a7e3ddc7bad9234f14deae865c  s3://$RUNNER_BUCKET/cregit/cregit-9ccead6.bundle  64a4f3f081a91694b1976d531883c6ad547c54116a625d384c0d03785d935e06  40511e0de1a285b5bbc4ae0ff277e4775c5d67709966dd7c64dc9163c638fc5d`
   (tab-separated; the gate value of `--base`).
 - `batch7` to `batch22`: `1f176633675eb836e322bf66bcf87343e98c98e1  …/cregit-1f17663.bundle  a827082e…`
-  becomes `57551d7ad82a784615c1490623d72cb9dc994ba1  s3://cregit-census-905418043997-usw2/cregit/cregit-57551d7.bundle  18b1bf1c87230460f59e433f0c5106f21dde77bfbc057a42776acb592a6eb71e`;
+  becomes `57551d7ad82a784615c1490623d72cb9dc994ba1  s3://$RUNNER_BUCKET/cregit/cregit-57551d7.bundle  18b1bf1c87230460f59e433f0c5106f21dde77bfbc057a42776acb592a6eb71e`;
   the gate column `14eb5d72…b799` does not change.
 
 The b3 part (batch3) and the b5 parts (batch5, batch1rest) of a relaunched spot use the AMI

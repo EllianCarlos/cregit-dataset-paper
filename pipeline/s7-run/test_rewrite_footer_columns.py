@@ -2,7 +2,7 @@
 Run: python3 -m pytest -q test_rewrite_footer_columns.py   (an interpreter with duckdb and pytest;
      the end-to-end tests need python >= 3.10, as generate_dataset.py does)
      CREGIT=<census cregit>  CREGIT_FIXED=<fixed cregit>  SLICKGITLOG_JAR=<one-jar>  override
-     the defaults (~/Projects/cregit-ec2, ~/Projects/cregit-trailers, the cregit-ec2 one-jar).
+     the defaults of rewrite_footer_columns.py (the clones cregit-ec2 and cregit-trailers, the cregit-ec2 one-jar).
 
 The test project is real git: an original bare repository with five commits, and a rewritten
 one where each message gets "\\n" + "Former-commit-id: X", as blobExec writes it. The cregit DB

@@ -92,7 +92,7 @@ User decisions 2026-10-14 ~01:00 UTC (verbatim answers, relayed by the coordinat
 
 ## Third round (2026-10-14 ~15:35 UTC): personal namespaces in the gitlab.com search
 
-User decision (verbatim): **"Yes then"** to: the gitlab.com search (stars > 400) also takes projects in PERSONAL namespaces, the same rule as the GitHub search (no owner rule). Other decisions since the second round (relayed): the 73 shared-history rows (R3 forks) stay out of v1, and LIMITATIONS must note the rule difference against GitHub; the GitLab labels get a manual review later; cedar/connectionlens was rerun locally with cregit 23e4ccb (fix/blame-exit128-fallback) and is in the merge (ellians-master 5efb869).
+User decision (verbatim): **"Yes then"** to: the gitlab.com search (stars > 400) also takes projects in PERSONAL namespaces, the same rule as the GitHub search (no owner rule). Other decisions since the second round (relayed): the 73 shared-history rows (R3 forks) stay out of v1, and LIMITATIONS must note the rule difference against GitHub; the GitLab labels get a manual review later; cedar/connectionlens was rerun locally with cregit 23e4ccb (fix/blame-exit128-fallback) and is in the merge (study repository commit 5efb869).
 
 Funnel of the 18 personal-namespace rows (`personal_rows.py`, then `screen_layer1.py`, `roots_check.py`, `decide.py`, `measure_dp.py`, the same steps as batch 25):
 

@@ -26,7 +26,7 @@ for r in rows:
     u = r["url"]
     if u in done: continue
     pk, oid = heads.get(u, ("", ""))
-    t = tempfile.mkdtemp(dir="/local/home/ellianco/tmp-gitlab"); g = Path(t) / "r.git"
+    t = tempfile.mkdtemp(dir=os.path.expanduser("~/tmp-gitlab")); g = Path(t) / "r.git"
     p = subprocess.run(["git", "clone", "-q", "--bare", "--filter=tree:0", u + ".git", str(g)], capture_output=True, env=env, timeout=7200)
     if p.returncode: res, n = "clone failed", ""
     else:
