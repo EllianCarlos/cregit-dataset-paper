@@ -23,7 +23,7 @@ So fix them in the source repository, commit there, and sync again.
 | user-name | 0 | 0 |
 | employer | 6 | 9 |
 | ec2-id | 2 | 13 |
-| census-name | 82 | 393 occurrences |
+| census-name | 86 | 419 occurrences |
 
 Kind census-name: identifiers and words that contain "census". The repository says
 "dataset" (stages: selection, build, merge, validate). Rename them later in one pass,
@@ -119,7 +119,7 @@ File paths that contain "census":
 Identifiers and words in file contents (identifier: occurrences, files; more than 4 files gives the count only):
 
 - `//cregit-census-905418043997-usw2`: 12, 6 files
-- `//github.com/GoogleCloudPlatform/opencensus-jetty-demo.git`: 1, `pipeline/s7-run/manifest.layer5.tsv`
+- `//github.com/GoogleCloudPlatform/opencensus-jetty-demo.git`: 3, `pipeline/s7-run/frame.layer5.csv`, `pipeline/s7-run/manifest.layer5.tsv`, `pipeline/s7-run/project_meta.layer5.json`
 - `/Projects/cregit-workspace/census-local-`: 1, `pipeline/s7-run/prelim_merge.py`
 - `/Projects/cregit-workspace/census-local-a/logs/census-local-a.log`: 1, `pipeline/s7-run/README.md`
 - `/Projects/cregit-workspace/census-local-a`: 5, `pipeline/s7-run/README.md`, `pipeline/s7-run/prelim_merge.py`
@@ -133,12 +133,13 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `/home/ellianco/Projects/cregit-workspace/census-local-c`: 6, `pipeline/s7-run/local-c/census.cfg`, `pipeline/s7-run/local-c/gate.sh`, `pipeline/s7-run/local-c/run.sh`
 - `/home/ellianco/Projects/cregit-workspace/census-local-d`: 5, `pipeline/s7-run/local-d/census.cfg`, `pipeline/s7-run/local-d/run.sh`
 - `/local/home/ellianco/Projects/cregit-workspace/census-2026-10`: 1, `pipeline/s7-run/census.cfg`
+- `/path/to/census.cfg`: 1, `tools/ctp/docs/E2E.md`
 - `/usr/local/bin/census-fed-workload`: 1, `pipeline/s7-run/blame-time-limit.md`
 - `CENSUS_CLOUD_DIR`: 2, `pipeline/s7-run/fetch_done.sh`
 - `Census.`: 1, `pipeline/s7-run/README.md`
 - `Census`: 6, `pipeline/s7-run/README.md`, `pipeline/s7-run/census_funnel.py`, `pipeline/s7-run/run_batch1.sh`, `pipeline/s7-run/split_batch5.py`
-- `GoogleCloudPlatform/opencensus-jetty-demo`: 1, `pipeline/s7-run/manifest.layer5.order.tsv`
-- `GoogleCloudPlatform__opencensus-jetty-demo`: 2, `pipeline/s7-run/manifest.layer5.order.tsv`, `pipeline/s7-run/manifest.layer5.tsv`
+- `GoogleCloudPlatform/opencensus-jetty-demo`: 2, `pipeline/s7-run/frame.layer5.csv`, `pipeline/s7-run/manifest.layer5.order.tsv`
+- `GoogleCloudPlatform__opencensus-jetty-demo`: 3, `pipeline/s7-run/manifest.layer5.order.tsv`, `pipeline/s7-run/manifest.layer5.tsv`, `pipeline/s7-run/project_meta.layer5.json`
 - `HOME/Projects/cregit-workspace/census-cloud-fixed`: 2, `pipeline/s7-run/README.md`
 - `HOME/Projects/cregit-workspace/census-cloud`: 1, `pipeline/s7-run/fetch_done.sh`
 - `L/census.cfg`: 4, `pipeline/s7-run/local-a/run.sh`, `pipeline/s7-run/local-b/run.sh`, `pipeline/s7-run/local-c/run.sh`, `pipeline/s7-run/local-d/run.sh`
@@ -197,20 +198,22 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `census.cfg`: 1, `pipeline/s7-run/README.md`
 - `census_funnel.py`: 1, `pipeline/s7-run/census_funnel.py`
 - `census_funnel`: 1, `sync/rules.tsv`
-- `census`: 132, 59 files
-- `censuses`: 2, `pipeline/s7-run/README.md`, `pipeline/s7-run/split_batch4.py`
+- `census`: 147, 61 files
+- `censuses`: 3, `pipeline/s7-run/README.md`, `pipeline/s7-run/split_batch4.py`, `tools/ctp/docs/E2E.md`
 - `cregit-workspace/census-2026-10`: 1, `pipeline/s7-run/README.md`
 - `cregit-workspace/census-cloud-fixed`: 1, `pipeline/s7-run/README.md`
 - `cregit-workspace/census-cloud`: 2, `pipeline/s7-run/README.md`
 - `generate_dataset_census`: 1, `pipeline/s7-run/test_rewrite_footer_columns.py`
 - `here/census.cfg`: 1, `pipeline/s7-run/run_batch1.sh`
 - `logs/census-local-a.log`: 1, `pipeline/s7-run/README.md`
+- `manifest.census.tsv`: 3, `tools/ctp/docs/E2E.md`
 - `pipeline/s7-run/census.cfg`: 1, `sync/sources.tsv`
 - `pipeline/s7-run/census_funnel.py`: 1, `sync/sources.tsv`
 - `pipeline/s7-run/local-a/census.cfg`: 1, `sync/sources.tsv`
 - `pipeline/s7-run/local-b/census.cfg`: 1, `sync/sources.tsv`
 - `pipeline/s7-run/local-c/census.cfg`: 1, `sync/sources.tsv`
 - `pipeline/s7-run/local-d/census.cfg`: 1, `sync/sources.tsv`
+- `project_meta.census.json`: 2, `tools/ctp/docs/E2E.md`
 - `s7-run/census.cfg`: 1, `sync/sources.tsv`
 - `s7-run/census_funnel.py`: 1, `sync/sources.tsv`
 - `s7-run/local-a/census.cfg`: 1, `sync/sources.tsv`
