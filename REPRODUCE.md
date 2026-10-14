@@ -290,11 +290,9 @@ Found on 2026-10-14 (no longer UNKNOWN):
 - Fill `data/SHA256SUMS` at the v1 freeze. Then `make verify` works.
 - Publish the tool bundles (`tools.lock`), the per-project ledgers and the final sidecar
   with the dataset. Then finish steps 4-6 of `rebuild-one`.
-- Make bundles for cregit 23e4ccb and for the srcML fork commits.
+- Upload the new bundles and jars (`~/s3-work/upload-tool-bundles.sh`, run by the user).
 - Commit the EC2 runner scripts (machine setup, part feed, restart, publish) to a source
   repository, remove the account data, and copy them here. Then `make build` can work.
-- Add the devenv command and the cregit jars to the flake, or remove the fixed devenv path
-  from ctp.
 - Write the final merge, and the offline replay of S4-S6 (`make select`).
 - Decide on the web captures that are not copied: `rosters/raw/` (except the ASF
   `projects.json` that S5 reads) and `sources/company-pages/raw/`, and the Spinellis

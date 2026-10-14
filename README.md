@@ -62,6 +62,8 @@ non-zero status. `REPRODUCE.md` lists what is left.
 |---|---|
 | `pipeline/` | Copies of the paper scripts and their inputs. Do not edit them here. |
 | `tools/ctp/`, `tools/cregit/` | Copies of some files of the pinned ctp and cregit commits (the column contract, the validation, the Nix files of srcML). |
+| `tools/ctp-venv/` | The package lists of the ctp Python environment on each machine type. |
+| `tools/jars/` | The jar content check (`jar_content_sha256.py`). The flake pins the jars by sha256. |
 | `sync/` | The source list and the scripts that copy and check `pipeline/`. |
 | `tools.lock` | The tool versions and bundle hashes. |
 | `flake.nix`, `flake.lock` | The pinned environment (Nix). |
