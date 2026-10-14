@@ -11,3 +11,4 @@ email	<e-mail address>
 user-name	<given name>|<full name>
 employer	<employer domains>
 ec2-id	(^|[^A-Za-z0-9])(i|ami|vol|sg|subnet)-0[0-9a-f]{7,}
+source-org	<GitHub organisation of the forks>|<cachix cache name>

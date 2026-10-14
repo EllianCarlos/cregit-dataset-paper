@@ -86,6 +86,9 @@ echo "$files" | grep -E -- "$cre" | awk '{ print "(file path)\t" $0 }' >> "$name
   echo "- Git commit metadata: the author name and e-mail of each commit. The anonymous mirror"
   echo "  must serve files only, or the history must be rewritten in a fresh export."
   echo "- Hits in compressed files (*.xz, *.gz). The scan reads text files only."
+  echo "- Commit SHAs of tools.lock and sync/sources.tsv. The ctp and cregit commits are in"
+  echo "  public repositories, so a search by SHA can find their owners. Decide before the"
+  echo "  mirror: keep the SHAs and publish the bundles only, or mirror the forks anonymously."
   echo
   echo "## Hits"
   for kind in $kinds; do

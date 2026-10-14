@@ -23,7 +23,8 @@ So fix them in the source repository, commit there, and sync again.
 | user-name | 0 | 0 |
 | employer | 6 | 9 |
 | ec2-id | 2 | 13 |
-| census-name | 86 | 419 occurrences |
+| source-org | 1 | 1 |
+| census-name | 87 | 422 occurrences |
 
 Kind census-name: identifiers and words that contain "census". The repository says
 "dataset" (stages: selection, build, merge, validate). Rename them later in one pass,
@@ -34,6 +35,9 @@ in the source repositories. The section "census-name" below lists them.
 - Git commit metadata: the author name and e-mail of each commit. The anonymous mirror
   must serve files only, or the history must be rewritten in a fresh export.
 - Hits in compressed files (*.xz, *.gz). The scan reads text files only.
+- Commit SHAs of tools.lock and sync/sources.tsv. The ctp and cregit commits are in
+  public repositories, so a search by SHA can find their owners. Decide before the
+  mirror: keep the SHAs and publish the bundles only, or mirror the forks anonymously.
 
 ## Hits
 
@@ -104,6 +108,10 @@ in the source repositories. The section "census-name" below lists them.
 
 - `pipeline/s7-run/README.md`: lines 95, 108, 109, 137, 145, 146, 148, 149, 153, 154
 - `pipeline/s7-run/blame-time-limit.md`: lines 69, 74, 76
+
+### source-org
+
+- `tools/cregit/devenv.nix`: lines 70
 
 ### census-name
 
@@ -190,6 +198,7 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `census-local-b`: 13, 7 files
 - `census-local-c`: 14, 7 files
 - `census-local-d`: 11, 7 files
+- `census-name.`: 1, `REPRODUCE.md`
 - `census-name`: 6, `sync/anonymity-scan.sh`
 - `census-other-done`: 4, `pipeline/s7-run/README.md`
 - `census-spot-decide`: 1, `pipeline/s7-run/README.md`
@@ -198,7 +207,7 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `census.cfg`: 1, `pipeline/s7-run/README.md`
 - `census_funnel.py`: 1, `pipeline/s7-run/census_funnel.py`
 - `census_funnel`: 1, `sync/rules.tsv`
-- `census`: 147, 61 files
+- `census`: 149, 62 files
 - `censuses`: 3, `pipeline/s7-run/README.md`, `pipeline/s7-run/split_batch4.py`, `tools/ctp/docs/E2E.md`
 - `cregit-workspace/census-2026-10`: 1, `pipeline/s7-run/README.md`
 - `cregit-workspace/census-cloud-fixed`: 1, `pipeline/s7-run/README.md`
