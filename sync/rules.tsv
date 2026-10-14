@@ -57,3 +57,10 @@ ctp	include	^(validate_schema|validate|file_mask|build_manifest)\.py$
 ctp	include	^pyproject\.toml$
 ctp	include	^data/(affiliation\.merged|firm_canonical)\.csv$
 ctp	include	^docs/E2E\.md$
+#
+# The cregit fork at 57551d7. These files have the same git blob ids in all five cregit
+# commits of the dataset build (95cdc88, 9ccead6, 1f17663, 57551d7, 23e4ccb). flake.nix
+# builds srcML from nix/srcml.nix and compares the result with the build store path.
+cregit	dest	tools/cregit/
+cregit	include	^nix/(srcml\.nix|srcml-nontermination\.patch)$
+cregit	include	^devenv\.(nix|yaml|lock)$

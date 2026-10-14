@@ -2,3 +2,4 @@
 # Columns (tab-separated): source_id, path of the local clone, path prefix inside that repository.
 study	/path/to/study-repo	path/to/dataset-selection
 ctp	/path/to/ctp-clone	
+cregit	/path/to/cregit-fork-clone	
