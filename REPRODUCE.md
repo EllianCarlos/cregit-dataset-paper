@@ -290,7 +290,6 @@ Found on 2026-10-14 (no longer UNKNOWN):
 - Fill `data/SHA256SUMS` at the v1 freeze. Then `make verify` works.
 - Publish the tool bundles (`tools.lock`), the per-project ledgers and the final sidecar
   with the dataset. Then finish steps 4-6 of `rebuild-one`.
-- Upload the new bundles and jars (`~/s3-work/upload-tool-bundles.sh`, run by the user).
 - Commit the EC2 runner scripts (machine setup, part feed, restart, publish) to a source
   repository, remove the account data, and copy them here. Then `make build` can work.
 - Write the final merge, and the offline replay of S4-S6 (`make select`).
