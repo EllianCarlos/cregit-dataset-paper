@@ -1,0 +1,10 @@
+[Unit]
+Description=cregit census L22: wait until the big EC2 has room and the gate passed, then start census-L22
+After=network-online.target
+RequiresMountsFor=/data /bL22
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/census-L22-wait
+Restart=on-failure
+RestartSec=60

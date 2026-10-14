@@ -1,0 +1,8 @@
+[Unit]
+Description=cregit census L22: copy results to S3, write DONE, power off if every census finalized
+RequiresMountsFor=/data
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/census-L22-finalize
+TimeoutStartSec=infinity

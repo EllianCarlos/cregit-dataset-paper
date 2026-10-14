@@ -1,0 +1,7 @@
+[Unit]
+Description=L7-20: check for the v2 inputs every 2 min
+
+[Timer]
+OnActiveSec=30s
+OnUnitActiveSec=2min
+AccuracySec=10s

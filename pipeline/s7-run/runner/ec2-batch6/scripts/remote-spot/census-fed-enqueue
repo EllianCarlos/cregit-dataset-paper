@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# census-fed-enqueue WORKLOAD [a|b] (root): queue the fed parts of WORKLOAD (e.g. batch6) for this
+# spot half (default: /etc/cregit-census/fed/half, else HALF of the census-b5 batch.env). It copies
+# s3://BUCKET/WORKLOAD/input/ to /home/ec2-user/fed-input/WORKLOAD/ (sha256-checked), derives the part
+# manifests with census-fed-derive (= split_batchN.py --derive; each sha256 must equal
+# parts.WORKLOAD.tsv), and appends to the queue, in parts-file order, every part of the half that is
+# not queued or started yet and has projects without s3://BUCKET/WORKLOAD/<part>/done/<project>/OK.
+# It adds "fed" to /etc/cregit-census/censuses (read by census-spot-decide) and starts the feeder timer.
+# Without /etc/cregit-census/fed/wl/WORKLOAD.env it writes one with the cregit commit "pending" (see
+# census-fed-workload): the feeder then starts none of its parts until the commit is set.
+# Batch 7 and later: upload its inputs, then run census-fed-enqueue batch7 on each instance.
+set -euo pipefail
+. /usr/local/bin/census-fed-common
+WL=${1:-}; [[ $WL =~ ^batch[0-9]+$ ]] || { echo "usage: census-fed-enqueue WORKLOAD [a|b]" >&2; exit 2; }
+X=${2:-$(fed_half)}; case $X in a|b) ;; *) echo "no half: give a|b" >&2; exit 2 ;; esac
+mkdir -p $FED; [ -f $FED/half ] || echo $X > $FED/half
+[ "$(cat $FED/half)" = $X ] || { echo "this instance is half $(cat $FED/half), not $X" >&2; exit 2; }
+D=$FI/$WL; mkdir -p $D
+aws s3 cp $BUCKET/$WL/input/ $D/ --recursive --only-show-errors
+(cd $D && sha256sum --quiet -c SHA256SUMS) && echo "$WL inputs: sha256 ok ($(grep -c . $D/SHA256SUMS) files)"
+out=$(python3 -I /usr/local/bin/census-fed-derive --derive $D $WL) || { echo "$out"; echo "DERIVE FAILED: a part manifest differs from parts.$WL.tsv"; exit 1; }
+echo "$out" | grep "^$X " || true
+chown -R ec2-user: $FI
+exec 9>$FED/lock; flock 9
+touch $FED/queue $FED/started
+n=0
+while read -r h wl p; do
+  [ "$h" = $X ] || continue
+  id=$wl$p
+  if grep -qx "$wl $p" $FED/queue || grep -qx "$id" $FED/started; then echo "$id: already queued or started"; continue; fi
+  left=$(comm -23 <(grep -v -e '^#' -e '^[[:space:]]*$' $D/manifest.$id.tsv | cut -f1 | sort -u) <(oks "$BUCKET/$wl/$p/done/") | grep -c . || true)
+  if [ "$left" = 0 ]; then echo "$id: every project has done/OK; not queued"; continue; fi
+  echo "$wl $p" >> $FED/queue; n=$((n+1)); echo "$id: queued ($left of $(nrows $D/manifest.$id.tsv) projects left)"
+done < <(awk -F'\t' '!/^#/ && $1 != "half" {print $1, $2, $3}' $D/parts.$WL.tsv)
+[ -f $FED/wl/$WL.env ] || /usr/local/bin/census-fed-workload $WL --pending
+touch /etc/cregit-census/censuses; grep -qx fed /etc/cregit-census/censuses || echo fed >> /etc/cregit-census/censuses
+chmod 644 $FED/queue $FED/started
+echo "queued $n parts of $WL; queue now: $(tr '\n' ' ' < $FED/queue)"
+flock -u 9
+systemctl start census-fed-feeder.timer census-fed-watch.service census-fed-upload.timer census-fed-live.timer

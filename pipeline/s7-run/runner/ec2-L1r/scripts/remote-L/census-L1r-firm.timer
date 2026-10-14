@@ -1,0 +1,10 @@
+[Unit]
+Description=cregit census L1r: protect the firm step from the OOM killer every 30 s
+
+[Timer]
+OnActiveSec=30s
+OnUnitActiveSec=30s
+AccuracySec=5s
+
+[Install]
+WantedBy=timers.target

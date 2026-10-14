@@ -1,0 +1,68 @@
+#!/usr/bin/env bash
+# census-batch6L-wait (census-batch6L-wait.service, root; 2026-10-09 ~20:00 UTC): start census-batch6L
+# (the 3 L projects of batch 6) only when the batch 4 parts free slots on this instance. Every 60 s it
+# starts census-batch6L.service when ALL of these hold:
+#   (1) batch 4 has no project it has not started: each census-batch4pK is inactive, or census-steps
+#       --counts reports 0 not started for it;
+#   (2) the instance runs at most MAXRUN (default 16) projects in total (batch2, batch3L, batch4p1-3,
+#       batch5L; census-steps --counts of each active census), so with the 3 L projects it runs <= 19,
+#       about the 20 slots of batches 2-4;
+#   (3) MemAvailable >= MINMEM_GB (default 120 GiB): the 3 L projects run with --memory-limit 16GB
+#       each plus git and blame, and the running L projects of batch 3L and 5L still grow;
+#   (4) /data has >= MINDISK_GB (default 1500) GiB free, well above the 800 GiB guard.
+#   (5) the identity gate passed for the commit the copy /b6L/cregit-ec2 is at: the last line of
+#       /etc/cregit-census/batch6L.gate is "CHECK OK <time> cregit <that commit> ..." (census-batch6L-cregit;
+#       batches 6-20 run on the new trailers commit, so the start waits until it is set and gated).
+# The file /etc/cregit-census/batch6L.no-b4-wait drops condition (1) (user decision 2026-10-10 00:55 UTC:
+# start batch6L while the last batch 4 projects wait; the other conditions stay).
+# A STOP file in /b6L/ctp holds the start. Status: /run/census-batch6L-wait.status.
+# --decide-only: print the decision once and exit (0 = would start, 1 = would wait); starts nothing.
+# Test overrides: COUNTS_<name> ("RUNNING NOT_STARTED") and ACTIVE_<name> (unit state) per census name
+# (batch2 batch3L batch4p1 batch4p2 batch4p3 batch5L), MEMAVAIL_GB, DATAFREE_GB, GATE_OK (1 = gate passed, 0 = not).
+set -uo pipefail
+MAXRUN=${MAXRUN:-16}; MINMEM=${MINMEM_GB:-120}; MINDISK=${MINDISK_GB:-1500}
+ST=/run/census-batch6L-wait.status
+# name | unit | ctp dir | manifest
+CENS="batch2|census-batch2.service|/home/ec2-user/ctp|/home/ec2-user/batch2-input/manifest.batch2.tsv
+batch3L|census-batch3L.service|/home/ec2-user/ctp-b3L|/home/ec2-user/batch3L-input/manifest.batch3L.tsv
+batch4p1|census-batch4p1.service|/b4p1/ctp|/home/ec2-user/batch4-input/manifest.batch4p1.tsv
+batch4p2|census-batch4p2.service|/b4p2/ctp|/home/ec2-user/batch4-input/manifest.batch4p2.tsv
+batch4p3|census-batch4p3.service|/b4p3/ctp|/home/ec2-user/batch4-input/manifest.batch4p3.tsv
+batch5L|census-batch5L.service|/b5L/ctp|/home/ec2-user/batch5-input/manifest.batch5L.tsv"
+decide() {  # sets msg; returns 0 = start
+  local run=0 b4pend=0 bad="" n u c m s cv av r p desc=""
+  while IFS='|' read -r n u c m; do
+    av="ACTIVE_$n"; s=${!av-$(systemctl is-active "$u")}
+    case $s in active|activating|deactivating) ;; *) desc="$desc $n=$s"; continue ;; esac
+    cv="COUNTS_$n"; read -r r p < <(echo "${!cv-$(/usr/local/bin/census-steps --counts "$c" "$m" 2>/dev/null || echo '? ?')}")
+    case "$r$p" in *[!0-9]*|'') bad="$bad $n"; desc="$desc $n=?"; continue ;; esac
+    run=$((run + r)); case $n in batch4p*) b4pend=$((b4pend + p)) ;; esac
+    desc="$desc $n=${r}r/${p}q"
+  done <<<"$CENS"
+  local mem=${MEMAVAIL_GB:-$(awk '/MemAvailable/{printf "%d", $2/1048576}' /proc/meminfo)}
+  local disk=${DATAFREE_GB:-$(df -BG --output=avail /data | tail -1 | tr -dc 0-9)}
+  msg="$(date -u +%FT%TZ) running $run (max $MAXRUN), batch 4 not started $b4pend, MemAvailable ${mem}G (min $MINMEM), /data free ${disk}G (min $MINDISK);$desc"
+  [ -z "$bad" ] || { msg="$msg; counts unreadable for:$bad: waiting"; return 1; }
+  [ -e /b6L/ctp/STOP ] && { msg="$msg; STOP exists in /b6L/ctp: holding"; return 1; }
+  local gok=${GATE_OK:-} gc head
+  if [ -z "$gok" ]; then
+    gc=$(tail -1 /etc/cregit-census/batch6L.gate 2>/dev/null | sed -n 's/^CHECK OK [^ ]* cregit \([0-9a-f]\{40\}\).*/\1/p')
+    head=$(sudo -u ec2-user git -C /b6L/cregit-ec2 rev-parse HEAD 2>/dev/null); gok=0; [ -n "$gc" ] && [ "$gc" = "$head" ] && gok=1
+  fi
+  [ "$gok" = 1 ] || { msg="$msg; no passed identity gate for the cregit commit of /b6L/cregit-ec2 (census-batch6L-cregit): waiting"; return 1; }
+  [ "$b4pend" = 0 ] || [ -e /etc/cregit-census/batch6L.no-b4-wait ] || { msg="$msg; batch 4 still has projects to start: waiting"; return 1; }
+  [ "$run" -le "$MAXRUN" ] || { msg="$msg; too many running: waiting"; return 1; }
+  [ "$mem" -ge "$MINMEM" ] || { msg="$msg; memory low: waiting"; return 1; }
+  [ "$disk" -ge "$MINDISK" ] || { msg="$msg; /data low: waiting"; return 1; }
+  msg="$msg; start"; return 0
+}
+if [ "${1:-}" = --decide-only ]; then decide; rc=$?; echo "decide-only: $msg"; exit $rc; fi
+while :; do
+  if decide; then
+    echo "$msg: starting census-batch6L.service" | tee "$ST"
+    systemctl start --no-block census-batch6L.service
+    exit 0
+  fi
+  echo "$msg" > "$ST"
+  sleep 60
+done

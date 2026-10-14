@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# census-batch6L-run (census-batch6L.service): the L projects of batch6 (3) on the
+# batch 2 instance, on their own loop XFS /b6L (own rename lock) with their own ctp clone /b6L/ctp,
+# cregit copy /b6L/cregit-ec2 (95cdc88; path fixed before the start), config and output
+# /b6L/census-2026-10-batch6L. One worker per project. Stop after the running projects:
+# touch /b6L/ctp/STOP (census-batch4-guard does it below 800 GiB free on /data).
+set -euo pipefail
+I=/home/ec2-user/batch6-input; M=$I/manifest.batch6L.tsv
+export CTP_CONFIG=/home/ec2-user/census-batch6L.cfg
+cd /b6L/ctp
+n=$(grep -c -v -e '^#' -e '^[[:space:]]*$' "$M")
+echo "=== $(date -u +%FT%TZ) census-batch6L start (cregit $(git -C /b6L/cregit-ec2 rev-parse --short HEAD) at /b6L/cregit-ec2, ctp $(git rev-parse --short HEAD), $n projects, $n workers, out /b6L/census-2026-10-batch6L)"
+exec .venv/bin/python ctp.py census --manifest "$M" --project-meta "$I/project_meta.batch6L.json" \
+    --workers "$n" --retries 3 --skip-html --latest --tokenizer-worker \
+    --blame-jobs 4 --memory-limit 16GB --min-free-mem-gb 24 --disk-floor-gb 300

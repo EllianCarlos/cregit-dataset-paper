@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Census batch 3L (the 5 L projects of batch 3) on the batch 2 instance, after batch 2 has
+# started all its projects (census-batch3L-wait). Own ctp clone, config and output; the same
+# cregit build /data/cregit-ec2 and the same flags as batch 2, except the manifest and --workers.
+# Stop after the running projects: touch /home/ec2-user/ctp-b3L/STOP. Resume: start the unit again.
+set -euo pipefail
+I=/home/ec2-user/batch3L-input
+export CTP_CONFIG=/home/ec2-user/census-batch3L.cfg
+cd /home/ec2-user/ctp-b3L
+W=$(grep -c -v -e '^#' -e '^[[:space:]]*$' "$I/manifest.batch3L.tsv")
+echo "=== $(date -u +%FT%TZ) census-batch3L start (cregit $(git -C /data/cregit-ec2 rev-parse --short HEAD), ctp $(git rev-parse --short HEAD), workers $W)"
+exec .venv/bin/python ctp.py census --manifest "$I/manifest.batch3L.tsv" \
+    --project-meta "$I/project_meta.batch3L.json" \
+    --workers "$W" --retries 3 --skip-html --latest --tokenizer-worker \
+    --blame-jobs 4 --memory-limit 8GB --min-free-mem-gb 24 --disk-floor-gb 500

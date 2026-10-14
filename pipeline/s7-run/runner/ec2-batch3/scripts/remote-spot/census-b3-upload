@@ -1,0 +1,124 @@
+#!/usr/bin/env python3
+"""census-b3-upload (census-b3-upload.timer, every minute): copy each finished project to S3.
+
+It covers every census part of the instance (/etc/cregit-census/batch.env PARTS; each part's
+CTP and OUT from <part>.env). A project is finished when its last final ledger row ("project") says done or done-dirty and its
+.validated stamp exists. For each one not yet uploaded it copies
+  OUT/<name>/<name>-dataset.parquet, OUT/<name>/<name>.validated,
+  ctp state/<name>/*.json and state/<name>/logs/* (regular files), and a ledger.jsonl snapshot
+to s3://BUCKET/batch3/<a|b>/done/<name>/, lists the prefix back and compares every key and size,
+then writes done/<name>/OK (time, instance, files, sizes, Parquet sha256) and a local marker in
+/data/uploaded/. A restart leaves out exactly the projects that have OK.
+"""
+import hashlib
+import json
+import os
+import shutil
+import subprocess
+import sys
+import tempfile
+import time
+from pathlib import Path
+
+def env(path):
+    out = {}
+    for line in Path(path).read_text().splitlines():
+        if "=" in line:
+            k, v = line.split("=", 1)
+            out[k.strip()] = v.strip().strip('"')
+    return out
+
+
+BENV = env("/etc/cregit-census/batch.env")
+BATCH = BENV["BATCH"]
+PARTS = [(p, Path(e["CTP"]), Path(e["OUT"])) for p in BENV["PARTS"].split()
+         for e in [env(f"/etc/cregit-census/{p}.env")]]
+DEST = f"s3://${RUNNER_BUCKET}/batch3/{BATCH}/done"
+MARK = Path("/data/uploaded")
+
+
+def finished(CTP):
+    final = {}
+    try:
+        with (CTP / "ledger.jsonl").open() as f:
+            for line in f:
+                try:
+                    r = json.loads(line)
+                except ValueError:
+                    continue
+                if r.get("step") == "project" and r.get("project"):
+                    final[r["project"]] = r.get("state")
+    except OSError:
+        return []
+    return [p for p, s in final.items() if s in ("done", "done-dirty")]
+
+
+def sha256(path):
+    h = hashlib.sha256()
+    with path.open("rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def upload(name, part, CTP, OUT):
+    pq = OUT / name / f"{name}-dataset.parquet"
+    stamp = OUT / name / f"{name}.validated"
+    if not (pq.is_file() and stamp.is_file()):
+        return f"{name}: Parquet or stamp missing, later"
+    stage = OUT.parent / "upload-stage"  # same filesystem as OUT, so os.link works
+    stage.mkdir(parents=True, exist_ok=True)
+    tmp = Path(tempfile.mkdtemp(prefix=f"{name}.", dir=stage))
+    try:
+        for f in (pq, stamp):
+            os.link(f, tmp / f.name)
+        st = CTP / "state" / name
+        (tmp / "state" / "logs").mkdir(parents=True)
+        for f in st.glob("*.json"):
+            if f.is_file() and not f.is_symlink():
+                shutil.copy2(f, tmp / "state" / f.name)
+        for f in (st / "logs").glob("*"):
+            if f.is_file() and not f.is_symlink():
+                shutil.copy2(f, tmp / "state" / "logs" / f.name)
+        shutil.copy2(CTP / "ledger.jsonl", tmp / "ledger.jsonl")
+        local = {str(p.relative_to(tmp)): p.stat().st_size for p in tmp.rglob("*") if p.is_file()}
+        subprocess.run(["aws", "s3", "cp", f"{tmp}/", f"{DEST}/{name}/", "--recursive",
+                        "--only-show-errors"], check=True)
+        ls = subprocess.run(["aws", "s3", "ls", f"{DEST}/{name}/", "--recursive"], check=True,
+                            capture_output=True, text=True).stdout
+        prefix = DEST.split("/", 3)[3] + f"/{name}/"
+        remote = {}
+        for line in ls.splitlines():
+            parts = line.split(None, 3)
+            if len(parts) == 4 and parts[3].startswith(prefix):
+                remote[parts[3][len(prefix):]] = int(parts[2])
+        bad = [k for k, v in local.items() if remote.get(k) != v]
+        if bad:
+            return f"{name}: size check FAILED for {bad[:5]}, will retry"
+        ok = tmp / "OK"
+        instance = Path("/sys/devices/virtual/dmi/id/board_asset_tag").read_text().strip()
+        ok.write_text(f"uploaded {time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())} from {instance} part {part}\n"
+                      f"parquet_sha256 {sha256(pq)}\n"
+                      + "".join(f"{v}\t{k}\n" for k, v in sorted(local.items())))
+        subprocess.run(["aws", "s3", "cp", str(ok), f"{DEST}/{name}/OK", "--only-show-errors"], check=True)
+        MARK.mkdir(parents=True, exist_ok=True)
+        (MARK / name).write_text(ok.read_text())
+        return f"{name}: uploaded {len(local)} files, sizes equal, OK written"
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def main():
+    for part, CTP, OUT in PARTS:
+      for name in finished(CTP):
+        if (MARK / name).exists():
+            continue
+        try:
+            print(time.strftime("%FT%TZ", time.gmtime()), upload(name, part, CTP, OUT), flush=True)
+        except (subprocess.CalledProcessError, OSError) as e:
+            print(time.strftime("%FT%TZ", time.gmtime()), f"{name}: upload error {e}, will retry", flush=True)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

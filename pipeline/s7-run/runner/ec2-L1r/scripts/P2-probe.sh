@@ -1,0 +1,106 @@
+# P2-probe.sh (read-only, big EC2): a dry run of the L1r waiter decision on the real state (the waiter is
+# written to a temp file and run with --decide-only: it starts nothing and writes no status), the L23
+# start markers, and the cgroup format the firm protection reads.
+set -uo pipefail
+echo "== $(date -u +%FT%TZ)"
+echo "/bL23/ctp/ledger.jsonl: $([ -e /bL23/ctp/ledger.jsonl ] && echo present || echo absent); /bL23/ctp/state entries: $(ls -A /bL23/ctp/state 2>/dev/null | wc -l)"
+echo "census-L23: $(systemctl is-active census-L23.service); waiter: $(cut -c1-300 /run/census-L23-wait.status)"
+p=$(pgrep -o -u ec2-user java); [ -n "$p" ] && echo "cgroup of java pid $p: $(cat /proc/$p/cgroup)"
+W=$(mktemp /tmp/census-L1r-wait.dry.XXXX)
+cat > $W <<'EOF_W'
+#!/usr/bin/env bash
+# census-L1r-wait (census-L1r-wait.service, root; 2026-10-12, made from census-L23-wait):
+# start census-L1r (batch 1 rerun, L: torvalds__linux and SAP__project-foxhound, 2 workers) only when
+# census L23 has started and the big EC2 has room. L1r must not take capacity before L23 (user rule,
+# 2026-10-12). Every 60 s it starts census-L1r.service when ALL hold:
+#   (0) census L23 has started: census-L23.service is active, or /bL23/ctp has a ledger.jsonl or a
+#       state/<name>/ dir (ctp writes them when a project starts; they stay after L23 ends).
+#       The file /bL1r/ctp/IGNORE-L23 removes this rule (only on a user decision);
+#   (1) at most MAXRUN (default 12, the limit of census-L23-wait) other projects run on the instance
+#       (batch2, batch3L, batch4p1-3, batch5L, batch6L, L7-20, L22, L7-20b, L23; census-steps --counts
+#       of each active census; L23 counts as min(4, running + queued), its 4 worker slots), so <= 14
+#       after the start;
+#   (2) MemAvailable >= MINMEM_GB (default 120 GiB);
+#   (3) /data has >= MINDISK_GB (default 1600) GiB free: the guard floor 800 GiB plus about 700 GiB for
+#       L1r (batch 1: Linux used 435 GB, the foxhound cleanup freed 242 GiB) and a margin;
+#   (4) the identity gate passed for the commit /bL1r/cregit-ec2 is at: the last line of
+#       /etc/cregit-census/L1r.gate is "CHECK OK <time> cregit <that commit> ..." (census-L1r-cregit);
+#   (5) the inputs check: /home/ec2-user/L1r-input/SHA256SUMS (L1-setup.sh copies s3://BUCKET/L1r/input/
+#       there; the waiter copies nothing).
+# A STOP file in /bL1r/ctp holds the start. Status: /run/census-L1r-wait.status.
+# --decide-only: print the decision once and exit (0 = would start, 1 = would wait); starts nothing.
+# Test overrides: COUNTS_<name> ("RUNNING NOT_STARTED"), ACTIVE_<name> per census name (batch2 batch3L
+# batch4p1 batch4p2 batch4p3 batch5L batch6L L7_20 L22 L7_20b L23), STARTED_L23 (1/0), MEMAVAIL_GB,
+# DATAFREE_GB, GATE_OK (1/0), INPUT_OK (1/0), STOPF (the STOP path).
+set -uo pipefail
+MAXRUN=${MAXRUN:-12}; MINMEM=${MINMEM_GB:-120}; MINDISK=${MINDISK_GB:-1600}
+ST=/run/census-L1r-wait.status; IN=/home/ec2-user/L1r-input; STOPF=${STOPF:-/bL1r/ctp/STOP}
+CENS="batch2|census-batch2.service|/home/ec2-user/ctp|/home/ec2-user/batch2-input/manifest.batch2.tsv
+batch3L|census-batch3L.service|/home/ec2-user/ctp-b3L|/home/ec2-user/batch3L-input/manifest.batch3L.tsv
+batch4p1|census-batch4p1.service|/b4p1/ctp|/home/ec2-user/batch4-input/manifest.batch4p1.tsv
+batch4p2|census-batch4p2.service|/b4p2/ctp|/home/ec2-user/batch4-input/manifest.batch4p2.tsv
+batch4p3|census-batch4p3.service|/b4p3/ctp|/home/ec2-user/batch4-input/manifest.batch4p3.tsv
+batch5L|census-batch5L.service|/b5L/ctp|/home/ec2-user/batch5-input/manifest.batch5L.tsv
+batch6L|census-batch6L.service|/b6L/ctp|/home/ec2-user/batch6-input/manifest.batch6L.tsv
+L7_20|census-L7-20.service|/bL7/ctp|/home/ec2-user/L7-20-input/manifest.L7-20.tsv
+L22|census-L22.service|/bL22/ctp|/home/ec2-user/L22-input/manifest.batch22L.tsv
+L7_20b|census-L7-20b.service|/bL7b/ctp|/home/ec2-user/L7-20b-input/manifest.L7-20b.tsv
+L23|census-L23.service|/bL23/ctp|/home/ec2-user/L23-input/manifest.L23.tsv"
+inputs() {  # 0 when the inputs check (local only)
+  [ -n "${INPUT_OK:-}" ] && { [ "$INPUT_OK" = 1 ]; return; }
+  (cd $IN 2>/dev/null && sha256sum --quiet -c SHA256SUMS >/dev/null 2>&1)
+}
+l23_started() {  # 0 when census L23 has started (now or before); sets l23 (the reason)
+  if [ -n "${STARTED_L23:-}" ]; then l23="L23 started=$STARTED_L23 (override)"; [ "$STARTED_L23" = 1 ]; return; fi
+  local a=${ACTIVE_L23-$(systemctl is-active census-L23.service)}
+  case $a in active|activating|deactivating) l23="L23 $a"; return 0 ;; esac
+  [ -e /bL23/ctp/ledger.jsonl ] && { l23="L23 $a, ledger present (started before)"; return 0; }
+  [ -n "$(ls -A /bL23/ctp/state 2>/dev/null)" ] && { l23="L23 $a, state dirs present (started before)"; return 0; }
+  [ -e /bL1r/ctp/IGNORE-L23 ] && { l23="L23 $a, rule removed by /bL1r/ctp/IGNORE-L23"; return 0; }
+  l23="L23 $a, not started"; return 1
+}
+decide() {  # sets msg; returns 0 = start
+  local run=0 bad="" n u c m s cv av r p k desc="" l23="" l23ok=0
+  while IFS='|' read -r n u c m; do
+    av="ACTIVE_$n"; s=${!av-$(systemctl is-active "$u")}
+    case $s in active|activating|deactivating) ;; *) desc="$desc $n=$s"; continue ;; esac
+    cv="COUNTS_$n"; read -r r p < <(echo "${!cv-$(/usr/local/bin/census-steps --counts "$c" "$m" 2>/dev/null || echo '? ?')}")
+    case "$r$p" in *[!0-9]*|'') bad="$bad $n"; desc="$desc $n=?"; continue ;; esac
+    # L23 (4 workers): count its free worker slots with queued rows as running, so L1r never takes
+    # the slot of an L23 row that is about to start
+    if [ "$n" = L23 ] && [ "$r" -lt 4 ] && [ "$p" -gt 0 ]; then k=$(( 4 - r < p ? 4 - r : p )); desc="$desc (+${k} L23 slots)"; r=$((r + k)); fi
+    run=$((run + r)); desc="$desc $n=${r}r/${p}q"
+  done <<<"$CENS"
+  local mem=${MEMAVAIL_GB:-$(awk '/MemAvailable/{printf "%d", $2/1048576}' /proc/meminfo)}
+  local disk=${DATAFREE_GB:-$(df -BG --output=avail /data | tail -1 | tr -dc 0-9)}
+  l23_started && l23ok=1
+  msg="$(date -u +%FT%TZ) $l23; other projects running $run (max $MAXRUN), MemAvailable ${mem}G (min $MINMEM), /data free ${disk}G (min $MINDISK);$desc"
+  [ "$l23ok" = 1 ] || { msg="$msg; census L23 has not started (L1r starts after L23): waiting"; return 1; }
+  [ -z "$bad" ] || { msg="$msg; counts unreadable for:$bad: waiting"; return 1; }
+  [ -e "$STOPF" ] && { msg="$msg; STOP exists in /bL1r/ctp: holding"; return 1; }
+  [ "$run" -le "$MAXRUN" ] || { msg="$msg; too many running: waiting"; return 1; }
+  [ "$mem" -ge "$MINMEM" ] || { msg="$msg; memory low: waiting"; return 1; }
+  [ "$disk" -ge "$MINDISK" ] || { msg="$msg; /data low: waiting"; return 1; }
+  local gok=${GATE_OK:-} gc head
+  if [ -z "$gok" ]; then
+    gc=$(tail -1 /etc/cregit-census/L1r.gate 2>/dev/null | sed -n 's/^CHECK OK [^ ]* cregit \([0-9a-f]\{40\}\).*/\1/p')
+    head=$(sudo -u ec2-user git -C /bL1r/cregit-ec2 rev-parse HEAD 2>/dev/null); gok=0; [ -n "$gc" ] && [ "$gc" = "$head" ] && gok=1
+  fi
+  [ "$gok" = 1 ] || { msg="$msg; no passed identity gate for the cregit commit of /bL1r/cregit-ec2 (census-L1r-cregit): waiting"; return 1; }
+  inputs || { msg="$msg; inputs $IN missing or not checked: waiting"; return 1; }
+  msg="$msg; start"; return 0
+}
+if [ "${1:-}" = --decide-only ]; then decide; rc=$?; echo "decide-only: $msg"; exit $rc; fi
+while :; do
+  if decide; then
+    echo "$msg: starting census-L1r.service" | tee "$ST"
+    systemctl start --no-block census-L1r.service
+    exit 0
+  fi
+  echo "$msg" > "$ST"
+  sleep 60
+done
+EOF_W
+echo "== dry run (decide-only)"; bash $W --decide-only; echo "rc=$?"
+echo "== dry run with L23 marked started (STARTED_L23=1)"; STARTED_L23=1 bash $W --decide-only | grep -o 'L23 started.*(max 12)\|; [^;]*$'; 
+rm -f $W

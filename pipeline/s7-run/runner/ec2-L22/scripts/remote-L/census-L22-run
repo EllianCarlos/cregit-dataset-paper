@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# census-L22-run (census-L22.service): the 2 L projects of batch 22 (GNU supplement: gcc, emacs;
+# user decision 2026-10-10 ~15:05 UTC) with 2 workers, on the
+# batch 2 instance, on their own loop XFS /bL22 (own rename lock) with their own ctp clone /bL22/ctp,
+# cregit copy /bL22/cregit-ec2 (checked out at 1f17663 and gated before the start; path fixed), config and output
+# /bL22/census-2026-10-L22. Stop after the running projects:
+# touch /bL22/ctp/STOP (census-batch4-guard does it below 800 GiB free on /data).
+set -euo pipefail
+I=/home/ec2-user/L22-input; M=$I/manifest.batch22L.tsv
+export CTP_CONFIG=/home/ec2-user/census-L22.cfg
+cd /bL22/ctp
+n=$(grep -c -v -e '^#' -e '^[[:space:]]*$' "$M")
+echo "=== $(date -u +%FT%TZ) census-L22 start (cregit $(git -C /bL22/cregit-ec2 rev-parse --short HEAD) at /bL22/cregit-ec2, ctp $(git rev-parse --short HEAD), $n projects, 2 workers, out /bL22/census-2026-10-L22)"
+exec .venv/bin/python ctp.py census --manifest "$M" --project-meta "$I/project_meta.batch22L.json" \
+    --workers 2 --retries 3 --skip-html --latest --tokenizer-worker \
+    --blame-jobs 4 --memory-limit 16GB --min-free-mem-gb 24 --disk-floor-gb 300

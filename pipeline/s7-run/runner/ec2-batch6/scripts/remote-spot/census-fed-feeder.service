@@ -1,0 +1,7 @@
+[Unit]
+Description=cregit census fed spot parts: start the next queued part when a slot is free
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/census-fed-feeder
+TimeoutStartSec=3600

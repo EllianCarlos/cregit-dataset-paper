@@ -1,0 +1,7 @@
+[Unit]
+Description=cregit census batch 3 spot: copy finished projects to S3 every minute
+
+[Timer]
+OnActiveSec=1min
+OnUnitInactiveSec=1min
+AccuracySec=10s

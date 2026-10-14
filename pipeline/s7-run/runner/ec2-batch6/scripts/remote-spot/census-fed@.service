@@ -1,0 +1,23 @@
+[Unit]
+Description=cregit census fed spot part %i (ctp census, own loop XFS /w/%i)
+Wants=network-online.target
+After=network-online.target nix-daemon.service
+RequiresMountsFor=/w/%i
+OnSuccess=census-fed-finalize@%i.service
+OnFailure=census-fed-finalize@%i.service
+
+[Service]
+Type=simple
+User=ec2-user
+Group=ec2-user
+WorkingDirectory=/w/%i/ctp
+ExecStart=/usr/local/bin/census-fed-run %i
+StandardOutput=append:/data/logs/fed-%i.log
+StandardError=append:/data/logs/fed-%i.log
+Restart=no
+# an OOM kill of one project must not stop the whole census (systemd default is stop)
+OOMPolicy=continue
+LimitNOFILE=1048576
+LimitNPROC=infinity
+TasksMax=infinity
+TimeoutStopSec=300

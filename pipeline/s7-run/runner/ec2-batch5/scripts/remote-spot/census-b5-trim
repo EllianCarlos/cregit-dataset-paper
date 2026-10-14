@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# census-b5-trim (root, before every census-b5-live): fstrim each part's loop XFS /w/<id>, so blocks
+# freed inside (cleaned-up clones) are punched out of the sparse image and the host disk gets them back.
+. /etc/cregit-census/s5/batch.env
+for id in $IDS; do mountpoint -q /w/$id && fstrim /w/$id >/dev/null 2>&1; done
+exit 0

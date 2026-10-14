@@ -1,0 +1,8 @@
+[Unit]
+Description=cregit census L7-20: write /bL7/ctp/STOP once every row before the L7-20b split has started
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/census-L7-20-split
+TimeoutStartSec=60
+LogLevelMax=notice

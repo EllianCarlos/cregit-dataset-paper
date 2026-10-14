@@ -1,0 +1,23 @@
+[Unit]
+Description=cregit census L22: the 2 L projects of batch 22 (gcc, emacs), 2 workers (ctp census, loop XFS /bL22)
+Wants=network-online.target
+After=network-online.target nix-daemon.service
+RequiresMountsFor=/data /bL22
+OnSuccess=census-L22-finalize.service
+OnFailure=census-L22-finalize.service
+
+[Service]
+Type=simple
+User=ec2-user
+Group=ec2-user
+WorkingDirectory=/bL22/ctp
+ExecStart=/usr/local/bin/census-L22-run
+StandardOutput=append:/data/logs/L22.log
+StandardError=append:/data/logs/L22.log
+Restart=no
+# an OOM kill of one project must not stop the whole census (systemd default is stop)
+OOMPolicy=continue
+LimitNOFILE=1048576
+LimitNPROC=infinity
+TasksMax=infinity
+TimeoutStopSec=300

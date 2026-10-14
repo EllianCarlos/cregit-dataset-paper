@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# census-b3-run PART (census-b3@PART.service): one census part of batch 3a/3b on a spot instance.
+# Same cregit build (95cdc88 at /data/cregit-ec2) and flags as batch 2, except --memory-limit 16GB
+# (lagadic__visp failed in firm at 8 GB on batch 2) and the part's manifest and worker count.
+# Stop after the running projects: touch $CTP/STOP (census-b3-watch does it on a spot notice).
+set -euo pipefail
+. /etc/cregit-census/batch.env; . "/etc/cregit-census/$1.env"
+I=/home/ec2-user/b3-input; M="$I/manifest.$PART.run.tsv"
+export CTP_CONFIG=$CFG
+cd "$CTP"
+echo "=== $(date -u +%FT%TZ) census batch3 part $PART start on $(cat /sys/devices/virtual/dmi/id/board_asset_tag) (cregit $(git -C /data/cregit-ec2 rev-parse --short HEAD), ctp $(git rev-parse --short HEAD), $(grep -c -v -e '^#' -e '^[[:space:]]*$' "$M") projects, $WORKERS workers, out $OUT)"
+exec .venv/bin/python ctp.py census --manifest "$M" \
+    --project-meta "$I/project_meta.batch3$BATCH.json" \
+    --workers "$WORKERS" --retries 3 --skip-html --latest --tokenizer-worker \
+    --blame-jobs 4 --memory-limit 16GB --min-free-mem-gb 24 --disk-floor-gb 500

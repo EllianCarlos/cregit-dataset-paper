@@ -210,8 +210,16 @@ the same sha256 on each machine.
 | libexpat gate, one machine | about 3 min (2026-10-11 04:27:51 to 04:30:36 UTC) | measured |
 | connectionlens (387,925 rows), one worker | about 8 min (2026-10-14 14:53 to 15:01 UTC) | measured |
 
-`make build` prints "not ready": the runner scripts of the EC2 machines are not in a
-source repository yet.
+The scripts that ran the build on EC2 are in `pipeline/s7-run/runner/`: machine setup,
+install, part feed, restart, watchdog and publish. `runner/INVENTORY.tsv` lists each file of
+the original work directory, and the reason to copy or skip it. `runner/ORIGIN.tsv` gives
+the source sha256 of each copy. 225 copies are verbatim. 210 copies have tokens
+`${RUNNER_*}` in place of the account values (bucket, account id, profile, region, EC2 ids,
+home paths). `python3 -I pipeline/s7-run/runner/render.py --check` checks the copies.
+With your values in `runner/runner.env`, `render.py --out DIR` gives files that you can run.
+
+`make build` prints "not ready": the full build needs an AWS account, a bucket and many
+machine-days. Use `make rebuild-one` for one project.
 
 ### 4.5 One project again: `make rebuild-one PROJECT=<owner__repo>`
 
@@ -290,8 +298,8 @@ Found on 2026-10-14 (no longer UNKNOWN):
 - Fill `data/SHA256SUMS` at the v1 freeze. Then `make verify` works.
 - Publish the tool bundles (`tools.lock`), the per-project ledgers and the final sidecar
   with the dataset. Then finish steps 4-6 of `rebuild-one`.
-- Commit the EC2 runner scripts (machine setup, part feed, restart, publish) to a source
-  repository, remove the account data, and copy them here. Then `make build` can work.
+- Write one entry point for `make build` over the runner scripts of `pipeline/s7-run/runner/`.
+  Now each batch has its own scripts.
 - Write the final merge, and the offline replay of S4-S6 (`make select`).
 - Decide on the web captures that are not copied: `rosters/raw/` (except the ASF
   `projects.json` that S5 reads) and `sources/company-pages/raw/`, and the Spinellis

@@ -1,0 +1,76 @@
+{
+ "LaunchTemplateName": "cregit-census-batch3-spot",
+ "VersionDescription": "batch 3 spot: AMI ${RUNNER_AMI_SPOT}, IMDSv2, gp3 200 GiB encrypted, shutdown terminates",
+ "TagSpecifications": [
+  {
+   "ResourceType": "launch-template",
+   "Tags": [
+    {
+     "Key": "Project",
+     "Value": "cregit-census"
+    },
+    {
+     "Key": "Owner",
+     "Value": "${RUNNER_USER}"
+    },
+    {
+     "Key": "Batch",
+     "Value": "3"
+    },
+    {
+     "Key": "Name",
+     "Value": "cregit-census-batch3-spot"
+    }
+   ]
+  }
+ ],
+ "LaunchTemplateData": {
+  "ImageId": "${RUNNER_AMI_SPOT}",
+  "IamInstanceProfile": {
+   "Name": "cregit-census-ec2"
+  },
+  "SecurityGroupIds": [
+   "${RUNNER_SECURITY_GROUP}"
+  ],
+  "InstanceInitiatedShutdownBehavior": "terminate",
+  "MetadataOptions": {
+   "HttpTokens": "required",
+   "HttpEndpoint": "enabled",
+   "HttpPutResponseHopLimit": 1
+  },
+  "BlockDeviceMappings": [
+   {
+    "DeviceName": "/dev/xvda",
+    "Ebs": {
+     "VolumeSize": 200,
+     "VolumeType": "gp3",
+     "Encrypted": true,
+     "DeleteOnTermination": true
+    }
+   }
+  ],
+  "TagSpecifications": [
+   {
+    "ResourceType": "volume",
+    "Tags": [
+     {
+      "Key": "Project",
+      "Value": "cregit-census"
+     },
+     {
+      "Key": "Owner",
+      "Value": "${RUNNER_USER}"
+     },
+     {
+      "Key": "Batch",
+      "Value": "3"
+     },
+     {
+      "Key": "Name",
+      "Value": "cregit-census-batch3-spot"
+     }
+    ]
+   }
+  ]
+ }
+}

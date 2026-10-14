@@ -24,7 +24,7 @@ So fix them in the source repository, commit there, and sync again.
 | employer | 6 | 9 |
 | ec2-id | 2 | 13 |
 | source-org | 1 | 1 |
-| census-name | 87 | 422 occurrences |
+| census-name | 484 | 11720 occurrences |
 
 Kind census-name: identifiers and words that contain "census". The repository says
 "dataset" (stages: selection, build, merge, validate). Rename them later in one pass,
@@ -123,9 +123,221 @@ File paths that contain "census":
 - `pipeline/s7-run/local-b/census.cfg`
 - `pipeline/s7-run/local-c/census.cfg`
 - `pipeline/s7-run/local-d/census.cfg`
+- `pipeline/s7-run/runner/census-backup/README.md`
+- `pipeline/s7-run/runner/census-backup/backup_local.sh`
+- `pipeline/s7-run/runner/census-backup/deploy-big.sh`
+- `pipeline/s7-run/runner/census-backup/install-big.sh`
+- `pipeline/s7-run/runner/census-backup/remote/census-backup`
+- `pipeline/s7-run/runner/census-watchdog/README.md`
+- `pipeline/s7-run/runner/census-watchdog/watchdog.sh`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-cregit`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-finalize.service`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-finalize`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-firm.service`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-firm.timer`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-firm`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-live.service`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-live.timer`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-live`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-run`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-wait.service`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-wait`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r.service`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-backup`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-batch4-guard`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-other-done`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-cregit`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-finalize.service`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-finalize`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-live.service`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-live.timer`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-live`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-run`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-wait.service`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-wait`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22.service`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-backup`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-batch4-guard`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-other-done`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-cregit`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-finalize.service`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-finalize`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-live.service`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-live.timer`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-live`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-run`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-wait.service`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-wait`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23.service`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-backup`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-batch4-guard`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-other-done`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-cregit`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-finalize.service`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-finalize`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-live.service`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-live.timer`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-live`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-run`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-wait.service`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-wait`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20.service`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-backup`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-batch4-guard`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-batch6L-cregit`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-other-done`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20-split.service`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20-split.timer`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20-split`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-cregit`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-finalize.service`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-finalize`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-live.service`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-live.timer`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-live`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-run`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-wait.service`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-wait`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b.service`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-backup`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-batch4-guard`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-other-done`
+- `pipeline/s7-run/runner/ec2-batch2/scripts/remote/census-batch2-finalize.service`
+- `pipeline/s7-run/runner/ec2-batch2/scripts/remote/census-batch2-finalize`
+- `pipeline/s7-run/runner/ec2-batch2/scripts/remote/census-batch2-live.service`
+- `pipeline/s7-run/runner/ec2-batch2/scripts/remote/census-batch2-live.timer`
+- `pipeline/s7-run/runner/ec2-batch2/scripts/remote/census-batch2-live`
+- `pipeline/s7-run/runner/ec2-batch2/scripts/remote/census-batch2-run`
+- `pipeline/s7-run/runner/ec2-batch2/scripts/remote/census-batch2.service`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-check`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-finalize.service`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-finalize`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-live.service`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-live.timer`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-live`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-parts-init`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-prep`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-run`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-start`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-upload.service`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-upload.timer`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-upload`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-watch.service`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-watch`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3@.service`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch2-finalize`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch2-live`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-finalize.service`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-finalize`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-live.service`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-live.timer`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-live`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-run`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-wait.service`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-wait`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L.service`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-other-done`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-steps`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-finalize.service`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-finalize`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-guard.service`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-guard.timer`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-guard`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-live.service`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-live.timer`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-live`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-run`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4p1.service`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4p2.service`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4p3.service`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-other-done`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch4-guard`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-finalize.service`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-finalize`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-live.service`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-live.timer`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-live`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-run`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L.service`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-other-done`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b3-finalize`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-check`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-derive`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-finalize.service`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-finalize`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-live.service`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-live.timer`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-live`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-parts-init`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-prep`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-run`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-start`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-trim`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-upload.service`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-upload.timer`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-upload`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-watch.service`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-watch`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5@.service`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-spot-decide`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-backup`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch4-guard`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-cregit`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-finalize.service`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-finalize`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-live.service`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-live.timer`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-live`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-run`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-wait.service`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-wait`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L.service`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-other-done`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-check`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-common`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-derive`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-enqueue`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-feeder.service`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-feeder.timer`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-feeder`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-finalize@.service`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-finalize`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-live.service`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-live.timer`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-live`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-part-init`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-run`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-trim`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-upload.service`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-upload.timer`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-upload`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-watch.service`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-watch`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-workload`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed@.service`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-spot-decide`
 
 Identifiers and words in file contents (identifier: occurrences, files; more than 4 files gives the count only):
 
+- `-/b5L/census-2026-10-batch5L`: 2, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-finalize`
+- `-/b6L/census-2026-10-batch6L`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-finalize`
+- `-/bL1r/census-2026-10-L1r`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-finalize`
+- `-/bL22/census-2026-10-L22`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-finalize`
+- `-/bL23/census-2026-10-L23`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-finalize`
+- `-/bL7/census-2026-10-L7-20`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-finalize`
+- `-/bL7b/census-2026-10-L7-20b`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-finalize`
+- `-/data/census-2026-10-batch2`: 5, 5 files
+- `-/data/census-2026-10-batch3L`: 3, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-finalize`
+- `-/etc/cregit-census`: 4, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-common`, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-spot-decide`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `-/home/ec2-user/census-batch2.cfg`: 5, 5 files
+- `-/home/ec2-user/census-batch3L.cfg`: 3, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-finalize`
+- `-/run/census-L1r-firm.status`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-firm`
+- `-/run/census-L7-20-split.status`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20-split`
+- `-/usr/local/bin/census-fed-check`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-feeder`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-1.sh`
+- `-/usr/local/bin/census-fed-part-init`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-feeder`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-1.sh`
+- `-census-L1r.service`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-firm`
+- `-census-fed`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-feeder`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-1.sh`
+- `.orig-4census`: 2, `pipeline/s7-run/runner/ec2-batch6/README.md`, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-L2.sh`
 - `//cregit-census-905418043997-usw2`: 12, 6 files
 - `//github.com/GoogleCloudPlatform/opencensus-jetty-demo.git`: 3, `pipeline/s7-run/frame.layer5.csv`, `pipeline/s7-run/manifest.layer5.tsv`, `pipeline/s7-run/project_meta.layer5.json`
 - `/Projects/cregit-workspace/census-local-`: 1, `pipeline/s7-run/prelim_merge.py`
@@ -134,7 +346,209 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `/Projects/cregit-workspace/census-local-b`: 2, `pipeline/s7-run/README.md`, `pipeline/s7-run/failed-projects.md`
 - `/Projects/cregit-workspace/census-local-c`: 2, `pipeline/s7-run/README.md`
 - `/Projects/cregit-workspace/census-local-d`: 2, `pipeline/s7-run/README.md`, `pipeline/s7-run/failed-projects.md`
-- `/etc/cregit-census`: 4, `pipeline/s7-run/README.md`, `pipeline/s7-run/blame-time-limit.md`
+- `/b4p1/census-2026-10-batch4`: 15, 15 files
+- `/b4p2/census-2026-10-batch4`: 15, 15 files
+- `/b4p3/census-2026-10-batch4`: 15, 15 files
+- `/b4pK/census-2026-10-batch4`: 3, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-run`
+- `/b5L/census-2026-10-batch5L.`: 2, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-run`
+- `/b5L/census-2026-10-batch5L`: 19, 18 files
+- `/b6L/census-2026-10-batch6L.`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-run`
+- `/b6L/census-2026-10-batch6L`: 18, 15 files
+- `/bL1r/census-2026-10-L1r.`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-run`
+- `/bL1r/census-2026-10-L1r`: 8, 5 files
+- `/bL22/census-2026-10-L22.`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-run`
+- `/bL22/census-2026-10-L22`: 14, 11 files
+- `/bL23/census-2026-10-L23.`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-run`
+- `/bL23/census-2026-10-L23`: 10, 7 files
+- `/bL7/census-2026-10-L7-20.`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-run`
+- `/bL7/census-2026-10-L7-20`: 23, 18 files
+- `/bL7b/census-2026-10-L7-20b.`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-run`
+- `/bL7b/census-2026-10-L7-20b`: 13, 10 files
+- `/census-2026-10-`: 6, 6 files
+- `/census-`: 1, `pipeline/s7-run/runner/spot-persons-db.sh`
+- `/census-b5`: 6, `pipeline/s7-run/runner/ec2-batch3/scripts/post-relaunch-a.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/post-relaunch-b.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/post-relaunch.remote.sh`
+- `/census-batch4p`: 1, `pipeline/s7-run/runner/ec2-batch4/scripts/q4-why.sh`
+- `/census-fed`: 6, `pipeline/s7-run/runner/ec2-batch3/scripts/post-relaunch-a.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/post-relaunch-b.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/post-relaunch.remote.sh`
+- `/cregit-workspace/census-2026-10`: 1, `pipeline/s7-run/runner/census-backup/backup_local.sh`
+- `/data/census-2026-10-batch2`: 17, 15 files
+- `/data/census-2026-10-batch3L`: 21, 18 files
+- `/data/census-2026-10-batch3`: 7, 7 files
+- `/data/logs/census-backup.log`: 17, 16 files
+- `/dataK/census-2026-10-batch3a`: 7, 7 files
+- `/etc/cregit-census/censuses`: 61, 26 files
+- `/etc/cregit-census`: 461, 129 files
+- `/etc/systemd/system/census-L1r-finalize.service.new`: 3, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L1r-finalize.service`: 1, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L1r-firm.service.new`: 3, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L1r-firm.service`: 1, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L1r-firm.timer.new`: 3, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L1r-firm.timer`: 1, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L1r-live.service.new`: 3, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L1r-live.service`: 1, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L1r-live.timer.new`: 3, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L1r-live.timer`: 1, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L1r-wait.service.d`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L4-start-now.sh`
+- `/etc/systemd/system/census-L1r-wait.service.new`: 3, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L1r-wait.service`: 1, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L1r.service.new`: 3, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L1r.service`: 1, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L22-finalize.service.new`: 3, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L22-finalize.service`: 1, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L22-live.service.new`: 3, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L22-live.service`: 1, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L22-live.timer.new`: 3, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L22-live.timer`: 1, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L22-wait.service.new`: 3, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L22-wait.service`: 1, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L22.service.new`: 3, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L22.service`: 1, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L23-finalize.service.new`: 3, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L23-finalize.service`: 1, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L23-live.service.new`: 3, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L23-live.service`: 1, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L23-live.timer.new`: 3, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L23-live.timer`: 1, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L23-wait.service.new`: 3, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L23-wait.service`: 1, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L23.service.new`: 3, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L23.service`: 1, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20-finalize.service.new`: 3, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20-finalize.service`: 1, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20-live.service.new`: 3, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20-live.service`: 1, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20-live.timer.new`: 3, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20-live.timer`: 1, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20-split.service.new`: 3, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20-split.service`: 1, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20-split.timer.new`: 3, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20-split.timer`: 1, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20-wait.service.new`: 3, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20-wait.service`: 1, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20.service.new`: 3, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20.service`: 1, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20b-finalize.service.new`: 3, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20b-finalize.service`: 1, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20b-live.service.new`: 3, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20b-live.service`: 1, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20b-live.timer.new`: 3, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20b-live.timer`: 1, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20b-wait.service.new`: 3, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20b-wait.service`: 1, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20b.service.new`: 3, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-L7-20b.service`: 1, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-b3-finalize.service.new`: 15, 5 files
+- `/etc/systemd/system/census-b3-finalize.service`: 5, 5 files
+- `/etc/systemd/system/census-b3-live.service.new`: 15, 5 files
+- `/etc/systemd/system/census-b3-live.service`: 5, 5 files
+- `/etc/systemd/system/census-b3-live.timer.new`: 15, 5 files
+- `/etc/systemd/system/census-b3-live.timer`: 5, 5 files
+- `/etc/systemd/system/census-b3-upload.service.new`: 15, 5 files
+- `/etc/systemd/system/census-b3-upload.service`: 5, 5 files
+- `/etc/systemd/system/census-b3-upload.timer.new`: 15, 5 files
+- `/etc/systemd/system/census-b3-upload.timer`: 5, 5 files
+- `/etc/systemd/system/census-b3-watch.service.new`: 15, 5 files
+- `/etc/systemd/system/census-b3-watch.service`: 5, 5 files
+- `/etc/systemd/system/census-b3`: 22, 6 files
+- `/etc/systemd/system/census-b5-finalize.service.new`: 6, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/etc/systemd/system/census-b5-finalize.service`: 2, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/etc/systemd/system/census-b5-live.service.new`: 6, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/etc/systemd/system/census-b5-live.service`: 2, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/etc/systemd/system/census-b5-live.timer.new`: 6, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/etc/systemd/system/census-b5-live.timer`: 2, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/etc/systemd/system/census-b5-upload.service.new`: 6, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/etc/systemd/system/census-b5-upload.service`: 2, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/etc/systemd/system/census-b5-upload.timer.new`: 6, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/etc/systemd/system/census-b5-upload.timer`: 2, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/etc/systemd/system/census-b5-watch.service.new`: 6, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/etc/systemd/system/census-b5-watch.service`: 2, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/etc/systemd/system/census-b5`: 8, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/etc/systemd/system/census-backup.service`: 2, `pipeline/s7-run/runner/census-backup/deploy-big.sh`, `pipeline/s7-run/runner/census-backup/install-big.sh`
+- `/etc/systemd/system/census-backup.timer`: 2, `pipeline/s7-run/runner/census-backup/deploy-big.sh`, `pipeline/s7-run/runner/census-backup/install-big.sh`
+- `/etc/systemd/system/census-batch2-finalize.service`: 2, `pipeline/s7-run/runner/ec2-batch2/scripts/06-install.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p2-read.sh`
+- `/etc/systemd/system/census-batch2-live.service`: 1, `pipeline/s7-run/runner/ec2-batch2/scripts/06-install.sh`
+- `/etc/systemd/system/census-batch2-live.timer`: 2, `pipeline/s7-run/runner/ec2-batch2/scripts/06-install.sh`
+- `/etc/systemd/system/census-batch2.service`: 2, `pipeline/s7-run/runner/ec2-batch2/scripts/06-install.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p2-read.sh`
+- `/etc/systemd/system/census-batch2`: 1, `pipeline/s7-run/runner/ec2-batch2/scripts/06-install.sh`
+- `/etc/systemd/system/census-batch3L-finalize.service.new`: 6, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `/etc/systemd/system/census-batch3L-finalize.service`: 2, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `/etc/systemd/system/census-batch3L-live.service.new`: 6, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `/etc/systemd/system/census-batch3L-live.service`: 2, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `/etc/systemd/system/census-batch3L-live.timer.new`: 6, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `/etc/systemd/system/census-batch3L-live.timer`: 2, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `/etc/systemd/system/census-batch3L-wait.service.new`: 6, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `/etc/systemd/system/census-batch3L-wait.service`: 2, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `/etc/systemd/system/census-batch3L.service.new`: 6, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `/etc/systemd/system/census-batch3L.service`: 2, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `/etc/systemd/system/census-batch4-finalize.service.new`: 6, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `/etc/systemd/system/census-batch4-finalize.service`: 2, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `/etc/systemd/system/census-batch4-guard.service.new`: 6, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `/etc/systemd/system/census-batch4-guard.service`: 2, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `/etc/systemd/system/census-batch4-guard.timer.new`: 6, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `/etc/systemd/system/census-batch4-guard.timer`: 2, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `/etc/systemd/system/census-batch4-live.service.new`: 6, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `/etc/systemd/system/census-batch4-live.service`: 2, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `/etc/systemd/system/census-batch4-live.timer.new`: 6, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `/etc/systemd/system/census-batch4-live.timer`: 2, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `/etc/systemd/system/census-batch4p1.service.new`: 6, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `/etc/systemd/system/census-batch4p1.service`: 2, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `/etc/systemd/system/census-batch4p2.service.new`: 6, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `/etc/systemd/system/census-batch4p2.service`: 2, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `/etc/systemd/system/census-batch4p3.service.new`: 6, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `/etc/systemd/system/census-batch4p3.service`: 2, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `/etc/systemd/system/census-batch5L-finalize.service.new`: 3, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `/etc/systemd/system/census-batch5L-finalize.service`: 1, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `/etc/systemd/system/census-batch5L-live.service.new`: 3, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `/etc/systemd/system/census-batch5L-live.service`: 1, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `/etc/systemd/system/census-batch5L-live.timer.new`: 3, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `/etc/systemd/system/census-batch5L-live.timer`: 1, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `/etc/systemd/system/census-batch5L.service.new`: 3, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `/etc/systemd/system/census-batch5L.service`: 1, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `/etc/systemd/system/census-batch6L-finalize.service.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-batch6L-finalize.service`: 1, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-batch6L-live.service.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-batch6L-live.service`: 1, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-batch6L-live.timer.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-batch6L-live.timer`: 1, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-batch6L-wait.service.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-batch6L-wait.service`: 1, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-batch6L.service.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-batch6L.service`: 1, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`
+- `/etc/systemd/system/census-fed-feeder.service.new`: 5, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/etc/systemd/system/census-fed-feeder.service`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/etc/systemd/system/census-fed-feeder.timer.new`: 5, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/etc/systemd/system/census-fed-feeder.timer`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/etc/systemd/system/census-fed-finalize`: 7, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/etc/systemd/system/census-fed-live.service.new`: 5, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/etc/systemd/system/census-fed-live.service`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/etc/systemd/system/census-fed-live.timer.new`: 5, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/etc/systemd/system/census-fed-live.timer`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/etc/systemd/system/census-fed-upload.service.new`: 5, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/etc/systemd/system/census-fed-upload.service`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/etc/systemd/system/census-fed-upload.timer.new`: 5, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/etc/systemd/system/census-fed-upload.timer`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/etc/systemd/system/census-fed-watch.service.new`: 5, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/etc/systemd/system/census-fed-watch.service`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/etc/systemd/system/census-fed`: 7, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/home/ec2-user/census-L1r-check.cfg`: 3, `pipeline/s7-run/runner/ec2-L1r/scripts/L1-setup.sh`
+- `/home/ec2-user/census-L1r.cfg`: 8, 6 files
+- `/home/ec2-user/census-L22-check.cfg`: 3, `pipeline/s7-run/runner/ec2-L22/scripts/L1-setup.sh`
+- `/home/ec2-user/census-L22.cfg`: 8, 6 files
+- `/home/ec2-user/census-L23-check.cfg`: 3, `pipeline/s7-run/runner/ec2-L23/scripts/L1-setup.sh`
+- `/home/ec2-user/census-L23.cfg`: 8, 6 files
+- `/home/ec2-user/census-L7-20-check.cfg`: 3, `pipeline/s7-run/runner/ec2-L7-20/scripts/L1-setup.sh`
+- `/home/ec2-user/census-L7-20.cfg`: 8, 6 files
+- `/home/ec2-user/census-L7-20b-check.cfg`: 3, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L1-setup.sh`
+- `/home/ec2-user/census-L7-20b.cfg`: 8, 6 files
+- `/home/ec2-user/census-batch2.cfg`: 9, 6 files
+- `/home/ec2-user/census-batch3L.cfg`: 11, 6 files
+- `/home/ec2-user/census-batch4-check.cfg`: 3, `pipeline/s7-run/runner/ec2-batch4/scripts/p3-setup.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p4-check.sh`
+- `/home/ec2-user/census-batch4-check2.cfg`: 4, `pipeline/s7-run/runner/ec2-batch4/scripts/q2-hold-copy-check.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/q2-tail.sh`
+- `/home/ec2-user/census-batch4`: 5, 5 files
+- `/home/ec2-user/census-batch4p`: 20, 8 files
+- `/home/ec2-user/census-batch5L-check.cfg`: 3, `pipeline/s7-run/runner/ec2-batch5/scripts/L1-setup.sh`
+- `/home/ec2-user/census-batch5L.cfg`: 8, 5 files
+- `/home/ec2-user/census-batch6L-check.cfg`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/L1-setup.sh`
+- `/home/ec2-user/census-batch6L.cfg`: 8, 5 files
 - `/home/ellianco/Projects/cregit-workspace/census-2026-10`: 3, `pipeline/s7-run/superseded-20261007.tsv`
 - `/home/ellianco/Projects/cregit-workspace/census-local-a`: 7, `pipeline/s7-run/local-a/census.cfg`, `pipeline/s7-run/local-a/gate.sh`, `pipeline/s7-run/local-a/run.sh`
 - `/home/ellianco/Projects/cregit-workspace/census-local-b`: 6, `pipeline/s7-run/local-b/census.cfg`, `pipeline/s7-run/local-b/gate.sh`, `pipeline/s7-run/local-b/run.sh`
@@ -142,90 +556,1509 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `/home/ellianco/Projects/cregit-workspace/census-local-d`: 5, `pipeline/s7-run/local-d/census.cfg`, `pipeline/s7-run/local-d/run.sh`
 - `/local/home/ellianco/Projects/cregit-workspace/census-2026-10`: 1, `pipeline/s7-run/census.cfg`
 - `/path/to/census.cfg`: 1, `tools/ctp/docs/E2E.md`
-- `/usr/local/bin/census-fed-workload`: 1, `pipeline/s7-run/blame-time-limit.md`
+- `/root/ssm/census-backup.payload`: 3, `pipeline/s7-run/runner/census-backup/deploy-big.sh`, `pipeline/s7-run/runner/census-backup/install-big.sh`
+- `/run/census-L1r-firm.status`: 9, 9 files
+- `/run/census-L1r-hold`: 8, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-finalize`
+- `/run/census-L1r-wait.status.`: 3, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/P2-probe.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-wait`
+- `/run/census-L1r-wait.status`: 8, 8 files
+- `/run/census-L22-hold`: 8, `pipeline/s7-run/runner/ec2-L22/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-finalize`
+- `/run/census-L22-wait.status.`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-wait`
+- `/run/census-L22-wait.status`: 5, 5 files
+- `/run/census-L23-hold`: 8, `pipeline/s7-run/runner/ec2-L23/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-finalize`
+- `/run/census-L23-wait.status.`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-wait`
+- `/run/census-L23-wait.status`: 9, 9 files
+- `/run/census-L7-20-hold`: 8, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-finalize`
+- `/run/census-L7-20-split.status`: 7, 7 files
+- `/run/census-L7-20-wait.status.`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-wait`
+- `/run/census-L7-20-wait.status`: 9, 8 files
+- `/run/census-L7-20b-hold`: 8, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-finalize`
+- `/run/census-L7-20b-wait.status.`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-wait`
+- `/run/census-L7-20b-wait.status`: 5, 5 files
+- `/run/census-STOP.test.`: 21, 8 files
+- `/run/census-b5-STOP.test.`: 15, 6 files
+- `/run/census-b5-fake-spot-notice`: 16, 7 files
+- `/run/census-b5-instance-action`: 9, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-watch`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/run/census-backup.lock`: 14, 14 files
+- `/run/census-batch3L-wait.status.`: 3, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-wait`
+- `/run/census-batch3L-wait.status`: 9, 6 files
+- `/run/census-batch4-guard.log`: 1, `pipeline/s7-run/runner/ec2-L23/scripts/P1-probe.sh`
+- `/run/census-batch4-guard.status`: 41, 32 files
+- `/run/census-batch4-guard.tripped`: 135, 32 files
+- `/run/census-batch4-hold`: 24, 8 files
+- `/run/census-batch5L-hold`: 8, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-finalize`
+- `/run/census-batch6L-hold`: 8, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-finalize`
+- `/run/census-batch6L-wait.status.`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-wait`
+- `/run/census-batch6L-wait.status`: 7, 6 files
+- `/run/census-fake-spot-notice`: 16, 8 files
+- `/run/census-fed-STOP.test.`: 7, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-watch`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/t3-notice-live.sh`
+- `/run/census-fed-fake-spot-notice`: 6, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-watch`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/t3-notice-live.sh`
+- `/run/census-fed-feeder.status`: 21, 19 files
+- `/run/census-fed-instance-action`: 6, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-watch`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/run/census-instance-action`: 18, 6 files
+- `/run/census-spot-interrupted.`: 1, `pipeline/s7-run/runner/ec2-batch6/scripts/t1-feeder-stub.sh`
+- `/run/census-spot-interrupted`: 74, 25 files
+- `/s3-work/census-backup/remote/census-backup`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/census-backup`: 5, `pipeline/s7-run/runner/ORIGIN.tsv`, `pipeline/s7-run/runner/census-backup/README.md`
+- `/s3-work/census-watchdog`: 6, 5 files
+- `/s3-work/ec2-L1r/scripts/remote-L/census-L1r-cregit`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L1r/scripts/remote-L/census-L1r-finalize.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L1r/scripts/remote-L/census-L1r-finalize`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L1r/scripts/remote-L/census-L1r-firm.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L1r/scripts/remote-L/census-L1r-firm.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L1r/scripts/remote-L/census-L1r-firm`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L1r/scripts/remote-L/census-L1r-live.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L1r/scripts/remote-L/census-L1r-live.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L1r/scripts/remote-L/census-L1r-live`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L1r/scripts/remote-L/census-L1r-run`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L1r/scripts/remote-L/census-L1r-wait.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L1r/scripts/remote-L/census-L1r-wait`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L1r/scripts/remote-L/census-L1r.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L1r/scripts/remote-L/census-backup`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L1r/scripts/remote-L/census-batch4-guard`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L1r/scripts/remote-L/census-other-done`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L22/scripts/remote-L/census-L22-cregit`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L22/scripts/remote-L/census-L22-finalize.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L22/scripts/remote-L/census-L22-finalize`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L22/scripts/remote-L/census-L22-live.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L22/scripts/remote-L/census-L22-live.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L22/scripts/remote-L/census-L22-live`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L22/scripts/remote-L/census-L22-run`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L22/scripts/remote-L/census-L22-wait.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L22/scripts/remote-L/census-L22-wait`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L22/scripts/remote-L/census-L22.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L22/scripts/remote-L/census-backup`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L22/scripts/remote-L/census-batch4-guard`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L22/scripts/remote-L/census-other-done`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L23/scripts/remote-L/census-L23-cregit`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L23/scripts/remote-L/census-L23-finalize.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L23/scripts/remote-L/census-L23-finalize`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L23/scripts/remote-L/census-L23-live.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L23/scripts/remote-L/census-L23-live.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L23/scripts/remote-L/census-L23-live`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L23/scripts/remote-L/census-L23-run`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L23/scripts/remote-L/census-L23-wait.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L23/scripts/remote-L/census-L23-wait`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L23/scripts/remote-L/census-L23.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L23/scripts/remote-L/census-backup`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L23/scripts/remote-L/census-batch4-guard`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L23/scripts/remote-L/census-other-done`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20/scripts/remote-L/census-L7-20-cregit`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20/scripts/remote-L/census-L7-20-finalize.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20/scripts/remote-L/census-L7-20-finalize`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20/scripts/remote-L/census-L7-20-live.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20/scripts/remote-L/census-L7-20-live.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20/scripts/remote-L/census-L7-20-live`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20/scripts/remote-L/census-L7-20-run`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20/scripts/remote-L/census-L7-20-wait.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20/scripts/remote-L/census-L7-20-wait`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20/scripts/remote-L/census-L7-20.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20/scripts/remote-L/census-backup`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20/scripts/remote-L/census-batch4-guard`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20/scripts/remote-L/census-batch6L-cregit`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20/scripts/remote-L/census-other-done`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20b/scripts/remote-L/census-L7-20-split.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20b/scripts/remote-L/census-L7-20-split.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20b/scripts/remote-L/census-L7-20-split`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20b/scripts/remote-L/census-L7-20b-cregit`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20b/scripts/remote-L/census-L7-20b-finalize.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20b/scripts/remote-L/census-L7-20b-finalize`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20b/scripts/remote-L/census-L7-20b-live.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20b/scripts/remote-L/census-L7-20b-live.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20b/scripts/remote-L/census-L7-20b-live`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20b/scripts/remote-L/census-L7-20b-run`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20b/scripts/remote-L/census-L7-20b-wait.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20b/scripts/remote-L/census-L7-20b-wait`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20b/scripts/remote-L/census-L7-20b.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20b/scripts/remote-L/census-backup`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20b/scripts/remote-L/census-batch4-guard`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-L7-20b/scripts/remote-L/census-other-done`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch2/scripts/remote/census-batch2-finalize.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch2/scripts/remote/census-batch2-finalize`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch2/scripts/remote/census-batch2-live.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch2/scripts/remote/census-batch2-live.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch2/scripts/remote/census-batch2-live`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch2/scripts/remote/census-batch2-run`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch2/scripts/remote/census-batch2.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote-spot/census-b3-check`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote-spot/census-b3-finalize.orig-b3only`: 1, `pipeline/s7-run/runner/ec2-batch5/README.md`
+- `/s3-work/ec2-batch3/scripts/remote-spot/census-b3-finalize.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote-spot/census-b3-finalize`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote-spot/census-b3-live.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote-spot/census-b3-live.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote-spot/census-b3-live`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote-spot/census-b3-parts-init`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote-spot/census-b3-prep`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote-spot/census-b3-run`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote-spot/census-b3-start`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote-spot/census-b3-upload.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote-spot/census-b3-upload.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote-spot/census-b3-upload`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote-spot/census-b3-watch.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote-spot/census-b3-watch`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote-spot/census-b3`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote/census-batch2-finalize`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote/census-batch2-live`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote/census-batch3L-finalize.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote/census-batch3L-finalize`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote/census-batch3L-live.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote/census-batch3L-live.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote/census-batch3L-live`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote/census-batch3L-run`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote/census-batch3L-wait.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote/census-batch3L-wait`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote/census-batch3L.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote/census-other-done`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch3/scripts/remote/census-steps`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch4/scripts/remote/census-batch4-finalize.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch4/scripts/remote/census-batch4-finalize`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch4/scripts/remote/census-batch4-guard.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch4/scripts/remote/census-batch4-guard.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch4/scripts/remote/census-batch4-guard`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch4/scripts/remote/census-batch4-live.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch4/scripts/remote/census-batch4-live.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch4/scripts/remote/census-batch4-live`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch4/scripts/remote/census-batch4-run`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch4/scripts/remote/census-batch4p1.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch4/scripts/remote/census-batch4p2.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch4/scripts/remote/census-batch4p3.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch4/scripts/remote/census-other-done`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-L/census-batch4-guard`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-L/census-batch5L-finalize.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-L/census-batch5L-finalize`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-L/census-batch5L-live.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-L/census-batch5L-live.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-L/census-batch5L-live`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-L/census-batch5L-run`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-L/census-batch5L.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-L/census-other-done`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b3-finalize`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b5-check`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b5-derive`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b5-finalize.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b5-finalize`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b5-live.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b5-live.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b5-live`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b5-parts-init`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b5-prep`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b5-run`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b5-start`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b5-trim`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b5-upload.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b5-upload.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b5-upload`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b5-watch.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b5-watch`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-b5`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch5/scripts/remote-spot/census-spot-decide`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-L/census-backup`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-L/census-batch4-guard`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-L/census-batch6L-cregit`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-L/census-batch6L-finalize.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-L/census-batch6L-finalize`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-L/census-batch6L-live.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-L/census-batch6L-live.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-L/census-batch6L-live`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-L/census-batch6L-run`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-L/census-batch6L-wait.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-L/census-batch6L-wait`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-L/census-batch6L.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-L/census-other-done`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-check`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-common`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-derive`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-enqueue`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-feeder.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-feeder.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-feeder`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-finalize`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-live.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-live.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-live`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-part-init`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-run`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-trim`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-upload.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-upload.timer`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-upload`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-watch.service`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-watch`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed-workload`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-fed`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/s3-work/ec2-batch6/scripts/remote-spot/census-spot-decide`: 1, `pipeline/s7-run/runner/ORIGIN.tsv`
+- `/system.slice/census-L1r.service`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/gen-L2.sh`
+- `/system.slice/census-L7-20b.service`: 3, `pipeline/s7-run/runner/ec2-L1r/README.md`, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/gen-L2.sh`
+- `/tmp/census-L1r-wait.dry.XXXX`: 1, `pipeline/s7-run/runner/ec2-L1r/scripts/P2-probe.sh`
+- `/usr/local/bin/census-L1r-finalize`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-finalize.service`
+- `/usr/local/bin/census-L1r-firm`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-firm.service`
+- `/usr/local/bin/census-L1r-live`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-live.service`
+- `/usr/local/bin/census-L1r-run`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r.service`
+- `/usr/local/bin/census-L1r-wait`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-wait.service`
+- `/usr/local/bin/census-L22-finalize`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-finalize.service`
+- `/usr/local/bin/census-L22-live`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-live.service`
+- `/usr/local/bin/census-L22-run`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22.service`
+- `/usr/local/bin/census-L22-wait`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-wait.service`
+- `/usr/local/bin/census-L23-finalize`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-finalize.service`
+- `/usr/local/bin/census-L23-live`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-live.service`
+- `/usr/local/bin/census-L23-run`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23.service`
+- `/usr/local/bin/census-L23-wait`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-wait.service`
+- `/usr/local/bin/census-L7-20-finalize`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-finalize.service`
+- `/usr/local/bin/census-L7-20-live`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-live.service`
+- `/usr/local/bin/census-L7-20-run`: 3, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20.service`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/P1-probe.sh`
+- `/usr/local/bin/census-L7-20-split`: 3, `pipeline/s7-run/runner/ec2-L7-20b/README.md`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20-split.service`
+- `/usr/local/bin/census-L7-20-wait`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-wait.service`
+- `/usr/local/bin/census-L7-20b-finalize`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-finalize.service`
+- `/usr/local/bin/census-L7-20b-live`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-live.service`
+- `/usr/local/bin/census-L7-20b-run`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b.service`
+- `/usr/local/bin/census-L7-20b-wait`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-wait.service`
+- `/usr/local/bin/census-b3-check.new`: 18, 6 files
+- `/usr/local/bin/census-b3-check`: 13, 10 files
+- `/usr/local/bin/census-b3-finalize.new`: 21, 7 files
+- `/usr/local/bin/census-b3-finalize.orig-b3only`: 10, 7 files
+- `/usr/local/bin/census-b3-finalize`: 31, 17 files
+- `/usr/local/bin/census-b3-live.new`: 15, 5 files
+- `/usr/local/bin/census-b3-live`: 11, 6 files
+- `/usr/local/bin/census-b3-parts-init.new`: 15, 5 files
+- `/usr/local/bin/census-b3-parts-init`: 5, 5 files
+- `/usr/local/bin/census-b3-prep.new`: 15, 5 files
+- `/usr/local/bin/census-b3-prep`: 12, 7 files
+- `/usr/local/bin/census-b3-run.new`: 15, 5 files
+- `/usr/local/bin/census-b3-run`: 11, 6 files
+- `/usr/local/bin/census-b3-start.new`: 15, 5 files
+- `/usr/local/bin/census-b3-start`: 8, 8 files
+- `/usr/local/bin/census-b3-upload.new`: 15, 5 files
+- `/usr/local/bin/census-b3-upload`: 26, 11 files
+- `/usr/local/bin/census-b3-watch.new`: 15, 5 files
+- `/usr/local/bin/census-b3-watch`: 11, 6 files
+- `/usr/local/bin/census-b5-check.new`: 6, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-1.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/usr/local/bin/census-b5-check`: 8, 8 files
+- `/usr/local/bin/census-b5-derive.new`: 6, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-1.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/usr/local/bin/census-b5-derive`: 5, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-prep`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-1.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/usr/local/bin/census-b5-finalize.new`: 6, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/usr/local/bin/census-b5-finalize`: 17, 7 files
+- `/usr/local/bin/census-b5-live.new`: 6, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/usr/local/bin/census-b5-live`: 5, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-live.service`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/usr/local/bin/census-b5-parts-init.new`: 6, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-1.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/usr/local/bin/census-b5-parts-init`: 8, 8 files
+- `/usr/local/bin/census-b5-prep.new`: 6, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-1.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/usr/local/bin/census-b5-prep`: 11, 9 files
+- `/usr/local/bin/census-b5-run.new`: 6, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-1.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/usr/local/bin/census-b5-run`: 5, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5@.service`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-1.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/usr/local/bin/census-b5-start.new`: 6, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-1.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/usr/local/bin/census-b5-start`: 8, 8 files
+- `/usr/local/bin/census-b5-trim.new`: 6, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/usr/local/bin/census-b5-trim`: 5, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-live.service`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/usr/local/bin/census-b5-upload.new`: 6, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-1.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/usr/local/bin/census-b5-upload`: 11, 6 files
+- `/usr/local/bin/census-b5-watch.new`: 6, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/usr/local/bin/census-b5-watch`: 5, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-watch.service`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `/usr/local/bin/census-backup`: 6, `pipeline/s7-run/runner/census-backup/README.md`, `pipeline/s7-run/runner/census-backup/deploy-big.sh`, `pipeline/s7-run/runner/census-backup/install-big.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/e1-probe.sh`
+- `/usr/local/bin/census-batch2-finalize.new`: 6, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `/usr/local/bin/census-batch2-finalize.orig-20261009`: 1, `pipeline/s7-run/runner/ec2-batch3/README.md`
+- `/usr/local/bin/census-batch2-finalize`: 9, 7 files
+- `/usr/local/bin/census-batch2-live.orig-20261009`: 1, `pipeline/s7-run/runner/ec2-batch3/README.md`
+- `/usr/local/bin/census-batch2-live`: 7, `pipeline/s7-run/runner/ec2-batch2/scripts/06-install.sh`, `pipeline/s7-run/runner/ec2-batch2/scripts/07-dryrun.sh`, `pipeline/s7-run/runner/ec2-batch2/scripts/remote/census-batch2-live.service`, `pipeline/s7-run/runner/ec2-batch3/scripts/b2-live.sh`
+- `/usr/local/bin/census-batch2-run`: 5, `pipeline/s7-run/runner/ec2-batch2/scripts/06-install.sh`, `pipeline/s7-run/runner/ec2-batch2/scripts/remote/census-batch2.service`, `pipeline/s7-run/runner/ec2-batch4/scripts/p2-read.sh`
+- `/usr/local/bin/census-batch3L-finalize.new`: 6, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `/usr/local/bin/census-batch3L-finalize`: 7, 5 files
+- `/usr/local/bin/census-batch3L-live.new`: 6, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `/usr/local/bin/census-batch3L-live`: 5, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-live.service`
+- `/usr/local/bin/census-batch3L-run.new`: 6, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `/usr/local/bin/census-batch3L-run`: 5, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L.service`
+- `/usr/local/bin/census-batch3L-wait.new`: 6, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `/usr/local/bin/census-batch3L-wait`: 5, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-wait.service`
+- `/usr/local/bin/census-batch4-finalize.new`: 12, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/q2-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/q2-hold-copy-check.sh`
+- `/usr/local/bin/census-batch4-finalize`: 8, 6 files
+- `/usr/local/bin/census-batch4-guard.new`: 15, 5 files
+- `/usr/local/bin/census-batch4-guard`: 9, 7 files
+- `/usr/local/bin/census-batch4-live.new`: 12, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/q2-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/q2-hold-copy-check.sh`
+- `/usr/local/bin/census-batch4-live`: 8, 6 files
+- `/usr/local/bin/census-batch4-run.new`: 6, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `/usr/local/bin/census-batch4-run`: 12, 6 files
+- `/usr/local/bin/census-batch4`: 1, `pipeline/s7-run/runner/ec2-batch6/scripts/e1-probe.sh`
+- `/usr/local/bin/census-batch4p1-run`: 1, `pipeline/s7-run/runner/ec2-batch6/scripts/e1-probe.sh`
+- `/usr/local/bin/census-batch5L-finalize.new`: 3, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `/usr/local/bin/census-batch5L-finalize`: 3, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-finalize.service`
+- `/usr/local/bin/census-batch5L-live.new`: 3, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `/usr/local/bin/census-batch5L-live`: 3, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-live.service`
+- `/usr/local/bin/census-batch5L-run.new`: 3, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `/usr/local/bin/census-batch5L-run`: 3, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L.service`
+- `/usr/local/bin/census-batch6L-cregit`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/L3-setcommit.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/L4-gatefix.sh`
+- `/usr/local/bin/census-batch6L-finalize`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-finalize.service`
+- `/usr/local/bin/census-batch6L-live`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-live.service`
+- `/usr/local/bin/census-batch6L-run`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L.service`
+- `/usr/local/bin/census-batch6L-wait`: 6, 6 files
+- `/usr/local/bin/census-batch`: 1, `pipeline/s7-run/runner/ec2-batch5/scripts/e1-probe.sh`
+- `/usr/local/bin/census-fed-`: 2, `pipeline/s7-run/runner/ec2-L7-20b/move-to-spot-b/scripts/P1-spotb-probe.sh`, `pipeline/s7-run/runner/spot-persons-db.sh`
+- `/usr/local/bin/census-fed-check.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-1.sh`
+- `/usr/local/bin/census-fed-check`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-1.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/t2-init.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/t4-gate-1f17663.sh`
+- `/usr/local/bin/census-fed-common.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`
+- `/usr/local/bin/census-fed-common`: 18, 12 files
+- `/usr/local/bin/census-fed-derive.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`
+- `/usr/local/bin/census-fed-derive`: 4, `pipeline/s7-run/runner/ec2-L7-20b/move-to-spot-b/scripts/P1-spotb-probe.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-enqueue`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`
+- `/usr/local/bin/census-fed-enqueue.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`
+- `/usr/local/bin/census-fed-enqueue`: 48, 15 files
+- `/usr/local/bin/census-fed-feeder.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-1.sh`
+- `/usr/local/bin/census-fed-feeder`: 27, 12 files
+- `/usr/local/bin/census-fed-finalize.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-1.sh`
+- `/usr/local/bin/census-fed-finalize`: 8, 6 files
+- `/usr/local/bin/census-fed-live.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/usr/local/bin/census-fed-live`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-live.service`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/usr/local/bin/census-fed-part-init.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-1.sh`
+- `/usr/local/bin/census-fed-part-init`: 7, 7 files
+- `/usr/local/bin/census-fed-run.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`
+- `/usr/local/bin/census-fed-run`: 4, `pipeline/s7-run/runner/ec2-L7-20b/move-to-spot-b/scripts/P1-spotb-probe.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed@.service`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/usr/local/bin/census-fed-trim.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/usr/local/bin/census-fed-trim`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-live.service`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/usr/local/bin/census-fed-upload.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/usr/local/bin/census-fed-upload`: 9, 7 files
+- `/usr/local/bin/census-fed-watch.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/usr/local/bin/census-fed-watch`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-watch.service`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/usr/local/bin/census-fed-workload.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`
+- `/usr/local/bin/census-fed-workload`: 59, 19 files
+- `/usr/local/bin/census-other-done.new`: 15, 5 files
+- `/usr/local/bin/census-other-done.orig-2census`: 1, `pipeline/s7-run/runner/ec2-batch4/README.md`
+- `/usr/local/bin/census-other-done.orig-3census`: 1, `pipeline/s7-run/runner/ec2-batch5/README.md`
+- `/usr/local/bin/census-other-done`: 103, 27 files
+- `/usr/local/bin/census-spot-decide.new`: 9, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/usr/local/bin/census-spot-decide.orig-b3b5`: 4, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-s6-files.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `/usr/local/bin/census-spot-decide`: 76, 22 files
+- `/usr/local/bin/census-steps.new`: 21, 7 files
+- `/usr/local/bin/census-steps`: 79, 57 files
+- `/w/batch7a3/census-2026-10-batch7`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/R6-freeswitch.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/R7-freeswitch-err.sh`
+- `0/bL1r/census-2026-10-L1r`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/gen-L2.sh`
+- `0/bL7b/census-2026-10-L7-20b`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/gen-L2.sh`
+- `2-census`: 18, 18 files
+- `B/census-L1r-cregit.new`: 3, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`
+- `B/census-L1r-cregit`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/L3-gate-start.sh`
+- `B/census-L1r-finalize.new`: 3, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`
+- `B/census-L1r-finalize`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/L3-gate-start.sh`
+- `B/census-L1r-firm.new`: 3, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`
+- `B/census-L1r-firm`: 5, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/gen-L2.sh`
+- `B/census-L1r-live.new`: 3, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a-install.sh`
+- `B/census-L1r-live`: 1, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a-install.sh`
+- `B/census-L1r-run.new`: 3, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a-install.sh`
+- `B/census-L1r-run`: 1, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a-install.sh`
+- `B/census-L1r-wait.new`: 3, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`
+- `B/census-L1r-wait`: 5, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/gen-L2.sh`
+- `B/census-L22-cregit.new`: 3, `pipeline/s7-run/runner/ec2-L22/scripts/L2a2-install.sh`
+- `B/census-L22-cregit`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/L3-gate-start.sh`
+- `B/census-L22-finalize.new`: 3, `pipeline/s7-run/runner/ec2-L22/scripts/L2a2-install.sh`
+- `B/census-L22-finalize`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/L3-gate-start.sh`
+- `B/census-L22-live.new`: 3, `pipeline/s7-run/runner/ec2-L22/scripts/L2a-install.sh`
+- `B/census-L22-live`: 1, `pipeline/s7-run/runner/ec2-L22/scripts/L2a-install.sh`
+- `B/census-L22-run.new`: 3, `pipeline/s7-run/runner/ec2-L22/scripts/L2a-install.sh`
+- `B/census-L22-run`: 1, `pipeline/s7-run/runner/ec2-L22/scripts/L2a-install.sh`
+- `B/census-L22-wait.new`: 3, `pipeline/s7-run/runner/ec2-L22/scripts/L2a2-install.sh`
+- `B/census-L22-wait`: 5, `pipeline/s7-run/runner/ec2-L22/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/gen-L2.sh`
+- `B/census-L23-cregit.new`: 3, `pipeline/s7-run/runner/ec2-L23/scripts/L2a2-install.sh`
+- `B/census-L23-cregit`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/L3-gate-start.sh`
+- `B/census-L23-finalize.new`: 3, `pipeline/s7-run/runner/ec2-L23/scripts/L2a2-install.sh`
+- `B/census-L23-finalize`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/L3-gate-start.sh`
+- `B/census-L23-live.new`: 3, `pipeline/s7-run/runner/ec2-L23/scripts/L2a-install.sh`
+- `B/census-L23-live`: 1, `pipeline/s7-run/runner/ec2-L23/scripts/L2a-install.sh`
+- `B/census-L23-run.new`: 3, `pipeline/s7-run/runner/ec2-L23/scripts/L2a-install.sh`
+- `B/census-L23-run`: 1, `pipeline/s7-run/runner/ec2-L23/scripts/L2a-install.sh`
+- `B/census-L23-wait.new`: 3, `pipeline/s7-run/runner/ec2-L23/scripts/L2a2-install.sh`
+- `B/census-L23-wait`: 5, `pipeline/s7-run/runner/ec2-L23/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/gen-L2.sh`
+- `B/census-L7-20-cregit.new`: 3, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a2-install.sh`
+- `B/census-L7-20-cregit`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/L3-gate-start.sh`
+- `B/census-L7-20-finalize.new`: 3, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a2-install.sh`
+- `B/census-L7-20-finalize`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/L3-gate-start.sh`
+- `B/census-L7-20-live.new`: 3, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a-install.sh`
+- `B/census-L7-20-live`: 1, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a-install.sh`
+- `B/census-L7-20-run.new`: 3, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a-install.sh`
+- `B/census-L7-20-run`: 1, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a-install.sh`
+- `B/census-L7-20-split.new`: 3, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a2-install.sh`
+- `B/census-L7-20-split`: 7, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/gen-L2.sh`
+- `B/census-L7-20-wait.new`: 3, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a2-install.sh`
+- `B/census-L7-20-wait`: 8, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2c-tests.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/gen-L2.sh`
+- `B/census-L7-20b-cregit.new`: 3, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a2-install.sh`
+- `B/census-L7-20b-cregit`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L3-gate-start.sh`
+- `B/census-L7-20b-finalize.new`: 3, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a2-install.sh`
+- `B/census-L7-20b-finalize`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L3-gate-start.sh`
+- `B/census-L7-20b-live.new`: 3, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a-install.sh`
+- `B/census-L7-20b-live`: 1, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a-install.sh`
+- `B/census-L7-20b-run.new`: 3, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a-install.sh`
+- `B/census-L7-20b-run`: 1, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a-install.sh`
+- `B/census-L7-20b-wait.new`: 3, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a2-install.sh`
+- `B/census-L7-20b-wait`: 6, `pipeline/s7-run/runner/ec2-L23/scripts/P1-probe.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/gen-L2.sh`
+- `B/census-backup.new`: 18, 6 files
+- `B/census-backup.orig-L22`: 6, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/gen-L2.sh`
+- `B/census-backup.orig-L23`: 6, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/gen-L2.sh`
+- `B/census-backup.orig-L7-20`: 6, `pipeline/s7-run/runner/ec2-L22/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/gen-L2.sh`
+- `B/census-backup.orig-L7-20b`: 6, `pipeline/s7-run/runner/ec2-L23/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/gen-L2.sh`
+- `B/census-backup.orig-b5L`: 6, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-L2.sh`
+- `B/census-backup.orig-b6L`: 6, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/gen-L2.sh`
+- `B/census-backup`: 62, 26 files
+- `B/census-batch2-finalize.orig-20261009`: 4, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-pre.sh`
+- `B/census-batch2-finalize`: 13, 7 files
+- `B/census-batch2-live.orig-20261009`: 4, `pipeline/s7-run/runner/ec2-batch3/scripts/b2-live-tail.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b2-live.sh`
+- `B/census-batch2-live`: 6, `pipeline/s7-run/runner/ec2-batch3/scripts/b2-live-tail.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b2-live.sh`
+- `B/census-batch3L-finalize`: 11, 6 files
+- `B/census-batch3L-live`: 2, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-post.sh`
+- `B/census-batch4-finalize`: 6, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-post.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/q7-decide.sh`
+- `B/census-batch4-guard.new`: 18, 6 files
+- `B/census-batch4-guard.orig-L22`: 6, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/gen-L2.sh`
+- `B/census-batch4-guard.orig-L23`: 6, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/gen-L2.sh`
+- `B/census-batch4-guard.orig-L7-20`: 6, `pipeline/s7-run/runner/ec2-L22/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/gen-L2.sh`
+- `B/census-batch4-guard.orig-L7-20b`: 6, `pipeline/s7-run/runner/ec2-L23/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/gen-L2.sh`
+- `B/census-batch4-guard.orig-b4`: 2, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `B/census-batch4-guard.orig-b5L`: 6, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-L2.sh`
+- `B/census-batch4-guard.orig-b6L`: 6, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/gen-L2.sh`
+- `B/census-batch4-guard`: 56, 31 files
+- `B/census-batch4-live`: 8, 8 files
+- `B/census-batch5L-finalize`: 1, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `B/census-batch6L-cregit.new`: 6, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`
+- `B/census-batch6L-cregit.orig-nomkdir`: 4, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/gen-L2.sh`
+- `B/census-batch6L-cregit`: 4, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/gen-L2.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`
+- `B/census-batch6L-finalize.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`
+- `B/census-batch6L-finalize`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-L2.sh`
+- `B/census-batch6L-live.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`
+- `B/census-batch6L-live`: 1, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`
+- `B/census-batch6L-run.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`
+- `B/census-batch6L-run`: 1, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`
+- `B/census-batch6L-wait.new`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`
+- `B/census-batch6L-wait`: 19, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-L2.sh`
+- `B/census-other-done.new`: 18, 6 files
+- `B/census-other-done.orig-2census`: 4, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-pre.sh`
+- `B/census-other-done.orig-3census`: 3, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `B/census-other-done.orig-4census`: 6, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-L2.sh`
+- `B/census-other-done.orig-L22`: 6, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/gen-L2.sh`
+- `B/census-other-done.orig-L23`: 6, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/gen-L2.sh`
+- `B/census-other-done.orig-L7-20`: 6, `pipeline/s7-run/runner/ec2-L22/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/gen-L2.sh`
+- `B/census-other-done.orig-L7-20b`: 6, `pipeline/s7-run/runner/ec2-L23/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/gen-L2.sh`
+- `B/census-other-done.orig-b6L`: 6, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/gen-L2.sh`
+- `B/census-other-done`: 100, 33 files
+- `B/census-steps`: 10, 8 files
+- `B5_ENV-/etc/cregit-census`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-feeder`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-1.sh`
+- `CENSUSES-`: 5, 5 files
+- `CENSUSES`: 48, 9 files
 - `CENSUS_CLOUD_DIR`: 2, `pipeline/s7-run/fetch_done.sh`
-- `Census.`: 1, `pipeline/s7-run/README.md`
-- `Census`: 6, `pipeline/s7-run/README.md`, `pipeline/s7-run/census_funnel.py`, `pipeline/s7-run/run_batch1.sh`, `pipeline/s7-run/split_batch5.py`
+- `Census.`: 4, `pipeline/s7-run/README.md`, `pipeline/s7-run/runner/ec2-L22/README.md`, `pipeline/s7-run/runner/ec2-L7-20/README.md`, `pipeline/s7-run/runner/ec2-L7-20b/README.md`
+- `Census`: 39, 32 files
+- `E/censuses`: 15, `pipeline/s7-run/runner/ec2-batch5/scripts/s3-start-a.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s3-start-b.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s3-start.sh`
+- `EOF_census-L1r-cregit`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`
+- `EOF_census-L1r-finalize.service`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `EOF_census-L1r-finalize`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`
+- `EOF_census-L1r-firm.service`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `EOF_census-L1r-firm.timer`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `EOF_census-L1r-firm`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`
+- `EOF_census-L1r-live.service`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `EOF_census-L1r-live.timer`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `EOF_census-L1r-live`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a-install.sh`
+- `EOF_census-L1r-run`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a-install.sh`
+- `EOF_census-L1r-wait.service`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `EOF_census-L1r-wait`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`
+- `EOF_census-L1r.service`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`
+- `EOF_census-L22-cregit`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2a2-install.sh`
+- `EOF_census-L22-finalize.service`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`
+- `EOF_census-L22-finalize`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2a2-install.sh`
+- `EOF_census-L22-live.service`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`
+- `EOF_census-L22-live.timer`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`
+- `EOF_census-L22-live`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2a-install.sh`
+- `EOF_census-L22-run`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2a-install.sh`
+- `EOF_census-L22-wait.service`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`
+- `EOF_census-L22-wait`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2a2-install.sh`
+- `EOF_census-L22.service`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/L2b-install.sh`
+- `EOF_census-L23-cregit`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2a2-install.sh`
+- `EOF_census-L23-finalize.service`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`
+- `EOF_census-L23-finalize`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2a2-install.sh`
+- `EOF_census-L23-live.service`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`
+- `EOF_census-L23-live.timer`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`
+- `EOF_census-L23-live`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2a-install.sh`
+- `EOF_census-L23-run`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2a-install.sh`
+- `EOF_census-L23-wait.service`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`
+- `EOF_census-L23-wait`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2a2-install.sh`
+- `EOF_census-L23.service`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2b-install.sh`
+- `EOF_census-L7-20-cregit`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a2-install.sh`
+- `EOF_census-L7-20-finalize.service`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`
+- `EOF_census-L7-20-finalize`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a2-install.sh`
+- `EOF_census-L7-20-live.service`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`
+- `EOF_census-L7-20-live.timer`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`
+- `EOF_census-L7-20-live`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a-install.sh`
+- `EOF_census-L7-20-run`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a-install.sh`
+- `EOF_census-L7-20-split.service`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `EOF_census-L7-20-split.timer`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `EOF_census-L7-20-split`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a2-install.sh`
+- `EOF_census-L7-20-wait.service`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`
+- `EOF_census-L7-20-wait`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a2-install.sh`
+- `EOF_census-L7-20.service`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2b-install.sh`
+- `EOF_census-L7-20b-cregit`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a2-install.sh`
+- `EOF_census-L7-20b-finalize.service`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `EOF_census-L7-20b-finalize`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a2-install.sh`
+- `EOF_census-L7-20b-live.service`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `EOF_census-L7-20b-live.timer`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `EOF_census-L7-20b-live`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a-install.sh`
+- `EOF_census-L7-20b-run`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a-install.sh`
+- `EOF_census-L7-20b-wait.service`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `EOF_census-L7-20b-wait`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a2-install.sh`
+- `EOF_census-L7-20b.service`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2b-install.sh`
+- `EOF_census-b3-check`: 10, 5 files
+- `EOF_census-b3-finalize.service`: 10, 5 files
+- `EOF_census-b3-finalize`: 14, 7 files
+- `EOF_census-b3-live.service`: 10, 5 files
+- `EOF_census-b3-live.timer`: 10, 5 files
+- `EOF_census-b3-live`: 10, 5 files
+- `EOF_census-b3-parts-init`: 10, 5 files
+- `EOF_census-b3-prep`: 10, 5 files
+- `EOF_census-b3-run`: 10, 5 files
+- `EOF_census-b3-start`: 10, 5 files
+- `EOF_census-b3-upload.service`: 10, 5 files
+- `EOF_census-b3-upload.timer`: 10, 5 files
+- `EOF_census-b3-upload`: 10, 5 files
+- `EOF_census-b3-watch.service`: 10, 5 files
+- `EOF_census-b3-watch`: 10, 5 files
+- `EOF_census-b3`: 10, 5 files
+- `EOF_census-b5-check`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-1.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `EOF_census-b5-derive`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-1.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `EOF_census-b5-finalize.service`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `EOF_census-b5-finalize`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `EOF_census-b5-live.service`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `EOF_census-b5-live.timer`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `EOF_census-b5-live`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `EOF_census-b5-parts-init`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-1.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `EOF_census-b5-prep`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-1.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `EOF_census-b5-run`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-1.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `EOF_census-b5-start`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-1.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `EOF_census-b5-trim`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `EOF_census-b5-upload.service`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `EOF_census-b5-upload.timer`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `EOF_census-b5-upload`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-1.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `EOF_census-b5-watch.service`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `EOF_census-b5-watch`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `EOF_census-b5`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `EOF_census-backup`: 12, 6 files
+- `EOF_census-batch2-finalize`: 6, `pipeline/s7-run/runner/ec2-batch2/scripts/06-install.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `EOF_census-batch2-live`: 4, `pipeline/s7-run/runner/ec2-batch2/scripts/06-install.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b2-live.sh`
+- `EOF_census-batch2-run`: 2, `pipeline/s7-run/runner/ec2-batch2/scripts/06-install.sh`
+- `EOF_census-batch3L-finalize.service`: 4, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `EOF_census-batch3L-finalize`: 4, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `EOF_census-batch3L-live.service`: 4, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `EOF_census-batch3L-live.timer`: 4, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `EOF_census-batch3L-live`: 4, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `EOF_census-batch3L-run`: 4, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `EOF_census-batch3L-wait.service`: 4, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `EOF_census-batch3L-wait`: 4, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `EOF_census-batch3L.service`: 4, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`
+- `EOF_census-batch4-finalize.service`: 4, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `EOF_census-batch4-finalize`: 8, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/q2-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/q2-hold-copy-check.sh`
+- `EOF_census-batch4-guard.service`: 4, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `EOF_census-batch4-guard.timer`: 4, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `EOF_census-batch4-guard`: 22, 11 files
+- `EOF_census-batch4-live.service`: 4, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `EOF_census-batch4-live.timer`: 4, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `EOF_census-batch4-live`: 8, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/q2-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/q2-hold-copy-check.sh`
+- `EOF_census-batch4-run`: 4, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `EOF_census-batch4p1.service`: 4, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `EOF_census-batch4p2.service`: 4, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `EOF_census-batch4p3.service`: 4, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`
+- `EOF_census-batch5L-finalize.service`: 2, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `EOF_census-batch5L-finalize`: 2, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `EOF_census-batch5L-live.service`: 2, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `EOF_census-batch5L-live.timer`: 2, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `EOF_census-batch5L-live`: 2, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `EOF_census-batch5L-run`: 2, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `EOF_census-batch5L.service`: 2, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`
+- `EOF_census-batch6L-cregit`: 4, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`
+- `EOF_census-batch6L-finalize.service`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`
+- `EOF_census-batch6L-finalize`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`
+- `EOF_census-batch6L-live.service`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`
+- `EOF_census-batch6L-live.timer`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`
+- `EOF_census-batch6L-live`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`
+- `EOF_census-batch6L-run`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`
+- `EOF_census-batch6L-wait.service`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`
+- `EOF_census-batch6L-wait`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`
+- `EOF_census-batch6L.service`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`
+- `EOF_census-fed-check`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-1.sh`
+- `EOF_census-fed-common`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`
+- `EOF_census-fed-derive`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`
+- `EOF_census-fed-enqueue`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`
+- `EOF_census-fed-feeder.service`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `EOF_census-fed-feeder.timer`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `EOF_census-fed-feeder`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-1.sh`
+- `EOF_census-fed-finalize`: 4, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-1.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `EOF_census-fed-live.service`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `EOF_census-fed-live.timer`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `EOF_census-fed-live`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `EOF_census-fed-part-init`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-1.sh`
+- `EOF_census-fed-run`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`
+- `EOF_census-fed-trim`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `EOF_census-fed-upload.service`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `EOF_census-fed-upload.timer`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `EOF_census-fed-upload`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `EOF_census-fed-watch.service`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `EOF_census-fed-watch`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `EOF_census-fed-workload`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`
+- `EOF_census-fed`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `EOF_census-other-done`: 22, 11 files
+- `EOF_census-spot-decide`: 6, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-2.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `EOF_census-steps`: 16, 8 files
 - `GoogleCloudPlatform/opencensus-jetty-demo`: 2, `pipeline/s7-run/frame.layer5.csv`, `pipeline/s7-run/manifest.layer5.order.tsv`
 - `GoogleCloudPlatform__opencensus-jetty-demo`: 3, `pipeline/s7-run/manifest.layer5.order.tsv`, `pipeline/s7-run/manifest.layer5.tsv`, `pipeline/s7-run/project_meta.layer5.json`
 - `HOME/Projects/cregit-workspace/census-cloud-fixed`: 2, `pipeline/s7-run/README.md`
 - `HOME/Projects/cregit-workspace/census-cloud`: 1, `pipeline/s7-run/fetch_done.sh`
+- `HOME/s3-work/census-watchdog`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/W1-watch-entries.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/W1-watch-entries.sh`
+- `K/census-2026-10-batch4`: 3, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-run`
 - `L/census.cfg`: 4, `pipeline/s7-run/local-a/run.sh`, `pipeline/s7-run/local-b/run.sh`, `pipeline/s7-run/local-c/run.sh`, `pipeline/s7-run/local-d/run.sh`
+- `OTHER_UNITS-census-batch2.service`: 3, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-other-done`
+- `OTHER_UNITS-census-batch3L-wait.service`: 3, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-files.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/b3L-install.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-other-done`
 - `Projects/cregit-workspace/census-2026-10`: 1, `pipeline/s7-run/footer_fix_batches.py`
 - `Projects/cregit-workspace/census-cloud-fixed`: 1, `pipeline/s7-run/footer_fix_batches.py`
 - `Projects/cregit-workspace/census-cloud`: 2, `pipeline/s7-run/footer_fix_batches.py`, `pipeline/s7-run/split_run_ledgers.py`
+- `RS/census-fed-finalize.orig-nopersons`: 3, `pipeline/s7-run/runner/spot-persons-db.sh`
+- `RS/census-fed-finalize`: 3, `pipeline/s7-run/runner/spot-persons-db.sh`
+- `RS/census-fed-upload.orig-nopersons`: 3, `pipeline/s7-run/runner/spot-persons-db.sh`
+- `RS/census-fed-upload`: 3, `pipeline/s7-run/runner/spot-persons-db.sh`
 - `WS/census-cloud-fixed`: 1, `pipeline/s7-run/footer_fix_again.sh`
+- `census-2026-10-L1r`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-firm`
 - `census-2026-10`: 9, 5 files
-- `census-L1r-firm.timer`: 1, `pipeline/s7-run/README.md`
-- `census-L1r-wait`: 2, `pipeline/s7-run/README.md`
-- `census-L22`: 1, `pipeline/s7-run/blame-time-limit.md`
-- `census-L7-20-split.timer`: 1, `pipeline/s7-run/README.md`
-- `census-L7-20`: 1, `pipeline/s7-run/blame-time-limit.md`
-- `census-L7-20b`: 1, `pipeline/s7-run/README.md`
-- `census-`: 1, `pipeline/s7-run/prelim_merge.py`
-- `census-b3-prep`: 1, `pipeline/s7-run/split_batch3.py`
-- `census-b3`: 1, `pipeline/s7-run/blame-time-limit.md`
-- `census-b5-parts-init`: 1, `pipeline/s7-run/blame-time-limit.md`
-- `census-b5`: 4, `pipeline/s7-run/README.md`, `pipeline/s7-run/blame-time-limit.md`
-- `census-backup`: 2, `pipeline/s7-run/README.md`
-- `census-batch1`: 2, `pipeline/s7-run/README.md`
-- `census-batch2`: 1, `pipeline/s7-run/README.md`
-- `census-batch3L`: 1, `pipeline/s7-run/README.md`
-- `census-batch4p1`: 1, `pipeline/s7-run/README.md`
-- `census-batch4p2`: 1, `pipeline/s7-run/README.md`
-- `census-batch4p3`: 1, `pipeline/s7-run/README.md`
-- `census-batch5L`: 1, `pipeline/s7-run/blame-time-limit.md`
-- `census-batchNL-wait`: 1, `pipeline/s7-run/split_batchN.py`
+- `census-L1r-cregit`: 18, 8 files
+- `census-L1r-finalize.service`: 9, 7 files
+- `census-L1r-finalize`: 7, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/gen-L2.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-finalize`
+- `census-L1r-firm.`: 1, `pipeline/s7-run/runner/ec2-L1r/scripts/gen-L2.sh`
+- `census-L1r-firm.service`: 1, `pipeline/s7-run/runner/ec2-L1r/scripts/gen-L2.sh`
+- `census-L1r-firm.timer.`: 1, `pipeline/s7-run/runner/ec2-L1r/README.md`
+- `census-L1r-firm.timer`: 8, 7 files
+- `census-L1r-firm`: 7, `pipeline/s7-run/runner/ec2-L1r/README.md`, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/gen-L2.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-firm`
+- `census-L1r-live.service`: 1, `pipeline/s7-run/runner/ec2-L1r/scripts/gen-L2.sh`
+- `census-L1r-live.timer`: 6, 6 files
+- `census-L1r-live`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/gen-L2.sh`
+- `census-L1r-run`: 4, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/gen-L2.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-run`
+- `census-L1r-wait.service`: 14, 10 files
+- `census-L1r-wait`: 18, 10 files
+- `census-L1r.service.`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-firm`
+- `census-L1r.service`: 29, 14 files
+- `census-L1r`: 24, 14 files
+- `census-L22-`: 2, `pipeline/s7-run/runner/ec2-L22/scripts/gen-L2.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/P2-probe.sh`
+- `census-L22-cregit`: 14, 8 files
+- `census-L22-finalize.service`: 9, 7 files
+- `census-L22-finalize`: 19, 15 files
+- `census-L22-live.service`: 1, `pipeline/s7-run/runner/ec2-L22/scripts/gen-L2.sh`
+- `census-L22-live.timer`: 4, `pipeline/s7-run/runner/ec2-L22/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/L3-gate-start.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/gen-L2.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-live`
+- `census-L22-live`: 1, `pipeline/s7-run/runner/ec2-L22/scripts/gen-L2.sh`
+- `census-L22-run`: 3, `pipeline/s7-run/runner/ec2-L22/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/gen-L2.sh`, `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-run`
+- `census-L22-wait.service`: 24, 14 files
+- `census-L22-wait`: 16, 15 files
+- `census-L22.service`: 57, 34 files
+- `census-L22`: 30, 19 files
+- `census-L23-cregit.`: 1, `pipeline/s7-run/runner/ec2-L23/scripts/gen-L2.sh`
+- `census-L23-cregit`: 17, 9 files
+- `census-L23-finalize.service`: 9, 7 files
+- `census-L23-finalize`: 13, 9 files
+- `census-L23-live.service`: 1, `pipeline/s7-run/runner/ec2-L23/scripts/gen-L2.sh`
+- `census-L23-live.timer`: 5, 5 files
+- `census-L23-live`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/gen-L2.sh`
+- `census-L23-run`: 4, `pipeline/s7-run/runner/ec2-L23/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/gen-L2.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-run`
+- `census-L23-wait.service`: 22, 14 files
+- `census-L23-wait`: 18, 12 files
+- `census-L23.service`: 45, 22 files
+- `census-L23`: 28, 16 files
+- `census-L7-20-`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/gen-L2.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/P2-probe.sh`
+- `census-L7-20-cregit`: 15, 9 files
+- `census-L7-20-finalize.service`: 9, 7 files
+- `census-L7-20-finalize`: 26, 21 files
+- `census-L7-20-live.service`: 1, `pipeline/s7-run/runner/ec2-L7-20/scripts/gen-L2.sh`
+- `census-L7-20-live.timer`: 4, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/L3-gate-start.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/gen-L2.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-live`
+- `census-L7-20-live`: 1, `pipeline/s7-run/runner/ec2-L7-20/scripts/gen-L2.sh`
+- `census-L7-20-run`: 3, `pipeline/s7-run/runner/ec2-L7-20/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/gen-L2.sh`, `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-run`
+- `census-L7-20-split.service`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/R1-check.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/gen-L2.sh`
+- `census-L7-20-split.timer`: 16, 11 files
+- `census-L7-20-split`: 11, 7 files
+- `census-L7-20-v2swap`: 2, `pipeline/s7-run/runner/ec2-L7-20/scripts/L4-hold.sh`, `pipeline/s7-run/runner/upload-L7-20-v2.sh`
+- `census-L7-20-wait.service`: 32, 19 files
+- `census-L7-20-wait`: 18, 17 files
+- `census-L7-20.`: 2, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-run`
+- `census-L7-20.service`: 82, 52 files
+- `census-L7-20`: 47, 31 files
+- `census-L7-20b-`: 1, `pipeline/s7-run/runner/ec2-L7-20b/scripts/gen-L2.sh`
+- `census-L7-20b-cregit`: 14, 8 files
+- `census-L7-20b-finalize.service`: 9, 7 files
+- `census-L7-20b-finalize`: 17, 13 files
+- `census-L7-20b-live.service`: 1, `pipeline/s7-run/runner/ec2-L7-20b/scripts/gen-L2.sh`
+- `census-L7-20b-live.timer`: 5, 5 files
+- `census-L7-20b-live`: 1, `pipeline/s7-run/runner/ec2-L7-20b/scripts/gen-L2.sh`
+- `census-L7-20b-run`: 3, `pipeline/s7-run/runner/ec2-L7-20b/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/gen-L2.sh`, `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-run`
+- `census-L7-20b-wait.service`: 21, 13 files
+- `census-L7-20b-wait`: 19, 14 files
+- `census-L7-20b.`: 2, `pipeline/s7-run/runner/ec2-L23/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-run`
+- `census-L7-20b.service`: 50, 29 files
+- `census-L7-20b`: 32, 20 files
+- `census-`: 3, `pipeline/s7-run/prelim_merge.py`, `pipeline/s7-run/runner/ec2-L1r/scripts/P1-probe.sh`, `pipeline/s7-run/runner/ec2-L23/scripts/P1-probe.sh`
+- `census-b3-check`: 15, 10 files
+- `census-b3-finalize.`: 1, `pipeline/s7-run/runner/ec2-batch5/scripts/gen-s5-files.sh`
+- `census-b3-finalize.service`: 50, 22 files
+- `census-b3-finalize`: 39, 24 files
+- `census-b3-live.service`: 1, `pipeline/s7-run/runner/ec2-batch3/scripts/gen-spot-install.sh`
+- `census-b3-live.timer`: 25, 14 files
+- `census-b3-live`: 1, `pipeline/s7-run/runner/ec2-batch3/scripts/gen-spot-install.sh`
+- `census-b3-parts-init`: 21, 12 files
+- `census-b3-prep`: 16, 10 files
+- `census-b3-run`: 7, 7 files
+- `census-b3-start`: 9, 9 files
+- `census-b3-upload.service`: 16, 11 files
+- `census-b3-upload.timer`: 25, 14 files
+- `census-b3-upload`: 31, 12 files
+- `census-b3-watch.service`: 44, 22 files
+- `census-b3-watch`: 27, 15 files
+- `census-b3`: 202, 46 files
+- `census-b5-`: 1, `pipeline/s7-run/runner/ec2-batch5/README.md`
+- `census-b5-check.`: 3, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-start`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-1.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `census-b5-check`: 11, 9 files
+- `census-b5-derive`: 5, 5 files
+- `census-b5-finalize.service`: 13, 6 files
+- `census-b5-finalize`: 20, 11 files
+- `census-b5-live.service`: 1, `pipeline/s7-run/runner/ec2-batch5/scripts/gen-s5-files.sh`
+- `census-b5-live.timer`: 13, 9 files
+- `census-b5-live`: 5, 5 files
+- `census-b5-parts-init`: 8, 5 files
+- `census-b5-prep`: 23, 8 files
+- `census-b5-run`: 4, `pipeline/s7-run/runner/ec2-batch5/scripts/gen-s5-files.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-run`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files-1.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/s5-files.sh`
+- `census-b5-start.`: 1, `pipeline/s7-run/runner/ec2-batch5/README.md`
+- `census-b5-start`: 8, 8 files
+- `census-b5-trim`: 7, 5 files
+- `census-b5-upload.service`: 1, `pipeline/s7-run/runner/ec2-batch5/scripts/gen-s5-files.sh`
+- `census-b5-upload.timer`: 13, 8 files
+- `census-b5-upload`: 17, 11 files
+- `census-b5-watch.service`: 19, 10 files
+- `census-b5-watch`: 10, 9 files
+- `census-b5`: 129, 45 files
+- `census-b`: 6, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-s6-files.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/t1-feeder-stub.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/t2-init.sh`
+- `census-backup-local`: 1, `pipeline/s7-run/runner/census-backup/README.md`
+- `census-backup.`: 1, `pipeline/s7-run/runner/ec2-batch6/README.md`
+- `census-backup.service`: 2, `pipeline/s7-run/runner/census-backup/deploy-big.sh`, `pipeline/s7-run/runner/census-backup/install-big.sh`
+- `census-backup.timer.`: 14, 14 files
+- `census-backup.timer`: 5, `pipeline/s7-run/runner/census-backup/README.md`, `pipeline/s7-run/runner/census-backup/deploy-big.sh`, `pipeline/s7-run/runner/census-backup/install-big.sh`
+- `census-backup/remote/census-backup`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `census-backup`: 114, 45 files
+- `census-batch1`: 4, `pipeline/s7-run/README.md`, `pipeline/s7-run/runner/census-watchdog/watchdog.sh`
+- `census-batch2-finalize.service`: 8, 6 files
+- `census-batch2-finalize`: 25, 22 files
+- `census-batch2-live.timer`: 14, 11 files
+- `census-batch2-live`: 1, `pipeline/s7-run/runner/ec2-batch3/README.md`
+- `census-batch2.service`: 164, 78 files
+- `census-batch2`: 54, 37 files
+- `census-batch3L-finalize.service`: 10, 7 files
+- `census-batch3L-finalize`: 22, 19 files
+- `census-batch3L-live.timer`: 11, 8 files
+- `census-batch3L-wait.service`: 50, 26 files
+- `census-batch3L-wait`: 12, 10 files
+- `census-batch3L.service`: 143, 66 files
+- `census-batch3L`: 35, 26 files
+- `census-batch4-finalize.service`: 35, 14 files
+- `census-batch4-finalize`: 31, 25 files
+- `census-batch4-guard.`: 1, `pipeline/s7-run/runner/ec2-batch4/README.md`
+- `census-batch4-guard.service`: 22, 21 files
+- `census-batch4-guard.timer`: 7, 5 files
+- `census-batch4-guard`: 95, 48 files
+- `census-batch4-live.`: 1, `pipeline/s7-run/runner/ec2-batch4/README.md`
+- `census-batch4-live.timer`: 12, 10 files
+- `census-batch4-live`: 3, `pipeline/s7-run/runner/ec2-batch4/README.md`, `pipeline/s7-run/runner/ec2-batch5/scripts/e1-probe.sh`
+- `census-batch4-run`: 4, `pipeline/s7-run/runner/ec2-batch4/README.md`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-run`
+- `census-batch4`: 38, 8 files
+- `census-batch4p1-3`: 1, `pipeline/s7-run/runner/ec2-batch5/README.md`
+- `census-batch4p1..3`: 8, 8 files
+- `census-batch4p1.service`: 85, 51 files
+- `census-batch4p1`: 8, 5 files
+- `census-batch4p2.service`: 85, 51 files
+- `census-batch4p2`: 7, 5 files
+- `census-batch4p3.service`: 85, 51 files
+- `census-batch4p3`: 7, 5 files
+- `census-batch4pK.cfg.data-cregit`: 1, `pipeline/s7-run/runner/ec2-batch4/README.md`
+- `census-batch4pK.service`: 3, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-files.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/p5-install.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-run`
+- `census-batch4pK`: 8, 8 files
+- `census-batch4p`: 40, 14 files
+- `census-batch5L-finalize.service`: 8, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-finalize`, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-live`, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L.service`
+- `census-batch5L-finalize`: 31, 22 files
+- `census-batch5L-live.timer`: 3, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-live`
+- `census-batch5L-run`: 2, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-run`
+- `census-batch5L.service`: 77, 46 files
+- `census-batch5L`: 28, 21 files
+- `census-batch6L-cregit`: 26, 12 files
+- `census-batch6L-finalize.service`: 9, 6 files
+- `census-batch6L-finalize`: 22, 19 files
+- `census-batch6L-live.service`: 1, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-L2.sh`
+- `census-batch6L-live.timer`: 5, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/L2b-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-L2.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-live`
+- `census-batch6L-live`: 1, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-L2.sh`
+- `census-batch6L-run`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-L2.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-run`
+- `census-batch6L-wait.orig-b4wait`: 1, `pipeline/s7-run/runner/ec2-batch6/README.md`
+- `census-batch6L-wait.service`: 39, 21 files
+- `census-batch6L-wait`: 20, 18 files
+- `census-batch6L.service`: 74, 40 files
+- `census-batch6L`: 35, 19 files
+- `census-batchNL-wait`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-derive`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`, `pipeline/s7-run/split_batchN.py`
 - `census-cloud-fixed`: 10, `pipeline/s7-run/README.md`, `pipeline/s7-run/footer_fix_again.sh`, `pipeline/s7-run/prelim_merge.py`
 - `census-cloud`: 3, `pipeline/s7-run/footer_fix_batches.py`, `pipeline/s7-run/prelim_merge.py`
+- `census-fed-`: 5, `pipeline/s7-run/runner/ec2-batch23/scripts/p3-spot-probe.sh`, `pipeline/s7-run/runner/ec2-batch6/README.md`, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-common`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`
 - `census-fed-check.`: 3, `pipeline/s7-run/local-b/gate.sh`, `pipeline/s7-run/local-c/gate.sh`, `pipeline/s7-run/local-d/gate.sh`
-- `census-fed-check`: 2, `pipeline/s7-run/blame-time-limit.md`, `pipeline/s7-run/local-a/gate.sh`
-- `census-fed-derive.`: 1, `pipeline/s7-run/split_batchN.py`
-- `census-fed-derive`: 1, `pipeline/s7-run/parts_batch26.py`
-- `census-fed-enqueue`: 3, `pipeline/s7-run/README.md`, `pipeline/s7-run/one_half.py`
-- `census-fed-feeder`: 2, `pipeline/s7-run/local-b/manifest.local-b.tsv`, `pipeline/s7-run/split_batchN.py`
-- `census-fed-finalize`: 1, `pipeline/s7-run/blame-time-limit.md`
-- `census-fed-part-init`: 2, `pipeline/s7-run/blame-time-limit.md`
-- `census-fed-run`: 1, `pipeline/s7-run/local-a/run.sh`
-- `census-fed-upload`: 4, `pipeline/s7-run/local-a/publish_done.py`, `pipeline/s7-run/local-b/publish_done.py`, `pipeline/s7-run/local-c/publish_done.py`, `pipeline/s7-run/local-d/publish_done.py`
-- `census-fed-workload`: 2, `pipeline/s7-run/blame-time-limit.md`
-- `census-fed`: 4, `pipeline/s7-run/blame-time-limit.md`
+- `census-fed-check`: 11, 10 files
+- `census-fed-common`: 7, 6 files
+- `census-fed-derive.`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-derive`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`, `pipeline/s7-run/split_batchN.py`
+- `census-fed-derive`: 8, 6 files
+- `census-fed-enqueue.`: 1, `pipeline/s7-run/runner/ec2-batch23/scripts/p2-spot-probe.sh`
+- `census-fed-enqueue`: 26, 15 files
+- `census-fed-feeder.`: 1, `pipeline/s7-run/runner/ec2-batch3/restart_spot.sh`
+- `census-fed-feeder.service`: 1, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-s6-files.sh`
+- `census-fed-feeder.timer`: 9, 9 files
+- `census-fed-feeder`: 17, 12 files
+- `census-fed-finalize`: 29, 12 files
+- `census-fed-live.service`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-s6-files.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/t3-notice-live.sh`
+- `census-fed-live.timer`: 6, 6 files
+- `census-fed-live`: 5, 5 files
+- `census-fed-part-init`: 10, 8 files
+- `census-fed-run`: 4, `pipeline/s7-run/local-a/run.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-s6-files.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-run`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`
+- `census-fed-trim`: 5, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-s6-files.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-live`, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-trim`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-2.sh`
+- `census-fed-upload.service`: 1, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-s6-files.sh`
+- `census-fed-upload.timer`: 6, 6 files
+- `census-fed-upload`: 23, 13 files
+- `census-fed-watch.service`: 8, 7 files
+- `census-fed-watch`: 9, 7 files
+- `census-fed-workload`: 37, 17 files
+- `census-fed`: 72, 25 files
+- `census-fedtest-`: 1, `pipeline/s7-run/runner/ec2-batch6/scripts/t1-feeder-stub.sh`
+- `census-fedtest-batch99a1.service`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/t1-feeder-stub.sh`
+- `census-fedtest-batch99a2.service`: 4, `pipeline/s7-run/runner/ec2-batch6/scripts/t1-feeder-stub.sh`
+- `census-fedtest-batch99a3.service`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/t1-feeder-stub.sh`
+- `census-fedtest-hold.service`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/t1-feeder-stub.sh`
+- `census-fedtw-`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/t5-feeder-workers.sh`
 - `census-fetch`: 5, `pipeline/s7-run/README.md`, `pipeline/s7-run/fetch_done.sh`, `pipeline/s7-run/footer_fix_again.sh`, `pipeline/s7-run/prelim_merge.py`
 - `census-funnel-`: 1, `pipeline/s7-run/census_funnel.py`
 - `census-local-a.`: 1, `pipeline/s7-run/local-a/build_run_manifest.py`
-- `census-local-a`: 15, 8 files
+- `census-local-a`: 16, 9 files
 - `census-local-b.`: 1, `pipeline/s7-run/local-d/run.sh`
 - `census-local-b`: 13, 7 files
-- `census-local-c`: 14, 7 files
+- `census-local-c`: 15, 8 files
 - `census-local-d`: 11, 7 files
-- `census-name.`: 1, `REPRODUCE.md`
-- `census-name`: 6, `sync/anonymity-scan.sh`
-- `census-other-done`: 4, `pipeline/s7-run/README.md`
-- `census-spot-decide`: 1, `pipeline/s7-run/README.md`
+- `census-name.`: 2, `PLAN.md`, `REPRODUCE.md`
+- `census-name`: 8, `PLAN.md`, `sync/anonymity-scan.sh`
+- `census-other-done`: 202, 73 files
+- `census-other`: 1, `pipeline/s7-run/runner/ec2-L7-20b/scripts/P2-probe.sh`
+- `census-spot-decide.`: 3, `pipeline/s7-run/runner/ec2-batch5/README.md`, `pipeline/s7-run/runner/ec2-batch6/README.md`
+- `census-spot-decide.orig-b3b5`: 2, `pipeline/s7-run/runner/ec2-batch6/README.md`, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-s6-files.sh`
+- `census-spot-decide`: 58, 33 files
 - `census-step-monitor`: 1, `pipeline/s7-run/README.md`
-- `census.`: 7, `pipeline/s2-pool/gitlab/README.md`, `pipeline/s7-run/README.md`, `pipeline/s7-run/build_run.sh`, `pipeline/s7-run/failed-projects.md`
+- `census-steps`: 33, 30 files
+- `census-watchdog.timer.`: 1, `pipeline/s7-run/runner/census-watchdog/watchdog.sh`
+- `census-watchdog.timer`: 2, `pipeline/s7-run/runner/census-watchdog/README.md`
+- `census-watchdog`: 24, `pipeline/s7-run/runner/INVENTORY.tsv`, `pipeline/s7-run/runner/README.md`, `pipeline/s7-run/runner/census-watchdog/README.md`
+- `census.`: 45, 40 files
 - `census.cfg`: 1, `pipeline/s7-run/README.md`
 - `census_funnel.py`: 1, `pipeline/s7-run/census_funnel.py`
 - `census_funnel`: 1, `sync/rules.tsv`
-- `census`: 149, 62 files
-- `censuses`: 3, `pipeline/s7-run/README.md`, `pipeline/s7-run/split_batch4.py`, `tools/ctp/docs/E2E.md`
+- `census`: 1538, 355 files
+- `censuses`: 77, 59 files
+- `cregit-census-batch3-spot`: 7, `pipeline/s7-run/runner/ec2-batch3/README.md`, `pipeline/s7-run/runner/ec2-batch3/fleet/launch-template.json`, `pipeline/s7-run/runner/ec2-batch3/launch_fleet.sh`, `pipeline/s7-run/runner/ec2-batch3/restart_spot.sh`
+- `cregit-census-batch3`: 10, 5 files
+- `cregit-census-batch3a`: 1, `pipeline/s7-run/runner/ec2-batch3/README.md`
+- `cregit-census-batch3b`: 1, `pipeline/s7-run/runner/ec2-batch3/README.md`
+- `cregit-census-ec2`: 2, `pipeline/s7-run/runner/ec2-batch3/fleet/launch-template.json`, `pipeline/s7-run/runner/ec2-batch3/launch_spot.sh`
+- `cregit-census`: 4, `pipeline/s7-run/runner/ec2-batch3/fleet/launch-template.json`, `pipeline/s7-run/runner/ec2-batch3/launch_fleet.sh`, `pipeline/s7-run/runner/ec2-batch3/launch_spot.sh`
 - `cregit-workspace/census-2026-10`: 1, `pipeline/s7-run/README.md`
 - `cregit-workspace/census-cloud-fixed`: 1, `pipeline/s7-run/README.md`
 - `cregit-workspace/census-cloud`: 2, `pipeline/s7-run/README.md`
+- `ec2-L1r/scripts/remote-L/census-L1r-cregit`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L1r/scripts/remote-L/census-L1r-finalize.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L1r/scripts/remote-L/census-L1r-finalize`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L1r/scripts/remote-L/census-L1r-firm.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L1r/scripts/remote-L/census-L1r-firm.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L1r/scripts/remote-L/census-L1r-firm`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L1r/scripts/remote-L/census-L1r-live.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L1r/scripts/remote-L/census-L1r-live.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L1r/scripts/remote-L/census-L1r-live`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L1r/scripts/remote-L/census-L1r-run`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L1r/scripts/remote-L/census-L1r-wait.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L1r/scripts/remote-L/census-L1r-wait`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L1r/scripts/remote-L/census-L1r.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L1r/scripts/remote-L/census-backup`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L1r/scripts/remote-L/census-batch4-guard`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L1r/scripts/remote-L/census-other-done`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L22/scripts/remote-L/census-L22-cregit`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L22/scripts/remote-L/census-L22-finalize.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L22/scripts/remote-L/census-L22-finalize`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L22/scripts/remote-L/census-L22-live.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L22/scripts/remote-L/census-L22-live.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L22/scripts/remote-L/census-L22-live`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L22/scripts/remote-L/census-L22-run`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L22/scripts/remote-L/census-L22-wait.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L22/scripts/remote-L/census-L22-wait`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L22/scripts/remote-L/census-L22.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L22/scripts/remote-L/census-backup`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L22/scripts/remote-L/census-batch4-guard`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L22/scripts/remote-L/census-other-done`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L23/scripts/remote-L/census-L23-cregit`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L23/scripts/remote-L/census-L23-finalize.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L23/scripts/remote-L/census-L23-finalize`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L23/scripts/remote-L/census-L23-live.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L23/scripts/remote-L/census-L23-live.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L23/scripts/remote-L/census-L23-live`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L23/scripts/remote-L/census-L23-run`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L23/scripts/remote-L/census-L23-wait.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L23/scripts/remote-L/census-L23-wait`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L23/scripts/remote-L/census-L23.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L23/scripts/remote-L/census-backup`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L23/scripts/remote-L/census-batch4-guard`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L23/scripts/remote-L/census-other-done`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20/scripts/remote-L/census-L7-20-cregit`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20/scripts/remote-L/census-L7-20-finalize.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20/scripts/remote-L/census-L7-20-finalize`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20/scripts/remote-L/census-L7-20-live.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20/scripts/remote-L/census-L7-20-live.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20/scripts/remote-L/census-L7-20-live`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20/scripts/remote-L/census-L7-20-run`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20/scripts/remote-L/census-L7-20-wait.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20/scripts/remote-L/census-L7-20-wait`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20/scripts/remote-L/census-L7-20.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20/scripts/remote-L/census-backup`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20/scripts/remote-L/census-batch4-guard`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20/scripts/remote-L/census-batch6L-cregit`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20/scripts/remote-L/census-other-done`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20b/scripts/remote-L/census-L7-20-split.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20b/scripts/remote-L/census-L7-20-split.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20b/scripts/remote-L/census-L7-20-split`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20b/scripts/remote-L/census-L7-20b-cregit`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20b/scripts/remote-L/census-L7-20b-finalize.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20b/scripts/remote-L/census-L7-20b-finalize`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20b/scripts/remote-L/census-L7-20b-live.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20b/scripts/remote-L/census-L7-20b-live.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20b/scripts/remote-L/census-L7-20b-live`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20b/scripts/remote-L/census-L7-20b-run`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20b/scripts/remote-L/census-L7-20b-wait.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20b/scripts/remote-L/census-L7-20b-wait`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20b/scripts/remote-L/census-L7-20b.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20b/scripts/remote-L/census-backup`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20b/scripts/remote-L/census-batch4-guard`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-L7-20b/scripts/remote-L/census-other-done`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch2/scripts/remote/census-batch2-finalize.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch2/scripts/remote/census-batch2-finalize`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch2/scripts/remote/census-batch2-live.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch2/scripts/remote/census-batch2-live.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch2/scripts/remote/census-batch2-live`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch2/scripts/remote/census-batch2-run`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch2/scripts/remote/census-batch2.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch2/upload/census.cfg`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote-spot/census-b3-check`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote-spot/census-b3-finalize.orig-b3only`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote-spot/census-b3-finalize.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote-spot/census-b3-finalize`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote-spot/census-b3-live.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote-spot/census-b3-live.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote-spot/census-b3-live`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote-spot/census-b3-parts-init`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote-spot/census-b3-prep`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote-spot/census-b3-run`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote-spot/census-b3-start`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote-spot/census-b3-upload.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote-spot/census-b3-upload.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote-spot/census-b3-upload`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote-spot/census-b3-watch.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote-spot/census-b3-watch`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote-spot/census-b3`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote/census-batch2-finalize`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote/census-batch2-live`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote/census-batch3L-finalize.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote/census-batch3L-finalize`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote/census-batch3L-live.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote/census-batch3L-live.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote/census-batch3L-live`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote/census-batch3L-run`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote/census-batch3L-wait.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote/census-batch3L-wait`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote/census-batch3L.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote/census-other-done`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch3/scripts/remote/census-steps`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch4/scripts/old/census-batch4-finalize.v1`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch4/scripts/old/census-batch4-live.v1`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch4/scripts/remote/census-batch4-finalize.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch4/scripts/remote/census-batch4-finalize`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch4/scripts/remote/census-batch4-guard.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch4/scripts/remote/census-batch4-guard.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch4/scripts/remote/census-batch4-guard`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch4/scripts/remote/census-batch4-live.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch4/scripts/remote/census-batch4-live.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch4/scripts/remote/census-batch4-live`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch4/scripts/remote/census-batch4-run`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch4/scripts/remote/census-batch4p1.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch4/scripts/remote/census-batch4p2.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch4/scripts/remote/census-batch4p3.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch4/scripts/remote/census-other-done`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-L/census-batch4-guard`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-L/census-batch5L-finalize.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-L/census-batch5L-finalize`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-L/census-batch5L-live.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-L/census-batch5L-live.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-L/census-batch5L-live`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-L/census-batch5L-run`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-L/census-batch5L.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-L/census-other-done`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b3-finalize`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b5-check`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b5-derive`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b5-finalize.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b5-finalize`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b5-live.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b5-live.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b5-live`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b5-parts-init`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b5-prep`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b5-run`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b5-start`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b5-trim`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b5-upload.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b5-upload.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b5-upload`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b5-watch.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b5-watch`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-b5`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch5/scripts/remote-spot/census-spot-decide`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-L/census-backup`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-L/census-batch4-guard`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-L/census-batch6L-cregit`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-L/census-batch6L-finalize.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-L/census-batch6L-finalize`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-L/census-batch6L-live.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-L/census-batch6L-live.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-L/census-batch6L-live`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-L/census-batch6L-run`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-L/census-batch6L-wait.orig-b4wait`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-L/census-batch6L-wait.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-L/census-batch6L-wait`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-L/census-batch6L.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-L/census-other-done`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/__pycache__/census-fed-derivecpython-314.pyc`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/__pycache__/census-fed-uploadcpython-314.pyc`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-check`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-common`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-derive`: 2, `pipeline/s7-run/runner/INVENTORY.tsv`, `pipeline/s7-run/runner/ec2-batch24/build_batch24.py`
+- `ec2-batch6/scripts/remote-spot/census-fed-enqueue`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-feeder.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-feeder.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-feeder`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-finalize.orig-nologs`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-finalize.orig-nopersons`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-finalize`: 2, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-live.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-live.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-live`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-part-init.orig-blamerace`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-part-init.orig-tarrace`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-part-init`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-run`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-trim`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-upload.orig-nopersons`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-upload.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-upload.timer`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-upload`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-watch.service`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-watch`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed-workload`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-fed`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-batch6/scripts/remote-spot/census-spot-decide`: 1, `pipeline/s7-run/runner/INVENTORY.tsv`
+- `ec2-user/census-L1r.cfg`: 1, `pipeline/s7-run/runner/ec2-L1r/README.md`
+- `ec2-user/census-L23.cfg`: 1, `pipeline/s7-run/runner/ec2-L23/README.md`
+- `ec2-user/census-L7-20.cfg`: 1, `pipeline/s7-run/runner/ec2-L7-20/README.md`
+- `ec2-user/census-L7-20b.cfg`: 1, `pipeline/s7-run/runner/ec2-L7-20b/README.md`
+- `ec2/census-batch2`: 3, `pipeline/s7-run/runner/ec2-batch2/scripts/02-nix.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/setup-a.sh`, `pipeline/s7-run/runner/ec2-batch3/scripts/setup-b.sh`
 - `generate_dataset_census`: 1, `pipeline/s7-run/test_rewrite_footer_columns.py`
 - `here/census.cfg`: 1, `pipeline/s7-run/run_batch1.sh`
+- `k/census-2026-10-batch3a`: 6, 6 files
+- `k/census-2026-10-batch4`: 7, 7 files
 - `logs/census-local-a.log`: 1, `pipeline/s7-run/README.md`
 - `manifest.census.tsv`: 3, `tools/ctp/docs/E2E.md`
+- `mp/census-2026-10-`: 5, 5 files
+- `n/usr/local/bin/census-batch6L-cregit`: 1, `pipeline/s7-run/runner/ec2-batch6/set-cregit.sh`
+- `n/usr/local/bin/census-fed-feeder`: 1, `pipeline/s7-run/runner/ec2-batch6/set-cregit.sh`
+- `n/usr/local/bin/census-fed-workload`: 1, `pipeline/s7-run/runner/ec2-batch6/set-cregit.sh`
+- `p/census-2026-10-`: 1, `pipeline/s7-run/runner/ec2-batch6/scripts/R5-steps-a.sh`
 - `pipeline/s7-run/census.cfg`: 1, `sync/sources.tsv`
 - `pipeline/s7-run/census_funnel.py`: 1, `sync/sources.tsv`
 - `pipeline/s7-run/local-a/census.cfg`: 1, `sync/sources.tsv`
 - `pipeline/s7-run/local-b/census.cfg`: 1, `sync/sources.tsv`
 - `pipeline/s7-run/local-c/census.cfg`: 1, `sync/sources.tsv`
 - `pipeline/s7-run/local-d/census.cfg`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/census-backup/remote/census-backup`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/census-backup`: 4, `sync/sources.tsv`
+- `pipeline/s7-run/runner/census-watchdog`: 2, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-cregit`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-finalize.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-finalize`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-firm.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-firm.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-firm`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-live.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-live.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-live`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-run`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-wait.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-wait`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-backup`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-batch4-guard`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-other-done`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-cregit`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-finalize.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-finalize`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-live.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-live.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-live`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-run`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-wait.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22-wait`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-L22.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-backup`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-batch4-guard`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L22/scripts/remote-L/census-other-done`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-cregit`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-finalize.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-finalize`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-live.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-live.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-live`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-run`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-wait.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23-wait`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-L23.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-backup`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-batch4-guard`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L23/scripts/remote-L/census-other-done`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-cregit`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-finalize.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-finalize`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-live.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-live.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-live`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-run`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-wait.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-wait`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-backup`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-batch4-guard`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-batch6L-cregit`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20/scripts/remote-L/census-other-done`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20-split.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20-split.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20-split`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-cregit`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-finalize.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-finalize`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-live.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-live.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-live`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-run`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-wait.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-wait`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-backup`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-batch4-guard`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-L7-20b/scripts/remote-L/census-other-done`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch2/scripts/remote/census-batch2-finalize.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch2/scripts/remote/census-batch2-finalize`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch2/scripts/remote/census-batch2-live.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch2/scripts/remote/census-batch2-live.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch2/scripts/remote/census-batch2-live`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch2/scripts/remote/census-batch2-run`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch2/scripts/remote/census-batch2.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-check`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-finalize.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-finalize`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-live.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-live.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-live`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-parts-init`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-prep`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-run`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-start`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-upload.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-upload.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-upload`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-watch.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-watch`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch2-finalize`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch2-live`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-finalize.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-finalize`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-live.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-live.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-live`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-run`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-wait.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-wait`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-batch3L.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-other-done`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch3/scripts/remote/census-steps`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-finalize.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-finalize`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-guard.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-guard.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-guard`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-live.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-live.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-live`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4-run`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4p1.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4p2.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-batch4p3.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch4/scripts/remote/census-other-done`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch4-guard`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-finalize.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-finalize`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-live.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-live.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-live`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-run`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-other-done`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b3-finalize`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-check`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-derive`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-finalize.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-finalize`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-live.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-live.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-live`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-parts-init`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-prep`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-run`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-start`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-trim`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-upload.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-upload.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-upload`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-watch.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-watch`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch5/scripts/remote-spot/census-spot-decide`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-backup`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch4-guard`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-cregit`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-finalize.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-finalize`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-live.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-live.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-live`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-run`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-wait.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-wait`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-other-done`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-check`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-common`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-derive`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-enqueue`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-feeder.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-feeder.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-feeder`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-finalize`: 2, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-live.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-live.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-live`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-part-init`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-run`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-trim`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-upload.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-upload.timer`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-upload`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-watch.service`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-watch`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-workload`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed`: 1, `sync/sources.tsv`
+- `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-spot-decide`: 1, `sync/sources.tsv`
 - `project_meta.census.json`: 2, `tools/ctp/docs/E2E.md`
+- `remote/census-backup`: 1, `pipeline/s7-run/runner/census-backup/README.md`
+- `s/census-2026-10-batch4`: 3, `pipeline/s7-run/runner/ec2-batch4/scripts/p3-setup.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/q2-hold-copy-check.sh`, `pipeline/s7-run/runner/ec2-batch4/scripts/q2-tail.sh`
 - `s7-run/census.cfg`: 1, `sync/sources.tsv`
 - `s7-run/census_funnel.py`: 1, `sync/sources.tsv`
 - `s7-run/local-a/census.cfg`: 1, `sync/sources.tsv`
 - `s7-run/local-b/census.cfg`: 1, `sync/sources.tsv`
 - `s7-run/local-c/census.cfg`: 1, `sync/sources.tsv`
 - `s7-run/local-d/census.cfg`: 1, `sync/sources.tsv`
+- `s7-run/runner/census-backup/remote/census-backup`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/census-backup`: 8, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/census-watchdog`: 4, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-cregit`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-finalize.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-finalize`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-firm.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-firm.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-firm`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-live.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-live.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-live`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-run`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-wait.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-wait`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L1r/scripts/remote-L/census-backup`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L1r/scripts/remote-L/census-batch4-guard`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L1r/scripts/remote-L/census-other-done`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L22/scripts/remote-L/census-L22-cregit`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L22/scripts/remote-L/census-L22-finalize.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L22/scripts/remote-L/census-L22-finalize`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L22/scripts/remote-L/census-L22-live.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L22/scripts/remote-L/census-L22-live.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L22/scripts/remote-L/census-L22-live`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L22/scripts/remote-L/census-L22-run`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L22/scripts/remote-L/census-L22-wait.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L22/scripts/remote-L/census-L22-wait`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L22/scripts/remote-L/census-L22.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L22/scripts/remote-L/census-backup`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L22/scripts/remote-L/census-batch4-guard`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L22/scripts/remote-L/census-other-done`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L23/scripts/remote-L/census-L23-cregit`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L23/scripts/remote-L/census-L23-finalize.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L23/scripts/remote-L/census-L23-finalize`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L23/scripts/remote-L/census-L23-live.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L23/scripts/remote-L/census-L23-live.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L23/scripts/remote-L/census-L23-live`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L23/scripts/remote-L/census-L23-run`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L23/scripts/remote-L/census-L23-wait.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L23/scripts/remote-L/census-L23-wait`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L23/scripts/remote-L/census-L23.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L23/scripts/remote-L/census-backup`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L23/scripts/remote-L/census-batch4-guard`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L23/scripts/remote-L/census-other-done`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-cregit`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-finalize.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-finalize`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-live.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-live.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-live`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-run`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-wait.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20-wait`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20/scripts/remote-L/census-L7-20.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20/scripts/remote-L/census-backup`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20/scripts/remote-L/census-batch4-guard`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20/scripts/remote-L/census-batch6L-cregit`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20/scripts/remote-L/census-other-done`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20-split.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20-split.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20-split`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-cregit`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-finalize.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-finalize`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-live.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-live.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-live`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-run`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-wait.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b-wait`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20b/scripts/remote-L/census-L7-20b.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20b/scripts/remote-L/census-backup`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20b/scripts/remote-L/census-batch4-guard`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-L7-20b/scripts/remote-L/census-other-done`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch2/scripts/remote/census-batch2-finalize.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch2/scripts/remote/census-batch2-finalize`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch2/scripts/remote/census-batch2-live.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch2/scripts/remote/census-batch2-live.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch2/scripts/remote/census-batch2-live`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch2/scripts/remote/census-batch2-run`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch2/scripts/remote/census-batch2.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-check`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-finalize.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-finalize`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-live.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-live.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-live`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-parts-init`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-prep`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-run`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-start`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-upload.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-upload.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-upload`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-watch.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3-watch`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote-spot/census-b3`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote/census-batch2-finalize`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote/census-batch2-live`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-finalize.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-finalize`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-live.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-live.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-live`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-run`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-wait.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote/census-batch3L-wait`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote/census-batch3L.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote/census-other-done`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch3/scripts/remote/census-steps`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch4/scripts/remote/census-batch4-finalize.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch4/scripts/remote/census-batch4-finalize`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch4/scripts/remote/census-batch4-guard.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch4/scripts/remote/census-batch4-guard.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch4/scripts/remote/census-batch4-guard`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch4/scripts/remote/census-batch4-live.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch4/scripts/remote/census-batch4-live.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch4/scripts/remote/census-batch4-live`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch4/scripts/remote/census-batch4-run`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch4/scripts/remote/census-batch4p1.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch4/scripts/remote/census-batch4p2.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch4/scripts/remote/census-batch4p3.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch4/scripts/remote/census-other-done`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-L/census-batch4-guard`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-finalize.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-finalize`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-live.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-live.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-live`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-run`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-L/census-other-done`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b3-finalize`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-check`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-derive`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-finalize.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-finalize`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-live.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-live.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-live`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-parts-init`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-prep`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-run`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-start`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-trim`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-upload.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-upload.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-upload`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-watch.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5-watch`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-b5`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch5/scripts/remote-spot/census-spot-decide`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-L/census-backup`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-L/census-batch4-guard`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-cregit`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-finalize.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-finalize`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-live.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-live.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-live`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-run`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-wait.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-wait`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-L/census-other-done`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-check`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-common`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-derive`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-enqueue`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-feeder.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-feeder.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-feeder`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-finalize`: 4, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-live.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-live.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-live`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-part-init`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-run`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-trim`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-upload.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-upload.timer`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-upload`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-watch.service`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-watch`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-workload`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `s7-run/runner/ec2-batch6/scripts/remote-spot/census-spot-decide`: 2, `pipeline/s7-run/runner/ORIGIN.tsv`, `sync/sources.tsv`
+- `scripts/remote-spot/census-b3-finalize.orig-b3only`: 1, `pipeline/s7-run/runner/ec2-batch3/README.md`
+- `scripts/remote/census-batch3L.service`: 1, `pipeline/s7-run/runner/ec2-batch3/README.md`

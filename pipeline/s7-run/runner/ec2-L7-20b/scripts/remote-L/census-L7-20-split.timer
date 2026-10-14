@@ -1,0 +1,10 @@
+[Unit]
+Description=cregit census L7-20: split watcher every 5 s (no project in both L7-20 and L7-20b)
+
+[Timer]
+OnActiveSec=5s
+OnUnitActiveSec=5s
+AccuracySec=1s
+
+[Install]
+WantedBy=timers.target

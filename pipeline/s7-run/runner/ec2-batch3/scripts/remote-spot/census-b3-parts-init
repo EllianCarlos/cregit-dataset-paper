@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# census-b3-parts-init a|b: the census parts of this spot instance (2026-10-09 A/B test).
+#   a: one part aK per XFS filesystem /dataK (no RAID; K = 1..number of instance-store disks),
+#      each with its own ctp clone and state (/dataK/ctp), config and output
+#      (/dataK/census-2026-10-batch3a); the 20 workers split as evenly as possible (4 disks: 5 each).
+#   b: 1 part b on the RAID0 /data, the batch 2 layout: /home/ec2-user/ctp, 20 workers (control).
+# Writes /etc/cregit-census/batch.env (BATCH, PARTS) and <part>.env (CTP, OUT, WORKERS, CFG, LOG),
+# and the ctp clones of the a parts (the same bundle and Python pins as batch 2).
+set -euo pipefail
+X=$1; E=/etc/cregit-census; mkdir -p $E
+case $X in
+  a) parts=""; for d in /data[0-9]*; do mountpoint -q "$d" && parts="$parts a${d#/data}"; done; parts=${parts# }
+     [ -n "$parts" ] || { echo "no /dataK filesystems: run layout-fsN.sh first" >&2; exit 2; } ;;
+  b) parts="b" ;;
+  *) echo "usage: census-b3-parts-init a|b" >&2; exit 2 ;;
+esac
+printf 'BATCH=%s\nPARTS="%s"\n' "$X" "$parts" > $E/batch.env
+np=$(echo $parts | wc -w); i=0
+for p in $parts; do
+  if [ "$p" = b ]; then C=/home/ec2-user/ctp; O=/data/census-2026-10-batch3; W=20
+  else k=${p#a}; C=/data$k/ctp; O=/data$k/census-2026-10-batch3a; W=$(( 20 / np + (i < 20 % np ? 1 : 0) )); fi
+  i=$((i+1))
+  printf 'PART=%s\nCTP=%s\nOUT=%s\nWORKERS=%s\nCFG=%s\nLOG=%s\n' "$p" "$C" "$O" "$W" "$E/$p.cfg" "/data/logs/batch3-$p.log" > $E/$p.env
+  printf '# ctp config (CTP_CONFIG) for census batch3 part %s on spot: cregit 95cdc88.\n[paths]\ncregit_dir = /data/cregit-ec2\noutput_dir = %s\n' "$p" "$O" > $E/$p.cfg
+  mkdir -p "$O"; chown ec2-user: "$O"
+  if [ ! -x "$C/.venv/bin/python" ]; then
+    sudo -u ec2-user bash -c "set -e; [ -d $C ] || git clone -q /data/input/ctp.bundle $C -b feat/e2e-runner; cd $C; [ \"\$(git rev-parse --short HEAD)\" = ca113e3 ]; python3.12 -m venv .venv; .venv/bin/pip install -q --disable-pip-version-check duckdb==1.5.5 pytest==9.1.1 coverage==7.16.0"
+  fi
+  echo "$p: $(sudo -u ec2-user git -C $C rev-parse --short HEAD) $C -> $O, $W workers"
+done
+chmod 644 $E/*

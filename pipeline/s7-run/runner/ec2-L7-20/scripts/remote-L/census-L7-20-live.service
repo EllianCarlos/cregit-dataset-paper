@@ -1,0 +1,8 @@
+[Unit]
+Description=cregit census L7-20: live status to S3
+
+[Service]
+Type=oneshot
+User=ec2-user
+ExecStart=/usr/local/bin/census-L7-20-live
+TimeoutStartSec=300

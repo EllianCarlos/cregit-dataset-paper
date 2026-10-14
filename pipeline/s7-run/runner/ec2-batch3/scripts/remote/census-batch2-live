@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Every 10 min (census-batch2-live.timer): status of the census to s3://BUCKET/batch2/live/.
+# 2026-10-09 03:15: adds steps.txt (census-steps: the cregit step of each running project,
+# its computed start, elapsed time and the last log line; LineageOS always listed first),
+# and appends the same table to progress.txt.
+set -uo pipefail
+D=s3://${RUNNER_BUCKET}/batch2/live
+T=$(mktemp -d); trap 'rm -rf "$T"' EXIT
+export CTP_CONFIG=/home/ec2-user/census-batch2.cfg
+M=/home/ec2-user/batch2-input/manifest.batch2.tsv
+/usr/local/bin/census-steps /home/ec2-user/ctp "$M" --highlight LineageOS > "$T/steps.txt" 2>&1
+{ echo "as of $(date -u +%FT%TZ)  census-batch2: $(systemctl is-active census-batch2.service) ($(systemctl show census-batch2.service -p Result --value))"
+  echo "uptime: $(uptime)"
+  echo "MemAvailable: $(awk '/MemAvailable/{printf "%.1f GiB", $2/1048576}' /proc/meminfo)   /data free: $(df -BG --output=avail /data | tail -1 | tr -d ' ')"
+  echo
+  (cd /home/ec2-user/ctp && .venv/bin/python ctp.py progress --manifest "$M" --last 10 2>&1)
+  echo; echo "=== steps"; cat "$T/steps.txt"
+} > "$T/progress.txt"
+tail -n 300 /data/logs/batch2.log > "$T/batch2.log.tail" 2>/dev/null || true
+{ date -u +%FT%TZ; uptime; cat /proc/meminfo; df -h /data /; } > "$T/system.txt"
+[ -f /home/ec2-user/ctp/ledger.jsonl ] && cp /home/ec2-user/ctp/ledger.jsonl "$T/ledger.jsonl"
+aws s3 cp "$T/" "$D/" --recursive --only-show-errors

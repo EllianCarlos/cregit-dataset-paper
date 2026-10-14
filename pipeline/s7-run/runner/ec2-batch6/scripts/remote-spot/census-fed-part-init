@@ -1,0 +1,73 @@
+#!/usr/bin/env bash
+# census-fed-part-init WORKLOAD PART (root; called by census-fed-feeder just before the part starts):
+# the fed part <id> = WORKLOAD+PART (e.g. batch6a1) of this spot instance gets, as the census-b5 parts:
+#   - its own sparse XFS image <host>/loop/<id>.img, loop-mounted at /w/<id> (own superblock, so its own
+#     rename lock; fstab line with nofail). Host: a: the mounted /dataK with the most free space;
+#     b: the RAID0 /data. Size min(1200G, 90% of the host's free space / (1 + images of running parts
+#     on it)); ctp --disk-floor-gb min(300, size/4);
+#   - its own ctp clone /w/<id>/ctp (ca113e3 from /data/input/ctp.bundle, Python 3.12 venv);
+#   - its own cregit copy /w/<id>/cregit-ec2 of the checked /data/cregit-ec2 (95cdc88), with an empty
+#     tokenizeByBlobId/build, checked out at the workload's CREGIT_COMMIT (census-fed-workload; fetched
+#     from its git bundle); the path and the commit are fixed here, before the census starts (blobExec
+#     stores the path);
+#   - its config /etc/cregit-census/fed/<id>.cfg, env <id>.env and output /w/<id>/census-2026-10-<wl>.
+# Idempotent: an existing env keeps its image, size and floor; existing mounts, clones, copies are kept.
+set -euo pipefail
+. /usr/local/bin/census-fed-common
+wl=${1:?workload}; part=${2:?part}; id=$wl$part; X=$(fed_half)
+w=$(awk -F'\t' -v q=$part '!/^#/ && $3==q {print $4}' $FI/$wl/parts.$wl.tsv); [ -n "$w" ] || { echo "$id not in parts.$wl.tsv" >&2; exit 2; }
+[ -d /data/cregit-ec2 ] || { echo "no /data/cregit-ec2" >&2; exit 2; }
+if [ -f $FED/$id.env ]; then . $FED/$id.env; h=$HOST; img=$IMG; sz=$SIZE_G; fl=$FLOOR
+else
+  if [ $X = a ]; then h=$(for d in /data[0-9]*; do mountpoint -q $d && echo "$(df -BG --output=avail $d | tail -1 | tr -dc 0-9) $d"; done | sort -rn | head -1 | cut -d' ' -f2)
+  else h=$(readlink -f /data); fi
+  [ -n "$h" ] || { echo "no host filesystem" >&2; exit 2; }
+  h=$(readlink -f $h)
+  # images on this host whose part still runs (a finished part's image keeps only its small output)
+  act=0; for m in $(findmnt -rn -o TARGET | grep '^/w/'); do src=$(losetup -n -O BACK-FILE "$(findmnt -no SOURCE $m)" 2>/dev/null || true)
+    i=${m#/w/}; fed_active census-fed@$i.service || fed_active census-b5@$i.service || fed_active census-b3@$i.service || continue
+    case $src in $h/*) act=$((act+1)) ;; esac; done
+  av=$(df -BG --output=avail $h | tail -1 | tr -dc 0-9); sz=$(( av * 9 / 10 / (act + 1) )); [ $sz -gt 1200 ] && sz=1200
+  [ $sz -ge 200 ] || { echo "only ${sz}G for an image on $h: not enough space" >&2; exit 3; }
+  fl=$(( sz / 4 )); [ $fl -gt 300 ] && fl=300; img=$h/loop/$id.img
+fi
+mp=/w/$id
+mkdir -p $h/loop $mp
+[ -e $img ] || { truncate -s ${sz}G $img; mkfs.xfs -q -L ${id:0:12} $img; }
+grep -q "^$img " /etc/fstab || echo "$img $mp xfs loop,noatime,discard,nofail,x-systemd.requires-mounts-for=$h 0 0" >> /etc/fstab
+mountpoint -q $mp || mount $mp
+chown ec2-user: $mp
+C=$mp/ctp; D=$mp/cregit-ec2; O=$mp/census-2026-10-$wl
+sudo -u ec2-user bash -c "set -e; [ -d $C ] || git clone -q /data/input/ctp.bundle $C -b feat/e2e-runner; cd $C; [ \"\$(git rev-parse --short HEAD)\" = ca113e3 ]; [ -x .venv/bin/python ] || { python3.12 -m venv .venv; nice -n 19 .venv/bin/pip install -q --disable-pip-version-check duckdb==1.5.5 pytest==9.1.1 coverage==7.16.0; }; mkdir -p $O $mp/uploaded"
+if [ ! -e $D ]; then
+  # copy into a temp dir, then mv: a failed copy leaves no partial $D (a retry would skip it). The
+  # tokenizer temp dir is left out as a whole, so writes in it during the copy cannot fail tar
+  # (2026-10-10 07:41 UTC: "file changed as we read it").
+  T=$mp/.cregit-copy; rm -rf $T; mkdir -p $T
+  # 2026-10-12: blameRepo/build too (formatBlame.pl temp files of census-b3@a2, which runs in the
+  # template on spot a: "file changed as we read it", feeder PAUSE at 00:58 UTC).
+  tar -C /data/ -cf - --exclude='cregit-ec2/tokenizeByBlobId/build' --exclude='cregit-ec2/blameRepo/build' cregit-ec2 | tar -C $T -xpf -
+  mv $T/cregit-ec2 $D; rmdir $T
+  mkdir -p $D/tokenizeByBlobId/build $D/blameRepo/build; chown ec2-user: $D $D/tokenizeByBlobId/build $D/blameRepo/build
+fi
+# the workload's cregit commit (census-fed-workload): check the copy out at it before the census starts
+WLE=$FED/wl/$wl.env; [ -f $WLE ] || { echo "no $WLE: run census-fed-workload $wl first" >&2; exit 2; }
+. $WLE; [ "$CREGIT_COMMIT" != pending ] || { echo "$wl: cregit commit pending" >&2; exit 4; }
+if [ "$(sudo -u ec2-user git -C $D rev-parse HEAD)" != "$CREGIT_COMMIT" ]; then
+  [ -n "$CREGIT_BUNDLE" ] || { echo "$D is at $(sudo -u ec2-user git -C $D rev-parse --short HEAD), $wl wants $CREGIT_COMMIT and has no bundle" >&2; exit 2; }
+  bf=/data/input/$(basename "$CREGIT_BUNDLE")
+  if [ ! -f $bf ] || [ "$(sha256sum $bf | cut -d' ' -f1)" != "$CREGIT_BUNDLE_SHA256" ]; then
+    aws s3 cp "$CREGIT_BUNDLE" $bf.tmp --only-show-errors && mv -f $bf.tmp $bf; fi
+  [ "$(sha256sum $bf | cut -d' ' -f1)" = "$CREGIT_BUNDLE_SHA256" ] || { echo "bundle $bf sha256 differs from $CREGIT_BUNDLE_SHA256" >&2; exit 2; }
+  chmod 644 $bf
+  [ -z "$(sudo -u ec2-user git -C $D status --porcelain --untracked-files=no)" ] || { echo "$D is dirty: no checkout" >&2; exit 2; }
+  sudo -u ec2-user bash -c "set -e; cd $D; git bundle verify -q $bf >/dev/null 2>&1; git fetch -q $bf '+refs/heads/*:refs/remotes/fed-bundle/*'; git checkout -q --detach $CREGIT_COMMIT"
+fi
+[ "$(sudo -u ec2-user git -C $D rev-parse HEAD)" = "$CREGIT_COMMIT" ] || { echo "$D is not at $CREGIT_COMMIT" >&2; exit 2; }
+[ -z "$(sudo -u ec2-user git -C $D status --porcelain --untracked-files=no)" ] || { echo "$D is dirty after the checkout" >&2; exit 2; }
+printf '# ctp config (CTP_CONFIG) for fed census part %s (%s, part %s) on spot half %s: cregit 95cdc88,\n# own copy %s, output on loop XFS %s (image %s).\n[paths]\ncregit_dir = %s\noutput_dir = %s\n' \
+  $id $wl $part $X $D $mp $img $D $O > $FED/$id.cfg
+[ -f $FED/$id.env ] || printf 'ID=%s\nWL=%s\nPART=%s\nHALF=%s\nWORKERS=%s\nHOST=%s\nIMG=%s\nSIZE_G=%s\nFLOOR=%s\nMP=%s\nCTP=%s\nCREGIT=%s\nOUT=%s\nCFG=%s\nLOG=%s\nIN=%s\nCREGIT_COMMIT=%s\n' \
+  $id $wl $part $X $w $h $img $sz $fl $mp $C $D $O $FED/$id.cfg /data/logs/fed-$id.log $FI/$wl $CREGIT_COMMIT > $FED/$id.env
+chmod 644 $FED/$id.env $FED/$id.cfg
+echo "$id: $(findmnt -no SOURCE $mp) $img ${sz}G floor ${fl}G fsid=$(stat -f -c %i $mp) | ctp $(sudo -u ec2-user git -C $C rev-parse --short HEAD) | cregit $(sudo -u ec2-user git -C $D rev-parse --short HEAD) dirty=$(sudo -u ec2-user git -C $D status --porcelain --untracked-files=no | wc -l) build=$(ls -A $D/tokenizeByBlobId/build | wc -l) | $w workers"

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# census-fed-trim (root, before every census-fed-live): fstrim each started fed part's loop XFS /w/<id>,
+# so blocks freed inside (cleaned-up clones) are punched out of the sparse image.
+for id in $(cat /etc/cregit-census/fed/started 2>/dev/null); do [ -e /w/$id/final-DONE ] && continue; mountpoint -q /w/$id && fstrim /w/$id >/dev/null 2>&1; done
+exit 0

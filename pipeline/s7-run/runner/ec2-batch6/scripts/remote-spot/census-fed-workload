@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# census-fed-workload WORKLOAD --pending | --base | --commit SHA --bundle S3URL --bundle-sha256 H --want-pq H [--want-srcml H]
+# (root): the cregit commit of a fed workload, in /etc/cregit-census/fed/wl/WORKLOAD.env. Every fed part
+# of WORKLOAD gets its own copy of /data/cregit-ec2 (95cdc88), which census-fed-part-init checks out at
+# CREGIT_COMMIT (fetched from the git bundle CREGIT_BUNDLE, sha256-checked) before the part's census
+# starts; census-fed-check then gates the copy against WANT_PQ (libexpat Parquet sha256) and WANT_SRCML.
+#   --pending  the commit is not known yet: the feeder starts no part of WORKLOAD (it waits);
+#   --base     run on the AMI cregit 95cdc88 with the batch 5 gate values (no bundle).
+# --show prints the file. Changing the commit of a workload with started parts is refused.
+set -euo pipefail
+. /usr/local/bin/census-fed-common
+WL=${1:-}; shift || true
+[[ $WL =~ ^batch[0-9]+$ ]] || { echo "usage: census-fed-workload WORKLOAD --pending|--base|--show|--commit ..." >&2; exit 2; }
+F=$FED/wl/$WL.env; mkdir -p $FED/wl
+commit="" bundle="" bsha="" pq="" srcml=dea4467bb1b0a435e4536be13367325564b82e14ff69b478ad31bf144a8455f3
+case ${1:-} in
+  --show) cat $F 2>/dev/null || echo "no $F"; exit 0 ;;
+  --pending) commit=pending ;;
+  --base) commit=$(sudo -u ec2-user git -C /data/cregit-ec2 rev-parse HEAD); pq=40511e0de1a285b5bbc4ae0ff277e4775c5d67709966dd7c64dc9163c638fc5d ;;
+  --commit) while [ $# -gt 0 ]; do case $1 in
+      --commit) commit=$2; shift 2 ;; --bundle) bundle=$2; shift 2 ;; --bundle-sha256) bsha=$2; shift 2 ;;
+      --want-pq) pq=$2; shift 2 ;; --want-srcml) srcml=$2; shift 2 ;; *) echo "unknown $1" >&2; exit 2 ;; esac; done
+    [[ $commit =~ ^[0-9a-f]{40}$ ]] && [[ $bsha =~ ^[0-9a-f]{64}$ ]] && [[ $pq =~ ^[0-9a-f]{64}$ ]] && [ -n "$bundle" ] \
+      || { echo "--commit needs a 40-hex SHA, --bundle, --bundle-sha256 and --want-pq (64-hex)" >&2; exit 2; } ;;
+  *) echo "usage: census-fed-workload WORKLOAD --pending|--base|--show|--commit ..." >&2; exit 2 ;;
+esac
+for id in $(fed_started); do
+  case $id in $WL[ab][0-9]*) [ -f $F ] && ! grep -qx "CREGIT_COMMIT=$commit" $F && { echo "$id of $WL already started with $(grep CREGIT_COMMIT $F): refusing to change the commit" >&2; exit 1; } ;; esac
+done
+printf 'CREGIT_COMMIT=%s\nCREGIT_BUNDLE=%s\nCREGIT_BUNDLE_SHA256=%s\nWANT_PQ=%s\nWANT_SRCML=%s\n' "$commit" "$bundle" "$bsha" "$pq" "$srcml" > $F.new
+chmod 644 $F.new; mv -f $F.new $F
+echo "$WL: $(tr '\n' ' ' < $F)"

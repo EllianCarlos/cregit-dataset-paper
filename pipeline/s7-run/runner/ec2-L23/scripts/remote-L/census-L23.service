@@ -1,0 +1,23 @@
+[Unit]
+Description=cregit census L23: the 8 L projects of batch 23 (DP8L v4 near-miss supplement), 4 workers (ctp census, loop XFS /bL23)
+Wants=network-online.target
+After=network-online.target nix-daemon.service
+RequiresMountsFor=/data /bL23
+OnSuccess=census-L23-finalize.service
+OnFailure=census-L23-finalize.service
+
+[Service]
+Type=simple
+User=ec2-user
+Group=ec2-user
+WorkingDirectory=/bL23/ctp
+ExecStart=/usr/local/bin/census-L23-run
+StandardOutput=append:/data/logs/L23.log
+StandardError=append:/data/logs/L23.log
+Restart=no
+# an OOM kill of one project must not stop the whole census (systemd default is stop)
+OOMPolicy=continue
+LimitNOFILE=1048576
+LimitNPROC=infinity
+TasksMax=infinity
+TimeoutStopSec=300

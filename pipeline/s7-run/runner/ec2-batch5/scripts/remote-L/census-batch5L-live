@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Every 10 min (census-batch5L-live.timer): status of census batch5L to s3://BUCKET/batch5L/live/:
+# progress.txt (first line "as of <ts>  census-batch5L: <state> ...", read by the local watchdog: it
+# must contain ": active" while the census runs), steps.txt, batch5L.log.tail, ledger.jsonl, system.txt.
+set -uo pipefail
+export AWS_PAGER=""
+D=s3://${RUNNER_BUCKET}/batch5L/live
+I=/home/ec2-user/batch5-input
+T=$(mktemp -d); trap 'rm -r "$T"' EXIT
+s=$(systemctl is-active census-batch5L.service)
+/usr/local/bin/census-steps /b5L/ctp "$I/manifest.batch5L.tsv" --highlight '' > "$T/steps.txt" 2>&1
+{ echo "as of $(date -u +%FT%TZ)  census-batch5L: $s  finalize=$(systemctl is-active census-batch5L-finalize.service)"
+  echo "census-batch2=$(systemctl is-active census-batch2.service)  census-batch3L=$(systemctl is-active census-batch3L.service)  census-batch4p1..3=$(systemctl is-active census-batch4p1.service census-batch4p2.service census-batch4p3.service | tr '\n' ' ')"
+  echo "uptime: $(uptime)"
+  echo "MemAvailable: $(awk '/MemAvailable/{printf "%.1f GiB", $2/1048576}' /proc/meminfo)   /data free: $(df -BG --output=avail /data | tail -1 | tr -d ' ')   /b5L free: $(df -BG --output=avail /b5L | tail -1 | tr -d ' ')   image: $(du -BG /data/loop/b5L.img | cut -f1)$([ -e /b5L/ctp/STOP ] && echo '  STOP present')"
+  echo "guard: $(cat /run/census-batch4-guard.status 2>/dev/null || echo none)"
+  [ -e /run/census-batch4-guard.tripped ] && echo "GUARD TRIPPED: $(cat /run/census-batch4-guard.tripped)"
+  echo; (cd /b5L/ctp && CTP_CONFIG=/home/ec2-user/census-batch5L.cfg .venv/bin/python ctp.py progress --manifest "$I/manifest.batch5L.tsv" --last 5 2>&1)
+  echo; cat "$T/steps.txt"
+} > "$T/progress.txt"
+tail -n 300 /data/logs/batch5L.log > "$T/batch5L.log.tail" 2>/dev/null
+[ -f /b5L/ctp/ledger.jsonl ] && cp /b5L/ctp/ledger.jsonl "$T/ledger.jsonl"
+{ date -u +%FT%TZ; uptime; cat /proc/pressure/io /proc/pressure/cpu /proc/pressure/memory 2>/dev/null; cat /proc/meminfo; df -h /data /b4p1 /b4p2 /b4p3 /b5L /; du -h /data/loop/*.img; } > "$T/system.txt" 2>&1
+aws s3 cp "$T/" "$D/" --recursive --only-show-errors

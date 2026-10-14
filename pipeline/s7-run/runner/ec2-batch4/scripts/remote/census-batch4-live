@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# Every 10 min (census-batch4-live.timer): status of census batch 4 (parts p1..p3) to
+# s3://BUCKET/batch4/live/: progress.txt (first line "as of <ts>  census-batch4: <state> ...",
+# read by the local watchdog: it must contain ": active" while any part runs), steps.txt (the
+# cregit step of every running project of the 3 parts, L projects first), batch4pK.log.tail,
+# ledger.pK.jsonl, system.txt (load, PSI, meminfo, df of /data and the loop filesystems).
+set -uo pipefail
+export AWS_PAGER=""
+D=s3://${RUNNER_BUCKET}/batch4/live
+I=/home/ec2-user/batch4-input
+T=$(mktemp -d); trap 'rm -r "$T"' EXIT
+st=""; any=inactive
+for k in 1 2 3; do s=$(systemctl is-active census-batch4p$k.service); st="$st p$k=$s"
+  case $s in active|activating|deactivating) any=active ;; esac; done
+[ -e /run/census-batch4-hold ] && any="restarting (hold: $(head -c 120 /run/census-batch4-hold))"
+for k in 1 2 3; do
+  /usr/local/bin/census-steps /b4p$k/ctp "$I/manifest.batch4p$k.tsv" --highlight 'lvbs-linux|llvm-mos|ceph__ceph' > "$T/steps.p$k.txt" 2>&1
+done
+{ echo "as of $(date -u +%FT%TZ)  census-batch4: $any ($st )  finalize=$(systemctl is-active census-batch4-finalize.service)"
+  echo "census-batch2=$(systemctl is-active census-batch2.service)  census-batch3L=$(systemctl is-active census-batch3L.service)"
+  echo "uptime: $(uptime)"
+  echo "MemAvailable: $(awk '/MemAvailable/{printf "%.1f GiB", $2/1048576}' /proc/meminfo)   /data free: $(df -BG --output=avail /data | tail -1 | tr -d ' ')"
+  echo "guard: $(cat /run/census-batch4-guard.status 2>/dev/null || echo none)"
+  [ -e /run/census-batch4-guard.tripped ] && echo "GUARD TRIPPED: $(cat /run/census-batch4-guard.tripped)"
+  for k in 1 2 3; do
+    echo; echo "=== part p$k: census-batch4p$k $(systemctl is-active census-batch4p$k.service) ($(systemctl show census-batch4p$k.service -p Result --value)), /b4p$k free $(df -BG --output=avail /b4p$k | tail -1 | tr -d ' ')$([ -e /b4p$k/ctp/STOP ] && echo '  STOP present')"
+    (cd /b4p$k/ctp && CTP_CONFIG=/home/ec2-user/census-batch4p$k.cfg .venv/bin/python ctp.py progress --manifest "$I/manifest.batch4p$k.tsv" --last 5 2>&1)
+    echo; cat "$T/steps.p$k.txt"
+  done
+} > "$T/progress.txt"
+for k in 1 2 3; do echo "### part p$k"; cat "$T/steps.p$k.txt"; echo; done > "$T/steps.txt"
+rm -f "$T"/steps.p*.txt
+for k in 1 2 3; do
+  tail -n 300 /data/logs/batch4p$k.log > "$T/batch4p$k.log.tail" 2>/dev/null
+  [ -f /b4p$k/ctp/ledger.jsonl ] && cp /b4p$k/ctp/ledger.jsonl "$T/ledger.p$k.jsonl"
+done
+{ date -u +%FT%TZ; uptime; cat /proc/pressure/io /proc/pressure/cpu 2>/dev/null; cat /proc/meminfo; df -h /data /b4p1 /b4p2 /b4p3 /; du -h /data/loop/*.img; } > "$T/system.txt" 2>&1
+aws s3 cp "$T/" "$D/" --recursive --only-show-errors

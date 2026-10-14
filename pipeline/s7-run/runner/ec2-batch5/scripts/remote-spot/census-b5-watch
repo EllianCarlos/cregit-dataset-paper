@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+# census-b5-watch (census-b5-watch.service, root): poll IMDSv2 spot/instance-action every 5 s.
+# On a notice: touch STOP in every batch5 / batch1rest part's ctp clone (no new project starts),
+# write INTERRUPTED (time, notice, running projects) and the part's ledger to each part's
+# s3://BUCKET/<workload>/<part>/live/, and run census-b5-upload once. EC2 terminates the instance
+# about 2 min later; restart_spot.sh relaunches every unfinished workload of the half.
+# (census-b3-watch does the same for the batch 3 parts, when they run here.)
+# Test mode: if /run/census-b5-fake-spot-notice exists, its content is the notice; STOP then goes to
+# /run/census-b5-STOP.test.<id> instead of the ctp clones and the S3 names get a .test suffix, so the
+# census is not stopped. The fake file is removed after it is handled and watching goes on.
+set -uo pipefail
+export AWS_PAGER=""
+E=/etc/cregit-census/s5; . $E/batch.env
+B=s3://${RUNNER_BUCKET}
+FAKE=/run/census-b5-fake-spot-notice
+IMDS=http://169.254.169.254/latest
+IID=$(cat /sys/devices/virtual/dmi/id/board_asset_tag)
+handle() {  # $1 notice, $2 suffix ("" or .test)
+  local notice=$1 sfx=$2 T id; T=$(mktemp -d)
+  for id in $IDS; do . $E/$id.env
+    if [ -z "$sfx" ]; then stop=$CTP/STOP; else stop=/run/census-b5-STOP.test.$id; fi
+    touch "$stop"; chown ec2-user: "$stop"
+  done
+  for id in $IDS; do . $E/$id.env; mkdir -p $T/$id
+    { echo "spot interruption notice seen $(date -u +%FT%TZ) on $IID (spot $HALF, part $id)${sfx:+  TEST, census not stopped}"
+      echo "notice: $notice"
+      echo "STOP: $([ -z "$sfx" ] && echo "$CTP/STOP" || echo /run/census-b5-STOP.test.$id)"
+      /usr/local/bin/census-steps "$CTP" /home/ec2-user/s5-input/manifest.$id.run.tsv --highlight '' 2>&1
+      echo "uploaded to done/ so far: $(ls $MP/uploaded 2>/dev/null | wc -l)"
+    } > "$T/$id/INTERRUPTED$sfx"
+    [ -f "$CTP/ledger.jsonl" ] && cp "$CTP/ledger.jsonl" "$T/$id/ledger$sfx.jsonl"
+    aws s3 cp "$T/$id/" "$B/$WL/$PART/live/" --recursive --only-show-errors
+  done
+  echo "$(date -u +%FT%TZ) handled notice${sfx:+ (test)}: $notice"
+  sudo -u ec2-user /usr/local/bin/census-b5-upload
+  rm -r "$T"
+}
+echo "$(date -u +%FT%TZ) watching $IMDS/meta-data/spot/instance-action every 5 s (spot $HALF, parts $IDS)"
+while :; do
+  if [ -e $FAKE ]; then handle "$(cat $FAKE)" .test; rm -f $FAKE; sleep 5; continue; fi
+  tok=$(curl -s -m 2 -X PUT "$IMDS/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 300")
+  if [ -n "$tok" ]; then
+    code=$(curl -s -m 2 -o /run/census-b5-instance-action -w '%{http_code}' -H "X-aws-ec2-metadata-token: $tok" "$IMDS/meta-data/spot/instance-action")
+    if [ "$code" = 200 ]; then echo "$(date -u +%FT%TZ) $(cat /run/census-b5-instance-action)" > /run/census-spot-interrupted
+      handle "$(cat /run/census-b5-instance-action)" ""; echo "real notice handled; idle until termination"; exec sleep infinity; fi
+  fi
+  sleep 5
+done

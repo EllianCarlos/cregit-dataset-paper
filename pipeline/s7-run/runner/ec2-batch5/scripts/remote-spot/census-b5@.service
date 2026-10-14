@@ -1,0 +1,23 @@
+[Unit]
+Description=cregit census batch5/batch1rest spot part %i (ctp census, own loop XFS /w/%i)
+Wants=network-online.target
+After=network-online.target nix-daemon.service
+RequiresMountsFor=/w/%i
+OnSuccess=census-b5-finalize.service
+OnFailure=census-b5-finalize.service
+
+[Service]
+Type=simple
+User=ec2-user
+Group=ec2-user
+WorkingDirectory=/w/%i/ctp
+ExecStart=/usr/local/bin/census-b5-run %i
+StandardOutput=append:/data/logs/b5-%i.log
+StandardError=append:/data/logs/b5-%i.log
+Restart=no
+# an OOM kill of one project must not stop the whole census (systemd default is stop)
+OOMPolicy=continue
+LimitNOFILE=1048576
+LimitNPROC=infinity
+TasksMax=infinity
+TimeoutStopSec=300

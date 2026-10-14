@@ -1,0 +1,7 @@
+[Unit]
+Description=cregit census batch 4: fstrim the loop filesystems, stop batch 4 if /data runs low
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/census-batch4-guard
+TimeoutStartSec=900

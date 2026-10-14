@@ -1,0 +1,21 @@
+# census-fed-common (sourced by the census-fed-* scripts; 2026-10-09 ~20:00 UTC). The fed spot parts:
+# census parts of later batches (batch 6 first) that start on this spot instance one by one, each
+# when a running part (census-b5@ or census-fed@) ends, from a local queue.
+#   /etc/cregit-census/fed/half          a|b (the spot half of this instance)
+#   /etc/cregit-census/fed/queue         queued parts, one "<workload> <part>" per line, next first
+#   /etc/cregit-census/fed/started       the ids (<workload><part>) started on this instance, in order
+#   /etc/cregit-census/fed/<id>.env|cfg  each part (same keys as the census-b5 parts)
+#   /etc/cregit-census/fed/PAUSE         holds the feeder (written by hand, or by a failed check)
+#   /etc/cregit-census/fed/slots         parts that may run at once (census-b5@ + census-fed@), default 5
+#   /home/ec2-user/fed-input/<workload>/ the inputs of s3://BUCKET/<workload>/input/ and the derived
+#                                        part manifests manifest.<id>.tsv and run manifests manifest.<id>.run.tsv
+# Test overrides: FED_DIR (instead of /etc/cregit-census/fed), FED_INPUT (instead of /home/ec2-user/fed-input).
+FED=${FED_DIR:-/etc/cregit-census/fed}
+FI=${FED_INPUT:-/home/ec2-user/fed-input}
+BUCKET=s3://${RUNNER_BUCKET}
+export AWS_PAGER=""
+fed_half() { cat $FED/half 2>/dev/null || (. /etc/cregit-census/s5/batch.env 2>/dev/null; echo ${HALF:-}); }
+fed_started() { cat $FED/started 2>/dev/null; }
+fed_active() { case $(systemctl is-active "$1" 2>/dev/null) in active|activating|deactivating|reloading) return 0 ;; esac; return 1; }
+nrows() { grep -c -v -e '^#' -e '^[[:space:]]*$' "$1" 2>/dev/null || true; }
+oks() { { aws s3 ls "$1" --recursive </dev/null 2>/dev/null || true; } | awk '$4 ~ /\/OK$/ {n=split($4,a,"/"); print a[n-1]}' | sort -u; }

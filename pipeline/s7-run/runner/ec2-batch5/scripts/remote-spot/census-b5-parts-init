@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+# census-b5-parts-init a|b (root): the batch5 / batch1rest census parts of this spot half, i.e. the
+# rows of /home/ec2-user/s5-input/parts.tsv with half a|b (run census-b5-prep first). Each part <id>
+# (= workload + part, e.g. batch5a1) gets
+#   - its own sparse XFS image <host>/loop/<id>.img, loop-mounted at /w/<id> (own superblock, so its
+#     own rename lock; fstab line with nofail). Hosts: a: the /dataK disks, those whose batch 3 part
+#     is not active first, round-robin; b: the RAID0 /data. Size min(1200G, 90% of the host / images
+#     on it); ctp --disk-floor-gb min(300, size/4).
+#   - its own ctp clone /w/<id>/ctp (ca113e3 from /data/input/ctp.bundle, Python 3.12 venv);
+#   - its own cregit copy /w/<id>/cregit-ec2 of the checked /data/cregit-ec2 (95cdc88), with an empty
+#     tokenizeByBlobId/build; the path is fixed before the census starts (blobExec stores it);
+#   - its config /etc/cregit-census/s5/<id>.cfg, env <id>.env and output /w/<id>/census-2026-10-<wl>.
+# Writes /etc/cregit-census/s5/batch.env (HALF, IDS). Idempotent: existing images, mounts, clones,
+# copies and env files are kept as they are (an existing env keeps its image path).
+set -euo pipefail
+X=${1:-}; case $X in a|b) ;; *) echo "usage: census-b5-parts-init a|b" >&2; exit 2 ;; esac
+E=/etc/cregit-census/s5; I=/home/ec2-user/s5-input; mkdir -p $E
+[ -f $I/parts.tsv ] || { echo "no $I/parts.tsv: run census-b5-prep $X first" >&2; exit 2; }
+[ -d /data/cregit-ec2 ] || { echo "no /data/cregit-ec2" >&2; exit 2; }
+mapfile -t rows < <(awk -F'\t' -v h=$X '!/^#/ && $1==h {print $2 "\t" $3 "\t" $4}' $I/parts.tsv)
+[ ${#rows[@]} -gt 0 ] || { echo "no parts of half $X in parts.tsv" >&2; exit 2; }
+if [ $X = a ]; then free=""; busy=""
+  for d in /data[0-9]*; do mountpoint -q $d || continue
+    if systemctl is-active --quiet census-b3@a${d#/data}.service; then busy="$busy $d"; else free="$free $d"; fi; done
+  hosts=($free $busy)
+else hosts=($(readlink -f /data)); fi
+[ ${#hosts[@]} -gt 0 ] || { echo "no host filesystems" >&2; exit 2; }
+ids=""; declare -A H N
+i=0
+for r in "${rows[@]}"; do IFS=$'\t' read -r wl part w <<<"$r"; id=$wl$part; ids="$ids $id"
+  if [ -f $E/$id.env ]; then h=$(. $E/$id.env; echo $HOST); else h=${hosts[$((i % ${#hosts[@]}))]}; fi
+  H[$id]=$(readlink -f $h); N[${H[$id]}]=$(( ${N[${H[$id]}]:-0} + 1 )); i=$((i+1))
+done
+printf 'HALF=%s\nIDS="%s"\n' "$X" "${ids# }" > $E/batch.env
+for r in "${rows[@]}"; do IFS=$'\t' read -r wl part w <<<"$r"; id=$wl$part; h=${H[$id]}
+  img=$h/loop/$id.img; mp=/w/$id
+  if [ -f $E/$id.env ]; then . $E/$id.env; sz=$SIZE_G; fl=$FLOOR
+  else hs=$(df -BG --output=size $h | tail -1 | tr -dc 0-9); sz=$(( hs * 9 / 10 / ${N[$h]} )); [ $sz -gt 1200 ] && sz=1200
+       fl=$(( sz / 4 )); [ $fl -gt 300 ] && fl=300; fi
+  mkdir -p $h/loop $mp
+  [ -e $img ] || { truncate -s ${sz}G $img; mkfs.xfs -q -L ${id:0:12} $img; }
+  grep -q "^$img " /etc/fstab || echo "$img $mp xfs loop,noatime,discard,nofail,x-systemd.requires-mounts-for=$h 0 0" >> /etc/fstab
+  mountpoint -q $mp || mount $mp
+  chown ec2-user: $mp
+  C=$mp/ctp; D=$mp/cregit-ec2; O=$mp/census-2026-10-$wl
+  sudo -u ec2-user bash -c "set -e; [ -d $C ] || git clone -q /data/input/ctp.bundle $C -b feat/e2e-runner; cd $C; [ \"\$(git rev-parse --short HEAD)\" = ca113e3 ]; [ -x .venv/bin/python ] || { python3.12 -m venv .venv; nice -n 19 .venv/bin/pip install -q --disable-pip-version-check duckdb==1.5.5 pytest==9.1.1 coverage==7.16.0; }; mkdir -p $O $mp/uploaded"
+  if [ ! -e $D ]; then
+    tar -C /data/ -cf - --exclude='cregit-ec2/tokenizeByBlobId/build/*' cregit-ec2 | tar -C $mp -xpf -
+    mkdir -p $D/tokenizeByBlobId/build; chown ec2-user: $D $D/tokenizeByBlobId/build
+  fi
+  printf '# ctp config (CTP_CONFIG) for census part %s (%s, part %s) on spot half %s: cregit 95cdc88,\n# own copy %s, output on loop XFS %s (image %s).\n[paths]\ncregit_dir = %s\noutput_dir = %s\n' \
+    $id $wl $part $X $D $mp $img $D $O > $E/$id.cfg
+  [ -f $E/$id.env ] || printf 'ID=%s\nWL=%s\nPART=%s\nHALF=%s\nWORKERS=%s\nHOST=%s\nIMG=%s\nSIZE_G=%s\nFLOOR=%s\nMP=%s\nCTP=%s\nCREGIT=%s\nOUT=%s\nCFG=%s\nLOG=%s\n' \
+    $id $wl $part $X $w $h $img $sz $fl $mp $C $D $O $E/$id.cfg /data/logs/b5-$id.log > $E/$id.env
+  echo "$id: $(findmnt -no SOURCE $mp) $img ${sz}G floor ${fl}G fsid=$(stat -f -c %i $mp) | ctp $(sudo -u ec2-user git -C $C rev-parse --short HEAD) | cregit $(sudo -u ec2-user git -C $D rev-parse --short HEAD) dirty=$(sudo -u ec2-user git -C $D status --porcelain --untracked-files=no | wc -l) build=$(ls -A $D/tokenizeByBlobId/build | wc -l) | $w workers"
+done
+chmod 644 $E/*
+echo "host fsids: $(for h in "${hosts[@]}"; do echo -n "$h=$(stat -f -c %i $h) "; done)"

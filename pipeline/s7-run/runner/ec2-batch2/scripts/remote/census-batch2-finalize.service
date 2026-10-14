@@ -1,0 +1,8 @@
+[Unit]
+Description=cregit census batch 2: copy results to S3, write DONE, power off
+RequiresMountsFor=/data
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/census-batch2-finalize
+TimeoutStartSec=infinity

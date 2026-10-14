@@ -1,0 +1,80 @@
+#!/usr/bin/env bash
+# census-L7-20b-wait (census-L7-20b-wait.service, root; 2026-10-11, made from census-L22-wait):
+# start census-L7-20b (rows 17-56 of the L7-20 queue, 6 workers) only when the big EC2 has room and
+# no L7-20b row has started in census L7-20. Every 60 s it starts census-L7-20b.service when ALL hold:
+#   (1) at most MAXRUN (default 10) other projects run on the instance (batch2, batch3L, batch4p1-3,
+#       batch5L, batch6L, L7-20, L22; census-steps --counts of each active census), so <= 16 after the start;
+#   (2) MemAvailable >= MINMEM_GB (default 120 GiB);
+#   (3) /data has >= MINDISK_GB (default 2500) GiB free (the value of the L7-20 waiter; the guard stops
+#       new starts below 800 GiB);
+#   (4) the identity gate passed for the commit /bL7b/cregit-ec2 is at: the last line of
+#       /etc/cregit-census/L7-20b.gate is "CHECK OK <time> cregit <that commit> ..." (census-L7-20b-cregit);
+#   (5) the inputs check: /home/ec2-user/L7-20b-input/SHA256SUMS (built on this instance from the
+#       L7-20 inputs by L1-setup.sh; nothing comes from S3);
+#   (6) census L7-20 has started no row of the L7-20b manifest (no /bL7/ctp/state/<name>/ directory;
+#       ctp census creates it first when it starts a project). Else both queues would run that project.
+# A STOP file in /bL7b/ctp holds the start. Status: /run/census-L7-20b-wait.status.
+# --decide-only: print the decision once and exit (0 = would start, 1 = would wait); starts nothing.
+# Test overrides: COUNTS_<name> ("RUNNING NOT_STARTED"), ACTIVE_<name> per census name (batch2 batch3L
+# batch4p1 batch4p2 batch4p3 batch5L batch6L L7_20 L22), MEMAVAIL_GB, DATAFREE_GB, GATE_OK (1/0),
+# INPUT_OK (1/0), SPLIT_OK (1/0).
+set -uo pipefail
+MAXRUN=${MAXRUN:-10}; MINMEM=${MINMEM_GB:-120}; MINDISK=${MINDISK_GB:-2500}
+ST=/run/census-L7-20b-wait.status; IN=/home/ec2-user/L7-20b-input
+CENS="batch2|census-batch2.service|/home/ec2-user/ctp|/home/ec2-user/batch2-input/manifest.batch2.tsv
+batch3L|census-batch3L.service|/home/ec2-user/ctp-b3L|/home/ec2-user/batch3L-input/manifest.batch3L.tsv
+batch4p1|census-batch4p1.service|/b4p1/ctp|/home/ec2-user/batch4-input/manifest.batch4p1.tsv
+batch4p2|census-batch4p2.service|/b4p2/ctp|/home/ec2-user/batch4-input/manifest.batch4p2.tsv
+batch4p3|census-batch4p3.service|/b4p3/ctp|/home/ec2-user/batch4-input/manifest.batch4p3.tsv
+batch5L|census-batch5L.service|/b5L/ctp|/home/ec2-user/batch5-input/manifest.batch5L.tsv
+batch6L|census-batch6L.service|/b6L/ctp|/home/ec2-user/batch6-input/manifest.batch6L.tsv
+L7_20|census-L7-20.service|/bL7/ctp|/home/ec2-user/L7-20-input/manifest.L7-20.tsv
+L22|census-L22.service|/bL22/ctp|/home/ec2-user/L22-input/manifest.batch22L.tsv"
+inputs() {  # 0 when the inputs check (local only)
+  [ -n "${INPUT_OK:-}" ] && { [ "$INPUT_OK" = 1 ]; return; }
+  (cd $IN 2>/dev/null && sha256sum --quiet -c SHA256SUMS >/dev/null 2>&1)
+}
+split_clash() {  # prints the L7-20b rows that census L7-20 has started (empty = none)
+  [ -n "${SPLIT_OK:-}" ] && { [ "$SPLIT_OK" = 1 ] || echo "(test)"; return; }
+  local n
+  grep -v -e '^#' -e '^[[:space:]]*$' $IN/manifest.L7-20b.tsv 2>/dev/null | cut -f1 | while read -r n; do
+    [ -d "/bL7/ctp/state/$n" ] && echo -n "$n "; done
+}
+decide() {  # sets msg; returns 0 = start
+  local run=0 bad="" n u c m s cv av r p desc="" clash
+  while IFS='|' read -r n u c m; do
+    av="ACTIVE_$n"; s=${!av-$(systemctl is-active "$u")}
+    case $s in active|activating|deactivating) ;; *) desc="$desc $n=$s"; continue ;; esac
+    cv="COUNTS_$n"; read -r r p < <(echo "${!cv-$(/usr/local/bin/census-steps --counts "$c" "$m" 2>/dev/null || echo '? ?')}")
+    case "$r$p" in *[!0-9]*|'') bad="$bad $n"; desc="$desc $n=?"; continue ;; esac
+    run=$((run + r)); desc="$desc $n=${r}r/${p}q"
+  done <<<"$CENS"
+  local mem=${MEMAVAIL_GB:-$(awk '/MemAvailable/{printf "%d", $2/1048576}' /proc/meminfo)}
+  local disk=${DATAFREE_GB:-$(df -BG --output=avail /data | tail -1 | tr -dc 0-9)}
+  msg="$(date -u +%FT%TZ) other projects running $run (max $MAXRUN), MemAvailable ${mem}G (min $MINMEM), /data free ${disk}G (min $MINDISK);$desc"
+  [ -z "$bad" ] || { msg="$msg; counts unreadable for:$bad: waiting"; return 1; }
+  [ -e /bL7b/ctp/STOP ] && { msg="$msg; STOP exists in /bL7b/ctp: holding"; return 1; }
+  clash=$(split_clash)
+  [ -z "$clash" ] || { msg="$msg; SPLIT CLASH: census L7-20 has started L7-20b rows: $clash: holding (no double run)"; return 1; }
+  [ "$run" -le "$MAXRUN" ] || { msg="$msg; too many running: waiting"; return 1; }
+  [ "$mem" -ge "$MINMEM" ] || { msg="$msg; memory low: waiting"; return 1; }
+  [ "$disk" -ge "$MINDISK" ] || { msg="$msg; /data low: waiting"; return 1; }
+  local gok=${GATE_OK:-} gc head
+  if [ -z "$gok" ]; then
+    gc=$(tail -1 /etc/cregit-census/L7-20b.gate 2>/dev/null | sed -n 's/^CHECK OK [^ ]* cregit \([0-9a-f]\{40\}\).*/\1/p')
+    head=$(sudo -u ec2-user git -C /bL7b/cregit-ec2 rev-parse HEAD 2>/dev/null); gok=0; [ -n "$gc" ] && [ "$gc" = "$head" ] && gok=1
+  fi
+  [ "$gok" = 1 ] || { msg="$msg; no passed identity gate for the cregit commit of /bL7b/cregit-ec2 (census-L7-20b-cregit): waiting"; return 1; }
+  inputs || { msg="$msg; inputs $IN missing or not checked: waiting"; return 1; }
+  msg="$msg; start"; return 0
+}
+if [ "${1:-}" = --decide-only ]; then decide; rc=$?; echo "decide-only: $msg"; exit $rc; fi
+while :; do
+  if decide; then
+    echo "$msg: starting census-L7-20b.service" | tee "$ST"
+    systemctl start --no-block census-L7-20b.service
+    exit 0
+  fi
+  echo "$msg" > "$ST"
+  sleep 60
+done

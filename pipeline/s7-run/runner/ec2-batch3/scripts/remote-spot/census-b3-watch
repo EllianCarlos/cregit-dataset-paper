@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+# census-b3-watch (census-b3-watch.service, root): poll IMDSv2 spot/instance-action every 5 s.
+# On a notice: touch STOP in every part's ctp clone (no new project starts), write INTERRUPTED
+# (time, notice, running projects) to s3://BUCKET/batch3/<a|b>/live/, upload each part's ledger,
+# and run census-b3-upload once. The instance is then terminated by EC2 about 2 min later.
+# Test mode: if /run/census-fake-spot-notice exists, its content is the notice; then STOP goes to
+# /run/census-STOP.test.<part> instead of the ctp clones, and the S3 names get a .test suffix, so the
+# census is not stopped. The fake file is removed after it is handled and watching goes on.
+set -uo pipefail
+. /etc/cregit-census/batch.env
+D=s3://${RUNNER_BUCKET}/batch3/$BATCH/live
+FAKE=/run/census-fake-spot-notice
+IMDS=http://169.254.169.254/latest
+handle() {  # $1 notice, $2 suffix ("" or .test)
+  local notice=$1 sfx=$2 T; T=$(mktemp -d)
+  for p in $PARTS; do . /etc/cregit-census/$p.env
+    if [ -z "$sfx" ]; then stop=$CTP/STOP; else stop=/run/census-STOP.test.$p; fi
+    touch "$stop"; chown ec2-user: "$stop"
+  done
+  { echo "spot interruption notice seen $(date -u +%FT%TZ) on $(cat /sys/devices/virtual/dmi/id/board_asset_tag) (batch3$BATCH)${sfx:+  TEST, census not stopped}"
+    echo "notice: $notice"
+    for p in $PARTS; do . /etc/cregit-census/$p.env
+      echo; echo "=== part $p (STOP: $([ -z "$sfx" ] && echo "$CTP/STOP" || echo /run/census-STOP.test.$p))"
+      /usr/local/bin/census-steps "$CTP" /home/ec2-user/b3-input/manifest.$p.run.tsv --highlight '' 2>&1
+      [ -f "$CTP/ledger.jsonl" ] && cp "$CTP/ledger.jsonl" "$T/ledger.$p$sfx.jsonl"
+    done
+    echo; echo "uploaded to done/ so far: $(ls /data/uploaded 2>/dev/null | wc -l)"
+  } > "$T/INTERRUPTED$sfx"
+  aws s3 cp "$T/" "$D/" --recursive --only-show-errors
+  echo "$(date -u +%FT%TZ) handled notice${sfx:+ (test)}: $notice"
+  sudo -u ec2-user /usr/local/bin/census-b3-upload
+  rm -r "$T"
+}
+echo "$(date -u +%FT%TZ) watching $IMDS/meta-data/spot/instance-action every 5 s (batch3$BATCH, parts $PARTS)"
+while :; do
+  if [ -e $FAKE ]; then handle "$(cat $FAKE)" .test; rm -f $FAKE; sleep 5; continue; fi
+  tok=$(curl -s -m 2 -X PUT "$IMDS/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 300")
+  if [ -n "$tok" ]; then
+    code=$(curl -s -m 2 -o /run/census-instance-action -w '%{http_code}' -H "X-aws-ec2-metadata-token: $tok" "$IMDS/meta-data/spot/instance-action")
+    if [ "$code" = 200 ]; then echo "$(date -u +%FT%TZ) $(cat /run/census-instance-action)" > /run/census-spot-interrupted; handle "$(cat /run/census-instance-action)" ""; echo "real notice handled; idle until termination"; exec sleep infinity; fi
+  fi
+  sleep 5
+done

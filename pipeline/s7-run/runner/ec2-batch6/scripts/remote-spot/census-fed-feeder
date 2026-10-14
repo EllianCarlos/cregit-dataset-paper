@@ -1,0 +1,109 @@
+#!/usr/bin/env bash
+# census-fed-feeder [--dry-run] (root; census-fed-feeder.timer every minute, and census-fed-finalize
+# after each fed part). While fewer than SLOTS parts run on this instance (census-b5@<id> of
+# /etc/cregit-census/s5/batch.env plus census-fed@<id> of the started list; SLOTS from
+# /etc/cregit-census/fed/slots, default 5) and the queue is not empty, it starts the next queued part:
+#   0. the workload's cregit commit must be set (census-fed-workload; "pending" holds its parts);
+#   1. census-fed-part-init (own loop XFS image, ctp clone, cregit copy whose path and commit are fixed
+#      now, cfg, env);
+#   2. the run manifest = the part manifest minus every project with done/OK (u order kept); a part
+#      with nothing left is dropped from the queue;
+#   3. census-fed-check, the libexpat identity gate on the part's new cregit copy;
+#   4. the id is appended to the started list, then removed from the queue, then census-fed@<id> starts
+#      (census-spot-decide sees either a queued part or a started part without its DONE: no termination).
+# It holds (starts nothing) after a spot notice (/run/census-spot-interrupted), while
+# /etc/cregit-census/fed/PAUSE exists, or while MemAvailable < MINMEM_GB (default 64). A failed
+# part-init or check writes PAUSE with the reason and leaves the part at the head of the queue.
+# Status: /run/census-fed-feeder.status; log: /data/logs/fed-feeder.log.
+# --dry-run: print what it would start; changes nothing.
+# Test overrides: FED_DIR, FED_INPUT (census-fed-common), B5_ENV (census-b5 batch.env; "" = none),
+# FEED_UNIT (printf pattern of the part unit, default census-fed@%s.service), FEED_INIT, FEED_CHECK
+# (commands run as "$FEED_INIT wl part" and "$FEED_CHECK id"), FEED_START (default "systemctl start"),
+# FEED_RUNMAN (0 = skip step 2 and its S3 listing), MINMEM_GB.
+set -uo pipefail
+. /usr/local/bin/census-fed-common
+B5_ENV=${B5_ENV-/etc/cregit-census/s5/batch.env}
+UNIT=${FEED_UNIT:-census-fed@%s.service}
+INIT=${FEED_INIT:-/usr/local/bin/census-fed-part-init}; CHECK=${FEED_CHECK:-/usr/local/bin/census-fed-check}
+START=${FEED_START:-systemctl start}; RUNMAN=${FEED_RUNMAN:-1}; MINMEM=${MINMEM_GB:-64}
+DRY=0; [ "${1:-}" = --dry-run ] && DRY=1
+ST=/run/census-fed-feeder.status; [ -n "${FED_DIR:-}" ] && ST=$FED/feeder.status
+LOGF=/data/logs/fed-feeder.log; [ -n "${FED_DIR:-}" ] && LOGF=$FED/feeder.log
+mkdir -p $FED; touch $FED/queue $FED/started
+exec 9>$FED/lock; flock -n 9 || { echo "another feeder holds $FED/lock"; exit 0; }
+say() { echo "[$(date -u +%FT%TZ)] feeder: $*" | tee -a $LOGF; }
+status() { echo "$(date -u +%FT%TZ) $*" > $ST; echo "$*"; }
+pause() { echo "$(date -u +%FT%TZ) $*" > $FED/PAUSE; say "PAUSE: $*"; status "paused: $*"; exit 1; }
+# demand of one running part: the workers it still uses, min(its workers, running + not started) from
+# census-steps --counts; unreadable counts = all its workers. FEED_COUNTS (test) replaces the counts.
+demand() {  # $1 ctp dir, $2 run manifest, $3 workers
+  local r p; read -r r p < <(echo "${FEED_COUNTS:-$(/usr/local/bin/census-steps --counts "$1" "$2" 2>/dev/null || echo '? ?')}")
+  case "$r$p" in *[!0-9]*|'') echo $3; return ;; esac
+  local d=$((r + p)); [ $d -gt $3 ] && d=$3; echo $d
+}
+running() {  # prints "<running parts> <workers in use>"
+  local n=0 w=0 i
+  if [ -n "$B5_ENV" ] && [ -f "$B5_ENV" ]; then for i in $(. "$B5_ENV"; echo $IDS); do
+    fed_active census-b5@$i.service || continue; n=$((n+1))
+    w=$((w + $(. /etc/cregit-census/s5/$i.env; demand "$CTP" /home/ec2-user/s5-input/manifest.$i.run.tsv ${WORKERS:-4})))
+  done; fi
+  for i in $(cat $FED/started); do fed_active "$(printf "$UNIT" $i)" || continue; n=$((n+1))
+    w=$((w + $( (. $FED/$i.env 2>/dev/null; demand "${CTP:-/nonexistent}" "${IN:-/nonexistent}/manifest.$i.run.tsv" ${WORKERS:-4}) )))
+  done
+  echo "$n $w"
+}
+# slots: the most parts that run at once (default 8); worker_slots: the most workers in use (default 20,
+# the 5 parts of 4 workers of batch 5). A part whose last projects run (its other workers idle) counts
+# only its busy workers, so the next part starts in the idle workers instead of after the whole tail.
+slots=$(cat $FED/slots 2>/dev/null || echo 8); wslots=$(cat $FED/worker_slots 2>/dev/null || echo 20)
+q=$(grep -c . $FED/queue || true)
+[ -e /run/census-spot-interrupted ] && { status "holding: spot interruption notice ($(cat /run/census-spot-interrupted)); queue $q"; exit 0; }
+[ -e $FED/PAUSE ] && { status "paused: $(cat $FED/PAUSE); queue $q"; exit 0; }
+started=0
+while :; do
+  q=$(grep -c . $FED/queue || true); read -r r wu < <(running)
+  [ "$q" -gt 0 ] || { status "idle: queue empty; running $r of $slots parts, $wu of $wslots workers"; break; }
+  [ "$r" -lt "$slots" ] || { status "waiting: running $r of $slots parts ($wu of $wslots workers); queue $q (next $(head -1 $FED/queue))"; break; }
+  [ $((wu + 4)) -le "$wslots" ] || { status "waiting: $wu of $wslots workers in use, running $r parts; queue $q (next $(head -1 $FED/queue))"; break; }
+  mem=$(awk '/MemAvailable/{printf "%d", $2/1048576}' /proc/meminfo)
+  [ "$mem" -ge "$MINMEM" ] || { status "waiting: MemAvailable ${mem}G < ${MINMEM}G; running $r of $slots parts, $wu of $wslots workers; queue $q"; break; }
+  read -r wl p < <(head -1 $FED/queue); id=$wl$p
+  cc=$(. $FED/wl/$wl.env 2>/dev/null; echo ${CREGIT_COMMIT:-unset})
+  case $cc in pending|unset) status "waiting: the cregit commit of $wl is $cc (census-fed-workload $wl); running $r of $slots parts, $wu of $wslots workers; queue $q (next $id)"; break ;; esac
+  if [ $DRY = 1 ]; then status "dry run: would start $id (running $r of $slots parts, $wu of $wslots workers, queue $q)"; break; fi
+  say "starting $id: running $r of $slots parts, $wu of $wslots workers, queue $q, MemAvailable ${mem}G"
+  out=$($INIT $wl $p 2>&1) || pause "part-init of $id failed: $(echo "$out" | tail -2 | tr '\n' ' ')"
+  say "$out"
+  if [ "$RUNMAN" = 1 ]; then
+    . $FED/$id.env
+    oks "$BUCKET/$wl/$p/done/" > $IN/done.$id.txt
+    left=$(python3 -I - $IN $id <<'P'
+import sys, datetime
+I, pid = sys.argv[1], sys.argv[2]
+now = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")
+lines = open(f"{I}/manifest.{pid}.tsv").read().splitlines()
+cols = next(l for l in lines if l.startswith("# Columns:"))
+rows = [l for l in lines if l.strip() and not l.startswith("#")]
+done = set(open(f"{I}/done.{pid}.txt").read().split())
+keep = [r for r in rows if r.split("\t")[0] not in done]
+with open(f"{I}/manifest.{pid}.run.tsv", "w") as f:
+    f.write(f"# Run manifest of fed part {pid}, written {now} by census-fed-feeder: {len(keep)} of {len(rows)}"
+            f" projects; {len(rows) - len(keep)} already in done/ are left out. u order kept.\n{cols}\n")
+    f.writelines(r + "\n" for r in keep)
+print(len(keep))
+P
+) || pause "run manifest of $id failed"
+    chown ec2-user: $IN/manifest.$id.run.tsv $IN/done.$id.txt
+    if [ "$left" = 0 ]; then say "$id: every project has done/OK; dropped from the queue"; sed -i '1d' $FED/queue; continue; fi
+    say "$id: run manifest $left projects"
+  fi
+  out=$($CHECK $id 2>&1) || pause "identity check of $id failed: $(echo "$out" | tail -1)"
+  say "$id: $(echo "$out" | tail -1)"
+  echo $id >> $FED/started
+  sed -i '1d' $FED/queue
+  $START "$(printf "$UNIT" $id)" || pause "start of $(printf "$UNIT" $id) failed"
+  started=$((started+1))
+  say "started $(printf "$UNIT" $id) $(date -u +%FT%TZ)"
+done
+[ $started -gt 0 ] && say "started $started part(s) this pass"
+exit 0

@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# Every 10 min (census-L22-live.timer): status of census L22 to s3://BUCKET/L22/live/:
+# progress.txt (first line "as of <ts>  census-L22: <state> ...", read by the local watchdog: it
+# must contain ": active" while the census runs), steps.txt, L22.log.tail, ledger.jsonl, system.txt.
+set -uo pipefail
+export AWS_PAGER=""
+D=s3://${RUNNER_BUCKET}/L22/live
+I=/home/ec2-user/L22-input
+T=$(mktemp -d); trap 'rm -r "$T"' EXIT
+s=$(systemctl is-active census-L22.service); w=$(systemctl is-active census-L22-wait.service)
+# while the waiter holds the start, the state word is "waiting" (the local watchdog accepts it)
+case $s in active|activating) ;; *) case $w in active|activating) s=waiting ;; esac ;; esac
+/usr/local/bin/census-steps /bL22/ctp "$I/manifest.batch22L.tsv" --highlight '' > "$T/steps.txt" 2>&1
+{ echo "as of $(date -u +%FT%TZ)  census-L22: $s  waiter=$w  finalize=$(systemctl is-active census-L22-finalize.service)"
+  echo "waiter: $(cat /run/census-L22-wait.status 2>/dev/null || echo none)"
+  echo "census-batch2=$(systemctl is-active census-batch2.service)  census-batch3L=$(systemctl is-active census-batch3L.service)  census-batch4p1..3=$(systemctl is-active census-batch4p1.service census-batch4p2.service census-batch4p3.service | tr '\n' ' ')  census-batch5L=$(systemctl is-active census-batch5L.service)  census-batch6L=$(systemctl is-active census-batch6L.service)  census-L7-20=$(systemctl is-active census-L7-20.service)"
+  echo "uptime: $(uptime)"
+  echo "MemAvailable: $(awk '/MemAvailable/{printf "%.1f GiB", $2/1048576}' /proc/meminfo)   /data free: $(df -BG --output=avail /data | tail -1 | tr -d ' ')   /bL22 free: $(df -BG --output=avail /bL22 | tail -1 | tr -d ' ')   image: $(du -BG /data/loop/bL22.img | cut -f1)$([ -e /bL22/ctp/STOP ] && echo '  STOP present')"
+  echo "guard: $(cat /run/census-batch4-guard.status 2>/dev/null || echo none)"
+  [ -e /run/census-batch4-guard.tripped ] && echo "GUARD TRIPPED: $(cat /run/census-batch4-guard.tripped)"
+  echo; (cd /bL22/ctp && CTP_CONFIG=/home/ec2-user/census-L22.cfg .venv/bin/python ctp.py progress --manifest "$I/manifest.batch22L.tsv" --last 5 2>&1)
+  echo; cat "$T/steps.txt"
+} > "$T/progress.txt"
+tail -n 300 /data/logs/L22.log > "$T/L22.log.tail" 2>/dev/null
+[ -f /bL22/ctp/ledger.jsonl ] && cp /bL22/ctp/ledger.jsonl "$T/ledger.jsonl"
+{ date -u +%FT%TZ; uptime; cat /proc/pressure/io /proc/pressure/cpu /proc/pressure/memory 2>/dev/null; cat /proc/meminfo; df -h /data /b4p1 /b4p2 /b4p3 /b5L /b6L /bL7 /bL22 /; du -h /data/loop/*.img; } > "$T/system.txt" 2>&1
+aws s3 cp "$T/" "$D/" --recursive --only-show-errors

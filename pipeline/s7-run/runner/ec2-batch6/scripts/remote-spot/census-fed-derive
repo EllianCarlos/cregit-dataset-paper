@@ -1,0 +1,180 @@
+#!/usr/bin/env python3
+"""Split batch N (N >= 6) into the fed spot parts and the L census (2026-10-09, batch 6 first).
+
+Decided by the user ~19:25 UTC ("Prepare now, start as parts drain"): the S and M projects of
+manifest.batchN.tsv run as census parts of 4 workers on the two spot instances, fed one by one:
+when a part on an instance ends, the next queued part of that instance starts in its place
+(census-fed-feeder). The L projects run as census batchNL on the big on-demand EC2 once its
+batch 4 parts free slots (census-batchNL-wait).
+
+  split_batchN.py N [--parts-per-half K]   (default K 5: one part per running slot of an instance)
+      writes manifest.batchNL.tsv + project_meta.batchNL.json (the L rows, u order, sidecar records
+      copied unchanged from project_meta.batchN.json, so the enriched license / owner_type /
+      archived / fork values are kept), parts.batchN.tsv (half, workload, part, workers, projects,
+      predicted h, sha256 of the part manifest), parts.batchN.assign.tsv (workload, part, project)
+      and the part manifests manifest.batchN<P>.tsv as the record. Refuses to overwrite.
+  split_batchN.py --derive DIR WL
+      on the instance: rebuilds DIR/manifest.<WL><P>.tsv from DIR/manifest.<WL>.tsv,
+      DIR/parts.<WL>.tsv and DIR/parts.<WL>.assign.tsv and checks each sha256 against
+      parts.<WL>.tsv (exit 1 if any differs), so the part manifests are byte-identical to the
+      record here. Installed there as census-fed-derive.
+
+Parts are balanced by predicted wall time (see main), and every part keeps u order. Predicted
+time in seconds: exp(-5.846 + 0.5957 ln(commits) + 0.4389 ln(tok_bytes)) from frame.layer1.csv, the
+fit of split_batch5.py (354 finished EC2 projects, R^2 0.73); the predictions are inferred.
+The part manifests need no own sidecar: ctp census takes project_meta.batchN.json, keyed by name.
+"""
+import csv
+import hashlib
+import json
+import math
+import sys
+from pathlib import Path
+
+HERE = Path(__file__).resolve().parent
+CLASS_COL = 4  # name url category file_filter size_class commit
+FIT = (-5.846, 0.5957, 0.4389)
+WORKERS = 4
+
+
+def read_manifest(path: Path):
+    lines = path.read_text(encoding="utf-8").splitlines()
+    cols = next(line for line in lines if line.startswith("# Columns:"))
+    rows = [line for line in lines if line.strip() and not line.startswith("#")]
+    return cols, rows
+
+
+def name(row: str) -> str:
+    return row.split("\t")[0]
+
+
+def part_text(src: Path, part: str, workers: int, pred_h: str, names: set) -> str:
+    """The part manifest: the rows of src named in names, in src (u) order. Used here and by --derive."""
+    cols, rows = read_manifest(src)
+    keep = [r for r in rows if name(r) in names]
+    assert len(keep) == len(names), (src, part)
+    return (f"# Part {part} of the S and M projects of {src.name} (sha256 "
+            f"{hashlib.sha256(src.read_bytes()).hexdigest()}),\n"
+            f"# balanced by predicted time ({pred_h} h for {workers} workers), u order; a fed spot part.\n"
+            f"# {len(keep)} projects in u order.\n{cols}\n" + "".join(r + "\n" for r in keep))
+
+
+def read_parts(d: Path, wl: str):
+    parts = [line.split("\t") for line in (d / f"parts.{wl}.tsv").read_text(encoding="utf-8").splitlines()
+             if line and not line.startswith("#")][1:]
+    assign = {}
+    for line in (d / f"parts.{wl}.assign.tsv").read_text(encoding="utf-8").splitlines()[1:]:
+        w, p, n = line.split("\t")
+        assign.setdefault((w, p), set()).add(n)
+    return parts, assign
+
+
+def derive(d: Path, wl: str) -> int:
+    parts, assign = read_parts(d, wl)
+    bad = 0
+    for half, w, p, k, n, h, sha in parts:
+        assert w == wl, (w, wl)
+        text = part_text(d / f"manifest.{w}.tsv", p, int(k), h, assign[(w, p)])
+        got = hashlib.sha256(text.encode("utf-8")).hexdigest()
+        (d / f"manifest.{w}{p}.tsv").write_text(text, encoding="utf-8")
+        ok = got == sha and len(assign[(w, p)]) == int(n)
+        bad += not ok
+        print(f"{half} {w}{p}: {n} projects, {k} workers, sha256 {'ok' if ok else 'DIFFERS ' + got}")
+    return 1 if bad else 0
+
+
+def counts(rows: list) -> str:
+    c = {k: sum(r.split("\t")[CLASS_COL] == k for r in rows) for k in "SML"}
+    return f"S {c['S']}  M {c['M']}  L {c['L']}"
+
+
+def main(n: int, per_half: int) -> None:
+    wl = f"batch{n}"
+    src = HERE / f"manifest.{wl}.tsv"
+    names_out = [f"manifest.{wl}L.tsv", f"project_meta.{wl}L.json", f"parts.{wl}.tsv", f"parts.{wl}.assign.tsv"]
+    parts = [(h, f"{h}{i}") for h in "ab" for i in range(1, per_half + 1)]
+    names_out += [f"manifest.{wl}{p}.tsv" for _, p in parts]
+    for f in names_out:
+        assert not (HERE / f).exists(), f"{f} exists"
+    sha = hashlib.sha256(src.read_bytes()).hexdigest()
+    cols, rows = read_manifest(src)
+    meta = json.loads((HERE / f"project_meta.{wl}.json").read_text(encoding="utf-8"))
+    u = {}
+    for line in (HERE / f"manifest.{wl}.order.tsv").read_text(encoding="utf-8").splitlines():
+        c = line.split("\t")
+        if line.startswith("#") or c[0] == "queue_pos":
+            continue
+        u[c[1]] = float(c[4])
+    assert set(u) == {name(r) for r in rows}
+    assert all(u[name(rows[i])] <= u[name(rows[i + 1])] for i in range(len(rows) - 1))
+    frame = {r["repo_url"].rstrip("/").removesuffix(".git"): r
+             for r in csv.DictReader(open(HERE / "frame.layer1.csv", encoding="utf-8"))}
+
+    def pred(row: str) -> float:
+        f = frame[row.split("\t")[1].rstrip("/").removesuffix(".git")]
+        return math.exp(FIT[0] + FIT[1] * math.log(int(f["commits"]))
+                        + FIT[2] * math.log(max(int(f["tok_bytes"] or 1), 1)))
+
+    print(f"{wl}: {len(rows)} projects  {counts(rows)}")
+    large = [r for r in rows if r.split("\t")[CLASS_COL] == "L"]
+    (HERE / f"manifest.{wl}L.tsv").write_text(
+        f"# The L projects of {src.name} (sha256 {sha}), for the census {wl}L on the big on-demand EC2.\n"
+        f"# {len(large)} projects in u order.\n{cols}\n" + "".join(r + "\n" for r in large), encoding="utf-8")
+    (HERE / f"project_meta.{wl}L.json").write_text(
+        json.dumps({name(r): meta[name(r)] for r in large}, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+    print(f"{wl}L: {len(large)} projects  {counts(large)}  predicted h: "
+          + ", ".join(f"{name(r)} {pred(r) / 3600:.1f}" for r in large))
+
+    small = [r for r in rows if r.split("\t")[CLASS_COL] != "L"]
+    # Bins 0..2K-1 of 4 workers each, alternately of half a and b. Longest first, each project goes to
+    # the least-loaded worker of all bins (ties: lower worker index), i.e. LPT over all 4 * 2K workers;
+    # a bin's predicted wall time is that of its most-loaded worker. Then in each half the bins are
+    # named by wall time, longest first: part 1 is the first one the feeder starts there.
+    nb = 2 * per_half
+    wload = [0.0] * (nb * WORKERS)
+    load, binr = [0.0] * nb, [[] for _ in range(nb)]
+    for r in sorted(small, key=lambda r: (-pred(r), u[name(r)])):
+        w = min(range(nb * WORKERS), key=lambda w: (wload[w], w % nb, w))
+        wload[w] += pred(r); load[w % nb] += pred(r); binr[w % nb].append(name(r))
+    wall = lambda b: max(wload[w] for w in range(nb * WORKERS) if w % nb == b)
+    load_, share, walls = {}, {}, {}
+    for i, h in enumerate("ab"):
+        mine = sorted(range(i, nb, 2), key=lambda b: (-wall(b), b))
+        for k, b in enumerate(mine, 1):
+            p = f"{h}{k}"
+            load_[p], share[p], walls[p] = load[b], binr[b], wall(b)
+    load = load_
+    table, assign = [], []
+    for h, p in parts:
+        ph = f"{load[p] / 3600:.1f}"
+        text = part_text(src, p, WORKERS, ph, set(share[p]))
+        (HERE / f"manifest.{wl}{p}.tsv").write_text(text, encoding="utf-8")
+        _, keep = read_manifest(HERE / f"manifest.{wl}{p}.tsv")
+        assert all(u[name(keep[i])] <= u[name(keep[i + 1])] for i in range(len(keep) - 1))
+        table.append((h, wl, p, str(WORKERS), str(len(keep)), ph, hashlib.sha256(text.encode("utf-8")).hexdigest()))
+        assign += [(wl, p, name(r)) for r in keep]
+        mx = max(pred(r) for r in keep) / 3600
+        print(f"{h} {wl}{p}: {len(keep)} projects  {counts(keep)}  predicted {ph} h of work, wall "
+              f"{walls[p] / 3600:.1f} h on {WORKERS} workers (longest project {mx:.1f} h)")
+    assert sorted(a[2] for a in assign) == sorted(name(r) for r in small)
+    (HERE / f"parts.{wl}.tsv").write_text(
+        f"# Fed spot parts of {wl} (split_batchN.py {n}): the S and M projects of manifest.{wl}.tsv. sha256 is\n"
+        f"# that of the part manifest manifest.<workload><part>.tsv, which split_batchN.py --derive rebuilds.\n"
+        "half\tworkload\tpart\tworkers\tprojects\tpredicted_h\tsha256\n"
+        + "".join("\t".join(t) + "\n" for t in table), encoding="utf-8")
+    (HERE / f"parts.{wl}.assign.tsv").write_text(
+        "workload\tpart\tproject\n" + "".join("\t".join(a) + "\n" for a in assign), encoding="utf-8")
+
+
+if __name__ == "__main__":
+    if len(sys.argv) == 4 and sys.argv[1] == "--derive":
+        sys.exit(derive(Path(sys.argv[2]), sys.argv[3]))
+    if len(sys.argv) in (2, 4) and sys.argv[1].isdigit() and int(sys.argv[1]) >= 6:
+        k = 5
+        if len(sys.argv) == 4:
+            assert sys.argv[2] == "--parts-per-half", sys.argv[2]
+            k = int(sys.argv[3])
+        main(int(sys.argv[1]), k)
+        sys.exit(0)
+    print("usage: split_batchN.py N [--parts-per-half K] | split_batchN.py --derive DIR WL", file=sys.stderr)
+    sys.exit(2)

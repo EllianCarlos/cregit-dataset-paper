@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# census-fed-run ID (census-fed@ID.service): one fed census part (batch 6 or later) on a spot instance,
+# on its own loop XFS /w/ID with its own ctp clone, cregit copy (95cdc88) and output (see
+# /etc/cregit-census/fed/ID.env). Flags of the census-b5 parts. Stop after the running projects:
+# touch $CTP/STOP (census-fed-watch does it on a spot notice).
+set -euo pipefail
+. /etc/cregit-census/fed/$1.env
+M=$IN/manifest.$ID.run.tsv
+export CTP_CONFIG=$CFG
+cd "$CTP"
+echo "=== $(date -u +%FT%TZ) fed census $ID ($WL part $PART) start on $(cat /sys/devices/virtual/dmi/id/board_asset_tag) (cregit $(git -C "$CREGIT" rev-parse --short HEAD) at $CREGIT, want ${CREGIT_COMMIT:0:7}, ctp $(git rev-parse --short HEAD), $(grep -c -v -e '^#' -e '^[[:space:]]*$' "$M") projects, $WORKERS workers, out $OUT, floor ${FLOOR}G)"
+exec .venv/bin/python ctp.py census --manifest "$M" --project-meta "$IN/project_meta.$WL.json" \
+    --workers "$WORKERS" --retries 3 --skip-html --latest --tokenizer-worker \
+    --blame-jobs 4 --memory-limit 16GB --min-free-mem-gb 24 --disk-floor-gb "$FLOOR"

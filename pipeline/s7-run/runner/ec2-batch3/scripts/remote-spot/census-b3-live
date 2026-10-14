@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Every 10 min (census-b3-live.timer): status of every census part to s3://BUCKET/batch3/<a|b>/live/:
+# progress.txt (all parts: ctp progress + the step table), steps.txt, batch3-<part>.log.tail,
+# ledger.<part>.jsonl, system.txt (meminfo, df, load) and upload.log.tail.
+set -uo pipefail
+. /etc/cregit-census/batch.env
+D=s3://${RUNNER_BUCKET}/batch3/$BATCH/live
+T=$(mktemp -d); trap 'rm -r "$T"' EXIT
+{ echo "as of $(date -u +%FT%TZ)  batch3$BATCH on $(cat /sys/devices/virtual/dmi/id/board_asset_tag)  parts: $PARTS"
+  echo "uptime: $(uptime)"
+  echo "MemAvailable: $(awk '/MemAvailable/{printf "%.1f GiB", $2/1048576}' /proc/meminfo)"
+  echo "uploaded to done/: $(ls /data/uploaded 2>/dev/null | wc -l)   watcher: $(systemctl is-active census-b3-watch.service)"
+  for p in $PARTS; do . /etc/cregit-census/$p.env
+    echo; echo "=== part $p: census-b3@$p $(systemctl is-active census-b3@$p.service) ($(systemctl show census-b3@$p.service -p Result --value)), $OUT free $(df -BG --output=avail "$OUT" | tail -1 | tr -d ' ')"
+    (cd "$CTP" && CTP_CONFIG=$CFG .venv/bin/python ctp.py progress --manifest /home/ec2-user/b3-input/manifest.$p.run.tsv --last 5 2>&1)
+    /usr/local/bin/census-steps "$CTP" /home/ec2-user/b3-input/manifest.$p.run.tsv --highlight '' > "$T/steps.$p.txt" 2>&1
+    echo; cat "$T/steps.$p.txt"
+    tail -n 300 "$LOG" > "$T/batch3-$p.log.tail" 2>/dev/null
+    [ -f "$CTP/ledger.jsonl" ] && cp "$CTP/ledger.jsonl" "$T/ledger.$p.jsonl"
+  done
+} > "$T/progress.txt"
+cat "$T"/steps.*.txt > "$T/steps.txt"; rm -f "$T"/steps.*.txt
+journalctl -u census-b3-upload.service --no-pager -n 100 -o short-iso > "$T/upload.log.tail" 2>/dev/null
+{ date -u +%FT%TZ; uptime; cat /proc/pressure/io /proc/pressure/cpu 2>/dev/null; cat /proc/meminfo; df -h /data /data[0-9]* / 2>/dev/null; } > "$T/system.txt"
+aws s3 cp "$T/" "$D/" --recursive --only-show-errors

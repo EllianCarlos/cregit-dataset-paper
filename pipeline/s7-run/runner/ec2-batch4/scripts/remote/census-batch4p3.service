@@ -1,0 +1,23 @@
+[Unit]
+Description=cregit census batch 4 part p3 (ctp census, 4 workers, loop XFS /b4p3)
+Wants=network-online.target
+After=network-online.target nix-daemon.service
+RequiresMountsFor=/data /b4p3
+OnSuccess=census-batch4-finalize.service
+OnFailure=census-batch4-finalize.service
+
+[Service]
+Type=simple
+User=ec2-user
+Group=ec2-user
+WorkingDirectory=/b4p3/ctp
+ExecStart=/usr/local/bin/census-batch4-run 3
+StandardOutput=append:/data/logs/batch4p3.log
+StandardError=append:/data/logs/batch4p3.log
+Restart=no
+# an OOM kill of one project must not stop the whole census (systemd default is stop)
+OOMPolicy=continue
+LimitNOFILE=1048576
+LimitNPROC=infinity
+TasksMax=infinity
+TimeoutStopSec=300

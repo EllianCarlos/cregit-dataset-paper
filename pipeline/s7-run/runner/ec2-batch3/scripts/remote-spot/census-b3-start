@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# census-b3-start: start every census part of this spot instance: prep the run manifests, then
+# the interruption watcher, the upload and live timers, and census-b3@<part> for each part with
+# projects left. Run census-b3-check first (it must print CHECK OK).
+set -euo pipefail
+. /etc/cregit-census/batch.env
+for p in $PARTS; do . /etc/cregit-census/$p.env
+  [ -e "$CTP/STOP" ] && { echo "STOP exists in $CTP: not starting"; exit 1; }
+  systemctl is-active --quiet census-b3@$p.service && { echo "census-b3@$p already active"; exit 1; }
+done
+/usr/local/bin/census-b3-prep
+mkdir -p /data/logs /data/uploaded; chown ec2-user: /data/logs /data/uploaded
+systemctl daemon-reload
+systemctl start census-b3-watch.service census-b3-upload.timer census-b3-live.timer
+for p in $PARTS; do
+  n=$(grep -c -v -e '^#' -e '^[[:space:]]*$' /home/ec2-user/b3-input/manifest.$p.run.tsv || true)
+  if [ "$n" -gt 0 ]; then systemctl start census-b3@$p.service; echo "started census-b3@$p ($n projects)"; else echo "$p: nothing left"; fi
+done
+sleep 30
+systemctl is-active census-b3-watch.service census-b3-upload.timer census-b3-live.timer $(for p in $PARTS; do echo census-b3@$p.service; done)
+for p in $PARTS; do tail -n 3 /data/logs/batch3-$p.log; done

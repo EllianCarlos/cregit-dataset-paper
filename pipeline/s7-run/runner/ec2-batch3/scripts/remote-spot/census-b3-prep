@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+# census-b3-prep: inputs for the census parts of this spot instance. Copies the batch 3 inputs
+# to /home/ec2-user/b3-input (sha256-checked). For each part writes
+#   manifest.<part>.full.tsv: the part's share of manifest.batch3<a|b>.tsv (a: rows k, k+4,
+#     k+8 ... in u order for part ak; b: all rows), the same on every instance;
+#   manifest.<part>.run.tsv: that minus every project with s3://BUCKET/batch3/<a|b>/done/<p>/OK.
+# Refuses if batch3/<a|b>/final/DONE exists (every project of that batch is in done/).
+set -euo pipefail
+. /etc/cregit-census/batch.env
+S3=s3://${RUNNER_BUCKET}/batch3
+I=/home/ec2-user/b3-input
+if aws s3 ls "$S3/$BATCH/final/DONE" >/dev/null 2>&1; then echo "$S3/$BATCH/final/DONE exists: batch3$BATCH is finished"; exit 1; fi
+mkdir -p "$I"
+aws s3 cp "$S3/input/" "$I/" --recursive --only-show-errors
+(cd "$I" && sha256sum --quiet -c SHA256SUMS) && echo "inputs: sha256 ok"
+{ aws s3 ls "$S3/$BATCH/done/" --recursive || true; } | awk '$4 ~ /\/OK$/ {n=split($4,a,"/"); print a[n-1]}' | sort -u > "$I/done.txt"
+python3 - "$I" "$BATCH" "$PARTS" <<'P'
+import sys, datetime
+I, batch, parts = sys.argv[1], sys.argv[2], sys.argv[3].split()
+src = f"{I}/manifest.batch3{batch}.tsv"
+done = set(open(f"{I}/done.txt").read().split())
+lines = open(src).read().splitlines()
+rows = [l for l in lines if l.strip() and not l.startswith("#")]
+cols = next(l for l in lines if l.startswith("# Columns:"))
+now = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")
+for k, p in enumerate(parts):
+    share = rows[k::len(parts)]
+    keep = [r for r in share if r.split("\t")[0] not in done]
+    what = f"rows {k + 1}, {k + 1 + len(parts)}, ... (every {len(parts)}th)" if len(parts) > 1 else "all rows"
+    with open(f"{I}/manifest.{p}.full.tsv", "w") as f:
+        f.write(f"# Part {p} of manifest.batch3{batch}.tsv: {what}, u order.\n# {len(share)} projects.\n{cols}\n")
+        f.writelines(r + "\n" for r in share)
+    with open(f"{I}/manifest.{p}.run.tsv", "w") as f:
+        f.write(f"# Run manifest of part {p}, written {now} by census-b3-prep: {len(keep)} of {len(share)}"
+                f" projects; {len(share) - len(keep)} already in done/ are left out. u order kept.\n{cols}\n")
+        f.writelines(r + "\n" for r in keep)
+    print(f"{p}: {len(keep)} of {len(share)} projects to run ({len(share) - len(keep)} already done)")
+P
+chown -R ec2-user: "$I"

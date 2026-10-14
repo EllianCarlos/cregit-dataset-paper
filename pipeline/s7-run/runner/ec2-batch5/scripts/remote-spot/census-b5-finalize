@@ -1,0 +1,112 @@
+#!/usr/bin/env bash
+# census-b5-finalize (census-b5-finalize.service; OnSuccess=/OnFailure= of every census-b5@<id>).
+# Waits until no batch5 / batch1rest part of this spot instance is active (a part that ends early
+# does not finalize alone), runs census-b5-upload once more, then for EACH part copies its results to
+# s3://BUCKET/<workload>/<part>/final/<instance-id>/ (Parquet and .validated per project, the ctp
+# ledger, duckdb, state json and logs, the census log, the part and run manifests), checks every
+# object (key and size) and that SHA256SUMS reads back byte-identical, and writes DONE there; when
+# every project of the part manifest has done/<project>/OK it also writes <workload>/<part>/final/DONE.
+# Then it terminates the instance (shutdown; shutdown behavior terminate) only if EVERY census on it
+# has finalized: census-spot-decide (batch 3 parts too, when they run here).
+# No shutdown if a part's copy failed, with --dry-run, if the longest part ran < 1 h and no project
+# of this instance reached done/OK (an early failure), or if /home/ec2-user/NO_SHUTDOWN exists.
+# After a real spot notice (/run/census-spot-interrupted) it copies nothing: done/ has every finished
+# project and restart_spot.sh relaunches the rest.
+# --dry-run: copy to <workload>/<part>/dryrun/<instance-id>/ without waiting, never shut down.
+# --decide-only: print only the termination decision (census-spot-decide), copy nothing.
+set -uo pipefail
+export AWS_PAGER=""
+E=/etc/cregit-census/s5; . $E/batch.env
+DRY=0; [ "${1:-}" = --dry-run ] && DRY=1
+DECIDE=0; [ "${1:-}" = --decide-only ] && DECIDE=1
+B=s3://${RUNNER_BUCKET}; I=/home/ec2-user/s5-input
+IID=$(cat /sys/devices/virtual/dmi/id/board_asset_tag)
+FLOG=/data/logs/finalize-b5.log; TM=$(mktemp -d /tmp/finalize-b5.XXXXXX)
+exec > >(tee -a "$FLOG") 2>&1
+say() { echo "[$(date -u +%FT%TZ)] finalize-b5: $*"; }
+if [ $DECIDE = 1 ]; then why=$(/usr/local/bin/census-spot-decide 2>&1); rc=$?
+  say "decide-only: $why -> $([ $rc = 0 ] && echo 'would terminate' || echo 'no termination')"; exit 0; fi
+say "start dry=$DRY spot $HALF parts=$IDS"
+first=${IDS%% *}
+if [ $DRY = 0 ] && [ -e /run/census-spot-interrupted ]; then
+  say "spot interruption notice seen ($(cat /run/census-spot-interrupted)): no final copy; done/ has the finished projects; restart with restart_spot.sh $HALF"
+  (. $E/$first.env; aws s3 cp "$FLOG" "$B/$WL/$PART/live/finalize-b5.log" --only-show-errors); exit 0
+fi
+if [ $DRY = 0 ]; then
+  waited=0
+  while :; do
+    act=""; for id in $IDS; do case $(systemctl is-active census-b5@$id.service) in active|activating|deactivating) act="$act $id" ;; esac; done
+    [ -z "$act" ] && break
+    [ $waited = 0 ] && say "parts still running:$act; waiting (this unit stays active until they end)"
+    waited=1; sleep 60
+  done
+fi
+sudo -u ec2-user /usr/local/bin/census-b5-upload || say "census-b5-upload returned $? (continuing)"
+finalize_part() {  # $1 = id; returns 1 on a failed copy or check
+  local id=$1 n=0 S_ DEST d name files f; . $E/$id.env
+  DEST=$B/$WL/$PART/final/$IID; [ $DRY = 1 ] && DEST=$B/$WL/$PART/dryrun/$IID
+  pfail() { say "$id FAILED: $*"; echo "finalize failed at $(date -u +%FT%TZ): $*" > "$TM/FINALIZE_FAILED.$id"
+            aws s3 cp "$TM/FINALIZE_FAILED.$id" "$DEST/FINALIZE_FAILED" --only-show-errors; return 1; }
+  local svc="census-b5@$id: $(systemctl show census-b5@$id.service -p Result -p ExecMainStatus -p ExecMainExitTimestamp 2>/dev/null | tr '\n' ' ')"
+  S_=$MP/final-stage; [ -d "$S_" ] && mv "$S_" "$S_.old.$(date +%s)"
+  mkdir -p "$S_/projects" "$S_/ctp" "$S_/logs" || { pfail "staging dir"; return 1; }
+  for d in "$OUT"/*/; do
+    [ -d "$d" ] || continue
+    name=$(basename "$d"); [ "$name" = .pin-staging ] && continue
+    files=$(find "$d" -maxdepth 1 -type f \( -name '*.parquet' -o -name '*.validated' \))
+    [ -n "$files" ] || continue
+    mkdir -p "$S_/projects/$name"; for f in $files; do cp -l "$f" "$S_/projects/$name/" 2>/dev/null || cp -p "$f" "$S_/projects/$name/" || { pfail "copy $f"; return 1; }; done; n=$((n+1))
+  done
+  for f in ledger.jsonl ctp.duckdb metrics.tsv resources.tsv runs.log; do [ -f "$CTP/$f" ] && { cp -p "$CTP/$f" "$S_/ctp/" || { pfail "copy $f"; return 1; }; }; done
+  if [ -d "$CTP/state" ]; then
+    ( cd "$CTP" && find state -maxdepth 1 -mindepth 1 -type d | while read -r s; do
+        mkdir -p "$S_/ctp/$s/logs"; find "$s" -maxdepth 1 -type f -name '*.json' -exec cp -p {} "$S_/ctp/$s/" \;
+        [ -d "$s/logs" ] && find "$s/logs" -maxdepth 1 -type f -exec cp -p {} "$S_/ctp/$s/logs/" \; ; done ) || { pfail "copy state"; return 1; }
+  fi
+  [ -f "$LOG" ] && cp -p "$LOG" "$S_/logs/"
+  cp -p $I/manifest.$id.tsv $I/manifest.$id.run.tsv $E/$id.env $E/$id.cfg "$S_/logs/" 2>/dev/null
+  ( cd "$S_" && find . -type f ! -name SHA256SUMS -printf '%P\0' | sort -z | xargs -0 -r sha256sum > SHA256SUMS ) || { pfail "sha256"; return 1; }
+  say "$id: staged $(wc -l < "$S_/SHA256SUMS") files ($n projects), $(du -sh "$S_" | cut -f1) -> $DEST"
+  aws s3 cp "$S_/" "$DEST/" --recursive --only-show-errors --checksum-algorithm SHA256 || { pfail "upload"; return 1; }
+  ( cd "$S_" && find . -type f -printf '%P\t%s\n' | sort ) > "$TM/final.local.$id"
+  aws s3 ls "$DEST/" --recursive | awk -v p="${DEST#s3://*/}/" '{k=$0; sub(/^[^ ]+ +[^ ]+ +[0-9]+ /,"",k); sub("^" p,"",k); print k "\t" $3}' | grep -v -e '^DONE	' -e '^FINALIZE_FAILED	' | sort > "$TM/final.remote.$id" || { pfail "list"; return 1; }
+  local missing; missing=$(comm -23 "$TM/final.local.$id" "$TM/final.remote.$id" | wc -l)
+  [ "$missing" = 0 ] || { comm -23 "$TM/final.local.$id" "$TM/final.remote.$id" | head; pfail "$missing staged files are missing or differ in size in $DEST"; return 1; }
+  aws s3 cp "$DEST/SHA256SUMS" "$TM/final.sums.$id" --only-show-errors && cmp "$TM/final.sums.$id" "$S_/SHA256SUMS" || { pfail "SHA256SUMS read-back differs"; return 1; }
+  ( cd "$S_" && sha256sum --quiet -c SHA256SUMS ) || { pfail "staged files changed during upload"; return 1; }
+  say "$id: check ok: $(wc -l < "$TM/final.local.$id") objects, sizes equal, SHA256SUMS read back identical"
+  { echo "cregit census $WL part $PART ($id) finished and copied: $(date -u +%FT%TZ)"
+    echo "instance: $IID  spot $HALF  dry_run=$DRY"
+    echo "$svc"
+    echo "projects copied: $n   files: $(wc -l < "$S_/SHA256SUMS")   uploaded to done/ by this instance: $(ls $MP/uploaded 2>/dev/null | wc -l)"
+    (cd "$CTP" && CTP_CONFIG=$CFG .venv/bin/python ctp.py progress --manifest $I/manifest.$id.run.tsv --last 3 2>&1 | head -5)
+    echo "--- SHA256SUMS"; cat "$S_/SHA256SUMS"; } > "$TM/DONE.$id"
+  aws s3 cp "$TM/DONE.$id" "$DEST/DONE" --only-show-errors && aws s3 ls "$DEST/DONE" >/dev/null || { pfail "DONE upload"; return 1; }
+  say "$id: DONE written to $DEST/DONE"
+  [ $DRY = 0 ] && cp "$TM/DONE.$id" $MP/final-DONE
+  local want have left
+  want=$(grep -v -e '^#' -e '^[[:space:]]*$' $I/manifest.$id.tsv | cut -f1 | sort -u)
+  have=$(aws s3 ls "$B/$WL/$PART/done/" --recursive | awk '$4 ~ /\/OK$/ {n=split($4,a,"/"); print a[n-1]}' | sort -u)
+  left=$(comm -23 <(echo "$want") <(echo "$have") | grep -c . || true)
+  if [ "$left" = 0 ] && [ $DRY = 0 ]; then
+    aws s3 cp "$TM/DONE.$id" "$B/$WL/$PART/final/DONE" --only-show-errors && say "$id: every project of the part has done/OK: wrote $B/$WL/$PART/final/DONE"
+  else say "$id: $left projects of the part have no done/OK yet (restart_spot.sh $HALF runs them)"; fi
+  return 0
+}
+bad=""
+for id in $IDS; do finalize_part $id || bad="$bad $id"; done
+(. $E/$first.env; aws s3 cp "$FLOG" "$B/$WL/$PART/$([ $DRY = 1 ] && echo dryrun || echo final)/$IID/finalize-b5.log" --only-show-errors)
+if [ $DRY = 1 ]; then why=$(/usr/local/bin/census-spot-decide 2>&1); rc=$?
+  say "dry run: no shutdown (a real run would: $why -> $([ $rc = 0 ] && echo terminate || echo 'no termination'))"; exit 0; fi
+[ -z "$bad" ] || { say "the final copy failed for:$bad: no shutdown; look at $FLOG"; exit 1; }
+ran=0; up=$(cat /w/*/uploaded/* 2>/dev/null | grep -c '^uploaded ')
+for id in $IDS; do
+  st=$(systemctl show census-b5@$id.service -p ExecMainStartTimestampMonotonic --value); ex=$(systemctl show census-b5@$id.service -p ExecMainExitTimestampMonotonic --value)
+  r=$(( (${ex:-0} - ${st:-0}) / 1000000 )); [ "$r" -gt "$ran" ] && ran=$r
+done
+if [ "$ran" -lt 3600 ] && [ "$up" = 0 ]; then say "the longest part ran only ${ran}s (< 1 h) and no project reached done/OK: an early failure, so no shutdown; look at /data/logs/b5-*.log"; exit 0; fi
+if [ -e /home/ec2-user/NO_SHUTDOWN ]; then say "/home/ec2-user/NO_SHUTDOWN exists: no shutdown"; exit 0; fi
+if ! why=$(/usr/local/bin/census-spot-decide 2>&1); then say "$why: no shutdown; the last census on this instance to finalize terminates it"; exit 0; fi
+say "$why"
+say "shutting down: this one-time spot instance terminates (shutdown behavior terminate)"
+sync; shutdown -h now

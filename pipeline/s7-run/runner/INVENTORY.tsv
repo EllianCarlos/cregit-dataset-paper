@@ -1,0 +1,881 @@
+# path (in ~/s3-work)	sha256	size_or_count	role	used_by_build	evidence	action	reason
+restart_batch1.sh	31345d550993ba2fba453f3c6af163037f9c0a0fc56bc8279090ecf58c3bc66f	730	launch or restart of an EC2 machine	yes	header: one-off restart of batch 1 on 2026-10-07	copy	
+spot-persons-db.sh	3e3f416d42ced9a4129349dd9c5c2ef7251c17694fca9d4988a4549eaaff971f	4724	machine setup or change (via ssm.sh)	yes	header: the user ran it on 2026-10-11	copy	
+upload-L1r.sh	044dd22db0c6c941d27e37e5e9ec518ca2223a8539fd6813c0bd514b05df4813	2290	publish (the user uploads inputs to S3)	yes	referenced by ec2-L1r/README.md	copy	
+upload-L7-20-v2.sh	ce373c3c7e55e29c4a58d556302107a42d658a005661734e32d418033d2c29f4	1426	publish (the user uploads inputs to S3)	yes	referenced by ec2-L7-20/README.md	copy	
+upload-batch21.sh	c25246f3e12de697fddb8accf6408e1047f1a2d8f8f229d286b6dcdfe7a0b761	833	publish (the user uploads inputs to S3)	yes	header: the user ran the upload	copy	
+upload-batch22.sh	2e21d9587b37da945f7b32a838a2b9fbb79cfb411ad02b48d71a2de9e385f77a	867	publish (the user uploads inputs to S3)	yes	header: the user ran the upload	copy	
+upload-batch23.sh	6de07d3c443db3d094b46916960106ca199d30068c2e6c1837643a0faaec70d1	1489	publish (the user uploads inputs to S3)	yes	referenced by ec2-batch6/scripts/s23-enqueue.sh	copy	
+upload-batch24.sh	fa4ff45af0d9425044f3291230ea61a14c7fdbcfcafc1175d8e0ab3e91cac733	1572	publish (the user uploads inputs to S3)	yes	referenced by ec2-batch6/scripts/s24-enqueue.sh	copy	
+upload-batch25.sh	a1afcbb3eb4d6f16db03e59ce1506bea8193b72fb141fca9371bdf8a463f83a8	1581	publish (the user uploads inputs to S3)	yes	referenced by ec2-batch6/scripts/s25-enqueue.sh	copy	
+upload-batch26.sh	40cb3d136166eae74a37d401c57e013c0b570f73a9d7f2a4b4de0b4041905a2b	1593	publish (the user uploads inputs to S3)	yes	referenced by ec2-batch6/scripts/s26-enqueue.sh	copy	
+upload-batches7-20.sh	065bb6827c5a9c7e03c112d3d85522a39f62725367cbd14879d5cf9afa64ce41	1406	publish (the user uploads inputs to S3)	yes	header: the user ran the upload	copy	
+upload-cregit-blamelimit.sh	1e3718984796859daa6d6b5f384102a1eeda2e68fffefe6ed2ce8dc5458379a5	1144	publish (the user uploads inputs to S3)	yes	header: the user ran the upload	copy	
+upload-tool-bundles.sh	741590c0a0aa21290dcfa39f23974e59b1b0a8924467ff466df6ed7d596a7568	1892	tool artifact	no		skip	written on 2026-10-14 for the tool bundles (item A2), after the build started
+s3-clones/		19 files	experiment	no		skip	skipped: temporary git directory
+dryrun/		27 files	experiment	no		skip	not used: output of a build_run.sh dry run
+step2-profile/		9 files	experiment	no		skip	not used: step 2 CPU profile experiment
+srcml-fix/		34155 files	experiment	no		skip	not used: srcML non-termination fix work; the patch is in the cregit fork nix/ (see s7-run/srcml-fix-20261009.md)
+step2-speed/		104977 files	experiment	no		skip	not used: ctp speed experiments (perf work before the build)
+ec2-batch2/03-build.out	6d40fa62c9e1262bab6c2c9d0786c4e3ce7f0e0376d3b8b218ea2e26eb647678	2844	output	no		skip	output, log or lock state
+ec2-batch2/05-check.out	cb59516c85fc1c7ff4a78d2aa35a5bb39ef983ffce75a4ec12db25734a682516	1052	output	no		skip	output, log or lock state
+ec2-batch2/upload/README.md	ffe3784447be4d403d69402d98103f122971d0741318a918ec24ad5f6c777b3a	5519	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch2/upload/SHA256SUMS	5d48da5e57d8363a27217d05ae008b91a4300cac669661e7a42d5d8fb2cc55a8	928	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch2/upload/census.cfg	74bbf016050b7d771d99d222c244c1df34c4e4a2f57a4afb4b5c98b507fb503f	320	input copy	yes		skip	input sent to S3; s7-run holds the source
+ec2-batch2/upload/cregit-ec2.bundle	2029db86dd87e7503166a4f4420392d0e2bcae1802eb9ba959f6000067f2f306	22024984	tool artifact	yes		skip	tool bundle or its checksum; tools.lock records it
+ec2-batch2/upload/ctp.bundle	a0c0f6efcbe81c6f5cbd1b6f56ccc5833c3893262b62b438b0b956330bd7d602	3817787	tool artifact	yes		skip	tool bundle or its checksum; tools.lock records it
+ec2-batch2/upload/manifest.batch1.tsv	53e3090b8ec1a8e4a4b7a38a0eb691a0aba633d4841c7d652a479db0bd569765	19064	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch2/upload/manifest.batch2.order.tsv	5ed6c1ad5238100ccaaffd73f75f99b2d6048ca8d98f1099e5b251e686bc2509	20545	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch2/upload/manifest.batch2.tsv	5010c414f016b12fe8d1df5c3d263786d319e555a266b154ece82f1d87b544c2	19425	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch2/upload/manifest.libexpat.tsv	7e7198e16725445352bc4b90b7eaea6fe890c70f4f247e7cf8e0b67487f1070a	407	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch2/upload/project_meta.batch1.json	fa6a956d3cdcfa486489c02b5c1400a1b28506b66b449605db763d211cbfaf91	133376	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch2/upload/project_meta.batch2.json	4bc236efa0f67a14751719b3d68d452d7b8e4f173debfeb0819ff360303f6ac1	133955	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch2/upload/run_batch1.sh	d44be8770e5f8606fbe0a5bfbf8e4f1feb514e4a2838ddfc7b9fe833b487f89c	1207	input copy	yes		skip	input sent to S3; s7-run holds the source
+ec2-batch2/scripts/01-raid-pkgs.sh	5f60c50ca2abd1bd1237c23ebd3df3a727af79b12557e58136c334dde7d83505	845	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch2/scripts/02-nix.sh	f0c8e19cbac0ebd670e9820db5e7bedd368a696f4c25230e02deaa71f864a53c	1282	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch2/scripts/03-build.sh	534f57c8c3700ee10e7a8270ebba92091b3e7192dea049d9ef362a1fb943ff4a	1113	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch2/scripts/04-buildcheck.sh	e0dfdd406c1ba43657106c4d665221132ea682618311a9304a1c332cee74abdd	872	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch2/scripts/05-check.sh	cd210745b4ac36c584c6af5d5ea68960aaaf1506c06ac5b84cff585c7dfd0cbd	1118	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch2/scripts/06-install.sh	c885c198eace0790cc27dc6afbb6dd1536bb9f7b2453f4197645ae555cd9f30b	9383	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch2/scripts/07-dryrun.sh	62237f6af26c370d1272ee5da077b3849db9704ec9be84a4844e0174b6e7afde	684	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch2/scripts/08-start.sh	35f5e967fe09f119eacc09f5cff84e1f9cba6e07ed6b5b4322785a9d7d0dcec1	340	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch2/scripts/bucket-policy.json	cd5b9d8b4f24ee8a311f8f2f89033ca0e332c4e70556d3b72ff5f288aea358ce	401	machine setup or change (via ssm.sh)	yes	bucket setup of batch 2	copy	
+ec2-batch2/scripts/local_build.sh	0324d5d95e96cd6e87afba92bd950af721accb52c7cac855f7266e2d7a4b974a	718	machine setup or change (via ssm.sh)	yes	header: builds the cregit-ec2 artifacts of batch 2	copy	
+ec2-batch2/scripts/ssm.sh	da3be5cea9598f776f0675bb73fcf3054d003c0fab4bc09709853e335be2035c	1369	remote command runner (SSM)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch2/scripts/trust.json	6982d8db819e8d57b7794161ba5d40c66956c59ed7ad56ab887c2356602ef35e	128	machine setup or change (via ssm.sh)	yes	instance role setup of batch 2	copy	
+ec2-batch2/scripts/remote/census-batch2-finalize	05739809c2d456613ba58c994e80eb2fd73cd27d4a98a947748a29f8a27664db	5095	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch2/scripts/06-install.sh	copy	
+ec2-batch2/scripts/remote/census-batch2-finalize.service	65d42574fb90a843d00ec8fab6a7fadf6287c8300e34c76d05f80d83655a2332	205	systemd unit (installed on the machine)	yes	referenced by ec2-batch2/scripts/06-install.sh	copy	
+ec2-batch2/scripts/remote/census-batch2-live	49364cd43438bdad562e06ed458b3cc368d9a8f65365ea427d15b206f07c8f3b	1082	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch2/scripts/06-install.sh	copy	
+ec2-batch2/scripts/remote/census-batch2-live.service	218e62f357bb68359abda3c0f64df5b2a19428a93a81b5fea3f19e4c46ecc6c9	162	systemd unit (installed on the machine)	yes	referenced by ec2-batch2/scripts/06-install.sh	copy	
+ec2-batch2/scripts/remote/census-batch2-live.timer	727afd4d290a211537c54fe6b0f3aa547a231d1cfbbd83923c3cc510897e7ced	171	systemd unit (installed on the machine)	yes	referenced by ec2-batch2/scripts/06-install.sh	copy	
+ec2-batch2/scripts/remote/census-batch2-run	9c3bb509cd162b601d12c1f7e5c4304fa5dda3bd2748a4f7146b84f07f674159	825	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch2/scripts/06-install.sh	copy	
+ec2-batch2/scripts/remote/census-batch2.service	13fce43c54c390b3f327a2d0c3fbcc9f991164497df2c9bf3d173aa8ac06e341	553	systemd unit (installed on the machine)	yes	referenced by ec2-batch2/scripts/06-install.sh	copy	
+ec2-check/		2178 files	experiment	no		skip	not used: local pre-flight check of ctp before the first EC2 run; a ctp clone and its output
+ec2-batch3/README.md	9680caaa8c5047f0d08bed8361ad04bd28dc1fe04a803e1c8f2e1d8395281528	11223	doc	yes		copy	run notes of the directory
+ec2-batch3/ab_compare.py	7c695b898bfc93e8c353606bd54cc4c8bf7ea8897c2a61f6d70ada65e1a9da24	3739	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/ami.txt	bad78a821a774d9cc29e3e28058c841f2269b04b7771db3e0318d3b6412c11a2	22	record	yes		skip	record of launched ids (output of the launch scripts)
+ec2-batch3/b3L-install.out	48c95357699bd371b09bd3b49df55bda3d3dfa69df5b1295f683362a360ed4a1	3439	output	no		skip	output, log or lock state
+ec2-batch3/check-a.out	0d31f864333bf162161643e4ac7db0e679f0ab7c8fd774220287f01891b936e0	1251	output	no		skip	output, log or lock state
+ec2-batch3/instances.txt	eb83eec398581aa130392ad7b9a1d9083ce25ef5fe1c689e730815be17e04038	1401	record	yes		skip	record of launched ids (output of the launch scripts)
+ec2-batch3/launch_fleet.sh	dd18a3dcc4242f8b686d1dfdda6e565ccadf387ed4163c532cd525aaa15569bf	2681	launch or restart of an EC2 machine	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/launch_spot.sh	e6094a421cc7f31b823e57f1f12277fc47cca3e7efd52ac9661acda53bee6c87	1558	launch or restart of an EC2 machine	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/post_relaunch.sh	60366acd0b112f78d5fb643ae17a484db954ce1348c303960e263a48bfdca3e7	2456	launch or restart of an EC2 machine	yes	referenced by ec2-batch3/scripts/post-relaunch-a.sh	copy	
+ec2-batch3/restart-a.1.out	abb162798d945d82f5aaff8471ef5955f153e50c5906ac161b789410d2c9a6de	413	output	no		skip	output, log or lock state
+ec2-batch3/restart-a.2.out	607fd99a14c5e0d556256c40e8edd971fe693b137d0fe85d1be6338358543a20	1650	output	no		skip	output, log or lock state
+ec2-batch3/restart-b.1.out	56effc44d29565820d4938ceecc5abb94b8e06e81c212074ef8b09c26aee6f38	413	output	no		skip	output, log or lock state
+ec2-batch3/restart-b.2.out	f5391f4d564be33100efef4dbf2f04dbad1efb2dda74279ef03d6a9e95562f62	1747	output	no		skip	output, log or lock state
+ec2-batch3/restart_spot.sh	91d3b679675008aeda6877a37fd62bef1811897b0bd0b674c30ad19fb7831caf	10402	launch or restart of an EC2 machine	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/restart_spot.sh.bak-20261010	fc00b3337a8db6849faea517b7a124e950a1c0b8eefb320006c44bd981011e56	9722	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch3/restart_spot.sh.orig-b3b5	d51773cd46d473b117f510bdd0fb648765b3431c8ddbe2dc1d5b70edcef836c6	7132	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch3/restart_spot.sh.orig-b3only	b63ab8f391dbacd7ae47c5c25041c0c4e6f71dc421e8734b064b4e8acec3c7f8	4140	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch3/restart_spot.sh.orig-postrelaunch	d5001831301f2333b19d82951149b994f6ca3be604c304d499a5cebd6627d5fc	9970	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch3/setup-a.out	bf5b55510aac263218462412f5c745bd7e9a9d82952062d1c3547fa09cc9adba	15564	output	no		skip	output, log or lock state
+ec2-batch3/setup-b.out	33816e2776431e73a32c022dab232fddd725eee2d0cd81d73b7fcbbb4769aa22	15564	output	no		skip	output, log or lock state
+ec2-batch3/spot-install-a.out	351d459ac783475678ece272a10811eee498e643a9de21b38f6def45ce74c2a1	458	output	no		skip	output, log or lock state
+ec2-batch3/spot-install-b.out	1eeb14d2f22fda94146d1b1aa28b60217b423942209d5a1eef6a009c226b5776	1342	output	no		skip	output, log or lock state
+ec2-batch3/scripts/a-ami-prep.sh	342b2094406a4bb7eaaca94dc6c2cc902bfa3ac7d52917bfeeb3092c2c5abb3a	339	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/b-probe.sh	19387b250a2e43574b3daba8da551f0b84d61df045f27f32198c915c707846e8	312	probe (read-only, via ssm.sh)	yes	referenced by ec2-L7-20b/move-to-spot-b/README.md	copy	
+ec2-batch3/scripts/b2-live-tail.sh	2ecc6a3ffb15cde65440f95783eac32209378f3940aab5b824978b1939087d27	511	probe (read-only, via ssm.sh)	yes	a part of a generated install script (mkinstall.sh or gen-*.sh)	copy	
+ec2-batch3/scripts/b2-live.sh	f61b107c9616b97f2e865e76591059d31bdcaafa94dcd27903e4dfdce0a618b1	8668	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/b2-probe.sh	3d7b7734068bccd33b542966eb02e13dfcab04896cab18d1d5b95c63be1c4f7e	525	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/b3L-files.sh	b3644160919316ff3ccc407cc9329d15758554e623b4aa9cf5ccd81599c1f718	28249	machine setup or change (via ssm.sh)	yes	a part of a generated install script (mkinstall.sh or gen-*.sh)	copy	
+ec2-batch3/scripts/b3L-install.sh	7bf2ff1a6afcaad0c0b71d02682e3987a29abe692b1a3bfce0da1965324afaee	31711	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/b3L-post.sh	315a7c3a319d98db53e8f8ebed1b04ccca286219485a5f393252a72ff8a2e28e	2987	machine setup or change (via ssm.sh)	yes	a part of a generated install script (mkinstall.sh or gen-*.sh)	copy	
+ec2-batch3/scripts/b3L-pre.sh	8d5a5afb4949dcc7d24e4ad852f89653bf86e75684408c11381a7b56ed57161b	475	machine setup or change (via ssm.sh)	yes	a part of a generated install script (mkinstall.sh or gen-*.sh)	copy	
+ec2-batch3/scripts/check-only.sh	4dd590ad2260e2f32a1ca64d331bad5570d015aca1596b59fa87bc85a7023881	1516	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/fin-dry.sh	835f984750ec75fb248697483bde7ef67bd3cc92ece6e7a6f0337424c8689b79	386	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/gate-a.sh	f84210b12eaf9593018ce87d2d89c3ec43424f4970cedf4a1410f222f3191a82	595	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/gate-start.sh	06fafda84fefc992fd2b75033f5251dc1e2dca1970d0f9971fe4569aa8e240e0	445	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch3/scripts/gate-a.sh	copy	
+ec2-batch3/scripts/gen-spot-install.sh	46fb24de2034aef989ad6f9ef631931fe64afdb6c61de02b8c95bab5f93cffe2	1040	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/scripts/layout-fs4.sh.old	b93b1d85e75c613317d93ea65af4e8aa2f7e908f3e73d8740164430f9d3b9b2f	1150	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch3/scripts/layout-fsN.sh	0fde6325a33d19f33b86d6bb334e96788dbfca3a8b1d7d7e4733706836255ab5	1150	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch3/scripts/restore-a.sh	copy	
+ec2-batch3/scripts/layout-raid.sh	7fcba863b3acbeaa96ab70cc636735d640099584e00b3ee9dae6c679db507789	882	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch3/scripts/restore-b.sh	copy	
+ec2-batch3/scripts/mkinstall.sh	71383796f1609575bd31cc4b607fb563a12193ea0b92909b0107d32fc75ac8bb	567	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch4/README.md	copy	
+ec2-batch3/scripts/oom-dropin.sh	41a3bed5c96d7d38f5772cd33342c09126f63bc6623f8db44ca6f19bc037e723	390	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/oom-read.sh	ea1add77972609e09729b408090b5774ec494043c04497eee7c84b2d48f23fc5	120	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/post-relaunch-a.sh	e845ef843fadd12558a3647cc4ca0b5b628cfc30cf55bcad4833c9c3ce77ccef	7596	launch or restart of an EC2 machine	yes	SSM command history	copy	
+ec2-batch3/scripts/post-relaunch-b.sh	28066df6103c505060b3507f434f0ab6614c900c31fb11cd847c0c8d2f350049	7597	launch or restart of an EC2 machine	yes	SSM command history	copy	
+ec2-batch3/scripts/post-relaunch.remote.sh	0fb905eb1817a345a3f238b96976613a48b96aaafd46caf45bf871593ce2600b	7584	launch or restart of an EC2 machine	yes	referenced by ec2-batch3/scripts/post-relaunch-a.sh	copy	
+ec2-batch3/scripts/relayout-a.sh	f83ff89804105017cc12f5d1162dc9036e9fd0a6e0338df83183b7e0b2708636	2068	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/restore-a.sh	3f48cb058a6f060c711aa993ef828fbd68770f8d789ca6bad608bc5aa8cc4197	41172	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/restore-b.sh	64fe60a863ea8ac12483f030c1329cf941b4c8f335fc52cef543009ff794198e	40904	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/restore-inputs.sh	f22786bc296215ce29b9159d72f6f7fcbde4c1f99677f5ef06d9866461b1a7e6	827	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch3/scripts/restore-a.sh	copy	
+ec2-batch3/scripts/s1-inputs.sh	b666340e14f69137ff70a51898082d1f47bf581d82da0fa5aa4cceef3d84a119	386	machine setup or change (via ssm.sh)	yes	a part of a generated install script (mkinstall.sh or gen-*.sh)	copy	
+ec2-batch3/scripts/setup-a.sh	51bcca59130637449d0d0a2bd0200ead6b306dc8b2f80a3bc62f205ed909cf72	4959	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/setup-b.sh	895fd85cf4d8add97cae664f2eb0c55c81edabafbad34bb758d0bdb7eedf6070	4959	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/spot-files.sh	fe50894b9728ba05e3f5b634e8ef035bc9781ccc68ae83d14642248df3a0d5cb	39191	machine setup or change (via ssm.sh)	yes	a part of a generated install script (mkinstall.sh or gen-*.sh)	copy	
+ec2-batch3/scripts/spot-install-a.sh	02e096563aa877b30e64a53b3d7e21de958c8c190ddf717ed249c465fd3f081c	39345	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/spot-install-b.sh	8e2178800d702e1cf15c250c5a28c3fca307c236aba12a341416664cf5127f88	39345	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/spot-post.sh	da99f2b5a5387ca72cabcc74342961cd3325828148998354be67d7a72f58ce62	150	machine setup or change (via ssm.sh)	yes	a part of a generated install script (mkinstall.sh or gen-*.sh)	copy	
+ec2-batch3/scripts/spot-probe.sh	b91245b85f03b64aa229067d6a6cb5168f3fa818dbb7aac4d2b51b45155dd19e	564	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/ssm.sh	2b693ca80b71d71f05fce02c75d2eb46c6acb93d221b70a6a8519287de9aad60	1370	remote command runner (SSM)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/scripts/start.sh	29355dd450c7074509cc285193fca2d4493bc2023d272c8cfa4dd6489d46c1bc	67	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/watch-test.sh	10b4f6f0ce9105d635ed85d65bede039c9d5cf33fc00cf4c8a78894c61924df6	893	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch3/scripts/remote/census-batch2-finalize	dbd1050b02367b1b45936e1f0ef1ba62cc5a55130f1033c2b2acdff4884e283d	5888	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch2/scripts/06-install.sh	copy	
+ec2-batch3/scripts/remote/census-batch2-live	d89ab88b8a0896003fa04df8193711fa9be838de3aca50dac73f6cd44beefaf8	1459	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch2/scripts/06-install.sh	copy	
+ec2-batch3/scripts/remote/census-batch3L-finalize	ec8b3b4d966cf3638be3d04e53e2e3e6b3bc425b3aa1e77a999ae0634b535d1e	5957	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/scripts/b3L-install.sh	copy	
+ec2-batch3/scripts/remote/census-batch3L-finalize.service	65c3a2f09ddd5613b6e61e8500f1e4de3bc9befb6ec33bd642738fc55d2fec43	207	systemd unit (installed on the machine)	yes	referenced by ec2-batch3/scripts/b3L-install.sh	copy	
+ec2-batch3/scripts/remote/census-batch3L-live	8c6ad2b7487c2bd1e746ca0ba2576f6ee6f26355579dc6ab272c54d87ac14eac	1428	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/scripts/b3L-install.sh	copy	
+ec2-batch3/scripts/remote/census-batch3L-live.service	e1b8838b59e78c38b2171c88803fbf839be4f97ad63f6d949731cb99b20a78cd	164	systemd unit (installed on the machine)	yes	referenced by ec2-batch3/scripts/b3L-install.sh	copy	
+ec2-batch3/scripts/remote/census-batch3L-live.timer	6ccdb7a029d46a2b7d3fe02a0c6f9f822420fda46f1023c2d415c8a41339179d	172	systemd unit (installed on the machine)	yes	referenced by ec2-batch3/scripts/b3L-install.sh	copy	
+ec2-batch3/scripts/remote/census-batch3L-run	d9c68e14ba95af21b81241b3a4530596fd4ba3aa830ef6a781928055a7dc9752	1035	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/scripts/b3L-install.sh	copy	
+ec2-batch3/scripts/remote/census-batch3L-wait	dc4fc39bcacdb515f4014df5f3ee0bce9fd9d7c6317c7d97aaf5fea2aefa1cbe	1534	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/scripts/remote/census-batch3L-wait.service	be36c47fda408941996bb61b7e17a0be68284fb0efaa81bc8f72254aeea9b7cb	254	systemd unit (installed on the machine)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/scripts/remote/census-batch3L.service	b0f1841ff778dca765761e8dec46ee9c29d55d1f131aff33ba2f089fedd06936	695	systemd unit (installed on the machine)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/scripts/remote/census-other-done	36c27cd75bec632806bceac1991f49413276794c702c48904d7bfb6b6dce2ffa	1280	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/scripts/remote/census-steps	00ae6c5e274220279b05770d654837a415e323d5d7aa5a043aafafe3d701f094	6718	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/scripts/remote-spot/census-b3-check	8f5024dc4a62b16d4d523d2cb8f3cb448f75de441f56d79a057cf5645dab9740	1290	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/scripts/remote-spot/census-b3-finalize	d82dd3c6fe03b24a73699cce41396d1dce918617e49c457831de91aae4855df7	8909	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/scripts/remote-spot/census-b3-finalize.orig-b3only	4be4f17f4b8acbe5da76459d777efebf9c413a464e04eaf689e781e71c29bd6e	8141	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch3/scripts/remote-spot/census-b3-finalize.service	42a7da99680fcb83afa44d9bb2bc9ccd70c05207db77b45f4fcedb7e1af214c2	182	systemd unit (installed on the machine)	yes	referenced by ec2-batch3/scripts/restore-a.sh	copy	
+ec2-batch3/scripts/remote-spot/census-b3-live	1cc62e48fb471a1d4e4992a353590a9c39cf4c5070e91df3733d9a34c3ae2a5e	1899	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/scripts/remote-spot/census-b3-live.service	6cf0e8076fa293827494da1e0738d7e203581224afef3d94442ca8acc3a50c8d	163	systemd unit (installed on the machine)	yes	referenced by ec2-batch3/scripts/restore-a.sh	copy	
+ec2-batch3/scripts/remote-spot/census-b3-live.timer	b774df77f8a2afa28e5453bf248a10c9641e6492fea9f685e88304c5fc7f0dbb	142	systemd unit (installed on the machine)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/scripts/remote-spot/census-b3-parts-init	2716fa11a0c03f61c0d2024244a52737e57b492b44ec8641cf3300f41dea4129	2132	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/scripts/gate-a.sh	copy	
+ec2-batch3/scripts/remote-spot/census-b3-prep	26c4641cabac45c7fbe97bc46987eb02c1add935e723b508f603289d6e3820cf	2431	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/scripts/remote-spot/census-b3-run	de4010149c4d0cc7d7fce8f93efe59b7d372d857bf0909bd6bb121a1b4581ef8	1140	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/scripts/restore-a.sh	copy	
+ec2-batch3/scripts/remote-spot/census-b3-start	d84caf554c621045128503c4fd91cd3e03588513b02570481d8b630c43beb310	1254	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/scripts/remote-spot/census-b3-upload	d7cd893d842184e65fea394651e0e0e45e14c2a7a02700414b4ed93609250baf	5134	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/scripts/remote-spot/census-b3-upload.service	cf257b5d4ca06488f92023b017ed891937aa0731007f8e5a18b823a0c3083a23	183	systemd unit (installed on the machine)	yes	referenced by ec2-batch3/scripts/restore-a.sh	copy	
+ec2-batch3/scripts/remote-spot/census-b3-upload.timer	52152e157635ce22e4ce67b35ccfe9ff8d8b600491907c042a4d92e5d41f80d0	154	systemd unit (installed on the machine)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/scripts/remote-spot/census-b3-watch	0ae05bb4f73d492162fdcf87e33543a7f6aae87356d80b86e41689b4935895fb	2734	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/scripts/remote-spot/census-b3-watch.service	428729098d93fdbac508a0dadca1e247576199aec49b9fd70cae63d3d6bcccd0	213	systemd unit (installed on the machine)	yes	referenced by ec2-batch3/scripts/restore-a.sh	copy	
+ec2-batch3/scripts/remote-spot/census-b3@.service	0e8911c1dc8055d3762c3edf444fc4230f00105ff01fb702becd77019427b380	609	systemd unit (installed on the machine)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch3/upload/SHA256SUMS	a3231197001e068f53d290345f559d9fe86d86080d15c6e2f4c601768836e0ba	806	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch3/upload/manifest.batch3.order.tsv	4f2d1a77c2fc1df2e4282e03388e39c701035653d62c359d227b8aa3bff35eff	20536	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch3/upload/manifest.batch3.tsv	db4283d37bfff5287d9c00d527faff05159b973cd6a8fdf720af1574b944dd46	19439	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch3/upload/manifest.batch3L.tsv	b7c1c226c3432169dccab89cfa0b1950aca2c35e44d95705a555202dd7a61729	821	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch3/upload/manifest.batch3a.tsv	d2b3d11a106b909ce9ff58fa43881fbce0eafc7eab3f6f6a73558a1007d0f638	9529	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch3/upload/manifest.batch3b.tsv	1906d76c1b53495d8a58bc41ed722ef92b73c7c12ccaa9a057ceedc8ec28e939	9504	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch3/upload/project_meta.batch3.json	5ada6924206512faf9159c08a24bfe9b5643820975aa0d2a7fde3cd6dd971c77	133915	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch3/upload/project_meta.batch3L.json	122fa06a035ad15b374e87173a2f3bf6f3b27a5bd28c5be2abc324c7b489d750	4131	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch3/upload/project_meta.batch3a.json	f5fd1464386344e5a91a6de0ffc790f7bd19516bee43fc52c0ba491cd295807b	65253	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch3/upload/project_meta.batch3b.json	a7f9ef32c0dc2e8883091a51400b72af8895905ba0f360fc68108deb855cd647	64537	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch3/__pycache__/ab_compare.cpython-314.pyc	258a7da35f1622a3a6fc433fcbc159c0f1b3599998db4c527c78c2bb83af4b07	7094	cache	no		skip	Python byte-code cache
+ec2-batch3/fleet/fleet-a.json	fad2253999f1b511cfb83954b11cbe6b2b7c9408e936f0c7c4cdff5fd4f1f04a	4105	record	yes	written by launch_fleet.sh at each launch	skip	record of the last launch request (output of launch_fleet.sh)
+ec2-batch3/fleet/fleet-a.out.json	997aa48532d70ab972c0142a41c86cefdd3453dbe400d1ca27f7164f105acb7a	2096	record	yes		skip	record of launched ids (output of the launch scripts)
+ec2-batch3/fleet/fleet-b.json	a4b0ba3a3464fafb78d9ab4a56e3f2bc117b48ee4b052d9ab69e6ff66145bf01	4105	record	yes	written by launch_fleet.sh at each launch	skip	record of the last launch request (output of launch_fleet.sh)
+ec2-batch3/fleet/fleet-b.out.json	5670e1c6f9e9da74190b4b427cfc23b72af026f2a4e202b63318149825deb457	2096	record	yes		skip	record of launched ids (output of the launch scripts)
+ec2-batch3/fleet/launch-template.json	420501e39ca9b0a19fdaf2b4ef0363e05e013e98af8dd42e49ec1dfc8dd1d3a5	1425	launch or restart of an EC2 machine	yes	launch template of the spot machines (README)	copy	
+ec2-batch4/README.md	2f9e8b36bb697246003e9f317926783f096205e9780763c2ac27b8c55998f05f	14678	doc	yes		copy	run notes of the directory
+ec2-batch4/upload/SHA256SUMS	edca74ed420570c608eba45580e71664915b7ae03af893baf7a6fe0eeb80af00	812	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch4/upload/manifest.batch4.order.tsv	0b059dcdafd9795788927734148f7567eb8b46f7354e50b4342820f4fb7bbfc6	19960	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch4/upload/manifest.batch4.tsv	01e8492676e4d9b5fa3aac4c1bd1192be1bfbfa5b196e0d8b63efecdfeac5a9a	18891	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch4/upload/manifest.batch4p1.tsv	beb94f0703a3b9b77c6b30909a82ebeca90a8908d2251f60a6f2c12792973a12	6456	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch4/upload/manifest.batch4p2.tsv	4be67deeb2a1a16d00b2859aae6e53959f00ce0da4b4d79d9c3d18be4f577d72	6436	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch4/upload/manifest.batch4p3.tsv	fb8b00d3eff523946098340bcc50179d04aff84dbb3eb6c34be28b8ac9f566d5	6430	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch4/upload/project_meta.batch4.json	9683bf9878cf48f5074f2199d5ffbdecd6ee440a7c134ceab5985a6b867bee06	133127	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch4/upload/project_meta.batch4p1.json	59b758d08b04a7473b163a1e6ff6f4cd1efd5889dc3b0aed76a7153018628cf7	44634	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch4/upload/project_meta.batch4p2.json	71970cf5f244fa36d5d2decf8d4d9fe87c2ab4c972846b30cff634d51d1582a7	44578	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch4/upload/project_meta.batch4p3.json	e12d057b1111db2ef244a62058044d75c81a5e95c4caa9226ec8864e225b9fa9	43921	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch4/scripts/mkinstall.sh	71383796f1609575bd31cc4b607fb563a12193ea0b92909b0107d32fc75ac8bb	567	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch4/README.md	copy	
+ec2-batch4/scripts/p1-probe.sh	ab1be07f622ef61c497ecaa623f2e0bf776d5d25425100e96c37ba08040340a9	1414	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch4/scripts/p2-read.sh	cee25f20af2f370f9d887d9a79afcbb6cde4136980c8c7b0c1629be749b08acf	459	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch4/scripts/p3-setup.sh	5d79e98d465823eab882f893916fe9c13c3ba47224e10e41349aafbc9ffab30a	2798	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch4/scripts/p4-check.sh	c915e4d662c8f2d8f24fba273b12ceda49f4121cf492eeae240f886ff808580f	1765	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch4/scripts/p5-files.sh	6cd57d5988d6461fdc357f4a655556486162a6e5d69434af2d3d8a05785acab3	20767	machine setup or change (via ssm.sh)	yes	a part of a generated install script (mkinstall.sh or gen-*.sh)	copy	
+ec2-batch4/scripts/p5-install.out	0dd47110240a35576ff15acbe9552bc68fc2f74bf3c9b85b8f7595e5b89b768b	3665	output	no		skip	output, log or lock state
+ec2-batch4/scripts/p5-install.sh	105f060bcbbc273df82f301ffc8d32f227036b9e8b545577b9dc9849bbd54dbd	25067	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch4/scripts/p5-post.sh	3a669a3fbe9ba4e78e7302c620cd040529011ac74100e3a00a53b484c8cb6dfa	2561	machine setup or change (via ssm.sh)	yes	a part of a generated install script (mkinstall.sh or gen-*.sh)	copy	
+ec2-batch4/scripts/p5-pre.sh	afee0724ac6f9b8dc45a3188b144fa7b4e310e480c88706feb6a47911bc93d9e	1739	machine setup or change (via ssm.sh)	yes	a part of a generated install script (mkinstall.sh or gen-*.sh)	copy	
+ec2-batch4/scripts/p6-files.sh	50923c237be63032da855ef1c6308786b6f2175bd86305a93d033bccf518d8b3	1617	machine setup or change (via ssm.sh)	yes	a part of a generated install script (mkinstall.sh or gen-*.sh)	copy	
+ec2-batch4/scripts/p6-start.out	eec869a3b6dd0da6664d408be22c25a3ac1c8abba2487f18d750d93edff96a21	2404	output	no		skip	output, log or lock state
+ec2-batch4/scripts/p6-start.sh	218c523685b0f63f5047ecb9d6fc9c703c2131b23a0900d49f91edf827c64cc5	2610	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch4/scripts/p6-tail.sh	fe1873718c7c5591b0988faf64c8455eb4d114b9f1e31046e9c7ecc98022dedc	993	probe (read-only, via ssm.sh)	yes	a part of a generated install script (mkinstall.sh or gen-*.sh)	copy	
+ec2-batch4/scripts/p7-probe.sh	e6abce2f82ee6473f8edb096843913f86bd6849339e40d76df967eda4ed4796c	602	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch4/scripts/p8-dstate.sh	490bcbd2cce1e9fd3beef44c8da34465897e1a860ad0baa5193a92ae8754ac11	552	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch4/scripts/p9-perl.sh	7fb94766be4fbc56fb616ef508ff0adb8db765bf2cf162a5851c9b42793db63e	470	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch4/scripts/q1-probe.sh	1aed042433097599f34240ede508ca05cbaa1fe55bbe43e745389b7282d5e52f	863	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch4/scripts/q2-files.sh	a45c24af4e950d38bdec8e592e81ef4c33596cef60cbe27cc3556fd46690fba0	10896	machine setup or change (via ssm.sh)	yes	a part of a generated install script (mkinstall.sh or gen-*.sh)	copy	
+ec2-batch4/scripts/q2-hold-copy-check.sh	98ce219ff1357f8ba508fb7a7871e8ab82f1d8a6e72cc9dbfbba61c89ab0bf3b	16127	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch4/scripts/q2-tail.sh	b04b5ee06f8520a04fc1104dfe456526a7a7ab352d3924a968ba64f8dde455a9	5231	probe (read-only, via ssm.sh)	yes	a part of a generated install script (mkinstall.sh or gen-*.sh)	copy	
+ec2-batch4/scripts/q2.out	e9b97d1b6bc80d6d03009469bc954efe1298f3f5fc5f51cbfe5899519dd18f43	3798	output	no		skip	output, log or lock state
+ec2-batch4/scripts/q3-restart.sh	b528b0d604321e62f68a3fe834d3359aa88417d143928bb5fba846eb46ebc4a8	3656	launch or restart of an EC2 machine	yes	SSM command history	copy	
+ec2-batch4/scripts/q3.out	33cddff6624f340d7289db503f40b393282d2c4b15772f33ac80c4c1e226882f	5132	output	no		skip	output, log or lock state
+ec2-batch4/scripts/q4-why.sh	04489634a25181dafe79b8a58a8c0281f08a95920e572f54e245d14bd8cf9f1d	402	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch4/scripts/q5-log.sh	dc691ff210fbe0e824f09ee5cbbbc864c55c454abbd6525be4a993e2516b27af	277	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch4/scripts/q6-supersede.sh	5a9f8b65cffb680d7dc2b0b0a6669942ee277168a1272fee9cef0cc1c4dde439	1526	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch4/scripts/q7-decide.sh	f87b35cd92c2bdf753525e08e84a502818d8ce79758a7a4d486ca5d49ec4c8d5	935	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch4/scripts/ssm.sh	66687a11fa7e7f483fb8959133f707568817d26a2cd109a42f21d1a3ffd31d06	1383	remote command runner (SSM)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch4/scripts/remote/census-batch4-finalize	ce78d1e3bfb0821ac2af1cc5820963ee54c5789427cf7874aecd568ce3d97fe8	7660	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch4/README.md	copy	
+ec2-batch4/scripts/remote/census-batch4-finalize.service	0ff6fb9400bd757373deee47c25f295a136cbfb8259962d66e02db2cca7acb53	251	systemd unit (installed on the machine)	yes	referenced by ec2-batch4/README.md	copy	
+ec2-batch4/scripts/remote/census-batch4-guard	42def58e8cdc3808d103d37f6bd4b4a5caa0aceb3659ce11bdcf2c3edc00e603	1373	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch4/README.md	copy	
+ec2-batch4/scripts/remote/census-batch4-guard.service	c7781b59d825bcdb2d5ffc0837774063f1dc5b190c1ba0218c06406880cfccaa	191	systemd unit (installed on the machine)	yes	referenced by ec2-batch4/scripts/p5-install.sh	copy	
+ec2-batch4/scripts/remote/census-batch4-guard.timer	768bd78d30c18099dbfe927f061e1b53100a33ad8bc7119df31fbdc8ac9c7448	159	systemd unit (installed on the machine)	yes	referenced by ec2-batch4/README.md	copy	
+ec2-batch4/scripts/remote/census-batch4-live	85bdb68aa61ac1463d90d21d85778409a396d22f63fa846190a60a69b30feb15	2754	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch4/README.md	copy	
+ec2-batch4/scripts/remote/census-batch4-live.service	b29e6a5d478bcc14f3b9e586d3313bc2aa62e051e999e1e510b09d4c22f504a0	162	systemd unit (installed on the machine)	yes	referenced by ec2-batch4/scripts/p5-install.sh	copy	
+ec2-batch4/scripts/remote/census-batch4-live.timer	cf3d51f1473b9b1399e8ecd0af15312af7db20d90c21fcee7aebc1c67c9d751e	171	systemd unit (installed on the machine)	yes	referenced by ec2-batch4/README.md	copy	
+ec2-batch4/scripts/remote/census-batch4-run	3a3ea12c4b4fde2e7d4932c1062d96f4e5cdfc0047f21823ca918d7eabac4e72	1086	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch4/README.md	copy	
+ec2-batch4/scripts/remote/census-batch4p1.service	9ceaaa3fc3f307957fdf98b4f61b877ff837e7eb03ad273c84cb6d5afa6b6d8b	684	systemd unit (installed on the machine)	yes	referenced by ec2-batch4/scripts/p5-install.sh	copy	
+ec2-batch4/scripts/remote/census-batch4p2.service	046b4ea0ff2bd290ed314bbac21723f13b59ce2a3acb78d52eab8f9d0eea3ced	684	systemd unit (installed on the machine)	yes	referenced by ec2-batch4/scripts/p5-install.sh	copy	
+ec2-batch4/scripts/remote/census-batch4p3.service	f99b28c2026ed7e8ce31dd4373f7843dec2fe1fb2f97fe47a8eb591f664ec051	684	systemd unit (installed on the machine)	yes	referenced by ec2-batch4/scripts/p5-install.sh	copy	
+ec2-batch4/scripts/remote/census-other-done	bf70ea3baf787d44b888304dcd782828babd01f71099632d9be3617aadcef81e	2000	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch4/scripts/old/census-batch4-finalize.v1	ca3d30a0cb1a224cdb7911e291dc32358ddee651bdef4216ead0a4c972759355	7276	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch4/scripts/old/census-batch4-live.v1	a3121c5ab9a83f131dc84ed5657988057cf36caf09e662018c86488fcc248d4c	2656	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+census-watchdog/.checked	a1fb50e6c86fae1679ef3351296fd6713411a08cf8dd1790a4fd05fae8688164	3	output	no		skip	output, log or lock state
+census-watchdog/.lock	e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855	0	output	no		skip	output, log or lock state
+census-watchdog/README.md	008ec5a85aa8cb3f1568fae011ee6279484741ecb265dddddc841f9932810bae	2019	doc	yes		copy	run notes of the directory
+census-watchdog/alerts.log	4660bcaae8e9bea1b716a8e38c0847d8626d6ffb82bc7b66e9cfdeb0efe953bf	2065	output	no		skip	output, log or lock state
+census-watchdog/restart-a.log	43905fcb261586d82e65b436f84a1040accaaaef09fa1e531dd4693643c72fc3	49090	output	no		skip	output, log or lock state
+census-watchdog/restart-b.log	44e40001917b7d91ccb3bdc0cdcda237fc6eb4a7f47df5644a8b95c2a1c320c8	26798	output	no		skip	output, log or lock state
+census-watchdog/restarts.a	7de1555df0c2700329e815b93b32c571c3ea54dc967b89e81ab73b9972b72d1d	2	output	no		skip	output, log or lock state
+census-watchdog/restarts.b	1121cfccd5913f0a63fec40a6ffd44ea64f9dc135c66634ba001d10bcf4302a2	2	output	no		skip	output, log or lock state
+census-watchdog/watchdog.log	03659cf1bbf638bdb0675884d8e374bf8182ddebe3bf5d39d93e9a230807eb8a	1581869	output	no		skip	output, log or lock state
+census-watchdog/watchdog.sh	868fe6319199ee6361c293d08b6f5779da28b4b390fdbe9969d241f77c6c3f37	10159	watchdog (local timer census-watchdog)	yes	referenced by census-watchdog/README.md	copy	
+census-watchdog/watchdog.sh.orig-L1r	d0ac9d1b13157e767e2dbf38b586d0315baf7df310a7f6969438869364e6d022	10155	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+census-watchdog/watchdog.sh.orig-L22	0e17a81cdbbc286695596ec70b2b968ead61d70ff0319196a7f9760b0dd6630d	9208	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+census-watchdog/watchdog.sh.orig-L23	1d9095da918eeea114f78752d650a36a82517da358c978b6055da79df3e0dae8	10129	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+census-watchdog/watchdog.sh.orig-L7-20b	0985730d9a32520c3b36b46684cc8234ce3b5140d63c1d93ebb2d0e04539ff02	9289	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+census-watchdog/watchdog.sh.orig-b21	1a923526f0524e2505f3af44420f112e924830e33bc124ad9f98a1965fd3d7cb	8141	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+census-watchdog/watchdog.sh.orig-b3only	a28772d8b7459c4894b0fa4633a0596ba4746db6cf04315f1414c2a675f08167	3468	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+census-watchdog/watchdog.sh.orig-b5	4d7decf6bc3c37ea61aea9388778bc52e77dffe3daf391bade25d388c2eba21d	5867	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+census-watchdog/watchdog.sh.orig-b6L	7393cc5e9f78eee97ddeafc4942de7640d9dbe539b02d5ad2be88734ee66b7a3	8135	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+census-watchdog/watchdog.sh.orig-cap3	b00a0d172dbb59b44731ea08912e8e23f2bafb16cdcbd794b43009bd2275c60b	9217	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+census-watchdog/watchdog.sh.orig-cap6	dbb85938d6e9fdb1434007c5e27063254646ce53a6a72cde5340dff527e4e56b	10133	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch5/README.md	00e8aa9da2749d974dedf8bb4b563357d8c6b2edb743cf6e21a46f47d61c50a7	14952	doc	yes		copy	run notes of the directory
+ec2-batch5/scripts/L1-setup.sh	6c05646552d23d136261bc062f507189a61eccf18a788ba14bfc0312aca8e421	5751	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch5/scripts/L2-install.sh	5d7cf49eef09891a8508d24129f7bb3b7a67e71742bc3b1f4286e216be10167a	23154	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch5/scripts/e1-probe.sh	7b547e8342457bfe29f66a5fa3bca3e8ccd9fea1b4f12bd14c56ea904c84d12b	1573	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch5/scripts/gen-s5-files.sh	16f46060786a459451c885a130c41f4c3c6337c8ed97f6dd919b53640328e63e	2035	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch5/README.md	copy	
+ec2-batch5/scripts/s1-probe.sh	9d96f8d15545eac8ac8d6d7cf0cf35f7c518493834c54a79b7157a6fddb41ddf	1391	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch5/scripts/s2-post-a.sh	92827c275489c4d5151bfd75a77179819a00b52e855c50ab030078635d69854f	979	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch5/scripts/s2-post-b.sh	372812d0a6e696a168d1c619fdbe062f694f75872f84bcc0e7f62d02adcf5c21	979	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch5/scripts/s2-post.sh	80023d72a045631840c211d4a2592a56356bb734378290b8f6db06e0ef23b691	975	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch5/scripts/s2-post-a.sh	copy	
+ec2-batch5/scripts/s2-pre-a.sh	9d37cdfaf32941bdb7bd7ed8c389f49a33e4921f9fe33bbaf062bcc092cad986	1183	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch5/scripts/s2-pre-b.sh	b394daacb84b66185648f16093df2ab9a0e5077e51a0f1fa719136f6630a6ce9	1183	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch5/scripts/s2-pre.sh	c45be83a61809a5cd5dfe802acf7fe10820ab09cd562c17db7b9a7a81b10822b	1179	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch5/scripts/s2-pre-a.sh	copy	
+ec2-batch5/scripts/s3-start-a.sh	6a0271fdd3e97af7b2e3a7f033386a23c3b89c0c7231d95a828a898398e681c6	4252	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch5/scripts/s3-start-b.sh	1ee13656e77c09b703718ecae5e654b5e655ea0d028020e75861b7246e1dd038	4252	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch5/scripts/s3-start.sh	604b3737253281f1ae169147e3bc103a351592ab8262ce1ae12117f3ae85f6d3	4248	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch5/scripts/s3-start-a.sh	copy	
+ec2-batch5/scripts/s4-a-stopfin.sh	1d064f324bf35549feeb43d3a7541acce0fdf208c59351ac99d8c3577b75c228	1698	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch5/scripts/s5-files-1.sh	a67a5969a0def5a4da25fa508588b94107396c09d51c2dbcbbfdb5741ff72e79	30377	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch5/scripts/s5-files-2.sh	80ecfabe29f7e5b808e0eea271e10d9a4afce5c87f5009b222f2d12c43aac372	32414	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch5/scripts/s5-files.sh	c6c1e76a9be0b954599f86f97d74a5ff2db086edc05833af54ecbeea452a0f24	62791	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch5/README.md	copy	
+ec2-batch5/scripts/s5-relaunch-a.sh	611113efa125bc04297877c9f4851b7c53f1c454baed69a38f310349c25c8224	617	launch or restart of an EC2 machine	yes	SSM command history	copy	
+ec2-batch5/scripts/s5-relaunch-b.sh	0e256d1a7c555c7c9b7ce7d5dbeaf09d3dceebe1278cdf2ed0f5a6fd88fb30cb	617	launch or restart of an EC2 machine	yes	SSM command history	copy	
+ec2-batch5/scripts/s5-relaunch.sh	60b5ffd1818b6bb21c7e4a73849cac3f9b97d7dd7e49bb6e68a255399f853028	613	launch or restart of an EC2 machine	yes	referenced by ec2-batch5/scripts/s5-relaunch-a.sh	copy	
+ec2-batch5/scripts/ssm.sh	2b693ca80b71d71f05fce02c75d2eb46c6acb93d221b70a6a8519287de9aad60	1370	remote command runner (SSM)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch5/scripts/remote-spot/census-b3-finalize	d82dd3c6fe03b24a73699cce41396d1dce918617e49c457831de91aae4855df7	8909	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch5/scripts/remote-spot/census-b5-check	78769c5c9a5ac50251c1521fede98c40698aa061a7e2db128a684b292c9c71b5	3403	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch5/README.md	copy	
+ec2-batch5/scripts/remote-spot/census-b5-derive	64759288cd5c9e6c25004740cbe925b055aaa99c387528792f90eb3b5d6ae08b	10125	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch5/README.md	copy	
+ec2-batch5/scripts/remote-spot/census-b5-finalize	bb0748b75f1cab1525d67ce53cd094c7e12939070a5207898c3292fb2768472f	8854	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch5/README.md	copy	
+ec2-batch5/scripts/remote-spot/census-b5-finalize.service	741cb6f82ec49742269bb8a9509b1df3cb70640d15eb80343e5d0180a563a2de	254	systemd unit (installed on the machine)	yes	referenced by ec2-batch5/scripts/s5-files-2.sh	copy	
+ec2-batch5/scripts/remote-spot/census-b5-live	b5a1c6e8393f5705d46505609b0aac3f04d2a62d8ed642096a561b604620ed2a	3612	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch5/README.md	copy	
+ec2-batch5/scripts/remote-spot/census-b5-live.service	504fa923acb0dbd643213b6272e6261db2a87fcceb5554419e0deaae8bf6ffd6	312	systemd unit (installed on the machine)	yes	referenced by ec2-batch5/scripts/s5-files-2.sh	copy	
+ec2-batch5/scripts/remote-spot/census-b5-live.timer	17acdcc891d3fec8a4e562fcaef0f55a0032b247e7df19319e92572618494fc9	152	systemd unit (installed on the machine)	yes	referenced by ec2-batch5/scripts/s3-start-a.sh	copy	
+ec2-batch5/scripts/remote-spot/census-b5-parts-init	3c44c99558571694775d70e950279c14e08d7cbaa41f9f908957e929b20b94f5	4687	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch5/scripts/s2-post-a.sh	copy	
+ec2-batch5/scripts/remote-spot/census-b5-prep	e3ac7287c61d7aa9df6a27c54f650ebca0b1974e83a0be40d3f95d584cb1c554	2610	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch5/README.md	copy	
+ec2-batch5/scripts/remote-spot/census-b5-run	eb84bb5212c3abf9857c63be10e7b6ebade7193472a1d0c1df79bbb7e0c09c66	1057	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch5/scripts/s5-files-1.sh	copy	
+ec2-batch5/scripts/remote-spot/census-b5-start	c77d1b7bd3a741971fa8a22b55efa16c567d95a806f3a79e83418f95903ac83f	1807	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch5/README.md	copy	
+ec2-batch5/scripts/remote-spot/census-b5-trim	e17293e0d131a49ca9c8fadfcec68ead21beac005d78d2320121ce7f194ea759	346	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch5/scripts/s5-files-2.sh	copy	
+ec2-batch5/scripts/remote-spot/census-b5-upload	064db7fcba38a826c966a108f71e06e9e7e9d4198a452fe9029ac83115aeca57	5232	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch5/README.md	copy	
+ec2-batch5/scripts/remote-spot/census-b5-upload.service	7fa7ca0395aefcacfbc892fcdfa147fe9e733e4ed0dcce2ba446b1491ff97d44	211	systemd unit (installed on the machine)	yes	referenced by ec2-batch5/scripts/s5-files-2.sh	copy	
+ec2-batch5/scripts/remote-spot/census-b5-upload.timer	ed0963c67894bb0697372a9fa34c97f079cdeff8c8a2c95478b35a3039f0a358	162	systemd unit (installed on the machine)	yes	referenced by ec2-batch5/scripts/s3-start-a.sh	copy	
+ec2-batch5/scripts/remote-spot/census-b5-watch	74e0c5e6614ea92e7e7c5ff44d3d0919f4404c1e7b697802c174eb45e329589c	2940	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch5/README.md	copy	
+ec2-batch5/scripts/remote-spot/census-b5-watch.service	1178d0ec5df725fec1f878898091793d8d8d1136f122314152aa894cd1a00fdf	223	systemd unit (installed on the machine)	yes	referenced by ec2-batch5/scripts/s3-start-a.sh	copy	
+ec2-batch5/scripts/remote-spot/census-b5@.service	2499ce89125a0aa965fc69389d0708d8b535f2f243aeeead6b46750b97e66a8d	669	systemd unit (installed on the machine)	yes	referenced by ec2-batch5/scripts/s5-files-2.sh	copy	
+ec2-batch5/scripts/remote-spot/census-spot-decide	92c1f4622dfa9b20fb03c7a1944954fc0816094c0ec951e1fa9ab4cae39fd858	2333	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch5/scripts/remote-L/census-batch4-guard	da30580a956ae1b35a877baa6d714fbde834a604401769a04880767d98420fd5	1853	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch4/README.md	copy	
+ec2-batch5/scripts/remote-L/census-batch5L-finalize	9a9a682406028702bac6121520494956a342728cdd4b93c5507a46311849ffb4	7567	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch5/README.md	copy	
+ec2-batch5/scripts/remote-L/census-batch5L-finalize.service	af0661137a406d2f13c45a3309c10f181a7e06827ff368c37ddd5791b2d3fccb	232	systemd unit (installed on the machine)	yes	referenced by ec2-batch5/scripts/L2-install.sh	copy	
+ec2-batch5/scripts/remote-L/census-batch5L-live	0f9df73cbd6d3712f7cafe23bdb2552dd452359566aea82d175361b455252781	2154	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch5/scripts/L2-install.sh	copy	
+ec2-batch5/scripts/remote-L/census-batch5L-live.service	d0fccc05dd339cf747f3272efdecade4c102075c0b922a29ac236420932d95f6	163	systemd unit (installed on the machine)	yes	referenced by ec2-batch5/scripts/L2-install.sh	copy	
+ec2-batch5/scripts/remote-L/census-batch5L-live.timer	75aa51b872c23b805ccef87efd2816433f61e471614dece7e01cea2060097c10	171	systemd unit (installed on the machine)	yes	referenced by ec2-batch5/scripts/L2-install.sh	copy	
+ec2-batch5/scripts/remote-L/census-batch5L-run	30c9d52c2abd2c896e5a67f91b55f342eb90e3ceed0c6041c8ce118ac826cdf7	1137	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch5/scripts/L2-install.sh	copy	
+ec2-batch5/scripts/remote-L/census-batch5L.service	44f9f9059c1afaebc61da6ca1ca0d365752c720a3efbc5d704feca18b220be0a	702	systemd unit (installed on the machine)	yes	referenced by ec2-batch5/scripts/L2-install.sh	copy	
+ec2-batch5/scripts/remote-L/census-other-done	bf852463a1fbb5ff7efce6670f846314a47f227cfcb1cd0f653e36fdb179aab0	2163	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch5/upload/SHA256SUMS	69b10d56926182db5e844cde42463ce5ccf5c95e3c48dcfe34913b59b2ed2195	888	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload/manifest.batch1rest.order.tsv	7e377b940d8bf837f45647ac77569df07a58292b0b0f7c2396083b3d3e1597b0	14052	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload/manifest.batch1rest.tsv	8d43eeb3959a96c4373e4523eabb6c49aa5d74cf659a351a7214a766a96f785f	13418	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload/manifest.batch5.order.tsv	fd9de813ef9548b18253dd4afefeec1eab1f8b26a6af0ad60176cd0fb312495e	20582	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload/manifest.batch5.tsv	d831890774e9a5e162a2e113942e19a64e0e7a2275032bf7880b86fe1f765ead	19508	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload/manifest.batch5L.tsv	8d834c19c090ae2fc2bda0bb03e021d41ab07b49fb9692ece35e16c7f02f1425	906	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload/parts.assign.tsv	21afdf9155a042f2b3947bf91ea539cc035ac721f5e01932af18806ce95c3e47	8937	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload/parts.tsv	8066840730b702fd6b6f0f4c5de76e9b3e55980243f12934f4b1be8068a7adf6	1133	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload/project_meta.batch1rest.json	ff4d405c340d63305fec42f5804f509a25b79e80b39636903db052d795d0d55b	91958	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload/project_meta.batch5.json	d583fd494bb56ca94bcde714ba778c830572263bf3b87a154e70eb8fe5942fdb	134006	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload/project_meta.batch5L.json	90f6d892da542087a4e0df55a7a806947711ea958725bd7cf82eb6fa81c6a4dd	4141	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/out/L1-setup.out	ad076e687980004b755e8348c0b16761e507bab19b721f27ad7be831a548efb0	879	output	no		skip	output, log or lock state
+ec2-batch5/out/L2-install.out	22a962de30f95a050f79671debac78e1deb8d82bbd3c56aac2ed97e690314444	3804	output	no		skip	output, log or lock state
+ec2-batch5/out/s2-post-a.out	715ec4f3e720492876bcb5a31eee86517dc1d7633b9d78ceed777639fe2c4683	2121	output	no		skip	output, log or lock state
+ec2-batch5/out/s2-post-b.out	7fe9d426f4c7b55a08816d145073d0c037cfcc6d656c0f1470d9beea3f42ce96	2008	output	no		skip	output, log or lock state
+ec2-batch5/out/s2-pre-a.out	89ff0381936f894fde355eccdf14df22a4205a31e1026b7ab2186cd3879b66d1	862	output	no		skip	output, log or lock state
+ec2-batch5/out/s2-pre-b.out	3a719c78a32d607d264bf132d1e270569d9f48664d53b77c0d322111da0e104e	480	output	no		skip	output, log or lock state
+ec2-batch5/out/s3-start-a.out	f6223f23705aa11d8156fd193d0fe75911217a9877e1c48819005789abb0e1d7	5661	output	no		skip	output, log or lock state
+ec2-batch5/out/s3-start-b.out	794f7511f363fcfe1529eec3e3a8b48e79f8610f8b22884ab7d73e5a4c2554f0	5525	output	no		skip	output, log or lock state
+ec2-batch5/out/s5-files-a.out	332eaba1e5f55757fea4e78e11ebe144e31b5a9bdecf8ad4f278c3f2ada40b3f	184	output	no		skip	output, log or lock state
+ec2-batch5/out/s5-files-b.out	34decd43a2427bedceb1ce27845126a46f5d1c0b1580b03795098899cf619132	184	output	no		skip	output, log or lock state
+ec2-batch5/upload-superseded-8parts/SHA256SUMS	566017de7efe8dd7493448364d4c31559a41769dfda12efe8aaa0ef2fb52455a	2357	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/manifest.batch1rest.order.tsv	7e377b940d8bf837f45647ac77569df07a58292b0b0f7c2396083b3d3e1597b0	14052	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/manifest.batch1rest.tsv	8d43eeb3959a96c4373e4523eabb6c49aa5d74cf659a351a7214a766a96f785f	13418	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/manifest.batch1resta1.tsv	b74f145488bee796a2167e88f36df0676de892dc6191e0ab73c9dbd5017dd31e	4875	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/manifest.batch1resta2.tsv	a5895352d528de90dbe7891211b9b4bdf325a1cc445533fef4c19c578cfaf590	3814	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/manifest.batch1restb1.tsv	ad49264623e9d57eed15fe0ab30abcd46471ea5da56e7900555fbab6082e26db	4766	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/manifest.batch5.order.tsv	fd9de813ef9548b18253dd4afefeec1eab1f8b26a6af0ad60176cd0fb312495e	20582	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/manifest.batch5.tsv	d831890774e9a5e162a2e113942e19a64e0e7a2275032bf7880b86fe1f765ead	19508	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/manifest.batch5L.tsv	8d834c19c090ae2fc2bda0bb03e021d41ab07b49fb9692ece35e16c7f02f1425	906	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/manifest.batch5a1.tsv	c3eaa66855bd03f76f093face476cc299ae5c207de9ac3fe2213286b1f2eb6e0	4764	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/manifest.batch5a2.tsv	e5ceedb1407344f6a2f1be188be4f23ed8a5731f9f4385779b6505f8c3abbf01	3806	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/manifest.batch5a3.tsv	22595cfef7d3f18e3f00104600ecbd6e77df710008586e41a507624e95d190f7	3967	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/manifest.batch5b1.tsv	458d0ca44a972259e99e8acb7d5524892fba865ae69f1e96e9609dd8e61c01a7	3830	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/manifest.batch5b2.tsv	50bacec4e80d1fa03b050afbaa06d76c59808e1e450b4dca5b47a29f872e1f66	4034	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/parts.a.tsv	d8bbcf50155e9753a7c41064f497e2aba70d2e5408a11e89de5a75df14751083	352	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/parts.b.tsv	6b493e7c598a8eef9224d687a8e8f6bad1cecf862b22cb39d0d59fcd1f9784ec	260	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/project_meta.batch1rest.json	ff4d405c340d63305fec42f5804f509a25b79e80b39636903db052d795d0d55b	91958	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/project_meta.batch1resta1.json	d82d5e5a69bab0f135279d661b1e64d15ed0968e407fb800e1f3511836149b5d	32560	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/project_meta.batch1resta2.json	d7d62f05df08e08910a2ee6e40eafec14a448f92f2daef3a79b044603c919a19	25185	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/project_meta.batch1restb1.json	b251b051b501347a8243a4f3722f2e1752245131ba262659ad9c5c05dad4ab71	31720	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/project_meta.batch5.json	d583fd494bb56ca94bcde714ba778c830572263bf3b87a154e70eb8fe5942fdb	134006	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/project_meta.batch5L.json	90f6d892da542087a4e0df55a7a806947711ea958725bd7cf82eb6fa81c6a4dd	4141	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/project_meta.batch5a1.json	b581faeb2f139a4485f1a43e7063875c9c96322ed41d1a7b0935c40a292ca657	31760	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/project_meta.batch5a2.json	2bd0924d2b9215e2e70de99f0636a84553c05ce892f20bfe1765b35a3cfc5590	25172	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/project_meta.batch5a3.json	4518d7fb8386dbb6d3330a90f2ca5d44d85df1ba5a8eb6b30e3d4d7dff423db0	24762	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/project_meta.batch5b1.json	64d14fc9c73b70dcde19ce0e2cf4d101fbcaabc1a7116f7331902db3068cbf62	24544	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch5/upload-superseded-8parts/project_meta.batch5b2.json	4dcaa52da425adda3924684a4045600d089ae7f5253f153e0d32e0aa47313019	26141	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+census-backup/.local.lock	e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855	0	output	no		skip	output, log or lock state
+census-backup/README.md	c8c7a610193119e32737c901430a940c061c639a2693596db3f33be031718a8a	1435	doc	yes		copy	run notes of the directory
+census-backup/backup-local.log	a32b01cc9f0b2bd46fe671e7911871133f557acd448b0035fee9dbe6e5f1fa18	69	output	no		skip	output, log or lock state
+census-backup/backup_local.sh	941cadd8286be253400b7a50d88df7b3613e973ff3122acbe33078558d9febe5	2152	machine setup or change (via ssm.sh)	yes	referenced by census-backup/README.md	copy	
+census-backup/deploy-big.sh	68f2a8d9865193942892cb92b3d0559f84be4c65505274e5f6235b950ea62100	3862	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+census-backup/install-big.sh	cb53d9c05f916208532965e95dc7426e64295165d4670dab054d01dc9fa33076	1153	machine setup or change (via ssm.sh)	yes	census-backup/README.md	copy	
+census-backup/remote/census-backup	847c6c13d0ab8316c86f4662f579a963c42d880b092a0184ce59a30105fcf387	2532	machine script (installed in /usr/local/bin)	yes	referenced by census-backup/README.md	copy	
+ec2-batch6/README.md	9761433fc98e630c7b9948ceddc4d5aa377c62898e2da927c76fff9512d35226	20763	doc	yes		copy	run notes of the directory
+ec2-batch6/feed.next.tsv	7807a5a12543fd525b6f9698208d31edaf89d4ce37d0252496028168169a7436	3853	feeder state	yes		skip	feeder queue state; running jobs read it; copy at the freeze
+ec2-batch6/feed.next.tsv.bak.1791596116	da81b8c4b3a1fb9bb3046b9adf0f0bc6fcd79469f6107a1d47564e5fb954cd5f	1296	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/feed.next.tsv.bak.1791750509	e27ed6d8589e62f0a111f11e4607026b2aa565718b34595bc9daa594bee3a6cb	2209	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/feed.next.tsv.bak.1791895539	ac7624d08299aec320f4743fe7e03b0c8f8bc65a9f5a0662c5b24f047e11aef1	2745	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/feed.next.tsv.bak.1791941965	8f72a8390f637d4eda109251b84d4a11c4d6e170448b18433b947c2221183796	3279	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/feed.next.tsv.bak.1791995905	c6a658406feea255f7c4db26f53b5dde9828cec7c1701a92bf84bbc10124a81e	3566	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/feed.tsv	8086aac397b447b33c15a076af728ebf94f5eae65b6a1cf9564850751dcb3069	6567	feeder state	yes		skip	feeder queue state; running jobs read it; copy at the freeze
+ec2-batch6/feed.tsv.bak.1791585827	6260024119d36498b816c4bcf46d80c0a4fc99d71d07a8fc049192a34f33742a	477	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/feed.tsv.bak.1791590270	bf7256af0ff56a87b42f1ebe3ccd8d4ad0766b4d6a47317ac3cbd9db63b61125	474	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/feed.tsv.bak.1791600071	a4396b58a4d1bd444e9ddb3d3d85f1aea20dec6b0cc5324702cbb5590b65dcc6	4486	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/feed.tsv.bak.1791646187	206d036712256ab8d36ed03403a2da510268a3ca83e1910ecaff16da6b535882	4773	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/feed.tsv.bak.1791760395	799b6508bed15fcc15dec0c3e40f84ee040ee728c85e59134105af3ea32c2d5f	5419	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/feed.tsv.bak.1791902509	8db89c4d46fd72b95cff721353cd984e68dd5bea7ed24b38952645d9cd68905f	5706	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/feed.tsv.bak.1791946771	4cd11257e22e7437400dd2008e595d13f7351cdfc9d0337607dd151af6c3d797	5993	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/feed.tsv.bak.1791997079	7023cbd01c2b73396c19930debe957d56fa8893fa7608416baf7f173d270bd34	6280	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/feed.tsv.orig-1f17663	da0a7b0e92a49c6a9cf503ce2664a490a8ab12bc3248f3a5d3d5daf4095fb99f	5060	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/set-cregit.sh	d059042999ddfe47cd3e45fc05089ff80958a4ba30f1b765b50d54b26fb69a3a	3257	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/set-cregit.sh.orig-fixed-ids	95f40e71938eaa0266b7f379762c400377d1957e8929930653fe0aaec3f1fa25	3034	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/stage-cregit.sh	ee93b52e3198864722af9d5a453f61db4538375698ae60ec6884dfa5c8c9bb74	2027	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/scripts/L1-setup.sh	ada558a053b34c80d29995dbf578d3d11fdf68087b0fd9d014dce5c379f003cf	6173	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/L2a-install.sh	25d1fa1d703bf1db17298436c67f3568beaa6cf7e680826ae850efc58bd3f052	30640	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/L2b-install.sh	c35152e5d550c4dd2558f6e939ba64752b8ace56175047a3a0c7c7f0ed842973	7768	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/L3-setcommit.sh	65e7394a9e3b644d58a1e272b36106ee6eedfb37c9ca39a777cc6909d952c574	144	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/L4-gatefix.sh	a0c251b2a1199b75e127f9ce4b79d0680366a9cd3e454e6ad01874f66496f5ef	275	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/L5-no-b4-wait.sh	c161e7980b8224ad98c05141980a4fcd92678e5cc760ed94effcbde099a1b253	6989	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/R2-feedcheck-a.sh	c86665ae843303e5055cecdb692aaf7825458c791401308dca8d2c8696bf7c15	364	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/R3-partinit-fix-a.sh	0c90291782c29c011b4c308cd1e9bc00e13955fbd5a25a2cf5e0c1a53ae30dda	9216	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/R3-partinit-fix-b.sh	7dcba6834f049401cf557c0232788d3649af0e65fd40607272c47a81e9f404b8	8654	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/R3-partinit-fix.sh	e0f3226d85bf3be26d5fead5b661221c493515781039d281516f82ce317f7547	9196	machine setup or change (via ssm.sh)	yes	source of R3-partinit-fix-a.sh and -b.sh (SSM command history)	copy	
+ec2-batch6/scripts/R4-limits-a.sh	d01922507f8abc8d9ecb85ceecd8b97aca4e5d64ed49a4a3669f9ee7ee4d9690	503	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/R5-steps-a.sh	08b858acd8277348d212a833535fdf04e1bdd4a8fd007558908ffc906bfe293a	472	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/R6-freeswitch.sh	6b8cf02eccff13ae27efccda7ad8a1b61d985652e22d0937f8522231c3ff98df	455	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/R7-freeswitch-err.sh	ada78732a2f61f6e682cbc21045c302bc1d6112cdbb1ca53fcff83344d0fb3bd	445	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/R8-savannah.sh	bcd48c807fb5d9aabfe1f4531a446e599c0cf75dabcafbf5350132dcd4c5b3d3	235	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/e1-probe.sh	ff7f925a7c6d21540c042ef2642f5ba38a0f1305e008337dfc0afb5bf456ce19	1412	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/gen-L2.sh	cf7fcd61444889e220fe1f0adbe9e97d6b3d99736bd4d2d1cd417cc6bea0b22d	8071	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/scripts/gen-s6-files.sh	57d54d11defd2ad9d10fda648a52c3f8527540fa07c1532208e1f37ae3ef1931	3444	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/scripts/p1-probe.sh	53c18dd411663da374a2175230dbcc4ec2be5f79b7ab83a1290099926d80a9fa	1196	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/s21-enqueue.sh	c274d2b6ed16517e2c14721d0093580e086ad78d88f440f5a0d21721e410d5e8	739	part feed	yes	SSM command history	copy	
+ec2-batch6/scripts/s22-enqueue.sh	03bc74bb6aa9fb194eacae07dafe0c864773aebff730eef97108509e77bd7eae	1011	part feed	yes	SSM command history	copy	
+ec2-batch6/scripts/s23-enqueue.sh	cc6d1c6c31db3fc8f9370bb90f8749861674a15f3eff55fe57dff80829f8ed65	1967	part feed	yes	SSM command history	copy	
+ec2-batch6/scripts/s24-enqueue.sh	7ce81eeee23754bd1d273d0dc65f44b63552f6f821fc0a5452535c1a1a176ef7	2088	part feed	yes	SSM command history	copy	
+ec2-batch6/scripts/s25-enqueue.sh	b88e5db43159b2b8c7c55e08467e9c972f5698eeb483b0e5bdb30f2d4eeaca56	2100	part feed	yes	SSM command history	copy	
+ec2-batch6/scripts/s26-enqueue.sh	f6cdb865d8c5501eed8e51a828025b172d535add0a06fc6e0bb2eedc25fc55c6	2067	part feed	yes	SSM command history	copy	
+ec2-batch6/scripts/s6-arm.sh	b13694338d3c34e162e2134f55b78efb2e3e4d1c28ee414e2a8af8d1948ce1dc	900	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/s6-files-0.sh	3cc7f9dd152d9823a3de6ecdad12206e142c638e26b15dac067874df54c053fa	18941	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/s6-files-1.sh	172ad674871cf2fa6113bf4db52a8d7a3d54e4a10a9bce346cb7b9e4ce984e67	27643	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/s6-files-2.sh	ed37537d29e82d7da37e648d16ec451eb580e9b8217d2f61d7f6159ee8e9c872	26547	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/s6-relaunch-a.sh	f3735b8dc5523e700b963d4b00ff079e0aeb88f868b6d09d20512248f43abd2d	5762	launch or restart of an EC2 machine	yes	SSM command history	copy	
+ec2-batch6/scripts/s6-relaunch-b.sh	2e5288fb23b504b8324f85446b442543f1ef4e156cf1eab513d31b5f0db6d302	2736	launch or restart of an EC2 machine	yes	SSM command history	copy	
+ec2-batch6/scripts/s6-setcommit.sh	f71f753baf00a16e0a052b8e08da0ac07e4ebe3ffd61025e66406020c0d1619d	193	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/s7-enqueue.sh	e9236d20f6383dca760854510dc97c224be71f833ed38552a9ffcbb92a421f9d	6865	part feed	yes	SSM command history	copy	
+ec2-batch6/scripts/ssm.sh	2b693ca80b71d71f05fce02c75d2eb46c6acb93d221b70a6a8519287de9aad60	1370	remote command runner (SSM)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch6/scripts/t1-feeder-stub.sh	87a9cad4849a2d5cc2b3be7b0f03f3f82c506defa44d0bf68ea2d40c491c2e1e	4823	part feed	yes	SSM command history	copy	
+ec2-batch6/scripts/t2-init.sh	f119b5f886ae1510361f37462529156e692047159ce3afa4de23ce61fd01e33b	2406	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/t3-notice-live.sh	844ada588f3417c7526c6b1a99d400e903baebb18b7652685c0f4899dac49bf1	967	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/t4-gate-1f17663.sh	ffc3fa0532f145741ce9eda3f3af806cac1b5fb88678819e119f11ecf1172f96	1502	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-batch6/scripts/t5-feeder-workers.sh	38c88a6428b708a252e882436015778b00ee3bd443f13d330638e6cbe4c05111	1774	part feed	yes	SSM command history	copy	
+ec2-batch6/scripts/remote-spot/census-fed-check	28aaecb2fb5c6147a53522d38e90b9f2996571fc556b8779ea3bf81d73327ebb	3928	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/scripts/remote-spot/census-fed-common	f7c86ba88a44dbbf67ffeadb5230124f59e1bcf68b1af9c4520efe5ba17e9adb	1827	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/scripts/s6-files-0.sh	copy	
+ec2-batch6/scripts/remote-spot/census-fed-derive	627759ac9800052dec9f90568983f372be7d23c383ad1faab323e20de4d5074e	9489	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/scripts/remote-spot/census-fed-enqueue	ce9f04489385867e7989368d23ef47fea3685e07543a390102f50c81859695f6	2921	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/scripts/remote-spot/census-fed-feeder	05f25a619a751d569398d5fc55f28e4cb45cfd66e33421a17621c1b60ffe3f45	7491	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/scripts/post-relaunch-a.sh	copy	
+ec2-batch6/scripts/remote-spot/census-fed-feeder.service	f579e12253a2b2bab9569f730be16dc2ce0e22ce26fa32806c21c7d67f4495de	184	systemd unit (installed on the machine)	yes	referenced by ec2-batch6/scripts/s6-files-2.sh	copy	
+ec2-batch6/scripts/remote-spot/census-fed-feeder.timer	f078b43a980df23d0a274e37e3d7474015d0879d848ec9cd3b45c110ea122d5d	132	systemd unit (installed on the machine)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/scripts/remote-spot/census-fed-finalize	7de8fe4a598c9307b1deb1459d73790629f5b9a72f0cae4f10b39fec8585d72d	8700	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/scripts/remote-spot/census-fed-finalize.orig-nologs	a9b9800717bfaedb641c9e9741e7fe6482f0a43c026079619e01e05df89c2f40	8698	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/scripts/remote-spot/census-fed-finalize.orig-nopersons	0657f01c0d690cdb682f115d7b8958efbc157d775c7cbcd8d10fd0cbd1c1c243	8674	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/scripts/remote-spot/census-fed-finalize@.service	bbb7788c65e4bfce4a9727177908f972c330f2b6758e830c0ba41e6c282bcf95	252	systemd unit (installed on the machine)	yes	referenced by ec2-batch6/scripts/s6-files-2.sh	copy	
+ec2-batch6/scripts/remote-spot/census-fed-live	1efb145e5523bca74193242df12e8e659ca5dfd00e6d80fcae1044e76d35f7d3	5267	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/scripts/remote-spot/census-fed-live.service	506ffcfb462f0f71513746a2560f8701350f2bab07d9416d335984fa89486e19	306	systemd unit (installed on the machine)	yes	referenced by ec2-batch6/scripts/s6-files-2.sh	copy	
+ec2-batch6/scripts/remote-spot/census-fed-live.timer	ec346f95dd22244006741b1701987a2f3abe6701e5633676b48ebff548008bf7	144	systemd unit (installed on the machine)	yes	referenced by ec2-batch6/scripts/s6-arm.sh	copy	
+ec2-batch6/scripts/remote-spot/census-fed-part-init	ac0f1b11938037f59356d4c4642768d93f572be506601eaf10287fb8d9e87e27	6598	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/scripts/remote-spot/census-fed-part-init.orig-blamerace	fbe2a549f0384874027a927282de808eef96ae2fb25b560856de88754cae89be	6341	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/scripts/remote-spot/census-fed-part-init.orig-tarrace	79c2edf008db0d8675a25bc4d84c940ab9b7e766047d346aa5f387068bb57bf8	6015	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/scripts/remote-spot/census-fed-run	1fc84162b92165b22072dd8550fbf6ef9347ca169bb73a692f03f8d7a6603fb8	1094	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/scripts/s6-files-0.sh	copy	
+ec2-batch6/scripts/remote-spot/census-fed-trim	81ff4dc49433ab38c41d6e245e6c7b7e6b39de25eac48fb3658a38f68d7433a1	376	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/scripts/s6-files-2.sh	copy	
+ec2-batch6/scripts/remote-spot/census-fed-upload	99ab4c072e5e8cf14ec489f05b932c38ba6b63c70d5f6192613c0f1156512925	5615	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/scripts/remote-spot/census-fed-upload.orig-nopersons	7df174b85ac1b49715bd96d16629a024549db85f32702c6465ef416b117ae809	5404	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/scripts/remote-spot/census-fed-upload.service	93ee7a80575b42e8cc12278ed046381c7a94c453486ee29ac416cf4b9793b9d0	204	systemd unit (installed on the machine)	yes	referenced by ec2-batch6/scripts/s6-files-2.sh	copy	
+ec2-batch6/scripts/remote-spot/census-fed-upload.timer	1f26e240d16299917df747cad78d98c23f878597605f7ba5a4ba26d81c406ba1	154	systemd unit (installed on the machine)	yes	referenced by ec2-batch6/scripts/s6-arm.sh	copy	
+ec2-batch6/scripts/remote-spot/census-fed-watch	50d8182fd539a23baa4d92f1eb6ae552577099909bd47e8b8a994370e6fbf613	3217	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/scripts/remote-spot/census-fed-watch.service	081068a5c594b0ddfdae527b44908d444fd2eb2d36da9b8831065cb97fad001d	216	systemd unit (installed on the machine)	yes	referenced by ec2-batch6/scripts/s6-arm.sh	copy	
+ec2-batch6/scripts/remote-spot/census-fed-workload	6e1ad0e7b8958b1221162f264bbf9c20942bdd48085e9c17d222f02761117ad9	2494	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/scripts/remote-spot/census-fed@.service	de640746d235f6c386c616cf98777c3d152c3e978a202bc05dfc6eb69f9892c1	666	systemd unit (installed on the machine)	yes	referenced by ec2-batch6/scripts/s6-files-2.sh	copy	
+ec2-batch6/scripts/remote-spot/census-spot-decide	70675aba41cc4c88fe6292ddc24a12d1b530aaa7b36699f57746206e5ec80afe	3386	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch6/scripts/remote-spot/__pycache__/census-fed-derivecpython-314.pyc	4b1b7cce4c07ef574ed68ccdbb15f4a28dedbd934d9a6cb13d62826ffcb3bc43	21679	cache	no		skip	Python byte-code cache
+ec2-batch6/scripts/remote-spot/__pycache__/census-fed-uploadcpython-314.pyc	818e08cd94ef555489956f6e36936c3a843d6433e23b62a2df2ccecb8c2972e7	11249	cache	no		skip	Python byte-code cache
+ec2-batch6/scripts/remote-L/census-backup	87981d084b324aab80be3a3f36c1620710b09dfd73231572709c4050358d6c05	2577	machine script (installed in /usr/local/bin)	yes	referenced by census-backup/README.md	copy	
+ec2-batch6/scripts/remote-L/census-batch4-guard	57f0aa43ebedbb06cd62c49d5760a24a5955c0644ee91afce1afd5cee6a10372	2331	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch4/README.md	copy	
+ec2-batch6/scripts/remote-L/census-batch6L-cregit	a9599a2dbcdeaec4b7f5e115ac35fc1a8ac251c7c9ad0ba2bbaede2b629ab862	4198	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/scripts/remote-L/census-batch6L-finalize	777bc3b76c5d55cf4b732322c490db1beb2bb021e3d660e2e8ab604088943baf	7539	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/scripts/remote-L/census-batch6L-finalize.service	78d8bc5ac9fb31b65764615c0be083fbc9d2f0214026d1fb2f177d94325250a5	232	systemd unit (installed on the machine)	yes	referenced by ec2-batch6/scripts/L2a-install.sh	copy	
+ec2-batch6/scripts/remote-L/census-batch6L-live	d8cefd4cdf7c9d45a24360e57b94bba803a21cbfc1d08b6fd852e1bfd9725e39	2555	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/scripts/L2a-install.sh	copy	
+ec2-batch6/scripts/remote-L/census-batch6L-live.service	5c96b662884ae7b60c7f86880db3fc02e1f6e62b3b30c7665fa73fc6ec1831d4	163	systemd unit (installed on the machine)	yes	referenced by ec2-batch6/scripts/L2b-install.sh	copy	
+ec2-batch6/scripts/remote-L/census-batch6L-live.timer	325dd6ee4a962d90bdc44d6ef97d67c1ba1f879d43e2b21f4d61e7a3e20d20d0	171	systemd unit (installed on the machine)	yes	referenced by ec2-batch6/scripts/L2a-install.sh	copy	
+ec2-batch6/scripts/remote-L/census-batch6L-run	ed0a47a5d70ae05e004754a15e202e381c6c4c5aca7976948a62ba05bb6c9c6b	1122	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/scripts/L2a-install.sh	copy	
+ec2-batch6/scripts/remote-L/census-batch6L-wait	132e5bd7019ba4c0c2d8b6a02ba160950a0556a038793bfcc0fa066653f14754	4881	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/scripts/remote-L/census-batch6L-wait.orig-b4wait	c16c0db986abac34519a8347a78de2b8f17d866f2025eb79daf822e2ceba0a98	4645	backup	earlier version		skip	backup of an earlier version (not copied by rule)
+ec2-batch6/scripts/remote-L/census-batch6L-wait.service	eba7b22981e159ad2f9c13d536375691c1438915545b7c4337a066e41ef1da80	259	systemd unit (installed on the machine)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/scripts/remote-L/census-batch6L.service	1a26594db211c74789adb198555cb290c035a6417bfd720cd19bb9b1419c9c32	687	systemd unit (installed on the machine)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-batch6/scripts/remote-L/census-other-done	1e5bcfca099f2f80588c83b1a78b11f22c8accc346044c06fc79b3d58310a2a6	2465	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch6/out/L1-setup.out	11a7836b29f808680a3d77acd07efa8186447c7616ef6ad9c5c250cd6c53e30e	937	output	no		skip	output, log or lock state
+ec2-batch6/out/L2a.out	ed3862e4b366465911526538cbe1a96571f679b9591841dee9c397a363689a7b	217	output	no		skip	output, log or lock state
+ec2-batch6/out/L2b.out	0f5e7b18cd568845d96827c13d5807898eddc3d2665949b578341b2f62145e6a	4781	output	no		skip	output, log or lock state
+ec2-batch6/out/L3-setcommit.out	4fa63b07eb90bb2a4f797dfa1e38622e9dc5f19a3daa46fc3628e5d83f071cc5	1203	output	no		skip	output, log or lock state
+ec2-batch6/out/L4-gatefix.out	925a299cbf529031f7cd924e65afe05a83592ee18d4643b1b18bda31e47bd35e	1175	output	no		skip	output, log or lock state
+ec2-batch6/out/L5-no-b4-wait.out	0328f3195c5ed4ff5f58f9f8327cd3e3604218c17bd47bddf22aff260ac9a658	574	output	no		skip	output, log or lock state
+ec2-batch6/out/R3-partinit-fix-a.out	bee930bdbfbb0cb7560995e2582051465c33234476dba8b725df49bd24947c6b	2300	output	no		skip	output, log or lock state
+ec2-batch6/out/e1-probe.out	a8615ced546ee4780dda8238b6c300597498255461600d5cfb1053ce66093d9d	7148	output	no		skip	output, log or lock state
+ec2-batch6/out/p1-probe-a.out	a65db8eb3e80337b58782fe271b9cf005b5aedc3f16a47308a15089d07878e63	4168	output	no		skip	output, log or lock state
+ec2-batch6/out/p1-probe-b.out	18bf6d0d3cf534c875ba4c6190702667a0c2f5e8c4eae58bbd2f30bf4dc14621	3839	output	no		skip	output, log or lock state
+ec2-batch6/out/s21-enqueue-${RUNNER_EC2_SPOT_B3}.out	9990ad4c3a4f023252f2f84bc8f4b318517d9fca7f18358e564138295d352f5c	844	output	no		skip	output, log or lock state
+ec2-batch6/out/s21-enqueue-${RUNNER_EC2_SPOT_A2}.out	9f39f6f63d835c93771dc833639c2ab55267fa625ee9606860a932e6539c0b89	844	output	no		skip	output, log or lock state
+ec2-batch6/out/s22-enqueue-${RUNNER_EC2_SPOT_B3}.out	23624b3586411d18df80cf4f847d60eeaddec1c74f938295f229efdecd9388da	697	output	no		skip	output, log or lock state
+ec2-batch6/out/s22-enqueue-${RUNNER_EC2_SPOT_A4}.out	74a88d597002d6c4187cfe7f295e3d444eb33b8eee7ac04f61ca642a0fd2c26b	698	output	no		skip	output, log or lock state
+ec2-batch6/out/s6-arm-${RUNNER_EC2_SPOT_B2}.out	642aa0b4d4f1b113090ec2464028f426997e5287616d47a70f1767358f2f2e49	1255	output	no		skip	output, log or lock state
+ec2-batch6/out/s6-arm-${RUNNER_EC2_SPOT_A2}.out	2989b533faa65774a857e533eea5f8beaa26636678ae385c97bd308228ea9d35	1185	output	no		skip	output, log or lock state
+ec2-batch6/out/s6-files-0-a.out	5aea2c413ab3bc07d90d1986455e6788cd0cb625b84f16b2b874d6c1fc8943e0	83	output	no		skip	output, log or lock state
+ec2-batch6/out/s6-files-0-b.out	94c1b6e6cdea49456a94c71dc4f1e6201befc966b57c089436fbbb068adc0f19	83	output	no		skip	output, log or lock state
+ec2-batch6/out/s6-files-1-a.out	24b1fb73135222272d4cd5666c2fcee2597365c9e3608c1a4330ca63c392dadf	83	output	no		skip	output, log or lock state
+ec2-batch6/out/s6-files-1-b.out	619e471fddccfdc0de74091b60bd4c469fd89140755c03a65972eac49c2ae998	83	output	no		skip	output, log or lock state
+ec2-batch6/out/s6-files-1-${RUNNER_EC2_SPOT_B3}.out	dfb1aa24eb77ae0dae1e2dec216c5766843ce484f5184d9796b8c94971ca01f0	83	output	no		skip	output, log or lock state
+ec2-batch6/out/s6-files-1-${RUNNER_EC2_SPOT_A2}.out	fdfd113f81091903a802ac2cb7204fff934e97a028c64c212743db4810d7a7cf	83	output	no		skip	output, log or lock state
+ec2-batch6/out/s6-files-2-a.out	a41ccbd4a5beedcff502e5c5e644dd3a61f4dfd80876f970d1a58a0f07c77b71	182	output	no		skip	output, log or lock state
+ec2-batch6/out/s6-files-2-b.out	f5d686f49afe8d9ac47cc254d10b085ed11a4d42a16392131e4a3c15ac03f198	182	output	no		skip	output, log or lock state
+ec2-batch6/out/s6-files-2-${RUNNER_EC2_SPOT_B3}.out	d8ad528e01c13d792d42511af6af34e0952150e5c347f960667de007402f7284	163	output	no		skip	output, log or lock state
+ec2-batch6/out/s6-files-2-${RUNNER_EC2_SPOT_A2}.out	536e5328886adddc985e5c8b69ebb1e27a03ff9d7773c7da332dc6c49d835e52	163	output	no		skip	output, log or lock state
+ec2-batch6/out/s6-setcommit-${RUNNER_EC2_SPOT_B2}.out	8c16f636dc70060ffc68558f4f39d99ef4d5316bdac47aaa4f561fe06f4aa8b4	2225	output	no		skip	output, log or lock state
+ec2-batch6/out/s6-setcommit-${RUNNER_EC2_SPOT_A2}.out	48af9be0188539a6bf74345fb3671a93e15d87310add82f812ea93750b0e3341	1617	output	no		skip	output, log or lock state
+ec2-batch6/out/s7-enqueue-${RUNNER_EC2_SPOT_B3}.out	b6e08cb8a2d59a9e4edd0132ecdd59e05660c32516e95703d09810252ad7e792	5810	output	no		skip	output, log or lock state
+ec2-batch6/out/s7-enqueue-${RUNNER_EC2_SPOT_A2}.out	e32aba0038c8a559f34681d88c8a8552569180dd784c98f5d6536da91537b5e9	5852	output	no		skip	output, log or lock state
+ec2-batch6/out/t1-a.out	5f86bdc07d93bbba6a54ad13e59400befacf62f97348661d3e051914d6bc934b	3354	output	no		skip	output, log or lock state
+ec2-batch6/out/t1-b.out	95533f230f7fd811895f77e5f11c51d3008c46518cb969caf68902b3006bd592	3310	output	no		skip	output, log or lock state
+ec2-batch6/out/t2-init-b.out	65797b07d29e40cd74145b9b19788d541a74be395afeb74d3a3397f374e94504	3167	output	no		skip	output, log or lock state
+ec2-batch6/out/t3-${RUNNER_EC2_SPOT_B2}.out	8a1f1bfbe36316d8c225b831e3103e83dff5709c3488d43227f4ca8ff587b2bf	1058	output	no		skip	output, log or lock state
+ec2-batch6/out/t3-${RUNNER_EC2_SPOT_A2}.out	23c3e794638a2db680da36a15e0b473a3c13e1e9fccab36c6ecb17c19af27df2	989	output	no		skip	output, log or lock state
+ec2-batch6/out/t4-gate-b.out	0ba4a7290398c69c631b7a71202b23decf6c09602ab8993ea691378da4eb5e80	1138	output	no		skip	output, log or lock state
+ec2-batch6/upload/SHA256SUMS	fb313b3507686bb53d881bec23842db6575ce4576205217e95a68eb7986587f3	621	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch6/upload/manifest.batch6.order.tsv	d4a8cbb6ece153f9bf92145226c75b035b8b9963dd9b6c048ff87ae8e7c52c12	20247	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch6/upload/manifest.batch6.tsv	d54537af63a6cf6201cae5c5377286219e33305adb682e411af3367e642cb17b	19191	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch6/upload/manifest.batch6L.tsv	fd2815ef838493b6f2c67d8a68e5e554f17341064311eb0e9f19d4da705d7b98	593	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch6/upload/parts.batch6.assign.tsv	9fae82ebfe599b629ea26353c3337479da4783587bdfbd1dd39c1e476605c796	4969	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch6/upload/parts.batch6.tsv	59ade2b6cbfb2694024a032438f9fecd6887e0730d2587b5af7153405c2d4e63	1116	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch6/upload/project_meta.batch6.json	92ee0b2250443af9db823bb20409985b815cf96ab89e9fab861d0b96fcac0386	138548	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch6/upload/project_meta.batch6L.json	9a7d1ba1c00008f525e031d217d8753502eba0d939d232d58ad2cc130125633e	2538	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch6/upload-cregit/SHA256SUMS.1f17663	f04afb3fadd8ad7289291ec5243684be1035fec3646d7f369766420ce8b5a2d5	88	tool artifact	yes		skip	tool bundle or its checksum; tools.lock records it
+ec2-batch6/upload-cregit/SHA256SUMS.9079a9c	aab67b886f147f036822d2fd274687ac78472516bc80671b9908c1fa78d92de7	88	tool artifact	yes		skip	tool bundle or its checksum; tools.lock records it
+ec2-batch6/upload-cregit/cregit-1f17663.bundle	a827082e73bb435fcf05c1a97380e39ee467ca45c4a8d9e1045a3f3afe153486	18143	tool artifact	yes		skip	tool bundle or its checksum; tools.lock records it
+ec2-batch6/upload-cregit/cregit-9079a9c.bundle	7a190f5ac04b37abc7e6ee1af0adb1842e5f46262983b6b0c1c3f296c34a95fd	15081	tool artifact	yes		skip	tool bundle or its checksum; tools.lock records it
+ec2-batch7/upload/SHA256SUMS	f3c3602e7d65b221d33ba9cac49c54bd8df29417361a66e9880f502f383353d5	621	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch7/upload/manifest.batch7.order.tsv	4c06713288ec65632fb48b6afb27b3c83aa54c4416172b6b31ae65383d614387	20059	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch7/upload/manifest.batch7.tsv	c292b9d4dbd64d4dfa983374635f00d165ecd33a6dc0f1f0dfe36b830a188033	19035	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch7/upload/manifest.batch7L.tsv	a8cfd18e9b4c7d33ea17d2746045a715f5af246010873a71034a185d7e51dd29	601	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch7/upload/parts.batch7.assign.tsv	bca6e7e220d2a726c1f92d061c68ef645306a706d1ce9e99801dec377cbe6147	4887	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch7/upload/parts.batch7.tsv	d4bd11e4840e9946c272052b1d16f683ad1b813d37d12854670a60d0fb0aa7d4	1117	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch7/upload/project_meta.batch7.json	15d02158711c009569ab8f87691d0185cc646a713ace0d034dc9cff525285c13	140792	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch7/upload/project_meta.batch7L.json	1f3fc93d2fb9078dd6dfebf2659cceb3b8b71490a0c01dfcedadb56a9237dfda	2619	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch8/upload/SHA256SUMS	f291e11a6fd77b4dba808f4c059cb0d3de107b2c6645d9b7ab4e5710b5b59607	621	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch8/upload/manifest.batch8.order.tsv	e33d73a5ff13e904c6c1160445deb64f9d59572ff3d3d0110d9496b9aae63bbc	20215	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch8/upload/manifest.batch8.tsv	adc81a175da6c733e3ef1b3d88c8f46f77390c6d808d3c14d01da8ebb96c7a32	19199	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch8/upload/manifest.batch8L.tsv	bf3685f90ab7dd389fe7b8b4fd7ce8f01efcd52e24ced9422ce536cf0125a236	1251	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch8/upload/parts.batch8.assign.tsv	da45d8eb0cf8a58930c04ac45e82fa913939868c80ade40a02eb5fcb853869f1	4806	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch8/upload/parts.batch8.tsv	29ee5fb77d97a699f507d189f1e9698dc22a81d79b7b74fc24439e02b049608a	1116	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch8/upload/project_meta.batch8.json	73daaa69bca7ebac5ab5010524d18f3092e573bbde6ee3e8c5bc1ef9a908f3dd	140779	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch8/upload/project_meta.batch8L.json	5ef8fa0395dc9b135c259f81638a149a45c1473865d61e324c2ce60e49885c43	7743	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch9/upload/SHA256SUMS	f397a65b86fdf6f9375cba01736606bb8219e150384b3ea66baec9568c0102f9	621	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch9/upload/manifest.batch9.order.tsv	21e746f6f7ee4faf1c8b0da6470fc982f99d48c239d86ed0eb1cccf48cea12d0	20150	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch9/upload/manifest.batch9.tsv	00a32df96f075408b7ce58f8ecc5a5d19c49e20efefee07637b2b4f03bdbc2e8	19117	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch9/upload/manifest.batch9L.tsv	0a8eb1fea80a8ce42afab65ae5d9e9257be0ef0ec26524b87dc884117807de33	513	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch9/upload/parts.batch9.assign.tsv	0b7c7d42734e17eb1cd5d17f1e462ff7ae03e80c48fcc4b7e7b98636fd9246f3	4945	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch9/upload/parts.batch9.tsv	1f9309de99ce16aef3e0969be62f48978b9f2ced9e4a949718a61cd8686e4c73	1117	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch9/upload/project_meta.batch9.json	ab6d6a9b81b260ca465d66f294a7abe4da4e92684ff1fb7cef6fd57da686521c	140769	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch9/upload/project_meta.batch9L.json	233dd2c4a6a890a5967096123d2b3caf801cd3c9376d2a726221258cfa2a0808	1781	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch10/upload/SHA256SUMS	c868086e628ec4a0cc61f2b6da848fde7af6078db5ec78aa476364e4d4e7f824	628	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch10/upload/manifest.batch10.order.tsv	6964af3ed6a779e3cc6217333d67b6768772e36a37688ef3f9b7afbfcee4ba58	20211	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch10/upload/manifest.batch10.tsv	196d7166a36b215c498418c83c3e96c241e1ff6dddc10cee6e033afb0553f8a7	19189	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch10/upload/manifest.batch10L.tsv	79c8ab24e2883f75c2bf6a812497e6cb4567818fd451b93e215c8f65de40c9d4	853	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch10/upload/parts.batch10.assign.tsv	b98b4078826a719dafe3973c02a4ddd7c8994b1cbe511eca30e5bf08ad99f3a3	5060	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch10/upload/parts.batch10.tsv	cfca6b60e8ddd1a0412e24cde667ffe82cdc30f63091f8bce5627007ec9b7544	1130	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch10/upload/project_meta.batch10.json	731781f3ec0393bac536decfe5183a000bfa9c094d0bc2a620ab637b8132788e	140944	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch10/upload/project_meta.batch10L.json	f060de7b2b408a6b3d0005bf5a735b797205eccb2bd94d1ceba4aeb50bcfd9a5	4430	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch11/upload/SHA256SUMS	df80a5669d763c772822a1ce309a7562635cf238376f13eb204c3376450a4f89	628	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch11/upload/manifest.batch11.order.tsv	da20e9972475af0510ccbcf67a9793f58cb6f1a630b52f7fbab6b877b4fe7c4f	20083	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch11/upload/manifest.batch11.tsv	c0bc3c7dfba79160d832ec8f554c147ba73f356035049fa27b4442dfc81ecea4	19149	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch11/upload/manifest.batch11L.tsv	cb4ba46c6a9bbb251681a3f32f8b9490fb9e9c041aa02ce8d5a785139b5ed32f	399	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch11/upload/parts.batch11.assign.tsv	735486081773d6dd97efff17e89d3a1e0ccdf3b7a1612058d4e5c2344f1a4321	5147	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch11/upload/parts.batch11.tsv	5b543c80418850f92d849ab3e075f2b91c09a8dc706d0ed4fed3d0fd973ff0b3	1130	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch11/upload/project_meta.batch11.json	190c497b9838d275846493d8a7fd062ce37e5190246173fe3dae9b2a2fdcbf4d	141219	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch11/upload/project_meta.batch11L.json	702c5dbebab489e2ab215bdc4436d4071e10d993640a8150ce5b9aafb2356567	904	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch12/upload/SHA256SUMS	c58ecfe7ffffdf8d9f14d1b7617c008aa7343645725ce237fca7a5d570cc44fc	628	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch12/upload/manifest.batch12.order.tsv	4271b8f4f3209b29fd82da2a2b61230d2833feb707a4fccfaf410f8db7c7399f	20135	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch12/upload/manifest.batch12.tsv	6f4e0b95cc46dde0079b671dc19e8737a15e3a7e98ad301a629af614192c3fc8	19186	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch12/upload/manifest.batch12L.tsv	0c39ea9e42eff18aabd10a22b81ccb9358abe9a4c091f013cce42853d58d2374	825	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch12/upload/parts.batch12.assign.tsv	0812a27f002de1d7c6539cefd318eeff67994b2e2965dec4623047fb447760ef	5080	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch12/upload/parts.batch12.tsv	e1b5d750efba52c33aa11d55668902b52581be0badcaeb8624e0b13f8808a495	1130	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch12/upload/project_meta.batch12.json	7d1502fd09087bfdb6df239bca39169485fc3f6661c7ef99b45f2fb058863362	141197	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch12/upload/project_meta.batch12L.json	90f277a49d0101fd96e0cf525f1d8d7fc01b425b636a3d9349a2be0e9ffe2612	4305	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch13/upload/SHA256SUMS	22b2fd391476ba64db9d420e2d88a32f47252c522c99b2fc22c756d4eb423f67	628	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch13/upload/manifest.batch13.order.tsv	51383827a75f4a5dd0a8f862d12197914347891a6088865463c87c91981f9f25	20177	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch13/upload/manifest.batch13.tsv	1d1f93d1d2952c0f2a25ca8f968b8bf867959609ab38c913a98784b9d447bfcc	19233	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch13/upload/manifest.batch13L.tsv	a1bf436af7a452c7577ad0d87a4cc3b079e36aadc5cbd604ca643fe90c62370c	713	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch13/upload/parts.batch13.assign.tsv	dbd5a5da0013ad8cd1a3343618d3fb2dd69cf53b57b0bf698282f93ceac8a631	5126	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch13/upload/parts.batch13.tsv	0d712fce0289a08b64104038788a49214e41c923f0e2397eeaf3e20d0a032c87	1131	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch13/upload/project_meta.batch13.json	67c03be6b6d557fa7b4fce483396deb4ce0a9c499a2ee655c64f3974754068c4	141113	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch13/upload/project_meta.batch13L.json	b089c62fd4f282bece5bcb70237ce45f10ed9f506f20339e3d0e1ed8c9807908	3449	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch14/upload/SHA256SUMS	32f077dd9ee7d71c6be6972812a917639f4fc2d94f69efe3c2fd845784de5919	628	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch14/upload/manifest.batch14.order.tsv	f02a75990da42cc3af5078348b11be0d4355101d62f61c1dd69808fb50dc9f2d	20181	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch14/upload/manifest.batch14.tsv	a1801c196defea51ecbeef0e7e9aa11dbb3fa7a56a079e8c25e40875a392ac5a	19239	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch14/upload/manifest.batch14L.tsv	ecda654640f9789ff5177b0792b580f6eba2bd52e963e293bcf0d6adeecebd8a	995	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch14/upload/parts.batch14.assign.tsv	4805138398a3a0b2a98ae0a58a3a37f5899230221efd5eb072a4a5d0e4f60360	5032	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch14/upload/parts.batch14.tsv	d3f39157a1b136fe9d5598332d162b19b171ace1730ec69d6a5b71ceb66553bd	1130	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch14/upload/project_meta.batch14.json	e789323e0ae01d2e94e6a54342d1382f5425449755024a9e6355ce09ad95ba7d	141410	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch14/upload/project_meta.batch14L.json	95065ffcbc818ce4f74cada8f54e6a90634e9b0b52f8a8597a4f32bbe8371a3f	5330	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch15/upload/SHA256SUMS	e6f7ebe2833850cc3df743685af625c15ad58711a6b1be29f66003129f6288bd	628	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch15/upload/manifest.batch15.order.tsv	551c2514d41672b5f80f3d1e86d3a804715db8c9643f29907e41bd218878ab79	20240	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch15/upload/manifest.batch15.tsv	ef0a99a173728f06226d70b9f0bdc6b1ca14a87ee16172ba5d195ada48f6b470	19301	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch15/upload/manifest.batch15L.tsv	f721f55df08dfeeb851134afcb11345048647fa9c1292f0c1e3dc484764a504e	523	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch15/upload/parts.batch15.assign.tsv	69aafbf13f4321e62c9fc53b3d9a68528ddde4de5d824354fd948d44b0bd0b1f	5203	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch15/upload/parts.batch15.tsv	88b48c4c198217bab541876cadb03cce0a50cc5c62b8bba523b20f23978fe95e	1130	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch15/upload/project_meta.batch15.json	7e0435ad66ab1e55385234d7ffa642057168996be8fee3908d60797b33bd3412	141182	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch15/upload/project_meta.batch15L.json	4bf7e1b4ba0a8effefa7cf27b8565c25e756f61ec73adb4027bb7770bde4d035	1818	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch16/upload/SHA256SUMS	c2c1dada76737e2f38039b4d0bf2efbc9db490817514991adefcc5f41c4ce62e	628	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch16/upload/manifest.batch16.order.tsv	72ad523535aa3e8b3ce7b5bb38118d89d09e67838b0b42494fc3f6ce7c5c1d88	19995	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch16/upload/manifest.batch16.tsv	1e4fd43f0de322264d2b94b8a8370f41906df20bc45b8315187818245642b2d1	19061	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch16/upload/manifest.batch16L.tsv	b0ab09a50440dc2afbc14bb91c98767107232a7b3892dc1003697636e312b7cb	841	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch16/upload/parts.batch16.assign.tsv	1f28d20b9028212b9597c130eed2d36d4dd5b2c7c9b6d90b783793b2b7d2d1c9	4986	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch16/upload/parts.batch16.tsv	3c2c76e24e172698860cbab8a9a73eb50b2f414bf7e33e5368252f0a00bf5c99	1130	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch16/upload/project_meta.batch16.json	0d0b93884e810618c3dbc8433b0cb586d5605594d46c09da113cf7b53b0a8cc5	141289	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch16/upload/project_meta.batch16L.json	c23879ed8b540e38977ab52220c5e9a013f9e84aa556df373073eda9c3e35a20	4350	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch17/upload/SHA256SUMS	90040a252b1a90005c32a7fb088e0e4c04db2d17a18e5ff03cbea4b4821d7964	628	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch17/upload/manifest.batch17.order.tsv	d60d86f8963e9d47fa5effddeec1b15cfb6361ab3f7e94a9a0bb910739b7d8fe	20200	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch17/upload/manifest.batch17.tsv	fe2bcfa4c462bf23afb8d7d027903ee019a67ffa25f26d74c91f3345493549db	19264	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch17/upload/manifest.batch17L.tsv	74481396763fde5dcccbddc8fe4a9f54760bc93c232759eda8171e30999ffd26	509	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch17/upload/parts.batch17.assign.tsv	cd29966683ac2dfff44c6fd7d54a9c06a3622108c3b8ca96d3bd5d02926751a9	5175	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch17/upload/parts.batch17.tsv	b3226d85a8cb93510aed15b967ceb0aaee283883af92651826dacab754522733	1129	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch17/upload/project_meta.batch17.json	2360a91228aeab081f2600dafe738e07cdd6fd91487061a3abd1e4520ae69d37	140870	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch17/upload/project_meta.batch17L.json	b0564e166d860353141d42924735b4a7d3ca44b56fac5985187a6d3677db2687	1774	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch18/upload/SHA256SUMS	86af665222c25a10c593f7a5150a00c9a3d1af2593239f5967adcf7c774b3541	628	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch18/upload/manifest.batch18.order.tsv	3b5736b0c26707500d2d4f1e7087867f41956ca3aeefa24b02966fc20a42e527	20122	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch18/upload/manifest.batch18.tsv	432ad2e493ba966ef387af309dc2cfab6bc374ba9fa442b0705d1617cdcd2f76	19188	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch18/upload/manifest.batch18L.tsv	49b54dcd67bb3a9cf65954d2afce2f8df73dc68cdf756c3f5a85b6e49e1eba0e	731	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch18/upload/parts.batch18.assign.tsv	3fb7f81796825bdcaa8ec25a13be8d7ef9006ce1a2818ef17b59f01e37a04563	5070	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch18/upload/parts.batch18.tsv	871c0a8372889f5f9e2250e6b8787f034f0a4a85b4da0b06d31df3afa86f5e6b	1130	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch18/upload/project_meta.batch18.json	3b8178ce071dd980f73ca814b54fc963d9904f6643f2dd7f6590f2fc90b8d413	140737	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch18/upload/project_meta.batch18L.json	ba4f4b3021eda8b99d3d9b234e977168e722c6359034d67699314af5bba693f8	3517	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch19/upload/SHA256SUMS	7a4cbc5c9b90e95dbe111582e8a375808fc842aaea301222b5ec09ddea6bc70e	628	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch19/upload/manifest.batch19.order.tsv	88a9251e4c2924cd197c22bd47018a2c9705601d71a1451868f74504a9513e22	20151	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch19/upload/manifest.batch19.tsv	8a11b7acec582e49f76d0e09d7ff1e039d3458ef456ff4c1a875509b92849d3b	19216	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch19/upload/manifest.batch19L.tsv	ed65aca166c0b43f12c009bacfd6a903985be223ceb2c18d9049728ce68f0d81	1023	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch19/upload/parts.batch19.assign.tsv	7bb1e8939dc77256b0961d1836d4fa5801ed6b0d6d5ba182def4aaa668a46f3a	4998	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch19/upload/parts.batch19.tsv	ef9b7e0717047d1af67ad335088d9e05547f68cccc5cb7be59fcca0dd3fcae76	1130	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch19/upload/project_meta.batch19.json	1cf06f8fe042e1c61d98764709fb4a5d28ae17c7b4fbc9e89ac35315c5cd1a4b	141915	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch19/upload/project_meta.batch19L.json	00144179a41ae1aa2c4bf083d3cc998c7c5a1de5b1e2a5cc99ef5f7d3eab6654	5258	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch20/upload/SHA256SUMS	b2db4c7beee925e295f9d18150b7893b9c1e787a8b83ae784c2d2e1380e63994	628	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch20/upload/manifest.batch20.order.tsv	53ab01909e328b96546a0b6cc4c13636c79ed86b0576d0d3e82a1c01bfc9f805	18220	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch20/upload/manifest.batch20.tsv	4c456b71c9e1db2907af03ac928fea9e460ff859170009b53725d68c63848625	17402	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch20/upload/manifest.batch20L.tsv	764ddd5d2686366d3fe72204c4028817298bc92393d5bfb949ee41d9d98b71df	393	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch20/upload/parts.batch20.assign.tsv	75ed1fac00fcee9f22390daf4de0c0d672ae5f06816351167481323c2e05e600	4674	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch20/upload/parts.batch20.tsv	d97427bdcaa99a443329af3f1f5305f7b9a0daff9020e536c22051e9e4b4a267	1130	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch20/upload/project_meta.batch20.json	0ff47d833bd26de084b6cce7f7100b9843a38c6549e4bbe6bb92901413925abc	128091	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch20/upload/project_meta.batch20L.json	f12f3c5740a234d7ee6b0cba0829d000ae62a741b4a484f1367598400409dd14	891	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-L7-20/README.md	ee78d9ef40aab76354eab48bee90c50989296f266568424cdc1ef13b6b82da20	6555	doc	yes		copy	run notes of the directory
+ec2-L7-20/upload/SHA256SUMS	091cd01c4f6dcc86475a070789ae7809ba39b02505ff8d2ae27c583aa370ccc3	175	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-L7-20/upload/manifest.L7-20.tsv	428cb4b28f9e406ed986b47813da7b27f4cb6b9ba4d2f6c366273dfb7f2254f2	10016	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-L7-20/upload/project_meta.L7-20.json	a98e7edaca17c014ba0dd85074da699c37630f1896f4b2fa305e932a0a406d5f	48130	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-L7-20/scripts/L1-setup.sh	948a94bf3ca32db9852c3da0484a5abc989862ea2f0072bce8cf2215bf6edc1d	5687	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20/scripts/L2a-install.sh	5964f9c6c636f551c851996185290b4323415e997e889e377f0b9af53a50766b	14392	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20/scripts/L2a2-install.sh	3a451071d9e6f5af36bb303ede70a84757a15927487d73e18e603e9bcc31594c	22188	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20/scripts/L2b-install.sh	70159afeaa8dc834b97b2d304bee59e155bcc7cecc30857b4def747f71193115	6620	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20/scripts/L2c-tests.sh	c035c844e821dd30aa7533734342fbd6c9ad48640a1c612e3a619d77ef883e84	1646	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20/scripts/L3-gate-start.sh	a8c3c24288dda70a44d63ea1354c066abcca67e2d6b19c12f0b8d23fb3de2a62	1591	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20/scripts/L4-hold.sh	77613f70552618bd5c8c45b3e711b51f96bdc08ba60222f004f1ff0fac86b48b	591	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20/scripts/L5-v2swap-install.sh	0007693552bfb59a8e3a7d2981215dcb7325da70b1e8cc28f7216eda2c40161c	4814	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20/scripts/R1-swapcheck.sh	d1198fd7e73363001ee5cc91ef3a06b40de56f1d52e7ad07692d69b2a5f0f667	378	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20/scripts/gen-L2.sh	6898ad79e0ba6b529d55f0a30bc24c7be353ab6f99cddcbc2aac5e46e5d94ab8	6947	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-L7-20/scripts/remove-guard-stop-20261013.sh	2d71c34cb1363409cde66fe9f2bc8474dd8ad2aedca900d27d420f574a513e96	638	machine setup or change (via ssm.sh)	yes	SSM command history: temporary script on 2026-10-13 10 UTC	copy	
+ec2-L7-20/scripts/space-ctl-20261013.remote.sh	3c111e21ffcb4daa940acc5a215b8f8b2cd3744e8d138e336fa311c956ebd3e5	1707	machine setup or change (via ssm.sh)	yes	s7-run/runs-20261009.md (unit space-ctl-20261013)	copy	
+ec2-L7-20/scripts/space-ctl2-20261013.remote.sh	28729ea24b2328c1575d0454751d7129d6256950292b368c4da66665dea2b4e8	1794	machine setup or change (via ssm.sh)	yes	s7-run/runs-20261009.md (unit space-ctl2-20261013)	copy	
+ec2-L7-20/scripts/space-pause-20261013.sh	5cf47da7c565a5268e305a4a947ec82dbdfdff5586c6d8639200ee9ea0f48e18	690	machine setup or change (via ssm.sh)	yes	s7-run/runs-20261009.md (2026-10-13 07:33 UTC)	copy	
+ec2-L7-20/scripts/space-probe-20261014.sh	ec361c2825840a58b5306c65437c26ecd10af100d24ae777936089f223a12c98	696	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20/scripts/ssm.sh	2b693ca80b71d71f05fce02c75d2eb46c6acb93d221b70a6a8519287de9aad60	1370	remote command runner (SSM)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-L7-20/scripts/remote-L/census-L7-20-cregit	5d1617d0bbd6af4a5f332734f6e98478534efeefac3003dbe36dc0773e374bb7	4246	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-L7-20/scripts/remote-L/census-L7-20-finalize	9721331bf75170fa33c9afe4764df4e4bed3bf8d7fade323ec00e40d056af0de	7493	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L7-20/scripts/L2a-install.sh	copy	
+ec2-L7-20/scripts/remote-L/census-L7-20-finalize.service	cd63f162a052dcd9ca109129242db06e92c09cea0b0b06ad14576cd9b4ce9905	228	systemd unit (installed on the machine)	yes	referenced by ec2-L7-20/scripts/L2a-install.sh	copy	
+ec2-L7-20/scripts/remote-L/census-L7-20-live	9b52a6985dafcf470f7936c4af1e4a29b48a74260e132617274ec6ea2832e3d4	2589	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L7-20/scripts/L2a-install.sh	copy	
+ec2-L7-20/scripts/remote-L/census-L7-20-live.service	fc6383661ff0659fd8f4d3b8b3f87f815c81a41a70a6f508020d4fb7225b2689	159	systemd unit (installed on the machine)	yes	referenced by ec2-L7-20/scripts/L2b-install.sh	copy	
+ec2-L7-20/scripts/remote-L/census-L7-20-live.timer	acd37ab758193a27ad791bcc4812ac69960ec284790e551926c9fbaa79a6d836	169	systemd unit (installed on the machine)	yes	referenced by ec2-L7-20/scripts/L2a-install.sh	copy	
+ec2-L7-20/scripts/remote-L/census-L7-20-run	8f730b86e506d13ccfddc0f342939d8448da0dbf25c94b9d38b2644865bfdbe1	1199	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L7-20/scripts/L2a-install.sh	copy	
+ec2-L7-20/scripts/remote-L/census-L7-20-wait	ecf4d6eee9a61c5c0900e9d9ac3023b461b28796ee8d41a97d800f925b7db9de	5458	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L7-20/README.md	copy	
+ec2-L7-20/scripts/remote-L/census-L7-20-wait.service	474b2d288813308effd56cc4bfc4e8bdd897acdc3489ddfdc6202856210c86b2	278	systemd unit (installed on the machine)	yes	referenced by ec2-L7-20/README.md	copy	
+ec2-L7-20/scripts/remote-L/census-L7-20.service	4959d4a65f298f0b4deb2d249b21e1c7126b7a176d46321290c0d0c4e43b6be5	695	systemd unit (installed on the machine)	yes	referenced by ec2-L7-20/README.md	copy	
+ec2-L7-20/scripts/remote-L/census-backup	f55939db56fb92088a66f8a4b1ec43fad1fb8381bb7c79e4988b0cfd4281904f	2618	machine script (installed in /usr/local/bin)	yes	referenced by census-backup/README.md	copy	
+ec2-L7-20/scripts/remote-L/census-batch4-guard	70a5a009ee0c98154471b32c1f1c31472ddab88081f8f8754507d13f8958a951	2801	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch4/README.md	copy	
+ec2-L7-20/scripts/remote-L/census-batch6L-cregit	a9599a2dbcdeaec4b7f5e115ac35fc1a8ac251c7c9ad0ba2bbaede2b629ab862	4198	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-L7-20/scripts/remote-L/census-other-done	5711f7113abbf1e5b5d8294a5ab8ba70abc478e66d5fe74a0fb2bc63dd05f9a8	2809	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-L7-20/scripts/remote-L/cregit-L7-20-v2swap	bec1771ec4adadbd01be9d9bd26329b976aacd3cd0294ff63836b80bc04326a8	2622	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L7-20/README.md	copy	
+ec2-L7-20/scripts/remote-L/cregit-L7-20-v2swap.service	c47596563d4801167eec23d3508a0bda4d08ba20dc409ff3a618d98d2af29139	189	systemd unit (installed on the machine)	yes	referenced by ec2-L7-20/scripts/L5-v2swap-install.sh	copy	
+ec2-L7-20/scripts/remote-L/cregit-L7-20-v2swap.timer	5d49958f24a8a0404b51a651efa7eea1123de108918e650584d6a81d42c8ba2c	124	systemd unit (installed on the machine)	yes	referenced by ec2-L7-20/README.md	copy	
+ec2-L7-20/out/L1-setup.out	759471736e46b5f05301fd3ef8acbbcbd2bf8b6724e6568134d6e5a1ec3a3da0	755	output	no		skip	output, log or lock state
+ec2-L7-20/out/L2a-install.out	909766918de2362a6da45db9706e8ff4d40e0b4023fc14176a7f7b305b5cf07a	414	output	no		skip	output, log or lock state
+ec2-L7-20/out/L2a2-install.out	fa38325338764a7fed6638701a42f630de8b1ca1a2c031be110d9aebd3655f3b	86	output	no		skip	output, log or lock state
+ec2-L7-20/out/L2b-install.out	e69c18d803e7c8b53c6fee55cf777b1bbaece3d8c4d15530675a8876baa7a2b7	3608	output	no		skip	output, log or lock state
+ec2-L7-20/out/L3-gate-start.out	a21af546678c67326c50872cf2e19ef42a611d50ece5ee2622b9c168c9f67876	1492	output	no		skip	output, log or lock state
+ec2-L7-20/upload-v2/SHA256SUMS	bfa9fae7123f4bbaaf9c216e74c058a3cdf8a78431d7d7f446d18e642a7ac481	175	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-L7-20/upload-v2/manifest.L7-20.tsv	58af4ad64115204e8d7ca912302e942cf40bb523ad1d99495d81967e01e21729	10199	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-L7-20/upload-v2/project_meta.L7-20.json	28ddbccc4ba973ff7b105e24f2b0a2e9399e829eddfc283caa0548d956ceb1a3	48999	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch21/upload/SHA256SUMS	a95bef65386f6285b514a60aabd34858455e7105c150f15cb99662a7d0716c9d	628	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch21/upload/manifest.batch21.order.tsv	4f7ef42e73270f52ece698a3c7c4d71fb3e81e26b77195790f44ab48e279abd6	9654	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch21/upload/manifest.batch21.tsv	a8d8fe474e9c33f90d4723af77e1009944e1a8db637acaeda7fbff45488b4af3	9322	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch21/upload/manifest.batch21L.tsv	294ce7d6c27ed4ee47facc818ac125e8db2569d78d158b16d66248b962c67a75	359	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch21/upload/parts.batch21.assign.tsv	0c7f9f5c21741faffba80d5424216a579591f277fd196447cec2961b2b07d900	2411	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch21/upload/parts.batch21.tsv	a2f37bc38af556db30fad2d18702fe362bbe5f8064b984d2c1ef3356a1905d2d	1127	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch21/upload/project_meta.batch21.json	1e2471f7cf6c1aef5820c3d9fee309cc3e43435690be4fd37240d5810b6f1ee1	76468	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch21/upload/project_meta.batch21L.json	79d373d904b6eae0be0f79f67e623b24de086ee26516f8f38195086d30eb97db	872	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch22/upload/SHA256SUMS	b2516edbfbb88bbb7a6361be7148bb26b7d892d727f9c6ea0175a92e9a81bf0f	628	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch22/upload/manifest.batch22.order.tsv	2f2d23b5ebeca35e7ffff0c9ed497f2b578821d7f52d972f82ccf931dadca512	4463	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch22/upload/manifest.batch22.tsv	dc8a4dcc99f4786c26f1c01c088fc0ad00413396460a012bc7ccbbb3af25e647	4465	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch22/upload/manifest.batch22L.tsv	5414c001028f6f99fb35f95743b8efccacf1f362118fb6c476436bacd5b61aca	489	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch22/upload/parts.batch22.assign.tsv	cbca9874f31199656be84817c00eca8bbc5ed78889fe638d9b3d0675f00313c8	1379	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch22/upload/parts.batch22.tsv	5adb20fb61713a42d22bf5956cdba4311117e0ab97f8d354268335d91b1f8e5c	777	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch22/upload/project_meta.batch22.json	50738224aa98fcd1873f283e3d0654ca10649473317cade74aae3b4a54940a4b	27272	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch22/upload/project_meta.batch22L.json	e15945094d3e8d29ca09dffd98a2cfe1afc0d35ce6bc527fe07d47ac687d2f33	1631	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-L22/README.md	571e405a07ea1126a0e1e18706f2bd5afcfcf7ff4605c317f3b5614f410f7799	3429	doc	yes		copy	run notes of the directory
+ec2-L22/scripts/L1-setup.sh	957d736a664d986945be031640d3340ea9fdbd259928672e79b51c6a9bf9c970	5980	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L22/scripts/L2a-install.sh	defc412cca825b24f0ee631af4df0904915c2ae5a335e27ada65aab0e06b1df2	15078	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L22/scripts/L2a2-install.sh	c126b522a9e34e85a784fedf194a51052862f37818e396020ed1e23aa1b41ff3	17193	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L22/scripts/L2b-install.sh	31f9213f8ae9c5eeb44b9eaa799341c751a46565be186d76d51e8890e8f8fbe8	6508	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L22/scripts/L3-gate-start.sh	1d2bc4f642f4918e2d810bf23cf2b88271724051cfb01d716b12e40249c971d7	1586	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L22/scripts/gen-L2.sh	ebad0d681f89058d206c6ac6ba23f27953a3662aca03c5c115c1ae60b1430b37	6793	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-L22/scripts/ssm.sh	2b693ca80b71d71f05fce02c75d2eb46c6acb93d221b70a6a8519287de9aad60	1370	remote command runner (SSM)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-L22/scripts/remote-L/census-L22-cregit	dff48f6fafb9599bb5e9b168d605fdebf827e427f3372b8bf1eb8db8bf6de359	4236	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L22/README.md	copy	
+ec2-L22/scripts/remote-L/census-L22-finalize	b79167170eb79fa1a222d0a56871e66b90b74d34aaac4e3b5f8baf2d74ae3c7a	7441	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L22/scripts/L2a-install.sh	copy	
+ec2-L22/scripts/remote-L/census-L22-finalize.service	94e6cfc654c469cbd6a792aac971a946944033e96cb61c92502803fa8d2bce5a	224	systemd unit (installed on the machine)	yes	referenced by ec2-L22/scripts/L2a-install.sh	copy	
+ec2-L22/scripts/remote-L/census-L22-live	9725d5a90d46156d858862a9fbd02c5bf570f97b39debd0672f527f2cf4d8cc4	2637	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L22/scripts/L2a-install.sh	copy	
+ec2-L22/scripts/remote-L/census-L22-live.service	0ebf52d26ff0466c0549e2dd534395b8c4d4572ccee6b2bccaa9f214727ad98c	155	systemd unit (installed on the machine)	yes	referenced by ec2-L22/scripts/L2b-install.sh	copy	
+ec2-L22/scripts/remote-L/census-L22-live.timer	b60a6a5c5428c00d3e4a41a365daeec79f6f117a06d7101a384adaeb525bd24a	167	systemd unit (installed on the machine)	yes	referenced by ec2-L22/scripts/L2a-install.sh	copy	
+ec2-L22/scripts/remote-L/census-L22-run	b7390c4c6571699a9e6b55205532aefb4d5cd4bf610a6d5ea2e2fb7905c7a9ef	1187	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L22/scripts/L2a-install.sh	copy	
+ec2-L22/scripts/remote-L/census-L22-wait	5288e2593fe4eae1760f9a31f32fb35b0357e29fecbf41913680baef66ab3135	4950	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L22/README.md	copy	
+ec2-L22/scripts/remote-L/census-L22-wait.service	654088330023c819774f74ea301558163b418ac51ad3f58be4ce469a9bcc44ba	268	systemd unit (installed on the machine)	yes	referenced by ec2-L22/README.md	copy	
+ec2-L22/scripts/remote-L/census-L22.service	43a2be3c0c863e9c6377fba2e980283174616cae362a6f5dd6c21fd9efe8ee22	694	systemd unit (installed on the machine)	yes	referenced by ec2-L22/README.md	copy	
+ec2-L22/scripts/remote-L/census-backup	dc3065d425727ea842647a618f82e507e1dcc915f2bff3cb02d715800cb42e9f	2657	machine script (installed in /usr/local/bin)	yes	referenced by census-backup/README.md	copy	
+ec2-L22/scripts/remote-L/census-batch4-guard	a96cab084a9525b2426d18b43d0faa19b0504ace91ffb673935d02000d6998ef	3274	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch4/README.md	copy	
+ec2-L22/scripts/remote-L/census-other-done	0acc488b9a1ed5c6503450873413c3d8e4339c22c098aca7872da54b4f077be0	3048	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-L22/out/L1-setup.out	706da2565f7d2ae0e41dfbdaad3fed89124f0470d2b9d0f7ef6a9ef5d76d80a7	729	output	no		skip	output, log or lock state
+ec2-L22/out/L2a-install.out	77c8d7a58c3f1a85e0b254157d370ee04c64696c4068dab4b52dd6f9e744dba6	445	output	no		skip	output, log or lock state
+ec2-L22/out/L2a2-install.out	980434a9c90fa345d63463e8211c08f3fdbddd3e92d56c92a77a9290e391755c	86	output	no		skip	output, log or lock state
+ec2-L22/out/L2b-install.out	7afdc0871e4cd5dac4f91eb52280e0d7f523389e27feefe53a71f4dc17eb3ae0	4409	output	no		skip	output, log or lock state
+ec2-L22/out/L3-gate-start.out	dc79fe42a4acb2b14278ec072015af37357bf2bf1819e4d10cd55a2c99199198	1472	output	no		skip	output, log or lock state
+ec2-L7-20b/README.md	163f7bda262c819ac235b469d8210d31a0cf43992b1da30ef0edeb179b21123a	6773	doc	yes		copy	run notes of the directory
+ec2-L7-20b/scripts/L1-setup.sh	1d5f8edae66bba0d5ac35a8b2b1b36ff4f472e766862b50b1fd67d04d1517422	9005	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20b/scripts/L2a-install.sh	15b60896f0059f19826341b68e4cc5de9db30d7e7a53c74a4fd50ed84ecbebb6	16325	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20b/scripts/L2a2-install.sh	acccace23f63b9b293e5e744ce8a7dac7a24af17d37a261201c129725e561382	23054	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20b/scripts/L2b-install.sh	6d4001bd7af5f5dc106d4c62567670e63dda6109335f8a985e652ab3267ec332	8713	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20b/scripts/L3-gate-start.sh	ac4db1ddb90c29de4315e48563a3a04bdd60031f6b8d7b377a473c86bcbaa11f	1914	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20b/scripts/P1-probe.sh	84389c39ff111dc15029e45843c37de8a55a5b67581e89daa0967ecf2228186f	2690	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20b/scripts/P2-probe.sh	688e11ada156f929789450ccea7b27b0ae6d89b250209cfc97e4c0e0657f545d	2146	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20b/scripts/R1-check.sh	33f044aded0f7f1049ecd32ea9204d8ac232b9f432da56ab38996cc9858b1187	1121	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20b/scripts/R2-cpu.sh	81cfcff9c2cf73a2ef67bf536d740db3d4b63240dba327132f81f0fcb4fe3d20	559	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20b/scripts/gen-L2.sh	c5d5cb1ffd2d0cf079dd72be859fb54cbfd08a6aad55fce0a54ab47cfb782cce	8031	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-L7-20b/scripts/ssm.sh	482b24f7dba4cb5cf744a9e9cffa88e26b522e0e4fef56707cf98f18473f02e4	1925	remote command runner (SSM)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-L7-20b/scripts/remote-L/census-L7-20-split	bec4cd71430715b6b15079de7ce54b734235867f259df14952d5241592ba8433	4849	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L7-20b/README.md	copy	
+ec2-L7-20b/scripts/remote-L/census-L7-20-split.service	5ee96d0232da4ff0d943f677a6442a072f8a93edde96ee8dc0a65350c8fb0950	217	systemd unit (installed on the machine)	yes	referenced by ec2-L7-20b/scripts/L2b-install.sh	copy	
+ec2-L7-20b/scripts/remote-L/census-L7-20-split.timer	6dfd5cde152319b127ad9d58da4b72fc8f9942ebddea23403322204a3052d855	194	systemd unit (installed on the machine)	yes	referenced by ec2-L7-20b/README.md	copy	
+ec2-L7-20b/scripts/remote-L/census-L7-20b-cregit	3d22ad36a48f322149105ec9ff28bc91b5399a144bb4e78c6a66987df0719ffa	4259	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L7-20b/README.md	copy	
+ec2-L7-20b/scripts/remote-L/census-L7-20b-finalize	a6cb8e40bc4450e5b2274facbe29fd34a790b0c06ff419fd8dadd9308e18aa26	7499	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L7-20b/scripts/L2a-install.sh	copy	
+ec2-L7-20b/scripts/remote-L/census-L7-20b-finalize.service	88d83b33aa477c6f454a2a10fa7520e3086fa9c174084e16e412df9664b44dc8	230	systemd unit (installed on the machine)	yes	referenced by ec2-L7-20b/scripts/L2a-install.sh	copy	
+ec2-L7-20b/scripts/remote-L/census-L7-20b-live	69531cc585eb1e351108808f31e11fbe4fa3d05c0d430888792547098b3f9c4f	2907	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L7-20b/scripts/L2a-install.sh	copy	
+ec2-L7-20b/scripts/remote-L/census-L7-20b-live.service	2e06e5f7a58a8c428573f38ebb6f6706711eef0c7fe8ddeeb371f5b863add98c	161	systemd unit (installed on the machine)	yes	referenced by ec2-L7-20b/scripts/L2b-install.sh	copy	
+ec2-L7-20b/scripts/remote-L/census-L7-20b-live.timer	81280182962aca9a060ccae71bd4c02db3d9121a2ac4d0df4695c35b9da84f09	170	systemd unit (installed on the machine)	yes	referenced by ec2-L7-20b/scripts/L2a-install.sh	copy	
+ec2-L7-20b/scripts/remote-L/census-L7-20b-run	0f09c8ee998af65da42400420521582bcb80cf78672e03d33283433d60441446	1392	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L7-20b/scripts/L2a-install.sh	copy	
+ec2-L7-20b/scripts/remote-L/census-L7-20b-wait	056de38cf2271cc06d0025d8a4ad837d44649e7a5dc53bc405364cb54c5b76c0	5522	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L7-20b/README.md	copy	
+ec2-L7-20b/scripts/remote-L/census-L7-20b-wait.service	9e469184ec1d846b9ae985091495d31677e29c14f0e2ca724cb3c3e54f1e7ad2	277	systemd unit (installed on the machine)	yes	referenced by ec2-L7-20b/README.md	copy	
+ec2-L7-20b/scripts/remote-L/census-L7-20b.service	190939810f2bf461f31b5628dbbb128609c2be9f5ff81e6e5694b58cebc9669d	716	systemd unit (installed on the machine)	yes	referenced by ec2-L7-20b/README.md	copy	
+ec2-L7-20b/scripts/remote-L/census-backup	4787a2dd27c9271bd6427911aa665f17816a7be69b3ecb26a8ef04c9a072ab4f	2702	machine script (installed in /usr/local/bin)	yes	referenced by census-backup/README.md	copy	
+ec2-L7-20b/scripts/remote-L/census-batch4-guard	dfa4f579872803434ceb51d97c8d83e432a236818283543f6f5c3e2ddc2af69c	3748	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch4/README.md	copy	
+ec2-L7-20b/scripts/remote-L/census-other-done	db590d92ef4633cbef76fbda5aca9c5dec1602dba453ccf32abec4422b701012	3357	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-L7-20b/out/L1-setup.out	1e2d28778422a3a9d8709ec81fbbdb76a12a784e7069339a86f9e408beb5d1c2	1234	output	no		skip	output, log or lock state
+ec2-L7-20b/out/L2a-install.out	f25d31755b9a5e1a6356b4fe91fd33e224899999f50bcb1b5d851a6df4fe4142	340	output	no		skip	output, log or lock state
+ec2-L7-20b/out/L2a2-install.out	432a30e7e06cfae2c1d48cf13c13bb64d9a281618fcfcdc749efc398721f721c	154	output	no		skip	output, log or lock state
+ec2-L7-20b/out/L2b-install.out	ab7efd90e835537afea5c0c4aa94dd20c15536650bc800ec8f57a12da9e8956c	6342	output	no		skip	output, log or lock state
+ec2-L7-20b/out/L3-gate-start.out	351e1f7c9f6ed2bd445f4f278716085a5f9c6a3f603bd736584ff49bb0b9ffdd	2632	output	no		skip	output, log or lock state
+ec2-L7-20b/out/P1-probe.out	71cd400928f5ef8c83f3a68080889e2cfa3548db15768e4b0ae1809d9dc1e112	28633	output	no		skip	output, log or lock state
+ec2-L7-20b/out/P2-probe.out	ca4dd447a6aa626e7fef29e3f8ee69ee80f426da35ada1280edb7b885ffe1e9c	5677	output	no		skip	output, log or lock state
+ec2-L7-20b/out/R1-check.out	90b38da63c420e2bfe4de323c613cb0cd7bff148449385842a89c749bdda73e8	2148	output	no		skip	output, log or lock state
+ec2-L7-20b/out/R2-cpu.out	6411ec262551b13ccb6407248aff5f17fc2712692db4091f97c4289292714456	2299	output	no		skip	output, log or lock state
+ec2-L7-20b/move-to-spot-b/M1-freeze.sh	891dd16649f798b6243cc79987b78b9cc53475b7c6b17eec827f1e03c1e59898	744	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20b/move-to-spot-b/M2-check-stop.sh	8d17cfca51da788cb3b7f77cda5b855e17b8d4b1a5f33a599b089f3abd945f10	267	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-L7-20b/move-to-spot-b/README.md	5712841950713e20b6040668bb5f83e9ecfebf1ac02a439ec14810920a0ccc1d	293	doc	yes		copy	run notes of the directory
+ec2-L7-20b/move-to-spot-b/scripts/P1-spotb-probe.sh	74516eeafe63e68fb33b4d1d4781adde0d7b1a2a7fd46e6433d4142283ece0d4	1165	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+upload-cregit-blamelimit/SHA256SUMS.57551d7	7e77e4452c10c638ad9a7927f3e2ef1a1741f362146afe336dc3947542e1ed29	88	tool artifact	yes		skip	tool bundle or its checksum; tools.lock records it
+upload-cregit-blamelimit/SHA256SUMS.9ccead6	07409f85686a7cda7b4f688c06cf47cd76e978aa0322993bb901175fcbea60e9	88	tool artifact	yes		skip	tool bundle or its checksum; tools.lock records it
+upload-cregit-blamelimit/cregit-57551d7.bundle	18b1bf1c87230460f59e433f0c5106f21dde77bfbc057a42776acb592a6eb71e	23445	tool artifact	yes		skip	tool bundle or its checksum; tools.lock records it
+upload-cregit-blamelimit/cregit-9ccead6.bundle	64a4f3f081a91694b1976d531883c6ad547c54116a625d384c0d03785d935e06	5575	tool artifact	yes		skip	tool bundle or its checksum; tools.lock records it
+ec2-batch23/README.md	479ff583a28c8d40d0c8cb65d39a8f0adc06651602b5f6d54ae36809942b2ebd	4037	doc	yes		copy	run notes of the directory
+ec2-batch23/upload/SHA256SUMS	2774d545657d30a0cf31a251e39df0c8d19ad772099400537dcb5c5b95514e64	628	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch23/upload/manifest.batch23.order.tsv	b6827ac27b7638bda10f22192ccfa9bb21ca9c3b9c04bc11d253fb479b147081	14488	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch23/upload/manifest.batch23.tsv	d517fdd1f0c89820029e4b854eae0930d05e4a939f1241d7c6454c2306fdc589	13872	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch23/upload/manifest.batch23L.tsv	c8c986af2a7667bb22010c2f71f90df1321e16795eb4ec5b52893eada7553ade	1133	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch23/upload/parts.batch23.assign.tsv	c79498fbf264d162d2763d3d06674c5840311922aa8ec0400984f50f99c069bb	3526	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch23/upload/parts.batch23.tsv	72036daabace943d6cd2432453350ab53979211ab34127eb37793ab9719b4241	1262	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch23/upload/project_meta.batch23.json	1a1a2dba1feb96a5874ac6cf9c9d7320af8e4bb5a41253130b6dc04a7c51cef4	101608	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch23/upload/project_meta.batch23L.json	e823a93bc254428b945fa5b004bda4f341a78992107f7187fd1776b47ca1cb97	6829	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch23/scripts/S1-feed-line.sh	3596b6115da1af42e00fe823dc9760cedcf668f83015d7097107c3a29fccace6	1082	part feed	yes	referenced by ec2-batch23/README.md	copy	
+ec2-batch23/scripts/p1-spot-probe.sh	45c0ef365745062704902fc35dd8c23fde059f26df1dd7661ea384e0bd6a1717	793	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch23/scripts/p2-spot-probe.sh	a5f083231aa348697711cd285bbd60a8267bf4a4c26118190238389cb8b11e44	230	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch23/scripts/p3-spot-probe.sh	58791af32cd25d0c8ec47df025690a6fe3f2b23f6667da8e1906f654c3feb79c	299	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-batch23/scripts/ssm.sh	ae03a17a4610aada061da0d25853b6c29e2648e282a04910081aeb93143b11ee	1967	remote command runner (SSM)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-batch23/out/SHA256SUMS.upload.two-halves	1c28a0a38ab5d16401245ddaa8b4ec70b68ccb924f47e4bed480b393452a3620	628	output	no		skip	output, log or lock state
+ec2-batch23/out/p1-spot-probe-a.out	d80a8f376d92a479483a825cb698b98a3a9ec76263d88f3a08b8b16e91f6bbd7	5654	output	no		skip	output, log or lock state
+ec2-batch23/out/p1-spot-probe-b.out	91635b380857f8b801064e571fd1a448525aa7a154f1e46bf634d702dc95b406	5569	output	no		skip	output, log or lock state
+ec2-batch23/out/p2-spot-probe-b.out	4c66c877e58bdbd840818e85e65083747e52a535f1a8febf38d6342fbecd72e8	171	output	no		skip	output, log or lock state
+ec2-batch23/out/p3-spot-probe-b.out	03aa5fc1659bd085d1b9feff9e0965c4cf1f20517f3ae7c529c212b600f7c008	4294	output	no		skip	output, log or lock state
+ec2-batch23/out/s23-enqueue-b.out	e65bd0ebce5483b60f142ffa6d6b1db682016d17d7930156ceeddb0abc5fcc74	1768	output	no		skip	output, log or lock state
+ec2-L23/README.md	0b4d9fd7bec52ee90eb0ea06da4ec8ccd3a821064286637aa5da1a3345f2e0cd	6264	doc	yes		copy	run notes of the directory
+ec2-L23/scripts/L1-setup.sh	2b036c35fd94a190fa8a3cfac9d3daaac40bee78a234de8579a51596b8776d46	9429	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L23/scripts/L2a-install.sh	1fa24dc644712490d559c8fe627dba90961c1e61df76f964f8c200d683317e11	16825	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L23/scripts/L2a2-install.sh	854d1262ea73999dd826658d53355e2456fdb6c7473def18eb380f0a193fc247	17203	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L23/scripts/L2b-install.sh	8cca3e07a9217a7c84a0c8b91f6e5d89c757c6992dcd07df8a16bfa3dbe77556	6525	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L23/scripts/L3-gate-start.sh	55cf67fa16d1b56b7f09faffafdfd8efeb2d63b6b2ccaa9b4a0e47f4f9c9ebb9	1800	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L23/scripts/P1-probe.sh	3f00fe74a285069fb6690e80c4b1e0925602e64a6a72b2eac1d1957c00a4b24a	3036	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-L23/scripts/R1-check.sh	86b2ab9bb069b3d65616ce628ebae7e077eb67295b729c9bf4caa9092e544f27	845	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-L23/scripts/W1-watch-entries.sh	92dd2ba65aacf0e80a6d1ce93c605a50485da2b06cd452644d630264b3e7b0a4	1882	probe (read-only, via ssm.sh)	yes	referenced by ec2-L23/README.md	copy	
+ec2-L23/scripts/build-L23-input.py	fcbb04feae478d3e4de4a4542b7738c5d4ca4990df652d1bbf0930997557ff7d	2581	machine setup or change (via ssm.sh)	yes	referenced by ec2-L23/README.md	copy	
+ec2-L23/scripts/gen-L2.sh	9edad3dd49fb66d5b3961c4035d9d3d3c32165d03a0aaca5b8b14a98a390a92a	6974	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-L23/scripts/ssm.sh	482b24f7dba4cb5cf744a9e9cffa88e26b522e0e4fef56707cf98f18473f02e4	1925	remote command runner (SSM)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-L23/scripts/remote-L/census-L23-cregit	d5b11613086c9df81dca625f4a2a9f30b0d594122020a2fb4221b6fc3c26f85e	4226	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L23/README.md	copy	
+ec2-L23/scripts/remote-L/census-L23-finalize	536f9a7a522d703416a60e412ed3219558ccdc291c45cdd3d6fa44427221611d	7434	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L23/scripts/L2a-install.sh	copy	
+ec2-L23/scripts/remote-L/census-L23-finalize.service	bc0cf4e24e40937ff39a20daa4beafd541fbd04f135f15a80ab8bda21c41c93a	224	systemd unit (installed on the machine)	yes	referenced by ec2-L23/scripts/L2a-install.sh	copy	
+ec2-L23/scripts/remote-L/census-L23-live	44492195916b679c02586251d48bebf87857863dab2f072a824e7437afc7550c	2644	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L23/scripts/L2a-install.sh	copy	
+ec2-L23/scripts/remote-L/census-L23-live.service	3159f5c5160d2c04cf793591bab7adc5575e2f8f0d67ba091c39772bb6e1159c	155	systemd unit (installed on the machine)	yes	referenced by ec2-L23/scripts/L2b-install.sh	copy	
+ec2-L23/scripts/remote-L/census-L23-live.timer	cdfc17a3b9ee08894d2fd7f11af9964dd76b4034c03b27241d1afcb707553664	167	systemd unit (installed on the machine)	yes	referenced by ec2-L23/scripts/L2a-install.sh	copy	
+ec2-L23/scripts/remote-L/census-L23-run	4bc3820ac8c0e2b9f9b0985fd46120466be9e0ec4236502d6cc06ddc59c1f83c	1362	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L23/scripts/L2a-install.sh	copy	
+ec2-L23/scripts/remote-L/census-L23-wait	2ae0e41649ec603c0da272fad48c56350435bf6c6c91e5e0e0b9a2d05c61a4c8	4873	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L23/README.md	copy	
+ec2-L23/scripts/remote-L/census-L23-wait.service	1ef640425100bf121dcb73b455ad56ab0a997b4a0900138bbb9b95a8cd7bee9b	268	systemd unit (installed on the machine)	yes	referenced by ec2-L23/README.md	copy	
+ec2-L23/scripts/remote-L/census-L23.service	2164cf4f460cff85d22670de8e2b9b4c53f48ddd6cf204e779dc65033ec0967c	712	systemd unit (installed on the machine)	yes	referenced by ec2-L23/README.md	copy	
+ec2-L23/scripts/remote-L/census-backup	ba1a206a0227a8be1f6103d4320b4c03cefc57853352e55610efbc394ce01cac	2741	machine script (installed in /usr/local/bin)	yes	referenced by census-backup/README.md	copy	
+ec2-L23/scripts/remote-L/census-batch4-guard	3aea045af99d1e362a1b66e1dee802b798f353c7e1c4668285b63b124a429977	4210	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch4/README.md	copy	
+ec2-L23/scripts/remote-L/census-other-done	dfc799466c7e806842625aeb984f16cd23f15fef7562067dce1c76c4ea73ab76	3635	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-L23/scripts/__pycache__/build-L23-input.cpython-314.pyc	74a4a113199cd558bdf916c15252cd44d952208e2144e428e7da13c51653ab4c	5339	cache	no		skip	Python byte-code cache
+ec2-L23/out/L1-setup.out	0022c07bbf8d986bff5ddfeaa41b9fca82429ad23d1f05b6828090de1de1ac47	1181	output	no		skip	output, log or lock state
+ec2-L23/out/L2a-install.out	4c8d0136db1bab6bd633df6b9f3ec6f4247e8ba3fcb73a34404a7f0f16b33f71	372	output	no		skip	output, log or lock state
+ec2-L23/out/L2a2-install.out	11e5758b51100838bf7e2ed8f945b14ef4fc0bdf667a5df2ed648385afca2ab9	137	output	no		skip	output, log or lock state
+ec2-L23/out/L2b-install.out	8fe8d2f26097c5dc083ced0f7b5a9ef1017f6a39cbc123d5803654176fc1198f	5000	output	no		skip	output, log or lock state
+ec2-L23/out/L3-gate-start.out	9c726f78a4dacb39c73dc5a1c6beb6f6810de28ea6dfd2138c8e9f6ad329d6b3	1535	output	no		skip	output, log or lock state
+ec2-L23/out/P1-probe-2.out	f742bc4ed9178f5d365732f8f4c3d2428eca75c48740552ae979573632d6d256	5676	output	no		skip	output, log or lock state
+ec2-L23/out/P1-probe.out	8b553bd89639648dadafff5119e48514af8dec9d933354d92dbb5baa488a10e2	5677	output	no		skip	output, log or lock state
+ec2-L23/out/manifest.L23.local.tsv	98152b6bd84ba2446cb90a6e30172c422d705a5a5c41f21b04e8b58791c7c043	1331	output	no		skip	output, log or lock state
+ec2-L1r/README.md	759964a36a2e5b9f4e09d58c59e3b92de7a5f2b4ba1bad0890ffd38b862a0e9d	10339	doc	yes		copy	run notes of the directory
+ec2-L1r/scripts/L1-setup.sh	65cc8ac81b48a26e902ea9a2d90f9e4f0dc9da0dc6e70f97a286ab2fd85202f9	6691	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L1r/scripts/L2a-install.sh	7aae29227038058c94a4825378552ec4d31aa252a3b2fd4230006d77c8ebe506	17958	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L1r/scripts/L2a2-install.sh	e01baad253c7cc58d65e44c123b58177649f11d5db77adcbce57f34120fa6102	21253	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L1r/scripts/L2b-install.sh	3017dc2cbb5b461122baf5a032d5720b858ef1b633df73d21df03a72ac7f2db6	8557	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L1r/scripts/L3-gate-start.sh	3af3e3485b5f23371a8c5902e4fca23585ddd01f9ad084edd14364b6eb046588	1956	machine setup or change (via ssm.sh)	yes	SSM command history	copy	
+ec2-L1r/scripts/L4-start-now.sh	dcc611daaf3ac17b27bfca11a45565e296fd408b8dcce27fb5b5174056b30b5f	1549	machine setup or change (via ssm.sh)	yes	s7-run/runs-20261009.md (user decision, 2026-10-12)	copy	
+ec2-L1r/scripts/P1-probe.sh	afbf68bb4c7969c7b91ae92f7159fa0bfe88fb0ffe9f945b52e1b8bee761741e	3749	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-L1r/scripts/P2-probe.sh	3d1a38489ef3cab9851fd3b6edb5e170e6e4769aef39c34dc975537bf0036690	7654	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-L1r/scripts/R1-check.sh	7aafdfce54d71eb20e5aac0e69f3750fd5c3c66c876b35f3382328a0c6d42816	999	probe (read-only, via ssm.sh)	yes	SSM command history	copy	
+ec2-L1r/scripts/W1-watch-entries.sh	ce6882f4614d23ab81eda0bc3d82fb334f138f157554c0e61d5ed0684efa1faa	2483	probe (read-only, via ssm.sh)	yes	referenced by ec2-L23/README.md	copy	
+ec2-L1r/scripts/build-L1r-input.py	f6439ffe108b0ed224262e834f7b5a883ec2f7aa4cb62b14aa04010bada5ad9d	3034	machine setup or change (via ssm.sh)	yes	referenced by ec2-L1r/README.md	copy	
+ec2-L1r/scripts/gen-L2.sh	d37e563a6a3ae93d6d34253815d68bf0c9a8a5a2adeecbb8b444e3388f592f98	8286	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch6/README.md	copy	
+ec2-L1r/scripts/ssm.sh	482b24f7dba4cb5cf744a9e9cffa88e26b522e0e4fef56707cf98f18473f02e4	1925	remote command runner (SSM)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-L1r/scripts/remote-L/census-L1r-cregit	bcce59668065923147ef4897cf4a1d66ecf322bc006ddb46d7a7002e59b78ec0	4223	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L1r/README.md	copy	
+ec2-L1r/scripts/remote-L/census-L1r-finalize	b82331147d32854e20bdedc2bf1e9872ec1fd01b03e7376758f97636b9067a64	7464	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L1r/scripts/L2a-install.sh	copy	
+ec2-L1r/scripts/remote-L/census-L1r-finalize.service	811d73f1f761738ca00de99033b3c773dba7e86834fd82991e77daa0357f0c81	224	systemd unit (installed on the machine)	yes	referenced by ec2-L1r/scripts/L2a-install.sh	copy	
+ec2-L1r/scripts/remote-L/census-L1r-firm	5ea9d9a106588b3cd921227a891f58f36e716fcd6e8addc56e633ae98968c1eb	2056	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L1r/README.md	copy	
+ec2-L1r/scripts/remote-L/census-L1r-firm.service	75faf6b960bc2a4d38a80fb9eb47408f99510a7af139777e8668fce6a266a22c	172	systemd unit (installed on the machine)	yes	referenced by ec2-L1r/scripts/L2b-install.sh	copy	
+ec2-L1r/scripts/remote-L/census-L1r-firm.timer	7104c89e2aea2fa8cab6a92d1f2cd46835bd26dc2df7a70016456a1ed5b414c9	185	systemd unit (installed on the machine)	yes	referenced by ec2-L1r/README.md	copy	
+ec2-L1r/scripts/remote-L/census-L1r-live	95d13a08c78695e6a891a6929953f39b1bf4a366de43aa84e4adad107137e65e	2843	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L1r/README.md	copy	
+ec2-L1r/scripts/remote-L/census-L1r-live.service	f5f6b024ccd065d6e2651a9c778681ef05db64cab0dd251d3eb065df1f2514bb	155	systemd unit (installed on the machine)	yes	referenced by ec2-L1r/scripts/L2b-install.sh	copy	
+ec2-L1r/scripts/remote-L/census-L1r-live.timer	addf5e395792e1885b66028f2090652ab046fcde63a84a4a5777967ff593c4f7	167	systemd unit (installed on the machine)	yes	referenced by ec2-L1r/README.md	copy	
+ec2-L1r/scripts/remote-L/census-L1r-run	26a9594e402a15c6b63b40ee5e9582ab2dbc49c91ed933fbead6eb1e63e0b82a	1528	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L1r/scripts/L2a-install.sh	copy	
+ec2-L1r/scripts/remote-L/census-L1r-wait	c345d2a1ae5f6d27c427d35c439550b065aee5dd11f470811a2b2f5cf952bcf4	6669	machine script (installed in /usr/local/bin)	yes	referenced by ec2-L1r/README.md	copy	
+ec2-L1r/scripts/remote-L/census-L1r-wait.service	0506e106a5fb32954cf2216e715b2f014396e9798dcf3fb3138d72fdbfadfc31	268	systemd unit (installed on the machine)	yes	referenced by ec2-L1r/README.md	copy	
+ec2-L1r/scripts/remote-L/census-L1r.service	10ab3509fbe42a801de7ef4a18503e80f180e263cf0dd46675613c335eec336f	710	systemd unit (installed on the machine)	yes	referenced by ec2-L1r/README.md	copy	
+ec2-L1r/scripts/remote-L/census-backup	471618377fcafc0ecfcb77550aab5f1416986f38024d82c8cf68fae18939e876	2780	machine script (installed in /usr/local/bin)	yes	referenced by census-backup/README.md	copy	
+ec2-L1r/scripts/remote-L/census-batch4-guard	9808437929db8bccf6ca011308431d7ddae361699ac13d0cf6491fc41aca0b59	4672	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch4/README.md	copy	
+ec2-L1r/scripts/remote-L/census-other-done	ef869f52967153ae77cc0e76b702c85fd1c2b2b513a448e47bb10e39674d96ac	3909	machine script (installed in /usr/local/bin)	yes	referenced by ec2-batch3/README.md	copy	
+ec2-L1r/scripts/__pycache__/build-L1r-input.cpython-314.pyc	13b09d3e1dba923385c0f5f4deaec0e8f551e45fdc304e8076fab85d651e9d0e	6358	cache	no		skip	Python byte-code cache
+ec2-L1r/out/L1-setup.out	dfdc9c9e38dd04e535fec85db16d6957c3ca833f7c425e748d4c4aae4ad3022f	1071	output	no		skip	output, log or lock state
+ec2-L1r/out/L2a-install.out	4e60c08eb1a91c0e49b23783ab8dc257e57ed3a776fe46a2845cd0bb0156f469	401	output	no		skip	output, log or lock state
+ec2-L1r/out/L2a2-install-2.out	7171251d919833aa57b7f6a0f3bcadb62067c26bcfe6cf4e93341a7afd4ec9b0	154	output	no		skip	output, log or lock state
+ec2-L1r/out/L2a2-install.out	0f0083a879414451de7344aebab9658084fdbc20aecdf4c184a047d78506660a	154	output	no		skip	output, log or lock state
+ec2-L1r/out/L2b-install.out	dc2474fa3e6215cc43bb0f9a5790bf3cac1ae2e8b88916391f92256c358e72ac	6789	output	no		skip	output, log or lock state
+ec2-L1r/out/L3-gate-start.out	4d336ab3114a970578e0708c8c52b14dccb87948f676063c12f3c461631a649a	1674	output	no		skip	output, log or lock state
+ec2-L1r/out/P1-probe-2.out	e74aaba34bcda9a1dee4417c1bd24a8da4c8c51320968500ddc831f2b80b7712	8934	output	no		skip	output, log or lock state
+ec2-L1r/out/P1-probe.out	41e8a7f4808407fe8422816026b328238a5a89b9e9d016c8014e0437146680a5	10534	output	no		skip	output, log or lock state
+ec2-L1r/out/P2-probe.out	71645feaa968e09dc219a6e88c4c5e7cd5fc977ffe9f22c45719ff0246e0cd77	1096	output	no		skip	output, log or lock state
+ec2-L1r/out/R1-check.out	0485bca53747929730a695eb3607afe0e820ab8c81cc7914df1a326be5e22b50	1013	output	no		skip	output, log or lock state
+ec2-L1r/upload/SHA256SUMS	e10a3728c9b6a5d11b9ae533cae24a716ee180f32b9bdacb8a3f860a08698a6a	171	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-L1r/upload/manifest.L1r.tsv	3443e70ac9d78ff3c428bfddc3fa311873f38b161b761637d41b69560f1e6768	574	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-L1r/upload/project_meta.L1r.json	c4c5b946d8f8623d045ea6f0ac872b37ff9e2a5eb0fe12d0ece501329d52c081	1632	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch24/README.md	04fc7ee7c7159b9929cceebc5cf7b8babf6953558385616024fda7138e17b6ea	4397	doc	yes		copy	run notes of the directory
+ec2-batch24/build_batch24.py	5eb26ccf6985d47ab3ee6f189b954aafa4a087ce1adfee93b8992b3521a04013	6610	machine setup or change (via ssm.sh)	yes	referenced by ec2-batch24/README.md	copy	
+ec2-batch24/upload/SHA256SUMS	f4a9b0a9f8ebacf487d349a3b0b14f88cd6c418fb0eff2b65886ec3dda07e85e	354	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch24/upload/manifest.batch24.tsv	fd837202240cf03b37f9f573ecaae259569f419f2eef96dd3aa4df778578ea9f	4250	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch24/upload/parts.batch24.assign.tsv	5dc8254c3e65facb4c4448cba5fcd81d000adc1e570d1a487fb6e77ff4ede6af	1089	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch24/upload/parts.batch24.tsv	82fd2741bdbfd8d299c1e52212602a94efafe536fe05953261f348f6ffe48794	873	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch24/upload/project_meta.batch24.json	28ddbccc4ba973ff7b105e24f2b0a2e9399e829eddfc283caa0548d956ceb1a3	48999	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch24/record/manifest.batch24b1.tsv	e3da15428a31cfce0f5f13ea08c2e9f01a477a7b8227c228c5191ce2c92f8d2f	1203	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch24/record/manifest.batch24b2.tsv	47b211e89c64c9cf1efd72f3c1142c17dc9f2689150df63103bfbfb66c69ac58	1031	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch24/record/manifest.batch24b3.tsv	5a08431ead500ea493ca32ae4677c26469c116428392024e0701c69c67d67802	1053	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch24/record/manifest.batch24b4.tsv	eb866d4228dea77722930f830a819331c71704473c6819d6a9b9277044dc33c0	989	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch24/record/manifest.batch24b5.tsv	ec7bccb253ab6ff74dde5d7c890bdc1dced70184e28cdb63a83c2ec7e5e9a44b	1027	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch24/scripts/S1-feed-line.sh	0ea1a05823ed83f57fff8fa2c7bf8a0c05f7c0d685678b6bfa27f5317d65d2e8	1207	part feed	yes	referenced by ec2-batch23/README.md	copy	
+ec2-batch25/README.md	897ac9edbac94cd9a9a8c20ce033abb1ccb46bbbcd7265cca9d84bc45877bfa7	3106	doc	yes		copy	run notes of the directory
+ec2-batch25/upload/SHA256SUMS	d020bb4c25f6077c3cb39fe3a2d496e748f33d46d4398592cfe5a62a3cb1dbd6	354	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch25/upload/manifest.batch25.tsv	ec96e8f8712a384071394a6a5517e0420244887a433ebfcf8d0092e17f5a272d	6994	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch25/upload/parts.batch25.assign.tsv	6ceeb4181ee835097a379f9b650f0e45eb902a1827e2776a7fbc2de6eb63f813	2474	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch25/upload/parts.batch25.tsv	7a03fe77b4a8e8672a156748bcc4fb96ac0eb9c1ea311c864bf35837863ef491	896	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch25/upload/project_meta.batch25.json	ef49e69eb726ec37e4ec197ee014560d9759c78d6315e7c78f75f6bac3e57403	44574	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch25/scripts/S1-feed-line.sh	d3790b997bde155a04404aa4a820889c9349780ba6fb9a89f77c181d97a1486a	1207	part feed	yes	referenced by ec2-batch23/README.md	copy	
+ec2-batch25/record/labels.batch25.csv	82fefe2b81d70f227a9f433a7c5b0a5d87092b896cd9e5b7ad52a6176b6075e8	10410	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch25/record/manifest.batch25.order.tsv	404046ae111421bcf7b607228cadad8a62c0e14853d984d5f504e34cd1c7d01c	7295	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch25/record/manifest.batch25a1.tsv	4ca2a4823fb8aae4abf5fd88677b7216b4823975d68905e6c02ad7fc2005cc33	1322	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch25/record/manifest.batch25a2.tsv	ae6f836f3d347b0cbc7781de4356c6908bfd377a184f26211c782c7c7e8a2c23	2134	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch25/record/manifest.batch25a3.tsv	c4315fd681822eb90b04894e3617f6e6a5a0914d52794e626a3bff05fd505558	2435	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch25/record/manifest.batch25a4.tsv	971d11ffeae2b65a57c81ab389ee7c96920b506ad2f36c0cc0f072bd7bac2475	1883	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch25/record/manifest.batch25a5.tsv	8ce7853fdc215eb5da4884f4f5641eb3cf558c7cc64169c5f43d88b8b7fde749	428	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch25/record/predicted_hours.txt	b02b05a94bb375439027c300a62d2a5a460d2ef1d95fa0b2eb980211940a5858	2847	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch25/out/s25-enqueue-a.out	137eab7dab0c72f0cc46a6328d37875da67b0964780ff88126c1d7a4e09337f5	1288	output	no		skip	output, log or lock state
+ec2-batch26/README.md	73cc8f324924c4315f200bcfe23a2a560f9a155f82ccf6d67cb39fc64498dadd	2798	doc	yes		copy	run notes of the directory
+ec2-batch26/upload/SHA256SUMS	992f2e2ebcee7fabe4ad9981007c5173cdbbc1a4c3d1249e7b44471a8756d951	354	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch26/upload/manifest.batch26.tsv	52310bb9c195798851302c67ecb6ead376f714659e54b570261363ac4b5aebf0	404	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch26/upload/parts.batch26.assign.tsv	48782e5d3d65ea8a7483c07a9a5dfff5efcc1cce1bedcde8aa561a152aebbc11	59	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch26/upload/parts.batch26.tsv	2c86b5f7ec3a8b71e6e0af145c2d65fbb01b838102483eae00e3a8c65db6cd96	456	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch26/upload/project_meta.batch26.json	2642d1873361e74a1911df38210072ecd2ce0fbf916fa7bf87e1d87c564fac18	865	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch26/record/frame.batch26.csv	be5e046133013c86b49ac3da4255f4190f5baaaaec30bfa7c9ecb0b51e08ef66	320	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch26/record/labels.batch26.csv	6c8a1b98c2439df835c533e66e60de28cc92b85f9e3985cc63ce953cd1b38127	273	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch26/record/manifest.batch26.order.tsv	04e803ab8388a57b56c9e7a9f4a8e0fe22cd78af3e0394f86230c47d49c6d27b	164	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch26/record/manifest.batch26a1.tsv	af0fae03f1c7e27c5487290643539901c6086c07c222c3afc91af7d6911feccb	410	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch26/record/near_miss.tsv	9959059e32d0431dba35b48456ef94525fd2f1937cd34bcf33ab9f41e785e929	415	input data	yes		skip	manifest, parts, meta or checksum input; s7-run holds the build inputs
+ec2-batch26/scripts/S1-feed-line.sh	5848735f2d21b352fd787b7ce0122d369fbae1cbee1a2090ec74954d56ec07ce	1207	part feed	yes	referenced by ec2-batch23/README.md	copy	
+ec2-batch26/out/s26-enqueue-a.out	b1cb2cb0580accc9865c83d2b60bb34663dbd4d3ee4605fc496ebe3c1a10e33c	887	output	no		skip	output, log or lock state
+tool-bundles-20261014/SHA256SUMS	25ab7db8bcea1a3a9ee829fcddd6d1dec0cce56f9de463188e99aea210a1fe68	176	tool artifact	yes		skip	tool bundle or its checksum; tools.lock records it
+tool-bundles-20261014/SHA256SUMS.23e4ccb	43517c6d2d1c14066d677398f088a731352f7a5f1026a73e9f40a4951c97258f	88	tool artifact	yes		skip	tool bundle or its checksum; tools.lock records it
+tool-bundles-20261014/SHA256SUMS.srcml-543fed6a	b8b55da648b54e518e4ea20b9ea7f1baa48332d4d2b1dbe0886f123550633e50	88	tool artifact	yes		skip	tool bundle or its checksum; tools.lock records it
+tool-bundles-20261014/cregit-23e4ccb.bundle	6a7470fe32ff78a726e39058e70e651c28a2096fce6261d7b8d93c9dbf43d746	26162	tool artifact	yes		skip	tool bundle or its checksum; tools.lock records it
+tool-bundles-20261014/srcml-543fed6a.bundle	b6b8013cbd0ffa42e24ca63c16fcecade0200e10010a17d43250e905eda0f2e4	4021	tool artifact	yes		skip	tool bundle or its checksum; tools.lock records it

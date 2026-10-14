@@ -1,0 +1,7 @@
+[Unit]
+Description=cregit census batch5/batch1rest spot: wait for all parts, copy results to S3, write DONE, terminate if every census on the instance finalized
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/census-b5-finalize
+TimeoutStartSec=infinity

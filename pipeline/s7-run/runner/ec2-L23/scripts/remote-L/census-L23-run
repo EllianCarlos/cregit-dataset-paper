@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# census-L23-run (census-L23.service): the 8 L projects of batch 23, the DP8L v4 near-miss supplement
+# (user decision 2026-10-11 ~19:00 UTC), longest predicted first (manifest.L23.tsv, the rows of
+# manifest.batch23L.tsv in LPT order), with 4 workers, on the big EC2, on their own loop XFS /bL23
+# (own rename lock) with their own ctp clone /bL23/ctp, cregit copy /bL23/cregit-ec2 (57551d7: the
+# git blame -C100 time limit of 3600 s per file, then plain blame; gated before the start; path
+# fixed), config and output /bL23/census-2026-10-L23. The same census flags as census-L7-20b.
+# Stop after the running projects: touch /bL23/ctp/STOP (census-batch4-guard does it below 800 GiB
+# free on /data).
+set -euo pipefail
+I=/home/ec2-user/L23-input; M=$I/manifest.L23.tsv
+export CTP_CONFIG=/home/ec2-user/census-L23.cfg
+cd /bL23/ctp
+n=$(grep -c -v -e '^#' -e '^[[:space:]]*$' "$M")
+echo "=== $(date -u +%FT%TZ) census-L23 start (cregit $(git -C /bL23/cregit-ec2 rev-parse --short HEAD) at /bL23/cregit-ec2, ctp $(git rev-parse --short HEAD), $n projects, 4 workers, out /bL23/census-2026-10-L23)"
+exec .venv/bin/python ctp.py census --manifest "$M" --project-meta "$I/project_meta.L23.json" \
+    --workers 4 --retries 3 --skip-html --latest --tokenizer-worker \
+    --blame-jobs 4 --memory-limit 16GB --min-free-mem-gb 24 --disk-floor-gb 300

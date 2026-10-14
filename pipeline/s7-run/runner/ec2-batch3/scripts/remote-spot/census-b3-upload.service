@@ -1,0 +1,8 @@
+[Unit]
+Description=cregit census batch 3 spot: copy finished projects to S3 done/
+
+[Service]
+Type=oneshot
+User=ec2-user
+ExecStart=/usr/local/bin/census-b3-upload
+TimeoutStartSec=3600

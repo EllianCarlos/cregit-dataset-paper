@@ -1,0 +1,8 @@
+[Unit]
+Description=cregit census batch 3L: live status to S3
+
+[Service]
+Type=oneshot
+User=ec2-user
+ExecStart=/usr/local/bin/census-batch3L-live
+TimeoutStartSec=300

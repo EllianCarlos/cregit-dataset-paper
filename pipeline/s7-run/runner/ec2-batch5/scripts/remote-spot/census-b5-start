@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# census-b5-start (root): start the batch5 / batch1rest parts of this spot instance: census-b5-prep
+# (inputs, derived part manifests, run manifests minus done/OK), then the interruption watcher, the
+# upload and live timers, and census-b5@<id> for each part with projects left. Needs CHECK OK from
+# census-b5-check. Adds b5 to /etc/cregit-census/censuses (read by census-spot-decide) when a part starts.
+set -euo pipefail
+E=/etc/cregit-census/s5; . $E/batch.env; I=/home/ec2-user/s5-input
+grep -q '^CHECK OK' $E/check.result 2>/dev/null || { echo "no CHECK OK in $E/check.result: run census-b5-check first"; exit 1; }
+for id in $IDS; do . $E/$id.env
+  [ -e "$CTP/STOP" ] && { echo "STOP exists in $CTP: not starting"; exit 1; }
+  systemctl is-active --quiet census-b5@$id.service && { echo "census-b5@$id already active"; exit 1; }
+done
+/usr/local/bin/census-b5-prep $HALF
+mkdir -p /data/logs; chown ec2-user: /data/logs
+todo=""; for id in $IDS; do n=$(grep -c -v -e '^#' -e '^[[:space:]]*$' $I/manifest.$id.run.tsv || true); [ "$n" -gt 0 ] && todo="$todo $id"; done
+[ -n "$todo" ] || { echo "no part has projects left: nothing to start"; exit 0; }
+touch /etc/cregit-census/censuses; grep -qx b5 /etc/cregit-census/censuses || echo b5 >> /etc/cregit-census/censuses
+systemctl start census-b5-watch.service census-b5-upload.timer census-b5-live.timer
+for id in $todo; do systemctl start census-b5@$id.service
+  echo "started census-b5@$id ($(grep -c -v -e '^#' -e '^[[:space:]]*$' $I/manifest.$id.run.tsv) projects) $(date -u +%FT%TZ)"; done
+sleep 30
+systemctl is-active census-b5-watch.service census-b5-upload.timer census-b5-live.timer $(for id in $IDS; do echo census-b5@$id.service; done) | tr '\n' ' '; echo
+for id in $todo; do tail -n 2 /data/logs/b5-$id.log | cut -c1-220; done

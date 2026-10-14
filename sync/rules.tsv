@@ -42,6 +42,8 @@ study	include	^s7-run/(census\.cfg|labels\.batch2[56]\.csv|failed-projects\.(tsv
 study	include	^s7-run/local-[a-d]/(run|gate)\.sh$
 study	include	^s7-run/local-[a-d]/(build_run_manifest|build_manifest_lpt|publish_done)\.py$
 study	include	^s7-run/local-[a-d]/(census\.cfg|gate-result\.txt|manifest\.local-[a-d]\.tsv|parts\.taken|lpt-order\.txt|project_meta\.local-[a-d]\.json\.sha256)$
+# S7: the EC2 runner scripts (copies of the scripts that ran the dataset build, see runner/README.md).
+study	include	^s7-run/runner/
 #
 # Exclusions: logs, run output, caches, one-shot work files.
 study	exclude	(^|/)logs/

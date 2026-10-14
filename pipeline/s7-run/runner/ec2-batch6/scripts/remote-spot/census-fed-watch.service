@@ -1,0 +1,9 @@
+[Unit]
+Description=cregit census fed spot parts: watch for a spot interruption notice (IMDSv2)
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/census-fed-watch
+Restart=always
+RestartSec=5

@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+# census-b5-prep [a|b] (root): inputs of the batch5 / batch1rest parts of this spot half (default: HALF
+# of /etc/cregit-census/s5/batch.env). Copies s3://BUCKET/batch5/input/ to /home/ec2-user/s5-input
+# (sha256-checked), derives the part manifests manifest.<id>.tsv from manifest.<workload>.tsv,
+# parts.tsv and parts.assign.tsv (census-b5-derive = split_batch5.py --derive; each sha256 must equal
+# parts.tsv), and writes for each part of the half manifest.<id>.run.tsv = the part manifest minus
+# every project with s3://BUCKET/<workload>/<part>/done/<project>/OK (u order kept).
+set -euo pipefail
+export AWS_PAGER=""
+X=${1:-$(. /etc/cregit-census/s5/batch.env 2>/dev/null; echo ${HALF:-})}
+case $X in a|b) ;; *) echo "usage: census-b5-prep a|b" >&2; exit 2 ;; esac
+B=s3://${RUNNER_BUCKET}; I=/home/ec2-user/s5-input
+mkdir -p $I
+aws s3 cp $B/batch5/input/ $I/ --recursive --only-show-errors
+(cd $I && sha256sum --quiet -c SHA256SUMS) && echo "inputs: sha256 ok ($(grep -c . $I/SHA256SUMS) files)"
+out=$(python3 -I /usr/local/bin/census-b5-derive --derive $I) || { echo "$out"; echo "DERIVE FAILED: a part manifest differs from parts.tsv"; exit 1; }
+echo "$out" | grep "^$X " || true
+echo "part manifests: derived, sha256 equal to parts.tsv"
+awk -F'\t' -v h=$X '!/^#/ && $1==h {print $2, $3}' $I/parts.tsv | while read -r wl p; do
+  { aws s3 ls "$B/$wl/$p/done/" --recursive || true; } | awk '$4 ~ /\/OK$/ {n=split($4,a,"/"); print a[n-1]}' | sort -u > $I/done.$wl$p.txt
+done
+python3 - $I $X <<'P'
+import sys, datetime
+I, X = sys.argv[1], sys.argv[2]
+now = datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds")
+for line in open(f"{I}/parts.tsv").read().splitlines():
+    c = line.split("\t")
+    if line.startswith("#") or c[0] != X:
+        continue
+    pid = c[1] + c[2]
+    lines = open(f"{I}/manifest.{pid}.tsv").read().splitlines()
+    cols = next(l for l in lines if l.startswith("# Columns:"))
+    rows = [l for l in lines if l.strip() and not l.startswith("#")]
+    done = set(open(f"{I}/done.{pid}.txt").read().split())
+    keep = [r for r in rows if r.split("\t")[0] not in done]
+    with open(f"{I}/manifest.{pid}.run.tsv", "w") as f:
+        f.write(f"# Run manifest of part {pid}, written {now} by census-b5-prep: {len(keep)} of {len(rows)}"
+                f" projects; {len(rows) - len(keep)} already in {c[1]}/{c[2]}/done/ are left out. u order kept.\n{cols}\n")
+        f.writelines(r + "\n" for r in keep)
+    print(f"{pid}: {len(keep)} of {len(rows)} projects to run ({len(rows) - len(keep)} already done)")
+P
+chown -R ec2-user: $I

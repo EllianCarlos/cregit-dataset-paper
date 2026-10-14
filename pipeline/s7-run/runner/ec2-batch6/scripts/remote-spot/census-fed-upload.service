@@ -1,0 +1,8 @@
+[Unit]
+Description=cregit census fed spot parts: copy finished projects to S3 <workload>/<part>/done/
+
+[Service]
+Type=oneshot
+User=ec2-user
+ExecStart=/usr/local/bin/census-fed-upload
+TimeoutStartSec=3600

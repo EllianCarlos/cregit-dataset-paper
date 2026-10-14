@@ -1,0 +1,7 @@
+[Unit]
+Description=cregit census L1r: oom_score_adj -500 on the firm step of census L1r
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/census-L1r-firm
+TimeoutStartSec=60

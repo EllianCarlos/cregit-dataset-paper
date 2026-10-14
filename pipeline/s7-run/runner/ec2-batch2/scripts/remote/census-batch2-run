@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Census batch 2 (EC2 m6id.24xlarge). Mirrors s7-run/run_batch1.sh, with the batch 2
+# manifest in its u order, cregit 95cdc88 at /data/cregit-ec2, output on the RAID0.
+# Stop after the running projects: touch /home/ec2-user/ctp/STOP. Resume: start the unit again.
+set -euo pipefail
+I=/home/ec2-user/batch2-input
+export CTP_CONFIG=/home/ec2-user/census-batch2.cfg
+cd /home/ec2-user/ctp
+echo "=== $(date -u +%FT%TZ) census-batch2 start (cregit $(git -C /data/cregit-ec2 rev-parse --short HEAD), ctp $(git rev-parse --short HEAD))"
+exec .venv/bin/python ctp.py census --manifest "$I/manifest.batch2.tsv" \
+    --project-meta "$I/project_meta.batch2.json" \
+    --workers 20 --retries 3 --skip-html --latest --tokenizer-worker \
+    --blame-jobs 4 --memory-limit 8GB --min-free-mem-gb 24 --disk-floor-gb 500

@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# census-L1r-run (census-L1r.service): census L1r, the batch 1 rerun of the 2 L projects
+# torvalds__linux and SAP__project-foxhound (user decision 2026-10-12 ~14:10 UTC: "Big EC2 L queue").
+# Batch 1 ran with the old cregit 157cf8b; this run tokenizes them again with the current code. The 2 rows of
+# manifest.batch1.tsv in LPT order (manifest.L1r.tsv), 2 workers, on the big EC2, on their own loop XFS
+# /bL1r (own rename lock) with their own ctp clone /bL1r/ctp, cregit copy /bL1r/cregit-ec2 (57551d7: the
+# git blame -C100 time limit of 3600 s per file, then plain blame; gated before the start; path
+# fixed), config and output /bL1r/census-2026-10-L1r. The census flags of census-L23 (--latest: pin
+# the HEAD of the start day), with 2 workers.
+# Stop after the running projects: touch /bL1r/ctp/STOP (census-batch4-guard does it below 800 GiB
+# free on /data).
+set -euo pipefail
+I=/home/ec2-user/L1r-input; M=$I/manifest.L1r.tsv
+export CTP_CONFIG=/home/ec2-user/census-L1r.cfg
+cd /bL1r/ctp
+n=$(grep -c -v -e '^#' -e '^[[:space:]]*$' "$M")
+echo "=== $(date -u +%FT%TZ) census-L1r start (cregit $(git -C /bL1r/cregit-ec2 rev-parse --short HEAD) at /bL1r/cregit-ec2, ctp $(git rev-parse --short HEAD), $n projects, 2 workers, out /bL1r/census-2026-10-L1r)"
+exec .venv/bin/python ctp.py census --manifest "$M" --project-meta "$I/project_meta.L1r.json" \
+    --workers 2 --retries 3 --skip-html --latest --tokenizer-worker \
+    --blame-jobs 4 --memory-limit 16GB --min-free-mem-gb 24 --disk-floor-gb 300

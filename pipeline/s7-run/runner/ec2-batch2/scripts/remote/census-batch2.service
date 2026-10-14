@@ -1,0 +1,21 @@
+[Unit]
+Description=cregit census batch 2 (ctp census, 20 workers)
+Wants=network-online.target
+After=network-online.target nix-daemon.service
+RequiresMountsFor=/data
+OnSuccess=census-batch2-finalize.service
+OnFailure=census-batch2-finalize.service
+
+[Service]
+Type=simple
+User=ec2-user
+Group=ec2-user
+WorkingDirectory=/home/ec2-user/ctp
+ExecStart=/usr/local/bin/census-batch2-run
+StandardOutput=append:/data/logs/batch2.log
+StandardError=append:/data/logs/batch2.log
+Restart=no
+LimitNOFILE=1048576
+LimitNPROC=infinity
+TasksMax=infinity
+TimeoutStopSec=300

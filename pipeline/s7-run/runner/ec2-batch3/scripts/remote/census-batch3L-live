@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Every 10 min (census-batch3L-live.timer): status of census batch 3L to s3://BUCKET/batch3L/live/.
+set -uo pipefail
+D=s3://${RUNNER_BUCKET}/batch3L/live
+T=$(mktemp -d); trap 'rm -rf "$T"' EXIT
+export CTP_CONFIG=/home/ec2-user/census-batch3L.cfg
+C=/home/ec2-user/ctp-b3L; M=/home/ec2-user/batch3L-input/manifest.batch3L.tsv
+/usr/local/bin/census-steps "$C" "$M" --highlight '' > "$T/steps.txt" 2>&1
+{ echo "as of $(date -u +%FT%TZ)  census-batch3L: $(systemctl is-active census-batch3L.service) ($(systemctl show census-batch3L.service -p Result --value))  waiter: $(systemctl is-active census-batch3L-wait.service)"
+  echo "waiter status: $(cat /run/census-batch3L-wait.status 2>/dev/null || echo none)"
+  echo "census-batch2: $(systemctl is-active census-batch2.service)"
+  echo "uptime: $(uptime)"
+  echo "MemAvailable: $(awk '/MemAvailable/{printf "%.1f GiB", $2/1048576}' /proc/meminfo)   /data free: $(df -BG --output=avail /data | tail -1 | tr -d ' ')"
+  echo
+  (cd "$C" && .venv/bin/python ctp.py progress --manifest "$M" --last 10 2>&1)
+  echo; echo "=== steps"; cat "$T/steps.txt"
+} > "$T/progress.txt"
+tail -n 300 /data/logs/batch3L.log > "$T/batch3L.log.tail" 2>/dev/null || true
+{ date -u +%FT%TZ; uptime; cat /proc/meminfo; df -h /data /; } > "$T/system.txt"
+[ -f "$C/ledger.jsonl" ] && cp "$C/ledger.jsonl" "$T/ledger.jsonl"
+aws s3 cp "$T/" "$D/" --recursive --only-show-errors

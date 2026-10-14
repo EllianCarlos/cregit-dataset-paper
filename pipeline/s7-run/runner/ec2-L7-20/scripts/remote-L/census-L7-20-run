@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# census-L7-20-run (census-L7-20.service): the 55 L projects of batches 7-20 (one queue, longest
+# predicted first; user decision 2026-10-09 ~23:50 UTC) with 6 workers, on the
+# batch 2 instance, on their own loop XFS /bL7 (own rename lock) with their own ctp clone /bL7/ctp,
+# cregit copy /bL7/cregit-ec2 (checked out at 1f17663 and gated before the start; path fixed), config and output
+# /bL7/census-2026-10-L7-20. Stop after the running projects:
+# touch /bL7/ctp/STOP (census-batch4-guard does it below 800 GiB free on /data).
+set -euo pipefail
+I=/home/ec2-user/L7-20-input; M=$I/manifest.L7-20.tsv
+export CTP_CONFIG=/home/ec2-user/census-L7-20.cfg
+cd /bL7/ctp
+n=$(grep -c -v -e '^#' -e '^[[:space:]]*$' "$M")
+echo "=== $(date -u +%FT%TZ) census-L7-20 start (cregit $(git -C /bL7/cregit-ec2 rev-parse --short HEAD) at /bL7/cregit-ec2, ctp $(git rev-parse --short HEAD), $n projects, 6 workers, out /bL7/census-2026-10-L7-20)"
+exec .venv/bin/python ctp.py census --manifest "$M" --project-meta "$I/project_meta.L7-20.json" \
+    --workers 6 --retries 3 --skip-html --latest --tokenizer-worker \
+    --blame-jobs 4 --memory-limit 16GB --min-free-mem-gb 24 --disk-floor-gb 300

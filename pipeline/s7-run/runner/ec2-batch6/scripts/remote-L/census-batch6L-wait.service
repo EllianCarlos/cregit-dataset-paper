@@ -1,0 +1,10 @@
+[Unit]
+Description=cregit census batch 6L: wait until batch 4 frees slots, then start census-batch6L
+After=network-online.target
+RequiresMountsFor=/data /b6L
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/census-batch6L-wait
+Restart=on-failure
+RestartSec=60

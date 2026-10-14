@@ -1,0 +1,23 @@
+[Unit]
+Description=cregit census batch 3L (ctp census, the L projects of batch 3)
+Wants=network-online.target
+After=network-online.target nix-daemon.service
+RequiresMountsFor=/data
+OnSuccess=census-batch3L-finalize.service
+OnFailure=census-batch3L-finalize.service
+
+[Service]
+Type=simple
+User=ec2-user
+Group=ec2-user
+WorkingDirectory=/home/ec2-user/ctp-b3L
+ExecStart=/usr/local/bin/census-batch3L-run
+StandardOutput=append:/data/logs/batch3L.log
+StandardError=append:/data/logs/batch3L.log
+Restart=no
+# 2026-10-09: an OOM kill of one project must not stop the whole census (systemd default is stop)
+OOMPolicy=continue
+LimitNOFILE=1048576
+LimitNPROC=infinity
+TasksMax=infinity
+TimeoutStopSec=300

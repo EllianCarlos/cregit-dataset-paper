@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# census-other-done SELF: exit 0 when the OTHER census on the batch 2 instance has finalized,
+# i.e. its final/DONE is in S3 (a finalize writes DONE only after its upload check passed) and
+# its census units are not active. SELF=batch2 -> other is batch3L (waiter + census);
+# SELF=batch3L -> other is batch2. Each finalize writes its own DONE before it asks, so the
+# second census to finish always sees the first one's DONE and powers off.
+# Test overrides: OTHER_DONE_URL (an S3 object), OTHER_UNITS (space-separated; "" = none).
+set -uo pipefail
+B=s3://${RUNNER_BUCKET}
+case ${1:-} in
+  batch2)  url=${OTHER_DONE_URL:-$B/batch3L/final/DONE}; units=${OTHER_UNITS-census-batch3L-wait.service census-batch3L.service} ;;
+  batch3L) url=${OTHER_DONE_URL:-$B/batch2/final/DONE};  units=${OTHER_UNITS-census-batch2.service} ;;
+  *) echo "usage: census-other-done batch2|batch3L" >&2; exit 2 ;;
+esac
+for u in $units; do
+  s=$(systemctl is-active "$u")
+  case $s in active|activating|reloading|deactivating) echo "other census not finalized: $u is $s"; exit 1 ;; esac
+done
+aws s3 ls "$url" >/dev/null 2>&1 || { echo "other census not finalized: $url is missing"; exit 1; }
+echo "other census finalized: $url exists, units not active: ${units:-none}"

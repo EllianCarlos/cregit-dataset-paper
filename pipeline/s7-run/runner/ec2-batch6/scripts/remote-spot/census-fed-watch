@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+# census-fed-watch (census-fed-watch.service, root): poll IMDSv2 spot/instance-action every 5 s, as
+# census-b5-watch does for the census-b5 parts. On a notice: write /run/census-spot-interrupted (the
+# feeder then starts nothing), touch STOP in every started fed part's ctp clone (no new project starts),
+# write INTERRUPTED (time, notice, running projects) and the part's ledger to each part's
+# s3://BUCKET/<workload>/<part>/live/ and to feed/<half>/live/, and run census-fed-upload once. EC2
+# terminates the instance about 2 min later; restart_spot.sh relaunches the unfinished work, with the
+# queued and unfinished fed parts.
+# Test mode: if /run/census-fed-fake-spot-notice exists, its content is the notice; STOP then goes to
+# /run/census-fed-STOP.test.<id>, the S3 names get a .test suffix and /run/census-spot-interrupted is
+# not written, so nothing stops. The fake file is removed after it is handled and watching goes on.
+set -uo pipefail
+. /usr/local/bin/census-fed-common
+FAKE=/run/census-fed-fake-spot-notice
+IMDS=http://169.254.169.254/latest
+IID=$(cat /sys/devices/virtual/dmi/id/board_asset_tag)
+handle() {  # $1 notice, $2 suffix ("" or .test)
+  local notice=$1 sfx=$2 T id X; T=$(mktemp -d); X=$(fed_half)
+  for id in $(fed_started); do . $FED/$id.env
+    if [ -z "$sfx" ]; then stop=$CTP/STOP; else stop=/run/census-fed-STOP.test.$id; fi
+    touch "$stop"; chown ec2-user: "$stop"
+  done
+  { echo "spot interruption notice seen $(date -u +%FT%TZ) on $IID (spot $X)${sfx:+  TEST, census not stopped}"
+    echo "notice: $notice"; echo "queue: $(tr '\n' ',' < $FED/queue)"; echo "started: $(fed_started | tr '\n' ' ')"; } > $T/INTERRUPTED$sfx
+  aws s3 cp $T/INTERRUPTED$sfx "$BUCKET/feed/$X/live/INTERRUPTED$sfx" --only-show-errors
+  for id in $(fed_started); do . $FED/$id.env; mkdir -p $T/$id
+    { cat $T/INTERRUPTED$sfx
+      echo "part $id STOP: $([ -z "$sfx" ] && echo "$CTP/STOP" || echo /run/census-fed-STOP.test.$id)"
+      /usr/local/bin/census-steps "$CTP" $IN/manifest.$id.run.tsv --highlight '' 2>&1
+      echo "uploaded to done/ so far: $(ls $MP/uploaded 2>/dev/null | wc -l)"
+    } > "$T/$id/INTERRUPTED$sfx"
+    [ -f "$CTP/ledger.jsonl" ] && cp "$CTP/ledger.jsonl" "$T/$id/ledger$sfx.jsonl"
+    aws s3 cp "$T/$id/" "$BUCKET/$WL/$PART/live/" --recursive --only-show-errors
+  done
+  echo "$(date -u +%FT%TZ) handled notice${sfx:+ (test)}: $notice"
+  sudo -u ec2-user /usr/local/bin/census-fed-upload
+  rm -r "$T"
+}
+echo "$(date -u +%FT%TZ) watching $IMDS/meta-data/spot/instance-action every 5 s (fed parts)"
+while :; do
+  if [ -e $FAKE ]; then handle "$(cat $FAKE)" .test; rm -f $FAKE; sleep 5; continue; fi
+  tok=$(curl -s -m 2 -X PUT "$IMDS/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 300")
+  if [ -n "$tok" ]; then
+    code=$(curl -s -m 2 -o /run/census-fed-instance-action -w '%{http_code}' -H "X-aws-ec2-metadata-token: $tok" "$IMDS/meta-data/spot/instance-action")
+    if [ "$code" = 200 ]; then echo "$(date -u +%FT%TZ) $(cat /run/census-fed-instance-action)" > /run/census-spot-interrupted
+      handle "$(cat /run/census-fed-instance-action)" ""; echo "real notice handled; idle until termination"; exec sleep infinity; fi
+  fi
+  sleep 5
+done

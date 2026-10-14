@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# Every 10 min (census-L7-20b-live.timer): status of census L7-20b to s3://BUCKET/L7-20b/live/:
+# progress.txt (first line "as of <ts>  census-L7-20b: <state> ...", read by the local watchdog: it
+# must contain ": active" while the census runs), steps.txt, L7-20b.log.tail, ledger.jsonl, system.txt.
+set -uo pipefail
+export AWS_PAGER=""
+D=s3://${RUNNER_BUCKET}/L7-20b/live
+I=/home/ec2-user/L7-20b-input
+T=$(mktemp -d); trap 'rm -r "$T"' EXIT
+s=$(systemctl is-active census-L7-20b.service); w=$(systemctl is-active census-L7-20b-wait.service)
+# while the waiter holds the start, the state word is "waiting" (the local watchdog accepts it)
+case $s in active|activating) ;; *) case $w in active|activating) s=waiting ;; esac ;; esac
+/usr/local/bin/census-steps /bL7b/ctp "$I/manifest.L7-20b.tsv" --highlight '' > "$T/steps.txt" 2>&1
+{ echo "as of $(date -u +%FT%TZ)  census-L7-20b: $s  waiter=$w  finalize=$(systemctl is-active census-L7-20b-finalize.service)"
+  echo "waiter: $(cat /run/census-L7-20b-wait.status 2>/dev/null || echo none)"
+  echo "census-L7-20=$(systemctl is-active census-L7-20.service)  census-L22=$(systemctl is-active census-L22.service)  census-batch5L=$(systemctl is-active census-batch5L.service)  census-batch2/3L/4p1-3/6L=$(systemctl is-active census-batch2.service census-batch3L.service census-batch4p1.service census-batch4p2.service census-batch4p3.service census-batch6L.service | tr '\n' ' ')"
+  # the split watcher: it stops census L7-20 before row 17, so no project runs in both queues
+  echo "split: $(systemctl is-active census-L7-20-split.timer) $(cat /run/census-L7-20-split.status 2>/dev/null || echo none)$([ -e /bL7/ctp/STOP ] && echo '  /bL7/ctp/STOP present')"
+  echo "uptime: $(uptime)"
+  echo "MemAvailable: $(awk '/MemAvailable/{printf "%.1f GiB", $2/1048576}' /proc/meminfo)   /data free: $(df -BG --output=avail /data | tail -1 | tr -d ' ')   /bL7b free: $(df -BG --output=avail /bL7b | tail -1 | tr -d ' ')   image: $(du -BG /data/loop/bL7b.img | cut -f1)$([ -e /bL7b/ctp/STOP ] && echo '  STOP present')"
+  echo "guard: $(cat /run/census-batch4-guard.status 2>/dev/null || echo none)"
+  [ -e /run/census-batch4-guard.tripped ] && echo "GUARD TRIPPED: $(cat /run/census-batch4-guard.tripped)"
+  echo; (cd /bL7b/ctp && CTP_CONFIG=/home/ec2-user/census-L7-20b.cfg .venv/bin/python ctp.py progress --manifest "$I/manifest.L7-20b.tsv" --last 5 2>&1)
+  echo; cat "$T/steps.txt"
+} > "$T/progress.txt"
+tail -n 300 /data/logs/L7-20b.log > "$T/L7-20b.log.tail" 2>/dev/null
+[ -f /bL7b/ctp/ledger.jsonl ] && cp /bL7b/ctp/ledger.jsonl "$T/ledger.jsonl"
+{ date -u +%FT%TZ; uptime; cat /proc/pressure/io /proc/pressure/cpu /proc/pressure/memory 2>/dev/null; cat /proc/meminfo; df -h /data /b4p1 /b4p2 /b4p3 /b5L /b6L /bL7 /bL22 /bL7b /; du -h /data/loop/*.img; } > "$T/system.txt" 2>&1
+aws s3 cp "$T/" "$D/" --recursive --only-show-errors

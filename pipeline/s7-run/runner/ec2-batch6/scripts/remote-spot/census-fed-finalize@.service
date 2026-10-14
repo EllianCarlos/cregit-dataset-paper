@@ -1,0 +1,7 @@
+[Unit]
+Description=cregit census fed spot part %i: copy results to S3, write DONE, feed the next part, terminate if every census on the instance finalized
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/census-fed-finalize %i
+TimeoutStartSec=infinity

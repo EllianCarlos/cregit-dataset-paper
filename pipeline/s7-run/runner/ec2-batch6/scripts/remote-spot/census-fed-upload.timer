@@ -1,0 +1,7 @@
+[Unit]
+Description=cregit census fed spot parts: copy finished projects to S3 every minute
+
+[Timer]
+OnActiveSec=1min
+OnUnitActiveSec=1min
+AccuracySec=10s

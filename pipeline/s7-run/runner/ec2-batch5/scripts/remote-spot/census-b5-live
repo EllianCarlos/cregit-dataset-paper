@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+# Every 10 min (census-b5-live.timer, ec2-user; census-b5-trim runs before it as root): status of the
+# batch5 / batch1rest parts of this spot instance to each part's s3://BUCKET/<workload>/<part>/live/:
+#   progress.txt  the one combined view of the instance (the same file in every part's live/). Its
+#                 first line is "as of <ts>  census-b5 on <iid> (spot <x>): <state> ( <id>=<unit state> ... )
+#                 finalize=<state>  batch3=<state>"; <state> is "active" while any part or the
+#                 finalize runs (the local watchdog greps ": active"), then "finalized" (every part
+#                 has its final DONE) or "stopped". Then load, memory, disks, and per part: unit,
+#                 free space, ctp progress and the step table.
+#   steps.txt     this part's step table;  <id>.log.tail;  ledger.jsonl;  system.txt (the instance).
+set -uo pipefail
+export AWS_PAGER=""
+E=/etc/cregit-census/s5; . $E/batch.env
+B=s3://${RUNNER_BUCKET}; I=/home/ec2-user/s5-input
+IID=$(cat /sys/devices/virtual/dmi/id/board_asset_tag)
+T=$(mktemp -d); trap 'rm -r "$T"' EXIT
+st=""; any=no; fin=yes
+for id in $IDS; do s=$(systemctl is-active census-b5@$id.service); st="$st $id=$s"
+  case $s in active|activating|deactivating) any=yes ;; esac
+  [ -e /w/$id/final-DONE ] || fin=no; done
+fz=$(systemctl is-active census-b5-finalize.service); case $fz in active|activating) any=yes ;; esac
+if [ $any = yes ]; then state=active; elif [ $fin = yes ]; then state=finalized; else state=stopped; fi
+b3=none; if grep -qx b3 /etc/cregit-census/censuses 2>/dev/null; then . /etc/cregit-census/batch.env; b3=inactive
+  for p in $PARTS; do case $(systemctl is-active census-b3@$p.service) in active|activating|deactivating) b3=active ;; esac; done; fi
+for id in $IDS; do . $E/$id.env
+  /usr/local/bin/census-steps "$CTP" $I/manifest.$id.run.tsv --highlight '' > "$T/steps.$id.txt" 2>&1; done
+{ echo "as of $(date -u +%FT%TZ)  census-b5 on $IID (spot $HALF): $state ($st )  finalize=$fz  batch3=$b3$([ -e /home/ec2-user/NO_SHUTDOWN ] && echo '  NO_SHUTDOWN')"
+  echo "uptime: $(uptime)"
+  echo "MemAvailable: $(awk '/MemAvailable/{printf "%.1f GiB", $2/1048576}' /proc/meminfo)   watcher: $(systemctl is-active census-b5-watch.service)"
+  echo "uploaded to done/: $(cat /w/*/uploaded/* 2>/dev/null | grep -c '^uploaded ')   hosts: $(df -BG --output=target,avail $(for id in $IDS; do . $E/$id.env; echo $HOST; done | sort -u) | tail -n +2 | tr -s ' ' | tr '\n' ' ')"
+  for id in $IDS; do . $E/$id.env
+    echo; echo "=== part $id ($WL/$PART): census-b5@$id $(systemctl is-active census-b5@$id.service) ($(systemctl show census-b5@$id.service -p Result --value)), $MP free $(df -BG --output=avail $MP | tail -1 | tr -d ' '), image $(du -BG $IMG | cut -f1)$([ -e $CTP/STOP ] && echo '  STOP present')$([ -e $MP/final-DONE ] && echo '  final DONE')"
+    (cd "$CTP" && CTP_CONFIG=$CFG .venv/bin/python ctp.py progress --manifest $I/manifest.$id.run.tsv --last 5 2>&1)
+    echo; cat "$T/steps.$id.txt"
+  done
+} > "$T/progress.txt"
+{ date -u +%FT%TZ; uptime; cat /proc/pressure/io /proc/pressure/cpu 2>/dev/null; cat /proc/meminfo; df -h /data /data[0-9]* /w/* / 2>/dev/null; du -h /data*/loop/*.img 2>/dev/null; } > "$T/system.txt"
+for id in $IDS; do . $E/$id.env; mkdir -p $T/p/$id
+  cp $T/progress.txt $T/system.txt $T/p/$id/; cp $T/steps.$id.txt $T/p/$id/steps.txt
+  tail -n 300 "$LOG" > $T/p/$id/$id.log.tail 2>/dev/null
+  [ -f "$CTP/ledger.jsonl" ] && cp "$CTP/ledger.jsonl" $T/p/$id/ledger.jsonl
+  aws s3 cp $T/p/$id/ "$B/$WL/$PART/live/" --recursive --only-show-errors
+done

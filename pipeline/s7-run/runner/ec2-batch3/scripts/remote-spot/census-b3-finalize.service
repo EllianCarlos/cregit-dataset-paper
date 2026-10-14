@@ -1,0 +1,7 @@
+[Unit]
+Description=cregit census batch 3 spot: copy results to S3, write DONE, terminate
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/census-b3-finalize
+TimeoutStartSec=infinity

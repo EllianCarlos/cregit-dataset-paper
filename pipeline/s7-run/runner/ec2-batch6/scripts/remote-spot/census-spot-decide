@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+# census-spot-decide (2026-10-09): exit 0 when EVERY census on this spot instance has finalized, so
+# the instance may terminate; otherwise print why not and exit 1. Called by census-b3-finalize and
+# census-b5-finalize just before they would shut down (shutdown behavior terminate); each writes its
+# own DONE first, so only the last census to finalize terminates the instance.
+# The censuses of this instance are the words in /etc/cregit-census/censuses (default "b3", the
+# batch 3 rule before 2026-10-09):
+#   b3: no census-b3@<part> (PARTS of /etc/cregit-census/batch.env) is active, and
+#       s3://BUCKET/batch3/<a|b>/final/<instance-id>/DONE exists (census-b3-finalize, after its check);
+#   b5: no census-b5@<id> (IDS of /etc/cregit-census/s5/batch.env) is active, and for every part
+#       s3://BUCKET/<workload>/<part>/final/<instance-id>/DONE exists (census-b5-finalize).
+#   fed (2026-10-09 ~20:10 UTC, the fed parts of batch 6 and later): the queue
+#       /etc/cregit-census/fed/queue is empty, no census-fed@<id> of the
+#       started list /etc/cregit-census/fed/started is active, and for every started part (a part whose
+#       finalize still copies has no DONE yet)
+#       s3://BUCKET/<workload>/<part>/final/<instance-id>/DONE exists (census-fed-finalize). The feeder
+#       adds a part to the started list before it removes it from the queue, so a part being started
+#       is always seen.
+# Test overrides: CENSUSES (the list), IID, BUCKET_DONE (prefix used for the DONE lookups instead of
+# s3://BUCKET; e.g. a dry-run prefix), UNITS_b3 / UNITS_b5 / UNITS_fed (space-separated units; "" = none),
+# FED_DIR (instead of /etc/cregit-census/fed: its queue, started and <id>.env).
+set -uo pipefail
+export AWS_PAGER=""
+B=${BUCKET_DONE:-s3://${RUNNER_BUCKET}}
+IID=${IID:-$(cat /sys/devices/virtual/dmi/id/board_asset_tag)}
+CENSUSES=${CENSUSES-$(cat /etc/cregit-census/censuses 2>/dev/null || echo b3)}
+[ -n "$(echo $CENSUSES)" ] || CENSUSES=b3
+ok=""
+for c in $CENSUSES; do
+  case $c in
+    b3) . /etc/cregit-census/batch.env
+        units=${UNITS_b3-$(for p in $PARTS; do echo census-b3@$p.service; done)}
+        urls="$B/batch3/$BATCH/final/$IID/DONE" ;;
+    b5) . /etc/cregit-census/s5/batch.env
+        units=${UNITS_b5-$(for i in $IDS; do echo census-b5@$i.service; done)}
+        urls=$(for i in $IDS; do . /etc/cregit-census/s5/$i.env; echo "$B/$WL/$PART/final/$IID/DONE"; done) ;;
+    fed) F=${FED_DIR:-/etc/cregit-census/fed}
+        nq=$(grep -c . $F/queue 2>/dev/null || true)
+        [ "${nq:-0}" = 0 ] || { echo "census fed not finalized: $nq parts queued ($(head -1 $F/queue))"; exit 1; }
+        ids=$(cat $F/started 2>/dev/null)
+        units=${UNITS_fed-$(for i in $ids; do echo census-fed@$i.service; done)}
+        urls=$(for i in $ids; do . $F/$i.env; echo "$B/$WL/$PART/final/$IID/DONE"; done) ;;
+    *) echo "unknown census '$c' in /etc/cregit-census/censuses"; exit 2 ;;
+  esac
+  for u in $units; do s=$(systemctl is-active "$u")
+    case $s in active|activating|reloading|deactivating) echo "census $c not finalized: $u is $s"; exit 1 ;; esac; done
+  for url in $urls; do aws s3 ls "$url" >/dev/null 2>&1 || { echo "census $c not finalized: $url is missing"; exit 1; }; done
+  ok="$ok $c($(echo $urls | wc -w) DONE)"
+done
+echo "every census on this instance finalized:$ok (units not active, DONE in S3)"

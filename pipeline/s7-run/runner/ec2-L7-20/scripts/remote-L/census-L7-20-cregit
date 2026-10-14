@@ -1,0 +1,46 @@
+#!/usr/bin/env bash
+# census-L7-20-cregit --commit SHA --bundle S3URL --bundle-sha256 H --want-pq H [--want-srcml H] | --base
+# (root, big EC2; made from census-batch6L-cregit 2026-10-10 ~00:20 UTC): set the cregit commit of census L7-20 before it starts. It checks
+# the copy /bL7/cregit-ec2 out at SHA (fetched from the git bundle, sha256-checked; --base: the AMI
+# commit 95cdc88 with the batch 5 gate values), then runs the identity gate on it: libsrcml.so.1.1.0
+# sha256, the libexpat Parquet sha256 (scratch ctp clone /bL7/ctp-check, output /bL7/libexpat-check/out)
+# and the blobExec jar against /data/cregit-ec2. The result goes to /etc/cregit-census/L7-20.gate; its
+# last line "CHECK OK <time> cregit <SHA> libexpat <H>" lets census-L7-20-wait start the census.
+# Refused once census-L7-20 has started (a ledger in /bL7/ctp) or while it is active.
+set -uo pipefail
+export AWS_PAGER=""
+mkdir -p /etc/cregit-census
+G=/etc/cregit-census/L7-20.gate; D=/bL7/cregit-ec2
+srcml=dea4467bb1b0a435e4536be13367325564b82e14ff69b478ad31bf144a8455f3 commit="" bundle="" bsha="" pq=""
+case ${1:-} in
+  --base) commit=$(sudo -u ec2-user git -C /data/cregit-ec2 rev-parse HEAD); pq=40511e0de1a285b5bbc4ae0ff277e4775c5d67709966dd7c64dc9163c638fc5d ;;
+  --commit) while [ $# -gt 0 ]; do case $1 in --commit) commit=$2; shift 2 ;; --bundle) bundle=$2; shift 2 ;;
+      --bundle-sha256) bsha=$2; shift 2 ;; --want-pq) pq=$2; shift 2 ;; --want-srcml) srcml=$2; shift 2 ;; *) echo "unknown $1"; exit 2 ;; esac; done
+    [[ $commit =~ ^[0-9a-f]{40}$ ]] && [[ $bsha =~ ^[0-9a-f]{64}$ ]] && [[ $pq =~ ^[0-9a-f]{64}$ ]] && [ -n "$bundle" ] || { echo "bad arguments"; exit 2; } ;;
+  *) echo "usage: census-L7-20-cregit --commit SHA --bundle URL --bundle-sha256 H --want-pq H | --base"; exit 2 ;;
+esac
+case $(systemctl is-active census-L7-20.service) in active|activating|deactivating) echo "census-L7-20 is active: refusing"; exit 1 ;; esac
+[ -e /bL7/ctp/ledger.jsonl ] && { echo "census-L7-20 has started (/bL7/ctp/ledger.jsonl): refusing"; exit 1; }
+fail() { echo "CHECK FAILED $(date -u +%FT%TZ): $*" | tee -a $G; exit 1; }
+echo "gate of $D for $commit started $(date -u +%FT%TZ)" >> $G; chmod 644 $G
+if [ "$(sudo -u ec2-user git -C $D rev-parse HEAD)" != "$commit" ]; then
+  [ -n "$bundle" ] || fail "no bundle for $commit"
+  mkdir -p /home/ec2-user/L7-20-input; bf=/home/ec2-user/L7-20-input/$(basename "$bundle")
+  if [ ! -f $bf ] || [ "$(sha256sum $bf | cut -d' ' -f1)" != "$bsha" ]; then aws s3 cp "$bundle" $bf.tmp --only-show-errors && mv -f $bf.tmp $bf; fi
+  [ "$(sha256sum $bf | cut -d' ' -f1)" = "$bsha" ] || fail "bundle sha256 differs"
+  chown ec2-user: $bf
+  [ -z "$(sudo -u ec2-user git -C $D status --porcelain --untracked-files=no)" ] || fail "$D is dirty"
+  sudo -u ec2-user bash -c "set -e; cd $D; git fetch -q $bf '+refs/heads/*:refs/remotes/fed-bundle/*'; git checkout -q --detach $commit" || fail "fetch/checkout"
+fi
+[ "$(sudo -u ec2-user git -C $D rev-parse HEAD)" = "$commit" ] || fail "$D is not at $commit"
+[ -z "$(sudo -u ec2-user git -C $D status --porcelain --untracked-files=no)" ] || fail "$D is dirty after the checkout"
+got_s=$(sudo -u ec2-user -i bash /home/ec2-user/srcml-sha-bL7.sh 2>/dev/null | grep -o '^[0-9a-f]\{64\}' | tail -1)
+echo "libsrcml.so.1.1.0 sha256 $got_s" | tee -a $G; [ "$got_s" = "$srcml" ] || fail "libsrcml differs from $srcml"
+ts=$(date +%s); [ -d /bL7/libexpat-check/out ] && mv /bL7/libexpat-check/out /bL7/libexpat-check/out.old.$ts
+[ -d /bL7/ctp-check ] && mv /bL7/ctp-check /bL7/ctp-check.old.$ts  # a fresh scratch clone: no ledger of the earlier check
+t0=$(date +%s); sudo -u ec2-user -i bash /home/ec2-user/check-bL7.sh | tail -2
+got=$(sha256sum /bL7/libexpat-check/out/libexpat__libexpat/libexpat__libexpat-dataset.parquet 2>/dev/null | cut -d' ' -f1)
+echo "libexpat Parquet sha256 $got ($(( $(date +%s) - t0 )) s)" | tee -a $G; [ "$got" = "$pq" ] || fail "libexpat Parquet differs from $pq"
+jar() { find $1 -name '*.jar' -path '*blobExec*' -newer $1/README.md 2>/dev/null | head -1 | xargs -r sha256sum | cut -c1-16; }
+ref=$(jar /data/cregit-ec2); [ -n "$ref" ] && [ "$(jar $D)" = "$ref" ] || fail "blobExec jar differs"
+echo "CHECK OK $(date -u +%FT%TZ) cregit $commit libexpat $pq" | tee -a $G

@@ -1,0 +1,10 @@
+[Unit]
+Description=cregit census batch5/batch1rest spot: live status to S3
+
+[Service]
+Type=oneshot
+User=ec2-user
+# fstrim of the loop filesystems needs root ("+"): it hands freed blocks back to the host disk
+ExecStartPre=+/usr/local/bin/census-b5-trim
+ExecStart=/usr/local/bin/census-b5-live
+TimeoutStartSec=600

@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+# census-fed-check ID (root; census-fed-feeder runs it on every new fed part before its start): the
+# identity gate of the part's own new cregit copy /w/<id>/cregit-ec2, as census-b5-check:
+# libsrcml.so.1.1.0 sha256 through the copy's own devenv shell, the libexpat Parquet sha256 of a census
+# with a scratch ctp clone /w/<id>/ctp-check and scratch output /w/<id>/libexpat-check/out (flags of the
+# batch 2 check), and the blobExec jar sha256 against /data/cregit-ec2. All must equal the reference
+# values of the workload (WANT_SRCML, WANT_PQ in /etc/cregit-census/fed/wl/<workload>.env), and the copy
+# must be at the workload's CREGIT_COMMIT.
+# Result: /etc/cregit-census/fed/<id>.check (last line "CHECK OK <time>" or "CHECK FAILED: ..."); exit 0 only if OK.
+set -uo pipefail
+. /usr/local/bin/census-fed-common
+id=${1:?id}; . $FED/$id.env
+# the expected values of the part's workload (census-fed-workload): they change with its cregit commit
+. $FED/wl/$WL.env
+[ "$(sudo -u ec2-user git -C $CREGIT rev-parse HEAD)" = "$CREGIT_COMMIT" ] || { echo "CHECK FAILED: $CREGIT is not at $CREGIT_COMMIT" | tee $FED/$id.check; exit 1; }
+R=$FED/$id.check; echo "check of $CREGIT started $(date -u +%FT%TZ)" > $R; chmod 644 $R
+fail() { echo "CHECK FAILED: $*" | tee -a $R; exit 1; }
+printf '# libexpat check on the cregit copy %s (scratch output).\n[paths]\ncregit_dir = %s\noutput_dir = %s\n' $CREGIT $CREGIT $MP/libexpat-check/out > $FED/$id.check.cfg
+chmod 644 $FED/$id.check.cfg
+cat > /home/ec2-user/srcml-sha-fed-$id.sh <<U
+. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+cd $CREGIT
+devenv shell -- bash -c 'sha256sum "\$SRCML_PREFIX/lib/libsrcml.so.1.1.0"'
+U
+cat > /home/ec2-user/check-fed-$id.sh <<U
+set -uo pipefail
+C=$MP/ctp-check
+[ -d \$C ] && mv \$C \$C.old.\$(date +%s)  # a fresh scratch clone: no ledger of an earlier check
+[ -d \$C ] || git clone -q /data/input/ctp.bundle \$C -b feat/e2e-runner
+cd \$C; [ "\$(git rev-parse --short HEAD)" = ca113e3 ] || { echo "wrong ctp HEAD"; exit 1; }
+[ -x .venv/bin/python ] || { python3.12 -m venv .venv; nice -n 19 .venv/bin/pip install -q --disable-pip-version-check duckdb==1.5.5 pytest==9.1.1 coverage==7.16.0; }
+export CTP_CONFIG=$FED/$id.check.cfg
+[ -d $MP/libexpat-check/out ] && mv $MP/libexpat-check/out $MP/libexpat-check/out.old.\$(date +%s)
+mkdir -p $MP/libexpat-check/out
+.venv/bin/python ctp.py census --manifest /data/input/manifest.libexpat.tsv --project-meta /data/input/project_meta.batch1.json \
+  --workers 1 --retries 0 --skip-html --tokenizer-worker --blame-jobs 2 --memory-limit 2GB --min-free-mem-gb 10 > /data/logs/fed-check-$id.log 2>&1
+echo "census rc=\$?"
+U
+mkdir -p /data/logs; chown ec2-user: /home/ec2-user/srcml-sha-fed-$id.sh /home/ec2-user/check-fed-$id.sh /data/logs
+got_s=$(sudo -u ec2-user -i bash /home/ec2-user/srcml-sha-fed-$id.sh 2>/dev/null | grep -o '^[0-9a-f]\{64\}' | tail -1)
+echo "libsrcml.so.1.1.0 sha256 $got_s (copy $CREGIT)" | tee -a $R
+[ "$got_s" = "$WANT_SRCML" ] || fail "libsrcml sha256 differs"
+t0=$(date +%s); sudo -u ec2-user -i bash /home/ec2-user/check-fed-$id.sh
+got=$(sha256sum $MP/libexpat-check/out/libexpat__libexpat/libexpat__libexpat-dataset.parquet 2>/dev/null | cut -d' ' -f1)
+echo "libexpat Parquet sha256 $got ($(( $(date +%s) - t0 )) s; cregit_dir $(grep -o '"cregit_dir": "[^"]*"' $MP/ctp-check/runs.log 2>/dev/null | tail -1))" | tee -a $R
+[ "$got" = "$WANT_PQ" ] || fail "libexpat Parquet sha256 differs from $WANT_PQ"
+jar() { find $1 -name '*.jar' -path '*blobExec*' -newer $1/README.md 2>/dev/null | head -1 | xargs -r sha256sum | cut -c1-16; }
+ref=$(jar /data/cregit-ec2); [ -n "$ref" ] && [ "$(jar $CREGIT)" = "$ref" ] || fail "blobExec jar of $CREGIT ($(jar $CREGIT)) differs from /data/cregit-ec2 ($ref)"
+echo "blobExec jar sha256 $ref in /data/cregit-ec2 and $CREGIT" | tee -a $R
+echo "CHECK OK $(date -u +%FT%TZ) cregit $CREGIT_COMMIT libexpat $WANT_PQ" | tee -a $R

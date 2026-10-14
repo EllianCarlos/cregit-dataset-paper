@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+# census-batch3L-wait.service: start census-batch3L.service only when batch 2 frees slots.
+# Every 60 s: start when census-batch2 is no longer active, or when batch 2 has no project left
+# that it has not started (in its current run) AND batch 2 runs at most SLOTS - W projects,
+# where W is the number of batch3L projects. So the two censuses together run <= SLOTS (20).
+# A STOP file in the batch3L ctp clone holds the start. Status: /run/census-batch3L-wait.status.
+set -uo pipefail
+SLOTS=${SLOTS:-20}
+M2=/home/ec2-user/batch2-input/manifest.batch2.tsv
+M3=/home/ec2-user/batch3L-input/manifest.batch3L.tsv
+W=$(grep -c -v -e '^#' -e '^[[:space:]]*$' "$M3")
+ST=/run/census-batch3L-wait.status
+while :; do
+  now=$(date -u +%FT%TZ); b2=$(systemctl is-active census-batch2.service)
+  read -r run2 pend2 < <(/usr/local/bin/census-steps --counts /home/ec2-user/ctp "$M2" 2>/dev/null || echo "? ?")
+  msg="$now waiting: census-batch2 $b2, batch 2 running $run2, not started $pend2; batch3L needs $W of $SLOTS slots"
+  if [ -e /home/ec2-user/ctp-b3L/STOP ]; then
+    echo "$msg; STOP exists in /home/ec2-user/ctp-b3L: holding" | tee "$ST"
+  elif [ "$b2" != active ] && [ "$b2" != activating ] || { [ "$pend2" = 0 ] && [ "$run2" != "?" ] && [ $((run2 + W)) -le "$SLOTS" ]; }; then
+    echo "$now starting census-batch3L.service (census-batch2 $b2, batch 2 running $run2, not started $pend2)" | tee "$ST"
+    systemctl start --no-block census-batch3L.service
+    exit 0
+  else
+    echo "$msg" > "$ST"
+  fi
+  sleep 60
+done

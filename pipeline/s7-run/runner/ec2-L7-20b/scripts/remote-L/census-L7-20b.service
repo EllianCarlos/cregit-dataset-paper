@@ -1,0 +1,23 @@
+[Unit]
+Description=cregit census L7-20b: rows 17-56 of the L7-20 queue (40 L projects), 6 workers (ctp census, loop XFS /bL7b)
+Wants=network-online.target
+After=network-online.target nix-daemon.service
+RequiresMountsFor=/data /bL7b
+OnSuccess=census-L7-20b-finalize.service
+OnFailure=census-L7-20b-finalize.service
+
+[Service]
+Type=simple
+User=ec2-user
+Group=ec2-user
+WorkingDirectory=/bL7b/ctp
+ExecStart=/usr/local/bin/census-L7-20b-run
+StandardOutput=append:/data/logs/L7-20b.log
+StandardError=append:/data/logs/L7-20b.log
+Restart=no
+# an OOM kill of one project must not stop the whole census (systemd default is stop)
+OOMPolicy=continue
+LimitNOFILE=1048576
+LimitNPROC=infinity
+TasksMax=infinity
+TimeoutStopSec=300

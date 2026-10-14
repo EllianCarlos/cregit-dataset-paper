@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+# Every 10 min (census-fed-live.timer, ec2-user; census-fed-trim runs before it as root): status of the
+# fed parts of this spot instance to s3://BUCKET/feed/<half>/live/ (the combined view, read by the local
+# watchdog and status_all.sh) and to each started part's s3://BUCKET/<workload>/<part>/live/:
+#   progress.txt  first line "as of <ts>  census-fed on <iid> (spot <x>): <state> ( <id>=<unit state> ... )
+#                 queue=<n> (<next>) feeder: <status>  b5=<active>/<parts>  batch3=<state>"; <state> is
+#                 active (a fed part or its finalize runs), waiting (parts queued, the feeder waits for a
+#                 slot, memory or the workload's cregit commit), paused (PAUSE exists), interrupted (spot
+#                 notice), finalized (queue empty, every started part has its final DONE) or stopped.
+#                 Then load, memory, the queue, the workloads' cregit commits, and per part: unit, free
+#                 space, ctp progress and the step table.
+#   steps.txt (per part), <id>.log.tail, ledger.jsonl, system.txt.
+set -uo pipefail
+. /usr/local/bin/census-fed-common
+X=$(fed_half); IID=$(cat /sys/devices/virtual/dmi/id/board_asset_tag)
+T=$(mktemp -d); trap 'rm -r "$T"' EXIT
+IDS=$(fed_started | tr '\n' ' '); q=$(grep -c . $FED/queue 2>/dev/null || true)
+st=""; any=no; fin=yes
+for id in $IDS; do s=$(systemctl is-active census-fed@$id.service); st="$st $id=$s"
+  case $s in active|activating|deactivating) any=yes ;; esac
+  fed_active census-fed-finalize@$id.service && any=yes
+  . $FED/$id.env; [ -e $MP/final-DONE ] || fin=no; done
+if [ -e /run/census-spot-interrupted ]; then state=interrupted
+elif [ $any = yes ]; then state=active
+elif [ "$q" -gt 0 ]; then if [ -e $FED/PAUSE ]; then state=paused; else state=waiting; fi
+elif [ $fin = yes ]; then state=finalized
+else state=stopped; fi
+b5a=0; b5n=0; if [ -f /etc/cregit-census/s5/batch.env ]; then for i in $(. /etc/cregit-census/s5/batch.env; echo $IDS); do b5n=$((b5n+1)); fed_active census-b5@$i.service && b5a=$((b5a+1)); done; fi
+b3=none; if grep -qx b3 /etc/cregit-census/censuses 2>/dev/null; then b3=inactive
+  for p in $(. /etc/cregit-census/batch.env; echo $PARTS); do fed_active census-b3@$p.service && b3=active; done; fi
+# parts that are finished (unit inactive and final DONE) get one line and no per-part upload, so the
+# pass stays short with many started parts (batches 6-20: up to ~75 per instance)
+LIVE=""; for id in $IDS; do . $FED/$id.env
+  if [ -e $MP/final-DONE ] && ! fed_active census-fed@$id.service && ! fed_active census-fed-finalize@$id.service; then continue; fi
+  LIVE="$LIVE $id"
+  /usr/local/bin/census-steps "$CTP" $IN/manifest.$id.run.tsv --highlight '' > "$T/steps.$id.txt" 2>&1; done
+{ echo "as of $(date -u +%FT%TZ)  census-fed on $IID (spot $X): $state ($st )  queue=$q ($(head -1 $FED/queue 2>/dev/null | tr -d ' '))  feeder: $(cut -c22- /run/census-fed-feeder.status 2>/dev/null | cut -c1-120)  b5=$b5a/$b5n  batch3=$b3$([ -e /home/ec2-user/NO_SHUTDOWN ] && echo '  NO_SHUTDOWN')"
+  echo "uptime: $(uptime)"
+  echo "MemAvailable: $(awk '/MemAvailable/{printf "%.1f GiB", $2/1048576}' /proc/meminfo)   watcher: $(systemctl is-active census-fed-watch.service)   feeder timer: $(systemctl is-active census-fed-feeder.timer)   slots: $(cat $FED/slots 2>/dev/null || echo 5)"
+  echo "queue: $(tr '\n' ',' < $FED/queue 2>/dev/null)   started: $IDS"
+  [ -e $FED/PAUSE ] && echo "PAUSE: $(cat $FED/PAUSE)"
+  for f in $FED/wl/*.env; do [ -f $f ] && echo "workload $(basename $f .env): $(grep -e CREGIT_COMMIT -e WANT_PQ $f | tr '\n' ' ')"; done
+  echo "censuses: $(tr '\n' ' ' < /etc/cregit-census/censuses)  uploaded to done/ (fed): $(for id in $IDS; do . $FED/$id.env; ls $MP/uploaded 2>/dev/null; done | wc -l)"
+  echo "finished parts (final DONE): $(for id in $IDS; do case " $LIVE " in *" $id "*) ;; *) echo -n "$id " ;; esac; done)"
+  for id in $LIVE; do . $FED/$id.env
+    echo; echo "=== part $id ($WL/$PART): census-fed@$id $(systemctl is-active census-fed@$id.service) ($(systemctl show census-fed@$id.service -p Result --value)), cregit $(git -C $CREGIT rev-parse --short HEAD), $MP free $(df -BG --output=avail $MP | tail -1 | tr -d ' '), image $(du -BG $IMG | cut -f1)$([ -e $CTP/STOP ] && echo '  STOP present')$([ -e $MP/final-DONE ] && echo '  final DONE')"
+    (cd "$CTP" && CTP_CONFIG=$CFG .venv/bin/python ctp.py progress --manifest $IN/manifest.$id.run.tsv --last 5 2>&1)
+    echo; cat "$T/steps.$id.txt"
+  done
+} > "$T/progress.txt"
+{ date -u +%FT%TZ; uptime; cat /proc/pressure/io /proc/pressure/cpu 2>/dev/null; cat /proc/meminfo; df -h /data /data[0-9]* /w/* / 2>/dev/null; du -h /data*/loop/*.img 2>/dev/null; } > "$T/system.txt"
+mkdir -p $T/c; cp $T/progress.txt $T/system.txt $T/c/; tail -n 200 /data/logs/fed-feeder.log > $T/c/fed-feeder.log.tail 2>/dev/null
+aws s3 cp $T/c/ "$BUCKET/feed/$X/live/" --recursive --only-show-errors
+for id in $LIVE; do . $FED/$id.env; mkdir -p $T/p/$id
+  cp $T/progress.txt $T/system.txt $T/p/$id/; cp $T/steps.$id.txt $T/p/$id/steps.txt
+  tail -n 300 "$LOG" > $T/p/$id/$id.log.tail 2>/dev/null
+  [ -f "$CTP/ledger.jsonl" ] && cp "$CTP/ledger.jsonl" $T/p/$id/ledger.jsonl
+  aws s3 cp $T/p/$id/ "$BUCKET/$WL/$PART/live/" --recursive --only-show-errors
+done

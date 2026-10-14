@@ -1,0 +1,23 @@
+[Unit]
+Description=cregit census L1r: batch 1 rerun, L (torvalds__linux, SAP__project-foxhound), 2 workers (ctp census, loop XFS /bL1r)
+Wants=network-online.target
+After=network-online.target nix-daemon.service
+RequiresMountsFor=/data /bL1r
+OnSuccess=census-L1r-finalize.service
+OnFailure=census-L1r-finalize.service
+
+[Service]
+Type=simple
+User=ec2-user
+Group=ec2-user
+WorkingDirectory=/bL1r/ctp
+ExecStart=/usr/local/bin/census-L1r-run
+StandardOutput=append:/data/logs/L1r.log
+StandardError=append:/data/logs/L1r.log
+Restart=no
+# an OOM kill of one project must not stop the whole census (systemd default is stop)
+OOMPolicy=continue
+LimitNOFILE=1048576
+LimitNPROC=infinity
+TasksMax=infinity
+TimeoutStopSec=300

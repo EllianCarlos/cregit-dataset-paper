@@ -1,0 +1,47 @@
+#!/usr/bin/env bash
+# census-other-done SELF: exit 0 when EVERY OTHER census on the batch 2 instance has finalized,
+# i.e. its final/DONE is in S3 (a finalize writes DONE only after its upload check passed) and
+# its census units are not active. The censuses on this instance (2026-10-09 13:xx, batch 4 added):
+#   batch2  : s3://B/batch2/final/DONE,  units census-batch2.service
+#   batch3L : s3://B/batch3L/final/DONE, units census-batch3L-wait.service census-batch3L.service
+#   batch4  : s3://B/batch4/final/DONE,  units census-batch4p1.service census-batch4p2.service census-batch4p3.service
+#   batch5L : s3://B/batch5L/final/DONE, units census-batch5L.service (2026-10-09 ~16:xx, batch 5 added)
+#   batch6L : s3://B/batch6L/final/DONE, units census-batch6L-wait.service census-batch6L.service
+#             (2026-10-09 ~20:00 UTC, batch 6 added; the waiter counts as "not finalized" while it waits)
+#   L7-20   : s3://B/L7-20/final/DONE, units census-L7-20-wait.service census-L7-20.service
+#             (2026-10-10 ~00:20 UTC: the 55 L projects of batches 7-20 in one census)
+#   L22     : s3://B/L22/final/DONE, units census-L22-wait.service census-L22.service
+#             (2026-10-10 ~15:40 UTC: the 2 L projects of batch 22, gcc and emacs)
+# Each finalize writes its own DONE before it asks, so the last census to finish sees all the
+# other DONEs and powers off; the earlier ones do not. Same interface as the 2-census version
+# (SELF = batch2|batch3L, plus batch4, batch5L, batch6L, L7-20 and L22), so the older finalizes are unchanged.
+# Test overrides, per census N: DONE_URL_N (an S3 object) and UNITS_N (space-separated; "" = none);
+# for L7-20 the variable names are DONE_URL_L7_20 and UNITS_L7_20.
+set -uo pipefail
+B=s3://${RUNNER_BUCKET}
+ALL="batch2 batch3L batch4 batch5L batch6L L7-20 L22"
+declare -A U=(
+  [batch2]="census-batch2.service"
+  [batch3L]="census-batch3L-wait.service census-batch3L.service"
+  [batch4]="census-batch4p1.service census-batch4p2.service census-batch4p3.service"
+  [batch5L]="census-batch5L.service"
+  [batch6L]="census-batch6L-wait.service census-batch6L.service"
+  [L7-20]="census-L7-20-wait.service census-L7-20.service"
+  [L22]="census-L22-wait.service census-L22.service"
+)
+self=${1:-}
+case " $ALL " in *" $self "*) [ -n "$self" ] || { echo "usage: census-other-done batch2|batch3L|batch4|batch5L|batch6L|L7-20|L22" >&2; exit 2; } ;;
+  *) echo "usage: census-other-done batch2|batch3L|batch4|batch5L|batch6L|L7-20|L22" >&2; exit 2 ;; esac
+ok=""
+for n in $ALL; do
+  [ "$n" = "$self" ] && continue
+  uv="UNITS_${n//-/_}"; dv="DONE_URL_${n//-/_}"
+  units=${!uv-${U[$n]}}; url=${!dv:-$B/$n/final/DONE}
+  for u in $units; do
+    s=$(systemctl is-active "$u")
+    case $s in active|activating|reloading|deactivating) echo "other census $n not finalized: $u is $s"; exit 1 ;; esac
+  done
+  aws s3 ls "$url" >/dev/null 2>&1 || { echo "other census $n not finalized: $url is missing"; exit 1; }
+  ok="$ok $n"
+done
+echo "every other census finalized:$ok (DONE in S3, units not active)"

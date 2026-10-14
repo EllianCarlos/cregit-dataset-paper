@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+# census-L1r-firm (census-L1r-firm.timer, every 30 s, root; 2026-10-12): set oom_score_adj=-500 on the
+# firm step of census L1r, so the kernel OOM killer picks other processes first. This is the protection
+# that the L7-20 kernel firm steps got by hand on 2026-10-12 00:40 UTC (about 40 GB RSS each; Linux's
+# firm step needed 15.7 GB RSS on batch 1). An OOM kill in firm retries the project from step 2
+# (Linux 25.9 h, foxhound 36.4 h on batch 1).
+# A firm process: argv holds /bL1r/ctp/firm_attribution.py (the ctp firm step of a census L1r project)
+# and its cgroup is census-L1r.service. Only processes with an oom_score_adj above ADJ change.
+# Status: /run/census-L1r-firm.status; events: /data/logs/L1r-firm.log.
+# Test overrides: PROC (the /proc root), CTPDIR (the ctp path in argv), UNIT (the cgroup name), ST, LOG.
+set -uo pipefail
+ADJ=${ADJ:--500}; PROC=${PROC:-/proc}; CTPDIR=${CTPDIR:-/bL1r/ctp}; UNIT=${UNIT:-census-L1r.service}
+ST=${ST:-/run/census-L1r-firm.status}; LOG=${LOG:-/data/logs/L1r-firm.log}
+now=$(date -u +%FT%TZ); seen=""
+for d in "$PROC"/[0-9]*; do
+  pid=${d##*/}
+  argv=$(tr '\0' '\n' 2>/dev/null < "$d/cmdline") || continue  # 2> first: a process can exit during the scan
+  grep -qxF "$CTPDIR/firm_attribution.py" <<<"$argv" || continue
+  grep -qF "/$UNIT" "$d/cgroup" 2>/dev/null || continue
+  proj=$(grep -o -m1 "census-2026-10-L1r/[^/]*" <<<"$argv" | cut -d/ -f2); proj=${proj:-?}
+  cur=$(cat "$d/oom_score_adj" 2>/dev/null) || continue
+  if [ "$cur" -gt "$ADJ" ]; then
+    if echo "$ADJ" > "$d/oom_score_adj" 2>/dev/null; then
+      echo "$now pid $pid $proj: oom_score_adj $cur -> $ADJ (rss $(awk '/VmRSS/{printf "%.1f GB", $2/1048576}' "$d/status" 2>/dev/null))" >> "$LOG"
+    else echo "$now pid $pid $proj: ERROR: oom_score_adj $cur, write failed" >> "$LOG"; fi
+  fi
+  seen="$seen $proj(pid $pid, adj $(cat "$d/oom_score_adj" 2>/dev/null), rss $(awk '/VmRSS/{printf "%.1fG", $2/1048576}' "$d/status" 2>/dev/null))"
+done
+echo "as of $now: ${seen:+protected firm:}${seen:-no firm process}" > "$ST"

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# census-batch4-run K (census-batch4pK.service): census batch 4 part pK on the batch 2 instance,
+# on its own loop-mounted XFS /b4pK (own rename lock). Own ctp clone /b4pK/ctp, config and output
+# /b4pK/census-2026-10-batch4; the same cregit build /data/cregit-ec2 (95cdc88) as batch 2/3L.
+# Stop after the running projects: touch /b4pK/ctp/STOP. Resume: start the unit again.
+set -euo pipefail
+K=${1:?part number}
+I=/home/ec2-user/batch4-input
+export CTP_CONFIG=/home/ec2-user/census-batch4p$K.cfg
+cd /b4p$K/ctp
+echo "=== $(date -u +%FT%TZ) census-batch4p$K start (cregit $(git -C /data/cregit-ec2 rev-parse --short HEAD), ctp $(git rev-parse --short HEAD), $(grep -c -v -e '^#' -e '^[[:space:]]*$' "$I/manifest.batch4p$K.tsv") projects, 4 workers, out /b4p$K/census-2026-10-batch4)"
+exec .venv/bin/python ctp.py census --manifest "$I/manifest.batch4p$K.tsv" \
+    --project-meta "$I/project_meta.batch4p$K.json" \
+    --workers 4 --retries 3 --skip-html --latest --tokenizer-worker \
+    --blame-jobs 4 --memory-limit 16GB --min-free-mem-gb 24 --disk-floor-gb 300

@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+# census-L7-20-split (census-L7-20-split.timer, root, every 5 s; 2026-10-11, user decision 16:45 UTC):
+# keep census L7-20 off the rows of census L7-20b, so no project runs twice. census L7-20b runs rows
+# 17-56 of the L7-20 manifest (from SPLIT=BrowserWorks__waterfox to the end). ctp census starts the
+# rows in manifest order and creates /bL7/ctp/state/<name>/ first when it starts a project. When census
+# L7-20 has started EVERY row before SPLIT (each has its state dir) and census L7-20b has started (its
+# ledger exists or its unit is active), this writes /bL7/ctp/STOP (owner ec2-user) and the marker
+# /bL7/ctp/STOP.split-L7-20b. ctp census then starts no new project (and no retry); the running ones
+# finish, the census ends, and census-L7-20-finalize runs as usual. While L7-20b has not started it
+# writes no STOP (then L7-20 goes on into the L7-20b rows, and census-L7-20b-wait holds L7-20b).
+# It also reports a double start (an L7-20b row with a state dir in /bL7/ctp). After census L7-20
+# ends, it lists the rows before SPLIT that have no "done" row in the L7-20 ledger (they need a
+# rerun: a STOP drops the retries of census L7-20), then it stops its own timer.
+# Status: /run/census-L7-20-split.status (one line); events: /data/logs/L7-20-split.log.
+# --decide-only: print the decision once; changes nothing.
+# Test overrides: STATE_DIR (default /bL7/ctp/state), L720_ACTIVE (a unit state), L720B_STARTED (1/0),
+# STOP_FILE (default /bL7/ctp/STOP; the marker is STOP_FILE.split-L7-20b), M_FILE, MB_FILE, LEDGER, ST_FILE, LOG_FILE; NO_TIMER_STOP=1 keeps the timer.
+set -uo pipefail
+C=/bL7/ctp; SD=${STATE_DIR:-$C/state}; STOPF=${STOP_FILE:-$C/STOP}; MARK=$STOPF.split-L7-20b
+M=${M_FILE:-/home/ec2-user/L7-20-input/manifest.L7-20.tsv}; MB=${MB_FILE:-/home/ec2-user/L7-20b-input/manifest.L7-20b.tsv}; L=${LEDGER:-$C/ledger.jsonl}
+SPLIT=BrowserWorks__waterfox
+ST=${ST_FILE:-/run/census-L7-20-split.status}; LOG=${LOG_FILE:-/data/logs/L7-20-split.log}
+DECIDE=0; [ "${1:-}" = --decide-only ] && DECIDE=1
+now=$(date -u +%FT%TZ)
+out() { if [ $DECIDE = 1 ]; then echo "decide-only: $now $*"; else echo "$now $*" > $ST; fi; }
+event() { [ $DECIDE = 1 ] || echo "$now $*" >> $LOG; }
+names() { grep -v -e '^#' -e '^[[:space:]]*$' "$1" | cut -f1; }
+pre=$(names $M | sed "/^$SPLIT\$/,\$d"); post=$(names $MB)
+[ -n "$pre" ] && [ -n "$post" ] && [ "$(names $M | sed -n "/^$SPLIT\$/,\$p")" = "$post" ] \
+  || { out "ERROR: the L7-20b manifest is not the L7-20 rows from $SPLIT to the end; nothing done"; exit 1; }
+npre=$(wc -l <<<"$pre")
+left=""; for n in $pre; do [ -d "$SD/$n" ] || left="$left $n"; done
+dbl=""; for n in $post; do [ -d "$SD/$n" ] && dbl="$dbl $n"; done
+l720=${L720_ACTIVE:-$(systemctl is-active census-L7-20.service)}
+bst=${L720B_STARTED:-$( { [ -e /bL7b/ctp/ledger.jsonl ] || systemctl is-active -q census-L7-20b.service; } && echo 1 || echo 0)}
+nleft=$(wc -w <<<"$left")
+warn=""; [ -n "$dbl" ] && { warn="; DOUBLE START: census L7-20 has started L7-20b rows:$dbl"; [ -e $ST.double ] || { event "DOUBLE START:$dbl"; [ $DECIDE = 1 ] || touch $ST.double; }; }
+case $l720 in
+  active|activating|deactivating) ;;
+  *)  # census L7-20 has ended: the rows before the split without a done row need a rerun
+    nd=""; for n in $pre; do grep -F "\"project\": \"$n\"" $L | grep -F '"step": "project"' \
+      | grep -q -F -e '"status": "done"' -e '"status": "done-dirty"' || nd="$nd $n"; done
+    msg="census L7-20 is $l720; STOP $([ -e $MARK ] && echo "written by this watcher at $(stat -c %y $MARK | cut -c1-19)" || echo "not written by this watcher"); rows before the split done: $((npre - $(wc -w <<<"$nd"))) of $npre"
+    [ -n "$nd" ] && msg="$msg; NOT DONE IN L7-20 (rerun needed):$nd"
+    out "$msg$warn: finished"; event "$msg$warn: finished"
+    [ $DECIDE = 1 ] || [ -n "${NO_TIMER_STOP:-}" ] || systemctl stop --no-block census-L7-20-split.timer
+    exit 0 ;;
+esac
+if [ -e $MARK ]; then out "STOP written at $(stat -c %y $MARK | cut -c1-19); census L7-20 finishes its running projects$warn"; exit 0; fi
+if [ "$nleft" -gt 0 ]; then out "waiting: $nleft of $npre rows before $SPLIT not started in L7-20:$left; L7-20b started=$bst$warn"; exit 0; fi
+if [ "$bst" != 1 ]; then out "every row before $SPLIT has started, but census L7-20b has not: no STOP (if L7-20 starts an L7-20b row first, census-L7-20b-wait holds L7-20b)$warn"; exit 0; fi
+if [ $DECIDE = 1 ]; then out "would write $STOPF: every row before $SPLIT has started and census L7-20b has started$warn"; exit 0; fi
+touch $STOPF; chown ec2-user: $STOPF
+echo "written $now by census-L7-20-split: census L7-20 has started all $npre rows before $SPLIT (row 17); rows 17-56 run in census L7-20b" > $MARK
+out "STOP written: census L7-20 has started all $npre rows before $SPLIT$warn"; event "STOP written to $STOPF ($npre rows before $SPLIT started)$warn"

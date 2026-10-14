@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# census-L7-20b-run (census-L7-20b.service): the second L queue (user decision 2026-10-11 16:45 UTC):
+# rows 17-56 of the L7-20 v2 manifest (BrowserWorks__waterfox .. jlord__patchwork, 40 projects, 330 h
+# predicted), in the same order, with 6 workers, on the big EC2, on their own loop XFS /bL7b (own
+# rename lock) with their own ctp clone /bL7b/ctp, cregit copy /bL7b/cregit-ec2 (1f17663, gated before
+# the start; path fixed), config and output /bL7b/census-2026-10-L7-20b. The same census flags as
+# census-L7-20. census-L7-20-split stops census L7-20 before row 17, so no project runs twice.
+# Stop after the running projects: touch /bL7b/ctp/STOP (census-batch4-guard does it below 800 GiB
+# free on /data).
+set -euo pipefail
+I=/home/ec2-user/L7-20b-input; M=$I/manifest.L7-20b.tsv
+export CTP_CONFIG=/home/ec2-user/census-L7-20b.cfg
+cd /bL7b/ctp
+n=$(grep -c -v -e '^#' -e '^[[:space:]]*$' "$M")
+echo "=== $(date -u +%FT%TZ) census-L7-20b start (cregit $(git -C /bL7b/cregit-ec2 rev-parse --short HEAD) at /bL7b/cregit-ec2, ctp $(git rev-parse --short HEAD), $n projects, 6 workers, out /bL7b/census-2026-10-L7-20b)"
+exec .venv/bin/python ctp.py census --manifest "$M" --project-meta "$I/project_meta.L7-20b.json" \
+    --workers 6 --retries 3 --skip-html --latest --tokenizer-worker \
+    --blame-jobs 4 --memory-limit 16GB --min-free-mem-gb 24 --disk-floor-gb 300

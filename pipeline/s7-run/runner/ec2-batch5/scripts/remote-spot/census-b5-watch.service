@@ -1,0 +1,9 @@
+[Unit]
+Description=cregit census batch5/batch1rest spot: watch for a spot interruption notice (IMDSv2)
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/census-b5-watch
+Restart=always
+RestartSec=5

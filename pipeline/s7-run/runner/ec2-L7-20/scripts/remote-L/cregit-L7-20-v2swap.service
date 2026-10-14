@@ -1,0 +1,7 @@
+[Unit]
+Description=L7-20: put the v2 inputs in place (NetBSD/pkgsrc added) and lift the waiter hold
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/cregit-L7-20-v2swap
+TimeoutStartSec=600

@@ -1,0 +1,25 @@
+cat > /usr/local/bin/census-b3-check.new <<'EOF_X'
+#!/usr/bin/env bash
+# census-b3-check: the machine-independence check before a census: libsrcml sha256 and the
+# libexpat Parquet sha256 (check.sh from the batch 2 setup) must equal the reference values.
+set -uo pipefail
+WANT_SRCML=dea4467bb1b0a435e4536be13367325564b82e14ff69b478ad31bf144a8455f3
+WANT_PQ=40511e0de1a285b5bbc4ae0ff277e4775c5d67709966dd7c64dc9163c638fc5d
+cat > /home/ec2-user/srcml-sha.sh <<'U'
+. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+cd /data/cregit-ec2
+devenv shell -- bash -c 'sha256sum "$SRCML_PREFIX/lib/libsrcml.so.1.1.0"'
+U
+chown ec2-user: /home/ec2-user/srcml-sha.sh
+got_srcml=$(sudo -u ec2-user -i bash /home/ec2-user/srcml-sha.sh 2>/dev/null | grep -o '^[0-9a-f]\{64\}' | tail -1)
+echo "libsrcml.so.1.1.0 sha256 $got_srcml"
+[ "$got_srcml" = "$WANT_SRCML" ] || { echo "CHECK FAILED: libsrcml sha256 differs"; exit 1; }
+[ -d /data/ec2-check/out ] && mv /data/ec2-check/out "/data/ec2-check/out.old.$(date +%s)"
+sudo -u ec2-user -i bash /home/ec2-user/check.sh
+got_pq=$(sha256sum /data/ec2-check/out/libexpat__libexpat/libexpat__libexpat-dataset.parquet 2>/dev/null | cut -d' ' -f1)
+echo "libexpat Parquet sha256 $got_pq"
+[ "$got_pq" = "$WANT_PQ" ] || { echo "CHECK FAILED: libexpat Parquet sha256 differs from $WANT_PQ"; exit 1; }
+echo "CHECK OK"
+EOF_X
+chmod 755 /usr/local/bin/census-b3-check.new; mv -f /usr/local/bin/census-b3-check.new /usr/local/bin/census-b3-check
+/usr/local/bin/census-b3-check; echo "check rc=$?"

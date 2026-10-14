@@ -1,0 +1,10 @@
+[Unit]
+Description=cregit census L7-20: live status to S3 every 10 min
+
+[Timer]
+OnActiveSec=1min
+OnUnitActiveSec=10min
+AccuracySec=30s
+
+[Install]
+WantedBy=timers.target

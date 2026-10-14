@@ -1,0 +1,8 @@
+[Unit]
+Description=cregit census L7-20b: copy results to S3, write DONE, power off if every census finalized
+RequiresMountsFor=/data
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/census-L7-20b-finalize
+TimeoutStartSec=infinity

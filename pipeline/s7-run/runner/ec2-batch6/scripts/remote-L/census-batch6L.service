@@ -1,0 +1,23 @@
+[Unit]
+Description=cregit census batch6L: the L projects of batch6 (ctp census, loop XFS /b6L)
+Wants=network-online.target
+After=network-online.target nix-daemon.service
+RequiresMountsFor=/data /b6L
+OnSuccess=census-batch6L-finalize.service
+OnFailure=census-batch6L-finalize.service
+
+[Service]
+Type=simple
+User=ec2-user
+Group=ec2-user
+WorkingDirectory=/b6L/ctp
+ExecStart=/usr/local/bin/census-batch6L-run
+StandardOutput=append:/data/logs/batch6L.log
+StandardError=append:/data/logs/batch6L.log
+Restart=no
+# an OOM kill of one project must not stop the whole census (systemd default is stop)
+OOMPolicy=continue
+LimitNOFILE=1048576
+LimitNPROC=infinity
+TasksMax=infinity
+TimeoutStopSec=300
