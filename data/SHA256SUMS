@@ -1,0 +1,12 @@
+# SHA256SUMS: the sha256 of each published file of dataset v1.
+#
+# This file is a placeholder. It gets its rows at the v1 freeze, when the
+# merged files and the per-project Parquet files are final.
+#
+# Format: the format of "sha256sum" (64 hex digits, two spaces, the path).
+# The path is relative to the directory of the published files (DATA_DIR).
+# "make verify" runs "sha256sum --check" on this file. Lines that start with
+# "#" are comments.
+#
+# Example row (not a real value):
+# 0000000000000000000000000000000000000000000000000000000000000000  parquet/owner__repo-dataset.parquet
