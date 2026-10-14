@@ -14,7 +14,7 @@ DATA_DIR ?= data/published
 TOOLS_DIR ?= tools/bundles
 PROJECT ?=
 
-.PHONY: help verify rebuild-one select build merge validate test sync-check flake-check
+.PHONY: help verify rebuild-one select build merge validate stage-hashes test sync-check flake-check
 
 help:
 	@echo "Reviewer targets:"
@@ -26,6 +26,7 @@ help:
 	@echo "  make merge       join the per-project files"
 	@echo "  make validate    check the column contract of the published files"
 	@echo "Repository checks:"
+	@echo "  make stage-hashes check the copied stage outputs against their recorded sha256"
 	@echo "  make test        run the tests of the copied scripts"
 	@echo "  make sync-check  check the copied files against sync/sources.tsv and sync/untracked.tsv"
 	@echo "  make flake-check run nix flake check (the tool identity check on x86_64-linux)"
@@ -48,6 +49,9 @@ merge:
 
 validate:
 	@scripts/validate.sh "$(DATA_DIR)"
+
+stage-hashes:
+	@scripts/check-stage-hashes.sh
 
 test:
 	@if [ -z "$${CREGIT_PYTHON:-}" ]; then echo "not ready: CREGIT_PYTHON is not set (run in the dev shell: nix develop)" >&2; exit 3; fi
