@@ -12,6 +12,10 @@
 # git_blob column. It also lists files under the destination directories that
 # sources.tsv does not list. It does not delete them. Delete them yourself after a review.
 #
+# untracked.tsv lists generated inputs that git does not track in the source. The script
+# copies them from the source working tree, but only when the sha256 is equal to the value
+# in a committed checksum file (see make-untracked-list.sh). The check compares the sha256.
+#
 # sources.local.conf gives the local clone and the path prefix of each source.
 # The --check mode does not need that file.
 set -euo pipefail
@@ -20,6 +24,7 @@ here=$(cd "$(dirname "$0")" && pwd)
 root=$(cd "$here/.." && pwd)
 conf="$here/sources.local.conf"
 list="$here/sources.tsv"
+ulist="$here/untracked.tsv"
 mode=copy
 [ "${1:-}" = "--check" ] && mode=check
 
@@ -45,6 +50,24 @@ if [ "$mode" = copy ]; then
     echo "copied $(wc -l < "$paths") files of $src at $commit"
     rm -f "$paths"
   done
+
+  # Generated inputs that git does not track (untracked.tsv). Copy each one from the
+  # working tree of the source only when its sha256 equals the value of the committed
+  # checksum file.
+  if [ -f "$ulist" ]; then
+    n=0
+    while IFS=$'\t' read -r src commit sums want spath dest; do
+      read -r repo prefix < <(awk -F'\t' -v s="$src" '$1 == s { print $2 "\t" $3 }' "$conf")
+      f="$repo/${prefix:+$prefix/}$spath"
+      [ -f "$f" ] || { echo "error: $f is missing in the source working tree" >&2; exit 1; }
+      got=$(sha256sum < "$f" | cut -d' ' -f1)
+      [ "$got" = "$want" ] || { echo "error: $spath has sha256 $got, $sums at $commit says $want" >&2; exit 1; }
+      mkdir -p "$(dirname "$root/$dest")"
+      install -m 644 "$f" "$root/$dest"
+      n=$((n + 1))
+    done < <(grep -v '^#' "$ulist")
+    echo "copied $n untracked files (sha256 checked)"
+  fi
 fi
 
 # Check: git blob id and file mode of every listed file.
@@ -61,15 +84,27 @@ while IFS=$'\t' read -r gmode blob dest; do
   if [ "$gmode" = 100644 ] && [ -x "$f" ]; then echo "MODE $dest (want 100644)"; fail=1; fi
 done < "$tmp"
 
-# Report files under the destination directories that sources.tsv does not list.
+# Check: sha256 of every file of untracked.tsv.
+utmp=$(mktemp)
+trap 'rm -f "$tmp" "$utmp"' EXIT
+if [ -f "$ulist" ]; then grep -v '^#' "$ulist" | cut -f4,6 > "$utmp"; fi
+while IFS=$'\t' read -r want dest; do
+  f="$root/$dest"
+  if [ ! -f "$f" ]; then echo "MISSING $dest"; fail=1; continue; fi
+  got=$(sha256sum < "$f" | cut -d' ' -f1)
+  if [ "$got" != "$want" ]; then echo "CHANGED $dest (sha256 $got, want $want)"; fail=1; fi
+done < "$utmp"
+
+# Report files under the destination directories that the two lists do not name.
 tops=$(cut -f3 "$tmp" | cut -d/ -f1-2 | sed -E 's#^(pipeline)/.*#\1#' | LC_ALL=C sort -u)
-extra=$(cd "$root" && find $tops -type f | LC_ALL=C sort |
-  LC_ALL=C comm -23 - <(cut -f3 "$tmp" | LC_ALL=C sort))
+# Files that .gitignore names (for example __pycache__/) do not count.
+extra=$(cd "$root" && git ls-files --cached --others --exclude-standard -- $tops | LC_ALL=C sort -u |
+  LC_ALL=C comm -23 - <( { cut -f3 "$tmp"; cut -f2 "$utmp"; } | LC_ALL=C sort))
 if [ -n "$extra" ]; then
   echo "NOT LISTED (review, then delete or add a rule):"
   echo "$extra" | sed 's/^/  /'
   fail=1
 fi
 
-n=$(wc -l < "$tmp")
-if [ "$fail" -eq 0 ]; then echo "OK: $n files match sources.tsv"; else echo "FAIL: see the lines above"; exit 1; fi
+n=$(wc -l < "$tmp"); u=$(wc -l < "$utmp")
+if [ "$fail" -eq 0 ]; then echo "OK: $n files match sources.tsv, $u files match untracked.tsv"; else echo "FAIL: see the lines above"; exit 1; fi

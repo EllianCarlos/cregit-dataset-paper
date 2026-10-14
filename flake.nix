@@ -136,6 +136,10 @@
             # The python3 of the ctp runner. It is not on PATH, because python3 on PATH
             # must be the cregit one (as in the devenv shell).
             CTP_PYTHON = "${t.ctp-python}/bin/python3";
+            # The cregit python environment by its full path. "python3" on PATH is the bare
+            # interpreter (git-filter-repo brings it) with PYTHONPATH set, as in the devenv
+            # shell. "python3 -I" ignores PYTHONPATH, so scripts use CREGIT_PYTHON instead.
+            CREGIT_PYTHON = "${t.cregit-python}/bin/python3";
             shellHook = ''
               echo "cregit dataset shell (${system}). Run: make help"
             '';
