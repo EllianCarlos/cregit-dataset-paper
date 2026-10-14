@@ -1,0 +1,33 @@
+{
+ "gitlab.com__muttmua__mutt": {
+  "clone_url": "https://gitlab.com/muttmua/mutt",
+  "provenance_status": "frame:frame.batch26.csv@sha256:be5e04613301",
+  "source": "gitlab-search:stars>400 (personal namespace)",
+  "stratum": "unknown",
+  "fact": "",
+  "contested": "",
+  "label_date": "2026-10-14",
+  "owner": "muttmua",
+  "repo": "mutt",
+  "roster_name": "",
+  "roster_lang": "",
+  "language": "C",
+  "commits": "8687",
+  "size_class": "S",
+  "size_kb": "",
+  "stars": "485",
+  "pushed_at": "",
+  "license": "NOASSERTION",
+  "owner_type": "",
+  "archived": "False",
+  "fork": "False",
+  "history_cluster": "",
+  "history_shared_with": "",
+  "history_relation": "",
+  "history_includes": "",
+  "history_first": "",
+  "history_created": "",
+  "manifest_category": "pending",
+  "file_mask": "(?i)\\.(c|c\\+\\+|cc|cp|cpp|cxx|h|h\\+\\+|hh|hpp|hxx|java|rs|tcc)$"
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "MotorolaMobilityLLC__kernel-msm": {
+  "clone_url": "https://github.com/MotorolaMobilityLLC/kernel-msm.git",
+  "provenance_status": "frame:frame.batch20.csv@sha256:2059a0abf367",
+  "source": "search",
+  "stratum": "",
+  "fact": "",
+  "contested": "",
+  "label_date": "",
+  "owner": "MotorolaMobilityLLC",
+  "repo": "kernel-msm",
+  "roster_name": "",
+  "roster_lang": "",
+  "language": "C",
+  "commits": "1019110",
+  "size_class": "L",
+  "size_kb": "",
+  "stars": "690",
+  "pushed_at": "2026-09-25T21:33:58Z",
+  "license": "NOASSERTION",
+  "owner_type": "Organization",
+  "archived": "False",
+  "fork": "False",
+  "history_cluster": "",
+  "history_shared_with": "",
+  "history_relation": "",
+  "history_includes": "",
+  "history_first": "",
+  "history_created": "",
+  "manifest_category": "pending",
+  "file_mask": "(?i)\\.(c|c\\+\\+|cc|cp|cpp|cxx|h|h\\+\\+|hh|hpp|hxx|java|rs|tcc)$"
+ }
+}

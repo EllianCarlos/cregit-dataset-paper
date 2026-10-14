@@ -1,0 +1,33 @@
+{
+ "commercial-emacs__commercial-emacs": {
+  "clone_url": "https://github.com/commercial-emacs/commercial-emacs.git",
+  "provenance_status": "frame:frame.batch11.csv@sha256:432ae5bd2ac0",
+  "source": "search",
+  "stratum": "",
+  "fact": "",
+  "contested": "",
+  "label_date": "",
+  "owner": "commercial-emacs",
+  "repo": "commercial-emacs",
+  "roster_name": "",
+  "roster_lang": "",
+  "language": "Emacs Lisp",
+  "commits": "184581",
+  "size_class": "L",
+  "size_kb": "",
+  "stars": "490",
+  "pushed_at": "2026-07-20T15:46:50Z",
+  "license": "GPL-3.0",
+  "owner_type": "Organization",
+  "archived": "False",
+  "fork": "False",
+  "history_cluster": "",
+  "history_shared_with": "",
+  "history_relation": "",
+  "history_includes": "",
+  "history_first": "",
+  "history_created": "",
+  "manifest_category": "pending",
+  "file_mask": "(?i)\\.(c|c\\+\\+|cc|cp|cpp|cxx|h|h\\+\\+|hh|hpp|hxx|java|rs|tcc)$"
+ }
+}

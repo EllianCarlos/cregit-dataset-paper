@@ -1,0 +1,33 @@
+{
+ "NetBSD__pkgsrc": {
+  "clone_url": "https://github.com/NetBSD/pkgsrc.git",
+  "provenance_status": "frame:frame.batch21.csv@sha256:dafbedd8de64",
+  "source": "rosters/netbsd.csv:netbsd;search",
+  "stratum": "",
+  "fact": "",
+  "contested": "",
+  "label_date": "",
+  "owner": "NetBSD",
+  "repo": "pkgsrc",
+  "roster_name": "",
+  "roster_lang": "",
+  "language": "Makefile",
+  "commits": "457576",
+  "size_class": "L",
+  "size_kb": "",
+  "stars": "403",
+  "pushed_at": "2026-10-03T15:24:00Z",
+  "license": "NOASSERTION",
+  "owner_type": "Organization",
+  "archived": "False",
+  "fork": "False",
+  "history_cluster": "",
+  "history_shared_with": "",
+  "history_relation": "",
+  "history_includes": "",
+  "history_first": "",
+  "history_created": "",
+  "manifest_category": "pending",
+  "file_mask": "(?i)\\.(c|c\\+\\+|cc|cp|cpp|cxx|h|h\\+\\+|hh|hpp|hxx|java|rs|tcc)$"
+ }
+}
