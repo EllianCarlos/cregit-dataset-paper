@@ -1,0 +1,13 @@
+# anonymity-patterns.local: local only. Do not commit the real file, because the
+# patterns themselves are identifying text.
+# Columns (tab-separated): kind, extended regular expression.
+# The first kind that matches a line wins.
+study-repo-name	<name of the private study repository>
+aws-profile	<AWS CLI profile name>
+home-path	<home directory>|~/Projects|\$HOME/Projects
+bucket	<S3 bucket name>
+aws-account	<12-digit AWS account id>
+email	<e-mail address>
+user-name	<given name>|<full name>
+employer	<employer domains>
+ec2-id	(^|[^A-Za-z0-9])(i|ami|vol|sg|subnet)-0[0-9a-f]{7,}
