@@ -1,0 +1,11 @@
+# Part b2 of the S and M projects of manifest.batch23.tsv (sha256 d517fdd1f0c89820029e4b854eae0930d05e4a939f1241d7c6454c2306fdc589),
+# balanced by predicted time (4.4 h for 4 workers), u order; a fed spot part.
+# 7 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+mhammond__pywin32	https://github.com/mhammond/pywin32.git	pending		S	9f88183224af4a9c127c0d6d1b3c7d4846124171
+groovy__groovy-eclipse	https://github.com/groovy/groovy-eclipse.git	pending		S	abde9a69452904edd248cd77b77cc2f614b53361
+eclipse-virgo__virgo-root	https://github.com/eclipse-virgo/virgo-root.git	pending		S	f944a02cce244ea36955f2d508cb5bb40ad913a1
+BuilderIO__agent-native	https://github.com/BuilderIO/agent-native.git	pending		S	2be5dc2275c7313f30a5576f872d091b7f09a371
+praat__praat.github.io	https://github.com/praat/praat.github.io.git	pending		S	74cabccd2946e5f746f51eb9b96107e435f34e88
+Next-Flip__Momentum-Apps	https://github.com/Next-Flip/Momentum-Apps.git	pending		S	55a446b1b01bf2a2f98161d704e62cc47075ad30
+matsim-org__matsim-libs	https://github.com/matsim-org/matsim-libs.git	pending		M	c89719f9140cb2491478f1d445c3647863198bd7

@@ -1,0 +1,7 @@
+# The L projects of manifest.batch18.tsv (sha256 432ad2e493ba966ef387af309dc2cfab6bc374ba9fa442b0705d1617cdcd2f76), for the census batch18L on the big on-demand EC2.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+aws__audit-plugin-for-mysql	https://github.com/aws/audit-plugin-for-mysql.git	pending		L	a80075214f36df983585e6f89088367b969dfe67
+OpenNuvoton__NUC970_Linux_Kernel	https://github.com/OpenNuvoton/NUC970_Linux_Kernel.git	pending		L	006479b79966b9ffd8bc264af033868f61191acd
+ROCm__amdgpu	https://github.com/ROCm/amdgpu.git	pending		L	820212794d184710298efcecce42c0215bfc9c6a
+MariaDB__server	https://github.com/MariaDB/server.git	pending		L	9d7ab2c0092df4bc73b64b915464aecf7e5fe6c4

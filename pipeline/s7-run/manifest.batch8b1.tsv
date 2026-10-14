@@ -1,0 +1,8 @@
+# Part b1 of the S and M projects of manifest.batch8.tsv (sha256 adc81a175da6c733e3ef1b3d88c8f46f77390c6d808d3c14d01da8ebb96c7a32),
+# balanced by predicted time (8.2 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+apache__cloudberry	https://github.com/apache/cloudberry.git	pending		M	993e87701ca86fc66d7ebb5b2bf0da0dfbb1bf0c
+amd__ZenDNN-pytorch	https://github.com/amd/ZenDNN-pytorch.git	pending		M	07070bbd4774113817bcf01289eea580bdf335cc
+graalvm__graalvm-community-jdk21u	https://github.com/graalvm/graalvm-community-jdk21u.git	pending		M	f66a76ceeef2c6b7b7fc70103a48de45c64932b0
+duckdb__duckdb	https://github.com/duckdb/duckdb.git	pending		M	36265ef34dd6cda47dad3561cfd10da84200f332

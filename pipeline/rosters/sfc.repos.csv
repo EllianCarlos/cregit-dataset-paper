@@ -1,0 +1,43 @@
+org_key,project,repo_url,github_slug,lookup_url,fetched_at,note
+sfc,ArgoUML,,,https://argouml.tigris.org/,2026-10-05T16:51:31+00:00,"fetch failed: also failed in the author's Firefox on 2026-10-05: ""Problem loading page"" (tigris.org closed in 2023)"
+sfc,Backdrop CMS,https://github.com/backdrop/backdrop,backdrop/backdrop,https://backdropcms.org/,2026-10-05T03:18:35+00:00,found by a Playwright Chromium page load (plain curl got HTTP 406); page saved as raw/pw_pages/sfc__Backdrop_CMS.html
+sfc,Bongo,https://github.com/bongo-project/bongo-project,bongo-project/bongo-project,http://bongo-project.org/,2026-10-05T02:22:24Z,
+sfc,Buildbot,https://github.com/buildbot/buildbot,buildbot/buildbot,http://buildbot.net/,2026-10-05T02:22:29Z,fetched URL redirected to https://buildbot.net/
+sfc,BusyBox,https://git.busybox.net/busybox,,https://busybox.net/,2026-10-05T02:22:31Z,"self-hosted cgit (links per stable branch); page also links a GitHub mirror github.com/vda-linux/busybox_mirror as ""Browse Source"""
+sfc,Common Workflow Language,https://github.com/common-workflow-language,,https://www.commonwl.org/,2026-10-05T02:22:33Z,org only
+sfc,coreboot,https://github.com/coreboot,,https://www.coreboot.org/,2026-10-05T02:22:35Z,org only
+sfc,Darcs,,,http://darcs.net/,2026-10-05T02:22:39Z,no repository named on https://darcs.net/; fetched URL redirected to https://darcs.net/
+sfc,Debian Copyright Aggregation Project,,,https://sfconservancy.org/news/2015/aug/17/debian/,2026-10-05T02:22:41Z,not a software project (copyright assignment programme; SFC news page)
+sfc,Etherpad,https://github.com/ether/etherpad,ether/etherpad,http://etherpad.org/,2026-10-05T02:22:44Z,page also links several ether/* side projects; fetched URL redirected to https://etherpad.org/
+sfc,FreeDV,https://github.com/drowe67/freedv-gui,drowe67/freedv-gui,https://freedv.org/,2026-10-05T02:22:48Z,FreeDV GUI Source Code; the same section also lists drowe67/codec2 and drowe67/radae
+sfc,Gevent,https://github.com/gevent/gevent,gevent/gevent,http://www.gevent.org/,2026-10-05T02:22:49Z,
+sfc,Git,https://github.com/git/git,git/git,https://git-scm.com/,2026-10-05T02:22:50Z,"link labelled ""GitHub Repository""; page also links gitlab.com/git-scm/git for release notes"
+sfc,GPL Compliance Project for Linux Developers,,,https://sfconservancy.org/copyleft-compliance/,2026-10-05T02:22:53Z,not a software project (legal compliance programme; SFC page)
+sfc,Harvey OS,https://github.com/Harvey-OS/harvey,Harvey-OS/harvey,https://harvey-os.github.io/,2026-10-05T02:22:55Z,"link labelled ""Source code"""
+sfc,Houdini,https://github.com/houdiniproject/houdini,houdiniproject/houdini,https://houdiniproject.org,2026-10-05T02:22:59Z,the roster's homepage redirects to this GitHub repository
+sfc,Inkscape,,,https://inkscape.org/,2026-10-05T02:36:27Z,no repository named on https://inkscape.org/; page links only its website repo gitlab.com/inkscape/inkscape-web (fetched on the 2nd attempt; 1st got HTTP 403)
+sfc,Institute for Computing in Research,,,https://computinginresearch.org/,2026-10-05T02:23:03Z,not a software project (student mentoring programme)
+sfc,K-3D,https://github.com/K-3D/k3d,K-3D/k3d,http://www.k-3d.org,2026-10-05T02:23:05Z,"link labelled ""Source code"""
+sfc,Kallithea,https://kallithea-scm.org/repos/kallithea,,https://kallithea-scm.org/,2026-10-05T02:23:07Z,"self-hosted Kallithea, link labelled ""Source code"""
+sfc,Liblouis,https://github.com/liblouis/liblouis,liblouis/liblouis,https://liblouis.io/,2026-10-05T02:23:09Z,"page also links the org (as ""Contribute"") and binding repos"
+sfc,LibreHealth,https://gitlab.com/librehealth,,http://librehealth.io/,2026-10-05T02:23:13Z,"org only (GitLab group, ""Contribute code""); fetched URL redirected to https://librehealth.io/"
+sfc,libssh,https://gitlab.com/libssh/libssh-mirror,,https://www.libssh.org/,2026-10-05T02:23:16Z,the page links this GitLab project (its issue tracker); the project is named libssh-mirror
+sfc,Mercurial,,,https://www.mercurial-scm.org/,2026-10-05T02:23:17Z,"no repository named on https://www.mercurial-scm.org/; page links only its website repo foss.heptapod.net/mercurial/hg-website (""Source repository"" of the site)"
+sfc,Metalink,,,http://www.metalinker.org/,2026-10-05T02:23:20Z,"no repository named on https://www.metalinker.org/; page links only third-party client implementations (wget, mget, aria2 UI, KGet); fetched URL redirected to https://www.metalinker.org/"
+sfc,MicroBlocks,https://codeberg.org/MicroBlocks/smallvm,,http://microblocks.fun/,2026-10-05T02:23:22Z,"link labelled ""Codeberg Repository"""
+sfc,OpenTripPlanner,https://github.com/opentripplanner,,http://www.opentripplanner.org/,2026-10-05T02:23:25Z,"org only (link labelled ""Code"")"
+sfc,OpenWrt,https://git.openwrt.org/openwrt/openwrt,,https://openwrt.org/,2026-10-05T16:50:22+00:00,"'Browse Source' links git.openwrt.org/openwrt/openwrt (tree); 'Get the source code...' links https://git.openwrt.org/; page read in the author's Firefox (browser-control-mcp), 2026-10-05"
+sfc,Outreachy,,,https://www.outreachy.org/,2026-10-05T02:23:29Z,not a software project (internship programme); page links its website repo github.com/outreachy/website
+sfc,phpMyAdmin,https://github.com/phpmyadmin/phpmyadmin,phpmyadmin/phpmyadmin,https://phpmyadmin.net/,2026-10-05T02:23:33Z,fetched URL redirected to https://www.phpmyadmin.net/
+sfc,QEMU,,,http://qemu.org,2026-10-05T02:23:39Z,"no repository named on https://www.qemu.org/; page links only its website repo gitlab.com/qemu-project/qemu-web (""page source""); fetched URL redirected to https://www.qemu.org/"
+sfc,Reproducible Builds,,,https://reproducible-builds.org,2026-10-05T02:23:41Z,"not a software project (SFC: ""a set of software development practices""); page links only its website repo on salsa.debian.org"
+sfc,Samba,,,https://www.samba.org/samba/,2026-10-05T02:23:43Z,no repository named on https://www.samba.org/samba/
+sfc,Selenium,https://github.com/SeleniumHQ/selenium,SeleniumHQ/selenium,http://seleniumhq.org,2026-10-05T02:36:28Z,"seleniumhq.org meta-refreshes to www.selenium.dev, which links this repo"
+sfc,Sourceware,,,http://sourceware.org/,2026-10-05T02:23:51Z,not a software project (hosting infrastructure for toolchain projects); fetched URL redirected to https://sourceware.org/
+sfc,Squeak,https://source.squeak.org/inbox.html,,http://squeak.org/,2026-10-05T02:23:55Z,Monticello source repository the page points contributors to; page also lists github.com/squeak-smalltalk (in metadata) and the OpenSmalltalk VM repo; fetched URL redirected to https://squeak.org/
+sfc,SurveyOS,,,http://surveyos.sourceforge.net/,2026-10-05T02:36:32Z,no repository named on https://surveyos.sourceforge.net/; page is a redirect stub naming http://www.redefinedhorizons.com/surveyos/ (not followed: one step); fetched on 2nd attempt
+sfc,SWIG,https://github.com/swig/swig,swig/swig,http://www.swig.org/,2026-10-05T02:24:03Z,"page's ""Github Development"" link is the org github.com/swig; its wiki links point into swig/swig; fetched URL redirected to https://www.swig.org/"
+sfc,Teaching Open Source,,,http://teachingopensource.org/,2026-10-05T02:24:07Z,not a software project (community of instructors); the fetch got an Anubis bot-challenge page; fetched URL redirected to https://teachingopensource.org/
+sfc,Wine,https://gitlab.winehq.org/wine/wine,,https://www.winehq.org/,2026-10-05T16:53:17+00:00,"no 'source code' wording; every repository link (releases, 'shortlog' commits) is under the GitLab project gitlab.winehq.org/wine/wine; page read in the author's Firefox (browser-control-mcp), 2026-10-05"
+sfc,Xapian,,,https://xapian.org/,2026-10-05T02:24:13Z,no repository named on https://xapian.org/; page links only third-party bindings
+sfc,Xorg,https://gitlab.freedesktop.org/groups/xorg,,https://www.x.org/wiki/,2026-10-05T02:24:19Z,org only (freedesktop GitLab group); page also links its wiki repo; fetched URL redirected to https://www.x.org/

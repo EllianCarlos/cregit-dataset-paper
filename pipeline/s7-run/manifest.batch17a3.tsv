@@ -1,0 +1,26 @@
+# Part a3 of the S and M projects of manifest.batch17.tsv (sha256 fe2bcfa4c462bf23afb8d7d027903ee019a67ffa25f26d74c91f3345493549db),
+# balanced by predicted time (5.4 h for 4 workers), u order; a fed spot part.
+# 22 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+sonic-net__sonic-buildimage	https://github.com/sonic-net/sonic-buildimage.git	pending		S	cdbb0f51504db2fae4b4f5f9dffb2969bef0f1ad
+eclipse-mylyn__org.eclipse.mylyn	https://github.com/eclipse-mylyn/org.eclipse.mylyn.git	pending		S	bcc49289abf2a4d418f4b51f2d89678dc2d6ae41
+ginkgo-project__ginkgo	https://github.com/ginkgo-project/ginkgo.git	pending		S	16f1f8ff5226b821a921097a39507278d98d7d39
+goauthentik__authentik	https://github.com/goauthentik/authentik.git	pending		S	168723ebf765a506a962e124b73a9c7589efbe26
+libnyanpasu__clash-nyanpasu	https://github.com/libnyanpasu/clash-nyanpasu.git	pending		S	6c7bbea586f01e2ef075b54619ae22316d90bb32
+Uniswap__interface	https://github.com/Uniswap/interface.git	pending		S	95fccc9b9b992f5af26c2e723cf56347d3503e6a
+mlpack__mlpack	https://github.com/mlpack/mlpack.git	pending		M	e0378eccfc83cc5fcdcc1e5edb2dc9cf1d3659ff
+ente__ente	https://github.com/ente/ente.git	pending		M	9480879d416779e59913aac6270892649ed483d4
+BlueQuartzSoftware__DREAM3D	https://github.com/BlueQuartzSoftware/DREAM3D.git	pending		S	afcd76df2d5c5c62f9c15f9aa2eb921950cbd002
+org2AI__ORG2	https://github.com/org2AI/ORG2.git	pending		S	5ec548d09c30b636fa1aeb9356656108b0c84a81
+FasterXML__jackson-core	https://github.com/FasterXML/jackson-core.git	pending		S	c23a2a621584cbf0fd193d9023c2cb5f1009e7d6
+apache__pekko-http	https://github.com/apache/pekko-http.git	pending		S	561929f9659961d89ed7e6e5b97b701362c5a832
+sandboxie-plus__Sandboxie	https://github.com/sandboxie-plus/Sandboxie.git	pending		S	e5a2e1b451b79d644bc81bf2412c2c1eb27af40b
+weld__core	https://github.com/weld/core.git	pending		S	12251dc67f721b063f2bedf5299322aac5292298
+MCreator__MCreator	https://github.com/MCreator/MCreator.git	pending		S	21748c1d4d74aeb54c9d198704ee7ea0eb1a6852
+diffplug__spotless	https://github.com/diffplug/spotless.git	pending		S	0a5757f28f89717d027bd1030c0bd1ec3c14817c
+davisking__dlib	https://github.com/davisking/dlib.git	pending		S	ac7d55406eae4faf59603df2b27d33057ba2b1a9
+dependency-check__DependencyCheck	https://github.com/dependency-check/DependencyCheck.git	pending		S	6fa7f2fb8fc8f19566567a23341a5ce946f077ee
+sudo-project__sudo	https://github.com/sudo-project/sudo.git	pending		S	aa84f40a9960e21f97fbdcf432c2c7a94c44fb71
+ncbi__ncbi-vdb	https://github.com/ncbi/ncbi-vdb.git	pending		S	28118ec6254c1a1acbf47ecbdc775d693f178573
+hickory-dns__hickory-dns	https://github.com/hickory-dns/hickory-dns.git	pending		S	5a8127becc386e4902379ab6b88635b6ad744859
+facebook__CacheLib	https://github.com/facebook/CacheLib.git	pending		S	188a00d7d0a133b911ddd2cc1c6a2ce698ebcb63

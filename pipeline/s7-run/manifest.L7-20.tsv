@@ -1,0 +1,129 @@
+# The L projects of batches 7-20 (manifest.batch7L.tsv .. manifest.batch20L.tsv) for the census L7-20 on
+# the big on-demand EC2: 6 workers, longest predicted first (LPT; ctp census runs rows in this order).
+# 55 projects, 917 h predicted in total (inferred). Sources (sha256, first 16 hex):
+#   manifest.batch7L.tsv a8cfd18e9b4c7d33
+#   manifest.batch8L.tsv bf3685f90ab7dd38
+#   manifest.batch9L.tsv 0a8eb1fea80a8ce4
+#   manifest.batch10L.tsv 79c8ab24e2883f75
+#   manifest.batch11L.tsv cb4ba46c6a9bbb25
+#   manifest.batch12L.tsv 0c39ea9e42eff18a
+#   manifest.batch13L.tsv a1bf436af7a452c7
+#   manifest.batch14L.tsv ecda654640f9789f
+#   manifest.batch15L.tsv f721f55df08dfeeb
+#   manifest.batch16L.tsv b0ab09a50440dc2a
+#   manifest.batch17L.tsv 74481396763fde5d
+#   manifest.batch18L.tsv 49b54dcd67bb3a9c
+#   manifest.batch19L.tsv ed65aca166c0b43f
+#   manifest.batch20L.tsv 764ddd5d2686366d
+# Predicted hours, batch, name, in row order:
+#     40.1  batch10  multipath-tcp__mptcp_net-next
+#     40.1  batch12  gregkh__linux
+#     40.1  batch8  WireGuard__wireguard-linux
+#     39.5  batch18  ROCm__amdgpu
+#     38.5  batch10  Mellanox__nic-kernel
+#     38.0  batch12  raspberrypi__linux
+#     38.0  batch8  Xilinx__linux-xlnx
+#     37.9  batch8  ni__linux
+#     37.8  batch7  microsoft__WSL2-Linux-Kernel
+#     36.8  batch16  analogdevicesinc__linux
+#     36.0  batch14  microsoft__OHCL-Linux-Kernel
+#     35.9  batch9  HewlettPackard__gsc-linux
+#     34.7  batch8  armbian__linux-rockchip
+#     34.4  batch12  digi-embedded__linux
+#     31.7  batch19  projectacrn__acrn-kernel
+#     30.5  batch19  Pzqqt__android_kernel_xiaomi_marble
+#     26.0  batch10  BrowserWorks__waterfox
+#     25.9  batch20  MotorolaMobilityLLC__kernel-msm
+#     25.6  batch17  mozilla__enterprise-firefox
+#     19.6  batch10  liferay__liferay-portal
+#     18.7  batch14  intel__llvm
+#     15.8  batch15  flang-compiler__classic-flang-llvm-project
+#     14.8  batch17  aftermathlabs__llvm-msvc
+#     14.2  batch8  openucx__ODOS
+#     13.1  batch7  freebsd__freebsd-src
+#     10.6  batch18  OpenNuvoton__NUC970_Linux_Kernel
+#     10.4  batch14  LibreOffice__core
+#     10.1  batch19  JetBrains__intellij-community
+#      9.4  batch19  percona__percona-xtrabackup
+#      8.9  batch16  percona__percona-server
+#      8.7  batch16  logicalclocks__rondb
+#      7.2  batch16  Rust-GCC__gccrs
+#      7.0  batch16  pfsense__FreeBSD-ports
+#      6.5  batch8  mysql__mysql-server
+#      6.4  batch13  ferrocene__ferrocene
+#      6.3  batch14  digi-embedded__android_platform_frameworks_base
+#      6.1  batch8  cms-sw__cmssw
+#      6.1  batch10  rust-lang__rust
+#      5.4  batch13  Weather-OS__WineGDK
+#      5.1  batch13  freebsd__freebsd-ports
+#      4.9  batch19  polardb__polardbx-engine
+#      4.1  batch7  UPBGE__upbge
+#      4.0  batch8  androidx__androidx
+#      3.7  batch12  zephyrproject-rtos__zephyr
+#      3.6  batch18  MariaDB__server
+#      3.4  batch19  eloqdata__eloqsql
+#      3.3  batch15  swiftlang__swift
+#      3.2  batch9  Tencent__TenDBCluster-TSpider
+#      2.5  batch12  JetBrains__android
+#      1.8  batch8  emacs-ng__emacs-ng
+#      1.7  batch11  commercial-emacs__commercial-emacs
+#      1.6  batch14  naftaliharris__tauthon
+#      0.5  batch14  microsoft__vscode
+#      0.2  batch18  aws__audit-plugin-for-mysql
+#      0.0  batch13  jlord__patchwork
+# Columns: name  url  category  file_filter  size_class  commit
+multipath-tcp__mptcp_net-next	https://github.com/multipath-tcp/mptcp_net-next.git	pending		L	495d73a540d465ae086dbd192043d5af596ece0c
+gregkh__linux	https://github.com/gregkh/linux.git	pending		L	e767a4ea70a3992c37ed604157d32f0dfbf9b1e3
+WireGuard__wireguard-linux	https://github.com/WireGuard/wireguard-linux.git	pending		L	abba013a939f6d2d664d71713afa8d4de88721a7
+ROCm__amdgpu	https://github.com/ROCm/amdgpu.git	pending		L	820212794d184710298efcecce42c0215bfc9c6a
+Mellanox__nic-kernel	https://github.com/Mellanox/nic-kernel.git	pending		L	f338e77383789c0cae23ca3d48adcc5e9e137e3c
+raspberrypi__linux	https://github.com/raspberrypi/linux.git	pending		L	6c97cb0f7b2d4f8f86f3814dd990ab32e5a24f2c
+Xilinx__linux-xlnx	https://github.com/Xilinx/linux-xlnx.git	pending		L	235bd5e49f53bfea681cfd6c489ca1e0eab0b061
+ni__linux	https://github.com/ni/linux.git	pending		L	51a4fed224976cb47e96fe194af793d0517d223f
+microsoft__WSL2-Linux-Kernel	https://github.com/microsoft/WSL2-Linux-Kernel.git	pending		L	14794180686c2fb6307fbe359c359bec765249f3
+analogdevicesinc__linux	https://github.com/analogdevicesinc/linux.git	pending		L	b1b66e7177216b892dc574c6d1823fb905474489
+microsoft__OHCL-Linux-Kernel	https://github.com/microsoft/OHCL-Linux-Kernel.git	pending		L	bb0827ceb8fcd777ca2fad8b71da91c2247429ce
+HewlettPackard__gsc-linux	https://github.com/HewlettPackard/gsc-linux.git	pending		L	0fa435993553c6a46c4af426537f581e57600e4f
+armbian__linux-rockchip	https://github.com/armbian/linux-rockchip.git	pending		L	44bbd021d7808cab93d1f2d64c1f092038257576
+digi-embedded__linux	https://github.com/digi-embedded/linux.git	pending		L	d96ee8c0c9903d41a0cc1df6fb17104b7a306236
+projectacrn__acrn-kernel	https://github.com/projectacrn/acrn-kernel.git	pending		L	cab1ad4b40fb397a6c433116dcd7663629eafd73
+Pzqqt__android_kernel_xiaomi_marble	https://github.com/Pzqqt/android_kernel_xiaomi_marble.git	pending		L	ed478457833fafc798497d349ce4912b5698e4c4
+BrowserWorks__waterfox	https://github.com/BrowserWorks/waterfox.git	pending		L	d71eb03f6174cc6db2f1ca75c243b77fe5bb5f19
+MotorolaMobilityLLC__kernel-msm	https://github.com/MotorolaMobilityLLC/kernel-msm.git	pending		L	0450c5076a8ec9415a10888c8c183ef6ff5f91b8
+mozilla__enterprise-firefox	https://github.com/mozilla/enterprise-firefox.git	pending		L	6f254e3c8a7c29f4ba6478a9a6b7cf685af9ef26
+liferay__liferay-portal	https://github.com/liferay/liferay-portal.git	pending		L	b56c9f168109c27ad8ff288c5b627170b7bb3a53
+intel__llvm	https://github.com/intel/llvm.git	pending		L	877282b69962972b8960eef5bf83799a71dbc93c
+flang-compiler__classic-flang-llvm-project	https://github.com/flang-compiler/classic-flang-llvm-project.git	pending		L	8bf9edc018464e391987d435b662a0b1e0b68c37
+aftermathlabs__llvm-msvc	https://github.com/aftermathlabs/llvm-msvc.git	pending		L	bfc7254eb5618856d9299f65b0f5482904d1f4fc
+openucx__ODOS	https://github.com/openucx/ODOS.git	pending		L	db499eb69a5ea2b00e61fe789690619cf8375f5c
+freebsd__freebsd-src	https://github.com/freebsd/freebsd-src.git	pending		L	a5ae2a9bfb1ca7f49e79ee63ed39216c42326d02
+OpenNuvoton__NUC970_Linux_Kernel	https://github.com/OpenNuvoton/NUC970_Linux_Kernel.git	pending		L	006479b79966b9ffd8bc264af033868f61191acd
+LibreOffice__core	https://github.com/LibreOffice/core.git	pending		L	65bbb1691f022226390e15b7ea65567970bbc12e
+JetBrains__intellij-community	https://github.com/JetBrains/intellij-community.git	pending		L	90a84b77abb4b8944cbc6ec098c1df4dc958c683
+percona__percona-xtrabackup	https://github.com/percona/percona-xtrabackup.git	pending		L	3b7abcf274be65230ae5b25515ecf0852efa8d97
+percona__percona-server	https://github.com/percona/percona-server.git	pending		L	cd515a56df1e120eda9a0c76d4142e68d1e6d578
+logicalclocks__rondb	https://github.com/logicalclocks/rondb.git	pending		L	1d9bc8c56ce38ec0d5bc18e7dd79cf677ab2e2aa
+Rust-GCC__gccrs	https://github.com/Rust-GCC/gccrs.git	pending		L	36b5a1512938d9f2d6b23c29404ac6baca9dab3c
+pfsense__FreeBSD-ports	https://github.com/pfsense/FreeBSD-ports.git	pending		L	a621624266b19a7f48b1f94a60821d2c2fc6ee4c
+mysql__mysql-server	https://github.com/mysql/mysql-server.git	pending		L	3b99be40f8a31d9396cad10accfd3ba51647d613
+ferrocene__ferrocene	https://github.com/ferrocene/ferrocene.git	pending		L	858bd966980c4f0a947a3387e5105604103e49ae
+digi-embedded__android_platform_frameworks_base	https://github.com/digi-embedded/android_platform_frameworks_base.git	pending		L	93a5f6eccdbc7573dd48f37e1a6653d8e96f3f4b
+cms-sw__cmssw	https://github.com/cms-sw/cmssw.git	pending		L	41a5131092310e551bdc441303f38a737c85e66f
+rust-lang__rust	https://github.com/rust-lang/rust.git	pending		L	db23a2d392783030c008a5fafbe6cb139d1f7707
+Weather-OS__WineGDK	https://github.com/Weather-OS/WineGDK.git	pending		L	b03ba49c4f326c36aa6930fbe6cf72841ef3738c
+freebsd__freebsd-ports	https://github.com/freebsd/freebsd-ports.git	pending		L	0b23c55e5d2cdcb4a5d8d11bfc2f9c56cc6348ab
+polardb__polardbx-engine	https://github.com/polardb/polardbx-engine.git	pending		L	1b839e6698ac120967c5afefd8f0f343383d2530
+UPBGE__upbge	https://github.com/UPBGE/upbge.git	pending		L	706a4be93ed600b5a2b50577f4788754e5ca12c0
+androidx__androidx	https://github.com/androidx/androidx.git	pending		L	4d65d70d366bd936eeaaffbc23b74f4b337b0de3
+zephyrproject-rtos__zephyr	https://github.com/zephyrproject-rtos/zephyr.git	pending		L	8f62a4ab82b5c2121c088842d3233f75b603ce35
+MariaDB__server	https://github.com/MariaDB/server.git	pending		L	9d7ab2c0092df4bc73b64b915464aecf7e5fe6c4
+eloqdata__eloqsql	https://github.com/eloqdata/eloqsql.git	pending		L	b1120734193b3c225350e2312a2591b57ae211fa
+swiftlang__swift	https://github.com/swiftlang/swift.git	pending		L	0cba8ddaae234051e71e9e050619f915a5b9842b
+Tencent__TenDBCluster-TSpider	https://github.com/Tencent/TenDBCluster-TSpider.git	pending		L	0eb4efe0d9ea988e91464e42b46cd4766ff04b9a
+JetBrains__android	https://github.com/JetBrains/android.git	pending		L	c7ea1a48e01f0a217d1bac521bae9bc7b2403086
+emacs-ng__emacs-ng	https://github.com/emacs-ng/emacs-ng.git	pending		L	d90af7b852caa1956c584d7c85ecfff605749e0b
+commercial-emacs__commercial-emacs	https://github.com/commercial-emacs/commercial-emacs.git	pending		L	bf4184f985d0674a7c03c12eb33b66ac833d9e29
+naftaliharris__tauthon	https://github.com/naftaliharris/tauthon.git	pending		L	8c285035882a2b9843428293675fa7668c0d5b0e
+microsoft__vscode	https://github.com/microsoft/vscode.git	pending		L	4ea6157f821f33c75892de9cc7944e247809d951
+aws__audit-plugin-for-mysql	https://github.com/aws/audit-plugin-for-mysql.git	pending		L	a80075214f36df983585e6f89088367b969dfe67
+jlord__patchwork	https://github.com/jlord/patchwork.git	pending		L	7421236abab70728b92d1990cb0e15f6c175045f

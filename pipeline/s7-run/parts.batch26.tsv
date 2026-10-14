@@ -1,0 +1,5 @@
+# Fed spot parts of batch26 (parts_batch26.py): the S and M projects of manifest.batch26.tsv. sha256 is
+# that of the part manifest manifest.<workload><part>.tsv, which split_batchN.py --derive rebuilds.
+# batch26 (2026-10-14): one part, a1, 1 worker, on spot half a (gitlab.com/muttmua/mutt, DP8L v4 near miss C).
+half	workload	part	workers	projects	predicted_h	sha256
+a	batch26	a1	1	1	0.1	af0fae03f1c7e27c5487290643539901c6086c07c222c3afc91af7d6911feccb

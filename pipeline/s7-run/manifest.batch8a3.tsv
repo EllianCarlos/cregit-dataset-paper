@@ -1,0 +1,22 @@
+# Part a3 of the S and M projects of manifest.batch8.tsv (sha256 adc81a175da6c733e3ef1b3d88c8f46f77390c6d808d3c14d01da8ebb96c7a32),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 18 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+analogdevicesinc__oran-optee-os	https://github.com/analogdevicesinc/oran-optee-os.git	pending		S	cedeeca6c82a79f5d2ef58d73ea75d0d8e3f7b1b
+janet-lang__janet	https://github.com/janet-lang/janet.git	pending		S	0809778b414822c2cf2254f6199b27f54b8ed3e3
+OpenLightingProject__ola	https://github.com/OpenLightingProject/ola.git	pending		S	8cf04267302de88e9ff2e93dcc05c0c848ca7be3
+aburch__simutrans	https://github.com/aburch/simutrans.git	pending		S	eb7dafc31b1046420d5ed4c33824d8749bb54175
+tensorflow__tfjs	https://github.com/tensorflow/tfjs.git	pending		S	7f5309fef0a47545e34049903dbdae0f97285f7e
+util-linux__util-linux	https://github.com/util-linux/util-linux.git	pending		S	23f51d4a1d113ac323062b22bba8558b190e9595
+commontk__CTK	https://github.com/commontk/CTK.git	pending		S	c7bc5859d138f3a3006d40824a83e7853035fde1
+google__dawn	https://github.com/google/dawn.git	pending		S	2a02304bc025302bee96fc9b56ee454bfc0dc2a3
+reactor__reactor-netty	https://github.com/reactor/reactor-netty.git	pending		S	5c4080b08cf925ec3daf961e9bed93758b5695da
+ConEmu__ConEmu	https://github.com/ConEmu/ConEmu.git	pending		S	c8cebb921e69d26fde43ba0a2af79115d1a07977
+IntellectualSites__PlotSquared	https://github.com/IntellectualSites/PlotSquared.git	pending		S	8901807ff7b2599f9f0ea4d3040da4c682cf5304
+particle-iot__device-os	https://github.com/particle-iot/device-os.git	pending		S	86119b1be0972f26254b382845308e9faedf8830
+eclipse-tractusx__item-relationship-service	https://github.com/eclipse-tractusx/item-relationship-service.git	pending		S	3d33114b7058c504346a7b90077ab7cfe153952b
+rhomobile__rhodes	https://github.com/rhomobile/rhodes.git	pending		S	efc2739951e687d85033e54f3430ac4f46b74c94
+jvde-github__AIS-catcher	https://github.com/jvde-github/AIS-catcher.git	pending		S	72e70d281f894b22dd4fcac23424f9570767c0b4
+forcedotcom__SalesforceMobileSDK-Android	https://github.com/forcedotcom/SalesforceMobileSDK-Android.git	pending		S	e198db67a0b3769a3b46fe6f6a39cb0093e8c71d
+cdapio__cdap	https://github.com/cdapio/cdap.git	pending		M	8ee8e2d60cd99b960ae7b590e59b10cc7f1eac76
+JGRennison__OpenTTD-patches	https://github.com/JGRennison/OpenTTD-patches.git	pending		M	6318727b024e7be0c0b30773fe99c4375fcf315d

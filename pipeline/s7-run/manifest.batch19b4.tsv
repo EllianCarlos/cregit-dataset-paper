@@ -1,0 +1,25 @@
+# Part b4 of the S and M projects of manifest.batch19.tsv (sha256 8a11b7acec582e49f76d0e09d7ff1e039d3458ef456ff4c1a875509b92849d3b),
+# balanced by predicted time (7.0 h for 4 workers), u order; a fed spot part.
+# 21 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+pgRouting__pgrouting	https://github.com/pgRouting/pgrouting.git	pending		S	3a37beac906b63398c9a23a343ed695c3e62bb74
+web-infra-dev__rspack	https://github.com/web-infra-dev/rspack.git	pending		S	d5cadc1033be4855888930a798c35d4c7af9fddf
+GNOME__aisleriot	https://github.com/GNOME/aisleriot.git	pending		S	874d1b1e2901bacb25c579b0b481286b7e71ccbe
+amule-project__amule	https://github.com/amule-project/amule.git	pending		S	6a1105634d81242a581a0f36a7e00379b12a83f3
+mastodon__mastodon-android	https://github.com/mastodon/mastodon-android.git	pending		S	24d8c5d9d012858e8928ab465b455ad52805a9ee
+scylladb__scylladb	https://github.com/scylladb/scylladb.git	pending		M	c3612c1cfd7c1e58186d7f993d87d0fa578c8fdc
+moneymanagerex__moneymanagerex	https://github.com/moneymanagerex/moneymanagerex.git	pending		S	fa51a5430ec3e33d660e2f667249971d19ac2c07
+neomutt__neomutt	https://github.com/neomutt/neomutt.git	pending		S	26977c01772e8d24c8acc2d6310f97f1442caa27
+qcad__qcad	https://github.com/qcad/qcad.git	pending		S	d3d3569e8f2733ebeb74cd03633ce1ba4bde10d1
+defold__defold	https://github.com/defold/defold.git	pending		S	918c45fd9d0042706d868b7a810c135a6d62b4e9
+twitter__finagle	https://github.com/twitter/finagle.git	pending		S	ca472deb355c7d3b8d7eb077223991e8c8f4ad8b
+Netatalk__netatalk	https://github.com/Netatalk/netatalk.git	pending		S	51ccb1983e50d17f104c3874c9867037e631177e
+dotnet__wpf	https://github.com/dotnet/wpf.git	pending		S	e89a851c5792c8777a7115cc7a797fd0c045fdd4
+QwenLM__qwen-code	https://github.com/QwenLM/qwen-code.git	pending		S	69d5db2ff2424da01ac6f14e4c484773aae7204c
+thesofproject__sof	https://github.com/thesofproject/sof.git	pending		S	dd26374c5d004573bc047829ac3f9b3bec503575
+mixpeek__amux	https://github.com/mixpeek/amux.git	pending		S	628576b4432ae204ef3a1a0e2f192c41e3c44ace
+reticulatedpines__magiclantern_simplified	https://github.com/reticulatedpines/magiclantern_simplified.git	pending		S	142472e95054d73640f50789ac0fd66325499d82
+MPLLang__mpl	https://github.com/MPLLang/mpl.git	pending		S	ca92f64832b9bf53dc29801f4edeca40ea72ab98
+Checkmk__checkmk	https://github.com/Checkmk/checkmk.git	pending		M	820145789bf843a5e8ae63c930a4baf3692cb815
+AzureAD__microsoft-authentication-library-common-for-android	https://github.com/AzureAD/microsoft-authentication-library-common-for-android.git	pending		S	f0aa6a9c55575e26380d526ab97126b2cb2e5e01
+mawww__kakoune	https://github.com/mawww/kakoune.git	pending		S	c5797f84f1cd7ff7d0ea3b5fb84d391dc8c8b322

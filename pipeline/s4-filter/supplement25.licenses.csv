@@ -1,0 +1,51 @@
+pool_key,slug,license,license_evidence
+url:https://git.adelielinux.org/adelie/packages,adelie/packages,NOASSERTION,LICENSE
+url:https://git.themanaworld.org/mana/verse,mana/verse,NOASSERTION,COPYING
+url:https://git.themanaworld.org/ml/serverdata,ml/serverdata,NOASSERTION,COPYING
+url:https://gitlab.archlinux.org/pacman/pacman,pacman/pacman,NOASSERTION,COPYING
+url:https://gitlab.freedesktop.org/cairo/cairo,cairo/cairo,NOASSERTION,COPYING;COPYING-LGPL-2.1;COPYING-MPL-1.1
+url:https://gitlab.freedesktop.org/drm/igt-gpu-tools,drm/igt-gpu-tools,NOASSERTION,COPYING
+url:https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs,gstreamer/gst-plugins-rs,NOASSERTION,LICENSE-APACHE;LICENSE-MIT;LICENSE-MPL-2.0
+url:https://gitlab.freedesktop.org/libinput/libinput,libinput/libinput,NOASSERTION,COPYING
+url:https://gitlab.freedesktop.org/mesa/libdrm,mesa/libdrm,MIT,LICENSES (LICENSES/: MIT)
+url:https://gitlab.freedesktop.org/mesa/mesa,mesa/mesa,NOASSERTION,licenses
+url:https://gitlab.freedesktop.org/mesa/piglit,mesa/piglit,NOASSERTION,COPYING;licences
+url:https://gitlab.freedesktop.org/mobile-broadband/ModemManager,mobile-broadband/ModemManager,NOASSERTION,COPYING;COPYING.LIB
+url:https://gitlab.freedesktop.org/monado/monado,monado/monado,Apache-2.0;BSD-2-Clause;BSD-3-Clause;BSL-1.0;CC-BY-4.0;CC0-1.0;LicenseRef-DCO-1.1;LicenseRef-Khronos-Free-Use-License-for-Software-and-Documentation;MIT;Unlicense;Zlib,LICENSE;LICENSES (LICENSES/: Apache-2.0;BSD-2-Clause;BSD-3-Clause;BSL-1.0;CC-BY-4.0;CC0-1.0;LicenseRef-DCO-1.1;LicenseRef-Khronos-Free-Use-License-for-Software-and-Documentation;MIT;Unlicense;Zlib)
+url:https://gitlab.freedesktop.org/poppler/poppler,poppler/poppler,NOASSERTION,COPYING;COPYING3
+url:https://gitlab.freedesktop.org/SyncEvolution/syncevolution,SyncEvolution/syncevolution,NOASSERTION,COPYING;LICENSE.LGPL-21;LICENSE.txt
+url:https://gitlab.freedesktop.org/telepathy/telepathy-glib,telepathy/telepathy-glib,NOASSERTION,COPYING
+url:https://gitlab.freedesktop.org/telepathy/telepathy-qt,telepathy/telepathy-qt,NOASSERTION,COPYING
+url:https://gitlab.freedesktop.org/wlroots/wlroots,wlroots/wlroots,NOASSERTION,LICENSE
+url:https://gitlab.gnome.org/World/AbiWord,World/AbiWord,NOASSERTION,COPYING
+url:https://gitlab.gnome.org/World/gedit/gedit,World/gedit/gedit,NOASSERTION,COPYING
+url:https://gitlab.gnome.org/World/Phosh/phosh,World/Phosh/phosh,NOASSERTION,COPYING
+url:https://gitlab.inria.fr/aevol/aevol,aevol/aevol,NOASSERTION,COPYING
+url:https://gitlab.inria.fr/cedar/connectionlens,cedar/connectionlens,NOASSERTION,LICENSE
+url:https://gitlab.inria.fr/computix/computix,computix/computix,AGPL-3.0-only,COPYING;LICENSES (LICENSES/: AGPL-3.0-only)
+url:https://gitlab.inria.fr/croco-ocean/croco,croco-ocean/croco,LICENSE_AGRIF_FILES;LICENSE_BENCH;LICENSE_CeCILL;LICENSE_LIB_AGRIF;LICENSE_MUSTANG;LICENSE_OBSTRUCTION;LICENSE_PISCES;LICENSE_STOGEN,LICENSE.txt;LICENSES (LICENSES/: LICENSE_AGRIF_FILES;LICENSE_BENCH;LICENSE_CeCILL;LICENSE_LIB_AGRIF;LICENSE_MUSTANG;LICENSE_OBSTRUCTION;LICENSE_PISCES;LICENSE_STOGEN)
+url:https://gitlab.inria.fr/felisce/felisce,felisce/felisce,NOASSERTION,LICENSE
+url:https://gitlab.inria.fr/gazelle/public/core/test-management,gazelle/public/core/test-management,NOASSERTION,LICENSE.txt
+url:https://gitlab.inria.fr/gnomon/gnomon,gnomon/gnomon,NOASSERTION,LICENSE
+url:https://gitlab.inria.fr/memcad/memcad,memcad/memcad,NOASSERTION,LICENSE
+url:https://gitlab.inria.fr/MoReFEM/CoreLibrary/MoReFEM,MoReFEM/CoreLibrary/MoReFEM,NOASSERTION,LICENSE
+url:https://gitlab.inria.fr/pm2/pm2,pm2/pm2,NOASSERTION,COPYING
+url:https://gitlab.inria.fr/simgrid/simgrid,simgrid/simgrid,NOASSERTION,COPYING;LICENSE-LGPL-2.1
+url:https://gitlab.inria.fr/solverstack/ScalFMM,solverstack/ScalFMM,NOASSERTION,LICENCE
+url:https://gitlab.inria.fr/starpu/starpu,starpu/starpu,NOASSERTION,COPYING.LGPL
+url:https://gitlab.inria.fr/tapenade/tapenade,tapenade/tapenade,NOASSERTION,LICENSE.md
+url:https://gitlab.inria.fr/vidjil/vidjil,vidjil/vidjil,NOASSERTION,LICENSE;LICENSE.md
+url:https://invent.kde.org/office/skrooge,office/skrooge,GPL-3.0-or-later,COPYING;LICENSES (LICENSES/: GPL-3.0-or-later)
+url:https://gitlab.freedesktop.org/camera/libcamera,camera/libcamera,Apache-2.0;BSD-2-Clause;BSD-3-Clause;CC-BY-4.0;CC-BY-SA-4.0;CC0-1.0;GPL-2.0;GPL-2.0+;GPL-2.0-only;GPL-2.0-or-later;LGPL-2.1-or-later;Linux-syscall-note;MIT,COPYING.rst;LICENSES (LICENSES/: Apache-2.0;BSD-2-Clause;BSD-3-Clause;CC-BY-4.0;CC-BY-SA-4.0;CC0-1.0;GPL-2.0;GPL-2.0+;GPL-2.0-only;GPL-2.0-or-later;LGPL-2.1-or-later;Linux-syscall-note;MIT)
+url:https://gitlab.freedesktop.org/pipewire/media-session,pipewire/media-session,NOASSERTION,COPYING;LICENSE
+url:https://gitlab.winehq.org/wine/vkd3d,wine/vkd3d,NOASSERTION,COPYING;LICENSE
+url:https://gitlab.freedesktop.org/dbus/dbus,dbus/dbus,AFL-2.0;AFL-2.1;Apache-2.0;BSD-3-Clause;GPL-2.0-or-later;LGPL-2.1-or-later;LicenseRef-CMakeScripts;LicenseRef-GAP;LicenseRef-pycrypto-orig;MIT;TCL,COPYING;LICENSES (LICENSES/: AFL-2.0;AFL-2.1;Apache-2.0;BSD-3-Clause;GPL-2.0-or-later;LGPL-2.1-or-later;LicenseRef-CMakeScripts;LicenseRef-GAP;LicenseRef-pycrypto-orig;MIT;TCL)
+url:https://gitlab.freedesktop.org/wayland/weston,wayland/weston,NOASSERTION,COPYING
+url:https://gitlab.com/inkscape/inkscape,inkscape/inkscape,GPL-2.0;GPL-2.0-or-later;GPL-3.0;GPL-3.0-or-later;LGPL-2.1;LGPL-2.1-or-later;LGPL-3.0;LGPL-3.0-or-later;MPL-1.1;OFL-1.1,COPYING;LICENSES (LICENSES/: GPL-2.0;GPL-2.0-or-later;GPL-3.0;GPL-3.0-or-later;LGPL-2.1;LGPL-2.1-or-later;LGPL-3.0;LGPL-3.0-or-later;MPL-1.1;OFL-1.1)
+url:https://gitlab.com/veloren/veloren,veloren/veloren,NOASSERTION,LICENSE
+url:https://gitlab.com/graphviz/graphviz,graphviz/graphviz,NOASSERTION,COPYING;LICENSE
+url:https://gitlab.com/libeigen/eigen,libeigen/eigen,Apache-2.0;BSD-3-Clause;LicenseRef-MINPACK;MPL-2.0,COPYING.APACHE;COPYING.BSD;COPYING.MINPACK;COPYING.MPL2;COPYING.README;LICENSE;LICENSES (LICENSES/: Apache-2.0;BSD-3-Clause;LicenseRef-MINPACK;MPL-2.0)
+url:https://gitlab.com/tezos/tezos,tezos/tezos,Apache-2.0;ISC;MIT,LICENSES (LICENSES/: Apache-2.0;ISC;MIT)
+url:https://gitlab.com/coolercontrol/coolercontrol,coolercontrol/coolercontrol,CC0-1.0;GPL-3.0-or-later;OFL-1.1,LICENSE;LICENSES (LICENSES/: CC0-1.0;GPL-3.0-or-later;OFL-1.1)
+url:https://gitlab.com/sequoia-pgp/sequoia,sequoia-pgp/sequoia,NOASSERTION,LICENSE.txt
+url:https://gitlab.com/distant-horizons-team/distant-horizons,distant-horizons-team/distant-horizons,NOASSERTION,LICENSE-LOGOS.txt;LICENSE.LESSER.txt;LICENSE.txt;license_header.txt

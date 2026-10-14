@@ -1,0 +1,32 @@
+# Part b1 of the S and M projects of manifest.batch1rest.tsv (sha256 8d43eeb3959a96c4373e4523eabb6c49aa5d74cf659a351a7214a766a96f785f),
+# balanced by predicted time (11.9 h for 4 workers), u order.
+# 28 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+rustls__rustls	https://github.com/rustls/rustls.git	pending		S	91aebe5d6d8220f156bd837eb2c269eb87e9f4a0
+uncrustify__uncrustify	https://github.com/uncrustify/uncrustify.git	pending		S	51149ce500c5d8cb4c0b195df6b63d8586a570b4
+rmottola__Arctic-Fox	https://github.com/rmottola/Arctic-Fox.git	pending		M	8782dd8bc608bf8482832beaca16622d20132c82
+apache__royale-compiler	https://github.com/apache/royale-compiler.git	pending		S	644827fe6b74fd782ee8b4b790b77da93366b69e
+hove-io__navitia	https://github.com/hove-io/navitia.git	pending		S	c21d5980992f0e85f490ae4756f689a06cc64b7f
+OpenFOAM__OpenFOAM-dev	https://github.com/OpenFOAM/OpenFOAM-dev.git	pending		S	dfa6c7e0836dc7655e7eba9db0329f60e3e36c1a
+cryptomator__cryptomator	https://github.com/cryptomator/cryptomator.git	pending		S	1f8b46aa27f88508c55ccaf62af3c231e90de42c
+confluentinc__examples	https://github.com/confluentinc/examples.git	pending		S	167326de493c4c5d14b88bcbcca256cc64ffb2a2
+sched-ext__scx	https://github.com/sched-ext/scx.git	pending		S	cb84fb31d9dd537341e28b120f2ad81f3ff10201
+igniterealtime__Spark	https://github.com/igniterealtime/Spark.git	pending		S	411f79851434b83aaba09e389a3d607ef1d49052
+freesurfer__freesurfer	https://github.com/freesurfer/freesurfer.git	pending		M	d15794265d8960feed85e0a1480bbc9d8391b68d
+ICIJ__datashare	https://github.com/ICIJ/datashare.git	pending		S	ae8994fa97fce187c4127a2864993a93acb74e60
+argotorg__fe	https://github.com/argotorg/fe.git	pending		S	aff4b5001d0d2a5318db8c48ff18c929d519dbdc
+Z3Prover__z3	https://github.com/Z3Prover/z3.git	pending		S	d0d5497f3ea79364c9a3430e5821f59756c70e18
+apache__incubator-pegasus	https://github.com/apache/incubator-pegasus.git	pending		S	750154675eaf2825423825f16b08da1855e6a18b
+NLnetLabs__nsd	https://github.com/NLnetLabs/nsd.git	pending		S	be7050988d70a9c2685e1230a322fb09857ff472
+nuxeo__nuxeo	https://github.com/nuxeo/nuxeo.git	pending		M	00b5bed6f966941679aa9762c0f5286375902e44
+strapdata__elassandra	https://github.com/strapdata/elassandra.git	pending		M	b90667791768188a98641be0f758ff7cd9f411f0
+keymapperorg__KeyMapper	https://github.com/keymapperorg/KeyMapper.git	pending		S	c402f030da1d0c61b5ff151367ab1b75e4ae6faf
+kestra-io__kestra	https://github.com/kestra-io/kestra.git	pending		S	f6dbbb49fe02ac18d2be88419df33083cf8a7256
+tvheadend__tvheadend	https://github.com/tvheadend/tvheadend.git	pending		S	7c9427e703ec8ef71d67ef6338632064ec48b34b
+AlmasB__FXGL	https://github.com/AlmasB/FXGL.git	pending		S	e3858432263ac89f796da4a57a0b01b92d811751
+fschutt__azul	https://github.com/fschutt/azul.git	pending		S	626aa43c6ebecd61e1e720dbf9eadeb42b2d7d86
+opensourceBIM__BIMserver	https://github.com/opensourceBIM/BIMserver.git	pending		S	54ee2abc6966775fb54413927f2c95e5638462d8
+ultimatepp__ultimatepp	https://github.com/ultimatepp/ultimatepp.git	pending		S	7c0067517fc31958590147f9c4a3a29abb26ed67
+msys2__MINGW-packages	https://github.com/msys2/MINGW-packages.git	pending		M	a9903297acae62e18fc6838c007516ce57d9d3ad
+msys2__MSYS2-packages	https://github.com/msys2/MSYS2-packages.git	pending		S	453e9bccc9348be86de12a6b07b19cdd24f2d7b3
+lvmteam__lvm2	https://github.com/lvmteam/lvm2.git	pending		S	d804677c7565bff40c87ed830473674119f23f6a

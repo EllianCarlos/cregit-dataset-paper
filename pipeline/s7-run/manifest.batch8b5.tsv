@@ -1,0 +1,24 @@
+# Part b5 of the S and M projects of manifest.batch8.tsv (sha256 adc81a175da6c733e3ef1b3d88c8f46f77390c6d808d3c14d01da8ebb96c7a32),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+Normation__rudder	https://github.com/Normation/rudder.git	pending		M	c8adb018f0bd309b857c3b60a9b41d0361117fe4
+DCurrent__openbor	https://github.com/DCurrent/openbor.git	pending		S	787b6770409935137579715febf80cf7a529b748
+monero-project__monero-gui	https://github.com/monero-project/monero-gui.git	pending		S	d7c2f13d88e0f2f2d5d1488be64da66f698ccb7c
+darktable-org__darktable	https://github.com/darktable-org/darktable.git	pending		M	abc10290a71b6b193fc28fc2da12c0ad9d2a9814
+berkeley-abc__abc	https://github.com/berkeley-abc/abc.git	pending		S	a3001b72edc5de22442e942165487fddf150e3d0
+savonet__liquidsoap	https://github.com/savonet/liquidsoap.git	pending		S	dd16cea5e646782a0cde8231d1db011c7429fbe3
+penpot__penpot	https://github.com/penpot/penpot.git	pending		S	0eb1e8ba95f52492e46e499ee396575a588383f7
+sigrokproject__libsigrok	https://github.com/sigrokproject/libsigrok.git	pending		S	0bc2487778e660f4d3116729b6f4aee2b1996bb0
+Klipper3d__klipper	https://github.com/Klipper3d/klipper.git	pending		S	461c4e3722c3a897fba1c6b3f0780a5315043842
+GNOME__evince	https://github.com/GNOME/evince.git	pending		S	ba3597ec9ef4fafab43457b2bcea7643caacd680
+invent.kde.org__unmaintained__android-qt-creator	https://invent.kde.org/unmaintained/android-qt-creator	pending		S	8ea32b619d9d0cf0d90ac3c84178aca667e45323
+microsoft__CCF	https://github.com/microsoft/CCF.git	pending		S	a5d04970798a1a7e18def7916801d53bedb531ae
+tahoma2d__tahoma2d	https://github.com/tahoma2d/tahoma2d.git	pending		S	3f2dde0af47c5a67da9d263d7e7d7dbc5e13a7e4
+AcademySoftwareFoundation__openvdb	https://github.com/AcademySoftwareFoundation/openvdb.git	pending		S	86b5ea9e98a31182f8be6d71ade570f5d2561609
+cgeo__cgeo	https://github.com/cgeo/cgeo.git	pending		S	16f2018f400e17b74fa1db60dfcbc90914f09cb1
+antlr__antlr4	https://github.com/antlr/antlr4.git	pending		S	7d5770395bb7b02eb56e7c62662cb1d7c08f42a3
+stefan-niedermann__nextcloud-deck	https://github.com/stefan-niedermann/nextcloud-deck.git	pending		S	be5a609c30506551acee21e7db37141e23c49ba7
+FEniCS__dolfinx	https://github.com/FEniCS/dolfinx.git	pending		S	465d3887e9af92d315f3c80943625620963bd044
+MADEAPPS__newton-dynamics	https://github.com/MADEAPPS/newton-dynamics.git	pending		S	a9c460c3509c935e65c5b1196b955d56627c3ffa
+open62541__open62541	https://github.com/open62541/open62541.git	pending		S	ed84b829635d43ba8862bdc1010fb81fb3e5e7fc

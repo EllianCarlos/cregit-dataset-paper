@@ -1,0 +1,25 @@
+# Part b4 of the S and M projects of manifest.batch14.tsv (sha256 a1801c196defea51ecbeef0e7e9aa11dbb3fa7a56a079e8c25e40875a392ac5a),
+# balanced by predicted time (5.9 h for 4 workers), u order; a fed spot part.
+# 21 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+RIPE-NCC__whois	https://github.com/RIPE-NCC/whois.git	pending		S	156d48e932d031da3eccac45fe67af836b4294c4
+the-benchmarker__web-frameworks	https://github.com/the-benchmarker/web-frameworks.git	pending		S	02c0e2fe3300bd664350cf8ae7d962a4e5b2d350
+bitkeeper-scm__bitkeeper	https://github.com/bitkeeper-scm/bitkeeper.git	pending		S	12b5202fbe406c311b62065223947243c37d39b6
+zibo-chen__SubnetDesk	https://github.com/zibo-chen/SubnetDesk.git	pending		S	6e7b178479c99e191a4e177a252951138cf0d6c3
+drawpile__Drawpile	https://github.com/drawpile/Drawpile.git	pending		S	959bc6a37b775a650e30cfc82ca45d95b5d2a506
+google-parfait__tensorflow-federated	https://github.com/google-parfait/tensorflow-federated.git	pending		S	955f026f10f7ce0eebe6a3d5504640629edaf238
+harbour__core	https://github.com/harbour/core.git	pending		S	6deac9cf3ad977ae829e5bca543d553b92dd4b6d
+JSBSim-Team__jsbsim	https://github.com/JSBSim-Team/jsbsim.git	pending		S	5a552dd827a7e947e561b78747fd57a559b19241
+openhab__openhab-addons	https://github.com/openhab/openhab-addons.git	pending		S	7a8fa22a7967da4371a29e999ffb3fc2e3a63a5e
+doocs__leetcode	https://github.com/doocs/leetcode.git	pending		S	6fc879bc8719ba27d0239db8d0b225d9993f07c8
+freeipa__freeipa	https://github.com/freeipa/freeipa.git	pending		S	48aaa1f6c7681630b78941000849d25b34078396
+KDAB__KDDockWidgets	https://github.com/KDAB/KDDockWidgets.git	pending		S	88adab030485e16aa9c67c5a361248c99e5111c8
+mucommander__mucommander	https://github.com/mucommander/mucommander.git	pending		S	3504a51e9af9f69a67dc616db821a320ec780f79
+google__error-prone	https://github.com/google/error-prone.git	pending		S	f9edd2e3906ff3b5ed35d1a6feb4de9d3e0f7037
+libsdl-org__SDL	https://github.com/libsdl-org/SDL.git	pending		S	21528641fc0b543c1e24c131e4a5869bcd35ee24
+sgl-project__sglang	https://github.com/sgl-project/sglang.git	pending		S	21c9bbdf2c69d2fac0195c8dd305f4f6623d4af1
+apache__pulsar	https://github.com/apache/pulsar.git	pending		S	24f2fd519c16342484a80c02d5744884a009ff7b
+vprover__vampire	https://github.com/vprover/vampire.git	pending		S	af03e1547d9381cea97c051ed65a7918d07a2b0e
+spotbugs__spotbugs	https://github.com/spotbugs/spotbugs.git	pending		S	d352671237570b403b80b5bd6c7ba7fac2b95e61
+z-galaxy__zbus	https://github.com/z-galaxy/zbus.git	pending		S	8e4a2a14e6b488dcc32ebcb6e070f90c27445df9
+typedb__typedb	https://github.com/typedb/typedb.git	pending		S	f48fc4ca34ab4aba3d8d7b70492336afd1687f08

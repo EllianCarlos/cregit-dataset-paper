@@ -1,0 +1,4 @@
+# The L projects of manifest.batch21.tsv (sha256 a8d8fe474e9c33f90d4723af77e1009944e1a8db637acaeda7fbff45488b4af3), for the census batch21L on the big on-demand EC2.
+# 1 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+NetBSD__pkgsrc	https://github.com/NetBSD/pkgsrc.git	pending		L	1d0b4bfd1560971538e8ab1f3cb4648c43960c32

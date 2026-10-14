@@ -1,0 +1,8 @@
+# Part b1 of the S and M projects of manifest.batch19.tsv (sha256 8a11b7acec582e49f76d0e09d7ff1e039d3458ef456ff4c1a875509b92849d3b),
+# balanced by predicted time (11.0 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+leanprover__lean4	https://github.com/leanprover/lean4.git	pending		M	c1ac28d61e549de4ec1cc1d619007a2ee0e833f6
+NVIDIA__QEMU	https://github.com/NVIDIA/QEMU.git	pending		M	354a746af840e5bc114d42730de972ec0e58dcfb
+microsoft__lvbs-qemu	https://github.com/microsoft/lvbs-qemu.git	pending		M	5611a9268dae7b7ff99d478ed134052a9fc7e9f7
+apache__nuttx	https://github.com/apache/nuttx.git	pending		M	e26d467fab748d329000351728e00aa5e98b721e

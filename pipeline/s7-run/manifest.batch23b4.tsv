@@ -1,0 +1,16 @@
+# Part b4 of the S and M projects of manifest.batch23.tsv (sha256 d517fdd1f0c89820029e4b854eae0930d05e4a939f1241d7c6454c2306fdc589),
+# balanced by predicted time (4.2 h for 4 workers), u order; a fed spot part.
+# 12 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+openmv__openmv	https://github.com/openmv/openmv.git	pending		S	0e9ee581235d612b506a1a1743b395718fe61b6d
+angband__angband	https://github.com/angband/angband.git	pending		S	a7f492e382ebba0ee9a9e34bbcfb64e2636ee74d
+coop-deluxe__sm64coopdx	https://github.com/coop-deluxe/sm64coopdx.git	pending		S	8cd6e5977d9f920d51ca71f2c61801d019ed79c6
+apache__tomcat-connectors	https://github.com/apache/tomcat-connectors.git	pending		S	6409270095d9faa3b22ae37693dde77ac89cf907
+LCAD-UFES__carmen_lcad	https://github.com/LCAD-UFES/carmen_lcad.git	pending		S	85d31fa2003086454338ccdd7bfbca2ca6971495
+usdot-fhwa-stol__carma-platform	https://github.com/usdot-fhwa-stol/carma-platform.git	pending		S	381a57fe6c1b4e4babfb147b562a58dfa67135c9
+mongodb__docs	https://github.com/mongodb/docs.git	pending		M	f49cb6549c3e945f8aa2fff652d535b39e364378
+apache__ws-axiom	https://github.com/apache/ws-axiom.git	pending		S	50457373e09d4009033a8674a869761fc201e488
+MontiCore__monticore	https://github.com/MontiCore/monticore.git	pending		S	bb9ee88167609e7900d0f41107e2414b0343780e
+apache__cayenne	https://github.com/apache/cayenne.git	pending		S	67035a8ee55ca4c3f839304de17e059aa8f9aead
+tytso__e2fsprogs	https://github.com/tytso/e2fsprogs.git	pending		S	8fd79523d051d5ea881237f27eb1c664486e0078
+omnetpp__omnetpp	https://github.com/omnetpp/omnetpp.git	pending		S	820d04e7bb0ef53acaf6a41858ee7ea29f2754ca

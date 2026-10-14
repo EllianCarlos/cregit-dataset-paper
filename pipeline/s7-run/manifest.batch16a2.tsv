@@ -1,0 +1,15 @@
+# Part a2 of the S and M projects of manifest.batch16.tsv (sha256 1e4fd43f0de322264d2b94b8a8370f41906df20bc45b8315187818245642b2d1),
+# balanced by predicted time (6.5 h for 4 workers), u order; a fed spot part.
+# 11 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+enjoy-digital__litex	https://github.com/enjoy-digital/litex.git	pending		S	8c01073afb71aa0a0709f02f8e24247589e8f5e4
+mesonbuild__meson	https://github.com/mesonbuild/meson.git	pending		S	9874cbc93553d7bf424807afbfbcb1e22447cff8
+SerenityOS__serenity	https://github.com/SerenityOS/serenity.git	pending		M	7125a6cc6ceaa3cf3d48b9ecde2c1d86c12f08cb
+iNavFlight__inav	https://github.com/iNavFlight/inav.git	pending		S	f6579d2284e8907b575a49c85c4d84ba72162655
+gridaco__grida	https://github.com/gridaco/grida.git	pending		S	d086528a06cbeeda7c7fdd62d347c93d585f08fa
+langfuse__langfuse	https://github.com/langfuse/langfuse.git	pending		S	eadfff4d8d7b38e11c995b729977b8509fec74b3
+stdlib-js__stdlib	https://github.com/stdlib-js/stdlib.git	pending		M	dda96accb0f858538befc379ae0820da3b9af4b2
+restlet__restlet-framework-java	https://github.com/restlet/restlet-framework-java.git	pending		S	501452768cc422816f02109b20813623e0a27814
+GNOME__gtk	https://github.com/GNOME/gtk.git	pending		M	84abc9b1d56628110e00bbac5d6c9e5aec680f4c
+RedPitaya__RedPitaya	https://github.com/RedPitaya/RedPitaya.git	pending		S	0e46d64396a57752bf97315789d6cc6c9fbddad8
+jplag__JPlag	https://github.com/jplag/JPlag.git	pending		S	3ee7de912b90ef82462fa1fbe0a57aa48b4e8f15

@@ -1,0 +1,18 @@
+# Part b9 of the S and M projects of manifest.batch23.tsv (sha256 d517fdd1f0c89820029e4b854eae0930d05e4a939f1241d7c6454c2306fdc589),
+# balanced by predicted time (4.2 h for 4 workers), u order; a fed spot part.
+# 14 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+archlinuxarm__PKGBUILDs	https://github.com/archlinuxarm/PKGBUILDs.git	pending		M	f135e551b59db877c0ffdf1540702bb1356477eb
+digi-embedded__meta-digi	https://github.com/digi-embedded/meta-digi.git	pending		S	415fe3f6c89ba4b858500ff88d783b77f2249b9d
+zhukunpenglinyutong__desktop-cc-gui	https://github.com/zhukunpenglinyutong/desktop-cc-gui.git	pending		S	c098aa1621502da45e00adb98a06b64959e79cea
+apache__myfaces	https://github.com/apache/myfaces.git	pending		S	600b7b19d585dbe65b34e233038466f0803214cd
+OpenClinica__OpenClinica	https://github.com/OpenClinica/OpenClinica.git	pending		S	69cccaf0f5d3a8f09ac99522835cc8089c618554
+NVIDIA__nvtexlive	https://github.com/NVIDIA/nvtexlive.git	pending		S	6f83ad331ff07991ca87acd6b09aa4263ac956d7
+MegaGlest__megaglest-source	https://github.com/MegaGlest/megaglest-source.git	pending		S	4ab09c64cb24b9ba00743b2d8e5ff7fb9a2d7b8d
+dbpedia__extraction-framework	https://github.com/dbpedia/extraction-framework.git	pending		S	b66cb8b976d69b17b0afa11fa701d5ae8463f42e
+numworks__epsilon	https://github.com/numworks/epsilon.git	pending		M	72c8306f4fe3adf3bfc9c79802a39b80afb8e988
+formatjs__formatjs	https://github.com/formatjs/formatjs.git	pending		S	ea4af0f3d8829f4a2ccc56bfea30484e091f3d63
+paritytech__polkadot-sdk	https://github.com/paritytech/polkadot-sdk.git	pending		S	0cc91a64db63688ad67ddac8fb2a122c213549a1
+stepmania__stepmania	https://github.com/stepmania/stepmania.git	pending		M	825467bcd81c812b33ad684dc04dd151b2d5dec3
+munin-monitoring__contrib	https://github.com/munin-monitoring/contrib.git	pending		S	0eeb3785de2a3c16408b87b7427db542933c610a
+marbl__canu	https://github.com/marbl/canu.git	pending		S	ee72a4a2b23977734ca0ad4cf60c4ac643d5723b

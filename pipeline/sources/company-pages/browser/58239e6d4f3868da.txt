@@ -1,0 +1,30 @@
+ ORDERS
+ 
+ BOM
+ 
+ QUOTES
+ 
+ DESIGN HUB
+ 
+ AMERICAS 
+ 
+$ USD 
+
+Whoops! We can't seem to find the page you are looking for.
+
+Here are some helpful links instead:
+
+Avnet Americas
+Avnet EMEA
+Avnet Abacus
+Avnet Silica
+EBV Elektronik
+
+About Avnet
+Investor Relations
+Newsroom
+Experts in Electronics Design, Supply Chain, Logistics & Distribution.
+© Copyright 2026 Avnet, Inc. All rights reserved.  | 
+    
+${loading}Link text: ORDERS, Link URL: https://www.avnet.com/americas/resources/myavnet/orders/Link text: BOM, Link URL: https://www.avnet.com/americas/resources/myavnet/bom/Link text: QUOTES, Link URL: https://www.avnet.com/americas/resources/myavnet/quote/Link text: DESIGN HUB, Link URL: https://www.avnet.com/americas/solutions/product-and-solutions-design/design-hub/Link text: AMERICAS, Link URL: https://www.avnet.com/americas/Link text: APAC (ASIA PACIFIC), Link URL: https://www.avnet.com/apac/Link text: EMEA (EUROPE/MIDDLE EAST/AFRICA), Link URL: https://www.avnet.com/emea/Link text: AVNET ABACUS, Link URL: https://www.avnet.com/abacus/Link text: AVNET SILICA, Link URL: https://www.avnet.com/silica/Link text: EBV ELEKTRONIK, Link URL: https://www.avnet.com/ebv/Link text: JAPAN, Link URL: https://www.avnet.com/japan/?locale=ja_JPLink text: Avnet Americas, Link URL: https://www.avnet.com/americas/Link text: Avnet EMEA, Link URL: https://www.avnet.com/emea/Link text: Avnet Abacus, Link URL: https://www.avnet.com/abacus/Link text: Avnet Silica, Link URL: https://www.avnet.com/silica/Link text: EBV Elektronik, Link URL: https://www.avnet.com/ebv/Link text: Investor Relations, Link URL: https://ir.avnet.com/Link text: Newsroom, Link URL: https://news.avnet.com/overview/default.aspx
+TRUNCATED_BY_AGENT (two "Deferred Modules" link entries with long contenthandler URLs omitted; no github.com link)

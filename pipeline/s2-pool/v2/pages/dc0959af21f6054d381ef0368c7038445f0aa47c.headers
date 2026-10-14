@@ -1,0 +1,42 @@
+HTTP/2 301 
+server: GitHub.com
+content-type: text/html
+location: https://oaca-project.org/
+x-github-request-id: F678:254B0A:C04486:D1755F:6AC980BC
+x-github-edge-region: iad
+accept-ranges: bytes
+age: 0
+date: Sat, 10 Oct 2026 00:03:08 GMT
+via: 1.1 varnish
+x-served-by: cache-iad-kcgs7200118-IAD
+x-cache: MISS
+x-cache-hits: 0
+x-timer: S1791590589.612084,VS0,VE15
+vary: Accept-Encoding
+x-fastly-request-id: dd9e24935f1bb8e2d0bc3802b58241852ca88622
+content-length: 162
+
+HTTP/2 200 
+server: GitHub.com
+content-type: text/html; charset=utf-8
+last-modified: Sun, 13 Sep 2026 22:35:04 GMT
+access-control-allow-origin: *
+strict-transport-security: max-age=31556952
+etag: "6aa72518-5d0b"
+expires: Sat, 10 Oct 2026 00:13:08 GMT
+cache-control: max-age=600
+x-proxy-cache: MISS
+x-github-request-id: 10E0:17854D:CB7D65:DCA808:6AC980BC
+x-github-edge-region: iad
+accept-ranges: bytes
+age: 0
+date: Sat, 10 Oct 2026 00:03:08 GMT
+via: 1.1 varnish
+x-served-by: cache-iad-kcgs7200055-IAD
+x-cache: MISS
+x-cache-hits: 0
+x-timer: S1791590589.647493,VS0,VE33
+vary: Accept-Encoding
+x-fastly-request-id: b0084b1b0797f1a433d68698ad0fa4779e2bc813
+content-length: 23819
+

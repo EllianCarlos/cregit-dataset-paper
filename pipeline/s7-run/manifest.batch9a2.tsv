@@ -1,0 +1,17 @@
+# Part a2 of the S and M projects of manifest.batch9.tsv (sha256 00a32df96f075408b7ce58f8ecc5a5d19c49e20efefee07637b2b4f03bdbc2e8),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 13 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+microsoft__onnxruntime	https://github.com/microsoft/onnxruntime.git	pending		S	1ebb43386f162657ffcd29c18f7bae8a2274eb4d
+albar965__littlenavmap	https://github.com/albar965/littlenavmap.git	pending		S	e925c1486f7657a4623dfca23c215d3c07f49201
+Card-Forge__forge	https://github.com/Card-Forge/forge.git	pending		M	837195889f1df16277dffd0a97ea896257ddbff1
+cisco__mercury	https://github.com/cisco/mercury.git	pending		S	f3422f6e24a65882884093d43c4bdbabb93dc432
+apache__camel-quarkus	https://github.com/apache/camel-quarkus.git	pending		S	65d98c7e74bbbe6b5597ca6644b86169683cc2cd
+xelis-project__xelis-blockchain	https://github.com/xelis-project/xelis-blockchain.git	pending		S	db59b5c246ab0e40386d6c241dcd77f0aea84b10
+spacedriveapp__spacedrive	https://github.com/spacedriveapp/spacedrive.git	pending		S	5bc474e72274d4aee16a6ce3690916cdee075a3b
+moneymanagerex__android-money-manager-ex	https://github.com/moneymanagerex/android-money-manager-ex.git	pending		S	866062b4dbecab72e6b922794c82c2f61f4b7c06
+eclipse-sumo__sumo	https://github.com/eclipse-sumo/sumo.git	pending		M	aab68b732dec87163a22599dcd981018ca239f89
+water-rs__waterui	https://github.com/water-rs/waterui.git	pending		S	1c9ef68240c91b1c0dc6980c0475d56595610ac0
+qdrant__qdrant	https://github.com/qdrant/qdrant.git	pending		S	016542aa5deb6c66380bb137badf73d54f742bde
+apache__doris	https://github.com/apache/doris.git	pending		M	7ac0eb2fdb426595f810e94ab77b7aa2eece12d5
+baomidou__mybatis-plus	https://github.com/baomidou/mybatis-plus.git	pending		S	53b93c65791e92426f276a2c5c7924b17daea3e4

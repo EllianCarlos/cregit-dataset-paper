@@ -1,0 +1,8 @@
+# Part a1 of the S and M projects of manifest.batch14.tsv (sha256 a1801c196defea51ecbeef0e7e9aa11dbb3fa7a56a079e8c25e40875a392ac5a),
+# balanced by predicted time (13.8 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+adoptium__jdk8u	https://github.com/adoptium/jdk8u.git	pending		M	77bae344e843f0e39f927b505305ce38e3d7cafc
+microsoft__openjdk-jdk25u	https://github.com/microsoft/openjdk-jdk25u.git	pending		M	49411542a96435cd403500592fbb586395fbaed5
+digi-embedded__u-boot	https://github.com/digi-embedded/u-boot.git	pending		M	f826b7bf47f7d4cc3bf3849967e58d343ad542e6
+adoptium__jdk17u	https://github.com/adoptium/jdk17u.git	pending		M	3b0480102f8595deb241a666498f77644d5ec376

@@ -1,0 +1,20 @@
+org_key,project,repo_url,github_slug,lookup_url,fetched_at,note
+psf-sponsored,Bay Area Python Association (BAPyA),,,https://www.bapya.org/,,"not a software project (the roster describes a user group, conference or mentorship group); not fetched"
+psf-sponsored,Boston Python,,,https://www.meetup.com/bostonpython/,,"not a software project (the roster describes a user group, conference or mentorship group); not fetched"
+psf-sponsored,ChiPy,,,https://www.chipy.org/,,"not a software project (the roster describes a user group, conference or mentorship group); not fetched"
+psf-sponsored,Denver Python Users Group,,,https://rockypython.org/denverpython/,,"not a software project (the roster describes a user group, conference or mentorship group); not fetched"
+psf-sponsored,Jazzband,https://github.com/jazzband,,https://jazzband.co/,2026-10-05T02:35:02Z,org only (collective of many projects)
+psf-sponsored,North Bay Python,,,https://northbaypython.org/,,"not a software project (the roster describes a user group, conference or mentorship group); not fetched"
+psf-sponsored,Pallets,https://github.com/pallets,,https://palletsprojects.com/,2026-10-05T02:35:04Z,org only; page also links github.com/pallets-eco
+psf-sponsored,PhillyPUG,,,http://www.meetup.com/phillypug/,,"not a software project (the roster describes a user group, conference or mentorship group); not fetched"
+psf-sponsored,PuPPy,,,https://www.meetup.com/PSPPython/,,"not a software project (the roster describes a user group, conference or mentorship group); not fetched"
+psf-sponsored,PyCascades,,,https://pycascades.com/,,"not a software project (the roster describes a user group, conference or mentorship group); not fetched"
+psf-sponsored,PyBeach,,,https://2020.pybeach.org/,,"not a software project (the roster describes a user group, conference or mentorship group); not fetched"
+psf-sponsored,PyHawaii,,,http://www.pyhawaii.com/,,"not a software project (the roster describes a user group, conference or mentorship group); not fetched"
+psf-sponsored,PyLadies,,,http://www.pyladies.com/,,"not a software project (the roster describes a user group, conference or mentorship group); not fetched"
+psf-sponsored,PyMNtos,,,https://www.meetup.com/PyMNtos-Twin-Cities-Python-User-Group/,,"not a software project (the roster describes a user group, conference or mentorship group); not fetched"
+psf-sponsored,PyOhio,,,https://www.pyohio.org,,"not a software project (the roster describes a user group, conference or mentorship group); not fetched"
+psf-sponsored,PyPA,https://github.com/pypa,,https://www.pypa.io/en/latest/,2026-10-05T02:35:06Z,org only; page also links its website repo pypa/pypa.io
+psf-sponsored,PyRVA,,,http://www.pyrva.org/,,"not a software project (the roster describes a user group, conference or mentorship group); not fetched"
+psf-sponsored,Python San Diego User Group,,,https://www.pythonsd.org/index.html,,"not a software project (the roster describes a user group, conference or mentorship group); not fetched"
+psf-sponsored,Twisted,https://github.com/twisted/twisted,twisted/twisted,https://twisted.org/,2026-10-05T02:35:09Z,"link labelled ""View Github"""

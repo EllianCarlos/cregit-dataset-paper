@@ -1,0 +1,11 @@
+# Part a3 of the S and M projects of manifest.batch22.tsv (sha256 dc8a4dcc99f4786c26f1c01c088fc0ad00413396460a012bc7ccbbb3af25e647),
+# balanced by predicted time (1.0 h for 4 workers), u order; a fed spot part.
+# 7 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+git.savannah.gnu.org__git__pspp	https://git.savannah.gnu.org/git/pspp.git	pending		S	91b943035c096bc09b7037613ac36974b51f4b4a
+git.savannah.gnu.org__git__gsl	https://git.savannah.gnu.org/git/gsl.git	pending		S	7527c444cfa25b42c15bed73824c9e3ece28b2f3
+git.savannah.gnu.org__denemo	git://git.savannah.gnu.org/denemo.git	pending		S	e2e8fe310089323396f2fd8f71f23e7247078b80
+gitlab.inria.fr__mpfr__mpfr	https://gitlab.inria.fr/mpfr/mpfr.git	pending		S	8536bb90e594a2d0ef8660f3e54bdced9871edde
+git.savannah.gnu.org__poke	git://git.savannah.gnu.org/poke.git	pending		S	e29ca75b2f1873d29a4caa7f2e1bf554b94cd9da
+git.savannah.gnu.org__git__nano	https://git.savannah.gnu.org/git/nano.git	pending		S	fc6070d40556c6f8b507ada4fcba4790e814441e
+git.savannah.gnu.org__git__bison	https://git.savannah.gnu.org/git/bison.git	pending		S	a47fb7838a1bf9128c6e0aed0d0194d47f17b8c6

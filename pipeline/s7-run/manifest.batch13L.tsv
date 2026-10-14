@@ -1,0 +1,7 @@
+# The L projects of manifest.batch13.tsv (sha256 1d1f93d1d2952c0f2a25ca8f968b8bf867959609ab38c913a98784b9d447bfcc), for the census batch13L on the big on-demand EC2.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+ferrocene__ferrocene	https://github.com/ferrocene/ferrocene.git	pending		L	858bd966980c4f0a947a3387e5105604103e49ae
+freebsd__freebsd-ports	https://github.com/freebsd/freebsd-ports.git	pending		L	0b23c55e5d2cdcb4a5d8d11bfc2f9c56cc6348ab
+Weather-OS__WineGDK	https://github.com/Weather-OS/WineGDK.git	pending		L	b03ba49c4f326c36aa6930fbe6cf72841ef3738c
+jlord__patchwork	https://github.com/jlord/patchwork.git	pending		L	7421236abab70728b92d1990cb0e15f6c175045f

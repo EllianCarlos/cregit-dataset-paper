@@ -1,0 +1,250 @@
+Products
+Solutions
+Customer Cases
+Overseas Customer Engagement Platform
+Jiguang AI
+Support
+About Us
+Language
+Login
+Sign up
+Aurora Mobile - Leading Developer Service Provider in China
+中国领先的开发者服务提供商
+专注移动开发者服务领域10年，助力开发者
+
+立即注册
+在线咨询
+
+MoonFox Data
+
+Help companies make accurate business decisions
+
+New User Benefits
+
+110 SMS messages + 1,100 verification messages
+
+New Products
+
+Powerful Business AI Bot Platform, for Everyone
+
+Industry Solutions
+
+Empower companies' marketing-led growth
+
+Safe and Reliable Products and Services
+Notification Service
+
+Reach your users in all directions
+
+Operation and Growth
+
+Provide sustainable operational growth solutions
+
+Enterprise AI Agents
+
+Drive Efficiency, Slash Costs.
+
+Data Intelligence
+
+Know the data, know the opportunity
+
+Dev Tools
+
+Build your apps quickly and efficiently
+
+JPush
+
+Enable SDK integration in three minutes and intelligent and precise push notifications to effectively improve user activeness and retention rate
+
+Quick SDK IntegrationMulti-Platform and Multi-Channel Support9 Message Types
+
+JSMS
+
+Enable companies to easily integrate SMS text message functions by combining traditional communication services and the Internet
+
+Exclusive CustomizationSafe and Stable
+
+Email
+
+Provide efficient and stable mail sending APIs and accurate, real-time data reports.
+
+High Delivery RateDiverse and Easy-to-use APIsMassive Sending ResourcesSelf-adaptive Delivery Policy
+
+JUMS
+
+Quickly build your message management platform;Enable multiple-channel unified message delivery, management, and statistics
+
+8 Reaching ChannelUser-Defined Sending PolicyData Statistical AnalysisUser System ManagementMember Permission Management
+Comprehensive Solutions for Corporate Scenarios
+
+Message Cloud
+
+Marketing Cloud
+
+Security Verification
+
+Next-generation Messaging Solution
+All-channel coverage
+Our solution enables one-click connection with nine mainstream channels, i.e., app, WeChat, SMS, email, Alipay, DingTalk, thus ensuring full channel coverage as well as standardized, unified and orderly management.
+Full-link Data Analysis
+We can record message lifecycle in such dimensions as channel, user, and uplink and downlink to provide companies with diverse multi-dimensional reports such as funnel, loss, trend, and behavior analysis.
+Powerful Push and SMS Services
+We provide high-performance app push system and one-stop SMS service of multiple message types to meet all operation needs.
+Detail
+Professional and comprehensive industry solutions
+Financial
+One-stop financial industry solution for digital marketing, digital engagement, and digital security for financial industry
+Education Industry
+Use IT to drive digital transformation of education
+Retail Industry
+Put consumers at the center and focus on digital asset management and digital retail marketing to improve the conversion rate
+Integrated Media Industry
+Focus on integrated media-based push notification solution featuring omnimedia, omnichannel connection, multilevel messaging, and diverse publicity approaches
+Trust from Customers in Various Industries
+敦煌网
+中国领先的客户互动和营销科技服务商，极光旗下邮件服务平台闪达，凭借其专业邮件服务能力，为敦煌网搭建了稳定的全球用户沟通桥梁。
+Read 
+Zhejiang CFMOTO Power Co., Ltd.
+With JPush Solution, Aurora Mobile will help CFMOTO implement accurate, personalized, and intelligent user reach and engagement capabilities fully catering to users’ needs in products and social experience.
+Read 
+Spring Airlines
+Aurora Mobile provides push notification services to Spring Airlines.
+Read 
+Industry-leading Technology and Service Advantages
+Stable and Reliable
+
+Our architecture supports tens of billions of average daily access requests and one billion high-concurrency requests, with multi-point backup ensuring its stability.
+
+Precision Marketing
+
+We have served nearly 10,000 enterprise-level customers and are committed to helping them maximize business value and maintain sustainability.
+
+Security & Compliance
+
+We strictly implement compliance and audit regulations, actively participate in industry self-discipline programs, and have obtained national data compliance certifications many times.
+
+Leading Technology
+
+We have been committed to developer services for many years, with extensive industry experience and industry-leading technologies.
+
+Developed Products
+
+We have well-established productization capabilities, diversified product mix, perfect developer toolkits and industry solutions.
+
+Professional Support
+
+A sound and convenient backend management configuration platform, supported by technical expert teams
+
+AndroidiOSQuickApp
+
+public static void init (Context context) ;
+
+// init Push
+
+// notice: 2.1.5 版本的SDK新增的注册方法，改成可上报，如果没有使用IDFA直接传nil
+
+[JPUSHService setupWithOption:launchOptions appKey:appKey
+
+channel:channel
+
+apsForProduction:isProduction
+
+advertisingIdentifier:advertisingId];
+
+this .JPushInterface=JPushInterface. init ( this , "官网中创建应用后分配的appkey" , "自定义channel" );
+
+Create an account
+Create a project
+Integrate SDKs
+Start use
+
+Simplest Access Process Designed for Developers
+
+Quickly start and run our reliable APIs with diverse features, including professional development documentation, complete API references, and intuitive SDKs
+
+Read document
+Sign up now
+
+Trusted by 600,000 Developers Worldwide
+
+We have been committed to developer services for many years, with extensive industry experience and industry-leading technologies. Our architecture supports tens of billions of average daily access requests and one billion high-concurrency requests.
+
+012345678901234567890,000
+
+developers
+
+0123456789,012345678901234567890,000
+
+applications
+
+01234567890123456789,012345678900,000,000
+
+mobile
+
+0123456789,012345678901234567890,000,000
+
+DUV
+
+News
+极光受邀出席2025中国数谷·西湖论剑大会——AI智能体应用与安全治理论坛
+中国领先的客户互动和营销科技服务商，极光作为人工智能领域的创新代表受邀参会。
+5-12-2025, 5:57:46 AM
+极光荣获“华为云创新解决方案合作伙伴”
+极光作为领先的客户互动和营销科技服务商受邀出席本次活动，并荣获“创新解决方案合作伙伴”称号。
+5-14-2025, 5:52:17 AM
+极光公布2021年第四季度及全年财报
+2021年第四季度，极光SAAS 业务收入创历史新高，首次超过1亿元人民币。经调整的息税折旧摊销前利润，自 2021 年第一季度转型至纯 SAAS 业务以来首次取得正盈利，达到180万元人民币。
+3-2-2022, 9:00:00 PM
+极光收购国内领先的邮件API平台SendCloud
+极光收购国内领先的邮件API平台SendCloud
+2-28-2022, 9:00:00 PM
+极光将于2022年3月3日公布2021年第四季度及全年财报
+财报发布后，公司管理层将于美国东部时间2022年3月3日周四早七点三十分（即北京时间当日晚八点三十分）举行电话会议，讨论2021年第四季度及全年业绩。
+2-21-2022, 9:00:00 PM
+Industry-recognized developer service provider
+Website credibility of certification
+Shenzhen Hi-Tech Enterprise
+Best SaaS Service Provider
+AAA Certificate of Enterprise Credit Grade
+Hi-Tech Enterprise
+Best Internet Enterprise Service Award
+Best Developer Service Platform of the Year
+Shenzhen Hi-Tech Enterprise
+Best Internet Service Provider Partner
+
+more award-winning qualifications 
+
+Sign up now to receive the newcomer gift
+
+Sign up
+
+About Us
+Company Profile
+Media Consultation
+Investor Relations
+Join Us
+Aurora Tips
+Aurora Article
+Industry knowledge
+Knowledge Topics
+Contact
+Compliance consulting：compliance@jiguang.cn
+Business Email：sales@jiguang.cn
+contact number：400-888-2376 (Service hours (working days): 9:30-12:30 14:00-18:30)
+Market Cooperation：marketing@jiguang.cn
+Secure Email：security@jiguang.cn
+Technical Support
+QQ Group for Push Technical Support：1083913900
+Technical Email：support@jiguang.cn
+JIGUANG Technical Support Community
+About Us
+JIGUANG User Service Agreement
+Privacy Policy
+Information source security promise
+Opt-out System
+AURORA Subsidiary
+
+Copyright © 2012-2026 Shenzhen Hexun Huagu Information Technology Co., Ltd.
+
+粤公网安备 44030502001707号粤ICP备12056275号
+TRUNCATED_BY_AGENT (link list of ~130 "Link text/Link URL" entries omitted; it contained no github.com link)

@@ -1,0 +1,19 @@
+# Part b4 of the S and M projects of manifest.batch10.tsv (sha256 196d7166a36b215c498418c83c3e96c241e1ff6dddc10cee6e033afb0553f8a7),
+# balanced by predicted time (5.6 h for 4 workers), u order; a fed spot part.
+# 15 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+verilog-to-routing__vtr-verilog-to-routing	https://github.com/verilog-to-routing/vtr-verilog-to-routing.git	pending		S	1b456d614ce3ab2998b2b246258e7c47c5642086
+fasiondog__hikyuu	https://github.com/fasiondog/hikyuu.git	pending		S	daeb2c792a2095178fd5af051eda76d1b23e96c6
+GoogleCloudPlatform__rdma-core-gcp	https://github.com/GoogleCloudPlatform/rdma-core-gcp.git	pending		S	d33b0ff5a7fc04f1f27dc1f8815725934916601c
+bsc-wdc__compss	https://github.com/bsc-wdc/compss.git	pending		S	a9a56634bf0e904d84b3b8ff80ede3d8cd02e040
+DataDog__dd-trace-rb	https://github.com/DataDog/dd-trace-rb.git	pending		S	801e9b29e0510c33f01132fb21a369931f2700b4
+snort3__snort3	https://github.com/snort3/snort3.git	pending		S	14aeb09f5a0856812dbe08ead3c21f99e8860aa0
+sstsimulator__sst-core	https://github.com/sstsimulator/sst-core.git	pending		S	431d0bc9ac595fabe7156951364c6ae3ca22c713
+libvirt__libvirt	https://github.com/libvirt/libvirt.git	pending		M	9ecbf2a65454704240170676b94b65866b352a34
+dirkwhoffmann__vAmiga	https://github.com/dirkwhoffmann/vAmiga.git	pending		S	899da5ddd872dfb2e9e35e80247cbb2b36086524
+matrix-org__matrix-ios-sdk	https://github.com/matrix-org/matrix-ios-sdk.git	pending		S	097208ccc5bec72b37261d8ea0bc857c9ccd8361
+geode-sdk__geode	https://github.com/geode-sdk/geode.git	pending		S	7e314faf40b02848e67cae292e5f5343bbcc8e6b
+dfinity__ic	https://github.com/dfinity/ic.git	pending		M	91fb24119d8be003c6986d60d36ba73e4c8178a3
+microsoft__kiota-samples	https://github.com/microsoft/kiota-samples.git	pending		S	ee26a24bc4b9cac458327c85d6e4bf2ef645c70c
+PhilippC__keepass2android	https://github.com/PhilippC/keepass2android.git	pending		S	76d8502a2e42a10267bfb626c6292ec02fcf48c0
+apache__openoffice	https://github.com/apache/openoffice.git	pending		S	5221cf3a962813b63a7cbddd28fd7b281ed549ef

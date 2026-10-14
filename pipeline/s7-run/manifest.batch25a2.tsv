@@ -1,0 +1,17 @@
+# Part a2 of the S and M projects of manifest.batch25.tsv (sha256 ec96e8f8712a384071394a6a5517e0420244887a433ebfcf8d0092e17f5a272d),
+# balanced by predicted time (2.6 h for 4 workers), u order; a fed spot part.
+# 13 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+gitlab.com__libeigen__eigen	https://gitlab.com/libeigen/eigen	pending		S	fc7f87cd11830a428487b6039ebb1df73d199df1
+gitlab.inria.fr__MoReFEM__CoreLibrary__MoReFEM	https://gitlab.inria.fr/MoReFEM/CoreLibrary/MoReFEM	pending		S	234a0581aeda871e27fddfa54cb4e7e91d25baab
+gitlab.freedesktop.org__camera__libcamera	https://gitlab.freedesktop.org/camera/libcamera	pending		S	a92285e9c8f8d5aba24c6f72f49efc73074002e1
+gitlab.freedesktop.org__telepathy__telepathy-qt	https://gitlab.freedesktop.org/telepathy/telepathy-qt	pending		S	043029087f7c0049a70fd6d0bf35c24c2d0f6530
+gitlab.winehq.org__wine__vkd3d	https://gitlab.winehq.org/wine/vkd3d	pending		S	fed0c3418f815b0bc07533f6fc6f4aa06e8712c3
+gitlab.freedesktop.org__telepathy__telepathy-glib	https://gitlab.freedesktop.org/telepathy/telepathy-glib	pending		S	72412c944b771f3214ddc40fa9dea82cea3a5651
+gitlab.inria.fr__vidjil__vidjil	https://gitlab.inria.fr/vidjil/vidjil	pending		S	b829e7d426d07e1bf519694fa52d37316032f609
+gitlab.com__graphviz__graphviz	https://gitlab.com/graphviz/graphviz	pending		M	d06eee13c2f4652f7f40c3bb7411b6d241c4f2ce
+gitlab.freedesktop.org__gstreamer__gst-plugins-rs	https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs	pending		S	a18e4843bf472ffd4f84a86c709866d2813a522c
+gitlab.freedesktop.org__mesa__piglit	https://gitlab.freedesktop.org/mesa/piglit	pending		S	f9524192f9e8d8970a23bc6f3226358531cb82a1
+gitlab.freedesktop.org__pipewire__media-session	https://gitlab.freedesktop.org/pipewire/media-session	pending		S	7376c167f1ad20b3968d7a5d6c395a8b698d31d8
+gitlab.freedesktop.org__SyncEvolution__syncevolution	https://gitlab.freedesktop.org/SyncEvolution/syncevolution	pending		S	dac2d9e25d44f234fda00b44542fcecbf53589a5
+gitlab.freedesktop.org__libinput__libinput	https://gitlab.freedesktop.org/libinput/libinput	pending		S	06640b92bff29fc2f6fda3b775e1e7250d9a7128

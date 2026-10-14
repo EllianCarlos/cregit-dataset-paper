@@ -1,0 +1,8 @@
+# Part b1 of the S and M projects of manifest.batch17.tsv (sha256 fe2bcfa4c462bf23afb8d7d027903ee019a67ffa25f26d74c91f3345493549db),
+# balanced by predicted time (8.0 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+videolan__vlc	https://github.com/videolan/vlc.git	pending		M	2e358f3098c2f2b7621d1dc568de8b61ad786322
+KratosMultiphysics__Kratos	https://github.com/KratosMultiphysics/Kratos.git	pending		M	5dfcf044f47b29007cfe1208afa0f0fc3e6657a2
+timeplus-io__proton	https://github.com/timeplus-io/proton.git	pending		M	1c47e602465466104a1af86aa0199172e5deaa68
+apache__incubator-kie	https://github.com/apache/incubator-kie.git	pending		M	45a28b66aefde8ebaf23a1a1fec76c11e53144d1

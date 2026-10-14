@@ -1,0 +1,21 @@
+# Part b2 of the S and M projects of manifest.batch18.tsv (sha256 432ad2e493ba966ef387af309dc2cfab6bc374ba9fa442b0705d1617cdcd2f76),
+# balanced by predicted time (5.9 h for 4 workers), u order; a fed spot part.
+# 17 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+hedgewars__hw	https://github.com/hedgewars/hw.git	pending		S	1e2216af1b5b259e5714a87747fa2b091bd4f986
+confluentinc__kafka-rest	https://github.com/confluentinc/kafka-rest.git	pending		S	0d30749e53e54ec0ad52f0532c9fad43de6b95c6
+Nheko-Reborn__nheko	https://github.com/Nheko-Reborn/nheko.git	pending		S	b15dcd137e5384e0aabfd35583b5a6eba5f71ed9
+gravitee-io__gravitee-api-management	https://github.com/gravitee-io/gravitee-api-management.git	pending		M	b5e35254ca9fac1cdcb15168afa1a609e03e538a
+googleapis__google-cloud-cpp	https://github.com/googleapis/google-cloud-cpp.git	pending		S	6285140c1e71fdef4f5298ee4179086b95d724e6
+Return-To-The-Roots__s25client	https://github.com/Return-To-The-Roots/s25client.git	pending		S	e4ec788424dc0ac89e92825adf2a3ca68e2bd2c4
+immunant__c2rust	https://github.com/immunant/c2rust.git	pending		S	92e37649e5c278746697e42d8427722221046546
+INRIA__spoon	https://github.com/INRIA/spoon.git	pending		S	1d92d56ed8e28a1b7ca69be507a7d3f3d3e3a47a
+NVIDIA__libvirt	https://github.com/NVIDIA/libvirt.git	pending		M	1f075c75331f34047c30b6b04e3ca1d45748ec0d
+JdeRobot__RoboticsAcademy	https://github.com/JdeRobot/RoboticsAcademy.git	pending		S	33a3e1382290574e9624d2cc5f8ed344a1d767ad
+besu-eth__besu	https://github.com/besu-eth/besu.git	pending		S	1d62d893baed6c148313bb3d9d64f5c316d371e2
+veyon__veyon	https://github.com/veyon/veyon.git	pending		S	217d8d3a067ea12e81bb94d8da61e996eb65b27b
+realm__realm-js	https://github.com/realm/realm-js.git	pending		S	1e15df6aafa8fa910d852fd0a39c323357742ddf
+i3__i3	https://github.com/i3/i3.git	pending		S	903bcd518df32b0e055b17f5da3f988a0187fd3d
+betaflight__betaflight	https://github.com/betaflight/betaflight.git	pending		S	b2fdc296ec446a97d832b1526c30c0d31ba684fc
+atomvm__AtomVM	https://github.com/atomvm/AtomVM.git	pending		S	3a9ea46b8cf28066caf126c46119dc58f950de5f
+overtake__TelegramSwift	https://github.com/overtake/TelegramSwift.git	pending		S	579cebbf0c01fd41b712eff3647fa7f69db9665d

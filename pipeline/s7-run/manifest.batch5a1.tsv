@@ -1,0 +1,29 @@
+# Part a1 of the S and M projects of manifest.batch5.tsv (sha256 d831890774e9a5e162a2e113942e19a64e0e7a2275032bf7880b86fe1f765ead),
+# balanced by predicted time (11.3 h for 4 workers), u order.
+# 25 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+ANTsX__ANTs	https://github.com/ANTsX/ANTs.git	pending		S	0f65b0e66bea11f32fbe9a008ca94572541fd4fa
+Etar-Group__Etar-Calendar	https://github.com/Etar-Group/Etar-Calendar.git	pending		S	89b5c64d9ce1c79d765624211a164370f6f020fe
+cern-eos__eos	https://github.com/cern-eos/eos.git	pending		S	a55d61f8b1f712ec303035e9cdcfe807a03bb883
+bioconda__bioconda-recipes	https://github.com/bioconda/bioconda-recipes.git	pending		M	f811f7d28e61dc14f858033df0add3c2383b0ef6
+iovisor__bcc	https://github.com/iovisor/bcc.git	pending		S	c398a9a7a41cba623b520cda27457b92d7fcad2b
+vmangos__core	https://github.com/vmangos/core.git	pending		S	0e3ff01e76d4758e8a7c3108b2717cc785ed56fa
+freifunk-gluon__gluon	https://github.com/freifunk-gluon/gluon.git	pending		S	5648b219018f5978e4a604ee67fb179c39358ad5
+paulmckrcu__perfbook	https://github.com/paulmckrcu/perfbook.git	pending		S	7c6151207c2e37f4855ad09bb3a225011c979f3d
+grahammendick__navigation	https://github.com/grahammendick/navigation.git	pending		S	d0559f364292d5f88cff466f2710f72cf7390786
+dongdongbh__Mindwtr	https://github.com/dongdongbh/Mindwtr.git	pending		S	29a97eebc2a41a159e4d6855bf0a2d1a2fd3f8ae
+GNOME__rhythmbox	https://github.com/GNOME/rhythmbox.git	pending		S	bd3c6980f0f69704b893dc3da521d3e69f23d99d
+ydb-platform__ydb	https://github.com/ydb-platform/ydb.git	pending		M	15eb13a88093ec5fc132f426d2e5a271962cd500
+GPSBabel__gpsbabel	https://github.com/GPSBabel/gpsbabel.git	pending		S	7003cff254beb3a8f442327fdc406984de102091
+jcorporation__myMPD	https://github.com/jcorporation/myMPD.git	pending		S	cb7de14a53933bd27f11427f4499abce1596d7be
+raphw__byte-buddy	https://github.com/raphw/byte-buddy.git	pending		S	807fb56674daf54d8bb01a578e84bac4130b5e1c
+autotest__autotest	https://github.com/autotest/autotest.git	pending		S	0983c2d1e34b03cbd1dec4ca2f009b4620abb652
+sparta__sparta	https://github.com/sparta/sparta.git	pending		S	e071055fca6ccd250d4b894dadb7ff64d6e6fcac
+CoolProp__CoolProp	https://github.com/CoolProp/CoolProp.git	pending		S	022b63e4f73ce25757e1d696a81ffeeba230c261
+netdata__netdata	https://github.com/netdata/netdata.git	pending		S	62c96788a259704d1803fbaaf4eed9551c387074
+verilator__verilator	https://github.com/verilator/verilator.git	pending		S	9b7fad3d77e707747a3c5d5b89a64fc09805e0cc
+virtualagc__virtualagc	https://github.com/virtualagc/virtualagc.git	pending		S	bb608ae3809ae13cd3a2d71f1c50110637891cc2
+apache__james-project	https://github.com/apache/james-project.git	pending		S	96eeaa4247f35ac9b95b75c9cba41c8851ba6ccf
+NVIDIA__cudf	https://github.com/NVIDIA/cudf.git	pending		M	568a24bfb10c08622a17a487d3702c192b538c8f
+vectorgraphics__asymptote	https://github.com/vectorgraphics/asymptote.git	pending		S	9fe28c019c88aaf1d8b6b31cf73f9eba18cb4820
+gridcoin-community__Gridcoin-Research	https://github.com/gridcoin-community/Gridcoin-Research.git	pending		S	72bcc8202517c7d1f78c0a59a64d51eaa875dde8

@@ -1,0 +1,4 @@
+# Built by build_manifest.py from frame.batch26.csv (sha256 be5e046133013c86b49ac3da4255f4190f5baaaaec30bfa7c9ecb0b51e08ef66) at 2026-10-14T16:37:32+00:00.
+# 1 projects in u order; u = first 53 bits of sha256('20261110:' + slug).
+# Columns: name  url  category  file_filter  size_class  commit
+gitlab.com__muttmua__mutt	https://gitlab.com/muttmua/mutt	pending		S	844fcfe7861631359ee789e4231d322144a1bd3b

@@ -1,0 +1,8 @@
+# Part b1 of the S and M projects of manifest.batch9.tsv (sha256 00a32df96f075408b7ce58f8ecc5a5d19c49e20efefee07637b2b4f03bdbc2e8),
+# balanced by predicted time (7.8 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+adoptium__alpine-jdk8u	https://github.com/adoptium/alpine-jdk8u.git	pending		M	77bae344e843f0e39f927b505305ce38e3d7cafc
+invent.kde.org__graphics__digikam	https://invent.kde.org/graphics/digikam	pending		M	a0d0d6b4e7470d5ac44bfcd4bcfe12521cd4c768
+OSGeo__gdal	https://github.com/OSGeo/gdal.git	pending		M	af7058482fea9fd415ae7eccb31fbc28eed9f954
+taosdata__TDengine	https://github.com/taosdata/TDengine.git	pending		M	7b7b9f92f4d5145888f7cab63fd4695f67c73286

@@ -1,0 +1,29 @@
+host	url	step_result	commits	dup_of	dp8l	screened_at
+gitlab.com	https://gitlab.com/inkscape/inkscape	layer 1 candidate	29772		yes	2026-10-14T01:12:43Z
+gitlab.com	https://gitlab.com/fdroid/fdroidclient	shares history with a pool row	11214	gh:22165604		2026-10-14T01:12:44Z
+gitlab.com	https://gitlab.com/veloren/veloren	layer 1 candidate	18570		yes	2026-10-14T01:12:47Z
+gitlab.com	https://gitlab.com/auroraoss/aurorastore	shares history with a pool row	6380	gh:351224496		2026-10-14T01:12:48Z
+gitlab.com	https://gitlab.com/wireshark/wireshark	shares history with a pool row	100510	gh:21329550		2026-10-14T01:12:55Z
+gitlab.com	https://gitlab.com/graphviz/graphviz	layer 1 candidate	31102		yes	2026-10-14T01:12:58Z
+gitlab.com	https://gitlab.com/libeigen/eigen	layer 1 candidate	14072		yes	2026-10-14T01:13:00Z
+gitlab.com	https://gitlab.com/kicad/code/kicad	layer 1 candidate	59534		yes	2026-10-14T01:13:05Z
+gitlab.com	https://gitlab.com/qemu-project/qemu	shares history with a pool row	133940	gh:110669862		2026-10-14T01:13:13Z
+gitlab.com	https://gitlab.com/famedly/conduit	< 5,000 commits				2026-10-14T01:13:13Z
+gitlab.com	https://gitlab.com/openmw/openmw	shares history with a pool row	39029	gh:285722		2026-10-14T01:13:16Z
+gitlab.com	https://gitlab.com/volian/nala	< 5,000 commits				2026-10-14T01:13:17Z
+gitlab.com	https://gitlab.com/remmina/remmina	shares history with a pool row	10562	gh:2696306		2026-10-14T01:13:19Z
+gitlab.com	https://gitlab.com/corectrl/corectrl	< 5,000 commits				2026-10-14T01:13:19Z
+gitlab.com	https://gitlab.com/cryptsetup/cryptsetup	< 5,000 commits				2026-10-14T01:13:20Z
+gitlab.com	https://gitlab.com/recalbox/recalbox	layer 1 candidate	45249		yes	2026-10-14T01:13:25Z
+gitlab.com	https://gitlab.com/mission-center-devs/mission-center	< 5,000 commits				2026-10-14T01:13:26Z
+gitlab.com	https://gitlab.com/tortoisegit/tortoisegit	shares history with a pool row	12047	gh:1197206		2026-10-14T01:13:27Z
+gitlab.com	https://gitlab.com/tezos/tezos	layer 1 candidate	72768		yes	2026-10-14T01:13:34Z
+gitlab.com	https://gitlab.com/news-flash/news_flash_gtk	< 5,000 commits				2026-10-14T01:13:35Z
+gitlab.com	https://gitlab.com/coolercontrol/coolercontrol	layer 1 candidate	8316		yes	2026-10-14T01:13:37Z
+gitlab.com	https://gitlab.com/fmd-foss/fmd-android	< 5,000 commits				2026-10-14T01:13:37Z
+gitlab.com	https://gitlab.com/then-try-this/samplebrain	< 5,000 commits				2026-10-14T01:13:38Z
+gitlab.com	https://gitlab.com/sequoia-pgp/sequoia	layer 1 candidate	6034		yes	2026-10-14T01:13:40Z
+gitlab.com	https://gitlab.com/gnuwget/wget2	< 5,000 commits				2026-10-14T01:13:40Z
+gitlab.com	https://gitlab.com/veilid/veilid	< 5,000 commits				2026-10-14T01:13:41Z
+gitlab.com	https://gitlab.com/fdroid/fdroidserver	shares history with a pool row	9698	gh:22165575		2026-10-14T01:13:43Z
+gitlab.com	https://gitlab.com/distant-horizons-team/distant-horizons	layer 1 candidate	5399		yes	2026-10-14T01:13:45Z

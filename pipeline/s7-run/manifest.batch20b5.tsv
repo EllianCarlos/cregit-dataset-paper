@@ -1,0 +1,23 @@
+# Part b5 of the S and M projects of manifest.batch20.tsv (sha256 4c456b71c9e1db2907af03ac928fea9e460ff859170009b53725d68c63848625),
+# balanced by predicted time (5.5 h for 4 workers), u order; a fed spot part.
+# 19 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+ontop__ontop	https://github.com/ontop/ontop.git	pending		S	b529b39db0519aa2db3200095b24f705135d75f3
+AIDASoft__DD4hep	https://github.com/AIDASoft/DD4hep.git	pending		S	12c9f7f6083b6fd9820f970e5caf8d9f96eb4b78
+networkupstools__nut	https://github.com/networkupstools/nut.git	pending		S	1a8369f8688443a500527059167d2f66ca27535f
+jpos__jPOS	https://github.com/jpos/jPOS.git	pending		S	ef01ebb9b3f6a607ca192193d76578d3d19fedfe
+opentoonz__opentoonz	https://github.com/opentoonz/opentoonz.git	pending		S	8c5345182b1c3d2ff011a1cf08dad067b6700f08
+eclipse-kapua__kapua	https://github.com/eclipse-kapua/kapua.git	pending		S	2cf6b3d0a05dccb2dc952227d47fd0b680d756f3
+linux-nvme__nvme-cli	https://github.com/linux-nvme/nvme-cli.git	pending		S	54c7bdebbd81c648c2d9644ac7312a928363e685
+TASEmulators__BizHawk	https://github.com/TASEmulators/BizHawk.git	pending		S	c2a683fc1fc4a7e3cfd593ccab9e061482c824aa
+yandex__perforator	https://github.com/yandex/perforator.git	pending		S	d68c29987d2280b77ff29e8c2ba208f888158158
+pradt2__always-online-stun	https://github.com/pradt2/always-online-stun.git	pending		M	dc556f00062a7e55cf7c8c2b35cf23869d42f621
+EasyRPG__Player	https://github.com/EasyRPG/Player.git	pending		S	0de2a9ab466a133ac6e192a84bd761a1d81f5f14
+gtk-rs__gtk3-rs	https://github.com/gtk-rs/gtk3-rs.git	pending		S	0d5b7c089e5916663f2910e334d186f4ca342e6a
+fgl27__SmartTwitchTV	https://github.com/fgl27/SmartTwitchTV.git	pending		S	7ca7b76249b4c2a6b2f44932641f49894410c99a
+confluentinc__ksql	https://github.com/confluentinc/ksql.git	pending		M	7c0049a024e7f32b0717c4ff511f9025e3b9dfe0
+renode__renode	https://github.com/renode/renode.git	pending		S	8d37a4a0406a7621bb0e0b645a0cff0a3bdfc080
+TeraTermProject__teraterm	https://github.com/TeraTermProject/teraterm.git	pending		S	88e9ff7f964d5dcb955f716466b6887fdf3c1422
+awsdocs__aws-doc-sdk-examples	https://github.com/awsdocs/aws-doc-sdk-examples.git	pending		S	b02c52377dd9b9ecb426f328c813257eee0f566c
+llnl__RAJA	https://github.com/llnl/RAJA.git	pending		S	09626e855db5005357eb1dac7cc4db0546cf0f53
+bytechefhq__bytechef	https://github.com/bytechefhq/bytechef.git	pending		S	c672b0c48714478b3757db1c077618d5ee21f31d

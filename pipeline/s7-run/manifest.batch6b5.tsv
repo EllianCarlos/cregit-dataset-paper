@@ -1,0 +1,20 @@
+# Part b5 of the S and M projects of manifest.batch6.tsv (sha256 d54537af63a6cf6201cae5c5377286219e33305adb682e411af3367e642cb17b),
+# balanced by predicted time (6.9 h for 4 workers), u order; a fed spot part.
+# 16 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+citusdata__citus	https://github.com/citusdata/citus.git	pending		S	2aebefc7856ffe54541124b07af1507c7347a056
+Samsung__ONE	https://github.com/Samsung/ONE.git	pending		S	342395fc0d6bf29e2ea939ef0a7eced18d677f81
+MorphiaOrg__morphia	https://github.com/MorphiaOrg/morphia.git	pending		S	63eb281454620042e66125750a4cc1442b461f70
+cloudius-systems__osv	https://github.com/cloudius-systems/osv.git	pending		S	f0db789a0d542c384e3331ce058c966830ad44b5
+semgrep__semgrep	https://github.com/semgrep/semgrep.git	pending		S	93eeef68950a615bc2c66c52a0155f3e73d2fd57
+Ardour__ardour	https://github.com/Ardour/ardour.git	pending		M	08da0606e3116ab26678c027c30ea7a6a32ad925
+linera-io__linera-protocol	https://github.com/linera-io/linera-protocol.git	pending		S	672d97bb2fce3127db351069df72f1d225d8f263
+getsentry__relay	https://github.com/getsentry/relay.git	pending		S	7ee948e37efa7164a08b0dd8bf8bcf55036fae3b
+headwirecom__peregrine-cms	https://github.com/headwirecom/peregrine-cms.git	pending		S	a67d25b8e65cad911c4553866aa94c46bb96c471
+ocaml__ocaml	https://github.com/ocaml/ocaml.git	pending		M	dcfadad08592c31d634fd2d98b24bc9f858b17a6
+GNOME__dia	https://github.com/GNOME/dia.git	pending		S	ad68cc378b7a187706bc2648c48b44d16fb80819
+CapSoftware__Cap	https://github.com/CapSoftware/Cap.git	pending		S	94ad3fd8d107c40ec3ac08bdd445d1810f0f5a44
+NVIDIA__edk2	https://github.com/NVIDIA/edk2.git	pending		M	5ed225b2405a3cce7879987d405cc05a98a264e7
+eclipse-rdf4j__rdf4j	https://github.com/eclipse-rdf4j/rdf4j.git	pending		S	4b7715ee03b4ea435b9ed01ccecd2e66bff0b2fd
+GNOME__gjs	https://github.com/GNOME/gjs.git	pending		S	ee6e97b9863be8e5844e33ae01ef206f68ca0a54
+apache__ignite	https://github.com/apache/ignite.git	pending		M	e2be14aa2c6dba256e7f992f1f0956ffa1aa6cbb

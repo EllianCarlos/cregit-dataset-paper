@@ -1,0 +1,24 @@
+# Part b1 of the S and M projects of manifest.batch13.tsv (sha256 1d1f93d1d2952c0f2a25ca8f968b8bf867959609ab38c913a98784b9d447bfcc),
+# balanced by predicted time (5.9 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+monero-project__monero	https://github.com/monero-project/monero.git	pending		S	f6a591c33a40957800bc0d8cb4804058ab36d1f3
+google__j2objc	https://github.com/google/j2objc.git	pending		S	c3d25dcad1bce6837dc750dfe9d0c934d113f281
+hibernate__hibernate-search	https://github.com/hibernate/hibernate-search.git	pending		S	cea088cf2a603eef307945a62c92be746ee7708f
+apache__tinkerpop	https://github.com/apache/tinkerpop.git	pending		S	82242e7f2129454a601c44c072446f255be420cd
+batocera-linux__batocera-emulationstation	https://github.com/batocera-linux/batocera-emulationstation.git	pending		S	a61c25f6b934cf7272989bae5ff3960bf3a01560
+widelands__widelands	https://github.com/widelands/widelands.git	pending		S	16adbe97a6e594f645d356ce9e3afc8b0febf0ff
+eclipse-ditto__ditto	https://github.com/eclipse-ditto/ditto.git	pending		S	e043450a608821ba5ab2ccdb21a6d851f75b8479
+JanusGraph__janusgraph	https://github.com/JanusGraph/janusgraph.git	pending		S	dddfdcd1b1142f05a9fc170ec2cc9ad8c21ff691
+srsran__srsRAN_4G	https://github.com/srsran/srsRAN_4G.git	pending		S	bef8680d5f9714f3e040e6f9cbc88d7888439b6d
+elementary__files	https://github.com/elementary/files.git	pending		S	989648b29f5591658ebebd38ed53d3327e42df4f
+polyml__polyml	https://github.com/polyml/polyml.git	pending		S	10abf20b5c2beb789e28edf57b9e94cef2558918
+apache__hop	https://github.com/apache/hop.git	pending		S	6bd9e191ef1c7d0219c695620ba744255aa7ca59
+apache__systemds	https://github.com/apache/systemds.git	pending		S	cbb62dd874aef9c8ed316c0a82d158faa704dee4
+cisco-system-traffic-generator__trex-core	https://github.com/cisco-system-traffic-generator/trex-core.git	pending		S	27e0153b5ff833c51d48f1625ace979a2868d8a0
+awesomeWM__awesome	https://github.com/awesomeWM/awesome.git	pending		S	0a5e50cf7ee214fae47159e0e976ab4a78d2ed4f
+uroni__urbackup_backend	https://github.com/uroni/urbackup_backend.git	pending		S	28d7f7668a1f03fbdf766cf45e2d3001236e7c5c
+PipeWire__pipewire	https://github.com/PipeWire/pipewire.git	pending		S	7ac57ade398d3dd921c628d1e9ad48a71f8548be
+invent.kde.org__unmaintained__kde-baseapps	https://invent.kde.org/unmaintained/kde-baseapps	pending		S	c5bd2d667b4baa4f241eef09870e3c1ba3159649
+nuxeo__nuxeo-drive	https://github.com/nuxeo/nuxeo-drive.git	pending		S	8420df7c6daaaa35b32807bb5e005cf87c9d55f6
+noctalia-dev__noctalia	https://github.com/noctalia-dev/noctalia.git	pending		S	4da7a84135070f92333968be9d1486edb7cf8e2b

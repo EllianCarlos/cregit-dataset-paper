@@ -1,0 +1,33 @@
+host	url	step_result	commits	dup_of	dp8l	screened_at
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/gluebuddy	< 5,000 commits				2026-10-14T00:07:03Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/signstar	< 5,000 commits				2026-10-14T00:07:04Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/arch-rebuild-order	< 5,000 commits				2026-10-14T00:07:05Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/pyalpm	< 5,000 commits				2026-10-14T00:07:08Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/upstream/linux-rt	layer 1 candidate	1463187		yes	2026-10-14T00:08:55Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/mail-credential-syncer	< 5,000 commits				2026-10-14T00:08:55Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/upstream/linux-rt-lts	layer 1 candidate	275149		yes	2026-10-14T00:11:01Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/arch-repro-status	< 5,000 commits				2026-10-14T00:11:02Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/pacman/alpm.rs	< 5,000 commits				2026-10-14T00:11:03Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/pacman/pacman	layer 1 candidate	7557		yes	2026-10-14T00:11:05Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/cgit	< 5,000 commits				2026-10-14T00:11:06Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/mkinitcpio/mkinitcpio-nfs-utils	< 5,000 commits				2026-10-14T00:11:07Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/pacman/pacman-contrib	< 5,000 commits				2026-10-14T00:11:08Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/gitlab-exporter	< 5,000 commits				2026-10-14T00:11:09Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/upstream/shadow	< 5,000 commits				2026-10-14T00:11:10Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/packages/abduco	< 5,000 commits				2026-10-14T00:11:10Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/packages/dropbear	< 5,000 commits				2026-10-14T00:11:11Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/packages/dvtm	< 5,000 commits				2026-10-14T00:11:12Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/packages/glibc	< 5,000 commits				2026-10-14T00:11:13Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/packages/hipblas	< 5,000 commits				2026-10-14T00:11:14Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/packages/hipcub	< 5,000 commits				2026-10-14T00:11:15Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/packages/hipfft	< 5,000 commits				2026-10-14T00:11:15Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/packages/hipsolver	< 5,000 commits				2026-10-14T00:11:16Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/packages/hipsparse	< 5,000 commits				2026-10-14T00:11:17Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/packages/intel-oneapi-compiler-shared-runtime	< 5,000 commits				2026-10-14T00:11:18Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/packages/intel-oneapi-dpcpp-cpp	< 5,000 commits				2026-10-14T00:11:19Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/packages/intel-oneapi-mkl	< 5,000 commits				2026-10-14T00:11:20Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/packages/intel-oneapi-openmp	< 5,000 commits				2026-10-14T00:11:20Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/packages/intel-oneapi-tbb	< 5,000 commits				2026-10-14T00:11:21Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/packages/ipxe	< 5,000 commits				2026-10-14T00:11:22Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/packages/rccl	< 5,000 commits				2026-10-14T00:11:23Z
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/packages/juce	< 5,000 commits				2026-10-14T00:11:24Z

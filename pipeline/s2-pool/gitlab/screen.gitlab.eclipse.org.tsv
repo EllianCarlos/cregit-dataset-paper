@@ -1,0 +1,304 @@
+host	url	step_result	commits	dup_of	dp8l	screened_at
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/hawk/hawk	already in the pool				2026-10-13T23:19:50Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipsefdn/software-dev/api/eclipsefdn-api-common	< 5,000 commits				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/chess/chess	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/escet/escet	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/openpass/opsimulation	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/ice/ice	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/lsat/lsat	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/comma/comma	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/trace4cps/trace4cps	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/openpass/mantle-api	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/openpass/openscenario1_engine	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/app4mc/org.eclipse.app4mc.tools.simulation	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/titan/titan.core	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/titan/titan.eclipseplug-ins	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/titan/titan.misc	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/titan/titan.testports.pipeasp	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/titan/titan.protocolemulations.sccp	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/titan/titan.testports.mtp3asp	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/titan/titan.libraries.cll	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/openk-usermodules/org.eclipse.openk-usermodules.elogbook	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/openk-usermodules/org.eclipse.openk-usermodules.standbyplanning.backend	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/openk-usermodules/org.eclipse.openk-usermodules.statementpublicaffairs.backend	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/openk-coremodules/org.eclipse.openk-coremodules.authandauth	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/openk-coremodules/org.eclipse.openk-coremodules.contactbasedata.backend	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/openk-usermodules/org.eclipse.openk-usermodules.gridfailureinformation.backend	already in the pool				2026-10-13T23:19:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipsefdn/software-dev/websites/eclipse.org	< 5,000 commits				2026-10-13T23:19:53Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipsefdn/software-dev/websites/membership.eclipse.org	< 5,000 commits				2026-10-13T23:19:55Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipsefdn/software-dev/api/git-eca-rest-api	< 5,000 commits				2026-10-13T23:19:56Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipsefdn/software-dev/api/geoip-rest-api	< 5,000 commits				2026-10-13T23:20:00Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/app4mc/org.eclipse.app4mc.rtclib	already in the pool				2026-10-13T23:20:00Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipsefdn/software-dev/api/eclipsefdn-mailing-lists-api	< 5,000 commits				2026-10-13T23:20:02Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipsefdn/software-dev/api/eclipsefdn-downloads-api	< 5,000 commits				2026-10-13T23:20:04Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/oniro-core/oniro	already in the pool				2026-10-13T23:20:04Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/statet/statet	already in the pool				2026-10-13T23:20:04Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/etrice/etrice	already in the pool				2026-10-13T23:20:04Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipsefdn/software-dev/frameworks-and-tools/standalone-reports-scripts	< 5,000 commits				2026-10-13T23:20:06Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipsefdn/software-dev/api/eclipsefdn-project-adopters	< 5,000 commits				2026-10-13T23:20:08Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipsefdn/software-dev/api/eclipsefdn-working-groups-api	< 5,000 commits				2026-10-13T23:20:10Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/graphene/common-dataservice	already in the pool				2026-10-13T23:20:10Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/dash/eclipse-api-for-java	already in the pool				2026-10-13T23:20:10Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/graphene/nexus-client	already in the pool				2026-10-13T23:20:10Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/graphene/kubernetes-client	already in the pool				2026-10-13T23:20:10Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/graphene/portal-marketplace	already in the pool				2026-10-13T23:20:10Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/graphene/onboarding	already in the pool				2026-10-13T23:20:10Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/graphene/design-studio-backend	already in the pool				2026-10-13T23:20:10Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/graphene/playground-deployer	already in the pool				2026-10-13T23:20:10Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/graphiti/graphiti	already in the pool				2026-10-13T23:20:10Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-domainservices	already in the pool				2026-10-13T23:20:10Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/om2m/om2m	already in the pool				2026-10-13T23:20:10Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipsefdn/it/releng/gitlab-runner-service/gitlab-ci-templates	< 5,000 commits				2026-10-13T23:20:12Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/titan/titan.language-server	already in the pool				2026-10-13T23:20:12Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/subversive/subversive	already in the pool				2026-10-13T23:20:12Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/openpass/opgui	already in the pool				2026-10-13T23:20:12Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/graphiti/graphiti-website	already in the pool				2026-10-13T23:20:12Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/dash/eclipse-project-code	already in the pool				2026-10-13T23:20:12Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipsefdn/software-dev/api/eclipsefdn-profile-api	< 5,000 commits				2026-10-13T23:20:13Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipsefdn/software-dev/api/eclipsefdn-committer-paperwork-api	< 5,000 commits				2026-10-13T23:20:15Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipsefdn/software-dev/api/eclipse-openvsx-api	< 5,000 commits				2026-10-13T23:20:16Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-web	already in the pool				2026-10-13T23:20:16Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/ease/ease	already in the pool				2026-10-13T23:20:16Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/scm/scm	already in the pool				2026-10-13T23:20:16Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipsefdn/software-dev/api/eclipsefdn-hellosign-api	< 5,000 commits				2026-10-13T23:20:18Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/app4mc/org.eclipse.app4mc.cloud	already in the pool				2026-10-13T23:20:18Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/app4mc/org.eclipse.app4mc.examples	already in the pool				2026-10-13T23:20:18Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/app4mc/org.eclipse.app4mc.tools	already in the pool				2026-10-13T23:20:18Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/app4mc/org.eclipse.app4mc.releng	already in the pool				2026-10-13T23:20:18Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/app4mc/org.eclipse.app4mc	already in the pool				2026-10-13T23:20:18Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/app4mc/org.eclipse.app4mc.addon.migration	already in the pool				2026-10-13T23:20:18Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/app4mc/org.eclipse.app4mc.addon.transformation	already in the pool				2026-10-13T23:20:18Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/objectteams/objectteams	already in the pool				2026-10-13T23:20:18Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/openpass/road-logic-suite	already in the pool				2026-10-13T23:20:18Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/codeco-project/network-management-and-adaptation-netma/secure-connectivity	< 5,000 commits				2026-10-13T23:20:19Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/aidge/aidge	already in the pool				2026-10-13T23:20:19Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/aidge/aidge_module_template	already in the pool				2026-10-13T23:20:19Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/nephele-project/vo-lwm2m	< 5,000 commits				2026-10-13T23:20:21Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/tcf/tcf	already in the pool				2026-10-13T23:20:21Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/tcf/tcf.agent	already in the pool				2026-10-13T23:20:21Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/codeco-project/network-management-and-adaptation-netma/network-state-management	< 5,000 commits				2026-10-13T23:20:22Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/openpass/gt-gen-core	already in the pool				2026-10-13T23:20:22Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/openpass/gt-gen-simulator	already in the pool				2026-10-13T23:20:22Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/aidge/aidge_export_hls	already in the pool				2026-10-13T23:20:22Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/nemo-project/nemo-cybersecurity-and-unified_federated-access-control/secure-intercommunication/message-broker	< 5,000 commits				2026-10-13T23:20:24Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/openpass/osi-query-library	already in the pool				2026-10-13T23:20:24Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/webtools/releng/webtools-releng	already in the pool				2026-10-13T23:20:24Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/codeco-project/use-cases/p6-crownstonesmartbuildings	< 5,000 commits				2026-10-13T23:20:25Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-robotics	already in the pool				2026-10-13T23:20:25Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-designer	already in the pool				2026-10-13T23:20:25Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/mdmbl/org.eclipse.mdm	already in the pool				2026-10-13T23:20:25Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/mdmbl/org.eclipse.mdm.mdfsorter	already in the pool				2026-10-13T23:20:25Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/mdmbl/org.eclipse.mdm.openatfx.mdf	already in the pool				2026-10-13T23:20:25Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/esf/esf-infra	already in the pool				2026-10-13T23:20:25Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/datamite-project/data-governance/data-governance-backend	< 5,000 commits				2026-10-13T23:20:26Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/datamite-project/data-support-tools/iccs-data-harmonization-tools	< 5,000 commits				2026-10-13T23:20:28Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/nemo-project/nemo-federated-mlops/cybersecure-reinforcement-learning/federated-learning/fredy	< 5,000 commits				2026-10-13T23:20:30Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-manufacturing	already in the pool				2026-10-13T23:20:30Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/codeco-project/use-cases/p5-amr-manufacturing	< 5,000 commits				2026-10-13T23:20:32Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipsefdn/software-dev/api/eclipsefdn-info-api	< 5,000 commits				2026-10-13T23:20:34Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/datamite-project/data-sharing/idsa-gaia-x-connectors-and-components/logging-service-extension	< 5,000 commits				2026-10-13T23:20:37Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/datamite-project/data-sharing/idsa-gaia-x-connectors-and-components/policy-engine-extension	< 5,000 commits				2026-10-13T23:20:39Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/datamite-project/data-support-tools/data_ingestion_and_storage/data-storage	< 5,000 commits				2026-10-13T23:20:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/openpass/stochastics-library	already in the pool				2026-10-13T23:20:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/graphene/federation4	already in the pool				2026-10-13T23:20:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-desktop	already in the pool				2026-10-13T23:20:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-classic	already in the pool				2026-10-13T23:20:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-marte	already in the pool				2026-10-13T23:20:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-model2doc	already in the pool				2026-10-13T23:20:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-moka	already in the pool				2026-10-13T23:20:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-sirius	already in the pool				2026-10-13T23:20:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-sysml16	already in the pool				2026-10-13T23:20:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-moka.incubation	already in the pool				2026-10-13T23:20:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-papygame	already in the pool				2026-10-13T23:20:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-bpmn	already in the pool				2026-10-13T23:20:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-ease	already in the pool				2026-10-13T23:20:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/codeco-project/use-cases/p4-dem-energy	< 5,000 commits				2026-10-13T23:20:43Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/aidge/aidge_backend_arrayfire	already in the pool				2026-10-13T23:20:43Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/enact-project/application-controller	< 5,000 commits				2026-10-13T23:20:45Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/enact-project/application-programming-model	< 5,000 commits				2026-10-13T23:20:47Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/enact-project/software-development-kit	< 5,000 commits				2026-10-13T23:20:49Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/mdht/modeling.mdht	already in the pool				2026-10-13T23:20:49Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/aidge/aidge_compression	already in the pool				2026-10-13T23:20:49Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/spade-project/opencall-1/farmsense/farmsense	< 5,000 commits				2026-10-13T23:20:51Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/datamite-project/data-sharing/idsa-gaia-x-connectors-and-components/datamite-edc-connector	< 5,000 commits				2026-10-13T23:20:54Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/codeco-project/use-cases/p1-smartcity/p1-smartcity	< 5,000 commits				2026-10-13T23:20:59Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/spade-project/opencall-1/olympian/spade-pgo	< 5,000 commits				2026-10-13T23:21:15Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipsefdn/software-dev/api/eclipsefdn-eca-expiration-api	< 5,000 commits				2026-10-13T23:21:16Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/enact-project/templates	< 5,000 commits				2026-10-13T23:21:18Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/enact-project/digital-twin-platform	< 5,000 commits				2026-10-13T23:21:20Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/graphene/kubernetes-deployer	already in the pool				2026-10-13T23:21:20Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/openpass/gecco	already in the pool				2026-10-13T23:21:20Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/mosaico-project/aisp-prototyping	< 5,000 commits				2026-10-13T23:21:22Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/spade-project/opencall-1/olympian/spade-autonomousmission	< 5,000 commits				2026-10-13T23:21:24Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/nephele-project/opencall-2/drop/attestation-server	< 5,000 commits				2026-10-13T23:21:29Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/nephele-project/opencall-2/drop/vaccel-plugin-rpc	< 5,000 commits				2026-10-13T23:21:32Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/aidge/aidge_export_openvx	already in the pool				2026-10-13T23:21:32Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/nephele-project/use-cases/use-case-4/esaote-uc4-vo-oma	< 5,000 commits				2026-10-13T23:21:34Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/dash/repository-util	already in the pool				2026-10-13T23:21:34Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/nemo-project/nemo-dashboard/dashboard	< 5,000 commits				2026-10-13T23:21:35Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/enact-project/application-manager	< 5,000 commits				2026-10-13T23:21:38Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/nemo-project/opencall-2/orthotic/orthotic-rest	< 5,000 commits				2026-10-13T23:21:40Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/nemo-project/opencall-2/orthotic/orthotic-mqtt	< 5,000 commits				2026-10-13T23:21:44Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/nemo-project/nemo-industry-pilot	< 5,000 commits				2026-10-13T23:21:48Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/aidge/aidge_export_colibry	already in the pool				2026-10-13T23:21:48Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/nemo-project/opencall-2/pino/pino_cloud	< 5,000 commits				2026-10-13T23:21:50Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/nous-project/data-spaces-participants/data-agent/nous-dataspace-connector	< 5,000 commits				2026-10-13T23:21:53Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/nous-project/common-administration-services/security-services/nous-iam-component	< 5,000 commits				2026-10-13T23:22:00Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-web.sysml16	already in the pool				2026-10-13T23:22:00Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/nous-project/data-spaces-participants/application-services/fastflow-python	< 5,000 commits				2026-10-13T23:22:05Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/cybernemo-project/zero-trust-network-access/pot	< 5,000 commits				2026-10-13T23:22:18Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/cybernemo-project/zero-trust-network-access/notaryztna	< 5,000 commits				2026-10-13T23:22:20Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/spade-project/opencall-1/appa/path_planning	< 5,000 commits				2026-10-13T23:22:25Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/spade-project/opencall-1/appa/slam	< 5,000 commits				2026-10-13T23:22:27Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/aidge/aidge_export_sonnx	already in the pool				2026-10-13T23:22:27Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/aidge/aidge_export_xnnpack	already in the pool				2026-10-13T23:22:27Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/spade-project/opencall-2/falcon/sdu_drone	< 5,000 commits				2026-10-13T23:22:40Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/mosaico-project/a2a-acl	< 5,000 commits				2026-10-13T23:22:59Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/codeco-project/network-management-and-adaptation-netma/secure-connectivity-hc	< 5,000 commits				2026-10-13T23:23:05Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/spade-project/opencall-2/basil/spade-landing-gear	< 5,000 commits				2026-10-13T23:23:20Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/mosaico-project/mosaico-repository	< 5,000 commits				2026-10-13T23:23:26Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/aidge/aidge_export_timvx	already in the pool				2026-10-13T23:23:26Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/aidge/aidge_backend_python_bridge	already in the pool				2026-10-13T23:23:26Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/mosaico-project/kpi-formula-dsl	< 5,000 commits				2026-10-13T23:23:40Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/spade-project/opencall-2/arpia/px4-omniquad	< 5,000 commits				2026-10-13T23:23:45Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/spade-project/opencall-2/basil/icm42686	< 5,000 commits				2026-10-13T23:23:56Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/skillab/open-source-workshop	< 5,000 commits				2026-10-13T23:24:08Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/mosaico-project/mosaico-orchestrator-prototype	< 5,000 commits				2026-10-13T23:24:19Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/o-cei-project/challenge-3-jakarta-ee-hourglass/hourglass-template	< 5,000 commits				2026-10-13T23:24:21Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/o-cei-project/challenge-1-o-cei/cyberguys	< 5,000 commits				2026-10-13T23:24:28Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/o-cei-project/challenge-3-jakarta-ee-hourglass/cache-and-release	< 5,000 commits				2026-10-13T23:24:51Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/o-cei-project/challenge-3-jakarta-ee-hourglass/ai-a-b	< 5,000 commits				2026-10-13T23:25:02Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/o-cei-project/challenge-3-jakarta-ee-hourglass/cyberguys	< 5,000 commits				2026-10-13T23:25:36Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/o-cei-project/challenge-3-jakarta-ee-hourglass/sad	< 5,000 commits				2026-10-13T23:25:54Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/mosaico-project/mosaico-orchestrator-agents	< 5,000 commits				2026-10-13T23:26:10Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/aidge/aidge_backend_onednn	already in the pool				2026-10-13T23:26:10Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/core-v-mcu	< 5,000 commits				2026-10-13T23:26:13Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/cva5	< 5,000 commits				2026-10-13T23:26:15Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/core-et	< 5,000 commits				2026-10-13T23:26:24Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/corev-binutils-gdb	layer 1 candidate	119037		yes	2026-10-13T23:27:43Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/cvw	layer 1 candidate	11944		yes	2026-10-13T23:28:26Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/core-v-mcu-cli-test	< 5,000 commits				2026-10-13T23:28:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/core-v-mcu-demo	< 5,000 commits				2026-10-13T23:29:01Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/core-et-erbium	< 5,000 commits				2026-10-13T23:29:19Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/core-v-freertos-kernel	< 5,000 commits				2026-10-13T23:29:30Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/cv32e40s-dv	< 5,000 commits				2026-10-13T23:29:43Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/force-riscv	< 5,000 commits				2026-10-13T23:29:48Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/core-v-ide-cdt	< 5,000 commits				2026-10-13T23:29:55Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/core-v-freertos	< 5,000 commits				2026-10-13T23:30:07Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/cva5-accelerators	< 5,000 commits				2026-10-13T23:30:36Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/corev-qemu	layer 1 candidate	101398		yes	2026-10-13T23:31:20Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/cvw-arch-verif	< 5,000 commits				2026-10-13T23:31:31Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/core-v-verif	< 5,000 commits				2026-10-13T23:31:38Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/u-boot	shares history with a pool row	73349	gh:191945249		2026-10-13T23:32:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/cv-hpdcache	< 5,000 commits				2026-10-13T23:32:44Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/cv32e40x-dv	< 5,000 commits				2026-10-13T23:32:45Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/cv32e40p	< 5,000 commits				2026-10-13T23:32:51Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/embdebug-target-core-v	< 5,000 commits				2026-10-13T23:32:56Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/cv32e41p	< 5,000 commits				2026-10-13T23:32:58Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/corev-gcc	layer 1 candidate	210123		yes	2026-10-13T23:33:30Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/core-v-mcu-sdk-examples	< 5,000 commits				2026-10-13T23:33:37Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/cvfpu-uvm	< 5,000 commits				2026-10-13T23:33:39Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/corev-llvm-project	layer 1 candidate	439950		yes	2026-10-13T23:35:23Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/core-v-sdk	< 5,000 commits				2026-10-13T23:35:31Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/core-v-polara-apu	< 5,000 commits				2026-10-13T23:35:33Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/cv32e20-dv	< 5,000 commits				2026-10-13T23:35:44Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/cva6-safe	< 5,000 commits				2026-10-13T23:35:46Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/core-v-mcu	< 5,000 commits				2026-10-13T23:35:59Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/cva5	< 5,000 commits				2026-10-13T23:38:31Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/core-et	< 5,000 commits				2026-10-13T23:38:32Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/corev-binutils-gdb	layer 1 candidate	119037		yes	2026-10-13T23:38:42Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/cvw	layer 1 candidate	11944		yes	2026-10-13T23:38:51Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/core-v-mcu-cli-test	< 5,000 commits				2026-10-13T23:38:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/core-v-mcu-demo	< 5,000 commits				2026-10-13T23:38:53Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/core-et-erbium	< 5,000 commits				2026-10-13T23:38:54Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/core-v-freertos-kernel	< 5,000 commits				2026-10-13T23:38:56Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/cv32e40s-dv	< 5,000 commits				2026-10-13T23:38:57Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/force-riscv	< 5,000 commits				2026-10-13T23:38:58Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/core-v-ide-cdt	< 5,000 commits				2026-10-13T23:39:00Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/core-v-freertos	< 5,000 commits				2026-10-13T23:39:01Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/cva5-accelerators	< 5,000 commits				2026-10-13T23:39:02Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/corev-qemu	layer 1 candidate	101398		yes	2026-10-13T23:39:19Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/cvw-arch-verif	< 5,000 commits				2026-10-13T23:39:21Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/core-v-verif	< 5,000 commits				2026-10-13T23:39:22Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/u-boot	shares history with a pool row	73349	gh:191945249		2026-10-13T23:39:38Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/cv-hpdcache	< 5,000 commits				2026-10-13T23:39:39Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/cv32e40x-dv	< 5,000 commits				2026-10-13T23:39:40Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/cv32e40p	< 5,000 commits				2026-10-13T23:39:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/embdebug-target-core-v	< 5,000 commits				2026-10-13T23:39:43Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/cv32e41p	< 5,000 commits				2026-10-13T23:39:44Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/corev-gcc	layer 1 candidate	210123		yes	2026-10-13T23:40:00Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/core-v-mcu-sdk-examples	< 5,000 commits				2026-10-13T23:40:02Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/cvfpu-uvm	< 5,000 commits				2026-10-13T23:40:03Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/corev-llvm-project	layer 1 candidate	439950		yes	2026-10-13T23:40:34Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/core-v-sdk	< 5,000 commits				2026-10-13T23:40:36Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/core-v-polara-apu	< 5,000 commits				2026-10-13T23:40:37Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/cv32e20-dv	< 5,000 commits				2026-10-13T23:40:39Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/cva6-safe	< 5,000 commits				2026-10-13T23:40:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/cv32e40p-dv-review	< 5,000 commits				2026-10-13T23:40:54Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/core-v-mcu	< 5,000 commits				2026-10-13T23:40:58Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/cva5	< 5,000 commits				2026-10-13T23:41:00Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/core-et	< 5,000 commits				2026-10-13T23:41:02Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/corev-binutils-gdb	layer 1 candidate	119037		yes	2026-10-13T23:41:24Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/cvw	layer 1 candidate	11959		yes	2026-10-13T23:41:36Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/core-v-mcu-cli-test	< 5,000 commits				2026-10-13T23:41:39Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/core-v-mcu-demo	< 5,000 commits				2026-10-13T23:41:43Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/core-et-erbium	< 5,000 commits				2026-10-13T23:41:46Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/core-v-freertos-kernel	< 5,000 commits				2026-10-13T23:41:48Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/cv32e40s-dv	< 5,000 commits				2026-10-13T23:41:51Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/force-riscv	< 5,000 commits				2026-10-13T23:41:55Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/core-v-ide-cdt	< 5,000 commits				2026-10-13T23:42:00Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/core-v-freertos	< 5,000 commits				2026-10-13T23:42:03Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/cva5-accelerators	< 5,000 commits				2026-10-13T23:42:05Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/corev-qemu	layer 1 candidate	101398		yes	2026-10-13T23:42:35Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/cvw-arch-verif	< 5,000 commits				2026-10-13T23:42:37Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/core-v-verif	< 5,000 commits				2026-10-13T23:42:40Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/u-boot	shares history with a pool row	73349	gh:191945249		2026-10-13T23:43:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/cv-hpdcache	< 5,000 commits				2026-10-13T23:44:00Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/cv32e40x-dv	< 5,000 commits				2026-10-13T23:44:20Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/cv32e40p	< 5,000 commits				2026-10-13T23:44:24Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/embdebug-target-core-v	< 5,000 commits				2026-10-13T23:44:31Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/cv32e41p	< 5,000 commits				2026-10-13T23:44:42Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/corev-gcc	layer 1 candidate	210123		yes	2026-10-13T23:46:21Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/core-v-mcu-sdk-examples	< 5,000 commits				2026-10-13T23:46:31Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/cvfpu-uvm	< 5,000 commits				2026-10-13T23:46:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/corev-llvm-project	layer 1 candidate	439950		yes	2026-10-13T23:48:12Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/core-v-sdk	< 5,000 commits				2026-10-13T23:48:36Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/core-v-polara-apu	< 5,000 commits				2026-10-13T23:48:46Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/cv32e20-dv	< 5,000 commits				2026-10-13T23:48:55Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/cva6-safe	< 5,000 commits				2026-10-13T23:48:58Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/cv32e40p-dv-review	< 5,000 commits				2026-10-13T23:49:12Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/core-v-mcu	< 5,000 commits				2026-10-13T23:49:14Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/cva5	< 5,000 commits				2026-10-13T23:49:19Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/core-et	< 5,000 commits				2026-10-13T23:49:21Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/corev-binutils-gdb	layer 1 candidate	119037		yes	2026-10-13T23:50:10Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/cvw	layer 1 candidate	11972		yes	2026-10-13T23:51:23Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/core-v-mcu-cli-test	< 5,000 commits				2026-10-13T23:51:29Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/core-v-mcu-demo	< 5,000 commits				2026-10-13T23:51:39Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/core-et-erbium	< 5,000 commits				2026-10-13T23:51:41Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/core-v-freertos-kernel	< 5,000 commits				2026-10-13T23:51:43Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/cv32e40s-dv	< 5,000 commits				2026-10-13T23:51:45Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/force-riscv	< 5,000 commits				2026-10-13T23:51:46Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/core-v-ide-cdt	< 5,000 commits				2026-10-13T23:51:48Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/core-v-freertos	< 5,000 commits				2026-10-13T23:51:49Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/cva5-accelerators	< 5,000 commits				2026-10-13T23:51:50Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/corev-qemu	layer 1 candidate	101398		yes	2026-10-13T23:51:59Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/cvw-arch-verif	< 5,000 commits				2026-10-13T23:52:00Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/core-v-verif	< 5,000 commits				2026-10-13T23:52:01Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/u-boot	shares history with a pool row	73349	gh:191945249		2026-10-13T23:52:06Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/cv-hpdcache	< 5,000 commits				2026-10-13T23:52:07Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/cv32e40x-dv	< 5,000 commits				2026-10-13T23:52:08Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/cv32e40p	< 5,000 commits				2026-10-13T23:52:09Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/embdebug-target-core-v	< 5,000 commits				2026-10-13T23:52:10Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/cv32e41p	< 5,000 commits				2026-10-13T23:52:11Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/corev-gcc	layer 1 candidate	210123		yes	2026-10-13T23:52:24Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/core-v-mcu-sdk-examples	< 5,000 commits				2026-10-13T23:52:24Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/cvfpu-uvm	< 5,000 commits				2026-10-13T23:52:25Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/corev-llvm-project	layer 1 candidate	439950		yes	2026-10-13T23:52:48Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/core-v-sdk	< 5,000 commits				2026-10-13T23:52:49Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/core-v-polara-apu	< 5,000 commits				2026-10-13T23:52:50Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/cv32e20-dv	< 5,000 commits				2026-10-13T23:52:51Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/cva6-safe	< 5,000 commits				2026-10-13T23:52:52Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/cv32e40p-dv-review	< 5,000 commits				2026-10-13T23:52:53Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/sagetea/f-droid-public-xfoneos-app-store	already in the pool				2026-10-13T23:52:53Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse-research-labs/mosaico-project/goldenuml-emfatic	< 5,000 commits				2026-10-13T23:52:54Z
+gitlab.eclipse.org	https://gitlab.eclipse.org/eclipse/aidge/aidge_export_vivado_hls	already in the pool				2026-10-13T23:52:54Z

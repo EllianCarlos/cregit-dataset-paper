@@ -1,0 +1,9 @@
+# Part b1 of the S and M projects of manifest.batch14.tsv (sha256 a1801c196defea51ecbeef0e7e9aa11dbb3fa7a56a079e8c25e40875a392ac5a),
+# balanced by predicted time (6.7 h for 4 workers), u order; a fed spot part.
+# 5 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+NatLabRockies__EnergyPlus	https://github.com/NatLabRockies/EnergyPlus.git	pending		M	c5b94f59806c8ac4c76dfd846956950598f26483
+netbootxyz__netboot.xyz	https://github.com/netbootxyz/netboot.xyz.git	pending		S	9ffa5d26a88a2f1c0fba814e83a1316499598bb3
+KDE__calligra	https://github.com/KDE/calligra.git	pending		M	58e0a8473fa90b340c0b7db6397434731679cae2
+Cataclysm-TLG__Cataclysm-TLG	https://github.com/Cataclysm-TLG/Cataclysm-TLG.git	pending		M	dfe293d487c387a82e7f9c8b53b363b9bf5a340e
+idaholab__moose	https://github.com/idaholab/moose.git	pending		M	964e1927a88d0a0b6b03669b69e81af80db4dff4

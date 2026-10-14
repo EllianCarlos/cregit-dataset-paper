@@ -1,0 +1,24 @@
+# Part b4 of the S and M projects of manifest.batch11.tsv (sha256 c0bc3c7dfba79160d832ec8f554c147ba73f356035049fa27b4442dfc81ecea4),
+# balanced by predicted time (6.4 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+dRoninFlight__dRonin	https://github.com/dRoninFlight/dRonin.git	pending		S	adbada45fb42dc8dc83cc7984ae4fbb2153b01fa
+opendaylight__yangtools	https://github.com/opendaylight/yangtools.git	pending		S	69acb171d438b9ac6ea6cf744c53515ee0d9c560
+playframework__playframework	https://github.com/playframework/playframework.git	pending		S	069b71cd37ebf51addcd17502056b429f46d995e
+GoogleCloudPlatform__fda-mystudies	https://github.com/GoogleCloudPlatform/fda-mystudies.git	pending		S	7f3ea838de9bc523d2e68c6d9c79d6d14f8d9525
+apache__arrow-rs	https://github.com/apache/arrow-rs.git	pending		S	02accced63a992a20c91cbb5ac24261863531751
+ome__openmicroscopy	https://github.com/ome/openmicroscopy.git	pending		M	e0330f9ffe63650eddd0c1aaabdd869a198491fc
+elki-project__elki	https://github.com/elki-project/elki.git	pending		S	2e0a0520688f68070b110290d59a7883882f3ef0
+cucumber__cucumber-jvm	https://github.com/cucumber/cucumber-jvm.git	pending		S	d418bd38612764f361f6c6e9c4064bfd54105282
+GNOME__totem	https://github.com/GNOME/totem.git	pending		S	2bfe631b2b3f3b370e73c42188235f6ef6f4f768
+QMCPACK__qmcpack	https://github.com/QMCPACK/qmcpack.git	pending		M	3eea82805ace84f798ea16ccd0598484db829bb7
+SFTtech__openage	https://github.com/SFTtech/openage.git	pending		S	3da21ab486154432a459db1a10534cc0e344db95
+wiredtiger__wiredtiger	https://github.com/wiredtiger/wiredtiger.git	pending		S	71a3a0cbac91769a021807c72343c14a2b6055a2
+apache__manifoldcf	https://github.com/apache/manifoldcf.git	pending		S	a918a57f642a8cf5a2a6781c18f8750686a8f5d5
+duckdb__duckdb-iceberg	https://github.com/duckdb/duckdb-iceberg.git	pending		S	221db9bb4f87f451c88c04a42eff8cbc9a9f0362
+EsotericSoftware__spine-runtimes	https://github.com/EsotericSoftware/spine-runtimes.git	pending		S	9e098469f1bddfe7df02711f677861e7d7f72cae
+RustPython__RustPython	https://github.com/RustPython/RustPython.git	pending		S	3e0e4013e18e194e9ec5b826f41d80925cc8bd2a
+apache__datafusion-sandbox	https://github.com/apache/datafusion-sandbox.git	pending		S	5b4507c1bb0b711f150351d34e184ad7dd64f9e6
+orientechnologies__orientdb	https://github.com/orientechnologies/orientdb.git	pending		S	873d757ba85ef03b8dc485d5f50dcce7f9403f3e
+rainmeter__rainmeter	https://github.com/rainmeter/rainmeter.git	pending		S	09ac4c98e419e9c7abbf54c6b7f13be0714606fe
+Tulip-Dev__tulip	https://github.com/Tulip-Dev/tulip.git	pending		S	2ca63bccd1b4f4b84662f0161da22025ab8fda89

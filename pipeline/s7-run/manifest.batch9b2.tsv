@@ -1,0 +1,24 @@
+# Part b2 of the S and M projects of manifest.batch9.tsv (sha256 00a32df96f075408b7ce58f8ecc5a5d19c49e20efefee07637b2b4f03bdbc2e8),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+firoorg__firo	https://github.com/firoorg/firo.git	pending		S	af75057536c0ad9e7671e4d47c2f4bca091ba364
+rolldown__rolldown	https://github.com/rolldown/rolldown.git	pending		S	ddabe0415bc3cec04eafc48aafe8dfa83fd8ba13
+wordpress-mobile__WordPress-Android	https://github.com/wordpress-mobile/WordPress-Android.git	pending		M	e37b0aa5b25515b8caa926d0273b21a0cdc9cb78
+mltframework__shotcut	https://github.com/mltframework/shotcut.git	pending		S	7cefca4da34529b0756cdec48354d88e73310dda
+hanatos__vkdt	https://github.com/hanatos/vkdt.git	pending		S	2cc7a6935d88038dbc80292c57c9d29fe147f13f
+massalabs__massa	https://github.com/massalabs/massa.git	pending		S	197a0539583beb315302f5455c78bd2668e9c3ec
+LunarG__VulkanTools	https://github.com/LunarG/VulkanTools.git	pending		S	98254945250cdf47d66779d427bed964071d7271
+AMReX-Astro__Castro	https://github.com/AMReX-Astro/Castro.git	pending		S	371ba40de0ef71963fa8f185d45c7d54e84ec041
+1jehuang__jcode	https://github.com/1jehuang/jcode.git	pending		S	30a6df12bfce3370333b7166d18f15ccb980914b
+marklogic__marklogic-contentpump	https://github.com/marklogic/marklogic-contentpump.git	pending		S	e3f0f726e09f367532df9af8263dc59870689706
+SorellaLabs__brontes	https://github.com/SorellaLabs/brontes.git	pending		S	357677335606ab9fb1d54c800d6664bd64ab5014
+fwupd__fwupd	https://github.com/fwupd/fwupd.git	pending		S	6d61b05df38af307afe7f6809df488dd56d02348
+telegramdesktop__tdesktop	https://github.com/telegramdesktop/tdesktop.git	pending		S	d8594c011756265de4385408540bd9f7c787a003
+KDE__kexi	https://github.com/KDE/kexi.git	pending		S	06d72c839391f1ed9d3fc0481d151d0a6555b8b3
+GNOME__librsvg	https://github.com/GNOME/librsvg.git	pending		S	9dd24204cc92fbdf1e7566968807e8812a27f292
+glotzerlab__hoomd-blue	https://github.com/glotzerlab/hoomd-blue.git	pending		S	847852111095f487a89a87f39b6f8ee0f84b276c
+processing__processing4	https://github.com/processing/processing4.git	pending		S	be0ee8266e07857f65937ec0a033707b9f6a286b
+MarlinFirmware__Marlin	https://github.com/MarlinFirmware/Marlin.git	pending		S	bbe7c65573672d8efe49d7777e3ae221f38b6b55
+MystenLabs__sui	https://github.com/MystenLabs/sui.git	pending		S	198b211bb5db73fdd288da8268932a321f3fbdb4
+pocl__pocl	https://github.com/pocl/pocl.git	pending		S	862221853a67e9ccd95d9a90adf4590a58dde875

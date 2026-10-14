@@ -1,0 +1,158 @@
+url	reason	curl_status	curl_file	company	org_logins
+https://www.amd.com/opensource	no answer to curl, host resolves	000	b5a310b7af28ff95	ADVANCED MICRO DEVICES INC	GPUOpen-Drivers;GPUOpen-ProfessionalCompute-Libraries;GPUOpen-Tools;HSAFoundation;ROCm-Developer-Tools;ROCmSoftwarePlatform;RadeonOpenCompute;amd;flame
+https://www.amd.com/open-source	no answer to curl, host resolves	000	bcb6f9537e68f2cc	ADVANCED MICRO DEVICES INC	GPUOpen-Drivers;GPUOpen-ProfessionalCompute-Libraries;GPUOpen-Tools;HSAFoundation;ROCm-Developer-Tools;ROCmSoftwarePlatform;RadeonOpenCompute;amd;flame
+http://www.amd.com	no answer to curl, host resolves	000	fadc79511b6df791	ADVANCED MICRO DEVICES INC	GPUOpen-Drivers;GPUOpen-ProfessionalCompute-Libraries;GPUOpen-Tools;HSAFoundation;ROCm-Developer-Tools;ROCmSoftwarePlatform;RadeonOpenCompute;amd;flame
+https://akamai.com/opensource	http 403	403	8d341f8b40f2a102	AKAMAI TECHNOLOGIES INC	akamai
+https://www.akamai.com/opensource	http 403	403	071bbe87615a0bff	AKAMAI TECHNOLOGIES INC	akamai
+https://akamai.com/open-source	http 403	403	bad599bedd4e4bd9	AKAMAI TECHNOLOGIES INC	akamai
+https://www.akamai.com/open-source	http 403	403	1b73982165445e95	AKAMAI TECHNOLOGIES INC	akamai
+https://www.allstate.com/opensource	no answer to curl, host resolves	000	2fd3b9ce299a5f68	ALLSTATE LIFE INSURANCE CO	compozed
+https://www.allstate.com/open-source	no answer to curl, host resolves	000	df417bc47147f4e7	ALLSTATE LIFE INSURANCE CO	compozed
+http://www.allstate.com	no answer to curl, host resolves	000	662a26b133052741	ALLSTATE LIFE INSURANCE CO	compozed
+https://www.analog.com/opensource	no answer to curl, host resolves	000	ab6edcca519297a7	ANALOG DEVICES INC	analogdevicesinc
+https://www.analog.com/open-source	no answer to curl, host resolves	000	7d9414b5ba43760d	ANALOG DEVICES INC	analogdevicesinc
+https://www.analog.com	no answer to curl, host resolves	000	9eab02698e5087c8	ANALOG DEVICES INC	analogdevicesinc
+https://avnet.com/opensource	http 403	403	8a34c54b28ce91ed	AVNET INC	avnet
+https://avnet.com/open-source	http 403	403	58239e6d4f3868da	AVNET INC	avnet
+https://opensource.arista.com/	no answer to curl, host resolves	000	19d8bbcade0d2dd7	Arista Networks, Inc.	arista-eosplus;aristanetworks
+https://www.jiguang.cn	bot check in a 200 page	200	6ebfb64a68a4e2c8	Aurora Mobile Ltd	jpush
+https://ball.com/opensource	http 403	403	fd7beed132198f4e	BALL CORP	BallAerospace;opticks-org
+https://www.ball.com/opensource	http 403	403	8add5e30e78c691a	BALL CORP	BallAerospace;opticks-org
+https://ball.com/open-source	http 403	403	a11588a950362ee2	BALL CORP	BallAerospace;opticks-org
+https://www.ball.com/open-source	http 403	403	e881fbbc06243763	BALL CORP	BallAerospace;opticks-org
+https://box.com/opensource	http 403	403	8cb30a0fa597efe8	BOX INC	box
+https://www.box.com/opensource	http 403	403	adeb9045ca664422	BOX INC	box
+https://box.com/open-source	http 403	403	26d4e0194f408451	BOX INC	box
+https://www.box.com/open-source	http 403	403	5bbb7fb349a43ca7	BOX INC	box
+https://www.baidu.com/opensource	no answer to curl, host resolves	000	8ae440709ea9a302	Baidu, Inc.	ApolloAuto;PaddlePaddle;Ralltiir;baidu;baidu-security;baidubce;brpc;dueros;ecomfe;fex-team;hugegraph;huiyan-fe;lavas-project;max-team;mipengine;react-melon;swan-team
+https://cerner.com/opensource	no answer to curl, host resolves	000	a26ccbd6fca27f5d	CERNER CORP /MO/	cerner
+https://cerner.com/open-source	no answer to curl, host resolves	000	a9c50938fd34eeda	CERNER CORP /MO/	cerner
+https://carbonblack.com/opensource	no answer to curl, host resolves	000	40c2630c2f8500fc	Carbon Black, Inc.	carbonblack
+https://carbonblack.com/open-source	no answer to curl, host resolves	000	c7c2bfd76f6147cc	Carbon Black, Inc.	carbonblack
+https://despegar.com	http 403	403	793b8c03562a266c	Despegar.com, Corp.	despegar
+https://opensource.epam.com/	http 403	403	afa9ac97c58655e2	EPAM Systems, Inc.	FrontSpot-Community;epam;it-shark-pro;lean-delivery;rolling-scopes-school
+https://epam.com/opensource	http 403	403	439d710bdc6fa13d	EPAM Systems, Inc.	FrontSpot-Community;epam;it-shark-pro;lean-delivery;rolling-scopes-school
+https://www.epam.com/opensource	http 403	403	fb8dd8a1447cb90b	EPAM Systems, Inc.	FrontSpot-Community;epam;it-shark-pro;lean-delivery;rolling-scopes-school
+https://epam.com/open-source	http 403	403	072693a726c3c05a	EPAM Systems, Inc.	FrontSpot-Community;epam;it-shark-pro;lean-delivery;rolling-scopes-school
+https://www.epam.com/open-source	http 403	403	a5ebecfce3efb4ac	EPAM Systems, Inc.	FrontSpot-Community;epam;it-shark-pro;lean-delivery;rolling-scopes-school
+www.epam.com	http 403	403	9f2f3dec28134897	EPAM Systems, Inc.	FrontSpot-Community;epam;it-shark-pro;lean-delivery;rolling-scopes-school
+https://opensource.etsy.com/	http 403	403	a7eddc835b56ada4	ETSY INC	etsy
+https://www.etsy.com/	http 403	403	b256683c42370ae4	ETSY INC	etsy
+https://ge.com/opensource	no answer to curl, host resolves	000	beb62da2c1ed1825	General Electric Company	PredixDev
+https://ge.com/open-source	no answer to curl, host resolves	000	3fbad28e57ce4dd1	General Electric Company	PredixDev
+https://godaddy.com/opensource	http 403	403	662eb3cea092f613	GoDaddy Inc.	godaddy
+https://www.godaddy.com/opensource	http 403	403	a2cc71845488e5bf	GoDaddy Inc.	godaddy
+https://godaddy.com/open-source	http 403	403	6b74822ad2790844	GoDaddy Inc.	godaddy
+https://www.godaddy.com/open-source	http 403	403	7cf4686b760ddc97	GoDaddy Inc.	godaddy
+https://godaddy.com/engineering/	http 403	403	0dcf78ca98fc41bb	GoDaddy Inc.	godaddy
+https://gopro.com/opensource	http 403	403	2bad4f2e2abd775d	GoPro, Inc.	gopro
+https://www.gopro.com/opensource	http 403	403	9edc4cfbe5293ea7	GoPro, Inc.	gopro
+https://gopro.com/open-source	http 403	403	513da46c1a845462	GoPro, Inc.	gopro
+https://www.gopro.com/open-source	http 403	403	f4ca63ad2d03a6b5	GoPro, Inc.	gopro
+https://opensource.groupon.com/	no answer to curl, host resolves	000	b25b01d49d97dd4c	Groupon, Inc.	groupon
+https://groupon.com/opensource	http 403	403	28770c06dc81be7b	Groupon, Inc.	groupon
+https://www.groupon.com/opensource	http 403	403	5e1b3bdec0beb9ad	Groupon, Inc.	groupon
+https://groupon.com/open-source	http 403	403	2549da2af5bccbde	Groupon, Inc.	groupon
+https://www.groupon.com/open-source	http 403	403	26d793a3c69c4001	Groupon, Inc.	groupon
+https://engineering.groupon.com/	http 403	403	815fefa5932bed7a	Groupon, Inc.	groupon
+https://homedepot.com	http 403	403	4550982190f3433c	HOME DEPOT INC	homedepot
+https://www.hpe.com/opensource	no answer to curl, host resolves	000	dbf67c54b8d9f101	Hewlett Packard Enterprise Co,	FabricAttachedMemory;HewlettPackard;devops-dojo;hpe-storage
+https://www.hpe.com/open-source	no answer to curl, host resolves	000	29980f62b9fe129a	Hewlett Packard Enterprise Co,	FabricAttachedMemory;HewlettPackard;devops-dojo;hpe-storage
+http://www.hpe.com	no answer to curl, host resolves	000	233d927e56513bd5	Hewlett Packard Enterprise Co,	FabricAttachedMemory;HewlettPackard;devops-dojo;hpe-storage
+https://www.hpe.com/us/en/storage.html	no answer to curl, host resolves	000	51a8e061defdff92	Hewlett Packard Enterprise Co,	FabricAttachedMemory;HewlettPackard;devops-dojo;hpe-storage
+instructure.com	bot check in a 200 page	200	eb9309ec1aa40427	INSTRUCTURE INC	instructure;instructure-react
+https://illumina.com/opensource	no answer to curl, host resolves	000	a4cdefbe2414f30b	Illumina Inc	illumina;sequencing
+https://illumina.com/open-source	no answer to curl, host resolves	000	90649b686c4d9c57	Illumina Inc	illumina;sequencing
+https://internap.com/opensource	no answer to curl, host resolves	000	5dd921136ff1cff1	Internap Corp	internap
+https://www.internap.com/opensource	no answer to curl, host resolves	000	9acf5724ba4f88ad	Internap Corp	internap
+https://internap.com/open-source	no answer to curl, host resolves	000	cfdca3ce8c8c83b9	Internap Corp	internap
+https://www.internap.com/open-source	no answer to curl, host resolves	000	d974dc4fa9f2207d	Internap Corp	internap
+https://linecorp.com/opensource	http 403	403	95ef7d5829850764	LINE CORP	Line
+https://www.linecorp.com/opensource	http 403	403	cc6a3bda30a9db89	LINE CORP	Line
+https://linecorp.com/open-source	http 403	403	dce148e39103c08b	LINE CORP	Line
+https://www.linecorp.com/open-source	http 403	403	028df667eccb1561	LINE CORP	Line
+https://lenovo.com/opensource	http 403	403	42ef049f3325e10b	Lenovo Group	lenovo
+https://www.lenovo.com/opensource	http 403	403	0c1bc004146b13f5	Lenovo Group	lenovo
+https://lenovo.com/open-source	http 403	403	60821a54779ef095	Lenovo Group	lenovo
+https://www.lenovo.com/open-source	http 403	403	2a098020b6ff3741	Lenovo Group	lenovo
+https://www.lenovo.com	http 403	403	91dea1f3e041d7e8	Lenovo Group	lenovo
+https://libertymutual.com/opensource	http 403	403	a1f055cd0955ae68	Liberty Mutual Insurance Group	Libertymutual
+https://www.libertymutual.com/opensource	http 403	403	194976027f295d99	Liberty Mutual Insurance Group	Libertymutual
+https://libertymutual.com/open-source	http 403	403	5254cc33f65aeec3	Liberty Mutual Insurance Group	Libertymutual
+https://www.libertymutual.com/open-source	http 403	403	faa47970d09c5b61	Liberty Mutual Insurance Group	Libertymutual
+https://marvell.com/opensource	http 403	403	4a10def563fa438d	MARVELL TECHNOLOGY GROUP LTD	MarvellEmbeddedProcessors
+https://www.marvell.com/opensource	http 403	403	0f48c59da17cf13c	MARVELL TECHNOLOGY GROUP LTD	MarvellEmbeddedProcessors
+https://marvell.com/open-source	http 403	403	6820ec6e6d1c2d25	MARVELL TECHNOLOGY GROUP LTD	MarvellEmbeddedProcessors
+https://www.marvell.com/open-source	http 403	403	e9a8cc556972880c	MARVELL TECHNOLOGY GROUP LTD	MarvellEmbeddedProcessors
+http://www.marvell.com/embedded-processors/	http 403	403	e3caa1ef18163dff	MARVELL TECHNOLOGY GROUP LTD	MarvellEmbeddedProcessors
+https://mercadolibre.com/opensource	http 403	403	794b5ba0ffaefc63	MERCADOLIBRE INC	mercadolibre;mercadopago
+https://www.mercadolibre.com/opensource	http 403	403	c81fd2395acb5d88	MERCADOLIBRE INC	mercadolibre;mercadopago
+https://mercadolibre.com/open-source	http 403	403	c3382225cb47fcc5	MERCADOLIBRE INC	mercadolibre;mercadopago
+https://www.mercadolibre.com/open-source	http 403	403	ec5195ce2db92ba5	MERCADOLIBRE INC	mercadolibre;mercadopago
+https://microstrategy.com/opensource	http 403	403	b8754970ada69336	MICROSTRATEGY INC	mstr-dev
+https://www.microstrategy.com/opensource	http 403	403	7f9f5643ad517d1f	MICROSTRATEGY INC	mstr-dev
+https://microstrategy.com/open-source	http 403	403	b975132d66210e98	MICROSTRATEGY INC	mstr-dev
+https://www.microstrategy.com/open-source	http 403	403	eb9994bbcd194c8f	MICROSTRATEGY INC	mstr-dev
+http://community.microstrategy.com	http 403	403	967464ee148020a7	MICROSTRATEGY INC	mstr-dev
+https://nokia.com/opensource	http 403	403	40c7e5c658d675dd	NOKIA CORP	Nokia
+https://www.nokia.com/opensource	http 403	403	84ce0e68f888efdc	NOKIA CORP	Nokia
+https://nokia.com/open-source	http 403	403	1903adeb7b565153	NOKIA CORP	Nokia
+https://www.nokia.com/open-source	http 403	403	3e3c4e1761358a26	NOKIA CORP	Nokia
+http://company.nokia.com/	http 403	403	d2d561807d1efb6f	NOKIA CORP	Nokia
+https://opensource.netapp.com/	no answer to curl, host resolves	000	2484bcfb61b92f9d	NetApp, Inc.	NTAP;NetApp
+https://netapp.com/opensource	http 403	403	a8cff938319d2983	NetApp, Inc.	NTAP;NetApp
+https://www.netapp.com/opensource	http 403	403	ed867150ec1102c9	NetApp, Inc.	NTAP;NetApp
+https://netapp.com/open-source	http 403	403	eff722c7b6ad44cc	NetApp, Inc.	NTAP;NetApp
+https://www.netapp.com/open-source	http 403	403	6054db3e97f3b6e9	NetApp, Inc.	NTAP;NetApp
+https://netapp.com	http 403	403	3b87720b1eef85c8	NetApp, Inc.	NTAP;NetApp
+netapp.com	http 403	403	42c1738b4900df40	NetApp, Inc.	NTAP;NetApp
+https://opensource.orange.com/	bot check in a 200 page	200	d1b4c0d0ce2656e1	ORANGE	Orange-OpenSource;orange-cloudfoundry
+https://orange.com/opensource	bot check in a 200 page	200	f7a853f5fd7d6619	ORANGE	Orange-OpenSource;orange-cloudfoundry
+https://www.orange.com/opensource	bot check in a 200 page	200	ff7519697172628f	ORANGE	Orange-OpenSource;orange-cloudfoundry
+https://orange.com/open-source	bot check in a 200 page	200	450c33586694323d	ORANGE	Orange-OpenSource;orange-cloudfoundry
+https://www.orange.com/open-source	bot check in a 200 page	200	5c0ed52f84c23aa0	ORANGE	Orange-OpenSource;orange-cloudfoundry
+http://opensource.orange.com	bot check in a 200 page	200	fc48f49b631dbe1e	ORANGE	Orange-OpenSource;orange-cloudfoundry
+https://opensource.okta.com/	bot check in a 200 page	200	5d360683b29c86b7	Okta, Inc.	okta
+https://oracle.com/opensource	http 403	403	0d33894ce235ee26	Oracle Corporation	Oracle;eclipse-ee4j;fnproject;graalvm;javaee;mysql
+https://www.oracle.com/opensource	http 403	403	90477cf3573c8751	Oracle Corporation	Oracle;eclipse-ee4j;fnproject;graalvm;javaee;mysql
+https://oracle.com/open-source	http 403	403	8261f572e36b1071	Oracle Corporation	Oracle;eclipse-ee4j;fnproject;graalvm;javaee;mysql
+https://www.oracle.com/open-source	http 403	403	2b8e584cf7b91c18	Oracle Corporation	Oracle;eclipse-ee4j;fnproject;graalvm;javaee;mysql
+oracle.com/javaee	http 403	403	a07f134b7e32d518	Oracle Corporation	Oracle;eclipse-ee4j;fnproject;graalvm;javaee;mysql
+https://developer.oracle.com/open-source.html	http 403	403	77413f182e601c3c	Oracle Corporation	Oracle;eclipse-ee4j;fnproject;graalvm;javaee;mysql
+https://www.paypal.com/	bot check in a 200 page	200	146513150232b148	PayPal Holdings, Inc.	PayPal;ShifuML;card-io;krakenjs
+https://opensource.purestorage.com/	no answer to curl, host resolves	000	1e6c4585a09424bd	Pure Storage, Inc.	purestorage
+http://developer.salesforce.com	http 403	403	f3ce06522ed38340	SALESFORCE COM INC	ExactTarget;Groundwire;SalesforceFoundation;forcedotcom;salesforce;salesforce-marketingcloud
+https://developer.salesforce.com	http 403	403	29a0df3bbe9169ac	SALESFORCE COM INC	ExactTarget;Groundwire;SalesforceFoundation;forcedotcom;salesforce;salesforce-marketingcloud
+https://sap.com/opensource	http 403	403	607ab98d8f29fea2	SAP SE	SAP;fmi;gardener;kyma-project;sapcc;sqlanywhere
+https://www.sap.com/opensource	http 403	403	0f6da9b8475c6dde	SAP SE	SAP;fmi;gardener;kyma-project;sapcc;sqlanywhere
+https://sap.com/open-source	http 403	403	8fabdf6affa8db62	SAP SE	SAP;fmi;gardener;kyma-project;sapcc;sqlanywhere
+https://www.sap.com/open-source	http 403	403	e034b27b923bbbbe	SAP SE	SAP;fmi;gardener;kyma-project;sapcc;sqlanywhere
+developer.surveymonkey.com	bot check in a 200 page	200	a8320c0b53d56a4f	SVMK Inc.	SurveyMonkey
+https://opensource.samsung.com/	http 403	403	9e231ee1cb5a9675	Samsung Electronics	TeamSEGO;iotivity;nnsuite;samsung
+https://opensource.t-mobile.com/	http 403	403	5769a2166c34a4f9	T-MOBILE US, INC.	tmobile
+https://t-mobile.com/opensource	http 403	403	082e642b164cd603	T-MOBILE US, INC.	tmobile
+https://www.t-mobile.com/opensource	http 403	403	d2fb3e38e6134c1a	T-MOBILE US, INC.	tmobile
+https://t-mobile.com/open-source	http 403	403	ce95c798ed04bcb3	T-MOBILE US, INC.	tmobile
+https://www.t-mobile.com/open-source	http 403	403	691e76434a6fd29d	T-MOBILE US, INC.	tmobile
+http://www.t-mobile.com	http 403	403	9ae0a9f48a55c44c	T-MOBILE US, INC.	tmobile
+https://teradata.com/opensource	no answer to curl, host resolves	000	56f1459d26bd2b5d	TERADATA CORP /DE/	Teradata
+https://teradata.com/open-source	no answer to curl, host resolves	000	6adb753e023db3f5	TERADATA CORP /DE/	Teradata
+https://tencent.com/opensource	no answer to curl, host resolves	000	adae70a9191fb15c	Tencent Music Entertainment Group	CFETeam;TarsCloud;TencentCloud;TencentCloudBase;TencentDingdang;iv-web;tencent;tencentyun;tvsteam
+https://tencent.com/open-source	no answer to curl, host resolves	000	fc27f876dc8b888c	Tencent Music Entertainment Group	CFETeam;TarsCloud;TencentCloud;TencentCloudBase;TencentDingdang;iv-web;tencent;tencentyun;tvsteam
+https://upwork.com/opensource	http 403	403	0924f8727696cde2	Upwork Inc.	upwork
+https://www.upwork.com/opensource	http 403	403	bdae01ae2d56845d	Upwork Inc.	upwork
+https://upwork.com/open-source	http 403	403	f9a7719ac3a1c274	Upwork Inc.	upwork
+https://www.upwork.com/open-source	http 403	403	07cbd096a9c53a81	Upwork Inc.	upwork
+https://www.upwork.com/	http 403	403	79e6f59987c3789c	Upwork Inc.	upwork
+https://opensource.vmware.com/	no answer to curl, host resolves	000	4eec32edb49b8409	VMWARE, INC.	codedellemc;vmware;vmware-serengeti
+https://vipshop.com/opensource	bot check in a 200 page	200	f82bf0257113eaf4	Vipshop Holdings Ltd	vipshop
+https://www.vipshop.com/opensource	bot check in a 200 page	200	e732630f880e7a24	Vipshop Holdings Ltd	vipshop
+https://vipshop.com/open-source	bot check in a 200 page	200	3dd46eb450dc7861	Vipshop Holdings Ltd	vipshop
+https://www.vipshop.com/open-source	bot check in a 200 page	200	eda7242b0dd78352	Vipshop Holdings Ltd	vipshop
+http://www.wix.com	bot check in a 200 page	200	6b85631accd90e9b	Wix.com Ltd.	wix;wix-incubator;wix-playground;wixplosives
+https://opensource.zendesk.com/	http 403	403	35c2c6612afcdad6	Zendesk, Inc.	zendesk;zendesklabs
+https://trivago.com/opensource	http 403	403	c409aca455aad0d5	trivago N.V.	trivago
+https://www.trivago.com/opensource	http 403	403	d6579718d63a2728	trivago N.V.	trivago
+https://trivago.com/open-source	http 403	403	5567bb23079035ed	trivago N.V.	trivago
+https://www.trivago.com/open-source	http 403	403	f2b95e395f75053b	trivago N.V.	trivago
+http://trivago.com	http 403	403	1d19b6ef7dfa9766	trivago N.V.	trivago

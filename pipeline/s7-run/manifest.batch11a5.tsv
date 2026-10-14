@@ -1,0 +1,24 @@
+# Part a5 of the S and M projects of manifest.batch11.tsv (sha256 c0bc3c7dfba79160d832ec8f554c147ba73f356035049fa27b4442dfc81ecea4),
+# balanced by predicted time (6.4 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+nielsbasjes__yauaa	https://github.com/nielsbasjes/yauaa.git	pending		S	be52e3c5c58072d163ce1d1e33b8eebe7842d1d9
+cocos__cocos4	https://github.com/cocos/cocos4.git	pending		S	0616a948efbab95d1820443aad82e55f0540db1b
+openhwfoundation__cvw	https://github.com/openhwfoundation/cvw.git	pending		S	e4beec0e8ec83a5b41875b9991d511f9622e954a
+RigsOfRods__rigs-of-rods	https://github.com/RigsOfRods/rigs-of-rods.git	pending		S	e85535569102b6251849af574026984e3213b3f4
+FDio__vpp	https://github.com/FDio/vpp.git	pending		S	2c955e9010436b0cf89e17680eec65626fc7e087
+jenetics__jenetics	https://github.com/jenetics/jenetics.git	pending		S	dcc878b2104008f7e967c83954b0ac9734d61c56
+postgis__postgis	https://github.com/postgis/postgis.git	pending		S	a267b1babe55b3ca8ee96812a814ddfe35f287bf
+libgdx__libgdx	https://github.com/libgdx/libgdx.git	pending		S	84c2497ac88c3f7008f86796da085c6e9ee6c2de
+apache__logging-log4j2	https://github.com/apache/logging-log4j2.git	pending		S	d1f6587018dbd8af2fd257af25aafdd98005cbf2
+OpenDDS__OpenDDS	https://github.com/OpenDDS/OpenDDS.git	pending		S	3ebb6b9c30579f2065fe73bda60bcc473904d06e
+pawelsalawa__letos	https://github.com/pawelsalawa/letos.git	pending		S	ac2020e7f1223d52eb17f3670d9b750113c6ef3a
+micronaut-projects__micronaut-core	https://github.com/micronaut-projects/micronaut-core.git	pending		S	eb41b1d5b473b60ba4b0c7647e37344287c0db06
+pnpm__pnpm	https://github.com/pnpm/pnpm.git	pending		S	68112bada403c589d360a22ae0f1c50f8b7ab576
+ocsigen__js_of_ocaml	https://github.com/ocsigen/js_of_ocaml.git	pending		S	fe94806986ac7b3ede854fe838f64fdc608f9ed9
+the-tcpdump-group__libpcap	https://github.com/the-tcpdump-group/libpcap.git	pending		S	e2fe69377b84cf5e963b54946cb616cfbc4a76d4
+Bytedesk__bytedesk	https://github.com/Bytedesk/bytedesk.git	pending		S	24e1f7801449284a8ede95ee5952e8664db81f01
+WagicProject__wagic	https://github.com/WagicProject/wagic.git	pending		S	f71bffd65739f83a920d5ba2209e396afcc9b9d8
+BaseXdb__basex	https://github.com/BaseXdb/basex.git	pending		S	1fd9d06898fb45fd2d459b5d394c4d0dbee6d087
+00-Evan__shattered-pixel-dungeon	https://github.com/00-Evan/shattered-pixel-dungeon.git	pending		S	e9defd0444c96d2fce3de5ec297c3398be8b7c55
+eclipse-ee4j__glassfish	https://github.com/eclipse-ee4j/glassfish.git	pending		S	3b466f36e6bc96a5588f0a50b6fb68e77f2f7f5f

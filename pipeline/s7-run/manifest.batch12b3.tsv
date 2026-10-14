@@ -1,0 +1,21 @@
+# Part b3 of the S and M projects of manifest.batch12.tsv (sha256 6f4e0b95cc46dde0079b671dc19e8737a15e3a7e98ad301a629af614192c3fc8),
+# balanced by predicted time (6.7 h for 4 workers), u order; a fed spot part.
+# 17 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+gpg__gnupg	https://github.com/gpg/gnupg.git	pending		S	7eea4e5ff901f45830910fc3ccde009298ae5175
+Pasta-Devs__Marinara-Engine	https://github.com/Pasta-Devs/Marinara-Engine.git	pending		S	12a0acd5b7823abeaf3e05ad39a3a07d957e9ffc
+apache__cloudstack	https://github.com/apache/cloudstack.git	pending		M	7ed0cec53dc5113a475808d6dbc221491ff4ae4f
+Luoyacheng__legado-E	https://github.com/Luoyacheng/legado-E.git	pending		S	8b87c5aba4df91c39a3a0939a68a1180b9f2ee1c
+PX4__PX4-Autopilot	https://github.com/PX4/PX4-Autopilot.git	pending		M	94ae73bca5cf6da2c06a4904f85c3b134d7b31a3
+plan-player-analytics__Plan	https://github.com/plan-player-analytics/Plan.git	pending		S	02e8c6dd4661f410050bef6b152ded35c10b15fe
+TomHarte__CLK	https://github.com/TomHarte/CLK.git	pending		S	a3db3d283b833b5fd8dec6d71dce61e59092b25c
+opencog__opencog	https://github.com/opencog/opencog.git	pending		S	ae68bda779f16571bb017b8d3ea56ff8f50a822f
+cksystemsteaching__selfie	https://github.com/cksystemsteaching/selfie.git	pending		S	14e3a1b705b629b8a1c6d9c2982e3baaf9f71527
+aquamacs-emacs__aquamacs-emacs	https://github.com/aquamacs-emacs/aquamacs-emacs.git	pending		M	5a2833896341ea02b65ef7ca145a2de3b5f82f30
+Alanosy__exam-platform	https://github.com/Alanosy/exam-platform.git	pending		S	18d157eba37ed813b59f34815ec78b9d61dfb657
+apache__xerces-j	https://github.com/apache/xerces-j.git	pending		S	eac1058ff35d12ae12f11f7ff8b465e5ba1e55d9
+linagora__linshare-core	https://github.com/linagora/linshare-core.git	pending		S	5f8ef958405c5054c375f959dc5f087602df44e9
+bigbluebutton__bigbluebutton	https://github.com/bigbluebutton/bigbluebutton.git	pending		M	b93ac5f428cc90cde07c4d801616664628ca031a
+etternagame__etterna	https://github.com/etternagame/etterna.git	pending		M	2d706147cc4bcf95a8ceb24dc4f4129be207f803
+canonical__multipass	https://github.com/canonical/multipass.git	pending		S	7618f117d698db6432facb2019f9e0faa4d127c9
+google__oss-fuzz	https://github.com/google/oss-fuzz.git	pending		S	cbe49f48811add1122d3530c591503643190c2de

@@ -1,0 +1,9 @@
+# The L projects of manifest.batch1rest.tsv and manifest.batch5.tsv (sha256 d831890774e9a5e162a2e113942e19a64e0e7a2275032bf7880b86fe1f765ead),
+# for the census batch5L on the batch 2 on-demand instance.
+# 5 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+Bforartists__Bforartists	https://github.com/Bforartists/Bforartists.git	pending		L	1b99dd56eae239e7bcfbb0d83cb02dbaa4e258e0
+void-linux__void-packages	https://github.com/void-linux/void-packages.git	pending		L	7154390fba433d3bb95b5f1ec04199a937a7c6f7
+analogdevicesinc__oran-linux	https://github.com/analogdevicesinc/oran-linux.git	pending		L	50b48de38a77d5332d00e9f6d511cc5aeebceeac
+Avnet__linux-imx	https://github.com/Avnet/linux-imx.git	pending		L	78ce688d5a792c053827e1edd4a347807c63c06c
+mozilla-firefox__firefox	https://github.com/mozilla-firefox/firefox.git	pending		L	9de2c06fb839d60a8af0319f63c46e34a28e1fc9

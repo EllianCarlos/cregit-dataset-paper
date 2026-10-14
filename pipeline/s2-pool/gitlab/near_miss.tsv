@@ -1,0 +1,3 @@
+url	head_oid	cls	reason	passes	root_near_names	package_files	subfolder_examples	subfolder_files	third_party_files	readme_line
+https://gitlab.freedesktop.org/mesa/demos	649baedafcb90313ade69909fdef1ee156ab5f8d	H	no license file (no license evidence found)	False				0	0	
+https://gitlab.com/muttmua/mutt	844fcfe7861631359ee789e4231d322144a1bd3b	C	no license file (near miss: other root name)	True	COPYRIGHT;GPL			0	0	

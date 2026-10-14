@@ -1,0 +1,6 @@
+# The L projects of manifest.batch6.tsv (sha256 d54537af63a6cf6201cae5c5377286219e33305adb682e411af3367e642cb17b), for the census batch6L on the big on-demand EC2.
+# 3 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+rockchip-linux__kernel	https://github.com/rockchip-linux/kernel.git	pending		L	77168c8d5ab82399f65a80e9f807b50ba37cf483
+beagleboard__linux	https://github.com/beagleboard/linux.git	pending		L	e771677c937da5808f7b6c1f0e4a97ec1a84f8a8
+Xilinx__llvm-aie	https://github.com/Xilinx/llvm-aie.git	pending		L	c2f49170f219a418f0772813d67b154c005079f8

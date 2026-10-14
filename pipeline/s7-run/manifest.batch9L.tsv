@@ -1,0 +1,5 @@
+# The L projects of manifest.batch9.tsv (sha256 00a32df96f075408b7ce58f8ecc5a5d19c49e20efefee07637b2b4f03bdbc2e8), for the census batch9L on the big on-demand EC2.
+# 2 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+HewlettPackard__gsc-linux	https://github.com/HewlettPackard/gsc-linux.git	pending		L	0fa435993553c6a46c4af426537f581e57600e4f
+Tencent__TenDBCluster-TSpider	https://github.com/Tencent/TenDBCluster-TSpider.git	pending		L	0eb4efe0d9ea988e91464e42b46cd4766ff04b9a

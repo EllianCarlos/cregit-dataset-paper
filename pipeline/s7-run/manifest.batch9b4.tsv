@@ -1,0 +1,24 @@
+# Part b4 of the S and M projects of manifest.batch9.tsv (sha256 00a32df96f075408b7ce58f8ecc5a5d19c49e20efefee07637b2b4f03bdbc2e8),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+ejoy__ant	https://github.com/ejoy/ant.git	pending		S	f32fbd4811e90c2433bf159aa40fb8f8aceb8b58
+apollographql__router	https://github.com/apollographql/router.git	pending		S	34e840094e43c1ceef7cb3e90710fcbbcf3f1676
+astral-sh__ruff	https://github.com/astral-sh/ruff.git	pending		S	726a70c9fc3c7d3b6d55eadf382cbb96f52258b3
+xodio__xod	https://github.com/xodio/xod.git	pending		S	ce0f0d054ee2caba5305b98b42d7a5dc7edd416a
+emgucv__emgucv	https://github.com/emgucv/emgucv.git	pending		S	a2309f10cd43ef2ca1b4fa0f3d3548eacfa0b5be
+official-pikafish__Pikafish	https://github.com/official-pikafish/Pikafish.git	pending		S	1c66b9b21cf2f280ce3b3ffa80c1c6609f2b29ff
+Atmosphere__atmosphere	https://github.com/Atmosphere/atmosphere.git	pending		S	5ab44260fc60c9be5c9e52a46ee52b591e87af73
+IJHack__QtPass	https://github.com/IJHack/QtPass.git	pending		S	3be523cb4fee0191ba4f1229391b2fd13216576f
+Sneeds-Feed-and-Seed__sneedacity	https://github.com/Sneeds-Feed-and-Seed/sneedacity.git	pending		S	393c649aced6fa5e73d162954b6a756b1ba5cb95
+rogerbinns__apsw	https://github.com/rogerbinns/apsw.git	pending		S	000c6b3ae82ea1bd301726f7dee8baece4e2ec0f
+gocd__gocd	https://github.com/gocd/gocd.git	pending		S	da2e755de6eb75cf6b1b967a3f04cca8343a5486
+MarvellEmbeddedProcessors__marvell-sonic-buildimage	https://github.com/MarvellEmbeddedProcessors/marvell-sonic-buildimage.git	pending		S	a66cae76de0a09b4a1ef12c5e8ca044f70b06df0
+batfish__batfish	https://github.com/batfish/batfish.git	pending		S	af7b652bcdd4cbd3c5f80bfa380d58b181906a5a
+haproxy__haproxy	https://github.com/haproxy/haproxy.git	pending		S	e4d1b143ba49b2364172395410f8b3da17caf9ae
+matter-labs__zksync	https://github.com/matter-labs/zksync.git	pending		S	9ecfe440945c46f02060f164a0fb45adfa69e634
+GCWing__OpenBitFun	https://github.com/GCWing/OpenBitFun.git	pending		S	18aa5441d89f5e24cfb4d8ff54d4b53d92c68896
+oreboot__oreboot	https://github.com/oreboot/oreboot.git	pending		S	8f9a483960f36c66d89c245588581310261f20e9
+dogtagpki__pki	https://github.com/dogtagpki/pki.git	pending		S	f1cf5e3ddfc8a6692cf667f51c717284c305869d
+libreswan__libreswan	https://github.com/libreswan/libreswan.git	pending		M	e6c617bcc527d483bf6fd8f6e80e8b428f176995
+1CatAI__1Cat-vLLM	https://github.com/1CatAI/1Cat-vLLM.git	pending		S	bc01f2899db721a99788f3bc2abc041e4b9a7fd0

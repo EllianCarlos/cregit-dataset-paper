@@ -1,0 +1,17 @@
+# Part a5 of the S and M projects of manifest.batch13.tsv (sha256 1d1f93d1d2952c0f2a25ca8f968b8bf867959609ab38c913a98784b9d447bfcc),
+# balanced by predicted time (5.7 h for 4 workers), u order; a fed spot part.
+# 13 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+ikvmnet__ikvm	https://github.com/ikvmnet/ikvm.git	pending		S	544cc72bfc39d9102e5208a36962180562c69f34
+openjdk__jfx	https://github.com/openjdk/jfx.git	pending		S	eab83a4b66e55436b4444bea93f95f225b2d22fa
+soedinglab__MMseqs2	https://github.com/soedinglab/MMseqs2.git	pending		S	564f40d8857f4eca4e1dfe100c67c155b1933e70
+MihailRis__voxelcore	https://github.com/MihailRis/voxelcore.git	pending		S	99a62710b86c314efb25526bb9d10e28ad112cdc
+neondatabase__neon	https://github.com/neondatabase/neon.git	pending		S	fa504217c61bbcaf5c512d75830564541f917f8f
+eclipse-aspectj__eclipse.jdt.core	https://github.com/eclipse-aspectj/eclipse.jdt.core.git	pending		S	cc53dcc8ddd54d7e36719379e7fc859f87c60f00
+BestImageViewer__geeqie	https://github.com/BestImageViewer/geeqie.git	pending		S	02fa7f26e8c671ec5ec561dbf6cfb28139f2a791
+PostHog__posthog-foss	https://github.com/PostHog/posthog-foss.git	pending		M	95c597b4780930fa044d6c4db601c8685a3ed2e9
+jj-vcs__jj	https://github.com/jj-vcs/jj.git	pending		S	334ceab6b574af0217e88ae293769c111833f689
+Cosys-Lab__Cosys-AirSim	https://github.com/Cosys-Lab/Cosys-AirSim.git	pending		S	bceeef9ed12d34663c8a7ff3ba1fcd7ade4a7b27
+taiki-e__install-action	https://github.com/taiki-e/install-action.git	pending		S	183e4297cca2404691e9380e1307288dced5c82a
+eclipse-platform__eclipse.platform.ui	https://github.com/eclipse-platform/eclipse.platform.ui.git	pending		M	6c9bb497e3567212d17a81082c07db07ef7cab80
+Duet3D__RepRapFirmware	https://github.com/Duet3D/RepRapFirmware.git	pending		S	2cc8ecca27086fabeec503c23f04a5f2e37135ca

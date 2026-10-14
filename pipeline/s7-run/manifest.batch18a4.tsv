@@ -1,0 +1,23 @@
+# Part a4 of the S and M projects of manifest.batch18.tsv (sha256 432ad2e493ba966ef387af309dc2cfab6bc374ba9fa442b0705d1617cdcd2f76),
+# balanced by predicted time (5.9 h for 4 workers), u order; a fed spot part.
+# 19 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+visionworkbench__visionworkbench	https://github.com/visionworkbench/visionworkbench.git	pending		S	3ec5a9140c2e45071607b51a5ff8d9e4de3993ad
+jdbi__jdbi	https://github.com/jdbi/jdbi.git	pending		S	567155b46a00ac131fb51e2ffbce92ebe843a639
+GNOME__pango	https://github.com/GNOME/pango.git	pending		S	8e74c27c113c98664b77272d16b14bbce542c184
+open-mpi__ompi	https://github.com/open-mpi/ompi.git	pending		M	7dead937f0b9ca60ee1b34bc80f84a6ac623d300
+adafruit__Adafruit_Learning_System_Guides	https://github.com/adafruit/Adafruit_Learning_System_Guides.git	pending		S	c1842e1e83df63f2e0835ee854004df2c1c60171
+wch__r-source	https://github.com/wch/r-source.git	pending		M	df3219f2367b987cbf424152554b66fedc8ccd1e
+jasonrohrer__OneLife	https://github.com/jasonrohrer/OneLife.git	pending		S	ce2c7dd73cbdcf2b2b838586959b756e72beaacb
+stellar__stellar-core	https://github.com/stellar/stellar-core.git	pending		S	88d2431d72453f17dbdb3599362ac5d0d5dd05b8
+clap-rs__clap	https://github.com/clap-rs/clap.git	pending		S	4be56132cf7a5ef6e237409a13225a5829cb24e4
+ghaerr__elks	https://github.com/ghaerr/elks.git	pending		S	ca64cf60259b4fd906019a049bc52a220dc79ccb
+jitsi__jitsi-meet	https://github.com/jitsi/jitsi-meet.git	pending		S	4cbe7034d6e5398502b85b424e3602049009654f
+webserver-llc__angie	https://github.com/webserver-llc/angie.git	pending		S	7b26c300ab87b61b25e6edad4cd8eae595eb1838
+Mentra-Community__MentraOS	https://github.com/Mentra-Community/MentraOS.git	pending		S	d317d9cb28e4ddefc30c7639566048da3db3f22d
+apache__grails-core	https://github.com/apache/grails-core.git	pending		M	232bb340064ff0aead5a435fb2d8a4056d7c59d3
+eclipse-chemclipse__chemclipse	https://github.com/eclipse-chemclipse/chemclipse.git	pending		S	b5ba9ad789131f3b0bee7044dc6383511dabf187
+macvim-dev__macvim	https://github.com/macvim-dev/macvim.git	pending		M	a012a709265a68546c7fba527c60e42b874d2964
+api-bricks__api-bricks-sdk	https://github.com/api-bricks/api-bricks-sdk.git	pending		S	b46124e6f2a006631727b78df372842d674ea29b
+OpenHUTB__hutb	https://github.com/OpenHUTB/hutb.git	pending		S	a448a528edc542b32b0c6e7e2914e8506b207a0c
+guardianproject__orbot-android	https://github.com/guardianproject/orbot-android.git	pending		S	9b2b89320cfe794de6e473bc41370048a79c8062

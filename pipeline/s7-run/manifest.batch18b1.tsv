@@ -1,0 +1,8 @@
+# Part b1 of the S and M projects of manifest.batch18.tsv (sha256 432ad2e493ba966ef387af309dc2cfab6bc374ba9fa442b0705d1617cdcd2f76),
+# balanced by predicted time (7.4 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+osmandapp__OsmAnd	https://github.com/osmandapp/OsmAnd.git	pending		M	b41ee196cb2bdea20b1e8ccf1c38c34cce22337f
+RIOT-OS__RIOT	https://github.com/RIOT-OS/RIOT.git	pending		M	0787ec80de5f75838ecdb384289e520551c7146f
+catboost__catboost	https://github.com/catboost/catboost.git	pending		M	c47e1033ef6253bcb4133fdd5142aebba7e77421
+opensearch-project__OpenSearch	https://github.com/opensearch-project/OpenSearch.git	pending		M	407eb669e250f5ad5498103a9ca564519f4f3988

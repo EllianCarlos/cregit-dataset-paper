@@ -1,0 +1,30 @@
+Link text: Orange-OpenSource
+
+
+Orange — Paris, France, Link URL: https://github.com/Orange-OpenSource
+Link text: 437
+repositories
+— Orange-OpenSource, Link URL: https://github.com/Orange-OpenSource
+Link text: 100
+collaborators
+— Orange-OpenSource, Link URL: https://github.com/orgs/Orange-OpenSource/people
+Link text: orange-cloudfoundry
+
+
+Orange Cloud contributions — France, Link URL: https://github.com/orange-cloudfoundry
+Link text: 481
+repositories
+— orange-cloudfoundry, Link URL: https://github.com/orange-cloudfoundry
+Link text: 18
+collaborators
+— orange-cloudfoundry, Link URL: https://github.com/orgs/orange-cloudfoundry/people
+Link text: Live Objects
+
+
+Live Objects — Paris (France), Link URL: https://github.com/DatavenueLiveObjects
+Link text: 29
+repositories
+— Live Objects, Link URL: https://github.com/DatavenueLiveObjects
+Link text: 51
+followers
+— Live Objects, Link URL: https://github.com/orgs/DatavenueLiveObjects/people

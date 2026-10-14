@@ -1,0 +1,24 @@
+# Part b2 of the S and M projects of manifest.batch11.tsv (sha256 c0bc3c7dfba79160d832ec8f554c147ba73f356035049fa27b4442dfc81ecea4),
+# balanced by predicted time (6.4 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+biojava__biojava	https://github.com/biojava/biojava.git	pending		S	8f151db1d376ed0311979bd6bc2131f0eea11c1a
+libevent__libevent	https://github.com/libevent/libevent.git	pending		S	d82464a277d0f42703702c4dfd9af6af38595a83
+eProsima__Fast-DDS	https://github.com/eProsima/Fast-DDS.git	pending		S	56087a189ef38faafe32110cc35b78bde56ca65d
+EQEmu__EQEmu	https://github.com/EQEmu/EQEmu.git	pending		S	4aceae18b94ffaafc08e2b17bc41cd72c77f795d
+OpenSourceRisk__Engine	https://github.com/OpenSourceRisk/Engine.git	pending		M	3d75a69087911a7e2cf1e6882da7bc27135c0762
+Samsung__starfish	https://github.com/Samsung/starfish.git	pending		S	1e08dbe0b4802031b21cd15bbc94b602457a968d
+wasmerio__wasmer	https://github.com/wasmerio/wasmer.git	pending		S	1befae3f829237e18bd790d919a6f9cd06e744e1
+MicrosoftDocs__winrt-api	https://github.com/MicrosoftDocs/winrt-api.git	pending		S	8448d5eecfbc2ed903f659f350841dcb4888bc8b
+MonoGame__MonoGame	https://github.com/MonoGame/MonoGame.git	pending		S	55b5621bcea08cb5fd8d7769ecb1d27de2e4248f
+hanwckf__immortalwrt-mt798x	https://github.com/hanwckf/immortalwrt-mt798x.git	pending		M	ba554197ed7e252fd3c1ee023621e1d1d009d323
+bevyengine__bevy	https://github.com/bevyengine/bevy.git	pending		S	85cf8037abde4868f406c54d1a8fba9c29c53489
+GNOME__glib	https://github.com/GNOME/glib.git	pending		M	36c60f069c6f3776dafc7f6ce18c8c0b606cd8b5
+apache__xmlgraphics-fop	https://github.com/apache/xmlgraphics-fop.git	pending		S	db3602d17d5c7d815692ac185d4718f1b8b2973f
+Wisser__Jailer	https://github.com/Wisser/Jailer.git	pending		S	2aedb9a4bde2ae5e6865daba9694b155829dd3ea
+ovn-org__ovn	https://github.com/ovn-org/ovn.git	pending		S	b9809453f5466390f4a71e85c3fdd19a53ee1ea1
+input-output-hk__daedalus	https://github.com/input-output-hk/daedalus.git	pending		S	53f7434d7b82eacd601e41e0c45fcc7154fbac89
+bencherdev__bencher	https://github.com/bencherdev/bencher.git	pending		S	b4cfdddf418fc547e694b8fa6cc7c846a9c77435
+apache__pinot	https://github.com/apache/pinot.git	pending		S	6a2ab1221db93def68f1ea6a4bae7d826f3827f5
+aymericzip__intlayer	https://github.com/aymericzip/intlayer.git	pending		S	202281896f128ad6cfd73905e91d864c987fb1ec
+tari-project__tari	https://github.com/tari-project/tari.git	pending		S	4f2744ae541eeb30ecf9cd4e0f1cfad2c1990888

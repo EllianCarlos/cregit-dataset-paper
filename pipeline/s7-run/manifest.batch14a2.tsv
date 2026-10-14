@@ -1,0 +1,21 @@
+# Part a2 of the S and M projects of manifest.batch14.tsv (sha256 a1801c196defea51ecbeef0e7e9aa11dbb3fa7a56a079e8c25e40875a392ac5a),
+# balanced by predicted time (5.9 h for 4 workers), u order; a fed spot part.
+# 17 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+shadow__shadow	https://github.com/shadow/shadow.git	pending		S	74e57f24043cc00ead484d20880f685b10cc51a1
+MicrosoftDocs__Virtualization-Documentation	https://github.com/MicrosoftDocs/Virtualization-Documentation.git	pending		S	aaa369489dc90c6483748af94c20897f12ae77dc
+wled__WLED	https://github.com/wled/WLED.git	pending		S	f4916316850475c112b3422a51cfd9544a8b9ced
+The-OpenROAD-Project__OpenROAD	https://github.com/The-OpenROAD-Project/OpenROAD.git	pending		M	755f5778c466d0249c371fd22eb5f2f8151d9429
+openwallet-foundation__vcx	https://github.com/openwallet-foundation/vcx.git	pending		S	5fa3cd5023ed4a0dc42a36f48bb1834961c3812d
+Vector35__binaryninja-api	https://github.com/Vector35/binaryninja-api.git	pending		S	bbcf12d2cec2bbc23d7d63f2e1eeb8a0c7dc2cbd
+z88dk__z88dk	https://github.com/z88dk/z88dk.git	pending		S	731173ca7fd9ef81823f044cffe7d8e2192f3866
+ROCm__HIPIFY	https://github.com/ROCm/HIPIFY.git	pending		S	bd0970563f40a132267cf934dba09f93f0afb0af
+nem0__LumixEngine	https://github.com/nem0/LumixEngine.git	pending		S	0e8dcc9e8a016408097d00b59746fc8ecaa8cbdb
+LINBIT__drbd	https://github.com/LINBIT/drbd.git	pending		S	6f990c345a211d5e6486268e8bd84638f8dbf1e8
+wxMaxima-developers__wxmaxima	https://github.com/wxMaxima-developers/wxmaxima.git	pending		S	fef1c7f834f042da5da79eb1a846ee6168f526f1
+amd__oneDNN-Zen	https://github.com/amd/oneDNN-Zen.git	pending		S	50f0d68940a17dc17a9784307a2a661c8115c1a5
+helix-editor__helix	https://github.com/helix-editor/helix.git	pending		S	ba40e547426b0f9896c8bdc699a4ab11f2b37dbc
+ctripcorp__x-pipe	https://github.com/ctripcorp/x-pipe.git	pending		S	a0976f8010319508f6b4380ca5fab3111f810383
+google__crosvm	https://github.com/google/crosvm.git	pending		S	87ff72bcc25b009e4f7b618bd783bc0bb9f39b36
+keeps__roda	https://github.com/keeps/roda.git	pending		S	6ed877b99e7ef2ceced458fd49bf9e183104197c
+crawl__crawl	https://github.com/crawl/crawl.git	pending		M	830294a5c2d826fe093d88b51057351971bd459e

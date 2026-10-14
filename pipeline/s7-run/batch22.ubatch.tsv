@@ -1,0 +1,36 @@
+# batch22.ubatch.tsv (2026-10-10): the u batch of each batch 22 row (the GNU roster v2 supplement). layer1_rows_before = the rows of frame.layer1.csv
+# with a smaller u; u_batch = layer1_rows_before // 164 + 1, the batch of 164 rows whose u range holds this u (the same rule as batch21.ubatch.tsv).
+name	slug	u	size_class	layer1_rows_before	u_batch
+git.savannah.gnu.org__git__texinfo	git/texinfo	0.06771669201940278	S	260	2
+git.savannah.gnu.org__git__pspp	git/pspp	0.06800678683698647	S	261	2
+git.gnunet.org__libmicrohttpd	libmicrohttpd	0.07573118817000135	S	286	2
+git.savannah.gnu.org__git__gsl	git/gsl	0.0823820649206305	S	314	2
+git.savannah.gnu.org__git__classpath	git/classpath	0.1006065789431263	S	374	3
+git.savannah.gnu.org__denemo	denemo	0.15380711001050706	S	553	4
+git.savannah.gnu.org__git__gnulib	git/gnulib	0.20046585178436516	S	715	5
+gitlab.gnome.org__GNOME__dia	GNOME/dia	0.2679941866096516	S	916	6
+gitlab.inria.fr__mpfr__mpfr	mpfr/mpfr	0.29862491098339916	S	1017	7
+git.savannah.gnu.org__git__gawk	git/gawk	0.31771012284595657	S	1080	7
+git.savannah.gnu.org__git__gnash	git/gnash	0.3483247926255437	S	1179	8
+git.savannah.gnu.org__gnubg	gnubg	0.3691047893982561	S	1229	8
+git.savannah.gnu.org__git__freeipmi	git/freeipmi	0.3961865639224279	S	1317	9
+git.savannah.gnu.org__git__guile	git/guile	0.4264977923415507	S	1409	9
+gcc.gnu.org__git__gcc	git/gcc	0.49595632009080015	L	1628	10
+git.savannah.gnu.org__git__emacs	git/emacs	0.5105147526031614	L	1683	11
+sourceware.org__git__binutils-gdb	git/binutils-gdb	0.5619090042789053	M	1839	12
+git.savannah.gnu.org__git__gettext	git/gettext	0.5655645514575909	S	1851	12
+git.savannah.gnu.org__poke	poke	0.5791264653709661	S	1888	12
+git.savannah.gnu.org__git__grub	git/grub	0.6365233381867267	S	2102	13
+git.savannah.gnu.org__git__liberty-eiffel	git/liberty-eiffel	0.6428788726215893	S	2116	13
+git.savannah.gnu.org__git__mailutils	git/mailutils	0.708446721512442	S	2333	15
+git.savannah.gnu.org__git__libredwg	git/libredwg	0.7419060292006335	S	2448	15
+gitlab.com__gnutls__gnutls	gnutls/gnutls	0.7595212166518279	S	2501	16
+git.savannah.gnu.org__git__lilypond	git/lilypond	0.7599856527249341	M	2504	16
+git.savannah.gnu.org__git__nano	git/nano	0.7774341106590504	S	2561	16
+git.savannah.gnu.org__git__3dldf	git/3dldf	0.7843300426092465	S	2574	16
+git.savannah.gnu.org__git__groff	git/groff	0.7995900128940275	S	2625	17
+gitlab.gnome.org__GNOME__gnumeric	GNOME/gnumeric	0.8273582846771932	S	2703	17
+git.savannah.gnu.org__git__gforth	git/gforth	0.9202241469005695	S	3028	19
+sourceware.org__git__glibc	git/glibc	0.9229151861512356	M	3035	19
+git.savannah.gnu.org__git__bison	git/bison	0.9414417955834656	S	3086	19
+git.savannah.gnu.org__git__coreutils	git/coreutils	0.998581704398501	M	3263	20

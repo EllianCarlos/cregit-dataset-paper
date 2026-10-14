@@ -1,0 +1,24 @@
+# Part b5 of the S and M projects of manifest.batch7.tsv (sha256 c292b9d4dbd64d4dfa983374635f00d165ecd33a6dc0f1f0dfe36b830a188033),
+# balanced by predicted time (6.0 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+h2oai__h2o-3	https://github.com/h2oai/h2o-3.git	pending		M	bcd39665671494f1032824acee0c2a3bdad84104
+ArtifexSoftware__mupdf	https://github.com/ArtifexSoftware/mupdf.git	pending		S	0acced75e2a6ba058a8bbc4bea5fa8c76b2f7898
+ngtcp2__ngtcp2	https://github.com/ngtcp2/ngtcp2.git	pending		S	b9fc4d55ce6035a4cc76dc456ced6371e98f9214
+eclipse-vertx__vert.x	https://github.com/eclipse-vertx/vert.x.git	pending		S	736a945e6f285abe82334b4bb9b11141b376f8ff
+mongodb__mongo-java-driver	https://github.com/mongodb/mongo-java-driver.git	pending		S	48ebe908197324ad04f47a4418d2b771949267f4
+GoogleCloudPlatform__DataflowTemplates	https://github.com/GoogleCloudPlatform/DataflowTemplates.git	pending		S	93a2330dcfcb88d9456a50a4f03aed9e61e3c826
+flintlib__flint	https://github.com/flintlib/flint.git	pending		S	657a2839cf0125164859ff102b1f124abcb87ce0
+includeos__IncludeOS	https://github.com/includeos/IncludeOS.git	pending		S	6fd33d32631b7ad138f775f5dbd6b6c83b47b659
+firebase__firebase-ios-sdk	https://github.com/firebase/firebase-ios-sdk.git	pending		S	ead1af3543f1d251ddb3f9a6fb175393857e0b80
+cmangos__mangos-classic	https://github.com/cmangos/mangos-classic.git	pending		S	8ec338a1704e7dcb1c0213eb7ed58f9231ade40f
+freeplane__freeplane	https://github.com/freeplane/freeplane.git	pending		S	73f5b6e0a02424e7c4421e1017f5f00c288af76a
+tock__tock	https://github.com/tock/tock.git	pending		S	ff8a680c146c1ad3a25b995219c07eacb5aa5c47
+uxmal__reko	https://github.com/uxmal/reko.git	pending		S	418d3538ee87f46e87b80b5b8b93138f63952497
+fishercoder1534__Leetcode	https://github.com/fishercoder1534/Leetcode.git	pending		S	f99440e5d15b1229e88463e05770ac7d1e73bf9b
+apache__commons-collections	https://github.com/apache/commons-collections.git	pending		S	ec34e95cb5dea61fbee50d0a46e8ff5e028bd33d
+GIScience__openrouteservice	https://github.com/GIScience/openrouteservice.git	pending		S	ce7c6719fc82fad11954e98cc7efc92c3a988abd
+invent.kde.org__unmaintained__kde-runtime	https://invent.kde.org/unmaintained/kde-runtime	pending		S	d765545023776ec49ae9bd183176014143fe15d3
+DCMTK__dcmtk	https://github.com/DCMTK/dcmtk.git	pending		S	8d68392db66cd69e13dc878dc9889681062ad479
+NLnetLabs__unbound	https://github.com/NLnetLabs/unbound.git	pending		S	eafb02716650266f886def92dd7487b2831a96f3
+ProtonMail__WebClients	https://github.com/ProtonMail/WebClients.git	pending		M	b4be0231837aec0511955b0ba969bcf9b12d10b1

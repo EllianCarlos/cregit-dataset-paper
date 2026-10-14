@@ -1,0 +1,36 @@
+# Built by build_manifest.py from frame.batch22.csv (sha256 86e26663cb260a1733bdf6e4c91bb0bf653ec8dc415b455a3589e10cb356186d) at 2026-10-10T05:27:14+00:00.
+# 33 projects in u order; u = first 53 bits of sha256('20261110:' + slug).
+# Columns: name  url  category  file_filter  size_class  commit
+git.savannah.gnu.org__git__texinfo	https://git.savannah.gnu.org/git/texinfo.git	pending		S	6422c0e57c81e2073f32d4d22efe6110e360d3ba
+git.savannah.gnu.org__git__pspp	https://git.savannah.gnu.org/git/pspp.git	pending		S	91b943035c096bc09b7037613ac36974b51f4b4a
+git.gnunet.org__libmicrohttpd	https://git.gnunet.org/libmicrohttpd.git	pending		S	7922bbd7a9561fc3f8ebd6f5cecdc288dcd4457f
+git.savannah.gnu.org__git__gsl	https://git.savannah.gnu.org/git/gsl.git	pending		S	7527c444cfa25b42c15bed73824c9e3ece28b2f3
+git.savannah.gnu.org__git__classpath	https://git.savannah.gnu.org/git/classpath.git	pending		S	5a1dcb13eaa6040be54cf3bc6772470a397b2c79
+git.savannah.gnu.org__denemo	git://git.savannah.gnu.org/denemo.git	pending		S	e2e8fe310089323396f2fd8f71f23e7247078b80
+git.savannah.gnu.org__git__gnulib	https://git.savannah.gnu.org/git/gnulib.git	pending		S	2cf60fe51ecf530b3922e2bd637d8279e62b986c
+gitlab.gnome.org__GNOME__dia	https://gitlab.gnome.org/GNOME/dia	pending		S	ad68cc378b7a187706bc2648c48b44d16fb80819
+gitlab.inria.fr__mpfr__mpfr	https://gitlab.inria.fr/mpfr/mpfr.git	pending		S	8536bb90e594a2d0ef8660f3e54bdced9871edde
+git.savannah.gnu.org__git__gawk	https://git.savannah.gnu.org/git/gawk.git	pending		S	785873191721ee79af990a684410c0e41fcfbb6f
+git.savannah.gnu.org__git__gnash	https://git.savannah.gnu.org/git/gnash.git	pending		S	583ccbc1275c7701dc4843ec12142ff86bb305b4
+git.savannah.gnu.org__gnubg	git://git.savannah.gnu.org/gnubg.git	pending		S	84b7f31d4e61f9f14c919221364ab0284db84f67
+git.savannah.gnu.org__git__freeipmi	https://git.savannah.gnu.org/git/freeipmi.git	pending		S	af4fa3b53e4493a5de89a7b67e3b591771a90d7d
+git.savannah.gnu.org__git__guile	https://git.savannah.gnu.org/git/guile.git	pending		S	7f0f63d0865ed0d233b070113adecba9c74ffc8a
+gcc.gnu.org__git__gcc	https://gcc.gnu.org/git/gcc.git	pending		L	a02e2004cb707155d5b9b0a82dd428ded0ee2f6f
+git.savannah.gnu.org__git__emacs	https://git.savannah.gnu.org/git/emacs.git	pending		L	871e4cc6eea4c4ba5dfef69eb8346cc87e84406f
+sourceware.org__git__binutils-gdb	git://sourceware.org/git/binutils-gdb.git	pending		M	daba871f7bc67b32da51cc96c9137364f359e22a
+git.savannah.gnu.org__git__gettext	https://git.savannah.gnu.org/git/gettext.git	pending		S	da5e86ca70b02fe338f6dd7b140b1026ec62907b
+git.savannah.gnu.org__poke	git://git.savannah.gnu.org/poke.git	pending		S	e29ca75b2f1873d29a4caa7f2e1bf554b94cd9da
+git.savannah.gnu.org__git__grub	https://git.savannah.gnu.org/git/grub.git	pending		S	b07cc37ca64fe99260884e7325abc333374e098b
+git.savannah.gnu.org__git__liberty-eiffel	https://git.savannah.gnu.org/git/liberty-eiffel.git	pending		S	21b081378ec12798080128e7f39878d5d2097cb7
+git.savannah.gnu.org__git__mailutils	https://git.savannah.gnu.org/git/mailutils.git	pending		S	b9f388d2723cea2ff12a2895334ab9adb2e68fe9
+git.savannah.gnu.org__git__libredwg	https://git.savannah.gnu.org/git/libredwg.git	pending		S	a8ce24891c1a82cd51a8d0f3f97095a2a5d8aa31
+gitlab.com__gnutls__gnutls	https://gitlab.com/gnutls/gnutls	pending		S	4e84948a5e89689edbab2c5920db7fc32f31a985
+git.savannah.gnu.org__git__lilypond	https://git.savannah.gnu.org/git/lilypond.git	pending		M	b42c8e7f2c0db675803b9b15cfa245961e232e59
+git.savannah.gnu.org__git__nano	https://git.savannah.gnu.org/git/nano.git	pending		S	fc6070d40556c6f8b507ada4fcba4790e814441e
+git.savannah.gnu.org__git__3dldf	https://git.savannah.gnu.org/git/3dldf.git	pending		S	4efd4964dd618146fb9032d8cf6b6f46fd1e8d82
+git.savannah.gnu.org__git__groff	https://git.savannah.gnu.org/git/groff.git	pending		S	001f088e10069a15658c047c5b7dabfa604d8e3b
+gitlab.gnome.org__GNOME__gnumeric	https://gitlab.gnome.org/GNOME/gnumeric	pending		S	5d556a736fa37b64ffb672d6fa9fad042f9fab07
+git.savannah.gnu.org__git__gforth	https://git.savannah.gnu.org/git/gforth.git	pending		S	4e5ffe8b525ff90067f42d095ceb7bed7dba921d
+sourceware.org__git__glibc	git://sourceware.org/git/glibc.git	pending		M	7b24791c7020adee5621ecb1e414a2f70e1da210
+git.savannah.gnu.org__git__bison	https://git.savannah.gnu.org/git/bison.git	pending		S	a47fb7838a1bf9128c6e0aed0d0194d47f17b8c6
+git.savannah.gnu.org__git__coreutils	https://git.savannah.gnu.org/git/coreutils.git	pending		M	9c7cf20c3cbe0add2dd9839c83df8e6c8d59516e

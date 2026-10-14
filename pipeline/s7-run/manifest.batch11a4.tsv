@@ -1,0 +1,24 @@
+# Part a4 of the S and M projects of manifest.batch11.tsv (sha256 c0bc3c7dfba79160d832ec8f554c147ba73f356035049fa27b4442dfc81ecea4),
+# balanced by predicted time (6.4 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+elfmz__far2l	https://github.com/elfmz/far2l.git	pending		S	cb89e8d9d4024ce4c1c13ce1bf47a18007fd8a9d
+ruby__prism	https://github.com/ruby/prism.git	pending		S	7cd99acc8034e6ab01e12d26ebd0473454d83d58
+LandSandBoat__server	https://github.com/LandSandBoat/server.git	pending		M	c95bb99cc0ee8658cc6940fa73819027e8728cb8
+eclipse-cdo__cdo	https://github.com/eclipse-cdo/cdo.git	pending		S	389d91754de7f14087309707aa6c37331702b888
+apache__tomcat	https://github.com/apache/tomcat.git	pending		S	f55293d532765afee27d5cfa7e00095799fb16e0
+ihhub__fheroes2	https://github.com/ihhub/fheroes2.git	pending		S	9754feff8501dbb69df95f3b999156a32eb8d7d3
+arkime__arkime	https://github.com/arkime/arkime.git	pending		S	aa0bb85418bf7a1f20e887f46a410fa8112b2578
+heavyai__heavydb	https://github.com/heavyai/heavydb.git	pending		S	1399a062267b5b16a96456a174bb329594e177e4
+bulletphysics__bullet3	https://github.com/bulletphysics/bullet3.git	pending		S	63c4d67e337017f9d8b298c900e9aabdb69296e7
+mousebird-consulting-inc__WhirlyGlobe	https://github.com/mousebird-consulting-inc/WhirlyGlobe.git	pending		S	b836eaac16c6a227fbcfe39c083443831390de58
+RsyncProject__rsync	https://github.com/RsyncProject/rsync.git	pending		S	750012c34fe54418ffccd87f640247f6aabbacd9
+vaadin__flow	https://github.com/vaadin/flow.git	pending		S	93c399619d3ddd5d1059c8a28d2fd2c667ca354c
+Diegiwg__PrismLauncher-Cracked	https://github.com/Diegiwg/PrismLauncher-Cracked.git	pending		S	d393323fdc52ef645c48a04ca73aff2bbe24ffc9
+tesseract-ocr__tesseract	https://github.com/tesseract-ocr/tesseract.git	pending		S	db20f322d03664d1e878e2fbf6e904f5da755594
+Aleph-One-Marathon__alephone	https://github.com/Aleph-One-Marathon/alephone.git	pending		S	376198024ac8f1ba07a5e374838f0aa0ed40d2cd
+realm__realm-core	https://github.com/realm/realm-core.git	pending		S	f8752e180b7f288feadffafdef818068755efe0a
+qt__qtmultimedia	https://github.com/qt/qtmultimedia.git	pending		S	5041c9838d3cf48546a3ce7b5f265e97d6ca878a
+opentibiabr__otclient	https://github.com/opentibiabr/otclient.git	pending		S	396f0b396741bdd4469f27cf9376103930712cff
+Mbed-TLS__mbedtls	https://github.com/Mbed-TLS/mbedtls.git	pending		M	6bdf4e15e24bb04650b53cbb61b7cc52fe9a5a06
+gitlab.eclipse.org__eclipse__objectteams__objectteams	https://gitlab.eclipse.org/eclipse/objectteams/objectteams	pending		S	0f8327b456ef49a578bfaf652680a51fee88c525

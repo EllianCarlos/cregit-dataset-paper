@@ -1,0 +1,8 @@
+# Part a1 of the S and M projects of manifest.batch16.tsv (sha256 1e4fd43f0de322264d2b94b8a8370f41906df20bc45b8315187818245642b2d1),
+# balanced by predicted time (14.3 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+adoptium__jdk11u	https://github.com/adoptium/jdk11u.git	pending		M	5a2701255a73ee40e4e64e5fab260d0ba83b5668
+JetBrains__JetBrainsRuntime	https://github.com/JetBrains/JetBrainsRuntime.git	pending		M	2b2481456b5953f5823429656e27854c8e6fbb3a
+apache__camel	https://github.com/apache/camel.git	pending		M	374c04877418a34eefcce5ce7b5c429272183e7e
+dotnet__runtime	https://github.com/dotnet/runtime.git	pending		M	f05ec50b0331c532d51c25b50067051dbbc7450c

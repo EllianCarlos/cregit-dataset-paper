@@ -1,0 +1,25 @@
+# Part b4 of the S and M projects of manifest.batch7.tsv (sha256 c292b9d4dbd64d4dfa983374635f00d165ecd33a6dc0f1f0dfe36b830a188033),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 21 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+BowTiedDevil__degenbot	https://github.com/BowTiedDevil/degenbot.git	pending		S	535cf4b2a060bb9cf6463dfa316ffda7d78130aa
+codenameone__CodenameOne	https://github.com/codenameone/CodenameOne.git	pending		S	a0762c23d83850e4a3bb93014e2f618eb3f2b287
+MobilityDB__MobilityDB	https://github.com/MobilityDB/MobilityDB.git	pending		S	96a75b76f9ae7cc0e203b6fce48e53a60e0dee32
+futo-org__android-keyboard	https://github.com/futo-org/android-keyboard.git	pending		M	70a5d390c505a6bbcc4e14966e5628e43ca3f1fc
+signalapp__Signal-Server	https://github.com/signalapp/Signal-Server.git	pending		S	dec95043fafa6c85219e331a81cd351c752e444c
+GoogleCloudPlatform__training-data-analyst	https://github.com/GoogleCloudPlatform/training-data-analyst.git	pending		S	c411673130f51b097eb75bef9ba27abd1bc524ed
+mycelium-com__wallet-android	https://github.com/mycelium-com/wallet-android.git	pending		S	b2def6acab4c3afc85adf81a79af53cd4be2fa14
+bugsnag__bugsnag-js	https://github.com/bugsnag/bugsnag-js.git	pending		S	403832920acb1b6841b516593a66b0659b922898
+apache__hbase	https://github.com/apache/hbase.git	pending		S	8559faedbdea5309a42439b75627194be184182f
+openthread__openthread	https://github.com/openthread/openthread.git	pending		S	cfb2e422647e8e4f4c2b0e76bd3193d401b466f0
+cloudfoundry__uaa	https://github.com/cloudfoundry/uaa.git	pending		S	59442b49c0f520ae92df6cf00578864ff05aea39
+cupy__cupy	https://github.com/cupy/cupy.git	pending		M	5ee50771dd13d943a3d01322e4e6fdbce720a1b5
+apereo__cas	https://github.com/apereo/cas.git	pending		M	b9c979a73e018071b4bd1a40080405dabc1d80ad
+netblue30__firejail	https://github.com/netblue30/firejail.git	pending		S	beeabcd5dc967f623cbf81ff3a64bafa402abb74
+Stirling-Tools__Stirling-PDF	https://github.com/Stirling-Tools/Stirling-PDF.git	pending		S	b99fa929e365760c863956bf23c127b098c288e5
+jpd002__Play-	https://github.com/jpd002/Play-.git	pending		S	83700b2c31e593bc94e845b4b31b797be84dda59
+redis__redis	https://github.com/redis/redis.git	pending		S	b540ca49cba815f3fbe634363c3df68d4f4f127a
+n0-computer__noq	https://github.com/n0-computer/noq.git	pending		S	5af2505d962b57a2f36ae1b7f0ba6e6a36a49276
+rustdesk__rustdesk	https://github.com/rustdesk/rustdesk.git	pending		S	c9c0b5d0efd44b364b31639f3c118e8adc42d98c
+LibreDWG__libredwg	https://github.com/LibreDWG/libredwg.git	pending		S	a3d51f13f7afc143c2adb87d4b0e858e24cdac95
+dylan-lang__opendylan	https://github.com/dylan-lang/opendylan.git	pending		S	8d54644c298e70f33def194b9a4933973c6e9352

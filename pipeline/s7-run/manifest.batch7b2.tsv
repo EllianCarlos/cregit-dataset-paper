@@ -1,0 +1,20 @@
+# Part b2 of the S and M projects of manifest.batch7.tsv (sha256 c292b9d4dbd64d4dfa983374635f00d165ecd33a6dc0f1f0dfe36b830a188033),
+# balanced by predicted time (6.2 h for 4 workers), u order; a fed spot part.
+# 16 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+flox__flox	https://github.com/flox/flox.git	pending		S	99b3a397f7bdccdb6141e239cf25862f26234744
+wazuh__wazuh	https://github.com/wazuh/wazuh.git	pending		M	74ed87cb8775ab2dcfb74835ca9ab91f87cac0be
+Ultimaker__CuraEngine	https://github.com/Ultimaker/CuraEngine.git	pending		S	741be28fdfecd4428b84ab6046098e611e10dd60
+graalvm__musl	https://github.com/graalvm/musl.git	pending		S	c7bb8193aebe53edade0c92e3a3f7297bbf9067c
+KolibriOS__kolibrios	https://github.com/KolibriOS/kolibrios.git	pending		S	723a1b443747d42d5350cde5e3cfbddb8fb9569e
+ReactiveX__RxJava	https://github.com/ReactiveX/RxJava.git	pending		S	846acd6921acf906b1cc0e42c6cebf75b474744e
+blendbyte__Textual	https://github.com/blendbyte/Textual.git	pending		S	1f9903c9c5dd16050408819620d2ca6362da3860
+apache__shardingsphere	https://github.com/apache/shardingsphere.git	pending		M	5a9f1312677cbd9c87d1c0da0d34324b5fdf1ba1
+sigp__lighthouse	https://github.com/sigp/lighthouse.git	pending		S	6db6ae9382b7d6f5bd1e0ca0d349bc0dc94adba2
+sonatype__nexus-public	https://github.com/sonatype/nexus-public.git	pending		S	0a8a425daa4b37e924ca11e4637a41afce7b115c
+apache__carbondata	https://github.com/apache/carbondata.git	pending		S	b653d1336bb25b973d7b7a650d1c7c4bb3538480
+sqlfluff__sqlfluff	https://github.com/sqlfluff/sqlfluff.git	pending		S	b7ab9473ee15efcf8ca787ac05e0bfc26c8d52b0
+berty__berty	https://github.com/berty/berty.git	pending		S	9dc459369b8f2f01da4f7b355dd794e2fb140ee0
+unicode-org__icu	https://github.com/unicode-org/icu.git	pending		M	2014b81194474538082232c2badae12e6f3853ba
+xiaolai__vmark	https://github.com/xiaolai/vmark.git	pending		S	2d3903cb2887a7c6a7a8df7b814f14b745bc2415
+facebookincubator__Glean	https://github.com/facebookincubator/Glean.git	pending		S	95bc354c49d30ea07254d3393e4b374733220184

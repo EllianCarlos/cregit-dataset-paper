@@ -1,0 +1,30 @@
+# Part a2 of the S and M projects of manifest.batch5.tsv (sha256 d831890774e9a5e162a2e113942e19a64e0e7a2275032bf7880b86fe1f765ead),
+# balanced by predicted time (11.3 h for 4 workers), u order.
+# 26 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+project-ncl__pnc	https://github.com/project-ncl/pnc.git	pending		S	46b45b0e7520c718cfb1dad935b2f95aa14dad82
+alibaba__nacos	https://github.com/alibaba/nacos.git	pending		S	1b6309f5086c163a1ff9c0469fabd4494ec09093
+eclipse-scout__scout.rt	https://github.com/eclipse-scout/scout.rt.git	pending		S	a8b84506371d6e126e937db071cf69ef1b174f00
+batocera-linux__batocera.linux	https://github.com/batocera-linux/batocera.linux.git	pending		M	72ebd36f9ff931f67868007dc0f803ca56df603c
+unclebob__fitnesse	https://github.com/unclebob/fitnesse.git	pending		S	3da30d4b1479d02a6529aaec9808bc138093bcb1
+apache__trafficserver	https://github.com/apache/trafficserver.git	pending		S	a655c6ac55f2307cf984bc4cab6f287407172525
+dartsim__dart	https://github.com/dartsim/dart.git	pending		S	906a1efa37ffebae29d593012a0481b1d31500f7
+reactos__reactos	https://github.com/reactos/reactos.git	pending		M	171e1de21a446d2b69556a9513030b95e8869438
+leo-arch__clifm	https://github.com/leo-arch/clifm.git	pending		S	b8be0287572888329ad5e091c95cdf9f164baa5d
+NetworkConfiguration__dhcpcd	https://github.com/NetworkConfiguration/dhcpcd.git	pending		S	5a91691c65f063551553116ca73f2163ad951c9c
+openvenues__libpostal	https://github.com/openvenues/libpostal.git	pending		S	25099c506612b34b23b1bfe286ca6321fcf06f35
+serenity-bdd__serenity-core	https://github.com/serenity-bdd/serenity-core.git	pending		S	fad00e95083af07db5b33885e3015fd757f3afb9
+frePPLe__frepple	https://github.com/frePPLe/frepple.git	pending		S	930a6e32ad6ab9f5b817e89bcba7563c3aa440cb
+edbrowse__edbrowse	https://github.com/edbrowse/edbrowse.git	pending		S	d7f6b22a3f45dae6fb04b0ef2fa02e26ac01871e
+fglock__Perlito	https://github.com/fglock/Perlito.git	pending		S	9aa0e0e4ad2acc29eb7e97c6af9d496c6b45458a
+pyrocko__pyrocko	https://github.com/pyrocko/pyrocko.git	pending		S	b5bbdee44b322eb4b4aa0a6f6fa8321d1fb0f36e
+eclipse-sirius__sirius-desktop	https://github.com/eclipse-sirius/sirius-desktop.git	pending		S	a44df91048adfe1e95881c76d81fd3396fc64f88
+oracle__solaris-userland	https://github.com/oracle/solaris-userland.git	pending		S	b83a793b633c86d167778719363570b88bbf570a
+xournalpp__xournalpp	https://github.com/xournalpp/xournalpp.git	pending		S	9882ffaaf2c012a1de4c33161eb4284468d84b9d
+prestodb__presto	https://github.com/prestodb/presto.git	pending		S	618c8793618cb97cec7b025f88f7241f460066f0
+cyrusimap__cyrus-imapd	https://github.com/cyrusimap/cyrus-imapd.git	pending		M	61820a8d9ab236ed8bc2fb8895fdf68614502d61
+mock-server__mockserver-monorepo	https://github.com/mock-server/mockserver-monorepo.git	pending		S	e5503147fadd2cd3b4a009dc3cd1ba9a34d7f134
+aptos-labs__aptos-core	https://github.com/aptos-labs/aptos-core.git	pending		S	b30c5bae4ea0472f5b5393eb7d43273bf5862443
+vmware__open-vm-tools	https://github.com/vmware/open-vm-tools.git	pending		S	1634dfb42f723d2c1b3b6cf2696efc82407fae5b
+eclipse-ee4j__eclipselink	https://github.com/eclipse-ee4j/eclipselink.git	pending		S	38a7608a86894ee04db63ce1812fab0787b055f4
+utilForever__RosettaStone	https://github.com/utilForever/RosettaStone.git	pending		S	e10749b5f0c08d3a6135bce317cb11d1738846ad

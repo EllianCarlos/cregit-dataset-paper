@@ -1,0 +1,8 @@
+# Split of manifest.batch3.tsv (sha256 db4283d37bfff5287d9c00d527faff05159b973cd6a8fdf720af1574b944dd46): the L projects.
+# 5 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+scummvm__scummvm	https://github.com/scummvm/scummvm.git	pending		L	67b2df920b20c4c65724445545c145124e5e99d0
+MarvellEmbeddedProcessors__linux-marvell	https://github.com/MarvellEmbeddedProcessors/linux-marvell.git	pending		L	c8ae519736bba6de02ace596b438f14d168648ae
+ClickHouse__ClickHouse	https://github.com/ClickHouse/ClickHouse.git	pending		L	b5446bfffa9e48a7a3db768f2a7ae757c88a5cf5
+llvm__llvm-project	https://github.com/llvm/llvm-project.git	pending		L	611f5f38c7e86255b3d02759ba74dea09d827bb7
+ValveSoftware__wine	https://github.com/ValveSoftware/wine.git	pending		L	dc26e61847081a1b5cb0733dc30feba6ee575482

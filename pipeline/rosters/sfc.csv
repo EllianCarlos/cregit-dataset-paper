@@ -1,0 +1,45 @@
+org_key,org_kind,project,repo_url,github_slug,roster_status,source_url,fetched_at,note
+sfc,fiscal-sponsor,ArgoUML,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://argouml.tigris.org/
+sfc,fiscal-sponsor,Backdrop CMS,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://backdropcms.org/
+sfc,fiscal-sponsor,Bongo,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://bongo-project.org/
+sfc,fiscal-sponsor,Buildbot,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://buildbot.net/
+sfc,fiscal-sponsor,BusyBox,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://busybox.net/
+sfc,fiscal-sponsor,Common Workflow Language,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://www.commonwl.org/
+sfc,fiscal-sponsor,coreboot,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://www.coreboot.org/
+sfc,fiscal-sponsor,Darcs,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://darcs.net/
+sfc,fiscal-sponsor,Debian Copyright Aggregation Project,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: /news/2015/aug/17/debian/
+sfc,fiscal-sponsor,Etherpad,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://etherpad.org/
+sfc,fiscal-sponsor,FreeDV,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://freedv.org/
+sfc,fiscal-sponsor,Gevent,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://www.gevent.org/
+sfc,fiscal-sponsor,Git,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://git-scm.com/
+sfc,fiscal-sponsor,GPL Compliance Project for Linux Developers,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: /copyleft-compliance/
+sfc,fiscal-sponsor,Harvey OS,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://harvey-os.github.io/
+sfc,fiscal-sponsor,Houdini,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://houdiniproject.org
+sfc,fiscal-sponsor,Inkscape,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://inkscape.org/
+sfc,fiscal-sponsor,Institute for Computing in Research,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://computinginresearch.org/
+sfc,fiscal-sponsor,K-3D,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://www.k-3d.org
+sfc,fiscal-sponsor,Kallithea,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://kallithea-scm.org/
+sfc,fiscal-sponsor,Liblouis,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://liblouis.io/
+sfc,fiscal-sponsor,LibreHealth,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://librehealth.io/
+sfc,fiscal-sponsor,libssh,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://www.libssh.org/
+sfc,fiscal-sponsor,Linux XIA,https://github.com/AltraMayor/XIA-for-Linux,AltraMayor/XIA-for-Linux,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source links https://github.com/AltraMayor/XIA-for-Linux/wiki; repo_url is the containing repository
+sfc,fiscal-sponsor,Mercurial,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://www.mercurial-scm.org/
+sfc,fiscal-sponsor,Metalink,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://www.metalinker.org/
+sfc,fiscal-sponsor,MicroBlocks,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://microblocks.fun/
+sfc,fiscal-sponsor,OpenTripPlanner,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://www.opentripplanner.org/
+sfc,fiscal-sponsor,OpenWrt,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://openwrt.org/
+sfc,fiscal-sponsor,Outreachy,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://www.outreachy.org/
+sfc,fiscal-sponsor,phpMyAdmin,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://phpmyadmin.net/
+sfc,fiscal-sponsor,QEMU,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://qemu.org
+sfc,fiscal-sponsor,Reproducible Builds,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://reproducible-builds.org
+sfc,fiscal-sponsor,Samba,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://www.samba.org/samba/
+sfc,fiscal-sponsor,Selenium,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://seleniumhq.org
+sfc,fiscal-sponsor,Sourceware,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://sourceware.org/
+sfc,fiscal-sponsor,Squeak,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://squeak.org/
+sfc,fiscal-sponsor,SurveyOS,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://surveyos.sourceforge.net/
+sfc,fiscal-sponsor,SWIG,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://www.swig.org/
+sfc,fiscal-sponsor,Teaching Open Source,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://teachingopensource.org/
+sfc,fiscal-sponsor,U-Boot,http://github.com/u-boot/u-boot,u-boot/u-boot,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,
+sfc,fiscal-sponsor,Wine,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: http://www.winehq.org/
+sfc,fiscal-sponsor,Xapian,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://xapian.org/
+sfc,fiscal-sponsor,Xorg,,,current member project,https://sfconservancy.org/projects/current/,2026-10-05T01:52:47Z,source gives homepage only: https://www.x.org/wiki/

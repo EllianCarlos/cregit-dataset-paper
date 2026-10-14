@@ -1,0 +1,24 @@
+# Part a5 of the S and M projects of manifest.batch14.tsv (sha256 a1801c196defea51ecbeef0e7e9aa11dbb3fa7a56a079e8c25e40875a392ac5a),
+# balanced by predicted time (5.9 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+apple__foundationdb	https://github.com/apple/foundationdb.git	pending		M	84a8c16eda68e3a485515d2a3d40563fe8c04b2f
+juce-framework__JUCE	https://github.com/juce-framework/JUCE.git	pending		S	be29c81492b6151c8ea8d14c840e1311963b3a83
+gitlab.com__tnl-project__tnl	https://gitlab.com/tnl-project/tnl	pending		S	597563641febcad11ce0bfcba2d246290e52ae61
+PaddlePaddle__PaddleOCR	https://github.com/PaddlePaddle/PaddleOCR.git	pending		S	dab3fe35379033fdcb2d0e9572fac0b36c9a9ebf
+apache__axis-axis1-c	https://github.com/apache/axis-axis1-c.git	pending		S	a64939180428f248a6e9a2af8c6878d6efaa4a61
+mullvad__mullvadvpn-app	https://github.com/mullvad/mullvadvpn-app.git	pending		M	7c4fa260cca86e104ec2abe12b5f91986d24f811
+nmap__nmap	https://github.com/nmap/nmap.git	pending		S	6b9d95c5f12efd9d53491b82a27423e0899b212b
+spotify__scio	https://github.com/spotify/scio.git	pending		S	4f6c6d5b3e1ff896a6d0f151354a5ff59e41c1b7
+DS-Homebrew__TWiLightMenu	https://github.com/DS-Homebrew/TWiLightMenu.git	pending		S	97b22fe2cc282cee5bae7c12e0db54c1aa111dfb
+TDesktop-x64__tdesktop	https://github.com/TDesktop-x64/tdesktop.git	pending		S	f4be0fac81507efa591db397489e255143a0c321
+eclipse-dltk__dltk.core	https://github.com/eclipse-dltk/dltk.core.git	pending		S	9977141c66422815b5724d839fb17da8c4206265
+keepassxreboot__keepassxc	https://github.com/keepassxreboot/keepassxc.git	pending		S	9e0f57a4a4c6c629fa6d0a593acb7d089b1d95cd
+git.osgeo.org__gitea__postgis__postgis	https://git.osgeo.org/gitea/postgis/postgis	pending		S	a267b1babe55b3ca8ee96812a814ddfe35f287bf
+iPlug2__iPlug2	https://github.com/iPlug2/iPlug2.git	pending		S	d54f69050f517e43b941d88c2a170f0a840b9ee4
+tailwindlabs__tailwindcss	https://github.com/tailwindlabs/tailwindcss.git	pending		S	fa81d697fe572a10ac150d18964a093a7a874081
+zcash__librustzcash	https://github.com/zcash/librustzcash.git	pending		S	9c5705f56517c040c50f96d29f1ff15a9383f3e0
+lede-project__source	https://github.com/lede-project/source.git	pending		M	7ca66ebf0c4c20541ed765bb74363e3f1aa2e913
+facebook__watchman	https://github.com/facebook/watchman.git	pending		S	3e55516acb34dd4f6fc21d4c9c83a8bd708baebf
+steveicarus__iverilog	https://github.com/steveicarus/iverilog.git	pending		S	467d830d2435d28d63ecdfc011c5bf150f15f206
+kivy__kivy	https://github.com/kivy/kivy.git	pending		S	56baa54cbaf14697c0543e1806a98d52e1c54bb2

@@ -1,0 +1,8 @@
+# Part a1 of the S and M projects of manifest.batch21.tsv (sha256 a8d8fe474e9c33f90d4723af77e1009944e1a8db637acaeda7fbff45488b4af3),
+# balanced by predicted time (10.4 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+camunda__camunda	https://github.com/camunda/camunda.git	pending		M	2fa007fc5e37ec51dcc403f7d3bb55d00241fa79
+HewlettPackard__gsc-uboot	https://github.com/HewlettPackard/gsc-uboot.git	pending		M	50fee8f668f2b0b18ba1b166d44a11136c785905
+qt__qtbase	https://github.com/qt/qtbase.git	pending		M	f127f11fc11d3578fdfaa8d4a7597397a30cd1d6
+qt-creator__qt-creator	https://github.com/qt-creator/qt-creator.git	pending		M	592cda5dd7892beaa808ddc0df6cb5f246c002f2

@@ -1,0 +1,24 @@
+# Part a2 of the S and M projects of manifest.batch20.tsv (sha256 4c456b71c9e1db2907af03ac928fea9e460ff859170009b53725d68c63848625),
+# balanced by predicted time (5.6 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+OpenSIPS__opensips	https://github.com/OpenSIPS/opensips.git	pending		S	c30a883ca43daf45494c5dcf5bdb2c7aa138f3d2
+ruffle-rs__ruffle	https://github.com/ruffle-rs/ruffle.git	pending		S	d4b72ed81c0ebed547c854bbbb9d8fd8c446c8df
+CatimaLoyalty__Android	https://github.com/CatimaLoyalty/Android.git	pending		S	4f591f9e577c098a6bcc553cefd8529efc25c7d4
+manaflow-ai__manaflow	https://github.com/manaflow-ai/manaflow.git	pending		S	ab4858e45862c73f431c5f45947b550d10b73f96
+vortexgpgpu__vortex	https://github.com/vortexgpgpu/vortex.git	pending		S	3c3a84b40562dce941a0be2a6eda50e072c055f7
+gluster__glusterfs	https://github.com/gluster/glusterfs.git	pending		S	2326b1da07dc9a424aa798b9a81ea3b2a17dd997
+bitcoinj__bitcoinj	https://github.com/bitcoinj/bitcoinj.git	pending		S	80f3920a0f422a387278f827d97b70ca5a053176
+AxonIQ__AxonFramework	https://github.com/AxonIQ/AxonFramework.git	pending		S	42ffd1f0d405f4a42fba04eaa2f5d8cc95601daa
+KittyCAD__modeling-app	https://github.com/KittyCAD/modeling-app.git	pending		S	ea2369d5dbf0e14d08d94407047ea2c1008e8f26
+FasterXML__jackson-databind	https://github.com/FasterXML/jackson-databind.git	pending		S	26e12c98d793b2d609b663a4a90eec2bcfb4f3bd
+KDE__kdenlive	https://github.com/KDE/kdenlive.git	pending		S	3e95ba167507a24b36baa7196be56a5e99c0d1bc
+youki-dev__youki	https://github.com/youki-dev/youki.git	pending		S	c8a40215e459345beed9fe9e5ece211908ed239b
+TASEmulators__fceux	https://github.com/TASEmulators/fceux.git	pending		S	a62b868e9247c4aafd66f597cdfa8d2609704087
+illegalstudio__elephc	https://github.com/illegalstudio/elephc.git	pending		S	b23aa1a6b3681c7a89df12d71a390823c8b806e0
+PDAL__PDAL	https://github.com/PDAL/PDAL.git	pending		S	0fffb222dc9f60543a99ed93931a63d9cfe24456
+ZQuestClassic__ZQuestClassic	https://github.com/ZQuestClassic/ZQuestClassic.git	pending		S	dc6be1e88573716ba73c8637f13199bcac63ab44
+Col-E__Recaf	https://github.com/Col-E/Recaf.git	pending		S	6a58f868612c6c3d43169db3178408ba5e7dcaf6
+elizaOS__eliza	https://github.com/elizaOS/eliza.git	pending		S	57bb73225ffec4178acb1d520d1af5e8dffdc3e7
+GNOME__evolution-data-server	https://github.com/GNOME/evolution-data-server.git	pending		S	054b5f6b30260865fc3eaa9202f979d86522671c
+ldc-developers__ldc	https://github.com/ldc-developers/ldc.git	pending		M	ac0e420af3fe74de50ff2138f9ffcb464c29873a

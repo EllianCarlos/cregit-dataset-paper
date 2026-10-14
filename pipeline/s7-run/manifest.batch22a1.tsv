@@ -1,0 +1,8 @@
+# Part a1 of the S and M projects of manifest.batch22.tsv (sha256 dc8a4dcc99f4786c26f1c01c088fc0ad00413396460a012bc7ccbbb3af25e647),
+# balanced by predicted time (5.7 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+git.savannah.gnu.org__git__classpath	https://git.savannah.gnu.org/git/classpath.git	pending		S	5a1dcb13eaa6040be54cf3bc6772470a397b2c79
+git.savannah.gnu.org__git__gnulib	https://git.savannah.gnu.org/git/gnulib.git	pending		S	2cf60fe51ecf530b3922e2bd637d8279e62b986c
+sourceware.org__git__binutils-gdb	git://sourceware.org/git/binutils-gdb.git	pending		M	daba871f7bc67b32da51cc96c9137364f359e22a
+sourceware.org__git__glibc	git://sourceware.org/git/glibc.git	pending		M	7b24791c7020adee5621ecb1e414a2f70e1da210

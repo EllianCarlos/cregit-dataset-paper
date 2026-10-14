@@ -1,0 +1,20 @@
+# Part b3 of the S and M projects of manifest.batch16.tsv (sha256 1e4fd43f0de322264d2b94b8a8370f41906df20bc45b8315187818245642b2d1),
+# balanced by predicted time (6.5 h for 4 workers), u order; a fed spot part.
+# 16 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+flwrlabs__flower	https://github.com/flwrlabs/flower.git	pending		S	1435ea5e8d734070c7a7d30d73823900ad587e83
+aws__aws-sdk-cpp	https://github.com/aws/aws-sdk-cpp.git	pending		S	260b07c63a4ea5712017942a8b3cf5d9593306b4
+Audiveris__audiveris	https://github.com/Audiveris/audiveris.git	pending		S	7a36078e7ba0c006052c1f661b949cf9b729f505
+OpenEnroth__OpenEnroth	https://github.com/OpenEnroth/OpenEnroth.git	pending		S	860bf442878bb3c2bbd4554521741a1aa6d7f6ee
+ProvableHQ__leo	https://github.com/ProvableHQ/leo.git	pending		S	4fd6c71ecec069aabe7d9070c55568aec235ee4f
+SII-Holos__synergy	https://github.com/SII-Holos/synergy.git	pending		S	4f8e42ec7e7b4b469a4c26c103dc4071315c1b2a
+shirok__Gauche	https://github.com/shirok/Gauche.git	pending		S	653762a817155ceae14971bb637805decad80939
+diem__diem	https://github.com/diem/diem.git	pending		S	fc4714a8ea273b6efe8b13dbce72ea60aad9a16c
+apache__subversion	https://github.com/apache/subversion.git	pending		M	0010bd3a705ea36fecf6da40fdb6a817bb564e33
+vifm__vifm	https://github.com/vifm/vifm.git	pending		S	d9b2f49786ae077babfa6516f6b9ccea247c6f21
+stnolting__neorv32	https://github.com/stnolting/neorv32.git	pending		S	af905649fdbe650245af700690e435b58601ef7e
+Samsung__TizenRT	https://github.com/Samsung/TizenRT.git	pending		S	654daa88026f4589d67df8409f0ce424fcc3146d
+apache__gobblin	https://github.com/apache/gobblin.git	pending		S	8b219f1dbc93e6436d044e28e84806bf58053735
+Maproom__qmapshack	https://github.com/Maproom/qmapshack.git	pending		S	6b6187d0428aad69d4c52176fc04465a98e59197
+KDE__krita	https://github.com/KDE/krita.git	pending		M	c9c44bee771357b8339c6a12d3022bb136d9e3b7
+ntop__nDPI	https://github.com/ntop/nDPI.git	pending		S	6b2a77a87b8163fe8d632c5b6fd9862b00bd229f

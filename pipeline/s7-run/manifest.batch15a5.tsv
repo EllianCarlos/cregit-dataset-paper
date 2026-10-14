@@ -1,0 +1,24 @@
+# Part a5 of the S and M projects of manifest.batch15.tsv (sha256 ef0a99a173728f06226d70b9f0bdc6b1ca14a87ee16172ba5d195ada48f6b470),
+# balanced by predicted time (6.0 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+vercel__next.js	https://github.com/vercel/next.js.git	pending		M	1119ce6becb37e9272ef7ef7ff9308b038bdcd55
+Kode__Kha	https://github.com/Kode/Kha.git	pending		S	8e5faeee5ce4d5ede052a17136d78bda938f8a1a
+keymanapp__keyman	https://github.com/keymanapp/keyman.git	pending		M	3d8d453e9a5127019d4221537c5ad097e87a460d
+pmodels__mpich	https://github.com/pmodels/mpich.git	pending		S	09563568d9d34147a1b8775f30e37b25fcae197d
+veloren__veloren	https://github.com/veloren/veloren.git	pending		S	6c04d54744fd8137bb7fb43b20ad15deea43aaa7
+PaperMC__Paper	https://github.com/PaperMC/Paper.git	pending		S	4728a906edb501c3749dfcc437a419094a95a2c7
+chrxh__alien	https://github.com/chrxh/alien.git	pending		S	52f5fd7bee46ec7bf1bb958194edfe5d5241bc96
+MarvellEmbeddedProcessors__marvell-rdma-core	https://github.com/MarvellEmbeddedProcessors/marvell-rdma-core.git	pending		S	7528827b749b5afc795dfd470c98d9381774d4b4
+javaparser__javaparser	https://github.com/javaparser/javaparser.git	pending		S	feafa8ed217352bcee782227940e85bd92ab4ed3
+SakuraEngine__SakuraEngine	https://github.com/SakuraEngine/SakuraEngine.git	pending		S	c0fdb2bb30074058cb98df98b8134559d13d67b0
+rkd77__elinks	https://github.com/rkd77/elinks.git	pending		S	1cb45d42a787210fe3096466509b9440c62257ad
+xberg-io__xberg	https://github.com/xberg-io/xberg.git	pending		S	8084e83cc68c50e173ac3a0ddd7dafc1dd15111a
+phusion__passenger	https://github.com/phusion/passenger.git	pending		S	a92ab04460676b2ac167f3f03c4192259c783e0f
+GoogleCloudPlatform__java-docs-samples	https://github.com/GoogleCloudPlatform/java-docs-samples.git	pending		S	3a8a68cb86b4d96b3836b44a62f83a0518f26b8b
+OpenChemistry__tomviz	https://github.com/OpenChemistry/tomviz.git	pending		S	40a96c18c90633cb29279b2864bd893f9f866692
+BentoBoxWorld__BentoBox	https://github.com/BentoBoxWorld/BentoBox.git	pending		S	0e8d517587fca895a393422bfcc52229f15408bb
+TrenchBroom__TrenchBroom	https://github.com/TrenchBroom/TrenchBroom.git	pending		S	c1a4dba142750733aaa7b7072026faa526756132
+spiculedata__saiku	https://github.com/spiculedata/saiku.git	pending		S	8600b159c1894089515784b30c52389af3dad7fb
+klange__toaruos	https://github.com/klange/toaruos.git	pending		S	10b76c8429c40b4224042c0ccf49b1224afc4f2e
+datoviz__datoviz	https://github.com/datoviz/datoviz.git	pending		S	066a7451195b38c5e95dcf7af7383b89ec5ec903

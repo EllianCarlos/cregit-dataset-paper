@@ -1,0 +1,26 @@
+# Part a5 of the S and M projects of manifest.batch7.tsv (sha256 c292b9d4dbd64d4dfa983374635f00d165ecd33a6dc0f1f0dfe36b830a188033),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 22 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+GNOME__vte	https://github.com/GNOME/vte.git	pending		S	1a63c87b0702c112406229f3cf98c389d51ca4d4
+google__android-cuttlefish	https://github.com/google/android-cuttlefish.git	pending		S	480ed3b21f7d2a6dc8c530ff41f0099bdd232dd4
+GNOME__gnome-system-monitor	https://github.com/GNOME/gnome-system-monitor.git	pending		S	996060ad815576a669ef2075f991120d43b0e2bf
+Project-OSRM__osrm-backend	https://github.com/Project-OSRM/osrm-backend.git	pending		S	26a73bd16dd0fba18dc4adc92b5c022bcc40cabe
+Slimefun__Slimefun4	https://github.com/Slimefun/Slimefun4.git	pending		S	5374034c8713248909e60e6855c6f745fd7ca676
+flareteam__flare-engine	https://github.com/flareteam/flare-engine.git	pending		S	1969baeb89ebf94cf22e2bc2ed4e3d8413714d4f
+openucx__ucx	https://github.com/openucx/ucx.git	pending		S	694cf78bbc1956494449a9576f2233319b15ae78
+shader-slang__slang	https://github.com/shader-slang/slang.git	pending		S	d307206deb9d1510396ef27909725632f59ed0b4
+eclipse-capella__capella	https://github.com/eclipse-capella/capella.git	pending		S	16e0e21c36ac933172e4dd50a58b3e6a287ef502
+pwsafe__pwsafe	https://github.com/pwsafe/pwsafe.git	pending		S	e8f02ae45f10685720c21ddaec1d761d51831d1e
+triton-lang__triton	https://github.com/triton-lang/triton.git	pending		S	8262c9a91a1d6828ad4f36437fa0046daa67720d
+Taiko2k__Tauon	https://github.com/Taiko2k/Tauon.git	pending		S	85995887b824fc05eda22dc31a735f69c8f4a184
+justinethier__cyclone	https://github.com/justinethier/cyclone.git	pending		S	d40e0abc473bf9b542d109b0909daabd4f2b5b3f
+unicode-org__cldr	https://github.com/unicode-org/cldr.git	pending		S	6deeac8fe83d94960b7bafa3395736a34e7f2abf
+scribusproject__scribus	https://github.com/scribusproject/scribus.git	pending		S	e9c5b85214de9b035f0594b3a56caa682e35c0ab
+google__device-infra	https://github.com/google/device-infra.git	pending		S	2c883fcab920ce79c6318002433edcf9657aac25
+OSGeo__grass	https://github.com/OSGeo/grass.git	pending		S	a5a14ae0793cd006111395e1c46c0e462dae195e
+datahub-project__datahub	https://github.com/datahub-project/datahub.git	pending		S	c99fc06c83a880431e64b167b50715d7c8f11f86
+objectionary__eo	https://github.com/objectionary/eo.git	pending		S	99a9ab27f97b69357af028ab4adc585cc31e09a5
+zeroc-ice__ice	https://github.com/zeroc-ice/ice.git	pending		S	64af472fa6188fe63062d601009cc2c80497ca01
+mosra__magnum	https://github.com/mosra/magnum.git	pending		S	f239823e9afd27ab0ecf28e1d567831e3c62a25e
+rsksmart__rskj	https://github.com/rsksmart/rskj.git	pending		S	53c040f392c560b5016d099c50b557daabc9552a

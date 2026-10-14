@@ -1,0 +1,24 @@
+# Part a4 of the S and M projects of manifest.batch10.tsv (sha256 196d7166a36b215c498418c83c3e96c241e1ff6dddc10cee6e033afb0553f8a7),
+# balanced by predicted time (5.7 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+DataDog__dd-trace-py	https://github.com/DataDog/dd-trace-py.git	pending		S	9480aea9136e4c652dad7d0a4d5781045958682e
+microsoft__ApplicationInsights-Java	https://github.com/microsoft/ApplicationInsights-Java.git	pending		S	4b82f8062d7b1f4fd144f2133064ec35cb57038c
+pact-foundation__pact-jvm	https://github.com/pact-foundation/pact-jvm.git	pending		S	678fec4118136479bebf6134aa02795112205561
+isc-projects__bind9	https://github.com/isc-projects/bind9.git	pending		M	6d416c35824dd859b3377e64887310306766ceb7
+zerotier__ZeroTierOne	https://github.com/zerotier/ZeroTierOne.git	pending		S	899352e38405968516bb12a770f0ac02f6058fa8
+eudev-project__eudev	https://github.com/eudev-project/eudev.git	pending		S	165bdab652e6020b2663d5df063cbdef860bb34f
+OSGeo__PROJ	https://github.com/OSGeo/PROJ.git	pending		S	b340264c54d3bd1785eb26719a2e2027fc5a865a
+facebook__redex	https://github.com/facebook/redex.git	pending		S	99220023e3e2cb6786da72aa1c47e9a7c97663a5
+NiREvil__vless	https://github.com/NiREvil/vless.git	pending		S	df659fb17b4f2ec0d63745b54e8c5185d9608726
+newaetech__chipwhisperer	https://github.com/newaetech/chipwhisperer.git	pending		S	9fffeafb559911bbbbd247da162dd213bd4bfd00
+NixOS__nix	https://github.com/NixOS/nix.git	pending		S	bea853d2fa027d1a386c72d685fd2e6cdf6e2a70
+freeciv__freeciv	https://github.com/freeciv/freeciv.git	pending		M	bff83140df1ce057561b3b6857b384cd66851e84
+ankitects__anki	https://github.com/ankitects/anki.git	pending		S	6f6972c670f37cc9a6357525af1230f057e2ea2e
+assertj__assertj	https://github.com/assertj/assertj.git	pending		S	512a81e9a1015c917a6fa6e2dd510809e4108e77
+resteasy__resteasy	https://github.com/resteasy/resteasy.git	pending		S	7da9384d611e87d200dbd3ba4e177dcb8e46b7eb
+primefaces__primefaces	https://github.com/primefaces/primefaces.git	pending		S	3547f5e8751a19dd1c971149e4ab488d707f011d
+apache__cxf	https://github.com/apache/cxf.git	pending		S	e9f50a51c3a24802973825dadcd76e81ca4803d4
+opengrep__opengrep	https://github.com/opengrep/opengrep.git	pending		S	af2073ef9fe0b10897a78fc6046ddeafae046055
+dirkwhoffmann__virtualc64	https://github.com/dirkwhoffmann/virtualc64.git	pending		S	38b7ce342ec1476385c13915f6c93ddf3dfe1063
+gem5__gem5	https://github.com/gem5/gem5.git	pending		S	f5c5a6e390f55dd5984977815bf9d0bd05da6945

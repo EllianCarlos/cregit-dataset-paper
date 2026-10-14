@@ -1,0 +1,8 @@
+# Part a1 of the S and M projects of manifest.batch6.tsv (sha256 d54537af63a6cf6201cae5c5377286219e33305adb682e411af3367e642cb17b),
+# balanced by predicted time (15.9 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+mongodb__mongo	https://github.com/mongodb/mongo.git	pending		M	1c1e012583df064096c951d5932008ea23333aac
+OpenLiberty__open-liberty	https://github.com/OpenLiberty/open-liberty.git	pending		M	2c8f522cc3ac3f255ebdc428656acf147144362c
+nrfconnect__sdk-zephyr	https://github.com/nrfconnect/sdk-zephyr.git	pending		M	8ef4223c4e749ac3c8b4d9b4e831637b12b3fa9c
+corretto__corretto-25	https://github.com/corretto/corretto-25.git	pending		M	88c3e381eab4062c5576601bad8bc0dc454a1208

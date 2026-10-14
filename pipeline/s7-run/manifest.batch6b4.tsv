@@ -1,0 +1,28 @@
+# Part b4 of the S and M projects of manifest.batch6.tsv (sha256 d54537af63a6cf6201cae5c5377286219e33305adb682e411af3367e642cb17b),
+# balanced by predicted time (6.9 h for 4 workers), u order; a fed spot part.
+# 24 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+yamcs__yamcs	https://github.com/yamcs/yamcs.git	pending		S	ee4c33f1650f9fae84d9a932bea4d57d6c9b2bbb
+lighttransport__LightUSD	https://github.com/lighttransport/LightUSD.git	pending		S	1fdd60a6171724b5ce0e6716c25b2bba1aed7ad3
+facebook__zstd	https://github.com/facebook/zstd.git	pending		S	37829594dd19675568d8fada642e42c14678459d
+WinMerge__winmerge	https://github.com/WinMerge/winmerge.git	pending		S	bc7a2221503f002622fd9a598b177d995b457285
+gerbera__gerbera	https://github.com/gerbera/gerbera.git	pending		S	05a05f6ba3039bb6d55b3e3abc1765d276d5ec27
+eclipse-datatools__datatools	https://github.com/eclipse-datatools/datatools.git	pending		S	fc09f2f5d2e08d91221f5de2bf356473f3231f0a
+vdesabou__kafka-docker-playground	https://github.com/vdesabou/kafka-docker-playground.git	pending		S	3fe4b54273fd8a61cc2ea80af743891154578e4f
+RfidResearchGroup__proxmark3	https://github.com/RfidResearchGroup/proxmark3.git	pending		S	dd8bf6c184c3a9e77710e17dcc89d5acf6503617
+software-mansion__react-native-reanimated	https://github.com/software-mansion/react-native-reanimated.git	pending		S	8b2706fc8879cddb8c7d39a87159167676004ea0
+netty__netty	https://github.com/netty/netty.git	pending		S	d84dc6b1c290de2046bd0df5ba893e7f337cb0e6
+nsnam__ns-3-dev-git	https://github.com/nsnam/ns-3-dev-git.git	pending		S	4e4c5f2af0a7624d9eccd724a88d1435ed47a776
+fmtlib__fmt	https://github.com/fmtlib/fmt.git	pending		S	4afd0e498e9e1dd68775cc52087df774a19c761f
+digi-embedded__optee_os	https://github.com/digi-embedded/optee_os.git	pending		S	bb83d28cef1318b64b23a991c7860211faf7027d
+christophhart__HISE	https://github.com/christophhart/HISE.git	pending		S	762ae4ca6160fd99292058467a586fc27add9103
+citrusframework__citrus	https://github.com/citrusframework/citrus.git	pending		S	3d109b4608c6354bc13ea27c861b3b974111b651
+MapServer__MapServer	https://github.com/MapServer/MapServer.git	pending		S	2b900179602b36f9cc9564bfbd87364a23bd7d80
+ArcadeData__arcadedb	https://github.com/ArcadeData/arcadedb.git	pending		S	a2d0f6c4f819b18a758d1bb4db3a701ea9480c4a
+jOOQ__jOOQ	https://github.com/jOOQ/jOOQ.git	pending		S	ccf5efc88a031b3a42a2d774363a0a9a59e042c1
+TryQuiet__quiet	https://github.com/TryQuiet/quiet.git	pending		S	af452a39a40427c0f4defe6ecfb5ec9285cdcf33
+ClickHouse__ClickBench	https://github.com/ClickHouse/ClickBench.git	pending		S	d42c92cd363a546d1f1a1ada892b199c8def17f2
+edificeio__entcore	https://github.com/edificeio/entcore.git	pending		S	f299bf39d6b928a69c779c962b0eb3b9acf3cac8
+LoneGazebo__Community-Patch-DLL	https://github.com/LoneGazebo/Community-Patch-DLL.git	pending		S	aefacbf1b24a27aa42dc50b4283420a999f7fded
+confluentinc__rest-utils	https://github.com/confluentinc/rest-utils.git	pending		S	223087943dcda895ab31b815fa2709f0b53d25c5
+horsicq__DIE-engine	https://github.com/horsicq/DIE-engine.git	pending		S	47852f64a7d0367ac51f8a479e47aeb0aa67200e

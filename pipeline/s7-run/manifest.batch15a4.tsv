@@ -1,0 +1,24 @@
+# Part a4 of the S and M projects of manifest.batch15.tsv (sha256 ef0a99a173728f06226d70b9f0bdc6b1ca14a87ee16172ba5d195ada48f6b470),
+# balanced by predicted time (6.0 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+perspective-dev__perspective	https://github.com/perspective-dev/perspective.git	pending		S	6dbc6b8eee893fcb56a207f9910e3a8c532117a5
+puppylinux-woof-CE__woof-CE	https://github.com/puppylinux-woof-CE/woof-CE.git	pending		S	c6a9678316f2f83dad4689ee0dc7e2ba94bd0a7b
+python__mypy	https://github.com/python/mypy.git	pending		S	1ca7337fefd5d3b427bbecc093d6e4b34bf2501e
+qbittorrent__qBittorrent	https://github.com/qbittorrent/qBittorrent.git	pending		S	4df3aff937992c371fe02fd66133eb0c9d825830
+spinnaker__spinnaker	https://github.com/spinnaker/spinnaker.git	pending		M	2bd4d06d4b079021a5ecff1597e82bdd778a29d9
+Joystream__joystream	https://github.com/Joystream/joystream.git	pending		S	3862e7e0e142fdc96c12988886e961f1ceb90329
+tutao__tutanota	https://github.com/tutao/tutanota.git	pending		S	fdc06db4bb8f2c240aa512668b4b59898c885bc9
+GreptimeTeam__greptimedb	https://github.com/GreptimeTeam/greptimedb.git	pending		S	3a4c24a863d3628d847b4aa054eae5ab78960350
+flutter__packages	https://github.com/flutter/packages.git	pending		S	7660d464ef3cc38ad5e765a7504966713def3b4f
+dtolnay__syn	https://github.com/dtolnay/syn.git	pending		S	295f9648f499cd2576d4cb022f3fcc7f96ce0a74
+OvenMediaLabs__OvenMediaEngine	https://github.com/OvenMediaLabs/OvenMediaEngine.git	pending		S	12dcbe4fc8718b72d297505721cdd43359df34b6
+hermit-os__kernel	https://github.com/hermit-os/kernel.git	pending		S	4fccbbace86ce16c3a38b77ba83d6759d872e3ae
+Keyfactor__ejbca-ce	https://github.com/Keyfactor/ejbca-ce.git	pending		M	a46c89e0c6b670c3c4a1cf267380abf1ae181424
+drowe67__codec2-dev	https://github.com/drowe67/codec2-dev.git	pending		S	281b1e4323020618fb655fefec71321a6fb27595
+JanssenProject__jans	https://github.com/JanssenProject/jans.git	pending		M	fece9b485d980d190b2190c23241bff6875c089b
+FISCO-BCOS__FISCO-BCOS	https://github.com/FISCO-BCOS/FISCO-BCOS.git	pending		S	76b83201a094f0892cbfb0191b2da316a89660d0
+codelibs__fess	https://github.com/codelibs/fess.git	pending		S	e07658aa8d755673b8face34b0e14952e18a3cd5
+citizenfx__fivem	https://github.com/citizenfx/fivem.git	pending		S	e34d12cd9a39cc223548a5be1ab09f60e9183051
+flexn-io__renative	https://github.com/flexn-io/renative.git	pending		S	a8a8efcb66b1d9d402dac2cf804234af9a703f76
+OpenSC__OpenSC	https://github.com/OpenSC/OpenSC.git	pending		S	e8aee02963bec2c151ef23487ae344eb1dc4688a

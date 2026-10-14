@@ -1,0 +1,24 @@
+# Part b3 of the S and M projects of manifest.batch20.tsv (sha256 4c456b71c9e1db2907af03ac928fea9e460ff859170009b53725d68c63848625),
+# balanced by predicted time (5.5 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+NazaraEngine__NazaraEngine	https://github.com/NazaraEngine/NazaraEngine.git	pending		S	c02e38bd7b4e59869a992c6ece8cbedd6cb34943
+radixdlt__radixdlt-scrypto	https://github.com/radixdlt/radixdlt-scrypto.git	pending		S	a62393f716153ea2e4a4342210a47b8214941592
+cppcheck-opensource__cppcheck	https://github.com/cppcheck-opensource/cppcheck.git	pending		M	746b3a7c03201ced453ab8ea06c2ce0ae35b140d
+nest__nest-simulator	https://github.com/nest/nest-simulator.git	pending		S	af6d9cbbe283598bb2ab2fad32ab28b267c39809
+mlflow__mlflow	https://github.com/mlflow/mlflow.git	pending		S	297144c1edebff8fe680eaad00939f4f29885daf
+ROCm__rocBLAS	https://github.com/ROCm/rocBLAS.git	pending		S	defce200a69e5346eeadd7ac1e199238758add61
+rust-lang__cargo	https://github.com/rust-lang/cargo.git	pending		S	bb2126cffae48394a37db8728dc50a17bbfe54d4
+henrichg__PhoneProfilesPlus	https://github.com/henrichg/PhoneProfilesPlus.git	pending		S	79ba819ffbedeb0e9550af87cfd1d6f16845ffba
+GaloisInc__crucible	https://github.com/GaloisInc/crucible.git	pending		S	3ca9ff715377c063197dff4be085544ebf2bf726
+apache__pdfbox	https://github.com/apache/pdfbox.git	pending		S	7daaeaa2e5f0c16b069e7044bf0d078eca5e9b3d
+simh__simh	https://github.com/simh/simh.git	pending		S	b0a8d519a2418bfc6b496228de8a8976131a3abc
+imagej__imagej2	https://github.com/imagej/imagej2.git	pending		S	dd56793e235b5296e55a6de68513f012b6b984db
+ossia__score	https://github.com/ossia/score.git	pending		S	af06d41bda4fb9d65d7100ab3d05fdcf16532c85
+micrometer-metrics__micrometer	https://github.com/micrometer-metrics/micrometer.git	pending		S	a82772bf658fe4363e40913f83a6c02cd641c99f
+codice__ddf	https://github.com/codice/ddf.git	pending		S	8726b7d47161375821d9d98b663dc5d11d45c2d1
+pinpoint-apm__pinpoint	https://github.com/pinpoint-apm/pinpoint.git	pending		S	c9b4521f6986fb1a0c6e835d33c2bd88e60ac51f
+patzly__grocy-android	https://github.com/patzly/grocy-android.git	pending		S	8921b9f8b6e72fa1df9963594dd8843451c4e46a
+lm-sensors__lm-sensors	https://github.com/lm-sensors/lm-sensors.git	pending		S	cb9a02a34035bfac3029cc1f4d981d099586a2cf
+commaai__openpilot	https://github.com/commaai/openpilot.git	pending		S	910c08e0828c54ce7919ae14606166779a52bf94
+FarGroup__FarManager	https://github.com/FarGroup/FarManager.git	pending		S	e547c9efa130c042c09cb43b9ffbe99554144e7f

@@ -1,0 +1,25 @@
+# Part b3 of the S and M projects of manifest.batch10.tsv (sha256 196d7166a36b215c498418c83c3e96c241e1ff6dddc10cee6e033afb0553f8a7),
+# balanced by predicted time (5.6 h for 4 workers), u order; a fed spot part.
+# 21 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+cloudflare__workerd	https://github.com/cloudflare/workerd.git	pending		S	0e2da6cb219819e65fd80175331a4cef256508e9
+armory3d__armorpaint	https://github.com/armory3d/armorpaint.git	pending		S	4c06b93b8e0c8a9723c7d6711940177a29b38891
+apache__aries	https://github.com/apache/aries.git	pending		S	47f0a9035db17e8dd90d6b938247a44f4fd3ee36
+r-spatial__sf	https://github.com/r-spatial/sf.git	pending		S	01f423c263ae64b88146bca096d2f99e2ac43cc1
+dbt-labs__dbt	https://github.com/dbt-labs/dbt.git	pending		S	98dfb8f104ef52acc0c3a27f4937c7a6fbaefd18
+jjazzboss__JJazzLab	https://github.com/jjazzboss/JJazzLab.git	pending		S	cd1944afdf8a18b659cdbf63538b6df625a515ec
+vczh-libraries__GacUI	https://github.com/vczh-libraries/GacUI.git	pending		S	8051790c5472af1ed55931be276c734b13a84ab8
+davidgiven__ack	https://github.com/davidgiven/ack.git	pending		S	7afa32a0a0f13e865fa2e8104e442689005cd627
+appsmithorg__appsmith	https://github.com/appsmithorg/appsmith.git	pending		S	4250af70c7838172096d1431d78fe92a8dea0640
+KhronosGroup__glslang	https://github.com/KhronosGroup/glslang.git	pending		S	8ba5ca7cae66a5306a50b6d1db50875c50a5c77a
+GNOME__gtksourceview	https://github.com/GNOME/gtksourceview.git	pending		S	374c7c9afed8516e200b71ede9ff29944038e197
+Dicklesworthstone__coding_agent_session_search	https://github.com/Dicklesworthstone/coding_agent_session_search.git	pending		S	f5a9d48c36da288c695a7c26fe4dd661895e1e5a
+ad-si__Woxi	https://github.com/ad-si/Woxi.git	pending		S	15c7e81a79c10476a7322c1794aa897d51502c04
+microsoft__DirectXShaderCompiler	https://github.com/microsoft/DirectXShaderCompiler.git	pending		S	e19c24506aa57d5df13f28c43d50ac2256c02a18
+eranif__codelite	https://github.com/eranif/codelite.git	pending		S	2868a5e9cf2754ac176e977d96defdfa3530953e
+AFLplusplus__AFLplusplus	https://github.com/AFLplusplus/AFLplusplus.git	pending		S	dbaf11913c1b2702dee5b4d3dcfffd52f1defe50
+ispc__ispc	https://github.com/ispc/ispc.git	pending		S	4d58308cec4afb19923deca14e43f4f9fbc3b997
+xoreos__xoreos	https://github.com/xoreos/xoreos.git	pending		S	6774724d5c05e09ce0d01e00b8b62f956ddcb74b
+ntop__ntopng	https://github.com/ntop/ntopng.git	pending		S	9448434a1a51a2821a028e5759b162aa26bd0c6e
+TwilitRealm__dusklight	https://github.com/TwilitRealm/dusklight.git	pending		S	2c4960dcdfaedf9b0c96e2410a1cca2bc1657131
+AppFlowy-IO__AppFlowy	https://github.com/AppFlowy-IO/AppFlowy.git	pending		S	5cf3a365dec0d59f64bad1ee4bb1050471a39b93

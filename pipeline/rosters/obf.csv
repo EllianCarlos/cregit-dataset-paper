@@ -1,0 +1,28 @@
+org_key,org_kind,project,repo_url,github_slug,roster_status,source_url,fetched_at,note
+obf,foundation,BioJava,,,member,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links http://biojava.org/; page gives no repository
+obf,foundation,Bioperl Project,,,member,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links http://bioperl.org/; page gives no repository
+obf,foundation,BioPython,https://github.com/biopython/biopython,biopython/biopython,member,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links https://biopython.org/; repository taken from link https://github.com/biopython/biopython/blob/master/LICENSE.rst on the page
+obf,foundation,BioRuby,,,member,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links http://www.bioruby.org/; page gives no repository
+obf,foundation,BioSQL,,,member,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links https://biosql.org/wiki/Main_Page; page gives no repository
+obf,foundation,GBrowse,,,affiliated,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links https://gmod.org/; page gives no repository
+obf,foundation,Chado,,,affiliated,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links https://gmod.org/wiki/Chado; page gives no repository
+obf,foundation,BioJS,,,other related,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links http://biojs.net/; page gives no repository
+obf,foundation,BioHaskell,,,other related,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links http://biohaskell.org/; page gives no repository
+obf,foundation,Biocaml,,,other related,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links http://biocaml.org/; page gives no repository
+obf,foundation,BioPHP,,,other related,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links http://biophp.org/; page gives no repository
+obf,foundation,BioSmallTalk,,,other related,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links https://biosmalltalk.github.io/; page gives no repository
+obf,foundation,CGL,,,other related,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links https://www.yandell-lab.org/software/cgl.html; page gives no repository
+obf,foundation,BioMake & Skam,,,other related,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links https://skam.sourceforge.net/; page gives no repository
+obf,foundation,BioSOAP,,,retired,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page gives no repository
+obf,foundation,BioCORBA,,,retired,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page gives no repository
+obf,foundation,MOBY,,,retired,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links http://biomoby.open-bio.org/; page gives no repository
+obf,foundation,OBDA,,,retired,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links http://obda.open-bio.org/; page gives no repository
+obf,foundation,Wikiomics,,,retired,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page gives no repository
+obf,foundation,Pise,,,retired,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links https://pubmed.ncbi.nlm.nih.gov/12511068/; page gives no repository
+obf,foundation,OpenBQS,,,retired,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page gives no repository
+obf,foundation,BioClipse,,,retired,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page gives no repository
+obf,foundation,BioWeka,,,retired,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links https://sourceforge.net/projects/bioweka/; page gives no repository
+obf,foundation,BlipKit,https://github.com/cmungall/blipkit,cmungall/blipkit,retired,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,repository taken from link https://github.com/cmungall/blipkit on the page
+obf,foundation,Biolib,https://github.com/biolib/obf-biolib,biolib/obf-biolib,retired,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,repository taken from link https://github.com/biolib/obf-biolib on the page
+obf,foundation,DAS / BioDAS,,,retired,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page gives no repository
+obf,foundation,EMBOSS,,,retired,https://www.open-bio.org/projects/,2026-10-05T01:39:10Z,page links https://emboss.sourceforge.net/; page gives no repository

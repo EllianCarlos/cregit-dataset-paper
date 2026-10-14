@@ -1,0 +1,14 @@
+# Part b3 of the S and M projects of manifest.batch21.tsv (sha256 a8d8fe474e9c33f90d4723af77e1009944e1a8db637acaeda7fbff45488b4af3),
+# balanced by predicted time (2.1 h for 4 workers), u order; a fed spot part.
+# 10 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+KDE__ktexteditor	https://github.com/KDE/ktexteditor.git	pending		S	30ac6a92e92ef044739f85b6201c59d4b03e2f61
+KDE__kontact	https://github.com/KDE/kontact.git	pending		S	31d76acdcf41395c6ffc61cdc00a25ca7683fad7
+Mauler125__r5sdk	https://github.com/Mauler125/r5sdk.git	pending		S	c49e0d2123bc3ddb53419005ddd7c6ef73925faf
+BroadleafCommerce__BroadleafCommerce	https://github.com/BroadleafCommerce/BroadleafCommerce.git	pending		S	0594405a26983e78d5296298964d3b08f4e1c72b
+KDE__ksvg	https://github.com/KDE/ksvg.git	pending		S	452b6aa489cb9e14531037251bf447109a9f089c
+KDE__konversation	https://github.com/KDE/konversation.git	pending		S	541b5934944a9cc858d28de923b17a66a13e4966
+UweTrottmann__SeriesGuide	https://github.com/UweTrottmann/SeriesGuide.git	pending		S	12a9bbc9bda2c6e3235a84e77eabd812fa2a3f8a
+pioneerspacesim__pioneer	https://github.com/pioneerspacesim/pioneer.git	pending		S	f70632c7dbdc62628f310f683fb615c61d4c3a5c
+KDE__kstars	https://github.com/KDE/kstars.git	pending		S	9cf16085c2eff16ca12bf6acbc307e2bbeee880c
+KDE__korganizer	https://github.com/KDE/korganizer.git	pending		S	b14deebcc489cc1b58cc90b6a1167a29f70ca867

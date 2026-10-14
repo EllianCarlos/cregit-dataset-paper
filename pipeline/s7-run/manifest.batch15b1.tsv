@@ -1,0 +1,9 @@
+# Part b1 of the S and M projects of manifest.batch15.tsv (sha256 ef0a99a173728f06226d70b9f0bdc6b1ca14a87ee16172ba5d195ada48f6b470),
+# balanced by predicted time (7.2 h for 4 workers), u order; a fed spot part.
+# 5 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+realm__realm-swift	https://github.com/realm/realm-swift.git	pending		S	a40ced79265b644a896e393b0f3a37e7916e7de3
+RTEMS__rtems	https://github.com/RTEMS/rtems.git	pending		M	0524f1668a049d9966292246bf5e5ef2aa46c36d
+BRL-CAD__brlcad	https://github.com/BRL-CAD/brlcad.git	pending		M	27ba3c4880b82ec3e680ff49d5349f3268384d9d
+libretro__RetroArch	https://github.com/libretro/RetroArch.git	pending		M	4fd2697360e086d521a35330aa871899016d1ba0
+postgres__postgres	https://github.com/postgres/postgres.git	pending		M	80707c10456f3b29202899c62619b4a8d81fe8f9

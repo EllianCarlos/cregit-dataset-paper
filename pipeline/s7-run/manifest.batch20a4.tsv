@@ -1,0 +1,15 @@
+# Part a4 of the S and M projects of manifest.batch20.tsv (sha256 4c456b71c9e1db2907af03ac928fea9e460ff859170009b53725d68c63848625),
+# balanced by predicted time (5.5 h for 4 workers), u order; a fed spot part.
+# 11 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+git.dynare.org__Dynare__dynare	https://git.dynare.org/Dynare/dynare	pending		S	fb55be39992b44bfa5c86ad18bf7f3199a170163
+AtomicBot-ai__Atomic-Chat	https://github.com/AtomicBot-ai/Atomic-Chat.git	pending		S	25753e6fa94682cb6bb0adfdaa0172be3afb7a69
+TypesettingTools__Aegisub	https://github.com/TypesettingTools/Aegisub.git	pending		S	746d9c087d81d0f27fc41d6d6ab22c896ba5eb40
+google__perfetto	https://github.com/google/perfetto.git	pending		M	fd9c7de6e0c57bee61ee1a4113e60af975881cee
+microsoft__mu_basecore	https://github.com/microsoft/mu_basecore.git	pending		M	5418dcf9a3b1e6f8bb1fa7c9f944dcd928c91b01
+swiftlang__swift-corelibs-foundation	https://github.com/swiftlang/swift-corelibs-foundation.git	pending		S	b2112d2d80c4365dbb32479d89bb3177bfda8ea8
+eclipse-jdt__eclipse.jdt.core	https://github.com/eclipse-jdt/eclipse.jdt.core.git	pending		S	97d96c9b34eef41cd7cccc47c0da9333b9a50308
+joncampbell123__dosbox-x	https://github.com/joncampbell123/dosbox-x.git	pending		S	478c860050b20afdb58bce28f1b43163952fc541
+Mystic-Stars__Axolotl	https://github.com/Mystic-Stars/Axolotl.git	pending		S	2b5c22deef9c1ead1b2443708cfe686935ccedeb
+SkyTubeTeam__SkyTube	https://github.com/SkyTubeTeam/SkyTube.git	pending		S	be958f06b80c30e76c468922521297f3a7ae0c42
+tensorflow__serving	https://github.com/tensorflow/serving.git	pending		S	40f3fb1b022fa54c4d0ae29544532af65cc392de

@@ -1,0 +1,5 @@
+# The L projects of manifest.batch15.tsv (sha256 ef0a99a173728f06226d70b9f0bdc6b1ca14a87ee16172ba5d195ada48f6b470), for the census batch15L on the big on-demand EC2.
+# 2 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+flang-compiler__classic-flang-llvm-project	https://github.com/flang-compiler/classic-flang-llvm-project.git	pending		L	8bf9edc018464e391987d435b662a0b1e0b68c37
+swiftlang__swift	https://github.com/swiftlang/swift.git	pending		L	0cba8ddaae234051e71e9e050619f915a5b9842b

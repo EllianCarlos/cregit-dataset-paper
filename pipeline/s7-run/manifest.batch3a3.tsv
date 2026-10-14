@@ -1,0 +1,23 @@
+# Part a3 of manifest.batch3a.tsv: rows 3, 7, ... (every 4th), u order.
+# 20 projects.
+# Columns: name  url  category  file_filter  size_class  commit
+afritz1__OpenTESArena	https://github.com/afritz1/OpenTESArena.git	pending		S	67872ae8acac3613c8b1bce88ddfdca22f7bc32a
+activeloopai__deeplake	https://github.com/activeloopai/deeplake.git	pending		S	f432041fabbf4a1fc1d342aeb550e0a7de41b0da
+Samsung__gcutil	https://github.com/Samsung/gcutil.git	pending		S	2ea44640849e81bb21c603777cbedcae0c240606
+dyninst__dyninst	https://github.com/dyninst/dyninst.git	pending		S	2fb61be0e6bf334b3bab13c5f36de5a182e3b514
+AztecProtocol__aztec-packages	https://github.com/AztecProtocol/aztec-packages.git	pending		S	bb004df2acde686a00181e8327711f54f2d25da8
+validator__validator	https://github.com/validator/validator.git	pending		S	f302f46b909d27a7c4acf063ef2b01c8fb3f4c0b
+PaddlePaddle__Paddle-Lite	https://github.com/PaddlePaddle/Paddle-Lite.git	pending		S	8c07d68f8508b722b903f366dc6a84efb2e086ef
+SlimeKnights__TinkersConstruct	https://github.com/SlimeKnights/TinkersConstruct.git	pending		S	dce824f473c4515c4c1a1f8214838582fb69591a
+traccar__traccar	https://github.com/traccar/traccar.git	pending		S	d0c0ac7bea6ee752ee091fef6a6c3f794ae4d2bf
+rabbitmq__rabbitmq-java-client	https://github.com/rabbitmq/rabbitmq-java-client.git	pending		S	6d4ed41edf977fc88419f7f61112b5c4e777f05d
+xvisor__xvisor	https://github.com/xvisor/xvisor.git	pending		S	ddbfcd6aee19ba3e2687f18f1d246744edad3495
+gwdevhub__GWToolboxpp	https://github.com/gwdevhub/GWToolboxpp.git	pending		S	1ce867e5557622408132495b92766ba3e59c1b76
+tigerbeetle__tigerbeetle	https://github.com/tigerbeetle/tigerbeetle.git	pending		S	6f8e6b58d1811bb21cd6ea4fb93cb2e9d77abd81
+clementine-player__Clementine	https://github.com/clementine-player/Clementine.git	pending		S	d254a83f8f95dfa8d6c23b1e453fffd9ebdfedc8
+inviwo__inviwo	https://github.com/inviwo/inviwo.git	pending		S	27e1f1a02bd23e36c17fdf98cca5095b4eb8484c
+gnu-octave__octave	https://github.com/gnu-octave/octave.git	pending		M	5208f34c2b13b447c68c956be2a0b1d67476a80d
+Wargus__stratagus	https://github.com/Wargus/stratagus.git	pending		S	3d87c93f7fd8c0b62ee1be5df0a6d9efc72ca6cc
+spring-projects__spring-security	https://github.com/spring-projects/spring-security.git	pending		S	e3c9c58ee5b2d7fdc134eae4292c751ed91c1c9f
+LINBIT__linstor-server	https://github.com/LINBIT/linstor-server.git	pending		S	5f982316e260fbd3336496bd18869db04b36960b
+rockowitz__ddcutil	https://github.com/rockowitz/ddcutil.git	pending		S	87798e4db47cf097415108244b0e892068c18c85

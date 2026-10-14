@@ -1,0 +1,351 @@
+host	url	step_result	commits	dup_of	dp8l	screened_at
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/nautilus	shares history with a pool row	27492	gh:4533258		2026-10-13T23:19:53Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/json-glib	< 5,000 commits				2026-10-13T23:19:53Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-remote-desktop	< 5,000 commits				2026-10-13T23:19:54Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libcloudproviders	< 5,000 commits				2026-10-13T23:19:55Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/polari	< 5,000 commits				2026-10-13T23:19:55Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gjs	shares history with a pool row	6656	gh:4600883		2026-10-13T23:19:57Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/endeavour	< 5,000 commits				2026-10-13T23:19:57Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/podcasts	< 5,000 commits				2026-10-13T23:19:58Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/fractal	< 5,000 commits				2026-10-13T23:19:59Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libmanette	< 5,000 commits				2026-10-13T23:19:59Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-calendar	shares history with a pool row	6113	gh:4530085		2026-10-13T23:20:01Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/jsonrpc-glib	< 5,000 commits				2026-10-13T23:20:02Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/template-glib	< 5,000 commits				2026-10-13T23:20:02Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libgepub	< 5,000 commits				2026-10-13T23:20:03Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-multi-writer	< 5,000 commits				2026-10-13T23:20:03Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/hitori	< 5,000 commits				2026-10-13T23:20:04Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/recipes	< 5,000 commits				2026-10-13T23:20:05Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libgweather	< 5,000 commits				2026-10-13T23:20:05Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/librsvg	shares history with a pool row	10705	gh:4534843		2026-10-13T23:20:07Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/niepce	< 5,000 commits				2026-10-13T23:20:07Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/krb5-auth-dialog	< 5,000 commits				2026-10-13T23:20:08Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libgtop	< 5,000 commits				2026-10-13T23:20:09Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/pygobject	shares history with a pool row	5060	gh:4526702		2026-10-13T23:20:11Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/wing	< 5,000 commits				2026-10-13T23:20:11Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-builder	shares history with a pool row	19654	gh:23749927		2026-10-13T23:20:14Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-build-meta	shares history with a pool row	6308	gh:118123835		2026-10-13T23:20:15Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-shell	shares history with a pool row	20902	gh:4610231		2026-10-13T23:20:18Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/mutter	shares history with a pool row	36248	gh:4530099		2026-10-13T23:20:23Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-characters	< 5,000 commits				2026-10-13T23:20:23Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libwnck	< 5,000 commits				2026-10-13T23:20:24Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-contacts	< 5,000 commits				2026-10-13T23:20:25Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-software	shares history with a pool row	14894	gh:12108041		2026-10-13T23:20:27Z
+gitlab.gnome.org	https://gitlab.gnome.org/community/ubuntu/gnome-software	shares history with a pool row	7377	gh:12108041		2026-10-13T23:20:29Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/glib	shares history with a pool row	33506	gh:4537082		2026-10-13T23:20:33Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gobject-introspection	< 5,000 commits				2026-10-13T23:20:33Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-control-center	shares history with a pool row	26207	gh:4526900		2026-10-13T23:20:37Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gxml	< 5,000 commits				2026-10-13T23:20:38Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-settings-daemon	shares history with a pool row	7110	gh:4533169		2026-10-13T23:20:39Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gtk	shares history with a pool row	90584	gh:4537276		2026-10-13T23:20:47Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gcab	< 5,000 commits				2026-10-13T23:20:47Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/atomix	< 5,000 commits				2026-10-13T23:20:48Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-battery-bench	< 5,000 commits				2026-10-13T23:20:48Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/pitivi	shares history with a pool row	9018	gh:4534501		2026-10-13T23:20:50Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-maps	< 5,000 commits				2026-10-13T23:20:51Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libgda	shares history with a pool row	7638	gh:4579733		2026-10-13T23:20:52Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/html2pango	< 5,000 commits				2026-10-13T23:20:53Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gtk-frdp	< 5,000 commits				2026-10-13T23:20:53Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/social	< 5,000 commits				2026-10-13T23:20:54Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/bijiben	< 5,000 commits				2026-10-13T23:20:55Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/gedit/gedit	layer 1 candidate	14140		yes	2026-10-13T23:20:56Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/babl	< 5,000 commits				2026-10-13T23:20:57Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/pangomm	< 5,000 commits				2026-10-13T23:20:58Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/atkmm	< 5,000 commits				2026-10-13T23:20:58Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libdmapsharing	< 5,000 commits				2026-10-13T23:20:59Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-system-monitor	shares history with a pool row	5585	gh:4534353		2026-10-13T23:21:01Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/pango	shares history with a pool row	6877	gh:4537144		2026-10-13T23:21:02Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gegl	shares history with a pool row	11493	gh:4614676		2026-10-13T23:21:04Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/glibmm	< 5,000 commits				2026-10-13T23:21:05Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gtkmm	< 5,000 commits				2026-10-13T23:21:05Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libpeas	< 5,000 commits				2026-10-13T23:21:06Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-nibbles	< 5,000 commits				2026-10-13T23:21:06Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-robots	< 5,000 commits				2026-10-13T23:21:07Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-sudoku	< 5,000 commits				2026-10-13T23:21:08Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/tali	< 5,000 commits				2026-10-13T23:21:09Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gtk-vnc	< 5,000 commits				2026-10-13T23:21:09Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gexiv2	< 5,000 commits				2026-10-13T23:21:10Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/frogr	< 5,000 commits				2026-10-13T23:21:10Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-logs	< 5,000 commits				2026-10-13T23:21:11Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/rygel	shares history with a pool row	6188	gh:4600936		2026-10-13T23:21:12Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/yelp	< 5,000 commits				2026-10-13T23:21:13Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/evince	shares history with a pool row	9599	gh:4533184		2026-10-13T23:21:14Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libgsf	< 5,000 commits				2026-10-13T23:21:15Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/goffice	< 5,000 commits				2026-10-13T23:21:16Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnumeric	already in the pool				2026-10-13T23:21:16Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gdk-pixbuf	shares history with a pool row	6559	gh:4533539		2026-10-13T23:21:18Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gtk-doc	< 5,000 commits				2026-10-13T23:21:19Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gitg	< 5,000 commits				2026-10-13T23:21:19Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/vala	shares history with a pool row	11595	gh:4534924		2026-10-13T23:21:21Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/seahorse	shares history with a pool row	6016	gh:4532870		2026-10-13T23:21:22Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/perl-glib-object-introspection	< 5,000 commits				2026-10-13T23:21:23Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/tinysparql	shares history with a pool row	16654	gh:813347784		2026-10-13T23:21:25Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/eog	shares history with a pool row	8281	gh:4533404		2026-10-13T23:21:26Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/file-roller	shares history with a pool row	5722	gh:4526881		2026-10-13T23:21:27Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-clocks	< 5,000 commits				2026-10-13T23:21:28Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/networkmanager-openvpn	< 5,000 commits				2026-10-13T23:21:28Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/chronojump	shares history with a pool row	14177	gh:4579905		2026-10-13T23:21:32Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/sysprof	< 5,000 commits				2026-10-13T23:21:32Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/evolution	shares history with a pool row	47747	gh:4530750		2026-10-13T23:21:36Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/evolution-data-server	shares history with a pool row	18002	gh:4530345		2026-10-13T23:21:38Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/evolution-ews	< 5,000 commits				2026-10-13T23:21:39Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gtksourceview	shares history with a pool row	7797	gh:4531161		2026-10-13T23:21:40Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-font-viewer	< 5,000 commits				2026-10-13T23:21:41Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/at-spi2-core	shares history with a pool row	6357	gh:4610259		2026-10-13T23:21:42Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/network-manager-applet	shares history with a pool row	5082	gh:4534978		2026-10-13T23:21:43Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-flashback	< 5,000 commits				2026-10-13T23:21:44Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-bluetooth	< 5,000 commits				2026-10-13T23:21:44Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gvfs	shares history with a pool row	6792	gh:4600902		2026-10-13T23:21:46Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/genius	< 5,000 commits				2026-10-13T23:21:46Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gthumb	shares history with a pool row	8637	gh:4618516		2026-10-13T23:21:48Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-keyring	< 5,000 commits				2026-10-13T23:21:48Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libsoup	< 5,000 commits				2026-10-13T23:21:49Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/balsa	shares history with a pool row	10258	gh:4601050		2026-10-13T23:21:50Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gspell	< 5,000 commits				2026-10-13T23:21:51Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/easytag	< 5,000 commits				2026-10-13T23:21:52Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libglnx	< 5,000 commits				2026-10-13T23:21:52Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-initial-setup	< 5,000 commits				2026-10-13T23:21:53Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gparted	< 5,000 commits				2026-10-13T23:21:54Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnote	shares history with a pool row	5404	gh:4580129		2026-10-13T23:21:55Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gstreamermm	< 5,000 commits				2026-10-13T23:21:56Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libgxps	< 5,000 commits				2026-10-13T23:21:57Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/perl-glib	< 5,000 commits				2026-10-13T23:21:57Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gcr	< 5,000 commits				2026-10-13T23:21:58Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-panel	shares history with a pool row	13319	gh:4530583		2026-10-13T23:22:00Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/networkmanager-openconnect	< 5,000 commits				2026-10-13T23:22:00Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/geocode-glib	< 5,000 commits				2026-10-13T23:22:01Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/sushi	< 5,000 commits				2026-10-13T23:22:01Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/eog-plugins	< 5,000 commits				2026-10-13T23:22:02Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-session	shares history with a pool row	7073	gh:4534474		2026-10-13T23:22:03Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/ghex	< 5,000 commits				2026-10-13T23:22:04Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-desktop	shares history with a pool row	6838	gh:4533643		2026-10-13T23:22:05Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/localsearch	shares history with a pool row	15861	gh:813347610		2026-10-13T23:22:07Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libxml2	shares history with a pool row	7824	gh:4537118		2026-10-13T23:22:09Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-online-accounts	< 5,000 commits				2026-10-13T23:22:10Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/office-runner	< 5,000 commits				2026-10-13T23:22:10Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/dconf	< 5,000 commits				2026-10-13T23:22:11Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gsettings-desktop-schemas	< 5,000 commits				2026-10-13T23:22:11Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-color-manager	< 5,000 commits				2026-10-13T23:22:12Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/phodav	< 5,000 commits				2026-10-13T23:22:12Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-packagekit	< 5,000 commits				2026-10-13T23:22:13Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-power-manager	< 5,000 commits				2026-10-13T23:22:14Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/dasher	< 5,000 commits				2026-10-13T23:22:14Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/sound-juicer	< 5,000 commits				2026-10-13T23:22:15Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-user-share	< 5,000 commits				2026-10-13T23:22:16Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/zenity	< 5,000 commits				2026-10-13T23:22:16Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/telegnome	< 5,000 commits				2026-10-13T23:22:17Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-2048	< 5,000 commits				2026-10-13T23:22:18Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libsecret	< 5,000 commits				2026-10-13T23:22:18Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/networkmanager-pptp	< 5,000 commits				2026-10-13T23:22:19Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/networkmanager-libreswan	< 5,000 commits				2026-10-13T23:22:20Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gucharmap	< 5,000 commits				2026-10-13T23:22:20Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/evolution-activesync	< 5,000 commits				2026-10-13T23:22:21Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/planner	< 5,000 commits				2026-10-13T23:22:21Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/metacity	shares history with a pool row	5545	gh:4526777		2026-10-13T23:22:23Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/network-manager-iodine	< 5,000 commits				2026-10-13T23:22:23Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/brasero	< 5,000 commits				2026-10-13T23:22:24Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/folks	< 5,000 commits				2026-10-13T23:22:24Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gssdp	< 5,000 commits				2026-10-13T23:22:25Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-applets	shares history with a pool row	12465	gh:4530228		2026-10-13T23:22:27Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gtranslator	shares history with a pool row	6760	gh:4532902		2026-10-13T23:22:28Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libgovirt	< 5,000 commits				2026-10-13T23:22:29Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-directory-thumbnailer	< 5,000 commits				2026-10-13T23:22:29Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libgit2-glib	< 5,000 commits				2026-10-13T23:22:30Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/tracker-miner-media	< 5,000 commits				2026-10-13T23:22:31Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/almanah	< 5,000 commits				2026-10-13T23:22:31Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-autoar	< 5,000 commits				2026-10-13T23:22:32Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libgd	< 5,000 commits				2026-10-13T23:22:33Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gupnp-av	< 5,000 commits				2026-10-13T23:22:33Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libgee	< 5,000 commits				2026-10-13T23:22:34Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gtksourceviewmm	< 5,000 commits				2026-10-13T23:22:34Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libgnome-volume-control	< 5,000 commits				2026-10-13T23:22:35Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libgudev	< 5,000 commits				2026-10-13T23:22:35Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libxslt	< 5,000 commits				2026-10-13T23:22:36Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/nautilus-python	< 5,000 commits				2026-10-13T23:22:37Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libmediaart	< 5,000 commits				2026-10-13T23:22:37Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/msitools	< 5,000 commits				2026-10-13T23:22:38Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/librest	< 5,000 commits				2026-10-13T23:22:38Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-menus	< 5,000 commits				2026-10-13T23:22:39Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/dia	already in the pool				2026-10-13T23:22:39Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gom	< 5,000 commits				2026-10-13T23:22:40Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libnotify	< 5,000 commits				2026-10-13T23:22:40Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/xdg-user-dirs-gtk	< 5,000 commits				2026-10-13T23:22:41Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gupnp-dlna	< 5,000 commits				2026-10-13T23:22:41Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gimp	shares history with a pool row	59398	gh:4537508		2026-10-13T23:22:47Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-disk-utility	< 5,000 commits				2026-10-13T23:22:48Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/totem	shares history with a pool row	11200	gh:4533342		2026-10-13T23:22:50Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gdm	shares history with a pool row	10200	gh:4533139		2026-10-13T23:22:51Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/rhythmbox	shares history with a pool row	10439	gh:4598588		2026-10-13T23:22:53Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-terminal	shares history with a pool row	7148	gh:4530484		2026-10-13T23:22:54Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/vte	shares history with a pool row	5816	gh:4534332		2026-10-13T23:22:56Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/geary	shares history with a pool row	7258	gh:14508621		2026-10-13T23:22:57Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/grilo	< 5,000 commits				2026-10-13T23:22:58Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/grilo-plugins	< 5,000 commits				2026-10-13T23:22:58Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/shotwell	shares history with a pool row	5664	gh:14508978		2026-10-13T23:22:59Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gupnp-tools	< 5,000 commits				2026-10-13T23:23:00Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gupnp	< 5,000 commits				2026-10-13T23:23:01Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/glib-networking	< 5,000 commits				2026-10-13T23:23:01Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/epiphany	shares history with a pool row	19542	gh:4526739		2026-10-13T23:23:04Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gtk-mac-integration	< 5,000 commits				2026-10-13T23:23:05Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/aisleriot	shares history with a pool row	7165	gh:4614560		2026-10-13T23:23:06Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/orca	shares history with a pool row	14056	gh:4526816		2026-10-13T23:23:14Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/totem-pl-parser	< 5,000 commits				2026-10-13T23:23:14Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-commander	shares history with a pool row	8186	gh:4534567		2026-10-13T23:23:16Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/pan	< 5,000 commits				2026-10-13T23:23:17Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/gnome-raw-thumbnailer	< 5,000 commits				2026-10-13T23:23:17Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gsound	< 5,000 commits				2026-10-13T23:23:18Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gvdb	< 5,000 commits				2026-10-13T23:23:19Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/java-atk-wrapper	< 5,000 commits				2026-10-13T23:23:19Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/pyatspi2	< 5,000 commits				2026-10-13T23:23:20Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/openpaperwork/libinsane	< 5,000 commits				2026-10-13T23:23:20Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/openpaperwork/libpillowfight	< 5,000 commits				2026-10-13T23:23:21Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/design/app-icon-preview	< 5,000 commits				2026-10-13T23:23:22Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/abiword	layer 1 candidate	20895		yes	2026-10-13T23:23:24Z
+gitlab.gnome.org	https://gitlab.gnome.org/teams/design/icon-development-kit	< 5,000 commits				2026-10-13T23:23:24Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/gcolor3	< 5,000 commits				2026-10-13T23:23:25Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/authenticator	< 5,000 commits				2026-10-13T23:23:26Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/fragments	< 5,000 commits				2026-10-13T23:23:26Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/shortwave	< 5,000 commits				2026-10-13T23:23:27Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libshumate	< 5,000 commits				2026-10-13T23:23:27Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/console	< 5,000 commits				2026-10-13T23:23:28Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/d-spy	< 5,000 commits				2026-10-13T23:23:29Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/gnome-firmware	< 5,000 commits				2026-10-13T23:23:30Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/search-provider	< 5,000 commits				2026-10-13T23:23:30Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/tau	< 5,000 commits				2026-10-13T23:23:31Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/gtk-rust-template	< 5,000 commits				2026-10-13T23:23:31Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/design/icon-library	< 5,000 commits				2026-10-13T23:23:32Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/design/contrast	< 5,000 commits				2026-10-13T23:23:33Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/obfuscate	< 5,000 commits				2026-10-13T23:23:33Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/gegl-rs	< 5,000 commits				2026-10-13T23:23:34Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libnma	< 5,000 commits				2026-10-13T23:23:34Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/read-it-later	< 5,000 commits				2026-10-13T23:23:35Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/design/symbolic-preview	< 5,000 commits				2026-10-13T23:23:36Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/libflatpak-rs	< 5,000 commits				2026-10-13T23:23:36Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-tour	< 5,000 commits				2026-10-13T23:23:37Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-text-editor	< 5,000 commits				2026-10-13T23:23:38Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/pika-backup	< 5,000 commits				2026-10-13T23:23:38Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libhandy	< 5,000 commits				2026-10-13T23:23:39Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/design/typography	< 5,000 commits				2026-10-13T23:23:39Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-network-displays	< 5,000 commits				2026-10-13T23:23:40Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/solanum	< 5,000 commits				2026-10-13T23:23:41Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/health	< 5,000 commits				2026-10-13T23:23:41Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/evolution-etesync	< 5,000 commits				2026-10-13T23:23:42Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/loupe	< 5,000 commits				2026-10-13T23:23:43Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/decoder	< 5,000 commits				2026-10-13T23:23:43Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libadwaita	shares history with a pool row	5383	gh:353172967		2026-10-13T23:23:45Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/libadwaita-rs	< 5,000 commits				2026-10-13T23:23:45Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gnome-kiosk	< 5,000 commits				2026-10-13T23:23:46Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/sourceview5-rs	< 5,000 commits				2026-10-13T23:23:46Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/metronome	< 5,000 commits				2026-10-13T23:23:47Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/gir-rustdoc	< 5,000 commits				2026-10-13T23:23:48Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libpanel	< 5,000 commits				2026-10-13T23:23:48Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/network-manager-sstp	< 5,000 commits				2026-10-13T23:23:49Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/audiosharing	< 5,000 commits				2026-10-13T23:23:50Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/xdg-desktop-portal-gnome	< 5,000 commits				2026-10-13T23:23:50Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/pipewire-media-stream	< 5,000 commits				2026-10-13T23:23:51Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/highscore	< 5,000 commits				2026-10-13T23:23:52Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/calls	< 5,000 commits				2026-10-13T23:23:52Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/phosh/libcall-ui	< 5,000 commits				2026-10-13T23:23:53Z
+gitlab.gnome.org	https://gitlab.gnome.org/teams/websites/apps.gnome.org	< 5,000 commits				2026-10-13T23:23:53Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/vte4-rs	< 5,000 commits				2026-10-13T23:23:54Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/phosh/phosh	layer 1 candidate	7796		yes	2026-10-13T23:23:56Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/phosh/phoc	< 5,000 commits				2026-10-13T23:23:56Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/design/lorem	< 5,000 commits				2026-10-13T23:23:57Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/phosh/squeekboard	< 5,000 commits				2026-10-13T23:23:58Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/tracker-rs	< 5,000 commits				2026-10-13T23:23:58Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/libshumate-rs	< 5,000 commits				2026-10-13T23:23:59Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/design/emblem	< 5,000 commits				2026-10-13T23:23:59Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/libpanel-rs	< 5,000 commits				2026-10-13T23:24:00Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/soup3-rs	< 5,000 commits				2026-10-13T23:24:01Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/github_com/arm-software/arm-trusted-firmware	shares history with a pool row	20478	gh:13740589		2026-10-13T23:24:03Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/github_com/ebassi/graphene	< 5,000 commits				2026-10-13T23:24:03Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/github_com/endlessm/eos-installer	< 5,000 commits				2026-10-13T23:24:04Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/github_com/fsnotify/fsnotify	< 5,000 commits				2026-10-13T23:24:05Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/github_com/golang/crypto	< 5,000 commits				2026-10-13T23:24:05Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/github_com/golang/sys	< 5,000 commits				2026-10-13T23:24:06Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/github_com/hughsie/appstream-glib	< 5,000 commits				2026-10-13T23:24:07Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/github_com/libsigcplusplus/libsigcplusplus	< 5,000 commits				2026-10-13T23:24:07Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/github_com/streambinder/vpnc	< 5,000 commits				2026-10-13T23:24:08Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/gitlab_com/freedesktop-sdk/freedesktop-sdk	layer 1 candidate	20085		yes	2026-10-13T23:24:18Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/source_puri_sm/librem5/wlroots	layer 1 candidate	5574		yes	2026-10-13T23:24:20Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/poppler-rs	< 5,000 commits				2026-10-13T23:24:20Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/gitlab_freedesktop_org/geoclue/geoclue	< 5,000 commits				2026-10-13T23:24:21Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/gitlab_freedesktop_org/hadess/power-profiles-daemon	< 5,000 commits				2026-10-13T23:24:21Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/gitlab_freedesktop_org/spice/libcacard	< 5,000 commits				2026-10-13T23:24:22Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/gitlab_freedesktop_org/upower/upower	< 5,000 commits				2026-10-13T23:24:23Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/gitlab_freedesktop_org/virgl/virglrenderer	< 5,000 commits				2026-10-13T23:24:23Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/gitlab_freedesktop_org/xorg/lib/libxcvt	< 5,000 commits				2026-10-13T23:24:24Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/gitlab_freedesktop_org/benzea/uresourced	< 5,000 commits				2026-10-13T23:24:25Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/git_kernel_org/pub/scm/utils/dtc/dtc	< 5,000 commits				2026-10-13T23:24:25Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/github_com/stevegrubb/libcap-ng	< 5,000 commits				2026-10-13T23:24:26Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/github_com/libhangul/libhangul	< 5,000 commits				2026-10-13T23:24:27Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/gitlab_freedesktop_org/wlroots/wlroots	layer 1 candidate	7940		yes	2026-10-13T23:24:29Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/github_com/libpinyin/libpinyin	< 5,000 commits				2026-10-13T23:24:30Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/github_com/hughsie/libgusb	< 5,000 commits				2026-10-13T23:24:30Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/libsecret-rs	< 5,000 commits				2026-10-13T23:24:31Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/phosh/stevia	< 5,000 commits				2026-10-13T23:24:31Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/boatswain	< 5,000 commits				2026-10-13T23:24:32Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/warp	< 5,000 commits				2026-10-13T23:24:32Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/papers	shares history with a pool row	11706	gh:1012803063		2026-10-13T23:24:36Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/amberol	< 5,000 commits				2026-10-13T23:24:37Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/gedit/enter-tex	< 5,000 commits				2026-10-13T23:24:37Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/citations	< 5,000 commits				2026-10-13T23:24:38Z
+gitlab.gnome.org	https://gitlab.gnome.org/teams/websites/welcome.gnome.org	< 5,000 commits				2026-10-13T23:24:39Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/dleyna	< 5,000 commits				2026-10-13T23:24:39Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/phosh/phosh-mobile-settings	< 5,000 commits				2026-10-13T23:24:40Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/libgweather-rs	< 5,000 commits				2026-10-13T23:24:40Z
+gitlab.gnome.org	https://gitlab.gnome.org/teams/documentation/getting-started-tutorial	< 5,000 commits				2026-10-13T23:24:41Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/msgraph	< 5,000 commits				2026-10-13T23:24:42Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/phosh/phosh-tour	< 5,000 commits				2026-10-13T23:24:42Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/phosh/gmobile	< 5,000 commits				2026-10-13T23:24:43Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/key-rack	< 5,000 commits				2026-10-13T23:24:44Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libdex	< 5,000 commits				2026-10-13T23:24:44Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/snapshot	< 5,000 commits				2026-10-13T23:24:45Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libmks	< 5,000 commits				2026-10-13T23:24:46Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/bustle	< 5,000 commits				2026-10-13T23:24:46Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/tecla	< 5,000 commits				2026-10-13T23:24:47Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/webkit6-rs	< 5,000 commits				2026-10-13T23:24:48Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/glycin	< 5,000 commits				2026-10-13T23:24:48Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libspelling	< 5,000 commits				2026-10-13T23:24:49Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/libspelling-rs	< 5,000 commits				2026-10-13T23:24:49Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/mobileshell/gnome-shell-mobile	layer 1 candidate	21030		yes	2026-10-13T23:24:52Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/mobileshell/mutter-mobile	layer 1 candidate	35994		yes	2026-10-13T23:24:55Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/wildcard	< 5,000 commits				2026-10-13T23:24:56Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/phosh/meta-phosh	< 5,000 commits				2026-10-13T23:24:56Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/chatty	< 5,000 commits				2026-10-13T23:24:57Z
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/gimp-test-images	< 5,000 commits				2026-10-13T23:24:58Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/phosh/xdg-desktop-portal-phosh	< 5,000 commits				2026-10-13T23:24:58Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/graphs	< 5,000 commits				2026-10-13T23:24:59Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gobject-introspection-tests	< 5,000 commits				2026-10-13T23:25:00Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/manuals	< 5,000 commits				2026-10-13T23:25:00Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gimp-data	< 5,000 commits				2026-10-13T23:25:01Z
+gitlab.gnome.org	https://gitlab.gnome.org/teams/websites/people.gnome.org	< 5,000 commits				2026-10-13T23:25:02Z
+gitlab.gnome.org	https://gitlab.gnome.org/teams/stf/setup	< 5,000 commits				2026-10-13T23:25:02Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/phosh/libphosh-rs	< 5,000 commits				2026-10-13T23:25:03Z
+gitlab.gnome.org	https://gitlab.gnome.org/teams/websites/developer.gnome.org-components	< 5,000 commits				2026-10-13T23:25:04Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/gedit/libgedit-amtk	< 5,000 commits				2026-10-13T23:25:04Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/gedit/libgedit-gtksourceview	layer 1 candidate	6219		yes	2026-10-13T23:25:06Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/gedit/libgedit-gfls	< 5,000 commits				2026-10-13T23:25:07Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/gedit/libgedit-tepl	< 5,000 commits				2026-10-13T23:25:07Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/mobileshell/gnome-settings-daemon-mobile	layer 1 candidate	7088		yes	2026-10-13T23:25:09Z
+gitlab.gnome.org	https://gitlab.gnome.org/teams/releng/rust-supply-chain	already in the pool				2026-10-13T23:25:09Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libgxdp	< 5,000 commits				2026-10-13T23:25:09Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/phosh/pfs	< 5,000 commits				2026-10-13T23:25:10Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/foundry	< 5,000 commits				2026-10-13T23:25:11Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/markup-rs/xrust	< 5,000 commits				2026-10-13T23:25:11Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/markup-rs/xrust-net	< 5,000 commits				2026-10-13T23:25:12Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/markup-rs/qualname	< 5,000 commits				2026-10-13T23:25:12Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/libshew	< 5,000 commits				2026-10-13T23:25:13Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/gst-thumbnailers	< 5,000 commits				2026-10-13T23:25:14Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/markup-rs/xrusty	< 5,000 commits				2026-10-13T23:25:14Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/markup-rs/xrust-md	< 5,000 commits				2026-10-13T23:25:15Z
+gitlab.gnome.org	https://gitlab.gnome.org/teams/websites/static.gnome.org-catalog	< 5,000 commits				2026-10-13T23:25:15Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/rust/libgnome-games-support-rs	< 5,000 commits				2026-10-13T23:25:16Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/ministream	< 5,000 commits				2026-10-13T23:25:17Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/phosh/phosh-session-services	< 5,000 commits				2026-10-13T23:25:17Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/phosh/libpms-rs	< 5,000 commits				2026-10-13T23:25:18Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/phosh/phosh-first-boot	< 5,000 commits				2026-10-13T23:25:18Z
+gitlab.gnome.org	https://gitlab.gnome.org/gnome/incubator/resources	< 5,000 commits				2026-10-13T23:25:19Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/design/shaper	< 5,000 commits				2026-10-13T23:25:20Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/phosh/phosh-rust-plugins	< 5,000 commits				2026-10-13T23:25:20Z
+gitlab.gnome.org	https://gitlab.gnome.org/world/bazaar	< 5,000 commits				2026-10-13T23:25:21Z

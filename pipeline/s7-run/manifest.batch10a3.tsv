@@ -1,0 +1,26 @@
+# Part a3 of the S and M projects of manifest.batch10.tsv (sha256 196d7166a36b215c498418c83c3e96c241e1ff6dddc10cee6e033afb0553f8a7),
+# balanced by predicted time (5.7 h for 4 workers), u order; a fed spot part.
+# 22 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+Avnet__imx-atf	https://github.com/Avnet/imx-atf.git	pending		S	d801fd97ea9606bf5a686334639abac2ddb77985
+BiglySoftware__BiglyBT	https://github.com/BiglySoftware/BiglyBT.git	pending		S	d0c063829dfed801d692f367b37598e7f8a02a2e
+openbabel__openbabel	https://github.com/openbabel/openbabel.git	pending		S	9be528bcdb31a219637ae3d1699170a8aaa5be6d
+DS-Homebrew__nds-bootstrap	https://github.com/DS-Homebrew/nds-bootstrap.git	pending		S	4e6e3d43a151a11e3f7900b8fbf690a13f0fb8a8
+GNOME__gegl	https://github.com/GNOME/gegl.git	pending		S	07c4a48305b7a629cb37837d00e72bb76c933a85
+apache__artemis	https://github.com/apache/artemis.git	pending		S	397571e7212c2a07c84f01724e4ac09d7e320d71
+MiKTeX__miktex	https://github.com/MiKTeX/miktex.git	pending		S	76d1b3bd2b69857f30133c62ff9ab66c83dcf80f
+X11Libre__xserver	https://github.com/X11Libre/xserver.git	pending		S	862da1c2e7b42dc25b92eea69d752cdacd48fb7e
+SpecialKO__SpecialK	https://github.com/SpecialKO/SpecialK.git	pending		S	5be1714f545eb26ca5abc7b2b739fcea11c46d6d
+aws__s2n-tls	https://github.com/aws/s2n-tls.git	pending		S	73b9d2d7dc090342c16d5f18dc5951b5c5f15543
+eclipse-tractusx__traceability-foss	https://github.com/eclipse-tractusx/traceability-foss.git	pending		S	4cbf377f90eb5336d3bcded5885695d311d6e80a
+google__quiche	https://github.com/google/quiche.git	pending		S	7d2d497e0fc2b553824bc9036ab1337dfb3e7872
+rncbc__qtractor	https://github.com/rncbc/qtractor.git	pending		S	82269522aae781fae5381c56891154db38022e3c
+OpenSpace__OpenSpace	https://github.com/OpenSpace/OpenSpace.git	pending		S	8d50448e8079852b4ff11476a99923d1683d6381
+HVML__PurC	https://github.com/HVML/PurC.git	pending		S	0173c79c7be11541ac0e7db90d4528d1950dc641
+chocoteam__choco-solver	https://github.com/chocoteam/choco-solver.git	pending		S	f210dc0aac61ceb0f8dc38d31d49cdbe785276c8
+wso2__product-is	https://github.com/wso2/product-is.git	pending		S	23ae958369a656bb064394d69603b71e10a32635
+KDE__dolphin	https://github.com/KDE/dolphin.git	pending		S	2565529a6acce4897ffd402275537c3adee51d2a
+hykilpikonna__hyfetch	https://github.com/hykilpikonna/hyfetch.git	pending		S	346f322c623782e3616b97ea8b1572555d767c3d
+maplibre__maplibre-native	https://github.com/maplibre/maplibre-native.git	pending		S	bf4388cbd5102f3a4af44c14dd2a48d957f53007
+matrix-construct__tuwunel	https://github.com/matrix-construct/tuwunel.git	pending		S	3f5db6d3a8b9fcf2b92f1b665a5ceb111a517f35
+zebrunner__carina	https://github.com/zebrunner/carina.git	pending		S	9be924b3b4bfcb80a5454f701f545ec1ad767cd4

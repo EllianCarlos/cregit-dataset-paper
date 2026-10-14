@@ -1,0 +1,27 @@
+# Part a3 of the S and M projects of manifest.batch14.tsv (sha256 a1801c196defea51ecbeef0e7e9aa11dbb3fa7a56a079e8c25e40875a392ac5a),
+# balanced by predicted time (6.0 h for 4 workers), u order; a fed spot part.
+# 23 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+com-lihaoyi__mill	https://github.com/com-lihaoyi/mill.git	pending		S	4150ee077fadb80c4b859adab9331480660aebbf
+hibernate__hibernate-validator	https://github.com/hibernate/hibernate-validator.git	pending		S	235a02acc8aad8cc71e3b97ace568c140351acf2
+freeminer__freeminer	https://github.com/freeminer/freeminer.git	pending		S	aacb27b260575891a14f7515c68f3d2e74baa82f
+ApolloAuto__apollo	https://github.com/ApolloAuto/apollo.git	pending		S	d53aa3da47a06a08e6d0cd175d5623a34fa0d6aa
+JetBrains__intellij-scala	https://github.com/JetBrains/intellij-scala.git	pending		M	28fd51e30677586b4e75bb1ef722433de0511a63
+ClusterLabs__resource-agents	https://github.com/ClusterLabs/resource-agents.git	pending		S	9ea1183281fc6a27016b586dc2562ede951fdb28
+protegeproject__webprotege	https://github.com/protegeproject/webprotege.git	pending		S	1e84fa02aef68be45f18c08dbeae94bec9b04a41
+python-pillow__Pillow	https://github.com/python-pillow/Pillow.git	pending		S	cb294295d8eb6846ba788d9a1f10797d3c69b1cf
+rust-lang__miri	https://github.com/rust-lang/miri.git	pending		S	2f577e13bc1fcc19d172d8b4fcee9066b5920dc9
+openlink__virtuoso-opensource	https://github.com/openlink/virtuoso-opensource.git	pending		S	e12319575469e5c36b675dc283dcab6c163eebac
+Sequel-Ace__Sequel-Ace	https://github.com/Sequel-Ace/Sequel-Ace.git	pending		S	688353da1c78e321fd5e7b3d51a8f4f6b1687c8b
+vassalengine__vassal	https://github.com/vassalengine/vassal.git	pending		S	fe1a34fee805b03f0e55255a5249e5c1ac5773b9
+scipy__scipy	https://github.com/scipy/scipy.git	pending		M	c251b02724d0e20e298172e0df403c1dae4f6642
+kungfu-systems__kungfu	https://github.com/kungfu-systems/kungfu.git	pending		S	a025fe8fd3063175a263c481b42b0b34f63fa91c
+faiscadev__fakecloud	https://github.com/faiscadev/fakecloud.git	pending		S	b84288e391d9a41b3963d0917f643861c38709fc
+ollama__ollama	https://github.com/ollama/ollama.git	pending		S	ec318f4d110cb828d1b47f7b247216f6d8608809
+ImageMagick__ImageMagick	https://github.com/ImageMagick/ImageMagick.git	pending		S	f5f1a8233864b02e7db11cdb28a3eb2adc70250f
+shonumi__gbe-plus	https://github.com/shonumi/gbe-plus.git	pending		S	8b748c0059a777b9dffdca4abb12a0c5436232b0
+samuelclay__NewsBlur	https://github.com/samuelclay/NewsBlur.git	pending		S	c51f6daa586b2eed55f9218adfd2bfd6bb923e8b
+hydralauncher__hydra	https://github.com/hydralauncher/hydra.git	pending		S	c4eec1370b630266dc4fcba8f7af6a779d184e73
+4paradigm__OpenMLDB	https://github.com/4paradigm/OpenMLDB.git	pending		S	82dc6d894086f4c3699b6b6dca4a0cf4fb8d1fd7
+decocms__studio	https://github.com/decocms/studio.git	pending		S	bf1e2da6753a2428d754fcd3e8630b7ff75cc6bc
+DrTimothyAldenDavis__GraphBLAS	https://github.com/DrTimothyAldenDavis/GraphBLAS.git	pending		S	afbe9aaefe5df7632ca82b478d65d0f6c1e14db0

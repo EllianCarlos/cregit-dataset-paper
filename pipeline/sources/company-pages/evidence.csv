@@ -1,0 +1,43 @@
+org,company,page_url,final_url,fetched_at
+CiscoTestAutomation,"CISCO SYSTEMS, INC.",https://developer.cisco.com/pyats/,https://developer.cisco.com/pyats/,2026-10-06T04:14:46Z
+Firebase,Alphabet Inc.,firebase.google.com,https://firebase.google.com/,2026-10-06T04:09:40Z
+GameTechDev,Intel Corporation,http://xdk.intel.com,https://www.intel.com/content/www/us/en/developer/tools/overview.html,2026-10-06T04:25:53Z
+GoogleCloudPlatform,Alphabet Inc.,http://cloud.google.com/life-sciences,https://cloud.google.com/life-sciences-solutions,2026-10-06T04:09:59Z
+GoogleCloudPlatform,Alphabet Inc.,https://cloud.google.com,https://cloud.google.com/,2026-10-06T04:09:49Z
+IBM,INTERNATIONAL BUSINESS MACHINES CORP,https://www.ibm.com/opensource/,https://www.ibm.com/opensource/,2026-10-06T04:25:06Z
+Intel-Media-SDK,Intel Corporation,http://xdk.intel.com,https://www.intel.com/content/www/us/en/developer/tools/overview.html,2026-10-06T04:25:53Z
+IntelLabs,Intel Corporation,http://xdk.intel.com,https://www.intel.com/content/www/us/en/developer/tools/overview.html,2026-10-06T04:25:53Z
+IntelPython,Intel Corporation,https://software.intel.com/en-us/python-distribution,https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html,2026-10-06T04:26:03Z
+Line,LINE CORP,https://engineering.linecorp.com/en/opensource,https://engineering.linecorp.com/en/opensource,2026-10-06T04:29:40Z
+Microsoft,MICROSOFT CORPORATION,https://opensource.microsoft.com,https://opensource.microsoft.com/,2026-10-06T04:31:55Z
+MicrosoftDocs,MICROSOFT CORPORATION,https://developers.ads.microsoft.com/,https://learn.microsoft.com/en-us/advertising/,2026-10-06T04:31:53Z
+MicrosoftDocs,MICROSOFT CORPORATION,https://docs.microsoft.com/en-us/azure/,https://learn.microsoft.com/en-us/azure/,2026-10-06T04:31:26Z
+MicrosoftDocs,MICROSOFT CORPORATION,https://docs.microsoft.com/odata,https://learn.microsoft.com/en-us/odata/,2026-10-06T04:32:14Z
+MicrosoftDocs,MICROSOFT CORPORATION,https://learn.microsoft.com/azure,https://learn.microsoft.com/en-us/azure/,2026-10-06T04:31:28Z
+MicrosoftDocs,MICROSOFT CORPORATION,https://microsoft.com/powershell,https://learn.microsoft.com/en-us/powershell/,2026-10-06T04:32:18Z
+NVIDIA,NVIDIA CORP,https://developer.nvidia.com/gameworks-source-github,https://developer.nvidia.com/industries/game-development,2026-10-06T04:35:41Z
+Nike-Inc,NIKE INC,http://engineering.nike.com,https://engineering.nike.com/,2026-10-06T04:34:56Z
+TencentCloudBase,Tencent Music Entertainment Group,https://tcb.cloud.tencent.com/,https://tcb.cloud.tencent.com/,2026-10-06T04:45:26Z
+Teradata,TERADATA CORP /DE/,http://developers.teradata.com,https://www.teradata.com:443/build,2026-10-06T04:43:26Z
+Yelp,YELP INC,https://yelp.com/engineering,https://www.yelp.com/engineering,2026-10-06T04:49:10Z
+akamai,AKAMAI TECHNOLOGIES INC,https://techdocs.akamai.com,https://techdocs.akamai.com/home,2026-10-06T04:06:18Z
+blockchain,"Blockchain Holdings Capital Ventures, Inc.",https://www.blockchain.com,https://www.blockchain.com/,2026-10-06T04:13:48Z
+capitalone,Capital One Financial,https://www.capitalone.com/tech/open-source/,https://www.capitalone.com/tech/open-source/,2026-10-06T04:16:05Z
+cerner,CERNER CORP /MO/,http://engineering.cerner.com/,https://engineering.cerner.com/,2026-10-06T04:14:01Z
+citrix,CITRIX SYSTEMS INC,https://www.citrix.com,https://www.citrix.com/,2026-10-06T04:15:04Z
+digidotcom,DIGI INTERNATIONAL INC.,http://www.digi.com,https://www.digi.com/,2026-10-06T04:18:21Z
+digidotcom,DIGI INTERNATIONAL INC.,https://www.digi.com/products/embedded-systems,https://www.digi.com/products/embedded-systems,2026-10-06T04:18:19Z
+domoinc,"Domo, Inc.",https://developer.domo.com,https://www.domo.com/docs/portal/Getting-Started/overview,2026-10-06T04:19:14Z
+elastic,Elastic N.V.,https://www.elastic.co/,https://www.elastic.co/,2026-10-06T04:20:31Z
+elastic,Elastic N.V.,https://www.elastic.co/products/logstash,https://www.elastic.co/logstash,2026-10-06T04:20:33Z
+googleads,Alphabet Inc.,https://developers.google.com/ads/,https://developers.google.com/ads/,2026-10-06T04:09:43Z
+googlecast,Alphabet Inc.,https://developers.google.com/cast/support,https://developers.google.com/cast/support,2026-10-06T04:09:45Z
+googlecodelabs,Alphabet Inc.,https://codelabs.developers.google.com/,https://codelabs.developers.google.com/,2026-10-06T04:09:51Z
+googlemaps,Alphabet Inc.,https://developers.google.com/maps,https://developers.google.com/maps,2026-10-06T04:10:07Z
+mongodb,"MongoDB, Inc.",http://www.mongodb.com/,https://www.mongodb.com/,2026-10-06T04:33:51Z
+newrelic,"NEW RELIC, INC.",https://newrelic.com,https://newrelic.com/,2026-10-06T04:34:27Z
+powershell,MICROSOFT CORPORATION,https://microsoft.com/powershell,https://learn.microsoft.com/en-us/powershell/,2026-10-06T04:32:18Z
+siemens,Siemens,https://opensource.siemens.com,https://opensource.siemens.com/,2026-10-06T04:42:11Z
+target,Target,https://tech.target.com/open-source,https://tech.target.com/open-source,2026-10-06T04:44:25Z
+tianocore,Intel Corporation,http://xdk.intel.com,https://www.intel.com/content/www/us/en/developer/tools/overview.html,2026-10-06T04:25:53Z
+wix,Wix.com Ltd.,http://www.wix.com,https://www.wix.com/,2026-10-06T04:48:34Z

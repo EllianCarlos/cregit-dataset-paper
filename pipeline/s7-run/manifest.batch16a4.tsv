@@ -1,0 +1,26 @@
+# Part a4 of the S and M projects of manifest.batch16.tsv (sha256 1e4fd43f0de322264d2b94b8a8370f41906df20bc45b8315187818245642b2d1),
+# balanced by predicted time (6.4 h for 4 workers), u order; a fed spot part.
+# 22 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+mollyim__mollyim-android	https://github.com/mollyim/mollyim-android.git	pending		S	892d6264ba007b5458a8b74cf9183c665f1f17a1
+apache__jackrabbit-oak	https://github.com/apache/jackrabbit-oak.git	pending		S	f80bf24b86a45e6f2894fbef93ba83fdb466fcbd
+OpenRefine__OpenRefine	https://github.com/OpenRefine/OpenRefine.git	pending		S	c8d04c3c7f03f3fe321954134c468c18ae21d13e
+PaddlePaddle__FastDeploy	https://github.com/PaddlePaddle/FastDeploy.git	pending		S	d923caf15e1eb0da8e2efd75b0152e65cefeeddd
+ElementsProject__lightning	https://github.com/ElementsProject/lightning.git	pending		S	9ba88c5df09265a1dc569cac4d55786e9b0ed9f2
+gnachman__iTerm2	https://github.com/gnachman/iTerm2.git	pending		S	18893448f5e4252916b03da6664f9db9f4630e33
+mozilla-mobile__mozilla-vpn-client	https://github.com/mozilla-mobile/mozilla-vpn-client.git	pending		S	cc5d3130bbe552e0cf122753f799cefcc6a114b2
+kcat__openal-soft	https://github.com/kcat/openal-soft.git	pending		S	662c24995a6e809c0d1b0802fb189aa81a8ce7de
+Graylog2__graylog2-server	https://github.com/Graylog2/graylog2-server.git	pending		S	1998ae4c392063caa35bbf3c658f48d085384652
+pixie-io__pixie	https://github.com/pixie-io/pixie.git	pending		S	cad1388a8d0075f7b38846e1b1a6905fda8f584d
+mockingbirdnest__Principia	https://github.com/mockingbirdnest/Principia.git	pending		S	d858ee82d16ba3ca618807f80cb5a02a0e8aef56
+sushi-labs__sushiswap	https://github.com/sushi-labs/sushiswap.git	pending		S	ab41c12510584374e95492ded36d21a986a40f8e
+PowerNukkitX__PowerNukkitX	https://github.com/PowerNukkitX/PowerNukkitX.git	pending		S	2da1d759cfc44bbc9ada30a69805b18bed0be44a
+KDE__ruqola	https://github.com/KDE/ruqola.git	pending		S	0fb86ed7b242a0deafb7a980afa3d221ca3c9e03
+NeoApplications__Neo-Launcher	https://github.com/NeoApplications/Neo-Launcher.git	pending		S	bc028ddd7737277d2817baba9e768cdbade7b4ff
+google__mug	https://github.com/google/mug.git	pending		S	bdf7e022ece54b64c1d51844b8dfda5a7479c4fd
+smartmontools__smartmontools	https://github.com/smartmontools/smartmontools.git	pending		S	c98166477a7de62eaa5554a04cefa1d943ca195c
+bloomberg__comdb2	https://github.com/bloomberg/comdb2.git	pending		S	2862150b991990396ad5c3cf8213b972a46ea4e8
+PowerShell__DSC	https://github.com/PowerShell/DSC.git	pending		S	f050e3ef2996a02db51c3cea3c72ce84670662df
+winsiderss__systeminformer	https://github.com/winsiderss/systeminformer.git	pending		S	b6c43624fc62b52e8012003a4183d097de1d41ac
+Stellarium__stellarium	https://github.com/Stellarium/stellarium.git	pending		M	81812d364bed02f3562b40614b7693a29c4448b0
+lairdubois__lairdubois-opencutlist-sketchup-extension	https://github.com/lairdubois/lairdubois-opencutlist-sketchup-extension.git	pending		S	d03f4548e161ed25615b2ea828214a79e0f3e07a

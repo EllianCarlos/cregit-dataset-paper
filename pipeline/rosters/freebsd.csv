@@ -1,0 +1,4 @@
+org_key,org_kind,project,repo_url,github_slug,roster_status,source_url,fetched_at,note
+freebsd,foundation,src,https://git.FreeBSD.org/src.git,freebsd/freebsd-src,,https://docs.freebsd.org/en/books/handbook/mirrors/,2026-10-05T01:36:24Z,Handbook Table 1 (git.FreeBSD.org); 'External mirrors ... maintained by the project members' lists https://github.com/freebsd/freebsd-src
+freebsd,foundation,doc,https://git.FreeBSD.org/doc.git,freebsd/freebsd-doc,,https://docs.freebsd.org/en/books/handbook/mirrors/,2026-10-05T01:36:24Z,Handbook Table 1 (git.FreeBSD.org); 'External mirrors ... maintained by the project members' lists https://github.com/freebsd/freebsd-doc
+freebsd,foundation,ports,https://git.FreeBSD.org/ports.git,freebsd/freebsd-ports,,https://docs.freebsd.org/en/books/handbook/mirrors/,2026-10-05T01:36:24Z,Handbook Table 1 (git.FreeBSD.org); 'External mirrors ... maintained by the project members' lists https://github.com/freebsd/freebsd-ports

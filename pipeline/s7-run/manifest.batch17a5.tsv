@@ -1,0 +1,24 @@
+# Part a5 of the S and M projects of manifest.batch17.tsv (sha256 fe2bcfa4c462bf23afb8d7d027903ee019a67ffa25f26d74c91f3345493549db),
+# balanced by predicted time (5.5 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+git.themanaworld.org__mana__mana	https://git.themanaworld.org/mana/mana	pending		S	c3c5dc3a2fb7e4f4f5f6c7b7a0182da546241fd2
+OpenIdentityPlatform__OpenDJ	https://github.com/OpenIdentityPlatform/OpenDJ.git	pending		S	85b28b3d0fc05bc49d350a98c07459f4bcb21f43
+Conflux-Chain__conflux-rust	https://github.com/Conflux-Chain/conflux-rust.git	pending		S	8e4be257970ce68ec80243796ed9a3a4a6da834a
+kamyu104__LeetCode-Solutions	https://github.com/kamyu104/LeetCode-Solutions.git	pending		S	2892da1c8d017b8d905e93630cf490d4cbe6e60f
+FreesmTeam__FreesmLauncher	https://github.com/FreesmTeam/FreesmLauncher.git	pending		S	163424fc202e451f05ca360ef431209664691137
+ossec__ossec-hids	https://github.com/ossec/ossec-hids.git	pending		S	3e692932f1eeed29790606472d97cf4fb5f09a13
+apache__syncope	https://github.com/apache/syncope.git	pending		S	771f54ce46bad3cb8034bf7c136d24c95c437722
+netxms__netxms	https://github.com/netxms/netxms.git	pending		S	1585411ad6af46d90af7174cf5cad1fb7d3031c8
+google__closure-templates	https://github.com/google/closure-templates.git	pending		S	d995cb4ca219f437d1da749863a1bb407b3a644c
+MediaArea__MediaInfoLib	https://github.com/MediaArea/MediaInfoLib.git	pending		S	a94ffe89dbbf0b1c9c516e67fdc4205ab566cd1b
+vygr__ChrysaLisp	https://github.com/vygr/ChrysaLisp.git	pending		S	3b71bff6122cace28b994433c8d354f958cde380
+soot-oss__SootUp	https://github.com/soot-oss/SootUp.git	pending		S	079975bc7920f71458a628d1b800cb5d4bb88b98
+rust-lang__rustup	https://github.com/rust-lang/rustup.git	pending		S	e719ea4a78d074cc63aafff3cadf82e1959796b4
+uiua-lang__uiua	https://github.com/uiua-lang/uiua.git	pending		S	9cf4193bcb5981e0eef7635a338b0aea3dce953c
+eggert__tz	https://github.com/eggert/tz.git	pending		S	83f40cf091e90137edf09a23367dd040d156c97a
+vpinball__vpinball	https://github.com/vpinball/vpinball.git	pending		S	03981b497d0266cc9427b14cea8f0373e02f985a
+projectnessie__nessie	https://github.com/projectnessie/nessie.git	pending		S	a2d9ff436c8a987047cbe6451013ca572839acd6
+lutece-platform__lutece-core	https://github.com/lutece-platform/lutece-core.git	pending		S	3f3e92aa06b97c8dd8d2577a36e8024ec89bb98e
+ProjectSkyfire__SkyFire_548	https://github.com/ProjectSkyfire/SkyFire_548.git	pending		S	c2c586140dc86524e0102be795eb62e05c3d295f
+GNOME__gnote	https://github.com/GNOME/gnote.git	pending		S	3094907fa8864d9aa1347da58e71127440b72766

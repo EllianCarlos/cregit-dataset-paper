@@ -1,0 +1,20 @@
+# Part a3 of the S and M projects of manifest.batch25.tsv (sha256 ec96e8f8712a384071394a6a5517e0420244887a433ebfcf8d0092e17f5a272d),
+# balanced by predicted time (2.8 h for 4 workers), u order; a fed spot part.
+# 16 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+gitlab.com__sequoia-pgp__sequoia	https://gitlab.com/sequoia-pgp/sequoia	pending		S	d092dfb5502c9b9c8a73e9ab790ec81735a1fdf8
+gitlab.inria.fr__aevol__aevol	https://gitlab.inria.fr/aevol/aevol	pending		S	bea4a252d592e525677f1306aaa9fe604e14c5d3
+gitlab.gnome.org__World__Phosh__phosh	https://gitlab.gnome.org/World/Phosh/phosh	pending		S	17aa099f923cf3606c1f2b586d995112f1404bdd
+gitlab.archlinux.org__pacman__pacman	https://gitlab.archlinux.org/pacman/pacman	pending		S	a6f7467d8c7c4d7e9cc846884e74c0ab7215c48d
+gitlab.freedesktop.org__cairo__cairo	https://gitlab.freedesktop.org/cairo/cairo	pending		S	74755964edef651691d5cd36ff140108298e4e6e
+gitlab.inria.fr__tapenade__tapenade	https://gitlab.inria.fr/tapenade/tapenade	pending		S	0449e37b7da896cb2c38b63c8a34f10c87a84534
+gitlab.freedesktop.org__wayland__weston	https://gitlab.freedesktop.org/wayland/weston	pending		S	6e6cd47d128b3c7e68f3eca3fcd2e422328fa7df
+gitlab.freedesktop.org__poppler__poppler	https://gitlab.freedesktop.org/poppler/poppler	pending		S	a45f83bdd75a7b1af73eef729383c4291abf27a3
+gitlab.freedesktop.org__wlroots__wlroots	https://gitlab.freedesktop.org/wlroots/wlroots	pending		S	2f08303d3c09850b1108077674c43f0721f6d772
+gitlab.inria.fr__computix__computix	https://gitlab.inria.fr/computix/computix	pending		S	f95c16d6ed57e4992ee2bdb73cf32be997949aad
+gitlab.gnome.org__World__gedit__gedit	https://gitlab.gnome.org/World/gedit/gedit	pending		S	87f72b64616d48fb41c47f88ec1a2275b83cfdb7
+gitlab.freedesktop.org__mobile-broadband__ModemManager	https://gitlab.freedesktop.org/mobile-broadband/ModemManager	pending		S	7f0bf17ab518cd78925cf7e53cc0d5c42f88b41a
+git.themanaworld.org__ml__serverdata	https://git.themanaworld.org/ml/serverdata	pending		S	5cd422729b28eba4f52a9c99f8b17fe6491de7b6
+gitlab.freedesktop.org__monado__monado	https://gitlab.freedesktop.org/monado/monado	pending		S	e686ba77e5224386e4a1b4abaace8be1917d3125
+git.themanaworld.org__mana__verse	https://git.themanaworld.org/mana/verse	pending		S	0d0fd38ddad4735a8ccc892c95d89804477fa740
+gitlab.inria.fr__gnomon__gnomon	https://gitlab.inria.fr/gnomon/gnomon	pending		S	a6a459d69381fd20933652e7bf97987871521035

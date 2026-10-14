@@ -1,0 +1,48 @@
+org_key,project,repo_url,github_slug,lookup_url,fetched_at,note
+spi,0 A.D.,https://gitea.wildfiregames.com/0ad/0ad,,https://play0ad.com,2026-10-05T02:24:21Z,self-hosted Gitea
+spi,Adélie Linux,https://git.adelielinux.org/,,https://www.adelielinux.org/,2026-10-05T02:24:23Z,"org only (root of the self-hosted GitLab, link ""Git"")"
+spi,ankur.org.in,https://github.com/ankur-india,,http://ankur.org.in,2026-10-05T02:24:27Z,org only; ankur.org.in redirects to this GitHub org page
+spi,Arch Linux,https://gitlab.archlinux.org/archlinux,,https://archlinux.org,2026-10-05T02:24:29Z,org only (GitLab group)
+spi,Arch Linux 32,https://git.archlinux32.org/,,https://archlinux32.org/,2026-10-05T16:50:22+00:00,"org only: 'Projects in Git' under Development links https://git.archlinux32.org/; page read in the author's Firefox (browser-control-mcp), 2026-10-05"
+spi,ArduPilot,,,https://ardupilot.org/,2026-10-05T02:24:33Z,no repository named on https://ardupilot.org/
+spi,Battle for Wesnoth,https://github.com/wesnoth/wesnoth,wesnoth/wesnoth,https://www.wesnoth.org/,2026-10-05T16:50:22+00:00,"'GitHub Project' links github.com/wesnoth/wesnoth; page read in the author's Firefox (browser-control-mcp), 2026-10-05"
+spi,Compile Farm,,,https://portal.cfarm.net/,2026-10-05T02:24:37Z,not a software project (shared build-machine service); page links its portal code framagit.org/compile-farm/gccfarm
+spi,Debian,,,https://www.debian.org/,2026-10-05T02:24:39Z,no repository named on https://www.debian.org/; page links only its website repo salsa.debian.org/webmaster-team/webwml
+spi,Drizzle,,,https://www.spi-inc.org/projects/drizzle/,2026-10-05T01:53:50Z,SPI project page links no website
+spi,FFmpeg,https://git.ffmpeg.org/gitweb?p=ffmpeg.git;a=summary,,https://ffmpeg.org/,2026-10-05T02:24:41Z,"gitweb link labelled ""repository""; page also links the forge code.ffmpeg.org"
+spi,Ganeti,https://github.com/ganeti/ganeti,ganeti/ganeti,https://www.ganeti.org/,2026-10-05T02:24:45Z,fetched URL redirected to https://ganeti.org/
+spi,Gentoo Linux,https://gitweb.gentoo.org/,,https://www.gentoo.org/,2026-10-05T02:24:48Z,org only (gitweb root of many repos)
+spi,GNUstep,https://github.com/gnustep,,http://www.gnustep.org/,2026-10-05T02:24:51Z,"org only (link ""GitHub Project""); fetched URL redirected to https://www.gnustep.org/"
+spi,GNU TeXmacs,,,https://www.texmacs.org/,2026-10-05T02:24:55Z,"no repository named on https://www.texmacs.org/tmweb/home/welcome.en.html; page links only github.com/texmacs/tm-forge, a sharing forge for user contributions, not the TeXmacs source; fetched URL redirected to https://www.texmacs.org/tmweb/home/welcome.en.html"
+spi,haskell.org,,,https://www.haskell.org,2026-10-05T02:24:57Z,not a software project (Haskell community infrastructure); page links only its website repo
+spi,Himmelblau Foundation,https://github.com/himmelblau-idm/himmelblau,himmelblau-idm/himmelblau,https://himmelblau-idm.org/,2026-10-05T02:24:59Z,
+spi,Libreboot,https://codeberg.org/libreboot/lbmk,,https://libreboot.org/,2026-10-05T02:25:01Z,linked as the bug tracker; the page's other repo lbwww is the website
+spi,LibreOffice,,,https://www.libreoffice.org/,2026-10-05T02:25:03Z,no repository named on https://www.libreoffice.org/
+spi,Lua,,,https://www.lua.org/home.html,2026-10-05T02:25:05Z,no repository named on https://www.lua.org/home.html
+spi,Manasource,https://git.themanaworld.org/mana/mana,,https://manasource.org/,2026-10-05T02:25:07Z,client repo; page also links mana/manaserv and tmw/tmwa
+spi,MinGW,https://sourceforge.net/p/mingw/_list/git,,https://sourceforge.net/projects/mingw/,2026-10-05T02:36:38Z,org only: the SourceForge project the roster links lists several git repos; fetched on the 2nd attempt with a plain User-Agent (1st got HTTP 403)
+spi,MPI Forum,,,https://www.mpi-forum.org/,2026-10-05T02:25:11Z,not a software project (standards body); page links the org github.com/mpi-forum
+spi,NTPsec,,,https://www.ntpsec.org/,2026-10-05T02:25:13Z,no repository named on https://www.ntpsec.org/
+spi,ns-3,https://gitlab.com/nsnam/ns-3-dev,,https://www.nsnam.org,2026-10-05T02:25:15Z,
+spi,OFTC,,,https://www.oftc.net/,2026-10-05T02:25:17Z,not a software project (IRC network); page links the org github.com/oftc
+spi,Open Bioinformatics Foundation,,,https://open-bio.org/,2026-10-05T02:25:21Z,not a software project (foundation); page links the org github.com/OBF; fetched URL redirected to https://www.open-bio.org/
+spi,Open MPI,https://github.com/open-mpi/ompi,open-mpi/ompi,https://www.open-mpi.org/,2026-10-05T02:25:23Z,
+spi,Open Voting Foundation,,,https://www.spi-inc.org/projects/open-voting-foundation/,2026-10-05T01:53:50Z,SPI project page links no website
+spi,OpenEmbedded,http://cgit.openembedded.org,,https://www.openembedded.org/,2026-10-05T02:25:27Z,"org only (cgit server of many repos, ""git server""); fetched URL redirected to https://www.openembedded.org/wiki/Main_Page"
+spi,OpenSAF,,,https://opensaf.sourceforge.io/,2026-10-05T02:36:42Z,no repository named on https://opensaf.sourceforge.io/; fetched on the 2nd attempt (1st got HTTP 403)
+spi,OpenSSL Foundation,,,https://openssl.foundation/,2026-10-05T02:25:31Z,no repository named on https://openssl.foundation/
+spi,OpenZFS,https://github.com/openzfs/zfs,openzfs/zfs,https://openzfs.org/wiki/Main_Page,2026-10-05T16:50:22+00:00,"'Contributing to OpenZFS': 'OpenZFS uses GitHub to track bug reports and feature development', links github.com/openzfs/zfs; page read in the author's Firefox (browser-control-mcp), 2026-10-05"
+spi,POCO,https://github.com/pocoproject/poco,pocoproject/poco,https://pocoproject.org/,2026-10-05T02:25:35Z,
+spi,PostgreSQL,,,https://www.postgresql.org/,2026-10-05T02:25:37Z,no repository named on https://www.postgresql.org/
+spi,Privoxy,,,https://www.privoxy.org/,2026-10-05T02:25:39Z,no repository named on https://www.privoxy.org/
+spi,Rigs of Rods,https://github.com/RigsOfRods,,https://www.rigsofrods.org/,2026-10-05T02:25:41Z,org only
+spi,Rocket,https://github.com/rwf2/Rocket,rwf2/Rocket,https://rocket.rs/,2026-10-05T02:25:43Z,
+spi,SproutCore,https://github.com/sproutcore/sproutcore,sproutcore/sproutcore,https://sproutcore.com/,2026-10-05T02:25:45Z,
+spi,Swathanthra Malayalam Computing,https://gitlab.com/smc,,https://smc.org.in/,2026-10-05T02:36:42Z,org only; page also links github.com/smc; fetched URL redirected to https://smc.org.in/en/
+spi,Synthea,https://github.com/synthetichealth/synthea,synthetichealth/synthea,https://synthetichealth.github.io/synthea/,2026-10-05T02:25:49Z,
+spi,systemd,https://github.com/systemd/systemd,systemd/systemd,https://systemd.io/,2026-10-05T02:25:51Z,"link labelled ""GitHub Project Page"""
+spi,translatewiki.net,,,https://translatewiki.net/,2026-10-05T16:50:22+00:00,"no repository named on https://translatewiki.net/; page read in the author's Firefox (browser-control-mcp), 2026-10-05"
+spi,Tux4Kids,https://github.com/tux4kids,,https://www.spi-inc.org/projects/tux4kids/,2026-10-05T01:53:50Z,org only; the SPI project page links only this GitHub org (no fetch needed)
+spi,The Whisper Project,,,https://www.spi-inc.org/projects/whisper/,2026-10-05T01:53:50Z,SPI project page links no website
+spi,YafaRay,https://github.com/YafaRay,,https://www.spi-inc.org/projects/yafaray/,2026-10-05T01:53:50Z,org only; the SPI project page links only this GitHub org (no fetch needed)
+spi,Z-Anatomy,,,https://www.z-anatomy.com/,2026-10-05T02:25:55Z,no repository named on https://www.z-anatomy.com/

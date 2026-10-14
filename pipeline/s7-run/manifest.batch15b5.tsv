@@ -1,0 +1,24 @@
+# Part b5 of the S and M projects of manifest.batch15.tsv (sha256 ef0a99a173728f06226d70b9f0bdc6b1ca14a87ee16172ba5d195ada48f6b470),
+# balanced by predicted time (6.0 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+OoliteProject__oolite	https://github.com/OoliteProject/oolite.git	pending		S	8ffe02de840f983e3e5e7b707afa3c7b60bae917
+bluez__bluez	https://github.com/bluez/bluez.git	pending		S	7edaa61403390fe1cf2f1fb6d45fdd90fe6e93b3
+zstackio__zstack	https://github.com/zstackio/zstack.git	pending		S	5a29293bd53c98a38488fb8b71d54531012d3dae
+apache__activemq	https://github.com/apache/activemq.git	pending		S	0d56f0d4a2832f27d940c6bd143e65a873d3ef58
+denoland__deno	https://github.com/denoland/deno.git	pending		S	3d44d1d82fdaca0b4e776bfe89e46e026e29f72d
+microsoft__BuildXL	https://github.com/microsoft/BuildXL.git	pending		S	959ffe1fc0515d37064d4fb1928f9a05fd8db448
+apache__avro	https://github.com/apache/avro.git	pending		S	28cb08c15543c8c2dd8d186db2029bfe760940a5
+Consensys-Incorporated__teku	https://github.com/Consensys-Incorporated/teku.git	pending		S	d570d4bd342142b91a9181dbed990389facc8570
+helidon-io__helidon	https://github.com/helidon-io/helidon.git	pending		S	0063e5ea7ec874611af3efb4d3dfd477b8ebf91e
+vcmi__vcmi	https://github.com/vcmi/vcmi.git	pending		S	071913a19f67fba0e546b1afbc117a76eae04300
+unrealircd__unrealircd	https://github.com/unrealircd/unrealircd.git	pending		S	5820bfdab4cf282a1d6c45f857f83644cecbd6ce
+ArcaneChat__android	https://github.com/ArcaneChat/android.git	pending		S	d4f73de0000931bb8ad3de37daff4e7a4b8115c1
+siddhi-io__siddhi	https://github.com/siddhi-io/siddhi.git	pending		S	cc18716fa81e2b60706ab4c158d2b70ab64265cd
+mudler__vllm.cpp	https://github.com/mudler/vllm.cpp.git	pending		S	e67a071a649814e102a91145a0b1b424884f16da
+YosysHQ__yosys	https://github.com/YosysHQ/yosys.git	pending		S	0e8336b4e2659efb40c2b8751c7619f69c358137
+react-native-tvos__react-native-tvos	https://github.com/react-native-tvos/react-native-tvos.git	pending		M	41a377a302e7f5ed562a11c5fe8016ba069dadeb
+bisq-network__bisq	https://github.com/bisq-network/bisq.git	pending		S	1696b1ac08e22bb3449abdfc6f039b0909661866
+ComputationalRadiationPhysics__picongpu	https://github.com/ComputationalRadiationPhysics/picongpu.git	pending		S	5b41865b0a32de4711d392615304bf03c6450c15
+BuildCraft__BuildCraft	https://github.com/BuildCraft/BuildCraft.git	pending		S	7c86626d09c4569fb2e0f458a16aaf8c3148ebaf
+delta-io__delta	https://github.com/delta-io/delta.git	pending		S	15e0d40aab7eec58bbc4c3fb9ce410e101bb6b1b

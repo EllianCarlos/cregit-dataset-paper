@@ -1,0 +1,12 @@
+# Part a1 of the S and M projects of manifest.batch25.tsv (sha256 ec96e8f8712a384071394a6a5517e0420244887a433ebfcf8d0092e17f5a272d),
+# balanced by predicted time (3.4 h for 4 workers), u order; a fed spot part.
+# 8 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+git.adelielinux.org__adelie__packages	https://git.adelielinux.org/adelie/packages	pending		S	9042419f7baae166b15c45759b6f6eb1e5db934e
+gitlab.inria.fr__simgrid__simgrid	https://gitlab.inria.fr/simgrid/simgrid	pending		M	6e0a67bb859f0d852def4d7f193d2d333955a552
+gitlab.com__tezos__tezos	https://gitlab.com/tezos/tezos	pending		M	73d7bb577e609bb730305302563cc31faf900bd6
+gitlab.inria.fr__memcad__memcad	https://gitlab.inria.fr/memcad/memcad	pending		S	7053c04d0262c74c8e0436aa663760eca3ddd45f
+gitlab.inria.fr__pm2__pm2	https://gitlab.inria.fr/pm2/pm2	pending		M	aeda89843c5b096dfa6e64f52047f07116017558
+gitlab.inria.fr__solverstack__ScalFMM	https://gitlab.inria.fr/solverstack/ScalFMM	pending		S	5e47dd2799edc7cf519387c8f14277f2dda9068b
+gitlab.inria.fr__gazelle__public__core__test-management	https://gitlab.inria.fr/gazelle/public/core/test-management	pending		S	9c44bbd84cfbdd8f78ba11f683d0051da5bbf0e0
+gitlab.com__inkscape__inkscape	https://gitlab.com/inkscape/inkscape	pending		S	bf3560f85e67f3c8fac130a5e7a160367c9137bf

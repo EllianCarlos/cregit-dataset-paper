@@ -1,0 +1,172 @@
+host	url	commits	decision	rule	note
+git.adelielinux.org	https://git.adelielinux.org/adelie/packages	12060	keep	new history	
+git.adelielinux.org	https://git.adelielinux.org/spack/spack-packages	34796	remove	R3 fork	copy of GitHub spack/spack-packages
+git.themanaworld.org	https://git.themanaworld.org/mana/verse	13180	keep	new history	
+git.themanaworld.org	https://git.themanaworld.org/ml/serverdata	11708	keep	new history	
+gitlab.archlinux.org	https://gitlab.archlinux.org/pacman/pacman	7557	keep	new history	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/asahi/igt-gpu-tools	15817	remove	R3 fork	fork of drm/igt-gpu-tools
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/asahi/libdrm	7212	remove	R3 fork	fork of mesa/libdrm
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/cairo/cairo	13149	keep	new history	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/igt-gpu-tools	17244	keep	new history	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/android/aosp-cuttlefish	50673	remove	R1 copy namespace	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/android/mesa	223129	remove	R1 copy namespace	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/igt-ci-tags	7547	remove	R1 copy namespace	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs	5174	keep	new history	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/imagination/mesa	182908	remove	R3 fork	fork of mesa/mesa
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/libinput/libinput	5915	keep	new history	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/demos	6651	keep	R5 split	split from the Mesa history
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/libdrm	7242	keep	new history	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/mesa	231435	keep	R4 upstream	upstream (the GitHub row mesa/mesa is another project)
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/mesa-archive	133112	remove	R3 fork	archive copy of mesa/mesa history
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/piglit	12440	keep	new history	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa_ci/repos/mesa	189398	remove	R1 copy namespace	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa_ci/repos/piglit	10870	remove	R1 copy namespace	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mobile-broadband/modemmanager	9615	keep	new history	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/monado/electric-maple-monado	7745	remove	R3 fork	fork of monado/monado
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/monado/monado	9021	keep	new history	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/nouveau/mesa	176075	remove	R3 fork	fork of mesa/mesa
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/panfrost/mesa	133600	remove	R3 fork	fork of mesa/mesa
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/poppler/poppler	9006	keep	new history	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/syncevolution/syncevolution	5984	keep	new history	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/telepathy/telepathy-glib	9781	keep	new history	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/telepathy/telepathy-qt	5615	keep	new history	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/wlroots/wlroots	7940	keep	new history	
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/gitlab_com/freedesktop-sdk/freedesktop-sdk	20085	remove	R1 copy namespace	
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/gitlab_freedesktop_org/wlroots/wlroots	7940	remove	R1 copy namespace	
+gitlab.gnome.org	https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/source_puri_sm/librem5/wlroots	5574	remove	R1 copy namespace	
+gitlab.gnome.org	https://gitlab.gnome.org/world/abiword	20895	keep	new history	
+gitlab.gnome.org	https://gitlab.gnome.org/world/gedit/gedit	14140	keep	new history	
+gitlab.gnome.org	https://gitlab.gnome.org/world/phosh/phosh	7796	keep	new history	
+gitlab.inria.fr	https://gitlab.inria.fr/aevol/aevol	5099	keep	new history	
+gitlab.inria.fr	https://gitlab.inria.fr/cedar/abstra	6556	remove	R3 fork	fork of cedar/connectionlens (created 2026-05-18 from it)
+gitlab.inria.fr	https://gitlab.inria.fr/cedar/connectionlens	5808	keep	new history	
+gitlab.inria.fr	https://gitlab.inria.fr/cedar/connectionlens_archived2	5758	remove	R3 fork	archived copy of cedar/connectionlens
+gitlab.inria.fr	https://gitlab.inria.fr/computix/computix	6415	keep	new history	
+gitlab.inria.fr	https://gitlab.inria.fr/croco-ocean/croco	6192	keep	new history	
+gitlab.inria.fr	https://gitlab.inria.fr/dynres/applications/charm	25193	remove	R3 fork	research fork of Charm++ (GitHub UIUC-PPL/charm)
+gitlab.inria.fr	https://gitlab.inria.fr/felisce/felisce	5029	keep	new history	
+gitlab.inria.fr	https://gitlab.inria.fr/gazelle/public/core/test-management	5609	keep	new history	
+gitlab.inria.fr	https://gitlab.inria.fr/gnomon/gnomon	5089	keep	new history	
+gitlab.inria.fr	https://gitlab.inria.fr/memcad/memcad	7140	keep	new history	
+gitlab.inria.fr	https://gitlab.inria.fr/morefem/corelibrary/morefem	15916	keep	new history	
+gitlab.inria.fr	https://gitlab.inria.fr/pm2/pm2	33487	keep	new history	
+gitlab.inria.fr	https://gitlab.inria.fr/poseidon/croco_poseidon	6108	remove	R3 fork	fork of croco-ocean/croco
+gitlab.inria.fr	https://gitlab.inria.fr/simgrid/simgrid	38197	keep	new history	
+gitlab.inria.fr	https://gitlab.inria.fr/solverstack/scalfmm	5900	keep	new history	
+gitlab.inria.fr	https://gitlab.inria.fr/starpu/starpu	20962	keep	new history	
+gitlab.inria.fr	https://gitlab.inria.fr/tapenade/tapenade	7174	keep	new history	
+gitlab.inria.fr	https://gitlab.inria.fr/vidjil/vidjil	17826	keep	new history	
+gitlab.inria.fr	https://gitlab.inria.fr/why3/why3	17249	keep	new history	
+gitlab.winehq.org	https://gitlab.winehq.org/mono/corefx	28995	remove	R3 fork	fork of dotnet/corefx
+gitlab.winehq.org	https://gitlab.winehq.org/wine/wine-gecko	592976	remove	R3 fork	fork of Mozilla Firefox (gecko)
+invent.kde.org	https://invent.kde.org/mirrors/calamares	11698	remove	R1 copy namespace	
+invent.kde.org	https://invent.kde.org/mirrors/poppler	9006	remove	R1 copy namespace	
+invent.kde.org	https://invent.kde.org/neon/backports-noble/opencv-noble	19461	remove	R1 copy namespace	
+invent.kde.org	https://invent.kde.org/neon/backports-resolute/libdrm-resolute	8102	remove	R1 copy namespace	
+invent.kde.org	https://invent.kde.org/office/skrooge	7113	keep	new history	
+invent.kde.org	https://invent.kde.org/qt/pyside/pyside-setup	12546	remove	R1 copy namespace	
+invent.kde.org	https://invent.kde.org/qt/qbs/qbs	8046	remove	R1 copy namespace	
+invent.kde.org	https://invent.kde.org/qt/qt/qt3d	7339	remove	R1 copy namespace	
+invent.kde.org	https://invent.kde.org/qt/qt/qtquick3d	5552	remove	R1 copy namespace	
+git.adelielinux.org	https://git.adelielinux.org/adelie/musl	5034	remove	R3 fork	distribution fork of musl
+git.themanaworld.org	https://git.themanaworld.org/ml/hercules	18386	remove	R3 fork	fork of HerculesWS/Hercules (frame)
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/upstream/linux-rt	1463187	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.archlinux.org	https://gitlab.archlinux.org/archlinux/packaging/upstream/linux-rt-lts	275149	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.com (roster groups)	https://gitlab.com/cip-project/cip-kernel/linux-cip	572302	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.com (roster groups)	https://gitlab.com/librehealth/toolkit/lh-toolkit	9776	remove	R3 fork	fork of openmrs/openmrs-core (frame)
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/corev-binutils-gdb	119037	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/corev-gcc	210123	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/corev-llvm-project	439950	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/corev-qemu	101398	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260823/cvw	11944	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/corev-binutils-gdb	119037	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/corev-gcc	210123	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/corev-llvm-project	439950	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/corev-qemu	101398	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260830/cvw	11944	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/corev-binutils-gdb	119037	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/corev-gcc	210123	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/corev-llvm-project	439950	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/corev-qemu	101398	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260906/cvw	11959	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/corev-binutils-gdb	119037	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/corev-gcc	210123	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/corev-llvm-project	439950	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/corev-qemu	101398	remove	R1 copy namespace	
+gitlab.eclipse.org	https://gitlab.eclipse.org/openhw-group/backup-20260913/cvw	11972	remove	R1 copy namespace	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/camera/libcamera	6479	keep	R4 upstream	upstream; frame row raspberrypi/libcamera is its fork
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/camera/libcamera-softisp	6478	remove	R3 fork	branch copy of camera/libcamera
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/camera/libcamera-vivid	6452	remove	R3 fork	branch copy of camera/libcamera
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/amdgpu/kernel	1467388	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/kernel	1487087	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/msm	1482351	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/nouveau	1200613	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/nova	1381724	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/tegra	1335434	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/tip	1487701	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/android/aosp-crosvm	15370	remove	R1 copy namespace	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/android/aosp-kernel-common	1333446	remove	R1 copy namespace	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/media-committers	1482023	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/bodonoghue	1482014	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/ci	1482023	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/devarsht	1351413	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/dikshitaagarwal	1427400	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/djrscally	1461894	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/epaul	1444409	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/frankl	1481685	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/hverkuil	1482023	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/jluthra	1461794	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/jmondi	1482023	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/mchehab	1482023	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/mhecht73	1444113	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/mriesch	1444409	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/ndufresne	1482023	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/patchwork	1482023	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/pinchartl	1482023	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/playground	1482023	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/ribalda	1427400	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/sailus	1482016	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/seanyoung	1481938	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/tmerciai	1481469	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/uvc	1482023	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/nouvelles/kernel	1072562	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/pipewire/media-session	7704	keep	R5 split	split from the PipeWire history
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/virgl/drm-misc-next	1072974	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.gnome.org	https://gitlab.gnome.org/world/gedit/libgedit-gtksourceview	6219	remove	R3 fork	fork of GNOME/gtksourceview (frame)
+gitlab.gnome.org	https://gitlab.gnome.org/world/mobileshell/gnome-settings-daemon-mobile	7088	remove	R3 fork	fork of GNOME/gnome-settings-daemon
+gitlab.gnome.org	https://gitlab.gnome.org/world/mobileshell/gnome-shell-mobile	21030	remove	R3 fork	fork of GNOME/gnome-shell
+gitlab.gnome.org	https://gitlab.gnome.org/world/mobileshell/mutter-mobile	35994	remove	R3 fork	fork of GNOME/mutter
+gitlab.inria.fr	https://gitlab.inria.fr/arsene-pepr/llvm-fence-spec	487850	remove	R3 fork	research fork of llvm/llvm-project
+gitlab.inria.fr	https://gitlab.inria.fr/benagil/volimem/cpython-pmem	124810	remove	R3 fork	research fork of python/cpython
+gitlab.inria.fr	https://gitlab.inria.fr/benagil/volimem/redis_pmdk	7255	remove	R3 fork	research fork of pmem/pmdk
+gitlab.inria.fr	https://gitlab.inria.fr/dynres/applications/dynpetsc	86538	remove	R3 fork	research fork of petsc/petsc
+gitlab.inria.fr	https://gitlab.inria.fr/dynres/dyn-procs/prrte	32278	remove	R3 fork	research fork of PRRTE (shares the Open MPI root)
+gitlab.inria.fr	https://gitlab.inria.fr/kdbench/multicore/px4-rt_and_px4-standard/px4-rt-xenomai	35730	remove	R3 fork	benchmark copy of PX4/PX4-Autopilot (frame)
+gitlab.inria.fr	https://gitlab.inria.fr/kdbench/multicore/px4-rt_and_px4-standard/px4-rt_linux_nprt_and_prt	35729	remove	R3 fork	benchmark copy of PX4/PX4-Autopilot (frame)
+gitlab.inria.fr	https://gitlab.inria.fr/kdbench/multicore/px4-rt_and_px4-standard/px4-standard-xenomai	35696	remove	R3 fork	benchmark copy of PX4/PX4-Autopilot (frame)
+gitlab.inria.fr	https://gitlab.inria.fr/kdbench/multicore/px4-rt_and_px4-standard/px4-standard_linux_nprt_and_prt	35696	remove	R3 fork	benchmark copy of PX4/PX4-Autopilot (frame)
+gitlab.inria.fr	https://gitlab.inria.fr/sushi-public/fmh/zephyr	115348	remove	R3 fork	research fork of zephyr
+gitlab.inria.fr	https://gitlab.inria.fr/tansiv/kvm-vmi	1043183	remove	R3 fork	a Linux tree; torvalds/linux is in the frame
+gitlab.inria.fr	https://gitlab.inria.fr/tansiv/ns-3-dev	20465	remove	R3 fork	research fork of nsnam ns-3
+gitlab.winehq.org	https://gitlab.winehq.org/wine/vkd3d	9468	keep	R4 upstream	upstream; frame row HansKristian-Work/vkd3d-proton is its fork
+invent.kde.org	https://invent.kde.org/neon/backports-noble/pipewire-noble	13954	remove	R1 copy namespace	
+invent.kde.org	https://invent.kde.org/neon/forks/freerdp3	26062	remove	R1 copy namespace	
+invent.kde.org	https://invent.kde.org/qt/clang/llvm	602300	remove	R1 copy namespace	
+invent.kde.org	https://invent.kde.org/qt/qt/qtquick3d-assimp	13007	remove	R1 copy namespace	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/dbus/dbus	7165	keep	R4 upstream	upstream; pool row ni/dbus is its fork
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/android/aosp-build	98659	remove	R1 copy namespace	
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gnu-grub/grub	11844	skip	R2 same project	git.savannah.gnu.org git/grub (frame, layer 1): GNU GRUB, mirror on freedesktop
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gstreamer/meson-ports/libvpx	22837	remove	R3 fork	port copy of webmproject/libvpx
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/wayland/weston	11376	keep	R4 upstream	upstream; pool row microsoft/weston-mirror is Microsoft's fork (WSLg)
+gitlab.inria.fr	https://gitlab.inria.fr/sed-rennes/overleaf/overleaf-cep	28336	remove	R3 fork	fork of overleaf/overleaf
+gitlab.com (search)	https://gitlab.com/inkscape/inkscape	29772	keep	new history	
+gitlab.com (search)	https://gitlab.com/veloren/veloren	18570	keep	new history	
+gitlab.com (search)	https://gitlab.com/graphviz/graphviz	31102	keep	new history	
+gitlab.com (search)	https://gitlab.com/libeigen/eigen	14072	keep	R4 upstream	upstream; pool row nervanasystems/eigen is its fork
+gitlab.com (search)	https://gitlab.com/kicad/code/kicad	59534	skip	R2 same project	kicad/kicad-source-mirror (frame, layer 1): the GitHub mirror of KiCad
+gitlab.com (search)	https://gitlab.com/recalbox/recalbox	45249	remove	R3 fork	downstream of buildroot/buildroot (frame); OPEN: batocera.linux, also buildroot-based, is in the frame
+gitlab.com (search)	https://gitlab.com/tezos/tezos	72768	keep	new history	
+gitlab.com (search)	https://gitlab.com/coolercontrol/coolercontrol	8316	keep	new history	
+gitlab.com (search)	https://gitlab.com/sequoia-pgp/sequoia	6034	keep	new history	
+gitlab.com (search)	https://gitlab.com/distant-horizons-team/distant-horizons	5399	keep	new history	
+gitlab.com (search)	https://gitlab.com/muttmua/mutt	8687	keep	R4 upstream	upstream; frame row neomutt/neomutt is its fork

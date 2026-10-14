@@ -1,0 +1,8 @@
+# Part a2 of the S and M projects of manifest.batch22.tsv (sha256 dc8a4dcc99f4786c26f1c01c088fc0ad00413396460a012bc7ccbbb3af25e647),
+# balanced by predicted time (1.3 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+git.savannah.gnu.org__git__guile	https://git.savannah.gnu.org/git/guile.git	pending		S	7f0f63d0865ed0d233b070113adecba9c74ffc8a
+git.savannah.gnu.org__git__liberty-eiffel	https://git.savannah.gnu.org/git/liberty-eiffel.git	pending		S	21b081378ec12798080128e7f39878d5d2097cb7
+git.savannah.gnu.org__git__libredwg	https://git.savannah.gnu.org/git/libredwg.git	pending		S	a8ce24891c1a82cd51a8d0f3f97095a2a5d8aa31
+git.savannah.gnu.org__git__lilypond	https://git.savannah.gnu.org/git/lilypond.git	pending		M	b42c8e7f2c0db675803b9b15cfa245961e232e59

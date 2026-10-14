@@ -1,0 +1,16 @@
+# Part b5 of the S and M projects of manifest.batch21.tsv (sha256 a8d8fe474e9c33f90d4723af77e1009944e1a8db637acaeda7fbff45488b4af3),
+# balanced by predicted time (2.1 h for 4 workers), u order; a fed spot part.
+# 12 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+ctt-gob-es__clienteafirma	https://github.com/ctt-gob-es/clienteafirma.git	pending		S	0d7f3cf01fb65d2be5b245622d2c8f490f36e718
+KDE__kdepim-addons	https://github.com/KDE/kdepim-addons.git	pending		S	e909affb3f5f828433f3e002178560639d4808de
+OpenRailAssociation__osrd	https://github.com/OpenRailAssociation/osrd.git	pending		S	5b4c5eaed1565773ae119425369de6f8f8359061
+cloud-hypervisor__cloud-hypervisor	https://github.com/cloud-hypervisor/cloud-hypervisor.git	pending		S	0326d013668fe92875292e153748c94dc209ec6a
+KDE__kphotoalbum	https://github.com/KDE/kphotoalbum.git	pending		S	d49b140d65f59240107ced0ff8031100c239608a
+clasp-developers__clasp	https://github.com/clasp-developers/clasp.git	pending		S	6f850115d3e29ee38344dc8f6b0e52b6ebe15a62
+KDE__konqueror	https://github.com/KDE/konqueror.git	pending		S	0f3fb9f350260bd358dca3c0142d7f5051dea494
+KDE__akonadi	https://github.com/KDE/akonadi.git	pending		S	1791d6f581dba0c4bc7d7e9c5fc062ea13f595b3
+KDE__kdepim-runtime	https://github.com/KDE/kdepim-runtime.git	pending		S	eba16213435929d8a5430a3aa34307eb95a94749
+KDE__kmymoney	https://github.com/KDE/kmymoney.git	pending		S	457f9f159bdea11cfa9bde769cc9b51da18aac99
+KDE__libplasma	https://github.com/KDE/libplasma.git	pending		S	03190b951f89431a6f9ef437012d0b67175506ca
+KDE__neochat	https://github.com/KDE/neochat.git	pending		S	18b9d11410379acb9f32f8df86552e60c2fd37c2

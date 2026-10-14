@@ -1,0 +1,9 @@
+# The L projects of manifest.batch19.tsv (sha256 8a11b7acec582e49f76d0e09d7ff1e039d3458ef456ff4c1a875509b92849d3b), for the census batch19L on the big on-demand EC2.
+# 6 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+JetBrains__intellij-community	https://github.com/JetBrains/intellij-community.git	pending		L	90a84b77abb4b8944cbc6ec098c1df4dc958c683
+eloqdata__eloqsql	https://github.com/eloqdata/eloqsql.git	pending		L	b1120734193b3c225350e2312a2591b57ae211fa
+Pzqqt__android_kernel_xiaomi_marble	https://github.com/Pzqqt/android_kernel_xiaomi_marble.git	pending		L	ed478457833fafc798497d349ce4912b5698e4c4
+percona__percona-xtrabackup	https://github.com/percona/percona-xtrabackup.git	pending		L	3b7abcf274be65230ae5b25515ecf0852efa8d97
+polardb__polardbx-engine	https://github.com/polardb/polardbx-engine.git	pending		L	1b839e6698ac120967c5afefd8f0f343383d2530
+projectacrn__acrn-kernel	https://github.com/projectacrn/acrn-kernel.git	pending		L	cab1ad4b40fb397a6c433116dcd7663629eafd73

@@ -1,0 +1,11 @@
+# openinfra — OpenInfra Foundation (OpenStack plus confirmed projects) — method
+- OpenStack sources, fetched 2026-10-05T01:32:40Z from https://opendev.org/openstack/governance/raw/branch/master/reference/: projects.yaml (42 project teams, 579 deliverable repos), sigs-repos.yaml (38 repos), technical-committee-repos.yaml (11 repos). user-committee-repos.yaml returned 404. Raw: raw/openinfra/.
+- One row per repo: repo_url = https://opendev.org/<repo>, project = the team, SIG or TC name. The note gives the deliverable and leadership_type. roster_status = "deprecated" where the deliverable has a `deprecated:` key (23 rows), and empty otherwise.
+- GitHub mirror evidence: openstack/project-config zuul.d/jobs.yaml defines the job `openstack-upload-github-mirror`, "Mirrors official projects to github's openstack org". playbooks/maintain-github-mirror/github_manager.py creates and archives github.com/openstack/<name> from exactly these governance files. So github_slug = the governance path for openstack/* repos. Both files are saved raw.
+- Other projects: https://openinfra.org/projects/ ("CONFIRMED PROJECTS"), fetched 2026-10-05T01:33:32Z, lists Kata Containers, OpenStack, StarlingX and Zuul. Airship and others are not on the page, so they were not added.
+  - Kata Containers: the Code link is https://github.com/kata-containers. Its 36 public repos were listed via GitHub GraphQL.
+  - StarlingX: the Code link is https://opendev.org/starlingx. Its 89 repos were listed via https://opendev.org/api/v1/orgs/starlingx/repos.
+  - Zuul: the Code link https://git.zuul-ci.org/ redirects to opendev.org/. zuul-ci.org links opendev.org/zuul/zuul, so the opendev org `zuul` (16 repos) was used. This is a judgement call.
+  - No GitHub mirror is named for StarlingX or Zuul, so they have no slug.
+- roster_status for these three = "confirmed project" (the page heading).
+- Counts: 59 projects (42 OpenStack teams + 13 SIGs + 1 Technical Committee + 3 other OpenInfra projects), 769 rows, 769 with repo_url, 664 with github_slug. GitHub REST calls: 0. GraphQL: 1.

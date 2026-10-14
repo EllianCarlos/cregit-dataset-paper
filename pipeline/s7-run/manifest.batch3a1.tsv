@@ -1,0 +1,23 @@
+# Part a1 of manifest.batch3a.tsv: rows 1, 5, ... (every 4th), u order.
+# 20 projects.
+# Columns: name  url  category  file_filter  size_class  commit
+apache__streampipes	https://github.com/apache/streampipes.git	pending		S	98073b325e3d8ad44258960f345462bf192ed1da
+ColinIanKing__stress-ng	https://github.com/ColinIanKing/stress-ng.git	pending		S	11e2f6e980d2e1209a1fe61b229b5611cf913e98
+ecmwf__eccodes	https://github.com/ecmwf/eccodes.git	pending		S	7c26fa28e61be73f6f3047beeddd6cc4a0cf70a9
+VcDevel__Vc	https://github.com/VcDevel/Vc.git	pending		S	301cfe54eb57df21c969a1a4014b0abf7e422a2c
+MoganLab__mogan	https://github.com/MoganLab/mogan.git	pending		S	fbea914719fc48b257f2c218c5f477c3453e22cc
+nghttp2__nghttp2	https://github.com/nghttp2/nghttp2.git	pending		S	7a6d122aac527b65434314c2a115f07281e08dbf
+greenbone__openvas-scanner	https://github.com/greenbone/openvas-scanner.git	pending		S	9b8abf15c368294dadef29ec9c6a575787287761
+PCGen__pcgen	https://github.com/PCGen/pcgen.git	pending		S	25523dbcf10e86c280fc0f447167ea43d67419d3
+okou-ai__okou	https://github.com/okou-ai/okou.git	pending		S	db21163887a248a206ba7bcfadfca4d8f73aaab5
+ukoethe__vigra	https://github.com/ukoethe/vigra.git	pending		S	de98f930b66d461360a2d5dc8f9adfa84bb01058
+OpenCPN__OpenCPN	https://github.com/OpenCPN/OpenCPN.git	pending		S	44ba6a49fbe4ff4b4ed65b8cb27ab8836e08208f
+qt__qtwayland	https://github.com/qt/qtwayland.git	pending		S	f6dff44253726734a21f0e3b68eeee9ca0991b42
+webrtc-sdk__webrtc	https://github.com/webrtc-sdk/webrtc.git	pending		M	0385653a83f21acf3c916466d4088b29fe2f160b
+DLR-SC__tigl	https://github.com/DLR-SC/tigl.git	pending		S	9c884eddeb9c2d225da0c9365a1ebbfbe6919490
+bazelbuild__intellij	https://github.com/bazelbuild/intellij.git	pending		S	6848cf2d146c865f29f77d6883a895dd182ba8a2
+cjdelisle__cjdns	https://github.com/cjdelisle/cjdns.git	pending		S	f5902acab6dd2f1a68bf6e4c89e352ed71f93698
+FreeRADIUS__freeradius-server	https://github.com/FreeRADIUS/freeradius-server.git	pending		M	7a9c6efae0ac44faafb739ac730e571d9e0ac136
+stenzek__duckstation	https://github.com/stenzek/duckstation.git	pending		S	4122fed9ad3e6e5c2ecf1516cd51675a5931623e
+OpenModelica__OpenModelica	https://github.com/OpenModelica/OpenModelica.git	pending		M	ae6c763d8c25a76af882c1e4609612421b1435f6
+jordanhubbard__nanolang	https://github.com/jordanhubbard/nanolang.git	pending		S	1bbae0bb051efb1c6b356a98d12be0494b9ff935

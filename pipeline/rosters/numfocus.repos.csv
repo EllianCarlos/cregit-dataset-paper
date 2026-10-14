@@ -1,0 +1,141 @@
+org_key,project,repo_url,github_slug,lookup_url,fetched_at,note
+numfocus,Matplotlib,https://github.com/matplotlib/matplotlib,matplotlib/matplotlib,https://matplotlib.org/,2026-10-05T02:25:57Z,
+numfocus,pandas,https://github.com/pandas-dev/pandas,pandas-dev/pandas,https://pandas.pydata.org/,2026-10-05T02:25:59Z,
+numfocus,SciPy,https://github.com/scipy/scipy,scipy/scipy,https://scipy.org/,2026-10-05T02:26:01Z,
+numfocus,Stan,https://github.com/stan-dev,,https://mc-stan.org/,2026-10-05T02:26:03Z,org only (navbar link); stan-dev/stan links on the page are wiki references
+numfocus,PyTables,https://github.com/PyTables/PyTables,PyTables/PyTables,https://www.pytables.org/,2026-10-05T02:26:05Z,
+numfocus,FEniCS Project,https://github.com/FEniCS,,https://fenicsproject.org/,2026-10-05T02:26:07Z,"org only (link labelled ""Source code""); page also links its website repo FEniCS/web"
+numfocus,yt,https://github.com/yt-project/yt,yt-project/yt,https://yt-project.org/,2026-10-05T02:26:09Z,
+numfocus,Astropy,https://github.com/astropy/astropy,astropy/astropy,https://www.astropy.org/,2026-10-05T02:26:11Z,
+numfocus,SunPy,https://github.com/sunpy,,https://sunpy.org/,2026-10-05T02:26:13Z,"org only (""Code"" link)"
+numfocus,QuantEcon,https://github.com/QuantEcon,,https://quantecon.org/,2026-10-05T02:26:15Z,"org only (link ""GitHub""); page also links QuantEcon.py releases"
+numfocus,rOpenSci,https://github.com/ropensci,,https://ropensci.org/,2026-10-05T02:26:17Z,org only (umbrella); page also links ropenscilabs
+numfocus,Open Journals,https://github.com/openjournals,,https://www.theoj.org/,2026-10-05T02:26:19Z,org only
+numfocus,Bokeh,https://github.com/bokeh/bokeh,bokeh/bokeh,https://bokeh.org/,2026-10-05T02:26:21Z,
+numfocus,conda-forge,https://github.com/conda-forge,,https://conda-forge.org/,2026-10-05T02:26:23Z,org only
+numfocus,xarray,https://github.com/pydata/xarray,pydata/xarray,https://xarray.pydata.org,2026-10-05T02:26:27Z,fetched URL redirected to https://docs.xarray.dev/en/stable/
+numfocus,Dask,https://github.com/dask/dask,dask/dask,https://dask.org/,2026-10-05T02:26:31Z,"link ""go to github page""; fetched URL redirected to https://www.dask.org/"
+numfocus,mlpack,https://github.com/mlpack/mlpack,mlpack/mlpack,https://www.mlpack.org/,2026-10-05T02:26:33Z,
+numfocus,Zarr,https://github.com/zarr-developers/zarr-python,zarr-developers/zarr-python,https://zarr.readthedocs.io/,2026-10-05T02:26:37Z,fetched URL redirected to https://zarr.readthedocs.io/en/stable/
+numfocus,MDAnalysis,https://github.com/MDAnalysis/mdanalysis,MDAnalysis/mdanalysis,https://www.mdanalysis.org/,2026-10-05T02:26:39Z,
+numfocus,scikit-image,https://github.com/scikit-image/scikit-image,scikit-image/scikit-image,https://scikit-image.org/,2026-10-05T02:26:41Z,"link labelled ""Source"""
+numfocus,OpenFHE,https://github.com/openfheorg/openfhe-development,openfheorg/openfhe-development,https://www.openfhe.org/,2026-10-05T02:26:45Z,"link labelled ""Link to Git_hub""; fetched URL redirected to https://openfhe.org/"
+numfocus,OpenMBEE,https://github.com/Open-MBEE,,https://www.openmbee.org,2026-10-05T02:26:47Z,org only (umbrella of several tools)
+numfocus,scikit-learn,https://github.com/scikit-learn/scikit-learn,scikit-learn/scikit-learn,https://scikit-learn.org/stable/,2026-10-05T02:26:49Z,
+numfocus,SciML,https://github.com/SciML,,https://sciml.ai/,2026-10-05T02:26:51Z,org only (umbrella; page links many SciML/* packages)
+numfocus,TARDIS,https://github.com/tardis-sn/tardis,tardis-sn/tardis,https://tardis-sn.github.io/tardis/,2026-10-05T02:26:53Z,
+numfocus,NetworkX,https://github.com/networkx/networkx,networkx/networkx,https://networkx.github.io/,2026-10-05T02:36:46Z,networkx.org meta-refreshes to /en/
+numfocus,NiBabel,https://github.com/nipy/nibabel,nipy/nibabel,https://nipy.org/nibabel/,2026-10-05T02:26:59Z,
+numfocus,napari,https://github.com/napari/napari,napari/napari,https://napari.org,2026-10-05T02:36:52Z,napari.org meta-refreshes to /stable
+numfocus,Scientific Python,https://github.com/scientific-python,,https://scientific-python.org/,2026-10-05T02:27:03Z,org only
+numfocus,conda,https://github.com/conda,,https://github.com/conda,2026-10-05T02:27:05Z,"org only; the NumFOCUS ""Website"" link is this GitHub org page"
+numfocus,GNU Octave,,,https://octave.org/,2026-10-05T02:27:07Z,"no repository named on https://octave.org/; page links only its website repo gnu-octave/gnu-octave.github.io (""page sources"")"
+numfocus,Bioconductor,https://code.bioconductor.org/,,https://bioconductor.org,2026-10-05T02:27:09Z,"org only (self-hosted browser of the package git repos, ""Browsable Code Base"")"
+numfocus,WorldWide Telescope,,,https://worldwidetelescope.org/home/,2026-10-05T02:27:11Z,"no repository named on https://worldwidetelescope.org/home/; page's ""Source code"" link is the website repo WorldWideTelescope/wwt-user-website"
+numfocus,GeoPandas,https://github.com/geopandas/geopandas,geopandas/geopandas,https://geopandas.org/en/stable/,2026-10-05T02:27:13Z,
+numfocus,scverse,https://github.com/scverse,,https://scverse.org,2026-10-05T02:27:15Z,org only
+numfocus,HoloViz,https://github.com/holoviz/holoviz,holoviz/holoviz,https://holoviz.org/,2026-10-05T02:27:17Z,"link labelled ""GitHub"" (umbrella repo)"
+numfocus,PETSc,https://gitlab.com/petsc/petsc,,https://petsc.org,2026-10-05T02:27:21Z,fetched URL redirected to https://petsc.org/release/
+numfocus,Pangeo,,,https://pangeo.io,2026-10-05T02:27:23Z,"no repository named on https://pangeo.io; page links only community member projects (xarray, dask, zarr, ...), no Pangeo repo or org"
+numfocus,Fortran-lang,https://github.com/fortran-lang,,https://fortran-lang.org,2026-10-05T02:27:25Z,"org only (link ""GitHub""); page also links stdlib and fpm"
+numfocus,Dynare,https://git.dynare.org/Dynare/dynare,,https://www.dynare.org/,2026-10-05T02:27:27Z,"self-hosted GitLab, link labelled ""Git"""
+numfocus,Vega,https://github.com/vega/vega,vega/vega,https://vega.github.io/,2026-10-05T02:27:29Z,"umbrella; page also links vega-lite, altair, vegafusion and others, each as ""GitHub"""
+numfocus,Aesara,https://github.com/aesara-devs/aesara,aesara-devs/aesara,https://aesara.readthedocs.io/en/latest/,2026-10-05T02:27:31Z,"link labelled ""Source repository"""
+numfocus,AiiDA,https://github.com/aiidateam/aiida-core,aiidateam/aiida-core,https://www.aiida.net/,2026-10-05T02:27:35Z,"page also links the org github.com/aiidateam as ""GitHub""; fetched URL redirected to https://aiida.net/"
+numfocus,Asteroid,https://github.com/asteroid-team/asteroid,asteroid-team/asteroid,https://asteroid-team.github.io/,2026-10-05T02:27:37Z,
+numfocus,Awkward Array,https://github.com/scikit-hep/awkward,scikit-hep/awkward,https://awkward-array.org/,2026-10-05T02:36:54Z,awkward-array.org meta-refreshes to /doc/main/
+numfocus,Catalyst,https://github.com/catalyst-team/catalyst,catalyst-team/catalyst,https://catalyst-team.com/,2026-10-05T02:27:41Z,
+numfocus,Clawpack,https://github.com/clawpack,,https://www.clawpack.org/,2026-10-05T02:27:43Z,org only
+numfocus,Colour,https://github.com/colour-science/colour,colour-science/colour,https://colour-science.org/,2026-10-05T02:27:47Z,fetched URL redirected to https://www.colour-science.org/
+numfocus,Crystal,https://github.com/crystal-lang/crystal,crystal-lang/crystal,https://crystal-lang.org/,2026-10-05T02:27:49Z,"link labelled ""GitHub Repository"""
+numfocus,CVXPY,https://github.com/cvxpy/cvxpy,cvxpy/cvxpy,https://www.cvxpy.org/,2026-10-05T02:27:51Z,
+numfocus,Cython,https://github.com/cython/cython,cython/cython,https://cython.org/,2026-10-05T02:27:53Z,"page also links the org as ""Source code repositories"""
+numfocus,Dash,https://github.com/plotly,,https://plot.ly/dash/,2026-10-05T02:27:57Z,"org only (company org, ""View on GitHub""); fetched URL redirected to https://plotly.com/dash/"
+numfocus,Data Retriever,,,https://www.data-retriever.org/,2026-10-05T16:51:31+00:00,"fetch failed: also failed in the author's Firefox on 2026-10-05: ""Problem loading page"""
+numfocus,Devito,https://github.com/devitocodes/devito,devitocodes/devito,https://www.devitoproject.org/,2026-10-05T02:29:38Z,page also links the org
+numfocus,DyND,,,https://libdynd.org/,2026-10-05T16:51:31+00:00,fetch failed: also failed in the author's Firefox on 2026-10-05: certificate does not match the site; not accepted
+numfocus,Effective Quadratures,https://github.com/equadratures/equadratures,equadratures/equadratures,https://equadratures.org/,2026-10-05T02:29:49Z,
+numfocus,optimagic,https://github.com/optimagic-dev/optimagic,optimagic-dev/optimagic,https://estimagic.readthedocs.io/en/stable/,2026-10-05T02:29:53Z,roster homepage estimagic.readthedocs.io redirects to estimagic.org
+numfocus,FluxML,https://github.com/FluxML/Flux.jl,FluxML/Flux.jl,https://fluxml.ai,2026-10-05T02:29:55Z,"link labelled ""GitHub""; page also links other FluxML packages"
+numfocus,FreeMoCap Project,https://github.com/freemocap/freemocap,freemocap/freemocap,https://freemocap.org,2026-10-05T02:29:57Z,"link labelled ""Code"""
+numfocus,Gensim,https://github.com/RaRe-Technologies/gensim,RaRe-Technologies/gensim,https://radimrehurek.com/gensim/,2026-10-05T02:29:59Z,"link labelled ""Fork on Github"""
+numfocus,GeomScale,https://github.com/GeomScale,,https://geomscale.github.io/,2026-10-05T02:30:01Z,org only
+numfocus,GeomStats,https://github.com/geomstats/geomstats,geomstats/geomstats,https://geomstats.ai,2026-10-05T02:30:05Z,fetched URL redirected to https://geomstats.github.io
+numfocus,GNU Radio,https://github.com/gnuradio/gnuradio,gnuradio/gnuradio,https://www.gnuradio.org/,2026-10-05T02:30:07Z,"link ""Work on the Source Code"""
+numfocus,Gonum,https://github.com/gonum,,https://gonum.org,2026-10-05T02:30:11Z,org only; gonum/* repos appear only in page metadata; fetched URL redirected to https://www.gonum.org/
+numfocus,Gridap,https://github.com/gridap/Gridap.jl,gridap/Gridap.jl,https://gridap.github.io/Gridap.jl/stable/,2026-10-05T02:30:13Z,
+numfocus,HPX,https://github.com/STEllAR-GROUP/hpx,STEllAR-GROUP/hpx,https://hpx.stellar-group.org,2026-10-05T02:30:19Z,
+numfocus,igraph,https://github.com/igraph,,https://igraph.org/,2026-10-05T02:30:20Z,"org only (""On GitHub""); page also links igraph/igraph (C), python-igraph and rigraph"
+numfocus,ipyvizzu,https://github.com/vizzuhq/ipyvizzu,vizzuhq/ipyvizzu,https://ipyvizzu.vizzuhq.com/latest/,2026-10-05T02:30:22Z,
+numfocus,Magpylib,https://github.com/magpylib/magpylib,magpylib/magpylib,https://magpylib.readthedocs.io/en/stable/,2026-10-05T02:30:24Z,
+numfocus,Manim,https://github.com/ManimCommunity/manim,ManimCommunity/manim,https://www.manim.community,2026-10-05T02:30:26Z,
+numfocus,Micro-Manager,https://github.com/micro-manager,,https://micro-manager.org/,2026-10-05T02:30:28Z,org only
+numfocus,Mesa: Agent-Based Modeling In Python,https://github.com/mesa/mesa,mesa/mesa,https://mesa.readthedocs.io/en/latest/,2026-10-05T02:30:32Z,fetched URL redirected to https://mesa.readthedocs.io/latest/
+numfocus,MFEM,https://github.com/mfem/mfem,mfem/mfem,https://mfem.org/,2026-10-05T02:30:34Z,
+numfocus,Neo,https://github.com/NeuralEnsemble/python-neo,NeuralEnsemble/python-neo,https://neo.readthedocs.io/en/latest/,2026-10-05T02:30:36Z,
+numfocus,NetKet,https://github.com/netket/netket,netket/netket,https://www.netket.org,2026-10-05T02:30:38Z,
+numfocus,Numba,https://github.com/numba/numba,numba/numba,https://numba.pydata.org/,2026-10-05T02:30:40Z,
+numfocus,ObsPy,https://github.com/obspy/obspy,obspy/obspy,https://obspy.org,2026-10-05T02:30:44Z,obspy.org redirects to github.com/obspy/obspy/wiki
+numfocus,Orange,https://github.com/biolab/orange3,biolab/orange3,https://orange.biolab.si/,2026-10-05T02:30:48Z,fetched URL redirected to https://orangedatamining.com/
+numfocus,Polars,https://github.com/pola-rs/polars,pola-rs/polars,https://www.pola.rs/,2026-10-05T02:30:52Z,fetched URL redirected to https://pola.rs/
+numfocus,poliastro,https://github.com/poliastro/poliastro,poliastro/poliastro,https://docs.poliastro.space/,2026-10-05T02:30:56Z,"link labelled ""Source code""; fetched URL redirected to https://docs.poliastro.space/en/stable/"
+numfocus,pomegranate,,,https://pomegranate.readthedocs.io/en/latest/,2026-10-05T02:30:58Z,no repository named on https://pomegranate.readthedocs.io/en/latest/
+numfocus,Project Optuna,https://github.com/optuna/optuna,optuna/optuna,https://optuna.org,2026-10-05T02:31:00Z,
+numfocus,PSL,,,https://www.pslmodels.org/,2026-10-05T02:31:04Z,no repository named on https://pslmodels.org/; umbrella of models; page links no repository; fetched URL redirected to https://pslmodels.org/
+numfocus,pvlib,https://github.com/pvlib/pvlib-python,pvlib/pvlib-python,https://pvlib-python.readthedocs.io/en/stable/,2026-10-05T02:31:06Z,
+numfocus,pyhf,https://github.com/scikit-hep/pyhf,scikit-hep/pyhf,https://pyhf.readthedocs.io/,2026-10-05T02:31:10Z,fetched URL redirected to https://pyhf.readthedocs.io/en/v0.7.6/
+numfocus,pyiron,https://github.com/pyiron/pyiron,pyiron/pyiron,https://pyiron.org,2026-10-05T02:31:12Z,"link ""Browse on Github"""
+numfocus,PyLops,https://github.com/PyLops/pylops,PyLops/pylops,https://pylops.readthedocs.io,2026-10-05T02:31:16Z,fetched URL redirected to https://pylops.readthedocs.io/en/stable/
+numfocus,pyMOR,https://github.com/pymor/pymor,pymor/pymor,https://pymor.org/,2026-10-05T02:31:18Z,"link ""View on GitHub"""
+numfocus,PySAL,https://github.com/pysal,,https://pysal.org/,2026-10-05T02:31:20Z,org only
+numfocus,Python-graphblas,https://github.com/python-graphblas/python-graphblas,python-graphblas/python-graphblas,https://python-graphblas.readthedocs.io/en/stable/,2026-10-05T02:31:22Z,
+numfocus,"Python(X,Y)",,,https://python-xy.github.io/,2026-10-05T02:31:24Z,no repository named on https://python-xy.github.io/
+numfocus,Python Satellite Data Analysis Toolkit (pysat),,,https://pysat.readthedocs.io/en/latest/index.html,2026-10-05T02:31:26Z,no repository named on https://pysat.readthedocs.io/en/latest/index.html
+numfocus,PyTorch-Ignite,https://github.com/pytorch/ignite,pytorch/ignite,https://pytorch-ignite.ai/,2026-10-05T02:31:28Z,
+numfocus,PyVista,https://github.com/pyvista/pyvista,pyvista/pyvista,https://docs.pyvista.org/,2026-10-05T02:31:30Z,
+numfocus,QuTiP,https://github.com/qutip/qutip,qutip/qutip,https://qutip.org/,2026-10-05T02:31:32Z,"page also links the org github.com/qutip as ""GitHub"""
+numfocus,Radis,https://github.com/radis/radis,radis/radis,https://radis.github.io/,2026-10-05T02:31:34Z,
+numfocus,scikit-bio,,,https://scikit-bio.org/,2026-10-05T16:51:31+00:00,"fetch failed: also failed in the author's Firefox on 2026-10-05: ""Problem loading page"""
+numfocus,signac,,,https://signac.io/,2026-10-05T16:51:31+00:00,"fetch failed: also failed in the author's Firefox on 2026-10-05: ""Problem loading page"" (DNS does not resolve)"
+numfocus,Solcore,,,https://www.solcore.solar/,2026-10-05T02:33:24Z,no repository named on https://www.solcore.solar/
+numfocus,Spack,https://github.com/spack/spack,spack/spack,https://spack.io/,2026-10-05T02:33:26Z,
+numfocus,Statsmodels,https://github.com/statsmodels/statsmodels,statsmodels/statsmodels,https://www.statsmodels.org/stable/index.html,2026-10-05T02:33:28Z,
+numfocus,Taskflow,https://github.com/taskflow/taskflow,taskflow/taskflow,https://taskflow.github.io/,2026-10-05T02:33:30Z,
+numfocus,TNL - Template Numerical Library,https://gitlab.com/tnl-project/tnl,,https://tnl-project.org,2026-10-05T02:33:32Z,"link ""Join us at Gitlab"""
+numfocus,The Ibis Project,https://github.com/ibis-project/ibis,ibis-project/ibis,https://ibis-project.org/,2026-10-05T02:33:34Z,"link labelled ""Source code"""
+numfocus,Trixi.jl,https://github.com/trixi-framework/Trixi.jl,trixi-framework/Trixi.jl,https://trixi-framework.github.io/,2026-10-05T02:33:38Z,homepage redirects to trixi-framework.org
+numfocus,WESTPA,https://github.com/westpa/westpa,westpa/westpa,https://westpa.github.io/westpa/,2026-10-05T02:33:40Z,"link labelled ""GitHub Repository"""
+numfocus,aeon,https://github.com/aeon-toolkit/aeon,aeon-toolkit/aeon,https://www.aeon-toolkit.org,2026-10-05T02:33:44Z,fetched URL redirected to https://www.aeon-toolkit.org/en/stable/
+numfocus,Yellowbrick,https://github.com/DistrictDataLabs/yellowbrick,DistrictDataLabs/yellowbrick,https://www.scikit-yb.org/en/latest/,2026-10-05T02:33:46Z,
+numfocus,XGI,https://github.com/xgi-org/xgi,xgi-org/xgi,https://xgi.readthedocs.io,2026-10-05T02:33:50Z,fetched URL redirected to https://xgi.readthedocs.io/en/stable/
+numfocus,BigBang,,,,,roster heading links another project's repo; no homepage given
+numfocus,PyDMD,,,https://pydmd.github.io/PyDMD/,2026-10-05T02:33:52Z,no repository named on https://pydmd.github.io/PyDMD/
+numfocus,STUMPY,https://github.com/stumpy-dev/stumpy,stumpy-dev/stumpy,https://stumpy.readthedocs.io/en/latest/,2026-10-05T02:33:54Z,
+numfocus,skforecast,https://github.com/skforecast/skforecast,skforecast/skforecast,https://skforecast.org,2026-10-05T02:36:56Z,skforecast.org meta-refreshes to /latest/
+numfocus,Parallel Ice Sheet Model (PISM),https://github.com/pism/pism,pism/pism,https://www.pism.io/,2026-10-05T02:33:58Z,"link ""Get code on GitHub"""
+numfocus,FESTIM,https://github.com/festim-dev/FESTIM,festim-dev/FESTIM,https://festim.readthedocs.io/en/latest/,2026-10-05T02:34:00Z,
+numfocus,Open OnDemand,https://github.com/OSC/ondemand,OSC/ondemand,https://openondemand.org/,2026-10-05T02:34:04Z,fetched URL redirected to https://www.openondemand.org/
+numfocus,Visual Python,https://github.com/visualpython/visualpython,visualpython/visualpython,https://visualpython.ai/,2026-10-05T02:34:07Z,
+numfocus,GP Jax,,,https://jaxgaussianprocesses.com/,2026-10-05T02:34:09Z,no repository named on https://jaxgaussianprocesses.com/; page links only contributors' GitHub profiles
+numfocus,toqito,https://github.com/vprusso/toqito,vprusso/toqito,https://toqito.readthedocs.io/en/latest/,2026-10-05T02:34:10Z,
+numfocus,Folium,https://github.com/python-visualization/folium,python-visualization/folium,https://python-visualization.github.io/folium,2026-10-05T02:36:58Z,homepage meta-refreshes to /latest/
+numfocus,Snakemake,https://github.com/snakemake/snakemake,snakemake/snakemake,https://snakemake.github.io,2026-10-05T02:34:16Z,"page also links the org github.com/snakemake as ""Github"""
+numfocus,SunPeek,https://gitlab.com/sunpeek/sunpeek,,https://docs.sunpeek.org,2026-10-05T02:34:18Z,
+numfocus,Bambi,https://github.com/bambinos/bambi,bambinos/bambi,https://bambinos.github.io/bambi/,2026-10-05T02:34:20Z,
+numfocus,Open2C,https://github.com/open2c,,https://open2c.github.io/,2026-10-05T02:34:22Z,"org only (umbrella of cooler, pairtools, cooltools, ...)"
+numfocus,Poly,https://github.com/bebop/poly,bebop/poly,https://pkg.go.dev/github.com/bebop/poly,2026-10-05T02:34:24Z,roster homepage is the pkg.go.dev page of this repo
+numfocus,PRQL,https://github.com/PRQL/prql,PRQL/prql,https://prql-lang.org/,2026-10-05T02:34:26Z,
+numfocus,PUDL,https://github.com/catalyst-cooperative/pudl,catalyst-cooperative/pudl,https://catalystcoop-pudl.readthedocs.io/en/nightly/,2026-10-05T02:34:30Z,fetched URL redirected to https://docs.catalyst.coop/pudl/en/nightly/
+numfocus,PyData Sparse,https://github.com/pydata/sparse,pydata/sparse,https://sparse.pydata.org/en/stable/,2026-10-05T02:34:32Z,
+numfocus,SPHinXsys,https://github.com/Xiangyu-Hu/SPHinXsys,Xiangyu-Hu/SPHinXsys,https://www.sphinxsys.org/,2026-10-05T02:34:35Z,"link labelled ""Github"""
+numfocus,SageMath,https://github.com/sagemath/sage,sagemath/sage,https://www.sagemath.org/,2026-10-05T02:34:36Z,
+numfocus,BayesFlow,https://github.com/bayesflow-org/bayesflow,bayesflow-org/bayesflow,https://bayesflow.org/,2026-10-05T02:37:00Z,homepage meta-refreshes to the versioned docs
+numfocus,HiGHS,https://github.com/ERGO-Code/HiGHS,ERGO-Code/HiGHS,https://highs.dev/,2026-10-05T02:34:40Z,
+numfocus,RxInfer,https://github.com/ReactiveBayes/RxInfer.jl,ReactiveBayes/RxInfer.jl,https://rxinfer.com/,2026-10-05T02:34:42Z,
+numfocus,sbi,https://github.com/sbi-dev/sbi,sbi-dev/sbi,https://sbi-dev.github.io/sbi/,2026-10-05T02:37:02Z,homepage meta-refreshes to /latest/
+numfocus,marimo,https://github.com/marimo-team/marimo,marimo-team/marimo,https://marimo.io/,2026-10-05T02:34:46Z,
+numfocus,Albumentations,https://github.com/albumentations-team/AlbumentationsX,albumentations-team/AlbumentationsX,https://albumentations.ai/,2026-10-05T02:34:48Z,"the page names AlbumentationsX (""Public repository: AGPL-3.0-only"")"
+numfocus,Materials Project Software Foundation,,,https://next-gen.materialsproject.org/,2026-10-05T16:53:17+00:00,"no repository named on the page; only an 'Open Source Software' page on the same site (a second step, not followed); page read in the author's Firefox (browser-control-mcp), 2026-10-05"
+numfocus,UXarray,https://github.com/UXARRAY/uxarray,UXARRAY/uxarray,https://uxarray.readthedocs.io/,2026-10-05T02:34:54Z,"link labelled ""Repository""; fetched URL redirected to https://uxarray.readthedocs.io/en/latest/"
+numfocus,BrainGlobe,https://github.com/brainglobe,,http://brainglobe.info/,2026-10-05T02:34:58Z,org only; fetched URL redirected to https://brainglobe.info/
+numfocus,Project Pythia,https://github.com/ProjectPythia,,https://projectpythia.org/,2026-10-05T02:35:00Z,org only

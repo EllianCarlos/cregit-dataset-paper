@@ -1,0 +1,22 @@
+# Part a3 of the S and M projects of manifest.batch16.tsv (sha256 1e4fd43f0de322264d2b94b8a8370f41906df20bc45b8315187818245642b2d1),
+# balanced by predicted time (6.5 h for 4 workers), u order; a fed spot part.
+# 18 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+TASEmulators__desmume	https://github.com/TASEmulators/desmume.git	pending		S	1275dc64f5d1f5ef18dc1bc1fa9e012024b6df1a
+apache__juneau	https://github.com/apache/juneau.git	pending		S	641fadab09cc44e451b28b58e10842841e522c8f
+KDE__kwin-x11	https://github.com/KDE/kwin-x11.git	pending		S	1f7256e394863beb5fb08454d1234c75960c6051
+gnina__gnina	https://github.com/gnina/gnina.git	pending		S	6fe1ce2bb9c35c8067de9f49bb9169857dfbad70
+manticoresoftware__manticoresearch	https://github.com/manticoresoftware/manticoresearch.git	pending		S	b5499e09fdf521c83b16b7997fc4eef5ab32cb6a
+CalcProgrammer1__OpenRGB	https://github.com/CalcProgrammer1/OpenRGB.git	pending		S	3021bc4f930c74c867a8f47d425031f55e47ef43
+cryspen__hax	https://github.com/cryspen/hax.git	pending		S	ea24f98636878b3f87040962fcea47861dd27066
+ponylang__ponyc	https://github.com/ponylang/ponyc.git	pending		S	a3e5621113809b560f998d004a746d72ceff8fc9
+qt__qtdeclarative	https://github.com/qt/qtdeclarative.git	pending		M	2a0c1234026b65199fd37fb37beb205b3f6a62da
+wix__react-native-navigation	https://github.com/wix/react-native-navigation.git	pending		S	1de39e0d5da34c077b4998b9f0cbe972e770a464
+JetBrains__intellij-sdk-docs	https://github.com/JetBrains/intellij-sdk-docs.git	pending		S	408ddb443e94d991873efce5a076e07bc331fc8a
+TimefoldAI__timefold-solver	https://github.com/TimefoldAI/timefold-solver.git	pending		S	bdc033f5b737e50203f9e57eeb01d0c7a0bb1e76
+apache__directory-studio	https://github.com/apache/directory-studio.git	pending		S	02c78716f6e2d321d8470ad5d981f4ff59a26732
+pbek__QOwnNotes	https://github.com/pbek/QOwnNotes.git	pending		S	b0c95f6f7b7c953dba94d907abbbd4f3071c9df0
+gitlab.eclipse.org__eclipse__papyrus__org.eclipse.papyrus-classic	https://gitlab.eclipse.org/eclipse/papyrus/org.eclipse.papyrus-classic	pending		S	aedff088a904a3135f2003be396dc7c29357005a
+dolphin-emu__dolphin	https://github.com/dolphin-emu/dolphin.git	pending		M	f87e849a0afb3092aa0e30d363e730a106c65fe6
+OpenAPITools__openapi-generator	https://github.com/OpenAPITools/openapi-generator.git	pending		S	4d272cb3e05be7037480e80de4b4a6bdfbe0f7a0
+apache__commons-compress	https://github.com/apache/commons-compress.git	pending		S	ddce121235c211358d95b43a601e82a39e399a0b

@@ -1,0 +1,30 @@
+url	file	fetched_at_utc	final_url	title	status	found_logins	all_github_logins
+https://www.amd.com/opensource	b5a310b7af28ff95.txt	2026-10-06T14:48:12Z	https://www.amd.com/pt/site-notifications/404.html?ref=/opensource	404 Página não encontrada	error		Xilinx
+https://www.amd.com/open-source	bcb6f9537e68f2cc.txt	2026-10-06T14:48:50Z	https://www.amd.com/pt/site-notifications/404.html?ref=/open-source	404 Página não encontrada	error		Xilinx
+http://www.amd.com		2026-10-06T14:49:09Z		open-browser-tab returned Invalid URL (plain http rejected)	error		
+https://akamai.com/opensource	8d341f8b40f2a102.txt	2026-10-06T14:49:29Z			error		
+https://www.akamai.com/opensource	071bbe87615a0bff.txt	2026-10-06T14:49:53Z			error		
+https://akamai.com/open-source	bad599bedd4e4bd9.txt	2026-10-06T14:50:14Z			error		
+https://www.akamai.com/open-source	1b73982165445e95.txt	2026-10-06T14:50:30Z			error		
+https://www.allstate.com/opensource	2fd3b9ce299a5f68.txt	2026-10-06T14:50:51Z			error		
+https://www.allstate.com/open-source	df417bc47147f4e7.txt	2026-10-06T14:51:07Z			error		
+http://www.allstate.com		2026-10-06T14:51:17Z		open-browser-tab returned Invalid URL (plain http rejected)	error		
+https://www.analog.com/opensource		2026-10-06T14:51:55Z		get-tab-web-content failed: tab url null (origin null/*); user says analog.com is an ftp url	error		
+https://www.analog.com/open-source	7d9414b5ba43760d.txt	2026-10-06T14:52:14Z			error		
+https://www.analog.com	9eab02698e5087c8.txt	2026-10-06T14:52:34Z			ok		
+https://avnet.com/opensource	8a34c54b28ce91ed.txt	2026-10-06T14:52:54Z			error		
+https://avnet.com/open-source	58239e6d4f3868da.txt	2026-10-06T14:53:09Z			error		
+https://opensource.arista.com/		2026-10-06T14:53:25Z		get-tab-web-content: Missing host permission for the tab (domain consent needed: opensource.arista.com)	error		
+https://www.jiguang.cn	6ebfb64a68a4e2c8.txt	2026-10-06T14:53:53Z			ok		
+https://ball.com/opensource	fd7beed132198f4e.txt	2026-10-06T14:54:14Z			error		
+https://www.ball.com/opensource	8add5e30e78c691a.txt	2026-10-06T14:55:01Z			error		
+https://ball.com/open-source	a11588a950362ee2.txt	2026-10-06T14:55:19Z			error		
+https://www.ball.com/open-source	e881fbbc06243763.txt	2026-10-06T14:55:36Z			error		
+https://box.com/opensource	8cb30a0fa597efe8.txt	2026-10-06T14:56:02Z			ok		
+https://www.box.com/opensource	adeb9045ca664422.txt	2026-10-06T14:56:21Z			ok		
+https://box.com/open-source	26d4e0194f408451.txt	2026-10-06T14:56:39Z			error		
+https://www.box.com/open-source	5bbb7fb349a43ca7.txt	2026-10-06T14:56:56Z			error		
+https://www.baidu.com/opensource		2026-10-06T14:57:13Z		get-tab-web-content: Missing host permission for the tab (domain consent needed: www.baidu.com)	error		
+https://cerner.com/opensource		2026-10-06T14:57:31Z		get-tab-web-content: Missing host permission for the tab (cerner.com or its redirect target)	error		
+https://cerner.com/open-source		2026-10-06T14:57:47Z		get-tab-web-content: Missing host permission for the tab (cerner.com or its redirect target)	error		
+https://carbonblack.com/opensource		2026-10-06T14:58:06Z		get-tab-web-content: tab url null (origin null/*), page likely did not load	error		

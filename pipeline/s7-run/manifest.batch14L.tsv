@@ -1,0 +1,9 @@
+# The L projects of manifest.batch14.tsv (sha256 a1801c196defea51ecbeef0e7e9aa11dbb3fa7a56a079e8c25e40875a392ac5a), for the census batch14L on the big on-demand EC2.
+# 6 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+naftaliharris__tauthon	https://github.com/naftaliharris/tauthon.git	pending		L	8c285035882a2b9843428293675fa7668c0d5b0e
+intel__llvm	https://github.com/intel/llvm.git	pending		L	877282b69962972b8960eef5bf83799a71dbc93c
+microsoft__OHCL-Linux-Kernel	https://github.com/microsoft/OHCL-Linux-Kernel.git	pending		L	bb0827ceb8fcd777ca2fad8b71da91c2247429ce
+digi-embedded__android_platform_frameworks_base	https://github.com/digi-embedded/android_platform_frameworks_base.git	pending		L	93a5f6eccdbc7573dd48f37e1a6653d8e96f3f4b
+LibreOffice__core	https://github.com/LibreOffice/core.git	pending		L	65bbb1691f022226390e15b7ea65567970bbc12e
+microsoft__vscode	https://github.com/microsoft/vscode.git	pending		L	4ea6157f821f33c75892de9cc7944e247809d951

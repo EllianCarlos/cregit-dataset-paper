@@ -1,0 +1,27 @@
+# Part a4 of the S and M projects of manifest.batch19.tsv (sha256 8a11b7acec582e49f76d0e09d7ff1e039d3458ef456ff4c1a875509b92849d3b),
+# balanced by predicted time (6.9 h for 4 workers), u order; a fed spot part.
+# 23 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+jitsi__jitsi-videobridge	https://github.com/jitsi/jitsi-videobridge.git	pending		S	b92aba83ccb075e45ad3b2386f0358e991e9cf29
+axkr__symja_android_library	https://github.com/axkr/symja_android_library.git	pending		S	eea427dc355b244bea208b7d711b26fdbfa25767
+openrewrite__rewrite	https://github.com/openrewrite/rewrite.git	pending		S	5c923cc8ae81a92182e87e31c0137c3b085356be
+PointCloudLibrary__pcl	https://github.com/PointCloudLibrary/pcl.git	pending		S	3c70b20d26b2e2f591e3d135f616667f9d999cc8
+KDE__kdevelop	https://github.com/KDE/kdevelop.git	pending		M	deed3d1a484f12c00e7c91adc05f4ae2ffb0bbf3
+meshtastic__firmware	https://github.com/meshtastic/firmware.git	pending		S	9e4d3018ef479c9db9b7ccca08d73301b86b7c2f
+schrodinger__pymol-open-source	https://github.com/schrodinger/pymol-open-source.git	pending		S	5e8bfca5a7f5dc4d5e7f84fa1d15af707cc86e69
+OpenChemistry__avogadrolibs	https://github.com/OpenChemistry/avogadrolibs.git	pending		S	cd83a724b7b2105629e55b95d8bccb7d926e5393
+project-everest__mitls-fstar	https://github.com/project-everest/mitls-fstar.git	pending		S	9a75fa8c46e50897b1f43002885d25a34dfa929a
+micromata__projectforge	https://github.com/micromata/projectforge.git	pending		S	569bb27f0a119b96b0099336cc0a61342ccf4972
+geotools__geotools	https://github.com/geotools/geotools.git	pending		S	57f065365341d459230f4b49694f594880c2b843
+google__closure-compiler	https://github.com/google/closure-compiler.git	pending		S	bb8c8e7cb8d0b14b27ff5e969d186bb97017eb06
+OpenKore__openkore	https://github.com/OpenKore/openkore.git	pending		S	51de1ddfc4449ae5217f6886de702f87ca934030
+file__file	https://github.com/file/file.git	pending		S	5e57b94cdd3f2bc2f6db8581dcce76a89fc9c9f7
+vllm-project__vllm-ascend	https://github.com/vllm-project/vllm-ascend.git	pending		S	4e19cc765510abfa1dd485b2aa72ff83d0945cf8
+openmrs__openmrs-core	https://github.com/openmrs/openmrs-core.git	pending		S	5d25788a1a33716b3c6c41125bd3c2b8a80050d6
+apache__ambari	https://github.com/apache/ambari.git	pending		S	a01b6745cf618b20accde2e670b7c78115c21367
+mfem__mfem	https://github.com/mfem/mfem.git	pending		S	ed7e19c2acfa0cae13d8f8c453237764d4ae7374
+vapoursynth__vapoursynth	https://github.com/vapoursynth/vapoursynth.git	pending		S	dd11a9da6f8e2bb24ab4bb084d44bf01fb93612a
+FalconChristmas__fpp	https://github.com/FalconChristmas/fpp.git	pending		S	b2b126c108be8419a8e915e8460562b604dff474
+Tencent__puerts	https://github.com/Tencent/puerts.git	pending		S	6995da0173487bfd75780da22466304837716ffb
+nextgenhealthcare__connect	https://github.com/nextgenhealthcare/connect.git	pending		S	11017fd02ab09db9a0388dc85a41bd906f789eba
+xiph__opus	https://github.com/xiph/opus.git	pending		S	503d81b138d76621aae4b12786e90de48aa8db3a

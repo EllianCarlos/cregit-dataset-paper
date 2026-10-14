@@ -1,0 +1,24 @@
+# Part a3 of the S and M projects of manifest.batch7.tsv (sha256 c292b9d4dbd64d4dfa983374635f00d165ecd33a6dc0f1f0dfe36b830a188033),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+chrisant996__clink	https://github.com/chrisant996/clink.git	pending		S	f18808fe383d6b99d2c24bc0a98177664d8afe30
+finalburnneo__FBNeo	https://github.com/finalburnneo/FBNeo.git	pending		S	71a1a69261712af7a6b505636c79f069516a40e0
+sakura-editor__sakura	https://github.com/sakura-editor/sakura.git	pending		S	e3877f7904ce08454ccf12b05fdbea673dfe14ee
+immortalwrt__immortalwrt	https://github.com/immortalwrt/immortalwrt.git	pending		M	8735c686ae30fe85d94de97669399c2117179f82
+tumic0__GPXSee	https://github.com/tumic0/GPXSee.git	pending		S	65291cf455793d7d997a885301cb16f3a69cc77c
+cesanta__mongoose	https://github.com/cesanta/mongoose.git	pending		S	ad45248327cea57cd3ae77fd4161c998d5033641
+SSSD__sssd	https://github.com/SSSD/sssd.git	pending		S	ada5e6f2650c409dcbd6755072c9b851db84b3d5
+openwms__org.openwms	https://github.com/openwms/org.openwms.git	pending		S	9d263bf65ec75301e0302539ae7bf581412742b8
+gnuradio__gnuradio	https://github.com/gnuradio/gnuradio.git	pending		S	5358e35ec675a56827eb6408768c453a925b2bad
+MicrosoftDocs__windows-dev-docs	https://github.com/MicrosoftDocs/windows-dev-docs.git	pending		S	aabd22a9113af71e56bd6f5af8fde06df68162e0
+SonarSource__sonarqube	https://github.com/SonarSource/sonarqube.git	pending		M	166b83df0a2319209d22925261f5d1e005f583f4
+google__j2cl	https://github.com/google/j2cl.git	pending		S	c2c7bcf85bf7465baf17cc0ec4df1bdf1b4381fe
+lanl__Draco	https://github.com/lanl/Draco.git	pending		S	28ab37f48196b4f2eb2de475f86303e7969b1d10
+openhpc__ohpc	https://github.com/openhpc/ohpc.git	pending		S	a2e2d19d1f792aebcb27141e70509c9a0e9f1b0e
+guardian__grid	https://github.com/guardian/grid.git	pending		S	7c8ed5f7dda7cb5559089b11941f220ae5ffabae
+tporadowski__redis	https://github.com/tporadowski/redis.git	pending		S	c59c9365be41e8936fef00af5b1b149ab91b70ba
+Wox-launcher__Wox	https://github.com/Wox-launcher/Wox.git	pending		S	232be37ea86f066c167b34c0c5a2893a29768910
+sunnypilot__sunnypilot	https://github.com/sunnypilot/sunnypilot.git	pending		S	a5f44653d7f43ad57fef2f546f3916ec4cbf3c56
+pac4j__pac4j	https://github.com/pac4j/pac4j.git	pending		S	21168ab2c34f6d1561e7d6020ace7c94fe429f59
+signalwire__freeswitch	https://github.com/signalwire/freeswitch.git	pending		M	3dee68e8109207e4b01202ab868636cbe9ac841d

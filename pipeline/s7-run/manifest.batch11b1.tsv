@@ -1,0 +1,12 @@
+# Part b1 of the S and M projects of manifest.batch11.tsv (sha256 c0bc3c7dfba79160d832ec8f554c147ba73f356035049fa27b4442dfc81ecea4),
+# balanced by predicted time (8.2 h for 4 workers), u order; a fed spot part.
+# 8 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+dealii__dealii	https://github.com/dealii/dealii.git	pending		M	d1ccc50c04a2429b6b88b56746296a41c7cc0121
+GNOME__epiphany	https://github.com/GNOME/epiphany.git	pending		S	550095366b7097e8039d6b3970d114c3008c75af
+lhmouse__asteria	https://github.com/lhmouse/asteria.git	pending		S	f208206871f61e24b8cb526831b9e15aac6ca080
+Evolveum__midpoint	https://github.com/Evolveum/midpoint.git	pending		M	0a488d96894a4b37eccffe0348ae7c50295aae34
+wwmm__easyeffects	https://github.com/wwmm/easyeffects.git	pending		S	2bd13837782ad2269fa8d8b6d3048957c431580a
+oracle__qemu	https://github.com/oracle/qemu.git	pending		M	005ad32358f12fe9313a4a01918a55e60d4f39e5
+apache__beam	https://github.com/apache/beam.git	pending		M	c74609d71eeae8127cd8fa6b1c06a2c9e92422a5
+transmission__transmission	https://github.com/transmission/transmission.git	pending		S	48835c6660a7a3730b5a122bb7b88909997addbe

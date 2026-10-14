@@ -1,0 +1,8 @@
+# Part a1 of the S and M projects of manifest.batch13.tsv (sha256 1d1f93d1d2952c0f2a25ca8f968b8bf867959609ab38c913a98784b9d447bfcc),
+# balanced by predicted time (11.7 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+DragonFlyBSD__DragonFlyBSD	https://github.com/DragonFlyBSD/DragonFlyBSD.git	pending		M	f2d4fdb18d63197e880adc54f961f225a94125b0
+gnuton__asuswrt-merlin.ng	https://github.com/gnuton/asuswrt-merlin.ng.git	pending		S	14166d1af5fc9a115c66f187e1618977b732682d
+Azure__azure-sdk-for-java	https://github.com/Azure/azure-sdk-for-java.git	pending		M	0be03d3f9726c173307ed2a8940f348228a054a1
+FFmpeg__FFmpeg	https://github.com/FFmpeg/FFmpeg.git	pending		M	47313ad3f9f33b892384b976fb7c09b3c85fd74e

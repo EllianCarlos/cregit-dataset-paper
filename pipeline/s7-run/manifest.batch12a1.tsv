@@ -1,0 +1,8 @@
+# Part a1 of the S and M projects of manifest.batch12.tsv (sha256 6f4e0b95cc46dde0079b671dc19e8737a15e3a7e98ad301a629af614192c3fc8),
+# balanced by predicted time (13.5 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+espressif__esp-idf	https://github.com/espressif/esp-idf.git	pending		M	4d59230ddff16327812782151ef0afef202dc6d7
+alisw__AliPhysics	https://github.com/alisw/AliPhysics.git	pending		M	27dd70d21f4f18c4a8f094040d7987dd83bc4bae
+qemu__qemu	https://github.com/qemu/qemu.git	pending		M	d7a65d1793d691d356a56833620f7d1e6f5d653b
+mamedev__mame	https://github.com/mamedev/mame.git	pending		M	35122a75888f4d6bdf6210bd3b8dbffb3174a700

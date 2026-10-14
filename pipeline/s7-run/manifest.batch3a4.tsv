@@ -1,0 +1,23 @@
+# Part a4 of manifest.batch3a.tsv: rows 4, 8, ... (every 4th), u order.
+# 20 projects.
+# Columns: name  url  category  file_filter  size_class  commit
+getsentry__sentry-cocoa	https://github.com/getsentry/sentry-cocoa.git	pending		S	7d62e6190096200d06cdf586d7bb3fac52ff4889
+nullptrlabs__pgmodeler	https://github.com/nullptrlabs/pgmodeler.git	pending		S	102925d159e5eb7b570f09b23ef55af506b7f3d4
+azahar-emu__azahar	https://github.com/azahar-emu/azahar.git	pending		S	6280521bf26ef1393974cd8c898de29cf75f5752
+vircadia__vircadia-native-core	https://github.com/vircadia/vircadia-native-core.git	pending		M	a6872176fa27c5951ba9f6e208c5ac58decb4759
+actor-framework__actor-framework	https://github.com/actor-framework/actor-framework.git	pending		S	9fccef56a4d39baa17a1a54f9ee08d8b8a4e30a4
+wala__WALA	https://github.com/wala/WALA.git	pending		S	1db728d4ea84922c9b3c8c520a180cb40177b6a4
+AzureAD__microsoft-authentication-library-common-for-objc	https://github.com/AzureAD/microsoft-authentication-library-common-for-objc.git	pending		S	5a6d2da6eaf03eb70df3e53223d700e49b2790ee
+diasurgical__DevilutionX	https://github.com/diasurgical/DevilutionX.git	pending		S	dac104babfb6187415432f428ac2516747ffc154
+briar__briar	https://github.com/briar/briar.git	pending		S	aea0e4a6c149e5aeaf1ef603792cd073314cf701
+TerraFirmaCraft__TerraFirmaCraft	https://github.com/TerraFirmaCraft/TerraFirmaCraft.git	pending		S	e9d9a88a187d5a33064e2d86b2803f54238cadd6
+bdwgc__bdwgc	https://github.com/bdwgc/bdwgc.git	pending		S	e50d792d8abfcd5092eb16113ffb618e913c890b
+BasedHardware__omi	https://github.com/BasedHardware/omi.git	pending		M	cf8201c2f532bacb24dfcd4f19412cf26b386e47
+analogdevicesinc__buildroot	https://github.com/analogdevicesinc/buildroot.git	pending		M	0a81b12ba0b99749b28fc6473a6d60b672cc5f7b
+apache__axis-axis2-c-core	https://github.com/apache/axis-axis2-c-core.git	pending		S	4a22da0eaef88281067ce349764f1d58492d6571
+snabbco__snabb	https://github.com/snabbco/snabb.git	pending		S	f32729274b0a1b0da612bface2eabd8b57eef200
+electron__electron	https://github.com/electron/electron.git	pending		M	6b48d9813bd791453c7b57812a5395c693ba3e14
+apache__brooklyn-server	https://github.com/apache/brooklyn-server.git	pending		S	16b16c6c6259d75ef6b4f19aa37ee3977a754f1d
+vmware__photon	https://github.com/vmware/photon.git	pending		S	33db110fcec99bdb1e98c85aefd9a2e31974f21b
+dlang__phobos	https://github.com/dlang/phobos.git	pending		S	1877367354fadf001365292d74e39ffd15c21bbc
+h2database__h2database	https://github.com/h2database/h2database.git	pending		S	694e575e3dcaee85dc39778a21e6ff91878e751d

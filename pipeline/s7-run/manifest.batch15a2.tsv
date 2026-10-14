@@ -1,0 +1,14 @@
+# Part a2 of the S and M projects of manifest.batch15.tsv (sha256 ef0a99a173728f06226d70b9f0bdc6b1ca14a87ee16172ba5d195ada48f6b470),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 10 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+NVIDIA__cudf-spark-jni	https://github.com/NVIDIA/cudf-spark-jni.git	pending		S	fde228c6cfbab7d35b5420aa2ad70d6c5f099063
+GNOME__gimp	https://github.com/GNOME/gimp.git	pending		M	4e49c5be6dc4cb670910091bae24022e4feff578
+analogdevicesinc__scopy	https://github.com/analogdevicesinc/scopy.git	pending		S	18fcb27c94edf968e26e4542010bdbe3c0b465b4
+ErichStyger__mcuoneclipse	https://github.com/ErichStyger/mcuoneclipse.git	pending		S	7a2f8edc26bcb5e8cff81c226030cac965638ec9
+root-project__cling	https://github.com/root-project/cling.git	pending		S	1807a1e6f8819029e0931e8c829de794db60f71f
+open-policy-agent__opa	https://github.com/open-policy-agent/opa.git	pending		S	d179cdae407338d768da168ad67105645774e521
+pgcodekeeper__pgcodekeeper	https://github.com/pgcodekeeper/pgcodekeeper.git	pending		S	a53868899afbe626b1cedcf25e5a39cd6f298e56
+Kitware__ParaView	https://github.com/Kitware/ParaView.git	pending		M	20cf46bd614e8bfef0fad1ceccbbacc94d1b10ac
+panda-re__panda	https://github.com/panda-re/panda.git	pending		M	36502113107ff260e7499065c9d4b764d387a7da
+horsicq__XELFViewer	https://github.com/horsicq/XELFViewer.git	pending		S	cb3a5988fcbec7213a996bd5da56b99f88eaf290

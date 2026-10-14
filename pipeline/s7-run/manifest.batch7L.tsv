@@ -1,0 +1,6 @@
+# The L projects of manifest.batch7.tsv (sha256 c292b9d4dbd64d4dfa983374635f00d165ecd33a6dc0f1f0dfe36b830a188033), for the census batch7L on the big on-demand EC2.
+# 3 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+freebsd__freebsd-src	https://github.com/freebsd/freebsd-src.git	pending		L	a5ae2a9bfb1ca7f49e79ee63ed39216c42326d02
+UPBGE__upbge	https://github.com/UPBGE/upbge.git	pending		L	706a4be93ed600b5a2b50577f4788754e5ca12c0
+microsoft__WSL2-Linux-Kernel	https://github.com/microsoft/WSL2-Linux-Kernel.git	pending		L	14794180686c2fb6307fbe359c359bec765249f3

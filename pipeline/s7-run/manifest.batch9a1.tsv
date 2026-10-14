@@ -1,0 +1,8 @@
+# Part a1 of the S and M projects of manifest.batch9.tsv (sha256 00a32df96f075408b7ce58f8ecc5a5d19c49e20efefee07637b2b4f03bdbc2e8),
+# balanced by predicted time (17.4 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+openjdk__loom	https://github.com/openjdk/loom.git	pending		M	26e913835aacaba52fa04328cd335359dc7614f6
+alibaba__AliSQL	https://github.com/alibaba/AliSQL.git	pending		M	9e121f27d404cad6cdb1cc695eab4276469adace
+oracle__graal	https://github.com/oracle/graal.git	pending		M	5727d2bee28565f4d4db22770df1276de23d054e
+adoptium__jdk24u	https://github.com/adoptium/jdk24u.git	pending		M	b42f146edb8324bbb164bb706e8ad39d60aaf25b

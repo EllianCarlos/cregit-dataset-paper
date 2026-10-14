@@ -1,0 +1,32 @@
+# Part a3 of the S and M projects of manifest.batch5.tsv (sha256 d831890774e9a5e162a2e113942e19a64e0e7a2275032bf7880b86fe1f765ead),
+# balanced by predicted time (11.3 h for 4 workers), u order.
+# 28 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+godotengine__godot	https://github.com/godotengine/godot.git	pending		M	d8029ef0f151656e480f2ccc071dd80d012abaaa
+E3SM-Project__E3SM	https://github.com/E3SM-Project/E3SM.git	pending		M	5dd852eac3d94d94433a1146ca94af093528ea56
+ethereum__EIPs	https://github.com/ethereum/EIPs.git	pending		S	69075f1b54fc4a116b41f75461a9868755a83e41
+kismetwireless__kismet	https://github.com/kismetwireless/kismet.git	pending		S	98febef77c17d8032c680b66a44f2cba32500472
+TencentBlueKing__bk-job	https://github.com/TencentBlueKing/bk-job.git	pending		S	f40cc5c4a3e560436c495025665222eb77fdc29d
+robotology__yarp	https://github.com/robotology/yarp.git	pending		S	3991a4eefd55462c45ec9ab69a214305f9da63e6
+unbit__uwsgi	https://github.com/unbit/uwsgi.git	pending		S	8d116f7ea2b098c11ce54d0b3a561c54dcd11929
+bibletime__bibletime	https://github.com/bibletime/bibletime.git	pending		S	2ab7230fa73ebc1e36e9da86ad1a5555c6d55b34
+exoplatform__ecms	https://github.com/exoplatform/ecms.git	pending		S	80d089374b15abb97d51109f0ffb0c2a2cf6a922
+jasp-stats__jasp-desktop	https://github.com/jasp-stats/jasp-desktop.git	pending		S	5353a6de948b883a8a581999cfe33df5ae53bf3f
+GerritCodeReview__gerrit	https://github.com/GerritCodeReview/gerrit.git	pending		M	b187dca4722eb8100e3fa16d15957450cef363be
+getsentry__snuba	https://github.com/getsentry/snuba.git	pending		S	869ddcfb0e400e752bed798705faad9366750b22
+openinterpreter__openinterpreter	https://github.com/openinterpreter/openinterpreter.git	pending		S	2767e5f20d6927500b8f1938c773c61afb823245
+linux-test-project__ltp	https://github.com/linux-test-project/ltp.git	pending		S	78e6353fdff663b2fc2f77704ceec6c3ca786b96
+CTR-tools__CTR-ModSDK	https://github.com/CTR-tools/CTR-ModSDK.git	pending		S	e3f19686fb07d62847836ae77c733573a54d3534
+retrooper__packetevents	https://github.com/retrooper/packetevents.git	pending		S	5da85d7ad888f69732e0726aad8dde8f0e0ef4c1
+WebFuzzing__EvoMaster	https://github.com/WebFuzzing/EvoMaster.git	pending		S	d7eeb8a035c0dc0b3f3edd78ae9db8a96e57e4c1
+plugdata-team__plugdata	https://github.com/plugdata-team/plugdata.git	pending		S	2087babb3679d04cd8548530d2a1349bd9e87b7b
+Perl__perl5	https://github.com/Perl/perl5.git	pending		M	21ca8afdac8b0de00d870d2488385682b50fc871
+optimad__bitpit	https://github.com/optimad/bitpit.git	pending		S	ff2ad7cdcc7897284d4f3347cc680e1776d20036
+open-acpica__acpica	https://github.com/open-acpica/acpica.git	pending		S	e85aa3bebaae81ed1e6d163511ac7e1eafe732cf
+julelang__jule	https://github.com/julelang/jule.git	pending		S	89f6544faab6c23f0ab90c8d66ed0cdfaa565332
+FreeFem__FreeFem-sources	https://github.com/FreeFem/FreeFem-sources.git	pending		S	754dae8ae8f858784ad46b2f46dfd7862829cb5a
+veryl-lang__veryl	https://github.com/veryl-lang/veryl.git	pending		S	967e477a4457ce59eec808b7be2ec0dbe7ff938e
+vslavik__poedit	https://github.com/vslavik/poedit.git	pending		S	b69174eb5cb236183b6b45d0f691d7513baabcb3
+csound__csound	https://github.com/csound/csound.git	pending		S	9e2134baad52fdab008c523ba28990e5d18bfc73
+gitlab.eclipse.org__eclipse__oniro-core__meta-openembedded	https://gitlab.eclipse.org/eclipse/oniro-core/meta-openembedded	pending		S	98175fd0cc6eefe4db9484131bb98f0516c0d1a5
+fooyin__fooyin	https://github.com/fooyin/fooyin.git	pending		S	da8b367e25f1c75ac7a000856833ab85676dee39

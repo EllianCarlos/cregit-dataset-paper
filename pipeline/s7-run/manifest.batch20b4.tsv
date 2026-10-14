@@ -1,0 +1,18 @@
+# Part b4 of the S and M projects of manifest.batch20.tsv (sha256 4c456b71c9e1db2907af03ac928fea9e460ff859170009b53725d68c63848625),
+# balanced by predicted time (5.5 h for 4 workers), u order; a fed spot part.
+# 14 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+qt__qtdoc	https://github.com/qt/qtdoc.git	pending		S	948e31edad40e0ed8bbd7652454705d7bfc016bc
+karatelabs__karate	https://github.com/karatelabs/karate.git	pending		S	0c1d1c5723eb97b75dee996f7396d31b5fa1802e
+TheXTech__TheXTech	https://github.com/TheXTech/TheXTech.git	pending		S	7e09a6b8e96116e48f78947c2192f90e065d0ddf
+fish-shell__fish-shell	https://github.com/fish-shell/fish-shell.git	pending		S	da63cfd2a88a8d3470cadb557367850062f760eb
+truffleruby__truffleruby	https://github.com/truffleruby/truffleruby.git	pending		M	c734f26543003fefd4519a29adbca62d0c711a2d
+intel__compute-runtime	https://github.com/intel/compute-runtime.git	pending		S	fa4a9af6930de6647ced6e783cd3d3fed77383f6
+rbfx__rbfx	https://github.com/rbfx/rbfx.git	pending		S	34d9bec3871e51e63dff92327473350ebce2e7e7
+LibreSprite__LibreSprite	https://github.com/LibreSprite/LibreSprite.git	pending		S	1fb0c749b7c29369dfcc4d58d30678e197996a40
+openssl__openssl	https://github.com/openssl/openssl.git	pending		M	06739307f135799f266b23ddabe669e45f856fe1
+eclipse-jdt__eclipse.jdt.debug	https://github.com/eclipse-jdt/eclipse.jdt.debug.git	pending		S	ef201028f40e2fd41795fff965fd196f47cd4753
+xdebug__xdebug	https://github.com/xdebug/xdebug.git	pending		S	64007df3a0925808022fb87b6c6f06febf058ee2
+GNOME__gnome-software	https://github.com/GNOME/gnome-software.git	pending		S	c271ff874e2a4146c3ca4fdbb4110bc6b642b780
+richardscollin__tmux-rs	https://github.com/richardscollin/tmux-rs.git	pending		S	019017d2cb8a67884b9b301de2d209d09544347a
+jpcsp__jpcsp	https://github.com/jpcsp/jpcsp.git	pending		S	00ac4d6daedd89c0492093ae83fb0d3d819af414

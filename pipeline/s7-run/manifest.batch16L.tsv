@@ -1,0 +1,8 @@
+# The L projects of manifest.batch16.tsv (sha256 1e4fd43f0de322264d2b94b8a8370f41906df20bc45b8315187818245642b2d1), for the census batch16L on the big on-demand EC2.
+# 5 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+percona__percona-server	https://github.com/percona/percona-server.git	pending		L	cd515a56df1e120eda9a0c76d4142e68d1e6d578
+logicalclocks__rondb	https://github.com/logicalclocks/rondb.git	pending		L	1d9bc8c56ce38ec0d5bc18e7dd79cf677ab2e2aa
+pfsense__FreeBSD-ports	https://github.com/pfsense/FreeBSD-ports.git	pending		L	a621624266b19a7f48b1f94a60821d2c2fc6ee4c
+analogdevicesinc__linux	https://github.com/analogdevicesinc/linux.git	pending		L	b1b66e7177216b892dc574c6d1823fb905474489
+Rust-GCC__gccrs	https://github.com/Rust-GCC/gccrs.git	pending		L	36b5a1512938d9f2d6b23c29404ac6baca9dab3c

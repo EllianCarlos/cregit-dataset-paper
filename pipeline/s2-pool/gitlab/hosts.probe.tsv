@@ -1,0 +1,69 @@
+host	http	is_gitlab	x_total	probed_at
+bitbucket.org	404	no		2026-10-13T22:20:37Z
+carvel.dev	404	no		2026-10-13T22:20:38Z
+ccadb.org	404	no		2026-10-13T22:20:39Z
+cgit.kde.org	none	no		2026-10-13T22:20:40Z
+cgit.openembedded.org	404	no		2026-10-13T22:20:42Z
+cntt-n.github.io	404	no		2026-10-13T22:20:43Z
+code.bioconductor.org	none	no		2026-10-13T22:20:44Z
+code.google.com	404	no		2026-10-13T22:20:45Z
+codeberg.org	404	no		2026-10-13T22:20:47Z
+devel.gvsig.org	404	no		2026-10-13T22:20:48Z
+dist.apache.org	404	no		2026-10-13T22:20:50Z
+doi.org	404	no		2026-10-13T22:20:51Z
+fair.pm	404	no		2026-10-13T22:20:52Z
+gcc.gnu.org	404	no		2026-10-13T22:20:53Z
+gerrit.o-ran-sc.org	404	no		2026-10-13T22:20:54Z
+git-wip-us.apache.org	404	no		2026-10-13T22:20:56Z
+git.adelielinux.org	200	yes	228	2026-10-13T22:20:57Z
+git.ageinghacker.net	404	no		2026-10-13T22:20:59Z
+git.apache.org	404	no		2026-10-13T22:21:00Z
+git.archlinux32.org	404	no		2026-10-13T22:21:02Z
+git.busybox.net	404	no		2026-10-13T22:21:04Z
+git.coretoolchain.dev	404	no		2026-10-13T22:21:05Z
+git.dpdk.org	200	no		2026-10-13T22:21:06Z
+git.dynare.org	200	yes	116	2026-10-13T22:21:08Z
+git.ffmpeg.org	200	no		2026-10-13T22:21:10Z
+git.gnunet.org	404	no		2026-10-13T22:21:11Z
+git.kernel.org	404	no		2026-10-13T22:21:12Z
+git.libreoffice.org	200	no		2026-10-13T22:21:14Z
+git.linuxfoundation.org	404	no		2026-10-13T22:21:15Z
+git.openwrt.org	502	no		2026-10-13T22:21:17Z
+git.orfeo-toolbox.org	none	no		2026-10-13T22:21:18Z
+git.osgeo.org	404	no		2026-10-13T22:21:19Z
+git.savannah.gnu.org	404	no		2026-10-13T22:21:21Z
+git.savannah.nongnu.org	404	no		2026-10-13T22:21:22Z
+git.sr.ht	404	no		2026-10-13T22:21:23Z
+git.sv.gnu.org	404	no		2026-10-13T22:21:24Z
+git.taler.net	404	no		2026-10-13T22:21:26Z
+git.themanaworld.org	200	yes	161	2026-10-13T22:21:27Z
+git.yoctoproject.org	404	no		2026-10-13T22:21:29Z
+gitbox.apache.org	404	no		2026-10-13T22:21:30Z
+gitea.wildfiregames.com	404	no		2026-10-13T22:21:32Z
+gitlab.archlinux.org	200	yes		2026-10-13T22:21:37Z
+gitlab.com	200	yes		2026-10-13T22:21:38Z
+gitlab.eclipse.org	200	yes	3474	2026-10-13T22:21:40Z
+gitlab.freedesktop.org	200	yes		2026-10-13T22:21:41Z
+gitlab.gnome.org	200	yes		2026-10-13T22:21:43Z
+gitlab.inria.fr	200	yes	8731	2026-10-13T22:21:44Z
+gitlab.winehq.org	200	yes	1085	2026-10-13T22:21:45Z
+gitweb.gentoo.org	404	no		2026-10-13T22:21:48Z
+invent.kde.org	200	yes		2026-10-13T22:21:50Z
+kallithea-scm.org	404	no		2026-10-13T22:21:51Z
+locationtech.github.io	404	no		2026-10-13T22:21:52Z
+oaca-project.github.io	404	no		2026-10-13T22:21:53Z
+ofbiz.apache.org	404	no		2026-10-13T22:21:55Z
+opendev.org	404	no		2026-10-13T22:21:56Z
+rasdaman.org	404	no		2026-10-13T22:21:57Z
+review.tizen.org	404	no		2026-10-13T22:21:59Z
+savannah.gnu.org	200	no		2026-10-13T22:22:00Z
+score.dev	404	no		2026-10-13T22:22:02Z
+source.squeak.org	404	no		2026-10-13T22:22:03Z
+sourceforge.net	404	no		2026-10-13T22:22:05Z
+sourceware.org	404	no		2026-10-13T22:22:06Z
+svn.apache.org	404	no		2026-10-13T22:22:07Z
+svn.code.sf.net	404	no		2026-10-13T22:22:08Z
+svn.osgeo.org	404	no		2026-10-13T22:22:10Z
+trac.osgeo.org	404	no		2026-10-13T22:22:11Z
+www.chiark.greenend.org.uk	404	no		2026-10-13T22:22:15Z
+www.sourceforge.net	404	no		2026-10-13T22:22:17Z

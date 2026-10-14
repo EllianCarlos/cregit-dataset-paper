@@ -1,0 +1,16 @@
+# Part b4 of the S and M projects of manifest.batch21.tsv (sha256 a8d8fe474e9c33f90d4723af77e1009944e1a8db637acaeda7fbff45488b4af3),
+# balanced by predicted time (2.1 h for 4 workers), u order; a fed spot part.
+# 12 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+cockpit-project__cockpit	https://github.com/cockpit-project/cockpit.git	pending		S	99db1d0d2c0c1b9d0abde9b4e53d198ef90891cc
+KDE__k3b	https://github.com/KDE/k3b.git	pending		S	9d66fe56946cec5aac46f485ac9c0967b3423d09
+brucefan1983__GPUMD	https://github.com/brucefan1983/GPUMD.git	pending		S	f73e92cc5e768bf78917736e40bbaa47bff08a7c
+sleuthkit__sleuthkit	https://github.com/sleuthkit/sleuthkit.git	pending		S	f66eaadb617d1f2f7f06f8d6a357d6a4b2cd4320
+KDE__kate	https://github.com/KDE/kate.git	pending		S	e6ab5c0417af7cb56ccc8ee3719a46b2a0919867
+ericpaulbishop__gargoyle	https://github.com/ericpaulbishop/gargoyle.git	pending		S	33a30a4b4ca56ddb6e18483d36d33ee450545291
+KDE__kalarm	https://github.com/KDE/kalarm.git	pending		S	fb610d659463af6fbc23825fd9f5a445f9df0009
+KDE__plasma-workspace	https://github.com/KDE/plasma-workspace.git	pending		S	b1c0b21bf9990cd1f3bae39558c2b8208ee61b30
+KDE__latte-dock	https://github.com/KDE/latte-dock.git	pending		S	926696056f3be842df5a0a2a74b004282aca80bb
+KDE__ktextaddons	https://github.com/KDE/ktextaddons.git	pending		S	36dd14ef5d1136fed5e300ff73ab24cf5f9cd643
+git.busybox.net__busybox	https://git.busybox.net/busybox	pending		S	b829bba95095b87834628adb38ea14b5885c0fbc
+KDE__kio-extras	https://github.com/KDE/kio-extras.git	pending		S	6d9a927515ee81ac5734bc8d783ff346e8e03981

@@ -1,0 +1,472 @@
+org,company,website_url,is_verified
+adobe,ADOBE INC.,https://adobe.com,True
+adobe-apiplatform,ADOBE INC.,,False
+adobe-fonts,ADOBE INC.,,False
+Adobe-Marketing-Cloud,ADOBE INC.,http://adobe-marketing-cloud.github.io/,False
+adobe-photoshop,ADOBE INC.,,False
+adobe-type-tools,ADOBE INC.,,False
+adobebc,ADOBE INC.,http://www.businesscatalyst.com,False
+AdobeDocs,ADOBE INC.,https://adobe.com,False
+adobeio,ADOBE INC.,https://www.adobe.io,False
+HubbleStack,ADOBE INC.,https://github.com/hubblestack/hubble,False
+amd,ADVANCED MICRO DEVICES INC,http://www.amd.com,True
+flame,ADVANCED MICRO DEVICES INC,http://shpc.ices.utexas.edu/,False
+GPUOpen-Drivers,ADVANCED MICRO DEVICES INC,https://gpuopen.com/,False
+GPUOpen-ProfessionalCompute-Libraries,ADVANCED MICRO DEVICES INC,https://rocm.docs.amd.com,False
+GPUOpen-Tools,ADVANCED MICRO DEVICES INC,,False
+HSAFoundation,ADVANCED MICRO DEVICES INC,http://www.hsafoundation.com/,False
+RadeonOpenCompute,ADVANCED MICRO DEVICES INC,https://rocm.docs.amd.com,False
+ROCm-Developer-Tools,ADVANCED MICRO DEVICES INC,https://rocm.docs.amd.com,False
+ROCmSoftwarePlatform,ADVANCED MICRO DEVICES INC,https://rocm.docs.amd.com,False
+compozed,ALLSTATE LIFE INSURANCE CO,http://www.allstate.com,False
+OpenMatrixLanguage,ALTAIR ENGINEERING INC.,,False
+PBSPro,ALTAIR ENGINEERING INC.,www.pbspro.org,False
+Alexa,AMAZON COM INC,https://developer.amazon.com/alexa,False
+amzn,AMAZON COM INC,https://developer.amazon.com/,False
+aws,AMAZON COM INC,https://amazon.com/aws,True
+aws-amplify,AMAZON COM INC,https://amplify.aws,False
+aws-quickstart,AMAZON COM INC,https://aws.amazon.com/quickstart,False
+aws-samples,AMAZON COM INC,https://amazon.com/aws,True
+awsdocs,AMAZON COM INC,https://docs.aws.amazon.com,False
+awslabs,AMAZON COM INC,http://amazon.com/aws/,True
+corretto,AMAZON COM INC,https://amazon.com/aws/,True
+d2l-ai,AMAZON COM INC,https://D2L.ai,False
+dmlc,AMAZON COM INC,,False
+firecracker-microvm,AMAZON COM INC,,False
+neo-ai,AMAZON COM INC,,False
+opendistro-for-elasticsearch,AMAZON COM INC,https://opendistro.github.io/for-elasticsearch/,False
+wingtk,AMAZON COM INC,,False
+Ginger-Automation,AMDOCS LTD,,False
+harmony-framework,AMDOCS LTD,,False
+analogdevicesinc,ANALOG DEVICES INC,https://www.analog.com,True
+Apple,APPLE INC,https://apple.com,True
+filodb,APPLE INC,,False
+FoundationDB,APPLE INC,https://www.foundationdb.org,False
+gpuweb,APPLE INC,https://webgpu.org,False
+smartcardservices,APPLE INC,,False
+adplabs,AUTOMATIC DATA PROCESSING INC,http://www.adp.com/innovation/,False
+avadev,"AVALARA, INC.",http://developer.avalara.com,False
+avnet,AVNET INC,http://www.avnet.com/,False
+Accenture,Accenture plc,https://accenture.github.io,False
+openkfw,Accenture plc,https://www.kfw.de/kfw.de.html,False
+airbus-seclab,Airbus,https://airbus-seclab.github.io/,False
+abseil,Alphabet Inc.,https://www.abseil.io,False
+actions-on-google,Alphabet Inc.,https://developers.google.com/assistant,False
+ampproject,Alphabet Inc.,https://amp.dev,False
+androidthings,Alphabet Inc.,https://developer.android.com/things/index.html,False
+angular,Alphabet Inc.,https://angular.dev,True
+apigee,Alphabet Inc.,https://apigee.com,False
+bazelbuild,Alphabet Inc.,https://bazel.build,False
+catapult-project,Alphabet Inc.,,False
+census-instrumentation,Alphabet Inc.,http://opencensus.io,False
+ceres-solver,Alphabet Inc.,,False
+ChromeDevTools,Alphabet Inc.,https://devtools.chrome.com,False
+cloudendpoints,Alphabet Inc.,,False
+connectbot,Alphabet Inc.,https://connectbot.org/,True
+conversationai,Alphabet Inc.,,False
+dart-gde,Alphabet Inc.,https://developers.google.com/experts/,False
+dart-lang,Alphabet Inc.,https://dart.dev,True
+dart-league,Alphabet Inc.,,False
+deepmind,Alphabet Inc.,https://github.com/google-deepmind,False
+dialogflow,Alphabet Inc.,http://dialogflow.com,False
+DynamoRIO,Alphabet Inc.,http://dynamorio.org,False
+flutter,Alphabet Inc.,https://flutter.dev,True
+fuchsia-mirror,Alphabet Inc.,https://fuchsia.googlesource.com/,False
+ganeti,Alphabet Inc.,,False
+google,Alphabet Inc.,https://opensource.google/,True
+googleapis,Alphabet Inc.,https://googleapis.github.io,False
+googlearchive,Alphabet Inc.,,False
+GoogleChrome,Alphabet Inc.,,False
+GoogleContainerTools,Alphabet Inc.,,False
+googledatalab,Alphabet Inc.,https://cloud.google.com/datalab/,False
+googledrive,Alphabet Inc.,github.com/googleworkspace,False
+googlefonts,Alphabet Inc.,https://fonts.google.com,False
+googlegenomics,Alphabet Inc.,http://cloud.google.com/life-sciences,False
+googleglass,Alphabet Inc.,https://developers.google.com/glass/,False
+googlei18n,Alphabet Inc.,https://developers.google.com/international,False
+googleplus,Alphabet Inc.,https://github.com/googlearchive,False
+googlesamples,Alphabet Inc.,https://developers.google.com/,False
+googlevr,Alphabet Inc.,developers.google.com/vr,False
+GoogleWebComponents,Alphabet Inc.,https://www.webcomponents.org/collection/GoogleWebComponents/google-web-components,False
+Grafeas,Alphabet Inc.,grafeas.io,False
+grpc,Alphabet Inc.,https://grpc.io,True
+gwtproject,Alphabet Inc.,https://www.gwtproject.org,True
+istio,Alphabet Inc.,https://istio.io,True
+Jigsaw-Code,Alphabet Inc.,https://jigsaw.google.com/,False
+Kaggle,Alphabet Inc.,http://www.kaggle.com,False
+knative,Alphabet Inc.,https://knative.dev/,True
+luci,Alphabet Inc.,,False
+material-components,Alphabet Inc.,https://material.io/components/,False
+material-foundation,Alphabet Inc.,https://material.io,False
+mit-plv,Alphabet Inc.,http://plv.csail.mit.edu/,False
+mlperf,Alphabet Inc.,http://www.mlperf.org,False
+Mobiperf,Alphabet Inc.,http://www.mobiperf.com,False
+PAIR-code,Alphabet Inc.,https://pair.withgoogle.com,False
+playgameservices,Alphabet Inc.,https://developers.google.com/games/services/,False
+Polymer,Alphabet Inc.,https://library.polymer-project.org/,False
+PolymerElements,Alphabet Inc.,,False
+PolymerLabs,Alphabet Inc.,https://www.polymer-project.org,False
+probml,Alphabet Inc.,probml.ai,False
+project-oak,Alphabet Inc.,,False
+quantumlib,Alphabet Inc.,quantumai.google,False
+spinnaker,Alphabet Inc.,www.spinnaker.io,False
+Stackdriver,Alphabet Inc.,http://stackdriver.com,False
+subscriptions-project,Alphabet Inc.,,False
+uProxy,Alphabet Inc.,https://www.uproxy.org,False
+vanadium,Alphabet Inc.,https://vanadium.github.io/,False
+WebAssembly,Alphabet Inc.,https://webassembly.org,False
+WebComponents,Alphabet Inc.,https://www.webcomponents.org,False
+webmproject,Alphabet Inc.,http://www.webmproject.org/,False
+YouTube,Alphabet Inc.,https://developers.google.com/youtube/,False
+Alteryx,"Alteryx, Inc.",http://www.alteryx.com,False
+arista-eosplus,"Arista Networks, Inc.",http://www.arista.com,False
+aristanetworks,"Arista Networks, Inc.",https://www.arista.com,False
+atlassian,Atlassian Corp Plc,https://atlassian.com/,True
+ProseMirror,Atlassian Corp Plc,https://prosemirror.net,False
+skatejs,Atlassian Corp Plc,,False
+stricter,Atlassian Corp Plc,,False
+jpush,Aurora Mobile Ltd,https://www.jiguang.cn,False
+ANZ-bank,Australia &amp; New Zealand Banking Group,anz.com,False
+BallAerospace,BALL CORP,http://www.ballaerospace.com/,False
+opticks-org,BALL CORP,http://opticks.org,False
+box,BOX INC,https://box.com,True
+BrightcoveOS,BRIGHTCOVE INC.,http://opensource.brightcove.com,False
+ApolloAuto,"Baidu, Inc.",http://apollo.auto,False
+baidu,"Baidu, Inc.",https://baidu.com,True
+baidu-security,"Baidu, Inc.",http://sec.baidu.com/,False
+baidubce,"Baidu, Inc.",https://cloud.baidu.com/,False
+brpc,"Baidu, Inc.",,False
+dueros,"Baidu, Inc.",,False
+ecomfe,"Baidu, Inc.",http://efe.baidu.com/,False
+fex-team,"Baidu, Inc.",http://fex.baidu.com,False
+hugegraph,"Baidu, Inc.",,False
+huiyan-fe,"Baidu, Inc.",http://huiyan.baidu.com,False
+lavas-project,"Baidu, Inc.",https://lavas.baidu.com,False
+max-team,"Baidu, Inc.",,False
+mipengine,"Baidu, Inc.",https://www.mipengine.org,False
+PaddlePaddle,"Baidu, Inc.",http://paddlepaddle.org,False
+Ralltiir,"Baidu, Inc.",,False
+react-melon,"Baidu, Inc.",,False
+swan-team,"Baidu, Inc.",https://smartprogram.baidu.com,False
+BBVA,Banco Bilbao Vizcaya Argentaria,https://bbva.com,False
+BBVAEngineering,Banco Bilbao Vizcaya Argentaria,https://www.bbva.es,False
+scotiabank,Bank of Nova Scotia,http://www.scotiabank.com,False
+CheckPointSW,CHECK POINT SOFTWARE TECHNOLOGIES LTD,https://www.checkpoint.com/,True
+Cigna,CIGNA Corporation,https://www.cigna.com,True
+cisco,"CISCO SYSTEMS, INC.",https://cisco.com,True
+cisco-ie,"CISCO SYSTEMS, INC.",,True
+cisco-system-traffic-generator,"CISCO SYSTEMS, INC.",,False
+Cisco-Talos,"CISCO SYSTEMS, INC.",https://www.talosintelligence.com,False
+CiscoDevNet,"CISCO SYSTEMS, INC.",http://developer.cisco.com,True
+contiv,"CISCO SYSTEMS, INC.",http://contiv.io,False
+datacenter,"CISCO SYSTEMS, INC.",http://www.cisco.com/go/aci,False
+HdrHistogram,"CISCO SYSTEMS, INC.",,False
+OpenBMP,"CISCO SYSTEMS, INC.",https://www.openbmp.org,False
+mirage,CITRIX SYSTEMS INC,https://mirage.io,True
+xapi-project,CITRIX SYSTEMS INC,http://xenproject.org/developers/teams/xapi.html,False
+xenserver,CITRIX SYSTEMS INC,https://www.citrix.com/platform/xenserver.html,False
+CognizantOneDevOps,COGNIZANT TECHNOLOGY SOLUTIONS CORP,https://www.cognizant.com/application-services/devops,False
+CommvaultEngg,COMMVAULT SYSTEMS INC,www.commvault.com,False
+ctripcorp,CTRIP COM INTERNATIONAL LTD,http://www.ctrip.com,False
+carbonblack,"Carbon Black, Inc.",https://www.carbonblack.com/,False
+cleandart,"Centennial Resource Development, Inc.",,False
+Workiva,"Centennial Resource Development, Inc.",https://www.workiva.com,False
+cloudera,"Cloudera, Inc.",www.cloudera.com,False
+cloudera-labs,"Cloudera, Inc.",https://www.cloudera.com,False
+cloudera-ps,"Cloudera, Inc.",,False
+Criteo,Criteo S.A.,https://careers.criteo.com/en/teams/engineering/,True
+criteo-cookbooks,Criteo S.A.,https://criteo.com/,True
+criteo-forks,Criteo S.A.,https://criteo.com,True
+digi-embedded,DIGI INTERNATIONAL INC.,https://www.digi.com/products/embedded-systems,False
+despegar,"Despegar.com, Corp.",https://despegar.com,False
+dbsystel,Deutsche Bahn,https://www.dbsystel.de,True
+dwstech,Deutsche Bank Aktiengesellschaft,https://dws.com/,False
+khartec,Deutsche Bank Aktiengesellschaft,,False
+yabwe,"Domo, Inc.",https://github.com/yabwe/medium-editor/issues/20,False
+dropbox,"Dropbox, Inc.",https://dropbox.com/,True
+spearhead-ea,ELECTRONIC ARTS INC.,https://www.ea.com/studios/ea-korea,False
+epam,"EPAM Systems, Inc.",www.epam.com,True
+FrontSpot-Community,"EPAM Systems, Inc.",,False
+it-shark-pro,"EPAM Systems, Inc.",http://it-shark.pro/,False
+lean-delivery,"EPAM Systems, Inc.",https://lean-delivery.com,True
+rolling-scopes-school,"EPAM Systems, Inc.",https://rs.school/,True
+etsy,ETSY INC,https://www.etsy.com/,True
+express-labs,"EXPRESS, INC.",,False
+logstash-plugins,Elastic N.V.,https://www.elastic.co/products/logstash,False
+prelert,Elastic N.V.,http://www.prelert.com,False
+enova,"Enova International, Inc.",https://enova.com,False
+eventbrite,"Eventbrite, Inc.",http://www.eventbrite.com,False
+f5devcentral,F5 NETWORKS INC,https://devcentral.f5.com,False
+F5Networks,F5 NETWORKS INC,https://f5.com,False
+Garmin,GARMIN LTD,http://developer.garmin.com,False
+PredixDev,General Electric Company,http://predix.io,False
+godaddy,GoDaddy Inc.,https://godaddy.com/engineering/,True
+gopro,"GoPro, Inc.",,False
+groupon,"Groupon, Inc.",https://engineering.groupon.com/,False
+homedepot,HOME DEPOT INC,https://homedepot.com,False
+dataseries,HP Inc.,,False
+enyojs,HP Inc.,http://enyojs.com,False
+HubSpot,HUBSPOT INC,http://product.hubspot.com/,False
+devops-dojo,"Hewlett Packard Enterprise Co,",https://dxc-technology.github.io/about-devops-dojo/,False
+FabricAttachedMemory,"Hewlett Packard Enterprise Co,",,False
+HewlettPackard,"Hewlett Packard Enterprise Co,",http://www.hpe.com,False
+hpe-storage,"Hewlett Packard Enterprise Co,",https://www.hpe.com/us/en/storage.html,False
+go-chassis,Huawei Investment &amp; Holding,,False
+go-mesh,Huawei Investment &amp; Holding,,False
+huawei,Huawei Investment &amp; Holding,http://opensource.huawei.com,False
+huawei-openlab,Huawei Investment &amp; Holding,http://huawei.com,False
+huaweicloud,Huawei Investment &amp; Holding,,False
+kubeedge,Huawei Investment &amp; Holding,https://kubeedge.io,False
+kubegene,Huawei Investment &amp; Holding,kubegene.io,True
+open-estuary,Huawei Investment &amp; Holding,https://open-estuary.github.io/,False
+opensds,Huawei Investment &amp; Holding,https://github.com/sodafoundation,False
+scalan,Huawei Investment &amp; Holding,,False
+ServiceComb,Huawei Investment &amp; Holding,,False
+instructure,INSTRUCTURE INC,instructure.com,True
+instructure-react,INSTRUCTURE INC,,False
+illumina,Illumina Inc,http://www.illumina.com,False
+sequencing,Illumina Inc,,False
+infor-design,"Infor, Inc.",https://design.infor.com,False
+carla-simulator,Intel Corporation,http://carla.org,False
+chipsec,Intel Corporation,,False
+clearcontainers,Intel Corporation,,False
+clearlinux,Intel Corporation,http://clearlinux.github.io,False
+daos-stack,Intel Corporation,https://daosio.atlassian.net/wiki/spaces/DC/,False
+embree,Intel Corporation,,False
+gearpump,Intel Corporation,,False
+gomobile,Intel Corporation,http://xdk.intel.com,False
+hyperledger-labs,Intel Corporation,https://lf-decentralized-trust-labs.github.io/,False
+intel-aero,Intel Corporation,,False
+intel-analytics,Intel Corporation,,False
+Intel-bigdata,Intel Corporation,,False
+intel-go,Intel Corporation,,False
+Intel-HLS,Intel Corporation,http://intel.com/healthcare/optimizecode,False
+intel-iot-devkit,Intel Corporation,https://software.intel.com/iot,False
+intel-ros,Intel Corporation,,False
+IntelAI,Intel Corporation,https://www.intel.ai,False
+IntelFsp,Intel Corporation,,False
+IntelPNI,Intel Corporation,https://github.com/IntelPNI/Organization/wiki,False
+IntelRealSense,Intel Corporation,,False
+intelsdi-x,Intel Corporation,http://www.intel.com,False
+kata-containers,Intel Corporation,https://katacontainers.io,True
+kubeflow,Intel Corporation,https://kubeflow.org,True
+memkind,Intel Corporation,,False
+movidius,Intel Corporation,,False
+NervanaSystems,Intel Corporation,https://www.intel.ai,False
+Node-DC,Intel Corporation,,False
+nvmecompliance,Intel Corporation,,False
+ofiwg,Intel Corporation,https://www.openfabrics.org/,False
+OPAE,Intel Corporation,,False
+open-webrtc-toolkit,Intel Corporation,,False
+OpenCV,Intel Corporation,https://opencv.org,True
+opensecuritycontroller,Intel Corporation,www.opensecuritycontroller.org,False
+OpenVisualCloud,Intel Corporation,https://01.org/openvisualcloud,False
+ostroproject,Intel Corporation,,False
+otcshare,Intel Corporation,,False
+pmem,Intel Corporation,pmem.io,False
+projectacrn,Intel Corporation,https://projectacrn.github.io,False
+quark-mcu,Intel Corporation,http://www.intel.com/content/www/us/en/embedded/products/quark/overview.html,False
+RobotWebTools,Intel Corporation,https://robotwebtools.github.io/,False
+ros-planning,Intel Corporation,,False
+Sandia-OpenSHMEM,Intel Corporation,,False
+slimbootloader,Intel Corporation,,False
+spdk,Intel Corporation,https://spdk.io,True
+tpm2-software,Intel Corporation,https://tpm2-software.github.io/,False
+trustedanalytics,Intel Corporation,https://github.com/trustedanalytics/platform-wiki/wiki,False
+w3c,Intel Corporation,https://www.w3.org/,True
+internap,Internap Corp,https://www.inap.com/,False
+blockchain-jd-com,"JD.com, Inc.",http://ledger.jd.com,False
+jdf2e,"JD.com, Inc.",http://nutui.jd.com,False
+NervJS,"JD.com, Inc.",,False
+o2team,"JD.com, Inc.",https://aotu.io,False
+tiglabs,"JD.com, Inc.",,False
+JNPRAutomate,JUNIPER NETWORKS INC,https://community.juniper.net/communities/community-home?CommunityKey=bdb90a90-a9bd-4226-8f03-051df7d28113,False
+juniper,JUNIPER NETWORKS INC,www.juniper.net,False
+LendingClub,LENDINGCLUB CORP,https://www.lendingclub.com,False
+LivePersonInc,LIVEPERSON INC,,False
+LP-Messaging,LIVEPERSON INC,https://www.liveperson.com/,False
+usdot-fhwa-stol,"Leidos Holdings, Inc.",https://highways.dot.gov/research,False
+lenovo,Lenovo Group,https://www.lenovo.com,False
+Libertymutual,Liberty Mutual Insurance Group,https://welcome.libertymutual.com/innovation/information-technology/,False
+MarvellEmbeddedProcessors,MARVELL TECHNOLOGY GROUP LTD,http://www.marvell.com/embedded-processors/,False
+mercadolibre,MERCADOLIBRE INC,,False
+mercadopago,MERCADOLIBRE INC,http://developers.mercadopago.com,False
+pwm-project,MICRO FOCUS INTERNATIONAL PLC,,False
+aspnet,MICROSOFT CORPORATION,https://www.asp.net/,True
+AutomataDotNet,MICROSOFT CORPORATION,,False
+azsdk,MICROSOFT CORPORATION,,False
+azsk,MICROSOFT CORPORATION,,False
+Azure,MICROSOFT CORPORATION,https://docs.microsoft.com/en-us/azure/,True
+Azure-App-Service,MICROSOFT CORPORATION,,False
+Azure-Samples,MICROSOFT CORPORATION,https://learn.microsoft.com/azure,False
+AzureAD,MICROSOFT CORPORATION,http://azure.microsoft.com/en-us/services/active-directory/,False
+AzureADQuickStarts,MICROSOFT CORPORATION,https://aka.ms/identityplatform,False
+azureappserviceoss,MICROSOFT CORPORATION,,False
+azureautomation,MICROSOFT CORPORATION,http://azure.microsoft.com/en-us/documentation/services/automation/,False
+AzureCAT-GSI,MICROSOFT CORPORATION,,False
+BingAds,MICROSOFT CORPORATION,https://developers.ads.microsoft.com/,False
+bitstadium,MICROSOFT CORPORATION,http:///bitstadium.com,False
+calabash,MICROSOFT CORPORATION,,False
+CatalystCode,MICROSOFT CORPORATION,,False
+dbcli,MICROSOFT CORPORATION,http://dbcli.com,False
+decentralized-identity,MICROSOFT CORPORATION,https://identity.foundation,True
+deis,MICROSOFT CORPORATION,https://deis.com,False
+docascode,MICROSOFT CORPORATION,https://dotnet.github.io/docfx/,False
+dotnet,MICROSOFT CORPORATION,https://dot.net,True
+dotnet-architecture,MICROSOFT CORPORATION,,False
+fishworks,MICROSOFT CORPORATION,https://gofi.sh,False
+FStarLang,MICROSOFT CORPORATION,,False
+Glimpse,MICROSOFT CORPORATION,getGlimpse.com,False
+hdinsight,MICROSOFT CORPORATION,,False
+Hexadite,MICROSOFT CORPORATION,,False
+LIS,MICROSOFT CORPORATION,,False
+MicrosoftEdge,MICROSOFT CORPORATION,,False
+microsoftgraph,MICROSOFT CORPORATION,https://graph.microsoft.com,False
+MicrosoftResearch,MICROSOFT CORPORATION,https://www.microsoft.com/research/,False
+MicrosoftTranslator,MICROSOFT CORPORATION,http://www.microsoft.com/translator,False
+mixer,MICROSOFT CORPORATION,https://mixer.com,False
+ms-iot,MICROSOFT CORPORATION,https://www.windowsondevices.com,False
+msintuneappsdk,MICROSOFT CORPORATION,https://docs.microsoft.com/en-us/intune/app-sdk,False
+MSOpenTech,MICROSOFT CORPORATION,https://microsoft.com,True
+mspnp,MICROSOFT CORPORATION,https://aka.ms/mspnp,False
+MSRCCS,MICROSOFT CORPORATION,http://research.microsoft.com/en-us/UM/redmond/groups/ccs/,False
+NuGet,MICROSOFT CORPORATION,https://nuget.org,True
+OData,MICROSOFT CORPORATION,https://docs.microsoft.com/odata,False
+OfficeDev,MICROSOFT CORPORATION,https://developer.microsoft.com/en-us/microsoft-365,False
+OmniSharp,MICROSOFT CORPORATION,http://www.omnisharp.net,False
+OneDrive,MICROSOFT CORPORATION,https://dev.onedrive.com,False
+OneNoteDev,MICROSOFT CORPORATION,http://dev.onenote.com,False
+openalm,MICROSOFT CORPORATION,,False
+openT2T,MICROSOFT CORPORATION,http://www.opentranslatorstothings.org,False
+p-org,MICROSOFT CORPORATION,,False
+PartnerCenterSamples,MICROSOFT CORPORATION,,False
+project-everest,MICROSOFT CORPORATION,https://project-everest.github.io,False
+projectkudu,MICROSOFT CORPORATION,,False
+RevolutionAnalytics,MICROSOFT CORPORATION,http://www.revolutionanalytics.com,False
+SchemaStore,MICROSOFT CORPORATION,https://schemastore.org,True
+SharePoint,MICROSOFT CORPORATION,https://aka.ms/spdev,False
+SharpGenTools,MICROSOFT CORPORATION,,False
+winjs,MICROSOFT CORPORATION,http://try.buildwinjs.com,False
+xamarin,MICROSOFT CORPORATION,http://xamarin.com,True
+xamarinhq,MICROSOFT CORPORATION,https://xamarin.com,False
+xunit,MICROSOFT CORPORATION,https://xunit.net/,True
+Z3Prover,MICROSOFT CORPORATION,,False
+mstr-dev,MICROSTRATEGY INC,http://community.microstrategy.com,False
+mdsol,"Medidata Solutions, Inc.",http://www.medidata.com,False
+openzipkin,"Medidata Solutions, Inc.",https://zipkin.io,False
+mellanox,"Mellanox Technologies, Ltd.",http://www.mellanox.com,False
+openucx,"Mellanox Technologies, Ltd.",http://www.openucx.org,False
+msd-code-academy,"Merck &amp; Co., Inc.",https://www.msdit.cz/,False
+MetalPetal,Momo Inc.,,False
+wiredtiger,"MongoDB, Inc.",https://github.com/wiredtiger/wiredtiger/releases,False
+flot,NATIONAL INSTRUMENTS CORP /DE/,http://www.flotcharts.org,False
+ni,NATIONAL INSTRUMENTS CORP /DE/,https://ni.com,False
+java9-modularity,NETFLIX INC,http://javamodularity.com,False
+Netflix,NETFLIX INC,http://netflix.github.io/,False
+Netflix-Skunkworks,NETFLIX INC,,False
+restify,NETFLIX INC,http://restify.com,False
+nextgenhealthcare,"NEXTGEN HEALTHCARE, INC.",http://www.nextgen.com,False
+Nokia,NOKIA CORP,http://company.nokia.com/,False
+Novartis,NOVARTIS AG,,False
+flang-compiler,NVIDIA CORP,,False
+nvdla,NVIDIA CORP,http://nvdla.org/,False
+NVIDIAGameWorks,NVIDIA CORP,https://developer.nvidia.com/gameworks-source-github,False
+nvpro-samples,NVIDIA CORP,http://www.nvidia.com,False
+rapidsai,NVIDIA CORP,https://rapids.ai,True
+EmbeddedRPC,NXP Semiconductors N.V.,,False
+NXPNFCProject,NXP Semiconductors N.V.,www.nxp.com,True
+NetApp,"NetApp, Inc.",https://netapp.com,True
+NTAP,"NetApp, Inc.",netapp.com,True
+Nordstrom,Nordstrom Inc.,http://www.nordstrom.com/,False
+orange-cloudfoundry,ORANGE,http://opensource.orange.com,False
+Orange-OpenSource,ORANGE,https://orange-opensource.github.io/,False
+okta,"Okta, Inc.",okta.com,True
+eclipse-ee4j,Oracle Corporation,https://projects.eclipse.org/projects/ee4j,False
+fnproject,Oracle Corporation,http://fnproject.io,False
+graalvm,Oracle Corporation,https://www.graalvm.org,False
+javaee,Oracle Corporation,oracle.com/javaee,False
+mysql,Oracle Corporation,http://dev.mysql.com/,False
+Oracle,Oracle Corporation,https://developer.oracle.com/open-source.html,False
+PacificBiosciences,"PACIFIC BIOSCIENCES OF CALIFORNIA, INC.",http://pacb.com,False
+NativeScript,PROGRESS SOFTWARE CORP /MA,https://www.nativescript.org,True
+paloaltonetworks,Palo Alto Networks Inc,https://www.paloaltonetworks.com,True
+pan-unit42,Palo Alto Networks Inc,unit42.paloaltonetworks.com,False
+card-io,"PayPal Holdings, Inc.",http://www.card.io,False
+krakenjs,"PayPal Holdings, Inc.",http://www.krakenjs.com,False
+PayPal,"PayPal Holdings, Inc.",https://www.paypal.com/,False
+ShifuML,"PayPal Holdings, Inc.",http://shifu.ml,False
+pluralsight,"Pluralsight, Inc.",https://www.pluralsight.com,False
+purestorage,"Pure Storage, Inc.",https://www.everpuredata.com/,False
+rapid7,"RAPID7, INC.",http://www.rapid7.com/,True
+bioinform,Roche Group,,False
+rokudev,"Roku, Inc.",https://developer.roku.com/home,False
+ExactTarget,SALESFORCE COM INC,http://developer.salesforce.com,False
+forcedotcom,SALESFORCE COM INC,https://developer.salesforce.com,True
+Groundwire,SALESFORCE COM INC,,False
+salesforce,SALESFORCE COM INC,https://opensource.salesforce.com,True
+salesforce-marketingcloud,SALESFORCE COM INC,http://developer.salesforce.com,False
+SalesforceFoundation,SALESFORCE COM INC,http://www.salesforce.org,False
+fmi,SAP SE,http://fmi.py-bg.net/,False
+gardener,SAP SE,https://gardener.cloud,False
+kyma-project,SAP SE,https://kyma-project.io,True
+SAP,SAP SE,https://opensource.sap.com,True
+sapcc,SAP SE,,False
+sqlanywhere,SAP SE,,False
+Dashbrd,SCHLUMBERGER LIMITED/NV,,False
+smartsheet-platform,SMARTSHEET INC,http://www.smartsheet.com/developers,False
+splunk,SPLUNK INC,http://dev.splunk.com,False
+SurveyMonkey,SVMK Inc.,developer.surveymonkey.com,False
+coverity,SYNOPSYS INC,https://www.blackduck.com/,False
+iotivity,Samsung Electronics,https://iotivity.github.io/,False
+nnsuite,Samsung Electronics,github.com/nnstreamer,False
+samsung,Samsung Electronics,,False
+TeamSEGO,Samsung Electronics,,False
+seagate,Seagate Technology plc,,True
+spotify,Spotify Technology S.A.,https://spotify.github.io/,False
+square,"Square, Inc.",https://square.github.io,False
+Synacor,"Synacor, Inc.",http://www.synacor.com/,False
+Zimbra,"Synacor, Inc.",http://www.zimbra.com,False
+tmobile,"T-MOBILE US, INC.",http://www.t-mobile.com,False
+telefonicaid,TELEFONICA S A,http://www.tid.es/,False
+3dtof,TEXAS INSTRUMENTS INC,,False
+ti-simplelink,TEXAS INSTRUMENTS INC,http://www.ti.com/simplelink,False
+twilio,TWILIO INC,http://www.twilio.com,True
+Twilio-org,TWILIO INC,https://www.twilio.org,False
+TwilioDevEd,TWILIO INC,,False
+finagle,"TWITTER, INC.",https://twitter.com/finagle,False
+flightjs,"TWITTER, INC.",,False
+mopub,"TWITTER, INC.",http://twitter.com,False
+pantsbuild,"TWITTER, INC.",https://www.pantsbuild.org/,True
+twitter,"TWITTER, INC.",https://opensource.x.com/,False
+CFETeam,Tencent Music Entertainment Group,,False
+iv-web,Tencent Music Entertainment Group,https://ivweb.io/,False
+TarsCloud,Tencent Music Entertainment Group,https://tarscloud.org,False
+tencent,Tencent Music Entertainment Group,https://opensource.tencent.com,True
+TencentCloud,Tencent Music Entertainment Group,https://cloud.tencent.com/,True
+TencentDingdang,Tencent Music Entertainment Group,,False
+tencentyun,Tencent Music Entertainment Group,https://cloud.tencent.com,False
+tvsteam,Tencent Music Entertainment Group,https://dingdang.qq.com/,False
+Travelport,Travelport Worldwide LTD,https://developer.travelport.com/,False
+UltimateSoftware,Ultimate Software Group Inc,https://www.ukg.com/,False
+upwork,Upwork Inc.,https://www.upwork.com/,True
+VarianAPIs,VARIAN MEDICAL SYSTEMS INC,varianapis.github.io,False
+verisign,VERISIGN INC/CA,www.verisign.com,False
+codedellemc,"VMWARE, INC.",http://thecodeteam.com,False
+vmware,"VMWARE, INC.",https://vmware.com,True
+vmware-serengeti,"VMWARE, INC.",,False
+Vonage,VONAGE HOLDINGS CORP,https://www.vonage.com,False
+veritone,"Veritone, Inc.",https://www.veritone.com,True
+vipshop,Vipshop Holdings Ltd,www.vip.com,False
+WileyLabs,"WILEY JOHN &amp; SONS, INC.",https://wileylabs.github.io/,False
+wix-incubator,Wix.com Ltd.,http://wix.engineering,False
+wix-playground,Wix.com Ltd.,http://www.wix.com,False
+wixplosives,Wix.com Ltd.,,False
+Workday,"Workday, Inc.",http://workday.github.io/,False
+OpenAMP,XILINX INC,https://github.com/OpenAMP/open-amp/wiki,False
+xilinx,XILINX INC,www.amd.com,True
+duowan,YY Inc.,http://www.duowan.com,False
+yyued,YY Inc.,,False
+zuora,ZUORA INC,https://www.zuora.com,True
+zendesk,"Zendesk, Inc.",https://www.zendesk.com/,True
+zendesklabs,"Zendesk, Inc.",http://developer.zendesk.com,False
+trivago,trivago N.V.,http://trivago.com,True

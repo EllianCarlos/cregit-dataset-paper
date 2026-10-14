@@ -1,0 +1,93 @@
+org_key,org_kind,project,repo_url,github_slug,roster_status,source_url,fetched_at,note
+lfai,foundation,AIRSEAI,https://github.com/AIRSEAI/AIRSEAI-1.0,AIRSEAI/AIRSEAI-1.0,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Data-Prep-Kit,https://github.com/data-prep-kit/data-prep-kit,data-prep-kit/data-prep-kit,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,OAAX,https://github.com/OAAX-standard,,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,repo_url is not an owner/repo GitHub URL
+lfai,foundation,Angel-ML,https://github.com/Angel-ML/angel,Angel-ML/angel,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Open Platform for Enterprise AI (OPEA),https://github.com/opea-project/GenAIExamples,opea-project/GenAIExamples,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,1chipML,https://github.com/1chipML/1chipML,1chipML/1chipML,archived,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,DeepCausality,https://github.com/deepcausality-rs/deep_causality,deepcausality-rs/deep_causality,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,IREE,https://github.com/iree-org/iree,iree-org/iree,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Recommenders,https://github.com/microsoft/recommenders,microsoft/recommenders,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,SapientML,https://github.com/sapientml/sapientml,sapientml/sapientml,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,DeepRec,https://github.com/alibaba/DeepRec,alibaba/DeepRec,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Ryoma,https://github.com/project-ryoma/ryoma,project-ryoma/ryoma,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,ShaderNN,https://github.com/inferenceengine/shadernn,inferenceengine/shadernn,archived,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,BeyondML,https://github.com/Beyond-ML-Labs/mann,Beyond-ML-Labs/mann,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,OpenBytes,https://github.com/Project-OpenBytes/OpenBytes,Project-OpenBytes/OpenBytes,archived,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,OpenDataology,https://github.com/OpenDataology/OpenDataology,OpenDataology/OpenDataology,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,OpenLineage,https://github.com/OpenLineage/OpenLineage,OpenLineage/OpenLineage,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Docling,https://github.com/docling-project/docling,docling-project/docling,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Delta Lake,https://github.com/delta-io/delta,delta-io/delta,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Docarray,https://github.com/docarray/docarray,docarray/docarray,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,JanusGraph,https://github.com/JanusGraph/janusgraph,JanusGraph/janusgraph,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,LakeSoul,https://github.com/meta-soul/LakeSoul,meta-soul/LakeSoul,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Milvus,https://github.com/milvus-io/milvus,milvus-io/milvus,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Vortex,https://github.com/vortex-data,,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,repo_url is not an owner/repo GitHub URL
+lfai,foundation,Datashim,https://github.com/datashim-io/datashim,datashim-io/datashim,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Marquez,https://github.com/MarquezProject/marquez,MarquezProject/marquez,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Feast,https://github.com/feast-dev/feast,feast-dev/feast,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Feathr,https://github.com/linkedin/feathr,linkedin/feathr,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,NNStreamer,https://github.com/nnstreamer/nnstreamer,nnstreamer/nnstreamer,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Artigraph,https://github.com/artigraph/artigraph,artigraph/artigraph,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Bitol,https://github.com/bitol-io/open-data-contract-standard,bitol-io/open-data-contract-standard,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Bitol,https://github.com/bitol-io/open-data-product-standard,bitol-io/open-data-product-standard,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Bitol,https://github.com/bitol-io/tsc,bitol-io/tsc,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria,odpi/egeria,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Egeria,https://github.com/odpi/egeria-docs,odpi/egeria-docs,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-charts,odpi/egeria-charts,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-connector-xtdb,odpi/egeria-connector-xtdb,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-connector-hivemetastore,odpi/egeria-connector-hivemetastore,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-connector-ibm-information-server,odpi/egeria-connector-ibm-information-server,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-connector-hadoop-ecosystem,odpi/egeria-connector-hadoop-ecosystem,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-connector-omrs-caching,odpi/egeria-connector-omrs-caching,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-connector-sas-viya,odpi/egeria-connector-sas-viya,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-connector-integration-event-schema,odpi/egeria-connector-integration-event-schema,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-connector-integration-topic-strimzi,odpi/egeria-connector-integration-topic-strimzi,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-react-ui,odpi/egeria-react-ui,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-ui,odpi/egeria-ui,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-ui-core,odpi/egeria-ui-core,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-ui-components,odpi/egeria-ui-components,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-js-commons,odpi/egeria-js-commons,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-samples,odpi/egeria-samples,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-samples-api,odpi/egeria-samples-api,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-connector-repository-file-sample,odpi/egeria-connector-repository-file-sample,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-database-connectors,odpi/egeria-database-connectors,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-api-mocks,odpi/egeria-api-mocks,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-template-newrepo,odpi/egeria-template-newrepo,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-jupyter-notebooks,odpi/egeria-jupyter-notebooks,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-k8s-operator,odpi/egeria-k8s-operator,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-dev-projects,odpi/egeria-dev-projects,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-python,odpi/egeria-python,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/egeria-palisade,odpi/egeria-palisade,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/data-governance,odpi/data-governance,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,Egeria,https://github.com/odpi/happi-graph,odpi/happi-graph,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,additional_repos entry
+lfai,foundation,OpenSharing,https://github.com/OpenSharing-IO/OpenSharing,OpenSharing-IO/OpenSharing,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Unity Catalog,https://github.com/unitycatalog/unitycatalog,unitycatalog/unitycatalog,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Open Model Initiative,https://github.com/Open-Model-Initiative/OMI-Model-Standards,Open-Model-Initiative/OMI-Model-Standards,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,RWKV,https://github.com/RWKV/RWKV-infctx-trainer,RWKV/RWKV-infctx-trainer,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,BeeAI,https://github.com/i-am-bee/beeai-framework,i-am-bee/beeai-framework,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Monocole,https://github.com/monocle2ai/monocle,monocle2ai/monocle,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,DELTA,https://github.com/Delta-ML/delta,Delta-ML/delta,archived,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Adlik,https://github.com/Adlik/Adlik,Adlik/Adlik,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,FATE,https://github.com/FederatedAI/FATE,FederatedAI/FATE,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,OpenFL,https://github.com/intel/openfl,intel/openfl,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Substra,https://github.com/Substra/substra,Substra/substra,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,DLRover,https://github.com/intelligent-machine-learning/dlrover,intelligent-machine-learning/dlrover,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Ludwig,https://github.com/ludwig-ai/ludwig,ludwig-ai/ludwig,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,ONNX,https://github.com/onnx/onnx,onnx/onnx,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Acumos,https://github.com/acumos/documentation,acumos/documentation,archived,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,CLAIMED,https://github.com/claimed-framework/component-library,claimed-framework/component-library,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Flyte,https://github.com/flyteorg/flyte,flyteorg/flyte,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Kedro,https://github.com/kedro-org/kedro,kedro-org/kedro,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,FlagAI,https://github.com/BAAI-Open/FlagAI,BAAI-Open/FlagAI,sandbox,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Kompute,https://github.com/KomputeProject/kompute,KomputeProject/kompute,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Pyro,https://github.com/pyro-ppl/pyro,pyro-ppl/pyro,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Elastic Deep Learning (EDL),https://github.com/elasticdeeplearning/edl,elasticdeeplearning/edl,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,SOAJS,https://github.com/soajs/soajs,soajs/soajs,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Open Voice Interoperability,https://github.com/open-voice-network/lib-interop,open-voice-network/lib-interop,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,sparklyr,https://github.com/sparklyr/sparklyr,sparklyr/sparklyr,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,AI Explainability 360 Toolkit,https://github.com/Trusted-AI/AIX360,Trusted-AI/AIX360,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Adversarial Robustness Toolkit,https://github.com/Trusted-AI/adversarial-robustness-toolbox,Trusted-AI/adversarial-robustness-toolbox,graduated,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,AI Fairness 360 Toolkit,https://github.com/Trusted-AI/AIF360,Trusted-AI/AIF360,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Open Voice TrustMark,https://github.com/Open-Voice-Trustmark/docs,Open-Voice-Trustmark/docs,incubating,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfai,foundation,Elyra,https://github.com/elyra-ai/elyra,elyra-ai/elyra,incubation,https://raw.githubusercontent.com/lfai/landscape/main/landscape.yml,2026-10-05T01:30:35Z,

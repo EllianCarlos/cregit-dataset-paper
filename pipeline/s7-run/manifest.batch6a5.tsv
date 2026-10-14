@@ -1,0 +1,24 @@
+# Part a5 of the S and M projects of manifest.batch6.tsv (sha256 d54537af63a6cf6201cae5c5377286219e33305adb682e411af3367e642cb17b),
+# balanced by predicted time (6.8 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+openobserve__openobserve	https://github.com/openobserve/openobserve.git	pending		S	b61d093051b501b7f369e952dbadecfd2212624a
+fanchmwrt__fanchmwrt	https://github.com/fanchmwrt/fanchmwrt.git	pending		M	6bb24110716a416ff023b89e21b5fc4afba125b6
+facebookincubator__velox	https://github.com/facebookincubator/velox.git	pending		S	f909feccd849c641ccdd78233aeabe5b696941a1
+modular__modular	https://github.com/modular/modular.git	pending		M	af6f44f188f465709d755ce31dfd00af77cb51bc
+openmc-dev__openmc	https://github.com/openmc-dev/openmc.git	pending		S	8564c64884bc060101da67c9e172190562084f69
+eclipse-egit__egit	https://github.com/eclipse-egit/egit.git	pending		S	5079f9272a4daba2accf2598e82b40e1708ca853
+UltimateHackingKeyboard__firmware	https://github.com/UltimateHackingKeyboard/firmware.git	pending		S	24a6bf5d315c5256a0ce6d92713a66c81a5f3ef9
+opentx__opentx	https://github.com/opentx/opentx.git	pending		S	fb8622ddad710fb49908879bca96bfe1ba22f23e
+apache__sis	https://github.com/apache/sis.git	pending		S	98a67510b91eaeaaae60fa05be8fa4111eac3abc
+nomacs__nomacs	https://github.com/nomacs/nomacs.git	pending		S	251d54771f61641e36b7221046325cfa631cde7e
+oxen-io__lokinet	https://github.com/oxen-io/lokinet.git	pending		S	50054886959ba43d8f8647b923b18df23c98b60a
+invertase__react-native-firebase	https://github.com/invertase/react-native-firebase.git	pending		S	c1471450b06019dd718f59a8a1b4c5bf941cc1bb
+hasura__graphql-engine	https://github.com/hasura/graphql-engine.git	pending		S	9e051ec1ed1ed2581a66300d9f30462071cfe601
+apache__jackrabbit	https://github.com/apache/jackrabbit.git	pending		S	6362397ccb74e7eadbd47e3683dd64a7695a59fc
+rust-lang__rust-analyzer	https://github.com/rust-lang/rust-analyzer.git	pending		M	ce37b245369ade4e2a18063ae4d60a17606c6d26
+Hamlib__Hamlib	https://github.com/Hamlib/Hamlib.git	pending		S	7a556dbfc80649ddbceedf5b8f8627b990671594
+apache__rocketmq	https://github.com/apache/rocketmq.git	pending		S	37af1437e60e48009105c4a32851fb67f4c7acb8
+vgteam__vg	https://github.com/vgteam/vg.git	pending		S	97cd4080c23c43a443f9217734cd23ed23411e0c
+dosbox-staging__dosbox-staging	https://github.com/dosbox-staging/dosbox-staging.git	pending		S	58cb16dc5e9d68b39782d8928d912042287f06d8
+querydsl__querydsl	https://github.com/querydsl/querydsl.git	pending		S	dd905aebf987599044e20b5822e7f035cee6a868

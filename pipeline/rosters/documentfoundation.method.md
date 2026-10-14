@@ -1,0 +1,7 @@
+# documentfoundation — The Document Foundation / LibreOffice — method
+- Source: the Gerrit REST project list https://gerrit.libreoffice.org/projects/?d&t, fetched 2026-10-05T01:34:40Z. This is the server behind https://git.libreoffice.org/, which was also saved. The `)]}'` prefix was stripped. Raw: raw/documentfoundation/.
+- 81 Gerrit projects. 5 permission-only entries were dropped: All-Projects, All-Users and three *-ACL-Template. That leaves 76 rows, one per repo. repo_url = https://git.libreoffice.org/<id> (the Gerrit browse link). roster_status = Gerrit `state` (ACTIVE / READ_ONLY). The note gives the description.
+- The rows include infra/* and conferences/* repos, and the Document Liberation libraries (lib*), because TDF hosts them on its Gerrit. Filter on the note or project if only product code is wanted.
+- GitHub mirror: the TDF wiki page https://wiki.documentfoundation.org/Development/Git_For_LibreOffice_Developers/en (raw wikitext saved) names "the LibreOffice mirror in GitHub" with the example https://github.com/libreoffice/core. That gives the slug libreoffice/core for core only. The `online` repo's Gerrit description says "read only now → https://github.com/LibreOffice/online", giving the slug LibreOffice/online. No other repo has a named mirror. Slugs were not guessed by name.
+- The core README in gitiles is behind an anti-bot page and could not be read. It was not needed.
+- Counts: 76 projects, 76 rows, 76 with repo_url, 2 with github_slug. GitHub REST calls: 0.

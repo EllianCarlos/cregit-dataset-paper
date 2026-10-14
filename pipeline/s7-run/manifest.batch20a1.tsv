@@ -1,0 +1,8 @@
+# Part a1 of the S and M projects of manifest.batch20.tsv (sha256 4c456b71c9e1db2907af03ac928fea9e460ff859170009b53725d68c63848625),
+# balanced by predicted time (16.4 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+root-project__root	https://github.com/root-project/root.git	pending		M	51cc43982d4813e312ee0d7ea6422d91d66f482d
+Tencent__TencentKona-21	https://github.com/Tencent/TencentKona-21.git	pending		M	4f7628d60a9cddbfc88dd4c38ebd3fcf9ff44249
+Tencent__TencentKona-8	https://github.com/Tencent/TencentKona-8.git	pending		M	f9d1ef527271b72ce1ae1a7868cd6dafaf3edef7
+dragonwell-project__dragonwell11	https://github.com/dragonwell-project/dragonwell11.git	pending		M	5b624bdf0fa2105973a0e56379f4f66f95d33868

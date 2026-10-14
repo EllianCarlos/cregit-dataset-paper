@@ -1,0 +1,2 @@
+pool_key,host,database_id,name_with_owner,repo_url,origins,input_slugs,in_search,archived,fork,mirror,empty,created_at,pushed_at,stars,owner_type,owner_login,license,primary_language,languages_total_bytes,languages,default_branch,head_oid,head_committed_at,fetched_at,fetched_by
+url:https://gitlab.com/muttmua/mutt,gitlab.com,4815250,,https://gitlab.com/muttmua/mutt,gitlab-search:stars>400 (personal namespace),,,False,False,,False,2017-12-04T18:06:30.678Z,,485,,muttmua,,C,,,master,844fcfe7861631359ee789e4231d322144a1bd3b,,2026-10-14T01:11:12Z,s2-pool/gitlab/personal_rows.py

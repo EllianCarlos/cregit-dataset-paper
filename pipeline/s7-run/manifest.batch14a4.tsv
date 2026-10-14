@@ -1,0 +1,15 @@
+# Part a4 of the S and M projects of manifest.batch14.tsv (sha256 a1801c196defea51ecbeef0e7e9aa11dbb3fa7a56a079e8c25e40875a392ac5a),
+# balanced by predicted time (5.9 h for 4 workers), u order; a fed spot part.
+# 11 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+openLuat__LuatOS	https://github.com/openLuat/LuatOS.git	pending		S	60bef0aec5c28c7d258c4bda970b9304f1915211
+LemmyNet__lemmy	https://github.com/LemmyNet/lemmy.git	pending		S	8d83bcf176e5e455be92861e717729058332e0b0
+fern-api__fern	https://github.com/fern-api/fern.git	pending		S	17fc3b5a1577ace5fe353e1930e37a64d29985c7
+build-trust__ockam	https://github.com/build-trust/ockam.git	pending		S	0435d8d73dc2bd3bdd56675021b27c76b1116d91
+aria2__aria2	https://github.com/aria2/aria2.git	pending		S	9e7273583f83e881e3ec067b523ba88724088d2f
+TextureGroup__Texture	https://github.com/TextureGroup/Texture.git	pending		S	d8aa8c796dd7770ea177989253ef1cf8878cd50a
+OpenFAST__openfast	https://github.com/OpenFAST/openfast.git	pending		S	2895884d2be01862173c88d70f86b358d2f1a50a
+apache__netbeans	https://github.com/apache/netbeans.git	pending		S	c25d20f6327ba05c2451c2a5fa209a5bdaa3d303
+symengine__symengine	https://github.com/symengine/symengine.git	pending		S	84066f3a0db35533007f5fb5874f6ed97bcea648
+TrinityCore__TrinityCore	https://github.com/TrinityCore/TrinityCore.git	pending		M	e3916b2adcf2f8a70ae33817fc57b6c0266e2fb0
+OpenCircuits__OpenCircuits	https://github.com/OpenCircuits/OpenCircuits.git	pending		S	dabae45fc5954821b937c80f33fdfd9950f07ba4

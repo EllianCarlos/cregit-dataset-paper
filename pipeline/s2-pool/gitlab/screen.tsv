@@ -1,0 +1,461 @@
+host	url	step_result	commits	dup_of	dp8l	screened_at
+git.dynare.org	https://git.dynare.org/dynare/preprocessor	< 5,000 commits				2026-10-13T22:47:56Z
+git.dynare.org	https://git.dynare.org/dynare/dynare	already in the pool				2026-10-13T22:47:56Z
+git.dynare.org	https://git.dynare.org/contrib/utilities_dw	< 5,000 commits				2026-10-13T22:47:57Z
+git.dynare.org	https://git.dynare.org/contrib/switch_dw	< 5,000 commits				2026-10-13T22:47:58Z
+git.adelielinux.org	https://git.adelielinux.org/adelie/apk-tools	< 5,000 commits				2026-10-13T22:47:59Z
+git.adelielinux.org	https://git.adelielinux.org/adelie/packages	layer 1 candidate	12060		yes	2026-10-13T22:48:14Z
+git.adelielinux.org	https://git.adelielinux.org/adelie/gcompat	< 5,000 commits				2026-10-13T22:48:14Z
+git.adelielinux.org	https://git.adelielinux.org/adelie/abuild	< 5,000 commits				2026-10-13T22:48:15Z
+git.adelielinux.org	https://git.adelielinux.org/adelie/musl	layer 1 candidate	5034		no	2026-10-13T22:48:18Z
+git.adelielinux.org	https://git.adelielinux.org/adelie/horizon	< 5,000 commits				2026-10-13T22:48:19Z
+git.adelielinux.org	https://git.adelielinux.org/adelie-infra/autobuilder	< 5,000 commits				2026-10-13T22:48:19Z
+git.adelielinux.org	https://git.adelielinux.org/adelie/musl-locales	< 5,000 commits				2026-10-13T22:48:20Z
+git.adelielinux.org	https://git.adelielinux.org/adelie/bootstrap	< 5,000 commits				2026-10-13T22:48:21Z
+git.adelielinux.org	https://git.adelielinux.org/spack/spack	shares history with a pool row	41506	gh:223520913		2026-10-13T22:48:26Z
+git.adelielinux.org	https://git.adelielinux.org/spack/spack-packages	layer 1 candidate	34796		yes	2026-10-13T22:48:29Z
+git.adelielinux.org	https://git.adelielinux.org/community/proot	< 5,000 commits				2026-10-13T22:48:30Z
+git.themanaworld.org	https://git.themanaworld.org/ml/serverdata	layer 1 candidate	11708		yes	2026-10-13T22:48:33Z
+git.themanaworld.org	https://git.themanaworld.org/ml/tools	< 5,000 commits				2026-10-13T22:48:33Z
+git.themanaworld.org	https://git.themanaworld.org/ml/evol-hercules	< 5,000 commits				2026-10-13T22:48:34Z
+git.themanaworld.org	https://git.themanaworld.org/ml/hercules	layer 1 candidate	18386		yes	2026-10-13T22:48:39Z
+git.themanaworld.org	https://git.themanaworld.org/mana/verse	layer 1 candidate	13180		yes	2026-10-13T22:48:42Z
+git.themanaworld.org	https://git.themanaworld.org/mana/mplint	< 5,000 commits				2026-10-13T22:48:42Z
+git.themanaworld.org	https://git.themanaworld.org/evolved/serverdata	< 5,000 commits				2026-10-13T22:48:43Z
+git.themanaworld.org	https://git.themanaworld.org/evolved/tools	< 5,000 commits				2026-10-13T22:48:44Z
+git.themanaworld.org	https://git.themanaworld.org/tmw/tools	< 5,000 commits				2026-10-13T22:48:45Z
+git.themanaworld.org	https://git.themanaworld.org/tmw/serverdata	< 5,000 commits				2026-10-13T22:48:45Z
+git.themanaworld.org	https://git.themanaworld.org/tmw/tmwa	< 5,000 commits				2026-10-13T22:48:46Z
+git.themanaworld.org	https://git.themanaworld.org/mana/mana	already in the pool				2026-10-13T22:48:46Z
+git.themanaworld.org	https://git.themanaworld.org/mana/manaserv	< 5,000 commits				2026-10-13T22:48:47Z
+git.themanaworld.org	https://git.themanaworld.org/tmw/guildbot	< 5,000 commits				2026-10-13T22:48:47Z
+git.themanaworld.org	https://git.themanaworld.org/mana/manaplus-android	< 5,000 commits				2026-10-13T22:48:48Z
+gitlab.winehq.org	https://gitlab.winehq.org/wine/wine	already in the pool				2026-10-13T22:48:48Z
+gitlab.winehq.org	https://gitlab.winehq.org/winehq/tools	< 5,000 commits				2026-10-13T22:48:49Z
+gitlab.winehq.org	https://gitlab.winehq.org/wine/wine-gecko	layer 1 candidate	592976		yes	2026-10-13T22:49:09Z
+gitlab.winehq.org	https://gitlab.winehq.org/wine/vkd3d	layer 1 candidate	9468		yes	2026-10-13T22:49:11Z
+gitlab.winehq.org	https://gitlab.winehq.org/mono/mono	shares history with a pool row	124228	gh:14423100		2026-10-13T22:49:19Z
+gitlab.winehq.org	https://gitlab.winehq.org/mono/wine-mono	< 5,000 commits				2026-10-13T22:49:20Z
+gitlab.winehq.org	https://gitlab.winehq.org/mono/corefx	layer 1 candidate	28995		yes	2026-10-13T22:49:24Z
+gitlab.winehq.org	https://gitlab.winehq.org/mono/fna	< 5,000 commits				2026-10-13T22:49:25Z
+gitlab.winehq.org	https://gitlab.winehq.org/mono/wpf	< 5,000 commits				2026-10-13T22:49:25Z
+gitlab.winehq.org	https://gitlab.winehq.org/mono/monodx	< 5,000 commits				2026-10-13T22:49:26Z
+gitlab.winehq.org	https://gitlab.winehq.org/mono/mono-basic-compat	< 5,000 commits				2026-10-13T22:49:26Z
+gitlab.winehq.org	https://gitlab.winehq.org/mono/bdwgc	< 5,000 commits				2026-10-13T22:49:27Z
+gitlab.winehq.org	https://gitlab.winehq.org/mono/libgdiplus	< 5,000 commits				2026-10-13T22:49:28Z
+gitlab.winehq.org	https://gitlab.winehq.org/mono/boringssl	< 5,000 commits				2026-10-13T22:49:28Z
+gitlab.winehq.org	https://gitlab.winehq.org/wine/wine-icu	< 5,000 commits				2026-10-13T22:49:29Z
+gitlab.winehq.org	https://gitlab.winehq.org/mono/api-doc-tools	< 5,000 commits				2026-10-13T22:49:30Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm-hwcomposer/drm-hwcomposer	< 5,000 commits				2026-10-13T22:59:48Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/panfrost/mesa	layer 1 candidate	133600		no	2026-10-13T23:00:05Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/bolt/bolt	< 5,000 commits				2026-10-13T23:00:06Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/geoclue/geoclue	< 5,000 commits				2026-10-13T23:00:07Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/zeitgeist/zeitgeist-datasources	< 5,000 commits				2026-10-13T23:00:08Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/spice/libcacard	< 5,000 commits				2026-10-13T23:00:09Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/spice/linux/vd_agent	< 5,000 commits				2026-10-13T23:00:10Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/spice/spice	< 5,000 commits				2026-10-13T23:00:11Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/spice/spice-common	< 5,000 commits				2026-10-13T23:00:13Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/spice/spice-gtk	< 5,000 commits				2026-10-13T23:00:14Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/spice/spice-protocol	< 5,000 commits				2026-10-13T23:00:15Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/spice/usbredir	< 5,000 commits				2026-10-13T23:00:16Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/spice/win32/qxl-wddm-dod	< 5,000 commits				2026-10-13T23:00:17Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/spice/win32/vd_agent	< 5,000 commits				2026-10-13T23:00:17Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/libbsd/libbsd	< 5,000 commits				2026-10-13T23:00:19Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/wayland/weston	layer 1 candidate	11376		yes	2026-10-13T23:00:23Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/wayland/wayland	< 5,000 commits				2026-10-13T23:00:24Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/libfprint/fprintd	< 5,000 commits				2026-10-13T23:00:25Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/libfprint/libfprint	< 5,000 commits				2026-10-13T23:00:27Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/kmscube	< 5,000 commits				2026-10-13T23:00:28Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/wayland/wayland.freedesktop.org	< 5,000 commits				2026-10-13T23:00:29Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/upower/upower	< 5,000 commits				2026-10-13T23:00:30Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/crucible	< 5,000 commits				2026-10-13T23:00:31Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/demos	layer 1 candidate	6651		no	2026-10-13T23:00:50Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/glu	< 5,000 commits				2026-10-13T23:00:51Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/libinput/libinput	layer 1 candidate	5915		yes	2026-10-13T23:00:55Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/pixman/pixman	< 5,000 commits				2026-10-13T23:00:56Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/libnice/libnice	< 5,000 commits				2026-10-13T23:00:57Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/virgl/virglrenderer	< 5,000 commits				2026-10-13T23:00:58Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/libevdev/libevdev	< 5,000 commits				2026-10-13T23:00:59Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/mesa	layer 1 candidate	231435		yes	2026-10-13T23:01:19Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/libdrm	layer 1 candidate	7242		yes	2026-10-13T23:01:23Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/shader-db	< 5,000 commits				2026-10-13T23:01:24Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/vkpipeline-db	< 5,000 commits				2026-10-13T23:01:25Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/piglit	layer 1 candidate	12440		yes	2026-10-13T23:01:28Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mobile-broadband/modemmanager	layer 1 candidate	9615		yes	2026-10-13T23:01:32Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mobile-broadband/libqmi	< 5,000 commits				2026-10-13T23:01:33Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mobile-broadband/libmbim	< 5,000 commits				2026-10-13T23:01:34Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/tartan/tartan	< 5,000 commits				2026-10-13T23:01:35Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/xserver	already in the pool				2026-10-13T23:01:35Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/spice/x11spice	< 5,000 commits				2026-10-13T23:01:36Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/networkmanager/networkmanager	shares history with a pool row	34940	gh:42934521		2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/appres	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/util/bdftopcf	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/beforelight	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/bitmap	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/constype	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/editres	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/fonttosfnt	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/fslsfonts	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/fstobdf	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/iceauth	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/ico	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/listres	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/mkcomposecache	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/mkfontscale	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/oclock	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/test/rendercheck	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/rgb	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/sessreg	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/setxkbmap	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/showfont	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/smproxy	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/transset	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/twm	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/viewres	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/test/x11perf	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xauth	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xbacklight	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xbiff	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xcalc	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xclipboard	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xclock	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xcmsdb	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xcompmgr	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xconsole	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xcursorgen	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xditview	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xdm	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xdpyinfo	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xdriinfo	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xedit	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xev	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xeyes	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xf86dga	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xfd	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xfontsel	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xfs	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xfsinfo	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xgamma	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xgc	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xhost	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xinit	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xinput	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xkbcomp	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xkbevd	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xkbprint	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xkbutils	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xkill	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xload	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xlogo	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xlsatoms	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xlsclients	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xlsfonts	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xmag	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xman	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xmessage	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xmh	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xmodmap	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xmore	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xpr	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xprop	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xrandr	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xrdb	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xrefresh	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xrestop	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xscope	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xset	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xsetroot	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xsm	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xstdcmap	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xvidtune	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xvinfo	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xwd	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xwininfo	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xwud	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-input-elographics	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-input-evdev	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-input-joystick	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-input-keyboard	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-input-libinput	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-input-mouse	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-input-synaptics	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-input-vmmouse	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-input-void	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-amdgpu	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-apm	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-ark	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-armsoc	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-ast	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-ati	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-chips	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-cirrus	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-dummy	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-fbdev	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-freedreno	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-geode	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-glint	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-i128	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-i740	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-intel	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-mach64	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-mga	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-neomagic	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-nested	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-nv	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-omap	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-qxl	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-r128	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-rendition	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-s3	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-s3virge	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-savage	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-siliconmotion	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-sis	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-sisusb	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-suncg14	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-suncg3	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-suncg6	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-sunffb	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-sunleo	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-suntcx	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-tdfx	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-trident	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-tseng	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-v4l	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-vbox	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-vesa	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-vmware	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-voodoo	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-wsfb	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-xgi	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-xgixp	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/font/util	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libfs	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libice	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libsm	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libx11	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxres	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxscrnsaver	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxau	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxaw	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxaw3d	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxcomposite	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxcursor	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxdamage	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxdmcp	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxext	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxfixes	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxfont	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxft	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxi	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxinerama	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxmu	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxpm	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxpresent	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxrandr	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxrender	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxt	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxtst	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxv	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxvmc	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxxf86dga	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxxf86vm	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libfontenc	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libpciaccess	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxkbfile	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxshmfence	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxtrans	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/proto/xorgproto	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/test/xhiv	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/test/xorg-gtest	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/test/xorg-integration-tests	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/test/xts	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/util/imake	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/util/lndir	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/util/makedepend	already in the pool				2026-10-13T23:01:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/pulseaudio/paprefs	< 5,000 commits				2026-10-13T23:01:44Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/pulseaudio/pavucontrol	< 5,000 commits				2026-10-13T23:01:45Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/pulseaudio/pulseaudio	shares history with a pool row	10381	gh:7534762		2026-10-13T23:01:49Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/pulseaudio/webrtc-audio-processing	< 5,000 commits				2026-10-13T23:01:50Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/plymouth/plymouth	< 5,000 commits				2026-10-13T23:01:52Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/accountsservice/accountsservice	< 5,000 commits				2026-10-13T23:01:53Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/poppler/poppler	layer 1 candidate	9006		yes	2026-10-13T23:01:56Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/libopenraw/libopenraw	< 5,000 commits				2026-10-13T23:01:57Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/libopenraw/exempi	< 5,000 commits				2026-10-13T23:01:59Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/poppler/test	< 5,000 commits				2026-10-13T23:02:00Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/fontconfig/fontconfig	< 5,000 commits				2026-10-13T23:02:01Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/farstream/farstream	< 5,000 commits				2026-10-13T23:02:02Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/dbus/dbus-glib	< 5,000 commits				2026-10-13T23:02:03Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/dbus/dbus-python	< 5,000 commits				2026-10-13T23:02:04Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/pkg-config/pkg-config	< 5,000 commits				2026-10-13T23:02:04Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/syncevolution/syncevolution	layer 1 candidate	5984		yes	2026-10-13T23:02:08Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/cairo/cairo	layer 1 candidate	13149		yes	2026-10-13T23:02:13Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/cairo/cairomm	< 5,000 commits				2026-10-13T23:02:14Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/maintainer-tools	< 5,000 commits				2026-10-13T23:02:15Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/panfrost/linux	shares history with a pool row	810847	gh:110670131		2026-10-13T23:04:05Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/dbus/dbus	layer 1 candidate	7165		yes	2026-10-13T23:04:13Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/realmd/realmd	< 5,000 commits				2026-10-13T23:04:14Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/realmd/adcli	< 5,000 commits				2026-10-13T23:04:15Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/cups-pk-helper/cups-pk-helper	< 5,000 commits				2026-10-13T23:04:16Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/uchardet/uchardet	< 5,000 commits				2026-10-13T23:04:17Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/libspectre/libspectre	< 5,000 commits				2026-10-13T23:04:18Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xdg/shared-mime-info	< 5,000 commits				2026-10-13T23:04:19Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xdg/xdgmime	< 5,000 commits				2026-10-13T23:04:20Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xdg/startup-notification	< 5,000 commits				2026-10-13T23:04:21Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xdg/xdg-user-dirs	< 5,000 commits				2026-10-13T23:04:23Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/igt-gpu-tools	layer 1 candidate	17244		yes	2026-10-13T23:04:27Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gstreamer/gst-plugins-bad	shares history with a pool row	27644	gh:181848235		2026-10-13T23:04:32Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gstreamer/gst-plugins-base	shares history with a pool row	20942	gh:98629053		2026-10-13T23:04:36Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gstreamer/gst-plugins-good	shares history with a pool row	19333	gh:98628871		2026-10-13T23:04:40Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gstreamer/gstreamer	shares history with a pool row	126210	gh:160433569		2026-10-13T23:04:50Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gstreamer/orc	< 5,000 commits				2026-10-13T23:04:51Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gstreamer/gstreamer-rs	< 5,000 commits				2026-10-13T23:04:52Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs	layer 1 candidate	5174		yes	2026-10-13T23:04:55Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xdg/desktop-file-utils	< 5,000 commits				2026-10-13T23:04:56Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gstreamer/meson-ports/libffi	< 5,000 commits				2026-10-13T23:04:57Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gstreamer/meson-ports/gl-headers	< 5,000 commits				2026-10-13T23:04:59Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/msm	layer 1 candidate	1482351		yes	2026-10-13T23:06:53Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/waffle	< 5,000 commits				2026-10-13T23:06:54Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/cangjie/libcangjie	< 5,000 commits				2026-10-13T23:06:55Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xdg/xdg-specs	< 5,000 commits				2026-10-13T23:06:56Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxcb	already in the pool				2026-10-13T23:06:56Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxcb-cursor	already in the pool				2026-10-13T23:06:56Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxcb-errors	already in the pool				2026-10-13T23:06:56Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxcb-image	already in the pool				2026-10-13T23:06:56Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxcb-keysyms	already in the pool				2026-10-13T23:06:56Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxcb-render-util	already in the pool				2026-10-13T23:06:56Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxcb-wm	already in the pool				2026-10-13T23:06:56Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxcb-util	already in the pool				2026-10-13T23:06:56Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xcb-demo	already in the pool				2026-10-13T23:06:56Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gstreamer/meson-ports/ffmpeg	shares history with a pool row	126327	gh:587232554		2026-10-13T23:07:14Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/monado/monado	layer 1 candidate	9021		yes	2026-10-13T23:07:18Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/monado/demos/openxr-simple-example	< 5,000 commits				2026-10-13T23:07:19Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/vulkan-wsi-layer	< 5,000 commits				2026-10-13T23:07:20Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/slirp/libslirp	< 5,000 commits				2026-10-13T23:07:21Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gstreamer/meson-ports/x264	< 5,000 commits				2026-10-13T23:07:22Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/pipewire/wireplumber	< 5,000 commits				2026-10-13T23:07:23Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/igt-ci-tags	layer 1 candidate	7547		yes	2026-10-13T23:07:28Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/quartz-wm	already in the pool				2026-10-13T23:07:28Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa_ci/repos/mesa	layer 1 candidate	189398		no	2026-10-13T23:07:50Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xrdesktop/gulkan	< 5,000 commits				2026-10-13T23:07:51Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xrdesktop/xrdesktop	< 5,000 commits				2026-10-13T23:07:52Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xrdesktop/gxr	< 5,000 commits				2026-10-13T23:07:53Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/monado/demos/xrgears	< 5,000 commits				2026-10-13T23:07:54Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/glvnd/libglvnd	< 5,000 commits				2026-10-13T23:07:55Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/misc/kernel	< 5,000 commits				2026-10-13T23:07:57Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/pipewire/pipewire	shares history with a pool row	15920	gh:92733703		2026-10-13T23:08:00Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/virgl/drm-misc-next	layer 1 candidate	1072974		yes	2026-10-13T23:09:22Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa_ci/repos/piglit	layer 1 candidate	10870		yes	2026-10-13T23:09:26Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/telepathy/telepathy-glib	layer 1 candidate	9781		yes	2026-10-13T23:09:30Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/telepathy/telepathy-idle	< 5,000 commits				2026-10-13T23:09:31Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/telepathy/telepathy-qt	layer 1 candidate	5615		yes	2026-10-13T23:09:34Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/driver/xf86-video-nouveau	already in the pool				2026-10-13T23:09:34Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/adriconf	< 5,000 commits				2026-10-13T23:09:35Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xisxwayland	already in the pool				2026-10-13T23:09:35Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/nouveau	layer 1 candidate	1200613		yes	2026-10-13T23:11:38Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/pipewire/pipewire-rs	< 5,000 commits				2026-10-13T23:11:39Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/virgl/venus-protocol	< 5,000 commits				2026-10-13T23:11:39Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/upower/power-profiles-daemon	< 5,000 commits				2026-10-13T23:11:40Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/libinput/libei	< 5,000 commits				2026-10-13T23:11:42Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/freedreno/freedreno	< 5,000 commits				2026-10-13T23:11:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/wayland/wayland-utils	< 5,000 commits				2026-10-13T23:11:44Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/freetype/freetype	shares history with a pool row	8652	gh:187000659		2026-10-13T23:11:47Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/deqp-runner	< 5,000 commits				2026-10-13T23:11:48Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/pipewire/helvum	< 5,000 commits				2026-10-13T23:11:49Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/ci-tron	< 5,000 commits				2026-10-13T23:11:51Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/cairo/cairo-www	< 5,000 commits				2026-10-13T23:11:52Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/monado/demos/androidteapots	< 5,000 commits				2026-10-13T23:11:53Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/mesa-archive	layer 1 candidate	133112		no	2026-10-13T23:12:06Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/freetype/freetype-demos	< 5,000 commits				2026-10-13T23:12:07Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/monado/demos/openxr-simple-playground	< 5,000 commits				2026-10-13T23:12:08Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mobile-broadband/libqrtr-glib	< 5,000 commits				2026-10-13T23:12:09Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/libbsd/libmd	< 5,000 commits				2026-10-13T23:12:10Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/monado/utilities/openxr-android-broker	< 5,000 commits				2026-10-13T23:12:11Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/lib/libxcvt	already in the pool				2026-10-13T23:12:11Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/linux	shares history with a pool row	1447428	gh:110670131		2026-10-13T23:13:57Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/tegra	layer 1 candidate	1335434		yes	2026-10-13T23:15:21Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/pipewire/media-session	layer 1 candidate	7704		yes	2026-10-13T23:15:25Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/freetype/freetype-web	< 5,000 commits				2026-10-13T23:15:26Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/wlroots/wlroots	layer 1 candidate	7940		yes	2026-10-13T23:15:30Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/xe/kernel	< 5,000 commits				2026-10-13T23:15:31Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/nouvelles/kernel	layer 1 candidate	1072562		yes	2026-10-13T23:18:45Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/monado/utilities/vulkan-layers	< 5,000 commits				2026-10-13T23:18:46Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/libopenraw/libopenraw-viewer	< 5,000 commits				2026-10-13T23:18:47Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/nouveau/mesa	layer 1 candidate	176075		no	2026-10-13T23:19:05Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/libevdev/udev-hid-bpf	< 5,000 commits				2026-10-13T23:19:06Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xrdesktop/g3k	< 5,000 commits				2026-10-13T23:19:07Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/libdecor/libdecor	< 5,000 commits				2026-10-13T23:19:08Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/libopenraw/exempi-rs	< 5,000 commits				2026-10-13T23:19:09Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gstreamer/meson-ports/pkg-config	< 5,000 commits				2026-10-13T23:19:10Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/camera/uvc-gadget	< 5,000 commits				2026-10-13T23:19:11Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/nouveau/nv-shader-tools	< 5,000 commits				2026-10-13T23:19:12Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gstreamer/meson-ports/libvpx	layer 1 candidate	22837		yes	2026-10-13T23:19:19Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa_ci/repos/linux	shares history with a pool row	1252488	gh:110670131		2026-10-13T23:20:51Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/ci-deb-repo	< 5,000 commits				2026-10-13T23:20:52Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/vkrunner	< 5,000 commits				2026-10-13T23:20:53Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/camera/libcamera	layer 1 candidate	6479		yes	2026-10-13T23:21:00Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/camera/libcamera-softisp	layer 1 candidate	6478		yes	2026-10-13T23:21:05Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/nouveau/envyhooks	< 5,000 commits				2026-10-13T23:21:06Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/wlroots/wlr-clients	< 5,000 commits				2026-10-13T23:21:07Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/imagination/mesa	layer 1 candidate	182908		no	2026-10-13T23:21:26Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/imagination/linux-firmware	< 5,000 commits				2026-10-13T23:21:27Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/imagination/linux	shares history with a pool row	1215994	gh:110670131		2026-10-13T23:22:57Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/media-committers	layer 1 candidate	1482023		yes	2026-10-13T23:24:37Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/kernel	layer 1 candidate	1487087		yes	2026-10-13T23:27:34Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/tip	layer 1 candidate	1487701		yes	2026-10-13T23:29:08Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/nova	layer 1 candidate	1381724		yes	2026-10-13T23:33:36Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/patchwork	layer 1 candidate	1482023		yes	2026-10-13T23:36:26Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/ribalda	layer 1 candidate	1427400		yes	2026-10-13T23:38:14Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/playground	layer 1 candidate	1482023		yes	2026-10-13T23:42:22Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/jmondi	layer 1 candidate	1482023		yes	2026-10-13T23:44:00Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/tmerciai	layer 1 candidate	1481469		yes	2026-10-13T23:45:37Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/monado/electric-maple	< 5,000 commits				2026-10-13T23:45:38Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/monado/electric-maple-monado	layer 1 candidate	7745		yes	2026-10-13T23:45:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/pinchartl	layer 1 candidate	1482023		yes	2026-10-13T23:47:25Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/xorg/app/xinput-calibrator	already in the pool				2026-10-13T23:47:25Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/sailus	layer 1 candidate	1482016		yes	2026-10-13T23:49:08Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/android/aosp-build	layer 1 candidate	98659		no	2026-10-13T23:49:18Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/android/aosp-cuttlefish	layer 1 candidate	50673		no	2026-10-13T23:49:25Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/mchehab	layer 1 candidate	1482023		yes	2026-10-13T23:51:01Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/ci	layer 1 candidate	1482023		yes	2026-10-13T23:52:40Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/android/virglrenderer	< 5,000 commits				2026-10-13T23:52:41Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/tools/cir	< 5,000 commits				2026-10-13T23:52:43Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/mhecht73	layer 1 candidate	1444113		yes	2026-10-13T23:54:20Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/android/aosp-kernel-common	layer 1 candidate	1333446		yes	2026-10-13T23:56:20Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/android/aosp-crosvm	layer 1 candidate	15370		yes	2026-10-13T23:56:26Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/android/aosp-minigbm	< 5,000 commits				2026-10-13T23:56:27Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/uvc	layer 1 candidate	1482023		yes	2026-10-13T23:58:12Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/seanyoung	layer 1 candidate	1481938		yes	2026-10-13T23:59:53Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/ndufresne	layer 1 candidate	1482023		yes	2026-10-14T00:01:42Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/bodonoghue	layer 1 candidate	1482014		yes	2026-10-14T00:03:32Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/freedesktop/terraform-gitlab-fastly	< 5,000 commits				2026-10-14T00:03:32Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/fontconfig/fontconfig-ci/fc-ci-meson-subproject	< 5,000 commits				2026-10-14T00:03:33Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/feedbackd/feedbackd	< 5,000 commits				2026-10-14T00:03:35Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/devarsht	layer 1 candidate	1351413		yes	2026-10-14T00:05:12Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/jluthra	layer 1 candidate	1461794		yes	2026-10-14T00:06:56Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/wayback/wayback	< 5,000 commits				2026-10-14T00:06:57Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/dikshitaagarwal	layer 1 candidate	1427400		yes	2026-10-14T00:08:40Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/pipewire/pipewire-native-rs	< 5,000 commits				2026-10-14T00:08:42Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/djrscally	layer 1 candidate	1461894		yes	2026-10-14T00:10:20Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/hverkuil	layer 1 candidate	1482023		yes	2026-10-14T00:12:13Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/pipewire/rtkit	< 5,000 commits				2026-10-14T00:12:14Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/geoclue/geoloquent	< 5,000 commits				2026-10-14T00:12:15Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/asahi/igt-gpu-tools	layer 1 candidate	15817		yes	2026-10-14T00:12:19Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/android/mesa	layer 1 candidate	223129		yes	2026-10-14T00:12:37Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/infra/linux-stable	shares history with a pool row	1444977	gh:113901687		2026-10-14T00:15:00Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/mesa/gpu-ratemeter	< 5,000 commits				2026-10-14T00:15:01Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/android/aosp-cuttlefish-vmm	< 5,000 commits				2026-10-14T00:15:02Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/feedbackd/libfeedback-rs	< 5,000 commits				2026-10-14T00:15:04Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gnu-grub/grub	layer 1 candidate	11844		yes	2026-10-14T00:15:08Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/asahi/libdrm	layer 1 candidate	7212		no	2026-10-14T00:15:14Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/imagination/vkrunner-tests	< 5,000 commits				2026-10-14T00:15:15Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/frankl	layer 1 candidate	1481685		yes	2026-10-14T00:27:09Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/epaul	layer 1 candidate	1444409		yes	2026-10-14T00:29:02Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/linux-media/users/mriesch	layer 1 candidate	1444409		yes	2026-10-14T00:30:54Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/gfx-ci/android/aosp-rutabaga-gfx	< 5,000 commits				2026-10-14T00:30:55Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/camera/ipu3-ipa	< 5,000 commits				2026-10-14T00:30:56Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/camera/simple-cam	< 5,000 commits				2026-10-14T00:30:57Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/camera/libcamera-vivid	layer 1 candidate	6452		yes	2026-10-14T00:31:02Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/drm/amdgpu/kernel	layer 1 candidate	1467388		yes	2026-10-14T00:32:44Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/virgl/virglrenderer-rs	< 5,000 commits				2026-10-14T00:32:45Z
+gitlab.freedesktop.org	https://gitlab.freedesktop.org/camera/raw2rgbpnm	< 5,000 commits				2026-10-14T00:32:47Z

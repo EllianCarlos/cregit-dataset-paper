@@ -1,0 +1,25 @@
+# Part b3 of the S and M projects of manifest.batch8.tsv (sha256 adc81a175da6c733e3ef1b3d88c8f46f77390c6d808d3c14d01da8ebb96c7a32),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 21 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+timescale__timescaledb	https://github.com/timescale/timescaledb.git	pending		S	a835a83fe35edbe6de3c28ae52b0d95114ebccba
+streetsidesoftware__cspell	https://github.com/streetsidesoftware/cspell.git	pending		S	9325f63b98376d8a20871024fb5fa1a568e3bcd0
+omf2097__openomf	https://github.com/omf2097/openomf.git	pending		S	09b5b644be68623887f2e425534ac7ededc28d6a
+seed4j__seed4j	https://github.com/seed4j/seed4j.git	pending		S	4244cc2ae59c4f1c774a1f76ae0fd5f373ca2331
+STJr__SRB2	https://github.com/STJr/SRB2.git	pending		S	639b58c6d718452ef343a0bc927d043bed9e40d6
+ofiwg__libfabric	https://github.com/ofiwg/libfabric.git	pending		S	f3d586f80093820021e68e3b62a8d4958c7d69e2
+trezor__trezor-firmware	https://github.com/trezor/trezor-firmware.git	pending		S	78184de0a4b840f4be1cf4c565eba4c6692af5ef
+obeli-sk__obelisk	https://github.com/obeli-sk/obelisk.git	pending		S	64f6ad79eca21774bff2804c8c2d66ebcb0ec41f
+weidai11__cryptopp	https://github.com/weidai11/cryptopp.git	pending		S	5873a73a231c95771f5bbf3466a484952fb22780
+kmatheussen__radium	https://github.com/kmatheussen/radium.git	pending		S	ed1a25a6e280374fb50c4ed3e0900f5f5382073c
+robotology__icub-main	https://github.com/robotology/icub-main.git	pending		S	617ff4a47264afc651801fada4e54ef78f4d2eca
+nickg__nvc	https://github.com/nickg/nvc.git	pending		S	abdccc7038225dd19b5b4ab45feaf8ab5002fc4b
+beefytech__Beef	https://github.com/beefytech/Beef.git	pending		S	e9e412433f002c03071c134d49cc107d565182ad
+frida__frida-core	https://github.com/frida/frida-core.git	pending		S	d1f5966ca6faf555e5f6aab8ae1500e404c5cbfa
+pjsip__pjproject	https://github.com/pjsip/pjproject.git	pending		S	baa37fce54bcd65b60ff5bd552041362d04e24b0
+rui314__mold	https://github.com/rui314/mold.git	pending		S	f353a4b6bde6f48800d7d377fbf7ed2bed62c681
+OpenSees__OpenSees	https://github.com/OpenSees/OpenSees.git	pending		S	aa3806ff159c3cc74554e0df5dfb9b69456615e8
+apache__guacamole-client	https://github.com/apache/guacamole-client.git	pending		S	38e8cb8ff5cd1fbd4c08a1a5d94340c37741230b
+LinuxCNC__linuxcnc	https://github.com/LinuxCNC/linuxcnc.git	pending		M	3f156d1a70f7c8750262d95c211af329e7ef1fb2
+MarvellEmbeddedProcessors__vpp	https://github.com/MarvellEmbeddedProcessors/vpp.git	pending		S	a41d4ce53436dde82cfd9b282a92631a85c93f08
+unionlabs__union	https://github.com/unionlabs/union.git	pending		S	031785bb6dc6b957c624e62bc64c184409c97d7b

@@ -1,0 +1,26 @@
+# Part b3 of the S and M projects of manifest.batch19.tsv (sha256 8a11b7acec582e49f76d0e09d7ff1e039d3458ef456ff4c1a875509b92849d3b),
+# balanced by predicted time (6.9 h for 4 workers), u order; a fed spot part.
+# 22 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+FoundationDB__fdb-record-layer	https://github.com/FoundationDB/fdb-record-layer.git	pending		S	65c73f3a0ab37af5c5da13754a2eb26bf7fb0f31
+apache__commons-math	https://github.com/apache/commons-math.git	pending		S	a3869a44854b2bad7e0d654566a1efaf067f52ee
+opencog__link-grammar	https://github.com/opencog/link-grammar.git	pending		S	5cba26fe24438185b3271e79e459c2fdc2294f96
+thunderbird__thunderbird-android	https://github.com/thunderbird/thunderbird-android.git	pending		S	34ca0e4686f919b22c86f06016beeb7642a2484b
+nysenate__OpenLegislation	https://github.com/nysenate/OpenLegislation.git	pending		S	03cb9b10bab32d51dfba3f83d5ff17e93e7cf794
+cube-js__cube	https://github.com/cube-js/cube.git	pending		S	d403e7a096920e04d96b15b52bb108e46030f4d9
+fegennari__3DWorld	https://github.com/fegennari/3DWorld.git	pending		S	984cf0e42996377a97e987a4b97821157d79fc8f
+apache__spark	https://github.com/apache/spark.git	pending		M	5926a10389e8eace9f655dc138f4bb30254f7bed
+pokerth__pokerth	https://github.com/pokerth/pokerth.git	pending		S	0a7dceb575d8b9dfcbd7c46ec7a90482cbdb40ba
+strawberrymusicplayer__strawberry	https://github.com/strawberrymusicplayer/strawberry.git	pending		S	5e57257d7246322507036409476f5887b890017c
+capnproto__capnproto	https://github.com/capnproto/capnproto.git	pending		S	e866bdbaa3078a4bda9e4287d2d4a773c0986902
+topjohnwu__Magisk	https://github.com/topjohnwu/Magisk.git	pending		S	f093f847bbda80b76b809b46a69b4ec1b6a0ec33
+BlitterStudio__amiberry	https://github.com/BlitterStudio/amiberry.git	pending		S	810123f43d2ab45de2e0a152a3901b96e7e1a116
+o2oa__o2oa	https://github.com/o2oa/o2oa.git	pending		S	ec9489997229fa0bfdcab41c96a3a175fca38f9a
+schemaorg__schemaorg	https://github.com/schemaorg/schemaorg.git	pending		S	8adb51c91fc12adb271fc787a26cfab204e9d105
+MITgcm__MITgcm	https://github.com/MITgcm/MITgcm.git	pending		S	14cea59b81680300b231ad34458c24652d5094f3
+axelor__axelor-open-suite	https://github.com/axelor/axelor-open-suite.git	pending		S	f8345ec00e9ad15db523ba0b8eb9f97f667b2e2c
+tenzir__tenzir	https://github.com/tenzir/tenzir.git	pending		S	a50db183d58a378de7090a2782ab38bec81aa8ed
+swagger-api__swagger-codegen	https://github.com/swagger-api/swagger-codegen.git	pending		S	e70d615dba48edf2fcab5ee02693639975edc330
+kaldi-asr__kaldi	https://github.com/kaldi-asr/kaldi.git	pending		S	e02e35f0254bb033fab73d1df99fc34123e31d56
+lfortran__lfortran	https://github.com/lfortran/lfortran.git	pending		S	8e8e0fbad59a9855a36d47539ac5ad903a4570bf
+apache__groovy	https://github.com/apache/groovy.git	pending		S	84b0d5072e2d8d02d10720b8a337493af1bda9fe

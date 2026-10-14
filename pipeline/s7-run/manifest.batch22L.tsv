@@ -1,0 +1,5 @@
+# The L projects of manifest.batch22.tsv (sha256 dc8a4dcc99f4786c26f1c01c088fc0ad00413396460a012bc7ccbbb3af25e647), for the census batch22L on the big on-demand EC2.
+# 2 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+gcc.gnu.org__git__gcc	https://gcc.gnu.org/git/gcc.git	pending		L	a02e2004cb707155d5b9b0a82dd428ded0ee2f6f
+git.savannah.gnu.org__git__emacs	https://git.savannah.gnu.org/git/emacs.git	pending		L	871e4cc6eea4c4ba5dfef69eb8346cc87e84406f

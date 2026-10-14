@@ -1,0 +1,23 @@
+# Part b3 of the S and M projects of manifest.batch9.tsv (sha256 00a32df96f075408b7ce58f8ecc5a5d19c49e20efefee07637b2b4f03bdbc2e8),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 19 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+orbeon__orbeon-forms	https://github.com/orbeon/orbeon-forms.git	pending		M	b56239e6f3dc2bc57c676c8db606c26cd39bfbbc
+kamailio__kamailio	https://github.com/kamailio/kamailio.git	pending		M	2e71218dbe5366df00e6600419117b9c47425cde
+simbody__simbody	https://github.com/simbody/simbody.git	pending		S	04f6297c5adc259e80a65ebf26da167d78c5fead
+monal-im__Monal	https://github.com/monal-im/Monal.git	pending		S	803cc3109b9c4f18171229617684c25c1a719243
+tikv__tikv	https://github.com/tikv/tikv.git	pending		S	c61d92c26a4d96a575386f5e32179550556e2c29
+flyteorg__flyte	https://github.com/flyteorg/flyte.git	pending		S	62fdd5dc3403db7f8aa2432f5199b567c62247f9
+GNOME__libgda	https://github.com/GNOME/libgda.git	pending		S	78b83ae3d059b63b5a962fc191aef88f575e3ae7
+intel__media-driver	https://github.com/intel/media-driver.git	pending		S	2ad1459d2f80af7b034499238c0022ff00652b70
+fltk__fltk	https://github.com/fltk/fltk.git	pending		S	c7d2c0b80fb7676c812438f212c315bebbae8d31
+deltachat__deltachat-android	https://github.com/deltachat/deltachat-android.git	pending		S	847c63a94566b3ca3e9b7928a2df1b9e8d99c8f7
+apache__karaf	https://github.com/apache/karaf.git	pending		S	383adcba3a1c4ed1eb5bb4bd15e9682c5ce320e0
+dnanexus__dx-toolkit	https://github.com/dnanexus/dx-toolkit.git	pending		S	0852e54ae5378bd176be443426634e1cc9c2b7c9
+krpc__krpc	https://github.com/krpc/krpc.git	pending		S	fdd2bfe839d3196510aef03167f63aef39eed476
+alanbjohnston__CubeSatSim	https://github.com/alanbjohnston/CubeSatSim.git	pending		S	9cfbb207e14482af321a894d52ac5c86ed4a1ab2
+supercollider__supercollider	https://github.com/supercollider/supercollider.git	pending		S	73e2c0f8dad56afe36538d843b0e44c70096bdc7
+treeverse__lakeFS	https://github.com/treeverse/lakeFS.git	pending		S	58011ab42e39391740f33e01fb63e4ccfa32b363
+eclipse-pdt__pdt	https://github.com/eclipse-pdt/pdt.git	pending		S	763c2a80879ad9fc1c3f712efbb6da2998224179
+eclipse-jdt__eclipse.jdt.ui	https://github.com/eclipse-jdt/eclipse.jdt.ui.git	pending		M	b5ca3d8ba8c7e813bcd424eee5bd785fb6bd105b
+OP-TEE__optee_os	https://github.com/OP-TEE/optee_os.git	pending		S	b385dcb43c14eb20f7f0c2b21888d0574cde771e

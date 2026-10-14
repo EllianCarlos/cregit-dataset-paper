@@ -1,0 +1,16 @@
+# Part a4 of the S and M projects of manifest.batch25.tsv (sha256 ec96e8f8712a384071394a6a5517e0420244887a433ebfcf8d0092e17f5a272d),
+# balanced by predicted time (2.7 h for 4 workers), u order; a fed spot part.
+# 12 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+gitlab.freedesktop.org__dbus__dbus	https://gitlab.freedesktop.org/dbus/dbus	pending		S	1d58afcb1fafee5e461fe11aae228210a5fdde9e
+gitlab.com__coolercontrol__coolercontrol	https://gitlab.com/coolercontrol/coolercontrol	pending		S	20e192c82b88cc89a691f4c284845e8abdc728ae
+invent.kde.org__office__skrooge	https://invent.kde.org/office/skrooge	pending		S	89692c957244447fa05180c2ae07bf0f3edf0d04
+gitlab.inria.fr__croco-ocean__croco	https://gitlab.inria.fr/croco-ocean/croco	pending		S	16280885142180cb6552bfcd2ed77761dbb13be1
+gitlab.inria.fr__cedar__connectionlens	https://gitlab.inria.fr/cedar/connectionlens	pending		S	0e09f14ee380c3d31c04e6b73c520f4b6ece7474
+gitlab.com__distant-horizons-team__distant-horizons	https://gitlab.com/distant-horizons-team/distant-horizons	pending		S	4e373c16c329fc43d092f0101f4cc14bec10e61b
+gitlab.gnome.org__World__AbiWord	https://gitlab.gnome.org/World/AbiWord	pending		S	972381bf2ad153fec7e883009a43ba64a6bdc6ad
+gitlab.inria.fr__felisce__felisce	https://gitlab.inria.fr/felisce/felisce	pending		S	072db07b157fdfd6165f13241e0887541cfa9570
+gitlab.com__veloren__veloren	https://gitlab.com/veloren/veloren	pending		S	737e6d9400f3e1e658760ee553810725adfcc823
+gitlab.freedesktop.org__mesa__libdrm	https://gitlab.freedesktop.org/mesa/libdrm	pending		S	b97cbde15c5c3abfe44d78e8f57139e50f612fec
+gitlab.inria.fr__starpu__starpu	https://gitlab.inria.fr/starpu/starpu	pending		S	9285baa629ea1a0d2a372c73429819ed247df9fa
+gitlab.freedesktop.org__drm__igt-gpu-tools	https://gitlab.freedesktop.org/drm/igt-gpu-tools	pending		S	aada5ae74aa135d2b448e25ec417f4f0dee9439c

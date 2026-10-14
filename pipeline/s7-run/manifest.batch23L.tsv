@@ -1,0 +1,11 @@
+# The L projects of manifest.batch23.tsv (sha256 d517fdd1f0c89820029e4b854eae0930d05e4a939f1241d7c6454c2306fdc589), for the census batch23L on the big on-demand EC2.
+# 8 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+checkedc__checkedc-clang	https://github.com/checkedc/checkedc-clang.git	pending		L	a2843eae17d96cbfad2cf386dd60de0b849cfb6d
+openbsd__ports	https://github.com/openbsd/ports.git	pending		L	dd13da8a64542c2b00c3fd85afd66e19195a6512
+WebKit__WebKit	https://github.com/WebKit/WebKit.git	pending		L	729712aa495ce94f6874274092178c037d049312
+Xilinx__hls-llvm-project	https://github.com/Xilinx/hls-llvm-project.git	pending		L	ee930469a6e8bb6d82eb98a020930f2af7731e80
+alpinelinux__aports	https://github.com/alpinelinux/aports.git	pending		L	b59ca72fd1216b2cd3999e02afa6e3a01bcedb9b
+archlinuxcn__repo	https://github.com/archlinuxcn/repo.git	pending		L	8dcd6fc6fc7f331207a93df449c52fa9bb4fa9b3
+NetBSD__src	https://github.com/NetBSD/src.git	pending		L	b49df979bc9a1d163c76d7a1523e0be573f4cc06
+openbsd__src	https://github.com/openbsd/src.git	pending		L	6d95918d2ddda2db08f58bea38915a8ae642d008

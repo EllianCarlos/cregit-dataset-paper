@@ -1,0 +1,5 @@
+# Part a1 of the S and M projects of manifest.batch26.tsv (sha256 52310bb9c195798851302c67ecb6ead376f714659e54b570261363ac4b5aebf0),
+# balanced by predicted time (0.1 h for 1 workers), u order; a fed spot part.
+# 1 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+gitlab.com__muttmua__mutt	https://gitlab.com/muttmua/mutt	pending		S	844fcfe7861631359ee789e4231d322144a1bd3b

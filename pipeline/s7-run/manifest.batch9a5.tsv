@@ -1,0 +1,24 @@
+# Part a5 of the S and M projects of manifest.batch9.tsv (sha256 00a32df96f075408b7ce58f8ecc5a5d19c49e20efefee07637b2b4f03bdbc2e8),
+# balanced by predicted time (6.0 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+phalcon__cphalcon	https://github.com/phalcon/cphalcon.git	pending		S	d1923875f0a7ca7d368dfe5f407e083af289f63c
+efficios__babeltrace	https://github.com/efficios/babeltrace.git	pending		S	9ae6615c9605f9a5165a8fe97747b30923d8c0fe
+structr__structr	https://github.com/structr/structr.git	pending		S	05bf552a4ea1b26a83c9d13c3fc9d2d577c5c4b8
+nanoporetech__dorado	https://github.com/nanoporetech/dorado.git	pending		S	8b8fc5d36a9c0baab262a743cb175b5878e38ca6
+confluentinc__kafka-streams-examples	https://github.com/confluentinc/kafka-streams-examples.git	pending		S	3c40c0e27dd988d8b2d72951802d8fd9c9940a64
+scylladb__seastar	https://github.com/scylladb/seastar.git	pending		S	00da3e90c65de411df25760e0a40dfb63a65adaf
+cuba-platform__cuba	https://github.com/cuba-platform/cuba.git	pending		S	eca9dc7e14f87a96001bc7def5909d17002c4d5b
+ppkantorski__Ultrahand-Overlay	https://github.com/ppkantorski/Ultrahand-Overlay.git	pending		S	1a5f2fc2ca5bc8fae3257d3f6afa0e9a014b8117
+apache__couchdb	https://github.com/apache/couchdb.git	pending		S	dd14b1ade8d5fccecb074cc116391a6a47a5f953
+telstra__open-kilda	https://github.com/telstra/open-kilda.git	pending		S	2113c93335d040b2b2ec52d708c9ff70160b5e3d
+rethinkdb__rethinkdb	https://github.com/rethinkdb/rethinkdb.git	pending		M	a2cf1308b57dca2e05d744f225a082881bab3fca
+apache__wicket	https://github.com/apache/wicket.git	pending		S	02e70e7de18beb3025cb22e4ff618cd2b1c96f85
+akka__akka-core	https://github.com/akka/akka-core.git	pending		S	5f67a1209d64922d1082ee403e49e676da0e4fa5
+KDE__itinerary	https://github.com/KDE/itinerary.git	pending		S	b3daadaf274c0e8ec8f84215add1f59504afe407
+subethaedit__SubEthaEdit	https://github.com/subethaedit/SubEthaEdit.git	pending		S	444e35606a4b033dbc93a16d0f6c2579985dbdea
+facebook__flow	https://github.com/facebook/flow.git	pending		S	cb5de4d7d1c25c78b6801bbc44624882868afd6f
+FlaxEngine__FlaxEngine	https://github.com/FlaxEngine/FlaxEngine.git	pending		S	bf2a47f671fd7d66bc233073465551a584be2858
+hathach__tinyusb	https://github.com/hathach/tinyusb.git	pending		S	fb4dcf442ee46b70279fdf9b9cabe3e1ac419560
+mmontag__chip-player-js	https://github.com/mmontag/chip-player-js.git	pending		S	dba9e5f8e42bbf168050f64c4aa40f84747241bb
+lightningdevkit__rust-lightning	https://github.com/lightningdevkit/rust-lightning.git	pending		S	15c5d9b8459e852f2b33586e586e3e90307114ee

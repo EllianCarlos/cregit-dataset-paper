@@ -1,0 +1,8 @@
+# Part b6 of the S and M projects of manifest.batch23.tsv (sha256 d517fdd1f0c89820029e4b854eae0930d05e4a939f1241d7c6454c2306fdc589),
+# balanced by predicted time (13.4 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+ROCm__rocm-libraries	https://github.com/ROCm/rocm-libraries.git	pending		M	dec6abd40af346fdd7ab001e93b88c20bee3ac1e
+illumos__illumos-gate	https://github.com/illumos/illumos-gate.git	pending		S	b57f40716a28fdd10116fb66c45d00fade92d823
+metasfresh__metasfresh	https://github.com/metasfresh/metasfresh.git	pending		M	82dc49593b1b6ac5a414d07c97220a5dfece35b2
+ROCm__rocm-systems	https://github.com/ROCm/rocm-systems.git	pending		M	882fe47f47018f240779e7abcc880be01225f492

@@ -1,0 +1,5 @@
+info: git.savannah.gnu.org__git__3dldf: joined rosters/gnu.v2.csv:gnu too, a later fetch of rosters/gnu.csv:gnu; the pool row names only rosters/gnu.csv:gnu
+info: git.savannah.gnu.org__git__bison: joined rosters/gnu.v2.csv:gnu too, a later fetch of rosters/gnu.csv:gnu; the pool row names only rosters/gnu.csv:gnu
+info: roster URL gives no GitHub account (names a repository with a broken URL, not an account), not used: rosters/eclipse.csv:2405 https://github.com/openhwfoundation /core-et
+info: roster URL gives no GitHub account (names a repository with a broken URL, not an account), not used: rosters/eclipse.csv:2406 https://github.com/openhwfoundation /core-et-erbium
+info: roster URL gives no GitHub account (a GitHub topics page, not an account), not used: rosters/lf.csv:1298 https://github.com/topics/windows-pv-driver

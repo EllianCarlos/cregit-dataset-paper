@@ -1,0 +1,304 @@
+
+
+<!DOCTYPE html>
+<html lang="en">   <head>
+    <!-- # block head (placeholder in theme.html) -->
+        <!-- # block head (content inherited from layout.html) -->
+    <title>
+      /
+          – OSGeo4W
+
+    </title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script>
+        if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+        </script><![endif]-->
+
+    <link rel="start"  href="/osgeo4w/wiki" />
+    <link rel="search"  href="/osgeo4w/search" />
+    <link rel="help"  href="/osgeo4w/wiki/TracGuide" />
+    <link rel="stylesheet"  href="https://trac.osgeo.org/common-assets/css/trac.css" type="text/css" />
+    <link rel="stylesheet"  href="https://trac.osgeo.org/common-assets/css/browser.css" type="text/css" />
+    <link rel="icon"  href="/osgeo4w/chrome/common/trac.ico" type="image/x-icon" />
+    <noscript>
+      <style>
+        .trac-noscript { display: none !important }
+      </style>     </noscript>
+    <link type="application/opensearchdescription+xml" rel="search"
+          href="/osgeo4w/search/opensearch"
+          title="Search OSGeo4W"/>
+    <script src="https://trac.osgeo.org/common-assets/js/jquery.js"></script>
+    <script src="https://trac.osgeo.org/common-assets/js/babel.js"></script>
+    <script src="https://trac.osgeo.org/common-assets/js/trac.js"></script>
+    <script src="https://trac.osgeo.org/common-assets/js/search.js"></script>
+    <script src="https://trac.osgeo.org/common-assets/js/folding.js"></script>
+    <script src="https://trac.osgeo.org/common-assets/js/expand_dir.js"></script>
+    <script src="https://trac.osgeo.org/common-assets/js/keyboard_nav.js"></script>
+    <script>
+      jQuery(function($) {
+        $(".trac-autofocus").focus();
+        $(".trac-target-new").attr("target", "_blank");
+        if ($.ui) { /* is jquery-ui added? */
+          $(".trac-datepicker:not([readonly])")
+            .prop("autocomplete", "off").datepicker();
+          // Input current date when today is pressed.
+          var _goToToday = $.datepicker._gotoToday;
+          $.datepicker._gotoToday = function(id) {
+            _goToToday.call(this, id);
+            this._selectDate(id)
+          };
+          $(".trac-datetimepicker:not([readonly])")
+            .prop("autocomplete", "off").datetimepicker();
+        }
+        $(".trac-disable").disableSubmit(".trac-disable-determinant");
+        setTimeout(function() { $(".trac-scroll").scrollToTop() }, 1);
+        $(".trac-disable-on-submit").disableOnSubmit();
+      });
+    </script>
+    <!--   # include 'site_head.html' (layout.html) -->
+    <!--   end of site_head.html -->
+    <!-- # endblock head (content inherited from layout.html) -->
+
+
+    <meta name="ROBOTS" content="NOINDEX" />
+    <script>
+      jQuery(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#jumploc input").hide();
+        $("#jumploc select").change(function () {
+          this.parentNode.parentNode.submit();
+        });
+
+          /* browsers using old WebKits have issues with expandDir... */
+          var webkit_rev = /AppleWebKit\/(\d+)/.exec(navigator.userAgent);
+          if ( !webkit_rev || (521 - webkit_rev[1]).toString()[0] == "-" )
+            enableExpandDir(null, $("table.dirlist tr"), {
+                action: 'inplace',
+                range_min_secs: '63678055226',
+                range_max_secs: '63927187357'
+            });
+      });
+    </script>
+    <!-- # endblock head (placeholder in theme.html) -->
+  </head> 
+  <body>
+    <!-- # block body (content inherited from theme.html) -->
+    <!--   # include 'site_header.html' (theme.html) -->
+    <!--   end of site_header.html -->
+
+    <div id="banner">
+      <div id="header">
+        <a id="logo"
+           href="http://osgeo4w.osgeo.org/">
+          <img  alt="OSGeo4W" height="85" src="/osgeo4w/chrome/site/osgeo4w-logo.png" width="359" /></a>
+
+
+      </div>
+      <form id="search" action="/osgeo4w/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18"
+                  value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+          <div id="metanav" class="nav">
+      <ul><li  class="first"><a href="/osgeo4w/login">Login</a></li><li ><a href="/osgeo4w/wiki/TracGuide">Help/Guide</a></li><li ><a href="/osgeo4w/about">About Trac</a></li><li  class="last"><a href="/osgeo4w/prefs">Preferences</a></li></ul>
+    </div>
+
+    </div>
+        <div id="mainnav" class="nav">
+      <ul><li  class="first"><a href="/osgeo4w/wiki">Wiki</a></li><li ><a href="/osgeo4w/timeline">Timeline</a></li><li ><a href="/osgeo4w/roadmap">Roadmap</a></li><li  class="active"><a href="/osgeo4w/browser">Browse Source</a></li><li ><a href="/osgeo4w/report">View Tickets</a></li><li  class="last"><a href="/osgeo4w/search">Search</a></li></ul>
+    </div>
+
+
+    <div id="main"
+         >
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li  class="first"><a href="/osgeo4w/changeset/1300/">Last Change</a></li>
+          <li  class="last"><a href="/osgeo4w/log/">Revision Log</a></li>
+        </ul>
+        <hr />
+      </div>
+
+      
+
+      
+
+      <!-- # block content (placeholder in theme.html) -->
+    <div id="content" class="browser">
+
+      <h1>
+
+
+<a class="pathentry first" href="/osgeo4w/browser?order=name"
+   title="Go to repository root">source:</a>
+<br style="clear: both" />
+      </h1>
+
+      <div id="diffrev">
+        <form action="/osgeo4w/changeset" method="get">
+          <div>
+            <label title="Show the diff against a specific revision">
+              View diff against:
+              <input type="text" name="old" size="6"/>
+              <input type="hidden" name="old_path" value="/"/>
+              <input type="hidden" name="new" value=""/>
+              <input type="hidden" name="new_path" value="/"/>
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <div id="jumprev">
+        <form action="/osgeo4w/browser" method="get">
+          <div>
+            <label for="rev"
+                   title="">
+              View revision:</label>
+            <input type="text" id="rev" name="rev" value=""
+                   size="6" />
+          </div>
+        </form>
+      </div>
+
+      <div id="jumploc">
+        <form action="/osgeo4w/browser" method="get">
+          <div class="buttons">
+            <label for="preselected">Visit:</label>
+            <select id="preselected" name="preselected">
+              <option selected="selected"></option>
+              <optgroup label="branches">
+                <option value="/osgeo4w/browser/trunk">trunk</option>
+              </optgroup>
+            </select>
+            <input type="submit" value="Go!"
+                   title="Jump to the chosen preselected path" />
+          </div>
+        </form>
+      </div>
+      <div class="trac-tags">
+      </div>
+      <table class="listing dirlist" id="dirlist">
+
+
+
+<thead>
+  <tr>
+
+
+<th  class="asc">
+  <a title="Sort by name (descending)"
+     href="/osgeo4w/browser/?desc=1">Name</a>
+</th>
+
+<th >
+  <a title="Sort by size (ascending)"
+     href="/osgeo4w/browser/?order=size">Size</a>
+</th>
+    <th class="rev">Rev</th>
+
+<th >
+  <a title="Sort by date (ascending)"
+     href="/osgeo4w/browser/?order=date">Age</a>
+</th>
+
+<th >
+  <a title="Sort by author (ascending)"
+     href="/osgeo4w/browser/?order=author">Author</a>
+</th>
+    <th class="change">Last Change</th>
+  </tr>
+</thead>
+        <tbody>
+
+
+
+<tr class="odd">
+  <td class="name">
+    <a class="dir"
+       title="View Directory"
+       href="/osgeo4w/browser/trunk">trunk</a>
+  </td>
+  <td class="size">
+    <a href="/osgeo4w/browser/trunk?format=zip&amp;rev=1300"
+       class="trac-ziplink"
+       title="Download as Zip archive">&#8203;</a>
+  </td>
+  <td class="rev">
+    <a title="View Revision Log"
+       href="/osgeo4w/log/trunk?rev=1300">1300</a>
+    <a title="View Changeset" class="chgset"
+       href="/osgeo4w/changeset/1300/">&nbsp;</a>
+  </td>
+  <td class="age"
+       style="border-color: rgb(136,136,255)">
+    <a class="timeline" href="/osgeo4w/timeline?from=2018-11-17T04%3A40%3A26-08%3A00&amp;precision=second" title="See timeline at 11/17/18 04:40:26">8 years</a>
+  </td>
+  <td class="author"><span class="trac-author">jef</span></td>
+  <td class="change">
+    Add SharedDLLs references (for opencl.dll)
+  </td>
+</tr>
+        </tbody>
+      </table>
+      <div class="description">
+        
+      </div>
+      <div id="anydiff">
+        <form action="/osgeo4w/diff" method="get">
+          <div class="buttons">
+            <input type="hidden" name="new_path"
+                   value="/" />
+
+            <input type="hidden" name="old_path"
+                   value="/" />
+
+            <input type="hidden" name="new_rev"
+                   value="" />
+            <input type="hidden" name="old_rev"
+                   value="" />
+            <input type="submit" value="View changes..."
+                   title="Select paths and revs for Diff" />
+          </div>
+        </form>
+      </div>
+
+<div class="trac-help">
+  <strong>Note:</strong>
+ See   <a href="/osgeo4w/wiki/TracBrowser">TracBrowser</a>
+ for help on using the repository browser.
+</div>
+    </div>
+        <!-- # block content (content inherited from layout.html) -->
+    <script type="text/javascript">
+      jQuery("body").addClass("trac-has-js");
+    </script>
+    <!-- # endblock content (content inherited from layout.html) -->
+
+      <!-- # endblock content (placeholder in theme.html) -->
+    </div>
+
+    <div id="footer"><hr/>
+      <a id="tracpowered" href="https://trac.edgewall.org/"
+         ><img src="https://trac.osgeo.org/common-assets/trac_logo_mini.png" height="30"
+               width="107" alt="Trac Powered"/></a>
+      <p class="left">
+Powered by         <a href="/osgeo4w/about"><strong>Trac 1.6</strong></a>
+        <br />
+ By         <a href="http://www.edgewall.org/">Edgewall Software</a>
+.      </p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+    <!--   # include 'site_footer.html' (theme.html) -->
+    <!--   end of site_footer.html -->
+    <!-- # endblock body (content inherited from theme.html) -->
+  </body> </html>

@@ -1,0 +1,8 @@
+# Part a1 of the S and M projects of manifest.batch10.tsv (sha256 196d7166a36b215c498418c83c3e96c241e1ff6dddc10cee6e033afb0553f8a7),
+# balanced by predicted time (12.5 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+JetBrains__MPS	https://github.com/JetBrains/MPS.git	pending		M	87151a4757b39d0a3c2142ba8ace6bc2a8334db0
+dillongoostudios__goo-engine	https://github.com/dillongoostudios/goo-engine.git	pending		M	8457395892beec33d4605ef9d894a1aff4a8d79f
+Xilinx__zephyr-amd	https://github.com/Xilinx/zephyr-amd.git	pending		M	35a5e5d88afe5d3f8982aaeeeba95292c76c8dd3
+corretto__corretto-11	https://github.com/corretto/corretto-11.git	pending		M	4fd3f70dd0b820bb7d1396bd9cd01447f5f44086

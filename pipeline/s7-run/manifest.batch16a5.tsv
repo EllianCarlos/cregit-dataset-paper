@@ -1,0 +1,25 @@
+# Part a5 of the S and M projects of manifest.batch16.tsv (sha256 1e4fd43f0de322264d2b94b8a8370f41906df20bc45b8315187818245642b2d1),
+# balanced by predicted time (6.5 h for 4 workers), u order; a fed spot part.
+# 21 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+LibreCAD__LibreCAD	https://github.com/LibreCAD/LibreCAD.git	pending		S	a5f91b6b526592037d893d090ed9f21e4d3c93df
+DarkFlippers__unleashed-firmware	https://github.com/DarkFlippers/unleashed-firmware.git	pending		S	d097aa54af94b836bd873cc4cd0efa1d5edcdf10
+contiki-ng__contiki-ng	https://github.com/contiki-ng/contiki-ng.git	pending		S	735e87c3e5060e9c427b214e55c372967f595c04
+navit-gps__navit	https://github.com/navit-gps/navit.git	pending		S	55b0b1fba30f04af6a7e9842ee1381b24b159966
+llvm__circt	https://github.com/llvm/circt.git	pending		S	1b6dd691aee47963c2ea20facc24099480b0e20e
+rustfs__rustfs	https://github.com/rustfs/rustfs.git	pending		S	0ad0a6d8de4249f30bf3b471bb746c5166a77f23
+SeleniumHQ__selenium	https://github.com/SeleniumHQ/selenium.git	pending		M	9fc36ccd90c85843841a98616648339c43505e59
+cmangos__mangos-wotlk	https://github.com/cmangos/mangos-wotlk.git	pending		S	2fc8161eeddfce737766d449d0ff94f48b3df2e0
+KDE__falkon	https://github.com/KDE/falkon.git	pending		S	62208754e46a64c502c51a723ddf50c8de62e483
+wpilibsuite__allwpilib	https://github.com/wpilibsuite/allwpilib.git	pending		S	39a295672e6c83314adb57fb4545de7fe3fb6c42
+freetype__freetype	https://github.com/freetype/freetype.git	pending		S	25167984d2435930f9178e8d9d2ca3bdfa71a4e7
+numpy__numpy	https://github.com/numpy/numpy.git	pending		M	1365bae8111b4187748912d11234ad7fb32ac66d
+GNOME__gnome-shell	https://github.com/GNOME/gnome-shell.git	pending		S	f9cd9aaedf046ab75ab6d5e9d110ec126ff34995
+cnr-isti-vclab__vcglib	https://github.com/cnr-isti-vclab/vcglib.git	pending		S	5cae2abc2f9056785b0537dcbe156c40da2aea20
+mxe__mxe	https://github.com/mxe/mxe.git	pending		S	a9135e50775889ef9448cf12b72da0ea25aa04c1
+CZ-NIC__knot-resolver	https://github.com/CZ-NIC/knot-resolver.git	pending		S	cf97fec1eb63e70a98eb0244d1787a22590f3e28
+GluuFederation__oxAuth	https://github.com/GluuFederation/oxAuth.git	pending		S	da6deca3c6b2eed9883c53e33c705fc54d616b42
+mpv-player__mpv	https://github.com/mpv-player/mpv.git	pending		M	6c092d978b73a54f8b945e29f88a4015c7dacd89
+apache__jmeter	https://github.com/apache/jmeter.git	pending		S	762310f4015ab18254aa3d6bfbb0b95465f6a674
+Kototoro-app__Kototoro	https://github.com/Kototoro-app/Kototoro.git	pending		S	fc0e2150e5777921e2cf448b04dfb19fed25ff96
+weicj__vLLM-2080Ti-Definitive	https://github.com/weicj/vLLM-2080Ti-Definitive.git	pending		S	93c9013e375b1ecbf2da88179d2a31175a0d5c99

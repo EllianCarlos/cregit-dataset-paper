@@ -1,0 +1,24 @@
+# Part b5 of the S and M projects of manifest.batch11.tsv (sha256 c0bc3c7dfba79160d832ec8f554c147ba73f356035049fa27b4442dfc81ecea4),
+# balanced by predicted time (6.4 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+odin-lang__Odin	https://github.com/odin-lang/Odin.git	pending		S	e28e60a80c12e92cf89df2b80b8f18d33fc0ff78
+pydantic__pydantic	https://github.com/pydantic/pydantic.git	pending		S	1e6cc758a04b3b1b50d12907b6c463a9ea575b4a
+DarkPlacesEngine__DarkPlaces	https://github.com/DarkPlacesEngine/DarkPlaces.git	pending		S	5d80f03e26871b273da103f3b750820a3718c01a
+mozilla__nss	https://github.com/mozilla/nss.git	pending		S	ad51c7b309873c1c13e1368726109f3fd4df4e6a
+rdkit__rdkit	https://github.com/rdkit/rdkit.git	pending		S	fece8caa860bdf6c9c82bdb9253f22a0cf87150c
+Yamato-Security__hayabusa	https://github.com/Yamato-Security/hayabusa.git	pending		S	19a1d1db87831e976170395051c8dbc7d6c939eb
+risingwavelabs__risingwave	https://github.com/risingwavelabs/risingwave.git	pending		S	4274ca1677c470d237f800b177b0d5c4c8116f25
+SuperTux__supertux	https://github.com/SuperTux/supertux.git	pending		S	00673d1dfefeedf39aaf502ac0cfb1fd005174d6
+mgba-emu__mgba	https://github.com/mgba-emu/mgba.git	pending		S	12ccf54b212111546460d0bece8e814118260109
+lukas-krecan__ShedLock	https://github.com/lukas-krecan/ShedLock.git	pending		S	9428e7e1d8ed76bc6d01cc98219ff8c0a02c7c48
+portfolio-performance__portfolio	https://github.com/portfolio-performance/portfolio.git	pending		S	cf247a71f6d132bb73b343cbdae395b87b95ae69
+IntellectualSites__FastAsyncWorldEdit	https://github.com/IntellectualSites/FastAsyncWorldEdit.git	pending		S	163da3c1d068dc87691f6390052a2af905278485
+AcademySoftwareFoundation__OpenImageIO	https://github.com/AcademySoftwareFoundation/OpenImageIO.git	pending		S	dbbafd284647e79bbb5b6b4208b449691b2c4571
+ORCID__ORCID-Source	https://github.com/ORCID/ORCID-Source.git	pending		S	b34bb7b5d1e4eb7ac9f63a54a2094d6b37775a5c
+facebook__rocksdb	https://github.com/facebook/rocksdb.git	pending		S	3ea1ec56df203a6a5e38edf29edccd0c84eddfec
+manaflow-ai__cmux	https://github.com/manaflow-ai/cmux.git	pending		S	ceb671028c110628b81bb63049dc9e09d2b53f6f
+ruby__rbs	https://github.com/ruby/rbs.git	pending		S	29b5984c8352ecdc33b4aaa435a91fed36edab35
+vllm-project__vllm	https://github.com/vllm-project/vllm.git	pending		S	9465e1c783ca3ead11af4bdf2d930a921cb35436
+FrodeSolheim__fs-uae	https://github.com/FrodeSolheim/fs-uae.git	pending		S	f362278ccd4c60991caac3b4d240d4a3f751bea2
+vaadin__framework	https://github.com/vaadin/framework.git	pending		S	f7d61fc6d0de0f8e37c97eab85b7e554b24a7114

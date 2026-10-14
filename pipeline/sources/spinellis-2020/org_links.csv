@@ -1,0 +1,652 @@
+owner,company,strong_rows,owner_rows,owner_companies,owner_type,is_verified,website_url,website_on_company_domain,L1,L2,L3,link,reason,fetched_at
+3dtof,TEXAS INSTRUMENTS INC,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+a14n,Alphabet Inc.,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:38+00:00
+abseil,Alphabet Inc.,2,2,1,Organization,False,https://www.abseil.io,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+Accenture,Accenture plc,3,3,1,Organization,False,https://accenture.github.io,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+actions-on-google,Alphabet Inc.,6,6,1,Organization,False,https://developers.google.com/assistant,True,True,True,True,kept,,2026-10-06T03:58:38+00:00
+adapt,Deere,1,1,1,NOT_FOUND,,,False,True,True,False,not kept,L3: owner is NOT_FOUND,2026-10-06T03:58:38+00:00
+adobe,ADOBE INC.,10,10,1,Organization,True,https://adobe.com,True,True,True,True,kept,,2026-10-06T03:58:38+00:00
+adobe-apiplatform,ADOBE INC.,3,3,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+adobe-fonts,ADOBE INC.,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+Adobe-Marketing-Cloud,ADOBE INC.,7,7,1,Organization,False,http://adobe-marketing-cloud.github.io/,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+adobe-photoshop,ADOBE INC.,3,3,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:39+00:00
+adobe-type-tools,ADOBE INC.,3,3,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:39+00:00
+adobebc,ADOBE INC.,1,1,1,Organization,False,http://www.businesscatalyst.com,False,True,True,True,kept,,2026-10-06T03:58:39+00:00
+AdobeDocs,ADOBE INC.,1,1,1,Organization,False,https://adobe.com,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+adobeio,ADOBE INC.,1,1,1,Organization,False,https://www.adobe.io,False,True,True,True,kept,,2026-10-06T03:58:39+00:00
+adplabs,AUTOMATIC DATA PROCESSING INC,1,1,1,Organization,False,http://www.adp.com/innovation/,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+airbus-seclab,Airbus,1,1,1,Organization,False,https://airbus-seclab.github.io/,False,True,True,True,kept,,2026-10-06T03:58:39+00:00
+akamai,AKAMAI TECHNOLOGIES INC,5,5,1,Organization,False,https://techdocs.akamai.com,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+Alexa,AMAZON COM INC,1,1,1,Organization,False,https://developer.amazon.com/alexa,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+Alteryx,"Alteryx, Inc.",1,1,1,Organization,False,http://www.alteryx.com,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+amd,ADVANCED MICRO DEVICES INC,3,3,1,Organization,True,http://www.amd.com,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+ampproject,Alphabet Inc.,1,1,1,Organization,False,https://amp.dev,False,True,True,True,kept,,2026-10-06T03:58:39+00:00
+amzn,AMAZON COM INC,7,7,1,Organization,False,https://developer.amazon.com/,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+analogdevicesinc,ANALOG DEVICES INC,6,6,1,Organization,True,https://www.analog.com,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+AnalogDevicesLyricLabs,ANALOG DEVICES INC,1,1,1,NOT_FOUND,,,False,True,True,False,not kept,L3: owner is NOT_FOUND,2026-10-06T03:58:35+00:00
+android,Alphabet Inc.,1,2,1,Organization,False,https://d.android.com,False,True,False,True,not kept,L2: 1 of the owner's 2 rows carry the company,2026-10-06T03:58:39+00:00
+androidthings,Alphabet Inc.,8,8,1,Organization,False,https://developer.android.com/things/index.html,False,True,True,True,kept,,2026-10-06T03:58:39+00:00
+angular,Alphabet Inc.,4,4,1,Organization,True,https://angular.dev,False,True,True,True,kept,,2026-10-06T03:58:39+00:00
+ANZ-bank,Australia &amp; New Zealand Banking Group,1,1,1,Organization,False,anz.com,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+apache,"ADOBE INC.;AMAZON COM INC;Baidu, Inc.;Cloudera, Inc.;Huawei Investment &amp; Holding;MICROSOFT CORPORATION;SAP SE",4,34,7,Organization,True,https://www.apache.org/,False,False,False,True,not kept,L1: linked to 7 companies,2026-10-06T03:58:39+00:00
+apigee,Alphabet Inc.,1,1,1,Organization,False,https://apigee.com,False,True,True,True,kept,,2026-10-06T03:58:39+00:00
+ApolloAuto,"Baidu, Inc.",1,1,1,Organization,False,http://apollo.auto,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+Apple,APPLE INC,8,8,1,Organization,True,https://apple.com,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+arista-eosplus,"Arista Networks, Inc.",5,5,1,Organization,False,http://www.arista.com,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+aristanetworks,"Arista Networks, Inc.",3,3,1,Organization,False,https://www.arista.com,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+asilvas,GoDaddy Inc.,1,1,1,User,,https://x.com/Aaron_Silvas,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:39+00:00
+askmish,Intel Corporation,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:39+00:00
+aspnet,MICROSOFT CORPORATION,29,29,1,Organization,True,https://www.asp.net/,False,True,True,True,kept,,2026-10-06T03:58:39+00:00
+atlassian,Atlassian Corp Plc,5,5,1,Organization,True,https://atlassian.com/,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+AutomataDotNet,MICROSOFT CORPORATION,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+avadev,"AVALARA, INC.",1,1,1,Organization,False,http://developer.avalara.com,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+avnet,AVNET INC,1,1,1,Organization,False,http://www.avnet.com/,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+aws,AMAZON COM INC,36,36,1,Organization,True,https://amazon.com/aws,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+aws-amplify,AMAZON COM INC,3,3,1,Organization,False,https://amplify.aws,False,True,True,True,kept,,2026-10-06T03:58:39+00:00
+aws-quickstart,AMAZON COM INC,41,41,1,Organization,False,https://aws.amazon.com/quickstart,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+aws-samples,AMAZON COM INC,8,8,1,Organization,True,https://amazon.com/aws,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+awsdocs,AMAZON COM INC,19,19,1,Organization,False,https://docs.aws.amazon.com,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+awslabs,AMAZON COM INC,28,28,1,Organization,True,http://amazon.com/aws/,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+azsdk,MICROSOFT CORPORATION,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:39+00:00
+azsk,MICROSOFT CORPORATION,2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:39+00:00
+Azure,MICROSOFT CORPORATION,328,328,1,Organization,True,https://docs.microsoft.com/en-us/azure/,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+Azure-App-Service,MICROSOFT CORPORATION,2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+Azure-Samples,MICROSOFT CORPORATION,64,65,1,Organization,False,https://learn.microsoft.com/azure,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+AzureAD,MICROSOFT CORPORATION,11,11,1,Organization,False,http://azure.microsoft.com/en-us/services/active-directory/,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+AzureADQuickStarts,MICROSOFT CORPORATION,1,1,1,Organization,False,https://aka.ms/identityplatform,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+azureappserviceoss,MICROSOFT CORPORATION,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:39+00:00
+azureautomation,MICROSOFT CORPORATION,3,3,1,Organization,False,http://azure.microsoft.com/en-us/documentation/services/automation/,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+AzureCAT-GSI,MICROSOFT CORPORATION,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+baidu,"Baidu, Inc.",12,12,1,Organization,True,https://baidu.com,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+baidu-security,"Baidu, Inc.",1,1,1,Organization,False,http://sec.baidu.com/,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+baidubce,"Baidu, Inc.",2,2,1,Organization,False,https://cloud.baidu.com/,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+BaiduFE,"Baidu, Inc.",1,1,1,User,,http://fex.baidu.com,True,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:35+00:00
+BaiduLBS,"Baidu, Inc.",1,1,1,User,,http://lbsyun.baidu.com/index.php?title=%E9%A6%96%E9%A1%B5,True,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:35+00:00
+BallAerospace,BALL CORP,1,1,1,Organization,False,http://www.ballaerospace.com/,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+bashmohandes,"Okta, Inc.",1,1,1,User,,http:///www.bashmohandes.com,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:39+00:00
+bazelbuild,Alphabet Inc.,18,18,1,Organization,False,https://bazel.build,False,True,True,True,kept,,2026-10-06T03:58:39+00:00
+BBVA,Banco Bilbao Vizcaya Argentaria,10,10,1,Organization,False,https://bbva.com,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+BBVAEngineering,Banco Bilbao Vizcaya Argentaria,2,2,1,Organization,False,https://www.bbva.es,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+bcornec,"Hewlett Packard Enterprise Co,",1,1,1,User,,http://brunocornec.wordpress.com,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:39+00:00
+bencompton,CERNER CORP /MO/,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:39+00:00
+BingAds,MICROSOFT CORPORATION,3,3,1,Organization,False,https://developers.ads.microsoft.com/,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+bioinform,Roche Group,6,6,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:39+00:00
+bitstadium,MICROSOFT CORPORATION,3,3,1,Organization,False,http:///bitstadium.com,False,True,True,True,kept,,2026-10-06T03:58:39+00:00
+blockchain,"Blockchain Holdings Capital Ventures, Inc.",1,1,1,Organization,True,https://www.blockchain.com,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+blockchain-jd-com,"JD.com, Inc.",1,1,1,Organization,False,http://ledger.jd.com,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+bmkmanoj,AUTOMATIC DATA PROCESSING INC,1,1,1,User,,https://twitter.com/bmkmanoj,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:39+00:00
+box,BOX INC,29,29,1,Organization,True,https://box.com,True,True,True,True,kept,,2026-10-06T03:58:39+00:00
+bradygaster,MICROSOFT CORPORATION,2,2,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:39+00:00
+brendandburns,MICROSOFT CORPORATION,1,1,1,User,,https://twitter.com/brendandburns,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:39+00:00
+BrightcoveOS,BRIGHTCOVE INC.,2,2,1,Organization,False,http://opensource.brightcove.com,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+brpc,"Baidu, Inc.",1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:39+00:00
+calabash,MICROSOFT CORPORATION,10,10,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+capitalone,Capital One Financial,12,12,1,Organization,False,https://www.capitalone.com/tech/open-source/,True,True,True,True,kept,,2026-10-06T03:58:40+00:00
+carbonblack,"Carbon Black, Inc.",8,8,1,Organization,False,https://www.carbonblack.com/,True,True,True,True,kept,,2026-10-06T03:58:40+00:00
+card-io,"PayPal Holdings, Inc.",1,1,1,Organization,False,http://www.card.io,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+carla-simulator,Intel Corporation,2,2,1,Organization,False,http://carla.org,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+CatalystCode,MICROSOFT CORPORATION,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+catapult-project,Alphabet Inc.,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+census-instrumentation,Alphabet Inc.,4,4,1,Organization,False,http://opencensus.io,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+ceres-solver,Alphabet Inc.,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+cerner,CERNER CORP /MO/,5,5,1,Organization,False,http://engineering.cerner.com/,True,True,True,True,kept,,2026-10-06T03:58:40+00:00
+CFETeam,Tencent Music Entertainment Group,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+cgrail,SAP SE,1,1,1,User,,https://grails.de/about,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:40+00:00
+CheckPointSW,CHECK POINT SOFTWARE TECHNOLOGIES LTD,1,1,1,Organization,True,https://www.checkpoint.com/,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+chenchun,Tencent Music Entertainment Group,1,1,1,User,,http://chenchun.github.io,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:40+00:00
+chipsec,Intel Corporation,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+chorankates,SALESFORCE COM INC,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:40+00:00
+ChromeDevTools,Alphabet Inc.,1,1,1,Organization,False,https://devtools.chrome.com,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+chxdeng,"CISCO SYSTEMS, INC.",1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:40+00:00
+Cigna,CIGNA Corporation,1,1,1,Organization,True,https://www.cigna.com,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+cisco,"CISCO SYSTEMS, INC.",19,19,1,Organization,True,https://cisco.com,True,True,True,True,kept,,2026-10-06T03:58:40+00:00
+cisco-ie,"CISCO SYSTEMS, INC.",3,3,1,Organization,True,,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+cisco-system-traffic-generator,"CISCO SYSTEMS, INC.",1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+Cisco-Talos,"CISCO SYSTEMS, INC.",5,5,1,Organization,False,https://www.talosintelligence.com,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+CiscoDevNet,"CISCO SYSTEMS, INC.",6,6,1,Organization,True,http://developer.cisco.com,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+ciscospark,"CISCO SYSTEMS, INC.",2,2,1,NOT_FOUND,,,False,True,True,False,not kept,L3: owner is NOT_FOUND,2026-10-06T03:58:40+00:00
+CiscoTestAutomation,"CISCO SYSTEMS, INC.",2,2,1,Organization,False,https://developer.cisco.com/pyats/,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+citrix,CITRIX SYSTEMS INC,4,4,1,Organization,False,https://www.citrix.com,True,True,True,True,kept,,2026-10-06T03:58:40+00:00
+cleandart,"Centennial Resource Development, Inc.",1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+clearcontainers,Intel Corporation,2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+clearlinux,Intel Corporation,8,8,1,Organization,False,http://clearlinux.github.io,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+cloudendpoints,Alphabet Inc.,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+cloudera,"Cloudera, Inc.",15,15,1,Organization,False,www.cloudera.com,True,True,True,True,kept,,2026-10-06T03:58:40+00:00
+cloudera-labs,"Cloudera, Inc.",2,2,1,Organization,False,https://www.cloudera.com,True,True,True,True,kept,,2026-10-06T03:58:40+00:00
+cloudera-ps,"Cloudera, Inc.",1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+cloudfoundry-community,ALLSTATE LIFE INSURANCE CO;Alphabet Inc.;SPLUNK INC,1,3,3,Organization,False,https://lists.cloudfoundry.org/g/cf-dev,False,False,False,True,not kept,L1: linked to 3 companies,2026-10-06T03:58:40+00:00
+cloudfoundry-incubator,MICROSOFT CORPORATION;SAP SE,2,12,2,Organization,False,https://www.cloudfoundry.org/,False,False,False,True,not kept,L1: linked to 2 companies,2026-10-06T03:58:40+00:00
+codedellemc,"VMWARE, INC.",1,1,1,Organization,False,http://thecodeteam.com,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+CognizantOneDevOps,COGNIZANT TECHNOLOGY SOLUTIONS CORP,1,1,1,Organization,False,https://www.cognizant.com/application-services/devops,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+CommvaultEngg,COMMVAULT SYSTEMS INC,1,1,1,Organization,False,www.commvault.com,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+compozed,ALLSTATE LIFE INSURANCE CO,1,1,1,Organization,False,http://www.allstate.com,True,True,True,True,kept,,2026-10-06T03:58:40+00:00
+connectbot,Alphabet Inc.,1,1,1,Organization,True,https://connectbot.org/,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+contiv,"CISCO SYSTEMS, INC.",1,1,1,Organization,False,http://contiv.io,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+conversationai,Alphabet Inc.,8,8,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+corretto,AMAZON COM INC,2,2,1,Organization,True,https://amazon.com/aws/,True,True,True,True,kept,,2026-10-06T03:58:40+00:00
+coverity,SYNOPSYS INC,1,1,1,Organization,False,https://www.blackduck.com/,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+Criteo,Criteo S.A.,19,19,1,Organization,True,https://careers.criteo.com/en/teams/engineering/,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+criteo-cookbooks,Criteo S.A.,2,2,1,Organization,True,https://criteo.com/,True,True,True,True,kept,,2026-10-06T03:58:40+00:00
+criteo-forks,Criteo S.A.,1,1,1,Organization,True,https://criteo.com,True,True,True,True,kept,,2026-10-06T03:58:40+00:00
+crosswalk-project,Intel Corporation;Samsung Electronics,4,5,2,Organization,False,http://crosswalk-project.org/,False,False,False,True,not kept,L1: linked to 2 companies,2026-10-06T03:58:40+00:00
+ctripcorp,CTRIP COM INTERNATIONAL LTD,7,7,1,Organization,False,http://www.ctrip.com,True,True,True,True,kept,,2026-10-06T03:58:40+00:00
+d2l-ai,AMAZON COM INC,1,1,1,Organization,False,https://D2L.ai,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+DanielEgan,MICROSOFT CORPORATION,1,1,1,User,,http://TheSociableGeek.com,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:35+00:00
+danielnorberg,Spotify Technology S.A.,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:40+00:00
+danintel,Intel Corporation,2,2,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:40+00:00
+daos-stack,Intel Corporation,2,2,1,Organization,False,https://daosio.atlassian.net/wiki/spaces/DC/,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+dart-gde,Alphabet Inc.,2,2,1,Organization,False,https://developers.google.com/experts/,True,True,True,True,kept,,2026-10-06T03:58:40+00:00
+dart-lang,Alphabet Inc.,53,53,1,Organization,True,https://dart.dev,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+dart-league,Alphabet Inc.,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+Dashbrd,SCHLUMBERGER LIMITED/NV,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+datacenter,"CISCO SYSTEMS, INC.",2,2,1,Organization,False,http://www.cisco.com/go/aci,True,True,True,True,kept,,2026-10-06T03:58:40+00:00
+dataseries,HP Inc.,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+dato-code,APPLE INC,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:40+00:00
+dbcli,MICROSOFT CORPORATION,1,1,1,Organization,False,http://dbcli.com,False,True,True,True,kept,,2026-10-06T03:58:40+00:00
+dbdd4us,Tencent Music Entertainment Group,1,1,1,NOT_FOUND,,,False,True,True,False,not kept,L3: owner is NOT_FOUND,2026-10-06T03:58:42+00:00
+dbsystel,Deutsche Bahn,1,1,1,Organization,True,https://www.dbsystel.de,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+decentralized-identity,MICROSOFT CORPORATION,1,1,1,Organization,True,https://identity.foundation,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+deepmind,Alphabet Inc.,2,2,1,Organization,False,https://github.com/google-deepmind,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+Deffiss,"EPAM Systems, Inc.",1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:35+00:00
+deis,MICROSOFT CORPORATION,6,6,1,Organization,False,https://deis.com,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+denniszielke,MICROSOFT CORPORATION,1,1,1,User,,https://denniszielke.medium.com/,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:42+00:00
+despegar,"Despegar.com, Corp.",1,1,1,Organization,False,https://despegar.com,True,True,True,True,kept,,2026-10-06T03:58:42+00:00
+devops-dojo,"Hewlett Packard Enterprise Co,",1,1,1,Organization,False,https://dxc-technology.github.io/about-devops-dojo/,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+dholt,NVIDIA CORP,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:42+00:00
+dialogflow,Alphabet Inc.,1,1,1,Organization,False,http://dialogflow.com,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+digi-embedded,DIGI INTERNATIONAL INC.,1,1,1,Organization,False,https://www.digi.com/products/embedded-systems,True,True,True,True,kept,,2026-10-06T03:58:42+00:00
+digidotcom,DIGI INTERNATIONAL INC.,1,1,1,Organization,False,http://www.digi.com,True,True,True,True,kept,,2026-10-06T03:58:42+00:00
+dmlc,AMAZON COM INC,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+dmorr-google,Alphabet Inc.,1,1,1,NOT_FOUND,,,False,True,True,False,not kept,L3: owner is NOT_FOUND,2026-10-06T03:58:42+00:00
+docascode,MICROSOFT CORPORATION,1,1,1,Organization,False,https://dotnet.github.io/docfx/,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+domoinc,"Domo, Inc.",2,2,1,Organization,False,https://developer.domo.com,True,True,True,True,kept,,2026-10-06T03:58:42+00:00
+dotnet,MICROSOFT CORPORATION,50,50,1,Organization,True,https://dot.net,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+dotnet-architecture,MICROSOFT CORPORATION,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+dropbox,"Dropbox, Inc.",3,3,1,Organization,True,https://dropbox.com/,True,True,True,True,kept,,2026-10-06T03:58:42+00:00
+dueros,"Baidu, Inc.",3,3,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+duowan,YY Inc.,1,1,1,Organization,False,http://www.duowan.com,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+dwstech,Deutsche Bank Aktiengesellschaft,1,1,1,Organization,False,https://dws.com/,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+DynamoRIO,Alphabet Inc.,1,1,1,Organization,False,http://dynamorio.org,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+DzmitrySlutskiy,"EPAM Systems, Inc.",1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:35+00:00
+eclipse,Oracle Corporation,1,27,1,Organization,True,http://eclipse.org,False,True,False,True,not kept,L2: 1 of the owner's 27 rows carry the company,2026-10-06T03:58:42+00:00
+eclipse-ee4j,Oracle Corporation,7,7,1,Organization,False,https://projects.eclipse.org/projects/ee4j,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+ecomfe,"Baidu, Inc.",47,47,1,Organization,False,http://efe.baidu.com/,True,True,True,True,kept,,2026-10-06T03:58:42+00:00
+elastic,Elastic N.V.,4,4,1,Organization,False,https://www.elastic.co/,True,True,True,True,kept,,2026-10-06T03:58:42+00:00
+EllieMae,ELLIE MAE INC,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:35+00:00
+EmbeddedRPC,NXP Semiconductors N.V.,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+embree,Intel Corporation,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+emshack,Alphabet Inc.,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:42+00:00
+enova,"Enova International, Inc.",4,4,1,Organization,False,https://enova.com,True,True,True,True,kept,,2026-10-06T03:58:42+00:00
+enyojs,HP Inc.,1,1,1,Organization,False,http://enyojs.com,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+epam,"EPAM Systems, Inc.",16,16,1,Organization,True,www.epam.com,True,True,True,True,kept,,2026-10-06T03:58:42+00:00
+etsy,ETSY INC,4,4,1,Organization,True,https://www.etsy.com/,True,True,True,True,kept,,2026-10-06T03:58:42+00:00
+eventbrite,"Eventbrite, Inc.",2,2,1,Organization,False,http://www.eventbrite.com,True,True,True,True,kept,,2026-10-06T03:58:42+00:00
+evillgenius75,MICROSOFT CORPORATION,1,1,1,User,,http://brain.evillgenius.tech,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:42+00:00
+ExactTarget,SALESFORCE COM INC,4,4,1,Organization,False,http://developer.salesforce.com,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+express-labs,"EXPRESS, INC.",1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+f5devcentral,F5 NETWORKS INC,1,1,1,Organization,False,https://devcentral.f5.com,True,True,True,True,kept,,2026-10-06T03:58:42+00:00
+F5Networks,F5 NETWORKS INC,9,9,1,Organization,False,https://f5.com,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+FabricAttachedMemory,"Hewlett Packard Enterprise Co,",1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+fed135,"Shutterstock, Inc.",1,1,1,User,,https://fredericcharette.com,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:42+00:00
+fex-team,"Baidu, Inc.",44,44,1,Organization,False,http://fex.baidu.com,True,True,True,True,kept,,2026-10-06T03:58:42+00:00
+filodb,APPLE INC,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+finagle,"TWITTER, INC.",9,9,1,Organization,False,https://twitter.com/finagle,True,True,True,True,kept,,2026-10-06T03:58:42+00:00
+Firebase,Alphabet Inc.,23,23,1,Organization,False,firebase.google.com,True,True,True,True,kept,,2026-10-06T03:58:35+00:00
+firecracker-microvm,AMAZON COM INC,2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+fishworks,MICROSOFT CORPORATION,1,1,1,Organization,False,https://gofi.sh,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+Fitbit,FITBIT INC,3,3,1,NOT_FOUND,,,False,True,True,False,not kept,L3: owner is NOT_FOUND,2026-10-06T03:58:35+00:00
+flame,ADVANCED MICRO DEVICES INC,1,1,1,Organization,False,http://shpc.ices.utexas.edu/,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+flang-compiler,NVIDIA CORP,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+flightjs,"TWITTER, INC.",4,4,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+flot,NATIONAL INSTRUMENTS CORP /DE/,1,1,1,Organization,False,http://www.flotcharts.org,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+flutter,Alphabet Inc.,4,4,1,Organization,True,https://flutter.dev,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+fmi,SAP SE,1,1,1,Organization,False,http://fmi.py-bg.net/,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+fnproject,Oracle Corporation,1,1,1,Organization,False,http://fnproject.io,False,True,True,True,kept,,2026-10-06T03:58:42+00:00
+forcedotcom,SALESFORCE COM INC,19,19,1,Organization,True,https://developer.salesforce.com,True,True,True,True,kept,,2026-10-06T03:58:42+00:00
+foss-for-synopsys-dwc-arc-processors,SYNOPSYS INC,1,1,1,NOT_FOUND,,,False,True,True,False,not kept,L3: owner is NOT_FOUND,2026-10-06T03:58:43+00:00
+FoundationDB,APPLE INC,1,1,1,Organization,False,https://www.foundationdb.org,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+FrontSpot-Community,"EPAM Systems, Inc.",1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+FStarLang,MICROSOFT CORPORATION,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:35+00:00
+fuchsia-mirror,Alphabet Inc.,4,4,1,Organization,False,https://fuchsia.googlesource.com/,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+gadgetd,Samsung Electronics,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:43+00:00
+GameTechDev,Intel Corporation,6,6,1,Organization,False,https://gametechdev.github.io/,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+ganeti,Alphabet Inc.,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+gardener,SAP SE,5,5,1,Organization,False,https://gardener.cloud,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+Garmin,GARMIN LTD,1,1,1,Organization,False,http://developer.garmin.com,True,True,True,True,kept,,2026-10-06T03:58:36+00:00
+gearpump,Intel Corporation,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+gearvrf,Samsung Electronics,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:43+00:00
+Ginger-Automation,AMDOCS LTD,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+Glimpse,MICROSOFT CORPORATION,1,1,1,Organization,False,getGlimpse.com,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+GlitchEnzo,MICROSOFT CORPORATION,1,1,1,User,,https://glitchenzo.github.io/,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:36+00:00
+go-chassis,Huawei Investment &amp; Holding,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+go-mesh,Huawei Investment &amp; Holding,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+godaddy,GoDaddy Inc.,4,4,1,Organization,True,https://godaddy.com/engineering/,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+gomobile,Intel Corporation,1,1,1,Organization,False,http://xdk.intel.com,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+google,Alphabet Inc.,122,123,1,Organization,True,https://opensource.google/,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+googleads,Alphabet Inc.,6,6,1,Organization,False,https://developers.google.com/ads/,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+googleapis,Alphabet Inc.,33,33,1,Organization,False,https://googleapis.github.io,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+googlearchive,Alphabet Inc.,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+googlecartographer,Alphabet Inc.,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:43+00:00
+googlecast,Alphabet Inc.,9,9,1,Organization,False,https://developers.google.com/cast/support,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+GoogleChrome,Alphabet Inc.,7,7,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+GoogleCloudPlatform,Alphabet Inc.,77,77,1,Organization,False,https://cloud.google.com,True,True,True,True,kept,,2026-10-06T03:58:36+00:00
+googlecodelabs,Alphabet Inc.,3,3,1,Organization,False,https://codelabs.developers.google.com/,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+GoogleContainerTools,Alphabet Inc.,2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+googledatalab,Alphabet Inc.,2,2,1,Organization,False,https://cloud.google.com/datalab/,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+googledrive,Alphabet Inc.,3,3,1,Organization,False,github.com/googleworkspace,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+googlefonts,Alphabet Inc.,1,1,1,Organization,False,https://fonts.google.com,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+googlegenomics,Alphabet Inc.,6,6,1,Organization,False,http://cloud.google.com/life-sciences,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+googleglass,Alphabet Inc.,1,1,1,Organization,False,https://developers.google.com/glass/,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+googlei18n,Alphabet Inc.,6,6,1,Organization,False,https://developers.google.com/international,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+googlemaps,Alphabet Inc.,1,1,1,Organization,False,https://developers.google.com/maps,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+googleplus,Alphabet Inc.,1,1,1,Organization,False,https://github.com/googlearchive,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+googlesamples,Alphabet Inc.,15,15,1,Organization,False,https://developers.google.com/,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+googlevr,Alphabet Inc.,2,2,1,Organization,False,developers.google.com/vr,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+GoogleWebComponents,Alphabet Inc.,2,2,1,Organization,False,https://www.webcomponents.org/collection/GoogleWebComponents/google-web-components,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+gopro,"GoPro, Inc.",1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+GPUOpen-Drivers,ADVANCED MICRO DEVICES INC,1,1,1,Organization,False,https://gpuopen.com/,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+GPUOpen-ProfessionalCompute-Libraries,ADVANCED MICRO DEVICES INC,1,1,1,Organization,False,https://rocm.docs.amd.com,True,True,True,True,kept,,2026-10-06T03:58:36+00:00
+GPUOpen-Tools,ADVANCED MICRO DEVICES INC,2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+gpuweb,APPLE INC,1,1,1,Organization,False,https://webgpu.org,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+graalvm,Oracle Corporation,6,6,1,Organization,False,https://www.graalvm.org,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+Grafeas,Alphabet Inc.,1,1,1,Organization,False,grafeas.io,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+Groundwire,SALESFORCE COM INC,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+groupon,"Groupon, Inc.",21,21,1,Organization,False,https://engineering.groupon.com/,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+grpc,Alphabet Inc.,4,4,1,Organization,True,https://grpc.io,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+grpc-ecosystem,Alphabet Inc.,1,2,1,Organization,False,https://www.grpc.io,False,True,False,True,not kept,L2: 1 of the owner's 2 rows carry the company,2026-10-06T03:58:43+00:00
+gwintzer,ORANGE,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:43+00:00
+gwtproject,Alphabet Inc.,1,1,1,Organization,True,https://www.gwtproject.org,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+Haacked,MICROSOFT CORPORATION,1,1,1,User,,https://haacked.com/,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:36+00:00
+harmony-framework,AMDOCS LTD,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+hdinsight,MICROSOFT CORPORATION,2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+HdrHistogram,"CISCO SYSTEMS, INC.",1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+henrybell,Alphabet Inc.,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:43+00:00
+HewlettPackard,"Hewlett Packard Enterprise Co,",7,7,1,Organization,False,http://www.hpe.com,True,True,True,True,kept,,2026-10-06T03:58:36+00:00
+Hexadite,MICROSOFT CORPORATION,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+hfp,Intel Corporation,1,1,1,User,,https://www.linkedin.com/in/pabst,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:43+00:00
+homedepot,HOME DEPOT INC,1,1,1,Organization,False,https://homedepot.com,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+hpe-storage,"Hewlett Packard Enterprise Co,",1,1,1,Organization,False,https://www.hpe.com/us/en/storage.html,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+HSAFoundation,ADVANCED MICRO DEVICES INC,1,1,1,Organization,False,http://www.hsafoundation.com/,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+HsuanXyz,Ultimate Software Group Inc,1,1,1,User,,hsuan.xyz,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:36+00:00
+huawei,Huawei Investment &amp; Holding,1,1,1,Organization,False,http://opensource.huawei.com,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+huawei-openlab,Huawei Investment &amp; Holding,1,1,1,Organization,False,http://huawei.com,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+HuaweiBigData,Huawei Investment &amp; Holding,1,1,1,NOT_FOUND,,,False,True,True,False,not kept,L3: owner is NOT_FOUND,2026-10-06T03:58:36+00:00
+huaweicloud,Huawei Investment &amp; Holding,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+HubbleStack,ADOBE INC.,1,1,1,Organization,False,https://github.com/hubblestack/hubble,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+HubSpot,HUBSPOT INC,15,15,1,Organization,False,http://product.hubspot.com/,True,True,True,True,kept,,2026-10-06T03:58:36+00:00
+hugegraph,"Baidu, Inc.",1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+huiyan-fe,"Baidu, Inc.",4,4,1,Organization,False,http://huiyan.baidu.com,True,True,True,True,kept,,2026-10-06T03:58:43+00:00
+hyperledger-labs,Intel Corporation,1,1,1,Organization,False,https://lf-decentralized-trust-labs.github.io/,False,True,True,True,kept,,2026-10-06T03:58:43+00:00
+IBM,INTERNATIONAL BUSINESS MACHINES CORP,13,20,1,Organization,True,https://www.ibm.com/opensource/,True,True,True,True,kept,,2026-10-06T03:58:36+00:00
+idok,Wix.com Ltd.,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:43+00:00
+ilkarman,MICROSOFT CORPORATION,1,1,1,User,,https://www.linkedin.com/in/ilia-karmanov-09aa588b/,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:43+00:00
+illumina,Illumina Inc,14,14,1,Organization,False,http://www.illumina.com,True,True,True,True,kept,,2026-10-06T03:58:44+00:00
+infor-design,"Infor, Inc.",3,3,1,Organization,False,https://design.infor.com,True,True,True,True,kept,,2026-10-06T03:58:44+00:00
+instructure,INSTRUCTURE INC,3,3,1,Organization,True,instructure.com,True,True,True,True,kept,,2026-10-06T03:58:44+00:00
+instructure-react,INSTRUCTURE INC,2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+intel-aero,Intel Corporation,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+intel-analytics,Intel Corporation,2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+Intel-bigdata,Intel Corporation,2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+intel-go,Intel Corporation,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+Intel-HLS,Intel Corporation,1,1,1,Organization,False,http://intel.com/healthcare/optimizecode,True,True,True,True,kept,,2026-10-06T03:58:36+00:00
+intel-iot-devkit,Intel Corporation,5,5,1,Organization,False,https://software.intel.com/iot,True,True,True,True,kept,,2026-10-06T03:58:44+00:00
+Intel-Media-SDK,Intel Corporation,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+intel-ros,Intel Corporation,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+IntelAI,Intel Corporation,3,3,1,Organization,False,https://www.intel.ai,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+IntelFsp,Intel Corporation,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+IntelLabs,Intel Corporation,2,2,1,Organization,False,https://www.intel.com/labs,True,True,True,True,kept,,2026-10-06T03:58:36+00:00
+IntelPNI,Intel Corporation,1,1,1,Organization,False,https://github.com/IntelPNI/Organization/wiki,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+IntelPython,Intel Corporation,3,3,1,Organization,False,https://software.intel.com/en-us/python-distribution,True,True,True,True,kept,,2026-10-06T03:58:36+00:00
+IntelRealSense,Intel Corporation,2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+intelsdi-x,Intel Corporation,1,1,1,Organization,False,http://www.intel.com,True,True,True,True,kept,,2026-10-06T03:58:44+00:00
+internap,Internap Corp,1,1,1,Organization,False,https://www.inap.com/,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+iotivity,Samsung Electronics,1,1,1,Organization,False,https://iotivity.github.io/,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+IstiN,"EPAM Systems, Inc.",1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:36+00:00
+istio,Alphabet Inc.,5,5,1,Organization,True,https://istio.io,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+it-shark-pro,"EPAM Systems, Inc.",1,1,1,Organization,False,http://it-shark.pro/,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+iv-web,Tencent Music Entertainment Group,1,1,1,Organization,False,https://ivweb.io/,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+jaredpar,MICROSOFT CORPORATION,1,1,1,User,,https://blog.paranoidcoding.org,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:44+00:00
+java9-modularity,NETFLIX INC,1,1,1,Organization,False,http://javamodularity.com,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+javaee,Oracle Corporation,5,5,1,Organization,False,oracle.com/javaee,True,True,True,True,kept,,2026-10-06T03:58:44+00:00
+jbruening,MICROSOFT CORPORATION,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:44+00:00
+jdf2e,"JD.com, Inc.",4,4,1,Organization,False,http://nutui.jd.com,True,True,True,True,kept,,2026-10-06T03:58:44+00:00
+jDramaix,Alphabet Inc.,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:44+00:00
+jeanblanchard,Electricité de France,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:44+00:00
+jenkinsci,Alphabet Inc.;MICROSOFT CORPORATION,3,21,2,Organization,True,www.jenkins.io,False,False,False,True,not kept,L1: linked to 2 companies,2026-10-06T03:58:44+00:00
+jerryOnlyZRJ,Tencent Music Entertainment Group,1,1,1,User,,https://juejin.im/user/5b0e6162518825159a7f6bcb,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:44+00:00
+JetBrains,Alphabet Inc.,2,37,1,Organization,True,https://jetbrains.com/opensource,False,True,False,True,not kept,L2: 2 of the owner's 37 rows carry the company,2026-10-06T03:58:36+00:00
+Jigsaw-Code,Alphabet Inc.,6,6,1,Organization,False,https://jigsaw.google.com/,True,True,True,True,kept,,2026-10-06T03:58:36+00:00
+JNPRAutomate,JUNIPER NETWORKS INC,5,5,1,Organization,False,https://community.juniper.net/communities/community-home?CommunityKey=bdb90a90-a9bd-4226-8f03-051df7d28113,True,True,True,True,kept,,2026-10-06T03:58:36+00:00
+joe-sky,"JD.com, Inc.",1,1,1,User,,https://dev.to/joesky,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:44+00:00
+jonludlam,CITRIX SYSTEMS INC,1,1,1,User,,http://jon.recoil.org/,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:44+00:00
+jpbetz,Alphabet Inc.,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:44+00:00
+jpush,Aurora Mobile Ltd,26,26,1,Organization,False,https://www.jiguang.cn,True,True,True,True,kept,,2026-10-06T03:58:44+00:00
+JRHZRD,"JD.com, Inc.",1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:36+00:00
+jrieken,MICROSOFT CORPORATION,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:44+00:00
+juniper,JUNIPER NETWORKS INC,9,9,1,Organization,False,www.juniper.net,True,True,True,True,kept,,2026-10-06T03:58:44+00:00
+JustinBeckwith,Alphabet Inc.,1,1,1,User,,http://jbeckwith.com,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:36+00:00
+Kaggle,Alphabet Inc.,1,1,1,Organization,False,http://www.kaggle.com,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+kajf,"EPAM Systems, Inc.",1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:44+00:00
+kata-containers,Intel Corporation,7,7,1,Organization,True,https://katacontainers.io,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+khartec,Deutsche Bank Aktiengesellschaft,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+khenidak,MICROSOFT CORPORATION,1,1,1,User,,http://www.henidak.com,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:44+00:00
+KhronosGroup,MICROSOFT CORPORATION;NVIDIA CORP,1,6,2,Organization,True,https://www.khronos.org/,False,False,False,True,not kept,L1: linked to 2 companies,2026-10-06T03:58:36+00:00
+knative,Alphabet Inc.,1,1,1,Organization,True,https://knative.dev/,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+krakenjs,"PayPal Holdings, Inc.",25,25,1,Organization,False,http://www.krakenjs.com,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+kubeedge,Huawei Investment &amp; Holding,1,1,1,Organization,False,https://kubeedge.io,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+kubeflow,Intel Corporation,2,2,1,Organization,True,https://kubeflow.org,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+kubegene,Huawei Investment &amp; Holding,1,1,1,Organization,True,kubegene.io,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+kubernetes,"Alphabet Inc.;MICROSOFT CORPORATION;VMWARE, INC.",13,15,3,Organization,True,https://kubernetes.io,False,False,False,True,not kept,L1: linked to 3 companies,2026-10-06T03:58:44+00:00
+kubernetes-sigs,Alphabet Inc.;Huawei Investment &amp; Holding,6,7,2,Organization,False,,False,False,False,True,not kept,L1: linked to 2 companies,2026-10-06T03:58:44+00:00
+kvh,"Square, Inc.",1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:44+00:00
+kyma-project,SAP SE,3,3,1,Organization,True,https://kyma-project.io,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+lastship,Yandex N.V.,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:44+00:00
+lavas-project,"Baidu, Inc.",11,11,1,Organization,False,https://lavas.baidu.com,True,True,True,True,kept,,2026-10-06T03:58:44+00:00
+lean-delivery,"EPAM Systems, Inc.",1,1,1,Organization,True,https://lean-delivery.com,False,True,True,True,kept,,2026-10-06T03:58:44+00:00
+leblancd,"CISCO SYSTEMS, INC.",1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:44+00:00
+LendingClub,LENDINGCLUB CORP,1,1,1,Organization,False,https://www.lendingclub.com,True,True,True,True,kept,,2026-10-06T03:58:36+00:00
+lenovo,Lenovo Group,1,1,1,Organization,False,https://www.lenovo.com,True,True,True,True,kept,,2026-10-06T03:58:44+00:00
+Libertymutual,Liberty Mutual Insurance Group,1,1,1,Organization,False,https://welcome.libertymutual.com/innovation/information-technology/,True,True,True,True,kept,,2026-10-06T03:58:36+00:00
+Line,LINE CORP,3,3,1,Organization,True,https://engineering.linecorp.com/en/opensource,True,True,True,True,kept,,2026-10-06T03:58:36+00:00
+linkedin,Alphabet Inc.,1,21,1,Organization,True,https://engineering.linkedin.com,False,True,False,True,not kept,L2: 1 of the owner's 21 rows carry the company,2026-10-06T03:58:44+00:00
+LIS,MICROSOFT CORPORATION,2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+LivePersonInc,LIVEPERSON INC,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:36+00:00
+lmarkus,"PayPal Holdings, Inc.",1,1,1,User,,https://paypal.com,True,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:44+00:00
+logstash-plugins,Elastic N.V.,1,1,1,Organization,False,https://www.elastic.co/products/logstash,True,True,True,True,kept,,2026-10-06T03:58:45+00:00
+LoRaWanMiniMouse,SEMTECH CORP,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:36+00:00
+LP-Messaging,LIVEPERSON INC,1,1,1,Organization,False,https://www.liveperson.com/,True,True,True,True,kept,,2026-10-06T03:58:36+00:00
+luci,Alphabet Inc.,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+madmath,Alphabet Inc.,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:45+00:00
+MarvellEmbeddedProcessors,MARVELL TECHNOLOGY GROUP LTD,1,1,1,Organization,False,http://www.marvell.com/embedded-processors/,True,True,True,True,kept,,2026-10-06T03:58:37+00:00
+material-components,Alphabet Inc.,4,4,1,Organization,False,https://material.io/components/,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+material-foundation,Alphabet Inc.,1,1,1,Organization,False,https://material.io,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+max-team,"Baidu, Inc.",1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+mbebenita,Alphabet Inc.,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:45+00:00
+mbrukman,Alphabet Inc.,1,1,1,User,,https://misha.brukman.net,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:45+00:00
+mdsol,"Medidata Solutions, Inc.",2,2,1,Organization,False,http://www.medidata.com,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+mellanox,"Mellanox Technologies, Ltd.",10,10,1,Organization,False,http://www.mellanox.com,True,True,True,True,kept,,2026-10-06T03:58:45+00:00
+memkind,Intel Corporation,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+mercadolibre,MERCADOLIBRE INC,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+mercadopago,MERCADOLIBRE INC,8,8,1,Organization,False,http://developers.mercadopago.com,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+MetalPetal,Momo Inc.,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+Microsoft,MICROSOFT CORPORATION,855,855,1,Organization,True,https://opensource.microsoft.com,True,True,True,True,kept,,2026-10-06T03:58:37+00:00
+MicrosoftDocs,MICROSOFT CORPORATION,67,67,1,Organization,False,https://learn.microsoft.com,True,True,True,True,kept,,2026-10-06T03:58:37+00:00
+MicrosoftEdge,MICROSOFT CORPORATION,4,4,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+microsoftgraph,MICROSOFT CORPORATION,11,11,1,Organization,False,https://graph.microsoft.com,True,True,True,True,kept,,2026-10-06T03:58:45+00:00
+MicrosoftResearch,MICROSOFT CORPORATION,1,1,1,Organization,False,https://www.microsoft.com/research/,True,True,True,True,kept,,2026-10-06T03:58:37+00:00
+MicrosoftTranslator,MICROSOFT CORPORATION,2,2,1,Organization,False,http://www.microsoft.com/translator,True,True,True,True,kept,,2026-10-06T03:58:37+00:00
+mipengine,"Baidu, Inc.",9,9,1,Organization,False,https://www.mipengine.org,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+mirage,CITRIX SYSTEMS INC,1,1,1,Organization,True,https://mirage.io,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+mit-plv,Alphabet Inc.,1,1,1,Organization,False,http://plv.csail.mit.edu/,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+mitchellh,Alphabet Inc.,1,1,1,User,,https://mitchellh.com,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:45+00:00
+mixer,MICROSOFT CORPORATION,1,1,1,Organization,False,https://mixer.com,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+mlperf,Alphabet Inc.,1,1,1,Organization,False,http://www.mlperf.org,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+Mobiperf,Alphabet Inc.,1,1,1,Organization,False,http://www.mobiperf.com,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+mongodb,"MongoDB, Inc.",1,1,1,Organization,False,http://www.mongodb.com/,True,True,True,True,kept,,2026-10-06T03:58:45+00:00
+mopub,"TWITTER, INC.",2,3,1,Organization,False,http://twitter.com,True,True,True,True,kept,,2026-10-06T03:58:45+00:00
+movidius,Intel Corporation,2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+ms-iot,MICROSOFT CORPORATION,6,6,1,Organization,False,https://www.windowsondevices.com,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+msd-code-academy,"Merck &amp; Co., Inc.",1,1,1,Organization,False,https://www.msdit.cz/,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+mshanemc,SALESFORCE COM INC,1,1,1,User,,https://www.platformdemos.com,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:45+00:00
+msintuneappsdk,MICROSOFT CORPORATION,1,1,1,Organization,False,https://docs.microsoft.com/en-us/intune/app-sdk,True,True,True,True,kept,,2026-10-06T03:58:45+00:00
+MSOpenTech,MICROSOFT CORPORATION,3,3,1,Organization,True,https://microsoft.com,True,True,True,True,kept,,2026-10-06T03:58:36+00:00
+mspnp,MICROSOFT CORPORATION,14,14,1,Organization,False,https://aka.ms/mspnp,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+MSRCCS,MICROSOFT CORPORATION,1,1,1,Organization,False,http://research.microsoft.com/en-us/UM/redmond/groups/ccs/,True,True,True,True,kept,,2026-10-06T03:58:36+00:00
+mstr-dev,MICROSTRATEGY INC,1,1,1,Organization,False,http://community.microstrategy.com,True,True,True,True,kept,,2026-10-06T03:58:45+00:00
+mysql,Oracle Corporation,10,10,1,Organization,False,http://dev.mysql.com/,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+namjaejeon,Samsung Electronics,1,1,1,User,,https://www.linkedin.com/in/namjae-jeon-19111865/,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:45+00:00
+nash-md,TWILIO INC,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:45+00:00
+NativeScript,PROGRESS SOFTWARE CORP /MA,9,17,1,Organization,True,https://www.nativescript.org,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+neo-ai,AMAZON COM INC,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+NervanaSystems,Intel Corporation,6,6,1,Organization,False,https://www.intel.ai,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+NervJS,"JD.com, Inc.",2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+NetApp,"NetApp, Inc.",1,1,1,Organization,True,https://netapp.com,True,True,True,True,kept,,2026-10-06T03:58:37+00:00
+Netflix,NETFLIX INC,79,79,1,Organization,False,http://netflix.github.io/,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+Netflix-Skunkworks,NETFLIX INC,4,4,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+newrelic,"NEW RELIC, INC.",4,4,1,Organization,False,https://newrelic.com,True,True,True,True,kept,,2026-10-06T03:58:45+00:00
+nextgenhealthcare,"NEXTGEN HEALTHCARE, INC.",1,1,1,Organization,False,http://www.nextgen.com,True,True,True,True,kept,,2026-10-06T03:58:45+00:00
+ngageoint,CACI INTERNATIONAL INC /DE/,1,3,1,Organization,False,https://www.nga.mil/,False,True,False,True,not kept,L2: 1 of the owner's 3 rows carry the company,2026-10-06T03:58:45+00:00
+ni,NATIONAL INSTRUMENTS CORP /DE/,6,6,1,Organization,False,https://ni.com,True,True,True,True,kept,,2026-10-06T03:58:45+00:00
+nickbutcher,Alphabet Inc.,1,1,1,User,,http://twitter.com/crafty,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:45+00:00
+Nike-Inc,NIKE INC,6,6,1,Organization,False,http://engineering.nike.com,True,True,True,True,kept,,2026-10-06T03:58:37+00:00
+nileshsimaria,JUNIPER NETWORKS INC,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:45+00:00
+nmenon,TEXAS INSTRUMENTS INC,2,2,1,User,,https://linuxrocks.online/@nm/,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:45+00:00
+nnsuite,Samsung Electronics,2,2,1,Organization,False,github.com/nnstreamer,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+Node-DC,Intel Corporation,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+node-red,Hitachi,1,2,1,Organization,False,http://nodered.org,False,True,False,True,not kept,L2: 1 of the owner's 2 rows carry the company,2026-10-06T03:58:45+00:00
+Nokia,NOKIA CORP,3,3,1,Organization,False,http://company.nokia.com/,True,True,True,True,kept,,2026-10-06T03:58:37+00:00
+nokiatech,NOKIA CORP,1,1,1,User,,https://www.nokia.com/licensing/,True,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:45+00:00
+Nordstrom,Nordstrom Inc.,5,5,1,Organization,False,http://www.nordstrom.com/,True,True,True,True,kept,,2026-10-06T03:58:37+00:00
+Novartis,NOVARTIS AG,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+NTAP,"NetApp, Inc.",2,2,1,Organization,True,netapp.com,True,True,True,True,kept,,2026-10-06T03:58:37+00:00
+Nuance-Mobility,"Nuance Communications, Inc.",1,1,1,NOT_FOUND,,,False,True,True,False,not kept,L3: owner is NOT_FOUND,2026-10-06T03:58:37+00:00
+NuGet,MICROSOFT CORPORATION,6,6,1,Organization,True,https://nuget.org,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+nvdla,NVIDIA CORP,3,3,1,Organization,False,http://nvdla.org/,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+NVIDIA,NVIDIA CORP,11,11,1,Organization,True,https://nvidia.com,True,True,True,True,kept,,2026-10-06T03:58:37+00:00
+NVIDIAGameWorks,NVIDIA CORP,2,2,1,Organization,False,https://developer.nvidia.com/gameworks-source-github,True,True,True,True,kept,,2026-10-06T03:58:37+00:00
+nvmecompliance,Intel Corporation,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+nvpro-samples,NVIDIA CORP,1,1,1,Organization,False,http://www.nvidia.com,True,True,True,True,kept,,2026-10-06T03:58:45+00:00
+NXPNFCProject,NXP Semiconductors N.V.,1,1,1,Organization,True,www.nxp.com,True,True,True,True,kept,,2026-10-06T03:58:37+00:00
+o2team,"JD.com, Inc.",1,1,1,Organization,False,https://aotu.io,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+OData,MICROSOFT CORPORATION,7,7,1,Organization,False,https://docs.microsoft.com/odata,True,True,True,True,kept,,2026-10-06T03:58:37+00:00
+OfficeDev,MICROSOFT CORPORATION,24,24,1,Organization,False,https://developer.microsoft.com/en-us/microsoft-365,True,True,True,True,kept,,2026-10-06T03:58:37+00:00
+ofiwg,Intel Corporation,1,1,1,Organization,False,https://www.openfabrics.org/,False,True,True,True,kept,,2026-10-06T03:58:45+00:00
+okta,"Okta, Inc.",9,9,1,Organization,True,okta.com,True,True,True,True,kept,,2026-10-06T03:58:45+00:00
+omapconf,TEXAS INSTRUMENTS INC,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:45+00:00
+OmniSharp,MICROSOFT CORPORATION,1,1,1,Organization,False,http://www.omnisharp.net,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+OneDrive,MICROSOFT CORPORATION,1,1,1,Organization,False,https://dev.onedrive.com,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+OneNoteDev,MICROSOFT CORPORATION,1,1,1,Organization,False,http://dev.onenote.com,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+onnx,MICROSOFT CORPORATION,1,2,1,Organization,True,https://onnx.ai,False,True,False,True,not kept,L2: 1 of the owner's 2 rows carry the company,2026-10-06T03:58:47+00:00
+OPAE,Intel Corporation,2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+opcm,Intel Corporation,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:47+00:00
+open-estuary,Huawei Investment &amp; Holding,1,1,1,Organization,False,https://open-estuary.github.io/,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+open-webrtc-toolkit,Intel Corporation,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+openalm,MICROSOFT CORPORATION,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+OpenAMP,XILINX INC,1,1,1,Organization,False,https://github.com/OpenAMP/open-amp/wiki,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+OpenBMP,"CISCO SYSTEMS, INC.",1,1,1,Organization,False,https://www.openbmp.org,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+OpenCV,Intel Corporation,3,3,1,Organization,True,https://opencv.org,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+opendistro-for-elasticsearch,AMAZON COM INC,4,4,1,Organization,False,https://opendistro.github.io/for-elasticsearch/,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+openkfw,Accenture plc,1,1,1,Organization,False,https://www.kfw.de/kfw.de.html,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+OpenMatrixLanguage,ALTAIR ENGINEERING INC.,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+opensds,Huawei Investment &amp; Holding,2,2,1,Organization,False,https://github.com/sodafoundation,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+opensecuritycontroller,Intel Corporation,1,1,1,Organization,False,www.opensecuritycontroller.org,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+openstack,"CISCO SYSTEMS, INC.;Hewlett Packard Enterprise Co,;Huawei Investment &amp; Holding;NOKIA CORP;VMWARE, INC.",3,61,5,Organization,False,https://opendev.org/openstack,False,False,False,True,not kept,L1: linked to 5 companies,2026-10-06T03:58:47+00:00
+openT2T,MICROSOFT CORPORATION,1,1,1,Organization,False,http://www.opentranslatorstothings.org,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+openucx,"Mellanox Technologies, Ltd.",1,1,1,Organization,False,http://www.openucx.org,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+OpenVisualCloud,Intel Corporation,1,1,1,Organization,False,https://01.org/openvisualcloud,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+openzipkin,"Medidata Solutions, Inc.",1,1,1,Organization,False,https://zipkin.io,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+opticks-org,BALL CORP,1,1,1,Organization,False,http://opticks.org,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+Oracle,Oracle Corporation,21,21,1,Organization,False,https://developer.oracle.com/open-source.html,True,True,True,True,kept,,2026-10-06T03:58:37+00:00
+orange-cloudfoundry,ORANGE,1,1,1,Organization,False,http://opensource.orange.com,True,True,True,True,kept,,2026-10-06T03:58:47+00:00
+Orange-OpenSource,ORANGE,3,3,1,Organization,False,https://orange-opensource.github.io/,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+ostroproject,Intel Corporation,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+otcshare,Intel Corporation,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+p-org,MICROSOFT CORPORATION,2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+PacificBiosciences,"PACIFIC BIOSCIENCES OF CALIFORNIA, INC.",21,21,1,Organization,False,http://pacb.com,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+PaddlePaddle,"Baidu, Inc.",7,7,1,Organization,False,http://paddlepaddle.org,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+PAIR-code,Alphabet Inc.,1,1,1,Organization,False,https://pair.withgoogle.com,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+paloaltonetworks,Palo Alto Networks Inc,3,3,1,Organization,True,https://www.paloaltonetworks.com,True,True,True,True,kept,,2026-10-06T03:58:47+00:00
+pan-unit42,Palo Alto Networks Inc,2,2,1,Organization,False,unit42.paloaltonetworks.com,True,True,True,True,kept,,2026-10-06T03:58:47+00:00
+pantsbuild,"TWITTER, INC.",1,1,1,Organization,True,https://www.pantsbuild.org/,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+PartnerCenterSamples,MICROSOFT CORPORATION,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+PayPal,"PayPal Holdings, Inc.",7,7,1,Organization,False,https://www.paypal.com/,True,True,True,True,kept,,2026-10-06T03:58:37+00:00
+PBSPro,ALTAIR ENGINEERING INC.,1,1,1,Organization,False,www.pbspro.org,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+pengwei1024,"Baidu, Inc.",1,1,1,User,,http://www.apkfuns.com,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:47+00:00
+peppertech,Oracle Corporation,1,1,1,User,,http://dessertfirstproductions.com,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:47+00:00
+philburk,Alphabet Inc.,2,2,1,User,,http://www.softsynth.com/,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:47+00:00
+philwo,Alphabet Inc.,1,1,1,User,,http://www.philwo.de/,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:47+00:00
+pierucci,"Merck &amp; Co., Inc.",1,1,1,User,,https://pierucci.org,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:47+00:00
+Pivotal-Field-Engineering,Boeing,1,2,1,NOT_FOUND,,,False,True,False,False,not kept,L2: 1 of the owner's 2 rows carry the company; L3: owner is NOT_FOUND,2026-10-06T03:58:37+00:00
+playgameservices,Alphabet Inc.,5,5,1,Organization,False,https://developers.google.com/games/services/,True,True,True,True,kept,,2026-10-06T03:58:47+00:00
+pluralsight,"Pluralsight, Inc.",1,1,1,Organization,False,https://www.pluralsight.com,True,True,True,True,kept,,2026-10-06T03:58:47+00:00
+pmem,Intel Corporation,9,9,1,Organization,False,pmem.io,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+polidore,VIRTU ITG HOLDINGS LLC,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:47+00:00
+Polymer,Alphabet Inc.,22,22,1,Organization,False,https://library.polymer-project.org/,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+PolymerElements,Alphabet Inc.,35,35,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+PolymerLabs,Alphabet Inc.,1,1,1,Organization,False,https://www.polymer-project.org,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+powershell,MICROSOFT CORPORATION,8,8,1,Organization,True,https://microsoft.com/powershell,True,True,True,True,kept,,2026-10-06T03:58:47+00:00
+PredixDev,General Electric Company,7,7,1,Organization,False,http://predix.io,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+prelert,Elastic N.V.,1,1,1,Organization,False,http://www.prelert.com,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+probml,Alphabet Inc.,1,1,1,Organization,False,probml.ai,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+project-everest,MICROSOFT CORPORATION,2,2,1,Organization,False,https://project-everest.github.io,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+project-oak,Alphabet Inc.,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+projectacrn,Intel Corporation,1,1,1,Organization,False,https://projectacrn.github.io,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+projectkudu,MICROSOFT CORPORATION,2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+ProseMirror,Atlassian Corp Plc,1,1,1,Organization,False,https://prosemirror.net,False,True,True,True,kept,,2026-10-06T03:58:37+00:00
+purestorage,"Pure Storage, Inc.",1,1,1,Organization,False,https://www.everpuredata.com/,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+putaoshu,"JD.com, Inc.",1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:47+00:00
+pwm-project,MICRO FOCUS INTERNATIONAL PLC,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+qcloudsms,Tencent Music Entertainment Group,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:47+00:00
+quantumlib,Alphabet Inc.,1,1,1,Organization,False,quantumai.google,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+quark-mcu,Intel Corporation,1,1,1,Organization,False,http://www.intel.com/content/www/us/en/embedded/products/quark/overview.html,True,True,True,True,kept,,2026-10-06T03:58:47+00:00
+Qusic,Alphabet Inc.,1,1,1,User,,https://github.com/Qusic,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:38+00:00
+RadeonOpenCompute,ADVANCED MICRO DEVICES INC,6,6,1,Organization,False,https://rocm.docs.amd.com,True,True,True,True,kept,,2026-10-06T03:58:38+00:00
+Ralltiir,"Baidu, Inc.",1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+rapid7,"RAPID7, INC.",38,38,1,Organization,True,http://www.rapid7.com/,True,True,True,True,kept,,2026-10-06T03:58:47+00:00
+rapidsai,NVIDIA CORP,3,3,1,Organization,True,https://rapids.ai,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+react-melon,"Baidu, Inc.",1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+renggli,Alphabet Inc.,1,1,1,User,,https://www.lukas-renggli.ch/,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:47+00:00
+restify,NETFLIX INC,1,1,1,Organization,False,http://restify.com,False,True,True,True,kept,,2026-10-06T03:58:47+00:00
+RevolutionAnalytics,MICROSOFT CORPORATION,2,2,1,Organization,False,http://www.revolutionanalytics.com,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+rgb2hsv,Intel Corporation,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:47+00:00
+rib,Intel Corporation,1,1,1,User,,https://realfit.co,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:47+00:00
+rmpowell77,APPLE INC,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:48+00:00
+RobotWebTools,Intel Corporation,2,2,1,Organization,False,https://robotwebtools.github.io/,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+ROCm-Developer-Tools,ADVANCED MICRO DEVICES INC,1,1,1,Organization,False,https://rocm.docs.amd.com,True,True,True,True,kept,,2026-10-06T03:58:38+00:00
+ROCmSoftwarePlatform,ADVANCED MICRO DEVICES INC,7,9,1,Organization,False,https://rocm.docs.amd.com,True,True,True,True,kept,,2026-10-06T03:58:38+00:00
+rokudev,"Roku, Inc.",1,1,1,Organization,False,https://developer.roku.com/home,True,True,True,True,kept,,2026-10-06T03:58:48+00:00
+rolling-scopes-school,"EPAM Systems, Inc.",1,1,1,Organization,True,https://rs.school/,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+rommguy,Wix.com Ltd.,1,1,1,User,,http://www.guyromm-portfolio.com/,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:48+00:00
+ronalfei,"Baidu, Inc.",1,1,1,User,,http://meet.xpro.im,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:48+00:00
+roomai,Tencent Music Entertainment Group,1,1,1,NOT_FOUND,,,False,True,True,False,not kept,L3: owner is NOT_FOUND,2026-10-06T03:58:48+00:00
+ros-planning,Intel Corporation,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+salesforce,SALESFORCE COM INC,3,3,1,Organization,True,https://opensource.salesforce.com,True,True,True,True,kept,,2026-10-06T03:58:48+00:00
+salesforce-marketingcloud,SALESFORCE COM INC,11,11,1,Organization,False,http://developer.salesforce.com,True,True,True,True,kept,,2026-10-06T03:58:48+00:00
+SalesforceFoundation,SALESFORCE COM INC,5,5,1,Organization,False,http://www.salesforce.org,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+samsung,Samsung Electronics,18,18,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+SamsungARTIK,Samsung Electronics,1,1,1,NOT_FOUND,,,False,True,True,False,not kept,L3: owner is NOT_FOUND,2026-10-06T03:58:38+00:00
+samtstern,Alphabet Inc.,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:48+00:00
+Sandia-OpenSHMEM,Intel Corporation,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+SAP,SAP SE,79,79,1,Organization,True,https://opensource.sap.com,True,True,True,True,kept,,2026-10-06T03:58:38+00:00
+sap-production,SAP SE,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:48+00:00
+sapcc,SAP SE,3,3,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+SAPDocuments,SAP SE,2,2,1,NOT_FOUND,,,False,True,True,False,not kept,L3: owner is NOT_FOUND,2026-10-06T03:58:38+00:00
+saurabhnemade,"QUALYS, INC.",1,1,1,User,,https://fb.com/saurabh.nemade,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:48+00:00
+scalan,Huawei Investment &amp; Holding,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+SchemaStore,MICROSOFT CORPORATION,1,1,1,Organization,True,https://schemastore.org,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+scotiabank,Bank of Nova Scotia,1,1,1,Organization,False,http://www.scotiabank.com,True,True,True,True,kept,,2026-10-06T03:58:48+00:00
+seagate,Seagate Technology plc,1,1,1,Organization,True,,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+sequencing,Illumina Inc,3,3,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+ServiceComb,Huawei Investment &amp; Holding,2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+SharePoint,MICROSOFT CORPORATION,24,24,1,Organization,False,https://aka.ms/spdev,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+SharpGenTools,MICROSOFT CORPORATION,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+shevek,Oracle Corporation,1,1,1,User,,http://www.anarres.org/,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:48+00:00
+ShifuML,"PayPal Holdings, Inc.",1,1,1,Organization,False,http://shifu.ml,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+siemens,Siemens,3,3,1,Organization,True,https://opensource.siemens.com,True,True,True,True,kept,,2026-10-06T03:58:48+00:00
+SimpleCloudManagerProject,MICROSOFT CORPORATION,1,1,1,NOT_FOUND,,,False,True,True,False,not kept,L3: owner is NOT_FOUND,2026-10-06T03:58:38+00:00
+sitecoreignition,PERFICIENT INC,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:48+00:00
+skatejs,Atlassian Corp Plc,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+slimbootloader,Intel Corporation,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+smartcardservices,APPLE INC,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+smartsheet-platform,SMARTSHEET INC,6,6,1,Organization,False,http://www.smartsheet.com/developers,True,True,True,True,kept,,2026-10-06T03:58:48+00:00
+snortadmin,"CISCO SYSTEMS, INC.",1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:48+00:00
+sokolovstas,MICROSOFT CORPORATION,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:48+00:00
+spdk,Intel Corporation,1,1,1,Organization,True,https://spdk.io,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+spearhead-ea,ELECTRONIC ARTS INC.,1,1,1,Organization,False,https://www.ea.com/studios/ea-korea,True,True,True,True,kept,,2026-10-06T03:58:48+00:00
+spinnaker,Alphabet Inc.,2,2,1,Organization,False,www.spinnaker.io,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+splunk,SPLUNK INC,4,4,1,Organization,False,http://dev.splunk.com,True,True,True,True,kept,,2026-10-06T03:58:48+00:00
+spotify,Spotify Technology S.A.,16,16,1,Organization,False,https://spotify.github.io/,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+spring-cloud,Alphabet Inc.,1,9,1,Organization,False,https://spring.io/projects/spring-cloud,False,True,False,True,not kept,L2: 1 of the owner's 9 rows carry the company,2026-10-06T03:58:48+00:00
+sqlanywhere,SAP SE,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+square,"Square, Inc.",19,19,1,Organization,False,https://square.github.io,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+Stackdriver,Alphabet Inc.,1,1,1,Organization,False,http://stackdriver.com,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+stackforge,HP Inc.,2,7,1,Organization,False,,False,True,False,True,not kept,L2: 2 of the owner's 7 rows carry the company,2026-10-06T03:58:48+00:00
+stenson,"TWITTER, INC.",1,1,1,User,,https://robstenson.com,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:48+00:00
+stephenplusplus,Alphabet Inc.,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:48+00:00
+stricter,Atlassian Corp Plc,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+subscriptions-project,Alphabet Inc.,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+SurveyMonkey,SVMK Inc.,4,4,1,Organization,False,developer.surveymonkey.com,True,True,True,True,kept,,2026-10-06T03:58:38+00:00
+swan-team,"Baidu, Inc.",1,1,1,Organization,False,https://smartprogram.baidu.com,True,True,True,True,kept,,2026-10-06T03:58:48+00:00
+Synacor,"Synacor, Inc.",1,1,1,Organization,False,http://www.synacor.com/,True,True,True,True,kept,,2026-10-06T03:58:38+00:00
+target,Target,17,17,1,Organization,False,https://tech.target.com/open-source,True,True,True,True,kept,,2026-10-06T03:58:48+00:00
+TarsCloud,Tencent Music Entertainment Group,4,4,1,Organization,False,https://tarscloud.org,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+TeamSEGO,Samsung Electronics,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+telefonicaid,TELEFONICA S A,2,2,1,Organization,False,http://www.tid.es/,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+tencent,Tencent Music Entertainment Group,6,6,1,Organization,True,https://opensource.tencent.com,True,True,True,True,kept,,2026-10-06T03:58:48+00:00
+TencentCloud,Tencent Music Entertainment Group,1,1,1,Organization,True,https://cloud.tencent.com/,True,True,True,True,kept,,2026-10-06T03:58:38+00:00
+TencentCloudBase,Tencent Music Entertainment Group,1,1,1,Organization,False,https://tcb.cloud.tencent.com/,True,True,True,True,kept,,2026-10-06T03:58:38+00:00
+TencentDingdang,Tencent Music Entertainment Group,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+tencentyun,Tencent Music Entertainment Group,6,6,1,Organization,False,https://cloud.tencent.com,True,True,True,True,kept,,2026-10-06T03:58:48+00:00
+tensorflow,Alphabet Inc.;NVIDIA CORP,26,27,2,Organization,False,http://www.tensorflow.org,False,False,False,True,not kept,L1: linked to 2 companies,2026-10-06T03:58:48+00:00
+Teradata,TERADATA CORP /DE/,2,2,1,Organization,False,http://developers.teradata.com,True,True,True,True,kept,,2026-10-06T03:58:38+00:00
+tf-coreml,APPLE INC,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:48+00:00
+ti-simplelink,TEXAS INSTRUMENTS INC,1,1,1,Organization,False,http://www.ti.com/simplelink,True,True,True,True,kept,,2026-10-06T03:58:48+00:00
+tianocore,Intel Corporation,2,2,1,Organization,False,http://www.tianocore.org,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+tiglabs,"JD.com, Inc.",2,2,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:48+00:00
+tmobile,"T-MOBILE US, INC.",5,5,1,Organization,False,http://www.t-mobile.com,True,True,True,True,kept,,2026-10-06T03:58:49+00:00
+tompaana,MICROSOFT CORPORATION,2,2,1,User,,https://tompaana.github.io,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:49+00:00
+tpm2-software,Intel Corporation,2,2,1,Organization,False,https://tpm2-software.github.io/,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+Travelport,Travelport Worldwide LTD,2,2,1,Organization,False,https://developer.travelport.com/,True,True,True,True,kept,,2026-10-06T03:58:38+00:00
+trivago,trivago N.V.,2,2,1,Organization,True,http://trivago.com,True,True,True,True,kept,,2026-10-06T03:58:49+00:00
+trustedanalytics,Intel Corporation,1,1,1,Organization,False,https://github.com/trustedanalytics/platform-wiki/wiki,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+tvsteam,Tencent Music Entertainment Group,1,1,1,Organization,False,https://dingdang.qq.com/,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+twilio,TWILIO INC,6,6,1,Organization,True,http://www.twilio.com,True,True,True,True,kept,,2026-10-06T03:58:49+00:00
+Twilio-org,TWILIO INC,1,1,1,Organization,False,https://www.twilio.org,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+TwilioDevEd,TWILIO INC,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+twitter,"TWITTER, INC.",93,93,1,Organization,False,https://opensource.x.com/,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+tylertreat,"Centennial Resource Development, Inc.",1,1,1,User,,https://bravenewgeek.com,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:49+00:00
+UltimateSoftware,Ultimate Software Group Inc,4,4,1,Organization,False,https://www.ukg.com/,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+uProxy,Alphabet Inc.,1,1,1,Organization,False,https://www.uproxy.org,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+upwork,Upwork Inc.,1,1,1,Organization,True,https://www.upwork.com/,True,True,True,True,kept,,2026-10-06T03:58:49+00:00
+urthbound,ETSY INC,1,1,1,NOT_FOUND,,,False,True,True,False,not kept,L3: owner is NOT_FOUND,2026-10-06T03:58:49+00:00
+usdot-fhwa-stol,"Leidos Holdings, Inc.",1,1,1,Organization,False,https://highways.dot.gov/research,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+valotas,Alphabet Inc.,1,1,1,User,,https://valotas.com,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:49+00:00
+vanadium,Alphabet Inc.,4,4,1,Organization,False,https://vanadium.github.io/,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+VarianAPIs,VARIAN MEDICAL SYSTEMS INC,1,1,1,Organization,False,varianapis.github.io,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+velvia,APPLE INC,1,1,1,User,,http://velvia.github.io,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:49+00:00
+verisign,VERISIGN INC/CA,1,1,1,Organization,False,www.verisign.com,True,True,True,True,kept,,2026-10-06T03:58:49+00:00
+veritone,"Veritone, Inc.",1,1,1,Organization,True,https://www.veritone.com,True,True,True,True,kept,,2026-10-06T03:58:49+00:00
+vipshop,Vipshop Holdings Ltd,3,3,1,Organization,False,www.vip.com,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+vmware,"VMWARE, INC.",24,24,1,Organization,True,https://vmware.com,True,True,True,True,kept,,2026-10-06T03:58:49+00:00
+vmware-serengeti,"VMWARE, INC.",3,3,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+vmwaresamples,"VMWARE, INC.",1,1,1,NOT_FOUND,,,False,True,True,False,not kept,L3: owner is NOT_FOUND,2026-10-06T03:58:49+00:00
+Vonage,VONAGE HOLDINGS CORP,1,1,1,Organization,False,https://www.vonage.com,True,True,True,True,kept,,2026-10-06T03:58:38+00:00
+w3c,Intel Corporation,2,3,1,Organization,True,https://www.w3.org/,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+wabyking,Tencent Music Entertainment Group,1,1,1,User,,wabyking.github.io/old.html,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:49+00:00
+wadewegner,SALESFORCE COM INC,1,1,1,User,,http://www.wadewegner.com/,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:49+00:00
+WebAssembly,Alphabet Inc.,1,1,1,Organization,False,https://webassembly.org,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+WebComponents,Alphabet Inc.,5,5,1,Organization,False,https://www.webcomponents.org,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+webmproject,Alphabet Inc.,3,3,1,Organization,False,http://www.webmproject.org/,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+WileyLabs,"WILEY JOHN &amp; SONS, INC.",1,1,1,Organization,False,https://wileylabs.github.io/,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+windows-toolkit,MICROSOFT CORPORATION,1,1,1,NOT_FOUND,,,False,True,True,False,not kept,L3: owner is NOT_FOUND,2026-10-06T03:58:49+00:00
+wingtk,AMAZON COM INC,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+winjs,MICROSOFT CORPORATION,1,1,1,Organization,False,http://try.buildwinjs.com,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+WiproOpenSourcePractice,WIPRO LTD,3,3,1,NOT_FOUND,,,False,True,True,False,not kept,L3: owner is NOT_FOUND,2026-10-06T03:58:38+00:00
+wiredtiger,"MongoDB, Inc.",1,1,1,Organization,False,https://github.com/wiredtiger/wiredtiger/releases,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+wix,Wix.com Ltd.,26,26,1,Organization,True,http://wix.engineering,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+wix-incubator,Wix.com Ltd.,3,3,1,Organization,False,http://wix.engineering,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+wix-playground,Wix.com Ltd.,1,1,1,Organization,False,http://www.wix.com,True,True,True,True,kept,,2026-10-06T03:58:49+00:00
+wixplosives,Wix.com Ltd.,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+Workday,"Workday, Inc.",1,1,1,Organization,False,http://workday.github.io/,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+Workiva,"Centennial Resource Development, Inc.",4,5,1,Organization,False,https://www.workiva.com,True,True,True,True,kept,,2026-10-06T03:58:38+00:00
+xamarin,MICROSOFT CORPORATION,4,5,1,Organization,True,http://xamarin.com,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+xamarinhq,MICROSOFT CORPORATION,1,1,1,Organization,False,https://xamarin.com,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+xapi-project,CITRIX SYSTEMS INC,1,1,1,Organization,False,http://xenproject.org/developers/teams/xapi.html,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+xenserver,CITRIX SYSTEMS INC,5,5,1,Organization,False,https://www.citrix.com/platform/xenserver.html,True,True,True,True,kept,,2026-10-06T03:58:49+00:00
+xilinx,XILINX INC,7,7,1,Organization,True,www.amd.com,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+xingePush,Tencent Music Entertainment Group,1,1,1,User,,https://cloud.tencent.com/product/tpns/,True,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:49+00:00
+xiul-msr,MICROSOFT CORPORATION,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:49+00:00
+xunit,MICROSOFT CORPORATION,1,1,1,Organization,True,https://xunit.net/,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+yabwe,"Domo, Inc.",1,1,1,Organization,False,https://github.com/yabwe/medium-editor/issues/20,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+Yelp,YELP INC,10,10,1,Organization,True,https://yelp.com/engineering,True,True,True,True,kept,,2026-10-06T03:58:38+00:00
+YouTube,Alphabet Inc.,3,3,1,Organization,False,https://developers.google.com/youtube/,True,True,True,True,kept,,2026-10-06T03:58:38+00:00
+yyued,YY Inc.,7,7,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:49+00:00
+Z3Prover,MICROSOFT CORPORATION,1,1,1,Organization,False,,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+zackchase,AMAZON COM INC,1,1,1,User,,zacklipton.com,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:49+00:00
+zendesk,"Zendesk, Inc.",12,12,1,Organization,True,https://www.zendesk.com/,True,True,True,True,kept,,2026-10-06T03:58:49+00:00
+zendesklabs,"Zendesk, Inc.",1,1,1,Organization,False,http://developer.zendesk.com,True,True,True,True,kept,,2026-10-06T03:58:49+00:00
+zhangao0086,PROGRESSIVE CORP/OH/,1,1,1,User,,https://www.codingtour.com/,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:49+00:00
+zhaoyang21cn,Tencent Music Entertainment Group,1,1,1,User,,,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:49+00:00
+Zimbra,"Synacor, Inc.",2,3,1,Organization,False,http://www.zimbra.com,False,True,True,True,kept,,2026-10-06T03:58:38+00:00
+zumwald,MICROSOFT CORPORATION,1,1,1,User,,https://www.linkedin.com/in/dzumwalt/,False,True,True,False,not kept,L3: owner is User,2026-10-06T03:58:49+00:00
+zuora,ZUORA INC,1,1,1,Organization,True,https://www.zuora.com,True,True,True,True,kept,,2026-10-06T03:58:49+00:00

@@ -1,0 +1,26 @@
+# Part b3 of the S and M projects of manifest.batch6.tsv (sha256 d54537af63a6cf6201cae5c5377286219e33305adb682e411af3367e642cb17b),
+# balanced by predicted time (6.8 h for 4 workers), u order; a fed spot part.
+# 22 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+grizzlypeak3d__DJV	https://github.com/grizzlypeak3d/DJV.git	pending		S	f4a5507f6f6778936c50897d51deecd3b764bea2
+OpenXRay__xray-16	https://github.com/OpenXRay/xray-16.git	pending		S	231873639b1290b58c11a2f634a8a54e564615e7
+intellij-elixir__intellij-elixir	https://github.com/intellij-elixir/intellij-elixir.git	pending		S	abc29f74dcdcc5203fade942043a592a293bfffd
+NVIDIA__cccl	https://github.com/NVIDIA/cccl.git	pending		S	edb24978611acfd9aabc5b2d57199e8d36aff9f6
+silexlabs__Silex	https://github.com/silexlabs/Silex.git	pending		S	dae2ab91ce086720d7d55ec4aaa78f8b5b3f7c5d
+apache__jena	https://github.com/apache/jena.git	pending		S	07a02893d453d0f2b598c9f23df80a814829a269
+openrocket__openrocket	https://github.com/openrocket/openrocket.git	pending		S	faadd50f6fcebf2239f2d54b14d82c6de2c90e5c
+prusa3d__Prusa-Firmware	https://github.com/prusa3d/Prusa-Firmware.git	pending		S	f3e0dfd481a78b222d2a82752f261adbc5a2c4d7
+sensepost__hostapd-mana	https://github.com/sensepost/hostapd-mana.git	pending		S	4ac2c54cbd3e04a76f963ea286b9e7b7690a6b80
+horosproject__horos	https://github.com/horosproject/horos.git	pending		S	2a130506f2ae651fcd52becbd5469c107bbbf795
+f32c__f32c	https://github.com/f32c/f32c.git	pending		S	35e1ce0e3918ec606cc882efff988e7177ae1cb1
+ezEngine__ezEngine	https://github.com/ezEngine/ezEngine.git	pending		S	7438fc9437aa7afa0a878f1bb8fc8b2ec0e95216
+checkpoint-restore__criu	https://github.com/checkpoint-restore/criu.git	pending		S	1a9358578d6631ffa06f2280d075f294ed2a0a60
+gitpod-io__gitpod	https://github.com/gitpod-io/gitpod.git	pending		S	7a91bcab8956b447ddb21594df173015b5ebc5a8
+eclipse-ocl__org.eclipse.ocl	https://github.com/eclipse-ocl/org.eclipse.ocl.git	pending		S	93585c74f385d589e9dc91ad2d9c92da1ef632f6
+JabRef__jabref	https://github.com/JabRef/jabref.git	pending		S	7e6c5de8a36ddce8186358e23a99258eef3b2b54
+akto-api-security__akto	https://github.com/akto-api-security/akto.git	pending		S	42e88a247fb2a0532ec8d7a8ba6261b794ee3f8d
+apache__thrift	https://github.com/apache/thrift.git	pending		S	50bbda109593a0b5c7634ac21c5d98eee97fe7ec
+libvips__libvips	https://github.com/libvips/libvips.git	pending		S	6b5dcce25fbf2642647bc180eb19c35de864eb4a
+KDAB__GammaRay	https://github.com/KDAB/GammaRay.git	pending		S	1ae8a5749850cc6f77f34cfa60cbc29bdbbda786
+checkstyle__checkstyle	https://github.com/checkstyle/checkstyle.git	pending		S	229c44f8a17b8ec892469a4ff7eeb46300794d89
+react__react-native	https://github.com/react/react-native.git	pending		M	99d327c613cdd4c3614cc3baa286a2d57a629136

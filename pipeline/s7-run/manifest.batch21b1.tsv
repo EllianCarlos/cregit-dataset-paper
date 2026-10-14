@@ -1,0 +1,8 @@
+# Part b1 of the S and M projects of manifest.batch21.tsv (sha256 a8d8fe474e9c33f90d4723af77e1009944e1a8db637acaeda7fbff45488b4af3),
+# balanced by predicted time (8.1 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+analogdevicesinc__lnxdsp-u-boot	https://github.com/analogdevicesinc/lnxdsp-u-boot.git	pending		M	613cfe6aa2d818d9e7ea8b958302335eb8d86a1e
+openhwfoundation__u-boot	https://github.com/openhwfoundation/u-boot.git	pending		M	97c8cb524c19f054036efd2b4429273bd503e39c
+analogdevicesinc__oran-u-boot	https://github.com/analogdevicesinc/oran-u-boot.git	pending		M	533b301d34aea4f84c60e79d5fcb85d3a2e918d5
+JetBrains__kotlin	https://github.com/JetBrains/kotlin.git	pending		M	adf06b3a2153d4e45e068e0e18fee1beaaeaf3eb

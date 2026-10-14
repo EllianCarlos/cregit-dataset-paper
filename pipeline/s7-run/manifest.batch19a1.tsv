@@ -1,0 +1,8 @@
+# Part a1 of the S and M projects of manifest.batch19.tsv (sha256 8a11b7acec582e49f76d0e09d7ff1e039d3458ef456ff4c1a875509b92849d3b),
+# balanced by predicted time (17.1 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+jeandle__jeandle-jdk	https://github.com/jeandle/jeandle-jdk.git	pending		M	9da754525cbc9214ec4152cdc878f4c82fd99089
+corretto__corretto-26	https://github.com/corretto/corretto-26.git	pending		M	4535d50e59bf7df610218c351edd8a3c89ddf819
+wireshark__wireshark	https://github.com/wireshark/wireshark.git	pending		M	a1941c859c88cd68c9ca41a62d32f95b1d2095fd
+corretto__corretto-21	https://github.com/corretto/corretto-21.git	pending		M	82a82f0692997b6c9fb0f245d225d3415859c18d

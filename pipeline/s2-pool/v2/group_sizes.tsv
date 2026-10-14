@@ -1,0 +1,10 @@
+utc	group_url	api_url	http	x_total	x_total_pages
+2026-10-10T00:04:08+00:00	https://gitlab.com/automotivegradelinux	https://gitlab.com/api/v4/groups/automotivegradelinux/projects?include_subgroups=true&per_page=1&simple=true	200	137	137
+2026-10-10T00:04:12+00:00	https://gitlab.com/cip-project	https://gitlab.com/api/v4/groups/cip-project/projects?include_subgroups=true&per_page=1&simple=true	200	37	37
+2026-10-10T00:04:15+00:00	https://gitlab.com/digiagriapp	https://gitlab.com/api/v4/groups/digiagriapp/projects?include_subgroups=true&per_page=1&simple=true	200	8	8
+2026-10-10T00:04:18+00:00	https://gitlab.com/librehealth	https://gitlab.com/api/v4/groups/librehealth/projects?include_subgroups=true&per_page=1&simple=true	200	48	48
+2026-10-10T00:04:21+00:00	https://gitlab.com/open19	https://gitlab.com/api/v4/groups/open19/projects?include_subgroups=true&per_page=1&simple=true	200	3	3
+2026-10-10T00:04:25+00:00	https://gitlab.com/smc	https://gitlab.com/api/v4/groups/smc/projects?include_subgroups=true&per_page=1&simple=true	200	117	117
+2026-10-10T00:04:28+00:00	https://gitlab.com/unimatrix	https://gitlab.com/api/v4/groups/unimatrix/projects?include_subgroups=true&per_page=1&simple=true	200	10	10
+2026-10-10T00:04:31+00:00	https://gitlab.archlinux.org/archlinux	https://gitlab.archlinux.org/api/v4/groups/archlinux/projects?include_subgroups=true&per_page=1&simple=true	200		
+2026-10-10T00:04:35+00:00	https://gitlab.freedesktop.org/xorg	https://gitlab.freedesktop.org/api/v4/groups/xorg/projects?include_subgroups=true&per_page=1&simple=true	200	386	386

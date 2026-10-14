@@ -1,0 +1,4 @@
+# The L projects of manifest.batch11.tsv (sha256 c0bc3c7dfba79160d832ec8f554c147ba73f356035049fa27b4442dfc81ecea4), for the census batch11L on the big on-demand EC2.
+# 1 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+commercial-emacs__commercial-emacs	https://github.com/commercial-emacs/commercial-emacs.git	pending		L	bf4184f985d0674a7c03c12eb33b66ac833d9e29

@@ -1,0 +1,24 @@
+# Part a5 of the S and M projects of manifest.batch8.tsv (sha256 adc81a175da6c733e3ef1b3d88c8f46f77390c6d808d3c14d01da8ebb96c7a32),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+PanosK92__SpartanEngine	https://github.com/PanosK92/SpartanEngine.git	pending		S	7dc75b1cb9de222e8cad7ddc9addf8d2213e3578
+resiprocate__resiprocate	https://github.com/resiprocate/resiprocate.git	pending		S	aaae05b0589bc2935a55d21ba15d92f438fe3a35
+ethereum-optimism__optimism	https://github.com/ethereum-optimism/optimism.git	pending		S	dfe4f947ca48f872ce207c3e1e36a9256beaa044
+pytorch__xla	https://github.com/pytorch/xla.git	pending		S	41398bfff334fc8d3b1c00be6ea8cc5411f6d6bf
+DDVTECH__mistserver	https://github.com/DDVTECH/mistserver.git	pending		S	dac156815e3cfd2ddace0521a6c85afb68d11740
+google__syzkaller	https://github.com/google/syzkaller.git	pending		S	f7710056e475eaf2fdc16d704b532c57d6d1edcf
+harehare__mq	https://github.com/harehare/mq.git	pending		S	975a575a02a9340e2b5334856a7f2bb704ec016d
+inspektor-gadget__inspektor-gadget	https://github.com/inspektor-gadget/inspektor-gadget.git	pending		S	d45920b20546d84c18839bd355781e1b551b6c05
+epam__Indigo	https://github.com/epam/Indigo.git	pending		S	ffc72d03bc409b360f66f178a9849b8cd80000a7
+libguestfs__libguestfs	https://github.com/libguestfs/libguestfs.git	pending		S	af937d2f0f76ef599e212e5214cb9f6dc3f5c1f6
+dataease__dataease	https://github.com/dataease/dataease.git	pending		S	abc04c9584df93e6e1c8948ffa5f6df9976e5639
+OpenEMS__openems	https://github.com/OpenEMS/openems.git	pending		S	b6d795a8502353f517995ec7ce1623720dae4fe0
+ggml-org__llama.cpp	https://github.com/ggml-org/llama.cpp.git	pending		S	5e03bdd8700948b9c41c54dd1b00f28a2aebc03f
+inovexcorp__mobi	https://github.com/inovexcorp/mobi.git	pending		S	e71dcac8088bc60cf3632414b83ef2b13e97cdc1
+eclipse-openj9__openj9-omr	https://github.com/eclipse-openj9/openj9-omr.git	pending		S	8e2a2b1448c22475f5f7c6ca955c0defab327f48
+carbonengine__trinity	https://github.com/carbonengine/trinity.git	pending		S	da5dab4f7bc75c94d679f005e5e5233961e679f0
+enarjord__passivbot	https://github.com/enarjord/passivbot.git	pending		S	00ce7d0ddf123071ae67db149753d6b3619f52ac
+apache__axis-axis2-java-core	https://github.com/apache/axis-axis2-java-core.git	pending		S	aea2671e3c5ebd8638d37db30d69639223366d5d
+HtmlUnit__htmlunit	https://github.com/HtmlUnit/htmlunit.git	pending		S	3461651d43aa161718c57da94f95c7272ee1bdc7
+MovingBlocks__Terasology	https://github.com/MovingBlocks/Terasology.git	pending		S	e93629b4e71f77c78f35d82c4c9dd9e975ca062c

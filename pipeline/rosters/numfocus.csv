@@ -1,0 +1,167 @@
+org_key,org_kind,project,repo_url,github_slug,roster_status,source_url,fetched_at,note
+numfocus,fiscal-sponsor,NumPy,https://github.com/numpy/numpy,numpy/numpy,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/numpy: https://github.com/numpy/numpy/blob/master/.github/CONTRIBUTING.md
+numfocus,fiscal-sponsor,Matplotlib,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/matplotlib gives no code-host repository link
+numfocus,fiscal-sponsor,pandas,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/pandas gives no code-host repository link
+numfocus,fiscal-sponsor,SciPy,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/scipy gives no code-host repository link
+numfocus,fiscal-sponsor,nteract,https://github.com/nteract/nteract,nteract/nteract,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/nteract: https://github.com/nteract/nteract/blob/master/CONTRIBUTING.md
+numfocus,fiscal-sponsor,Stan,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/stan gives no code-host repository link
+numfocus,fiscal-sponsor,PyMC,https://github.com/pymc-devs/pymc,pymc-devs/pymc,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/pymc: https://github.com/pymc-devs/pymc
+numfocus,fiscal-sponsor,Julia,https://github.com/JuliaLang/julia,JuliaLang/julia,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/julia: https://github.com/JuliaLang/julia/blob/master/CONTRIBUTING.md
+numfocus,fiscal-sponsor,JuMP,https://github.com/JuliaOpt/JuMP.jl,JuliaOpt/JuMP.jl,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/jump: https://github.com/JuliaOpt/JuMP.jl/blob/master/CONTRIBUTING.md
+numfocus,fiscal-sponsor,PyTables,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/pytables gives no code-host repository link
+numfocus,fiscal-sponsor,SymPy,https://github.com/sympy/sympy,sympy/sympy,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/sympy: https://github.com/sympy/sympy/wiki/Introduction-to-contributing
+numfocus,fiscal-sponsor,FEniCS Project,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/fenics-project gives no code-host repository link
+numfocus,fiscal-sponsor,yt,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/yt gives no code-host repository link
+numfocus,fiscal-sponsor,Econ-ARK,https://github.com/econ-ark/HARK,econ-ark/HARK,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/econ-ark: https://github.com/econ-ark/HARK/tree/master/Documentation/HARKmanual/ContributingToHARK/ContributingToHARK.md
+numfocus,fiscal-sponsor,Astropy,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/astropy gives no code-host repository link
+numfocus,fiscal-sponsor,SunPy,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/sunpy gives no code-host repository link
+numfocus,fiscal-sponsor,QuantEcon,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/quantecon gives no code-host repository link
+numfocus,fiscal-sponsor,rOpenSci,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/ropensci gives no code-host repository link
+numfocus,fiscal-sponsor,Open Journals,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/open-journals gives no code-host repository link
+numfocus,fiscal-sponsor,Cantera,https://github.com/Cantera/cantera,Cantera/cantera,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/cantera: https://github.com/Cantera/cantera/blob/master/CONTRIBUTING.md
+numfocus,fiscal-sponsor,Bokeh,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/bokeh gives no code-host repository link
+numfocus,fiscal-sponsor,conda-forge,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/conda-forge gives no code-host repository link
+numfocus,fiscal-sponsor,xarray,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/xarray gives no code-host repository link
+numfocus,fiscal-sponsor,Blosc,https://github.com/Blosc/hdf5-blosc,Blosc/hdf5-blosc,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/blosc: https://github.com/Blosc/hdf5-blosc
+numfocus,fiscal-sponsor,Dask,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/dask gives no code-host repository link
+numfocus,fiscal-sponsor,mlpack,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/mlpack gives no code-host repository link
+numfocus,fiscal-sponsor,Zarr,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/zarr gives no code-host repository link
+numfocus,fiscal-sponsor,MDAnalysis,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/mdanalysis gives no code-host repository link
+numfocus,fiscal-sponsor,scikit-image,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/scikit-image gives no code-host repository link
+numfocus,fiscal-sponsor,ITK,https://github.com/InsightSoftwareConsortium/ITK,InsightSoftwareConsortium/ITK,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/itk: https://github.com/InsightSoftwareConsortium/ITK/blob/master/CONTRIBUTING.md
+numfocus,fiscal-sponsor,OpenFHE,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/openfhe gives no code-host repository link
+numfocus,fiscal-sponsor,OpenMBEE,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/openmbee gives no code-host repository link
+numfocus,fiscal-sponsor,scikit-learn,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/scikit-learn gives no code-host repository link
+numfocus,fiscal-sponsor,SciML,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/sciml gives no code-host repository link
+numfocus,fiscal-sponsor,TARDIS,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/tardis gives no code-host repository link
+numfocus,fiscal-sponsor,ArviZ,https://github.com/arviz-devs/arviz,arviz-devs/arviz,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/arviz: https://github.com/arviz-devs/arviz/blob/master/CONTRIBUTING.md
+numfocus,fiscal-sponsor,LFortran,https://gitlab.com/lfortran/lfortran,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/lfortran: https://gitlab.com/lfortran/lfortran
+numfocus,fiscal-sponsor,NetworkX,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/networkx gives no code-host repository link
+numfocus,fiscal-sponsor,GDAL,https://github.com/OSGeo/gdal,OSGeo/gdal,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/gdal: https://github.com/OSGeo/gdal/blob/master/CONTRIBUTING.md
+numfocus,fiscal-sponsor,sgkit,https://github.com/pystatgen/sgkit,pystatgen/sgkit,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/sgkit: https://github.com/pystatgen/sgkit/blob/master/CONTRIBUTING.md
+numfocus,fiscal-sponsor,NiBabel,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/nibabel gives no code-host repository link
+numfocus,fiscal-sponsor,napari,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/napari gives no code-host repository link
+numfocus,fiscal-sponsor,Scientific Python,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/scientific-python gives no code-host repository link; it links only an org-level .github repo
+numfocus,fiscal-sponsor,conda,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/conda gives no code-host repository link
+numfocus,fiscal-sponsor,CuPy,https://github.com/cupy/cupy,cupy/cupy,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/cupy: https://github.com/cupy/cupy/
+numfocus,fiscal-sponsor,GNU Octave,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/gnu-octave gives no code-host repository link
+numfocus,fiscal-sponsor,Bioconductor,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/bioconductor gives no code-host repository link
+numfocus,fiscal-sponsor,PyBaMM,https://github.com/pybamm-team/PyBaMM,pybamm-team/PyBaMM,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/pybamm: https://github.com/pybamm-team/PyBaMM
+numfocus,fiscal-sponsor,WorldWide Telescope,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/worldwide-telescope gives no code-host repository link
+numfocus,fiscal-sponsor,Spyder,https://github.com/spyder-ide/spyder,spyder-ide/spyder,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/spyder: https://github.com/spyder-ide/spyder/blob/master/CONTRIBUTING.md
+numfocus,fiscal-sponsor,Gammapy,https://github.com/gammapy/gammapy,gammapy/gammapy,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/gammapy: https://github.com/gammapy/gammapy
+numfocus,fiscal-sponsor,GeoPandas,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/geopandas gives no code-host repository link
+numfocus,fiscal-sponsor,scverse,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/scverse gives no code-host repository link
+numfocus,fiscal-sponsor,HoloViz,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/holoviz gives no code-host repository link
+numfocus,fiscal-sponsor,PETSc,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/petsc gives no code-host repository link
+numfocus,fiscal-sponsor,Pangeo,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/pangeo gives no code-host repository link
+numfocus,fiscal-sponsor,Fortran-lang,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/fortran-lang gives no code-host repository link
+numfocus,fiscal-sponsor,Parsl,https://github.com/Parsl/parsl,Parsl/parsl,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/parsl: https://github.com/Parsl/parsl
+numfocus,fiscal-sponsor,Dynare,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/dynare gives no code-host repository link
+numfocus,fiscal-sponsor,Vega,,,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,project page https://numfocus.org/project/vega gives no code-host repository link
+numfocus,fiscal-sponsor,data.table,https://github.com/Rdatatable/data.table,Rdatatable/data.table,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/data-table: https://github.com/Rdatatable/data.table
+numfocus,fiscal-sponsor,GRASS,https://github.com/OSGeo/grass,OSGeo/grass,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/grass: https://github.com/OSGeo/grass
+numfocus,fiscal-sponsor,OpenProblems.bio,https://github.com/openproblems-bio/openproblems,openproblems-bio/openproblems,sponsored,https://numfocus.org/sponsored-projects,2026-10-05T01:54:33Z,repo_url derived from link on https://numfocus.org/project/openproblemsbio: https://github.com/openproblems-bio/openproblems
+numfocus,fiscal-sponsor,Aesara,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://aesara.readthedocs.io/en/latest/
+numfocus,fiscal-sponsor,AiiDA,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://www.aiida.net/
+numfocus,fiscal-sponsor,Asteroid,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://asteroid-team.github.io/
+numfocus,fiscal-sponsor,Awkward Array,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://awkward-array.org/
+numfocus,fiscal-sponsor,bqplot,https://github.com/bqplot/bqplot,bqplot/bqplot,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,
+numfocus,fiscal-sponsor,CB-Geo MPM,https://github.com/cb-geo/mpm,cb-geo/mpm,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,
+numfocus,fiscal-sponsor,Catalyst,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://catalyst-team.com/
+numfocus,fiscal-sponsor,Clawpack,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://www.clawpack.org/
+numfocus,fiscal-sponsor,Colour,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://colour-science.org/
+numfocus,fiscal-sponsor,Crystal,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://crystal-lang.org/
+numfocus,fiscal-sponsor,CVXPY,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://www.cvxpy.org/
+numfocus,fiscal-sponsor,Cython,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://cython.org/
+numfocus,fiscal-sponsor,Dash,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://plot.ly/dash/
+numfocus,fiscal-sponsor,Data Retriever,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://www.data-retriever.org/
+numfocus,fiscal-sponsor,Devito,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://www.devitoproject.org/
+numfocus,fiscal-sponsor,DyND,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://libdynd.org/
+numfocus,fiscal-sponsor,Effective Quadratures,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://equadratures.org/
+numfocus,fiscal-sponsor,optimagic,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://estimagic.readthedocs.io/en/stable/
+numfocus,fiscal-sponsor,FluxML,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://fluxml.ai
+numfocus,fiscal-sponsor,FreeMoCap Project,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://freemocap.org
+numfocus,fiscal-sponsor,Gensim,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://radimrehurek.com/gensim/
+numfocus,fiscal-sponsor,GeomScale,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://geomscale.github.io/
+numfocus,fiscal-sponsor,GeomStats,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://geomstats.ai
+numfocus,fiscal-sponsor,GNU Radio,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://www.gnuradio.org/
+numfocus,fiscal-sponsor,Gonum,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://gonum.org
+numfocus,fiscal-sponsor,Gridap,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://gridap.github.io/Gridap.jl/stable/
+numfocus,fiscal-sponsor,HPX,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://hpx.stellar-group.org
+numfocus,fiscal-sponsor,igraph,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://igraph.org/
+numfocus,fiscal-sponsor,ipyvizzu,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://ipyvizzu.vizzuhq.com/latest/
+numfocus,fiscal-sponsor,Magpylib,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://magpylib.readthedocs.io/en/stable/
+numfocus,fiscal-sponsor,Manim,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://www.manim.community
+numfocus,fiscal-sponsor,Micro-Manager,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://micro-manager.org/
+numfocus,fiscal-sponsor,Mesa: Agent-Based Modeling In Python,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://mesa.readthedocs.io/en/latest/
+numfocus,fiscal-sponsor,MFEM,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://mfem.org/
+numfocus,fiscal-sponsor,Neo,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://neo.readthedocs.io/en/latest/
+numfocus,fiscal-sponsor,NetKet,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://www.netket.org
+numfocus,fiscal-sponsor,Numba,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://numba.pydata.org/
+numfocus,fiscal-sponsor,ObsPy,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://obspy.org
+numfocus,fiscal-sponsor,Orange,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://orange.biolab.si/
+numfocus,fiscal-sponsor,Polars,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://www.pola.rs/
+numfocus,fiscal-sponsor,poliastro,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://docs.poliastro.space/
+numfocus,fiscal-sponsor,pomegranate,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://pomegranate.readthedocs.io/en/latest/
+numfocus,fiscal-sponsor,Project Optuna,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://optuna.org
+numfocus,fiscal-sponsor,PSL,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://www.pslmodels.org/
+numfocus,fiscal-sponsor,pvlib,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://pvlib-python.readthedocs.io/en/stable/
+numfocus,fiscal-sponsor,pyhf,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://pyhf.readthedocs.io/
+numfocus,fiscal-sponsor,pyiron,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://pyiron.org
+numfocus,fiscal-sponsor,PyLops,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://pylops.readthedocs.io
+numfocus,fiscal-sponsor,pyMOR,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://pymor.org/
+numfocus,fiscal-sponsor,PySAL,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://pysal.org/
+numfocus,fiscal-sponsor,Python-graphblas,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://python-graphblas.readthedocs.io/en/stable/
+numfocus,fiscal-sponsor,"Python(X,Y)",,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://python-xy.github.io/
+numfocus,fiscal-sponsor,Python Satellite Data Analysis Toolkit (pysat),,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://pysat.readthedocs.io/en/latest/index.html
+numfocus,fiscal-sponsor,PyTorch-Ignite,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://pytorch-ignite.ai/
+numfocus,fiscal-sponsor,PyVista,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://docs.pyvista.org/
+numfocus,fiscal-sponsor,QuTiP,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://qutip.org/
+numfocus,fiscal-sponsor,Radis,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://radis.github.io/
+numfocus,fiscal-sponsor,scikit-bio,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://scikit-bio.org/
+numfocus,fiscal-sponsor,signac,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://signac.io/
+numfocus,fiscal-sponsor,SkyPy,https://github.com/skypyproject/skypy,skypyproject/skypy,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,
+numfocus,fiscal-sponsor,Solcore,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://www.solcore.solar/
+numfocus,fiscal-sponsor,Spack,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://spack.io/
+numfocus,fiscal-sponsor,Statsmodels,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://www.statsmodels.org/stable/index.html
+numfocus,fiscal-sponsor,Taskflow,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://taskflow.github.io/
+numfocus,fiscal-sponsor,TNL - Template Numerical Library,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://tnl-project.org
+numfocus,fiscal-sponsor,The Ibis Project,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://ibis-project.org/
+numfocus,fiscal-sponsor,Trixi.jl,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://trixi-framework.github.io/
+numfocus,fiscal-sponsor,WESTPA,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://westpa.github.io/westpa/
+numfocus,fiscal-sponsor,aeon,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://www.aeon-toolkit.org
+numfocus,fiscal-sponsor,Yellowbrick,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://www.scikit-yb.org/en/latest/
+numfocus,fiscal-sponsor,XGI,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://xgi.readthedocs.io
+numfocus,fiscal-sponsor,BigBang,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,"source links https://github.com/Xiangyu-Hu/SPHinXsys, the repository of a different listed project (SPHinXsys); not used"
+numfocus,fiscal-sponsor,PyDMD,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://pydmd.github.io/PyDMD/
+numfocus,fiscal-sponsor,STUMPY,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://stumpy.readthedocs.io/en/latest/
+numfocus,fiscal-sponsor,skforecast,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://skforecast.org
+numfocus,fiscal-sponsor,Parallel Ice Sheet Model (PISM),,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://www.pism.io/
+numfocus,fiscal-sponsor,FESTIM,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://festim.readthedocs.io/en/latest/
+numfocus,fiscal-sponsor,Open OnDemand,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://openondemand.org/
+numfocus,fiscal-sponsor,Visual Python,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://visualpython.ai/
+numfocus,fiscal-sponsor,GP Jax,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://jaxgaussianprocesses.com/
+numfocus,fiscal-sponsor,toqito,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://toqito.readthedocs.io/en/latest/
+numfocus,fiscal-sponsor,Folium,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://python-visualization.github.io/folium
+numfocus,fiscal-sponsor,Snakemake,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://snakemake.github.io
+numfocus,fiscal-sponsor,SunPeek,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://docs.sunpeek.org
+numfocus,fiscal-sponsor,Bambi,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://bambinos.github.io/bambi/
+numfocus,fiscal-sponsor,Open2C,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://open2c.github.io/
+numfocus,fiscal-sponsor,Poly,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://pkg.go.dev/github.com/bebop/poly
+numfocus,fiscal-sponsor,PRQL,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://prql-lang.org/
+numfocus,fiscal-sponsor,PUDL,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://catalystcoop-pudl.readthedocs.io/en/nightly/
+numfocus,fiscal-sponsor,PyData Sparse,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://sparse.pydata.org/en/stable/
+numfocus,fiscal-sponsor,SPHinXsys,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://www.sphinxsys.org/
+numfocus,fiscal-sponsor,SageMath,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://www.sagemath.org/
+numfocus,fiscal-sponsor,BayesFlow,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://bayesflow.org/
+numfocus,fiscal-sponsor,HiGHS,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://highs.dev/
+numfocus,fiscal-sponsor,RxInfer,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://rxinfer.com/
+numfocus,fiscal-sponsor,sbi,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://sbi-dev.github.io/sbi/
+numfocus,fiscal-sponsor,Narwhals,https://github.com/narwhals-dev/narwhals,narwhals-dev/narwhals,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,
+numfocus,fiscal-sponsor,marimo,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://marimo.io/
+numfocus,fiscal-sponsor,Albumentations,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://albumentations.ai/
+numfocus,fiscal-sponsor,Materials Project Software Foundation,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://next-gen.materialsproject.org
+numfocus,fiscal-sponsor,UXarray,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://uxarray.readthedocs.io/
+numfocus,fiscal-sponsor,BrainGlobe,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: http://brainglobe.info/
+numfocus,fiscal-sponsor,Project Pythia,,,affiliated,https://numfocus.org/sponsored-projects/affiliated-projects,2026-10-05T01:54:33Z,source gives homepage only: https://projectpythia.org/

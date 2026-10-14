@@ -1,0 +1,21 @@
+# Part b2 of the S and M projects of manifest.batch8.tsv (sha256 adc81a175da6c733e3ef1b3d88c8f46f77390c6d808d3c14d01da8ebb96c7a32),
+# balanced by predicted time (6.2 h for 4 workers), u order; a fed spot part.
+# 17 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+1Panel-dev__CordysCRM	https://github.com/1Panel-dev/CordysCRM.git	pending		S	da97fbbc95343eccfe3b8e30941e1efc2f682364
+bloomberg__bde	https://github.com/bloomberg/bde.git	pending		S	4712408fd603b83e2b1d596b0a2fb11bfae429b4
+MLton__mlton	https://github.com/MLton/mlton.git	pending		S	5fe943391e539a502699327a6266b6e8e97939e1
+managarm__mlibc	https://github.com/managarm/mlibc.git	pending		S	81f2f9fff72d08cd04707f0d43d2982ce0b4710d
+jrsoftware__issrc	https://github.com/jrsoftware/issrc.git	pending		S	16839f1de8cc6e770246260e50557d141f5fa961
+gitlab.freedesktop.org__xorg__xserver-xprint	https://gitlab.freedesktop.org/xorg/xserver-xprint	pending		S	1e67eb53a5ecdfa2ca503a45366c77f5012db036
+bazelbuild__bazel-central-registry	https://github.com/bazelbuild/bazel-central-registry.git	pending		S	7d60e9e22d24e88e1ca79311e14195772449ed8b
+hawtio__hawtio	https://github.com/hawtio/hawtio.git	pending		S	db08d63a60677a78f947bd478a0f2d2b5c518e10
+acemod__ACE3	https://github.com/acemod/ACE3.git	pending		S	ed8cd4a291b5e98de77a2806f5c4e13470b0a18e
+aws-amplify__amplify-js	https://github.com/aws-amplify/amplify-js.git	pending		S	88f2d79878df66754caf85b7c409df912739f53d
+pism__pism	https://github.com/pism/pism.git	pending		S	6314953b1f7b5d194bc6c76069aba04e770b4644
+revng__revng	https://github.com/revng/revng.git	pending		S	f29ed6fa36c82d523813dd613865076c833e6f03
+react__react	https://github.com/react/react.git	pending		S	278794d7dee9cd2a3a2aaf9f0b2a4b8b747d74ee
+bluekitchen__btstack	https://github.com/bluekitchen/btstack.git	pending		S	e38553977a25fb0b55b383c72c289be0975f422c
+owncloud__android	https://github.com/owncloud/android.git	pending		S	5aaa19cfdbeddc24c4484fc6d378e0d1b43ccf3d
+ONLYOFFICE__core	https://github.com/ONLYOFFICE/core.git	pending		S	3250a848ee4ef20c2fb8c38dc86350ec579124b8
+eclipse-openj9__openj9	https://github.com/eclipse-openj9/openj9.git	pending		S	870a91322836fa8bcc748b7a3ba287a53687d6b5

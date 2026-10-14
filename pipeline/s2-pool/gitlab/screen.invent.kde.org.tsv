@@ -1,0 +1,768 @@
+host	url	step_result	commits	dup_of	dp8l	screened_at
+invent.kde.org	https://invent.kde.org/multimedia/juk	< 5,000 commits				2026-10-13T23:19:51Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-mobile	< 5,000 commits				2026-10-13T23:19:52Z
+invent.kde.org	https://invent.kde.org/plasma-mobile/plasma-camera	< 5,000 commits				2026-10-13T23:19:53Z
+invent.kde.org	https://invent.kde.org/system/partitionmanager	< 5,000 commits				2026-10-13T23:19:53Z
+invent.kde.org	https://invent.kde.org/education/rocs	< 5,000 commits				2026-10-13T23:19:54Z
+invent.kde.org	https://invent.kde.org/education/kturtle	< 5,000 commits				2026-10-13T23:19:55Z
+invent.kde.org	https://invent.kde.org/system/kpmcore	< 5,000 commits				2026-10-13T23:19:56Z
+invent.kde.org	https://invent.kde.org/multimedia/kdenlive	shares history with a pool row	24525	gh:42723268		2026-10-13T23:20:00Z
+invent.kde.org	https://invent.kde.org/sysadmin/neon-openqa	already in the pool				2026-10-13T23:20:00Z
+invent.kde.org	https://invent.kde.org/plasma-mobile/qmlkonsole	< 5,000 commits				2026-10-13T23:20:00Z
+invent.kde.org	https://invent.kde.org/plasma-mobile/plasma-settings	< 5,000 commits				2026-10-13T23:20:01Z
+invent.kde.org	https://invent.kde.org/network/angelfish	< 5,000 commits				2026-10-13T23:20:02Z
+invent.kde.org	https://invent.kde.org/plasma-mobile/calindori	< 5,000 commits				2026-10-13T23:20:03Z
+invent.kde.org	https://invent.kde.org/sdk/kshim	< 5,000 commits				2026-10-13T23:20:04Z
+invent.kde.org	https://invent.kde.org/kdevelop/kdevelop	shares history with a pool row	45899	gh:42723921		2026-10-13T23:20:09Z
+invent.kde.org	https://invent.kde.org/kdevelop/kdev-python	< 5,000 commits				2026-10-13T23:20:09Z
+invent.kde.org	https://invent.kde.org/network/kdeconnect-kde	shares history with a pool row	5746	gh:42725503		2026-10-13T23:20:12Z
+invent.kde.org	https://invent.kde.org/network/kdeconnect-android	< 5,000 commits				2026-10-13T23:20:13Z
+invent.kde.org	https://invent.kde.org/pim/itinerary	shares history with a pool row	5587	gh:131281613		2026-10-13T23:20:15Z
+invent.kde.org	https://invent.kde.org/plasma-mobile/plasma-phonebook	< 5,000 commits				2026-10-13T23:20:16Z
+invent.kde.org	https://invent.kde.org/multimedia/plasmatube	< 5,000 commits				2026-10-13T23:20:17Z
+invent.kde.org	https://invent.kde.org/utilities/keysmith	< 5,000 commits				2026-10-13T23:20:18Z
+invent.kde.org	https://invent.kde.org/graphics/krita	shares history with a pool row	66830	gh:43975673		2026-10-13T23:20:24Z
+invent.kde.org	https://invent.kde.org/rolisteam/rolisteam	shares history with a pool row	6783	gh:182159576		2026-10-13T23:20:27Z
+invent.kde.org	https://invent.kde.org/rolisteam/rolisteam-diceparser	< 5,000 commits				2026-10-13T23:20:28Z
+invent.kde.org	https://invent.kde.org/maui/mauikit	< 5,000 commits				2026-10-13T23:20:29Z
+invent.kde.org	https://invent.kde.org/maui/index-fm	< 5,000 commits				2026-10-13T23:20:30Z
+invent.kde.org	https://invent.kde.org/maui/buho	< 5,000 commits				2026-10-13T23:20:31Z
+invent.kde.org	https://invent.kde.org/maui/vvave	< 5,000 commits				2026-10-13T23:20:31Z
+invent.kde.org	https://invent.kde.org/maui/nota	< 5,000 commits				2026-10-13T23:20:32Z
+invent.kde.org	https://invent.kde.org/graphics/digikam	already in the pool				2026-10-13T23:20:32Z
+invent.kde.org	https://invent.kde.org/maui/maui-shelf	< 5,000 commits				2026-10-13T23:20:33Z
+invent.kde.org	https://invent.kde.org/maui/maui-station	< 5,000 commits				2026-10-13T23:20:34Z
+invent.kde.org	https://invent.kde.org/maui/maui-communicator	< 5,000 commits				2026-10-13T23:20:35Z
+invent.kde.org	https://invent.kde.org/maui/maui-pix	< 5,000 commits				2026-10-13T23:20:36Z
+invent.kde.org	https://invent.kde.org/network/kaidan	< 5,000 commits				2026-10-13T23:20:37Z
+invent.kde.org	https://invent.kde.org/frameworks/kquickcharts	< 5,000 commits				2026-10-13T23:20:37Z
+invent.kde.org	https://invent.kde.org/utilities/konsole	shares history with a pool row	10485	gh:42721851		2026-10-13T23:20:40Z
+invent.kde.org	https://invent.kde.org/utilities/qrca	< 5,000 commits				2026-10-13T23:20:41Z
+invent.kde.org	https://invent.kde.org/graphics/okular	shares history with a pool row	11871	gh:42731366		2026-10-13T23:20:44Z
+invent.kde.org	https://invent.kde.org/utilities/ktrip	< 5,000 commits				2026-10-13T23:20:45Z
+invent.kde.org	https://invent.kde.org/sdk/kdiff3	< 5,000 commits				2026-10-13T23:20:46Z
+invent.kde.org	https://invent.kde.org/plasma/kup	< 5,000 commits				2026-10-13T23:20:47Z
+invent.kde.org	https://invent.kde.org/libraries/upnp-lib-qt	< 5,000 commits				2026-10-13T23:20:48Z
+invent.kde.org	https://invent.kde.org/utilities/kirogi	< 5,000 commits				2026-10-13T23:20:48Z
+invent.kde.org	https://invent.kde.org/utilities/kate	shares history with a pool row	24201	gh:42720230		2026-10-13T23:20:52Z
+invent.kde.org	https://invent.kde.org/multimedia/kamoso	< 5,000 commits				2026-10-13T23:20:53Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-nano	< 5,000 commits				2026-10-13T23:20:53Z
+invent.kde.org	https://invent.kde.org/utilities/atelier	< 5,000 commits				2026-10-13T23:20:54Z
+invent.kde.org	https://invent.kde.org/libraries/atcore	< 5,000 commits				2026-10-13T23:20:55Z
+invent.kde.org	https://invent.kde.org/system/kio-fuse	< 5,000 commits				2026-10-13T23:20:56Z
+invent.kde.org	https://invent.kde.org/multimedia/elisa	< 5,000 commits				2026-10-13T23:20:57Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-bigscreen	< 5,000 commits				2026-10-13T23:20:58Z
+invent.kde.org	https://invent.kde.org/education/labplot	shares history with a pool row	17892	gh:42720279		2026-10-13T23:21:01Z
+invent.kde.org	https://invent.kde.org/multimedia/subtitlecomposer	< 5,000 commits				2026-10-13T23:21:02Z
+invent.kde.org	https://invent.kde.org/education/cantor	< 5,000 commits				2026-10-13T23:21:02Z
+invent.kde.org	https://invent.kde.org/sdk/umbrello	shares history with a pool row	9392	gh:42719858		2026-10-13T23:21:05Z
+invent.kde.org	https://invent.kde.org/plasma-mobile/spacebar	< 5,000 commits				2026-10-13T23:21:06Z
+invent.kde.org	https://invent.kde.org/utilities/krecorder	< 5,000 commits				2026-10-13T23:21:07Z
+invent.kde.org	https://invent.kde.org/multimedia/kid3	< 5,000 commits				2026-10-13T23:21:08Z
+invent.kde.org	https://invent.kde.org/utilities/kongress	< 5,000 commits				2026-10-13T23:21:09Z
+invent.kde.org	https://invent.kde.org/plasma/aura-browser	< 5,000 commits				2026-10-13T23:21:09Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-firewall	< 5,000 commits				2026-10-13T23:21:10Z
+invent.kde.org	https://invent.kde.org/libraries/qca	< 5,000 commits				2026-10-13T23:21:11Z
+invent.kde.org	https://invent.kde.org/qt/qbs/qbs	layer 1 candidate	8046		yes	2026-10-13T23:21:14Z
+invent.kde.org	https://invent.kde.org/qt/qtqa/gerrit	shares history with a pool row	7209	gh:1352572872		2026-10-13T23:21:20Z
+invent.kde.org	https://invent.kde.org/qt/qtqa/gerrit-plugin-qt-workflow	< 5,000 commits				2026-10-13T23:21:21Z
+invent.kde.org	https://invent.kde.org/qt/qt-creator/perfparser	< 5,000 commits				2026-10-13T23:21:22Z
+invent.kde.org	https://invent.kde.org/qt/qt-creator/plugin-telemetry	< 5,000 commits				2026-10-13T23:21:22Z
+invent.kde.org	https://invent.kde.org/qt/qt-creator/qt-creator	shares history with a pool row	104156	gh:9881671		2026-10-13T23:21:31Z
+invent.kde.org	https://invent.kde.org/qt/qt-creator/elfutils	< 5,000 commits				2026-10-13T23:21:31Z
+invent.kde.org	https://invent.kde.org/qt/installer-framework/installer-framework	< 5,000 commits				2026-10-13T23:21:32Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtsvg	< 5,000 commits				2026-10-13T23:21:33Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtscript	< 5,000 commits				2026-10-13T23:21:34Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtbase	shares history with a pool row	82185	gh:9880335		2026-10-13T23:21:42Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtvirtualkeyboard	< 5,000 commits				2026-10-13T23:21:43Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtrepotools	< 5,000 commits				2026-10-13T23:21:44Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtserialbus	< 5,000 commits				2026-10-13T23:21:45Z
+invent.kde.org	https://invent.kde.org/qt/qt/qttools	shares history with a pool row	7608	gh:9881619		2026-10-13T23:21:48Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtdoc	shares history with a pool row	5956	gh:9880347		2026-10-13T23:21:51Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtmultimedia	shares history with a pool row	9926	gh:9881552		2026-10-13T23:21:54Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtremoteobjects	< 5,000 commits				2026-10-13T23:21:55Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtquickcontrols	< 5,000 commits				2026-10-13T23:21:55Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtqa	< 5,000 commits				2026-10-13T23:21:56Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtshadertools	< 5,000 commits				2026-10-13T23:21:57Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtopcua	< 5,000 commits				2026-10-13T23:21:58Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtwebview	< 5,000 commits				2026-10-13T23:21:59Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtwayland	shares history with a pool row	5094	gh:9881635		2026-10-13T23:22:01Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtgamepad	< 5,000 commits				2026-10-13T23:22:02Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtconnectivity	< 5,000 commits				2026-10-13T23:22:03Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtcoap	< 5,000 commits				2026-10-13T23:22:04Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtquicktimeline	< 5,000 commits				2026-10-13T23:22:05Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtquick3d-assimp	layer 1 candidate	13007		yes	2026-10-13T23:22:08Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtxmlpatterns	< 5,000 commits				2026-10-13T23:22:09Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtlottie	< 5,000 commits				2026-10-13T23:22:10Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtlocation	< 5,000 commits				2026-10-13T23:22:11Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtimageformats	< 5,000 commits				2026-10-13T23:22:11Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtwebengine-chromium	< 5,000 commits				2026-10-13T23:22:12Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtwebsockets	< 5,000 commits				2026-10-13T23:22:13Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtcanvas3d	< 5,000 commits				2026-10-13T23:22:14Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtnetworkauth	< 5,000 commits				2026-10-13T23:22:15Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtapplicationmanager	< 5,000 commits				2026-10-13T23:22:16Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtwebengine	shares history with a pool row	8446	gh:10966899		2026-10-13T23:22:18Z
+invent.kde.org	https://invent.kde.org/qt/qt/qt3d	layer 1 candidate	7339		yes	2026-10-13T23:22:22Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtscxml	< 5,000 commits				2026-10-13T23:22:22Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtspeech	< 5,000 commits				2026-10-13T23:22:23Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtwebchannel	< 5,000 commits				2026-10-13T23:22:24Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtdeviceutilities	< 5,000 commits				2026-10-13T23:22:25Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtpim	< 5,000 commits				2026-10-13T23:22:26Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtcharts	< 5,000 commits				2026-10-13T23:22:27Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtwebglplugin	< 5,000 commits				2026-10-13T23:22:28Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtdatavis3d	< 5,000 commits				2026-10-13T23:22:28Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtsensors	< 5,000 commits				2026-10-13T23:22:29Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtactiveqt	< 5,000 commits				2026-10-13T23:22:30Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtquick3d	layer 1 candidate	5552		yes	2026-10-13T23:22:33Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtdeclarative	shares history with a pool row	39700	gh:9880345		2026-10-13T23:22:38Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtserialport	< 5,000 commits				2026-10-13T23:22:39Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtmqtt	< 5,000 commits				2026-10-13T23:22:40Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtpurchasing	< 5,000 commits				2026-10-13T23:22:41Z
+invent.kde.org	https://invent.kde.org/qt/qt-apps/boot2qt-demos	< 5,000 commits				2026-10-13T23:22:41Z
+invent.kde.org	https://invent.kde.org/qt/qt-apps/qdb	< 5,000 commits				2026-10-13T23:22:42Z
+invent.kde.org	https://invent.kde.org/qt/qt-apps/boot2qt-launcher	< 5,000 commits				2026-10-13T23:22:43Z
+invent.kde.org	https://invent.kde.org/qt/qt-apps/neptune3-ui	< 5,000 commits				2026-10-13T23:22:44Z
+invent.kde.org	https://invent.kde.org/qt/qt-apps/boot2qt-appcontroller	< 5,000 commits				2026-10-13T23:22:45Z
+invent.kde.org	https://invent.kde.org/qt/qt-labs/jom	< 5,000 commits				2026-10-13T23:22:46Z
+invent.kde.org	https://invent.kde.org/qt/qt-labs/qml-presentation-system	< 5,000 commits				2026-10-13T23:22:46Z
+invent.kde.org	https://invent.kde.org/qt/qt-labs/vstools	< 5,000 commits				2026-10-13T23:22:47Z
+invent.kde.org	https://invent.kde.org/qt/qt-labs/qtquickdesigner-components	< 5,000 commits				2026-10-13T23:22:48Z
+invent.kde.org	https://invent.kde.org/qt/qt-labs/messagingframework	< 5,000 commits				2026-10-13T23:22:49Z
+invent.kde.org	https://invent.kde.org/qt/qt-labs/qmlbench	< 5,000 commits				2026-10-13T23:22:50Z
+invent.kde.org	https://invent.kde.org/qt/qt-solutions/qt-solutions	< 5,000 commits				2026-10-13T23:22:51Z
+invent.kde.org	https://invent.kde.org/qt/yocto/meta-boot2qt	< 5,000 commits				2026-10-13T23:22:51Z
+invent.kde.org	https://invent.kde.org/qt/yocto/meta-qt5	< 5,000 commits				2026-10-13T23:22:52Z
+invent.kde.org	https://invent.kde.org/qt/yocto/meta-boot2qt-renesas	< 5,000 commits				2026-10-13T23:22:53Z
+invent.kde.org	https://invent.kde.org/qt/pyside/pyside-setup	layer 1 candidate	12546		yes	2026-10-13T23:22:57Z
+invent.kde.org	https://invent.kde.org/qt/clang/clazy	< 5,000 commits				2026-10-13T23:22:57Z
+invent.kde.org	https://invent.kde.org/qt/clang/llvm-project	shares history with a pool row		gh:296730121		2026-10-13T23:23:50Z
+invent.kde.org	https://invent.kde.org/qt/clang/llvm	layer 1 candidate	602300		yes	2026-10-13T23:25:05Z
+invent.kde.org	https://invent.kde.org/network/alligator	< 5,000 commits				2026-10-13T23:25:05Z
+invent.kde.org	https://invent.kde.org/network/falkon	shares history with a pool row	7023	gh:101266234		2026-10-13T23:25:08Z
+invent.kde.org	https://invent.kde.org/kdevelop/kdev-php	< 5,000 commits				2026-10-13T23:25:09Z
+invent.kde.org	https://invent.kde.org/plasma-mobile/plasma-dialer	< 5,000 commits				2026-10-13T23:25:10Z
+invent.kde.org	https://invent.kde.org/system/kcm-grub2	< 5,000 commits				2026-10-13T23:25:11Z
+invent.kde.org	https://invent.kde.org/multimedia/amarok	shares history with a pool row	36651	gh:42728662		2026-10-13T23:25:14Z
+invent.kde.org	https://invent.kde.org/utilities/kclock	< 5,000 commits				2026-10-13T23:25:15Z
+invent.kde.org	https://invent.kde.org/maui/maui-clip	< 5,000 commits				2026-10-13T23:25:16Z
+invent.kde.org	https://invent.kde.org/libraries/kcgroups	< 5,000 commits				2026-10-13T23:25:17Z
+invent.kde.org	https://invent.kde.org/plasma/latte-dock	shares history with a pool row	6267	gh:101990564		2026-10-13T23:25:19Z
+invent.kde.org	https://invent.kde.org/education/minuet	< 5,000 commits				2026-10-13T23:25:20Z
+invent.kde.org	https://invent.kde.org/utilities/kweather	< 5,000 commits				2026-10-13T23:25:21Z
+invent.kde.org	https://invent.kde.org/libraries/plasma-wayland-protocols	< 5,000 commits				2026-10-13T23:25:22Z
+invent.kde.org	https://invent.kde.org/sysadmin/l10n-scripty	already in the pool				2026-10-13T23:25:22Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-systemmonitor	< 5,000 commits				2026-10-13T23:25:23Z
+invent.kde.org	https://invent.kde.org/plasma/kpipewire	< 5,000 commits				2026-10-13T23:25:24Z
+invent.kde.org	https://invent.kde.org/graphics/kseexpr	< 5,000 commits				2026-10-13T23:25:24Z
+invent.kde.org	https://invent.kde.org/sysadmin/release-tools	already in the pool				2026-10-13T23:25:24Z
+invent.kde.org	https://invent.kde.org/system/liquidshell	< 5,000 commits				2026-10-13T23:25:25Z
+invent.kde.org	https://invent.kde.org/frameworks/kparts	< 5,000 commits				2026-10-13T23:25:26Z
+invent.kde.org	https://invent.kde.org/libraries/kpublictransport	< 5,000 commits				2026-10-13T23:25:27Z
+invent.kde.org	https://invent.kde.org/network/konversation	shares history with a pool row	9913	gh:42721854		2026-10-13T23:25:30Z
+invent.kde.org	https://invent.kde.org/frameworks/kdbusaddons	< 5,000 commits				2026-10-13T23:25:30Z
+invent.kde.org	https://invent.kde.org/frameworks/kguiaddons	< 5,000 commits				2026-10-13T23:25:31Z
+invent.kde.org	https://invent.kde.org/graphics/kcolorchooser	< 5,000 commits				2026-10-13T23:25:32Z
+invent.kde.org	https://invent.kde.org/libraries/baloo-widgets	< 5,000 commits				2026-10-13T23:25:33Z
+invent.kde.org	https://invent.kde.org/plasma/spectacle	< 5,000 commits				2026-10-13T23:25:34Z
+invent.kde.org	https://invent.kde.org/pim/pim-sieve-editor	< 5,000 commits				2026-10-13T23:25:35Z
+invent.kde.org	https://invent.kde.org/utilities/kcharselect	< 5,000 commits				2026-10-13T23:25:35Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-pa	< 5,000 commits				2026-10-13T23:25:36Z
+invent.kde.org	https://invent.kde.org/frameworks/oxygen-icons	< 5,000 commits				2026-10-13T23:25:37Z
+invent.kde.org	https://invent.kde.org/pim/kcalutils	< 5,000 commits				2026-10-13T23:25:38Z
+invent.kde.org	https://invent.kde.org/utilities/kdebugsettings	< 5,000 commits				2026-10-13T23:25:39Z
+invent.kde.org	https://invent.kde.org/games/ksnakeduel	< 5,000 commits				2026-10-13T23:25:40Z
+invent.kde.org	https://invent.kde.org/utilities/keurocalc	< 5,000 commits				2026-10-13T23:25:40Z
+invent.kde.org	https://invent.kde.org/frameworks/kdeclarative	< 5,000 commits				2026-10-13T23:25:41Z
+invent.kde.org	https://invent.kde.org/pim/libkgapi	< 5,000 commits				2026-10-13T23:25:42Z
+invent.kde.org	https://invent.kde.org/frameworks/kplotting	< 5,000 commits				2026-10-13T23:25:43Z
+invent.kde.org	https://invent.kde.org/games/kreversi	< 5,000 commits				2026-10-13T23:25:44Z
+invent.kde.org	https://invent.kde.org/libraries/libqaccessibilityclient	< 5,000 commits				2026-10-13T23:25:45Z
+invent.kde.org	https://invent.kde.org/frameworks/syntax-highlighting	< 5,000 commits				2026-10-13T23:25:45Z
+invent.kde.org	https://invent.kde.org/frameworks/frameworkintegration	< 5,000 commits				2026-10-13T23:25:46Z
+invent.kde.org	https://invent.kde.org/games/kjumpingcube	< 5,000 commits				2026-10-13T23:25:47Z
+invent.kde.org	https://invent.kde.org/plasma/breeze	< 5,000 commits				2026-10-13T23:25:48Z
+invent.kde.org	https://invent.kde.org/pim/kalarm	shares history with a pool row	9688	gh:66923336		2026-10-13T23:25:51Z
+invent.kde.org	https://invent.kde.org/frameworks/purpose	< 5,000 commits				2026-10-13T23:25:51Z
+invent.kde.org	https://invent.kde.org/pim/kldap	< 5,000 commits				2026-10-13T23:25:52Z
+invent.kde.org	https://invent.kde.org/graphics/colord-kde	< 5,000 commits				2026-10-13T23:25:53Z
+invent.kde.org	https://invent.kde.org/games/palapeli	< 5,000 commits				2026-10-13T23:25:54Z
+invent.kde.org	https://invent.kde.org/games/katomic	< 5,000 commits				2026-10-13T23:25:55Z
+invent.kde.org	https://invent.kde.org/multimedia/audex	< 5,000 commits				2026-10-13T23:25:56Z
+invent.kde.org	https://invent.kde.org/multimedia/libkcompactdisc	< 5,000 commits				2026-10-13T23:25:56Z
+invent.kde.org	https://invent.kde.org/frameworks/kcompletion	< 5,000 commits				2026-10-13T23:25:57Z
+invent.kde.org	https://invent.kde.org/frameworks/kcontacts	< 5,000 commits				2026-10-13T23:25:58Z
+invent.kde.org	https://invent.kde.org/system/libdebconf-kde	< 5,000 commits				2026-10-13T23:25:59Z
+invent.kde.org	https://invent.kde.org/graphics/kxstitch	< 5,000 commits				2026-10-13T23:26:00Z
+invent.kde.org	https://invent.kde.org/utilities/ark	shares history with a pool row	5843	gh:42724343		2026-10-13T23:26:05Z
+invent.kde.org	https://invent.kde.org/sdk/kirigami-gallery	< 5,000 commits				2026-10-13T23:26:06Z
+invent.kde.org	https://invent.kde.org/education/analitza	< 5,000 commits				2026-10-13T23:26:07Z
+invent.kde.org	https://invent.kde.org/frameworks/kbookmarks	< 5,000 commits				2026-10-13T23:26:08Z
+invent.kde.org	https://invent.kde.org/frameworks/kconfig	< 5,000 commits				2026-10-13T23:26:09Z
+invent.kde.org	https://invent.kde.org/education/klettres	< 5,000 commits				2026-10-13T23:26:10Z
+invent.kde.org	https://invent.kde.org/utilities/kdf	< 5,000 commits				2026-10-13T23:26:10Z
+invent.kde.org	https://invent.kde.org/utilities/kcalc	< 5,000 commits				2026-10-13T23:26:11Z
+invent.kde.org	https://invent.kde.org/frameworks/kdesu	< 5,000 commits				2026-10-13T23:26:12Z
+invent.kde.org	https://invent.kde.org/accessibility/kmouth	< 5,000 commits				2026-10-13T23:26:13Z
+invent.kde.org	https://invent.kde.org/plasma/kdecoration	< 5,000 commits				2026-10-13T23:26:14Z
+invent.kde.org	https://invent.kde.org/frameworks/knewstuff	< 5,000 commits				2026-10-13T23:26:15Z
+invent.kde.org	https://invent.kde.org/pim/mbox-importer	< 5,000 commits				2026-10-13T23:26:15Z
+invent.kde.org	https://invent.kde.org/pim/kpkpass	< 5,000 commits				2026-10-13T23:26:16Z
+invent.kde.org	https://invent.kde.org/frameworks/kwindowsystem	< 5,000 commits				2026-10-13T23:26:17Z
+invent.kde.org	https://invent.kde.org/utilities/kbackup	< 5,000 commits				2026-10-13T23:26:18Z
+invent.kde.org	https://invent.kde.org/education/kstars	shares history with a pool row	17050	gh:42718970		2026-10-13T23:26:21Z
+invent.kde.org	https://invent.kde.org/pim/kaddressbook	shares history with a pool row	7432	gh:66923277		2026-10-13T23:26:24Z
+invent.kde.org	https://invent.kde.org/frameworks/sonnet	< 5,000 commits				2026-10-13T23:26:24Z
+invent.kde.org	https://invent.kde.org/network/kaccounts-providers	< 5,000 commits				2026-10-13T23:26:25Z
+invent.kde.org	https://invent.kde.org/frameworks/kcodecs	< 5,000 commits				2026-10-13T23:26:26Z
+invent.kde.org	https://invent.kde.org/frameworks/knotifications	< 5,000 commits				2026-10-13T23:26:27Z
+invent.kde.org	https://invent.kde.org/plasma/drkonqi	< 5,000 commits				2026-10-13T23:26:28Z
+invent.kde.org	https://invent.kde.org/pim/libgravatar	< 5,000 commits				2026-10-13T23:26:29Z
+invent.kde.org	https://invent.kde.org/pim/akonadi	shares history with a pool row	14610	gh:42715907		2026-10-13T23:26:32Z
+invent.kde.org	https://invent.kde.org/plasma/kinfocenter	< 5,000 commits				2026-10-13T23:26:32Z
+invent.kde.org	https://invent.kde.org/packaging/kdewin	< 5,000 commits				2026-10-13T23:26:33Z
+invent.kde.org	https://invent.kde.org/games/lskat	< 5,000 commits				2026-10-13T23:26:34Z
+invent.kde.org	https://invent.kde.org/frameworks/kded	< 5,000 commits				2026-10-13T23:26:35Z
+invent.kde.org	https://invent.kde.org/utilities/kio-stash	< 5,000 commits				2026-10-13T23:26:36Z
+invent.kde.org	https://invent.kde.org/pim/trojita	shares history with a pool row	7273	gh:42721953		2026-10-13T23:26:38Z
+invent.kde.org	https://invent.kde.org/games/kfourinline	< 5,000 commits				2026-10-13T23:26:39Z
+invent.kde.org	https://invent.kde.org/frameworks/kxmlgui	< 5,000 commits				2026-10-13T23:26:40Z
+invent.kde.org	https://invent.kde.org/frameworks/syndication	< 5,000 commits				2026-10-13T23:26:41Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-browser-integration	< 5,000 commits				2026-10-13T23:26:42Z
+invent.kde.org	https://invent.kde.org/network/kio-extras	shares history with a pool row	8740	gh:42727911		2026-10-13T23:26:44Z
+invent.kde.org	https://invent.kde.org/plasma/ksshaskpass	< 5,000 commits				2026-10-13T23:26:45Z
+invent.kde.org	https://invent.kde.org/utilities/kookbook	< 5,000 commits				2026-10-13T23:26:46Z
+invent.kde.org	https://invent.kde.org/graphics/kgraphviewer	< 5,000 commits				2026-10-13T23:26:47Z
+invent.kde.org	https://invent.kde.org/network/krdc	< 5,000 commits				2026-10-13T23:26:48Z
+invent.kde.org	https://invent.kde.org/utilities/basket	< 5,000 commits				2026-10-13T23:26:48Z
+invent.kde.org	https://invent.kde.org/sdk/dolphin-plugins	< 5,000 commits				2026-10-13T23:26:49Z
+invent.kde.org	https://invent.kde.org/frameworks/karchive	< 5,000 commits				2026-10-13T23:26:50Z
+invent.kde.org	https://invent.kde.org/network/kio-zeroconf	< 5,000 commits				2026-10-13T23:26:51Z
+invent.kde.org	https://invent.kde.org/graphics/peruse	< 5,000 commits				2026-10-13T23:26:52Z
+invent.kde.org	https://invent.kde.org/education/kanagram	< 5,000 commits				2026-10-13T23:26:53Z
+invent.kde.org	https://invent.kde.org/office/skrooge	layer 1 candidate	7113		yes	2026-10-13T23:26:56Z
+invent.kde.org	https://invent.kde.org/utilities/kteatime	< 5,000 commits				2026-10-13T23:26:57Z
+invent.kde.org	https://invent.kde.org/plasma/oxygen	shares history with a pool row	5105	gh:43055016		2026-10-13T23:27:00Z
+invent.kde.org	https://invent.kde.org/frameworks/kfilemetadata	< 5,000 commits				2026-10-13T23:27:00Z
+invent.kde.org	https://invent.kde.org/plasma/xdg-desktop-portal-kde	< 5,000 commits				2026-10-13T23:27:01Z
+invent.kde.org	https://invent.kde.org/libraries/xdg-portal-test-kde	< 5,000 commits				2026-10-13T23:27:02Z
+invent.kde.org	https://invent.kde.org/games/kspaceduel	< 5,000 commits				2026-10-13T23:27:03Z
+invent.kde.org	https://invent.kde.org/pim/akonadiconsole	< 5,000 commits				2026-10-13T23:27:04Z
+invent.kde.org	https://invent.kde.org/utilities/krename	< 5,000 commits				2026-10-13T23:27:05Z
+invent.kde.org	https://invent.kde.org/pim/akonadi-import-wizard	< 5,000 commits				2026-10-13T23:27:06Z
+invent.kde.org	https://invent.kde.org/frameworks/kcoreaddons	< 5,000 commits				2026-10-13T23:27:06Z
+invent.kde.org	https://invent.kde.org/education/step	< 5,000 commits				2026-10-13T23:27:07Z
+invent.kde.org	https://invent.kde.org/games/kolorfill	< 5,000 commits				2026-10-13T23:27:08Z
+invent.kde.org	https://invent.kde.org/pim/akonadi-search	< 5,000 commits				2026-10-13T23:27:09Z
+invent.kde.org	https://invent.kde.org/office/kexi	shares history with a pool row	13931	gh:48595628		2026-10-13T23:27:12Z
+invent.kde.org	https://invent.kde.org/pim/kdepim-addons	shares history with a pool row	7356	gh:46991984		2026-10-13T23:27:14Z
+invent.kde.org	https://invent.kde.org/games/kigo	< 5,000 commits				2026-10-13T23:27:15Z
+invent.kde.org	https://invent.kde.org/frameworks/breeze-icons	< 5,000 commits				2026-10-13T23:27:16Z
+invent.kde.org	https://invent.kde.org/frameworks/knotifyconfig	< 5,000 commits				2026-10-13T23:27:17Z
+invent.kde.org	https://invent.kde.org/frameworks/kcalendarcore	< 5,000 commits				2026-10-13T23:27:18Z
+invent.kde.org	https://invent.kde.org/games/ksquares	< 5,000 commits				2026-10-13T23:27:19Z
+invent.kde.org	https://invent.kde.org/frameworks/kpeople	< 5,000 commits				2026-10-13T23:27:19Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-sdk	< 5,000 commits				2026-10-13T23:27:20Z
+invent.kde.org	https://invent.kde.org/system/ksystemlog	< 5,000 commits				2026-10-13T23:27:21Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-integration	< 5,000 commits				2026-10-13T23:27:22Z
+invent.kde.org	https://invent.kde.org/sdk/libkomparediff2	< 5,000 commits				2026-10-13T23:27:23Z
+invent.kde.org	https://invent.kde.org/multimedia/kwave	< 5,000 commits				2026-10-13T23:27:24Z
+invent.kde.org	https://invent.kde.org/pim/kontactinterface	< 5,000 commits				2026-10-13T23:27:24Z
+invent.kde.org	https://invent.kde.org/education/kig	< 5,000 commits				2026-10-13T23:27:25Z
+invent.kde.org	https://invent.kde.org/pim/grantlee-editor	< 5,000 commits				2026-10-13T23:27:26Z
+invent.kde.org	https://invent.kde.org/sdk/kapptemplate	< 5,000 commits				2026-10-13T23:27:27Z
+invent.kde.org	https://invent.kde.org/games/ktuberling	< 5,000 commits				2026-10-13T23:27:28Z
+invent.kde.org	https://invent.kde.org/education/kalzium	< 5,000 commits				2026-10-13T23:27:29Z
+invent.kde.org	https://invent.kde.org/games/skladnik	< 5,000 commits				2026-10-13T23:27:29Z
+invent.kde.org	https://invent.kde.org/utilities/kronometer	< 5,000 commits				2026-10-13T23:27:30Z
+invent.kde.org	https://invent.kde.org/sdk/kompare	< 5,000 commits				2026-10-13T23:27:31Z
+invent.kde.org	https://invent.kde.org/accessibility/kmag	< 5,000 commits				2026-10-13T23:27:32Z
+invent.kde.org	https://invent.kde.org/utilities/kwalletmanager	< 5,000 commits				2026-10-13T23:27:33Z
+invent.kde.org	https://invent.kde.org/frameworks/kdnssd	< 5,000 commits				2026-10-13T23:27:34Z
+invent.kde.org	https://invent.kde.org/education/parley	< 5,000 commits				2026-10-13T23:27:35Z
+invent.kde.org	https://invent.kde.org/pim/eventviews	< 5,000 commits				2026-10-13T23:27:35Z
+invent.kde.org	https://invent.kde.org/pim/akonadiclient	< 5,000 commits				2026-10-13T23:27:36Z
+invent.kde.org	https://invent.kde.org/libraries/phonon	< 5,000 commits				2026-10-13T23:27:37Z
+invent.kde.org	https://invent.kde.org/system/distro-release-notifier	< 5,000 commits				2026-10-13T23:27:38Z
+invent.kde.org	https://invent.kde.org/games/granatier	< 5,000 commits				2026-10-13T23:27:39Z
+invent.kde.org	https://invent.kde.org/pim/calendarsupport	< 5,000 commits				2026-10-13T23:27:40Z
+invent.kde.org	https://invent.kde.org/frameworks/kunitconversion	< 5,000 commits				2026-10-13T23:27:40Z
+invent.kde.org	https://invent.kde.org/sdk/heaptrack	< 5,000 commits				2026-10-13T23:27:41Z
+invent.kde.org	https://invent.kde.org/frameworks/kmime	< 5,000 commits				2026-10-13T23:27:42Z
+invent.kde.org	https://invent.kde.org/libraries/phonon-vlc	< 5,000 commits				2026-10-13T23:27:43Z
+invent.kde.org	https://invent.kde.org/multimedia/kaffeine	< 5,000 commits				2026-10-13T23:27:44Z
+invent.kde.org	https://invent.kde.org/graphics/kooka	< 5,000 commits				2026-10-13T23:27:45Z
+invent.kde.org	https://invent.kde.org/plasma/systemsettings	< 5,000 commits				2026-10-13T23:27:46Z
+invent.kde.org	https://invent.kde.org/sdk/elf-dissector	< 5,000 commits				2026-10-13T23:27:46Z
+invent.kde.org	https://invent.kde.org/system/qtcurve	< 5,000 commits				2026-10-13T23:27:47Z
+invent.kde.org	https://invent.kde.org/pim/libksieve	< 5,000 commits				2026-10-13T23:27:48Z
+invent.kde.org	https://invent.kde.org/games/libkmahjongg	< 5,000 commits				2026-10-13T23:27:49Z
+invent.kde.org	https://invent.kde.org/utilities/kfloppy	< 5,000 commits				2026-10-13T23:27:50Z
+invent.kde.org	https://invent.kde.org/games/kmahjongg	< 5,000 commits				2026-10-13T23:27:51Z
+invent.kde.org	https://invent.kde.org/games/atlantik	< 5,000 commits				2026-10-13T23:27:52Z
+invent.kde.org	https://invent.kde.org/office/calligraplan	< 5,000 commits				2026-10-13T23:27:52Z
+invent.kde.org	https://invent.kde.org/pim/kidentitymanagement	< 5,000 commits				2026-10-13T23:27:53Z
+invent.kde.org	https://invent.kde.org/utilities/rsibreak	< 5,000 commits				2026-10-13T23:27:54Z
+invent.kde.org	https://invent.kde.org/games/killbots	< 5,000 commits				2026-10-13T23:27:55Z
+invent.kde.org	https://invent.kde.org/sdk/dferry	< 5,000 commits				2026-10-13T23:27:56Z
+invent.kde.org	https://invent.kde.org/frameworks/kpty	< 5,000 commits				2026-10-13T23:27:57Z
+invent.kde.org	https://invent.kde.org/libraries/kirigami-addons	< 5,000 commits				2026-10-13T23:27:58Z
+invent.kde.org	https://invent.kde.org/libraries/pulseaudio-qt	< 5,000 commits				2026-10-13T23:27:58Z
+invent.kde.org	https://invent.kde.org/frameworks/kdav	< 5,000 commits				2026-10-13T23:27:59Z
+invent.kde.org	https://invent.kde.org/frameworks/kuserfeedback	< 5,000 commits				2026-10-13T23:28:00Z
+invent.kde.org	https://invent.kde.org/sdk/lokalize	< 5,000 commits				2026-10-13T23:28:01Z
+invent.kde.org	https://invent.kde.org/games/knetwalk	< 5,000 commits				2026-10-13T23:28:02Z
+invent.kde.org	https://invent.kde.org/frameworks/bluez-qt	< 5,000 commits				2026-10-13T23:28:03Z
+invent.kde.org	https://invent.kde.org/office/alkimia	< 5,000 commits				2026-10-13T23:28:03Z
+invent.kde.org	https://invent.kde.org/frameworks/ki18n	< 5,000 commits				2026-10-13T23:28:04Z
+invent.kde.org	https://invent.kde.org/plasma/sddm-kcm	< 5,000 commits				2026-10-13T23:28:05Z
+invent.kde.org	https://invent.kde.org/pim/akonadi-calendar	< 5,000 commits				2026-10-13T23:28:06Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-thunderbolt	< 5,000 commits				2026-10-13T23:28:07Z
+invent.kde.org	https://invent.kde.org/system/ubiquity-slideshow-neon	< 5,000 commits				2026-10-13T23:28:08Z
+invent.kde.org	https://invent.kde.org/accessibility/kmousetool	< 5,000 commits				2026-10-13T23:28:08Z
+invent.kde.org	https://invent.kde.org/system/khelpcenter	< 5,000 commits				2026-10-13T23:28:09Z
+invent.kde.org	https://invent.kde.org/utilities/kregexpeditor	< 5,000 commits				2026-10-13T23:28:10Z
+invent.kde.org	https://invent.kde.org/sdk/kdesvn	< 5,000 commits				2026-10-13T23:28:11Z
+invent.kde.org	https://invent.kde.org/plasma/polkit-kde-agent-1	< 5,000 commits				2026-10-13T23:28:12Z
+invent.kde.org	https://invent.kde.org/pim/kmbox	< 5,000 commits				2026-10-13T23:28:13Z
+invent.kde.org	https://invent.kde.org/multimedia/dragon	< 5,000 commits				2026-10-13T23:28:14Z
+invent.kde.org	https://invent.kde.org/frameworks/kservice	< 5,000 commits				2026-10-13T23:28:14Z
+invent.kde.org	https://invent.kde.org/network/kio-gdrive	< 5,000 commits				2026-10-13T23:28:15Z
+invent.kde.org	https://invent.kde.org/games/kolf	< 5,000 commits				2026-10-13T23:28:16Z
+invent.kde.org	https://invent.kde.org/pim/pim-data-exporter	< 5,000 commits				2026-10-13T23:28:17Z
+invent.kde.org	https://invent.kde.org/games/kollision	< 5,000 commits				2026-10-13T23:28:18Z
+invent.kde.org	https://invent.kde.org/games/kiriki	< 5,000 commits				2026-10-13T23:28:19Z
+invent.kde.org	https://invent.kde.org/network/kget	< 5,000 commits				2026-10-13T23:28:19Z
+invent.kde.org	https://invent.kde.org/sdk/kdesdk-thumbnailers	< 5,000 commits				2026-10-13T23:28:20Z
+invent.kde.org	https://invent.kde.org/frameworks/prison	< 5,000 commits				2026-10-13T23:28:21Z
+invent.kde.org	https://invent.kde.org/education/kiten	< 5,000 commits				2026-10-13T23:28:22Z
+invent.kde.org	https://invent.kde.org/network/krfb	< 5,000 commits				2026-10-13T23:28:23Z
+invent.kde.org	https://invent.kde.org/network/kio-gopher	< 5,000 commits				2026-10-13T23:28:24Z
+invent.kde.org	https://invent.kde.org/sdk/clazy	< 5,000 commits				2026-10-13T23:28:24Z
+invent.kde.org	https://invent.kde.org/plasma/oxygen-gtk	< 5,000 commits				2026-10-13T23:28:25Z
+invent.kde.org	https://invent.kde.org/pim/akregator	shares history with a pool row	8009	gh:66922843		2026-10-13T23:28:28Z
+invent.kde.org	https://invent.kde.org/graphics/gwenview	shares history with a pool row	7952	gh:42733520		2026-10-13T23:28:30Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-activities-stats	< 5,000 commits				2026-10-13T23:28:31Z
+invent.kde.org	https://invent.kde.org/games/knights	< 5,000 commits				2026-10-13T23:28:32Z
+invent.kde.org	https://invent.kde.org/frameworks/kholidays	< 5,000 commits				2026-10-13T23:28:33Z
+invent.kde.org	https://invent.kde.org/system/kcron	< 5,000 commits				2026-10-13T23:28:34Z
+invent.kde.org	https://invent.kde.org/plasma/kde-gtk-config	< 5,000 commits				2026-10-13T23:28:35Z
+invent.kde.org	https://invent.kde.org/games/kmuddy	< 5,000 commits				2026-10-13T23:28:35Z
+invent.kde.org	https://invent.kde.org/plasma/kscreen	< 5,000 commits				2026-10-13T23:28:36Z
+invent.kde.org	https://invent.kde.org/education/libkeduvocdocument	< 5,000 commits				2026-10-13T23:28:37Z
+invent.kde.org	https://invent.kde.org/network/kaccounts-integration	< 5,000 commits				2026-10-13T23:28:38Z
+invent.kde.org	https://invent.kde.org/frameworks/solid	< 5,000 commits				2026-10-13T23:28:39Z
+invent.kde.org	https://invent.kde.org/frameworks/threadweaver	< 5,000 commits				2026-10-13T23:28:40Z
+invent.kde.org	https://invent.kde.org/multimedia/k3b	shares history with a pool row	7586	gh:42732728		2026-10-13T23:28:42Z
+invent.kde.org	https://invent.kde.org/graphics/koko	< 5,000 commits				2026-10-13T23:28:43Z
+invent.kde.org	https://invent.kde.org/kdevelop/kdev-valgrind	< 5,000 commits				2026-10-13T23:28:44Z
+invent.kde.org	https://invent.kde.org/graphics/kamera	< 5,000 commits				2026-10-13T23:28:45Z
+invent.kde.org	https://invent.kde.org/games/klickety	< 5,000 commits				2026-10-13T23:28:46Z
+invent.kde.org	https://invent.kde.org/frameworks/kcrash	< 5,000 commits				2026-10-13T23:28:46Z
+invent.kde.org	https://invent.kde.org/office/kbibtex	< 5,000 commits				2026-10-13T23:28:47Z
+invent.kde.org	https://invent.kde.org/games/kubrick	< 5,000 commits				2026-10-13T23:28:48Z
+invent.kde.org	https://invent.kde.org/graphics/pvfviewer	< 5,000 commits				2026-10-13T23:28:49Z
+invent.kde.org	https://invent.kde.org/plasma/libplasma	shares history with a pool row	18114	gh:723357148		2026-10-13T23:28:52Z
+invent.kde.org	https://invent.kde.org/sdk/poxml	< 5,000 commits				2026-10-13T23:28:53Z
+invent.kde.org	https://invent.kde.org/utilities/kgpg	< 5,000 commits				2026-10-13T23:28:54Z
+invent.kde.org	https://invent.kde.org/libraries/polkit-qt-1	< 5,000 commits				2026-10-13T23:28:55Z
+invent.kde.org	https://invent.kde.org/graphics/kolourpaint	< 5,000 commits				2026-10-13T23:28:56Z
+invent.kde.org	https://invent.kde.org/frameworks/kpackage	< 5,000 commits				2026-10-13T23:28:56Z
+invent.kde.org	https://invent.kde.org/education/kgeography	< 5,000 commits				2026-10-13T23:28:57Z
+invent.kde.org	https://invent.kde.org/games/libkdegames	< 5,000 commits				2026-10-13T23:28:58Z
+invent.kde.org	https://invent.kde.org/pim/ksmtp	< 5,000 commits				2026-10-13T23:28:59Z
+invent.kde.org	https://invent.kde.org/sdk/kdesdk-kio	< 5,000 commits				2026-10-13T23:29:00Z
+invent.kde.org	https://invent.kde.org/frameworks/ktextwidgets	< 5,000 commits				2026-10-13T23:29:01Z
+invent.kde.org	https://invent.kde.org/frameworks/kirigami	shares history with a pool row	5681	gh:53571854		2026-10-13T23:29:03Z
+invent.kde.org	https://invent.kde.org/games/bovo	< 5,000 commits				2026-10-13T23:29:04Z
+invent.kde.org	https://invent.kde.org/plasma/bluedevil	< 5,000 commits				2026-10-13T23:29:05Z
+invent.kde.org	https://invent.kde.org/plasma/lightdm-kde-greeter	< 5,000 commits				2026-10-13T23:29:06Z
+invent.kde.org	https://invent.kde.org/pim/akonadi-calendar-tools	< 5,000 commits				2026-10-13T23:29:06Z
+invent.kde.org	https://invent.kde.org/games/klines	< 5,000 commits				2026-10-13T23:29:07Z
+invent.kde.org	https://invent.kde.org/pim/kontact	shares history with a pool row	6523	gh:66922999		2026-10-13T23:29:10Z
+invent.kde.org	https://invent.kde.org/pim/kpimtextedit	< 5,000 commits				2026-10-13T23:29:11Z
+invent.kde.org	https://invent.kde.org/plasma/milou	< 5,000 commits				2026-10-13T23:29:12Z
+invent.kde.org	https://invent.kde.org/office/calligra	shares history with a pool row	103491	gh:42719428		2026-10-13T23:29:19Z
+invent.kde.org	https://invent.kde.org/pim/mailcommon	< 5,000 commits				2026-10-13T23:29:20Z
+invent.kde.org	https://invent.kde.org/frameworks/kcmutils	< 5,000 commits				2026-10-13T23:29:21Z
+invent.kde.org	https://invent.kde.org/network/ktorrent	< 5,000 commits				2026-10-13T23:29:22Z
+invent.kde.org	https://invent.kde.org/frameworks/qqc2-desktop-style	< 5,000 commits				2026-10-13T23:29:23Z
+invent.kde.org	https://invent.kde.org/graphics/svgpart	< 5,000 commits				2026-10-13T23:29:23Z
+invent.kde.org	https://invent.kde.org/pim/libkdepim	< 5,000 commits				2026-10-13T23:29:24Z
+invent.kde.org	https://invent.kde.org/network/konqueror	shares history with a pool row	16702	gh:72926125		2026-10-13T23:29:28Z
+invent.kde.org	https://invent.kde.org/multimedia/kmix	< 5,000 commits				2026-10-13T23:29:29Z
+invent.kde.org	https://invent.kde.org/games/kgoldrunner	< 5,000 commits				2026-10-13T23:29:30Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-vault	< 5,000 commits				2026-10-13T23:29:31Z
+invent.kde.org	https://invent.kde.org/education/gcompris	shares history with a pool row	9550	gh:42718280		2026-10-13T23:29:33Z
+invent.kde.org	https://invent.kde.org/network/smb4k	< 5,000 commits				2026-10-13T23:29:34Z
+invent.kde.org	https://invent.kde.org/games/ksudoku	< 5,000 commits				2026-10-13T23:29:35Z
+invent.kde.org	https://invent.kde.org/plasma/powerdevil	< 5,000 commits				2026-10-13T23:29:36Z
+invent.kde.org	https://invent.kde.org/plasma/kwallet-pam	< 5,000 commits				2026-10-13T23:29:37Z
+invent.kde.org	https://invent.kde.org/graphics/kphotoalbum	shares history with a pool row	7638	gh:42732404		2026-10-13T23:29:39Z
+invent.kde.org	https://invent.kde.org/graphics/washipad	< 5,000 commits				2026-10-13T23:29:40Z
+invent.kde.org	https://invent.kde.org/games/kapman	< 5,000 commits				2026-10-13T23:29:41Z
+invent.kde.org	https://invent.kde.org/sdk/kcachegrind	< 5,000 commits				2026-10-13T23:29:42Z
+invent.kde.org	https://invent.kde.org/pim/akonadi-contacts	< 5,000 commits				2026-10-13T23:29:43Z
+invent.kde.org	https://invent.kde.org/frameworks/kidletime	< 5,000 commits				2026-10-13T23:29:43Z
+invent.kde.org	https://invent.kde.org/games/kpat	< 5,000 commits				2026-10-13T23:29:44Z
+invent.kde.org	https://invent.kde.org/sdk/kde-dev-utils	< 5,000 commits				2026-10-13T23:29:45Z
+invent.kde.org	https://invent.kde.org/network/ruqola	shares history with a pool row	23637	gh:95888955		2026-10-13T23:29:48Z
+invent.kde.org	https://invent.kde.org/pim/pimcommon	< 5,000 commits				2026-10-13T23:29:49Z
+invent.kde.org	https://invent.kde.org/plasma/libksysguard	< 5,000 commits				2026-10-13T23:29:50Z
+invent.kde.org	https://invent.kde.org/frameworks/kwallet	< 5,000 commits				2026-10-13T23:29:51Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-pass	< 5,000 commits				2026-10-13T23:29:52Z
+invent.kde.org	https://invent.kde.org/graphics/kuickshow	< 5,000 commits				2026-10-13T23:29:53Z
+invent.kde.org	https://invent.kde.org/pim/kmail	shares history with a pool row	29734	gh:66922941		2026-10-13T23:29:56Z
+invent.kde.org	https://invent.kde.org/graphics/kimagemapeditor	< 5,000 commits				2026-10-13T23:29:57Z
+invent.kde.org	https://invent.kde.org/pim/mailimporter	< 5,000 commits				2026-10-13T23:29:58Z
+invent.kde.org	https://invent.kde.org/frameworks/kconfigwidgets	< 5,000 commits				2026-10-13T23:29:59Z
+invent.kde.org	https://invent.kde.org/frameworks/krunner	< 5,000 commits				2026-10-13T23:30:00Z
+invent.kde.org	https://invent.kde.org/utilities/kdialog	< 5,000 commits				2026-10-13T23:30:00Z
+invent.kde.org	https://invent.kde.org/pim/kmailtransport	< 5,000 commits				2026-10-13T23:30:01Z
+invent.kde.org	https://invent.kde.org/libraries/kqtquickcharts	< 5,000 commits				2026-10-13T23:30:02Z
+invent.kde.org	https://invent.kde.org/frameworks/extra-cmake-modules	< 5,000 commits				2026-10-13T23:30:03Z
+invent.kde.org	https://invent.kde.org/frameworks/kauth	< 5,000 commits				2026-10-13T23:30:04Z
+invent.kde.org	https://invent.kde.org/plasma/kwin	shares history with a pool row	31700	gh:42719584		2026-10-13T23:30:08Z
+invent.kde.org	https://invent.kde.org/frameworks/networkmanager-qt	< 5,000 commits				2026-10-13T23:30:09Z
+invent.kde.org	https://invent.kde.org/graphics/kdiagram	< 5,000 commits				2026-10-13T23:30:10Z
+invent.kde.org	https://invent.kde.org/pim/kmail-account-wizard	< 5,000 commits				2026-10-13T23:30:10Z
+invent.kde.org	https://invent.kde.org/office/tellico	shares history with a pool row	5842	gh:42724166		2026-10-13T23:30:13Z
+invent.kde.org	https://invent.kde.org/sdk/ktechlab	< 5,000 commits				2026-10-13T23:30:14Z
+invent.kde.org	https://invent.kde.org/frameworks/attica	< 5,000 commits				2026-10-13T23:30:15Z
+invent.kde.org	https://invent.kde.org/kdevelop/kdevelop-pg-qt	< 5,000 commits				2026-10-13T23:30:15Z
+invent.kde.org	https://invent.kde.org/plasma/plymouth-kcm	< 5,000 commits				2026-10-13T23:30:16Z
+invent.kde.org	https://invent.kde.org/pim/zanshin	< 5,000 commits				2026-10-13T23:30:17Z
+invent.kde.org	https://invent.kde.org/pim/grantleetheme	< 5,000 commits				2026-10-13T23:30:18Z
+invent.kde.org	https://invent.kde.org/pim/kdepim-runtime	shares history with a pool row	17817	gh:42729679		2026-10-13T23:30:21Z
+invent.kde.org	https://invent.kde.org/utilities/sweeper	< 5,000 commits				2026-10-13T23:30:22Z
+invent.kde.org	https://invent.kde.org/pim/kitinerary-workbench	< 5,000 commits				2026-10-13T23:30:23Z
+invent.kde.org	https://invent.kde.org/education/rkward	shares history with a pool row	8245	gh:42726138		2026-10-13T23:30:25Z
+invent.kde.org	https://invent.kde.org/pim/ktimetracker	< 5,000 commits				2026-10-13T23:30:26Z
+invent.kde.org	https://invent.kde.org/graphics/libksane	< 5,000 commits				2026-10-13T23:30:27Z
+invent.kde.org	https://invent.kde.org/system/systemdgenie	< 5,000 commits				2026-10-13T23:30:28Z
+invent.kde.org	https://invent.kde.org/education/blinken	< 5,000 commits				2026-10-13T23:30:29Z
+invent.kde.org	https://invent.kde.org/pim/incidenceeditor	< 5,000 commits				2026-10-13T23:30:30Z
+invent.kde.org	https://invent.kde.org/libraries/kreport	< 5,000 commits				2026-10-13T23:30:30Z
+invent.kde.org	https://invent.kde.org/frameworks/ktexteditor	shares history with a pool row	5574	gh:42723316		2026-10-13T23:30:33Z
+invent.kde.org	https://invent.kde.org/utilities/ktimer	< 5,000 commits				2026-10-13T23:30:34Z
+invent.kde.org	https://invent.kde.org/games/kblackbox	< 5,000 commits				2026-10-13T23:30:35Z
+invent.kde.org	https://invent.kde.org/frameworks/kwidgetsaddons	< 5,000 commits				2026-10-13T23:30:35Z
+invent.kde.org	https://invent.kde.org/games/ksirk	< 5,000 commits				2026-10-13T23:30:36Z
+invent.kde.org	https://invent.kde.org/multimedia/audiocd-kio	< 5,000 commits				2026-10-13T23:30:37Z
+invent.kde.org	https://invent.kde.org/utilities/klimbgrades	< 5,000 commits				2026-10-13T23:30:38Z
+invent.kde.org	https://invent.kde.org/libraries/snoretoast	< 5,000 commits				2026-10-13T23:30:39Z
+invent.kde.org	https://invent.kde.org/plasma/discover	shares history with a pool row	11700	gh:45697202		2026-10-13T23:30:45Z
+invent.kde.org	https://invent.kde.org/pim/kleopatra	shares history with a pool row	10143	gh:53312712		2026-10-13T23:30:47Z
+invent.kde.org	https://invent.kde.org/multimedia/libkcddb	< 5,000 commits				2026-10-13T23:30:48Z
+invent.kde.org	https://invent.kde.org/graphics/kst-plot	< 5,000 commits				2026-10-13T23:30:49Z
+invent.kde.org	https://invent.kde.org/plasma/kmenuedit	< 5,000 commits				2026-10-13T23:30:50Z
+invent.kde.org	https://invent.kde.org/plasma/kactivitymanagerd	< 5,000 commits				2026-10-13T23:30:51Z
+invent.kde.org	https://invent.kde.org/plasma/kde-cli-tools	< 5,000 commits				2026-10-13T23:30:52Z
+invent.kde.org	https://invent.kde.org/games/bomber	< 5,000 commits				2026-10-13T23:30:52Z
+invent.kde.org	https://invent.kde.org/frameworks/kitemmodels	< 5,000 commits				2026-10-13T23:30:53Z
+invent.kde.org	https://invent.kde.org/plasma/kscreenlocker	< 5,000 commits				2026-10-13T23:30:54Z
+invent.kde.org	https://invent.kde.org/utilities/filelight	< 5,000 commits				2026-10-13T23:30:55Z
+invent.kde.org	https://invent.kde.org/pim/akonadi-mime	< 5,000 commits				2026-10-13T23:30:56Z
+invent.kde.org	https://invent.kde.org/network/signon-kwallet-extension	< 5,000 commits				2026-10-13T23:30:57Z
+invent.kde.org	https://invent.kde.org/graphics/skanlite	< 5,000 commits				2026-10-13T23:30:57Z
+invent.kde.org	https://invent.kde.org/education/kwordquiz	< 5,000 commits				2026-10-13T23:30:58Z
+invent.kde.org	https://invent.kde.org/games/kbreakout	< 5,000 commits				2026-10-13T23:30:59Z
+invent.kde.org	https://invent.kde.org/utilities/kfind	< 5,000 commits				2026-10-13T23:31:00Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-workspace	shares history with a pool row	20456	gh:42736075		2026-10-13T23:31:04Z
+invent.kde.org	https://invent.kde.org/utilities/krusader	shares history with a pool row	7562	gh:42725951		2026-10-13T23:31:06Z
+invent.kde.org	https://invent.kde.org/education/khangman	< 5,000 commits				2026-10-13T23:31:07Z
+invent.kde.org	https://invent.kde.org/games/kdiamond	< 5,000 commits				2026-10-13T23:31:08Z
+invent.kde.org	https://invent.kde.org/graphics/kdegraphics-thumbnailers	< 5,000 commits				2026-10-13T23:31:09Z
+invent.kde.org	https://invent.kde.org/frameworks/modemmanager-qt	< 5,000 commits				2026-10-13T23:31:09Z
+invent.kde.org	https://invent.kde.org/education/ktouch	< 5,000 commits				2026-10-13T23:31:10Z
+invent.kde.org	https://invent.kde.org/games/kblocks	< 5,000 commits				2026-10-13T23:31:11Z
+invent.kde.org	https://invent.kde.org/games/kmines	< 5,000 commits				2026-10-13T23:31:12Z
+invent.kde.org	https://invent.kde.org/sdk/massif-visualizer	< 5,000 commits				2026-10-13T23:31:13Z
+invent.kde.org	https://invent.kde.org/plasma/kwayland-integration	< 5,000 commits				2026-10-13T23:31:14Z
+invent.kde.org	https://invent.kde.org/multimedia/ffmpegthumbs	< 5,000 commits				2026-10-13T23:31:15Z
+invent.kde.org	https://invent.kde.org/libraries/kdb	< 5,000 commits				2026-10-13T23:31:15Z
+invent.kde.org	https://invent.kde.org/frameworks/kio	shares history with a pool row	8911	gh:42736243		2026-10-13T23:31:18Z
+invent.kde.org	https://invent.kde.org/graphics/libkexiv2	< 5,000 commits				2026-10-13T23:31:19Z
+invent.kde.org	https://invent.kde.org/plasma/libkscreen	< 5,000 commits				2026-10-13T23:31:20Z
+invent.kde.org	https://invent.kde.org/frameworks/kimageformats	< 5,000 commits				2026-10-13T23:31:21Z
+invent.kde.org	https://invent.kde.org/plasma/kwayland	< 5,000 commits				2026-10-13T23:31:22Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-nm	shares history with a pool row	5107	gh:42725602		2026-10-13T23:31:24Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-activities	< 5,000 commits				2026-10-13T23:31:25Z
+invent.kde.org	https://invent.kde.org/games/kshisen	< 5,000 commits				2026-10-13T23:31:26Z
+invent.kde.org	https://invent.kde.org/plasma/print-manager	< 5,000 commits				2026-10-13T23:31:27Z
+invent.kde.org	https://invent.kde.org/plasma/breeze-plymouth	< 5,000 commits				2026-10-13T23:31:27Z
+invent.kde.org	https://invent.kde.org/frameworks/kjobwidgets	< 5,000 commits				2026-10-13T23:31:28Z
+invent.kde.org	https://invent.kde.org/office/kile	< 5,000 commits				2026-10-13T23:31:29Z
+invent.kde.org	https://invent.kde.org/pim/ktnef	< 5,000 commits				2026-10-13T23:31:30Z
+invent.kde.org	https://invent.kde.org/frameworks/baloo	< 5,000 commits				2026-10-13T23:31:31Z
+invent.kde.org	https://invent.kde.org/pim/korganizer	shares history with a pool row	13912	gh:66923412		2026-10-13T23:31:34Z
+invent.kde.org	https://invent.kde.org/libraries/libtmdbqt	< 5,000 commits				2026-10-13T23:31:34Z
+invent.kde.org	https://invent.kde.org/pim/kimap	< 5,000 commits				2026-10-13T23:31:35Z
+invent.kde.org	https://invent.kde.org/network/kdenetwork-filesharing	< 5,000 commits				2026-10-13T23:31:36Z
+invent.kde.org	https://invent.kde.org/frameworks/kiconthemes	< 5,000 commits				2026-10-13T23:31:37Z
+invent.kde.org	https://invent.kde.org/utilities/okteta	shares history with a pool row	6774	gh:42718476		2026-10-13T23:31:39Z
+invent.kde.org	https://invent.kde.org/system/dolphin	shares history with a pool row	9440	gh:42727548		2026-10-13T23:31:44Z
+invent.kde.org	https://invent.kde.org/graphics/kdegraphics-mobipocket	< 5,000 commits				2026-10-13T23:31:45Z
+invent.kde.org	https://invent.kde.org/libraries/kproperty	< 5,000 commits				2026-10-13T23:31:45Z
+invent.kde.org	https://invent.kde.org/pim/libkleo	< 5,000 commits				2026-10-13T23:31:46Z
+invent.kde.org	https://invent.kde.org/graphics/symboleditor	< 5,000 commits				2026-10-13T23:31:47Z
+invent.kde.org	https://invent.kde.org/education/marble	shares history with a pool row	14716	gh:42726258		2026-10-13T23:31:52Z
+invent.kde.org	https://invent.kde.org/frameworks/kdoctools	< 5,000 commits				2026-10-13T23:31:53Z
+invent.kde.org	https://invent.kde.org/utilities/isoimagewriter	< 5,000 commits				2026-10-13T23:31:54Z
+invent.kde.org	https://invent.kde.org/network/libktorrent	< 5,000 commits				2026-10-13T23:31:55Z
+invent.kde.org	https://invent.kde.org/education/kbruch	< 5,000 commits				2026-10-13T23:31:56Z
+invent.kde.org	https://invent.kde.org/games/picmi	< 5,000 commits				2026-10-13T23:31:57Z
+invent.kde.org	https://invent.kde.org/office/kmymoney	shares history with a pool row	10785	gh:42720259		2026-10-13T23:31:59Z
+invent.kde.org	https://invent.kde.org/graphics/libkdcraw	< 5,000 commits				2026-10-13T23:32:00Z
+invent.kde.org	https://invent.kde.org/games/kbounce	< 5,000 commits				2026-10-13T23:32:01Z
+invent.kde.org	https://invent.kde.org/education/artikulate	< 5,000 commits				2026-10-13T23:32:02Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-desktop	shares history with a pool row	14788	gh:42730886		2026-10-13T23:32:05Z
+invent.kde.org	https://invent.kde.org/graphics/kruler	< 5,000 commits				2026-10-13T23:32:06Z
+invent.kde.org	https://invent.kde.org/pim/messagelib	shares history with a pool row	9462	gh:47712197		2026-10-13T23:32:08Z
+invent.kde.org	https://invent.kde.org/pim/kitinerary	< 5,000 commits				2026-10-13T23:32:09Z
+invent.kde.org	https://invent.kde.org/education/kmplot	< 5,000 commits				2026-10-13T23:32:10Z
+invent.kde.org	https://invent.kde.org/frameworks/kitemviews	< 5,000 commits				2026-10-13T23:32:11Z
+invent.kde.org	https://invent.kde.org/games/konquest	< 5,000 commits				2026-10-13T23:32:12Z
+invent.kde.org	https://invent.kde.org/games/knavalbattle	< 5,000 commits				2026-10-13T23:32:13Z
+invent.kde.org	https://invent.kde.org/utilities/yakuake	< 5,000 commits				2026-10-13T23:32:14Z
+invent.kde.org	https://invent.kde.org/utilities/symmy	< 5,000 commits				2026-10-13T23:32:14Z
+invent.kde.org	https://invent.kde.org/education/kalgebra	< 5,000 commits				2026-10-13T23:32:15Z
+invent.kde.org	https://invent.kde.org/plasma/kdeplasma-addons	shares history with a pool row	11299	gh:42733222		2026-10-13T23:32:18Z
+invent.kde.org	https://invent.kde.org/plasma/kwrited	< 5,000 commits				2026-10-13T23:32:19Z
+invent.kde.org	https://invent.kde.org/utilities/keditbookmarks	< 5,000 commits				2026-10-13T23:32:20Z
+invent.kde.org	https://invent.kde.org/frameworks/kglobalaccel	< 5,000 commits				2026-10-13T23:32:21Z
+invent.kde.org	https://invent.kde.org/libraries/kquickimageeditor	< 5,000 commits				2026-10-13T23:32:22Z
+invent.kde.org	https://invent.kde.org/utilities/kalk	< 5,000 commits				2026-10-13T23:32:22Z
+invent.kde.org	https://invent.kde.org/maui/maui-booth	< 5,000 commits				2026-10-13T23:32:23Z
+invent.kde.org	https://invent.kde.org/maui/maui-fiery	< 5,000 commits				2026-10-13T23:32:24Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-disks	< 5,000 commits				2026-10-13T23:32:25Z
+invent.kde.org	https://invent.kde.org/sdk/licensedigger	< 5,000 commits				2026-10-13T23:32:26Z
+invent.kde.org	https://invent.kde.org/documentation/develop-kde-org	< 5,000 commits				2026-10-13T23:32:27Z
+invent.kde.org	https://invent.kde.org/accessibility/kontrast	< 5,000 commits				2026-10-13T23:32:27Z
+invent.kde.org	https://invent.kde.org/games/arkade	< 5,000 commits				2026-10-13T23:32:28Z
+invent.kde.org	https://invent.kde.org/utilities/markdownpart	< 5,000 commits				2026-10-13T23:32:29Z
+invent.kde.org	https://invent.kde.org/multimedia/rattlesnake	< 5,000 commits				2026-10-13T23:32:30Z
+invent.kde.org	https://invent.kde.org/qt/qt/qt5compat	< 5,000 commits				2026-10-13T23:32:31Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtlanguageserver	< 5,000 commits				2026-10-13T23:32:32Z
+invent.kde.org	https://invent.kde.org/plasma/qqc2-breeze-style	< 5,000 commits				2026-10-13T23:32:32Z
+invent.kde.org	https://invent.kde.org/sdk/doxyqml	already in the pool				2026-10-13T23:32:32Z
+invent.kde.org	https://invent.kde.org/neon/qt/pyside2	< 5,000 commits				2026-10-13T23:32:33Z
+invent.kde.org	https://invent.kde.org/neon/multimedia/amarok	< 5,000 commits				2026-10-13T23:32:34Z
+invent.kde.org	https://invent.kde.org/neon/network/konversation	< 5,000 commits				2026-10-13T23:32:35Z
+invent.kde.org	https://invent.kde.org/neon/utilities/keurocalc	< 5,000 commits				2026-10-13T23:32:36Z
+invent.kde.org	https://invent.kde.org/neon/education/gcompris-qt	< 5,000 commits				2026-10-13T23:32:37Z
+invent.kde.org	https://invent.kde.org/neon/utilities/kookbook	< 5,000 commits				2026-10-13T23:32:38Z
+invent.kde.org	https://invent.kde.org/neon/system/kpmcore	< 5,000 commits				2026-10-13T23:32:38Z
+invent.kde.org	https://invent.kde.org/neon/extras/gammaray	< 5,000 commits				2026-10-13T23:32:39Z
+invent.kde.org	https://invent.kde.org/neon/multimedia/subtitlecomposer	< 5,000 commits				2026-10-13T23:32:40Z
+invent.kde.org	https://invent.kde.org/neon/extras/calamares	< 5,000 commits				2026-10-13T23:32:41Z
+invent.kde.org	https://invent.kde.org/neon/network/ktorrent	< 5,000 commits				2026-10-13T23:32:42Z
+invent.kde.org	https://invent.kde.org/neon/graphics/kdiagram	< 5,000 commits				2026-10-13T23:32:43Z
+invent.kde.org	https://invent.kde.org/neon/pim/zanshin	< 5,000 commits				2026-10-13T23:32:43Z
+invent.kde.org	https://invent.kde.org/neon/education/rkward	< 5,000 commits				2026-10-13T23:32:44Z
+invent.kde.org	https://invent.kde.org/neon/network/libktorrent	< 5,000 commits				2026-10-13T23:32:45Z
+invent.kde.org	https://invent.kde.org/neon/network/kdeconnect	< 5,000 commits				2026-10-13T23:32:46Z
+invent.kde.org	https://invent.kde.org/neon/games/knights	< 5,000 commits				2026-10-13T23:32:47Z
+invent.kde.org	https://invent.kde.org/neon/sdk/heaptrack	< 5,000 commits				2026-10-13T23:32:48Z
+invent.kde.org	https://invent.kde.org/neon/forks/fcitx-qt5	< 5,000 commits				2026-10-13T23:32:48Z
+invent.kde.org	https://invent.kde.org/neon/forks/base-files	< 5,000 commits				2026-10-13T23:32:49Z
+invent.kde.org	https://invent.kde.org/neon/graphics/skanlite	< 5,000 commits				2026-10-13T23:32:50Z
+invent.kde.org	https://invent.kde.org/graphics/kgeotag	< 5,000 commits				2026-10-13T23:32:51Z
+invent.kde.org	https://invent.kde.org/libraries/kosmindoormap	< 5,000 commits				2026-10-13T23:32:52Z
+invent.kde.org	https://invent.kde.org/network/neochat	shares history with a pool row	7217	gh:306563570		2026-10-13T23:32:54Z
+invent.kde.org	https://invent.kde.org/libraries/kweathercore	< 5,000 commits				2026-10-13T23:32:55Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-setup	< 5,000 commits				2026-10-13T23:32:56Z
+invent.kde.org	https://invent.kde.org/libraries/kopeninghours	< 5,000 commits				2026-10-13T23:32:57Z
+invent.kde.org	https://invent.kde.org/system/drkonqi-pk-debug-installer	< 5,000 commits				2026-10-13T23:32:58Z
+invent.kde.org	https://invent.kde.org/utilities/skanpage	< 5,000 commits				2026-10-13T23:32:59Z
+invent.kde.org	https://invent.kde.org/teams/eco/feep	already in the pool				2026-10-13T23:32:59Z
+invent.kde.org	https://invent.kde.org/network/kio-s3	< 5,000 commits				2026-10-13T23:32:59Z
+invent.kde.org	https://invent.kde.org/system/kde-nomodeset	< 5,000 commits				2026-10-13T23:33:00Z
+invent.kde.org	https://invent.kde.org/utilities/daykountdown	< 5,000 commits				2026-10-13T23:33:01Z
+invent.kde.org	https://invent.kde.org/pim/merkuro	< 5,000 commits				2026-10-13T23:33:02Z
+invent.kde.org	https://invent.kde.org/neon/neon/configure-inotify	< 5,000 commits				2026-10-13T23:33:03Z
+invent.kde.org	https://invent.kde.org/maui/maui-strike	< 5,000 commits				2026-10-13T23:33:04Z
+invent.kde.org	https://invent.kde.org/multimedia/audiotube	< 5,000 commits				2026-10-13T23:33:04Z
+invent.kde.org	https://invent.kde.org/libraries/futuresql	< 5,000 commits				2026-10-13T23:33:05Z
+invent.kde.org	https://invent.kde.org/system/kjournald	< 5,000 commits				2026-10-13T23:33:06Z
+invent.kde.org	https://invent.kde.org/multimedia/kasts	< 5,000 commits				2026-10-13T23:33:07Z
+invent.kde.org	https://invent.kde.org/maui/mauikit-texteditor	< 5,000 commits				2026-10-13T23:33:08Z
+invent.kde.org	https://invent.kde.org/maui/mauikit-filebrowsing	< 5,000 commits				2026-10-13T23:33:09Z
+invent.kde.org	https://invent.kde.org/maui/mauikit-imagetools	< 5,000 commits				2026-10-13T23:33:10Z
+invent.kde.org	https://invent.kde.org/plasma/ksystemstats	< 5,000 commits				2026-10-13T23:33:10Z
+invent.kde.org	https://invent.kde.org/plasma/layer-shell-qt	< 5,000 commits				2026-10-13T23:33:11Z
+invent.kde.org	https://invent.kde.org/graphics/optiimage	< 5,000 commits				2026-10-13T23:33:12Z
+invent.kde.org	https://invent.kde.org/multimedia/stopmotion	< 5,000 commits				2026-10-13T23:33:13Z
+invent.kde.org	https://invent.kde.org/plasma/plasma5support	< 5,000 commits				2026-10-13T23:33:14Z
+invent.kde.org	https://invent.kde.org/multimedia/haruna	< 5,000 commits				2026-10-13T23:33:15Z
+invent.kde.org	https://invent.kde.org/plasma/plank-player	< 5,000 commits				2026-10-13T23:33:15Z
+invent.kde.org	https://invent.kde.org/network/tokodon	< 5,000 commits				2026-10-13T23:33:16Z
+invent.kde.org	https://invent.kde.org/maui/mauikit-accounts	< 5,000 commits				2026-10-13T23:33:17Z
+invent.kde.org	https://invent.kde.org/neon/neon/neon-boot-space	< 5,000 commits				2026-10-13T23:33:18Z
+invent.kde.org	https://invent.kde.org/pim/khealthcertificate	< 5,000 commits				2026-10-13T23:33:19Z
+invent.kde.org	https://invent.kde.org/pim/vakzination	< 5,000 commits				2026-10-13T23:33:20Z
+invent.kde.org	https://invent.kde.org/neon/multimedia/haruna	< 5,000 commits				2026-10-13T23:33:20Z
+invent.kde.org	https://invent.kde.org/utilities/hash-o-matic	< 5,000 commits				2026-10-13T23:33:21Z
+invent.kde.org	https://invent.kde.org/utilities/telly-skout	< 5,000 commits				2026-10-13T23:33:22Z
+invent.kde.org	https://invent.kde.org/libraries/ksanecore	< 5,000 commits				2026-10-13T23:33:23Z
+invent.kde.org	https://invent.kde.org/qt/playground/qlitehtml	< 5,000 commits				2026-10-13T23:33:24Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtdltlogging	< 5,000 commits				2026-10-13T23:33:25Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtinterfaceframework-taglib	< 5,000 commits				2026-10-13T23:33:26Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtinterfaceframework	< 5,000 commits				2026-10-13T23:33:26Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtpositioning	< 5,000 commits				2026-10-13T23:33:27Z
+invent.kde.org	https://invent.kde.org/qt/yocto/meta-qt6	< 5,000 commits				2026-10-13T23:33:28Z
+invent.kde.org	https://invent.kde.org/graphics/kodaskanna	< 5,000 commits				2026-10-13T23:33:29Z
+invent.kde.org	https://invent.kde.org/system/melon	< 5,000 commits				2026-10-13T23:33:30Z
+invent.kde.org	https://invent.kde.org/frameworks/ktexttemplate	< 5,000 commits				2026-10-13T23:33:31Z
+invent.kde.org	https://invent.kde.org/sdk/selenium-webdriver-at-spi	< 5,000 commits				2026-10-13T23:33:31Z
+invent.kde.org	https://invent.kde.org/libraries/kunifiedpush	< 5,000 commits				2026-10-13T23:33:32Z
+invent.kde.org	https://invent.kde.org/utilities/toad	< 5,000 commits				2026-10-13T23:33:33Z
+invent.kde.org	https://invent.kde.org/utilities/fielding	< 5,000 commits				2026-10-13T23:33:34Z
+invent.kde.org	https://invent.kde.org/system/kde-inotify-survey	< 5,000 commits				2026-10-13T23:33:35Z
+invent.kde.org	https://invent.kde.org/sdk/eloquens	< 5,000 commits				2026-10-13T23:33:36Z
+invent.kde.org	https://invent.kde.org/maui/mauiman	< 5,000 commits				2026-10-13T23:33:36Z
+invent.kde.org	https://invent.kde.org/plasma/flatpak-kcm	< 5,000 commits				2026-10-13T23:33:37Z
+invent.kde.org	https://invent.kde.org/utilities/francis	< 5,000 commits				2026-10-13T23:33:38Z
+invent.kde.org	https://invent.kde.org/sdk/licentia	< 5,000 commits				2026-10-13T23:33:39Z
+invent.kde.org	https://invent.kde.org/system/kio-admin	< 5,000 commits				2026-10-13T23:33:40Z
+invent.kde.org	https://invent.kde.org/utilities/kpublicalerts	< 5,000 commits				2026-10-13T23:33:41Z
+invent.kde.org	https://invent.kde.org/plasma-mobile/raven	< 5,000 commits				2026-10-13T23:33:42Z
+invent.kde.org	https://invent.kde.org/utilities/vail	< 5,000 commits				2026-10-13T23:33:42Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-welcome	< 5,000 commits				2026-10-13T23:33:43Z
+invent.kde.org	https://invent.kde.org/sdk/kommit	< 5,000 commits				2026-10-13T23:33:44Z
+invent.kde.org	https://invent.kde.org/neon/forks/sip6	< 5,000 commits				2026-10-13T23:33:45Z
+invent.kde.org	https://invent.kde.org/plasma/union	< 5,000 commits				2026-10-13T23:33:46Z
+invent.kde.org	https://invent.kde.org/libraries/kdsoap-ws-discovery-client	< 5,000 commits				2026-10-13T23:33:47Z
+invent.kde.org	https://invent.kde.org/office/ghostwriter	< 5,000 commits				2026-10-13T23:33:47Z
+invent.kde.org	https://invent.kde.org/maui/mauikit-calendar	< 5,000 commits				2026-10-13T23:33:48Z
+invent.kde.org	https://invent.kde.org/maui/mauikit-documents	< 5,000 commits				2026-10-13T23:33:49Z
+invent.kde.org	https://invent.kde.org/qt/qt/qthttpserver	< 5,000 commits				2026-10-13T23:33:50Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtquick3dphysics	< 5,000 commits				2026-10-13T23:33:51Z
+invent.kde.org	https://invent.kde.org/graphics/arianna	< 5,000 commits				2026-10-13T23:33:52Z
+invent.kde.org	https://invent.kde.org/libraries/perceptualcolor	< 5,000 commits				2026-10-13T23:33:53Z
+invent.kde.org	https://invent.kde.org/libraries/ktextaddons	shares history with a pool row	7457	gh:586867993		2026-10-13T23:33:55Z
+invent.kde.org	https://invent.kde.org/maui/arca	< 5,000 commits				2026-10-13T23:33:56Z
+invent.kde.org	https://invent.kde.org/maui/paleta	< 5,000 commits				2026-10-13T23:33:57Z
+invent.kde.org	https://invent.kde.org/maui/maui-agenda	< 5,000 commits				2026-10-13T23:33:57Z
+invent.kde.org	https://invent.kde.org/utilities/notae	< 5,000 commits				2026-10-13T23:33:58Z
+invent.kde.org	https://invent.kde.org/plasma/krdp	< 5,000 commits				2026-10-13T23:33:59Z
+invent.kde.org	https://invent.kde.org/system/xwaylandvideobridge	< 5,000 commits				2026-10-13T23:34:00Z
+invent.kde.org	https://invent.kde.org/maui/mauikit-terminal	< 5,000 commits				2026-10-13T23:34:01Z
+invent.kde.org	https://invent.kde.org/games/kretro	< 5,000 commits				2026-10-13T23:34:02Z
+invent.kde.org	https://invent.kde.org/graphics/konvex	< 5,000 commits				2026-10-13T23:34:03Z
+invent.kde.org	https://invent.kde.org/frameworks/ksvg	shares history with a pool row	5389	gh:638883076		2026-10-13T23:34:05Z
+invent.kde.org	https://invent.kde.org/office/klevernotes	< 5,000 commits				2026-10-13T23:34:06Z
+invent.kde.org	https://invent.kde.org/office/marknote	< 5,000 commits				2026-10-13T23:34:07Z
+invent.kde.org	https://invent.kde.org/utilities/powerplant	< 5,000 commits				2026-10-13T23:34:07Z
+invent.kde.org	https://invent.kde.org/plasma/kglobalacceld	< 5,000 commits				2026-10-13T23:34:08Z
+invent.kde.org	https://invent.kde.org/frameworks/kcolorscheme	< 5,000 commits				2026-10-13T23:34:09Z
+invent.kde.org	https://invent.kde.org/kde-linux/kde-linux	< 5,000 commits				2026-10-13T23:34:10Z
+invent.kde.org	https://invent.kde.org/utilities/kalm	< 5,000 commits				2026-10-13T23:34:11Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-login-manager	< 5,000 commits				2026-10-13T23:34:12Z
+invent.kde.org	https://invent.kde.org/qt/qt-labs/qtdotnet	< 5,000 commits				2026-10-13T23:34:12Z
+invent.kde.org	https://invent.kde.org/qt/qtqa/gerrit-plugin-info-banner	< 5,000 commits				2026-10-13T23:34:13Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtgraphs	< 5,000 commits				2026-10-13T23:34:14Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtquickeffectmaker	< 5,000 commits				2026-10-13T23:34:15Z
+invent.kde.org	https://invent.kde.org/qt/license-tools/license-service	< 5,000 commits				2026-10-13T23:34:16Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtgrpc	< 5,000 commits				2026-10-13T23:34:17Z
+invent.kde.org	https://invent.kde.org/pim/mimetreeparser	< 5,000 commits				2026-10-13T23:34:18Z
+invent.kde.org	https://invent.kde.org/libraries/mpvqt	< 5,000 commits				2026-10-13T23:34:18Z
+invent.kde.org	https://invent.kde.org/sdk/kirigami-workbench	< 5,000 commits				2026-10-13T23:34:19Z
+invent.kde.org	https://invent.kde.org/frameworks/kstatusnotifieritem	< 5,000 commits				2026-10-13T23:34:20Z
+invent.kde.org	https://invent.kde.org/graphics/glaxnimate	< 5,000 commits				2026-10-13T23:34:21Z
+invent.kde.org	https://invent.kde.org/accessibility/accessibility-inspector	< 5,000 commits				2026-10-13T23:34:22Z
+invent.kde.org	https://invent.kde.org/utilities/alpaka	< 5,000 commits				2026-10-13T23:34:23Z
+invent.kde.org	https://invent.kde.org/libraries/qrtfreader	< 5,000 commits				2026-10-13T23:34:23Z
+invent.kde.org	https://invent.kde.org/neon/backports-noble/packagekit-qt-noble	< 5,000 commits				2026-10-13T23:34:24Z
+invent.kde.org	https://invent.kde.org/libraries/cxx-kde-frameworks	< 5,000 commits				2026-10-13T23:34:25Z
+invent.kde.org	https://invent.kde.org/automotive/kwin-zones	< 5,000 commits				2026-10-13T23:34:26Z
+invent.kde.org	https://invent.kde.org/maui/mauikit-archiver	< 5,000 commits				2026-10-13T23:34:27Z
+invent.kde.org	https://invent.kde.org/games/mankalaengine	< 5,000 commits				2026-10-13T23:34:28Z
+invent.kde.org	https://invent.kde.org/office/crow-translate	< 5,000 commits				2026-10-13T23:34:29Z
+invent.kde.org	https://invent.kde.org/plasma/plasma-keyboard	< 5,000 commits				2026-10-13T23:34:29Z
+invent.kde.org	https://invent.kde.org/neon/forks/libgpgme	< 5,000 commits				2026-10-13T23:34:30Z
+invent.kde.org	https://invent.kde.org/neon/backports-noble/kimageannotator-noble	< 5,000 commits				2026-10-13T23:34:31Z
+invent.kde.org	https://invent.kde.org/neon/backports-noble/cmake-noble	< 5,000 commits				2026-10-13T23:34:32Z
+invent.kde.org	https://invent.kde.org/plasma/snap-kcm	< 5,000 commits				2026-10-13T23:34:33Z
+invent.kde.org	https://invent.kde.org/system/karton	< 5,000 commits				2026-10-13T23:34:34Z
+invent.kde.org	https://invent.kde.org/sdk/kde-qdoc-common	< 5,000 commits				2026-10-13T23:34:34Z
+invent.kde.org	https://invent.kde.org/neon/backports-noble/fcitx5-qt-noble	< 5,000 commits				2026-10-13T23:34:35Z
+invent.kde.org	https://invent.kde.org/libraries/md4qt	< 5,000 commits				2026-10-13T23:34:36Z
+invent.kde.org	https://invent.kde.org/graphics/karp	< 5,000 commits				2026-10-13T23:34:37Z
+invent.kde.org	https://invent.kde.org/mirrors/libgpg-error	< 5,000 commits				2026-10-13T23:34:38Z
+invent.kde.org	https://invent.kde.org/mirrors/gpgme	< 5,000 commits				2026-10-13T23:34:39Z
+invent.kde.org	https://invent.kde.org/mirrors/poppler	layer 1 candidate	9006		yes	2026-10-13T23:34:42Z
+invent.kde.org	https://invent.kde.org/mirrors/wayland	< 5,000 commits				2026-10-13T23:34:42Z
+invent.kde.org	https://invent.kde.org/neon/backports-noble/pipewire-noble	layer 1 candidate	13954		yes	2026-10-13T23:34:46Z
+invent.kde.org	https://invent.kde.org/neon/backports-noble/wayland-noble	< 5,000 commits				2026-10-13T23:34:46Z
+invent.kde.org	https://invent.kde.org/qt/qt-labs/android-studio-tools	< 5,000 commits				2026-10-13T23:34:47Z
+invent.kde.org	https://invent.kde.org/qt/qt-labs/qtjenny	< 5,000 commits				2026-10-13T23:34:48Z
+invent.kde.org	https://invent.kde.org/qt/qt-labs/qtvehicleservices	< 5,000 commits				2026-10-13T23:34:49Z
+invent.kde.org	https://invent.kde.org/qt/qt-labs/vs-debugtools	< 5,000 commits				2026-10-13T23:34:50Z
+invent.kde.org	https://invent.kde.org/qt/qt/qttools-litehtml	< 5,000 commits				2026-10-13T23:34:51Z
+invent.kde.org	https://invent.kde.org/plasma/aurorae	< 5,000 commits				2026-10-13T23:34:51Z
+invent.kde.org	https://invent.kde.org/neon/backports-noble/opencv-noble	layer 1 candidate	19461		yes	2026-10-13T23:34:55Z
+invent.kde.org	https://invent.kde.org/neon/backports-noble/appstream-noble	< 5,000 commits				2026-10-13T23:34:56Z
+invent.kde.org	https://invent.kde.org/mirrors/gpgmepp	< 5,000 commits				2026-10-13T23:34:57Z
+invent.kde.org	https://invent.kde.org/mirrors/gpgmeqt	< 5,000 commits				2026-10-13T23:34:58Z
+invent.kde.org	https://invent.kde.org/libraries/cxx-rust-cssparser	< 5,000 commits				2026-10-13T23:34:58Z
+invent.kde.org	https://invent.kde.org/mirrors/libvdpau	< 5,000 commits				2026-10-13T23:34:59Z
+invent.kde.org	https://invent.kde.org/mirrors/pixman	< 5,000 commits				2026-10-13T23:35:00Z
+invent.kde.org	https://invent.kde.org/mirrors/shared-mime-info	< 5,000 commits				2026-10-13T23:35:01Z
+invent.kde.org	https://invent.kde.org/libraries/qxmpp	< 5,000 commits				2026-10-13T23:35:02Z
+invent.kde.org	https://invent.kde.org/utilities/keepsecret	< 5,000 commits				2026-10-13T23:35:03Z
+invent.kde.org	https://invent.kde.org/neon/backports-noble/xwayland-noble	< 5,000 commits				2026-10-13T23:35:03Z
+invent.kde.org	https://invent.kde.org/neon/backports-noble/xorgproto-noble	< 5,000 commits				2026-10-13T23:35:04Z
+invent.kde.org	https://invent.kde.org/automotive/kwin-blur-ng	< 5,000 commits				2026-10-13T23:35:05Z
+invent.kde.org	https://invent.kde.org/utilities/kaichat	< 5,000 commits				2026-10-13T23:35:06Z
+invent.kde.org	https://invent.kde.org/games/chessament	< 5,000 commits				2026-10-13T23:35:07Z
+invent.kde.org	https://invent.kde.org/plasma/knighttime	< 5,000 commits				2026-10-13T23:35:08Z
+invent.kde.org	https://invent.kde.org/utilities/komodo	< 5,000 commits				2026-10-13T23:35:09Z
+invent.kde.org	https://invent.kde.org/system/konlineaccounts	< 5,000 commits				2026-10-13T23:35:09Z
+invent.kde.org	https://invent.kde.org/neon/backports-noble/feedbackd-noble	< 5,000 commits				2026-10-13T23:35:10Z
+invent.kde.org	https://invent.kde.org/neon/backports-noble/gmobile-noble	< 5,000 commits				2026-10-13T23:35:11Z
+invent.kde.org	https://invent.kde.org/multimedia/hana	< 5,000 commits				2026-10-13T23:35:12Z
+invent.kde.org	https://invent.kde.org/automotive/kwin-sharedtextures	< 5,000 commits				2026-10-13T23:35:13Z
+invent.kde.org	https://invent.kde.org/automotive/kwin-gamepad	< 5,000 commits				2026-10-13T23:35:14Z
+invent.kde.org	https://invent.kde.org/automotive/kwin-arhud-warping	< 5,000 commits				2026-10-13T23:35:14Z
+invent.kde.org	https://invent.kde.org/libraries/kirigami-app-components	< 5,000 commits				2026-10-13T23:35:15Z
+invent.kde.org	https://invent.kde.org/neon/forks/pyqt6-sip	< 5,000 commits				2026-10-13T23:35:16Z
+invent.kde.org	https://invent.kde.org/neon/forks/pyqt6	< 5,000 commits				2026-10-13T23:35:17Z
+invent.kde.org	https://invent.kde.org/kde-linux/etc-factory	already in the pool				2026-10-13T23:35:17Z
+invent.kde.org	https://invent.kde.org/neon/backports-noble/libgwenhywfar-noble	< 5,000 commits				2026-10-13T23:35:18Z
+invent.kde.org	https://invent.kde.org/neon/backports-noble/libaqbanking-noble	< 5,000 commits				2026-10-13T23:35:19Z
+invent.kde.org	https://invent.kde.org/neon/backports-noble/mold-noble	< 5,000 commits				2026-10-13T23:35:19Z
+invent.kde.org	https://invent.kde.org/games/pumoku	< 5,000 commits				2026-10-13T23:35:20Z
+invent.kde.org	https://invent.kde.org/libraries/kemoji	< 5,000 commits				2026-10-13T23:35:21Z
+invent.kde.org	https://invent.kde.org/utilities/kaichat-addons	< 5,000 commits				2026-10-13T23:35:22Z
+invent.kde.org	https://invent.kde.org/graphics/drawy	< 5,000 commits				2026-10-13T23:35:23Z
+invent.kde.org	https://invent.kde.org/qt/playground/qtopenapi	< 5,000 commits				2026-10-13T23:35:24Z
+invent.kde.org	https://invent.kde.org/qt/qt-creator/plugin-licensechecker	< 5,000 commits				2026-10-13T23:35:25Z
+invent.kde.org	https://invent.kde.org/qt/qt-labs/figma-style-generator	< 5,000 commits				2026-10-13T23:35:25Z
+invent.kde.org	https://invent.kde.org/qt/qtqa/gerrit-plugin-cherrypickstatus	< 5,000 commits				2026-10-13T23:35:26Z
+invent.kde.org	https://invent.kde.org/qt/qtqa/gerrit-plugin-gitconfig	< 5,000 commits				2026-10-13T23:35:27Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtcanvaspainter	< 5,000 commits				2026-10-13T23:35:28Z
+invent.kde.org	https://invent.kde.org/qt/qt/qtopenapi	< 5,000 commits				2026-10-13T23:35:29Z
+invent.kde.org	https://invent.kde.org/qt/qt/qttasktree	< 5,000 commits				2026-10-13T23:35:30Z
+invent.kde.org	https://invent.kde.org/qt/crashpad/crashpad	< 5,000 commits				2026-10-13T23:35:30Z
+invent.kde.org	https://invent.kde.org/teams/kde-turkey/teknik-isler/plasma-keyboard	already in the pool				2026-10-13T23:35:30Z
+invent.kde.org	https://invent.kde.org/kde-linux/package-compatibility-helper	< 5,000 commits				2026-10-13T23:35:31Z
+invent.kde.org	https://invent.kde.org/kde-linux/kapsule	< 5,000 commits				2026-10-13T23:35:32Z
+invent.kde.org	https://invent.kde.org/teams/kde-turkey/teknik-isler/klettres	already in the pool				2026-10-13T23:35:32Z
+invent.kde.org	https://invent.kde.org/teams/kde-turkey/teknik-isler/ktouch	already in the pool				2026-10-13T23:35:32Z
+invent.kde.org	https://invent.kde.org/teams/kde-turkey/teknik-isler/parley	already in the pool				2026-10-13T23:35:32Z
+invent.kde.org	https://invent.kde.org/teams/kde-turkey/teknik-isler/kwordquiz	already in the pool				2026-10-13T23:35:32Z
+invent.kde.org	https://invent.kde.org/system/kjar	< 5,000 commits				2026-10-13T23:35:33Z
+invent.kde.org	https://invent.kde.org/games/kdominate	< 5,000 commits				2026-10-13T23:35:34Z
+invent.kde.org	https://invent.kde.org/system/auto-chmod	< 5,000 commits				2026-10-13T23:35:35Z
+invent.kde.org	https://invent.kde.org/system/kconfigeditor	< 5,000 commits				2026-10-13T23:35:35Z
+invent.kde.org	https://invent.kde.org/sdk/kmcpclientinspector	< 5,000 commits				2026-10-13T23:35:36Z
+invent.kde.org	https://invent.kde.org/system/kio-snapshot	< 5,000 commits				2026-10-13T23:35:37Z
+invent.kde.org	https://invent.kde.org/libraries/dragon-media-backend	< 5,000 commits				2026-10-13T23:35:38Z
+invent.kde.org	https://invent.kde.org/neon/forks/fcitx5-qt	< 5,000 commits				2026-10-13T23:35:39Z
+invent.kde.org	https://invent.kde.org/neon/backports-resolute/wayland-resolute	< 5,000 commits				2026-10-13T23:35:40Z
+invent.kde.org	https://invent.kde.org/neon/forks/freerdp3	layer 1 candidate	26062		yes	2026-10-13T23:35:43Z
+invent.kde.org	https://invent.kde.org/mirrors/calamares	layer 1 candidate	11698		yes	2026-10-13T23:35:46Z
+invent.kde.org	https://invent.kde.org/multimedia/seabass	< 5,000 commits				2026-10-13T23:35:47Z
+invent.kde.org	https://invent.kde.org/neon/backports-resolute/libdrm-resolute	layer 1 candidate	8102		no	2026-10-13T23:35:50Z
+invent.kde.org	https://invent.kde.org/utilities/korvus	< 5,000 commits				2026-10-13T23:35:51Z
+invent.kde.org	https://invent.kde.org/libraries/oxygen-labs	< 5,000 commits				2026-10-13T23:35:52Z

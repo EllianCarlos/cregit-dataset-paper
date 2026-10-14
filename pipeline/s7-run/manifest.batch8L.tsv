@@ -1,0 +1,12 @@
+# The L projects of manifest.batch8.tsv (sha256 adc81a175da6c733e3ef1b3d88c8f46f77390c6d808d3c14d01da8ebb96c7a32), for the census batch8L on the big on-demand EC2.
+# 9 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+armbian__linux-rockchip	https://github.com/armbian/linux-rockchip.git	pending		L	44bbd021d7808cab93d1f2d64c1f092038257576
+mysql__mysql-server	https://github.com/mysql/mysql-server.git	pending		L	3b99be40f8a31d9396cad10accfd3ba51647d613
+ni__linux	https://github.com/ni/linux.git	pending		L	51a4fed224976cb47e96fe194af793d0517d223f
+openucx__ODOS	https://github.com/openucx/ODOS.git	pending		L	db499eb69a5ea2b00e61fe789690619cf8375f5c
+emacs-ng__emacs-ng	https://github.com/emacs-ng/emacs-ng.git	pending		L	d90af7b852caa1956c584d7c85ecfff605749e0b
+WireGuard__wireguard-linux	https://github.com/WireGuard/wireguard-linux.git	pending		L	abba013a939f6d2d664d71713afa8d4de88721a7
+androidx__androidx	https://github.com/androidx/androidx.git	pending		L	4d65d70d366bd936eeaaffbc23b74f4b337b0de3
+Xilinx__linux-xlnx	https://github.com/Xilinx/linux-xlnx.git	pending		L	235bd5e49f53bfea681cfd6c489ca1e0eab0b061
+cms-sw__cmssw	https://github.com/cms-sw/cmssw.git	pending		L	41a5131092310e551bdc441303f38a737c85e66f

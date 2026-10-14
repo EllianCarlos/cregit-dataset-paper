@@ -1,0 +1,8 @@
+# Part a1 of the S and M projects of manifest.batch15.tsv (sha256 ef0a99a173728f06226d70b9f0bdc6b1ca14a87ee16172ba5d195ada48f6b470),
+# balanced by predicted time (10.8 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+nyanmisaka__ffmpeg-rockchip	https://github.com/nyanmisaka/ffmpeg-rockchip.git	pending		M	d90e3a1c18d7929383cf88c1b3da2e2d1c966cbf
+KiCad__kicad-source-mirror	https://github.com/KiCad/kicad-source-mirror.git	pending		M	2729bab4012fda01b6ea5ea541b64d5438a3cb9c
+Tencent__TenDBCluster-Tdbctl	https://github.com/Tencent/TenDBCluster-Tdbctl.git	pending		M	fec459c62d18f877befbf775ad116153b27058c0
+googleapis__google-api-java-client-services	https://github.com/googleapis/google-api-java-client-services.git	pending		M	e78d277566f4fb0aad5ab1c2e48b5728ea1dfd25

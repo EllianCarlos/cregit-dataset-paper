@@ -1,0 +1,18 @@
+HTTP/2 200 
+content-type: text/html; charset=UTF-8
+server: nginx
+cache-control: max-age=0
+link: <https://fair.pm/wp-json/>; rel="https://api.w.org/"
+link: <https://fair.pm/wp-json/wp/v2/pages/11>; rel="alternate"; title="JSON"; type="application/json"
+via: 1.1 varnish, 1.1 varnish
+accept-ranges: bytes
+date: Sat, 10 Oct 2026 00:03:03 GMT
+age: 4856
+x-served-by: cache-iad-kcgs7200179-IAD, cache-pdk-kfty8610027-PDK
+x-cache: HIT, HIT
+x-cache-hits: 25, 1
+x-timer: S1791590584.522919,VS0,VE6
+strict-transport-security: max-age=300
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+content-length: 54469
+

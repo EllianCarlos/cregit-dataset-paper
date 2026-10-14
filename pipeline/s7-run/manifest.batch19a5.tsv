@@ -1,0 +1,25 @@
+# Part a5 of the S and M projects of manifest.batch19.tsv (sha256 8a11b7acec582e49f76d0e09d7ff1e039d3458ef456ff4c1a875509b92849d3b),
+# balanced by predicted time (6.9 h for 4 workers), u order; a fed spot part.
+# 21 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+RavenProject__Ravencoin	https://github.com/RavenProject/Ravencoin.git	pending		S	6d48ae0175b10283248146ae3080e2ba70966739
+mixxxdj__mixxx	https://github.com/mixxxdj/mixxx.git	pending		M	3a4f2a56c2e55a5cf2a5eeec508b8fac874573f6
+cinder__Cinder	https://github.com/cinder/Cinder.git	pending		S	f90f332d1a4d453282c76435f3401271f25922f9
+apache__calcite	https://github.com/apache/calcite.git	pending		S	23f01e27c75911a0972125deaf02721a8b202267
+pyca__cryptography	https://github.com/pyca/cryptography.git	pending		S	f8c6de806b03ab1098a9bc05d082370920efcdf4
+angr__angr	https://github.com/angr/angr.git	pending		S	be995f52ee38a055d0f96d04f3e4d02192a3d743
+logisim-evolution__logisim-evolution	https://github.com/logisim-evolution/logisim-evolution.git	pending		S	ab0018d371de7f19845d70501f8cecd56115695b
+Tencent__wcdb	https://github.com/Tencent/wcdb.git	pending		S	39dd797099d41cf1953d5668acd8cb608016c599
+vanhoefm__macstealer	https://github.com/vanhoefm/macstealer.git	pending		S	83851791bc2657bd9f2f384d6b739956ab2c3ea8
+apache__druid	https://github.com/apache/druid.git	pending		S	1265b47c9a51252295a4aed42d95c459b00bf2a3
+libbitcoin__libbitcoin-system	https://github.com/libbitcoin/libbitcoin-system.git	pending		S	0f8b248eca14cd3a7cde1ab043a4a9c7c2cfc2f9
+savoirfairelinux__jami-daemon	https://github.com/savoirfairelinux/jami-daemon.git	pending		S	1c057cc2163ee2e4eb9f5a49ea1a29224fb7c66d
+Peergos__Peergos	https://github.com/Peergos/Peergos.git	pending		S	95ffd31c923905d39ae52473da392541c7d0c0aa
+horsicq__Nauz-File-Detector	https://github.com/horsicq/Nauz-File-Detector.git	pending		S	e31d378318b3138a76006a61423fa099bffe58e8
+DFHack__dfhack	https://github.com/DFHack/dfhack.git	pending		S	c872dc4c64c586fe1d320230dfb09d0b3cc7d9d4
+rpm-software-management__rpm	https://github.com/rpm-software-management/rpm.git	pending		S	7e7498db9b5b0fa1687d289c792331f0dd5cd251
+axelor__axelor-open-platform	https://github.com/axelor/axelor-open-platform.git	pending		S	1c4f31a16f876d2ce3e1a0bb26dc0e8f445eaebd
+Minestom__Minestom	https://github.com/Minestom/Minestom.git	pending		S	fcd35c05d91add21fc063fa5689bbf8d85d46692
+oven-sh__bun	https://github.com/oven-sh/bun.git	pending		S	13a98b0dbd136bcc5c98a8adfb53c909aa3183cc
+thingsboard__thingsboard	https://github.com/thingsboard/thingsboard.git	pending		S	0439df09f31b0e8101b9f0a6be556c087d86818d
+GNOME__papers	https://github.com/GNOME/papers.git	pending		S	32ac162e76089b24e7ef7e50b3a7ba7120b28999

@@ -1,0 +1,8 @@
+# Part b1 of the S and M projects of manifest.batch16.tsv (sha256 1e4fd43f0de322264d2b94b8a8370f41906df20bc45b8315187818245642b2d1),
+# balanced by predicted time (8.8 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+haiku__haiku	https://github.com/haiku/haiku.git	pending		M	f6e670ae3cac1f646b47f23988c89fea55cf2e1f
+gradle__gradle	https://github.com/gradle/gradle.git	pending		M	81c85f2d52959d1bb34e523e4309de16ede8fc0c
+aros-development-team__AROS	https://github.com/aros-development-team/AROS.git	pending		M	a2fad85b025234ecb396301c73f5993639512335
+xemu-project__xemu	https://github.com/xemu-project/xemu.git	pending		M	478b4f496102379c7eaa7f3ec10e714a703c4300

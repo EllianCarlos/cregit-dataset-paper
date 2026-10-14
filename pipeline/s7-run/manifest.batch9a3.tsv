@@ -1,0 +1,25 @@
+# Part a3 of the S and M projects of manifest.batch9.tsv (sha256 00a32df96f075408b7ce58f8ecc5a5d19c49e20efefee07637b2b4f03bdbc2e8),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 21 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+openwrt__luci	https://github.com/openwrt/luci.git	pending		S	0257cc05ad4184eb13b62edaf946028b6db94cf6
+geonetwork__core-geonetwork	https://github.com/geonetwork/core-geonetwork.git	pending		S	3da03300fac81b09ec577f12af737d7045bb8f07
+GNOME__gnome-terminal	https://github.com/GNOME/gnome-terminal.git	pending		S	b23813aa7d9fbfa978f8389a8ba0f738421e76c1
+winscp__winscp	https://github.com/winscp/winscp.git	pending		S	a6916d4101cbbda796491d22a7ce285e01a7912a
+garden-io__garden	https://github.com/garden-io/garden.git	pending		S	4e7128de8dfb5f38f76a5d005a65a78110be7553
+conan-io__conan-center-index	https://github.com/conan-io/conan-center-index.git	pending		S	298b98a20e77085e1d8e6fed5247a60c88a6f627
+opensim-org__opensim-core	https://github.com/opensim-org/opensim-core.git	pending		S	2aaa04b33463076edb06625693ad9bf98cf3bea4
+eclipse-osee__org.eclipse.osee	https://github.com/eclipse-osee/org.eclipse.osee.git	pending		S	125eed57801b7413ad5814601f0ec5176aa42591
+gitlab.com__libssh__libssh-mirror	https://gitlab.com/libssh/libssh-mirror	pending		S	7b3ba877209ae2355f12f4a7ab56022337caaaf5
+dathere__qsv	https://github.com/dathere/qsv.git	pending		S	787b32fd20588b8963dbfd5fcc103eb67fce69e8
+multitheftauto__mtasa-blue	https://github.com/multitheftauto/mtasa-blue.git	pending		S	501a24380aedc1393f7bfb7f91c3009d010f280b
+ratpack__ratpack	https://github.com/ratpack/ratpack.git	pending		S	cc0e5a87474154cdab9b86397cb72f2ede39757b
+swoole__swoole-src	https://github.com/swoole/swoole-src.git	pending		S	21f44eeb27b693fa78250b26828c491f8b64d30a
+Yeachan-Heo__gajae-code	https://github.com/Yeachan-Heo/gajae-code.git	pending		S	f2bba356fd4476a6b0aac640cdc7dc7aba27a9e9
+apache__zeppelin	https://github.com/apache/zeppelin.git	pending		S	943a3fb8dfaa6d05cf4b92c013a01f75ad8a940d
+canonical__mir	https://github.com/canonical/mir.git	pending		M	d3586c524bbdc4267bd9a7855fb029997604d70c
+mlcommons__ck	https://github.com/mlcommons/ck.git	pending		S	8662b02f0f4ca15a8db507d45b9e10f117011020
+avrdudes__avrdude	https://github.com/avrdudes/avrdude.git	pending		S	b05c6fd0186ba650394ebd6114cc989baddb9792
+jMonkeyEngine__jmonkeyengine	https://github.com/jMonkeyEngine/jmonkeyengine.git	pending		S	02ae1fe4213bce165bb0d2576f1df982ef0b6396
+entropy-cloud__nop-entropy	https://github.com/entropy-cloud/nop-entropy.git	pending		S	6e097ee235584d7be46f8a51bb031ef5be5e57f1
+subsurface__subsurface	https://github.com/subsurface/subsurface.git	pending		S	0ab939be185cc9085d65c24b6c176f9af87145df

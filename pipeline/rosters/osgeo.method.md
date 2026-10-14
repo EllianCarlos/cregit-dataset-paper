@@ -1,0 +1,7 @@
+# osgeo — OSGeo projects — method
+- https://www.osgeo.org/projects/ is a Vue page. Its data comes from the site's own AJAX endpoint, found in the theme's bundle.js: https://www.osgeo.org/wp-admin/admin-ajax.php?action=getItems&postType=project&limit=50&offset={0,50} (total 99). It was fetched 2026-10-05T01:38:05Z and saved as raw/osgeo/ajax-getItems-offset*.json. A limit of 500 crashed the endpoint, so 50 was used.
+- One row per item: project = title, repo_url = `sourceUrl` as given (blank for 3 items).
+- roster_status maps the item's `projectType`: osgeo → "OSGeo Project", community → "OSGeo Community". The values none, locationtech and heritage are kept as given. The page says "OSGeo Community" projects have joined OSGeo and "OSGeo Project" ones have finished incubation. "none" items (34) are only listed in the directory.
+- Incubating: the "== Incubation ==" section of https://wiki.osgeo.org/w/index.php?title=Incubation_Committee&action=raw (linked from osgeo.org/about/committees/incubation/) lists IstSOS, Opticks, Oskari, TEAM Engine and TorchGeo. These get roster_status = incubating. Oskari is not in the directory, so it was added from the wiki with no repo.
+- github_slug only where sourceUrl names an owner/repo on GitHub. Org pages such as github.com/mapserver/ get no slug (noted). PostGIS's canonical repo is git.osgeo.org gitea, so it has no slug.
+- Counts: 100 projects, 100 rows, 96 with repo_url, 64 with github_slug. GitHub REST calls: 0.

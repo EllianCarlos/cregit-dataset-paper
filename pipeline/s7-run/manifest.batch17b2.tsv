@@ -1,0 +1,28 @@
+# Part b2 of the S and M projects of manifest.batch17.tsv (sha256 fe2bcfa4c462bf23afb8d7d027903ee019a67ffa25f26d74c91f3345493549db),
+# balanced by predicted time (5.5 h for 4 workers), u order; a fed spot part.
+# 24 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+metersphere__metersphere	https://github.com/metersphere/metersphere.git	pending		S	53df526e2fb08bdf933662acf7eb5ae0f1bd5e3a
+HansKristian-Work__vkd3d-proton	https://github.com/HansKristian-Work/vkd3d-proton.git	pending		S	b206eb6680fb92a64ae57bfccc7454a138f76887
+Dstack-TEE__dstack	https://github.com/Dstack-TEE/dstack.git	pending		S	3c877847e71a205a1d036965b8f5d671b3740103
+e-sensing__sits	https://github.com/e-sensing/sits.git	pending		S	dd33dfc0d32aa3f8a0f12804841c7cb80ae6c082
+apache__directory-server	https://github.com/apache/directory-server.git	pending		S	336a34ae372d4745051fedbbc279c8b2824787cc
+apache__maven	https://github.com/apache/maven.git	pending		S	22451c0efd8c42f71859c43fde56f70a1cd12f08
+graphhopper__graphhopper	https://github.com/graphhopper/graphhopper.git	pending		S	bb42f6fa261b9524bb5dfb29a33760d183225cfc
+irssi__irssi	https://github.com/irssi/irssi.git	pending		S	43f1727ef9fe1cb51d5031ee2dd0e1965217e4cb
+CatalaLang__catala	https://github.com/CatalaLang/catala.git	pending		S	5a41577e3f1ce14dd4a9b2ced1262ce9991d4073
+edwardkim__rhwp	https://github.com/edwardkim/rhwp.git	pending		S	680111ec7bea2fe11110de18c3676ba5a1cf7847
+GNOME__gnumeric	https://github.com/GNOME/gnumeric.git	pending		S	2b0350cb6136cd82fd04105822d3de920fa7eafa
+official-stockfish__Stockfish	https://github.com/official-stockfish/Stockfish.git	pending		S	49ea5ded38315cff8e67f4a677a9e7811612fbf6
+nanocurrency__nano-node	https://github.com/nanocurrency/nano-node.git	pending		S	66adc77e7842ab6ca4cafb0b274fb4109acc37a3
+ZaxbyHub__opencode-swarm	https://github.com/ZaxbyHub/opencode-swarm.git	pending		S	2258b9e2428258d47a48713836edae24cf405510
+fastfetch-cli__fastfetch	https://github.com/fastfetch-cli/fastfetch.git	pending		S	090a54751f637c811ee36fabe30967715c0cb2bf
+dromara__Jpom	https://github.com/dromara/Jpom.git	pending		S	723b1ccca071772f7d7ad3481740624da6bc91df
+glommer__pgmicro	https://github.com/glommer/pgmicro.git	pending		S	eb3078f937281ce0c5878a5c75cdf00fdc6c7b2d
+matrix-org__matrix-rust-sdk	https://github.com/matrix-org/matrix-rust-sdk.git	pending		S	7cdf0cf49ead1f9aa2cbf0ba27a57bfb4aa3d1a3
+vvaltchev__tilck	https://github.com/vvaltchev/tilck.git	pending		S	81ae0ca95956c00fc3cba7ce88e9d2a0647b6fbb
+Expensify__Bedrock	https://github.com/Expensify/Bedrock.git	pending		S	5ee6fc6b8b8e2659e21b6283a71213a957b20f3a
+onnxsim__onnxsim	https://github.com/onnxsim/onnxsim.git	pending		S	36099a92dfc93214e8561e748eb3a1eeaa5cdbd7
+Creators-of-Create__Create	https://github.com/Creators-of-Create/Create.git	pending		S	a927008632b5eb9abc841d4c9c830995dc461038
+juspay__hyperswitch	https://github.com/juspay/hyperswitch.git	pending		S	063bf0ca0fcb8574d9d8238c6df76420e37df1c7
+apache__ozone	https://github.com/apache/ozone.git	pending		S	7ed017d22e4e62b2edad6ef4f3b5969ceb9f96d6

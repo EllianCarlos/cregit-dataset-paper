@@ -1,0 +1,24 @@
+# Part b2 of the S and M projects of manifest.batch13.tsv (sha256 1d1f93d1d2952c0f2a25ca8f968b8bf867959609ab38c913a98784b9d447bfcc),
+# balanced by predicted time (5.9 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+apache__tapestry-5	https://github.com/apache/tapestry-5.git	pending		S	e2c473bb1011cc4292b6a6412b7cb698cac80aea
+telefonicaid__fiware-orion	https://github.com/telefonicaid/fiware-orion.git	pending		S	29167377e8ca3ef4422666968dcc4d9f424b7d4b
+Artelnics__opennn	https://github.com/Artelnics/opennn.git	pending		S	efd566b38859683ea81efa8206916f58bb3f098a
+dillo-browser__dillo	https://github.com/dillo-browser/dillo.git	pending		S	6856c5016de8cc15d077ec8d785bac1a38b4a813
+aaif-goose__goose	https://github.com/aaif-goose/goose.git	pending		S	104ddde585112af6f074f912f3ceb405fb5b800e
+StanfordLegion__legion	https://github.com/StanfordLegion/legion.git	pending		S	aea587e157abff12f7d089c81f29cd3a8b993a2b
+userver-framework__userver	https://github.com/userver-framework/userver.git	pending		S	ad3c7b1ff137a14578a220cc846dbbaed26ebd8f
+ncbi__sra-tools	https://github.com/ncbi/sra-tools.git	pending		S	434ae787c86e32e7faa5e80417a342c365fa03b0
+mapfish__mapfish-print	https://github.com/mapfish/mapfish-print.git	pending		S	8add28b4ae6371e5c1d816aefd8054d4723611e6
+tensorflow__tensorboard	https://github.com/tensorflow/tensorboard.git	pending		S	4a09df254f181225e3db3cdaa85c06934a26cbb3
+apache__ignite-3	https://github.com/apache/ignite-3.git	pending		S	83b124b70eaabca69f5a477c2294bfe0201aa4d3
+eclipse-qvtd__org.eclipse.qvtd	https://github.com/eclipse-qvtd/org.eclipse.qvtd.git	pending		S	91443e61b89defa8b05ebe6c79a2e7701a5a78e9
+neo4j__graph-data-science	https://github.com/neo4j/graph-data-science.git	pending		S	7fcf7020f82f33f85a06bbac3c11878d7279bbc1
+FreeRDP__FreeRDP	https://github.com/FreeRDP/FreeRDP.git	pending		S	7a191013514ab67b329b3ca4fd48a96f3cf79f43
+cuberite__cuberite	https://github.com/cuberite/cuberite.git	pending		S	7fd3fa5c9345a3f1b949c0988c4849db00a68486
+hashintel__hash	https://github.com/hashintel/hash.git	pending		S	049a8c5f09dc5ae0d0154fa8e80eb23d0c49403d
+datacleaner__DataCleaner	https://github.com/datacleaner/DataCleaner.git	pending		S	27a78b378cbae1609fce9b1c3988f00a72a8c247
+jax-ml__jax	https://github.com/jax-ml/jax.git	pending		M	70772107fb6fa6904e0ef2cce5d5e88eb55cd74f
+mpusz__mp-units	https://github.com/mpusz/mp-units.git	pending		S	9ebedd290b3c87a1c17d735c752c2051b2ace8a8
+xLightsSequencer__xLights	https://github.com/xLightsSequencer/xLights.git	pending		S	2b1d04a4d8252d3111803c7f44999db8db247cad

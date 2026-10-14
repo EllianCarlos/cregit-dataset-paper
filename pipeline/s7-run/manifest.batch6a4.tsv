@@ -1,0 +1,23 @@
+# Part a4 of the S and M projects of manifest.batch6.tsv (sha256 d54537af63a6cf6201cae5c5377286219e33305adb682e411af3367e642cb17b),
+# balanced by predicted time (6.9 h for 4 workers), u order; a fed spot part.
+# 19 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+keycloak__keycloak	https://github.com/keycloak/keycloak.git	pending		M	e8460591e8b04fc905fe1ee9c66fd7295aa989dc
+erupts__erupt	https://github.com/erupts/erupt.git	pending		S	f9f1fe1a73c8cdafd4c8c697ced6ff423c276692
+archestra-ai__archestra	https://github.com/archestra-ai/archestra.git	pending		S	db671846fd79ccc10c996b9e9be35bd9e7405af0
+tinygrad__tinygrad	https://github.com/tinygrad/tinygrad.git	pending		S	70fe8742691b96e1ddff9435cfc7f3495aa858b7
+nextcloud__desktop	https://github.com/nextcloud/desktop.git	pending		S	badf6d8e88e6fe279c12ea5c0fb3b591743837fd
+ElementsProject__elements	https://github.com/ElementsProject/elements.git	pending		M	2ac51cac13876bf14d3d709b07535b1868eee896
+nautechsystems__nautilus_trader	https://github.com/nautechsystems/nautilus_trader.git	pending		S	c8b7dafef45dd04a705da0e005129a2fc350c8b9
+googleapis__discovery-artifact-manager	https://github.com/googleapis/discovery-artifact-manager.git	pending		S	9b6a724f92f86e0a72be30a5eba07e315f8937a3
+plumed__plumed2	https://github.com/plumed/plumed2.git	pending		S	f3d17f6dd8927a802c4c8580e7007c1ea7d99fb6
+NVIDIA__TensorRT-LLM	https://github.com/NVIDIA/TensorRT-LLM.git	pending		S	37d332fa1c427c0467fb5dad4c3a3870370a7383
+gitlab.eclipse.org__olivierbichler__aidge	https://gitlab.eclipse.org/olivierbichler/aidge	pending		S	cb1c18ce695fb49666346b6693af19a69b5cc9af
+soulfiremc-com__SoulFire	https://github.com/soulfiremc-com/SoulFire.git	pending		S	46b0df7343cd254955b55c91847571176a48ce2b
+skypjack__entt	https://github.com/skypjack/entt.git	pending		S	e0f4c3763967db04f116863a0ec5e35110808a26
+meganz__MEGAsync	https://github.com/meganz/MEGAsync.git	pending		S	22e72f5ac548d5024b13eef773fb31dceab99332
+FedML-AI__FedML	https://github.com/FedML-AI/FedML.git	pending		S	03e11dfee69a458a9820ec4e05b531a5f935eb2b
+keenon__nimblephysics	https://github.com/keenon/nimblephysics.git	pending		S	c405b056fc35068027e03e0c384e84e12870b475
+apache__hive	https://github.com/apache/hive.git	pending		S	710baba0027053de5fd9c19d35f0c6bafc6a5bdd
+cocotb__cocotb	https://github.com/cocotb/cocotb.git	pending		S	1f037538302fbb176e4f84dd249f0415aaf2fec5
+mapnik__mapnik	https://github.com/mapnik/mapnik.git	pending		S	84107b6f29bf785ea2d05faf1683d9990915c55b

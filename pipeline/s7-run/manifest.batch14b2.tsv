@@ -1,0 +1,24 @@
+# Part b2 of the S and M projects of manifest.batch14.tsv (sha256 a1801c196defea51ecbeef0e7e9aa11dbb3fa7a56a079e8c25e40875a392ac5a),
+# balanced by predicted time (5.9 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+wezterm__wezterm	https://github.com/wezterm/wezterm.git	pending		S	372548295b0b25c9a5400f0ea56f0e89f47e0524
+surfstudio__SurfAndroidStandard	https://github.com/surfstudio/SurfAndroidStandard.git	pending		S	6d73ebcaac4b4bd7186e84964cac2396a55ce2cc
+facet-rs__facet	https://github.com/facet-rs/facet.git	pending		S	65bae5c31a7ce401bc44630fb96250ea884cfd3e
+KDE__umbrello	https://github.com/KDE/umbrello.git	pending		S	a31c8eb178e2523c4b3366a27dc0080c6f610fbb
+bitcoin__bitcoin	https://github.com/bitcoin/bitcoin.git	pending		M	cf80493e2367786ce9946c522eb8313a52c90557
+directvt__vtm	https://github.com/directvt/vtm.git	pending		S	0d4a3ee93b9ddfe75f26a739f6c6ce51ee2ff21a
+mcMMO-Dev__mcMMO	https://github.com/mcMMO-Dev/mcMMO.git	pending		S	058279c148a65bd708dc85067d3858f6adde1173
+GNOME__network-manager-applet	https://github.com/GNOME/network-manager-applet.git	pending		S	ff50029feccdccc9d02a4ca51d566c8127808051
+servo__webrender	https://github.com/servo/webrender.git	pending		S	e1c924ebad9ffdfe8c8c606aba77eb3f888c396a
+eclipse-tycho__tycho	https://github.com/eclipse-tycho/tycho.git	pending		S	bbc6b2890babb98c7f396bdbf93ae3ff2090d6aa
+Kurento__kurento	https://github.com/Kurento/kurento.git	pending		S	2e4bf5524ac4fde5d58071344a103429b5901f85
+organicmaps__organicmaps	https://github.com/organicmaps/organicmaps.git	pending		M	3f26ce8979f044f14664d3a1e88160e105110bb6
+airbytehq__airbyte	https://github.com/airbytehq/airbyte.git	pending		M	289886d7e7d24004008df5402e2ea133bd278266
+coccinelle__coccinelle	https://github.com/coccinelle/coccinelle.git	pending		S	11b93adb6516a358a6687051e5762136666626e0
+itext__itext-java	https://github.com/itext/itext-java.git	pending		S	a043b461d3d3eb5d6331ebc0044b4c98a4602aec
+istoreos__istoreos	https://github.com/istoreos/istoreos.git	pending		M	fb971407ffd9a094e6f16d9c029f1f580ed5c2ad
+koka-lang__koka	https://github.com/koka-lang/koka.git	pending		S	9c55695dd2f7d4db8d93011693d37295e2b76c53
+pentaho__pentaho-kettle	https://github.com/pentaho/pentaho-kettle.git	pending		S	3cf8159b627af111a5d7626b3fd0d3660884a5d3
+meganz__MEGAchat	https://github.com/meganz/MEGAchat.git	pending		S	e5168cf8adead1bd7f2c505275d827face02f3d3
+WeBankFinTech__DataSphereStudio	https://github.com/WeBankFinTech/DataSphereStudio.git	pending		S	4af60cc6f5aea4c41434d489ccab6ea35e735d33

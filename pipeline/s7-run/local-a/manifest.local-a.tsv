@@ -1,0 +1,21 @@
+# Run manifest of census-local-a: the S rows of the parts in parts.taken (19 projects).
+# Columns: name  url  category  file_filter  size_class  commit
+git.savannah.gnu.org__git__pspp	https://git.savannah.gnu.org/git/pspp.git	pending		S	91b943035c096bc09b7037613ac36974b51f4b4a
+git.savannah.gnu.org__git__gsl	https://git.savannah.gnu.org/git/gsl.git	pending		S	7527c444cfa25b42c15bed73824c9e3ece28b2f3
+git.savannah.gnu.org__denemo	git://git.savannah.gnu.org/denemo.git	pending		S	e2e8fe310089323396f2fd8f71f23e7247078b80
+gitlab.inria.fr__mpfr__mpfr	https://gitlab.inria.fr/mpfr/mpfr.git	pending		S	8536bb90e594a2d0ef8660f3e54bdced9871edde
+git.savannah.gnu.org__poke	git://git.savannah.gnu.org/poke.git	pending		S	e29ca75b2f1873d29a4caa7f2e1bf554b94cd9da
+git.savannah.gnu.org__git__nano	https://git.savannah.gnu.org/git/nano.git	pending		S	fc6070d40556c6f8b507ada4fcba4790e814441e
+git.savannah.gnu.org__git__bison	https://git.savannah.gnu.org/git/bison.git	pending		S	a47fb7838a1bf9128c6e0aed0d0194d47f17b8c6
+alliedmodders__sourcemod	https://github.com/alliedmodders/sourcemod.git	pending		S	2ed5b865e35186a930321ff7a112486a508a45e1
+KDE__okular	https://github.com/KDE/okular.git	pending		S	1fa05e5390024a20d7a90e7bbaaef33474bab080
+KDE__krusader	https://github.com/KDE/krusader.git	pending		S	aa547b02ee7b8476559f9ea37b1826d40f1f3d6e
+Kode__Kore	https://github.com/Kode/Kore.git	pending		S	82ede76e37734e0d9a2f4b80191708c5667e154d
+lessthanoptimal__BoofCV	https://github.com/lessthanoptimal/BoofCV.git	pending		S	a277f551599300141f6e19bd7525b9fc290aeee0
+KDE__kdeplasma-addons	https://github.com/KDE/kdeplasma-addons.git	pending		S	6c6b00e693f6d6c83948201908f0d74a3829783f
+KDE__kio	https://github.com/KDE/kio.git	pending		S	5a99a68029beb94423b2d02f34a8029e518d36f9
+SmileiPIC__Smilei	https://github.com/SmileiPIC/Smilei.git	pending		S	61aa917e851e89c64a0a2c17ca869fa71128422d
+KDE__messagelib	https://github.com/KDE/messagelib.git	pending		S	f1e1c2de822d9e2dbdda4f6fbc5883a0af5b86a3
+KDE__kmail	https://github.com/KDE/kmail.git	pending		S	a0be24dd8df1fe95610c5790f6f52664cd89e390
+KDE__rkward	https://github.com/KDE/rkward.git	pending		S	6d496e396d2f1f5953499cbe3768ccb26bba47aa
+KDE__discover	https://github.com/KDE/discover.git	pending		S	52f0dee5a9bcebd7d1f0e496528a34199207d7b7

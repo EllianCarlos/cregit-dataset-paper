@@ -1,0 +1,8 @@
+# Part b1 of the S and M projects of manifest.batch6.tsv (sha256 d54537af63a6cf6201cae5c5377286219e33305adb682e411af3367e642cb17b),
+# balanced by predicted time (9.2 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+qgis__QGIS	https://github.com/qgis/QGIS.git	pending		M	aa756857588b96f97d6cfa600cd158dcf27033e6
+petsc__petsc	https://github.com/petsc/petsc.git	pending		M	398a56cd15d9f0b4708d6ed1d3ef2f02dfc964d5
+pytorch__pytorch	https://github.com/pytorch/pytorch.git	pending		M	6b3607efa40bd0093e58fb887c87cf724a057491
+u-boot__u-boot	https://github.com/u-boot/u-boot.git	pending		M	8d7bc8add17bbc69a58dfe0002eea039dd2dc1bc

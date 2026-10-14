@@ -1,0 +1,119 @@
+pool_key,slug,license,license_evidence
+gh:60645050,checkedc/checkedc-clang,NOASSERTION,E near miss: license file in a subfolder: clang-tools-extra/LICENSE.TXT;clang-tools-extra/clang-tidy/cert/LICENSE.TXT;clang-tools-extra/clang-tidy/hicpp/LICENSE.TXT
+gh:1185279,OpenEmu/OpenEmu,NOASSERTION,E near miss: license file in a subfolder: OpenEmu/Shaders/CRT Royale Kurozumi/crt/shaders/crt-royale/LICENSE.TXT
+gh:9113580,dCache/dcache,NOASSERTION,D near miss: package file declares a license: pom.xml
+gh:7391261,trustedsec/social-engineer-toolkit,NOASSERTION,E near miss: license file in a subfolder: readme/LICENSE
+gh:37575579,openMSX/openMSX,NOASSERTION,D near miss: package file declares a license: meson.build
+gh:170327194,NBlood/NBlood,NOASSERTION,E near miss: license file in a subfolder: source/libsmackerdec/COPYING;source/mimalloc/LICENSE;source/voidwrap/license.txt
+gh:198889624,Autodesk/maya-usd,NOASSERTION,E near miss: license file in a subfolder: doc/LICENSE.md;lib/mayaUsd/render/MaterialXGenOgsXml/PugiXML/LICENSE.md;plugin/al/LICENSE.txt
+gh:464507811,eclipse-ecf/ecf,NOASSERTION,D near miss: package file declares a license: pom.xml
+gh:47409672,hashcat/hashcat,NOASSERTION,E near miss: license file in a subfolder: docs/license.txt
+gh:273602,archlinuxarm/PKGBUILDs,NOASSERTION,E near miss: license file in a subfolder: aur/arm-mem-git/LICENSE;core/binutils/LICENSE;core/elfutils/LICENSE
+gh:7517166,falkTX/Carla,NOASSERTION,E near miss: license file in a subfolder: source/modules/dgl/src/nanovg/LICENSE.txt;source/modules/dgl/src/pugl-upstream/COPYING;source/modules/lilv/lilv-0.24.0/COPYING
+gh:50860222,digi-embedded/meta-digi,NOASSERTION,E near miss: license file in a subfolder: meta-digi-arm/dynamic-layers/stm-st-stm32mp/recipes-multimedia/evision/files/evision-libs/LICENSE;meta-digi-arm/recipes-bsp/firmware-qualcomm/firmware-qualcomm/LICENCE.atheros_firmware
+gh:16622063,alliedmodders/amxmodx,NOASSERTION,E near miss: license file in a subfolder: installer/installtool/LicenseAccept.xaml;installer/installtool/LicenseAccept.xaml.cs;public/licenses/LICENSE.txt
+gh:10444725,libretro/parallel-n64,NOASSERTION,E near miss: license file in a subfolder: gles2n64/src/COPYING;mupen64plus-core/LICENSES;mupen64plus-rsp-cxd4/COPYING
+gh:26242135,rust-lang/this-week-in-rust,NOASSERTION,E near miss: license file in a subfolder: themes/pelican-elegant-1.3/LICENSE.md
+gh:66967003,openbsd/ports,NOASSERTION,E near miss: license file in a subfolder: devel/acpica/files/LICENSE;infrastructure/lib/OpenBSD/PortGen/License.pm;math/arpack/files/LICENSE
+gh:46102589,rizonesoft/Notepad3,NOASSERTION,E near miss: license file in a subfolder: Build/Docs/License.txt;Build/Docs/uthash/License.txt;Build/Docs/uthash/doc (more)/license.html
+gh:971570345,ROCm/rocm-libraries,NOASSERTION,E near miss: license file in a subfolder: projects/composablekernel/LICENSE;projects/composablekernel/docs/license.rst;projects/hipblas-common/LICENSE.md
+gh:100689784,apache/myfaces-tobago,NOASSERTION,D near miss: package file declares a license: pom.xml
+gh:1148960257,zhukunpenglinyutong/desktop-cc-gui,NOASSERTION,E near miss: license file in a subfolder: src-tauri/resources/agent-catalogs/agency-agents/LICENSE
+gh:106721941,HelenOS/helenos,NOASSERTION,E near miss: license file in a subfolder: boot/grub/arm64-efi/COPYING;boot/grub/ia32-efi/COPYING;boot/grub/ia32-pc/COPYING
+gh:14360940,openmv/openmv,NOASSERTION,E near miss: license file in a subfolder: cubeai/AI/LICENSE;cubeai/LICENSE;drivers/boson/LICENSE.pdf
+gh:108187130,mhammond/pywin32,NOASSERTION,E near miss: license file in a subfolder: adodbapi/license.txt;com/License.txt;com/win32comext/mapi/src/MAPIStubLibrary/LICENSE
+gh:4307702,krb5/krb5,NOASSERTION,C near miss: other root name: NOTICE
+gh:21445054,tLDP/LDP,NOASSERTION,E near miss: license file in a subfolder: LDP/builder/db2omf/COPYING;LDP/defunct/scrollserver/COPYING;LDP/defunct/texi2db/COPYING
+gh:9753283,opentrack/opentrack,NOASSERTION,C near miss: other root name: 3rdparty-notices;OPENTRACK-LICENSING.txt
+gh:3250728,boost-ext/di,NOASSERTION,E near miss: license file in a subfolder: doc/bloomberg-2018/LICENSE;doc/bloomberg-2018/lib/font/league-gothic/LICENSE;doc/bloomberg-2018/lib/font/source-sans-pro/LICENSE
+gh:30288456,redeclipse/base,NOASSERTION,E near miss: license file in a subfolder: bin/LICENSE.FTL.txt;bin/LICENSE.SDL.txt;bin/LICENSE.avif.txt
+gh:139329396,rhysd/vim.wasm,NOASSERTION,E near miss: license file in a subfolder: src/libvterm/LICENSE;src/xdiff/COPYING
+gh:3786218,inspircd/inspircd,NOASSERTION,E near miss: license file in a subfolder: docs/LICENSE.txt
+gh:1033705,angband/angband,NOASSERTION,E near miss: license file in a subfolder: docs/copying.rst
+gh:206368,apache/poi,NOASSERTION,C near miss: other root name: legal
+gh:1764646,wxWidgets/wxWidgets,NOASSERTION,E near miss: license file in a subfolder: build/cmake/modules/cotire_test/license;docs/licence.txt;docs/wine/COPYING.LIB
+gh:253983329,AOT-Technologies/forms-flow-ai,NOASSERTION,E near miss: license file in a subfolder: forms-flow-analytics/LICENSE;forms-flow-api/LICENSE;forms-flow-bpm/LICENSE
+gh:711719783,coop-deluxe/sm64coopdx,NOASSERTION,E near miss: license file in a subfolder: src/pc/utils/miniz/LICENSE;tools/ido5.3_compiler/LICENSE.md;tools/n64graphics_ci_dir/LICENSE
+gh:466229623,chernandezba/zesarux,NOASSERTION,E near miss: license file in a subfolder: src/LICENSE;src/LICENSES_info;src/licenses/LICENSE_DOS_font
+gh:132600378,apache/myfaces,NOASSERTION,E near miss: license file in a subfolder: api/src/main/resources/META-INF/LICENSE.txt;assembly/src/main/resources/LICENSE.txt;impl/src/main/resources/META-INF/LICENSE.txt
+gh:180773748,01-edu/public,NOASSERTION,E near miss: license file in a subfolder: subjects/tron/ai/license-to-kill.js
+gh:21249621,OpenClinica/OpenClinica,NOASSERTION,E near miss: license file in a subfolder: core/LICENSE.txt;web/LICENSE.txt;web/src/main/webapp/images/table/license.txt
+gh:66448803,arch4edu/arch4edu,NOASSERTION,E near miss: license file in a subfolder: aarch64/gradle/LICENSE;aarch64/gtk2/LICENSE;aarch64/jellyfin-ffmpeg/LICENSE
+gh:4213137,groovy/groovy-eclipse,NOASSERTION,E near miss: license file in a subfolder: extras/Feature-org.codehaus.groovy.m2eclipse/license.html;ide/Feature-org.codehaus.groovy.compilerless.feature/license.html;ide/Feature-org.codehaus.groovy.eclipse.feature/license.html
+gh:2424377,carrot2/carrot2,NOASSERTION,C near miss: other root name: carrot2.LICENSE;carrot2.NOTICE
+gh:569223634,eclipse-virgo/virgo-root,NOASSERTION,E near miss: license file in a subfolder: org.eclipse.virgo.site/org.eclipse.equinox.http.jetty.feature/license.html;org.eclipse.virgo.site/org.eclipse.gemini.blueprint.feature/license.html;org.eclipse.virgo.site/org.eclipse.gemini.web.feature/license.html
+gh:21858951,Geomatys/geotoolkit,NOASSERTION,D near miss: package file declares a license: pom.xml
+gh:832677,apache/tomcat-connectors,NOASSERTION,E near miss: license file in a subfolder: native/LICENSE;native/iis/pcre2/COPYING;native/iis/pcre2/LICENCE.md
+gh:1061832726,NVIDIA/nvtexlive,NOASSERTION,E near miss: license file in a subfolder: libs/cairo/cairo-src/COPYING;libs/cairo/cairo-src/COPYING-LGPL-2.1;libs/cairo/cairo-src/COPYING-MPL-1.1
+gh:45568899,LCAD-UFES/carmen_lcad,NOASSERTION,E near miss: license file in a subfolder: sharedlib/ENet/caffe-enet/LICENSE;sharedlib/OpenJAUS/LICENSE;sharedlib/OpenJAUS/ojWheeltec/esp-idf-arduino/WIFI_LoRa_32FactoryTest/LICENSE
+gh:1270051017,rfandango/XenDroid,NOASSERTION,E near miss: license file in a subfolder: emulator-core/src/main/assets/licenses.html;emulator-core/src/main/cpp/xenia/LICENSE;emulator-core/src/main/cpp/xenia/assets/icon/LICENSE
+gh:16471584,wso2/wso2-synapse,NOASSERTION,D near miss: package file declares a license: pom.xml
+gh:894162,illumos/illumos-gate,NOASSERTION,E near miss: license file in a subfolder: usr/src/boot/common/linenoise/LICENSE;usr/src/boot/common/linenoise/LICENSE.descrip;usr/src/cmd/hal/LICENSE
+gh:18347668,mit-nlp/MITIE,NOASSERTION,E near miss: license file in a subfolder: dlib/dlib/LICENSE.txt;dlib/docs/docs/license.xml;dlib/examples/LICENSE_FOR_EXAMPLE_PROGRAMS.txt
+gh:14698558,MegaGlest/megaglest-source,NOASSERTION,E near miss: license file in a subfolder: source/shared_lib/include/xml/rapidxml/license.txt;source/shared_lib/sources/libircclient/LICENSE;source/shared_lib/sources/libircclient/build/source/libircclient/LICENSE
+gh:8071225,dbpedia/extraction-framework,NOASSERTION,D near miss: package file declares a license: pom.xml
+gh:154219652,usdot-fhwa-stol/carma-platform,NOASSERTION,E near miss: license file in a subfolder: docs/License.md
+gh:101643617,numworks/epsilon,NOASSERTION,E near miss: license file in a subfolder: epsilon/external_apps/LICENSE;tools/device/registers/cmsis_svd/LICENSE-APACHE
+gh:1179959183,BuilderIO/agent-native,NOASSERTION,E near miss: license file in a subfolder: packages/core/src/assets/fonts/LICENSE_GEIST;packages/core/src/assets/fonts/LICENSE_LIBERATION;packages/core/src/assets/fonts/LICENSE_NOTO_NASKH_ARABIC
+gh:378143494,pret/pokeheartgold,NOASSERTION,E near miss: license file in a subfolder: tools/jsonproc/nlohmann/LICENSE.MIT;tools/msgenc/LICENSE.pugixml.md;tools/nitroarc/COPYING
+gh:42260199,ultimate-pa/ultimate,NOASSERTION,E near miss: license file in a subfolder: releaseScripts/2021termcomp/LICENSE;releaseScripts/2021termcomp/LICENSE.GPL;releaseScripts/2021termcomp/LICENSE.GPL.LESSER
+gh:47593546,NetHack/NetHack,NOASSERTION,E near miss: license file in a subfolder: dat/license;sys/amiga/license-info.uu
+gh:43760104,metasfresh/metasfresh,NOASSERTION,E near miss: license file in a subfolder: backend/LICENSE.md;backend/de.metas.acct.base/LICENSE.txt;backend/de.metas.adempiere.adempiere/LICENSE.txt
+gh:39727495,jumpmindinc/symmetric-ds,NOASSERTION,E near miss: license file in a subfolder: symmetric-assemble/COPYING;symmetric-assemble/src/asciidoc/configuration/license-key.ad;symmetric-assemble/src/asciidoc/images/configuration/license-key.png
+gh:962090208,ROCm/rocm-systems,NOASSERTION,E near miss: license file in a subfolder: emulation/rocjitsu/LICENSE.md;emulation/rocjitsu/docs/sphinx/license.rst;projects/amdsmi/LICENSE
+gh:19117456,formatjs/formatjs,NOASSERTION,E near miss: license file in a subfolder: packages/babel-plugin-formatjs/LICENSE.md;packages/bigdecimal/LICENSE.md;packages/cli-lib/LICENSE.md
+gh:7251357,Macaulay2/M2,NOASSERTION,E near miss: license file in a subfolder: M2/Macaulay2/COPYING-GPL-2;M2/Macaulay2/COPYING-GPL-3;M2/Macaulay2/packages/Style/katex/LICENSE
+gh:674559306,paritytech/polkadot-sdk,NOASSERTION,D near miss: package file declares a license: Cargo.toml
+gh:6509783,nfs-ganesha/nfs-ganesha,NOASSERTION,E near miss: license file in a subfolder: src/LICENSE.txt;src/cmake/COPYING-CMAKE-SCRIPTS
+gh:115201482,fustyles/Arduino,NOASSERTION,E near miss: license file in a subfolder: ESP32-CAM_OTTO/OttoDIY/libraries/EnableInterrupt/extras/LICENSE;ESP32-CAM_OTTO/OttoDIY/libraries/LICENSE.md;ESP32-CAM_QRCode_Recognition/ESP32QRCodeReader/ESP32-CAM_ESP32QRCodeReader/LICENSE
+gh:50256891,pret/pokeruby,NOASSERTION,E near miss: license file in a subfolder: tools/bin2c/LICENSE;tools/gbafix/COPYING;tools/gbagfx/LICENSE
+gh:2446718,mongodb/docs,NOASSERTION,E near miss: license file in a subfolder: code-example-tests/go/atlas-sdk/LICENSE;content/agentengine/source/sdk/javascript/packages/agent-engine-memory/LICENSE.txt;content/agentengine/source/sdk/javascript/packages/agent-engine-runner-shared/LICENSE.txt
+gh:34163206,cheat-engine/cheat-engine,NOASSERTION,E near miss: license file in a subfolder: Cheat Engine/bin/languages/it_IT/LICENSE.MD;Cheat Engine/tcclib/COPYING;Cheat Engine/tcclib/tests/tests2/LICENSE
+gh:9512610,gwtproject/gwt,NOASSERTION,E near miss: license file in a subfolder: dev/core/src/com/google/gwt/dev/js/rhino/COPYING;distro-source/core/src/COPYING;distro-source/core/src/COPYING.html
+gh:18684635,praat/praat.github.io,NOASSERTION,E near miss: license file in a subfolder: docs/LICENSE.txt;docs/manual/License.html
+gh:1286914,digego/extempore,NOASSERTION,E near miss: license file in a subfolder: src/linenoise/LICENSE;src/oscpp/LICENSE
+gh:31976266,apache/asterixdb,NOASSERTION,D near miss: package file declares a license: pom.xml
+gh:43677244,pret/pokeemerald,NOASSERTION,E near miss: license file in a subfolder: tools/bin2c/LICENSE;tools/gbafix/COPYING;tools/gbagfx/LICENSE
+gh:765551891,Next-Flip/Momentum-Apps,NOASSERTION,E near miss: license file in a subfolder: 2048/LICENSE;air_arkanoid/engine/LICENSE;air_labyrinth/LICENSE
+gh:599520499,pygame-community/pygame-ce,NOASSERTION,E near miss: license file in a subfolder: docs/licenses/LICENSE.FLAC.txt;docs/licenses/LICENSE.fluidsynth.txt;docs/licenses/LICENSE.freetype.txt
+gh:280742424,tensorflow/mlir-hlo,NOASSERTION,E near miss: license file in a subfolder: stablehlo/LICENSE
+gh:537908064,indygreg/apple-platform-rs,NOASSERTION,E near miss: license file in a subfolder: apfs-derive/LICENSE-APACHE;apfs-derive/LICENSE-MIT;apfs-types/LICENSE-APACHE
+gh:27233295,scireum/sirius-web,NOASSERTION,E near miss: license file in a subfolder: src/main/java/sirius/web/util/LicenseController.java;src/main/resources/assets/images/icons/fontawesome/license.txt;src/main/resources/assets/terminal/LICENSE.txt
+gh:58524688,powerfolder/PF-CORE,NOASSERTION,E near miss: license file in a subfolder: src/distribution/PowerFolderBasic/installer/files/License.txt;src/legacy/de/dal33t/powerfolder/ui/status/LicenseInfoSection.java;src/main/de/dal33t/powerfolder/ui/model/LicenseModel.java
+gh:157590294,TelegramMessenger/Telegram-iOS,NOASSERTION,E near miss: license file in a subfolder: Telegram/WatchApp/Packages/RLottieKit/Sources/RLottieCore/rlottie/COPYING;Telegram/WatchApp/Packages/RLottieKit/Sources/RLottieCore/rlottie/COPYING.MIT;Telegram/WatchApp/Packages/WebPKit/Sources/WebPCore/libwebp/COPYING
+gh:320636477,WebKit/WebKit,NOASSERTION,E near miss: license file in a subfolder: JSTests/ChakraCore/LICENSE.txt;JSTests/test262/LICENSE
+gh:375808919,Xilinx/hls-llvm-project,NOASSERTION,E near miss: license file in a subfolder: clang-tools-extra/LICENSE.TXT;clang-tools-extra/clang-tidy-vs/ClangTidy/license.txt;clang-tools-extra/clang-tidy/cert/LICENSE.TXT
+gh:54005538,FirebirdSQL/firebird,NOASSERTION,E near miss: license file in a subfolder: builds/install/arch-specific/darwin/License.txt;src/jrd/license.h
+gh:5453324,JetBrains/intellij-plugins,NOASSERTION,E near miss: license file in a subfolder: Angular/LICENSE.TXT;AngularJS/LICENSE.TXT;Astro/LICENSE.TXT
+gh:86245815,pygame/pygame,NOASSERTION,E near miss: license file in a subfolder: docs/licenses/LICENSE.FLAC.txt;docs/licenses/LICENSE.fluidsynth.txt;docs/licenses/LICENSE.freetype.txt
+gh:28829926,igraph/rigraph,NOASSERTION,E near miss: license file in a subfolder: tools/py-stimulus/LICENSE
+gh:1982458,jogetworkflow/jw-community,NOASSERTION,E near miss: license file in a subfolder: wflow-consoleweb/src/main/webapp/js/fontawesome6/LICENSE.txt;wflow-consoleweb/src/main/webapp/js/hubspot-offline/LICENSE;wflow-consoleweb/src/main/webapp/js/jquery/scrollTo/LICENSE
+gh:23129458,aseprite/aseprite,NOASSERTION,C near miss: other root name: EULA.txt
+gh:19851667,alpinelinux/aports,NOASSERTION,E near miss: license file in a subfolder: community/fig2dev/COPYING;community/lua-lapis-annotate/LICENSE;community/lua-lapis-bayes/LICENSE
+gh:1097428181,wilsonzlin/fastrender,NOASSERTION,E near miss: license file in a subfolder: crates/libvpx-sys-bundled/upstream/libvpx/LICENSE
+gh:218784651,apache/ws-axiom,NOASSERTION,C near miss: other root name: NOTICE;legal
+gh:10923187,stepmania/stepmania,NOASSERTION,E near miss: license file in a subfolder: CMake/license_install.txt;Docs/Copying.MAD;Docs/Licenses.txt
+gh:85609847,Zimbra/zm-mailbox,NOASSERTION,E near miss: license file in a subfolder: soap/src/java/com/zimbra/soap/account/type/LicenseAttr.java;soap/src/java/com/zimbra/soap/account/type/LicenseInfo.java;soap/src/java/com/zimbra/soap/admin/message/LicenseCacheSoapServiceRequest.java
+gh:15102551,assaultcube/AC,NOASSERTION,E near miss: license file in a subfolder: bin_win32/LICENSE.jpeg.txt;bin_win32/LICENSE.png.txt;bin_win32/LICENSE.vorbis_ogg.txt
+gh:42050188,MontiCore/monticore,NOASSERTION,E near miss: license file in a subfolder: 00.org/Licenses/LICENSE-BSD3CLAUSE.md;00.org/Licenses/LICENSE-LGPL.md;00.org/Licenses/LICENSE-MONTICORE-3-LEVEL.md
+gh:27555776,DOCGroup/ACE_TAO,NOASSERTION,E near miss: license file in a subfolder: ACE/COPYING;ACE/apps/JAWS/clients/WebSTONE/COPYING;ACE/apps/JAWS/clients/WebSTONE/doc/COPYING
+gh:230432175,ZDoom/Raze,NOASSERTION,E near miss: license file in a subfolder: libraries/ZVulkan/LICENSE.md;libraries/ZVulkan/src/glslang/LICENSE.txt;libraries/ZWidget/LICENSE.md
+gh:735981,xapian/xapian,NOASSERTION,E near miss: license file in a subfolder: xapian-bindings/COPYING;xapian-core/COPYING;xapian-data/stemming/COPYING
+gh:39812341,matsim-org/matsim-libs,NOASSERTION,D near miss: package file declares a license: pom.xml
+gh:8670892,archlinuxcn/repo,NOASSERTION,E near miss: license file in a subfolder: alarmcn/code/LICENSE;alarmcn/deno/LICENSE;alarmcn/embree/LICENSE
+gh:4302287,plutext/docx4j,NOASSERTION,C near miss: other root name: legals
+gh:2035393,munin-monitoring/contrib,NOASSERTION,E near miss: license file in a subfolder: plugins/comet/LICENSE;plugins/nginx/nginx_byprojects/LICENSE.txt;templates/muncollapse/LICENSE
+gh:33066062,freeorion/freeorion,NOASSERTION,E near miss: license file in a subfolder: GG/COPYING;default/COPYING;default/data/fonts/LICENSE.DejaVu
+gh:50613360,ihmcrobotics/ihmc-open-robotics-software,NOASSERTION,E near miss: license file in a subfolder: ihmc-avatar-interfaces/LICENSE.txt;ihmc-common-walking-control-modules/LICENSE.txt;ihmc-communication/LICENSE.txt
+gh:41131628,marbl/canu,NOASSERTION,C near miss: other root name: README.license.GPL;README.licenses
+gh:206350,apache/cayenne,NOASSERTION,D near miss: package file declares a license: pom.xml
+gh:2316310,tytso/e2fsprogs,NOASSERTION,C near miss: other root name: .missing-copyright;NOTICE
+gh:330042722,dsda-org/dsda-doom,NOASSERTION,E near miss: license file in a subfolder: prboom2/COPYING
+gh:39406013,findbugsproject/findbugs,NOASSERTION,D near miss: package file declares a license: pom.xml
+gh:1775980,zkoss/zk,NOASSERTION,E near miss: license file in a subfolder: zkdoc/COPYING
+gh:88439547,NetBSD/src,NOASSERTION,E near miss: license file in a subfolder: common/dist/zlib/LICENSE
+gh:160219599,omnetpp/omnetpp,NOASSERTION,E near miss: license file in a subfolder: doc/License;test/distro/tools/LICENSE.txt;ui/org.omnetpp.common/src/org/omnetpp/common/util/LicenseUtils.java
+gh:51711866,ja2-stracciatella/ja2-stracciatella,NOASSERTION,C near miss: other root name: SFI Source Code license agreement.txt
+gh:66966208,openbsd/src,NOASSERTION,E near miss: license file in a subfolder: gnu/gcc/COPYING;gnu/gcc/COPYING.LIB;gnu/gcc/gcc/COPYING
+gh:10178188,openmm/openmm,NOASSERTION,E near miss: license file in a subfolder: docs-source/developerguide/license.rst;docs-source/licenses/Licenses.txt;docs-source/usersguide/license.rst
+gh:243933900,ronaldoussoren/pyobjc,NOASSERTION,E near miss: license file in a subfolder: pyobjc-core/License.txt;pyobjc-core/Modules/objc/test/copying.m;pyobjc-framework-ARKit/License.txt

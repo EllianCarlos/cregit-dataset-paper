@@ -1,0 +1,21 @@
+# Part b2 of the S and M projects of manifest.batch15.tsv (sha256 ef0a99a173728f06226d70b9f0bdc6b1ca14a87ee16172ba5d195ada48f6b470),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 17 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+a-b-street__abstreet	https://github.com/a-b-street/abstreet.git	pending		S	0964f29315820c91b171b585eb51e300164e9197
+TeamNewPipe__NewPipe	https://github.com/TeamNewPipe/NewPipe.git	pending		S	f931afa8413167b83181ad124afcc11a9dfe2ac5
+monocasual__giada	https://github.com/monocasual/giada.git	pending		S	2ec299abc3981691dcb96ee081b89fe6d7b14f4f
+PurpleI2P__i2pd	https://github.com/PurpleI2P/i2pd.git	pending		S	cd200e08c037e933e133c585efcaf841bc3373b6
+gnustep__libs-base	https://github.com/gnustep/libs-base.git	pending		S	68f3d75694f0a7edf9fb1c6c7f19582e8cff1b5f
+openSUSE__zypper	https://github.com/openSUSE/zypper.git	pending		S	ab5ef068bc074883e43a87bc693f9f28c750d26c
+MiniZinc__libminizinc	https://github.com/MiniZinc/libminizinc.git	pending		S	60e2580e83ed2a8485bbefae16f6c908a55fdc2e
+zen-browser__desktop	https://github.com/zen-browser/desktop.git	pending		S	4df07c4a11d208d07dc85f417811cb4f758a7bfa
+eclipse-tracecompass__org.eclipse.tracecompass	https://github.com/eclipse-tracecompass/org.eclipse.tracecompass.git	pending		S	dedb6351cee49a4fb5f02413adb992a1a1134971
+liblouis__liblouis	https://github.com/liblouis/liblouis.git	pending		S	011cfb3b5868f9e0a63092d5cfa39b0caf57fe21
+sbcl__sbcl	https://github.com/sbcl/sbcl.git	pending		S	ddf8bc89524d471c423d2af6ce13ef2c8af421d9
+google-deepmind__mujoco	https://github.com/google-deepmind/mujoco.git	pending		S	f1f216c9d03a27942bca0fbc8a6c3cb32492d669
+rusefi__rusefi	https://github.com/rusefi/rusefi.git	pending		M	b8a174c97662dd606260f6597f6e3884901048e4
+rivet-dev__rivet	https://github.com/rivet-dev/rivet.git	pending		S	8f8c07cb056a2e05fba6ba86953426cce18cefce
+spring-projects__spring-boot	https://github.com/spring-projects/spring-boot.git	pending		M	f87bcea560585f55d24ebef8fbe92e45138f9449
+invent.kde.org__unmaintained__kdepim	https://invent.kde.org/unmaintained/kdepim	pending		M	e9f8c013a897765c3d6317f8e6bba905b1d6ee88
+radareorg__radare2	https://github.com/radareorg/radare2.git	pending		M	008a7a6cd2e5acb8268f65f486760d080f3b107b

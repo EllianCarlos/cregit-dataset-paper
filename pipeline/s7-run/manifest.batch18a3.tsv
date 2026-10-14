@@ -1,0 +1,16 @@
+# Part a3 of the S and M projects of manifest.batch18.tsv (sha256 432ad2e493ba966ef387af309dc2cfab6bc374ba9fa442b0705d1617cdcd2f76),
+# balanced by predicted time (5.9 h for 4 workers), u order; a fed spot part.
+# 12 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+keyboardio__Kaleidoscope	https://github.com/keyboardio/Kaleidoscope.git	pending		S	d07904a66196cba7a4f2abb8f31d087fd8b72f2b
+apache__mahout	https://github.com/apache/mahout.git	pending		S	2d94f8fbdbbb942b4920160a129ac752ccd761fe
+yutiansut__QUANTAXIS	https://github.com/yutiansut/QUANTAXIS.git	pending		S	232aa7ac9869966108f02a8fff85f1f7b09a9ce2
+agbrs__agb	https://github.com/agbrs/agb.git	pending		S	8d1b5bb9b957058c22c2fd9960f240eb4b6274f5
+GNOME__file-roller	https://github.com/GNOME/file-roller.git	pending		S	19e444b91146a56fd08a7bd44e8f3fd02071c905
+GNOME__gnome-panel	https://github.com/GNOME/gnome-panel.git	pending		S	66eba0edee9c63835b6193d89aa66c4706eea7e1
+psi-im__psi	https://github.com/psi-im/psi.git	pending		S	b8903e6d295d9733a3ecd653abf9cbf8d8bea07d
+ArduPilot__ardupilot	https://github.com/ArduPilot/ardupilot.git	pending		M	109fcc738a922f5bd58e68ae17f7c6154995f68a
+flutter__flutter	https://github.com/flutter/flutter.git	pending		M	acad7909cf56d4584221d8907e2cd82fe5e999e5
+cataclysmbn__Cataclysm-BN	https://github.com/cataclysmbn/Cataclysm-BN.git	pending		M	8e8aa90498fcc04176ee26ddd5bd56d68218b6a9
+lcompilers__lpython	https://github.com/lcompilers/lpython.git	pending		S	6b00cbaa6621e63535030fe88d181f1208113400
+sakaiproject__sakai	https://github.com/sakaiproject/sakai.git	pending		M	644089d9ef9d0117048b2133b1608b530975566d

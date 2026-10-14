@@ -1,0 +1,4 @@
+=== 2026-10-11T04:27:51Z gate start (cregit 1f17663, ctp ca113e3)
+census rc=0
+libexpat Parquet: 14eb5d728ca6fa50623cb89088ab59348e646f1205ed3cf9f48bff0142eab799 2196248 bytes
+=== 2026-10-11T04:30:36Z gate end

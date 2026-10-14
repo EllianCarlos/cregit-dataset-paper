@@ -1,0 +1,13 @@
+# Part a2 of the S and M projects of manifest.batch6.tsv (sha256 d54537af63a6cf6201cae5c5377286219e33305adb682e411af3367e642cb17b),
+# balanced by predicted time (6.9 h for 4 workers), u order; a fed spot part.
+# 9 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+eclipse-xtext__xtext	https://github.com/eclipse-xtext/xtext.git	pending		M	fd52bb858f246add75559e5b2d9b1c3739e8fa4d
+InsightSoftwareConsortium__ITK-Wasm	https://github.com/InsightSoftwareConsortium/ITK-Wasm.git	pending		S	c2f94d7082d876025bc158090b6c663dc20ab0aa
+LibreOffice__online	https://github.com/LibreOffice/online.git	pending		S	d0edfeabbdc969a9a66cf90976a63c2f4403a6d3
+hazelcast__hazelcast	https://github.com/hazelcast/hazelcast.git	pending		M	0c829b39e28f6a9a2d6017624ac62648ebca9984
+BlackyHawky__Clock	https://github.com/BlackyHawky/Clock.git	pending		S	1be6c26fa1a478474626201c8d72783ace031645
+gitlab.com__petsc__petsc	https://gitlab.com/petsc/petsc	pending		M	398a56cd15d9f0b4708d6ed1d3ef2f02dfc964d5
+quanteda__quanteda	https://github.com/quanteda/quanteda.git	pending		S	71c7c3f3764f3d7b2e74e8ee46a803813ca45471
+apache__skywalking-java	https://github.com/apache/skywalking-java.git	pending		S	ea2fb09b0736cbbcc28b66ca57ca6513f6c9284f
+openxla__xla	https://github.com/openxla/xla.git	pending		M	e30e2768c8f5c9d7080e8ad99662e4d90a7146a7

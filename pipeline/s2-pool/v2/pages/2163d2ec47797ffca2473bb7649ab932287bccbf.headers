@@ -1,0 +1,23 @@
+HTTP/2 301 
+content-type: text/plain; charset=utf-8
+date: Sat, 10 Oct 2026 00:02:53 GMT
+location: https://www.ccadb.org/
+server: Netlify
+strict-transport-security: max-age=31536000
+x-nf-request-id: 01M4HHX8ZSCYMC48S40BYNH4ER
+content-length: 37
+
+HTTP/2 200 
+accept-ranges: bytes
+age: 0
+cache-control: public,max-age=0,must-revalidate
+cache-status: "Netlify Edge"; fwd=miss; fwd-status=200; stored
+content-type: text/html; charset=UTF-8
+date: Sat, 10 Oct 2026 00:02:53 GMT
+etag: "858fb207010526ae558f4df7030d4044-ssl"
+server: Netlify
+strict-transport-security: max-age=31536000
+vary: Accept-Encoding
+x-nf-request-id: 01M4HHX90G9CXBA6Z0DNTJ59JV
+content-length: 2569
+

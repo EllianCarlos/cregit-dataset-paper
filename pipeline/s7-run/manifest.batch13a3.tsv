@@ -1,0 +1,20 @@
+# Part a3 of the S and M projects of manifest.batch13.tsv (sha256 1d1f93d1d2952c0f2a25ca8f968b8bf867959609ab38c913a98784b9d447bfcc),
+# balanced by predicted time (5.8 h for 4 workers), u order; a fed spot part.
+# 16 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+Lienol__openwrt	https://github.com/Lienol/openwrt.git	pending		M	a337df404ab3f6dc5b3e7b26a753343d3ad2f4c2
+bitshares__bitshares-core	https://github.com/bitshares/bitshares-core.git	pending		S	4292a623386625026377b86ab511c686fc5853bb
+martinrotter__rssguard	https://github.com/martinrotter/rssguard.git	pending		S	ce5e3cab672c435e77b7427974cc374bb4b927d3
+GNOME__at-spi2-core	https://github.com/GNOME/at-spi2-core.git	pending		S	675ad4f16a7a4e0c22873ec96118fce084fc6326
+cline__cline	https://github.com/cline/cline.git	pending		S	c00bf86595d2fee6665fa3b27091d95e57578013
+FreeCol__freecol	https://github.com/FreeCol/freecol.git	pending		S	abe472b229f0149e060256e02a0aa9e7ae70e9bb
+SlickAmogus__silent-hill-decomp	https://github.com/SlickAmogus/silent-hill-decomp.git	pending		S	6ce09cef328c7fcdde7ca51d8189869da0233fdf
+emsec__hal	https://github.com/emsec/hal.git	pending		S	7151a1b7d766a66b7e59a2118a1f15fa583bb49f
+indexdata__yaz	https://github.com/indexdata/yaz.git	pending		S	4b986c0cb070fab65cdf41c33326dc77ed7c1c6a
+uxlfoundation__oneDNN	https://github.com/uxlfoundation/oneDNN.git	pending		S	83c1c950b471d181755ca17315a9ae622e219aa5
+espressif__openocd-esp32	https://github.com/espressif/openocd-esp32.git	pending		S	27b714ab76cf743bf894df00654b439f5913f488
+universal-ctags__ctags	https://github.com/universal-ctags/ctags.git	pending		S	5b72de800ae3dfb15473ced6717ba4d7b2859925
+llnl__rose	https://github.com/llnl/rose.git	pending		S	7e9c139f89a050e9fb9c0fddeef3c65cbfc4e643
+Andersbakken__rtags	https://github.com/Andersbakken/rtags.git	pending		S	4abf149e27645dd2bd0e4f7557e114fa86822055
+daos-stack__daos	https://github.com/daos-stack/daos.git	pending		S	9500a75da22549c815bb202f5a774547cbecfd9a
+operaton__operaton	https://github.com/operaton/operaton.git	pending		S	30f2348861f4752794db3f908c5aca56cce975cc

@@ -1,0 +1,23 @@
+# Part a5 of the S and M projects of manifest.batch10.tsv (sha256 196d7166a36b215c498418c83c3e96c241e1ff6dddc10cee6e033afb0553f8a7),
+# balanced by predicted time (5.7 h for 4 workers), u order; a fed spot part.
+# 19 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+igniterealtime__Smack	https://github.com/igniterealtime/Smack.git	pending		S	e3db2ab67c59ac985f6c11e1d65e4c2a9151b3ff
+zaproxy__zaproxy	https://github.com/zaproxy/zaproxy.git	pending		S	c75375055d78f8cf89762e009cc9d4d35d0e9f54
+mrakgr__The-Spiral-Language	https://github.com/mrakgr/The-Spiral-Language.git	pending		S	35fb83e06631e7d7c73758fdf5f7a6fe65e86752
+IfcOpenShell__IfcOpenShell	https://github.com/IfcOpenShell/IfcOpenShell.git	pending		S	b538bfb6813e4a9978195cda8ee9e39b12763c4c
+arendst__Tasmota	https://github.com/arendst/Tasmota.git	pending		S	33bfcf45781ba66cb625ed42d209079e2a6a7fbb
+geany__geany	https://github.com/geany/geany.git	pending		S	956e5be9060df37abf5bd9039c8758709f2a6f8d
+GNOME__gvfs	https://github.com/GNOME/gvfs.git	pending		S	86448383907c678bfdabf316a5a78a4ef7daa2ef
+firecracker-microvm__firecracker	https://github.com/firecracker-microvm/firecracker.git	pending		S	f23a2136011e89e7953923d0efcf67f72d18fc87
+xboot__xboot	https://github.com/xboot/xboot.git	pending		S	addb5abfe40edf2397bd30b8ba52e20f05267393
+kzahel__yepanywhere	https://github.com/kzahel/yepanywhere.git	pending		S	1916543bf31e60ec029b7f569a7bdf9a875337df
+BluSunrize__ImmersiveEngineering	https://github.com/BluSunrize/ImmersiveEngineering.git	pending		S	75a27f03e4243544243567e8d5c38d336f4f10f4
+pikasTech__PikaPython	https://github.com/pikasTech/PikaPython.git	pending		S	99ea8246ccaa3cc0b444df6f921efa574e914ec9
+Xilinx__XRT	https://github.com/Xilinx/XRT.git	pending		S	2bfd112944d30647ae66f350466791ad9e224786
+DioxusLabs__dioxus	https://github.com/DioxusLabs/dioxus.git	pending		S	f9519967a6fb3e85bf3c1a2e2bf816a85033f752
+facebook__wangle	https://github.com/facebook/wangle.git	pending		S	274a984dc7752d07d6f7a39db83533fa333fa055
+OffchainLabs__arbitrum-classic	https://github.com/OffchainLabs/arbitrum-classic.git	pending		S	dd4595f894b52c73a293a0c4bce9411afb12da12
+TheRenegadeCoder__sample-programs	https://github.com/TheRenegadeCoder/sample-programs.git	pending		S	a23d0fb6f4c8cc94e4d4ebd9813193d99dd93409
+asterisk__asterisk	https://github.com/asterisk/asterisk.git	pending		M	85de5156d5111a962ae3585ca76b6e77b9e5a006
+gongminmin__KlayGE	https://github.com/gongminmin/KlayGE.git	pending		S	8a17214dba735ab1a9a2e8f2d28b71bd04465429

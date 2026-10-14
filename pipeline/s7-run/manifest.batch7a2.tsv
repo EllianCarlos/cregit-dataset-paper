@@ -1,0 +1,12 @@
+# Part a2 of the S and M projects of manifest.batch7.tsv (sha256 c292b9d4dbd64d4dfa983374635f00d165ecd33a6dc0f1f0dfe36b830a188033),
+# balanced by predicted time (6.5 h for 4 workers), u order; a fed spot part.
+# 8 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+QwikDev__qwik	https://github.com/QwikDev/qwik.git	pending		S	58166f8506f6eced75df357d33a18304fd151f61
+python__cpython	https://github.com/python/cpython.git	pending		M	85c03d47a240247d41799c2075f85f690558534c
+skaiworldwide-oss__agensgraph	https://github.com/skaiworldwide-oss/agensgraph.git	pending		M	126109ae69d6745bdc4affced166e0444df2f5a7
+SonarSource__SonarJS	https://github.com/SonarSource/SonarJS.git	pending		S	21e0527899eb28c6013b64036205a8fdf03ad884
+lammps__lammps	https://github.com/lammps/lammps.git	pending		M	e891a3e10973c1a729e391a0aefaa02fd70f8c0f
+SAP__sailing-analytics	https://github.com/SAP/sailing-analytics.git	pending		M	0b69d2747649b890ef6e9e1dfe29ce12580d5038
+nextcloud__talk-android	https://github.com/nextcloud/talk-android.git	pending		S	b2001c512a5a156083ca92957748369bf27221a5
+Waffle__waffle	https://github.com/Waffle/waffle.git	pending		S	4be96a5c8c7fe5f22fa81bfb4259ed6a9d7e1846

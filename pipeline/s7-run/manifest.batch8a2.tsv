@@ -1,0 +1,11 @@
+# Part a2 of the S and M projects of manifest.batch8.tsv (sha256 adc81a175da6c733e3ef1b3d88c8f46f77390c6d808d3c14d01da8ebb96c7a32),
+# balanced by predicted time (6.2 h for 4 workers), u order; a fed spot part.
+# 7 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+OpenNMS__opennms	https://github.com/OpenNMS/opennms.git	pending		M	52088a0e624c2c1650d04c0f23a4c89ffc56b0d8
+iproute2__iproute2	https://github.com/iproute2/iproute2.git	pending		S	e11870d5b9414b2e0770463bd6fc2399744dc734
+stan-dev__math	https://github.com/stan-dev/math.git	pending		S	6110e533f3624868c590833b85058325a2aafced
+haikuports__haikuports	https://github.com/haikuports/haikuports.git	pending		M	6d9450543d06bf62a7fc443e2ed976d7247b2f90
+quarkusio__quarkus	https://github.com/quarkusio/quarkus.git	pending		M	8d68aef98e63a3595272d94c49c1684dfedb5128
+okcashpro__okcash	https://github.com/okcashpro/okcash.git	pending		S	5cdcabd519c9e7b888ab47038a5802703a57dddf
+hortonworks__cloudbreak	https://github.com/hortonworks/cloudbreak.git	pending		S	8c92a1e1bbf895bf99fe4dd8edf8f98a30166d7c

@@ -1,0 +1,27 @@
+# Part a3 of the S and M projects of manifest.batch6.tsv (sha256 d54537af63a6cf6201cae5c5377286219e33305adb682e411af3367e642cb17b),
+# balanced by predicted time (6.8 h for 4 workers), u order; a fed spot part.
+# 23 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+facebook__folly	https://github.com/facebook/folly.git	pending		S	e8059087eba5f960060ef396cad7739ec86d6fa6
+yvgude__lean-ctx	https://github.com/yvgude/lean-ctx.git	pending		S	e5a3b4a790e57c280ab80092d13e748f8fc92cd2
+analogdevicesinc__no-OS	https://github.com/analogdevicesinc/no-OS.git	pending		S	4c1a56a7ed0926baa5a8494eeb1065132aad8174
+google__or-tools	https://github.com/google/or-tools.git	pending		S	100f66e6242ab8bf8d32feb8f3bf086db66ae2b5
+0xMiden__miden-vm	https://github.com/0xMiden/miden-vm.git	pending		S	e36f4434a0d846aa4975fa4bd022d38102553700
+zaproxy__zap-extensions	https://github.com/zaproxy/zap-extensions.git	pending		S	5a44248fc358d80d77412907d165a009fa121384
+Delta-Icons__android	https://github.com/Delta-Icons/android.git	pending		S	cdf6a63cae9a6f28850a43c1bbff17794c488faf
+marin-community__marin	https://github.com/marin-community/marin.git	pending		S	a69e8fd87a525c080901ea907686a7092119e765
+TileDB-Inc__TileDB	https://github.com/TileDB-Inc/TileDB.git	pending		S	5a6e5f426e9b8f66746f764435db23adf05eb996
+GNOME__gnome-settings-daemon	https://github.com/GNOME/gnome-settings-daemon.git	pending		S	ac15c6130e2e40211270e4f537975d82ce9650f6
+Warzone2100__warzone2100	https://github.com/Warzone2100/warzone2100.git	pending		S	7fa91aa8a1351edc05244fa1957c681c6653dc59
+rust-lang__rustc_codegen_cranelift	https://github.com/rust-lang/rustc_codegen_cranelift.git	pending		S	05409775adc5f87a3aae12184486301f70ca519d
+buddhi1980__mandelbulber2	https://github.com/buddhi1980/mandelbulber2.git	pending		S	e491fd3959cf47c61b4224318075571da17b7879
+openframeworks__openFrameworks	https://github.com/openframeworks/openFrameworks.git	pending		S	5052e08a015a324df7adceb2a3c4278fafb3c5a2
+tronprotocol__java-tron	https://github.com/tronprotocol/java-tron.git	pending		S	b33eed89a6a424c498d4fb1b03ca2c86eddf4840
+latitude-dev__latitude-llm	https://github.com/latitude-dev/latitude-llm.git	pending		S	2ab125c1d8b04eed55b93a510333ea8654760cb1
+eclipse-pde__eclipse.pde	https://github.com/eclipse-pde/eclipse.pde.git	pending		S	eac284601cb03bfc8cea3d7b7dd9fc81a34e87f5
+dstndstn__astrometry.net	https://github.com/dstndstn/astrometry.net.git	pending		S	d20a0503739e74b02418cde2e7d65013dadac579
+cachix__devenv	https://github.com/cachix/devenv.git	pending		S	fe20b5cba7ab5e93ae73f956a8d3efc50e1753f4
+lilypond__lilypond	https://github.com/lilypond/lilypond.git	pending		M	45851a4412399c9274f072b791a9ce53eaa9901f
+fieldtrip__fieldtrip	https://github.com/fieldtrip/fieldtrip.git	pending		S	77ff5f572c58c4b0138c09bee66f8a97e3845763
+GenericMappingTools__gmt	https://github.com/GenericMappingTools/gmt.git	pending		S	75f7156cbbd6ebd42032f148a71103ff120042b7
+carverauto__serviceradar	https://github.com/carverauto/serviceradar.git	pending		S	349edc7a68f4ba88fc8ac931ff4bafd5f5a4c35d

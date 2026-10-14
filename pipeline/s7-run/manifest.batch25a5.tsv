@@ -1,0 +1,5 @@
+# Part a5 of the S and M projects of manifest.batch25.tsv (sha256 ec96e8f8712a384071394a6a5517e0420244887a433ebfcf8d0092e17f5a272d),
+# balanced by predicted time (5.1 h for 1 workers), u order; a fed spot part.
+# 1 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+gitlab.freedesktop.org__mesa__mesa	https://gitlab.freedesktop.org/mesa/mesa	pending		L	1df51f350aefee6f4afa435cea8efd8ca53cb4ec

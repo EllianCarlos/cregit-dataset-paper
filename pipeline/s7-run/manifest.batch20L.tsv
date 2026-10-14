@@ -1,0 +1,4 @@
+# The L projects of manifest.batch20.tsv (sha256 4c456b71c9e1db2907af03ac928fea9e460ff859170009b53725d68c63848625), for the census batch20L on the big on-demand EC2.
+# 1 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+MotorolaMobilityLLC__kernel-msm	https://github.com/MotorolaMobilityLLC/kernel-msm.git	pending		L	0450c5076a8ec9415a10888c8c183ef6ff5f91b8

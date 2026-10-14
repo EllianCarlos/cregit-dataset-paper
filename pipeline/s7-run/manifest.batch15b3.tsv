@@ -1,0 +1,25 @@
+# Part b3 of the S and M projects of manifest.batch15.tsv (sha256 ef0a99a173728f06226d70b9f0bdc6b1ca14a87ee16172ba5d195ada48f6b470),
+# balanced by predicted time (6.0 h for 4 workers), u order; a fed spot part.
+# 21 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+gchq__stroom	https://github.com/gchq/stroom.git	pending		S	cbf46d4c9bfa2abd7c0fbc96776436e3dda2e5d8
+forcedotcom__SalesforceMobileSDK-iOS	https://github.com/forcedotcom/SalesforceMobileSDK-iOS.git	pending		S	b153bf201a90cc3814414469dbad589e80978248
+citron-neo__emulator	https://github.com/citron-neo/emulator.git	pending		S	d8c1886efa33f52e5e0ba95e784a92f8f2b711a9
+epam__cloud-pipeline	https://github.com/epam/cloud-pipeline.git	pending		S	50176885bc42a6924c479cb163d0ae1de0dc9e32
+bnb-chain__bsc	https://github.com/bnb-chain/bsc.git	pending		S	c5533ab5b7244dc474add10740834417a2c605d7
+CelestiaProject__Celestia	https://github.com/CelestiaProject/Celestia.git	pending		S	9ed934b1402828b997549b2a5bb1f12ec2b24f8e
+TeamHypersomnia__Hypersomnia	https://github.com/TeamHypersomnia/Hypersomnia.git	pending		S	c63ee9597ab9cc49ced29be590e738ad7e840ccb
+XCSoar__XCSoar	https://github.com/XCSoar/XCSoar.git	pending		M	356c1aba571d74620275ee675aa1ebfd8be74f5f
+apistol78__traktor	https://github.com/apistol78/traktor.git	pending		S	2656965081e8b7c9102ae29ed8f2af0ba5993e99
+msm8916-mainline__lk2nd	https://github.com/msm8916-mainline/lk2nd.git	pending		S	8b46487c4c76776c4f2f61468d44a74c69e6b9ea
+lightspark__lightspark	https://github.com/lightspark/lightspark.git	pending		S	9092db6dbbdea7763a174e81ceaca3ea9626cd2a
+JetBrains__kotlin-toolchain	https://github.com/JetBrains/kotlin-toolchain.git	pending		S	e7a93c9d0f70aa9af92e0bc881af7235e585c0e7
+hluk__CopyQ	https://github.com/hluk/CopyQ.git	pending		S	68e1016ddf0952aba5d13f76e57b5938d254769b
+rr-debugger__rr	https://github.com/rr-debugger/rr.git	pending		S	858a9fbcc5ac71cc578c2e1966f573d7c4ff8257
+LostArtefacts__TRX	https://github.com/LostArtefacts/TRX.git	pending		S	e8acdab79699afcf9f43ab5e64ecd5664b069649
+atheme__atheme	https://github.com/atheme/atheme.git	pending		S	88de242f4755394746444c7bd28da15127d976d2
+gentics__mesh	https://github.com/gentics/mesh.git	pending		S	e56b3cdc10d63847a6b92a36f197c3156a360b22
+androidx__media	https://github.com/androidx/media.git	pending		S	8c6678b657ede1e7883fc164ef73ed483c7796c3
+magcius__noclip.website	https://github.com/magcius/noclip.website.git	pending		S	4cb7471c7631370faf5d526a56876d91ba24aca0
+ProvableHQ__snarkOS	https://github.com/ProvableHQ/snarkOS.git	pending		S	947b77739cbeafac5ac8683f3baf704cd2d680f3
+facebook__fresco	https://github.com/facebook/fresco.git	pending		S	aee331504a2162bb15ff481c43890cc8d40c0e16

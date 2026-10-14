@@ -1,0 +1,3 @@
+pool_key,name_with_owner,has_license,evidence,reason,source
+gh:33538867,ncqgm/gnumed,False,,no license file at the root (GitHub licenseInfo ),gnu_v2_rows
+gh:3391821,arenn/java-getopt,False,,no license file at the root (GitHub licenseInfo ),gnu_v2_rows

@@ -1,0 +1,25 @@
+# Part b2 of the S and M projects of manifest.batch12.tsv (sha256 6f4e0b95cc46dde0079b671dc19e8737a15e3a7e98ad301a629af614192c3fc8),
+# balanced by predicted time (6.7 h for 4 workers), u order; a fed spot part.
+# 21 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+paparazzi__paparazzi	https://github.com/paparazzi/paparazzi.git	pending		S	ddf8a54b7866cd3a3946c6405cd3913ce546b149
+LegadoTeam__legado	https://github.com/LegadoTeam/legado.git	pending		S	5198645f0a504b1f6d1259885317e056ff6a4a02
+coin-or__CppAD	https://github.com/coin-or/CppAD.git	pending		S	d1cedfde6242ceb5cd2dde07620161f691f90767
+posit-dev__positron	https://github.com/posit-dev/positron.git	pending		S	3d618a9bce2159a50001d981b87b6c67e34d0012
+invent.kde.org__unmaintained__android-qt-mobility	https://invent.kde.org/unmaintained/android-qt-mobility	pending		S	bb7d3c9b2e2aefc7fead75226f8356339e71f051
+oracle__weblogic-kubernetes-operator	https://github.com/oracle/weblogic-kubernetes-operator.git	pending		S	cbeb9efc21e2f8ec601da3c72962e437926889d4
+lix-project__lix	https://github.com/lix-project/lix.git	pending		S	29bde4807fe1cbc4296989f849aaa927171066fe
+cloudtogo__pageplug	https://github.com/cloudtogo/pageplug.git	pending		S	a59f11c02d00424fa39e4d3e727ada4544db7984
+invent.kde.org__historical__amarok-history	https://invent.kde.org/historical/amarok-history	pending		S	fb4460f774f4c77c2cc75ade5c2039e92593e651
+VolmitSoftware__Iris	https://github.com/VolmitSoftware/Iris.git	pending		S	c479e94c49c13d27ad71e48e92d2fce295c45463
+satijalab__seurat	https://github.com/satijalab/seurat.git	pending		S	75dfa8603befe31505e6287d32dc86c607732bd6
+NixOS__hydra	https://github.com/NixOS/hydra.git	pending		S	9b06ccada5691cba513414e199d9686d26480aa3
+zufuliu__notepad4	https://github.com/zufuliu/notepad4.git	pending		S	e2e7ff316c28017022ef3424f3e1eac2200fb1e6
+estuary__flow	https://github.com/estuary/flow.git	pending		S	e6d0bd25b7731a01d64250a2479375e2b68c8b1d
+eclipse-gef__gef-classic	https://github.com/eclipse-gef/gef-classic.git	pending		S	d9c162095412850010a26530b1945769e34797ac
+rizinorg__rizin	https://github.com/rizinorg/rizin.git	pending		M	d14c3fac4126bc5fbe66e7f3d1660aeab22b01d8
+TortoiseGit__TortoiseGit	https://github.com/TortoiseGit/TortoiseGit.git	pending		S	7338078f8ddd924b8cddee35f512f2286072136d
+sumatrapdfreader__sumatrapdf	https://github.com/sumatrapdfreader/sumatrapdf.git	pending		S	709c5e6a464ab7f0ca4540b02c71562712627b17
+llnl__Umpire	https://github.com/llnl/Umpire.git	pending		S	a74bd731992348a4860f040a5748ba1a7abc7a95
+lxc__lxc	https://github.com/lxc/lxc.git	pending		S	61d8ba0a959264dc0d281589526c1391f4406366
+FRRouting__frr	https://github.com/FRRouting/frr.git	pending		M	18382edc6d67d6ab7039103e94abdd7f9fd4df7f

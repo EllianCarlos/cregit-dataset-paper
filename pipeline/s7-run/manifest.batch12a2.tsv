@@ -1,0 +1,15 @@
+# Part a2 of the S and M projects of manifest.batch12.tsv (sha256 6f4e0b95cc46dde0079b671dc19e8737a15e3a7e98ad301a629af614192c3fc8),
+# balanced by predicted time (6.8 h for 4 workers), u order; a fed spot part.
+# 11 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+apache__dolphinscheduler	https://github.com/apache/dolphinscheduler.git	pending		S	93cb9a26b70f7fec4bc20232d93a6647708358f8
+polardb__PolarDB-for-PostgreSQL	https://github.com/polardb/PolarDB-for-PostgreSQL.git	pending		M	fd9fc37f6a4d6fce58b61af39c18cb979fa15419
+apache__hadoop	https://github.com/apache/hadoop.git	pending		S	6a2309f03649b1da4cbe7173321a85740a03a5cc
+invent.kde.org__unmaintained__kdepimlibs	https://invent.kde.org/unmaintained/kdepimlibs	pending		S	33b27680fd965729e6e107f3bb4b034c7df9b50b
+ziglang__zig	https://github.com/ziglang/zig.git	pending		M	738d2be9d6b6ef3ff3559130c05159ef53336224
+MojoLauncher__MojoLauncher	https://github.com/MojoLauncher/MojoLauncher.git	pending		S	3548a9aaeb7d30d1267b72c961e49a3ed424d494
+igvteam__igv	https://github.com/igvteam/igv.git	pending		S	3a2b7fb10c1e319571ef477948fd2a5f5bc107ff
+oceanbase__oceanbase	https://github.com/oceanbase/oceanbase.git	pending		S	0fa1778765483295e844f0465938b831ee56fe4b
+klange__ponyos	https://github.com/klange/ponyos.git	pending		S	655eee77fe463b4da5f3c8d01055f38ab47348d4
+nickel-lang__nickel	https://github.com/nickel-lang/nickel.git	pending		S	234cd6197bc506a5c0c53ea86e1b0f1044b602a3
+rust-lang__rust-repos	https://github.com/rust-lang/rust-repos.git	pending		S	479f3d400ba4a8791d60db37d4d2dd0bdb32e7cb

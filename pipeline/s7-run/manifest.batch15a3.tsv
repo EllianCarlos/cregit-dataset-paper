@@ -1,0 +1,28 @@
+# Part a3 of the S and M projects of manifest.batch15.tsv (sha256 ef0a99a173728f06226d70b9f0bdc6b1ca14a87ee16172ba5d195ada48f6b470),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 24 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+eclipse-jnosql__jnosql	https://github.com/eclipse-jnosql/jnosql.git	pending		S	3bd32f7024e6007f190ae385f32702f20f4f7f1a
+strace__strace	https://github.com/strace/strace.git	pending		S	bf822b2dd9ca0d51e992629f6f30687ed8abe696
+zowe__zowe-cli	https://github.com/zowe/zowe-cli.git	pending		S	7b98d072d8ab3c5577fded38eb9423614242f722
+soot-oss__soot	https://github.com/soot-oss/soot.git	pending		S	a25593e12b7f7cbcc9eb4414e1532e557796dfed
+r-lib__rlang	https://github.com/r-lib/rlang.git	pending		S	c6c65ba174bf4d06a91bf63e4e535d351c0d51fa
+dxos__dxos	https://github.com/dxos/dxos.git	pending		S	d2a6aad85defc0e0d3d9e779d1113052d3e2fce5
+DOI-USGS__ISIS3	https://github.com/DOI-USGS/ISIS3.git	pending		S	fd19d727c12e2249eed373ffbb73e6e117ad2f0d
+GNOME__mutter	https://github.com/GNOME/mutter.git	pending		M	285f54d394b6c041dcdab90d79ecdb761af655ec
+ztxz16__fastllm	https://github.com/ztxz16/fastllm.git	pending		S	74037dfa8aa67b19bde5f633152d66f621b1ea9e
+ARMSX2__ARMSX3	https://github.com/ARMSX2/ARMSX3.git	pending		S	92b931b9fb5eef7f1317cb482917dfc19aceebd9
+squidowl__halloy	https://github.com/squidowl/halloy.git	pending		S	16be1ef91abd1c5a96ff868466b174d248faa386
+PKRoma__ProcessHacker	https://github.com/PKRoma/ProcessHacker.git	pending		S	5273b5d6708dff745ad8b76a67741ca4a1f45b96
+nsis-dev__nsis	https://github.com/nsis-dev/nsis.git	pending		S	a4ba28e60bd9e7c271cd2bfc1558889ce3355653
+gitlab.com__nsnam__ns-3-dev	https://gitlab.com/nsnam/ns-3-dev	pending		S	994b1b373188617976df39b383b87525f4d508f1
+jellyfin__jellyfin-vue	https://github.com/jellyfin/jellyfin-vue.git	pending		S	b99f634e3cbcf63c9969e36effe2e45f9defef7a
+squid-cache__squid	https://github.com/squid-cache/squid.git	pending		S	1b1c4b38ac9c5501034e4a659859c7133ecef99c
+code-yeongyu__oh-my-openagent	https://github.com/code-yeongyu/oh-my-openagent.git	pending		S	c9b6f7622a2ecbb91f085181fc5d26d65ed00275
+material-components__material-components-android	https://github.com/material-components/material-components-android.git	pending		S	60ff09436d5d477a4b9d02940f31eb01e1250620
+termux__termux-packages	https://github.com/termux/termux-packages.git	pending		M	ce59c5eac46c528aabdd5348b050c7fd64bacdb6
+antlr__grammars-v4	https://github.com/antlr/grammars-v4.git	pending		S	7df52be94698550d219d299d04105c6bafadd9c3
+astral-sh__uv	https://github.com/astral-sh/uv.git	pending		S	eaa0fb829a581ef50fd75c53b5ca964bc73d31c6
+vividus-framework__vividus	https://github.com/vividus-framework/vividus.git	pending		S	b4c0a1c76b2851c6fbdd53c142d867304a6da653
+maharmstone__btrfs	https://github.com/maharmstone/btrfs.git	pending		S	3fa5cf21dde2913d58d7b74e150625e18bd490bd
+finos__architecture-as-code	https://github.com/finos/architecture-as-code.git	pending		S	d389a56bbe20325583ceb38262c7a398f1c9101f

@@ -1,0 +1,23 @@
+# Part a3 of the S and M projects of manifest.batch11.tsv (sha256 c0bc3c7dfba79160d832ec8f554c147ba73f356035049fa27b4442dfc81ecea4),
+# balanced by predicted time (6.4 h for 4 workers), u order; a fed spot part.
+# 19 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+CodeDefenders__CodeDefenders	https://github.com/CodeDefenders/CodeDefenders.git	pending		S	46ca2bde026a47263637f16039853246e0ef11d0
+OpenRCT2__OpenRCT2	https://github.com/OpenRCT2/OpenRCT2.git	pending		M	21afdbc55008335cd70e72a53d465608f9f645ac
+fedimint__fedimint	https://github.com/fedimint/fedimint.git	pending		S	0a75f7e749f5fece8fb068c532e33e5d666baae6
+igraph__igraph	https://github.com/igraph/igraph.git	pending		S	912f99d59134a70ebe26eafe804a7af62d4868d4
+iterate-ch__cyberduck	https://github.com/iterate-ch/cyberduck.git	pending		M	0131849a590b256e2fcaa6f9fba2f9f325144f06
+appleseedhq__appleseed	https://github.com/appleseedhq/appleseed.git	pending		S	c4ba82893febd711befb194f905e955d3ee143a3
+bastani-inc__atomic	https://github.com/bastani-inc/atomic.git	pending		S	8dcfbb18d43b5f60fa0807ae8371afc4875b9f00
+CEED__libCEED	https://github.com/CEED/libCEED.git	pending		S	5927cb160d93babeaf7b742413ad82db540e0af7
+GrammaTech__ddisasm	https://github.com/GrammaTech/ddisasm.git	pending		S	fe18e25e459c0ccdfbb3aeb28786aa438c441558
+denoland__std	https://github.com/denoland/std.git	pending		S	f834d0223364361169314833e3c7a8f62ce11d58
+wesnoth__wesnoth	https://github.com/wesnoth/wesnoth.git	pending		M	0b39161b4c34bf5e5ce781f74eecc017b0c7d90b
+x-tools-author__x-tools	https://github.com/x-tools-author/x-tools.git	pending		S	6214c41757200c9f64d91aa46ebfcc8abe06be7a
+mongodb__mongo-c-driver	https://github.com/mongodb/mongo-c-driver.git	pending		S	256c8ada5ac00821e4a4689a0b82e70daba8e943
+visit-dav__visit	https://github.com/visit-dav/visit.git	pending		S	1430e82c5f347173cad65984d7d7e1421399c0e6
+RenderKit__embree	https://github.com/RenderKit/embree.git	pending		S	3d9cb89b9ea099c630e6272d37767e7dd4e78e74
+TEAMMATES__teammates	https://github.com/TEAMMATES/teammates.git	pending		S	beac847bf7c384991820813dadf4f48e994cd66f
+xrootd__xrootd	https://github.com/xrootd/xrootd.git	pending		S	778d8c237667bf201fb06986d3d0cae107f0654a
+skyjake__lagrange	https://github.com/skyjake/lagrange.git	pending		S	8b980a6422314f17149b002ffcc78da7de037147
+rust-lang__crates.io	https://github.com/rust-lang/crates.io.git	pending		S	0ea9b2cc5237d037b7e690d26015bc458cf14d28

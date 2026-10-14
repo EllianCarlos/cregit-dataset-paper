@@ -1,0 +1,12 @@
+# Part a2 of the S and M projects of manifest.batch19.tsv (sha256 8a11b7acec582e49f76d0e09d7ff1e039d3458ef456ff4c1a875509b92849d3b),
+# balanced by predicted time (7.3 h for 4 workers), u order; a fed spot part.
+# 8 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+seaweedfs__seaweedfs	https://github.com/seaweedfs/seaweedfs.git	pending		S	825c3dff8b41ce1684d97f6c28e3106860ccfbe4
+facebook__fboss	https://github.com/facebook/fboss.git	pending		M	12fb86c997b40161415c9fa2d6aec8d0b90bc424
+bjornbytes__lovr	https://github.com/bjornbytes/lovr.git	pending		S	f602e91ecdbe1c4bc7d72d156c9592919f9f9478
+miranda-ng__miranda-ng	https://github.com/miranda-ng/miranda-ng.git	pending		S	fd43169fa62751eb3d4afd648ef4c69135db3f0e
+Marklogic-retired__marklogic-data-hub	https://github.com/Marklogic-retired/marklogic-data-hub.git	pending		S	84eb70903be78b22cb052f4156f196e5fe781f1e
+amll-dev__amll-ttml-db	https://github.com/amll-dev/amll-ttml-db.git	pending		S	5c93dcc09662bf0d16429b923e0bcedc1e347126
+dart-lang__sdk	https://github.com/dart-lang/sdk.git	pending		M	e1c144a8685e9a231bf2fc646f8201d6841107e4
+InsightSoftwareConsortium__ITK	https://github.com/InsightSoftwareConsortium/ITK.git	pending		M	5d31af3cfdf2071d14dfc331d169111487b80597

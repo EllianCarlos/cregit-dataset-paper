@@ -1,0 +1,21 @@
+# Part a5 of the S and M projects of manifest.batch18.tsv (sha256 432ad2e493ba966ef387af309dc2cfab6bc374ba9fa442b0705d1617cdcd2f76),
+# balanced by predicted time (5.9 h for 4 workers), u order; a fed spot part.
+# 17 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+obspy__obspy	https://github.com/obspy/obspy.git	pending		S	50033e1daf95233cd4f30e95a49c37fd50be2ccd
+bitcoin-core__gui	https://github.com/bitcoin-core/gui.git	pending		M	cf80493e2367786ce9946c522eb8313a52c90557
+dresden-elektronik__deconz-rest-plugin	https://github.com/dresden-elektronik/deconz-rest-plugin.git	pending		S	a4c17adfa04abc63637ad17de7f85256a825a2cb
+ptitSeb__box64	https://github.com/ptitSeb/box64.git	pending		S	d58d619e84e03282326e8a26c2cbfe749931b5f8
+teeworlds__teeworlds	https://github.com/teeworlds/teeworlds.git	pending		S	5d682733e482950f686663c129adc4b751c8d790
+neoforged__NeoForge	https://github.com/neoforged/NeoForge.git	pending		S	6edb30da05fe980f03cb205f390f3c7a719faeb6
+databendlabs__databend	https://github.com/databendlabs/databend.git	pending		M	9b7eeff9a80264c2fd07499e522f237559856265
+datageartech__datagear	https://github.com/datageartech/datagear.git	pending		S	6398c73ecc9cc3844b54dc85b59d5565eaf66100
+pqrs-org__Karabiner-Elements	https://github.com/pqrs-org/Karabiner-Elements.git	pending		S	ec2fea8940f7254a748c052a890ee9db7113d9b1
+gazebosim__gz-sim	https://github.com/gazebosim/gz-sim.git	pending		S	3d89af918ecec9b63f99af92683ee6c477064bd2
+git__git	https://github.com/git/git.git	pending		M	5a7d1e8045ce66c908f62598e26cbb8df7b39a90
+NeoGeographyToolkit__StereoPipeline	https://github.com/NeoGeographyToolkit/StereoPipeline.git	pending		S	5ebdaabea2f50847fdd8f4f08cf3d7af09e5b469
+RosettaCommons__rosetta	https://github.com/RosettaCommons/rosetta.git	pending		S	369e400415dd5c585f80dcf7b647147ee520e8ba
+danielkrupinski__Osiris	https://github.com/danielkrupinski/Osiris.git	pending		S	6c02996121a7faf6c9ca45150b5ab9aa614be382
+horsicq__XMachOViewer	https://github.com/horsicq/XMachOViewer.git	pending		S	40de92149b9f58a944aff2b5330907a6dc9aae63
+ptyfyre__mandarine-neo	https://github.com/ptyfyre/mandarine-neo.git	pending		S	7f8ec960b6183be4350bca099d23ddd9fc7bcaa3
+apache__qpid-broker-j	https://github.com/apache/qpid-broker-j.git	pending		S	83f889f288c23973d2fdb118b1728e59c946f1ff

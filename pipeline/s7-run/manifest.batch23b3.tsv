@@ -1,0 +1,20 @@
+# Part b3 of the S and M projects of manifest.batch23.tsv (sha256 d517fdd1f0c89820029e4b854eae0930d05e4a939f1241d7c6454c2306fdc589),
+# balanced by predicted time (4.2 h for 4 workers), u order; a fed spot part.
+# 16 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+dCache__dcache	https://github.com/dCache/dcache.git	pending		S	b06732627c6367b93983d8f810115bb0cb0a3d23
+openMSX__openMSX	https://github.com/openMSX/openMSX.git	pending		S	0e67b1c93934d195e4dd1daa7f915c05cc94ce25
+Autodesk__maya-usd	https://github.com/Autodesk/maya-usd.git	pending		S	3255d9d1856aadf25f7f1713390c788bf2a6b8ca
+alliedmodders__amxmodx	https://github.com/alliedmodders/amxmodx.git	pending		S	4f0cb1e1210d8cae0f2edaf77cb2aec37012a656
+krb5__krb5	https://github.com/krb5/krb5.git	pending		S	82a4224f07ad21c2a3e977c5c4651d7d30c6f1f0
+opentrack__opentrack	https://github.com/opentrack/opentrack.git	pending		S	043bfc1be415962151217709a101422404ea36a6
+carrot2__carrot2	https://github.com/carrot2/carrot2.git	pending		S	760d1c2ae29de7101039c9c9d92002e4885b86be
+rfandango__XenDroid	https://github.com/rfandango/XenDroid.git	pending		S	779680ade075d2d2a4c589c6a8d57a8e26c116c0
+jumpmindinc__symmetric-ds	https://github.com/jumpmindinc/symmetric-ds.git	pending		S	10940f47cb127200c749ef662aa60291e43ce86b
+Macaulay2__M2	https://github.com/Macaulay2/M2.git	pending		M	1a37f6fe95badb1e5f99707a485503d213fd9d49
+pret__pokeruby	https://github.com/pret/pokeruby.git	pending		S	5784633ce4ef7ade1a7f2d2d0c288e3d5e6cdd7f
+digego__extempore	https://github.com/digego/extempore.git	pending		S	5e42e31a63a67341b9a692b993493a1542dbb54b
+tensorflow__mlir-hlo	https://github.com/tensorflow/mlir-hlo.git	pending		S	74b9d25f5cb824269cabfd2d4640a050c3fe6728
+aseprite__aseprite	https://github.com/aseprite/aseprite.git	pending		S	14fe117e853bd642672e72018166239506060cd4
+plutext__docx4j	https://github.com/plutext/docx4j.git	pending		S	0e8e7633ef46012e0d3603339728b83ed21d5045
+ja2-stracciatella__ja2-stracciatella	https://github.com/ja2-stracciatella/ja2-stracciatella.git	pending		S	c527753eb635216c21bfcbeb058b6ed86823072a

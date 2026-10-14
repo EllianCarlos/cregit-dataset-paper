@@ -1,0 +1,32 @@
+# Part b2 of the S and M projects of manifest.batch1rest.tsv (sha256 8d43eeb3959a96c4373e4523eabb6c49aa5d74cf659a351a7214a766a96f785f),
+# balanced by predicted time (11.9 h for 4 workers), u order.
+# 28 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+LadybirdBrowser__ladybird	https://github.com/LadybirdBrowser/ladybird.git	pending		M	3390590c2f012daed5ce20020667349bd8a0cf1c
+AMReX-Codes__amrex	https://github.com/AMReX-Codes/amrex.git	pending		S	8cb32567d01afb5a2d1efa8b1bc7d27f00318f08
+tauri-apps__tauri	https://github.com/tauri-apps/tauri.git	pending		S	79d3537620ddd136b81896b2048207e7c15e08b9
+hibernate__hibernate-orm	https://github.com/hibernate/hibernate-orm.git	pending		S	aa9cedc32bec15bd0d270128518430f8e937f059
+cython__cython	https://github.com/cython/cython.git	pending		S	1b882573eb40ef1ebdaed0424a8f35bd23cb5a5a
+mavlink__MAVSDK	https://github.com/mavlink/MAVSDK.git	pending		S	10413fdf81ea67f0d9a9d064f36d329750d6f0e7
+precice__precice	https://github.com/precice/precice.git	pending		S	adf286a3140c16e3ab32e72050e56387757cd886
+Cisco-Talos__clamav-bytecode-compiler	https://github.com/Cisco-Talos/clamav-bytecode-compiler.git	pending		M	a1830a442110325d04708145437a5312fc6ab6f9
+GNOME__gnome-session	https://github.com/GNOME/gnome-session.git	pending		S	d3c610c1799cf23e36bad2e2860372edaaaa2e44
+Mercury-Language__mercury	https://github.com/Mercury-Language/mercury.git	pending		S	f6715f215e1bf1953a218400ad32b1bdd68b5999
+terminusdb__terminusdb	https://github.com/terminusdb/terminusdb.git	pending		S	57f2093baeafd65e16004e84b7b58e0c5cf72858
+garden-co__classic-jazz	https://github.com/garden-co/classic-jazz.git	pending		S	4f90501184d90a6674948ef6913c6e3267fd9087
+jenkinsci__git-plugin	https://github.com/jenkinsci/git-plugin.git	pending		S	f157de55222995407fb20985d7ee088c3fd09329
+mono__CppSharp	https://github.com/mono/CppSharp.git	pending		S	711b46df5ca47a92cdbdef829161733a6c69cab7
+SlimeBoyOwO__LingChat	https://github.com/SlimeBoyOwO/LingChat.git	pending		S	848fd3448c20ca32e0436a498d20e85f63393e7f
+GNOME__tinysparql	https://github.com/GNOME/tinysparql.git	pending		S	8d5c710ba1502fd4113177d37661c01d04723309
+ZoneMinder__zoneminder	https://github.com/ZoneMinder/zoneminder.git	pending		S	575e5484b31f6fc86add476df818edebb08db3fb
+vengi-voxel__vengi	https://github.com/vengi-voxel/vengi.git	pending		S	322878f726a9225f60f0684525bfb6b60bfca979
+aws__aws-lc	https://github.com/aws/aws-lc.git	pending		S	a2e6e617cbfc4b62decd89340306916699f45b54
+FEX-Emu__FEX	https://github.com/FEX-Emu/FEX.git	pending		S	7d3090f78237267b2adf2d32116f0105b8d665cb
+paradigmxyz__reth	https://github.com/paradigmxyz/reth.git	pending		S	f4190077932c179c529fa384fcbe3b1958b11b56
+tmate-io__tmate	https://github.com/tmate-io/tmate.git	pending		S	985ab6140c4a640a9030d3a64fd782c503e56128
+arangodb__arangodb	https://github.com/arangodb/arangodb.git	pending		M	89cdc8572300318e2def9d1d1fbbe168442d3ad6
+inception-project__inception	https://github.com/inception-project/inception.git	pending		S	a0ca6b11b0661aa7895172894443b86191de009f
+ClickHouse__clickhouse-java	https://github.com/ClickHouse/clickhouse-java.git	pending		S	67a6b9e9099b500d3c6f322615d3145ec280a065
+NatronGitHub__Natron	https://github.com/NatronGitHub/Natron.git	pending		S	3763d805d7d277d10af10025ae41af677682b3e6
+chatmail__core	https://github.com/chatmail/core.git	pending		S	8468f5b5dd603da09d81146abbc52aad48604c6c
+idempiere__idempiere	https://github.com/idempiere/idempiere.git	pending		S	6fc63fc56ae6000b7e239f4e9a4fc9e5f15d484f

@@ -1,0 +1,31 @@
+# Part a1 of the S and M projects of manifest.batch1rest.tsv (sha256 8d43eeb3959a96c4373e4523eabb6c49aa5d74cf659a351a7214a766a96f785f),
+# balanced by predicted time (11.9 h for 4 workers), u order.
+# 27 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+jooby-project__jooby	https://github.com/jooby-project/jooby.git	pending		S	92a0ab65dd79d2c37ea10a4169951c10ab3ce855
+warpfront__hipfire	https://github.com/warpfront/hipfire.git	pending		S	a89ed0a8e9d8dc7a22d4e6dcbacd57bf2abfad74
+openvinotoolkit__openvino	https://github.com/openvinotoolkit/openvino.git	pending		S	58472656deac72b13857d9363e9dde61d0856766
+secureCodeBox__secureCodeBox	https://github.com/secureCodeBox/secureCodeBox.git	pending		S	18a626712012c5e764cccb124e8b912409836d79
+gitlab.eclipse.org__eclipse__escet__escet	https://gitlab.eclipse.org/eclipse/escet/escet	pending		S	86a865c735929482470a0f763b2ce328fbdbb22b
+MatterHackers__agg-sharp	https://github.com/MatterHackers/agg-sharp.git	pending		S	e23ee44b659b62349a847e5232d09742665a67a7
+torognes__vsearch	https://github.com/torognes/vsearch.git	pending		S	e15512569533c6366d0dbb294b29abe1523b5809
+senx__warp10-platform	https://github.com/senx/warp10-platform.git	pending		S	b5764364679f6ccc40a23632e352d134fab1c2eb
+apache__fineract	https://github.com/apache/fineract.git	pending		S	4684c663805560d5b6948045224440441fa4485c
+videolan__vlc-ios	https://github.com/videolan/vlc-ios.git	pending		S	d41dd10b41a889afcf3a641fc200b431403e56df
+foundry-rs__foundry	https://github.com/foundry-rs/foundry.git	pending		S	ac5ff50aa3648bbbdf43d722bf027e623cfe5a74
+beehive-lab__TornadoVM	https://github.com/beehive-lab/TornadoVM.git	pending		S	19f61d213da10158541568ed0392446ad0087fbe
+turanszkij__WickedEngine	https://github.com/turanszkij/WickedEngine.git	pending		S	4972e4d0e6cb0072f90755559bd759dc0b7ede8c
+tuist__tuist	https://github.com/tuist/tuist.git	pending		S	12eaf37be63961d2f647a90e5d945b7830e56bf1
+noah-nuebling__mac-mouse-fix	https://github.com/noah-nuebling/mac-mouse-fix.git	pending		S	a424d9f82992f275fad023efb69124ffac3637d5
+elastic__elasticsearch	https://github.com/elastic/elasticsearch.git	pending		M	7fd670e6f7c36c6bd633d4aeb751a34a6946d09e
+neovim__neovim	https://github.com/neovim/neovim.git	pending		M	0c16c6fe511ab5c721e68316493d36452df55c3a
+daos-stack__pmdk	https://github.com/daos-stack/pmdk.git	pending		S	1fcc4ddb64ec4c74978b5b1f59a6c8a9e6ed6c0c
+linuxdeepin__dde-file-manager	https://github.com/linuxdeepin/dde-file-manager.git	pending		S	dcf6611af92d1cf66c9663579d5148b8809c04c8
+zubanls__zuban	https://github.com/zubanls/zuban.git	pending		S	9ae39482bda096b2a5f437accac7fa3783b208b1
+openwrt__openwrt	https://github.com/openwrt/openwrt.git	pending		M	c459c71c4a778eac007f7e541cc9831fadde2a3c
+BirolLab__abyss	https://github.com/BirolLab/abyss.git	pending		S	82ab61922c3c2fdd32372de2c470f8217c109284
+Athou__commafeed	https://github.com/Athou/commafeed.git	pending		S	fc56d5e7cbe9c8a0b13af3969d277b0f10ba841a
+OpenBoard-org__OpenBoard	https://github.com/OpenBoard-org/OpenBoard.git	pending		S	30d120cec100e97e6675d1b9be0c67eafb4c502b
+simulationcraft__simc	https://github.com/simulationcraft/simc.git	pending		M	cafc27227ec08760cb391d6a798e104435c29a87
+FyroxEngine__Fyrox	https://github.com/FyroxEngine/Fyrox.git	pending		S	141b692cfec5cc450daad828311467ac140ebc31
+akkartik__mu	https://github.com/akkartik/mu.git	pending		S	28131f8afed470415f2b786e0ca943fe398b5a43

@@ -1,0 +1,8 @@
+# Part b1 of the S and M projects of manifest.batch22.tsv (sha256 dc8a4dcc99f4786c26f1c01c088fc0ad00413396460a012bc7ccbbb3af25e647),
+# balanced by predicted time (1.6 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+git.savannah.gnu.org__git__texinfo	https://git.savannah.gnu.org/git/texinfo.git	pending		S	6422c0e57c81e2073f32d4d22efe6110e360d3ba
+git.savannah.gnu.org__git__gnash	https://git.savannah.gnu.org/git/gnash.git	pending		S	583ccbc1275c7701dc4843ec12142ff86bb305b4
+gitlab.com__gnutls__gnutls	https://gitlab.com/gnutls/gnutls	pending		S	4e84948a5e89689edbab2c5920db7fc32f31a985
+gitlab.gnome.org__GNOME__gnumeric	https://gitlab.gnome.org/GNOME/gnumeric	pending		S	5d556a736fa37b64ffb672d6fa9fad042f9fab07

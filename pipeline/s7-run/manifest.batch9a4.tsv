@@ -1,0 +1,25 @@
+# Part a4 of the S and M projects of manifest.batch9.tsv (sha256 00a32df96f075408b7ce58f8ecc5a5d19c49e20efefee07637b2b4f03bdbc2e8),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 21 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+dotnet__dotnet-api-docs	https://github.com/dotnet/dotnet-api-docs.git	pending		S	d4f16d713b9df96c8b6403581d408f769225ac34
+owntone__owntone-server	https://github.com/owntone/owntone-server.git	pending		S	4fa5dccfb69622f42e77bd05628034a69a567d57
+cygwin__cygwin	https://github.com/cygwin/cygwin.git	pending		S	8f145421c964d58539f93d2615a338734772db2c
+warmcat__libwebsockets	https://github.com/warmcat/libwebsockets.git	pending		S	e8db6623975695683a986adedbf95ea862aa4b16
+Provenance-Emu__Provenance	https://github.com/Provenance-Emu/Provenance.git	pending		S	2b08d99a606f69c0098345526ba273095646f316
+openvehicles__Open-Vehicle-Monitoring-System-3	https://github.com/openvehicles/Open-Vehicle-Monitoring-System-3.git	pending		S	7c877840706624e76b8f20f9100a6dba5220342f
+86Box__86Box	https://github.com/86Box/86Box.git	pending		S	3dacbc756f044a8ca6e027d698b31b8d299d4c8d
+ucb-bar__chipyard	https://github.com/ucb-bar/chipyard.git	pending		S	bfa5699fe9c7b0ffbff7bd972e362bf507f8bf21
+cometd__cometd	https://github.com/cometd/cometd.git	pending		S	d1ee6a13aea0ba6bb36f0e441fb14433195c3132
+alkacon__opencms-core	https://github.com/alkacon/opencms-core.git	pending		S	5aca15b30ba098beacfd622262e40dce3c7456af
+dust-tt__dust	https://github.com/dust-tt/dust.git	pending		M	adb88346d13a13cfa00d655427fef377d8bb1ba5
+eclipse-linuxtools__org.eclipse.linuxtools	https://github.com/eclipse-linuxtools/org.eclipse.linuxtools.git	pending		S	ca0d252dc59687d0cc7c95dd76db2fc2b200f780
+torrust__torrust-tracker	https://github.com/torrust/torrust-tracker.git	pending		S	29afe946cb0a93ec7abd75720725bb372403e4ef
+the-tcpdump-group__tcpdump	https://github.com/the-tcpdump-group/tcpdump.git	pending		S	eebca9915dc33ce4724ca55010c507c80f519c1b
+ETLCPP__etl	https://github.com/ETLCPP/etl.git	pending		S	ea54954c54bd0bb3ecb01515a54ed2a81bdca2a2
+Latias94__merman	https://github.com/Latias94/merman.git	pending		S	482f46652657ae816f8b682cd6b07ed4c2a56640
+GNOME__gtranslator	https://github.com/GNOME/gtranslator.git	pending		S	48efd70d2793b7c148ecbf366683c46b26002533
+notepad-plus-plus__notepad-plus-plus	https://github.com/notepad-plus-plus/notepad-plus-plus.git	pending		S	697f46b6b6d7245408185370b85306a1f03da179
+dankamongmen__notcurses	https://github.com/dankamongmen/notcurses.git	pending		S	b26048eebc74d5d254717d3332fa484718f9efe6
+apache__commons-lang	https://github.com/apache/commons-lang.git	pending		S	682a8ff5cddfeedecb98f62ac7c8d94b5ff65f33
+maxday__lambda-perf	https://github.com/maxday/lambda-perf.git	pending		S	08aeaaf045985eba6703cda701809afd34f78e54

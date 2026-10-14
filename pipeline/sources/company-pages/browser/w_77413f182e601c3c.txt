@@ -1,0 +1,9 @@
+Link text: GraalVM GitHub, Link URL: https://github.com/oracle/graal
+Link text: OpenJDK GitHub, Link URL: https://github.com/openjdk/
+Link text: MySQL GitHub, Link URL: https://github.com/mysql
+Link text: Oracle Linux GitHub, Link URL: https://github.com/oracle/oracle-linux
+Link text: NoSQL GitHub, Link URL: https://github.com/oracle/nosql
+Link text: Coherence CE GitHub, Link URL: https://github.com/oracle/coherence
+Link text: Helidon GitHub, Link URL: https://github.com/oracle/helidon
+Link text: Tribuo GitHub, Link URL: https://github.com/oracle/tribuo
+Link text: Check on GitHub, Link URL: https://github.com/oracle-devrel/oracle-ai-developer-hub/

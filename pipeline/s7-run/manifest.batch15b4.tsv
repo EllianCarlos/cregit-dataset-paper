@@ -1,0 +1,25 @@
+# Part b4 of the S and M projects of manifest.batch15.tsv (sha256 ef0a99a173728f06226d70b9f0bdc6b1ca14a87ee16172ba5d195ada48f6b470),
+# balanced by predicted time (6.0 h for 4 workers), u order; a fed spot part.
+# 21 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+dosemu2__dosemu2	https://github.com/dosemu2/dosemu2.git	pending		S	344d5b0cc71c083465f35bdb8073e3819559225b
+kubewarden__adm-controller	https://github.com/kubewarden/adm-controller.git	pending		S	e1d847d9a0404f996719f48b5d21fa5ea11db096
+audacity__audacity	https://github.com/audacity/audacity.git	pending		S	c53c0b78fdfc0622ead1bd7b9d5e79163103bc10
+flowable__flowable-engine	https://github.com/flowable/flowable-engine.git	pending		S	d1496022c9c3624b714ac5df22bd618525d4620d
+trycua__cua	https://github.com/trycua/cua.git	pending		S	73387960d56a99dd2f607cef9b2bdae57e373217
+phpstan__phpstan-src	https://github.com/phpstan/phpstan-src.git	pending		S	0e156a663db8e2ba7c6483ee97648cbd898a389e
+MikePopoloski__slang	https://github.com/MikePopoloski/slang.git	pending		S	9ad44fd1f82d5f7982ce0d0cf117fdc56e442806
+MRPT__mrpt	https://github.com/MRPT/mrpt.git	pending		S	888a1a2f49dd5d1b56b7dcefb8b9562dded6f0ae
+flybywiresim__aircraft	https://github.com/flybywiresim/aircraft.git	pending		S	255546cb02db1c7b40d2505ac621a9d36748d258
+stack-of-tasks__pinocchio	https://github.com/stack-of-tasks/pinocchio.git	pending		S	3f46f677e240d73f76020f533fcd2f089c985e8f
+MoarVM__MoarVM	https://github.com/MoarVM/MoarVM.git	pending		S	6e5144cb6cd48aaacb4d71778c42d043104ea02c
+tursodatabase__turso	https://github.com/tursodatabase/turso.git	pending		S	e6c79b43cabde627ab9eb4eaa20c2d3e6d384d7c
+SkipLabs__skip	https://github.com/SkipLabs/skip.git	pending		S	087f937705b6914fb55154b7017925318b381ac6
+assimp__assimp	https://github.com/assimp/assimp.git	pending		S	7b1bc3463171b21aa6dbb5179ee7cc869ddeded8
+VazkiiMods__Quark	https://github.com/VazkiiMods/Quark.git	pending		S	211d00a234558f9f9cd80bd14e5d1643b5cd33bd
+gitlab.freedesktop.org__xorg__driver__xf86-video-intel	https://gitlab.freedesktop.org/xorg/driver/xf86-video-intel	pending		S	4a64400ec6a7d8c0aba0e6a39b16a5e86d0af843
+eclipse-platform__eclipse.platform.releng.aggregator	https://github.com/eclipse-platform/eclipse.platform.releng.aggregator.git	pending		M	458933227aefcf5744e86f9b1ebacbccffbeb1bd
+KDE__gwenview	https://github.com/KDE/gwenview.git	pending		S	b91f5ca8166868ce8409fdf68780e388f7233696
+sirixdb__sirix	https://github.com/sirixdb/sirix.git	pending		S	3447293676f204ef05fe1dcf5f45ac45e36da016
+OpenSmalltalk__opensmalltalk-vm	https://github.com/OpenSmalltalk/opensmalltalk-vm.git	pending		S	3ea6bd17fabb5aca6fcbd175185d2fccdd50d919
+nginx__nginx	https://github.com/nginx/nginx.git	pending		S	2b5c2b605b5df669da5dec6749dcc76c07d1315d

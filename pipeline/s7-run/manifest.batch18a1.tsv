@@ -1,0 +1,8 @@
+# Part a1 of the S and M projects of manifest.batch18.tsv (sha256 432ad2e493ba966ef387af309dc2cfab6bc374ba9fa442b0705d1617cdcd2f76),
+# balanced by predicted time (12.8 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+Kitware__VTK	https://github.com/Kitware/VTK.git	pending		M	252b5055298c48867550522e13748ad1ddeb54c8
+graalvm__graalvm-community-jdk25u	https://github.com/graalvm/graalvm-community-jdk25u.git	pending		M	32a0616f41ebae62afe7348bc788dc5ac44baa70
+adoptium__jdk21u	https://github.com/adoptium/jdk21u.git	pending		M	bb6b279495ceff8442dbd0225756b92d466d5309
+consulo__consulo	https://github.com/consulo/consulo.git	pending		M	8df674a6cbc9aee9e0c0173769ed64a6d046f701

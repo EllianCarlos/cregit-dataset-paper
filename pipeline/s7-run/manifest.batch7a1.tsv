@@ -1,0 +1,8 @@
+# Part a1 of the S and M projects of manifest.batch7.tsv (sha256 c292b9d4dbd64d4dfa983374635f00d165ecd33a6dc0f1f0dfe36b830a188033),
+# balanced by predicted time (18.4 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+graalvm__labs-openjdk	https://github.com/graalvm/labs-openjdk.git	pending		M	61a33c1b2856c0d9cdb4caea91fa84f27a3dd3ad
+openjdk__valhalla	https://github.com/openjdk/valhalla.git	pending		M	12e87d09246d366cc74cb409e4c914351256e98b
+Tencent__TencentKona-25	https://github.com/Tencent/TencentKona-25.git	pending		M	b1acc6fe927f9e3b15a47a66655c5ecb0e825472
+adoptium__jdk25u	https://github.com/adoptium/jdk25u.git	pending		M	49411542a96435cd403500592fbb586395fbaed5

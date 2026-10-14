@@ -1,0 +1,26 @@
+# Part a4 of the S and M projects of manifest.batch7.tsv (sha256 c292b9d4dbd64d4dfa983374635f00d165ecd33a6dc0f1f0dfe36b830a188033),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 22 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+chaotic-aur__packages	https://github.com/chaotic-aur/packages.git	pending		S	e4261eeb137e47fd8bc1038e5a51be0d97622f56
+bareos__bareos	https://github.com/bareos/bareos.git	pending		S	c5698a6a0d283598c0021cf763a9b887eaf04f33
+MyGUI__mygui	https://github.com/MyGUI/mygui.git	pending		S	a0bf071e66327c38edc1bf2be20f14c2318e53ca
+cctbx__cctbx_project	https://github.com/cctbx/cctbx_project.git	pending		M	b897de9a4d9f0a81945a05158c915ff8b3d37b4a
+SMGCommunity__Petari	https://github.com/SMGCommunity/Petari.git	pending		S	4774a1d280854f8cb7ede985339e64c1346dd083
+gismo__gismo	https://github.com/gismo/gismo.git	pending		S	b4875c54f9d17ff3d14cbd6842b4d2cd6e6cc732
+realsenseai__librealsense	https://github.com/realsenseai/librealsense.git	pending		S	e15c5d6bb1563e778d116f682aeefffbae2daedc
+oxc-project__oxc	https://github.com/oxc-project/oxc.git	pending		S	7e6a0502e79bbcccb3612d5ee2818c81a80e506b
+VowpalWabbit__vowpal_wabbit	https://github.com/VowpalWabbit/vowpal_wabbit.git	pending		S	00196b35f63bcb8a6d66966e2b4cf67d6a2bd335
+jython__jython	https://github.com/jython/jython.git	pending		S	1788fd2572e32d7ed026f5409be77a917b01a578
+valkey-io__valkey	https://github.com/valkey-io/valkey.git	pending		S	e130edbb780f59f225d3cc4065439f0345e4da3a
+adempiere__adempiere	https://github.com/adempiere/adempiere.git	pending		S	59557cc2ee85ac938cd4f31a246d891bc2b15b8f
+OpenHFT__Chronicle-Wire	https://github.com/OpenHFT/Chronicle-Wire.git	pending		S	9f176621a2deb7beb37104fa4a3ddc2cd0fd5ad0
+CN-annotation-team__redis7.0-chinese-annotated	https://github.com/CN-annotation-team/redis7.0-chinese-annotated.git	pending		S	e352dafc89b0fcdac3071145e7a99c37f3802452
+usagi-flow__evil-helix	https://github.com/usagi-flow/evil-helix.git	pending		S	50bf2010eec939bf7bde7f8b062c2a183181f996
+membrane__api-gateway	https://github.com/membrane/api-gateway.git	pending		S	ecd06f4643a849ce2eac9e407208b4be4d68af02
+hydrogen-music__hydrogen	https://github.com/hydrogen-music/hydrogen.git	pending		S	00509be4aae5d4ca64a95428c9f33d08210e4f96
+Autonomy-Logic__openplc-editor	https://github.com/Autonomy-Logic/openplc-editor.git	pending		S	37cdb6add403d99791071bdac0e9ba3784015a6a
+OffchainLabs__nitro	https://github.com/OffchainLabs/nitro.git	pending		S	ccc5c828d9ea22f161efc784bac4d4a6559b7e59
+harfbuzz__harfbuzz	https://github.com/harfbuzz/harfbuzz.git	pending		S	c7a7457b7385f33178e8cf87615ca077a810bbe7
+quran__quran_android	https://github.com/quran/quran_android.git	pending		S	001eaefa1e746ffa8b8b20b86cc17ac7bc3d2ceb
+apache__incubator-kie-tools	https://github.com/apache/incubator-kie-tools.git	pending		S	7f3f3a50e5eaf0d760017fd3300094126d7cd9ef

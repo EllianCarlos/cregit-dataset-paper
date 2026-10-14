@@ -1,0 +1,8 @@
+HTTP/2 200 
+server: nginx/1.18.0 (Trisquel GNU/Linux)
+date: Fri, 09 Oct 2026 23:56:27 GMT
+content-type: text/html; charset=utf-8
+x-frame-options: DENY
+content-security-policy: default-src 'self'; frame-ancestors 'none'; img-src 'self' file.savannah.gnu.org
+content-language: en
+

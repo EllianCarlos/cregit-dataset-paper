@@ -1,0 +1,7 @@
+utc	url	http	seconds
+2026-10-10T00:05+00:00 (about)	https://git.savannah.gnu.org/git/bash.git/info/refs?service=git-upload-pack	000	30.0 (manual curl, -m 30)
+2026-10-10T00:42:17+00:00	https://git.savannah.gnu.org/git/bash.git/info/refs?service=git-upload-pack	000	60.003445
+2026-10-10T01:12:36+00:00	https://git.savannah.gnu.org/git/bash.git/info/refs?service=git-upload-pack	000	60.004056
+2026-10-10T01:43:55+00:00	https://git.savannah.gnu.org/git/bash.git/info/refs?service=git-upload-pack	000	60.005927
+2026-10-10T02:09:50+00:00	https://git.savannah.gnu.org/git/bash.git/info/refs?service=git-upload-pack	000	60.004240
+2026-10-10T02:41:16+00:00	https://git.savannah.gnu.org/git/bash.git/info/refs?service=git-upload-pack	000	60.003825

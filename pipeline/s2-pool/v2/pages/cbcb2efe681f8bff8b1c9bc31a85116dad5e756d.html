@@ -1,0 +1,1270 @@
+
+<!DOCTYPE html>
+<!-- Server: sfs-forge-2 -->
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html lang="en" class="no-js">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+    <title>
+BioWeka / Code
+</title>
+    
+
+<meta name="viewport" content="width=1100">
+
+
+<link rel="icon" sizes="180x180" href="https://a.fsdn.com/con/img/sandiego/logo-180x180.png" type="image/png">
+<link rel="icon" sizes="any" href="https://a.fsdn.com/con/img/sandiego/svg/originals/sf-icon-orange-no_sf.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" sizes="180x180" href="https://a.fsdn.com/con/img/sandiego/logo-180x180.png">
+<link rel="mask-icon" href="https://a.fsdn.com/con/img/sandiego/svg/originals/sf-icon-orange-no_sf.svg" color="#FF6600">
+
+
+<script src="https://a.fsdn.com/allura/nf/1791573014/_ew_/theme/sftheme/js/sftheme/cmp2.js"></script>
+
+
+    
+    <script>
+        window.bizx.cmp.init({
+            
+            geo: {
+                is_euro_union: 0,
+                country_code2: 'US',
+                region: 'VA',
+            },
+        });
+    </script>
+
+
+
+    
+
+
+
+    
+    
+    
+        
+        
+    
+    
+        
+        
+    
+    
+    
+    <link rel="stylesheet" href="https://a.fsdn.com/con/css/lato.css?1791573014">
+
+
+<script>
+if (!window.SF) { window.SF = {}; }
+SF.sandiego = false;
+SF.sandiego_chrome = true;
+SF.cdn = "https://a.fsdn.com/con";
+SF.fpid = '04495dd3-a563-480d-8f65-34604e7374fc';
+SF.comm_billboard_route = '/software/product/$slug/';
+SF.floatingSitewideOrigin = 'https://sourceforge.net';
+</script>
+    
+        <!-- ew:head_css -->
+
+    
+        <link rel="stylesheet"
+                type="text/css"
+                href="https://a.fsdn.com/allura/nf/1791573014/_ew_/_slim/css?href=allura%2Fcss%2Fforge%2Fhilite.css%3Ballura%2Fcss%2Fforge%2Ftooltipster.css"
+                >
+    
+        <link rel="stylesheet"
+                type="text/css"
+                href="https://a.fsdn.com/allura/nf/1791573014/_ew_/allura/css/font-awesome.min.css"
+                >
+    
+        <link rel="stylesheet"
+                type="text/css"
+                href="https://a.fsdn.com/allura/nf/1791573014/_ew_/theme/sftheme/css/forge.css"
+                >
+    
+        <link rel="stylesheet"
+                type="text/css"
+                href="https://a.fsdn.com/allura/nf/1791573014/_ew_/theme/sftheme/css/sftheme/sandiego/cmp.css"
+                >
+    
+        
+<!-- /ew:head_css -->
+
+    
+    
+        <!-- ew:head_js -->
+
+    
+        <script type="text/javascript" src="https://a.fsdn.com/allura/nf/1791573014/_ew_/_slim/js?href=allura%2Fjs%2Fjquery-3.6.0.min.js%3Ballura%2Fjs%2Fjquery.cookie-1.4.1.js%3Btheme%2Fsftheme%2Fjs%2Fsftheme%2Fshared_head.js%3Btheme%2Fsftheme%2Fjs%2Fsftheme%2Ftypescript%2Fcompliance.js"></script>
+    
+        
+<!-- /ew:head_js -->
+
+    
+
+    
+        <style type="text/css">
+            /* make URL &amp; Project custom fields in support tickets not get hidden as much */
+.project-forge.mountpoint-site-support .view_holder .grid-4:nth-child(5),
+.project-forge.mountpoint-site-support .view_holder .grid-4:nth-child(6) {
+  overflow: visible;
+  font-size: 22px;
+  width: 340px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.project-forge.mountpoint-site-support .view_holder .grid-4:nth-child(5) label, .project-forge.mountpoint-site-support .view_holder .grid-4:nth-child(6) label {
+  font-size: 14px;
+}
+        </style>
+    
+    
+    <style>.XBsKJwDDtcKdUcOFEsDwpPDrsOaBMKVewjDkCVV {
+        display: none
+    }</style>
+
+    
+    
+    
+        <link rel="canonical" href="https://sourceforge.net/p/bioweka/code/" />
+    
+
+
+    
+
+<script>
+    bizx.uids.gatherAndClean({hem: null });
+</script>
+
+
+
+
+<script>
+    function initPiwik(){
+      var _paq = window._paq = window._paq || [];
+      _paq.push(['trackPageView', document.title, {
+            dimension1: 'bioweka',
+            dimension2: 'cvs'
+      }]);
+      _paq.push(['enableLinkTracking']);
+      
+          _paq.push(['enableHeartBeatTimer']);
+      
+      (function() {
+        var u="//analytics.slashdotmedia.com/";
+        _paq.push(['setTrackerUrl', u+'sf.php']);
+        _paq.push(['setSiteId', 39]);
+        
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'sf.js'; s.parentNode.insertBefore(g,s);
+      })();
+    }
+    bizx.cmp.ifConsent({ purposes: ['storage', 'measurement'], vendors: 'sdm'}, initPiwik);
+</script>
+
+
+
+
+
+
+<!-- Hubspot tracking -->
+
+
+
+
+
+
+ <script>
+    $(function() {
+        bizx.cmp.ifConsent({ purposes: 'all' , vendors: 'narrative'}, function() {
+            var current_time = (new Date()).getTime();
+            let imageUrl = "https://io.narrative.io/?companyId=2440&id=first_party%3A04495dd3-a563-480d-8f65-34604e7374fc&id=site_name%3Asourceforge.net&id=url%3A%2Fp%2Fbioweka%2Fcode%2F&id=pagetitle%3A%24PAGE_TITLE&id=vertical%3AOpen+Source+Software&id=product%3ABioWeka";
+            imageUrl = imageUrl.replace(encodeURIComponent("$PAGE_TITLE"), document.title);  
+
+            imageUrl = URL.parse(imageUrl);
+            let hem = bizx.uids.getHem();
+            if (hem) {
+                imageUrl.searchParams.append('id', 'hem:' + hem);
+            }
+            imageUrl.searchParams.append('rand', current_time);
+
+            var image = new Image();
+            image.src = imageUrl.toString();
+            image.style.display = "none";
+            image.style.height = 0;
+            image.style.width = 0;
+            document.body.appendChild(image);
+        });
+    });
+</script>
+
+
+
+</head>
+
+<body class="
+body_class sandiego_chrome  legacy_chrome 
+" id="forge">
+
+    
+        <!-- ew:body_top_js -->
+
+    
+        
+<!-- /ew:body_top_js -->
+
+    
+
+
+
+
+
+<div class="off-canvas position-right" id="offCanvas" data-off-canvas>
+    <!-- Menu -->
+    <ul class="header-nav-menulist">
+        <li class="highlight search">
+            
+                
+            
+            
+    <form method="get" action="/directory/" class="m-search-form">
+    
+        <input type="text" placeholder="Search for software or solutions" autocomplete="off" name="q" >
+        
+        <label >
+            <input type="submit" class="bt" value="">
+            
+
+
+<svg  data-name="search" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"/></svg>
+        </label>
+    </form>
+    
+        </li>
+        
+        <li class="highlight"><a href="/auth/">Join/Login</a></li>
+        
+        <li><a href="/software/">Business Software</a></li>
+        <li><a href="/directory/">Open Source Software</a></li>
+        <li><a  href="/software/vendors/" title="For Vendors">For Vendors</a></li>
+        <li><a href="/blog/" title="Blog">Blog</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a id="header-nav-more" data-toggle="header-nav-more header-nav-more-content" data-toggler=".toggled">More</a></li>
+        <li>
+            <ul id="header-nav-more-content" class="toggled" data-toggler=".toggled">
+                
+    
+
+    
+    
+        <li><a href="/articles/">Articles</a></li>
+    
+    
+
+    
+ 
+                
+                <li><a href="/create">Create</a></li>
+                
+                <li><a href="https://sourceforge.net/articles/category/sourceforge-podcast/">SourceForge Podcast</a></li>
+                
+                    <li><a href="https://sourceforge.net/p/forge/documentation/Docs%20Home/">Site Documentation</a></li>
+                
+                <li><a href="/user/newsletters">Subscribe to our Newsletter</a></li>
+                <li><a href="/support">Support Request</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="off-canvas-content" data-off-canvas-content>
+
+    
+
+  
+<script>SF.adblock = true; SF.ubo = true;</script>  
+<script src="https://a.fsdn.com/con/js/admanager.js?1791573014"></script>
+
+<script src="https://a.fsdn.com/con/js/asg_embed.js?1791573014"></script>
+
+
+
+
+
+
+<script>
+    SF.linkout_icon = '<svg  data-name="sf-linkout-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve"><polygon class="st0" points="243.2,243.2 56.8,243.2 56.8,56.8 123,56.8 123,9 9,9 9,291 291,291 291,179.4 243.2,179 "/><polygon class="st0" points="128.5,213 155,186.5 176,165.5 206.7,196.3 235.5,132.5 248.9,102.6 290.6,9.8 291,9 290.6,9.2 197.4,51.1 169.1,63.8 103.7,93.3 137,126.5 115.9,147.5 89.5,174 "/></svg>';
+</script>
+
+
+<div class="l-header-nav sticky sandiego">
+
+    <section class="sandiego l-header-nav-top show-for-large">
+        <div class="row">
+            <a href="/" title="Home" class="sf-logo">
+                
+    
+    <img src="https://a.fsdn.com/con/images/sandiego/sf-logo-full.svg"  alt="SourceForge logo" class="sf-logo-full"/>
+            </a>
+            <nav class="links">
+                
+                    <a href="/user/newsletters" title="Subscribe to our newsletter"><span class="newsletter-icon">
+
+
+<svg  data-name="mmSF_11mail" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 42 42" enable-background="new 0 0 42 42" xml:space="preserve"><path fill="#FFFFFF" d="M0,6v30h42V6H0z M24.2,21.2c-0.8,0.8-2.3,2-3.2,2c-0.9,0-2.4-1.2-3.2-2L5.8,9.7h30.3L24.2,21.2z M13.7,21l-9.9,9.4V11.6L13.7,21z M15.7,23L15.7,23c0.5,0.5,2.9,2.9,5.3,2.9c2.4,0,4.8-2.4,5.2-2.8l0.1-0.1l9.8,9.4H5.8L15.7,23z M28.3,21l9.9-9.5v18.9L28.3,21z"/></svg></span></a>
+                
+                <a href="/software/vendors/" title="For Vendors">For Vendors</a>
+                
+                
+                    <a href="/support" title="Help">Help</a>
+                    <a href="/create/" title="Create">Create</a>
+                
+
+                
+                <a href="/user/registration" title="Join" >Join</a>
+                <a href="/auth/" title="Login">Login</a>
+                
+            </nav>
+        </div>
+    </section>
+
+    <section class="sandiego l-header-nav-top hide-for-large">
+        <div class="row">
+            <a href="/" title="Home" class="sf-logo">
+                
+    
+    <img src="https://a.fsdn.com/con/images/sandiego/sf-logo-full.svg"  alt="SourceForge logo" class="sf-logo-full"/>
+            </a>
+            <div class="title-bar-right">
+                <button type="button" aria-label="Toggle Main Menu" class="menu-icon" data-toggle="offCanvas"></button>
+            </div>
+        </div>
+    </section>
+    <section class="sandiego l-header-nav-bottom">
+        <nav class="row">
+            <a href="/" title="Home" class="sf-logo">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 653 102.6" style="enable-background:new 0 0 653 102.6;" xml:space="preserve"><path class="st0" d="M66.9,54.5c0-19.1-6.8-27.8-10.4-31.1c-0.7-0.6-1.8-0.1-1.7,0.9c0.7,10.8-12.9,13.5-12.9,30.4h0    c0,0,0,0.1,0,0.1c0,10.3,7.8,18.7,17.4,18.7c9.6,0,17.4-8.4,17.4-18.7c0,0,0-0.1,0-0.1h0c0-4.8-1.8-9.4-3.6-12.8    c-0.4-0.7-1.4-0.4-1.3,0.2C75.1,56.7,66.9,65.7,66.9,54.5z"></path><g>    <path class="st0" d="M46.2,94.8c-0.4,0-0.9-0.2-1.2-0.5L0.5,49.8c-0.6-0.6-0.6-1.7,0-2.4l47-47C47.8,0.2,48.2,0,48.6,0h13.5        c0.8,0,1.3,0.5,1.5,1c0.2,0.5,0.2,1.2-0.4,1.8L19.1,47c-0.9,0.9-0.9,2.3,0,3.2L54,85.2c0.6,0.6,0.6,1.7,0,2.4l-6.7,6.8        C47,94.6,46.6,94.8,46.2,94.8z"></path></g><g>    <path class="st0" d="M55.1,102.6c-0.8,0-1.3-0.5-1.5-1c-0.2-0.5-0.2-1.2,0.4-1.8l44.2-44.2c0.4-0.4,0.7-1,0.7-1.6        c0-0.6-0.2-1.2-0.7-1.6L63.2,17.4c-0.6-0.6-0.6-1.7,0-2.4l6.8-6.8c0.3-0.3,0.7-0.5,1.2-0.5S72,8,72.3,8.3l44.4,44.5        c0.3,0.3,0.5,0.7,0.5,1.2s-0.2,0.9-0.5,1.2l-47,47c-0.3,0.3-0.7,0.5-1.2,0.5H55.1z"></path></g><g>    <g>        <path class="st1" d="M167.2,32c-0.2,0.4-0.5,0.6-1,0.6c-0.3,0-0.7-0.2-1.2-0.7c-0.5-0.5-1.2-1-2-1.5c-0.9-0.6-1.9-1.1-3.2-1.5            c-1.3-0.5-2.9-0.7-4.8-0.7c-1.9,0-3.5,0.3-5,0.8c-1.4,0.5-2.6,1.3-3.6,2.2s-1.7,2-2.2,3.2c-0.5,1.2-0.8,2.5-0.8,3.8            c0,1.8,0.4,3.2,1.1,4.4c0.7,1.1,1.7,2.1,3,2.9c1.2,0.8,2.6,1.5,4.2,2c1.6,0.6,3.2,1.1,4.8,1.6c1.6,0.5,3.2,1.1,4.8,1.8            c1.6,0.6,2.9,1.5,4.2,2.4s2.2,2.2,3,3.6c0.7,1.4,1.1,3.2,1.1,5.3c0,2.2-0.4,4.2-1.1,6.1c-0.7,1.9-1.8,3.6-3.2,5            c-1.4,1.4-3.2,2.5-5.2,3.4c-2.1,0.8-4.4,1.2-7,1.2c-3.4,0-6.4-0.6-8.8-1.8c-2.5-1.2-4.6-2.9-6.5-5l1-1.6c0.3-0.4,0.6-0.5,1-0.5            c0.2,0,0.5,0.1,0.8,0.4c0.3,0.3,0.8,0.7,1.2,1.1c0.5,0.4,1.1,0.9,1.8,1.4c0.7,0.5,1.5,1,2.4,1.4c0.9,0.4,1.9,0.8,3.1,1.1            c1.2,0.3,2.5,0.4,4,0.4c2.1,0,3.9-0.3,5.5-0.9c1.6-0.6,3-1.5,4.1-2.5s2-2.4,2.6-3.8c0.6-1.5,0.9-3.1,0.9-4.7            c0-1.8-0.4-3.3-1.1-4.5c-0.7-1.2-1.7-2.2-3-3c-1.2-0.8-2.6-1.5-4.2-2c-1.6-0.5-3.2-1.1-4.8-1.6c-1.6-0.5-3.2-1.1-4.8-1.7            c-1.6-0.6-2.9-1.4-4.2-2.4c-1.2-1-2.2-2.2-3-3.7c-0.7-1.5-1.1-3.3-1.1-5.6c0-1.7,0.3-3.4,1-5c0.7-1.6,1.6-3,2.9-4.3            c1.3-1.2,2.8-2.2,4.7-3c1.9-0.7,4-1.1,6.4-1.1c2.7,0,5.1,0.4,7.3,1.3c2.1,0.9,4.1,2.2,5.9,3.9L167.2,32z"></path>        <path class="st2" d="M152.9,78.8c-3.5,0-6.6-0.6-9.1-1.9c-2.5-1.2-4.8-3-6.7-5.1l-0.3-0.3l1.3-2c0.6-0.7,1.1-0.8,1.5-0.8            c0.4,0,0.8,0.2,1.2,0.6c0.3,0.3,0.8,0.7,1.3,1.1c0.5,0.4,1.1,0.9,1.7,1.4c0.7,0.5,1.4,0.9,2.3,1.3c0.9,0.4,1.9,0.8,3,1            c1.1,0.3,2.4,0.4,3.9,0.4c2,0,3.8-0.3,5.3-0.9c1.5-0.6,2.8-1.4,3.9-2.4c1-1,1.9-2.2,2.4-3.6c0.6-1.4,0.8-2.9,0.8-4.5            c0-1.7-0.3-3.1-1-4.2c-0.7-1.1-1.6-2-2.8-2.8c-1.2-0.8-2.5-1.4-4-1.9c-1.5-0.5-3.1-1.1-4.8-1.6c-1.7-0.5-3.3-1.1-4.8-1.7            c-1.6-0.7-3.1-1.5-4.3-2.5c-1.3-1-2.3-2.4-3.1-3.9c-0.8-1.6-1.2-3.5-1.2-5.8c0-1.8,0.3-3.6,1-5.3c0.7-1.7,1.7-3.2,3-4.5            c1.3-1.3,3-2.3,4.9-3.1c1.9-0.8,4.2-1.2,6.6-1.2c2.8,0,5.3,0.4,7.5,1.3c2.2,0.9,4.2,2.3,6.1,4.1l0.3,0.3l-1.1,2.1            c-0.6,1.1-1.7,1.4-3.1,0.1c-0.5-0.4-1.1-0.9-2-1.4c-0.8-0.5-1.9-1-3.1-1.5c-1.2-0.4-2.7-0.7-4.6-0.7c-1.8,0-3.4,0.3-4.8,0.8            c-1.3,0.5-2.5,1.2-3.4,2.1c-0.9,0.9-1.6,1.9-2.1,3c-0.5,1.1-0.7,2.4-0.7,3.6c0,1.6,0.3,3,1,4c0.7,1.1,1.6,2,2.8,2.8            c1.2,0.8,2.5,1.4,4,2c1.5,0.5,3.1,1.1,4.8,1.6c1.6,0.5,3.3,1.1,4.8,1.8c1.6,0.7,3.1,1.5,4.3,2.5c1.3,1,2.3,2.3,3.1,3.8            c0.8,1.5,1.2,3.4,1.2,5.6c0,2.2-0.4,4.4-1.2,6.4c-0.8,2-1.9,3.7-3.4,5.2c-1.5,1.5-3.3,2.6-5.4,3.5            C158.1,78.3,155.6,78.8,152.9,78.8z M138.4,71.3c1.7,1.9,3.7,3.4,6,4.5c2.4,1.2,5.3,1.8,8.6,1.8c2.5,0,4.8-0.4,6.8-1.2            c2-0.8,3.6-1.9,5-3.2c1.3-1.3,2.4-3,3.1-4.8c0.7-1.8,1.1-3.8,1.1-5.9c0-2-0.4-3.7-1-5.1c-0.7-1.3-1.6-2.5-2.8-3.4            c-1.2-0.9-2.5-1.7-4-2.4c-1.5-0.6-3.1-1.2-4.7-1.8c-1.6-0.5-3.2-1.1-4.8-1.6c-1.6-0.6-3-1.3-4.3-2.1c-1.3-0.8-2.3-1.9-3.1-3.1            c-0.8-1.2-1.2-2.8-1.2-4.7c0-1.4,0.3-2.8,0.8-4.1c0.5-1.3,1.3-2.5,2.3-3.4c1-1,2.3-1.8,3.8-2.3c1.5-0.6,3.3-0.8,5.2-0.8            c1.9,0,3.6,0.2,5,0.7c1.3,0.5,2.5,1,3.3,1.6c0.9,0.6,1.6,1.1,2.1,1.6c0.6,0.5,0.8,0.5,0.8,0.5c0.1,0,0.3,0,0.4-0.3l0.7-1.3            c-1.6-1.5-3.4-2.7-5.3-3.5c-2.1-0.8-4.4-1.2-7-1.2c-2.3,0-4.4,0.4-6.2,1.1c-1.8,0.7-3.3,1.7-4.5,2.8c-1.2,1.2-2.1,2.5-2.8,4.1            c-0.6,1.5-0.9,3.1-0.9,4.8c0,2.1,0.4,3.9,1.1,5.3c0.7,1.4,1.6,2.6,2.8,3.5c1.2,0.9,2.5,1.7,4,2.3c1.5,0.6,3.1,1.2,4.7,1.7            c1.6,0.5,3.2,1,4.8,1.6c1.6,0.6,3,1.2,4.3,2.1c1.3,0.8,2.4,1.9,3.1,3.2c0.8,1.3,1.2,2.9,1.2,4.9c0,1.8-0.3,3.4-0.9,5            c-0.6,1.6-1.5,2.9-2.7,4c-1.2,1.1-2.6,2-4.3,2.7c-1.7,0.6-3.6,1-5.7,1c-1.5,0-2.9-0.2-4.2-0.5c-1.2-0.3-2.3-0.7-3.2-1.1            c-0.9-0.4-1.8-0.9-2.5-1.5c-0.7-0.5-1.3-1-1.8-1.4c-0.5-0.4-0.9-0.8-1.2-1.1c-0.3-0.3-0.5-0.3-0.5-0.3c-0.1,0-0.3,0-0.5,0.3            L138.4,71.3z"></path>    </g>    <g>        <path class="st1" d="M226.7,51.6c0,4-0.6,7.6-1.8,10.9c-1.2,3.3-2.9,6.1-5.1,8.4c-2.2,2.3-4.8,4.1-7.8,5.4            c-3,1.3-6.4,1.9-10.1,1.9c-3.6,0-7-0.6-10-1.9c-3-1.3-5.6-3-7.8-5.4c-2.2-2.3-3.9-5.1-5.1-8.4c-1.2-3.3-1.8-6.9-1.8-10.9            c0-4,0.6-7.6,1.8-10.9c1.2-3.3,2.9-6.1,5.1-8.4c2.2-2.3,4.8-4.1,7.8-5.4c3-1.3,6.4-1.9,10-1.9c3.7,0,7.1,0.6,10.1,1.9            c3,1.3,5.6,3,7.8,5.4c2.2,2.3,3.9,5.1,5.1,8.4C226.1,44,226.7,47.6,226.7,51.6z M222.8,51.6c0-3.6-0.5-6.9-1.5-9.8            c-1-2.9-2.4-5.3-4.2-7.3c-1.8-2-4-3.5-6.6-4.6c-2.6-1.1-5.4-1.6-8.5-1.6c-3.1,0-5.9,0.5-8.5,1.6c-2.6,1.1-4.8,2.6-6.6,4.6            c-1.8,2-3.3,4.4-4.3,7.3c-1,2.9-1.5,6.1-1.5,9.8c0,3.6,0.5,6.9,1.5,9.8c1,2.9,2.4,5.3,4.3,7.3c1.8,2,4,3.5,6.6,4.6            c2.6,1.1,5.4,1.6,8.5,1.6c3.1,0,6-0.5,8.5-1.6c2.6-1,4.8-2.6,6.6-4.6c1.8-2,3.2-4.4,4.2-7.3C222.3,58.5,222.8,55.3,222.8,51.6z"></path>        <path class="st2" d="M202,78.7c-3.7,0-7.2-0.7-10.2-1.9c-3.1-1.3-5.8-3.1-8-5.5c-2.2-2.4-4-5.2-5.2-8.6c-1.2-3.3-1.9-7.1-1.9-11.1            c0-4,0.6-7.8,1.9-11.1c1.2-3.3,3-6.2,5.2-8.6c2.2-2.4,4.9-4.2,8-5.5c3.1-1.3,6.5-2,10.2-2c3.8,0,7.2,0.7,10.3,1.9            c3.1,1.3,5.8,3.1,8,5.5c2.2,2.4,4,5.3,5.2,8.6c1.2,3.3,1.8,7,1.8,11.1c0,4.1-0.6,7.8-1.8,11.1c-1.2,3.3-3,6.2-5.2,8.6            c-2.2,2.4-4.9,4.2-8,5.5C209.2,78.1,205.7,78.7,202,78.7z M202,25.7c-3.5,0-6.8,0.6-9.8,1.9c-2.9,1.2-5.5,3-7.6,5.2            c-2.1,2.2-3.8,5-4.9,8.2c-1.2,3.2-1.8,6.8-1.8,10.7c0,3.9,0.6,7.5,1.8,10.7c1.2,3.2,2.8,5.9,4.9,8.2c2.1,2.2,4.7,4,7.6,5.2            c2.9,1.2,6.2,1.8,9.8,1.8c3.6,0,6.9-0.6,9.8-1.8c2.9-1.2,5.5-3,7.6-5.2c2.1-2.2,3.8-5,4.9-8.1c1.2-3.2,1.8-6.8,1.8-10.7            c0-3.9-0.6-7.5-1.8-10.7c-1.2-3.2-2.8-5.9-4.9-8.2c-2.1-2.2-4.7-4-7.6-5.2C208.9,26.3,205.6,25.7,202,25.7z"></path>    </g>    <g>        <path class="st1" d="M256.4,74.9c2.5,0,4.7-0.4,6.7-1.3c2-0.9,3.6-2.1,5-3.6c1.4-1.5,2.4-3.4,3.1-5.4c0.7-2.1,1.1-4.3,1.1-6.8            V25.7h3.7v32.1c0,2.9-0.5,5.5-1.4,8c-0.9,2.5-2.2,4.6-3.9,6.5c-1.7,1.8-3.8,3.3-6.2,4.3c-2.4,1-5.2,1.6-8.2,1.6            c-3,0-5.8-0.5-8.2-1.6c-2.4-1.1-4.5-2.5-6.2-4.3c-1.7-1.8-3-4-3.9-6.5c-0.9-2.5-1.4-5.2-1.4-8V25.7h3.8v32c0,2.4,0.4,4.7,1.1,6.8            c0.7,2.1,1.8,3.9,3.1,5.4c1.4,1.5,3,2.7,5,3.6C251.6,74.5,253.9,74.9,256.4,74.9z"></path>        <path class="st2" d="M256.4,78.8c-3.1,0-5.9-0.5-8.4-1.6c-2.5-1.1-4.7-2.6-6.4-4.5c-1.7-1.9-3.1-4.2-4-6.7            c-0.9-2.5-1.4-5.3-1.4-8.2V25.1h5v32.7c0,2.3,0.4,4.5,1,6.6c0.7,2,1.7,3.8,3,5.2c1.3,1.5,2.9,2.6,4.8,3.5c1.9,0.8,4,1.3,6.4,1.3            c2.4,0,4.6-0.4,6.4-1.2c1.9-0.8,3.5-2,4.8-3.5c1.3-1.5,2.3-3.2,3-5.2c0.7-2,1-4.2,1-6.6V25.1h5v32.7c0,2.9-0.5,5.7-1.4,8.2            c-0.9,2.5-2.3,4.8-4,6.7c-1.7,1.9-3.9,3.4-6.4,4.5C262.3,78.3,259.5,78.8,256.4,78.8z M237.3,26.3v31.5c0,2.8,0.4,5.4,1.3,7.8            c0.9,2.4,2.1,4.5,3.8,6.3c1.6,1.8,3.6,3.2,6,4.2c2.3,1,5,1.5,8,1.5c2.9,0,5.6-0.5,8-1.5c2.3-1,4.4-2.4,6-4.2            c1.6-1.8,2.9-3.9,3.8-6.3c0.9-2.4,1.3-5,1.3-7.8V26.3h-2.5v31.5c0,2.5-0.4,4.8-1.1,7c-0.7,2.2-1.8,4.1-3.3,5.7            c-1.4,1.6-3.2,2.9-5.2,3.8c-2,0.9-4.4,1.4-6.9,1.4c-2.6,0-4.9-0.5-6.9-1.4c-2-0.9-3.8-2.2-5.2-3.8c-1.4-1.6-2.5-3.5-3.2-5.7            c-0.7-2.1-1.1-4.5-1.1-7V26.3H237.3z"></path>    </g>    <g>        <path class="st1" d="M297.5,51.3c1,0,0.9,0,0.9,0l2.2,0c2.3,0,4.4-0.3,6.2-0.8c1.8-0.6,3.4-1.3,4.6-2.4c1.3-1,2.2-2.3,2.9-3.7            c0.7-1.4,1-3.1,1-4.9c0-3.7-1.2-6.4-3.6-8.2c-2.4-1.8-5.9-2.7-10.6-2.7h-9.5v22.7v2.8v23.5h-3.7V25.7h13.2c6,0,10.5,1.2,13.4,3.5            c3,2.3,4.4,5.7,4.4,10.2c0,2-0.3,3.8-1,5.4c-0.7,1.6-1.7,3.1-3,4.3c-1.3,1.2-2.8,2.3-4.6,3c-1.8,0.8-3.9,1.3-6.1,1.6            c0.6,0.4,1.1,0.9,1.6,1.5l17.9,22.4h-3.3c-0.4,0-0.7-0.1-1-0.2c-0.3-0.1-0.6-0.4-0.8-0.7l-16.6-21c-0.4-0.5-0.9-0.9-1.3-1.1            c-0.5-0.2-3.4-0.3-4.4-0.3C296.3,51.6,296.7,51.3,297.5,51.3z"></path>        <path class="st2" d="M325,78.2h-4.5c-0.5,0-0.9-0.1-1.3-0.3c-0.4-0.2-0.7-0.5-1-0.9l-16.6-21c-0.4-0.5-0.7-0.8-1.1-1            c-0.4-0.1-2.8-0.3-4.1-0.3h-0.6v-2.6c0-0.9,0.2-1.4,1.8-1.4c0.9,0,1,0,1,0l2.2,0c2.2,0,4.2-0.3,6-0.8c1.7-0.5,3.2-1.3,4.4-2.3            c1.2-1,2.1-2.1,2.7-3.5c0.6-1.4,0.9-2.9,0.9-4.6c0-3.5-1.1-6-3.4-7.7c-2.3-1.7-5.7-2.6-10.2-2.6h-8.9v48.9h-5V25.1h13.9            c6.1,0,10.7,1.2,13.8,3.6c3.1,2.4,4.7,6,4.7,10.7c0,2.1-0.4,4-1.1,5.7c-0.7,1.7-1.8,3.2-3.1,4.5c-1.3,1.3-3,2.3-4.8,3.2            c-1.5,0.6-3.1,1.1-4.9,1.4c0.2,0.2,0.4,0.4,0.6,0.7L325,78.2z M296.9,53.5c1.1,0,3.4,0.1,4,0.4c0.6,0.3,1.1,0.7,1.6,1.3l16.6,21            c0.2,0.3,0.4,0.5,0.6,0.6c0.2,0.1,0.4,0.2,0.7,0.2h2l-17.1-21.4c-0.4-0.6-0.9-1-1.4-1.3l-1.5-0.9l1.8-0.2c2.2-0.2,4.2-0.7,5.9-1.5            c1.7-0.8,3.2-1.7,4.5-2.9c1.2-1.2,2.2-2.5,2.8-4.1c0.6-1.6,1-3.3,1-5.2c0-4.3-1.4-7.5-4.2-9.7c-2.8-2.2-7.2-3.3-13-3.3h-12.6V77            h2.5V28h10.1c4.7,0,8.4,0.9,10.9,2.8c2.6,1.9,3.9,4.8,3.9,8.7c0,1.9-0.4,3.6-1,5.1c-0.7,1.5-1.7,2.8-3.1,3.9            c-1.3,1.1-2.9,1.9-4.8,2.5c-1.9,0.6-4,0.9-6.4,0.9l-2.2,0c-0.1,0-0.2,0-0.9,0C297.3,51.9,297,51.9,296.9,53.5z"></path>    </g>    <g>        <path class="st1" d="M367.6,68.8c0.2,0,0.5,0.1,0.6,0.3l1.5,1.6c-1.1,1.1-2.2,2.2-3.5,3.1c-1.3,0.9-2.7,1.7-4.2,2.3            c-1.5,0.6-3.2,1.1-4.9,1.5c-1.8,0.4-3.8,0.5-5.9,0.5c-3.6,0-6.9-0.6-9.9-1.9c-3-1.3-5.6-3-7.7-5.4c-2.1-2.3-3.8-5.1-5-8.4            c-1.2-3.3-1.8-6.9-1.8-10.9c0-3.9,0.6-7.5,1.9-10.8c1.2-3.3,3-6,5.2-8.4c2.2-2.3,4.9-4.1,8-5.4c3.1-1.3,6.6-1.9,10.3-1.9            c1.9,0,3.6,0.1,5.2,0.4c1.6,0.3,3,0.7,4.4,1.2c1.4,0.5,2.6,1.2,3.8,2c1.2,0.8,2.4,1.7,3.5,2.7l-1.1,1.6c-0.2,0.3-0.5,0.4-0.9,0.4            c-0.2,0-0.5-0.1-0.8-0.4c-0.3-0.3-0.8-0.6-1.3-1c-0.5-0.4-1.2-0.8-1.9-1.2c-0.7-0.5-1.6-0.9-2.7-1.2c-1-0.4-2.2-0.7-3.6-1            c-1.3-0.3-2.9-0.4-4.6-0.4c-3.2,0-6.1,0.5-8.7,1.6c-2.6,1.1-4.9,2.6-6.8,4.7c-1.9,2-3.4,4.5-4.5,7.3s-1.6,6.1-1.6,9.7            c0,3.7,0.5,6.9,1.6,9.8c1.1,2.9,2.5,5.3,4.4,7.3c1.9,2,4.1,3.5,6.6,4.6c2.5,1.1,5.3,1.6,8.2,1.6c1.9,0,3.5-0.1,5-0.4            c1.5-0.2,2.8-0.6,4-1.1c1.2-0.5,2.4-1.1,3.4-1.8c1.1-0.7,2.1-1.5,3.1-2.5c0.1-0.1,0.2-0.2,0.3-0.2            C367.3,68.9,367.5,68.8,367.6,68.8z"></path>        <path class="st2" d="M351.1,78.8c-3.7,0-7.1-0.7-10.1-1.9c-3.1-1.3-5.7-3.1-7.9-5.5c-2.2-2.4-3.9-5.2-5.1-8.6            c-1.2-3.3-1.8-7.1-1.8-11.1c0-4,0.6-7.7,1.9-11c1.3-3.3,3.1-6.2,5.3-8.6c2.3-2.4,5.1-4.3,8.2-5.6c3.2-1.3,6.7-2,10.6-2            c1.9,0,3.7,0.1,5.3,0.4c1.6,0.3,3.1,0.7,4.5,1.2c1.4,0.5,2.7,1.2,3.9,2c1.2,0.8,2.4,1.7,3.6,2.8l0.4,0.4l-1.4,2.1            c-0.2,0.3-0.6,0.7-1.4,0.7c-0.4,0-0.7-0.2-1.2-0.5c-0.3-0.3-0.8-0.6-1.3-0.9c-0.5-0.4-1.1-0.8-1.9-1.2c-0.7-0.4-1.6-0.8-2.6-1.2            c-1-0.4-2.2-0.7-3.5-0.9c-1.3-0.2-2.8-0.4-4.5-0.4c-3.1,0-5.9,0.5-8.5,1.6c-2.5,1.1-4.8,2.6-6.6,4.5c-1.8,1.9-3.3,4.3-4.3,7.1            c-1,2.8-1.6,6-1.6,9.4c0,3.6,0.5,6.8,1.5,9.6c1,2.8,2.4,5.2,4.2,7.1c1.8,1.9,3.9,3.4,6.4,4.4c2.4,1,5.1,1.5,8,1.5            c1.8,0,3.5-0.1,4.9-0.4c1.4-0.2,2.7-0.6,3.9-1.1c1.2-0.5,2.3-1.1,3.3-1.7c1-0.7,2-1.5,3-2.4c0.2-0.2,0.3-0.2,0.5-0.3            c0.5-0.3,1.3-0.2,1.7,0.3l1.9,2l-0.4,0.4c-1.1,1.2-2.3,2.2-3.6,3.2c-1.3,0.9-2.7,1.8-4.3,2.4c-1.5,0.7-3.2,1.2-5.1,1.5            C355.3,78.6,353.3,78.8,351.1,78.8z M352.2,25.7c-3.7,0-7.1,0.6-10.1,1.9c-3,1.2-5.7,3-7.8,5.3c-2.2,2.3-3.9,5-5.1,8.2            c-1.2,3.2-1.8,6.7-1.8,10.6c0,3.9,0.6,7.5,1.8,10.7c1.2,3.2,2.8,5.9,4.9,8.2c2.1,2.2,4.6,4,7.5,5.2c2.9,1.2,6.1,1.8,9.6,1.8            c2.1,0,4-0.2,5.8-0.5c1.7-0.3,3.4-0.8,4.8-1.5c1.5-0.6,2.8-1.4,4-2.3c1.1-0.8,2.1-1.7,3-2.6l-1.1-1.2c-0.1-0.1-0.2-0.1-0.3,0            c-0.1,0-0.2,0.1-0.3,0.2c-1,0.9-2.1,1.8-3.2,2.5c-1.1,0.7-2.3,1.4-3.5,1.9c-1.3,0.5-2.7,0.9-4.1,1.1c-1.5,0.2-3.2,0.4-5.1,0.4            c-3,0-5.9-0.6-8.5-1.6c-2.6-1.1-4.9-2.7-6.8-4.7c-1.9-2-3.4-4.6-4.5-7.5c-1.1-2.9-1.6-6.3-1.6-10c0-3.6,0.5-6.9,1.6-9.9            c1.1-2.9,2.6-5.5,4.6-7.5c2-2.1,4.3-3.7,7-4.8c2.7-1.1,5.7-1.7,8.9-1.7c1.7,0,3.3,0.1,4.7,0.4c1.4,0.3,2.6,0.6,3.7,1            c1.1,0.4,2,0.8,2.8,1.3c0.8,0.5,1.4,0.9,1.9,1.3c0.5,0.4,1,0.7,1.3,1c0.3,0.3,0.5,0.3,0.5,0.3c0.3,0,0.4-0.1,0.4-0.2l0.8-1.2            c-1-0.9-2-1.6-3-2.3c-1.2-0.8-2.4-1.4-3.7-1.9c-1.3-0.5-2.8-0.9-4.3-1.2C355.7,25.9,354,25.7,352.2,25.7z"></path>    </g>    <g>        <path class="st1" d="M410.3,25.7v3.1H383v21h22.7v3H383v21.6h27.3v3.1h-31.1V25.7H410.3z"></path>        <path class="st2" d="M410.9,78.2h-32.3V25.1h32.3v4.3h-27.3v19.7h22.7v4.3h-22.7v20.4h27.3V78.2z M379.8,77h29.9v-1.9h-27.3V52.2            h22.7v-1.8h-22.7V28.2h27.3v-1.9h-29.9V77z"></path>    </g>    <g>        <path class="st1" d="M456.8,25.1V33h-23.5v15.7h19.8v7.9h-19.8v21.6h-9.9v-53H456.8z"></path>    </g>    <g>        <path class="st1" d="M514.3,51.6c0,3.9-0.6,7.5-1.9,10.8c-1.3,3.3-3.1,6.2-5.5,8.6c-2.3,2.4-5.2,4.3-8.5,5.7c-3.3,1.4-7,2-11,2            c-4,0-7.7-0.7-11-2c-3.3-1.4-6.1-3.2-8.5-5.7c-2.4-2.4-4.2-5.3-5.5-8.6s-1.9-6.9-1.9-10.8s0.6-7.5,1.9-10.8            c1.3-3.3,3.1-6.2,5.5-8.6c2.4-2.4,5.2-4.3,8.5-5.7c3.3-1.4,7-2,11-2c4,0,7.7,0.7,11,2.1c3.3,1.4,6.1,3.3,8.5,5.7            c2.3,2.4,4.2,5.3,5.5,8.6C513.6,44.1,514.3,47.7,514.3,51.6z M504.2,51.6c0-2.9-0.4-5.5-1.2-7.8c-0.8-2.3-1.9-4.3-3.3-5.9            c-1.4-1.6-3.2-2.8-5.3-3.7c-2.1-0.9-4.4-1.3-7-1.3c-2.6,0-4.9,0.4-7,1.3c-2.1,0.9-3.8,2.1-5.3,3.7c-1.5,1.6-2.6,3.6-3.4,5.9            c-0.8,2.3-1.2,4.9-1.2,7.8s0.4,5.5,1.2,7.8c0.8,2.3,1.9,4.3,3.4,5.9c1.5,1.6,3.2,2.8,5.3,3.7c2.1,0.9,4.4,1.3,7,1.3            c2.6,0,4.9-0.4,7-1.3c2.1-0.9,3.8-2.1,5.3-3.7c1.4-1.6,2.5-3.6,3.3-5.9C503.8,57.1,504.2,54.5,504.2,51.6z"></path>    </g>    <g>        <path class="st1" d="M534.9,50.4l2.3,0c1.9,0,3.5-0.2,4.9-0.7c1.4-0.5,2.5-1.1,3.4-1.9c0.9-0.8,1.6-1.8,2-2.9            c0.4-1.1,0.7-2.4,0.7-3.7c0-2.7-0.9-4.8-2.7-6.2c-1.8-1.4-4.5-2.2-8.1-2.2H531v17.6v7.1v20.7h-9.9v-53h16.2c3.6,0,6.7,0.4,9.3,1.1            c2.6,0.7,4.7,1.8,6.3,3.1c1.6,1.3,2.9,3,3.6,4.8c0.8,1.9,1.2,3.9,1.2,6.2c0,1.8-0.3,3.5-0.8,5.1c-0.5,1.6-1.3,3-2.3,4.3            c-1,1.3-2.2,2.4-3.7,3.4c-1.5,1-3.1,1.8-5,2.3c1.2,0.7,2.3,1.7,3.2,3l13.3,19.6h-8.9c-0.9,0-1.6-0.2-2.2-0.5            c-0.6-0.3-1.1-0.8-1.5-1.5c0,0-11.1-17-11.1-17c-0.3-0.4-0.9-1.3-1.5-1.4c-1.2,0-2.4,0-3.5,0c0,0,0-6,0-6.4            C533.8,50.4,534.9,50.4,534.9,50.4z"></path>    </g>    <g>        <path class="st1" d="M591.4,70.9c2.2,0,4.2-0.2,5.8-0.6c1.6-0.4,3.2-1,4.7-1.7v-12h-6.6c-0.6,0-1.1-0.2-1.5-0.5            c-0.4-0.4-0.6-0.8-0.6-1.3v-5.6h17.6V73c-1.3,1-2.7,1.8-4.2,2.5c-1.5,0.7-3,1.3-4.7,1.8c-1.7,0.5-3.4,0.8-5.3,1            c-1.9,0.2-3.9,0.3-6.1,0.3c-3.9,0-7.4-0.7-10.7-2c-3.3-1.3-6.1-3.2-8.4-5.6c-2.4-2.4-4.2-5.3-5.6-8.6c-1.3-3.3-2-7-2-10.9            c0-4,0.6-7.6,1.9-11c1.3-3.3,3.1-6.2,5.5-8.6c2.4-2.4,5.3-4.3,8.7-5.6c3.4-1.3,7.2-2,11.4-2c4.3,0,8.1,0.6,11.2,1.9            c3.2,1.3,5.8,3,8,5l-2.9,4.5c-0.6,0.9-1.3,1.4-2.2,1.4c-0.6,0-1.2-0.2-1.8-0.6c-0.8-0.5-1.6-0.9-2.4-1.4c-0.8-0.5-1.7-0.9-2.7-1.2            c-1-0.3-2.1-0.6-3.3-0.8c-1.2-0.2-2.7-0.3-4.3-0.3c-2.6,0-5,0.4-7.1,1.3c-2.1,0.9-3.9,2.1-5.4,3.8c-1.5,1.6-2.6,3.6-3.4,5.9            c-0.8,2.3-1.2,4.9-1.2,7.7c0,3.1,0.4,5.8,1.3,8.2c0.9,2.4,2.1,4.4,3.6,6s3.4,2.9,5.5,3.8S588.9,70.9,591.4,70.9z"></path>    </g>    <g>        <path class="st1" d="M645.7,56.8h-16.1v13.4H653v7.9h-33.4v-53H653V33h-23.5v16.3H648v5.8C648,55.1,647.9,56.8,645.7,56.8z"></path>    </g></g></svg>
+            </a>
+            <div class="links">
+                
+    
+        <div class="nav-dropdown">
+            <a href="/software/">Business Software</a>
+            
+        </div>
+        <div class="nav-dropdown">
+            <a href="/directory/" title="Browse">Open Source Software</a>
+            
+        </div>
+        <div class="nav-dropdown">
+            <a href="https://sourceforge.net/articles/category/sourceforge-podcast/">SourceForge Podcast</a>
+        </div>
+        <div class="nav-dropdown">
+            <a>Resources</a>
+            <ul class="nav-dropdown-menu">
+                  <li><a href="/articles/">Articles</a></li>
+                  
+                  <li><a href="/software/case-studies/">Case Studies</a></li>
+                  
+                  <li><a href="/blog/">Blog</a></li>
+            </ul>
+        </div>
+    
+
+                <div class="dev-menu-when-stuck">
+                    Menu
+                    <ul class="dev-menu-dropdown header-nav-menulist">
+                        <li><a href="/support">Help</a></li>
+                        <li><a href="/create">Create</a></li>
+                        <li><a href="/user/registration/" title="Join" >Join</a></li>
+                        <li><a href="/auth/" title="Login">Login</a></li>
+                    </ul>
+                </div>
+                <div class="search-toggle-when-stuck">
+                    <a class="search-toggle">
+                        
+
+
+<svg  data-name="search" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="search">
+                
+                    
+
+                
+                
+                    
+                
+                
+                
+                
+    <form method="get" action="/directory/" class="m-search-form">
+    
+    <div class="typeahead__container">
+      <div class="typeahead__field">
+        <div class="typeahead__query">
+        
+        <input type="text" placeholder="Search for software or solutions" autocomplete="off" name="q" >
+        
+        </div>
+        
+        <label >
+            <input type="submit" class="bt" value="">
+            
+
+
+<svg  data-name="search" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"/></svg>
+        </label>
+      </div>
+    </div>
+    
+    </form>
+    
+                
+            </div>
+        </nav>
+        
+    </section>
+
+    
+</div>
+
+
+
+
+    
+        
+    
+    
+        
+        
+        <link rel="stylesheet" href="https://a.fsdn.com/con/css/top.css?1791573014" />
+        
+        
+            
+    
+    
+    
+        
+        
+    
+    
+        
+        
+    
+    
+    
+    <link rel="stylesheet" href="https://a.fsdn.com/con/css/adobecx.css?1791573014">
+
+        
+        
+            
+                <div id="top-placeholder">
+                <div id="topbar-mount"></div>
+                </div>
+            
+        
+    
+
+    
+
+    
+    
+    <div class="notification-on-project-page">
+    
+        
+    
+    
+    
+    </div>
+    
+    
+
+
+    <section id="page-body" class=" neighborhood-Projects project-bioweka mountpoint-code 
+
+">
+        <div id="nav_menu_holder">
+            
+                
+                    
+    <div class="sandiego"> 
+            
+            
+            
+            
+<section class="project-masthead"> 
+    
+    
+
+    
+<div class="backdrop" style="box-sizing: content-box; padding-bottom: 24px"></div>
+
+    <div class="content">
+    
+        
+    <nav id="breadcrumbs" class="breadcrumbs rtl">
+        <ul itemscope itemtype="http://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+                <meta itemprop="position" content="1"/>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                <a itemprop="item" href="/directory/"><span itemprop="name">Browse</span></a>
+                <meta itemprop="position" content="2"/>
+            </li>
+            
+            
+                
+                
+            
+            
+                
+            
+            
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a itemprop="item" href="/p/bioweka/"><span itemprop="name">BioWeka</span></a>
+                <meta itemprop="position" content="3"/>
+                </li>
+            
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <span itemprop="name">Code</span>
+                <meta itemprop="position" content="4"/>
+                </li>
+            
+        </ul>
+    </nav>
+    
+    
+    
+        
+                
+                
+<div class="overview">
+    
+
+
+<div class="project-icon  default-project-icon " >
+    
+    
+    
+
+
+<svg  data-name="default-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve"><rect class="st0" width="300" height="300"/><g><path class="st1" d="M162.5,154.8c0-28.9-10.2-42-15.6-46.9c-1.1-1-2.7-0.1-2.6,1.3c1.1,16.3-19.4,20.3-19.4,45.9h0c0,0.1,0,0.1,0,0.2c0,15.6,11.8,28.3,26.3,28.3c14.5,0,26.3-12.7,26.3-28.3c0-0.1,0-0.1,0-0.2h0c0-7.2-2.7-14.1-5.5-19.3c-0.5-1-2.1-0.6-1.9,0.3C174.9,158.1,162.5,171.8,162.5,154.8z"/><g><path class="st1" d="M131.2,215.6c-0.7,0-1.3-0.3-1.8-0.7l-67.2-67.1c-1-1-1-2.6,0-3.6l70.9-70.9c0.5-0.5,1.1-0.7,1.8-0.7h20.4c1.2,0,2,0.8,2.3,1.6c0.3,0.7,0.3,1.9-0.5,2.7l-66.7,66.7c-1.3,1.3-1.3,3.5,0,4.9l52.7,52.7c1,1,1,2.6,0,3.6L133,214.9C132.5,215.4,131.9,215.6,131.2,215.6z"/></g><g><path class="st1" d="M144.7,227.4c-1.2,0-2-0.8-2.3-1.5c-0.3-0.7-0.3-1.9,0.5-2.7l66.7-66.7c0.7-0.6,1-1.5,1-2.4s-0.4-1.8-1-2.4l-52.7-52.7c-1-1-1-2.6,0-3.6l10.2-10.2c0.5-0.5,1.1-0.7,1.8-0.7c0.7,0,1.3,0.3,1.8,0.7l67,67.1c0.5,0.5,0.7,1.1,0.7,1.8s-0.3,1.3-0.7,1.8l-70.9,70.9c-0.5,0.5-1.1,0.7-1.8,0.7H144.7z"/></g></g></svg>
+    </div>
+
+
+    
+    <div class="title "> 
+
+        <meta itemprop="name" content="BioWeka"/>
+        <h1  >BioWeka Code
+            
+        </h1>
+        
+            
+            
+          
+        
+            
+            
+            <div class="as-h3 brought-by">
+                
+                    <div class="project-status">Status: <span class="status-value">Inactive</span></div>
+                
+                Brought to you by:
+                
+                    <a href="/u/hampti/profile/">hampti</a>,
+                    
+                
+                    <a href="/u/jan_gewehr/profile/">jan_gewehr</a>
+                    
+                
+            </div>
+            
+        
+
+        
+
+        
+    </div>
+
+
+    
+
+</div>
+
+                
+                
+    
+  
+            
+            
+        
+    </div>
+</section>
+
+        </div>
+    
+
+                
+            
+        </div>
+        <div id="top_nav" class="">
+            
+                
+<div id="top_nav_admin">
+<ul class="dropdown">
+  
+  
+    <li class="">
+        <a href="/projects/bioweka/" class="tool-summary-32" >
+            Summary
+        </a>
+        
+        
+    </li>
+  
+    <li class="">
+        <a href="/projects/bioweka/files/" class="tool-files-sf-32" >
+            Files
+        </a>
+        
+        
+    </li>
+  
+    <li class="">
+        <a href="/projects/bioweka/reviews/" class="tool-reviews-32" >
+            Reviews
+        </a>
+        
+        
+    </li>
+  
+    <li class="">
+        <a href="/projects/bioweka/support" class="tool-support-32" >
+            Support
+        </a>
+        
+        
+    </li>
+  
+    <li class="">
+        <a href="/p/bioweka/_list/tickets" class="tool-tickets-32" >
+            Tickets ▾
+        </a>
+        
+        
+            <ul>
+                
+                    <li class=""><a href="/p/bioweka/bugs/" >Bugs</a></li>
+                
+                    <li class=""><a href="/p/bioweka/feature-requests/" >Feature Requests</a></li>
+                
+            </ul>
+        
+    </li>
+  
+    <li class="">
+        <a href="/p/bioweka/news/" class="tool-blog-32" >
+            News
+        </a>
+        
+        
+    </li>
+  
+    <li class="">
+        <a href="/p/bioweka/discussion/" class="tool-discussion-32" >
+            Discussion
+        </a>
+        
+        
+    </li>
+  
+    <li class="selected">
+        <a href="/p/bioweka/code/" class="tool-cvs-32" >
+            Code
+        </a>
+        
+        
+    </li>
+  
+  
+</ul>
+</div>
+
+
+            
+        </div>
+        <div id="content_base">
+            
+
+    
+                
+                    
+                
+                
+                    
+                
+                <div class="grid-24 pad">
+                    <h2 class="dark title">
+                        <span>CVS Repository: Code</span>
+                        <!-- actions -->
+                        <small>
+                            
+                        </small>
+                        <!-- /actions -->
+                    </h2>
+                    
+                    <div>
+                        
+                        
+
+<h3>About CVS</h3>
+
+<p>CVS is an old system for managing code.  In order to access a CVS repository, you must install a CVS client.</p>
+
+<hr/>
+
+<h3>Readonly Access Only</h3>
+<p>SourceForge only supports readonly access to CVS now.
+For more information see our
+<a href="https://sourceforge.net/blog/decommissioning-cvs-for-commits/">blog post about decommissioning CVS commit support</a>.
+</p>
+<p>
+If you are a project admin, you can <a href="https://sourceforge.net/p/forge/documentation/CVS/">convert your repository to SVN or Git with these instructions</a>.
+</p>
+
+<hr/>
+
+<h3>Download</h3>
+<p>You can download the complete repository in .zip format: <a href="https://sourceforge.net/code-snapshots/cvs/b/bi/bioweka.zip" rel="nofollow">https://sourceforge.net/code-snapshots/cvs/b/bi/bioweka.zip</a></p>
+<p>Once you have downloaded the file you can unzip and checkout a working copy with the following command <code>cvs -d /full/path/to/bioweka co bioweka</code></p>
+
+
+                    </div>
+                    
+                    
+                </div>
+            
+
+
+
+        </div>
+    </section>
+      
+
+    <footer class="sandiego">
+    <div class="as-row">
+        <div class="footer-wrapper">
+            <nav aria-label="Site Links" role="navigation">
+                <section>
+                    <div class="as-h2">SourceForge</div>
+                    <ul>
+                    
+                        <li><a href="/create/" title="Create a Project">Create a Project</a></li>
+                    
+                        <li><a href="/directory/" title="Open Source Software Directory">Open Source Software</a></li>
+                        <li><a href="/software/" title="Business Software Directory">Business Software</a></li>
+                        
+                            
+                            <li><a href="/top" title="Top Open Source Projects">Top Downloaded Projects</a></li>
+                        
+
+                    </ul>
+                </section>
+            </nav>
+            <nav aria-label="Company Links" role="navigation">
+                <section>
+                    <div class="as-h2">Company</div>
+                    <ul>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/about/leadership" title="Open Source Software Directory">Team</a></li>
+                        <li class="h-card">
+                            <address>
+                                <span class="p-name p-org">SourceForge Headquarters</span><br>
+                                <span class="p-street-address">1320 Columbia Street Suite 310</span><br>
+                                <span class="p-locality">San Diego, CA <span class="p-postal-code">92101</span></span><br>
+                                <span class="p-tel">+1 (858) 422-6466</span><br>
+                            </address>
+                        </li>
+                        <li id="social">
+                            
+<span></span>
+<a href="https://x.com/sourceforge" class="twitter" rel="nofollow" target="_blank" title="SourceForge on X">
+
+
+<svg  class="vertical-icon-fix" data-name="x-logo" viewBox="0 0 1200 1227" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z" fill="white"/></svg></a>
+<a href="https://fosstodon.org/@sourceforge" rel="me nofollow" target="_blank" title="SourceForge on Mastodon">
+
+
+<svg  class="vertical-icon-fix" data-name="mastodon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M433 179.11c0-97.2-63.71-125.7-63.71-125.7-62.52-28.7-228.56-28.4-290.48 0 0 0-63.72 28.5-63.72 125.7 0 115.7-6.6 259.4 105.63 289.1 40.51 10.7 75.32 13 103.33 11.4 50.81-2.8 79.32-18.1 79.32-18.1l-1.7-36.9s-36.31 11.4-77.12 10.1c-40.41-1.4-83-4.4-89.63-54a102.54 102.54 0 0 1-.9-13.9c85.63 20.9 158.65 9.1 178.75 6.7 56.12-6.7 105-41.3 111.23-72.9 9.8-49.8 9-121.5 9-121.5zm-75.12 125.2h-46.63v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.33V197c0-58.5-64-56.6-64-6.9v114.2H90.19c0-122.1-5.2-147.9 18.41-175 25.9-28.9 79.82-30.8 103.83 6.1l11.6 19.5 11.6-19.5c24.11-37.1 78.12-34.8 103.83-6.1 23.71 27.3 18.4 53 18.4 175z"/></svg></a>
+<a href="https://www.facebook.com/sourceforgenet/" class="facebook" rel="nofollow" target="_blank" title="SourceForge on Facebook">
+
+
+<svg  data-name="facebook" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"/></svg></a>
+<a href="https://www.linkedin.com/company/sourceforge.net" class="linkedin" rel="nofollow" target="_blank" title="SourceForge on LinkedIn">
+
+
+<svg  data-name="linkedin" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg></a>
+
+<a href="/user/newsletters" rel=nofollow class="newsletter" title="Subscribe to our newsletter">
+
+
+<svg  class="vertical-icon-fix" data-name="mmSF_11mail" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 42 42" enable-background="new 0 0 42 42" xml:space="preserve"><path fill="#FFFFFF" d="M0,6v30h42V6H0z M24.2,21.2c-0.8,0.8-2.3,2-3.2,2c-0.9,0-2.4-1.2-3.2-2L5.8,9.7h30.3L24.2,21.2z M13.7,21l-9.9,9.4V11.6L13.7,21z M15.7,23L15.7,23c0.5,0.5,2.9,2.9,5.3,2.9c2.4,0,4.8-2.4,5.2-2.8l0.1-0.1l9.8,9.4H5.8L15.7,23z M28.3,21l9.9-9.5v18.9L28.3,21z"/></svg></a>
+
+<span></span>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
+             <nav aria-label="Resources Links" role="navigation">
+                <section>
+                    <div class="as-h2">Resources</div>
+                    <ul>
+                        
+                            <li><a href="/support" title="Support Section">Support</a></li>
+                            <li><a href="/p/forge/documentation/Docs%20Home/" title="Site Documentation">Site Documentation</a></li>
+                        
+                        <li><a href="https://fosstodon.org/@sourceforgestatus" title="Site Status" rel="me nofollow">Site Status</a></li>
+                        <li><a href="/reviews" title="Reviews" rel="me nofollow">SourceForge Reviews</a></li>
+
+                    </ul>
+                </section>
+            </nav>
+            <section class="footer-logo">
+                <a href="/" title="Home" class="sf-logo">
+                    
+    
+    <img src="https://a.fsdn.com/con/images/sandiego/sf-logo-full.svg"  alt="SourceForge logo" class="sf-logo-full"/>
+                </a>
+            </section>
+        </div>
+    </div>
+    <section class="l-nav-bottom">
+        <nav class="row">
+            
+                
+            
+        
+    <div class="columns small-12 large-6 copyright-notice">
+        &copy; 2026 Slashdot Media. All Rights Reserved.
+    </div>
+    <div class="columns large-6 links links-right">
+        
+
+    
+        <div>
+        <button class="button blue short hollow" data-open="ccpa-modal" id="btn-ccpa-modal">Your Opt-Out Rights</button>
+        </div>
+        <div class="reveal" data-reveal id="ccpa-modal">
+            
+            <div class="modal-content">
+                <div class="modal-header" id="ccpa-modal-content-destination">
+                </div>
+
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+
+    <a href="https://slashdotmedia.com/terms-of-use" target="_blank" title="Terms" rel="nofollow">Terms</a>
+    <a href="https://slashdotmedia.com/privacy-statement/" target="_blank" title="Privacy" rel="nofollow">Privacy</a>
+
+    
+    
+    
+
+    
+
+    
+        <a href="https://slashdotmedia.com/contact/" target="_blank" title="Advertise" rel="nofollow">Advertise</a>
+    
+    </div>
+        </nav>
+    </section>
+
+    </footer>
+    
+
+
+    
+    
+    
+        
+        
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+
+
+<section id="adobecx"
+         class=""
+         data-region="adobecx"
+         data-nosnippet
+         style="display:none">
+
+  <div class="row">
+    
+    
+    
+    
+          
+          <div class="acx-row">
+             <div class="acx-inner">
+               <button class="acx-logo send-btn" type="button" aria-label="Adobe" data-url="https://business.adobe.com/products/cx-enterprise-coworker/teams.html?sdid=TY6XKLSX&amp;mv=affiliate&amp;s_cid=701WQ000026DtlOYAS&amp;s_iid=701WQ00001qZ5uPYAS#start-building-for-free">
+                 <svg width="132" height="32" viewBox="0 0 157.5 38.05" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Adobe"><path fill="#EB1000" d="M53.80,38.02C53.30,37.99 52.14,37.85 51.55,37.74C46.71,36.90 42.90,34.30 40.98,30.50C40.27,29.10 39.87,27.82 39.59,26.05C39.49,25.40 39.48,25.14 39.48,23.60C39.47,21.75 39.52,21.21 39.78,19.93C40.52,16.27 42.41,13.27 45.23,11.26C47.02,9.99 49.14,9.16 51.48,8.80C52.38,8.66 54.20,8.61 55.16,8.70C55.76,8.75 56.75,8.90 57.08,8.98L57.20,9.01L57.20,4.51L57.20,0.00L61.93,0.00L66.65,0.00L66.64,17.95L66.62,35.91L66.20,36.08C63.83,37.04 60.24,37.79 56.98,38.00C56.25,38.05 54.47,38.05 53.80,38.02ZM110.23,38.02C107.78,37.84 106.35,37.65 104.62,37.27C103.18,36.95 101.80,36.53 100.88,36.14L100.48,35.97L100.46,17.98L100.45,-0.00L105.17,-0.00L109.90,0.00L109.90,4.48L109.90,8.96L110.04,8.93C111.52,8.62 113.67,8.52 115.19,8.68C118.65,9.04 121.73,10.48 123.95,12.78C125.94,14.85 127.13,17.40 127.58,20.58C127.69,21.37 127.73,23.72 127.65,24.62C127.32,28.26 126.01,31.23 123.70,33.55C122.92,34.33 122.43,34.74 121.53,35.34C119.46,36.71 116.99,37.57 114.10,37.93C113.46,38.00 110.86,38.07 110.23,38.02ZM82.40,37.97C80.49,37.80 78.96,37.46 77.52,36.87C73.41,35.21 70.55,31.90 69.46,27.57C69.09,26.14 68.98,25.07 68.98,23.28C68.98,21.70 69.06,20.84 69.33,19.61C69.92,16.84 71.22,14.45 73.13,12.60C75.29,10.51 78.02,9.23 81.35,8.77C82.24,8.64 84.81,8.64 85.70,8.77C89.81,9.34 93.07,11.17 95.32,14.15C96.60,15.85 97.51,18.03 97.90,20.30C98.08,21.40 98.12,21.95 98.12,23.38C98.12,24.92 98.06,25.59 97.80,26.85C97.04,30.62 94.94,33.72 91.79,35.73C91.21,36.10 90.02,36.70 89.31,36.97C88.27,37.38 86.91,37.71 85.60,37.88C85.01,37.95 82.90,38.01 82.40,37.97ZM144.65,37.97C140.25,37.72 136.40,36.09 133.75,33.37C131.66,31.22 130.45,28.64 130.02,25.40C129.89,24.44 129.89,22.01 130.02,21.05C130.28,19.12 130.69,17.71 131.47,16.12C132.80,13.43 134.82,11.40 137.47,10.10C138.62,9.54 139.48,9.23 140.68,8.98C141.85,8.72 142.33,8.68 143.90,8.68C145.19,8.68 145.47,8.69 146.15,8.79C149.26,9.26 151.79,10.48 153.78,12.47C154.80,13.50 155.46,14.44 156.13,15.83C156.88,17.38 157.29,18.95 157.45,20.89C157.55,22.03 157.48,24.72 157.32,25.84L157.29,26.05L148.42,26.05C142.22,26.05 139.55,26.07 139.55,26.10C139.55,26.21 139.91,27.03 140.11,27.36C141.23,29.28 143.12,30.40 145.75,30.70C146.41,30.78 148.31,30.74 149.10,30.63C151.03,30.36 153.03,29.78 155.26,28.83L155.45,28.75L155.45,32.38L155.45,36.00L155.01,36.21C152.86,37.20 150.46,37.77 147.63,37.95C146.90,38.00 145.33,38.00 144.65,37.97ZM0.59,36.11C0.91,35.35 4.35,27.16 8.22,17.91L15.28,1.10L20.65,1.10L26.03,1.10L33.58,19.23C37.73,29.21 41.13,37.40 41.14,37.43C41.15,37.49 40.22,37.50 35.47,37.49L29.79,37.48L25.03,25.44C22.41,18.82 20.26,13.39 20.25,13.38C20.23,13.37 14.09,28.77 13.96,29.15C13.95,29.18 15.29,29.20 17.70,29.21L21.46,29.23L22.91,33.25C23.70,35.46 24.37,37.33 24.38,37.39L24.41,37.50L12.21,37.50L0.01,37.50L0.59,36.11ZM56.53,30.08C56.72,30.03 56.95,29.97 57.04,29.94L57.20,29.89L57.19,23.28L57.18,16.68L56.76,16.54C55.61,16.15 54.24,16.16 53.01,16.58C52.11,16.88 51.45,17.30 50.77,18.01C49.60,19.23 48.98,20.92 48.91,23.08C48.84,25.41 49.45,27.25 50.73,28.53C51.55,29.35 52.59,29.89 53.85,30.13C54.35,30.22 56.02,30.19 56.53,30.08ZM113.11,30.12C114.88,29.81 116.35,28.79 117.26,27.24C117.95,26.06 118.28,24.54 118.24,22.80C118.21,21.74 118.10,21.10 117.82,20.29C117.61,19.68 117.47,19.41 117.13,18.87C115.75,16.75 112.89,15.78 110.37,16.59L109.93,16.73L109.91,23.31L109.90,29.90L110.18,29.98C110.96,30.21 112.27,30.27 113.11,30.12ZM84.78,29.95C86.86,29.39 88.21,27.61 88.63,24.89C88.77,24.04 88.75,22.43 88.61,21.59C88.33,20.00 87.82,18.89 86.99,18.02C86.77,17.79 86.42,17.49 86.22,17.35C84.68,16.28 82.52,16.26 80.94,17.28C80.22,17.74 79.48,18.63 79.10,19.47C78.22,21.43 78.11,24.29 78.83,26.45C79.44,28.29 80.68,29.54 82.28,29.94C82.87,30.09 82.87,30.09 83.65,30.08C84.20,30.07 84.47,30.04 84.78,29.95ZM148.65,20.06C148.65,20.03 148.60,19.80 148.53,19.54C148.05,17.66 147.03,16.49 145.41,15.98C144.88,15.81 144.18,15.73 143.68,15.77C141.65,15.95 140.17,17.36 139.51,19.74L139.41,20.10L144.03,20.10C146.62,20.10 148.65,20.08 148.65,20.06Z"></path></svg>
+               </button>
+               <div class="acx-divider" aria-hidden="true"></div>
+               <span class="acx-strap"></span>
+               <button class="top-bar acx-cta send-btn" type="button" data-url="https://business.adobe.com/products/cx-enterprise-coworker/teams.html?sdid=TY6XKLSX&amp;mv=affiliate&amp;s_cid=701WQ000026DtlOYAS&amp;s_iid=701WQ00001qZ5uPYAS#start-building-for-free"></button>
+               <button class="acx-toggle" id="custom-expand" type="button" aria-expanded="false" aria-controls="adobecxBarPanel">
+                 <span class="acx-chev"><svg width="11" height="7" viewBox="0 0 12 8" fill="none" aria-hidden="true"><path d="M1.5 1.75 6 6.25l4.5-4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+               </button>
+               <div class="acx-tagline"><br><em></em></div>
+             </div>
+           </div>
+    
+
+
+    
+    <div class="heading-wrapper">
+        
+    
+    
+
+
+      <div class="vibe-heading"></div>
+    </div>
+    
+    
+    <div id="retool-gradient-border"></div>
+  </div>
+  
+
+</section>
+<script>
+try{
+    if (SF.ubo) {
+        document.querySelector('[data-region]').remove();
+    }
+}catch(e){}
+</script>
+
+
+
+<script>
+try {
+window._customJS = function (_root) {
+  var root = _root || document;
+  var bar = root.querySelector('[data-region]');
+  if (!bar) return;
+
+  var toggle = root.querySelector('#custom-expand');
+
+  /* No click handlers here -- .send-btn + data-url is what floating-unit.js binds.
+     floating-unit owns .expanded on the bar; mirror it onto aria-expanded rather than
+     toggling it ourselves (a second toggle would cancel its own and the caret would
+     never move). Caret and panel are driven from .expanded in _adobecx.scss. */
+  function sync() {
+    var open = bar.classList.contains('expanded');
+    if (toggle) toggle.setAttribute('aria-expanded', String(open));
+
+    /* the panel is fetched lazily, so re-query the video each time rather than
+       caching it -- childList below fires when the panel is inserted */
+    var video = bar.querySelector('.acx-video');
+    if (!video) return;
+    video.muted = true;               /* autoplay requires muted */
+    if (open) {
+      var p = video.play();
+      if (p && p.catch) p.catch(function () {});
+    } else if (!video.paused) {
+      video.pause();
+    }
+  }
+  new MutationObserver(sync).observe(bar, {
+    attributes: true,
+    attributeFilter: ['class'],
+    childList: true,
+    subtree: true
+  });
+  sync();
+
+  /* Esc closes the panel -- floating-unit has click-outside but no key handling */
+  root.addEventListener('keydown', function (e) {
+    if ((e.key === 'Escape' || e.key === 'Esc') && toggle && bar.classList.contains('expanded')) {
+      toggle.dispatchEvent(new MouseEvent('mousedown', {bubbles: true}));
+      toggle.focus();
+    }
+  });
+};
+
+(function() {
+    window._customJS(null);
+})();
+}catch(e){ console.log("err", e)};
+</script>
+
+
+
+
+    
+
+
+
+    
+    
+        
+        
+            
+    
+    
+    
+    
+    
+    
+        
+        
+            
+            
+            
+            
+            
+        
+    
+        
+            <link rel="stylesheet" href="https://a.fsdn.com/con/css/high_impact.css?1791573014" />
+            
+            
+            <section id="auth0-el" data-footer-name="auth0" data-nosnippet>
+              <div class="sticky-gradient"></div>
+              <button id="mdb-dismiss-btn" class="sticky-dismiss" aria-label="Close">✕</button>
+              <div class="footer-content" style="display: flex; align-items: center;">
+                <div class="sticky-left">
+                  <div class="sticky-brand">
+                      
+                      
+                      <img src="https://a.fsdn.com/con/assets/high_impact_footer/sourceforge/a.png" alt="auth0 logo" />
+                      
+                  </div>
+                </div>
+                <div class="sticky-content">
+                  <div class="sticky-headline" data-head="Meet our new Free Plan | Auth0"></div>
+                  <div class="sticky-desc " data-sub="Secure access for everyone — but not just anyone. New from Auth0: tools to safely ship and scale agentic apps."></div>
+                </div>
+                <div class="sticky-right">
+                  <span class="sticky-cta" data-label="auth0-footer" data-url="/hi3" data-cta-text="Start building for free →"></span>
+                </div>
+              </div>
+            </section>
+            <script>
+            if (SF.ubo || navigator?.brave?.isBrave()) {
+                document.getElementById('mdb-dismiss-btn').parentNode.remove();
+            }
+            </script>
+        
+    
+    
+
+        
+    
+
+
+
+
+
+
+</div>
+
+
+<div id="messages">
+    
+
+    
+</div>
+
+
+    <!-- ew:body_js -->
+
+
+    <script type="text/javascript" src="https://a.fsdn.com/allura/nf/1791573014/_ew_/_slim/js?href=allura%2Fjs%2Fjquery.notify.js%3Ballura%2Fjs%2Fjquery.tooltipster.js%3Ballura%2Fjs%2Fallura-base.js%3Ballura%2Fjs%2Fchecklist.js%3Ballura%2Fjs%2Fadmin_modal.js%3Bjs%2Fjquery.lightbox_me.js%3Ballura%2Fjs%2Fmemorable.js%3Btheme%2Fsftheme%2Fjs%2Fsftheme%2Fsandiego%2Ffloating-unit.js%3Btheme%2Fsftheme%2Fjs%2Fsftheme%2Fshared.js%3Btheme%2Fsftheme%2Fjs%2Fsftheme%2Fsticky.js%3Btheme%2Fsftheme%2Fjs%2Fsftheme%2Fsandiego%2Fchrome.js%3Btheme%2Fsftheme%2Fjs%2Fsftheme%2Fsandiego%2Futilities.js%3Btheme%2Fsftheme%2Fjs%2Fsftheme%2Fvendor%2Ffoundation6%2Fplugins%2Ffoundation.core.min.js%3Btheme%2Fsftheme%2Fjs%2Fsftheme%2Fvendor%2Ffoundation6%2Fplugins%2Ffoundation.util.mediaQuery.min.js%3Btheme%2Fsftheme%2Fjs%2Fsftheme%2Fvendor%2Ffoundation6%2Fplugins%2Ffoundation.util.keyboard.min.js%3Btheme%2Fsftheme%2Fjs%2Fsftheme%2Fvendor%2Ffoundation6%2Fplugins%2Ffoundation.util.box.min.js%3Btheme%2Fsftheme%2Fjs%2Fsftheme%2Fvendor%2Ffoundation6%2Fplugins%2Ffoundation.util.nest.min.js%3Btheme%2Fsftheme%2Fjs%2Fsftheme%2Fvendor%2Ffoundation6%2Fplugins%2Ffoundation.dropdownMenu.min.js%3Btheme%2Fsftheme%2Fjs%2Fsftheme%2Fvendor%2Ffoundation6%2Fplugins%2Ffoundation.offcanvas.min.js%3Btheme%2Fsftheme%2Fjs%2Fsftheme%2Fvendor%2Ffoundation6%2Fplugins%2Ffoundation.toggler.min.js%3Btheme%2Fsftheme%2Fjs%2Fsftheme%2Fsandiego%2Fproject.js%3Btheme%2Fsftheme%2Fjs%2Fsftheme%2Fvendor%2Fjquery.typeahead.min.js"></script>
+
+    
+<!-- /ew:body_js -->
+
+
+
+    <!-- ew:body_js_tail -->
+
+
+    <script type="text/javascript" src="https://a.fsdn.com/allura/nf/1791573014/_ew_/_slim/js?href=theme%2Fsftheme%2Fjs%2Fsftheme%2Fvendor%2Ffoundation6%2Fplugins%2Ffoundation.util.triggers.min.js%3Btheme%2Fsftheme%2Fjs%2Fsftheme%2Fvendor%2Ffoundation6%2Fplugins%2Ffoundation.reveal.min.js"></script>
+
+    
+<!-- /ew:body_js_tail -->
+
+
+
+
+<script>
+
+bizx.cmp.ifConsent({purposes:'all', vendors:'google-ads'}, function () {
+    $('body').removeClass('no-ads-consent'); 
+},
+function () { 
+    $('body').addClass('no-ads-consent');
+},
+null,
+function () { 
+    $('body').addClass('no-ads-consent');
+});
+</script>
+
+
+    
+
+
+    
+    <noscript><p><img src="https://analytics.slashdotmedia.com/index.php?idsite=39" style="border:0;position:absolute;top:0;" alt="" /></p></noscript>
+    
+    <script>
+        $(document).foundation();
+    </script>
+    
+
+
+
+
+
+
+
+
+    
+
+<script>
+    (function () {
+        function load_bombora() {
+            /*global _ml:true, window */
+            _ml = window._ml || {};
+            
+            _ml.eid = '771';
+            _ml.fp = '04495dd3-a563-480d-8f65-34604e7374fc';  
+            var s = document.getElementsByTagName('script')[0], cd = new Date(), mltag = document.createElement('script');
+            mltag.type = 'text/javascript';
+            mltag.async = true;
+            mltag.defer = true;
+            mltag.src = '//ml314.com/tag.aspx?' + cd.getDate() + cd.getMonth() + cd.getFullYear();
+            s.parentNode.insertBefore(mltag, s);
+        }
+        bizx.cmp.ifConsent({ purposes: 'all', vendors: 'bombora'}, load_bombora);
+    })();
+</script>
+
+
+
+
+<script>
+    $(document).ready(function () {
+        $(".tooltip, .m-tooltip").each(function(){
+            let $el = $(this);
+            $el.tooltipster({
+                animation: 'fade',
+                delay: 200,
+                theme: 'tooltipster-light',
+                trigger: 'hover',
+                position: $el.data('position') || 'right',
+                iconCloning: false,
+                maxWidth: 300,
+                contentAsHTML: true,
+                interactive: true
+            }).focus(function () {
+                $(this).tooltipster('show');
+            }).blur(function () {
+                $(this).tooltipster('hide');
+            });
+        });
+    });
+</script>
+
+    
+
+
+
+<script type="text/javascript">
+    bizx.cmp.ifConsent({ purposes: ['storage', 'measurement'], vendors: 'google-analytics'}, function () {
+        /* jshint ignore:start */
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        /* jshint ignore:end */
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ window.dataLayer.push(arguments); }
+        window.gtag = window.gtag || gtag;
+        bizx.cmp.embedScript("https://www.googletagmanager.com/gtag/js");
+        gtag('js', new Date());
+        gtag('set', {
+            'page_location': "https://sourceforge.net/p/bioweka/code/",
+        });
+    });
+</script>
+
+
+<script type="text/javascript">
+    /*global ga, gtag */
+
+    
+        
+        bizx.cmp.ifConsent({ purposes: ['storage', 'measurement'], vendors: 'google-analytics'}, function () {
+            gtag('config', "G-1H226E4E4L", {
+                
+                send_page_view: false,
+                'SF_Page_Type': '', 
+                user_properties: {
+                    'SF_Logged_in': 'Logged Out', 
+                },
+                'devicePixelRatio': SF.devicePixelRatio, 
+            });
+            gtag('event', 'page_view', { send_to: "G-1H226E4E4L" });
+        });
+    
+    
+    
+        
+</script>
+
+</body>
+</html>

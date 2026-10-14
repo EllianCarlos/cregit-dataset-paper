@@ -1,0 +1,28 @@
+# Part b3 of the S and M projects of manifest.batch17.tsv (sha256 fe2bcfa4c462bf23afb8d7d027903ee019a67ffa25f26d74c91f3345493549db),
+# balanced by predicted time (5.5 h for 4 workers), u order; a fed spot part.
+# 24 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+rmyorston__busybox-w32	https://github.com/rmyorston/busybox-w32.git	pending		S	9b50a1e69b67d87a708051cef576b89a6a20a993
+esrlabs__chipmunk	https://github.com/esrlabs/chipmunk.git	pending		S	9250b3d10933f2a00092347f8d57fe304e26b7c3
+ow2-proactive__scheduling	https://github.com/ow2-proactive/scheduling.git	pending		S	335071e12de31eda1985fecdc79e34c80d0af806
+spdk__spdk	https://github.com/spdk/spdk.git	pending		S	d912280586e358f2db3cbe4b4a92a252f8f40215
+can1357__oh-my-pi	https://github.com/can1357/oh-my-pi.git	pending		S	4ade1a1aa303fd896de4225a390a4d583fc227d6
+LuxCoreRender__LuxCore	https://github.com/LuxCoreRender/LuxCore.git	pending		S	58515cbb6ce2d871564c537710627dd27afb305f
+espeak-ng__espeak-ng	https://github.com/espeak-ng/espeak-ng.git	pending		S	ba90c8e9f440ad544f674a790bb5f53878b6ffc5
+apache__skywalking	https://github.com/apache/skywalking.git	pending		S	f115aa7c0f4ccec09c044f9cdfd2f06ec4bc284f
+Alexays__Waybar	https://github.com/Alexays/Waybar.git	pending		S	323e66f51644d0562be54af3c21f368a4d61d321
+jMetal__jMetal	https://github.com/jMetal/jMetal.git	pending		S	df65a84f938f46a8368852b3f7a0a17909ebc15b
+horsicq__XAPKDetector	https://github.com/horsicq/XAPKDetector.git	pending		S	09fd44d02bb3e21093b011fdc94acd8bfda7babb
+mcallegari__qlcplus	https://github.com/mcallegari/qlcplus.git	pending		S	f0f302f901b0bb56c2e8d5d6838c3aeed20013c0
+dxx-rebirth__dxx-rebirth	https://github.com/dxx-rebirth/dxx-rebirth.git	pending		S	db1996a7fd18c7bf11c9b18b881aa4f11a84f017
+confluentinc__cp-demo	https://github.com/confluentinc/cp-demo.git	pending		S	6f13fcceaa97595838dcb20f1b000b0bcd799a48
+t8y2__dbx	https://github.com/t8y2/dbx.git	pending		S	1ed598308a4c6264c7c6460ae812be8ddde69268
+dbeaver__cloudbeaver	https://github.com/dbeaver/cloudbeaver.git	pending		S	4be5fc8928fe17a0b951925da44986a086e608b3
+fluree__db	https://github.com/fluree/db.git	pending		S	fc41e043595331b7feea22d3dbfc80d6cd2ac8da
+drowe67__freedv-gui	https://github.com/drowe67/freedv-gui.git	pending		S	03c876fe167b9702d3cc451507bcb55215106cf3
+Juniper__libxo	https://github.com/Juniper/libxo.git	pending		S	cdace49736f6f6c518156b91e159e0894a937cd4
+eclipse-hono__hono	https://github.com/eclipse-hono/hono.git	pending		S	fee00786d854191ed328b4f39ac6ac4f0e01376d
+f4exb__sdrangel	https://github.com/f4exb/sdrangel.git	pending		S	021c5429a8b9761536afe914103af02cce129476
+oils-for-unix__oils	https://github.com/oils-for-unix/oils.git	pending		S	08310e96b182cf1d2dd65161e07b1743d17f8936
+Xiangyu-Hu__SPHinXsys	https://github.com/Xiangyu-Hu/SPHinXsys.git	pending		S	a72ea168a56963f1ea609c9793f42cb57b395296
+Cockatrice__Cockatrice	https://github.com/Cockatrice/Cockatrice.git	pending		S	b545efb929eb1455eeb81651528794f401acee08

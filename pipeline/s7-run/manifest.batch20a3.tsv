@@ -1,0 +1,23 @@
+# Part a3 of the S and M projects of manifest.batch20.tsv (sha256 4c456b71c9e1db2907af03ac928fea9e460ff859170009b53725d68c63848625),
+# balanced by predicted time (5.5 h for 4 workers), u order; a fed spot part.
+# 19 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+ProvableHQ__snarkVM	https://github.com/ProvableHQ/snarkVM.git	pending		S	f2af0d822d9f3083552dcbb1a7fe297623979dd8
+llnl__sundials	https://github.com/llnl/sundials.git	pending		S	312fc0f3684f27209ca9dc9249d194436eb41a7a
+toeverything__AFFiNE	https://github.com/toeverything/AFFiNE.git	pending		S	b71bb7cfc45f66998ed3827ba5606e0420f8fbb4
+rust-lang__team	https://github.com/rust-lang/team.git	pending		S	f4d797b928e65cb10945bd546d81726d02ca3665
+OpenSMTPD__OpenSMTPD	https://github.com/OpenSMTPD/OpenSMTPD.git	pending		S	f073a73fe159a9f12b8908bd4dec61d05286c4d3
+ARM-software__arm-trusted-firmware	https://github.com/ARM-software/arm-trusted-firmware.git	pending		S	3d425f4f459820a44d24b23464dbc09d6baab7bb
+mouredev__roadmap-retos-programacion	https://github.com/mouredev/roadmap-retos-programacion.git	pending		S	ce7222a9b13ac4363566039125c6a05e5697748d
+arduino__Arduino	https://github.com/arduino/Arduino.git	pending		S	a0df6e0e83b652c72bc78b0a1376c54d6ebc3bee
+PowerDNS__pdns	https://github.com/PowerDNS/pdns.git	pending		M	d2ff3602ecf2e7135809a1806636f93ded6ec919
+realm__realm-java	https://github.com/realm/realm-java.git	pending		S	e5f4caac29d2ca36022352ef5c1f59045750e021
+graphprotocol__graph-node	https://github.com/graphprotocol/graph-node.git	pending		S	6838f4e3cf3607c5bc32ef705dd05aec1eb057ab
+NOAA-ORR-ERD__PyGnome	https://github.com/NOAA-ORR-ERD/PyGnome.git	pending		S	e7a93b0622d2400fa6b302db3724f02ff5be5e95
+GameFoundry__B3DFramework	https://github.com/GameFoundry/B3DFramework.git	pending		S	77cd6919645980b6e17c6c679f4d69ab7a487394
+codewhale-hq__Codewhale	https://github.com/codewhale-hq/Codewhale.git	pending		S	ddefec0a97c6c5b219ba7fedf5e1f052495db930
+Mudlet__Mudlet	https://github.com/Mudlet/Mudlet.git	pending		S	925e199c95aae14f89b989e909aad316852aeff0
+opendaylight__netvirt	https://github.com/opendaylight/netvirt.git	pending		S	ef321479a8c84de55e60f69999fb9a0d37637fa9
+kokkos__kokkos	https://github.com/kokkos/kokkos.git	pending		S	afa865e1e9c05211fa3c3d4ca47ea89dc243a491
+tcltk__tcl	https://github.com/tcltk/tcl.git	pending		M	e36db3376a2d7d4857f6c766bd6133fc7b29e821
+apache__nuttx-apps	https://github.com/apache/nuttx-apps.git	pending		S	ebf379ffe273244de8da291d5c455c532c54ddb3

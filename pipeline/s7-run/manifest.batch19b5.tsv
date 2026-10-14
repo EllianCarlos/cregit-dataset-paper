@@ -1,0 +1,26 @@
+# Part b5 of the S and M projects of manifest.batch19.tsv (sha256 8a11b7acec582e49f76d0e09d7ff1e039d3458ef456ff4c1a875509b92849d3b),
+# balanced by predicted time (6.9 h for 4 workers), u order; a fed spot part.
+# 22 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+tildearrow__furnace	https://github.com/tildearrow/furnace.git	pending		S	14f45ee8018cb7b3c0a922c4c983f9cf4b5e3ae7
+knowm__XChange	https://github.com/knowm/XChange.git	pending		S	a9ad24abde7540c1aa6b45044580363bc70ad087
+halo-dev__halo	https://github.com/halo-dev/halo.git	pending		S	54e01bccd45f4523a3560fc5ac31537779a52392
+SkidderMC__FDPClient	https://github.com/SkidderMC/FDPClient.git	pending		S	07d03078b3fe12ac7278c678f56d0e7f607fbec2
+tnodir__fort	https://github.com/tnodir/fort.git	pending		S	1faf125997667600f1f57a06d2577315f00ea42e
+racket__racket	https://github.com/racket/racket.git	pending		M	18e2fc68ce957bcde5b954d3f864a5e520f57728
+ugeneunipro__ugene	https://github.com/ugeneunipro/ugene.git	pending		S	2eca5ce40dd12cb8cd77d3de6aa0dbf52751f6a2
+TurningWheel__Barony	https://github.com/TurningWheel/Barony.git	pending		S	962a5ce36d10207beef7d8673876e0cebf8e76e4
+EttusResearch__uhd	https://github.com/EttusResearch/uhd.git	pending		S	0d7ed3b1a4e301032b0c6b04799d7631c5098528
+cfengine__core	https://github.com/cfengine/core.git	pending		S	4d1cd8f57e8298a71d41a5d768d71a9c6e3d7e6b
+screenpipe__screenpipe	https://github.com/screenpipe/screenpipe.git	pending		S	adeac7f5be59103432f2e6fc19e69b543d7b2eb7
+GafferHQ__gaffer	https://github.com/GafferHQ/gaffer.git	pending		S	15874221bd23d658c5ab959829214d65ef48ea78
+junit-team__junit-framework	https://github.com/junit-team/junit-framework.git	pending		S	47bbcd1f19ec23fc9b357bd4893fd9d40ef8df89
+dita-ot__dita-ot	https://github.com/dita-ot/dita-ot.git	pending		S	2feba496a96f2b77ed63a00650b16f2a3046e083
+oracle__fastr	https://github.com/oracle/fastr.git	pending		S	f9d9199e51b371f076b19456933ee395d28360bf
+apache__dubbo	https://github.com/apache/dubbo.git	pending		S	a87b134859e1b3d0871e20b9eac848abd2f0b50c
+gitlab.com__lfortran__lfortran	https://gitlab.com/lfortran/lfortran	pending		S	5be4aabd1b8de43194057e2e3a8fc58132a50afb
+Apicurio__apicurio-registry	https://github.com/Apicurio/apicurio-registry.git	pending		S	0554c1916c44962f869bc93ccf7228ad1d7105d7
+KDE__konsole	https://github.com/KDE/konsole.git	pending		S	a306fd09c4044fa0bc43577441c64be5a0aee844
+lumina-ai-inc__chunkr	https://github.com/lumina-ai-inc/chunkr.git	pending		S	f7aafd9a7af5e87f1d847eadcbffccf1e54581e3
+topology-tool-kit__ttk	https://github.com/topology-tool-kit/ttk.git	pending		S	c36e17e53d59a775dba3c91b8e6d5bfcfb9e6aac
+PCSX2__pcsx2	https://github.com/PCSX2/pcsx2.git	pending		S	32ac6e23e4aaf8c8c5e74a6c1ed750ee7672120e

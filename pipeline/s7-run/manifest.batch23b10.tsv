@@ -1,0 +1,19 @@
+# Part b10 of the S and M projects of manifest.batch23.tsv (sha256 d517fdd1f0c89820029e4b854eae0930d05e4a939f1241d7c6454c2306fdc589),
+# balanced by predicted time (4.1 h for 4 workers), u order; a fed spot part.
+# 15 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+trustedsec__social-engineer-toolkit	https://github.com/trustedsec/social-engineer-toolkit.git	pending		S	5e0fbb50ca8b156ac93532a0a4d138900c6e0827
+NBlood__NBlood	https://github.com/NBlood/NBlood.git	pending		S	497385d64b97f4fd13b6efb3929df0f2ab3adc87
+falkTX__Carla	https://github.com/falkTX/Carla.git	pending		S	97a9e0740baf6df2df942495c02532a624c44682
+boost-ext__di	https://github.com/boost-ext/di.git	pending		S	e35c8d94d82c2b0028ab47d0cca6554ca90a2afe
+rhysd__vim.wasm	https://github.com/rhysd/vim.wasm.git	pending		S	f8eae828a41d1811f955f3387a6bb86402991518
+01-edu__public	https://github.com/01-edu/public.git	pending		S	13cd08c1d25db64e79535a51348c332f7dc83b9f
+Geomatys__geotoolkit	https://github.com/Geomatys/geotoolkit.git	pending		S	4fff0886c86ddb8ba2a3d38057b39d43b652a83a
+nfs-ganesha__nfs-ganesha	https://github.com/nfs-ganesha/nfs-ganesha.git	pending		S	581abb64230f0ccee75cf73e7b38a0d386e90826
+cheat-engine__cheat-engine	https://github.com/cheat-engine/cheat-engine.git	pending		S	ec45d5f47f92a239ba0bf51ec5d04a7509c3fd37
+pygame-community__pygame-ce	https://github.com/pygame-community/pygame-ce.git	pending		S	6f99511016600236ca305c61886daf7b3313fe7c
+JetBrains__intellij-plugins	https://github.com/JetBrains/intellij-plugins.git	pending		M	c95c5c53fdbca910f570acc208bb3c564ddd9399
+jogetworkflow__jw-community	https://github.com/jogetworkflow/jw-community.git	pending		S	3741eca1f8947a18c8977cb201a9487d7da2bc04
+assaultcube__AC	https://github.com/assaultcube/AC.git	pending		S	13f0d8eea4822dee5c976661218d022be74342e3
+ZDoom__Raze	https://github.com/ZDoom/Raze.git	pending		S	76fe82f5eb318fdeb30ba9fb27093a9a10bc3821
+openmm__openmm	https://github.com/openmm/openmm.git	pending		S	d319a3efee31f42efbcceaf0074abb61767ceb12

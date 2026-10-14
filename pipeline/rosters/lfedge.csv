@@ -1,0 +1,14 @@
+org_key,org_kind,project,repo_url,github_slug,roster_status,source_url,fetched_at,note
+lfedge,foundation,Open Glossary of Edge Computing,https://github.com/State-of-the-Edge/glossary,State-of-the-Edge/glossary,growth,https://raw.githubusercontent.com/lf-edge/lfedge-landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfedge,foundation,Akraino,https://github.com/akraino-edge-stack/eliot,akraino-edge-stack/eliot,impact,https://raw.githubusercontent.com/lf-edge/lfedge-landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfedge,foundation,InfiniEdge AI,,,at_large,https://raw.githubusercontent.com/lf-edge/lfedge-landscape/main/landscape.yml,2026-10-05T01:30:35Z,source gives no repo_url
+lfedge,foundation,InstantX,,,at_large,https://raw.githubusercontent.com/lf-edge/lfedge-landscape/main/landscape.yml,2026-10-05T01:30:35Z,source gives no repo_url
+lfedge,foundation,EdgeX Foundry,https://github.com/edgexfoundry/edgex-go,edgexfoundry/edgex-go,impact,https://raw.githubusercontent.com/lf-edge/lfedge-landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfedge,foundation,eKuiper,https://github.com/lf-edge/ekuiper,lf-edge/ekuiper,at_large,https://raw.githubusercontent.com/lf-edge/lfedge-landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfedge,foundation,Fledge,https://github.com/fledge-iot/fledge,fledge-iot/fledge,impact,https://raw.githubusercontent.com/lf-edge/lfedge-landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfedge,foundation,NanoMQ,https://github.com/nanomq/nanomq,nanomq/nanomq,at_large,https://raw.githubusercontent.com/lf-edge/lfedge-landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfedge,foundation,Ocre,https://github.com/project-ocre/ocre-runtime,project-ocre/ocre-runtime,at_large,https://raw.githubusercontent.com/lf-edge/lfedge-landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfedge,foundation,NexoEdge,https://github.com/nexoedge/nexoedge,nexoedge/nexoedge,at_large,https://raw.githubusercontent.com/lf-edge/lfedge-landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfedge,foundation,Project EVE,https://github.com/lf-edge/eve,lf-edge/eve,impact,https://raw.githubusercontent.com/lf-edge/lfedge-landscape/main/landscape.yml,2026-10-05T01:30:35Z,
+lfedge,foundation,FIDO Device Onboard,https://github.com/fido-device-onboard,,growth,https://raw.githubusercontent.com/lf-edge/lfedge-landscape/main/landscape.yml,2026-10-05T01:30:35Z,repo_url is not an owner/repo GitHub URL
+lfedge,foundation,Open Horizon,https://github.com/open-horizon/anax,open-horizon/anax,impact,https://raw.githubusercontent.com/lf-edge/lfedge-landscape/main/landscape.yml,2026-10-05T01:30:35Z,

@@ -1,0 +1,145 @@
+frame: s7-run/frame.layer1.csv, s7-run/frame.batch21.csv, s7-run/frame.batch22.csv
+projects: 3379
+fact rows: 4511
+
+fact_type: rows, projects
+  company_org: 188, 130
+  company_org_candidate: 136, 136
+  company_pool: 102, 102
+  company_roster: 7, 7
+  company_roster_org: 104, 104
+  fiscal_sponsor: 40, 40
+  owner_kind: 3309, 3309
+  roster: 538, 462
+  roster_affiliated: 12, 12
+  roster_org: 75, 67
+
+fact: projects
+  owner_kind:org: 2926
+  owner_kind:user: 383
+  roster:asf: 125
+  company_roster_org:redhat: 104
+  company_pool:spinellis: 102
+  roster:eclipse: 84
+  roster:kde: 73
+  roster_org:lf: 65
+  roster:asf-incubator: 64
+  roster:gnome: 53
+  roster:gnu: 33
+  company_org_candidate:google: 27
+  roster:lf: 27
+  company_org:Microsoft: 24
+  fiscal_sponsor:numfocus: 18
+  roster:rust-foundation: 15
+  roster:cncf: 14
+  roster:osgeo: 14
+  fiscal_sponsor:sfc: 12
+  roster_affiliated:numfocus: 12
+  company_org:NVIDIA: 11
+  company_org:analogdevicesinc: 11
+  company_org:tencent: 10
+  company_org_candidate:xilinx: 10
+  fiscal_sponsor:spi: 10
+  company_org:Oracle: 9
+  company_org:corretto: 8
+  company_org:MarvellEmbeddedProcessors: 7
+  company_roster:mozilla: 7
+  roster:lfai: 7
+  company_org:aws: 6
+  company_org_candidate:PaddlePaddle: 6
+  company_org:GoogleCloudPlatform: 5
+  company_org_candidate:digi-embedded: 5
+  company_org_candidate:dotnet: 5
+  company_org_candidate:graalvm: 5
+  roster:lfnetworking: 5
+  company_org:mongodb: 4
+  company_org_candidate:googleapis: 4
+  company_org_candidate:samsung: 4
+  roster:openjs: 4
+  company_org:MicrosoftDocs: 3
+  company_org:SAP: 3
+  company_org:vmware: 3
+  company_org_candidate:AzureAD: 3
+  company_org_candidate:avnet: 3
+  company_org_candidate:bazelbuild: 3
+  company_org_candidate:grpc: 3
+  company_org_candidate:projectacrn: 3
+  roster:xorg: 3
+  company_org:Azure: 2
+  company_org:IBM: 2
+  company_org:amd: 2
+  company_org:cisco: 2
+  company_org:elastic: 2
+  company_org:epam: 2
+  company_org:forcedotcom: 2
+  company_org:mysql: 2
+  company_org_candidate:Cisco-Talos: 2
+  company_org_candidate:HewlettPackard: 2
+  company_org_candidate:daos-stack: 2
+  company_org_candidate:eclipse-ee4j: 2
+  company_org_candidate:flutter: 2
+  company_org_candidate:ni: 2
+  company_org_candidate:openucx: 2
+  company_org_candidate:project-everest: 2
+  company_org_candidate:spdk: 2
+  company_org_candidate:telefonicaid: 2
+  roster:documentfoundation: 2
+  roster:freebsd: 2
+  roster:psf: 2
+  roster_org:osgeo: 2
+  company_org:Apple: 1
+  company_org:Firebase: 1
+  company_org:IntelPython: 1
+  company_org:Line: 1
+  company_org:NetApp: 1
+  company_org:aws-samples: 1
+  company_org:newrelic: 1
+  company_org:powershell: 1
+  company_org:tianocore: 1
+  company_org:wix: 1
+  company_org_candidate:ApolloAuto: 1
+  company_org_candidate:DynamoRIO: 1
+  company_org_candidate:FoundationDB: 1
+  company_org_candidate:NVIDIAGameWorks: 1
+  company_org_candidate:NativeScript: 1
+  company_org_candidate:OpenCV: 1
+  company_org_candidate:WebAssembly: 1
+  company_org_candidate:Z3Prover: 1
+  company_org_candidate:ampproject: 1
+  company_org_candidate:aws-amplify: 1
+  company_org_candidate:awsdocs: 1
+  company_org_candidate:carla-simulator: 1
+  company_org_candidate:cisco-system-traffic-generator: 1
+  company_org_candidate:ctripcorp: 1
+  company_org_candidate:dart-lang: 1
+  company_org_candidate:dmlc: 1
+  company_org_candidate:firecracker-microvm: 1
+  company_org_candidate:flang-compiler: 1
+  company_org_candidate:gopro: 1
+  company_org_candidate:juniper: 1
+  company_org_candidate:kata-containers: 1
+  company_org_candidate:material-components: 1
+  company_org_candidate:mellanox: 1
+  company_org_candidate:mit-plv: 1
+  company_org_candidate:nextgenhealthcare: 1
+  company_org_candidate:nnsuite: 1
+  company_org_candidate:ofiwg: 1
+  company_org_candidate:pantsbuild: 1
+  company_org_candidate:project-oak: 1
+  company_org_candidate:rapidsai: 1
+  company_org_candidate:spinnaker: 1
+  company_org_candidate:spotify: 1
+  company_org_candidate:square: 1
+  company_org_candidate:twitter: 1
+  company_org_candidate:wiredtiger: 1
+  roster:asf-attic: 1
+  roster:bytecodealliance: 1
+  roster:lfedge: 1
+  roster:netbsd: 1
+  roster:obf: 1
+  roster:openinfra: 1
+  roster_org:lfai: 1
+
+company_org rows by strength: page 95, verified-domain 93
+projects with a fact other than owner_kind: 857
+projects with no owner_kind (not on GitHub): 70

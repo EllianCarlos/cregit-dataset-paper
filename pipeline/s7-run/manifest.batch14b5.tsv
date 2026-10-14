@@ -1,0 +1,24 @@
+# Part b5 of the S and M projects of manifest.batch14.tsv (sha256 a1801c196defea51ecbeef0e7e9aa11dbb3fa7a56a079e8c25e40875a392ac5a),
+# balanced by predicted time (5.9 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+Sketchware-Pro__Sketchware-Pro	https://github.com/Sketchware-Pro/Sketchware-Pro.git	pending		S	452cea82cf9c8f1956d06ae9cf55d6d759842795
+ProgrammeVitam__vitam	https://github.com/ProgrammeVitam/vitam.git	pending		S	5a68aee86f8967b663d026fa63fc1ac2aa9e5a2a
+foobnix__LibreraReader	https://github.com/foobnix/LibreraReader.git	pending		S	635d67d61af1ab4528d1b2cf9473b060311df116
+mysql__mysql-shell	https://github.com/mysql/mysql-shell.git	pending		S	977806ff9412abf13da82a1d6ed49e2b909bc121
+TigerVNC__tigervnc	https://github.com/TigerVNC/tigervnc.git	pending		S	ecbab04621580b9c38a54275a925dce47d017801
+doitsujin__dxvk	https://github.com/doitsujin/dxvk.git	pending		S	f20f363191c019cbf0d792e4e8f660d46ebecb6c
+microsoft__llm-42	https://github.com/microsoft/llm-42.git	pending		S	143cb7075d96b756edc3ef44e6f752cb4fcc90e2
+cagnulein__qdomyos-zwift	https://github.com/cagnulein/qdomyos-zwift.git	pending		S	36e32dc2605870796f240dff7761576496ac9bed
+microsoft__amlFilesystem-lustre	https://github.com/microsoft/amlFilesystem-lustre.git	pending		S	60d68e0a09b6c87e382d48d59fb6a1a5949b6409
+kubernetes-client__java	https://github.com/kubernetes-client/java.git	pending		S	6541edc26ebd4fa3f436a11d2f7f6ff2e1e8e858
+eclipse-emf__org.eclipse.emf	https://github.com/eclipse-emf/org.eclipse.emf.git	pending		S	06abfe0471827d8619c42053e226535b53d12d3a
+hapifhir__hapi-fhir	https://github.com/hapifhir/hapi-fhir.git	pending		S	30d40309bcee49b6c1888897ea1756bca130e158
+PrismLauncher__PrismLauncher	https://github.com/PrismLauncher/PrismLauncher.git	pending		S	7de6e963c258827971640ba8b41c95659a0ba962
+cdk__cdk	https://github.com/cdk/cdk.git	pending		S	0ea76c774cf995fd9967a1c29d3fb8e7e1670823
+mozilla__application-services	https://github.com/mozilla/application-services.git	pending		S	9c693c5fde7a2a1777fe0f38ec06b29e2eff2ff5
+SimpleITK__SimpleITK	https://github.com/SimpleITK/SimpleITK.git	pending		S	bb259aaac9c4b0fb7f163f5ecc944d2f9ad3edfc
+Greedysky__TTKMusicPlayer	https://github.com/Greedysky/TTKMusicPlayer.git	pending		S	1522e01e988c93d0291b2c52bc5606f29e4eb873
+apache__accumulo	https://github.com/apache/accumulo.git	pending		S	f823f0c17c5c09b7150aa48a0bf05ff6627d27f8
+apache__impala	https://github.com/apache/impala.git	pending		S	03cb447653e539fb4c18896a8bb913a1e4b594ff
+haifengl__smile	https://github.com/haifengl/smile.git	pending		S	43274a8a19f15f9667c5cebf690d30e6df07b298

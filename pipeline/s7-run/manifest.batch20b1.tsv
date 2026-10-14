@@ -1,0 +1,9 @@
+# Part b1 of the S and M projects of manifest.batch20.tsv (sha256 4c456b71c9e1db2907af03ac928fea9e460ff859170009b53725d68c63848625),
+# balanced by predicted time (6.8 h for 4 workers), u order; a fed spot part.
+# 5 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+facebook__sapling	https://github.com/facebook/sapling.git	pending		M	fc226d3e9ccfc4e4d0efac8d4193af6849a74cd7
+tianocore__edk2	https://github.com/tianocore/edk2.git	pending		M	a614312c3f697b75e1a8b5ccb01b7af1fb2bd4a1
+ptitSeb__box86	https://github.com/ptitSeb/box86.git	pending		S	7dec0819b5f212910cc7ff030f5161742add121c
+magefree__mage	https://github.com/magefree/mage.git	pending		M	9baa6fdd2c78aa525b21b42a637c418c272999c2
+neo4j__neo4j	https://github.com/neo4j/neo4j.git	pending		M	54a7dcf7c2501b31866199143364c5332da8936f

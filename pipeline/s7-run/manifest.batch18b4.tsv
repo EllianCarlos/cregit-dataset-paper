@@ -1,0 +1,28 @@
+# Part b4 of the S and M projects of manifest.batch18.tsv (sha256 432ad2e493ba966ef387af309dc2cfab6bc374ba9fa442b0705d1617cdcd2f76),
+# balanced by predicted time (5.9 h for 4 workers), u order; a fed spot part.
+# 24 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+ls1intum__Artemis	https://github.com/ls1intum/Artemis.git	pending		S	ea029373ca39815d7b38a59d00cec68cafc3da01
+enonic__xp	https://github.com/enonic/xp.git	pending		S	da2e921bd17cfe3cb08f00745d7918106da9e9e5
+psi4__psi4	https://github.com/psi4/psi4.git	pending		S	23be3de4b1f6cd70e337b98a2a200008cf350274
+stratis-storage__stratisd	https://github.com/stratis-storage/stratisd.git	pending		S	2ed900a1be573c17770bc21b67b61b5dbac1c997
+OtterBrowser__otter-browser	https://github.com/OtterBrowser/otter-browser.git	pending		S	cc58a525f7a953f5668a4c13c092aa485995d52a
+pi-hole__FTL	https://github.com/pi-hole/FTL.git	pending		S	0bf029baf174f65852a0e598bf4efa436e5cda9c
+mudita__MuditaOS	https://github.com/mudita/MuditaOS.git	pending		S	2cd0e4721405c0bf263f311f27d38aadae6ac89f
+BelledonneCommunications__liblinphone	https://github.com/BelledonneCommunications/liblinphone.git	pending		S	9896e6c9bcc12019a227af3a123d7bb781bae383
+topling__toplingdb	https://github.com/topling/toplingdb.git	pending		S	d2761bc845d22258c94e67df0fbebe300ee06f6c
+agraef__purr-data	https://github.com/agraef/purr-data.git	pending		S	7dc4f29c92952039d14d558155379432a6eea0fc
+zeek__zeek	https://github.com/zeek/zeek.git	pending		S	8afe55cc486faea9f083df3504af00e89428a1cf
+mediathekview__MediathekView	https://github.com/mediathekview/MediathekView.git	pending		S	414d1a23a4e46189e6db5778748b37ade56fbd51
+dicedb__dicedb	https://github.com/dicedb/dicedb.git	pending		S	9610c664d19aadadbe8890fde502231d677e39fc
+Oneflow-Inc__oneflow	https://github.com/Oneflow-Inc/oneflow.git	pending		S	25c8978c1c8b1371ef6aa4187dae4495bd233c35
+lovegaoshi__azusa-player-mobile	https://github.com/lovegaoshi/azusa-player-mobile.git	pending		S	242800f20c879653e45260100d44b9bb0de822f4
+OpenXcom__OpenXcom	https://github.com/OpenXcom/OpenXcom.git	pending		S	4a4bae5fa2e5a09282928e84943fc84b093e34ff
+rust-lang__libc	https://github.com/rust-lang/libc.git	pending		S	b739c733e06a5f184bae7e296919c15d6ccd8ec8
+quint-co__quint	https://github.com/quint-co/quint.git	pending		S	23a4b811ff2ac040057e9213d6a249d64a08d9be
+porres__pd-else	https://github.com/porres/pd-else.git	pending		S	66da1e4aeeb16a1fd65e801ab21080fa12bff562
+PaddlePaddle__Serving	https://github.com/PaddlePaddle/Serving.git	pending		S	b0af55d085764dafa446b2d9104a4cf7eed77c6a
+wlrfx__swayfx	https://github.com/wlrfx/swayfx.git	pending		S	4f603173dd12a0a181c1dacdf601accee97e7a75
+rust-lang__reference	https://github.com/rust-lang/reference.git	pending		S	a286e1ecb8ce193d50056e4bb042eea9b23876ef
+analysis-tools-dev__static-analysis	https://github.com/analysis-tools-dev/static-analysis.git	pending		S	029d415efdae7b23244ef3020bb73ac9ccfed05c
+larryli__PuTTY	https://github.com/larryli/PuTTY.git	pending		S	7ddf3aea51101784845e72642d9d13dd317b7212

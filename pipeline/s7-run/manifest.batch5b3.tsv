@@ -1,0 +1,32 @@
+# Part b3 of the S and M projects of manifest.batch5.tsv (sha256 d831890774e9a5e162a2e113942e19a64e0e7a2275032bf7880b86fe1f765ead),
+# balanced by predicted time (11.3 h for 4 workers), u order.
+# 28 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+LawnchairLauncher__lawnchair	https://github.com/LawnchairLauncher/lawnchair.git	pending		M	9e25cc23b3cbf606250f53ea31d87148e5372929
+fibjs__fibjs	https://github.com/fibjs/fibjs.git	pending		S	7889969ef439aaafba68dfbdecea78f07eb0bb99
+crate__crate	https://github.com/crate/crate.git	pending		S	02e25917534119087382886f593ce4a72e243636
+proftpd__proftpd	https://github.com/proftpd/proftpd.git	pending		S	7d83574efcc170de5b30a7726930f134892d6c9a
+wso2__product-apim	https://github.com/wso2/product-apim.git	pending		S	ad9bcf1eb33ee21abc437682952a587c04f9b53b
+The-Powder-Toy__The-Powder-Toy	https://github.com/The-Powder-Toy/The-Powder-Toy.git	pending		S	99a1882cf05f72c10635cd92140666eb07ff08ca
+AppliedEnergistics__Applied-Energistics-2	https://github.com/AppliedEnergistics/Applied-Energistics-2.git	pending		S	de2b845e9d1e5ac137e05018e5fa1dbd9e58d427
+ring-lang__ring	https://github.com/ring-lang/ring.git	pending		M	7ac57680cb44e4faeab40e8886725a2a65ac9c21
+signalapp__Signal-Android	https://github.com/signalapp/Signal-Android.git	pending		S	792ae88e09c0253938317fa8034f0133f8b70a22
+HandBrake__HandBrake	https://github.com/HandBrake/HandBrake.git	pending		S	174246fbee3150206c43943915301cca22981d32
+OpenMathLib__OpenBLAS	https://github.com/OpenMathLib/OpenBLAS.git	pending		S	31e82fa8c509e6f0d96288de3c20d8916d894e72
+Kunzisoft__KeePassDX	https://github.com/Kunzisoft/KeePassDX.git	pending		S	2db52c5fd016aad50352ba60383f6aefd29100c4
+Qiskit__qiskit	https://github.com/Qiskit/qiskit.git	pending		S	abe422d0ad6eb0e3acbb2f4160a0d336ed4d26cb
+eclipse-platform__eclipse.platform.swt	https://github.com/eclipse-platform/eclipse.platform.swt.git	pending		M	30c45b0e275fe79e766c8376252bb79f99093a6a
+horsicq__XPEViewer	https://github.com/horsicq/XPEViewer.git	pending		S	a602d0c78a4b0351249abf6f35a969ddc7f9b13e
+88250__symphony	https://github.com/88250/symphony.git	pending		S	a31997bb5ac2d5ba67e9529b866f32d78ad38cf3
+Hammerspoon__hammerspoon	https://github.com/Hammerspoon/hammerspoon.git	pending		S	23e387e2805a9890066366e0ac96c71b27f0cfd5
+confluentinc__schema-registry	https://github.com/confluentinc/schema-registry.git	pending		S	8b0933fc8e071211caae7af8491c6418ee9508ec
+apache__struts	https://github.com/apache/struts.git	pending		S	a2352599e142a519df26303ca466b3844a085905
+google__ExoPlayer	https://github.com/google/ExoPlayer.git	pending		S	dd430f7053a1a3958deea3ead6a0565150c06bfc
+fabro-sh__fabro	https://github.com/fabro-sh/fabro.git	pending		S	7fc0edbf811e6239848bd3e164f5dda534879530
+texmacs__texmacs	https://github.com/texmacs/texmacs.git	pending		S	83194f5d744f781b784531ce9c4b7fce540a6230
+git-ai-project__git-ai	https://github.com/git-ai-project/git-ai.git	pending		S	0670e7ef27590af0e8ff5409267f3f4b09b8fcb4
+MythTV__mythtv	https://github.com/MythTV/mythtv.git	pending		M	8c7031b687b1fbbfe8a435a2befb391a4891b767
+OWASP__wrongsecrets	https://github.com/OWASP/wrongsecrets.git	pending		S	e80609c8f4b5d926f072902f6af47d4e1fd6f8b2
+libigl__libigl	https://github.com/libigl/libigl.git	pending		S	7100764c2a2833284a8bdfa9b948d2b3bf124624
+nasa__fprime	https://github.com/nasa/fprime.git	pending		S	55f597d76f8749b647068fd7aa3581a14dab6ff9
+NationalSecurityAgency__ghidra	https://github.com/NationalSecurityAgency/ghidra.git	pending		S	77f213795d97abaae7da8ac9097794acb7438c59

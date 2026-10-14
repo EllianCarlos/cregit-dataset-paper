@@ -1,0 +1,23 @@
+# Part b5 of the S and M projects of manifest.batch13.tsv (sha256 1d1f93d1d2952c0f2a25ca8f968b8bf867959609ab38c913a98784b9d447bfcc),
+# balanced by predicted time (5.8 h for 4 workers), u order; a fed spot part.
+# 19 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+bochs-emu__Bochs	https://github.com/bochs-emu/Bochs.git	pending		S	559c60cd17bda3f4f6f61d0129ac449610ae70c8
+apache__commons-io	https://github.com/apache/commons-io.git	pending		S	4ea3ecac926d1c15af7f3cfc0a34e218c39bae49
+rcaelers__workrave	https://github.com/rcaelers/workrave.git	pending		S	c60358f0121a600007f79b4ca392e2ff51bafb3b
+jitsi__jitsi	https://github.com/jitsi/jitsi.git	pending		S	ccf6943807e071247070581cca965131660ccba5
+obsproject__obs-studio	https://github.com/obsproject/obs-studio.git	pending		S	c5bcbca63fc32f8341c08e1f921b2b81ec46be00
+crosstool-ng__crosstool-ng	https://github.com/crosstool-ng/crosstool-ng.git	pending		S	f697d16bd70b3e4a3499b7f2a153860f41964f72
+opencog__atomspace	https://github.com/opencog/atomspace.git	pending		M	c8d633bf272b838c2132c21b7c8ddf169a18dd22
+mozilla__angle	https://github.com/mozilla/angle.git	pending		S	7918168436578718b234bfd56da152e34a85af1d
+opengauss-mirror__openGauss-server	https://github.com/opengauss-mirror/openGauss-server.git	pending		S	9c01442e7d6811e5d3ab4c621d9153b6ce1af678
+horsicq__xntsv	https://github.com/horsicq/xntsv.git	pending		S	e9fe7af6d0c6a4be387699101dfe0bcda5fffcb0
+cyberbotics__webots	https://github.com/cyberbotics/webots.git	pending		S	303f6bc2af6b241098d2773cd3f9ae507187f2ef
+testcontainers__testcontainers-java	https://github.com/testcontainers/testcontainers-java.git	pending		S	9bb3c2dc175672ad33a2eafd7133212c7173ac43
+protocolbuffers__protobuf	https://github.com/protocolbuffers/protobuf.git	pending		S	4d99e0f678cbdb2963250c87566f89bbf1718c4c
+MixinNetwork__ios-app	https://github.com/MixinNetwork/ios-app.git	pending		S	2be882e90c866fabf6164359de41478a121d7429
+WerWolv__ImHex	https://github.com/WerWolv/ImHex.git	pending		S	f2d432dfd6c0b4e56b26f5e2851dd2a9f72cbe23
+vayun-mathur__Modern-Apps	https://github.com/vayun-mathur/Modern-Apps.git	pending		S	ebc758e827453ca0450413ed7a2d7181b9c0b4f1
+facebook__idb	https://github.com/facebook/idb.git	pending		S	7dea09354953eb2ad7e90723ceb29fa16b410b50
+microsoft__intelligent-terminal	https://github.com/microsoft/intelligent-terminal.git	pending		S	2b8b596bdba23b32f44efb109dcda9fe02e6dedd
+scp-fs2open__fs2open.github.com	https://github.com/scp-fs2open/fs2open.github.com.git	pending		S	05a3df4bddbe07b58222c89fc44da5fc4d121a83

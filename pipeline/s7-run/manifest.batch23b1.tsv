@@ -1,0 +1,8 @@
+# Part b1 of the S and M projects of manifest.batch23.tsv (sha256 d517fdd1f0c89820029e4b854eae0930d05e4a939f1241d7c6454c2306fdc589),
+# balanced by predicted time (6.8 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+wxWidgets__wxWidgets	https://github.com/wxWidgets/wxWidgets.git	pending		M	fb2e182b34e1a3bf33c420bd61d5b785f5250cc6
+ultimate-pa__ultimate	https://github.com/ultimate-pa/ultimate.git	pending		M	e22caca5caa79d7ad5ca0797b3d5dfbae5a03789
+FirebirdSQL__firebird	https://github.com/FirebirdSQL/firebird.git	pending		M	474cb872f93a11ec156ef43f57624ba9ea7f093f
+DOCGroup__ACE_TAO	https://github.com/DOCGroup/ACE_TAO.git	pending		M	74227a0598c07b8d433c82dcec8a9f60eadf67c3

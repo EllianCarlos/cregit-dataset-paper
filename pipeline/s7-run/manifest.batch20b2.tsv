@@ -1,0 +1,24 @@
+# Part b2 of the S and M projects of manifest.batch20.tsv (sha256 4c456b71c9e1db2907af03ac928fea9e460ff859170009b53725d68c63848625),
+# balanced by predicted time (5.6 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+kythe__kythe	https://github.com/kythe/kythe.git	pending		S	69141f022689a611e8a4a1d9b08a3783a2e8a9ed
+eclipse-kura__kura	https://github.com/eclipse-kura/kura.git	pending		S	b75965f996290f348a32e39ab14132080b4a5bc0
+igniterealtime__Openfire	https://github.com/igniterealtime/Openfire.git	pending		S	3e29affd54b6597ac2214be6fd746971e9a4ec8e
+FashionFreedom__Seamly2D	https://github.com/FashionFreedom/Seamly2D.git	pending		S	0627ac315f7b9aae6109e0961a59b98852e7aae0
+strongswan__strongswan	https://github.com/strongswan/strongswan.git	pending		S	0aa499e477d3be079dfc51e8d2bddebe4936072e
+feigeCode__navop	https://github.com/feigeCode/navop.git	pending		S	51edf53c540eb8d1089916c38fb78a1b7cc79867
+CesiumGS__cesium-unreal	https://github.com/CesiumGS/cesium-unreal.git	pending		S	ca1d13d264de5ffd7e5e3803de7ce27ce5130ffe
+DeaDBeeF-Player__deadbeef	https://github.com/DeaDBeeF-Player/deadbeef.git	pending		S	a56bc0954d4c619074e428c69af8f0ec15032bbd
+JOSM__josm	https://github.com/JOSM/josm.git	pending		S	57fabd280249a6f0b7335056b85729dc3652e087
+bradharding__doomretro	https://github.com/bradharding/doomretro.git	pending		S	71f94d210c5ac9a2adf5b75f77f9353195482de4
+hypre-space__hypre	https://github.com/hypre-space/hypre.git	pending		S	8a719a408facc8a0319da8ad717c757cf867543a
+ViennaRNA__ViennaRNA	https://github.com/ViennaRNA/ViennaRNA.git	pending		S	1ffec79f5e258896160f7362ced8263450f371dc
+RPCSX__rpcsx	https://github.com/RPCSX/rpcsx.git	pending		S	e8ae1481ab7ba04d5c6bef89dd852aabba2c88ff
+miki151__keeperrl	https://github.com/miki151/keeperrl.git	pending		S	95d2be4e97db2243210a71918e36a533ad94dcd1
+parrot__parrot	https://github.com/parrot/parrot.git	pending		M	472c0538637dedfe2fd0f29567d0c26bf9f38edd
+cp2k__cp2k	https://github.com/cp2k/cp2k.git	pending		S	474e12a1c367a620a5548e7a1e77b007886d043e
+gitea.wildfiregames.com__0ad__0ad	https://gitea.wildfiregames.com/0ad/0ad	pending		S	ccd7481e5cc92cdfc4167eb771081079fd615160
+swaywm__sway	https://github.com/swaywm/sway.git	pending		S	1652c54b73f67df17b7b4ab0b0f7048204aa8104
+networkit__networkit	https://github.com/networkit/networkit.git	pending		S	b706c563ea0633c09ea181b6499bbc9f32c3a9b6
+neetcode-gh__leetcode	https://github.com/neetcode-gh/leetcode.git	pending		S	3186ede2ea4c4788e87be4b509bf2b66d5eba0e9

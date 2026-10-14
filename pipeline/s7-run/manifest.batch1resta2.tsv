@@ -1,0 +1,31 @@
+# Part a2 of the S and M projects of manifest.batch1rest.tsv (sha256 8d43eeb3959a96c4373e4523eabb6c49aa5d74cf659a351a7214a766a96f785f),
+# balanced by predicted time (11.9 h for 4 workers), u order.
+# 27 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+Wilfred__difftastic	https://github.com/Wilfred/difftastic.git	pending		S	7854991031425719cfced56dda2f8920202d216d
+mtotschnig__MyExpenses	https://github.com/mtotschnig/MyExpenses.git	pending		S	fdd7945a46a3a8bb4776a85a181f5c8895256729
+telefonicaid__fiware-cygnus	https://github.com/telefonicaid/fiware-cygnus.git	pending		S	8e7dec5f4e6bd03dd0d6f4593128cb886616667b
+Rdatatable__data.table	https://github.com/Rdatatable/data.table.git	pending		S	a3eeb4c0caec51afd66bdf9bbc16817e12a47a40
+skyvers__skyve	https://github.com/skyvers/skyve.git	pending		S	6a8305f824a6828e4786e3219adc51878ba00a37
+thymeleaf__thymeleaf	https://github.com/thymeleaf/thymeleaf.git	pending		S	7448e91e73ac44666a7f8f74a5051a308b77122b
+GaloisInc__saw-script	https://github.com/GaloisInc/saw-script.git	pending		S	97dd91e212c1edfdab57d56b7b7af798b7b092b3
+KDE__amarok	https://github.com/KDE/amarok.git	pending		M	61525641f9ccfdfb807dda90ee737a21b7bfb24a
+chapel-lang__chapel	https://github.com/chapel-lang/chapel.git	pending		M	e9321bba9f058acd04e0d1abbc47c64c4c9de2db
+apache__arrow	https://github.com/apache/arrow.git	pending		S	e85e181188ac3c5e8407b2160331faf5e78fd429
+mumble-voip__mumble	https://github.com/mumble-voip/mumble.git	pending		S	165ace2ec4c0721695b0e54e5d2de2f260053bd2
+GitoxideLabs__gitoxide	https://github.com/GitoxideLabs/gitoxide.git	pending		S	9272d45a1b08ca6f26779389954bd718f8308a80
+shedskin__shedskin	https://github.com/shedskin/shedskin.git	pending		S	8a1fc898f810c0411ba45590c61613aa854e4b01
+ZcashFoundation__zebra	https://github.com/ZcashFoundation/zebra.git	pending		S	f84277f28aff221946aae1584aff7d52e48e7e83
+redox-os__relibc	https://github.com/redox-os/relibc.git	pending		S	650cbecb06e6123aec83296e41e5f97b93906fdf
+RetroShare__RetroShare	https://github.com/RetroShare/RetroShare.git	pending		S	34f810ee82c533550003794ef9f4f7123dd216fb
+opensolon__solon	https://github.com/opensolon/solon.git	pending		S	803a733553cfbe964a199dc0c980146a5d793d26
+google__boringssl	https://github.com/google/boringssl.git	pending		S	71766b8550ff0d950b3ff97249f33cc19ff73c03
+PostHog__posthog	https://github.com/PostHog/posthog.git	pending		M	f065bacd6681de61935159d76ae5b764247050c0
+hyprwm__Hyprland	https://github.com/hyprwm/Hyprland.git	pending		S	19fb395d45314960e6f79f17994a84094f1cd4f6
+git.openwrt.org__openwrt__openwrt	https://git.openwrt.org/openwrt/openwrt	pending		M	edc6b8f160c798cd211893bc5df25aec7cfca838
+luainkernel__lunatik	https://github.com/luainkernel/lunatik.git	pending		S	461a1d1040dac978754dc22c80243187620e9477
+apache__mesos	https://github.com/apache/mesos.git	pending		S	c1b42f79d157aa900be5cbb0c1023f1479962aa7
+kalessil__phpinspectionsea	https://github.com/kalessil/phpinspectionsea.git	pending		S	89e8a60b935382689920e169a833797c876e73f3
+google-ai-edge__LiteRT	https://github.com/google-ai-edge/LiteRT.git	pending		S	0f77c305870ae2f953fb2146135395585d634c32
+fiji__fiji	https://github.com/fiji/fiji.git	pending		S	1a914a280efda634307cd3e9cc8d6f14e1913412
+bitzhuwei__CSharpGL	https://github.com/bitzhuwei/CSharpGL.git	pending		S	30c3a3afb433f5b8a07e5cafccdd5aebcd96c0b1

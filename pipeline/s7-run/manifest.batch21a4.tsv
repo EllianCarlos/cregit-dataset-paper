@@ -1,0 +1,16 @@
+# Part a4 of the S and M projects of manifest.batch21.tsv (sha256 a8d8fe474e9c33f90d4723af77e1009944e1a8db637acaeda7fbff45488b4af3),
+# balanced by predicted time (2.1 h for 4 workers), u order; a fed spot part.
+# 12 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+nymtech__nym	https://github.com/nymtech/nym.git	pending		S	d807f5fb776801a953fde3c3e00c5234f120d92f
+matplotlib__matplotlib	https://github.com/matplotlib/matplotlib.git	pending		M	0aeef9dd966b294245555ccd7aac1ec282c49f09
+KDE__labplot	https://github.com/KDE/labplot.git	pending		S	3d1ea86a4eb478f031a1915c8740a360f4b6fe1a
+KDE__okteta	https://github.com/KDE/okteta.git	pending		S	bb1804fffd752701614b9258bb4f57d04d45b09b
+capstone-engine__capstone	https://github.com/capstone-engine/capstone.git	pending		S	992e6d7fea4f1f093ea96633b0fa3390e4ac7b31
+KDE__kaddressbook	https://github.com/KDE/kaddressbook.git	pending		S	a88fba2c22c2bd82a701930e7c857a028f75c75e
+Moddable-OpenSource__moddable	https://github.com/Moddable-OpenSource/moddable.git	pending		S	b6e06ba70506a7381ffb28e09e3175bf4e99f305
+libretro__Lakka-LibreELEC	https://github.com/libretro/Lakka-LibreELEC.git	pending		M	4f70542a559cd0f3eeb40726ac507279a75cc6b1
+KDE__kleopatra	https://github.com/KDE/kleopatra.git	pending		S	2ca9294d44964201ce2e695dd3d94af8db2acbff
+KDE__plasma-nm	https://github.com/KDE/plasma-nm.git	pending		S	ad68e916d11ec5177d3e674ccc33279bab1fd05f
+KDE__akregator	https://github.com/KDE/akregator.git	pending		S	acde2b64567c1101510da3022f1ed504ea2309dc
+KDE__kirigami	https://github.com/KDE/kirigami.git	pending		S	bdda969b87d981dfc2b951e9f27bc32df5b1f58d

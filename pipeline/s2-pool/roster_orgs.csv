@@ -1,0 +1,780 @@
+roster_file,org_key,project,repo_url
+cncf.csv,cncf,CoHDI,https://github.com/CoHDI
+eclipse.csv,eclipse,CORE-ET Silicon Platform (ETSP),https://github.com/openhwfoundation /core-et
+eclipse.csv,eclipse,CORE-ET Silicon Platform (ETSP),https://github.com/openhwfoundation /core-et-erbium
+lf.csv,lf,3MF Consortium,https://github.com/3mfconsortium
+lf.csv,lf,3MF Consortium Working Group,https://github.com/3mfconsortium
+lf.csv,lf,5G Super Blueprints,https://github.com/5G-Super-Blue-Print
+lf.csv,lf,Academy Color Encoding System (ACES),https://github.com/aces-aswf
+lf.csv,lf,Academy Software Foundation (ASWF),https://github.com/academysoftwarefoundation
+lf.csv,lf,Accord Project,https://github.com/accordproject
+lf.csv,lf,ACRN Project,https://github.com/projectacrn
+lf.csv,lf,Adlik,https://github.com/Adlik
+lf.csv,lf,Aeraki Mesh,https://github.com/aeraki-mesh
+lf.csv,lf,Agent2Agent,https://github.com/a2aproject
+lf.csv,lf,Agent Authority Conformance,https://github.com/Agent-Authority-Conformance
+lf.csv,lf,Agentic AI Foundation (AAIF),https://www.github.com/aaif/
+lf.csv,lf,AGENTS.md,https://github.com/agentsmd
+lf.csv,lf,AGNTCY,https://github.com/agntcy
+lf.csv,lf,Agones,https://github.com/agones-dev
+lf.csv,lf,AINETUS,https://github.com/ainetus
+lf.csv,lf,AIRSEAI,https://github.com/AIRSEAI
+lf.csv,lf,Akraino,https://github.com/akraino-edge-stack
+lf.csv,lf,Alliance for Open Media (AOM),https://github.com/AOMediaCodec
+lf.csv,lf,AMP,https://github.com/ampproject
+lf.csv,lf,Appium,https://github.com/appium
+lf.csv,lf,Architect,https://github.com/architect
+lf.csv,lf,Arras,http://github.com/arras-energy
+lf.csv,lf,Artifact Hub,https://github.com/artifacthub
+lf.csv,lf,Artigraph,https://github.com/artigraph/
+lf.csv,lf,AssetLife,https://github.com/assetlife-project
+lf.csv,lf,AsyncAPI,https://github.com/asyncapi
+lf.csv,lf,Automated Compliance Tooling (ACT),https://github.com/act-project
+lf.csv,lf,Backstage,https://github.com/backstage
+lf.csv,lf,Battery Data Alliance,https://github.com/battery-data-alliance
+lf.csv,lf,BeeAI,https://github.com/i-am-bee/
+lf.csv,lf,Binder Examples,https://github.com/binder-examples
+lf.csv,lf,Binderhub-ci-repos,https://github.com/binderhub-ci-repos
+lf.csv,lf,Bitol,https://github.com/bitol-io
+lf.csv,lf,Blockchain Decentralisation Index,https://github.com/Blockchain-Decentralisation-Index
+lf.csv,lf,Briolette,https://github.com/Briolette
+lf.csv,lf,Buildpacks,https://github.com/buildpacks
+lf.csv,lf,C4SB Project,https://github.com/orgs/C4SBF
+lf.csv,lf,Cadence,https://github.com/cadence-workflow
+lf.csv,lf,Call for Code,https://github.com/Call-for-Code
+lf.csv,lf,Capsule,https://github.com/projectcapsule
+lf.csv,lf,Carbyne Stack,https://github.com/carbynestack
+lf.csv,lf,CBT Tape,https://github.com/CBTTape
+lf.csv,lf,Cedar,https://github.com/cedar-policy
+lf.csv,lf,Centaurus Infrastructure Project,https://github.com/centaurus-cloud/
+lf.csv,lf,Ceph Foundation,https://github.com/ceph
+lf.csv,lf,Chaos Mesh,https://github.com/Chaos-Mesh
+lf.csv,lf,CHAOSS,https://github.com/chaoss/
+lf.csv,lf,Chapel,https://github.com/chapel-lang
+lf.csv,lf,CHIPS Alliance Fund,https://github.com/chipsalliance
+lf.csv,lf,CHIPS Alliance Projects,https://github.com/chipsalliance
+lf.csv,lf,CityLearn,https://github.com/citylearn-project
+lf.csv,lf,CLAIMED,https://github.com/claimed-framework
+lf.csv,lf,Cloud Custodian,https://github.com/cloud-custodian
+lf.csv,lf,CloudEvents,https://github.com/cloudevents
+lf.csv,lf,Cloudforet,https://github.com/cloudforet-io
+lf.csv,lf,Cloud Foundry Foundation (CFF),https://github.com/cloudfoundry
+lf.csv,lf,Cloud Hypervisor,https://github.com/cloud-hypervisor
+lf.csv,lf,Cloud Native Computing Foundation (CNCF),https://github.com/cncf
+lf.csv,lf,CloudNativePG,https://github.com/cloudnative-pg
+lf.csv,lf,CLPR,https://github.com/LFDT-CLPR
+lf.csv,lf,ClusterDuck Protocol,https://github.com/ClusterDuck-Protocol
+lf.csv,lf,Coalition for Content Provenance and Authenticity (C2PA),https://github.com/c2pa-org
+lf.csv,lf,Coalition for Content Provenance and Authenticity Fund (C2PA),https://github.com/c2pa-org
+lf.csv,lf,CobaltCore,https://github.com/cobaltcore-dev
+lf.csv,lf,Code Aurora Forum (CAF),https://github.com/codeauroraforum
+lf.csv,lf,Code Aurora Forum (CAF) Project,https://github.com/codeauroraforum
+lf.csv,lf,CoHDI,https://github.com/CoHDI
+lf.csv,lf,CoMPAS,https://github.com/com-pas
+lf.csv,lf,Concourse WG,https://github.com/concourse
+lf.csv,lf,Confidential Computing Consortium (CCC),https://github.com/confidential-computing
+lf.csv,lf,Confidential Containers,https://github.com/confidential-containers
+lf.csv,lf,Configurator File Type Project,https://github.com/configurator-file-type
+lf.csv,lf,Connect RPC,https://github.com/connectrpc
+lf.csv,lf,Containerd,https://github.com/containerd
+lf.csv,lf,ContainerSSH,https://github.com/containerssh
+lf.csv,lf,Continuous Delivery Foundation (CDF),https://github.com/cdfoundation
+lf.csv,lf,Contour,https://github.com/projectcontour
+lf.csv,lf,CoreDNS,https://github.com/coredns
+lf.csv,lf,Core Infrastructure Initiative (CII),https://github.com/coreinfrastructure
+lf.csv,lf,CRI-O,https://github.com/cri-o
+lf.csv,lf,CUPID (Controllable Unit Protocol Interface for DER),https://github.com/cupid-project
+lf.csv,lf,Curvine,https://github.com/CurvineIO
+lf.csv,lf,Dalec,https://github.com/project-dalec
+lf.csv,lf,DAOS Project,https://github.com/daos-stack
+lf.csv,lf,Dapr,https://github.com/dapr
+lf.csv,lf,Data Plane Development Kit (DPDK),https://github.com/dpdk
+lf.csv,lf,Datashim,https://github.com/datashim-io
+lf.csv,lf,Decentralized Identity Foundation (DIF),https://github.com/decentralized-identity
+lf.csv,lf,DeepCausality,https://github.com/deepcausality-rs
+lf.csv,lf,DeepRec,https://github.com/DeepRec-AI
+lf.csv,lf,DeepSpeed,https://github.com/deepspeedai
+lf.csv,lf,delfin,https://github.com/sodafoundation
+lf.csv,lf,Delta Lake Project,https://github.com/delta-io
+lf.csv,lf,Device Automation Bus,https://github.com/device-automation-bus
+lf.csv,lf,Device Automation Bus Fund,https://github.com/device-automation-bus
+lf.csv,lf,DiaMon Workgroup,https://github.com/diamon
+lf.csv,lf,Disaggregated Network Operating System (DANOS),https://github.com/danos
+lf.csv,lf,Docling,https://github.com/docling-project
+lf.csv,lf,Dojo,https://github.com/dojo
+lf.csv,lf,Drasi,https://github.com/drasi-project
+lf.csv,lf,"Dronecode Project, Inc.",https://github.com/dronecode
+lf.csv,lf,EdgeLake,https://github.com/EdgeLake
+lf.csv,lf,EdgeX Foundry,https://github.com/edgexfoundry
+lf.csv,lf,Electron,https://github.com/electron
+lf.csv,lf,ELISA Fund,https://github.com/elisa-tech
+lf.csv,lf,Elyra,https://github.com/elyra-ai
+lf.csv,lf,emissary-ingress,https://github.com/emissary-ingress/
+lf.csv,lf,Enarx,https://github.com/enarx
+lf.csv,lf,EnerGNN,https://github.com/energnn
+lf.csv,lf,ent,https://github.com/ent
+lf.csv,lf,ESLint,https://github.com/eslint
+lf.csv,lf,Etcd,https://github.com/etcd-io
+lf.csv,lf,Express,https://github.com/expressjs
+lf.csv,lf,Fastify,https://github.com/fastify
+lf.csv,lf,fastlane,https://github.com/fastlane/
+lf.csv,lf,FATE Project,https://github.com/FederatedAI
+lf.csv,lf,FD.io,https://github.com/FDio
+lf.csv,lf,Feast,https://github.com/feast-dev
+lf.csv,lf,Feathr,https://github.com/feathr-ai
+lf.csv,lf,FIDOPower,https://github.com/fidopower
+lf.csv,lf,FINOS (The Fintech Open Source Foundation),https://github.com/finos
+lf.csv,lf,Flatcar,https://github.com/flatcar
+lf.csv,lf,FlexMeasures,https://github.com/flexmeasures/
+lf.csv,lf,Fluentd,https://github.com/fluent
+lf.csv,lf,Flux,https://github.com/fluxcd
+lf.csv,lf,Flux Framework,https://github.com/flux-framework
+lf.csv,lf,For Racial Justice,https://github.com/Call-for-Code-for-Racial-Justice
+lf.csv,lf,Fossology,https://github.com/fossology
+lf.csv,lf,Gait,https://github.com/gait-extension
+lf.csv,lf,Galasa,https://github.com/galasa-dev
+lf.csv,lf,Gardener,https://github.com/gardener
+lf.csv,lf,Garden Linux,https://github.com/gardenlinux/
+lf.csv,lf,GenevaERS,https://github.com/genevaers/
+lf.csv,lf,Gramine Project,https://github.com/gramineproject
+lf.csv,lf,GraphQL Foundation,https://github.com/graphql
+lf.csv,lf,GraphQL Working Group,https://github.com/graphql
+lf.csv,lf,Greenhouse,https://github.com/cloudoperators
+lf.csv,lf,Grid2Op,https://github.com/Grid2op
+lf.csv,lf,Grid Edge Interoperability & Security Alliance (GEISA),https://github.com/geisa
+lf.csv,lf,Grid Vantage,https://github.com/grid-vantage
+lf.csv,lf,gRPC,https://github.com/grpc
+lf.csv,lf,Harbor,https://github.com/goharbor
+lf.csv,lf,Helm,https://github.com/helm
+lf.csv,lf,Hiero,https://github.com/LFDT-Hiero
+lf.csv,lf,Higress,https://github.com/higress-group
+lf.csv,lf,HolmesGPT,https://github.com/holmesgpt/
+lf.csv,lf,HospitalRun,https://github.com/hospitalrun
+lf.csv,lf,Hyperledger Firefly,https://github.com/hyperledger-firefly
+lf.csv,lf,Hyperlight,https://github.com/hyperlight-dev/
+lf.csv,lf,Hyphae,https://github.com/hyphae
+lf.csv,lf,Iguazu,https://github.com/LFDT-Iguazu
+lf.csv,lf,Inclusive Naming Initiative (INI),https://github.com/inclusivenaming
+lf.csv,lf,Inspektor Gadget,https://github.com/inspektor-gadget
+lf.csv,lf,Interledger.js,https://github.com/interledgerjs
+lf.csv,lf,Interoperability Patterns for Regulated Asset Markets (IPRAM),https://github.com/LFDT-IPRAM
+lf.csv,lf,InterUSS Platform,https://github.com/interuss
+lf.csv,lf,InterUSS Platform Fund,https://github.com/interuss
+lf.csv,lf,IO Visor Project,https://github.com/iovisor
+lf.csv,lf,IPDK,https://github.com/ipdk-io
+lf.csv,lf,iPDS Project,https://github.com/I-AM-project
+lf.csv,lf,ipython,https://github.com/ipython
+lf.csv,lf,IREE,https://github.com/iree-org
+lf.csv,lf,IronCore,https://github.com/ironcore-dev
+lf.csv,lf,ISAC-SIMO,https://github.com/ISAC-SIMO
+lf.csv,lf,Istio,https://github.com/istio
+lf.csv,lf,Janssen,https://github.com/JanssenProject
+lf.csv,lf,JanusGraph,https://github.com/JanusGraph
+lf.csv,lf,Joint Development Foundation,https://github.com/Joint-Development-Foundation
+lf.csv,lf,jQuery,https://github.com/jquery
+lf.csv,lf,jshttp,https://github.com/jshttp
+lf.csv,lf,Jupyter,https://github.com/jupyter
+lf.csv,lf,Jupyter Book,https://github.com/jupyter-book
+lf.csv,lf,Jupyter Frontends,https://github.com/jupyterlab
+lf.csv,lf,JupyterHub,https://github.com/jupyterhub
+lf.csv,lf,Jupyter Server,https://github.com/jupyter-server
+lf.csv,lf,Jupyter Widgets,https://github.com/jupyter-widgets
+lf.csv,lf,Jupyter-Xeus,https://github.com/jupyter-xeus
+lf.csv,lf,k0s,https://github.com/k0sproject
+lf.csv,lf,k8gb,https://github.com/k8gb-io
+lf.csv,lf,K8sGPT,https://github.com/k8sgpt-ai
+lf.csv,lf,kagent,https://github.com/kagent-dev/
+lf.csv,lf,Kairos,https://github.com/kairos-io
+lf.csv,lf,KAI Scheduler,https://github.com/kai-scheduler/
+lf.csv,lf,Katalis,https://github.com/NeoNephos-Katalis
+lf.csv,lf,kbind,https://github.com/kbind-dev
+lf.csv,lf,KEDA,https://github.com/kedacore
+lf.csv,lf,Kedro Project,https://github.com/kedro-org
+lf.csv,lf,Kepler.GL,https://github.com/keplergl
+lf.csv,lf,KernelCI Foundation,https://github.com/kernelci
+lf.csv,lf,Keycloak,https://github.com/keycloak
+lf.csv,lf,Keylime,https://github.com/keylime
+lf.csv,lf,kgateway,https://github.com/kgateway-dev
+lf.csv,lf,KiCad,https://github.com/KiCad
+lf.csv,lf,Knative,https://github.com/knative/
+lf.csv,lf,Kompute,https://github.com/KomputeProject
+lf.csv,lf,Konveyor,https://github.com/konveyor
+lf.csv,lf,Koordinator,https://github.com/koordinator-sh
+lf.csv,lf,kpt,https://github.com/kptdev
+lf.csv,lf,Kserve,https://github.com/kserve/
+lf.csv,lf,Kuadrant,https://github.com/Kuadrant
+lf.csv,lf,Kubeclipper,https://github.com/Kubeclipper
+lf.csv,lf,KubeFleet,https://github.com/kubefleet-dev/
+lf.csv,lf,Kubeflow,https://github.com/kubeflow
+lf.csv,lf,Kubernetes,https://github.com/kubernetes
+lf.csv,lf,KubeVela,https://github.com/kubevela
+lf.csv,lf,KubeVirt,https://github.com/kubevirt
+lf.csv,lf,Kubewarden,https://github.com/kubewarden
+lf.csv,lf,KusionStack,https://github.com/KusionStack
+lf.csv,lf,L3AF,https://github.com/l3af-project
+lf.csv,lf,LakeSoul,https://github.com/lakesoul-io
+lf.csv,lf,Laminas,https://github.com/laminas
+lf.csv,lf,LF AI & Data,https://github.com/lfai
+lf.csv,lf,LF Connectivity,https://github.com/lf-connectivity
+lf.csv,lf,LF Decentralized Trust,https://github.com/hyperledger
+lf.csv,lf,LF Decentralized Trust Labs,https://github.com/LF-Decentralized-Trust-labs
+lf.csv,lf,LF Edge,https://github.com/lf-edge
+lf.csv,lf,LF Energy (LFE),https://github.com/lf-energy
+lf.csv,lf,LF Energy RegistryOS,https://github.com/lfenergy-registryos
+lf.csv,lf,LF Energy Semantic Energy Framework (LFE-SEF),https://github.com/lfe-sef
+lf.csv,lf,"LF Projects, LLC",https://github.com/A-PCC-SeriesLLC-LFProject-LLC-Child
+lf.csv,lf,Lineth,https://github.com/LFDT-Lineth
+lf.csv,lf,Linkerd,https://github.com/linkerd
+lf.csv,lf,LinuxBoot,https://github.com/linuxboot
+lf.csv,lf,llm-d,https://github.com/llm-d
+lf.csv,lf,Lodash,https://github.com/lodash
+lf.csv,lf,Logging Operator,https://github.com/kube-logging
+lf.csv,lf,LTTng,https://github.com/lttng
+lf.csv,lf,Ludwig,https://github.com/ludwig-ai
+lf.csv,lf,Luigi,https://github.com/luigi-project
+lf.csv,lf,Lura Project,https://github.com/luraproject/
+lf.csv,lf,Mainframe Software Hub for Linux,https://github.com/linuxonzapps
+lf.csv,lf,Marquez,https://github.com/MarquezProject
+lf.csv,lf,MAVLink,https://github.com/mavlink
+lf.csv,lf,MedCreds,https://github.com/LFPH-Medcreds
+lf.csv,lf,messageformat,https://github.com/messageformat
+lf.csv,lf,Metal³,https://github.com/metal3-io
+lf.csv,lf,Milvus,https://github.com/milvus-io
+lf.csv,lf,Minokawa,https://github.com/lfdt-minokawa
+lf.csv,lf,MLflow,https://github.com/mlflow
+lf.csv,lf,Mobile Native Foundation,https://github.com/mobilenativefoundation
+lf.csv,lf,Model Context Protocol,https://github.com/modelcontextprotocol
+lf.csv,lf,MOJA Global Project,https://github.com/moja-global
+lf.csv,lf,Moment,https://github.com/moment
+lf.csv,lf,monocle,https://github.com/monocle2ai/
+lf.csv,lf,Moon,https://github.com/moon
+lf.csv,lf,NativeScript,https://github.com/NativeScript
+lf.csv,lf,NATS,https://github.com/nats-io
+lf.csv,lf,NeoNephos Foundation,https://github.com/neonephos
+lf.csv,lf,Nephio Project,https://github.com/nephio-project
+lf.csv,lf,Network Service Mesh,https://github.com/networkservicemesh
+lf.csv,lf,Neural Network (NN) Streamer,https://github.com/nnstreamer
+lf.csv,lf,Newton,https://github.com/newton-physics
+lf.csv,lf,Nexoedge,https://github.com/nexoedge
+lf.csv,lf,NNTrainer,https://github.com/nntrainer
+lf.csv,lf,NODE Collective,https://github.com/node-collective
+lf.csv,lf,Node.js,https://github.com/nodejs
+lf.csv,lf,Node-RED,https://github.com/node-red
+lf.csv,lf,nvm,https://github.com/nvm-sh
+lf.csv,lf,OAAX,https://github.com/OAAX-standard
+lf.csv,lf,OAuth2 Proxy,https://github.com/oauth2-proxy
+lf.csv,lf,ONAP,https://github.com/onap
+lf.csv,lf,ONNX,https://github.com/onnx
+lf.csv,lf,OPEA,https://github.com/opea-project
+lf.csv,lf,Open 3D Foundation,https://github.com/o3de
+lf.csv,lf,OpenAN,https://github.com/project-openan
+lf.csv,lf,OpenAPI Initiative,https://github.com/OAI
+lf.csv,lf,OpenAssetIO,https://github.com/OpenAssetIO
+lf.csv,lf,OpenBao,https://github.com/openbao
+lf.csv,lf,OpenBMC,https://github.com/openbmc
+lf.csv,lf,OpenChain Project,https://github.com/openchain-project
+lf.csv,lf,OpenChoreo,https://github.com/openchoreo
+lf.csv,lf,Open Cluster Management,https://github.com/open-cluster-management-io
+lf.csv,lf,Open Component Model,https://github.com/open-component-model
+lf.csv,lf,Open Container Initiative (OCI),https://github.com/opencontainers
+lf.csv,lf,OpenControlPlane,https://github.com/openmcp-project
+lf.csv,lf,Open Crypto Broker,https://github.com/open-crypto-broker/
+lf.csv,lf,OpenDaylight,https://github.com/opendaylight/
+lf.csv,lf,OpenDSM,https://github.com/opendsm
+lf.csv,lf,OpenEBS,https://github.com/openebs
+lf.csv,lf,OpenEEW,https://github.com/openeew
+lf.csv,lf,OpenEverest,https://github.com/openeverest/
+lf.csv,lf,OpenFeature,https://github.com/open-feature
+lf.csv,lf,OpenFL,https://github.com/securefederatedai
+lf.csv,lf,OpenFunction,https://github.com/OpenFunction
+lf.csv,lf,openGemini,https://github.com/openGemini
+lf.csv,lf,OpenGitOps,https://github.com/open-gitops
+lf.csv,lf,OpenGridFM,https://github.com/opengridfm
+lf.csv,lf,OpenHPC Project,https://github.com/openhpc
+lf.csv,lf,OpenJS Foundation,https://github.com/openjs-foundation
+lf.csv,lf,Open Key Chain Manager (openKCM),https://github.com/openkcm
+lf.csv,lf,OpenLEADR,https://github.com/openleadr
+lf.csv,lf,OpenMAMA Fund,https://github.com/openmama
+lf.csv,lf,OpenMessaging,https://github.com/openmessaging
+lf.csv,lf,Open Micro Frontend Platform,https://github.com/openmfp
+lf.csv,lf,Open Mobile Hub,https://github.com/openmobilehub
+lf.csv,lf,Open Model Initiative,https://github.com/Open-Model-Initiative
+lf.csv,lf,Open Path Guiding Library (OpenPGL),https://github.com/OpenPathGuidingLibrary
+lf.csv,lf,Open Policy Agent,https://github.com/open-policy-agent
+lf.csv,lf,OpenPOWER Foundation,https://github.com/openpowerfoundation
+lf.csv,lf,OpenPrinting,https://github.com/openprinting
+lf.csv,lf,Open Programmable Infrastructure,https://github.com/opiproject
+lf.csv,lf,Open Programmable Infrastructure Fund,https://github.com/opiproject
+lf.csv,lf,Open Resource Discovery,https://github.com/open-resource-discovery
+lf.csv,lf,Open Secure AI Alliance,https://github.com/OpenSecureAIAlliance
+lf.csv,lf,Open Security Controller Project (OSC),https://github.com/opensecuritycontroller
+lf.csv,lf,OpenSharing,https://github.com/opensharing-io
+lf.csv,lf,Open Source Security Foundation (OpenSSF),https://github.com/ossf
+lf.csv,lf,OpenSTEF,https://github.com/OpenSTEF
+lf.csv,lf,OpenSTX Foundation,https://github.com/openstx
+lf.csv,lf,OpenTeleEval,https://github.com/OpenTeleEval
+lf.csv,lf,OpenTempus,https://github.com/OpenTempus
+lf.csv,lf,Open Tokenized Asset Standard,https://github.com/OpenTokenizedAssetStandard
+lf.csv,lf,Open Virtual Network (OVN),https://github.com/ovn-org/
+lf.csv,lf,Open Voice Network Interoperability Initiative,https://github.com/open-voice-interoperability
+lf.csv,lf,Open Voice Network Trustmark Initiative,https://github.com/Open-Voice-Trustmark
+lf.csv,lf,Open vSwitch (OVS),https://github.com/openvswitch
+lf.csv,lf,Open Workflow Specification,https://github.com/open-workflow-specification
+lf.csv,lf,OperatorFabric,https://github.com/opfab
+lf.csv,lf,ORAS (OCI Registry as Storage),https://github.com/oras-project/
+lf.csv,lf,ORES (Open Renewal Energy Systems),https://github.com/open-renewable-energy-systems
+lf.csv,lf,Ortelius,https://github.com/ortelius
+lf.csv,lf,OSCAL Compass,https://github.com/oscal-compass
+lf.csv,lf,Oxia,https://github.com/oxia-db
+lf.csv,lf,Paketo Buildpacks,https://github.com/paketo-buildpacks
+lf.csv,lf,Paladin,https://github.com/LFDT-Paladin
+lf.csv,lf,Panurus,https://github.com/LFDT-Panurus
+lf.csv,lf,PaSh,https://github.com/binpash
+lf.csv,lf,pillarjs,https://github.com/pillarjs
+lf.csv,lf,Platform Mesh,https://github.com/platform-mesh
+lf.csv,lf,Podman Desktop,https://github.com/podman-desktop
+lf.csv,lf,Post-Quantum Cryptography Alliance,https://github.com/pqca
+lf.csv,lf,Power Grid Model,https://github.com/PowerGridModel
+lf.csv,lf,Power Stability Wide Area Monitoring Protection (p-SWAMP),https://github.com/p-swamp
+lf.csv,lf,PowSyBL,https://github.com/powsybl
+lf.csv,lf,Project Alvarium,https://github.com/project-alvarium
+lf.csv,lf,Project Origin,https://github.com/project-origin
+lf.csv,lf,Prometheus,https://github.com/prometheus
+lf.csv,lf,Protobom,http://github.com/protobom
+lf.csv,lf,PX4,https://github.com/px4
+lf.csv,lf,Pyro,https://github.com/pyro-ppl
+lf.csv,lf,Pyrrha,https://github.com/Pyrrha-Platform
+lf.csv,lf,QUnit,https://github.com/qunitjs
+lf.csv,lf,R2DBC,https://github.com/r2dbc
+lf.csv,lf,Radius,https://github.com/radius-project
+lf.csv,lf,RareCamp Foundation,https://github.com/RareCamp
+lf.csv,lf,RareCamp Project,https://github.com/RareCamp/
+lf.csv,lf,Ray,https://github.com/ray-project
+lf.csv,lf,R Consortium,https://github.com/rconsortium
+lf.csv,lf,Reactive Streams,https://github.com/reactive-streams
+lf.csv,lf,Real Time Data Ingestion Platform (RTDIP),https://github.com/rtdip
+lf.csv,lf,Recommenders,https://github.com/recommenders-team
+lf.csv,lf,Rend-o-matic,https://github.com/Rend-o-matic
+lf.csv,lf,RethinkDB,https://github.com/rethinkdb
+lf.csv,lf,RISC-V International,https://github.com/riscv
+lf.csv,lf,R-Ladies,https://github.com/rladies
+lf.csv,lf,Rook,https://github.com/rook
+lf.csv,lf,RTC-Tools,https://github.com/rtc-tools
+lf.csv,lf,R Validation Hub,https://github.com/r-hub
+lf.csv,lf,RWKV,https://github.com/RWKV
+lf.csv,lf,Ryoma,https://github.com/project-ryoma
+lf.csv,lf,SapientML,https://github.com/sapientml
+lf.csv,lf,Schema Driven Configuration,https://github.com/sdcio
+lf.csv,lf,SchemaHero,https://github.com/schemahero
+lf.csv,lf,SEAPATH,https://github.com/seapath
+lf.csv,lf,Secure Open Source Rewards,https://github.com/securitysos
+lf.csv,lf,Service Mesh Performance,https://github.com/service-mesh-performance
+lf.csv,lf,Shapeshifter,https://github.com/shapeshifter
+lf.csv,lf,Shipwright,https://github.com/shipwright-io
+lf.csv,lf,sigstore,https://github.com/sigstore
+lf.csv,lf,Smoot,https://github.com/LFDT-Smoot
+lf.csv,lf,SOAJS,https://github.com/soajs
+lf.csv,lf,SODA Foundation,https://github.com/sodafoundation
+lf.csv,lf,SODA Project,https://github.com/sodafoundation
+lf.csv,lf,Software-Enabled Flash,https://github.com/orgs/SoftwareEnabledFlash
+lf.csv,lf,Software Hash Identifier (SWHID),https://github.com/swhid
+lf.csv,lf,SOGNO,https://github.com/sogno-platform
+lf.csv,lf,SONiC Foundation,https://github.com/sonic-net
+lf.csv,lf,Sound Open Firmware Fund (SOF),https://github.com/thesofproject
+lf.csv,lf,Sound Open Firmware (SOF),https://github.com/thesofproject
+lf.csv,lf,sparklyr,https://github.com/sparklyr
+lf.csv,lf,SPDX,https://github.com/spdx
+lf.csv,lf,SPDX Tools,https://github.com/spdx
+lf.csv,lf,SPIFFE,https://github.com/spiffe
+lf.csv,lf,SQLMesh,https://github.com/SQLMesh
+lf.csv,lf,stacker,https://github.com/project-stacker
+lf.csv,lf,StackStorm Project,https://github.com/StackStorm
+lf.csv,lf,StarRocks,https://github.com/StarRocks/
+lf.csv,lf,StratoWeave,https://www.github.com/stratoweave
+lf.csv,lf,stress-ng,https://github.com/stress-ng
+lf.csv,lf,Strimzi,https://github.com/strimzi
+lf.csv,lf,Submariner,https://github.com/submariner-io/
+lf.csv,lf,Substra,https://github.com/Substra
+lf.csv,lf,TARS Foundation,https://github.com/tarscloud
+lf.csv,lf,TarsPHP,https://github.com/TarsPHP
+lf.csv,lf,Tazama Anti-Financial Crime Series,https://github.com/frmscoe
+lf.csv,lf,Tazama Anti-Financial Crime Working Group,https://github.com/frmscoe
+lf.csv,lf,Tekton,https://github.com/tektoncd
+lf.csv,lf,Telepresence,https://github.com/telepresenceio
+lf.csv,lf,The Hypervisor,https://github.com/HPRVZR
+lf.csv,lf,The Linux Foundation,https://github.com/thelinuxfoundation
+lf.csv,lf,The Update Framework (TUF),https://github.com/theupdateframework
+lf.csv,lf,ThunderID,https://github.com/thunder-id
+lf.csv,lf,TiKV,https://github.com/tikv
+lf.csv,lf,Tinkerbell,https://github.com/tinkerbell/
+lf.csv,lf,TODO Group,https://github.com/todogroup
+lf.csv,lf,Tokenetes,https://github.com/tokenetes
+lf.csv,lf,Tremor,https://github.com/tremor-rs/
+lf.csv,lf,TSTerm,https://github.com/TSTerminal
+lf.csv,lf,Unified Acceleration Foundation,https://github.com/uxlfoundation
+lf.csv,lf,Unity Catalog,https://github.com/unitycatalog
+lf.csv,lf,Urban Computing Foundation (UCF),https://github.com/ucfoundation
+lf.csv,lf,urunc,https://github.com/urunc-dev
+lf.csv,lf,Utility Rate Plan Exchange,https://github.com/urpx-org
+lf.csv,lf,VAREN,https://github.com/varen-project
+lf.csv,lf,Velero,https://github.com/velero-io
+lf.csv,lf,Virtual Kubelet,https://github.com/virtual-kubelet
+lf.csv,lf,vis.gl,https://github.com/visgl
+lf.csv,lf,Vitess,https://github.com/vitessio
+lf.csv,lf,vLLM,https://github.com/vllm-project
+lf.csv,lf,Voila Dashboards,https://github.com/voila-dashboards
+lf.csv,lf,Voila Gallery,https://github.com/voila-gallery
+lf.csv,lf,Vortex,https://github.com/vortex-data
+lf.csv,lf,wasmCloud,https://github.com/wasmCloud
+lf.csv,lf,Web3j,https://www.github.com/web3j
+lf.csv,lf,WebdriverIO,https://github.com/webdriverio
+lf.csv,lf,webhint,https://github.com/webhintio
+lf.csv,lf,Webpack,https://github.com/webpack
+lf.csv,lf,Windows PV Drivers,https://github.com/topics/windows-pv-driver
+lf.csv,lf,x402,https://www.github.com/x402-foundation/
+lf.csv,lf,XAPI,https://github.com/xapi
+lf.csv,lf,XCP-ng,https://github.com/xcp-ng
+lf.csv,lf,Xen Project,https://github.com/xen-project
+lf.csv,lf,xRegistry,https://github.com/xregistry
+lf.csv,lf,Zephyr Project,https://github.com/zephyrproject-rtos
+lf.csv,lf,Zopen,https://github.com/zopencommunity
+lf.csv,lf,Zowe,https://github.com/zowe
+lf.csv,lf,1chipML,https://github.com/1chipML
+lf.csv,lf,Acumos,https://github.com/acumos
+lf.csv,lf,Ajv,https://github.com/ajv-validator
+lf.csv,lf,"AllSeen Alliance, Inc.",https://github.com/allseenalliance
+lf.csv,lf,Amundsen,https://github.com/amundsen-io
+lf.csv,lf,ASWF Language Interop Project,https://github.com/vfx-rs
+lf.csv,lf,CacheCash,https://github.com/cachecashproject
+lf.csv,lf,Carbon Data Specifications Consortium,https://github.com/carbon-data-specification
+lf.csv,lf,Cardea,https://github.com/thecardeaproject
+lf.csv,lf,"Cloud Foundry Foundation, Inc. - Archived",https://github.com/cloudfoundry
+lf.csv,lf,Cloud Information Model (CIM),https://github.com/cloudinformationmodel
+lf.csv,lf,Cloud Information Model Fund (CIM),https://github.com/cloudinformationmodel
+lf.csv,lf,Cloud Information Model Working Group,https://github.com/cloudinformationmodel
+lf.csv,lf,CNI-Genie,https://github.com/CNI-Genie
+lf.csv,lf,COVID Green,https://github.com/covidgreen
+lf.csv,lf,COVID Shield,https://github.com/CovidShield
+lf.csv,lf,DENT Fund,https://github.com/dentproject
+lf.csv,lf,DENT Project,https://github.com/dentproject/
+lf.csv,lf,DocArray,https://github.com/docarray
+lf.csv,lf,Energy Market Methods Consortium (EM2),https://github.com/energy-market-methods
+lf.csv,lf,FD.io Project Inc. - Archived,https://github.com/fdio
+lf.csv,lf,Grid Capacity Map,https://github.com/gridcapacitymap
+lf.csv,lf,Grid eXchange Fabric (GXF),https://github.com/osgp
+lf.csv,lf,Herald,https://github.com/theheraldproject
+lf.csv,lf,Hexa,https://github.com/hexa-org
+lf.csv,lf,Horovod,https://github.com/horovod
+lf.csv,lf,Internet Security Research Group (ISRG),https://github.com/abetterinternet
+lf.csv,lf,Iotivity Project,https://github.com/iotivity
+lf.csv,lf,JSFoundation,https://github.com/jsfoundation
+lf.csv,lf,Keystone,https://github.com/keystone-enclave
+lf.csv,lf,Kinetic Open Storage Project,https://github.com/kinetic
+lf.csv,lf,KubeDL,https://github.com/kubedl-io
+lf.csv,lf,Let's Encrypt,https://github.com/letsencrypt
+lf.csv,lf,LF Public Health (LFPH),https://github.com/lfph
+lf.csv,lf,Linux Standard Base (LSB),https://github.com/LinuxStandardBase
+lf.csv,lf,LLVMLinux,https://github.com/lll-project
+lf.csv,lf,Mapzen,https://github.com/mapzen
+lf.csv,lf,Minnowboard,https://github.com/MinnowBoard-org
+lf.csv,lf,Newticity Fund,https://github.com/newticity
+lf.csv,lf,Newticity Project,https://github.com/newticity
+lf.csv,lf,Occlum,https://github.com/occlum
+lf.csv,lf,"ODPi, Inc.",https://github.com/odpi
+lf.csv,lf,ODPi Runtime,https://github.com/odpi
+lf.csv,lf,OpenBEL,https://github.com/openbel
+lf.csv,lf,OpenBytes,https://github.com/Project-OpenBytes
+lf.csv,lf,"OpenDaylight Project, Inc. - Archived",https://github.com/opendaylight
+lf.csv,lf,OpenFabrics Alliance,https://github.com/ofiwg
+lf.csv,lf,OpenGEH,https://github.com/opengeh
+lf.csv,lf,Open Mobile Hub (EU),https://github.com/openmobilehub
+lf.csv,lf,Open Networking Foundation (ONF),https://github.com/OpenNetworkingFoundation
+lf.csv,lf,Open Orchestrator Project (Open-O),https://github.com/open-o
+lf.csv,lf,OpenSDS Formation Fund,https://github.com/opensds
+lf.csv,lf,Open Source as Prior Art (OSAPA),https://github.com/PriorArt
+lf.csv,lf,OpenSwitch (OPX),https://github.com/open-switch
+lf.csv,lf,OpenSwitch (Prior),https://github.com/open-switch
+lf.csv,lf,OpenTracing,https://github.com/opentracing
+lf.csv,lf,Open Virtualization Alliance (OVA),https://github.com/oVirt
+lf.csv,lf,Open Voice Network,https://github.com/open-voice-network
+lf.csv,lf,OPNFV,https://github.com/opnfv
+lf.csv,lf,OPNFV Inc. - Archived,https://github.com/opnfv
+lf.csv,lf,PNDA,https://github.com/pndaproject
+lf.csv,lf,"PowSyBl (US-hosted, deprecated)",https://github.com/powsybl
+lf.csv,lf,Pyrsia,https://github.com/pyrsia
+lf.csv,lf,Quartermaster Fund (QMSTR),https://github.com/QMSTR
+lf.csv,lf,Red Team Project,https://github.com/redteam-project
+lf.csv,lf,RequireJS,https://github.com/requirejs
+lf.csv,lf,RIAPS,https://github.com/RIAPS
+lf.csv,lf,RISC-V Foundation - Archived,https://github.com/riscv
+lf.csv,lf,RosaeNLG Project,https://github.com/RosaeNLG/
+lf.csv,lf,SC Decarbonisation Hub,https://github.com/sc-decarbonization-hub
+lf.csv,lf,SDDI (Software Developer Diversity and Inclusion),https://github.com/sddiproject
+lf.csv,lf,SNAS,https://github.com/SNAS
+lf.csv,lf,SuperEdge,https://github.com/superedge
+lf.csv,lf,The Reactive Foundation,https://github.com/reactivefoundation
+lf.csv,lf,Tungsten Fabric,https://github.com/tungstenfabric
+lf.csv,lf,Urban Computing Foundation Fund (UCF),https://github.com/ucfoundation
+lf.csv,lf,Vineyard,https://github.com/v6d-io/
+lf.csv,lf,XGVela,https://github.com/XGVela
+lf.csv,lf,Xtreme1,https://github.com/xtreme1-io
+lf.csv,lf,Zorse,https://github.com/zorse-project
+lfai.csv,lfai,OAAX,https://github.com/OAAX-standard
+lfai.csv,lfai,Vortex,https://github.com/vortex-data
+lfedge.csv,lfedge,FIDO Device Onboard,https://github.com/fido-device-onboard
+numfocus.repos.csv,numfocus,Stan,https://github.com/stan-dev
+numfocus.repos.csv,numfocus,FEniCS Project,https://github.com/FEniCS
+numfocus.repos.csv,numfocus,SunPy,https://github.com/sunpy
+numfocus.repos.csv,numfocus,QuantEcon,https://github.com/QuantEcon
+numfocus.repos.csv,numfocus,rOpenSci,https://github.com/ropensci
+numfocus.repos.csv,numfocus,Open Journals,https://github.com/openjournals
+numfocus.repos.csv,numfocus,conda-forge,https://github.com/conda-forge
+numfocus.repos.csv,numfocus,OpenMBEE,https://github.com/Open-MBEE
+numfocus.repos.csv,numfocus,SciML,https://github.com/SciML
+numfocus.repos.csv,numfocus,Scientific Python,https://github.com/scientific-python
+numfocus.repos.csv,numfocus,conda,https://github.com/conda
+numfocus.repos.csv,numfocus,scverse,https://github.com/scverse
+numfocus.repos.csv,numfocus,Fortran-lang,https://github.com/fortran-lang
+numfocus.repos.csv,numfocus,Clawpack,https://github.com/clawpack
+numfocus.repos.csv,numfocus,Dash,https://github.com/plotly
+numfocus.repos.csv,numfocus,GeomScale,https://github.com/GeomScale
+numfocus.repos.csv,numfocus,Gonum,https://github.com/gonum
+numfocus.repos.csv,numfocus,igraph,https://github.com/igraph
+numfocus.repos.csv,numfocus,Micro-Manager,https://github.com/micro-manager
+numfocus.repos.csv,numfocus,PySAL,https://github.com/pysal
+numfocus.repos.csv,numfocus,Open2C,https://github.com/open2c
+numfocus.repos.csv,numfocus,BrainGlobe,https://github.com/brainglobe
+numfocus.repos.csv,numfocus,Project Pythia,https://github.com/ProjectPythia
+openssf.csv,openssf,Gemara,https://github.com/gemaraproj
+openssf.csv,openssf,OpenBao,https://github.com/openbao
+openssf.csv,openssf,OpenVEX,https://github.com/openvex
+openssf.csv,openssf,SBOMit,https://github.com/sbomit
+openssf.csv,openssf,Secure Agentic Framework,https://github.com/secure-agentic-framework
+openssf.csv,openssf,Sigstore,https://github.com/sigstore
+osgeo.csv,osgeo,Mapbender,http://github.com/mapbender/
+osgeo.csv,osgeo,MapServer,https://github.com/mapserver/
+osgeo.csv,osgeo,ETF,https://github.com/etf-validator/
+osgeo.csv,osgeo,Giswater,https://github.com/Giswater
+osgeo.csv,osgeo,eodash,https://github.com/eodash
+osgeo.csv,osgeo,ESA-NASA WorldWind,https://github.com/NASAWorldWind/
+osgeo.csv,osgeo,First Draft GIS,https://github.com/FirstDraftGIS
+osgeo.csv,osgeo,Geomajas - OSGeo Heritage Project,https://github.com/geomajas/
+osgeo.csv,osgeo,geOrchestra,https://github.com/georchestra/
+osgeo.csv,osgeo,GET-IT - Geoinformation Enabling ToolkIT starterkit®,https://github.com/SP7-Ritmare
+osgeo.csv,osgeo,Kaoto,https://github.com/KaotoIO/
+osgeo.csv,osgeo,Koop,https://github.com/koopjs/
+osgeo.csv,osgeo,R-Spatial,https://github.com/r-spatial
+osgeo.csv,osgeo,Wradlib,https://github.com/wradlib
+psf-sponsored.repos.csv,psf-sponsored,Jazzband,https://github.com/jazzband
+psf-sponsored.repos.csv,psf-sponsored,Pallets,https://github.com/pallets
+psf-sponsored.repos.csv,psf-sponsored,PyPA,https://github.com/pypa
+redhat.csv,redhat,RedHatOfficial,https://github.com/RedHatOfficial
+redhat.csv,redhat,3scale,https://github.com/3scale
+redhat.csv,redhat,abrt,https://github.com/abrt
+redhat.csv,redhat,aeolusproject,https://github.com/aeolusproject
+redhat.csv,redhat,aerogear,https://github.com/aerogear
+redhat.csv,redhat,aeshell,https://github.com/aeshell
+redhat.csv,redhat,agroal,https://github.com/agroal
+redhat.csv,redhat,ansible,https://github.com/ansible
+redhat.csv,redhat,Apicurio,https://github.com/Apicurio
+redhat.csv,redhat,apiman,https://github.com/apiman
+redhat.csv,redhat,arquillian,https://github.com/arquillian
+redhat.csv,redhat,AICoE,https://github.com/AICoE
+redhat.csv,redhat,avocado-framework,https://github.com/avocado-framework
+redhat.csv,redhat,awestruct,https://github.com/awestruct
+redhat.csv,redhat,beaker-project,https://github.com/beaker-project
+redhat.csv,redhat,boson-project,https://github.com/boson-project
+redhat.csv,redhat,bytemanproject,https://github.com/bytemanproject
+redhat.csv,redhat,candlepin,https://github.com/candlepin
+redhat.csv,redhat,CentOS-PaaS-SIG,https://github.com/CentOS-PaaS-SIG
+redhat.csv,redhat,CentOS,https://github.com/CentOS
+redhat.csv,redhat,ceph,https://github.com/ceph
+redhat.csv,redhat,ceylon,https://github.com/ceylon
+redhat.csv,redhat,cockpit-project,https://github.com/cockpit-project
+redhat.csv,redhat,coreos,https://github.com/coreos
+redhat.csv,redhat,crash-utility,https://github.com/crash-utility
+redhat.csv,redhat,crashub,https://github.com/crashub
+redhat.csv,redhat,crc-org,https://github.com/crc-org
+redhat.csv,redhat,cryostatio,https://github.com/cryostatio
+redhat.csv,redhat,cygwin,https://github.com/cygwin
+redhat.csv,redhat,darcy-framework,https://github.com/darcy-framework
+redhat.csv,redhat,dashbuilder,https://github.com/dashbuilder
+redhat.csv,redhat,datagrids,https://github.com/datagrids
+redhat.csv,redhat,DBuildService,https://github.com/DBuildService
+redhat.csv,redhat,debezium,https://github.com/debezium
+redhat.csv,redhat,dekorateio,https://github.com/dekorateio
+redhat.csv,redhat,dm-vdo,https://github.com/dm-vdo
+redhat.csv,redhat,dogtagpki,https://github.com/dogtagpki
+redhat.csv,redhat,drogue-iot,https://github.com/drogue-iot
+redhat.csv,redhat,Dynflow,https://github.com/Dynflow
+redhat.csv,redhat,dyninst,https://github.com/dyninst
+redhat.csv,redhat,vert-x3,https://github.com/vert-x3
+redhat.csv,redhat,eclipse,https://github.com/eclipse
+redhat.csv,redhat,EnMasseProject,https://github.com/EnMasseProject
+redhat.csv,redhat,errai,https://github.com/errai
+redhat.csv,redhat,esbtools,https://github.com/esbtools
+redhat.csv,redhat,fabric8io,https://github.com/fabric8io
+redhat.csv,redhat,fedora-cloud,https://github.com/fedora-cloud
+redhat.csv,redhat,developer-portal,https://github.com/developer-portal
+redhat.csv,redhat,fedora-infra,https://github.com/fedora-infra
+redhat.csv,redhat,livecd-tools,https://github.com/livecd-tools
+redhat.csv,redhat,fedora-selinux,https://github.com/fedora-selinux
+redhat.csv,redhat,fedora-static-analysis,https://github.com/fedora-static-analysis
+redhat.csv,redhat,fedora-sysv,https://github.com/fedora-sysv
+redhat.csv,redhat,firewalld,https://github.com/firewalld
+redhat.csv,redhat,theforeman,https://github.com/theforeman
+redhat.csv,redhat,freeipa,https://github.com/freeipa
+redhat.csv,redhat,fusor,https://github.com/fusor
+redhat.csv,redhat,gluster,https://github.com/gluster
+redhat.csv,redhat,hawtio,https://github.com/hawtio
+redhat.csv,redhat,heketi,https://github.com/heketi
+redhat.csv,redhat,hibernate,https://github.com/hibernate
+redhat.csv,redhat,redhat-imaging,https://github.com/redhat-imaging
+redhat.csv,redhat,immutant,https://github.com/immutant
+redhat.csv,redhat,infinispan,https://github.com/infinispan
+redhat.csv,redhat,instructlab,https://github.com/instructlab
+redhat.csv,redhat,jaegertracing,https://github.com/jaegertracing
+redhat.csv,redhat,jberet,https://github.com/jberet
+redhat.csv,redhat,capedwarf,https://github.com/capedwarf
+redhat.csv,redhat,jbossorg,https://github.com/jbossorg
+redhat.csv,redhat,jbossdemocentral,https://github.com/jbossdemocentral
+redhat.csv,redhat,jboss-developer,https://github.com/jboss-developer
+redhat.csv,redhat,jbdevstudio,https://github.com/jbdevstudio
+redhat.csv,redhat,forge,https://github.com/forge
+redhat.csv,redhat,jboss-logging,https://github.com/jboss-logging
+redhat.csv,redhat,jboss-remoting,https://github.com/jboss-remoting
+redhat.csv,redhat,jbosstools,https://github.com/jbosstools
+redhat.csv,redhat,jbossws,https://github.com/jbossws
+redhat.csv,redhat,jruby,https://github.com/jruby
+redhat.csv,redhat,jsfunit,https://github.com/jsfunit
+redhat.csv,redhat,juicer,https://github.com/juicer
+redhat.csv,redhat,Katello,https://github.com/Katello
+redhat.csv,redhat,KDE,https://github.com/KDE
+redhat.csv,redhat,keycloak,https://github.com/keycloak
+redhat.csv,redhat,keylime,https://github.com/keylime
+redhat.csv,redhat,kiali,https://github.com/kiali
+redhat.csv,redhat,kimchi-project,https://github.com/kimchi-project
+redhat.csv,redhat,knative,https://github.com/knative
+redhat.csv,redhat,kroxylicious,https://github.com/kroxylicious
+redhat.csv,redhat,kuadrant,https://github.com/kuadrant
+redhat.csv,redhat,kubernetes,https://github.com/kubernetes
+redhat.csv,redhat,kubevirt,https://github.com/kubevirt
+redhat.csv,redhat,lago-project,https://github.com/lago-project
+redhat.csv,redhat,latchset,https://github.com/latchset
+redhat.csv,redhat,libguestfs,https://github.com/libguestfs
+redhat.csv,redhat,libre-server,https://github.com/libre-server
+redhat.csv,redhat,libreoffice,https://github.com/libreoffice
+redhat.csv,redhat,libvirt,https://github.com/libvirt
+redhat.csv,redhat,lightblue-platform,https://github.com/lightblue-platform
+redhat.csv,redhat,linux-audit,https://github.com/linux-audit
+redhat.csv,redhat,linux-system-roles,https://github.com/linux-system-roles
+redhat.csv,redhat,maistra,https://github.com/maistra
+redhat.csv,redhat,ManageIQ,https://github.com/ManageIQ
+redhat.csv,redhat,ManageIQ-Exchange,https://github.com/ManageIQ-Exchange
+redhat.csv,redhat,medik8s,https://github.com/medik8s
+redhat.csv,redhat,moby,https://github.com/moby
+redhat.csv,redhat,modauthgssapi,https://github.com/modauthgssapi
+redhat.csv,redhat,modcluster,https://github.com/modcluster
+redhat.csv,redhat,ModeShape,https://github.com/ModeShape
+redhat.csv,redhat,jbosstm,https://github.com/jbosstm
+redhat.csv,redhat,dotnet,https://github.com/dotnet
+redhat.csv,redhat,netty,https://github.com/netty
+redhat.csv,redhat,nfs-ganesha,https://github.com/nfs-ganesha
+redhat.csv,redhat,nodejs,https://github.com/nodejs
+redhat.csv,redhat,obsidian-toaster,https://github.com/obsidian-toaster
+redhat.csv,redhat,OSAS,https://github.com/OSAS
+redhat.csv,redhat,openvswitch,https://github.com/openvswitch
+redhat.csv,redhat,openjdk,https://github.com/openjdk
+redhat.csv,redhat,OpenSCAP,https://github.com/OpenSCAP
+redhat.csv,redhat,openshiftio,https://github.com/openshiftio
+redhat.csv,redhat,opentracing,https://github.com/opentracing
+redhat.csv,redhat,ophicleide,https://github.com/ophicleide
+redhat.csv,redhat,ostreedev,https://github.com/ostreedev
+redhat.csv,redhat,ovirt,https://github.com/ovirt
+redhat.csv,redhat,packit,https://github.com/packit
+redhat.csv,redhat,patternfly,https://github.com/patternfly
+redhat.csv,redhat,performancecopilot,https://github.com/performancecopilot
+redhat.csv,redhat,picketbox,https://github.com/picketbox
+redhat.csv,redhat,picketlink,https://github.com/picketlink
+redhat.csv,redhat,pressgang,https://github.com/pressgang
+redhat.csv,redhat,projectatomic,https://github.com/projectatomic
+redhat.csv,redhat,quay,https://github.com/quay
+redhat.csv,redhat,springfield-project,https://github.com/springfield-project
+redhat.csv,redhat,prometheus,https://github.com/prometheus
+redhat.csv,redhat,pulp,https://github.com/pulp
+redhat.csv,redhat,pulpqe,https://github.com/pulpqe
+redhat.csv,redhat,pythongssapi,https://github.com/pythongssapi
+redhat.csv,redhat,pyudev,https://github.com/pyudev
+redhat.csv,redhat,qbicc,https://github.com/qbicc
+redhat.csv,redhat,radanalyticsio,https://github.com/radanalyticsio
+redhat.csv,redhat,radargun,https://github.com/radargun
+redhat.csv,redhat,rdo-infra,https://github.com/rdo-infra
+redhat.csv,redhat,rebase-helper,https://github.com/rebase-helper
+redhat.csv,redhat,rhtconsulting,https://github.com/rhtconsulting
+redhat.csv,redhat,redhatdemocentral,https://github.com/redhatdemocentral
+redhat.csv,redhat,redhat-documentation,https://github.com/redhat-documentation
+redhat.csv,redhat,RHInception,https://github.com/RHInception
+redhat.csv,redhat,RedHatInsights,https://github.com/RedHatInsights
+redhat.csv,redhat,redhat-iot,https://github.com/redhat-iot
+redhat.csv,redhat,nodeshift,https://github.com/nodeshift
+redhat.csv,redhat,rht-labs,https://github.com/rht-labs
+redhat.csv,redhat,RedHatProductSecurity,https://github.com/RedHatProductSecurity
+redhat.csv,redhat,redhat-openstack,https://github.com/redhat-openstack
+redhat.csv,redhat,redhatanalytics,https://github.com/redhatanalytics
+redhat.csv,redhat,resteasy,https://github.com/resteasy
+redhat.csv,redhat,rh-messaging,https://github.com/rh-messaging
+redhat.csv,redhat,RHElements,https://github.com/RHElements
+redhat.csv,redhat,rhiot,https://github.com/rhiot
+redhat.csv,redhat,rhq-project,https://github.com/rhq-project
+redhat.csv,redhat,richfaces,https://github.com/richfaces
+redhat.csv,redhat,riftsaw,https://github.com/riftsaw
+redhat.csv,redhat,rook,https://github.com/rook
+redhat.csv,redhat,rpm-software-management,https://github.com/rpm-software-management
+redhat.csv,redhat,rsyslog,https://github.com/rsyslog
+redhat.csv,redhat,savara,https://github.com/savara
+redhat.csv,redhat,scribble,https://github.com/scribble
+redhat.csv,redhat,seam,https://github.com/seam
+redhat.csv,redhat,SELinuxProject,https://github.com/SELinuxProject
+redhat.csv,redhat,shrinkwrap,https://github.com/shrinkwrap
+redhat.csv,redhat,skupperproject,https://github.com/skupperproject
+redhat.csv,redhat,skyrings,https://github.com/skyrings
+redhat.csv,redhat,smallrye,https://github.com/smallrye
+redhat.csv,redhat,snowdrop,https://github.com/snowdrop
+redhat.csv,redhat,sclorg,https://github.com/sclorg
+redhat.csv,redhat,sosreport,https://github.com/sosreport
+redhat.csv,redhat,spacewalkproject,https://github.com/spacewalkproject
+redhat.csv,redhat,SPICE,https://github.com/SPICE
+redhat.csv,redhat,splice,https://github.com/splice
+redhat.csv,redhat,system-storage-manager,https://github.com/system-storage-manager
+redhat.csv,redhat,storaged-project,https://github.com/storaged-project
+redhat.csv,redhat,submariner-io,https://github.com/submariner-io
+redhat.csv,redhat,SWI-Prolog,https://github.com/SWI-Prolog
+redhat.csv,redhat,jboss-switchyard,https://github.com/jboss-switchyard
+redhat.csv,redhat,syndesisio,https://github.com/syndesisio
+redhat.csv,redhat,SSSD,https://github.com/SSSD
+redhat.csv,redhat,systemd,https://github.com/systemd
+redhat.csv,redhat,teiid,https://github.com/teiid
+redhat.csv,redhat,Tendrl,https://github.com/Tendrl
+redhat.csv,redhat,open-organization,https://github.com/open-organization
+redhat.csv,redhat,theopensourceway,https://github.com/theopensourceway
+redhat.csv,redhat,tianocore,https://github.com/tianocore
+redhat.csv,redhat,torquebox,https://github.com/torquebox
+redhat.csv,redhat,transtats,https://github.com/transtats
+redhat.csv,redhat,varlink,https://github.com/varlink
+redhat.csv,redhat,virt-manager,https://github.com/virt-manager
+redhat.csv,redhat,weld,https://github.com/weld
+redhat.csv,redhat,wildfly,https://github.com/wildfly
+redhat.csv,redhat,wildfly-security,https://github.com/wildfly-security
+redhat.csv,redhat,wildfly-swarm,https://github.com/wildfly-swarm
+redhat.csv,redhat,windup,https://github.com/windup
+redhat.csv,redhat,jboss-wise,https://github.com/jboss-wise
+redhat.csv,redhat,xnio,https://github.com/xnio
+redhat.csv,redhat,zanata,https://github.com/zanata
+sfc.repos.csv,sfc,Common Workflow Language,https://github.com/common-workflow-language
+sfc.repos.csv,sfc,coreboot,https://github.com/coreboot
+sfc.repos.csv,sfc,OpenTripPlanner,https://github.com/opentripplanner
+spi.repos.csv,spi,ankur.org.in,https://github.com/ankur-india
+spi.repos.csv,spi,GNUstep,https://github.com/gnustep
+spi.repos.csv,spi,Rigs of Rods,https://github.com/RigsOfRods
+spi.repos.csv,spi,Tux4Kids,https://github.com/tux4kids
+spi.repos.csv,spi,YafaRay,https://github.com/YafaRay

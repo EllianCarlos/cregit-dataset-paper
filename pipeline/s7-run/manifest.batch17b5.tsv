@@ -1,0 +1,25 @@
+# Part b5 of the S and M projects of manifest.batch17.tsv (sha256 fe2bcfa4c462bf23afb8d7d027903ee019a67ffa25f26d74c91f3345493549db),
+# balanced by predicted time (5.4 h for 4 workers), u order; a fed spot part.
+# 21 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+mosra__corrade	https://github.com/mosra/corrade.git	pending		S	c028fd6e261a0665f72fbc75c7c034baf47747c6
+netwide-assembler__nasm	https://github.com/netwide-assembler/nasm.git	pending		S	fbdc88565ccccfa0e8c69b21b1953d1eded02e89
+ERGO-Code__HiGHS	https://github.com/ERGO-Code/HiGHS.git	pending		S	73cac48c5340d775a477087198611862559be250
+qt__qttools	https://github.com/qt/qttools.git	pending		S	e3bcc7a924dae41cc2d824551e9d9eb5f24f3741
+lance-format__lance	https://github.com/lance-format/lance.git	pending		S	2468b0d8709e3e8ec425b6796f9cb48e89e8fccd
+u3d-community__U3D	https://github.com/u3d-community/U3D.git	pending		S	5be027ab2759f8cc45cd8fff6af375d622550260
+armory3d__armory	https://github.com/armory3d/armory.git	pending		S	f9642c643c8ebf8ec3e98081d1e433d306c50b77
+nrwl__nx	https://github.com/nrwl/nx.git	pending		S	53c247cd9134da0f2e296c46a2249c787e47a02c
+spring-projects__spring-tools	https://github.com/spring-projects/spring-tools.git	pending		S	a8d30b335d7ebe9cbce548d57b77cac6e98deedb
+kdave__btrfs-progs	https://github.com/kdave/btrfs-progs.git	pending		S	2f411268828ed99c04376de4d5d5b555b2af2f79
+aws__aws-sdk-java-v2	https://github.com/aws/aws-sdk-java-v2.git	pending		S	034897558f8a8edaed6be7a38a71867b5437fb96
+sagemathinc__cowasm	https://github.com/sagemathinc/cowasm.git	pending		S	cd512732d002f6e5447143c963dbc59950908266
+wso2__carbon-identity-framework	https://github.com/wso2/carbon-identity-framework.git	pending		M	6cb175cdede879c87146e7b7f8661b85a7b891cd
+CesiumGS__cesium-native	https://github.com/CesiumGS/cesium-native.git	pending		S	1bca8021711294cc83a5a032599ac72d9b3166c9
+ant-media__Ant-Media-Server	https://github.com/ant-media/Ant-Media-Server.git	pending		S	58986bdf22b82757f0e2b118c0a880d41fc4c0c6
+kwaroran__Risuai	https://github.com/kwaroran/Risuai.git	pending		S	ea0871de01ab068daff874c73cbbd98ccf4c4066
+frida__frida-gum	https://github.com/frida/frida-gum.git	pending		S	344b451d417d55fc6b4a6c490ce625cb68fcd38f
+kovidgoyal__calibre	https://github.com/kovidgoyal/calibre.git	pending		M	e228ee22c0029d7071c90f1a2e12a5a15ecbd02a
+ggarra13__mrv2	https://github.com/ggarra13/mrv2.git	pending		S	06de564fb380c81c18009c42c6e473bb4a84099a
+diku-dk__futhark	https://github.com/diku-dk/futhark.git	pending		S	d2655c9fcd053e00d68704e4ec3ca07a46180533
+weihuayi__fealpy	https://github.com/weihuayi/fealpy.git	pending		S	e033533bd8e24f796f9c5284685b20a98b4d11cb

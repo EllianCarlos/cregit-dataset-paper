@@ -1,0 +1,24 @@
+# Part b5 of the S and M projects of manifest.batch12.tsv (sha256 6f4e0b95cc46dde0079b671dc19e8737a15e3a7e98ad301a629af614192c3fc8),
+# balanced by predicted time (6.7 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+magma__magma	https://github.com/magma/magma.git	pending		S	76d9dc0ebce352279b18323027692c1d5f3a3b51
+gleam-lang__gleam	https://github.com/gleam-lang/gleam.git	pending		S	52e735c82d42811dd08d29d5508f564da081fd7d
+fvwmorg__fvwm3	https://github.com/fvwmorg/fvwm3.git	pending		S	d1dac10ee006029984985958ec6132d7ece19be0
+facebook__hermes	https://github.com/facebook/hermes.git	pending		S	a1154cb46a9cfe03a96fcdae96ab5e5cf5125c66
+nymtech__nym-vpn-client	https://github.com/nymtech/nym-vpn-client.git	pending		S	2893de2187a4814a08a5f9058e42c5df84d00523
+iree-org__iree	https://github.com/iree-org/iree.git	pending		S	b315d00a8c14b43d211fe59968caf151fc3ffcc1
+KDE__trojita	https://github.com/KDE/trojita.git	pending		S	5567a2f3f1fd35355f1ad4c68c87908714e500db
+mitsuba-renderer__mitsuba3	https://github.com/mitsuba-renderer/mitsuba3.git	pending		S	fd9c9ceb38deb511a5c3f8479c8b14c0b552167e
+pytorch__executorch	https://github.com/pytorch/executorch.git	pending		S	efc7f2e3dfda1ee99f7ea9f4e0093e06a50f0319
+SWI-Prolog__swipl-devel	https://github.com/SWI-Prolog/swipl-devel.git	pending		M	741efc02f1c24fd965b8dec8e478a276efe6daf2
+GNOME__nautilus	https://github.com/GNOME/nautilus.git	pending		S	dc34d5363a2cb3316409ba7a1628084f6e85a1ea
+ipxe__ipxe	https://github.com/ipxe/ipxe.git	pending		S	6262f1081fe185564e8ec8365a1d23597ec6e6f5
+taichi-dev__taichi	https://github.com/taichi-dev/taichi.git	pending		S	ba0e81dce559fb63a5958bf82feb1d00c55c02fe
+google__crubit	https://github.com/google/crubit.git	pending		S	6d8a753d2797781f1466227df7c014f6868b92a8
+darkrenaissance__darkfi	https://github.com/darkrenaissance/darkfi.git	pending		S	69960b82592babcd8708eece09fea051a468fa72
+supertuxkart__stk-code	https://github.com/supertuxkart/stk-code.git	pending		S	200250c575ff016ffb4d5bd620c8a8a73238c756
+unicode-org__icu4x	https://github.com/unicode-org/icu4x.git	pending		S	5460227a4b0bdbe932305a28f2330c8bfa4c2e20
+facebook__buck2	https://github.com/facebook/buck2.git	pending		S	b3a229ba4f08d111037fbc49c81af73f3947e5ce
+usethesource__rascal	https://github.com/usethesource/rascal.git	pending		S	ad45a59f11500371f47234d2d0e25efca58d9ec1
+arturo-lang__arturo	https://github.com/arturo-lang/arturo.git	pending		M	4383daaaab36cfd71cf083540637448d0e2ad04d

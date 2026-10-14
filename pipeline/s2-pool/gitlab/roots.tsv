@@ -1,0 +1,172 @@
+url	root	root_is_parentless	github_total	pool_hits	frame_hits	checked_at
+https://git.adelielinux.org/adelie/packages	103977130aef50549a5c9904a029d5deb0a35d1e	True	1			2026-10-13T23:54:18Z
+https://git.adelielinux.org/adelie/musl	0b44a0315b47dd8eced9f3b7f31580cf14bbfc01	True	373	graalvm/musl	graalvm/musl(L1)	2026-10-13T23:54:42Z
+https://git.adelielinux.org/spack/spack-packages	7ec855eeb0ede75bf8148869879f4e566d4d6d20	True	2			2026-10-13T23:54:45Z
+https://git.themanaworld.org/ml/serverdata	20df2abc1aca00d6aa5dc78347133890f36b32f3	True	0			2026-10-13T23:54:49Z
+https://git.themanaworld.org/ml/hercules	195dffc20af1fb32c7e4119988911b72955aeabc	True	49	herculesws/hercules	herculesws/hercules(L1)	2026-10-13T23:54:54Z
+https://git.themanaworld.org/mana/verse	3eeae12c498d1a4dbe969462d2ba841f77ee3ccb	True	8			2026-10-13T23:54:58Z
+https://gitlab.winehq.org/wine/wine-gecko	e39e1b421f6c93e7d006e489cb929613808877a6	False	0			2026-10-13T23:55:02Z
+https://gitlab.winehq.org/wine/vkd3d	9f3ffd7287b25e1c96e7e45c62660a0af321232a	True	20	hanskristian-work/vkd3d-proton	hanskristian-work/vkd3d-proton(L1)	2026-10-13T23:55:07Z
+https://gitlab.winehq.org/mono/corefx	d6310ac8c94dbb9d104702a34a143d19daf9ee7f	False	19			2026-10-13T23:55:11Z
+https://gitlab.freedesktop.org/panfrost/mesa	e58a10af640ba58b6001f5c5ad750b782547da76	True	555			2026-10-13T23:55:33Z
+https://gitlab.freedesktop.org/wayland/weston	97f1ebe8d5c2e166fabf757182c289fed266a45a	True	231	microsoft/weston-mirror		2026-10-13T23:55:56Z
+https://gitlab.freedesktop.org/mesa/demos	e58a10af640ba58b6001f5c5ad750b782547da76	True	555			2026-10-13T23:55:57Z
+https://gitlab.freedesktop.org/libinput/libinput	9b1b1ba4df6f988bcdce50a813206cb4f53ee309	True	83			2026-10-13T23:56:05Z
+https://gitlab.freedesktop.org/mesa/mesa	e0a3ce2bb0db9e710bc0a2e979a85ac2e58d534b	False	555			2026-10-13T23:56:22Z
+https://gitlab.freedesktop.org/mesa/libdrm	b3a5766992019fc5f44cc9afd01b2617b76f47a7	True	0			2026-10-13T23:56:37Z
+https://gitlab.freedesktop.org/mesa/piglit	22fbbb5e8679ddf91532cb10eaa31be533383b48	True	42			2026-10-13T23:56:43Z
+https://gitlab.freedesktop.org/mobile-broadband/modemmanager	cc31458b18e8c274641cf124f5bf7ec6fe506dfb	True	45			2026-10-13T23:56:49Z
+https://gitlab.freedesktop.org/poppler/poppler	cb02d5d0e770e2a8cbe5a8ac810820a2ce5fec0c	True	87			2026-10-13T23:56:58Z
+https://gitlab.freedesktop.org/syncevolution/syncevolution	23390364129438466d56bce14020dda34eef0039	True	7			2026-10-13T23:57:02Z
+https://gitlab.freedesktop.org/cairo/cairo	00807705bf00ce370bb5860db23edbc0fa507015	True	94			2026-10-13T23:57:10Z
+https://gitlab.freedesktop.org/dbus/dbus	47229f733179ed2f9f5e8baffe855f09530ff94f	True	82	ni/dbus		2026-10-13T23:57:19Z
+https://gitlab.freedesktop.org/drm/igt-gpu-tools	8c64183a461a422b0443f84622af48858d5fe6ed	True	85			2026-10-13T23:57:27Z
+https://gitlab.freedesktop.org/gstreamer/gst-plugins-rs	9bb2d32c75ac9ea82812f8d399027d99fcf65474	True	30			2026-10-13T23:57:32Z
+https://gitlab.freedesktop.org/drm/msm	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-13T23:58:00Z
+https://gitlab.freedesktop.org/monado/monado	618c73f24b7621b6821038f814235f6aff811b24	True	87			2026-10-13T23:58:08Z
+https://gitlab.freedesktop.org/gfx-ci/igt-ci-tags	8c64183a461a422b0443f84622af48858d5fe6ed	True	85			2026-10-13T23:58:09Z
+https://gitlab.freedesktop.org/mesa_ci/repos/mesa	e58a10af640ba58b6001f5c5ad750b782547da76	True	555			2026-10-13T23:58:11Z
+https://gitlab.freedesktop.org/virgl/drm-misc-next	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-13T23:58:15Z
+https://gitlab.freedesktop.org/mesa_ci/repos/piglit	22fbbb5e8679ddf91532cb10eaa31be533383b48	True	42			2026-10-13T23:58:17Z
+https://gitlab.freedesktop.org/telepathy/telepathy-glib	36e7ba52d4397763aca609c368bc6f2472b644a1	True	47			2026-10-13T23:58:23Z
+https://gitlab.freedesktop.org/telepathy/telepathy-qt	190ecb3d7cd80732d1cd8dc484184a8cfe104707	True	10			2026-10-13T23:58:27Z
+https://gitlab.freedesktop.org/drm/nouveau	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-13T23:58:31Z
+https://gitlab.freedesktop.org/mesa/mesa-archive	e58a10af640ba58b6001f5c5ad750b782547da76	True	555			2026-10-13T23:58:32Z
+https://gitlab.freedesktop.org/drm/tegra	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-13T23:58:36Z
+https://gitlab.freedesktop.org/pipewire/media-session	3fba92fb74ed9229cde1d069ce116bb2cfeaa322	True	26	pipewire/pipewire	pipewire/pipewire(L1)	2026-10-13T23:58:42Z
+https://gitlab.freedesktop.org/wlroots/wlroots	52e6ed54cbaf05cd1829099e04427d1706ca0da4	True	88			2026-10-13T23:58:51Z
+https://gitlab.freedesktop.org/nouvelles/kernel	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-13T23:58:54Z
+https://gitlab.freedesktop.org/nouveau/mesa	e58a10af640ba58b6001f5c5ad750b782547da76	True	555			2026-10-13T23:58:56Z
+https://gitlab.freedesktop.org/gstreamer/meson-ports/libvpx	0ea50ce9cb4b65eee6afa1d041fe8beb5abda667	True	323	mozilla/aom,webmproject/libvpx		2026-10-13T23:59:22Z
+https://gitlab.freedesktop.org/camera/libcamera	87ba17ba41f2c540efe9ecd46379477282852642	True	71	amd/linux_isp_libcamera,raspberrypi/libcamera	raspberrypi/libcamera(L1)	2026-10-13T23:59:29Z
+https://gitlab.freedesktop.org/camera/libcamera-softisp	87ba17ba41f2c540efe9ecd46379477282852642	True	71	amd/linux_isp_libcamera,raspberrypi/libcamera	raspberrypi/libcamera(L1)	2026-10-13T23:59:31Z
+https://gitlab.freedesktop.org/imagination/mesa	e58a10af640ba58b6001f5c5ad750b782547da76	True	555			2026-10-13T23:59:32Z
+https://gitlab.freedesktop.org/linux-media/media-committers	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-13T23:59:37Z
+https://gitlab.freedesktop.org/drm/kernel	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-13T23:59:42Z
+https://gitlab.freedesktop.org/drm/tip	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-13T23:59:46Z
+https://gitlab.freedesktop.org/drm/nova	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-13T23:59:50Z
+https://gitlab.freedesktop.org/linux-media/users/patchwork	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-13T23:59:56Z
+https://gitlab.freedesktop.org/linux-media/users/ribalda	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:00:00Z
+https://gitlab.freedesktop.org/linux-media/users/playground	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:00:05Z
+https://gitlab.freedesktop.org/linux-media/users/jmondi	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:00:09Z
+https://gitlab.freedesktop.org/linux-media/users/tmerciai	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:00:13Z
+https://gitlab.freedesktop.org/monado/electric-maple-monado	618c73f24b7621b6821038f814235f6aff811b24	True	87			2026-10-14T00:00:15Z
+https://gitlab.freedesktop.org/linux-media/users/pinchartl	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:00:19Z
+https://gitlab.freedesktop.org/linux-media/users/sailus	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:00:24Z
+https://gitlab.freedesktop.org/gfx-ci/android/aosp-build	b6c1cf6de79035f58b512f4400db458c8401379a	True	2178	digi-embedded/android_platform_build_make		2026-10-14T00:00:48Z
+https://gitlab.freedesktop.org/gfx-ci/android/aosp-cuttlefish	571fe466b6bfa84f273cd9162190122f8384630f	True	55			2026-10-14T00:00:56Z
+https://gitlab.freedesktop.org/linux-media/users/mchehab	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:01:00Z
+https://gitlab.freedesktop.org/linux-media/users/ci	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:01:04Z
+https://gitlab.gnome.org/world/gedit/gedit	57b0a0f1d3fae0a34f4f39779dc24ce1f9269b60	True	10			2026-10-14T00:01:08Z
+https://gitlab.gnome.org/world/abiword	21993a7bbfd4cdff207b390b0d8463517b13720b	True	8			2026-10-14T00:01:12Z
+https://gitlab.gnome.org/world/phosh/phosh	d1cf1f02a3ff65331d755cb7bb4f765222f23354	True	12			2026-10-14T00:01:16Z
+https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/gitlab_com/freedesktop-sdk/freedesktop-sdk	3919b416f7c4b2fb4d75b4fed515633f7ba517ba	True	6			2026-10-14T00:01:20Z
+https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/source_puri_sm/librem5/wlroots	52e6ed54cbaf05cd1829099e04427d1706ca0da4	True	88			2026-10-14T00:01:21Z
+https://gitlab.gnome.org/infrastructure/mirrors/lorry-mirrors/gitlab_freedesktop_org/wlroots/wlroots	52e6ed54cbaf05cd1829099e04427d1706ca0da4	True	88			2026-10-14T00:01:21Z
+https://gitlab.gnome.org/world/mobileshell/gnome-shell-mobile	4ba985b4844b7efeed1c64276759aa2632b86472	True	45	gnome/gnome-shell	gnome/gnome-shell(L1)	2026-10-14T00:01:28Z
+https://gitlab.gnome.org/world/mobileshell/mutter-mobile	287b6b15d3840d6546bbc55f9dbd7b3d098429c3	True	62	gnome/metacity,gnome/mutter	gnome/metacity(L1),gnome/mutter(L1)	2026-10-14T00:01:34Z
+https://gitlab.gnome.org/world/gedit/libgedit-gtksourceview	5c6e5cbc5512a1cbfad1ca905f21b07065e0defd	True	8	gnome/gtksourceview	gnome/gtksourceview(L1)	2026-10-14T00:01:37Z
+https://gitlab.gnome.org/world/mobileshell/gnome-settings-daemon-mobile	b7f5d9895c19338f10b0bdd494b221b13b540d9d	True	21	gnome/gnome-settings-daemon	gnome/gnome-settings-daemon(L1)	2026-10-14T00:01:41Z
+https://gitlab.inria.fr/simgrid/simgrid	85bd77ce2235a846db6202fec0dc396d07d6fead	True	10			2026-10-14T00:01:46Z
+https://gitlab.inria.fr/vidjil/vidjil	ce297076cb2d803d5789cd75a2276249a4be3899	True	1			2026-10-14T00:01:49Z
+https://gitlab.inria.fr/solverstack/scalfmm	1e054ee78e26d2f353518a5fb759903b16527ed1	True	1			2026-10-14T00:01:53Z
+https://gitlab.inria.fr/croco-ocean/croco	c9d303ccf449994582d12fd085d935d2e68d0bf5	True	8			2026-10-14T00:01:57Z
+https://gitlab.inria.fr/gnomon/gnomon	f7437b0aa807a411a258c2102607bd5675c1d547	True	1			2026-10-14T00:02:01Z
+https://gitlab.inria.fr/why3/why3	44577e849e248adf957b65cfd662721d90fd09cb	True	18			2026-10-14T00:02:05Z
+https://gitlab.inria.fr/morefem/corelibrary/morefem	932d1203f215a4c5df786b9af2db77bc9a2e6878	True	0			2026-10-14T00:02:09Z
+https://gitlab.inria.fr/starpu/starpu	fc22dad6766113c6ea0c583d8657911d855ba732	True	1			2026-10-14T00:02:13Z
+https://gitlab.inria.fr/aevol/aevol	60e1f9fb135a2ffd0b010946e8f4f592d525cf4a	True	2			2026-10-14T00:02:16Z
+https://gitlab.inria.fr/tapenade/tapenade	77ea1a08751718f97f273bb6a8f4c061a8d47421	True	0			2026-10-14T00:02:20Z
+https://gitlab.inria.fr/gazelle/public/core/test-management	a430d1a9bb9b73482f5c884e2b973afe9fa99f7a	True	0			2026-10-14T00:02:23Z
+https://gitlab.inria.fr/felisce/felisce	f46f50753216bbbe55c2a39122bcb791d13387c8	True	0			2026-10-14T00:02:27Z
+https://gitlab.inria.fr/pm2/pm2	4daf21571ef76a4505cc638520541bac45fc047d	True	0			2026-10-14T00:02:31Z
+https://gitlab.inria.fr/memcad/memcad	1fb756d4ce805b62c0592f8e5c8a649c71591ffc	True	0			2026-10-14T00:02:34Z
+https://gitlab.inria.fr/dynres/dyn-procs/prrte	350564b9f381dfbdbe119f26585f07da6f4b9e8a	True	46	open-mpi/ompi	open-mpi/ompi(L1)	2026-10-14T00:02:40Z
+https://gitlab.inria.fr/computix/computix	79d7675b98a05a61d931015f0e51c3c9cbf7c441	True	0			2026-10-14T00:02:44Z
+https://gitlab.inria.fr/tansiv/kvm-vmi	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:02:49Z
+https://gitlab.inria.fr/tansiv/ns-3-dev	b5993f05dc0b1fa2a850b84506abfd69589f90dd	True	445	microsoft/tocino		2026-10-14T00:03:13Z
+https://gitlab.inria.fr/arsene-pepr/llvm-fence-spec	97724f18c79c7cc81ced24239eb5e883bf1398ef	True	606	enzymead/enzyme.jl,flang-compiler/classic-flang-llvm-project,intellabs/c3-llvm,llvm/llvm-project,openucx/odos,xilinx/hls-llvm-project	flang-compiler/classic-flang-llvm-project(L1),llvm/llvm-project(L1),openucx/odos(L1),xilinx/hls-llvm-project(L1)	2026-10-14T00:03:36Z
+https://gitlab.inria.fr/dynres/applications/dynpetsc	5f4ed19a8efdb486a315195012d444ef692ac3ef	True	19	petsc/petsc	petsc/petsc(L1)	2026-10-14T00:03:41Z
+https://gitlab.inria.fr/benagil/volimem/cpython-pmem	7f777ed95a19224294949e1b4ce56bbffcb1fe9f	True	304	facebookincubator/metapython,naftaliharris/tauthon,python/cpython	facebookincubator/metapython(L1),naftaliharris/tauthon(L1),python/cpython(L1)	2026-10-14T00:04:02Z
+https://gitlab.inria.fr/dynres/applications/charm	b776e64c95524f361948ae0e7401b4d3db3f98ac	True	7			2026-10-14T00:04:06Z
+https://gitlab.inria.fr/sushi-public/fmh/zephyr	8ddf82cf70dc6f951ab477f325dee0efde3ec589	True	300	nrfconnect/sdk-zephyr,tmobile/devedge-iotdevkit-zephyrrtos,xilinx/zephyr-amd,zephyrproject-rtos/zephyr	nrfconnect/sdk-zephyr(L1),xilinx/zephyr-amd(L1),zephyrproject-rtos/zephyr(L1)	2026-10-14T00:04:26Z
+https://gitlab.inria.fr/poseidon/croco_poseidon	c9d303ccf449994582d12fd085d935d2e68d0bf5	True	8			2026-10-14T00:04:27Z
+https://gitlab.inria.fr/kdbench/multicore/px4-rt_and_px4-standard/px4-rt_linux_nprt_and_prt	add995c32e86f9de8fa8fc05172435332c25a895	True	831	px4/px4-autopilot	px4/px4-autopilot(L1)	2026-10-14T00:04:51Z
+https://gitlab.inria.fr/kdbench/multicore/px4-rt_and_px4-standard/px4-rt-xenomai	add995c32e86f9de8fa8fc05172435332c25a895	True	831	px4/px4-autopilot	px4/px4-autopilot(L1)	2026-10-14T00:04:52Z
+https://gitlab.inria.fr/kdbench/multicore/px4-rt_and_px4-standard/px4-standard_linux_nprt_and_prt	add995c32e86f9de8fa8fc05172435332c25a895	True	831	px4/px4-autopilot	px4/px4-autopilot(L1)	2026-10-14T00:04:53Z
+https://gitlab.inria.fr/kdbench/multicore/px4-rt_and_px4-standard/px4-standard-xenomai	add995c32e86f9de8fa8fc05172435332c25a895	True	831	px4/px4-autopilot	px4/px4-autopilot(L1)	2026-10-14T00:04:54Z
+https://gitlab.inria.fr/benagil/volimem/redis_pmdk	a205266ee136f3a04962e7fa12fbee6a49a1bc28	True	20	daos-stack/pmdk,pmem/pmdk,pmem/vmem	daos-stack/pmdk(L1)	2026-10-14T00:04:59Z
+https://gitlab.inria.fr/cedar/connectionlens_archived2	b8d6d986a35aaf86d1db24f01205f1ed72254b51	True	0			2026-10-14T00:05:02Z
+https://gitlab.inria.fr/cedar/connectionlens	b8d6d986a35aaf86d1db24f01205f1ed72254b51	True	0			2026-10-14T00:05:03Z
+https://gitlab.inria.fr/cedar/abstra	b8d6d986a35aaf86d1db24f01205f1ed72254b51	True	0			2026-10-14T00:05:04Z
+https://gitlab.inria.fr/sed-rennes/overleaf/overleaf-cep	3f6e2404010c159c56fe8d002afecf176fac3fa9	False	28	ayaka-notes/ayakaleaf-pro,overleaf/overleaf		2026-10-14T00:05:09Z
+https://gitlab.eclipse.org/openhw-group/backup-20260823/corev-binutils-gdb	7b4ac7e1ed2c4616bce56d1760807798be87ac9e	True	531	espressif/binutils-esp32ulp		2026-10-14T00:05:31Z
+https://gitlab.eclipse.org/openhw-group/backup-20260823/cvw	86128ee0afd3318def65e75198e492ba579f9776	True	5	openhwfoundation/cvw	openhwfoundation/cvw(L1)	2026-10-14T00:05:35Z
+https://gitlab.eclipse.org/openhw-group/backup-20260823/corev-qemu	e63c3dc74bfb90e4522d075d0d5a7600c5145745	True	1310	open-estuary/qemu,xemu-project/xemu	xemu-project/xemu(L1)	2026-10-14T00:05:58Z
+https://gitlab.eclipse.org/openhw-group/backup-20260823/corev-gcc	6f39d4ff6715973bbdf6510a69fccc46f9a746b9	True	171	gcc-mirror/gcc,rust-gcc/gccrs	rust-gcc/gccrs(L1)	2026-10-14T00:06:14Z
+https://gitlab.eclipse.org/openhw-group/backup-20260823/corev-llvm-project	97724f18c79c7cc81ced24239eb5e883bf1398ef	True	606	enzymead/enzyme.jl,flang-compiler/classic-flang-llvm-project,intellabs/c3-llvm,llvm/llvm-project,openucx/odos,xilinx/hls-llvm-project	flang-compiler/classic-flang-llvm-project(L1),llvm/llvm-project(L1),openucx/odos(L1),xilinx/hls-llvm-project(L1)	2026-10-14T00:06:27Z
+https://gitlab.eclipse.org/openhw-group/backup-20260830/corev-binutils-gdb	7b4ac7e1ed2c4616bce56d1760807798be87ac9e	True	531	espressif/binutils-esp32ulp		2026-10-14T00:06:36Z
+https://gitlab.eclipse.org/openhw-group/backup-20260830/cvw	86128ee0afd3318def65e75198e492ba579f9776	True	5	openhwfoundation/cvw	openhwfoundation/cvw(L1)	2026-10-14T00:06:43Z
+https://gitlab.eclipse.org/openhw-group/backup-20260830/corev-qemu	e63c3dc74bfb90e4522d075d0d5a7600c5145745	True	1310	open-estuary/qemu,xemu-project/xemu	xemu-project/xemu(L1)	2026-10-14T00:06:48Z
+https://gitlab.eclipse.org/openhw-group/backup-20260830/corev-gcc	6f39d4ff6715973bbdf6510a69fccc46f9a746b9	True	171	gcc-mirror/gcc,rust-gcc/gccrs	rust-gcc/gccrs(L1)	2026-10-14T00:07:00Z
+https://gitlab.eclipse.org/openhw-group/backup-20260830/corev-llvm-project	97724f18c79c7cc81ced24239eb5e883bf1398ef	True	606	enzymead/enzyme.jl,flang-compiler/classic-flang-llvm-project,intellabs/c3-llvm,llvm/llvm-project,openucx/odos,xilinx/hls-llvm-project	flang-compiler/classic-flang-llvm-project(L1),llvm/llvm-project(L1),openucx/odos(L1),xilinx/hls-llvm-project(L1)	2026-10-14T00:07:12Z
+https://gitlab.eclipse.org/openhw-group/backup-20260906/corev-binutils-gdb	7b4ac7e1ed2c4616bce56d1760807798be87ac9e	True	531	espressif/binutils-esp32ulp		2026-10-14T00:07:19Z
+https://gitlab.eclipse.org/openhw-group/backup-20260906/cvw	86128ee0afd3318def65e75198e492ba579f9776	True	5	openhwfoundation/cvw	openhwfoundation/cvw(L1)	2026-10-14T00:07:26Z
+https://gitlab.eclipse.org/openhw-group/backup-20260906/corev-qemu	e63c3dc74bfb90e4522d075d0d5a7600c5145745	True	1310	open-estuary/qemu,xemu-project/xemu	xemu-project/xemu(L1)	2026-10-14T00:07:36Z
+https://gitlab.eclipse.org/openhw-group/backup-20260906/corev-gcc	6f39d4ff6715973bbdf6510a69fccc46f9a746b9	True	171	gcc-mirror/gcc,rust-gcc/gccrs	rust-gcc/gccrs(L1)	2026-10-14T00:07:41Z
+https://gitlab.eclipse.org/openhw-group/backup-20260906/corev-llvm-project	97724f18c79c7cc81ced24239eb5e883bf1398ef	True	606	enzymead/enzyme.jl,flang-compiler/classic-flang-llvm-project,intellabs/c3-llvm,llvm/llvm-project,openucx/odos,xilinx/hls-llvm-project	flang-compiler/classic-flang-llvm-project(L1),llvm/llvm-project(L1),openucx/odos(L1),xilinx/hls-llvm-project(L1)	2026-10-14T00:08:10Z
+https://gitlab.eclipse.org/openhw-group/backup-20260913/corev-binutils-gdb	7b4ac7e1ed2c4616bce56d1760807798be87ac9e	True	531	espressif/binutils-esp32ulp		2026-10-14T00:08:35Z
+https://gitlab.eclipse.org/openhw-group/backup-20260913/cvw	86128ee0afd3318def65e75198e492ba579f9776	True	5	openhwfoundation/cvw	openhwfoundation/cvw(L1)	2026-10-14T00:08:37Z
+https://gitlab.eclipse.org/openhw-group/backup-20260913/corev-qemu	e63c3dc74bfb90e4522d075d0d5a7600c5145745	True	1310	open-estuary/qemu,xemu-project/xemu	xemu-project/xemu(L1)	2026-10-14T00:08:40Z
+https://gitlab.eclipse.org/openhw-group/backup-20260913/corev-gcc	6f39d4ff6715973bbdf6510a69fccc46f9a746b9	True	171	gcc-mirror/gcc,rust-gcc/gccrs	rust-gcc/gccrs(L1)	2026-10-14T00:08:43Z
+https://gitlab.eclipse.org/openhw-group/backup-20260913/corev-llvm-project	97724f18c79c7cc81ced24239eb5e883bf1398ef	True	606	enzymead/enzyme.jl,flang-compiler/classic-flang-llvm-project,intellabs/c3-llvm,llvm/llvm-project,openucx/odos,xilinx/hls-llvm-project	flang-compiler/classic-flang-llvm-project(L1),llvm/llvm-project(L1),openucx/odos(L1),xilinx/hls-llvm-project(L1)	2026-10-14T00:08:48Z
+https://invent.kde.org/qt/qbs/qbs	5672fa8fd3bd6b09125d9e143a7bb277cea2e87f	True	5			2026-10-14T00:08:52Z
+https://invent.kde.org/qt/qt/qtquick3d-assimp	b76f999cb76db1c48c3c2dff33a7e4e438ec0021	True	36	assimp/assimp	assimp/assimp(L1)	2026-10-14T00:08:57Z
+https://invent.kde.org/qt/qt/qt3d	b87a08f5292069facf9b427cb43a675d43578293	True	12			2026-10-14T00:09:01Z
+https://invent.kde.org/qt/qt/qtquick3d	7b28577871650262e6f39ccbd00aec29b7dac1de	True	4			2026-10-14T00:09:05Z
+https://invent.kde.org/qt/pyside/pyside-setup	9732e0c744e45a67094fc6ce08bdadb1f9a08d4a	True	40			2026-10-14T00:09:10Z
+https://invent.kde.org/qt/clang/llvm	97724f18c79c7cc81ced24239eb5e883bf1398ef	True	606	enzymead/enzyme.jl,flang-compiler/classic-flang-llvm-project,intellabs/c3-llvm,llvm/llvm-project,openucx/odos,xilinx/hls-llvm-project	flang-compiler/classic-flang-llvm-project(L1),llvm/llvm-project(L1),openucx/odos(L1),xilinx/hls-llvm-project(L1)	2026-10-14T00:09:12Z
+https://invent.kde.org/office/skrooge	c7d2c4552885182a98a7bf3a8e927b2f1462da51	True	0			2026-10-14T00:09:15Z
+https://invent.kde.org/mirrors/poppler	cb02d5d0e770e2a8cbe5a8ac810820a2ce5fec0c	True	87			2026-10-14T00:09:16Z
+https://invent.kde.org/neon/backports-noble/pipewire-noble	3fba92fb74ed9229cde1d069ce116bb2cfeaa322	True	26	pipewire/pipewire	pipewire/pipewire(L1)	2026-10-14T00:09:17Z
+https://invent.kde.org/neon/backports-noble/opencv-noble	37e88430eb0618e895708ed61f3c9b9b61f5d2d5	True	6			2026-10-14T00:09:21Z
+https://invent.kde.org/neon/forks/freerdp3	f6723028dc8d8722743d8d7dfa233ce298d55b1c	True	75	freerdp/freerdp	freerdp/freerdp(L1)	2026-10-14T00:09:29Z
+https://invent.kde.org/mirrors/calamares	f7f7167f20b16c51ba1028c54c5dad8b0096dc98	True	37			2026-10-14T00:09:34Z
+https://invent.kde.org/neon/backports-resolute/libdrm-resolute	b3a5766992019fc5f44cc9afd01b2617b76f47a7	True	0			2026-10-14T00:09:35Z
+https://gitlab.freedesktop.org/linux-media/users/mhecht73	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:27:37Z
+https://gitlab.freedesktop.org/gfx-ci/android/aosp-kernel-common	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:27:43Z
+https://gitlab.freedesktop.org/gfx-ci/android/aosp-crosvm	8bd026733161abb0b4668bca4e1953fe53e6ca70	True	59	google/crosvm	google/crosvm(L1)	2026-10-14T00:27:50Z
+https://gitlab.freedesktop.org/linux-media/users/uvc	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:27:54Z
+https://gitlab.freedesktop.org/linux-media/users/seanyoung	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:27:59Z
+https://gitlab.freedesktop.org/linux-media/users/ndufresne	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:28:03Z
+https://gitlab.freedesktop.org/linux-media/users/bodonoghue	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:28:08Z
+https://gitlab.freedesktop.org/linux-media/users/devarsht	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:28:11Z
+https://gitlab.freedesktop.org/linux-media/users/jluthra	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:28:16Z
+https://gitlab.freedesktop.org/linux-media/users/dikshitaagarwal	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:28:19Z
+https://gitlab.freedesktop.org/linux-media/users/djrscally	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:28:24Z
+https://gitlab.freedesktop.org/linux-media/users/hverkuil	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:28:28Z
+https://gitlab.freedesktop.org/asahi/igt-gpu-tools	8c64183a461a422b0443f84622af48858d5fe6ed	True	85			2026-10-14T00:28:30Z
+https://gitlab.freedesktop.org/gfx-ci/android/mesa	e58a10af640ba58b6001f5c5ad750b782547da76	True	555			2026-10-14T00:28:31Z
+https://gitlab.freedesktop.org/gnu-grub/grub	6a161fa938d2d56703db46c08b6f821b7d3e0207	True	303	ni/grub,open-estuary/grub		2026-10-14T00:28:54Z
+https://gitlab.freedesktop.org/asahi/libdrm	b3a5766992019fc5f44cc9afd01b2617b76f47a7	True	0			2026-10-14T00:28:55Z
+https://gitlab.freedesktop.org/linux-media/users/frankl	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:29:00Z
+https://gitlab.archlinux.org/archlinux/packaging/upstream/linux-rt	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:29:45Z
+https://gitlab.archlinux.org/archlinux/packaging/upstream/linux-rt-lts	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:30:27Z
+https://gitlab.archlinux.org/pacman/pacman	d04baabafa2ebbad92741d1f87e6ff32999f894a	True	98			2026-10-14T00:31:12Z
+https://gitlab.com/cip-project/cip-kernel/linux-cip	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:31:14Z
+https://gitlab.com/librehealth/toolkit/lh-toolkit	b57cd757597e9146f606abe8745ed08548e1e979	True	98	openmrs/openmrs-core	openmrs/openmrs-core(L1)	2026-10-14T00:31:23Z
+https://gitlab.freedesktop.org/linux-media/users/epaul	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:34:49Z
+https://gitlab.freedesktop.org/linux-media/users/mriesch	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:34:53Z
+https://gitlab.freedesktop.org/camera/libcamera-vivid	87ba17ba41f2c540efe9ecd46379477282852642	True	71	amd/linux_isp_libcamera,raspberrypi/libcamera	raspberrypi/libcamera(L1)	2026-10-14T00:34:54Z
+https://gitlab.freedesktop.org/drm/amdgpu/kernel	1da177e4c3f41524e886b7f1b8a0c1fc7321cac2	True	23841			2026-10-14T00:34:58Z
+https://gitlab.com/inkscape/inkscape	179fa413b047bede6e32109e2ce82437c5fb8d34	True	43			2026-10-14T01:21:05Z
+https://gitlab.com/veloren/veloren	7d17f8b67a2a6d5aa00730f028cedc430fd5075a	True	13			2026-10-14T01:21:11Z
+https://gitlab.com/graphviz/graphviz	256ef66663ca0c072554ee3f5e7971911031b3c7	True	69			2026-10-14T01:21:17Z
+https://gitlab.com/libeigen/eigen	3036eeca0abfee39d2a0feab4ae3ff1d28975999	True	265	nervanasystems/eigen		2026-10-14T01:21:41Z
+https://gitlab.com/kicad/code/kicad	23c40f7e8698b54e0dd497942ff4ae9f755333d2	True	58	kicad/kicad-source-mirror	kicad/kicad-source-mirror(L1)	2026-10-14T01:21:47Z
+https://gitlab.com/recalbox/recalbox	ffde94bd2ca21542ae0b4518348f8e986b9d92e0	True	886	batocera-linux/batocera.linux,buildroot/buildroot,mellanox/buildroot,nvdla/buildroot	batocera-linux/batocera.linux(L1),buildroot/buildroot(L1)	2026-10-14T01:22:08Z
+https://gitlab.com/tezos/tezos	f42e9d12ac75d2876a4cf600d44976b7090d4533	True	44			2026-10-14T01:22:13Z
+https://gitlab.com/coolercontrol/coolercontrol	20b639083cc643c495c41a135b60d1f5381479d0	True	5			2026-10-14T01:22:17Z
+https://gitlab.com/sequoia-pgp/sequoia	6f28ab1c4a3caae0eaf8650e4611f3ccf3a7f598	True	39			2026-10-14T01:22:23Z
+https://gitlab.com/distant-horizons-team/distant-horizons	afa9d17245f40d49e4e2c259e08fd409bcf34a8a	True	24			2026-10-14T01:22:27Z
+https://gitlab.com/muttmua/mutt	1a5381e07e97fe482c2b3a7c75f99938f0b105d4	True	33	neomutt/neomutt	neomutt/neomutt(L1)	2026-10-14T15:48:15Z

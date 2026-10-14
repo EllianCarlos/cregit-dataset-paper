@@ -1,0 +1,20 @@
+# Part a5 of the S and M projects of manifest.batch20.tsv (sha256 4c456b71c9e1db2907af03ac928fea9e460ff859170009b53725d68c63848625),
+# balanced by predicted time (5.5 h for 4 workers), u order; a fed spot part.
+# 16 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+ZDoom__gzdoom	https://github.com/ZDoom/gzdoom.git	pending		S	c26ce2e6ca2a0c770f140cb25dde0d30073ca8f7
+NVIDIA__warp	https://github.com/NVIDIA/warp.git	pending		S	5a0c33d17d847d0be07ae1003263b572aae0729a
+NetworkManager__NetworkManager	https://github.com/NetworkManager/NetworkManager.git	pending		M	ed1f38cd449b32e935d994eed61600230cf4004b
+KDE__plasma-desktop	https://github.com/KDE/plasma-desktop.git	pending		S	3b124a75d545fb7e2d4fac5dd611a1575f7568bd
+apache__flex-sdk	https://github.com/apache/flex-sdk.git	pending		M	1644730bd54105c8aab234af7c1a08b2af17865d
+gromacs__gromacs	https://github.com/gromacs/gromacs.git	pending		S	b366735c65c5c7c9e68638c7c7ce417d95e827db
+ledger__ledger	https://github.com/ledger/ledger.git	pending		S	faecd27cec670e128018dd92c8490a5b23f55660
+Dicklesworthstone__pi_agent_rust	https://github.com/Dicklesworthstone/pi_agent_rust.git	pending		S	8f7c302588ecc465780b66f83cd5152bb2c68908
+MarcusWolschon__osmeditor4android	https://github.com/MarcusWolschon/osmeditor4android.git	pending		S	84fc0849821c0e92ba4194516b7ac1f9ce97745e
+couchbase__couchbase-lite-core	https://github.com/couchbase/couchbase-lite-core.git	pending		S	9e37589095fdbba06342dee5427e0f6570dea011
+osquery__osquery	https://github.com/osquery/osquery.git	pending		S	f0af4d842632aee4925d8360920267a8bc726b7c
+OpenFeign__querydsl	https://github.com/OpenFeign/querydsl.git	pending		S	94b10c472f138403ed9d9253d2232074dd0c8b0b
+google__guava	https://github.com/google/guava.git	pending		S	52d12e4aa2fe8bd1e09811daa4ced7cc99697f45
+openenclave__openenclave	https://github.com/openenclave/openenclave.git	pending		S	8c120f41d44f32964a3fae4a660ed1b6d461b377
+weechat__weechat	https://github.com/weechat/weechat.git	pending		S	44e149b12830c8ffa98a5b2a4aafaf97e06e4477
+opral__lix	https://github.com/opral/lix.git	pending		S	d1ef746ec02a10878156a2d7afba0cdf107d60db

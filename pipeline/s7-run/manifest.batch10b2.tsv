@@ -1,0 +1,23 @@
+# Part b2 of the S and M projects of manifest.batch10.tsv (sha256 196d7166a36b215c498418c83c3e96c241e1ff6dddc10cee6e033afb0553f8a7),
+# balanced by predicted time (5.7 h for 4 workers), u order; a fed spot part.
+# 19 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+HDFGroup__hdf5	https://github.com/HDFGroup/hdf5.git	pending		S	17a229f095a7980d9d89e12ecae62018c437f104
+penumbra-zone__penumbra	https://github.com/penumbra-zone/penumbra.git	pending		S	36a31c17974c23a7e84cc02c64f0062ae57e79b1
+google__mozc	https://github.com/google/mozc.git	pending		S	60fe4012e5eaa26805dbbb8e5548cbe6db4aaf98
+qupath__qupath	https://github.com/qupath/qupath.git	pending		S	4058d36b5d358dcd6195f41ab5fa47f4c1a45722
+ethereum__ERCs	https://github.com/ethereum/ERCs.git	pending		S	365b4c02879f3e882b91281d42b4f57b406205e9
+LiBwrt__LibWrt	https://github.com/LiBwrt/LibWrt.git	pending		M	3a3d0b08595530070ad9cd8a20c0ae4ea3e77f70
+mekanism__Mekanism	https://github.com/mekanism/Mekanism.git	pending		S	bcd7a8bf594cff9614eb12238fe3776f19da24d9
+openfoodfacts__openfoodfacts-androidapp	https://github.com/openfoodfacts/openfoodfacts-androidapp.git	pending		S	cfa4ebff59d7761e363cd3718e579b4904d5eb2c
+belaban__JGroups	https://github.com/belaban/JGroups.git	pending		S	2f97a3dce775f56e519502a46450050e72214b40
+get-convex__convex-backend	https://github.com/get-convex/convex-backend.git	pending		S	8ecf38b280bb564d0628881a88c45defb0d16b33
+oracle__graalpython	https://github.com/oracle/graalpython.git	pending		S	389695dbf1b69c5a4b512cc758303ad6130db5b2
+boostorg__geometry	https://github.com/boostorg/geometry.git	pending		S	196d04c614c12a8d788212b63fa65d25c8b7ea86
+gitlab.eclipse.org__eclipse__aidge__aidge	https://gitlab.eclipse.org/eclipse/aidge/aidge	pending		S	1e371c42c7611fb869cc8d4c69ad76c2b72c352f
+zephir-lang__zephir	https://github.com/zephir-lang/zephir.git	pending		S	3115e18a782a802970bf9f3b79f98d98a9bce084
+wallix__redemption	https://github.com/wallix/redemption.git	pending		S	e769ee423172cf41b24307f38c38da216a0bfd86
+google-research__google-research	https://github.com/google-research/google-research.git	pending		S	e49bbfe381c9c0e564b937f1c4e163a2273c65cc
+mybatis__mybatis-3	https://github.com/mybatis/mybatis-3.git	pending		S	34147d0bd2f5ed0016ef367c92b25e174149326b
+AutoHotkey__AutoHotkey	https://github.com/AutoHotkey/AutoHotkey.git	pending		S	f87b543df11a79b1b686a9b10d580a98f6bc2fb2
+caffeinelabs__motoko	https://github.com/caffeinelabs/motoko.git	pending		S	8b5f028a8ae954024c7097c0f072132baca23448

@@ -1,0 +1,20 @@
+# Part b3 of the S and M projects of manifest.batch11.tsv (sha256 c0bc3c7dfba79160d832ec8f554c147ba73f356035049fa27b4442dfc81ecea4),
+# balanced by predicted time (6.4 h for 4 workers), u order; a fed spot part.
+# 16 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+leptos-rs__leptos	https://github.com/leptos-rs/leptos.git	pending		S	7ec903d4008ddf7679e771863f7b8b90f5cdebde
+isc-projects__kea	https://github.com/isc-projects/kea.git	pending		M	1e161586ff9e8f6ec461aaa40b31f362e38f155d
+emscripten-core__emscripten	https://github.com/emscripten-core/emscripten.git	pending		M	c5b9b37fb7d9e0d29a5c6f742d9b7b264873b3af
+CocoaPods__CocoaPods	https://github.com/CocoaPods/CocoaPods.git	pending		S	b80e113e28a7e23cd6dbc169f0c923f6b48bf7a2
+vectordotdev__vector	https://github.com/vectordotdev/vector.git	pending		S	dc5b76d82ec828d571630a275a807926637b04c9
+seqan__seqan3	https://github.com/seqan/seqan3.git	pending		S	bcda17cadd932ef703673dd572572cf9da86d0e5
+nervosnetwork__ckb	https://github.com/nervosnetwork/ckb.git	pending		S	a7b8fb5365296a97bbf552741a258e40db53bc64
+libarchive__libarchive	https://github.com/libarchive/libarchive.git	pending		S	2305801c3467adc3f2cecdb6999afdd336f9f80e
+DynamoRIO__dynamorio	https://github.com/DynamoRIO/dynamorio.git	pending		S	1bfd4e57cd3beadf0680605f423a6744ab54f8c3
+alibaba__druid	https://github.com/alibaba/druid.git	pending		S	fa8dc9912637a2f729eef9f55356621fec18d40e
+UZDoom__UZDoom	https://github.com/UZDoom/UZDoom.git	pending		S	809e46c25fe2a2f89430de3fbac89626100df384
+github-linguist__linguist	https://github.com/github-linguist/linguist.git	pending		S	5fbdfcb8133be2bed88bf3ce62b2335f50474525
+forrestguice__SuntimesWidget	https://github.com/forrestguice/SuntimesWidget.git	pending		S	c4517a70cf3b03decec42433b547eaf2f2d11f52
+ROCm__Tensile	https://github.com/ROCm/Tensile.git	pending		S	e8a8999e0e7374aaae546a6d7cb703d9e06b0ebf
+rsyslog__rsyslog	https://github.com/rsyslog/rsyslog.git	pending		S	7f418bf03f99e99b49ce3022cd0b5b47b34d0a06
+performancecopilot__pcp	https://github.com/performancecopilot/pcp.git	pending		M	13876f7a8dc76482f20aafede47afd38334da6bb

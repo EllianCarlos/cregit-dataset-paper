@@ -1,0 +1,24 @@
+# Part b4 of the S and M projects of manifest.batch12.tsv (sha256 6f4e0b95cc46dde0079b671dc19e8737a15e3a7e98ad301a629af614192c3fc8),
+# balanced by predicted time (6.7 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+ai-dynamo__dynamo	https://github.com/ai-dynamo/dynamo.git	pending		S	def3b79b15c266805540a678dd400aeb6ccada1d
+adventuregamestudio__ags	https://github.com/adventuregamestudio/ags.git	pending		S	9ac1f97abf20a935e8724b33646b3b795446e3e3
+surge-synthesizer__surge	https://github.com/surge-synthesizer/surge.git	pending		S	348cfb3d0bd081797cfd6505d5f8d3ffd6f34c49
+milvus-io__milvus	https://github.com/milvus-io/milvus.git	pending		S	243ebd872bbd5a846d03b7fede2b4e1c0856e739
+MixinNetwork__android-app	https://github.com/MixinNetwork/android-app.git	pending		S	e691e4002b90f91bfc9f10b67362671bd2bceeaf
+facebookincubator__katran	https://github.com/facebookincubator/katran.git	pending		S	d50ad039304ab5dddad5aa91660c19ed2b2f3e7e
+processing__processing	https://github.com/processing/processing.git	pending		S	f480ef6ee34b9b7178b7f21f4f1a52cf49475642
+DataDog__dd-trace-java	https://github.com/DataDog/dd-trace-java.git	pending		S	1380b857db8659afa5ad1cb6cddc2c7172d1367a
+zlgopen__awtk	https://github.com/zlgopen/awtk.git	pending		S	9e732f4d7d4e01c11fa16c33cd699dec5da0a8c6
+eclipse-jeetools__webtools.javaee	https://github.com/eclipse-jeetools/webtools.javaee.git	pending		S	ae05f7a9eeed5f53f5cdbff1461d8c99d08687c5
+opencast__opencast	https://github.com/opencast/opencast.git	pending		S	3d8f35940e8471c42a6b994fab916fa901b62d83
+pmacct__pmacct	https://github.com/pmacct/pmacct.git	pending		S	3780b1e88610d2bf95008923e2b7e6df173d9cd4
+sparklemotion__nokogiri	https://github.com/sparklemotion/nokogiri.git	pending		S	bce9a50af78a9f2ef469761a95b22886a2ab0031
+DataDog__datadog-agent	https://github.com/DataDog/datadog-agent.git	pending		M	cfcf9d5535324a83362ab6f454bcc610ccf21e99
+3dct__open_iA	https://github.com/3dct/open_iA.git	pending		S	15f99057007f9d43b9b818ccb2015f554985c1db
+apache__geode	https://github.com/apache/geode.git	pending		S	10b4716b2f03415d541a4e8af937c6aff1c01ca7
+mackyle__sqlite	https://github.com/mackyle/sqlite.git	pending		M	3d17c3f9e95321b4630ddd21e1b0a314b3812f0a
+openscad__openscad	https://github.com/openscad/openscad.git	pending		S	c0ac8289f1c9db6f70891da5df3b4085b7eaf8b6
+rundeck__rundeck	https://github.com/rundeck/rundeck.git	pending		S	c9f6eb0da80ebc9969a01d3adc9bed1c909cddc6
+apache__httpd	https://github.com/apache/httpd.git	pending		M	34be9c1c6ddc4de264b2e1b9ff8ee281f6e1e53b

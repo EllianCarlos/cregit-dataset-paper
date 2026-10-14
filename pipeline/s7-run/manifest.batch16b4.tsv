@@ -1,0 +1,25 @@
+# Part b4 of the S and M projects of manifest.batch16.tsv (sha256 1e4fd43f0de322264d2b94b8a8370f41906df20bc45b8315187818245642b2d1),
+# balanced by predicted time (6.5 h for 4 workers), u order; a fed spot part.
+# 21 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+ClassiCube__ClassiCube	https://github.com/ClassiCube/ClassiCube.git	pending		S	bf55b85cccbf0b077dbf636fe84c6275895837ed
+RawTherapee__RawTherapee	https://github.com/RawTherapee/RawTherapee.git	pending		S	5f486d3678b34c74ba0c63571c17babe20935019
+rspamd__rspamd	https://github.com/rspamd/rspamd.git	pending		S	4e2f58f23a1a3e8f86a91366f536f5453f451d77
+tdlib__td	https://github.com/tdlib/td.git	pending		S	42e6a5259551178d1dab54a22ad96d14bd906e20
+openSUSE__wicked	https://github.com/openSUSE/wicked.git	pending		S	330e0b0caf6c8e0e3a87b3a7c2261d287c67046f
+dropwizard__dropwizard	https://github.com/dropwizard/dropwizard.git	pending		S	ba3bdd740232ae1e5515212e270f8707172dce70
+astropy__astropy	https://github.com/astropy/astropy.git	pending		M	34e023cade1bc671ab6ce866cfce6695f2391b9f
+Aptoide__aptoide-client-v8	https://github.com/Aptoide/aptoide-client-v8.git	pending		S	c59ad8a53d64d2fe1eb04c668c009feffaa29aed
+near__nearcore	https://github.com/near/nearcore.git	pending		S	26abd905711b80492691347b5d8cfe3ce59117d2
+gravitational__teleport	https://github.com/gravitational/teleport.git	pending		S	1283425b60ec5f60d509ba4c791183d452923ff7
+tapdata__tapdata	https://github.com/tapdata/tapdata.git	pending		S	4e9a3db8e02e237a9a296faf494ff0eb260ca9ed
+falcosecurity__falco	https://github.com/falcosecurity/falco.git	pending		S	b608d820c8a380f6a098d8946359070addb7243f
+dotnet__macios	https://github.com/dotnet/macios.git	pending		S	354c2a645855dfdf774cc5e098cd214764f475b5
+OGRECave__ogre-next	https://github.com/OGRECave/ogre-next.git	pending		S	475f783d76f21b530e718aab4a548cdd9a222e50
+MidnightCommander__mc	https://github.com/MidnightCommander/mc.git	pending		S	23a260ab1afd6dcfab193213e3b50570cd662e81
+micropython__micropython	https://github.com/micropython/micropython.git	pending		S	a129b2fba1a3348088c94d0462eef16d20874dea
+MinecraftForge__MinecraftForge	https://github.com/MinecraftForge/MinecraftForge.git	pending		S	939fb13d3b96664d6b5057e128bb05395417063b
+iced-rs__iced	https://github.com/iced-rs/iced.git	pending		S	fc0c3ba73dad424e0560dab1f0477aae077c2442
+amanzi__amanzi	https://github.com/amanzi/amanzi.git	pending		S	42cadd935d1a3095e36b19b380dc9290cd12d3af
+mozilla__nss-infra-testing	https://github.com/mozilla/nss-infra-testing.git	pending		S	4ad671b426e837b6a9c6ebf1b792a344f2f12131
+libgeos__geos	https://github.com/libgeos/geos.git	pending		S	0d790d12b25a8e1d7310a55ec701e6bf54f73fb2

@@ -1,0 +1,3 @@
+# Run manifest of fed part batch11a4, written 2026-10-12T00:49:40+00:00 by census-fed-feeder: 1 of 20 projects; 19 already in done/ are left out. u order kept.
+# Columns: name  url  category  file_filter  size_class  commit
+gitlab.eclipse.org__eclipse__objectteams__objectteams	https://gitlab.eclipse.org/eclipse/objectteams/objectteams	pending		S	0f8327b456ef49a578bfaf652680a51fee88c525

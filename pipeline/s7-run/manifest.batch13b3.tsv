@@ -1,0 +1,16 @@
+# Part b3 of the S and M projects of manifest.batch13.tsv (sha256 1d1f93d1d2952c0f2a25ca8f968b8bf867959609ab38c913a98784b9d447bfcc),
+# balanced by predicted time (5.8 h for 4 workers), u order; a fed spot part.
+# 12 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+SchedMD__slurm	https://github.com/SchedMD/slurm.git	pending		M	ed18e71bd6f43765e99ae7ce3ff1088f730a9685
+carp-lang__Carp	https://github.com/carp-lang/Carp.git	pending		S	1d36c69d83274dbe792b9a75ed8c766f75c33264
+project-chip__connectedhomeip	https://github.com/project-chip/connectedhomeip.git	pending		S	a05d73193c2d30dc71cf5dfa2df2aaa651860eb5
+google-ai-edge__mediapipe	https://github.com/google-ai-edge/mediapipe.git	pending		S	81ce97e2912528b0c0d74c00fd4b0b8136ac91d2
+code-golf__code-golf	https://github.com/code-golf/code-golf.git	pending		S	e16c3d63c9b68fc96ec91cd2b6b7c34503b932e6
+o3de__o3de	https://github.com/o3de/o3de.git	pending		S	3be07620eeec2c66b8426804c24572df2972e559
+prusti__prusti	https://github.com/prusti/prusti.git	pending		S	0d4a8d497ac1e540d48ef50a031d53b4e3ae36e2
+HMCL-dev__HMCL	https://github.com/HMCL-dev/HMCL.git	pending		S	662a82f21f6a41f2355e803bd462d65ad1f1edd9
+StarRocks__starrocks	https://github.com/StarRocks/starrocks.git	pending		S	dedeb209113dc2109364e20499f27beea593f854
+ioccc-src__winner	https://github.com/ioccc-src/winner.git	pending		S	75435b84e4b881dfc752912e4ed9ed8aa0f79f84
+dotansimha__graphql-code-generator	https://github.com/dotansimha/graphql-code-generator.git	pending		S	463e6eff471a4e55d4a727b342051e5ff4e4c3e0
+Bionus__imgbrd-grabber	https://github.com/Bionus/imgbrd-grabber.git	pending		S	56f673c6e821567e5a8af5361bf8004c62a55052

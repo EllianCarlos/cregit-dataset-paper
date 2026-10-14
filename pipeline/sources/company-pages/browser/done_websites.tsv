@@ -1,0 +1,31 @@
+url	browser_url	file	fetched_at_utc	status	found_logins	all_github_logins	note
+http://www.amd.com	https://www.amd.com	w_fadc79511b6df791.txt	2026-10-06T15:11:07Z	ok		Xilinx	
+http://www.allstate.com	https://www.allstate.com	w_662a26b133052741.txt	2026-10-06T15:11:28Z	not-found			page text: site update in progress (maintenance)
+https://www.analog.com	https://www.analog.com	w_9eab02698e5087c8.txt	2026-10-06T15:11:43Z	ok			
+https://www.jiguang.cn	https://www.jiguang.cn	w_6ebfb64a68a4e2c8.txt	2026-10-06T15:11:58Z	ok			
+https://despegar.com	https://despegar.com	w_793b8c03562a266c.txt	2026-10-06T15:12:14Z	ok			
+www.epam.com	https://www.epam.com	w_9f2f3dec28134897.txt	2026-10-06T15:13:03Z	ok			output saved to file by tool, checked with grep
+https://www.etsy.com/	https://www.etsy.com/	w_b256683c42370ae4.txt	2026-10-06T15:14:05Z	bot-check			get-tab-web-content returned empty twice; tab title was etsy.com; challenge inferred, not confirmed
+https://godaddy.com/engineering/	https://godaddy.com/engineering/	w_0dcf78ca98fc41bb.txt	2026-10-06T15:14:22Z	ok			
+https://engineering.groupon.com/	https://engineering.groupon.com/	w_815fefa5932bed7a.txt	2026-10-06T15:14:37Z	ok			redirected to medium.com/groupon-eng
+https://homedepot.com	https://homedepot.com	w_4550982190f3433c.txt	2026-10-06T15:14:54Z	bot-check			Access Denied (Akamai reference page)
+http://www.hpe.com	https://www.hpe.com	w_233d927e56513bd5.txt	2026-10-06T15:42:16Z	tool-error			get-tab-web-content: Timed out waiting for response (twice, 20s apart); tab 242 no longer in tab list
+https://www.hpe.com/us/en/storage.html	https://www.hpe.com/us/en/storage.html	w_51a8e061defdff92.txt	2026-10-06T15:42:56Z	ok			
+instructure.com	https://instructure.com	w_eb9309ec1aa40427.txt	2026-10-06T15:43:16Z	ok			
+https://www.lenovo.com	https://www.lenovo.com	w_91dea1f3e041d7e8.txt	2026-10-06T15:43:32Z	ok			
+http://www.marvell.com/embedded-processors/	https://www.marvell.com/embedded-processors/	w_e3caa1ef18163dff.txt	2026-10-06T15:43:51Z	ok	MarvellEmbeddedProcessors	MarvellEmbeddedProcessors	
+http://community.microstrategy.com	https://community.microstrategy.com	w_967464ee148020a7.txt	2026-10-06T15:44:10Z	ok			page content shows community.strategy.com links
+http://company.nokia.com/	https://company.nokia.com/	w_d2d561807d1efb6f.txt	2026-10-06T15:44:28Z	permission			Missing host permission for the tab (company.nokia.com)
+https://netapp.com	https://netapp.com	w_3b87720b1eef85c8.txt	2026-10-06T15:44:45Z	ok			
+netapp.com	https://netapp.com	w_42c1738b4900df40.txt	2026-10-06T15:45:04Z	ok			same browser_url as previous row
+http://opensource.orange.com	https://opensource.orange.com	w_fc48f49b631dbe1e.txt	2026-10-06T15:45:28Z	ok	Orange-OpenSource;orange-cloudfoundry	Orange-OpenSource;orange-cloudfoundry;DatavenueLiveObjects	
+oracle.com/javaee	https://oracle.com/javaee	w_a07f134b7e32d518.txt	2026-10-06T15:45:49Z	ok			no github.com URLs; page links only to github.io hosts (javaee.github.io, jersey.github.io, javaserverfaces.github.io)
+https://developer.oracle.com/open-source.html	https://developer.oracle.com/open-source.html	w_77413f182e601c3c.txt	2026-10-06T15:46:13Z	ok	Oracle;mysql	oracle;openjdk;mysql;oracle-devrel	
+https://www.paypal.com/	https://www.paypal.com/	w_146513150232b148.txt	2026-10-06T15:46:32Z	ok			
+http://developer.salesforce.com	https://developer.salesforce.com	w_f3ce06522ed38340.txt	2026-10-06T15:46:51Z	ok			
+https://developer.salesforce.com	https://developer.salesforce.com	w_29a0df3bbe9169ac.txt	2026-10-06T15:47:09Z	ok			same browser_url as previous row
+developer.surveymonkey.com	https://developer.surveymonkey.com	w_a8320c0b53d56a4f.txt	2026-10-06T15:47:28Z	ok			
+http://www.t-mobile.com	https://www.t-mobile.com	w_9ae0a9f48a55c44c.txt	2026-10-06T15:47:47Z	ok			
+https://www.upwork.com/	https://www.upwork.com/	w_79e6f59987c3789c.txt	2026-10-06T15:48:05Z	ok			
+http://www.wix.com	https://www.wix.com	w_6b85631accd90e9b.txt	2026-10-06T15:48:23Z	ok			
+http://trivago.com	https://trivago.com	w_1d19b6ef7dfa9766.txt	2026-10-06T15:48:52Z	ok			output saved to file by tool, checked with grep

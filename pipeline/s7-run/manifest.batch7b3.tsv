@@ -1,0 +1,28 @@
+# Part b3 of the S and M projects of manifest.batch7.tsv (sha256 c292b9d4dbd64d4dfa983374635f00d165ecd33a6dc0f1f0dfe36b830a188033),
+# balanced by predicted time (6.2 h for 4 workers), u order; a fed spot part.
+# 24 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+microsoft__PowerToys	https://github.com/microsoft/PowerToys.git	pending		S	947854569fab2651d8d2df9a777bb46984e4c8e2
+gitlab.freedesktop.org__xorg__xserver	https://gitlab.freedesktop.org/xorg/xserver	pending		S	effe0ba3cd8d17be151de0d15b6c34a1db5e177f
+apache__tomee	https://github.com/apache/tomee.git	pending		S	976cf7ec918960b7e5fa5189766cb9b18e54ad86
+Anuken__Mindustry	https://github.com/Anuken/Mindustry.git	pending		S	beaa1da2769d6f2b0e70d8509407bbe2225bf687
+grumpycoders__pcsx-redux	https://github.com/grumpycoders/pcsx-redux.git	pending		S	6f65eb3a405231e2e124a7e1c55332c74b339632
+coursier__coursier	https://github.com/coursier/coursier.git	pending		S	d3006393e44af0dc0165813f262de2de51e17a46
+yegor256__rultor	https://github.com/yegor256/rultor.git	pending		S	fee9640c9ef53c3b8118a4035c989f9a9ce9dcd0
+luanti-org__luanti	https://github.com/luanti-org/luanti.git	pending		S	0f1e38d2a32843b10ae2f1fb0769cc9fcbf276d3
+pmd__pmd	https://github.com/pmd/pmd.git	pending		M	a6c5b812816fc14a08c37f442b092016f2095fba
+swc-project__swc	https://github.com/swc-project/swc.git	pending		S	7a36735f5636e5880cc4030d3b916dd19cedeb9b
+Kitware__kwiver	https://github.com/Kitware/kwiver.git	pending		S	af3554f1fbe3cb30a29b77c2006aa78d6aa97902
+momo5502__sogen	https://github.com/momo5502/sogen.git	pending		S	b087e3944155b6ccf4ee65f6f88c21540de23df7
+gphoto__libgphoto2	https://github.com/gphoto/libgphoto2.git	pending		S	92171a382f185f617e95cb9acecf2d43688b19ab
+aeron-io__aeron	https://github.com/aeron-io/aeron.git	pending		S	093fd4c49527feda9b99606fd165d59626fabfdc
+mypaint__mypaint	https://github.com/mypaint/mypaint.git	pending		S	fb6f7d6b12238d125294496b105f5f36e658bc61
+aibasel__downward	https://github.com/aibasel/downward.git	pending		S	9b81c7e422fdf7be9f73b96e9a7a969c483dd5d4
+project64__project64	https://github.com/project64/project64.git	pending		S	24376e868350792a181d2121fec20d37354559d6
+schemacrawler__SchemaCrawler	https://github.com/schemacrawler/SchemaCrawler.git	pending		S	c67e2bcdcb0031937e14fa8640144222538765d0
+gpui-ce__gpui-ce	https://github.com/gpui-ce/gpui-ce.git	pending		M	b5aceefaf96af3946ff26a603e5f4110d4bdf4ca
+dchapyshev__aspia	https://github.com/dchapyshev/aspia.git	pending		S	90724fdf2b45770b62630ba0ba2a92361a5bee65
+kokkos__kokkos-kernels	https://github.com/kokkos/kokkos-kernels.git	pending		S	a48b18d780be24b7a10813fecff9973bd6991b69
+vegandevs__vegan	https://github.com/vegandevs/vegan.git	pending		S	8bb702a7bd9ca7940c7a91f58dd93f75bc70580f
+pencil2d__pencil	https://github.com/pencil2d/pencil.git	pending		S	9ee4e1c87bf8f75913c684b083e8ff1317941b60
+cmangos__mangos-tbc	https://github.com/cmangos/mangos-tbc.git	pending		S	15b6ddb4ec9e443d49f4e438af73782ce5c16491

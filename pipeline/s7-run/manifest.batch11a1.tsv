@@ -1,0 +1,8 @@
+# Part a1 of the S and M projects of manifest.batch11.tsv (sha256 c0bc3c7dfba79160d832ec8f554c147ba73f356035049fa27b4442dfc81ecea4),
+# balanced by predicted time (24.7 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+NVIDIA__cuda-gdb	https://github.com/NVIDIA/cuda-gdb.git	pending		M	7690d76395b374432c6750928b0f9db7a88d57e7
+googleapis__google-cloud-java	https://github.com/googleapis/google-cloud-java.git	pending		M	74f7591082cfadd8a82a5c24708d05758c1e07b8
+ytsaurus__ytsaurus	https://github.com/ytsaurus/ytsaurus.git	pending		M	0be819eca1ca82af3f33899a5f103d6ebffb9cfc
+adoptium__jdk	https://github.com/adoptium/jdk.git	pending		M	8cbb6b7036f1cbc48efea2d9e4830d240ab01fec

@@ -1,0 +1,32 @@
+# Part b2 of the S and M projects of manifest.batch5.tsv (sha256 d831890774e9a5e162a2e113942e19a64e0e7a2275032bf7880b86fe1f765ead),
+# balanced by predicted time (11.3 h for 4 workers), u order.
+# 28 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+invent.kde.org__historical__kde1-kdebase	https://invent.kde.org/historical/kde1-kdebase	pending		S	4987e047002f9b8364c16fa0e6650717c24bcc7e
+PBH-BTN__PeerBanHelper	https://github.com/PBH-BTN/PeerBanHelper.git	pending		S	471956a9a0b061fab3bcf7d6ace9975b8e16b74a
+Cxbx-Reloaded__Cxbx-Reloaded-legacy	https://github.com/Cxbx-Reloaded/Cxbx-Reloaded-legacy.git	pending		S	96aabe72e238674a22a61695fb6f5295259edf62
+spring-projects__spring-batch	https://github.com/spring-projects/spring-batch.git	pending		S	eab562ff4e309f307b905ade2453054ca2b6b1bc
+eclipse-sailing-analytics__sailing-analytics	https://github.com/eclipse-sailing-analytics/sailing-analytics.git	pending		M	51f9c0ee6b2df8fde04321826ee566f183789d86
+rstudio__rstudio	https://github.com/rstudio/rstudio.git	pending		M	0f7bc2235a41b730b4d1a2d1ba3cab16ea01eaaf
+LuisaGroup__LuisaCompute	https://github.com/LuisaGroup/LuisaCompute.git	pending		S	0c84a1aa7ad4181373040fc018f20d735f73c626
+KOSASIH__pi-nexus-autonomous-banking-network	https://github.com/KOSASIH/pi-nexus-autonomous-banking-network.git	pending		S	f3182fe1b1646105ea545e5728babcbb0ecf0e5f
+facebook__mvfst	https://github.com/facebook/mvfst.git	pending		S	2fd43888e21064fc645c62fa8d7c225ff3dab4e3
+raspberrypi__libcamera	https://github.com/raspberrypi/libcamera.git	pending		S	6c1dd9d55573010f710c9e190a73e7e76f0d9432
+ermig1979__Simd	https://github.com/ermig1979/Simd.git	pending		S	ebc5ce7f711051ac8709c823b216f16a2ec9c847
+rburkholder__trade-frame	https://github.com/rburkholder/trade-frame.git	pending		S	c85e1e08f8c7e63fc1f1fcb647ab6ba6320a9bda
+apache__cassandra	https://github.com/apache/cassandra.git	pending		M	b15526b4816518e415aa1046d7eb98232a0c1151
+NVIDIA__linux-firmware	https://github.com/NVIDIA/linux-firmware.git	pending		S	2237b9924a5e77308fdf2f5850f84b78074d21fc
+owasp-noir__noir	https://github.com/owasp-noir/noir.git	pending		S	db799aa8ff5390f0b710579bb8b8508bce1e6ab0
+RT-Thread__rt-thread	https://github.com/RT-Thread/rt-thread.git	pending		S	c3e94f7b5fd533763a8e577fea0dfbc982eb20e5
+qcadoo__mes	https://github.com/qcadoo/mes.git	pending		S	ad48d0abe095fa1cfc8e4078b190a6a7530353e1
+LouisBrunner__valgrind-macos	https://github.com/LouisBrunner/valgrind-macos.git	pending		S	7877928dcc8bfb873325e4f51949f930d77e493e
+osgi__osgi	https://github.com/osgi/osgi.git	pending		S	8c7184dad43779668052afe5b29a2a201e527b52
+pyinstaller__pyinstaller	https://github.com/pyinstaller/pyinstaller.git	pending		S	e502b31f3d3ab430850af0cc988a852d2615bd4a
+fabioz__Pydev	https://github.com/fabioz/Pydev.git	pending		S	3a91ff856423090cfc5ffa9420becf4c9107398f
+love2d__love	https://github.com/love2d/love.git	pending		S	b7daef0f7c1dc5888090f5d5b22d4eaf4ffd1d87
+AzureAD__microsoft-authentication-library-for-objc	https://github.com/AzureAD/microsoft-authentication-library-for-objc.git	pending		S	82c1746a61233a0982d688fd534e312f7331bb05
+CloudCompare__CloudCompare	https://github.com/CloudCompare/CloudCompare.git	pending		S	1b522512720047d45a2b7c8677886beacbf4e2f1
+OpenIdentityPlatform__OpenAM	https://github.com/OpenIdentityPlatform/OpenAM.git	pending		S	aaa3c253f5e8804d0231912df517fc833a7f414c
+RPTools__maptool	https://github.com/RPTools/maptool.git	pending		S	e5fbee27e82a1e8c92c5fedb3e0bd0517743436b
+GothenburgBitFactory__taskwarrior	https://github.com/GothenburgBitFactory/taskwarrior.git	pending		S	9956cdfc674ec33d758675b7fab532c48ed8d555
+bytecodealliance__wasmtime	https://github.com/bytecodealliance/wasmtime.git	pending		S	73b04cff3317d1e308866eb24359483ac6116669

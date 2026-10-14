@@ -1,0 +1,25 @@
+org_key,project,repo_url,github_slug,lookup_url,fetched_at,note
+obf,BioJava,https://github.com/biojava/biojava,biojava/biojava,http://biojava.org/,2026-10-05T02:19:52Z,"link labelled ""GitHub project""; fetched URL redirected to https://biojava.org/"
+obf,Bioperl Project,https://github.com/bioperl/bioperl-live,bioperl/bioperl-live,http://bioperl.org/,2026-10-05T02:19:56Z,page also links the org github.com/bioperl; fetched URL redirected to https://bioperl.org/
+obf,BioRuby,https://github.com/bioruby/bioruby,bioruby/bioruby,http://www.bioruby.org/,2026-10-05T02:20:00Z,page also links an old CVS viewer on code.open-bio.org; fetched URL redirected to http://bioruby.org/
+obf,BioSQL,https://github.com/biosql/biosql,biosql/biosql,https://biosql.org/wiki/Main_Page,2026-10-05T02:20:02Z,"link labelled ""Download"""
+obf,GBrowse,,,https://gmod.org/,2026-10-05T02:20:04Z,no repository named on https://gmod.org/; page links only the GMOD website repo github.com/GMOD/gmod.github.io
+obf,Chado,https://svn.code.sf.net/p/gmod/svn/schema/trunk,,https://gmod.org/wiki/Chado,2026-10-05T02:20:06Z,"Subversion URL given in the page section ""Chado From SVN"""
+obf,BioJS,,,https://biojs.net/,2026-10-05T16:51:31+00:00,"fetch failed: also failed in the author's Firefox on 2026-10-05: ""Invalid URL"" error page"
+obf,BioHaskell,,,http://biohaskell.org/,2026-10-05T02:20:19Z,no repository named on https://biohaskell.org/; page links only its website repo github.com/BioHaskell/biohaskell.github.io; fetched URL redirected to https://biohaskell.org/
+obf,Biocaml,https://github.com/biocaml/biocaml,biocaml/biocaml,http://biocaml.org/,2026-10-05T02:20:22Z,
+obf,BioPHP,http://code.google.com/p/biophp/,,http://biophp.org/,2026-10-05T02:20:24Z,"Google Code project (service closed); page labels it ""Lee Katz's biophp"", one of two BioPHP code bases it lists"
+obf,BioSmallTalk,https://github.com/hernanmd/biosmalltalk,hernanmd/biosmalltalk,https://biosmalltalk.github.io/,2026-10-05T02:20:25Z,"link labelled ""Code"""
+obf,CGL,,,https://www.yandell-lab.org/software/cgl.html,2026-10-05T02:20:30Z,"fetch failed: HTTP 404, the page no longer exists; fetched URL redirected to https://yandell-lab.org/software/cgl.html"
+obf,BioMake & Skam,http://www.sourceforge.net/projects/skam,,https://skam.sourceforge.net/,2026-10-05T02:36:18Z,"SourceForge project the page labels ""Skam Sourceforge""/""Sourceforge CVS""; a CVS-era project page, not a git URL; fetched on the 2nd attempt with a plain User-Agent (1st got HTTP 403)"
+obf,BioSOAP,,,,,roster links no page for this project
+obf,BioCORBA,,,,,roster links no page for this project
+obf,MOBY,,,http://biomoby.open-bio.org/,2026-10-05T02:20:34Z,no repository named on http://biomoby.open-bio.org/
+obf,OBDA,,,http://obda.open-bio.org/,2026-10-05T02:20:35Z,no repository named on http://obda.open-bio.org/
+obf,Wikiomics,,,,,roster links no page for this project
+obf,Pise,,,https://pubmed.ncbi.nlm.nih.gov/12511068/,2026-10-05T02:20:37Z,roster links a PubMed abstract; PubMed answered HTTP 203 with a cookie/JS interstitial
+obf,OpenBQS,,,,,roster links no page for this project
+obf,BioClipse,,,,,roster links no page for this project
+obf,BioWeka,https://sourceforge.net/p/bioweka/code/,,https://sourceforge.net/projects/bioweka/,2026-10-05T02:36:21Z,Code tab of the SourceForge project page the roster links; fetched on the 2nd attempt with a plain User-Agent (1st got HTTP 403)
+obf,DAS / BioDAS,,,,,roster links no page for this project
+obf,EMBOSS,,,https://emboss.sourceforge.net/,2026-10-05T02:36:22Z,no repository named on https://emboss.sourceforge.net/; fetched on the 2nd attempt with a plain User-Agent (1st got HTTP 403)

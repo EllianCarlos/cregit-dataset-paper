@@ -1,0 +1,24 @@
+# Part b2 of the S and M projects of manifest.batch16.tsv (sha256 1e4fd43f0de322264d2b94b8a8370f41906df20bc45b8315187818245642b2d1),
+# balanced by predicted time (6.5 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+seL4__seL4	https://github.com/seL4/seL4.git	pending		S	6df0b6ee61f6a9e8a4ee7de8eb8fd698c0211b64
+Clozure__ccl	https://github.com/Clozure/ccl.git	pending		S	50f326e69792cb7625ceb1e9302901adf9dbdff9
+orx__orx	https://github.com/orx/orx.git	pending		S	7ab7cecfd5db7578d15d6d1ab1dd1050a8fe89bf
+performous__performous	https://github.com/performous/performous.git	pending		S	947b1be42d2fc457a4f8016fdd1469be86ca44c2
+autowarefoundation__autoware_universe	https://github.com/autowarefoundation/autoware_universe.git	pending		S	8885c4f2420c64f6d6a9569ab531eeae7e119660
+jetty__jetty.project	https://github.com/jetty/jetty.project.git	pending		M	e1a89febb68740ce95e28caa599aa159543580ed
+Flaminis__Dalaran	https://github.com/Flaminis/Dalaran.git	pending		S	da14440f40a86b3035832827de740ec28538ef4b
+VazkiiMods__Botania	https://github.com/VazkiiMods/Botania.git	pending		S	31dd815741147f5cf2739e2d5afa951af3b77c07
+eclipse-jnosql__jnosql-databases	https://github.com/eclipse-jnosql/jnosql-databases.git	pending		S	0c1ff3f29d63744aaba1f0b36a5652371446e231
+java110__MicroCommunity	https://github.com/java110/MicroCommunity.git	pending		S	45102fc13900aad6d117b00a4feeeafe9c3f5fee
+leggedrobotics__ocs2	https://github.com/leggedrobotics/ocs2.git	pending		S	26386754b8bf31ab78b503971d0cbf4fdbcd7cb4
+musescore__MuseScore	https://github.com/musescore/MuseScore.git	pending		M	7db6628e5c752a7dcff0d14c30550ef06774dadb
+google__XNNPACK	https://github.com/google/XNNPACK.git	pending		S	aa715e1ef7e8d932e4204f47e719eb866bb4f9cb
+PyO3__pyo3	https://github.com/PyO3/pyo3.git	pending		S	cc2538a80b2937c40e1c1d7e77c16c051632982a
+mockito__mockito	https://github.com/mockito/mockito.git	pending		S	116a4d6231dc35f90543060af41dcde00fe4e2ae
+jito-foundation__jito-solana	https://github.com/jito-foundation/jito-solana.git	pending		M	05e26f34fd4c7586b17292ff4cbd16fc8df5970d
+ElyPrismLauncher__Launcher	https://github.com/ElyPrismLauncher/Launcher.git	pending		S	5ea65f7a8057f06382845b870a378e8b35e62559
+RediSearch__RediSearch	https://github.com/RediSearch/RediSearch.git	pending		S	425635b03821dc3567d1e597635073f7661b634e
+ome__bioformats	https://github.com/ome/bioformats.git	pending		S	9d5baf57d7199b82b92adeac76e1d158eb9aa023
+apache__inlong	https://github.com/apache/inlong.git	pending		S	13c437946fcf503aa5d9c5cb7d9e3ae135e1911b

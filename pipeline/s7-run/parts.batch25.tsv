@@ -1,0 +1,10 @@
+# Fed spot parts of batch25 (split_batchN.py 25): the S and M projects of manifest.batch25.tsv. sha256 is
+# that of the part manifest manifest.<workload><part>.tsv, which split_batchN.py --derive rebuilds.
+# batch25 (2026-10-14): every part on spot half a (one_half.py); the former parts b1 -> a3, b2 -> a4.
+# batch25 (2026-10-14): part a5 holds the one L row (mesa/mesa), 1 worker, on spot a (no L census).
+half	workload	part	workers	projects	predicted_h	sha256
+a	batch25	a1	4	8	3.4	4ca2a4823fb8aae4abf5fd88677b7216b4823975d68905e6c02ad7fc2005cc33
+a	batch25	a2	4	13	2.6	ae6f836f3d347b0cbc7781de4356c6908bfd377a184f26211c782c7c7e8a2c23
+a	batch25	a3	4	16	2.8	c4315fd681822eb90b04894e3617f6e6a5a0914d52794e626a3bff05fd505558
+a	batch25	a4	4	12	2.7	971d11ffeae2b65a57c81ab389ee7c96920b506ad2f36c0cc0f072bd7bac2475
+a	batch25	a5	1	1	5.1	8ce7853fdc215eb5da4884f4f5641eb3cf558c7cc64169c5f43d88b8b7fde749

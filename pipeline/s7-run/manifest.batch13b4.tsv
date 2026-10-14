@@ -1,0 +1,20 @@
+# Part b4 of the S and M projects of manifest.batch13.tsv (sha256 1d1f93d1d2952c0f2a25ca8f968b8bf867959609ab38c913a98784b9d447bfcc),
+# balanced by predicted time (5.9 h for 4 workers), u order; a fed spot part.
+# 16 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+DOMjudge__domjudge	https://github.com/DOMjudge/domjudge.git	pending		S	574f085cf3f769f149c7730f465ef2443ffef5ae
+apache__openjpa	https://github.com/apache/openjpa.git	pending		S	db8aec7d561620cad87fea8f7ad369d992cfcea9
+dora-rs__dora	https://github.com/dora-rs/dora.git	pending		S	7f809248ce507112c3f5c7658ad900e536d92ca0
+tursodatabase__libsql	https://github.com/tursodatabase/libsql.git	pending		M	d6c75af6353bb1c34985399608e37cd272a35aa1
+prisma__prisma-engines	https://github.com/prisma/prisma-engines.git	pending		S	d1b3f377ca835d73fd50954a5e22128b9ebdd6b8
+dotCMS__core	https://github.com/dotCMS/core.git	pending		M	a892eb53ade98ab2ea7cbaa3c4a93ec355ff3b8e
+vrc-get__vrc-get	https://github.com/vrc-get/vrc-get.git	pending		S	4a12206b023b02c005b5ec56b1e5fa324a21c169
+nextcloud__notes-android	https://github.com/nextcloud/notes-android.git	pending		S	1506105bdb499e8fc8331da35bf47646e736f9e2
+Stremio__stremio-core	https://github.com/Stremio/stremio-core.git	pending		S	5e1e53c18d590e0b937cfaf84436c39a7010151f
+prusa3d__Prusa-Firmware-Buddy	https://github.com/prusa3d/Prusa-Firmware-Buddy.git	pending		S	1ce23f33ed3b94e26aa33a44557d6c4a4be11eb6
+killbill__killbill	https://github.com/killbill/killbill.git	pending		S	05a6c4346e9921d581af0b498141837fd829ffc1
+AntennaPod__AntennaPod	https://github.com/AntennaPod/AntennaPod.git	pending		S	9c7ffa16736c020045571d274aef4cdcf0878100
+polyfem__polyfem	https://github.com/polyfem/polyfem.git	pending		S	591b08bd5e115bdefec7e2998e98f5b56bc1367e
+enso-org__enso	https://github.com/enso-org/enso.git	pending		S	4135f929f1046ee4ab62d9d09c155377e8542a1f
+guqiong96__Lvllm	https://github.com/guqiong96/Lvllm.git	pending		S	43ffc42a54ef4aa736ee585acb525e6c6afbad0e
+invent.kde.org__unmaintained__koffice	https://invent.kde.org/unmaintained/koffice	pending		M	64fb4d222ca194c74a62d0bc7922ae568c82256c

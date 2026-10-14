@@ -1,0 +1,24 @@
+# Part b5 of the S and M projects of manifest.batch9.tsv (sha256 00a32df96f075408b7ce58f8ecc5a5d19c49e20efefee07637b2b4f03bdbc2e8),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+windmill-labs__windmill	https://github.com/windmill-labs/windmill.git	pending		S	0abc0ac0c4a6a501583b7101a952706a57eed124
+Kitware__SMTK	https://github.com/Kitware/SMTK.git	pending		S	ea1b4cfa4deb0cbe18752fcf140baac48108b96e
+OpenTTD__OpenTTD	https://github.com/OpenTTD/OpenTTD.git	pending		M	5fcaa0982deb5fa1fb2afea1312bd79cea255a96
+GNOME__gnome-builder	https://github.com/GNOME/gnome-builder.git	pending		S	3bcd6fbd31c82b3ea6f540679d3a1d6b2e999fe0
+loot__loot	https://github.com/loot/loot.git	pending		S	17d4fa94ade1d2f4ce16ce7fa70ef48f3c76ec53
+ariel-os__ariel-os	https://github.com/ariel-os/ariel-os.git	pending		S	8470e840113adb783c0dd4f03ba48dce4e05006b
+jank-lang__jank	https://github.com/jank-lang/jank.git	pending		S	fd3f1a54d1faf2f109a29e4263449d047d363db4
+SpongePowered__Sponge	https://github.com/SpongePowered/Sponge.git	pending		S	d83ba5e4faf9e27a1a58c5031adc2de11bce00de
+aerys__minko	https://github.com/aerys/minko.git	pending		S	c832496621b50ebb3bc0f354085b02e3a19739f9
+apache__uima-uimaj	https://github.com/apache/uima-uimaj.git	pending		S	b928223493af16aaa09ea3f2b9a5193a693c973b
+nextflow-io__nextflow	https://github.com/nextflow-io/nextflow.git	pending		S	153d476cf48b437378a8e4ebea7a28e213772151
+mruby__mruby	https://github.com/mruby/mruby.git	pending		S	bd3437b5e1657886c33b4451ad371742fca81379
+dawsers__scroll	https://github.com/dawsers/scroll.git	pending		S	3c5a0f037ff82e0ec7968811bc13412148d41dec
+pola-rs__polars	https://github.com/pola-rs/polars.git	pending		S	e319ccac80d737fdafae645d64a80702ad98dfa0
+Ascend__pytorch	https://github.com/Ascend/pytorch.git	pending		S	9cd8d1f1483f8268944d80392d4aa91fd455339f
+projectchrono__chrono	https://github.com/projectchrono/chrono.git	pending		S	87eb82f6de99bae8d085ba8bf37c462d143ce27a
+openai__codex	https://github.com/openai/codex.git	pending		S	4d15794336668d6098c0e36eb8e96cbbbfdb1d2d
+axmolengine__axmol	https://github.com/axmolengine/axmol.git	pending		S	fad1c4694868e907c6574644331362d80971c006
+firezone__firezone	https://github.com/firezone/firezone.git	pending		S	5b24019abacbe86691fcf2a13d38e720be7ca3ef
+mltframework__mlt	https://github.com/mltframework/mlt.git	pending		S	37b174a36ff7422b3b0c839c305b74cf3ff49d90

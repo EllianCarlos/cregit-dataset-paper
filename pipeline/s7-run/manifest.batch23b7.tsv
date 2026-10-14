@@ -1,0 +1,8 @@
+# Part b7 of the S and M projects of manifest.batch23.tsv (sha256 d517fdd1f0c89820029e4b854eae0930d05e4a939f1241d7c6454c2306fdc589),
+# balanced by predicted time (5.7 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+TelegramMessenger__Telegram-iOS	https://github.com/TelegramMessenger/Telegram-iOS.git	pending		M	6ad963e5b62d354da79040f388ae2b9132fb17b8
+wilsonzlin__fastrender	https://github.com/wilsonzlin/fastrender.git	pending		S	19bf1036105d4eeb8bf3330678b7cb11c1490bdc
+Zimbra__zm-mailbox	https://github.com/Zimbra/zm-mailbox.git	pending		M	1c22ad3215a5895b69cd38f8c6ce9f6ad396ae86
+ihmcrobotics__ihmc-open-robotics-software	https://github.com/ihmcrobotics/ihmc-open-robotics-software.git	pending		M	1dfb74b0d9015c9309f11180a85963bcab9c16ae

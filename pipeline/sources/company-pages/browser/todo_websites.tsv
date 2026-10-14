@@ -1,0 +1,31 @@
+url	browser_url	reason	curl_status	curl_file	company	org_logins
+http://www.amd.com	https://www.amd.com	no answer to curl, host resolves	000	fadc79511b6df791	ADVANCED MICRO DEVICES INC	GPUOpen-Drivers;GPUOpen-ProfessionalCompute-Libraries;GPUOpen-Tools;HSAFoundation;ROCm-Developer-Tools;ROCmSoftwarePlatform;RadeonOpenCompute;amd;flame
+http://www.allstate.com	https://www.allstate.com	no answer to curl, host resolves	000	662a26b133052741	ALLSTATE LIFE INSURANCE CO	compozed
+https://www.analog.com	https://www.analog.com	no answer to curl, host resolves	000	9eab02698e5087c8	ANALOG DEVICES INC	analogdevicesinc
+https://www.jiguang.cn	https://www.jiguang.cn	bot check in a 200 page	200	6ebfb64a68a4e2c8	Aurora Mobile Ltd	jpush
+https://despegar.com	https://despegar.com	http 403	403	793b8c03562a266c	Despegar.com, Corp.	despegar
+www.epam.com	https://www.epam.com	http 403	403	9f2f3dec28134897	EPAM Systems, Inc.	FrontSpot-Community;epam;it-shark-pro;lean-delivery;rolling-scopes-school
+https://www.etsy.com/	https://www.etsy.com/	http 403	403	b256683c42370ae4	ETSY INC	etsy
+https://godaddy.com/engineering/	https://godaddy.com/engineering/	http 403	403	0dcf78ca98fc41bb	GoDaddy Inc.	godaddy
+https://engineering.groupon.com/	https://engineering.groupon.com/	http 403	403	815fefa5932bed7a	Groupon, Inc.	groupon
+https://homedepot.com	https://homedepot.com	http 403	403	4550982190f3433c	HOME DEPOT INC	homedepot
+http://www.hpe.com	https://www.hpe.com	no answer to curl, host resolves	000	233d927e56513bd5	Hewlett Packard Enterprise Co,	FabricAttachedMemory;HewlettPackard;devops-dojo;hpe-storage
+https://www.hpe.com/us/en/storage.html	https://www.hpe.com/us/en/storage.html	no answer to curl, host resolves	000	51a8e061defdff92	Hewlett Packard Enterprise Co,	FabricAttachedMemory;HewlettPackard;devops-dojo;hpe-storage
+instructure.com	https://instructure.com	bot check in a 200 page	200	eb9309ec1aa40427	INSTRUCTURE INC	instructure;instructure-react
+https://www.lenovo.com	https://www.lenovo.com	http 403	403	91dea1f3e041d7e8	Lenovo Group	lenovo
+http://www.marvell.com/embedded-processors/	https://www.marvell.com/embedded-processors/	http 403	403	e3caa1ef18163dff	MARVELL TECHNOLOGY GROUP LTD	MarvellEmbeddedProcessors
+http://community.microstrategy.com	https://community.microstrategy.com	http 403	403	967464ee148020a7	MICROSTRATEGY INC	mstr-dev
+http://company.nokia.com/	https://company.nokia.com/	http 403	403	d2d561807d1efb6f	NOKIA CORP	Nokia
+https://netapp.com	https://netapp.com	http 403	403	3b87720b1eef85c8	NetApp, Inc.	NTAP;NetApp
+netapp.com	https://netapp.com	http 403	403	42c1738b4900df40	NetApp, Inc.	NTAP;NetApp
+http://opensource.orange.com	https://opensource.orange.com	bot check in a 200 page	200	fc48f49b631dbe1e	ORANGE	Orange-OpenSource;orange-cloudfoundry
+oracle.com/javaee	https://oracle.com/javaee	http 403	403	a07f134b7e32d518	Oracle Corporation	Oracle;eclipse-ee4j;fnproject;graalvm;javaee;mysql
+https://developer.oracle.com/open-source.html	https://developer.oracle.com/open-source.html	http 403	403	77413f182e601c3c	Oracle Corporation	Oracle;eclipse-ee4j;fnproject;graalvm;javaee;mysql
+https://www.paypal.com/	https://www.paypal.com/	bot check in a 200 page	200	146513150232b148	PayPal Holdings, Inc.	PayPal;ShifuML;card-io;krakenjs
+http://developer.salesforce.com	https://developer.salesforce.com	http 403	403	f3ce06522ed38340	SALESFORCE COM INC	ExactTarget;Groundwire;SalesforceFoundation;forcedotcom;salesforce;salesforce-marketingcloud
+https://developer.salesforce.com	https://developer.salesforce.com	http 403	403	29a0df3bbe9169ac	SALESFORCE COM INC	ExactTarget;Groundwire;SalesforceFoundation;forcedotcom;salesforce;salesforce-marketingcloud
+developer.surveymonkey.com	https://developer.surveymonkey.com	bot check in a 200 page	200	a8320c0b53d56a4f	SVMK Inc.	SurveyMonkey
+http://www.t-mobile.com	https://www.t-mobile.com	http 403	403	9ae0a9f48a55c44c	T-MOBILE US, INC.	tmobile
+https://www.upwork.com/	https://www.upwork.com/	http 403	403	79e6f59987c3789c	Upwork Inc.	upwork
+http://www.wix.com	https://www.wix.com	bot check in a 200 page	200	6b85631accd90e9b	Wix.com Ltd.	wix;wix-incubator;wix-playground;wixplosives
+http://trivago.com	https://trivago.com	http 403	403	1d19b6ef7dfa9766	trivago N.V.	trivago

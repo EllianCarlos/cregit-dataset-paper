@@ -1,0 +1,8 @@
+# Part b1 of the S and M projects of manifest.batch12.tsv (sha256 6f4e0b95cc46dde0079b671dc19e8737a15e3a7e98ad301a629af614192c3fc8),
+# balanced by predicted time (8.3 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+gopro__FFmpeg	https://github.com/gopro/FFmpeg.git	pending		M	963937e408fc68b5925f938a253cfff1d506f784
+coreboot__coreboot	https://github.com/coreboot/coreboot.git	pending		M	1d46db364480a9a016af78e2cd428ddb6700c017
+ballerina-platform__ballerina-lang	https://github.com/ballerina-platform/ballerina-lang.git	pending		M	728582fd76a1be9fd14a2bb5947c8c228f572018
+vespa-engine__vespa	https://github.com/vespa-engine/vespa.git	pending		M	5e9eea920f2d05a4017bc36290545f39815b6cd1

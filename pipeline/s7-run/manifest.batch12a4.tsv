@@ -1,0 +1,25 @@
+# Part a4 of the S and M projects of manifest.batch12.tsv (sha256 6f4e0b95cc46dde0079b671dc19e8737a15e3a7e98ad301a629af614192c3fc8),
+# balanced by predicted time (6.7 h for 4 workers), u order; a fed spot part.
+# 21 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+MaaAssistantArknights__MaaAssistantArknights	https://github.com/MaaAssistantArknights/MaaAssistantArknights.git	pending		S	2f7f469f1e3a9f1ef4e1e7a5fdf846598aab593f
+syslog-ng__syslog-ng	https://github.com/syslog-ng/syslog-ng.git	pending		S	b45a27f7e4fefa2cb66e66ae07bab66da530540c
+invent.kde.org__unmaintained__plasma-mobile-history	https://invent.kde.org/unmaintained/plasma-mobile-history	pending		S	d550e591c0e299da8da17440169ad38df185e7d8
+Devsh-Graphics-Programming__Nabla	https://github.com/Devsh-Graphics-Programming/Nabla.git	pending		S	aa79484173722306811be12f551a9b5754399f89
+aboutcode-org__scancode-toolkit	https://github.com/aboutcode-org/scancode-toolkit.git	pending		S	5e8448ecf2397c6eb7e7eb50326c8c880d9b598b
+deepflowio__deepflow	https://github.com/deepflowio/deepflow.git	pending		S	9a1219fa5cf1471ba2ec8742019661567d98002e
+MITK__MITK	https://github.com/MITK/MITK.git	pending		M	bc7e87646871793d492e31aa09b176f59cb182f7
+GNOME__eog	https://github.com/GNOME/eog.git	pending		S	42dcf24288dca1ae4ce83497c245310af8706113
+YosysHQ__nextpnr	https://github.com/YosysHQ/nextpnr.git	pending		S	aa8c83b856df6a25967478021c223d0c09ac326d
+oracle__opengrok	https://github.com/oracle/opengrok.git	pending		S	68ff6f2baf6c7fd98c3e0fbf6154221be03ce20c
+libMesh__libmesh	https://github.com/libMesh/libmesh.git	pending		S	acab1468c6d237e5c0e6dcfa627d5c762854a23e
+vgmstream__vgmstream	https://github.com/vgmstream/vgmstream.git	pending		S	7dc938fa2f210943b37c7b6511852b516ef432ab
+classgraph__classgraph	https://github.com/classgraph/classgraph.git	pending		S	979c3a53f68603aaca7d541fae443d0dfc9565b9
+Xilinx__gstreamer	https://github.com/Xilinx/gstreamer.git	pending		S	ec5e781e6bf2b77ad632068a42d8eaa53a2950ba
+numba__numba	https://github.com/numba/numba.git	pending		S	d41a043eecf0ecf4174dcbcd95299c4482149e38
+fossology__fossology	https://github.com/fossology/fossology.git	pending		S	070539a5e4ca17f6192f50a404b16b51eb873b76
+quicksilver__Quicksilver	https://github.com/quicksilver/Quicksilver.git	pending		S	bb5aae151bdfa22129534653100ba9ef045e2a93
+RobotLocomotion__drake	https://github.com/RobotLocomotion/drake.git	pending		M	626951861432f2845b094ee742a448263f18e028
+open-watcom__open-watcom-v2	https://github.com/open-watcom/open-watcom-v2.git	pending		S	85a6386ccd8cb924b2600f88104a954f4a818c33
+aliasvault__aliasvault	https://github.com/aliasvault/aliasvault.git	pending		S	31508f305dde16cb41acf1c407832daace53d041
+GNOME__gthumb	https://github.com/GNOME/gthumb.git	pending		S	38217347c0f12d9d49fc2d180f27df9e81285085

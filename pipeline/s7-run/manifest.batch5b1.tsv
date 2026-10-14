@@ -1,0 +1,31 @@
+# Part b1 of the S and M projects of manifest.batch5.tsv (sha256 d831890774e9a5e162a2e113942e19a64e0e7a2275032bf7880b86fe1f765ead),
+# balanced by predicted time (11.3 h for 4 workers), u order.
+# 27 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+mapeditor__tiled	https://github.com/mapeditor/tiled.git	pending		S	221be2066c4b0ed4bbefbcdfe25d0ad952fc51bd
+pigweed-project__pigweed	https://github.com/pigweed-project/pigweed.git	pending		S	f92da9a5f467565a0912abf6f66501a99a597c58
+litexlang__golitex	https://github.com/litexlang/golitex.git	pending		S	e28dc8a4873e5a6ec1c7769377c6303005b28903
+afni__afni	https://github.com/afni/afni.git	pending		S	cadf2054b5f12de7e451c2dd35c69c9ac08624b3
+conductor-oss__conductor	https://github.com/conductor-oss/conductor.git	pending		S	a057c42c7b7d01cf0ea72cb95ddcc77f0196b777
+memgraph__memgraph	https://github.com/memgraph/memgraph.git	pending		S	f65dd5f31196d3e6b51fb2e3b1a6a78b97b76f58
+openclonk__openclonk	https://github.com/openclonk/openclonk.git	pending		S	36de799544af0459014ea088867fe263779a8bdd
+ruby__ruby	https://github.com/ruby/ruby.git	pending		M	df0fa43f5343f5ec18c63521592c36cde1092f7a
+HerculesWS__Hercules	https://github.com/HerculesWS/Hercules.git	pending		S	04a422ce60402c731d9cff0724cca9a5bc3c53e9
+link-it__govpay	https://github.com/link-it/govpay.git	pending		S	41331365e2bafd20eb75ee726075336ef4c52a51
+1c-syntax__bsl-language-server	https://github.com/1c-syntax/bsl-language-server.git	pending		S	39b5d9b04904882f429d33d64add9b114e69b27e
+PolyMC__PolyMC	https://github.com/PolyMC/PolyMC.git	pending		S	5ad72dda606a7e8a3a3c7adae6de7053597fcc23
+sparrowapp-dev__sparrow-app	https://github.com/sparrowapp-dev/sparrow-app.git	pending		S	80618b7a23ac1b31246cfdcbc0f40cc91bb0baa9
+area9innovation__flow9	https://github.com/area9innovation/flow9.git	pending		S	1e0fc3a50a0e7968d1c6125d49e6e527c76eb23c
+memorysafety__rav1d	https://github.com/memorysafety/rav1d.git	pending		S	d3d1cd67059f47803919be8276650e5870c9fd02
+groonga__groonga	https://github.com/groonga/groonga.git	pending		S	748c2496b2080030fe95955590ad45b6027e60b4
+dmlc__xgboost	https://github.com/dmlc/xgboost.git	pending		S	052810264e04f0d0a3bdd7004774b0772d7b2606
+osudroid__osu-droid	https://github.com/osudroid/osu-droid.git	pending		S	a92d5a7ae172af489c77d6ae6e29f05bc8aaef8d
+spiritbuun__buun-llama-cpp	https://github.com/spiritbuun/buun-llama-cpp.git	pending		S	7b30fb8203730b8ed726cfa03ae777193797def9
+Automattic__simplenote-android	https://github.com/Automattic/simplenote-android.git	pending		S	cb2e2551dd6604d6064cf52b8fc9526302a0485c
+betrusted-io__xous-core	https://github.com/betrusted-io/xous-core.git	pending		S	c0254413a6c2cc27872f8a4b92420311cf1653ca
+tenacityteam__tenacity	https://github.com/tenacityteam/tenacity.git	pending		S	13dfbc20a52e75df7711988ccd1dc2be6d9067f1
+owncloud__client	https://github.com/owncloud/client.git	pending		S	3dafef7703c4e15a53f5aaefb3262cca8cc4a649
+Xilinx__qemu	https://github.com/Xilinx/qemu.git	pending		M	59fb95c62a25821b5bd8fc594af5b7a6bdaef4dd
+KDE__ark	https://github.com/KDE/ark.git	pending		S	67249790cb2ed5dc6e5c714d96cd317c1ccbf64f
+SonarSource__sonar-java	https://github.com/SonarSource/sonar-java.git	pending		S	d34c9c327862cca44f7789c2b11e5c92a2d268e6
+sipwise__rtpengine	https://github.com/sipwise/rtpengine.git	pending		S	cfef09b355c45b49ac85428a8c54f33277caf529

@@ -1,0 +1,21 @@
+# Part b3 of the S and M projects of manifest.batch14.tsv (sha256 a1801c196defea51ecbeef0e7e9aa11dbb3fa7a56a079e8c25e40875a392ac5a),
+# balanced by predicted time (5.9 h for 4 workers), u order; a fed spot part.
+# 17 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+Neamar__KISS	https://github.com/Neamar/KISS.git	pending		S	ba614a9809de138858027afc5424b65ced6fabf1
+tuxera__ntfs-3g	https://github.com/tuxera/ntfs-3g.git	pending		S	7f0f841fc52cf719106c5c93bafe465004e36816
+lidge-jun__opencodex	https://github.com/lidge-jun/opencodex.git	pending		S	93cdffd6ac7f125d4b932a6d45af5c3ab1de5156
+hpcc-systems__HPCC-Platform	https://github.com/hpcc-systems/HPCC-Platform.git	pending		M	f5c55b95ff24b01489ca623dcffda3e76bd121e7
+eclipse-daanse__legacy.xmla	https://github.com/eclipse-daanse/legacy.xmla.git	pending		S	815912cd3a510445f849d04c42c22f3e6569f050
+PhantomBot__PhantomBot	https://github.com/PhantomBot/PhantomBot.git	pending		S	4ac5c2f88b2bf2b9e75045e510605480dfd93bab
+apache__mynewt-nimble	https://github.com/apache/mynewt-nimble.git	pending		S	79355f904055cb98228b58678a1e7f1bbce2b5aa
+MusicPlayerDaemon__MPD	https://github.com/MusicPlayerDaemon/MPD.git	pending		S	2b2c2cfce8098a22cfe9de8f866922f38c1b93e2
+janhq__jan	https://github.com/janhq/jan.git	pending		S	b7f4f641efdcacaeca7201506c52900e7539f374
+lwindolf__liferea	https://github.com/lwindolf/liferea.git	pending		S	2226debb55831f1710d28f15b78ebbdb59688b83
+qtile__qtile	https://github.com/qtile/qtile.git	pending		S	83c697a5621306c3586efca31867efcfa0482e2d
+strukturag__libheif	https://github.com/strukturag/libheif.git	pending		S	bb5e04a1c93d5e421e0936374fc11e01930f6768
+exult__exult	https://github.com/exult/exult.git	pending		S	0e3cd67bc751223b24e41d4bc6ef9aebd8830ac4
+EdgeTX__edgetx	https://github.com/EdgeTX/edgetx.git	pending		S	a9eb9c55321e75fe80bf7fd8b01456a92802a829
+tsantalis__RefactoringMiner	https://github.com/tsantalis/RefactoringMiner.git	pending		S	2d73af16cc53a9c31084ede61af4ea3d3b3ccd0c
+envoyproxy__envoy	https://github.com/envoyproxy/envoy.git	pending		S	ec08276a7e4cb369e1b8440d89b7a64434460c86
+NVIDIA__cuml	https://github.com/NVIDIA/cuml.git	pending		S	925835db24cd3f45806d9fff9f4385ef4b1dbe35

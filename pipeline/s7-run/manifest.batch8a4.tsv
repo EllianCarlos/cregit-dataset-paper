@@ -1,0 +1,25 @@
+# Part a4 of the S and M projects of manifest.batch8.tsv (sha256 adc81a175da6c733e3ef1b3d88c8f46f77390c6d808d3c14d01da8ebb96c7a32),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 21 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+ONLYOFFICE__document-server-integration	https://github.com/ONLYOFFICE/document-server-integration.git	pending		S	0fdf1dd10674b19d61b3c50723018e67493f5086
+apache__ranger	https://github.com/apache/ranger.git	pending		S	b7f823187f09711a45ce33db609105460b75f3c5
+apache__apr	https://github.com/apache/apr.git	pending		S	c5db070f0800834ec9cbfef4a44862cdf87ccdf0
+rubinius__rubinius	https://github.com/rubinius/rubinius.git	pending		S	84368419a49767ef9549a5778812e5f54b6c6223
+KLayout__klayout	https://github.com/KLayout/klayout.git	pending		S	0460c3e253393063c76c163b18d87f1ad7c47fb5
+readysettech__readyset	https://github.com/readysettech/readyset.git	pending		S	574532f94d932419342b0438ba20de4a4b0f209e
+buggins__coolreader	https://github.com/buggins/coolreader.git	pending		S	dcc2d4c88b7ee66b8ee1223833c1a72cad3cdbc5
+iost-official__go-iost	https://github.com/iost-official/go-iost.git	pending		S	74f50082a97a5a2e3768737dbcf5e40f4924d40c
+ViaVersion__ViaVersion	https://github.com/ViaVersion/ViaVersion.git	pending		S	309c3e57c1b5ec5e4a1faa9333dda62cbafca7ea
+arrayfire__arrayfire	https://github.com/arrayfire/arrayfire.git	pending		S	ab4a5063c92512dd65ab2b418cf81e4b3c46299b
+macro-inc__macro	https://github.com/macro-inc/macro.git	pending		S	cf9814a880763663ebc65195faa921938447e94e
+modelica__ModelicaStandardLibrary	https://github.com/modelica/ModelicaStandardLibrary.git	pending		S	4c40388dde27ccb6702cea876adbf54c76d75b97
+open5gs__open5gs	https://github.com/open5gs/open5gs.git	pending		S	5877b43196fca0b185b266f6616979c86c962a4c
+ryzom__ryzomcore	https://github.com/ryzom/ryzomcore.git	pending		S	5fed1e3661ec01f94e52b194c12465f6be4ad8a2
+sepinf-inc__IPED	https://github.com/sepinf-inc/IPED.git	pending		S	eeb340f594f671d54bd1e6ee9980854f66735c6b
+ubugeeei-prod__vize	https://github.com/ubugeeei-prod/vize.git	pending		S	cbdf9c564215a2514eea2e182dbfd79b9050691e
+kotatogram__kotatogram-desktop	https://github.com/kotatogram/kotatogram-desktop.git	pending		S	7263a1b53c9e6b45a416532644fff7a4c7f90d54
+monitoring-plugins__monitoring-plugins	https://github.com/monitoring-plugins/monitoring-plugins.git	pending		S	33ea4c1cf526fed9dd369cb9bd772a80dd9a1177
+GNOME__gnome-applets	https://github.com/GNOME/gnome-applets.git	pending		S	d832cf5dd981bb7ca8fe3d80c4b6ff2014ae32e4
+greenbone__gvmd	https://github.com/greenbone/gvmd.git	pending		S	4caf93f5a9f8f76c8b509f7401b51d1085e9b51b
+Zylann__godot_voxel	https://github.com/Zylann/godot_voxel.git	pending		S	045ff9326a32fd10ac6fdac6357b5a098aaf2093

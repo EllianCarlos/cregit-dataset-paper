@@ -1,0 +1,22 @@
+# Part b5 of the S and M projects of manifest.batch23.tsv (sha256 d517fdd1f0c89820029e4b854eae0930d05e4a939f1241d7c6454c2306fdc589),
+# balanced by predicted time (4.2 h for 4 workers), u order; a fed spot part.
+# 18 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+libretro__parallel-n64	https://github.com/libretro/parallel-n64.git	pending		S	890323d083c7f5719bd59ebd010d75b3b7f8d10f
+rust-lang__this-week-in-rust	https://github.com/rust-lang/this-week-in-rust.git	pending		S	436d3c1020922fa0362d9a6c7b2fefb65cd60ec3
+rizonesoft__Notepad3	https://github.com/rizonesoft/Notepad3.git	pending		S	6a286e858336f846ca54dfc231bfae940bc821a1
+apache__myfaces-tobago	https://github.com/apache/myfaces-tobago.git	pending		S	5e7eae24e8183699ccb2b4bc55b2bc1868cd8598
+HelenOS__helenos	https://github.com/HelenOS/helenos.git	pending		S	c778516e4ab910bd4f9d430db644d3315f85fa67
+tLDP__LDP	https://github.com/tLDP/LDP.git	pending		S	66c589e9cf862c1ccc54f41f27d06c1c25126829
+AOT-Technologies__forms-flow-ai	https://github.com/AOT-Technologies/forms-flow-ai.git	pending		S	873cbe8ad530f0b81ac3b7c5a343df68493a2a01
+arch4edu__arch4edu	https://github.com/arch4edu/arch4edu.git	pending		S	062a8fa8b32abf6839899bda0219115cfaa7c25e
+mit-nlp__MITIE	https://github.com/mit-nlp/MITIE.git	pending		S	62993751a2538531e5fe3772f9e294b020d6a09b
+pret__pokeheartgold	https://github.com/pret/pokeheartgold.git	pending		S	9d8b7591f09b65804da2fb2dfd56f320633e0d36
+apache__asterixdb	https://github.com/apache/asterixdb.git	pending		S	2d57ee72a5a616a3eb1cdc11dd351728ab9d65a9
+pret__pokeemerald	https://github.com/pret/pokeemerald.git	pending		S	731ad5bfd6e6f265508d0efcca0ba42f9dcf5881
+indygreg__apple-platform-rs	https://github.com/indygreg/apple-platform-rs.git	pending		S	0ebbd2ef3b96d5adccc30b1cad4deea38cd735c4
+scireum__sirius-web	https://github.com/scireum/sirius-web.git	pending		S	34538cdd9f31356ee48927109ddff6c1a0f31a35
+xapian__xapian	https://github.com/xapian/xapian.git	pending		S	16009763b0f648355e92a7338a6df965412e7600
+freeorion__freeorion	https://github.com/freeorion/freeorion.git	pending		S	07c1bbb5f05e76872157e1c4e188b02bd3d8a57c
+dsda-org__dsda-doom	https://github.com/dsda-org/dsda-doom.git	pending		S	432d808d9e8492101df8ee1449cba759f8a62ea5
+zkoss__zk	https://github.com/zkoss/zk.git	pending		S	45c5c57f42129e46b984c9ca66dce432fe43769e

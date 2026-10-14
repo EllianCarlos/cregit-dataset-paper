@@ -1,0 +1,8 @@
+# Part b2 of the S and M projects of manifest.batch21.tsv (sha256 a8d8fe474e9c33f90d4723af77e1009944e1a8db637acaeda7fbff45488b4af3),
+# balanced by predicted time (3.9 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+MarvellEmbeddedProcessors__marvell-dpdk-sdk	https://github.com/MarvellEmbeddedProcessors/marvell-dpdk-sdk.git	pending		M	10fd3924ba5ef181692a61a341a7595d66ed5272
+cocos2d__cocos2d-x	https://github.com/cocos2d/cocos2d-x.git	pending		M	7a5282a301a13e467bdcc3466d3cd3883862aadf
+spdk__dpdk	https://github.com/spdk/dpdk.git	pending		S	bad3c0e51d7a34e3188d75d94f15a36c8f5e8301
+redpanda-data__redpanda	https://github.com/redpanda-data/redpanda.git	pending		M	3cfce474a872090e7c74d14181885f5838c54cf2

@@ -1,0 +1,8 @@
+# The L projects of manifest.batch10.tsv (sha256 196d7166a36b215c498418c83c3e96c241e1ff6dddc10cee6e033afb0553f8a7), for the census batch10L on the big on-demand EC2.
+# 5 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+BrowserWorks__waterfox	https://github.com/BrowserWorks/waterfox.git	pending		L	d71eb03f6174cc6db2f1ca75c243b77fe5bb5f19
+Mellanox__nic-kernel	https://github.com/Mellanox/nic-kernel.git	pending		L	f338e77383789c0cae23ca3d48adcc5e9e137e3c
+rust-lang__rust	https://github.com/rust-lang/rust.git	pending		L	db23a2d392783030c008a5fafbe6cb139d1f7707
+multipath-tcp__mptcp_net-next	https://github.com/multipath-tcp/mptcp_net-next.git	pending		L	495d73a540d465ae086dbd192043d5af596ece0c
+liferay__liferay-portal	https://github.com/liferay/liferay-portal.git	pending		L	b56c9f168109c27ad8ff288c5b627170b7bb3a53

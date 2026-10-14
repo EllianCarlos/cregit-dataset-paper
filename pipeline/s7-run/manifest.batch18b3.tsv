@@ -1,0 +1,27 @@
+# Part b3 of the S and M projects of manifest.batch18.tsv (sha256 432ad2e493ba966ef387af309dc2cfab6bc374ba9fa442b0705d1617cdcd2f76),
+# balanced by predicted time (6.0 h for 4 workers), u order; a fed spot part.
+# 23 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+OpenHFT__Chronicle-Queue	https://github.com/OpenHFT/Chronicle-Queue.git	pending		S	40f8976ab8ed6d259c22a9177241a3bb9a5c54af
+DependencyTrack__dependency-track	https://github.com/DependencyTrack/dependency-track.git	pending		S	f6be6a1a1fdfad029e886b4702a0fe7570f750c5
+inline-chat__inline	https://github.com/inline-chat/inline.git	pending		S	863ea9a12e1ec873d34c6462bffc7dc48403e224
+fabric8io__kubernetes-client	https://github.com/fabric8io/kubernetes-client.git	pending		S	e3ba77d4ff1f480cd1e022a5f73eaca4e107a998
+sysown__proxysql	https://github.com/sysown/proxysql.git	pending		S	546abf5c885ff985c3e98852630bac28de9223a3
+scalar__scalar	https://github.com/scalar/scalar.git	pending		S	4430b76951a1c0e32e17bdb638ee88ca484b018d
+eclipse-rap__org.eclipse.rap	https://github.com/eclipse-rap/org.eclipse.rap.git	pending		S	d2ca0b4d1290b15530b04c6081948cc1cf123dd0
+bambulab__BambuStudio	https://github.com/bambulab/BambuStudio.git	pending		S	da8b44ee34dd349f2ae0df3f1cbae366df482354
+OpenOrienteering__mapper	https://github.com/OpenOrienteering/mapper.git	pending		S	7c4455de4b766d9739a12d9fa287d0af65105674
+GNOME__gnome-desktop	https://github.com/GNOME/gnome-desktop.git	pending		S	c0ca44098f5b67559aff602529467d56c05ea30d
+HabitRPG__habitica-android	https://github.com/HabitRPG/habitica-android.git	pending		S	09f842cb6ee044dbe1a44474edc14cc6951146ca
+opentripplanner__OpenTripPlanner	https://github.com/opentripplanner/OpenTripPlanner.git	pending		M	4d3613ff176741aa53b9a63f3a479c900d916608
+mupen64plus-ae__mupen64plus-ae	https://github.com/mupen64plus-ae/mupen64plus-ae.git	pending		S	33bf7021549d7873e976884370fbd1a8e7333bc7
+ossrs__srs	https://github.com/ossrs/srs.git	pending		S	21120478ef86dba1c06c0e0b98703c8f52ffa2ad
+jenkinsci__jenkins	https://github.com/jenkinsci/jenkins.git	pending		M	9e0ba0a3aa573e8788a5ff2ef56509d061022a71
+danielaparker__jsoncons	https://github.com/danielaparker/jsoncons.git	pending		S	9e57e421285422d7aeeb5aa7dc839f6a19121ee6
+modm-io__modm	https://github.com/modm-io/modm.git	pending		S	d99b6e5f41ca7a4c5f56fec61e7a4b71c9e49120
+acassen__keepalived	https://github.com/acassen/keepalived.git	pending		S	2d0b4792837f3cd91496ffe03b429fe096b09ab3
+ruby-gnome__ruby-gnome	https://github.com/ruby-gnome/ruby-gnome.git	pending		S	134293da227177b06a5bf0a6502677d4113484e0
+ggml-org__whisper.cpp	https://github.com/ggml-org/whisper.cpp.git	pending		S	60c0be6ac8fa71b1a2ae2dd938a31a34a508e774
+projectacrn__acrn-hypervisor	https://github.com/projectacrn/acrn-hypervisor.git	pending		S	37b1c13f95696ddf543d6d77e4aed5641692672e
+3dem__relion	https://github.com/3dem/relion.git	pending		S	a7d313d5104f63aeb9daef28d0e786ecd9724ae0
+IBM__IM-ios	https://github.com/IBM/IM-ios.git	pending		S	de53d3c4c8d411d931c8b473300d310d09c35991

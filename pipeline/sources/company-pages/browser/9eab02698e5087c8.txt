@@ -1,0 +1,102 @@
+Could DVS Extend Battery Life?
+Optical DVS could be the key to longer-lasting wearables. Learn how event-based vision could unlock highly efficient, always-on sensing.
+
+Read on Signals+
+
+Intelligent Control, Better Diagnostics
+From fault detection to predictive monitoring, explore a smarter approach to solenoid and valve control for next-generation IVD systems.
+
+Read Tech Article
+
+Healthcare Solutions
+See how sensing, connectivity, and system expertise come together to help enable life-changing healthcare innovations.
+
+Explore Healthcare Solutions
+
+Get to Know Us
+
+Together, with our customers, we co-create solutions across aerospace, automotive, communications, consumer, energy, industrial automation, and healthcare.
+
+eShop
+
+What We Do (Signals+)
+
+ContentZone
+
+Explore Our Solutions Gallery
+Aero & Defense
+ 
+Automotive
+ 
+Consumer
+ 
+Data Center
+ 
+Energy
+ 
+Healthcare
+ 
+Industrial
+ 
+Instrumentation
+ 
+Smart Buildings
+ 
+Wireless Comms
+Browse Complete Healthcare Solutions Portfolio
+Therapy Devices
+Medical Imaging
+Vital Signs Monitoring
+Sensinel CPM System
+Vital Signs Monitoring
+ADI's vital signs monitoring solutions use integrated and discrete sensors and signal-conditioning technology for portable, wearable, and bedside monitoring.
+Explore Solutions
+Medical Imaging
+ADI provides medical imaging solutions for all modalities, including CT, digital x-ray, ultrasound, MRI, and positron emission tomography (PET) designs.
+Explore Solutions
+Therapy Devices
+ADI's power management, signal chain, and protection and consumable authentication solutions enable compact designs with longer battery life to improve patient safety.
+Explore Solutions
+Sensinel CPM System
+The Sensinel CPM System, is a non-invasive, at-home solution that captures cardiopulmonary measurements for chronic disease management such as heart failure.
+Explore Sensinel
+Featured Resources
+Newsroom
+
+View the latest news, announcements, and media resources from Analog Devices.
+
+Go to Newsroom
+
+EngineerZone
+
+Share expertise, connect with peers, and ask design questions on EngineerZone®.
+
+Go to EngineerZone
+
+Analog Dialogue
+
+Engineering’s definitive, technical resource journal for innovative design.
+
+Go to Analog Dialogue
+
+Who We Are
+Careers
+Newsroom
+What We Do (Signals+)
+Investor Relations
+Quality & Reliability
+Sales and Distribution
+ADI Partner Program
+Contact Us
+Support
+EngineerZone
+Resources
+Wiki
+Analog Dialogue
+ADI Developer Portal
+Legal and Risk
+Accessibility
+Privacy Policy
+Privacy Settings
+Cookie Settings
+TRUNCATED_BY_AGENT (link list of ~190 "Link text/Link URL" entries omitted; it contained no github.com link)

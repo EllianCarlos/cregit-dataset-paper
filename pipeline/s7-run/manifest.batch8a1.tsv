@@ -1,0 +1,8 @@
+# Part a1 of the S and M projects of manifest.batch8.tsv (sha256 adc81a175da6c733e3ef1b3d88c8f46f77390c6d808d3c14d01da8ebb96c7a32),
+# balanced by predicted time (13.8 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+php__php-src	https://github.com/php/php-src.git	pending		M	9cd641febca7b8c17b852429217f0238f7b0309d
+samba-team__samba	https://github.com/samba-team/samba.git	pending		M	5754c8ddf5c574bbac822358e533810cc12c7719
+dragonwell-project__dragonwell8	https://github.com/dragonwell-project/dragonwell8.git	pending		M	7feb8b52eca1b2d72b93c6d8baed6ae49664b673
+Tencent__TencentKona-17	https://github.com/Tencent/TencentKona-17.git	pending		M	2dc105224234e15d9c97b30deffa3b56f625c340

@@ -1,0 +1,8 @@
+# Part a2 of the S and M projects of manifest.batch21.tsv (sha256 a8d8fe474e9c33f90d4723af77e1009944e1a8db637acaeda7fbff45488b4af3),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+Avnet__uboot-imx	https://github.com/Avnet/uboot-imx.git	pending		M	82c4fc6af8679cc2c3a74ea4611f0009642adea0
+ni__u-boot	https://github.com/ni/u-boot.git	pending		M	c2ea87883ef309570c8903e6de4b8b78685d73d0
+MarvellEmbeddedProcessors__marvell-dpdk	https://github.com/MarvellEmbeddedProcessors/marvell-dpdk.git	pending		M	b8b2952822879d1e5411c76149043daca12db554
+DPDK__dpdk	https://github.com/DPDK/dpdk.git	pending		M	49bb9a5f7ae51128de7132ffe265192413643bcb

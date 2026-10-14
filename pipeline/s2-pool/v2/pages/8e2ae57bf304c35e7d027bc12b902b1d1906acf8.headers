@@ -1,0 +1,9 @@
+HTTP/2 200 
+server: nginx/1.18.0 (Trisquel GNU/Linux)
+date: Sat, 10 Oct 2026 02:55:31 GMT
+content-type: text/html
+content-length: 22561
+last-modified: Sun, 25 May 2025 17:14:27 GMT
+etag: "68334ff3-5821"
+accept-ranges: bytes
+

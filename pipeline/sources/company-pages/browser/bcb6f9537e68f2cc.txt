@@ -1,0 +1,61 @@
+Ir para o conteúdo principal
+Ativar acessibilidade para visão subnormal
+Abra o menu de acessibilidade
+Ir para o conteúdo principal
+Declaração de acessibilidade do site da AMD
+Produtos
+Soluções
+Downloads e suporte
+Loja
+404: PÁGINA NÃO ENCONTRADA
+Desculpe, não foi possível encontrar essa página.
+
+O URL da página pode ter sido alterado ou não estar mais disponível. Pesquise em AMD.com ou escolha uma das opções abaixo.
+
+PESQUISAR EM AMD.COM
+
+Página inicial | Produtos | Downloads | Documentação | Suporte
+
+Inscreva-se para receber as últimas notícias da AMD
+Linkedin
+ 
+ 
+Instagram
+ 
+ 
+Facebook
+ 
+ 
+Assinaturas
+Empresa
+Sobre a AMD
+Equipe de Gerenciamento
+Responsibilidade Corporativa
+Oportunidades de Emprego
+Contato AMD
+Notícias e Eventos
+Sala de Imprensa
+Eventos
+Bibliotecas de Mídias
+Recursos
+Central do desenvolvedor
+Blogs
+Estudos de caso
+Webinars
+Explorar os recursos
+Parceiros
+AMD Partner Hub
+Distribuidores autorizados
+Programa AMD University
+Investidores
+Relações com investidores
+Informações Financeiras
+Conselho de Administração
+Documentos de Governança
+Arquivos da SEC
+Termos e Condições Privacidade Informação de marca registrada Transparência na cadeia de suprimentos Concorrência justa e aberta Estratégia tributária no Reino Unido Política de cookies Configurações de cookies
+© 2026 Advanced Micro Devices, Inc.
+Feedback
+Link text: Ferramentas código aberto GPUOpen, Link URL: https://gpuopen.com/
+Link text: Bibliotecas de Aceleramento Vitis, Link URL: https://github.com/Xilinx/Vitis_Libraries
+TRUNCATED_BY_AGENT (remaining ~290 link lines, identical to the amd.com/opensource 404 page, omitted; only the github.com link kept)

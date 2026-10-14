@@ -1,0 +1,22 @@
+# Part a3 of the S and M projects of manifest.batch19.tsv (sha256 8a11b7acec582e49f76d0e09d7ff1e039d3458ef456ff4c1a875509b92849d3b),
+# balanced by predicted time (6.9 h for 4 workers), u order; a fed spot part.
+# 18 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+apache__axis-axis1-java	https://github.com/apache/axis-axis1-java.git	pending		S	41f3b4e8d04e310ca81f86b92630ab2c11d608bd
+Unidata__netcdf-c	https://github.com/Unidata/netcdf-c.git	pending		S	4edaf690a9a1aaa3c432f24e9bd6939bbf73e9f9
+DiligentGraphics__DiligentCore	https://github.com/DiligentGraphics/DiligentCore.git	pending		S	074060cfd1db73064d7a18cf40df86af6531520c
+embox__embox	https://github.com/embox/embox.git	pending		S	185898f7d539b7ffe27733e68c391db791314527
+audacious-media-player__audacious	https://github.com/audacious-media-player/audacious.git	pending		S	164f0980f64317ea8d0c3e30bf99dc19b6616e77
+pyscf__pyscf	https://github.com/pyscf/pyscf.git	pending		S	8c5536411f5c829d427669e8a14e7be3a50fa410
+osmc__osmc	https://github.com/osmc/osmc.git	pending		S	dc0b5e7ae91ff825070293d6cb590e905c4435a9
+NativeScript__NativeScript	https://github.com/NativeScript/NativeScript.git	pending		S	31ce155ff7d338eddb6afdc3fa792715b646e6e1
+erlang__otp	https://github.com/erlang/otp.git	pending		M	cfe4f037932061f9d82a2622cd9a9577ee4f0226
+eclipse-che__che-server	https://github.com/eclipse-che/che-server.git	pending		S	d294dac6902109b2570173d53c6d6c0c414c0466
+google__capsem	https://github.com/google/capsem.git	pending		S	5307b6cd40af56ea1527a311ecc6f2c770c4cb20
+projeto-siga__siga	https://github.com/projeto-siga/siga.git	pending		S	c65f287e84f1a0626c79310da0245bc8abb3175c
+deepseek-ai__deepseek-harness	https://github.com/deepseek-ai/deepseek-harness.git	pending		S	5badb15009ae1756c3afe0ae0cef1faafc290ccc
+apache__datafusion-ballista	https://github.com/apache/datafusion-ballista.git	pending		S	43f2952d733252d7150a31aa5055598154b2acca
+google__nomulus	https://github.com/google/nomulus.git	pending		S	a6bb0a48f52ffe91a6037b3861f66f805e0c65d7
+eclipse-birt__birt	https://github.com/eclipse-birt/birt.git	pending		M	b918ddf2d653f671594de1da2fddd5978b9d77ac
+buildroot__buildroot	https://github.com/buildroot/buildroot.git	pending		M	96bac75585733129044f7d9153d205f5eef93a3c
+apache__lucene	https://github.com/apache/lucene.git	pending		M	3970208e0d4d5e997a10baac816bd7d1d7693350

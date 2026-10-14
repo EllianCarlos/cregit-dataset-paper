@@ -1,0 +1,21 @@
+HTTP/2 200 
+date: Sat, 10 Oct 2026 00:02:42 GMT
+content-type: text/html; charset=utf-8
+content-length: 60393
+server: cloudflare
+set-cookie: VISITOR=04495dd3-a563-480d-8f65-34604e7374fc; Max-Age=315360000; Path=/; expires=Tue, 07-Oct-2036 00:02:42 GMT; secure; HttpOnly
+set-cookie: _csrf_token=ded536836ed11bcf4dbffa41f6edcd9cfa37766aa8265f4c3e7af387c62fb2ea95029d58f39ee13b; secure; SameSite=Strict; Path=/
+set-cookie: __cf_bm=CVhtvqJ.gG93CX2bZKtP8m3eRjIRWPYTLTXI6cKSMfM-1791590562.7093213-1.0.1.1-XIVVIP1OHGEFfbt3EVdnMPhN3KTUUpcVDzUvTtcPkzfIw2TnE5JbG0kKphOVyO_IhlJktg_3mN9Vdck9P0fh4u_ED6rEbypkOgKWMa4H3O_0UnqS1KoRf3TPIpJR8bqV; HttpOnly; SameSite=None; Secure; Path=/; Domain=sourceforge.net; Expires=Sat, 10 Oct 2026 00:32:42 GMT
+cache-control: no-cache
+pragma: no-cache
+link: <https://a.fsdn.com/con/css/fonts/sftheme/lato-v20-latin-ext_latin-regular.woff2>; rel=preload; as=font; crossorigin, <https://a.fsdn.com/con/css/fonts/sftheme/lato-v20-latin-ext_latin-700.woff2>; rel=preload; as=font; crossorigin, <https://a.fsdn.com/con/css/lato.css?1791573014>; rel=preload; as=style, <https://a.fsdn.com/con/css/top.css?1791573014>; rel=preload; as=style, <https://a.fsdn.com/con/css/fonts/sftheme/source-sans-3-latin-regular.woff2>; rel=preload; as=font; crossorigin, <https://a.fsdn.com/con/css/fonts/sftheme/source-sans-3-latin-700.woff2>; rel=preload; as=font; crossorigin, <https://a.fsdn.com/con/css/adobecx.css?1791573014>; rel=preload; as=style
+content-security-policy: frame-ancestors 'self'; form-action https://sourceforge.net; upgrade-insecure-requests; script-src 'self' a.fsdn.com *.sf-syn.com *.slashdotmedia.com ml314.com *.cloudflareinsights.com *.doubleclick.net *.google.com *.googlesyndication.com *.adtrafficquality.google *.ampproject.org *.criteo.net *.creativecdn.com *.crwdcntrl.net *.uidapi.com *.im-apps.net *.euid.eu *.openxcdn.net *.id5-sync.com cdn.jsdelivr.net/gh/prebid/shared-id/ *.pubmatic.com *.33across.com *.permutive.app *.google-analytics.com *.googletagmanager.com *.googletagservices.com  *.consentmanager.net *.microsofttranslator.com *.googleapis.com cdn.mxpnl.com *.hs-scripts.com js.hsadspixel.net js.hs-analytics.net js.hs-banner.com js.hscollectedforms.net js.usemessages.com *.licdn.com 'unsafe-inline' 'unsafe-eval' 'report-sample'; report-uri https://sourceforge.report-uri.com/r/d/csp/enforce; fenced-frame-src https:; frame-src 'self' *.sf-syn.com *.google.com *.googlesyndication.com *.safeframe.usercontent.goog *.googletagmanager.com *.doubleclick.net *.googleadservices.com *.adtrafficquality.google *.recaptcha.net recaptcha.net www.youtube-nocookie.com *.youtube.com *.stripe.com *.plaid.com *.prosperstack.com *.consentmanager.net app.hubspot.com *.criteo.com *.openx.net player.twitch.tv; script-src-attr 'none' 'report-sample'; object-src 'none'
+permissions-policy: microphone=(), geolocation=(), camera=(), document-domain=(), display-capture=(), autoplay=(), bluetooth=(), identity-credentials-get=(), otp-credentials=(), publickey-credentials-create=(), publickey-credentials-get=(), usb=(), accelerometer=(), ambient-light-sensor=(), captured-surface-control=(), compute-pressure=(), gamepad=(), hid=(), idle-detection=(), local-fonts=(), magnetometer=(), midi=(), screen-wake-lock=(), serial=(), speaker-selection=(), window-management=(), xr-spatial-tracking=(), local-network=(), local-network-access=(), loopback-network=()
+cross-origin-opener-policy: same-origin
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+cf-cache-status: DYNAMIC
+cf-ray: a4815b98eec21f62-IAD
+alt-svc: h3=":443"; ma=86400
+

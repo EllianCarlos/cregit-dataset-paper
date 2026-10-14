@@ -1,0 +1,11 @@
+# Part b1 of the S and M projects of manifest.batch10.tsv (sha256 196d7166a36b215c498418c83c3e96c241e1ff6dddc10cee6e033afb0553f8a7),
+# balanced by predicted time (6.1 h for 4 workers), u order; a fed spot part.
+# 7 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+zabbix__zabbix	https://github.com/zabbix/zabbix.git	pending		M	3f0463bdd6519841d52da357c5697c54d8614a11
+RcppCore__Rcpp	https://github.com/RcppCore/Rcpp.git	pending		S	d7be2c319a54f29c3b2f306dd5fe37610715fe89
+grpc__grpc	https://github.com/grpc/grpc.git	pending		M	245fd60bf33a75548f17ff00a1d08e491b01c6d8
+nwjs__nw.js	https://github.com/nwjs/nw.js.git	pending		S	ea9ed82763a3fd9e3df5f773793ab13b82d313e2
+dracutdevs__dracut	https://github.com/dracutdevs/dracut.git	pending		S	5d2bda46f4e75e85445ee4d3bd3f68bf966287b9
+invent.kde.org__unmaintained__kdelibs	https://invent.kde.org/unmaintained/kdelibs	pending		M	1c5b25966136b6099665477616fb4d38a98fd7ef
+invent.kde.org__historical__calligra-history	https://invent.kde.org/historical/calligra-history	pending		M	5e323f11f11ec487e1ef801d61bb322944f454a5

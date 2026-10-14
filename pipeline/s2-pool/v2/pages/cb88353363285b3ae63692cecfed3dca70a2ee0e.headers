@@ -1,0 +1,12 @@
+HTTP/2 200 
+server: nginx/1.18.0 (Ubuntu)
+date: Sat, 10 Oct 2026 00:02:37 GMT
+content-type: text/html;charset=utf-8
+cache-control: must-revalidate
+expires: Fri, 01 Jan 1999 00:00:00 GMT
+set-cookie: trac_form_token=57cdbd557feffe906b588bea; HttpOnly; Path=/osgeo4w
+set-cookie: trac_session=443394d61658719a30a4c389; expires=Fri, 08 Jan 2027 00:02:37 GMT; HttpOnly; Path=/osgeo4w
+vary: Accept-Encoding
+front-end-https: on
+x-robots-tag: noarchive
+

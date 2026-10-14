@@ -1,0 +1,10 @@
+# Part a2 of the S and M projects of manifest.batch17.tsv (sha256 fe2bcfa4c462bf23afb8d7d027903ee019a67ffa25f26d74c91f3345493549db),
+# balanced by predicted time (5.6 h for 4 workers), u order; a fed spot part.
+# 6 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+themactep__thingino-firmware	https://github.com/themactep/thingino-firmware.git	pending		S	7294cfe763e3aa3036285759458770e664711046
+wolfSSL__wolfssl	https://github.com/wolfSSL/wolfssl.git	pending		M	0c020b3b3f8e15556d7fc40d32e335ff32c6fa8a
+bazelbuild__bazel	https://github.com/bazelbuild/bazel.git	pending		M	9ed3f23e4c889149f1015c8fa4758c84aaa90bad
+IvorySQL__IvorySQL	https://github.com/IvorySQL/IvorySQL.git	pending		M	069766efa8ca0809d05eef3af2b11750fe9007b8
+FongMi__TV	https://github.com/FongMi/TV.git	pending		S	c616c0aa3613e87529791587a9f71b78c278c991
+ChibiOS__ChibiOS	https://github.com/ChibiOS/ChibiOS.git	pending		S	fd2e59c34878b1ef93ef5358f11fb5cc830027ff

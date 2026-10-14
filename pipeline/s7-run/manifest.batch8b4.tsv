@@ -1,0 +1,27 @@
+# Part b4 of the S and M projects of manifest.batch8.tsv (sha256 adc81a175da6c733e3ef1b3d88c8f46f77390c6d808d3c14d01da8ebb96c7a32),
+# balanced by predicted time (6.2 h for 4 workers), u order; a fed spot part.
+# 23 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+cefsharp__CefSharp	https://github.com/cefsharp/CefSharp.git	pending		S	c2206b48365c4b2bf70c9dc2f02398a027f768de
+liferay__liferay-docs	https://github.com/liferay/liferay-docs.git	pending		S	23b94b9649164538835e67c64d4f71049897256f
+mingw-w64__mingw-w64	https://github.com/mingw-w64/mingw-w64.git	pending		S	a3d93999ef0521681d45e445c39964a7af0f593f
+randombit__botan	https://github.com/randombit/botan.git	pending		S	d741092aca7f85c74a0f95c5fa385a737389eeb0
+bbidulock__icewm	https://github.com/bbidulock/icewm.git	pending		S	0cd91a3504c7c0683145f371c6a92249eb3117a7
+eXist-db__exist	https://github.com/eXist-db/exist.git	pending		S	e143b41740004ea224c4b5947c9dd122b2ff60bd
+vanhoefm__fragattacks	https://github.com/vanhoefm/fragattacks.git	pending		S	8b5a8e092b3fec6f24e022788dbf317e8635e0d1
+apache__ofbiz-framework	https://github.com/apache/ofbiz-framework.git	pending		M	847880b77167b51e00578d849e0cb0b029825c5d
+casadi__casadi	https://github.com/casadi/casadi.git	pending		S	c7de86e128f08140220e098e3635a2e61d03319a
+wolfi-dev__os	https://github.com/wolfi-dev/os.git	pending		M	99689b0c508e91aef1760a67dcf1b3a22f3d3e34
+Exiv2__exiv2	https://github.com/Exiv2/exiv2.git	pending		S	60d59d6796a2cde2fe58a6e5cd0ef0040085965a
+JuliaLang__julia	https://github.com/JuliaLang/julia.git	pending		M	76ee364128d44c9c7411879602ea5e94c48c652c
+gitbutlerapp__grit	https://github.com/gitbutlerapp/grit.git	pending		S	dfb079967b9cbc99e533c21e65f674bb3f5e8b07
+hcengineering__platform	https://github.com/hcengineering/platform.git	pending		S	b426f096ec8680e3b9650c8a84b8ca44c76553c6
+munin-monitoring__munin	https://github.com/munin-monitoring/munin.git	pending		S	ac7f027f8d53b7a038d8d87798d71a8b0faae1db
+EssentialsX__Essentials	https://github.com/EssentialsX/Essentials.git	pending		S	e70bdb817c758474acb3a23a37cf961b2f716a50
+project-oak__oak	https://github.com/project-oak/oak.git	pending		S	3ec9bd888b4bcfbe5dea1def3c642911e71e1c96
+runtimeverification__k	https://github.com/runtimeverification/k.git	pending		S	4a46d1231473b599c699160132fd6e76a5c46406
+prody__ProDy	https://github.com/prody/ProDy.git	pending		S	08e4e0a5168551a51ab3a9bb2fb97d462236454a
+apitrace__apitrace	https://github.com/apitrace/apitrace.git	pending		S	706f9d61190684cb3e710fdf14c8f2a5ff13d9a3
+google__xls	https://github.com/google/xls.git	pending		S	44224ce55fddc9d842b4e9a6772a3897f9e67d59
+zenorogue__hyperrogue	https://github.com/zenorogue/hyperrogue.git	pending		S	c7c9a2993b43ee2f4bbac422e565d18fdd98f886
+castle-engine__castle-engine	https://github.com/castle-engine/castle-engine.git	pending		S	a737363fdbe6d4dc1234b5987908e6d081da2715

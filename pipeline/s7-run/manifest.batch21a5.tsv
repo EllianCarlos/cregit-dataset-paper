@@ -1,0 +1,16 @@
+# Part a5 of the S and M projects of manifest.batch21.tsv (sha256 a8d8fe474e9c33f90d4723af77e1009944e1a8db637acaeda7fbff45488b4af3),
+# balanced by predicted time (2.1 h for 4 workers), u order; a fed spot part.
+# 12 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+alliedmodders__sourcemod	https://github.com/alliedmodders/sourcemod.git	pending		S	2ed5b865e35186a930321ff7a112486a508a45e1
+KDE__okular	https://github.com/KDE/okular.git	pending		S	1fa05e5390024a20d7a90e7bbaaef33474bab080
+KDE__krusader	https://github.com/KDE/krusader.git	pending		S	aa547b02ee7b8476559f9ea37b1826d40f1f3d6e
+Kode__Kore	https://github.com/Kode/Kore.git	pending		S	82ede76e37734e0d9a2f4b80191708c5667e154d
+lessthanoptimal__BoofCV	https://github.com/lessthanoptimal/BoofCV.git	pending		S	a277f551599300141f6e19bd7525b9fc290aeee0
+KDE__kdeplasma-addons	https://github.com/KDE/kdeplasma-addons.git	pending		S	6c6b00e693f6d6c83948201908f0d74a3829783f
+KDE__kio	https://github.com/KDE/kio.git	pending		S	5a99a68029beb94423b2d02f34a8029e518d36f9
+SmileiPIC__Smilei	https://github.com/SmileiPIC/Smilei.git	pending		S	61aa917e851e89c64a0a2c17ca869fa71128422d
+KDE__messagelib	https://github.com/KDE/messagelib.git	pending		S	f1e1c2de822d9e2dbdda4f6fbc5883a0af5b86a3
+KDE__kmail	https://github.com/KDE/kmail.git	pending		S	a0be24dd8df1fe95610c5790f6f52664cd89e390
+KDE__rkward	https://github.com/KDE/rkward.git	pending		S	6d496e396d2f1f5953499cbe3768ccb26bba47aa
+KDE__discover	https://github.com/KDE/discover.git	pending		S	52f0dee5a9bcebd7d1f0e496528a34199207d7b7

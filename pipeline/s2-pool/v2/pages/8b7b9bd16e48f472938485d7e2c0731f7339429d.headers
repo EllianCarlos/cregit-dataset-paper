@@ -1,0 +1,17 @@
+HTTP/1.1 200 OK
+Date: Fri, 09 Oct 2026 23:55:15 GMT
+Server: Apache
+Content-Location: anubis.html
+Vary: negotiate,Accept-Encoding
+TCN: choice
+Strict-Transport-Security: max-age=63072000
+X-Frame-Options: sameorigin
+X-Content-Type-Options: nosniff
+Access-Control-Allow-Origin: (null)
+Accept-Ranges: bytes
+Cache-Control: max-age=0
+Expires: Fri, 09 Oct 2026 23:55:15 GMT
+Content-Length: 10485
+Content-Type: text/html
+Content-Language: en
+

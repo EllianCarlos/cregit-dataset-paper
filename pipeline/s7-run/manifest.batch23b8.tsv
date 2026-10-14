@@ -1,0 +1,20 @@
+# Part b8 of the S and M projects of manifest.batch23.tsv (sha256 d517fdd1f0c89820029e4b854eae0930d05e4a939f1241d7c6454c2306fdc589),
+# balanced by predicted time (4.2 h for 4 workers), u order; a fed spot part.
+# 16 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+OpenEmu__OpenEmu	https://github.com/OpenEmu/OpenEmu.git	pending		S	1d205104640d8410659d321809889cbfd06b99a9
+eclipse-ecf__ecf	https://github.com/eclipse-ecf/ecf.git	pending		S	a512085c8abe32ceb930178a4c85284c0691d46f
+hashcat__hashcat	https://github.com/hashcat/hashcat.git	pending		S	7096497cc5e728ea71d107be8e09b03fb52f6dc7
+redeclipse__base	https://github.com/redeclipse/base.git	pending		S	185eb05392ce9e6d374f0c4460eda182e245d69a
+inspircd__inspircd	https://github.com/inspircd/inspircd.git	pending		S	21206edc569d6711111379ee51b802ebb8f5d555
+apache__poi	https://github.com/apache/poi.git	pending		S	ae62bb5116b9aee19ebd5834e3a82066132c9f7f
+chernandezba__zesarux	https://github.com/chernandezba/zesarux.git	pending		S	81219753a00cd923100ca59a38e6c815080e0b37
+wso2__wso2-synapse	https://github.com/wso2/wso2-synapse.git	pending		S	7957f896c08e900f30c3cddf60c709930eb94735
+NetHack__NetHack	https://github.com/NetHack/NetHack.git	pending		S	8898570da710513f38d81ed973f834863b795217
+fustyles__Arduino	https://github.com/fustyles/Arduino.git	pending		S	8d2a3f6cea671277c85e62cae26746fe66944adf
+gwtproject__gwt	https://github.com/gwtproject/gwt.git	pending		S	9940b0200d57ff83ff0a1c43bac4674e5c56b5d1
+powerfolder__PF-CORE	https://github.com/powerfolder/PF-CORE.git	pending		S	c494764eb2b0428ba2f9fc27356d9a9d1853694f
+pygame__pygame	https://github.com/pygame/pygame.git	pending		S	85fda3f719d437cf27106afae8c890e6b88ba5f5
+igraph__rigraph	https://github.com/igraph/rigraph.git	pending		S	b2e45d5c775f56785d540fa86d5fcff6d5e37802
+findbugsproject__findbugs	https://github.com/findbugsproject/findbugs.git	pending		S	12e4730bbf2416c5736b031466f3cbe25f5d963a
+ronaldoussoren__pyobjc	https://github.com/ronaldoussoren/pyobjc.git	pending		S	c27ba56c7edccab0d9e49e649454f442ab88118f

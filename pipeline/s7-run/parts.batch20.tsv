@@ -1,0 +1,13 @@
+# Fed spot parts of batch20 (split_batchN.py 20): the S and M projects of manifest.batch20.tsv. sha256 is
+# that of the part manifest manifest.<workload><part>.tsv, which split_batchN.py --derive rebuilds.
+half	workload	part	workers	projects	predicted_h	sha256
+a	batch20	a1	4	4	16.4	560221e7c0a79215737b2c0a5be1a830c30e57dd3e1b21810446d09e1bd82895
+a	batch20	a2	4	20	5.6	3ef2ed8953300305692a94726cdc390f3426c21b321b4de41f3782de5ab14a01
+a	batch20	a3	4	19	5.5	cbdbf3c5bdd57eb6fad9511b6ffdbd4dab4b60d470f4d04fd3a50ce38db26f3b
+a	batch20	a4	4	11	5.5	4fd02f3f1388243551b442df52e88fc639f863526fe43920b8c086dfe217fd08
+a	batch20	a5	4	16	5.5	7626f1fd70326b29720126f415179213137811556fac5b9e7b34147d7f2644b9
+b	batch20	b1	4	5	6.8	803caeb5cc2e49d0b35044d009ed95fff7e6c1455c683e175a7f8c2fd06b890a
+b	batch20	b2	4	20	5.6	ed60aba185e3d6ccd0875a724af953ccf8b98965b746718f8ce3032d692a8c98
+b	batch20	b3	4	20	5.5	7e5d60616afe1581ea33a6755cd086279e40b8315b64f85bccc92617a8c23f55
+b	batch20	b4	4	14	5.5	26429fca0b37d317c2aa1bea82a825bf8b4c922d88e2170ad6b28e7872358af7
+b	batch20	b5	4	19	5.5	5f4d468d92ccd573a31370e049b56f4fd4466eb3d44f5801cb61f24a30bbc838

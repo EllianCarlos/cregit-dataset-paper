@@ -1,0 +1,24 @@
+# Part a4 of the S and M projects of manifest.batch13.tsv (sha256 1d1f93d1d2952c0f2a25ca8f968b8bf867959609ab38c913a98784b9d447bfcc),
+# balanced by predicted time (5.8 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+OtterMind__Chat2DB	https://github.com/OtterMind/Chat2DB.git	pending		S	dc2b80a3b0189bb3fd92d69ce8f52de2d4136ac8
+Slicer__Slicer	https://github.com/Slicer/Slicer.git	pending		M	a4f23516eb10af65d5095b98dfb9b108963cda9c
+GNOME__gdk-pixbuf	https://github.com/GNOME/gdk-pixbuf.git	pending		S	41248b9d91bd461a78eac0315c3e107da6513273
+lvgl__lvgl	https://github.com/lvgl/lvgl.git	pending		S	fc9fae64c2fbee295f3063cf979ea231ccabae95
+KnowageLabs__Knowage-Server	https://github.com/KnowageLabs/Knowage-Server.git	pending		S	07789a0da483d77f40911c68c2b7e8850008af06
+esig__dss	https://github.com/esig/dss.git	pending		S	c8aea1f90958a851f651fe39f1575fcbd6d4a11d
+facebook__igl	https://github.com/facebook/igl.git	pending		S	7b49bc3c88d91c5d26b9cf5a95e2553eda13439f
+sfepy__sfepy	https://github.com/sfepy/sfepy.git	pending		S	615e22a39cea1fc3bd44935ec7d7465c25d1b718
+kenzok8__small-package	https://github.com/kenzok8/small-package.git	pending		S	d8f141a6c6b8bcb492eff2d9da1aaab73355a252
+NVIDIAGameWorks__dxvk-remix	https://github.com/NVIDIAGameWorks/dxvk-remix.git	pending		S	418c3a12ef013c64687a01c092e0027b395f91a0
+0xPolygon__bor	https://github.com/0xPolygon/bor.git	pending		S	4b95aff0fcc819194159f156ce238f5f47af2501
+apache__iotdb	https://github.com/apache/iotdb.git	pending		S	5756dc831aebe6e670a31c7bee03cabafd90fcda
+pentaho__pentaho-platform	https://github.com/pentaho/pentaho-platform.git	pending		S	a5b097979c42db131345c2e55e4e06dd1e37615c
+mozilla__rhino	https://github.com/mozilla/rhino.git	pending		S	b2b963f563deb957824e0205a1ca708a903c93b9
+rerun-io__rerun	https://github.com/rerun-io/rerun.git	pending		S	f205d7dcceec54564c0665f911ef053655998c50
+OpenNebula__one	https://github.com/OpenNebula/one.git	pending		S	8afeedf2e1c47cf0e38623e4d5aa3ab2de7de0c7
+KDE__marble	https://github.com/KDE/marble.git	pending		S	1ccba7ebf53dd8d4e7a07bc4cc0345aea4405e58
+openremote__openremote	https://github.com/openremote/openremote.git	pending		S	26b1692c69ea28a7bf3df54badb138c6fe07029e
+rbatis__rbatis	https://github.com/rbatis/rbatis.git	pending		S	d2c683cc72f7c5a99ac18d92bbe9069db793013f
+fork-commit-merge__fork-commit-merge	https://github.com/fork-commit-merge/fork-commit-merge.git	pending		S	c50b8fc1ea66938e56508907cd08dac831151353

@@ -1,0 +1,24 @@
+# Part a5 of the S and M projects of manifest.batch12.tsv (sha256 6f4e0b95cc46dde0079b671dc19e8737a15e3a7e98ad301a629af614192c3fc8),
+# balanced by predicted time (6.7 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+SeriousOldMan__Simulator-Controller	https://github.com/SeriousOldMan/Simulator-Controller.git	pending		S	6010d2ea0cfa932a664c77502c0f7c26f47793f0
+embassy-rs__embassy	https://github.com/embassy-rs/embassy.git	pending		S	8708c0c2e7dba09efbc218fe44d4c5e600ec611a
+lowRISC__opentitan	https://github.com/lowRISC/opentitan.git	pending		M	9060587f8b00deae60575e645c6c77ee9ce4f2ec
+ongres__stackgres	https://github.com/ongres/stackgres.git	pending		S	aeb2faa5d836929961d9c4cdce3cbae55f33a627
+rokath__trice	https://github.com/rokath/trice.git	pending		S	b36096cde7cdf88290317057e1076edee42dc8a5
+deepcausality-rs__deep_causality	https://github.com/deepcausality-rs/deep_causality.git	pending		S	ec8c52f677144f22fcf0c027d3be45b4e2a5c01d
+slint-ui__slint	https://github.com/slint-ui/slint.git	pending		S	9e5fca8459fe860b4dc0f7ec4d05d260d9ac8b1f
+hiero-ledger__hiero-consensus-node	https://github.com/hiero-ledger/hiero-consensus-node.git	pending		S	8259c3c658f7c0b0f711688a7e0bf13380b3dea2
+ostreedev__ostree	https://github.com/ostreedev/ostree.git	pending		S	9fc54d6104c79c9520a9744b6d7e9130f232ce55
+DSpace__DSpace	https://github.com/DSpace/DSpace.git	pending		S	f9fe9434c24305e811d79da6b121b96b974c7731
+su2code__SU2	https://github.com/su2code/SU2.git	pending		S	bc15466602a687d6fb796d5df7a12ce3fde0949a
+apache__pekko	https://github.com/apache/pekko.git	pending		S	ecd05d1d64093427b6910c3d27269a13ef88a240
+gnss-sdr__gnss-sdr	https://github.com/gnss-sdr/gnss-sdr.git	pending		S	3fcb502aeb618968cd24492010fb8186f122efda
+moveit__moveit	https://github.com/moveit/moveit.git	pending		S	fdb79acafb24efd9e138b0d309fb2463186d4ab2
+project-everest__everparse	https://github.com/project-everest/everparse.git	pending		S	28c29dc58c676361c94061cf5485e966beb947de
+GNOME__gnome-control-center	https://github.com/GNOME/gnome-control-center.git	pending		S	1523c3bf2281e5826aa63106b852aa552c11421c
+rathena__rathena	https://github.com/rathena/rathena.git	pending		S	e985006171d2eb320ee512a653f4c83aea3d81b6
+texstudio-org__texstudio	https://github.com/texstudio-org/texstudio.git	pending		S	e211893317be39f2d05125cd76ea7412d54f5c0f
+tempesta-tech__tempesta	https://github.com/tempesta-tech/tempesta.git	pending		S	b18fe29bf6c168636f9c8a3ca7966c4121d708ca
+opendaylight__controller	https://github.com/opendaylight/controller.git	pending		S	7a5e877f7f43a3e18b320b7be768c1e75eed1474

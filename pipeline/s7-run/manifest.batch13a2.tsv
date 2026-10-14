@@ -1,0 +1,24 @@
+# Part a2 of the S and M projects of manifest.batch13.tsv (sha256 1d1f93d1d2952c0f2a25ca8f968b8bf867959609ab38c913a98784b9d447bfcc),
+# balanced by predicted time (5.8 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+IntelPython__dpctl	https://github.com/IntelPython/dpctl.git	pending		S	46e8a1901c83d8647547ba7d03416fc6b2c1c081
+typetools__checker-framework	https://github.com/typetools/checker-framework.git	pending		S	0091b160928cda73f8c3dff4cd871fada0a7518e
+rust-lang__rust-clippy	https://github.com/rust-lang/rust-clippy.git	pending		S	a17cc201726ac1f3b1fc678286a693a78deb3723
+platonai__Browser4	https://github.com/platonai/Browser4.git	pending		S	0fdba82a60edf7365cd74069ea5f367eadc2946a
+deegree__deegree3	https://github.com/deegree/deegree3.git	pending		S	2751161574dffdbeb0a39b4dd14c45b81b334b35
+QEF__q-e	https://github.com/QEF/q-e.git	pending		S	61569eb480231b649c47f631df9c5c83537df461
+domoticz__domoticz	https://github.com/domoticz/domoticz.git	pending		S	a35dd6ee93130b482af4c4e2cc4e17611e36bd6b
+acados__acados	https://github.com/acados/acados.git	pending		S	d8eaf7173ad9cb92e48239fde56d5d2180bff248
+linkedin__venice	https://github.com/linkedin/venice.git	pending		S	4c7f2114cddca379782cb5ba505ff1d543028f7e
+cocos__cocos-engine	https://github.com/cocos/cocos-engine.git	pending		S	4bbfb6f521936e87284cf5b3e59e6b8139411d7e
+gitlab.eclipse.org__eclipse__titan__titan.EclipsePlug-ins	https://gitlab.eclipse.org/eclipse/titan/titan.EclipsePlug-ins	pending		S	99746294c535c152b357b1e16b353cad919531b2
+videolan__vlc-android	https://github.com/videolan/vlc-android.git	pending		S	fc5fa1f4ee0d42b79dca60747aeb9c73cafe6ad1
+questdb__questdb	https://github.com/questdb/questdb.git	pending		S	6c63556431ae6513752e8c5943ab4409160f91d9
+google__gvisor	https://github.com/google/gvisor.git	pending		S	27248e2e8c3810e375425da9f9ba46f847cc03a6
+esphome__esphome	https://github.com/esphome/esphome.git	pending		S	8d8bd7311279bf91a8540d5c0f47edcb38cdd088
+liballeg__allegro5	https://github.com/liballeg/allegro5.git	pending		S	32acef4e7b80f427f63348c2c68fec0bb2aacbe8
+chakra-core__ChakraCore	https://github.com/chakra-core/ChakraCore.git	pending		S	97e68c9174209413f621deb2f963941550ef6f22
+RPCS3__rpcs3	https://github.com/RPCS3/rpcs3.git	pending		S	3e7477107a356c5d1fae92a7dc3c8d5953984782
+mempool__mempool	https://github.com/mempool/mempool.git	pending		S	4c5601d44d14a41dfcf79b947ad9dd26166c9f53
+kitao__pyxel	https://github.com/kitao/pyxel.git	pending		S	50f9bd77780c993aca62b5b221766bde5791081d

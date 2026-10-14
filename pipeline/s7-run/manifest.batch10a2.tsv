@@ -1,0 +1,16 @@
+# Part a2 of the S and M projects of manifest.batch10.tsv (sha256 196d7166a36b215c498418c83c3e96c241e1ff6dddc10cee6e033afb0553f8a7),
+# balanced by predicted time (5.7 h for 4 workers), u order; a fed spot part.
+# 12 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+corda__corda	https://github.com/corda/corda.git	pending		S	19c012046d265324823e936ea45e4103f84b9a06
+qt__qtwebengine	https://github.com/qt/qtwebengine.git	pending		S	a7a7106bc839974d9172c19707da15c21a8a7126
+selenide__selenide	https://github.com/selenide/selenide.git	pending		S	952403c2f29a0de193100709bcf93876d00a2d1d
+pgbackrest__pgbackrest	https://github.com/pgbackrest/pgbackrest.git	pending		S	0d2b88de32fa82f1b1d05243a0aa2e25a59548a3
+LMS-Community__slimserver	https://github.com/LMS-Community/slimserver.git	pending		S	f0a77cdce73ef1d1cc53019967d845dfcd0f8fb1
+oracle__visualvm	https://github.com/oracle/visualvm.git	pending		M	dd4cfc2c4202662f732e5b6e0852ad62e1da6603
+Xilinx__embeddedsw	https://github.com/Xilinx/embeddedsw.git	pending		S	97f2baf7f69e9d5f447650110af0d8841e501277
+OpenOLAT__OpenOLAT	https://github.com/OpenOLAT/OpenOLAT.git	pending		M	39dd691c222b517540d32482bd0576538195c920
+natalie-lang__natalie	https://github.com/natalie-lang/natalie.git	pending		S	edd3cd137a327bb2548977098055a5e48b88c7cb
+xwiki__xwiki-platform	https://github.com/xwiki/xwiki-platform.git	pending		M	6ae82277af0671c04e521c6ec8f2e428708895ec
+sagframe__sagacity-sqltoy	https://github.com/sagframe/sagacity-sqltoy.git	pending		S	b3605fbe15764de7816d21a10e3ef7429de921b5
+JuliaPackaging__Yggdrasil	https://github.com/JuliaPackaging/Yggdrasil.git	pending		S	7d6bac575273a75bd84789e751beccd81f7a0e23

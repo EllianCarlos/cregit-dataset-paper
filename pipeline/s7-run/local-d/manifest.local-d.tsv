@@ -1,0 +1,3 @@
+# census-local-d manifest (2026-10-14): the rerun of 1 project of batch25 a4 with cregit 23e4ccb (plain blame after a -C100 git exit 128). Row copied unchanged from ~/s3-work/ec2-batch25/record/manifest.batch25a4.tsv.
+# Columns: name  url  category  file_filter  size_class  commit
+gitlab.inria.fr__cedar__connectionlens	https://gitlab.inria.fr/cedar/connectionlens	pending		S	0e09f14ee380c3d31c04e6b73c520f4b6ece7474

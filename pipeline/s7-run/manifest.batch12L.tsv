@@ -1,0 +1,8 @@
+# The L projects of manifest.batch12.tsv (sha256 6f4e0b95cc46dde0079b671dc19e8737a15e3a7e98ad301a629af614192c3fc8), for the census batch12L on the big on-demand EC2.
+# 5 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+gregkh__linux	https://github.com/gregkh/linux.git	pending		L	e767a4ea70a3992c37ed604157d32f0dfbf9b1e3
+raspberrypi__linux	https://github.com/raspberrypi/linux.git	pending		L	6c97cb0f7b2d4f8f86f3814dd990ab32e5a24f2c
+JetBrains__android	https://github.com/JetBrains/android.git	pending		L	c7ea1a48e01f0a217d1bac521bae9bc7b2403086
+zephyrproject-rtos__zephyr	https://github.com/zephyrproject-rtos/zephyr.git	pending		L	8f62a4ab82b5c2121c088842d3233f75b603ce35
+digi-embedded__linux	https://github.com/digi-embedded/linux.git	pending		L	d96ee8c0c9903d41a0cc1df6fb17104b7a306236

@@ -1,0 +1,8 @@
+# Part a1 of the S and M projects of manifest.batch17.tsv (sha256 fe2bcfa4c462bf23afb8d7d027903ee019a67ffa25f26d74c91f3345493549db),
+# balanced by predicted time (16.2 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+corretto__corretto-27	https://github.com/corretto/corretto-27.git	pending		M	092c482725887c01cc7dabfce0ae2c7f8276ee4c
+EiffelSoftware__EiffelStudio	https://github.com/EiffelSoftware/EiffelStudio.git	pending		M	85212702b5720189580fcf36c7304a2be93d8e1f
+Tencent__TencentKona-11	https://github.com/Tencent/TencentKona-11.git	pending		M	19d5f2668f9f244da181e947027df787555e5d13
+openjdk__jdk	https://github.com/openjdk/jdk.git	pending		M	8cbb6b7036f1cbc48efea2d9e4830d240ab01fec

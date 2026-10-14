@@ -1,0 +1,27 @@
+# Part a2 of the S and M projects of manifest.batch18.tsv (sha256 432ad2e493ba966ef387af309dc2cfab6bc374ba9fa442b0705d1617cdcd2f76),
+# balanced by predicted time (5.9 h for 4 workers), u order; a fed spot part.
+# 23 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+medInria__medInria-public	https://github.com/medInria/medInria-public.git	pending		S	042488ff6f59a3a03771d840bdf8d2affe5ee535
+OpenAEV-Platform__openaev	https://github.com/OpenAEV-Platform/openaev.git	pending		S	42da51912391446b063dd23408bb2c91bf01d855
+neuronsimulator__nrn	https://github.com/neuronsimulator/nrn.git	pending		S	1e5b4072efd132efc3bfee9b90ecbe5194029ed5
+CorsixTH__CorsixTH	https://github.com/CorsixTH/CorsixTH.git	pending		S	63db8690a9abfe732d0202e80cceae27da4efecf
+microsoft__typespec	https://github.com/microsoft/typespec.git	pending		S	86a4ad18744c2e5d1eb54fd09ac56e2be7e84a9d
+indilib__indi	https://github.com/indilib/indi.git	pending		S	1dd9b34f24df6fd74ed45be17823fc937e192b47
+landley__toybox	https://github.com/landley/toybox.git	pending		S	a57b091d05ec366dcd4dd737784c03761cb6a4b1
+naev__naev	https://github.com/naev/naev.git	pending		M	bb03eaa47328b181bee2099cb1aee58d149c2f4e
+giampaolo__psutil	https://github.com/giampaolo/psutil.git	pending		S	da3d2be3b91368968332aa15c9c08acf28b84124
+gambitproject__gambit	https://github.com/gambitproject/gambit.git	pending		S	2715027dd94b2cc326e6be090fdd44ec1511ddb3
+zenustech__zeno	https://github.com/zenustech/zeno.git	pending		S	56c74cc3ef5ca5d0cc3a9d713f6e4e7788c45979
+mCRL2org__mCRL2	https://github.com/mCRL2org/mCRL2.git	pending		S	d071af8b884463dbcd431fb851ac74f2d25e4769
+acidanthera__OpenCorePkg	https://github.com/acidanthera/OpenCorePkg.git	pending		S	963025f1382eca619412d527ad82b6d19bee70d9
+bkaradzic__bgfx	https://github.com/bkaradzic/bgfx.git	pending		S	cca91681c953d2de9531197b0f580c866ffaa775
+ROCm__hip	https://github.com/ROCm/hip.git	pending		S	e00661614d20b38d0769c3755031f41925567d83
+envmodules__modules	https://github.com/envmodules/modules.git	pending		S	c42c58e072bfbc3840e2069302ef977f329d25ef
+ddnet__ddnet	https://github.com/ddnet/ddnet.git	pending		S	470eead4a05c1a81274bce45308dd25821179438
+spiceai__spiceai	https://github.com/spiceai/spiceai.git	pending		S	5ecacc94baa0b9e79fc7437c945098124e227255
+eclipse-aspectj__aspectj	https://github.com/eclipse-aspectj/aspectj.git	pending		S	0bd0e8bdd1acf40cc4654cf28585b43818ee409e
+BeamMW__beam	https://github.com/BeamMW/beam.git	pending		S	daf7191567b746953e6e7a8d72d4396b6d4c94f5
+pantsbuild__pants	https://github.com/pantsbuild/pants.git	pending		S	d544d067532fe8a4fa824a40f7ddec8d3ed80650
+nordic-institute__X-Road	https://github.com/nordic-institute/X-Road.git	pending		S	9b4a81fe8855f2ed0fdabc5121a3e8afd86bd278
+Wurst-Imperium__Wurst7	https://github.com/Wurst-Imperium/Wurst7.git	pending		S	71e3af0f2747937086ef889e34359507d95cc9f8

@@ -1,0 +1,25 @@
+# Part a3 of the S and M projects of manifest.batch12.tsv (sha256 6f4e0b95cc46dde0079b671dc19e8737a15e3a7e98ad301a629af614192c3fc8),
+# balanced by predicted time (6.7 h for 4 workers), u order; a fed spot part.
+# 21 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+apache__kudu	https://github.com/apache/kudu.git	pending		S	8c037cfef1ca0a2509f034784ce232c69a8aeaa5
+OpenSCAP__openscap	https://github.com/OpenSCAP/openscap.git	pending		S	6942b59fc861ad77ebcea93e70f32832d88e20f9
+theonedev__onedev	https://github.com/theonedev/onedev.git	pending		S	0eb6c7fe6f683737c319ae17545d496ea5e36e64
+amzeratul__halley	https://github.com/amzeratul/halley.git	pending		S	8a85e66997396e53206a6d8cde95b5074cd4f632
+argotorg__solidity	https://github.com/argotorg/solidity.git	pending		S	108e179da71cd04b483c990b972f4c53d8840ac4
+TheHPXProject__hpx	https://github.com/TheHPXProject/hpx.git	pending		M	beefea37922310bc9547fda5bf20cc6b76ee6dd9
+mne-tools__mne-cpp	https://github.com/mne-tools/mne-cpp.git	pending		S	4b3a76db0b9658fb0dbd71046e5af9b5fd201c12
+beyond-all-reason__RecoilEngine	https://github.com/beyond-all-reason/RecoilEngine.git	pending		M	74b5dcb4604cb679dbfe9b9437b2db0ec3d17422
+fastrepl__anarlog	https://github.com/fastrepl/anarlog.git	pending		S	36715ccb21978187ea417bb68bd5647efcc37ef8
+OpenVidu__openvidu	https://github.com/OpenVidu/openvidu.git	pending		S	1ebf471dab4d2c699eb34464c95881ab95beebf8
+apache__gluten	https://github.com/apache/gluten.git	pending		S	2681cc9a36ffecde47d61cdaa67049d5f91f3353
+google__agi	https://github.com/google/agi.git	pending		S	d08ae4f58566327881a8faf51758b8a2cc9ebfbe
+RenderKit__ospray	https://github.com/RenderKit/ospray.git	pending		S	1fc364776c5cbbf8b1100dbf321cc3d40da41311
+dogecoin__dogecoin	https://github.com/dogecoin/dogecoin.git	pending		S	47a303a449999314abcf83bd1fc7e77dd4540fcd
+ablab__spades	https://github.com/ablab/spades.git	pending		S	e617eb81d76616c2003765d55b169ff216fd5a32
+Icinga__icinga2	https://github.com/Icinga/icinga2.git	pending		S	703e7d4d350cf8e88db1e6b3b310511001b10656
+GNOME__evolution	https://github.com/GNOME/evolution.git	pending		M	32754087490879d13fb05f477ac58879e54ed0a5
+neutrinolabs__xrdp	https://github.com/neutrinolabs/xrdp.git	pending		S	9cd64936f53eb7c0a876b71787b321835da09ccc
+CoSMoSoftware__OBS-studio-webrtc	https://github.com/CoSMoSoftware/OBS-studio-webrtc.git	pending		S	e670e8693f7bd601c26257ef67d2dec5760bc042
+wso2__carbon-analytics	https://github.com/wso2/carbon-analytics.git	pending		S	105b3b74434252097b9cf7f96528ca0ab859ad61
+danakj__openbox	https://github.com/danakj/openbox.git	pending		S	3a2fbc65186c54855915490ec3d0b4b2ddc079ea

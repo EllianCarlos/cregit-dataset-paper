@@ -1,0 +1,24 @@
+# Part b2 of the S and M projects of manifest.batch6.tsv (sha256 d54537af63a6cf6201cae5c5377286219e33305adb682e411af3367e642cb17b),
+# balanced by predicted time (6.9 h for 4 workers), u order; a fed spot part.
+# 20 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+facebook__proxygen	https://github.com/facebook/proxygen.git	pending		S	beba204d612900e80dba29eb7d5669ff973537e9
+intel__intel-graphics-compiler	https://github.com/intel/intel-graphics-compiler.git	pending		S	b481d6cb319652410c7218f866c3610a68771d1f
+SanderMertens__flecs	https://github.com/SanderMertens/flecs.git	pending		S	9e874bca2c05b60612cf5b671988adefc0785820
+Submitty__Submitty	https://github.com/Submitty/Submitty.git	pending		S	df165f676c2d892adfd1343ac82e6ee490b07152
+VIAME__VIAME	https://github.com/VIAME/VIAME.git	pending		S	e293185690a5e397ca3b2ccff89e4d3875a82295
+mit-plv__fiat-crypto	https://github.com/mit-plv/fiat-crypto.git	pending		S	7049792ee1b95c4f47607f6961baa398bc456194
+tmux__tmux	https://github.com/tmux/tmux.git	pending		S	d1fedcc9a0e98dbad57f92f923db46c6f4b6e893
+Jaspersoft__jasperreports	https://github.com/Jaspersoft/jasperreports.git	pending		S	987b7614ee7df7d69a2300e3df9e68473e399903
+SoftInstigate__restheart	https://github.com/SoftInstigate/restheart.git	pending		S	ca813b8eb2938bb9fdf5b1c7b06a5c49bc586f71
+AtomGraph__LinkedDataHub	https://github.com/AtomGraph/LinkedDataHub.git	pending		S	317f848ff05740438d607ee43170f7c541dc1134
+sandstorm-io__sandstorm	https://github.com/sandstorm-io/sandstorm.git	pending		S	a97cf3ee19d3bf2761cd597583ca5d998de425d8
+odpi__egeria	https://github.com/odpi/egeria.git	pending		S	b86b8f94aa79c03429c29bfbab82b2d7bc2fb89d
+bitcoin-sv__bitcoin-sv	https://github.com/bitcoin-sv/bitcoin-sv.git	pending		S	879fc8b42168dd0e608dafd51b39c6dabad37d4d
+KhronosGroup__Vulkan-ValidationLayers	https://github.com/KhronosGroup/Vulkan-ValidationLayers.git	pending		S	a450a42de5ae69216381f179634bac30def5219a
+facebook__pyrefly	https://github.com/facebook/pyrefly.git	pending		S	4db6112eccad4a76f7efcbd27c34dcccb9b31290
+emsesp__EMS-ESP32	https://github.com/emsesp/EMS-ESP32.git	pending		S	eb4232d6c8e55579ce225cacc0cac7963237c3d7
+NEZNAMY__TAB	https://github.com/NEZNAMY/TAB.git	pending		S	fbee22d785cd21da1d89481eb48abfbb6b4998f7
+openvswitch__ovs	https://github.com/openvswitch/ovs.git	pending		S	8b049f1ff6454cbb6c5c7b575d878965023031e8
+oVirt__ovirt-engine	https://github.com/oVirt/ovirt-engine.git	pending		M	a5c0dd956cce62a785e26c7db578334ae6a6e89d
+openwall__john	https://github.com/openwall/john.git	pending		S	302f527093210d46b8d0de5c75245765f17d4806

@@ -1,0 +1,23 @@
+# Part a2 of manifest.batch3a.tsv: rows 2, 6, ... (every 4th), u order.
+# 20 projects.
+# Columns: name  url  category  file_filter  size_class  commit
+matz__spinel	https://github.com/matz/spinel.git	pending		S	6d4846576b5108fd3a2b088f78288e540979674d
+google-deepmind__open_spiel	https://github.com/google-deepmind/open_spiel.git	pending		S	48401890ee9857e611678302371378175a8e4c6b
+starkware-libs__cairo	https://github.com/starkware-libs/cairo.git	pending		S	3d67521516e876593c6cf9add1ad6f538d931cf9
+brave__brave-core	https://github.com/brave/brave-core.git	pending		M	47fec00701cbc0d5a6337ddd88719ed5bf42cea0
+Sigil-Ebook__Sigil	https://github.com/Sigil-Ebook/Sigil.git	pending		S	c95c2d7e8bc21c1c9f4feb136b82744088cf50c5
+SRI-CSL__yices2	https://github.com/SRI-CSL/yices2.git	pending		S	9e5d726aa3261c7960e064250a0da83a6de4011a
+OpenAgentsInc__openagents	https://github.com/OpenAgentsInc/openagents.git	pending		S	6973a113d1b5a74f42ce7be7329ea14c6896ff1e
+xipki__xipki	https://github.com/xipki/xipki.git	pending		S	2127b71fceef2f02be59738cf2fd77fb24869377
+tls-attacker__TLS-Attacker	https://github.com/tls-attacker/TLS-Attacker.git	pending		S	0b8e9379f3a665b05a958f23a315213926453902
+facebookincubator__MetaPython	https://github.com/facebookincubator/MetaPython.git	pending		M	50ef6256e00233a73fd1e1cd9f8e1f1712b7f3c7
+firedancer-io__firedancer	https://github.com/firedancer-io/firedancer.git	pending		S	75f2f18aeec755f3a2ed5a4fcf119f7c5bde40d0
+bndtools__bnd	https://github.com/bndtools/bnd.git	pending		S	c962e5269eb22df3f17650e88b3ade92e3b801c3
+openwebf__webf	https://github.com/openwebf/webf.git	pending		S	c091d3349168947f590dc00efa8bdd83c4c98402
+rmyndharis__OpenWA	https://github.com/rmyndharis/OpenWA.git	pending		S	eab8a97133c60a74e440ad2b18dda5268d8b4508
+edgcpp__compiler	https://github.com/edgcpp/compiler.git	pending		M	e3e8268d32dc63147ca431f28f2f3cdf1789909c
+PerryTS__perry	https://github.com/PerryTS/perry.git	pending		S	c699b65c576f4e5853ef8ab99a2bf200f6e9c1d4
+swig__swig	https://github.com/swig/swig.git	pending		S	817dbb3ec0f2204aa80edf57ea484cd60acc4c5c
+esengine__estella	https://github.com/esengine/estella.git	pending		S	9218cb2c0933f941011258c25531a49cf12cdc6b
+KDE__tellico	https://github.com/KDE/tellico.git	pending		S	fb29fb67c34a73bd6aaf442375be841289b44e9d
+HIllya51__LunaTranslator	https://github.com/HIllya51/LunaTranslator.git	pending		S	2f65c65eb2f6ea6584a4210a982f64412df071cd

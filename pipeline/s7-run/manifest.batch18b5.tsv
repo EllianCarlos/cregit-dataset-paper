@@ -1,0 +1,21 @@
+# Part b5 of the S and M projects of manifest.batch18.tsv (sha256 432ad2e493ba966ef387af309dc2cfab6bc374ba9fa442b0705d1617cdcd2f76),
+# balanced by predicted time (5.9 h for 4 workers), u order; a fed spot part.
+# 17 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+BLAST-WarpX__warpx	https://github.com/BLAST-WarpX/warpx.git	pending		S	eaab9ff8d95e67489f11e80235f38a0f0df64484
+emuflight__EmuFlight	https://github.com/emuflight/EmuFlight.git	pending		S	6bc119e5b3a9af5ff6d8e9cdca3065314f571996
+sorbet__sorbet	https://github.com/sorbet/sorbet.git	pending		S	0745303c8937a3242c424bb9e10607f3dcc58ccb
+vinhnx__VTCode	https://github.com/vinhnx/VTCode.git	pending		S	1e9bae2a8840c8c7c9d9dba590359c776121d868
+dengxibo__sumatrapdf-plus	https://github.com/dengxibo/sumatrapdf-plus.git	pending		S	14b96c652019459b95fc0ac5197d383d352a0132
+EdgeApp__edge-react-gui	https://github.com/EdgeApp/edge-react-gui.git	pending		S	1e4e6f672e408df858ff7a787d7baff660ac6e10
+facebook__openr	https://github.com/facebook/openr.git	pending		S	f3ef7815b3ef7f7aa2f6ab7d2f19cc1b5480835f
+golemcloud__golem	https://github.com/golemcloud/golem.git	pending		S	78e34e9a97334bbb7a8fbb61303b0f9422824cfd
+eclipse-dali__webtools.dali	https://github.com/eclipse-dali/webtools.dali.git	pending		S	3ece05a53e74777eade9d97841134ab8ec585a70
+prusa3d__PrusaSlicer	https://github.com/prusa3d/PrusaSlicer.git	pending		S	30ef59195e0f3ee6f270b185bb5f9fb5f349f81f
+HackWebRTC__webrtc	https://github.com/HackWebRTC/webrtc.git	pending		S	7abfc990c00ab35090fff285fcf635d1d7892433
+AlphaWallet__alpha-wallet-android	https://github.com/AlphaWallet/alpha-wallet-android.git	pending		S	f7b84e0cec282f0a1a7f0cd30f60d5c5fee26d40
+lighttpd__lighttpd1.4	https://github.com/lighttpd/lighttpd1.4.git	pending		S	2ddc51389a139d2b08daf310596c951c1d53dc8d
+steemit__steem	https://github.com/steemit/steem.git	pending		S	b2f8567887b100996f44605dfa96343ee84136d6
+cisco__openh264	https://github.com/cisco/openh264.git	pending		S	1a0073f0322c8b74cbcb75ca1bb1c3d19d75538d
+SoarGroup__Soar	https://github.com/SoarGroup/Soar.git	pending		S	683aba6de59c00d3bafc03a4210ba8908cd2f2a3
+infiniflow__ragflow	https://github.com/infiniflow/ragflow.git	pending		S	2400ca8eb51432b1d304266d0de9ca232d9b53fa

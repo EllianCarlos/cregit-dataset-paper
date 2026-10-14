@@ -1,0 +1,20 @@
+# spi (Software in the Public Interest) — fetched 2026-10-05 (raw/spi/fetched_at.txt)
+- Roster: https://www.spi-inc.org/projects/ (raw/spi/projects.html). The table of associated projects (the page says 48); parsed 48 `<td><a>` entries. roster_status = `associated project`.
+- Repos: fetched each https://www.spi-inc.org/projects/<slug>/ (raw/spi/pages/*.html, 48 x HTTP 200) and took the first code-host owner/repo link between `<h1>` and "Project Liaison". Only PMIx gives one (https://github.com/pmix/pmix-standard). Tux4Kids and YafaRay link only GitHub org pages (github.com/tux4kids, github.com/YafaRay), so no repo or slug; links are in note.
+- source_url = the roster page; the note names the per-project page.
+- Counts: 48 rows/projects, 1 repo_url, 1 github_slug. Parser: raw/_bin/parse_spi.py. REST calls: 0.
+
+## Home page lookup (2026-10-05)
+- Input: the rows of spi.csv with an empty repo_url (47). Output: spi.repos.csv (one row per such row; the original CSV is untouched).
+- Method: open the page the roster links for the project, ONE step, and take the repository link that page itself gives (code host owner/repo, GitLab/Gitea/cgit/gitweb, SourceForge code, Subversion). Fetcher raw/lookup/fetch.py: one request at a time, >=2 s between any two requests, manual redirects (each hop counted as a request), 30 s timeout, at most 2 retries on network error/5xx; Firefox User-Agent. raw/lookup/pass2.py then followed <meta refresh> targets once and made one more attempt with a plain descriptive User-Agent for pages that returned 403/406. Pages: raw/spi/homepages/ (+ _fetch_log.jsonl). Candidates: raw/lookup/extract.py; the choice for each row was made by hand (raw/lookup/decisions.tsv) and every repo_url was checked to occur in the saved page (raw/lookup/assemble.py). GitHub REST calls: 0.
+- Rule for choosing: the project's own main code repo (link labelled GitHub/Source/Code/Repository, or the repo named for the project); website-source repos ("Edit this page", *.github.io, *-web, webwml), theme credits, third-party projects and personal profiles are ignored. A link to a GitHub org / GitLab group / forge root -> repo_url = that URL, note "org only". github_slug only when repo_url is one github.com repo.
+- Counts: 47 looked up; found repo 13 (8 with github_slug); org only 11; none named 11; not software 5; fetch failed 4; no link to follow 3.
+- Lookup URL = the first site link on the SPI project page (raw/spi/pages/), i.e. the project's homepage. Drizzle, Open Voting Foundation and The Whisper Project link no site ('no link'). Tux4Kids and YafaRay: the SPI page links only a GitHub org -> org only, no fetch.
+- Judgement calls: not software = Compile Farm (build-machine service), haskell.org (community infrastructure), MPI Forum (standards body), OFTC (IRC network), Open Bioinformatics Foundation (foundation); any repo/org they link is in the note. OpenSSL Foundation is kept as software-related and gets 'none'. Forge roots / multi-repo servers -> org only: Adelie (git.adelielinux.org), Gentoo (gitweb.gentoo.org), OpenEmbedded (cgit), MinGW (SourceForge git list). Debian and TeXmacs link only website / user-sharing repos -> none. Libreboot: lbmk (linked as the bug tracker) taken, lbwww is the website. Manasource: mana/mana taken; manaserv and tmwa also linked. FFmpeg: the gitweb 'repository' link is kept verbatim. SMC: GitLab group taken, GitHub org noted.
+- Failed hosts: archlinux32.org, www.wesnoth.org, openzfs.org (Anubis JS challenge), translatewiki.net (403 to both UAs).
+
+## Playwright retry, 2026-10-05
+One Chromium page load per site, no automation hiding (raw/lookup/pw_fetch.py). Arch Linux 32, Battle for Wesnoth and OpenZFS return the Anubis rejection page; translatewiki.net returns a 403 challenge. These rows stay "fetch failed".
+
+## Browser lookup, 2026-10-05
+Pages read in the author's Firefox through browser-control-mcp, after the author passed the bot checks and approved each domain. No link was followed. Results are in spi.repos.csv, note "page read in the author's Firefox".

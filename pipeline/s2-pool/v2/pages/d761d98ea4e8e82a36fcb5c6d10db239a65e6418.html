@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="author" href="mailto:webmasters@gnu.org" />
+<link rel="icon" type="image/png" href="/graphics/gnu-head-mini.png" />
+<meta name="ICBM" content="42.355469,-71.058627" />
+<link rel="stylesheet" type="text/css" href="/layout.min.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="/print.min.css" media="print" />
+
+
+
+<!-- Parent-Version: 1.101 -->
+<!-- This page is derived from /server/standards/boilerplate.html -->
+<title>Automake - GNU Project - Free Software Foundation</title>
+<style type="text/css" media="print,screen">
+  .summary { width: 12em; margin-top: 1.3em; }
+}
+</style>
+<!-- begin /server/gnun/initial-translations-list.html -->
+<!-- HTML head: set a flag for further expansion in body-include*.html. -->
+<!-- end /server/gnun/initial-translations-list.html -->
+
+<!-- start of server/banner.html -->
+<!-- start of head-include-2.html -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- end of head-include-2.html -->
+
+</head>
+<body>
+<div class="inner">
+<!-- start of server/body-include-1.html -->
+<div id="top">
+<a class="skip" href="#content"><b>Skip to main text</b></a>
+</div>
+
+<div id="fsf-frame" role="complementary">
+<form id="fssbox" action="https://my.fsf.org/civicrm/profile/create?reset=1&amp;gid=31"
+      method="post">
+ <div>
+  <input name="postURL" type="hidden" value="" />
+  <input type="hidden" name="group[25]" value="1" />
+  <input name="cancelURL" type="hidden" value="https://crm.fsf.org/civicrm/profile?reset=1&amp;gid=31" />
+  <input name="_qf_default" type="hidden" value="Edit:cancel" />
+  <label for="frmEmail">
+   <a href="//www.fsf.org/fss">Free Software Supporter</a>:
+  </label>
+  <input type="text" id="frmEmail" name="email-Primary" size="18" maxlength="80"
+         value="email address" onfocus="this.value=''"/>
+  <input type="submit" name="_qf_Edit_next" value="Sign up" />
+ </div>
+</form>
+
+<div id="join-fsf" class="button"><a
+href="https://www.fsf.org/associate/support_freedom?referrer=4052">JOIN&nbsp;THE&nbsp;FSF</a>
+</div>
+</div>
+
+<div id="header" role="banner">
+<p id="gnu-banner">
+ <a href="/">
+ <img src="/graphics/heckert_gnu.transp.small.png" height="48" width="49"
+      alt="&nbsp;[A GNU head]&nbsp;" /><strong>GNU</strong> <span
+ class="hide">Operating System</span></a><br />
+ <small id="fsf-support">Supported by the
+ <a href="#mission-statement">Free Software Foundation</a></small>
+</p>
+
+<div id="switches">
+<!-- begin search button -->
+ <div  id="search-button" class="switch">
+  <a href="//www.gnu.org/cgi-bin/estseek.cgi">
+  <img id="search-icon" height="30" width="30"
+       src="/graphics/icons/search.png"
+       alt="&nbsp;[Search www.gnu.org]&nbsp;" /></a>
+ </div>
+<!-- end search button -->
+
+</div>
+</div>
+<!-- end of server/body-include-1.html -->
+
+<!-- start of server/body-include-2 -->
+
+
+<div style="clear: both"></div>
+
+<div id="navigation" role="navigation">
+ <a id="more-links" href="#navigation" title="More...">
+   <span>Site navigation</span></a>
+ <a id="less-links" href="#content"><b>Skip</b></a>
+ <ul>
+
+   <li id="tabAboutGNU"><a href="/gnu/gnu.html">ABOUT&nbsp;GNU</a></li>
+
+
+  <li id="tabPhilosophy"><a href="/philosophy/philosophy.html">PHILOSOPHY</a></li>
+
+
+  <li id="tabLicenses"><a href="/licenses/licenses.html">LICENSES</a></li>
+
+
+  <li id="tabEducation"><a href="/education/education.html">EDUCATION</a></li>
+
+
+  <li id="tabSoftware" class="active">
+     <span class='no-display'>=</span> 
+    <a href="/software/software.html">SOFTWARE</a>
+    <span class="gnun-split"></span>
+     <span class='no-display'>=</span> 
+  </li>
+
+
+  <li id="tabDistros"><a href="/distros/distros.html">DISTROS</a></li>
+
+
+  <li id="tabDoc"><a href="/doc/doc.html">DOCS</a></li>
+
+
+  <li id="tabMalware"><a href="/proprietary/proprietary.html">MALWARE</a></li>
+
+
+  <li id="tabHelp"><a href="/help/help.html">HELP&nbsp;GNU</a></li>
+
+
+  <li id="tabAV"><a href="/audio-video/audio-video.html">AUDIO&nbsp;&amp;&nbsp;VIDEO</a></li>
+
+
+  <li id="tabArt"><a href="/graphics/graphics.html">GNU&nbsp;ART</a></li>
+
+
+  <li id="tabFun"><a href="/fun/humor.html">FUN</a></li>
+
+
+  <li id="tabPeople"><a href="/people/people.html">GNU'S&nbsp;WHO?</a></li>
+
+  <li><a href="//directory.fsf.org">SOFTWARE&nbsp;DIRECTORY</a></li>
+  <li><a href="https://h-node.org/">HARDWARE</a></li>
+  <li><a href="/server/sitemap.html">SITEMAP</a></li>
+ </ul>
+ <div style="clear: both"></div>
+</div><!-- /"navigation -->
+<!-- end of server/body-include-2 -->
+
+<div id="content" role="main">
+
+
+<!-- end of server/banner.html -->
+
+<div class="reduced-width">
+
+<h2>GNU Automake</h2>
+
+<p>
+GNU Automake is a tool for automatically generating
+<code>Makefile.in</code> files compliant with the GNU Coding Standards.
+Automake requires the use of <a
+href="/software/autoconf/autoconf.html">GNU Autoconf</a>.
+</p>
+
+<p>
+<a href="https://lists.gnu.org/archive/html/automake/2021-03/msg00018.html"
+>New volunteers to help maintain Automake</a> are needed.  Please help
+if you can.
+</p>
+
+<div class="summary">
+<hr class="no-display">
+<h3 class="no-display">Table of contents</h3>
+<ul>
+ <li><a href="#downloading">Downloads</a></li>
+ <li><a href="#documentation">Documentation</a></li>
+ <li><a href="#mailinglists">Mailing lists</a></li>
+ <li><a href="#contribute">Getting involved</a></li>
+ <li><a href="#bugs">Bug reports</a></li>
+</ul>
+<hr class="no-display">
+</div>
+<!-- End table of contents -->
+
+
+<h3 id="downloading">Downloads</h3>
+
+<ul>
+ <li><strong>Stable releases</strong> are available on the main GNU download
+  server (<a href="https://ftp.gnu.org/gnu/automake/">HTTPS</a>,&nbsp;
+  <a href="ftp://ftp.gnu.org/gnu/automake/">FTP</a>) and its
+  <a href="/prep/ftp.html">mirrors</a>. Please
+  <a href="https://ftpmirror.gnu.org/gnu/automake/">use a mirror</a> if
+  possible.
+ </li>
+
+ <li><strong>Unstable versions</strong> (DO NOT use in production):
+  <p>Test releases can be found on the GNU &ldquo;alpha&rdquo; server
+  (<a href="https://alpha.gnu.org/gnu/automake/">HTTPS</a>,&nbsp;
+  <a href="ftp://alpha.gnu.org/gnu/automake/">FTP</a>) and its
+  <a href="/prep/ftp.html">mirrors</a>.  These releases have a 
+  version number (and git tag) whose last part is 90 or higher, such as
+  <tt>1.18.90</tt>.  Trying out test releases is always greatly
+  appreciated.</p>
+
+  <p>The latest development sources can be fetched through git
+  from <a href="https://savannah.gnu.org/git/?group=automake">Savannah</a>.</p>
+ </li>
+</ul>
+
+<h3 id="documentation">Documentation</h3>
+
+<p>
+The Automake manual can be read in <a
+href="/software/automake/manual/automake.html">HTML</a> or <a
+href="/software/automake/manual/automake.pdf">PDF</a>; <a
+href="/software/automake/manual/index.html">other formats</a> are also
+available. If you have installed Automake on your system, you may also
+find more information about it by looking at your local documentation;
+for example, you might run <kbd>info automake</kbd> at the shell prompt.
+</p>
+
+<p>
+Older versions of the Automake manual are also <a
+href="/software/automake/manual/index-full.html">available</a>.
+</p>
+
+<p>
+For anyone interested, a brief <a
+href="/software/automake/history/automake-history.html">history of
+Automake</a> (up to roughly 2007) is available; again, <a
+href="/software/automake/history/index.html">other formats</a> are
+available.
+</p>
+
+<h3 id="mailinglists">Mailing lists</h3>
+
+<p>
+Automake has several public mailing lists, each of which is archived.
+</p>
+
+<ul>
+<li>
+For general Automake discussions, use
+&lt;<a href="mailto:automake@gnu.org">automake@gnu.org</a>&gt;
+(<a href="https://lists.gnu.org/archive/html/automake/">archives</a>
+and
+<a href="https://lists.gnu.org/mailman/listinfo/automake/">subscription</a>).
+</li>
+
+<li>
+If you have a patch for Automake, please send it to &lt;<a
+href="mailto:automake-patches@gnu.org">automake-patches@gnu.org</a>&gt;
+(<a
+href="https://lists.gnu.org/archive/html/automake-patches/">archives</a>
+and <a
+href="https://lists.gnu.org/mailman/listinfo/automake-patches/">subscription</a>).
+The <a
+href="https://git.savannah.gnu.org/cgit/automake.git/tree/HACKING">HACKING</a>
+file in the Automake source repository explains how to prepare, format
+and post a patch.
+</li>
+
+<li>
+Bug reports can be sent to
+&lt;<a href="mailto:bug-automake@gnu.org">bug-automake@gnu.org</a>&gt;
+(<a href="https://lists.gnu.org/archive/html/bug-automake/">archives</a>
+and
+<a href="https://lists.gnu.org/mailman/listinfo/bug-automake/">subscription</a>).
+Before submitting a bug report, please read the
+<a href="manual/html_node/Reporting-Bugs.html">Bug Reporting</a>
+section of the manual.
+</li>
+
+<li>
+All commits to the repository are automatically mailed to
+&lt;automake-commit@gnu.org&gt;
+(<a href="https://lists.gnu.org/archive/html/automake-commit/">archives</a>
+and
+<a href="https://lists.gnu.org/mailman/listinfo/automake-commit/">subscription</a>).
+</li>
+</ul>
+
+<p>
+You can subscribe to any Automake mailing list via the associated web
+interfaces, linked above. Or you can send an empty mail with a
+<i>Subject:</i> header line of just &ldquo;subscribe&rdquo; to the
+corresponding <i>-request</i> address.
+</p>
+
+<h3 id="contribute">Getting involved</h3>
+
+<p>Development of Automake, and GNU in general, is a volunteer effort,
+and your contribution would be welcome. For general information, please
+read <a href="/help/">How to help GNU</a>. If you'd like to get involved
+with Automake, it's a good idea to join the discussion mailing list (see
+above).</p>
+
+<dl>
+
+<dt>Development</dt>
+
+<dd>
+For consolidated development information, please see the <a
+href="https://savannah.gnu.org/projects/automake/">Automake project
+page</a> at <a href="https://savannah.gnu.org">savannah.gnu.org</a>.
+
+<p>There are <a
+href="https://debbugs.gnu.org/cgi/pkgreport.cgi?package=automake;include=tags%3Aconfirmed">numerous
+longstanding bugs</a> in the <a
+href="https://debbugs.gnu.org/cgi/pkgreport.cgi?package=automake">Automake
+bug tracker</a> which need attention. (They are tagged
+&ldquo;confirmed&rdquo;. Help with any of the other outstanding bugs is
+welcome also.) If you have time and inclination, please pick any and give
+it a whirl; no one is working on them. The <a
+href="https://git.savannah.gnu.org/cgit/automake.git/tree/HACKING">HACKING</a>
+file in the repository provides information about getting started with the
+development sources. Thanks!
+</p>
+</dd>
+
+<dt>Maintainer</dt>
+
+<dd>Automake is currently maintained by Jim Meyering, Kamila Szewczyk,
+and Karl Berry.
+Please use the mailing lists for contact.</dd>
+
+</dl>
+
+<h3 id="bugs">Bug reports</h3>
+
+<p>
+For bugs in Automake, please see the <a
+  href="manual/html_node/Reporting-Bugs.html">Bug Reporting</a> section of the
+manual.
+</p>
+
+<p>
+Automake depends on other projects; it's best for everyone if bug
+reports are directed to the correct place. To cite two common cases:
+1)&nbsp;if your bug is in Autoconf (<code>AC_*</code> or
+<code>AS_*</code> macros), please see the <a
+href="https://savannah.gnu.org/projects/autoconf">Savannah page for
+Autoconf</a>; 2)&nbsp;if your bug is in the <code>config.guess</code> or
+<code>config.sub</code> scripts, please email config-patches@gnu.org.
+Thanks.
+</p>
+
+</div>
+</div><!-- for id="content", starts in the include above -->
+
+              <!-- begin server/footer-text.html -->
+
+
+
+
+
+
+<div style="clear:both"></div>
+
+
+
+<div id="mission-statement" role="complementary">
+ <div class="backtotop">
+  <hr class="no-display" />
+  <a href="#header"><span>BACK TO TOP </span>&#9650;</a>
+ </div>
+<div style="clear: both"></div>
+<blockquote>
+<p style="direction:ltr; text-align:left"><a href="//www.fsf.org"><img id="fsfbanner"
+src="/graphics/fsf-logo-notext-small.png" alt="&nbsp;[FSF logo]&nbsp;"
+width="75" height="25" /></a><strong>
+&ldquo;The Free Software Foundation (FSF) is a nonprofit with a worldwide
+mission to promote computer user freedom. We defend the rights of all
+software users.&rdquo;</strong></p>
+</blockquote>
+
+<div id="support-the-fsf" class="button">
+ <a class="join" href="//www.fsf.org/associate/support_freedom?referrer=4052">JOIN</a>
+ <a class="donate" href="//donate.fsf.org/">DONATE</a>
+ <a class="shop" href="//shop.fsf.org/">SHOP</a>
+</div>
+</div>
+<!-- end server/footer-text.html -->
+
+
+<div id="footer" role="contentinfo">
+<div class="unprintable">
+
+<p>Please send general FSF &amp; GNU inquiries to
+<a href="mailto:gnu@gnu.org">&lt;gnu@gnu.org&gt;</a>.
+There are also <a href="/contact/">other ways to contact</a>
+the FSF.  Broken links and other corrections or suggestions can be sent
+to <a href="mailto:bug-automake@gnu.org">&lt;bug-automake@gnu.org&gt;</a>,
+patches to <a href="mailto:automake-patches@gnu.org"
+>&lt;automake-patches@gnu.org&gt;</a>.</p>
+
+<p>Please see the <a
+href="/server/standards/README.translations.html">Translations
+README</a> for information on coordinating and contributing translations
+of this article.</p>
+</div>
+
+<!-- Regarding copyright, in general, standalone pages (as opposed to
+     files generated as part of manuals) on the GNU web server should
+     be under CC BY-ND 4.0.  Please do NOT change or remove this
+     without talking with the webmasters or licensing team first.
+     Please make sure the copyright date is consistent with the
+     document.  For web pages, it is ok to list just the latest year the
+     document was modified, or published.
+     
+     If you wish to list earlier years, that is ok too.
+     Either "2001, 2002, 2003" or "2001-2003" are ok for specifying
+     years, as long as each year in the range is in fact a copyrightable
+     year, i.e., a year in which the document was published (including
+     being publicly visible on the web or in a revision control system).
+     
+     There is more detail about copyright years in the GNU Maintainers
+     Information document, www.gnu.org/prep/maintain. -->
+
+<p>Copyright &copy; 1997-2026 Free Software Foundation, Inc.</p>
+
+<p>This page is licensed under a <a rel="license"
+href="https://creativecommons.org/licenses/by-nd/4.0/">Creative
+Commons Attribution-NoDerivatives 4.0 International License</a>.</p>
+
+<!-- start of server/bottom-notes.html -->
+<div id="bottom-notes" class="unprintable">
+<p><a href="//www.fsf.org/about/dmca-notice">Copyright Infringement Notification</a></p>
+<div id="generic">
+
+
+</div>
+</div>
+<!-- end of server/bottom-notes.html -->
+
+
+<p class="unprintable">Updated:
+<!-- timestamp start -->
+$Date: 2026/09/04 21:30:47 $
+<!-- timestamp end -->
+</p>
+</div>
+</div><!-- for class="inner", starts in the banner include -->
+</body>
+</html>

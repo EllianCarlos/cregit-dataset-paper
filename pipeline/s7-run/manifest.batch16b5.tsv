@@ -1,0 +1,26 @@
+# Part b5 of the S and M projects of manifest.batch16.tsv (sha256 1e4fd43f0de322264d2b94b8a8370f41906df20bc45b8315187818245642b2d1),
+# balanced by predicted time (6.4 h for 4 workers), u order; a fed spot part.
+# 22 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+GeekyAnts__NativeBase	https://github.com/GeekyAnts/NativeBase.git	pending		S	335a1d5f854f4416b841235c1afdfda04ea12243
+copy__v86	https://github.com/copy/v86.git	pending		S	6db8b157974dbaf1b54d2c2ec12dd71ddc1891e9
+frostwire__frostwire	https://github.com/frostwire/frostwire.git	pending		S	e4d3547059a7dfd058821ef6a25e5b412c90159c
+facebookincubator__fizz	https://github.com/facebookincubator/fizz.git	pending		S	9146e245e4bfbf0b2bd31ab32b9f7ff6758d18f1
+M66B__FairEmail	https://github.com/M66B/FairEmail.git	pending		M	e54d23edf04068814c387b93e1d4dab8f6f6d2cc
+msoos__cryptominisat	https://github.com/msoos/cryptominisat.git	pending		S	2bf89cfb3e126e559d472388486327813f735f7e
+cabinpkg__cabin	https://github.com/cabinpkg/cabin.git	pending		S	2c2682245999771ecc81be83902d48b8ae2b2332
+apache__nifi	https://github.com/apache/nifi.git	pending		S	cc1ef0cfe3650cbfcf202aacf297b1213a97acba
+Cantera__cantera	https://github.com/Cantera/cantera.git	pending		S	e906c2f9341413412ab4d455d1e3977a5d2f3102
+Unvanquished__Unvanquished	https://github.com/Unvanquished/Unvanquished.git	pending		S	b11fa74849effcf00357665ae172cbc51c9d13fc
+seqan__seqan	https://github.com/seqan/seqan.git	pending		S	8b689a8bb988f6672b2acc766601295ff1bb1e7f
+LadybugDB__ladybug	https://github.com/LadybugDB/ladybug.git	pending		S	08c978964e0d9542ec4eb1fd06211730bccd83dc
+nvaccess__nvda	https://github.com/nvaccess/nvda.git	pending		S	663e4b6798ad759321d749ad039271446ba29a72
+openfl__lime	https://github.com/openfl/lime.git	pending		S	f67f444ad4d9087bccf17eac5f57bb79c9ff2fb7
+YunaiV__ruoyi-vue-pro	https://github.com/YunaiV/ruoyi-vue-pro.git	pending		S	ac022b15a094cf9cf82903d429b9729e72309da5
+doxygen__doxygen	https://github.com/doxygen/doxygen.git	pending		S	d4fe2eb0b9c34ccaa1ff768c2890d52d4f560023
+cvc5__cvc5	https://github.com/cvc5/cvc5.git	pending		S	053f65c8c6306a6b6afede28a73a82550a0c949f
+tinyhumansai__openhuman	https://github.com/tinyhumansai/openhuman.git	pending		M	852abb0d29f62b0abba5adb2fe3c967fc8b57952
+eugenp__tutorials	https://github.com/eugenp/tutorials.git	pending		S	56094ee565405202dab6c7cfbfecaee32882d06d
+phonopy__phonopy	https://github.com/phonopy/phonopy.git	pending		S	0a8c592650388467614e33fc3488eb1a5abbcbb4
+facebook__litho	https://github.com/facebook/litho.git	pending		S	55e28e58930a53133620fd32406ec8c3a9116c0c
+rdiankov__openrave	https://github.com/rdiankov/openrave.git	pending		S	e76b0b2489a3ec2cf8fa044019a1975b446318a7

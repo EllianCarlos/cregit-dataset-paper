@@ -1,0 +1,19 @@
+# Part b4 of the S and M projects of manifest.batch17.tsv (sha256 fe2bcfa4c462bf23afb8d7d027903ee019a67ffa25f26d74c91f3345493549db),
+# balanced by predicted time (5.4 h for 4 workers), u order; a fed spot part.
+# 15 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+SynoCommunity__spksrc	https://github.com/SynoCommunity/spksrc.git	pending		S	cdc37f1f7908d0fa20e409d7869e5793263ff51b
+confluentinc__common	https://github.com/confluentinc/common.git	pending		S	25f5532d690699d27d82f571da91ad88fd4bb514
+servo__servo	https://github.com/servo/servo.git	pending		M	648de26fa313c5cf0d5fa5bdf8c2e74027c6908d
+dalathegreat__Battery-Emulator	https://github.com/dalathegreat/Battery-Emulator.git	pending		S	335c38aa49d7e9b21e5a8ff9fc75a8b5565ab0d7
+OpenMPT__openmpt	https://github.com/OpenMPT/openmpt.git	pending		S	c1331b0f966c7b962daa6152a578bc9bc4d1d751
+EpicenterHQ__epicenter	https://github.com/EpicenterHQ/epicenter.git	pending		S	f9441c8f6d32276bb8ab640091b35776174d2490
+DTStack__chunjun	https://github.com/DTStack/chunjun.git	pending		S	cff5fbffb498a60e0fb700f77073deeebb7ed3e6
+vsg-dev__VulkanSceneGraph	https://github.com/vsg-dev/VulkanSceneGraph.git	pending		S	2feabc69359c1f3fdc22825f4dcca7147903da67
+wildfly__wildfly	https://github.com/wildfly/wildfly.git	pending		M	3622eb1a4783e318431b0561967f083b3f49cd78
+PaddlePaddle__PaddleClas	https://github.com/PaddlePaddle/PaddleClas.git	pending		S	f1233c18455b8acde4fc42ab0bea575fa06daa8e
+alibaba__fastjson2	https://github.com/alibaba/fastjson2.git	pending		S	579e7bca619c8f2b74364d550fcb6f1f967d0b08
+nlohmann__json	https://github.com/nlohmann/json.git	pending		S	23d3b373e1a41db5adde1081b409e66de1d65030
+microsoft__react-native-windows	https://github.com/microsoft/react-native-windows.git	pending		S	dac75b6e65641a049d7d212fc07d312795a9f2c3
+opencv__opencv	https://github.com/opencv/opencv.git	pending		M	41ef839c7d03231dc40c026d28e1ba80494f506d
+kas-gui__kas	https://github.com/kas-gui/kas.git	pending		S	52d5162bf6b8374a99844114da46333b8cb02d14

@@ -1,0 +1,26 @@
+# Part a4 of the S and M projects of manifest.batch17.tsv (sha256 fe2bcfa4c462bf23afb8d7d027903ee019a67ffa25f26d74c91f3345493549db),
+# balanced by predicted time (5.4 h for 4 workers), u order; a fed spot part.
+# 22 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+redisson__redisson	https://github.com/redisson/redisson.git	pending		S	4447c8a72ee13a0985957c3e1d9335efe61cbd51
+o1-labs__proof-systems	https://github.com/o1-labs/proof-systems.git	pending		S	9227444890bc56d63d95ce14b9cbe34e2cf58996
+alicevision__AliceVision	https://github.com/alicevision/AliceVision.git	pending		S	44ccd6a3c4168360547f1a900e6526e4e6083280
+SANSA-Stack__SANSA-Stack	https://github.com/SANSA-Stack/SANSA-Stack.git	pending		S	433eee59d35b201757d93ac7604a2658faec1367
+rust-unofficial__awesome-rust	https://github.com/rust-unofficial/awesome-rust.git	pending		S	4a54f86bafd1e3591e047a1b4274de51aa07e8a7
+spring-projects__spring-integration	https://github.com/spring-projects/spring-integration.git	pending		S	c01c2fa98a0d7f7021b25be35b358383ac1ef433
+strimzi__strimzi-kafka-operator	https://github.com/strimzi/strimzi-kafka-operator.git	pending		S	3c9879fc379604d97b4c5f77b9fc52b52a0c1bad
+microsoft__azure-tools-for-java	https://github.com/microsoft/azure-tools-for-java.git	pending		S	a22940743981e2ef1e6f3adf64f3ab3f7b3078fd
+OISF__suricata	https://github.com/OISF/suricata.git	pending		S	215961d67239ba2594a0d43f031829ecf710e3e9
+stencila__stencila	https://github.com/stencila/stencila.git	pending		S	508dbf25c62a03b0daab8056b49fbc338c83800d
+hyphanet__fred	https://github.com/hyphanet/fred.git	pending		M	e47748d92d7df69c50d78e0bf111be05e720bb0e
+flyinghead__flycast	https://github.com/flyinghead/flycast.git	pending		S	59ed35a7ea7c1940d4c8ac221a662d0e6d6dc9ea
+walmartlabs__concord	https://github.com/walmartlabs/concord.git	pending		S	6649e56bdaf69452b3ce8606d7d08c10c66d1acf
+open-telemetry__opentelemetry-java-instrumentation	https://github.com/open-telemetry/opentelemetry-java-instrumentation.git	pending		S	02a00ba23d37e5b2763333cf091ff00880d12325
+tidev__titanium-sdk	https://github.com/tidev/titanium-sdk.git	pending		M	3da67e4c533dd033ea88736e46842adb1282e742
+scrtlabs__SecretNetwork	https://github.com/scrtlabs/SecretNetwork.git	pending		S	95d87aef4164cb3d056c3a364802552467ba394a
+newsboat__newsboat	https://github.com/newsboat/newsboat.git	pending		S	7046f4f6f67bb47c5e7ccb96483701ca7b0ae8d2
+axboe__fio	https://github.com/axboe/fio.git	pending		S	daf3f3b837f81ac2464c6a67bba829c984d65a3f
+open-mpi__hwloc	https://github.com/open-mpi/hwloc.git	pending		S	48129d32b029a90475d42a5b778bb5bcdc567676
+UnigramDev__Unigram	https://github.com/UnigramDev/Unigram.git	pending		S	b6eeb455251aa34cda8ba2256679cecf1fec4a03
+nextest-rs__nextest	https://github.com/nextest-rs/nextest.git	pending		S	7bab95f692e695697110b95dbd5b0ab8db7476f5
+jamulussoftware__jamulus	https://github.com/jamulussoftware/jamulus.git	pending		S	7ebf8f871a67a097ff54cf8dbb46328b5e5a8531

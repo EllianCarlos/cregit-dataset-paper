@@ -1,0 +1,20 @@
+# Part a2 of the S and M projects of manifest.batch11.tsv (sha256 c0bc3c7dfba79160d832ec8f554c147ba73f356035049fa27b4442dfc81ecea4),
+# balanced by predicted time (6.4 h for 4 workers), u order; a fed spot part.
+# 16 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+eclipse-cdt__cdt	https://github.com/eclipse-cdt/cdt.git	pending		M	4c37839cfbe3dde7bdfa398d9f703644052f5429
+scipopt__scip	https://github.com/scipopt/scip.git	pending		M	e61d097a1bbe7051f2d75dcc5f0dc8cd740c9731
+tlaplus__tlaplus	https://github.com/tlaplus/tlaplus.git	pending		S	ed3aed8f3b611b4e740ccb7d65aa5b4be3bb1995
+CosmWasm__cosmwasm	https://github.com/CosmWasm/cosmwasm.git	pending		S	160f8c533bed8bbc0749e7ff84d19f8ac87553b7
+redcanaryco__atomic-red-team	https://github.com/redcanaryco/atomic-red-team.git	pending		S	388942adbd9641f4dfdcf079d7efe9a75ec0ac43
+carbon-language__carbon-lang	https://github.com/carbon-language/carbon-lang.git	pending		S	5fed32a9aac61d0c8e1a4c495dff7b5960a22714
+AnySoftKeyboard__AnySoftKeyboard	https://github.com/AnySoftKeyboard/AnySoftKeyboard.git	pending		S	742bf8817aae1a808be6c5fa72bb10f0182ff659
+zed-industries__zed	https://github.com/zed-industries/zed.git	pending		M	a1b71072e5b43faef437b471e988fbb5f972c99c
+xmake-io__xmake	https://github.com/xmake-io/xmake.git	pending		S	d4a6b1bd6b0a0633a6332e7bf6e45fa6e472f8a7
+CBATeam__CBA_A3	https://github.com/CBATeam/CBA_A3.git	pending		S	27793d88af6635baac57a537a63bbc99809377ef
+github__codeql	https://github.com/github/codeql.git	pending		M	ce33a8a98cb2b35160a2f89bd464cc2fe04e742b
+line__armeria	https://github.com/line/armeria.git	pending		S	7d1546e1e785d7761236073f0414d218d047b1fc
+darktable-org__rawspeed	https://github.com/darktable-org/rawspeed.git	pending		S	c835b05aecfacb7343f7c424abd620aa12116c3f
+holochain__holochain	https://github.com/holochain/holochain.git	pending		S	a7bae08365999ef3a4091c4a3dfc06357ed09f8c
+grpc__grpc-node	https://github.com/grpc/grpc-node.git	pending		S	e742b11bd8039f3dbea4cd29afdf5d95a8ba6b92
+ampproject__amphtml	https://github.com/ampproject/amphtml.git	pending		S	4e4d50186e2ec8dd33e9ce46e8386a6c4639bd02

@@ -1,0 +1,8 @@
+# Part b2 of the S and M projects of manifest.batch22.tsv (sha256 dc8a4dcc99f4786c26f1c01c088fc0ad00413396460a012bc7ccbbb3af25e647),
+# balanced by predicted time (1.1 h for 4 workers), u order; a fed spot part.
+# 4 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+git.savannah.gnu.org__git__freeipmi	https://git.savannah.gnu.org/git/freeipmi.git	pending		S	af4fa3b53e4493a5de89a7b67e3b591771a90d7d
+git.savannah.gnu.org__git__gettext	https://git.savannah.gnu.org/git/gettext.git	pending		S	da5e86ca70b02fe338f6dd7b140b1026ec62907b
+git.savannah.gnu.org__git__grub	https://git.savannah.gnu.org/git/grub.git	pending		S	b07cc37ca64fe99260884e7325abc333374e098b
+git.savannah.gnu.org__git__coreutils	https://git.savannah.gnu.org/git/coreutils.git	pending		M	9c7cf20c3cbe0add2dd9839c83df8e6c8d59516e

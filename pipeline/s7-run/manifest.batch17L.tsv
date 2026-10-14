@@ -1,0 +1,5 @@
+# The L projects of manifest.batch17.tsv (sha256 fe2bcfa4c462bf23afb8d7d027903ee019a67ffa25f26d74c91f3345493549db), for the census batch17L on the big on-demand EC2.
+# 2 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+mozilla__enterprise-firefox	https://github.com/mozilla/enterprise-firefox.git	pending		L	6f254e3c8a7c29f4ba6478a9a6b7cf685af9ef26
+aftermathlabs__llvm-msvc	https://github.com/aftermathlabs/llvm-msvc.git	pending		L	bfc7254eb5618856d9299f65b0f5482904d1f4fc

@@ -1,0 +1,19 @@
+# Part b2 of the S and M projects of manifest.batch19.tsv (sha256 8a11b7acec582e49f76d0e09d7ff1e039d3458ef456ff4c1a875509b92849d3b),
+# balanced by predicted time (7.0 h for 4 workers), u order; a fed spot part.
+# 15 projects in u order.
+# Columns: name  url  category  file_filter  size_class  commit
+newrelic__newrelic-java-agent	https://github.com/newrelic/newrelic-java-agent.git	pending		S	4431a6c48a004b852de92b9bc3ca144566b68851
+vmware__alb-sdk	https://github.com/vmware/alb-sdk.git	pending		S	f729feeb02896f0ae7839db8569635b118477347
+managarm__managarm	https://github.com/managarm/managarm.git	pending		S	4b194ae0167f57ca927d08c5fb8b0a0a9f94b191
+cortexkit__magic-context	https://github.com/cortexkit/magic-context.git	pending		S	eead9aa061c770cdbbb40bf7af05a1190b993970
+spinframework__spin	https://github.com/spinframework/spin.git	pending		S	f6d8c8ffcda751861ae56b68494a711723f87b43
+x64dbg__x64dbg	https://github.com/x64dbg/x64dbg.git	pending		S	b189da406fb48ad64283eb60ba25c25e99f3e311
+sonos__tract	https://github.com/sonos/tract.git	pending		S	f66b50e9ba117f26de70fc125e3a4f665ca1b6fa
+FreeCAD__FreeCAD	https://github.com/FreeCAD/FreeCAD.git	pending		M	0205a6b3b5eb9546760a2aa39391354504f20194
+GNOME__localsearch	https://github.com/GNOME/localsearch.git	pending		S	30d07f6c9be0d6d36b04a1f9c501cb71b9fad5b9
+briansmith__ring	https://github.com/briansmith/ring.git	pending		S	840167e18e4fa837eb48de46500454a616a15a6e
+facebook__fbthrift	https://github.com/facebook/fbthrift.git	pending		M	c8407cc2e3807e961b45831dba82958fa897362f
+tsz-org__tsz	https://github.com/tsz-org/tsz.git	pending		M	153b25adb393f134c61ddde7a14cc1ff1954fc2a
+dcloudio__uni-app	https://github.com/dcloudio/uni-app.git	pending		S	6a944f41ad28aaa5fd681e64acc224ced03fcdf2
+GNOME__seahorse	https://github.com/GNOME/seahorse.git	pending		S	c8bf83b57c6e63e64fd5762e61dee50edceddbfe
+tenstorrent__tt-metal	https://github.com/tenstorrent/tt-metal.git	pending		M	565a49e1428dc905c44e931b11ba20254190d2e0
