@@ -1,0 +1,50 @@
+# rules.tsv: which files of a source repository go into this repository.
+# make-sources-list.sh reads this file. It writes sources.tsv.
+# Columns (tab-separated): source_id, kind, pattern.
+# - source_id: a name in sources.local.conf (the local clone and the path prefix).
+# - kind: "include" or "exclude".
+# - pattern: an extended regular expression. It matches the path relative to the source prefix.
+# A file is selected when one include pattern matches and no exclude pattern matches.
+# The destination is "pipeline/" plus the relative path, so relative paths in the scripts stay valid.
+#
+# Methodology documents.
+study	include	^(SELECTION-STAGES|S3-MEASUREMENT|SOURCES)\.md$
+# S1: sources and rosters (the scripts, the lists, the method notes).
+study	include	^s1-search/(search\.py|segments\.jsonl|repos\.jsonl\.(xz|sha256))$
+study	include	^rosters/[^/]+\.(csv|md)$
+study	include	^rosters/scripts/[^/]+\.py$
+study	include	^rosters/raw/asf/projects\.json$
+study	include	^sources/cncf-landscape/
+study	include	^sources/company-orgs/[^/]+\.(py|jsonl|xz|sha256)$
+study	include	^sources/spinellis-2020/(README\.md|FETCH\.tsv|companies\.csv|company_links\.py|org_links\.csv|zenodo-record-3742962\.json)$
+study	include	^sources/company-pages/(company_pages\.py|evidence\.csv|fetch\.tsv|no_page\.csv)$
+study	include	^sources/company-pages/browser/
+# S2: resolve and pool, the v2 supplement, the GitLab extension.
+study	include	^s2-pool/[^/]+\.(py|sh|csv|xz|jsonl|sha256|txt)$
+study	include	^s2-pool/v2/
+study	include	^s2-pool/gitlab/
+# S3: measure.
+study	include	^s3-measure/[^/]+\.(py|sh|xz|sha256|yml|jsonl)$
+study	include	^s3-measure/v2/
+# S4: filter, and the DP8L licence audit.
+study	include	^s4-filter/
+# S5 and S6: evidence and labels.
+study	include	^s5-evidence/
+study	include	^s6-labels/
+# S7: run manifests, parts, run scripts, post-fix, merge, tests.
+study	include	^s7-run/(manifest|parts)\.[^/]+\.tsv$
+study	include	^s7-run/batch[0-9]+\.ubatch\.tsv$
+study	include	^s7-run/(SHA256SUMS|[^/]+\.sha256)$
+study	include	^s7-run/(build_run|run_batch1|fetch_done|footer_fix_again)\.sh$
+study	include	^s7-run/(build_L7_20|census_funnel|enrich_meta|failed_projects|final_meta|footer_fix_batches|labels_batch25|labels_batch26|one_half|parts_batch26|prelim_merge|rewrite_footer_columns|rewrite_meta_columns|split_batch3|split_batch4|split_batch5|split_batchN|split_run_ledgers)\.py$
+study	include	^s7-run/test_[^/]+\.py$
+study	include	^s7-run/(census\.cfg|labels\.batch2[56]\.csv|failed-projects\.(tsv|md)|superseded-20261007\.tsv|README\.md|blame-time-limit\.md|srcml-fix-20261009\.md)$
+study	include	^s7-run/local-[a-d]/(run|gate)\.sh$
+study	include	^s7-run/local-[a-d]/(build_run_manifest|build_manifest_lpt|publish_done)\.py$
+study	include	^s7-run/local-[a-d]/(census\.cfg|gate-result\.txt|manifest\.local-[a-d]\.tsv|parts\.taken|lpt-order\.txt|project_meta\.local-[a-d]\.json\.sha256)$
+#
+# Exclusions: logs, run output, caches, one-shot work files.
+study	exclude	(^|/)logs/
+study	exclude	\.(log|out|stopped)$
+study	exclude	(^|/)__pycache__/
+study	exclude	(^|/)\.gitignore$
