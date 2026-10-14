@@ -1,0 +1,45 @@
+# Everything the suite needs. Production code imports only the standard library
+# and duckdb; coverage drives run_tests.sh and its 80% floor.
+
+[project]
+name = "cregit-token-pipeline"
+version = "0.1.0"
+description = "Orchestration and validation for the cregit token pipeline"
+readme = "README.md"
+
+# retain.py needs shutil.rmtree(onexc=), which is 3.12+. Below that, 25+ tests in
+# tests/test_retain.py fail with a TypeError while every file still compiles.
+requires-python = ">=3.12"
+
+dependencies = [
+    # Imported lazily where it is needed; tests that write a real Parquet skip without it.
+    "duckdb==1.5.5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest==9.1.1",
+    "coverage==7.16.0",
+]
+
+# Optional, not installable from here: perl and a cregit checkout, for
+# tests/test_mask_drift.py. Those tests self-skip when either is absent.
+
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+# The scripts sit at the repository root and form no package.
+py-modules = [
+    "build_manifest",
+    "consolidate",
+    "ctp",
+    "file_mask",
+    "firm_attribution",
+    "ledger",
+    "pin",
+    "retain",
+    "validate",
+    "validate_schema",
+]

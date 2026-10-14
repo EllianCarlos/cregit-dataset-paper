@@ -1,3 +1,4 @@
 # sources.local.conf: local only. Do not commit the real file.
 # Columns (tab-separated): source_id, path of the local clone, path prefix inside that repository.
 study	/path/to/study-repo	path/to/dataset-selection
+ctp	/path/to/ctp-clone	

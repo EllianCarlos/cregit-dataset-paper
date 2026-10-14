@@ -28,6 +28,9 @@ commit=$(git -C "$repo" rev-parse --verify "$rev^{commit}")
 
 inc=$(awk -F'\t' -v s="$src" '$1 == s && $2 == "include" { printf "%s%s", sep, $3; sep = "|" }' "$rules")
 exc=$(awk -F'\t' -v s="$src" '$1 == s && $2 == "exclude" { printf "%s%s", sep, $3; sep = "|" }' "$rules")
+# The destination prefix: the "dest" rule of the source, else "pipeline/".
+dest=$(awk -F'\t' -v s="$src" '$1 == s && $2 == "dest" { print $3; exit }' "$rules")
+dest=${dest:-pipeline/}
 [ -n "$inc" ] || { echo "error: no include rule for '$src'" >&2; exit 1; }
 
 tmp=$(mktemp)
@@ -48,7 +51,7 @@ header='# source_id	source_commit	git_mode	git_blob	source_path	dest_path'
       if (exc != "" && $2 ~ exc) next
       print a[1] "\t" a[3] "\t" $2
     }' |
-    awk -F'\t' -v s="$src" -v c="$commit" '{ print s "\t" c "\t" $1 "\t" $2 "\t" $3 "\tpipeline/" $3 }'
+    awk -F'\t' -v s="$src" -v c="$commit" -v d="$dest" '{ print s "\t" c "\t" $1 "\t" $2 "\t" $3 "\t" d $3 }'
 } > "$tmp"
 # Sort the data rows by destination path. Keep the header first.
 { head -n 1 "$tmp"; tail -n +2 "$tmp" | LC_ALL=C sort -t "	" -k6,6; } > "$out"

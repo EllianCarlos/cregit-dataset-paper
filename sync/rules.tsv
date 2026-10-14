@@ -48,3 +48,12 @@ study	exclude	(^|/)logs/
 study	exclude	\.(log|out|stopped)$
 study	exclude	(^|/)__pycache__/
 study	exclude	(^|/)\.gitignore$
+#
+# ctp (the runner) at the commit that the dataset build ran. tools.lock pins the whole tool.
+# These copies are for reading: the column contract, the validation, the file mask,
+# the manifest builder, the firm tables, the dependency pin and the runner document.
+ctp	dest	tools/ctp/
+ctp	include	^(validate_schema|validate|file_mask|build_manifest)\.py$
+ctp	include	^pyproject\.toml$
+ctp	include	^data/(affiliation\.merged|firm_canonical)\.csv$
+ctp	include	^docs/E2E\.md$
