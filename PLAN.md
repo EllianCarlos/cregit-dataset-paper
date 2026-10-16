@@ -27,6 +27,16 @@ These items do not need the end of the build. They do not touch a running job.
 | B5 | Stop the machines | The user gives the direction to stop or terminate each instance. Then read the final cost in the Billing console. | All instances are stopped. The cost is in REPRODUCE.md section 4.4. |
 | B6 | Rename pass | Rename the identifiers of kind census-name in the source repositories, in one pass. Rerun the tests and the libexpat gate. Sync. | The scan shows 0 census-name hits. The gate sha256 is unchanged. |
 
+### Status of phase B (2026-10-16 19:50 UTC)
+
+The dataset build ended for v1: 3,544 projects, 23,692,479,892 token rows, 186.2 GB (kitao__pyxel pending, 3 excluded). The user said yes to B1+B2, B3, B4 and B6. Details: study repository `s7-run/README.md` (section "Dataset v1-raw") and `s7-run/runs-20261009.md`.
+
+- B1: two stages (user decision). Stage 1, v1-raw (real identities, private): `final_merge.py` (study 6d441a7) with the v1 sidecar (3,548 keys, sha256 4023295a…, study 7e6a724) and the v1 encoding (ZSTD 19, 1 M-row groups, Parquet V2; about 70-77% of the size). It runs on spot a. Done before it: the Savannah owner rule (`gnu`), S5/S6 for batch 23 (offline), the mongodb__mongo footer post-fix. Stage 2, v1-public: the pseudonymizer (salted branch `feat/pseudonymise-identity-columns`) needs a rework before it can run on v1 (a registry table in place of SQL `MAP` literals, one fused write, false failures, reports with real identities). The salt transfer waits for the user.
+- B2: after stage 2 (the published sha256 values are those of v1-public). `scripts/validate.sh` must use `tools/ctp/validate_schema.py` of ca113e3: the version on ctp `corpus-freeze-and-tests` refuses the column order of the runs.
+- B3: plan ready (libexpat post-fix check locally, then a 6-project sample on spot a). Not started.
+- B4: the "done when" value 14eb5d72… is the gate file, not the published libexpat file (2dcc77fd… now, a new value after B1). `rebuild-one.sh` step 5 must take the ledger `pinned_sha` (all runs used `--latest`), not manifest column 6. Fix the target before step 4-6.
+- B6: about 10,900 of the 11,700 old-name hits are the runner copies, which `ORIGIN.tsv` checks byte for byte. The scan needs a record allowlist for this kind before "0 hits" is possible. The live paths and unit names wait for the end of all timers.
+
 ## Phase C: the release, by about 2026-11-01
 
 | # | Item | Action | Done when |
