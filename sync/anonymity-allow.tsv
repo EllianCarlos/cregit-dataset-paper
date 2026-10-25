@@ -9,3 +9,8 @@ employer	pipeline/s4-filter/frame_status.v2.csv	^gh:(140669486|342884320),	proje
 employer	pipeline/s4-filter/frame_status.v3.csv	^gh:(140669486|342884320),	project data: two GitHub repository names in the frame status
 employer	pipeline/s4-filter/frame_status.v4.csv	^gh:(140669486|342884320),	project data: two GitHub repository names in the frame status
 employer	pipeline/sources/cncf-landscape/landscape_repos.csv	^M[a-z]+ Serverless,https://github\.com/	project data: a CNCF landscape entry
+# Added on 2026-10-25: fake EC2 ids of the kit tests (repeated hex digits, no real machine).
+ec2-id	pipeline/s7-run/runner/dataset-x1k/x2/test/T1-x2-inputs.sh	i-0[0abcd]{15,16}[12]?([^0-9a-f]|$)	a fake EC2 id of a test (no real machine)
+ec2-id	pipeline/s7-run/runner/dataset-x1k/rust-split/test/t_e1s1.py	i-0[0abcd]{15,16}[12]?([^0-9a-f]|$)	a fake EC2 id of a test (no real machine)
+ec2-id	pipeline/s7-run/runner/dataset-x1k/java-split/test/t_e1s1.py	i-0[0abcd]{15,16}[12]?([^0-9a-f]|$)	a fake EC2 id of a test (no real machine)
+ec2-id	pipeline/s7-run/runner/dataset-x1k/java-split/test/t_l1.py	i-0[0abcd]{15,16}[12]?([^0-9a-f]|$)	a fake EC2 id of a test (no real machine)

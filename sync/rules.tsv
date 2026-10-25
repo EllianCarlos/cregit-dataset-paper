@@ -44,12 +44,22 @@ study	include	^s7-run/local-[a-d]/(build_run_manifest|build_manifest_lpt|publish
 study	include	^s7-run/local-[a-d]/(census\.cfg|gate-result\.txt|manifest\.local-[a-d]\.tsv|parts\.taken|lpt-order\.txt|project_meta\.local-[a-d]\.json\.sha256)$
 # S7: the EC2 runner scripts (copies of the scripts that ran the dataset build, see runner/README.md).
 study	include	^s7-run/runner/
+# The runner kits of the later runs (copies added on 2026-10-25, the same token rule): the merge of
+# the 5,000+ layer, the runs, the merge and the links of the 1,000-4,999 layer (machines A and B,
+# the extra machines, x2, x3), the path-fix rerun and the organisation columns of version 1.
+# The include above selects them. These lines name them, so that a review sees each kit.
+study	include	^s7-run/runner/dataset-v1/
+study	include	^s7-run/runner/dataset-x1k/
+study	include	^s7-run/runner/dataset-pathfix/
+study	include	^s7-run/runner/dataset-v0-org/
 #
 # Exclusions: logs, run output, caches, one-shot work files.
 study	exclude	(^|/)logs/
 study	exclude	\.(log|out|stopped)$
 study	exclude	(^|/)__pycache__/
 study	exclude	(^|/)\.gitignore$
+# Environment files hold local values (for example the volume ids of machine A). Never copy them.
+study	exclude	(^|/)[^/]*\.env$
 #
 # ctp (the runner) at the commit that the dataset build ran. tools.lock pins the whole tool.
 # These copies are for reading: the column contract, the validation, the file mask,

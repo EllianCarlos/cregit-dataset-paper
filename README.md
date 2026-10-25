@@ -17,6 +17,25 @@ more commits at the snapshot commit. The sources are GitHub, GitLab hosts,
 foundation rosters, company organisations and published project lists.
 `pipeline/SELECTION-STAGES.md` gives the rules.
 
+The release adds a second commit layer (user decision, 2026-10-23). It is one dataset of
+10,753 projects: 3,544 files with 5,000 or more commits (the v1 build) and 7,209 files with
+1,000 to 4,999 commits. It has 32,626,028,860 token rows and 162.6 GB of release files
+(ZSTD 19). `REPRODUCE.md` (sections 4.6 to 5) gives the runs, the merge and the links of
+the second layer.
+
+## Release decisions (user, 2026-10-25)
+
+- Host: Zenodo. About 4 records of 50 GB under one concept DOI, unless Zenodo gives a
+  larger quota (the answer is open). The record ids come here when they exist.
+- Reproducibility: the release has everything that a reproduction needs, also the web
+  captures (the fetched third-party pages), each with its URL, its fetch date and its
+  sha256. The pages are third-party content: `THIRD-PARTY.md` of the release gives a
+  licence note for each source (not written yet).
+- The commit SHAs (`tools.lock`, `sync/sources.tsv`) and the tool bundles are published.
+- Anonymous release: for the blind review, the user's own repositories go out as an
+  anonymous release (one anonymous export commit; the user pushes it). The Data and Tool
+  track itself is single-anonymous, but the user still wants the anonymous release.
+
 The dataset build used three tools:
 
 - ctp (cregit-token-pipeline): the runner. It clones a project, runs cregit and

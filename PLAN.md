@@ -47,10 +47,34 @@ The dataset build ended for v1: 3,544 projects, 23,692,479,892 token rows, 186.2
 | C4 | Anonymous export | Make one new commit with an anonymous author from a clean tree. The user pushes it to the anonymous mirror. | The mirror shows the files, and no history. |
 | C5 | Independent check | Fresh-context agents clone the export and run `make verify`, `make test` and `make rebuild-one` without help. Skeptic agents try to refute each finding. | All findings are fixed or listed in LIMITATIONS. |
 
+### Status of phase C (2026-10-25)
+
+The release is one dataset of 10,753 projects in two commit layers: 5,000 or more commits (3,544 files) and 1,000 to 4,999 commits (7,209 files). It has 32,626,028,860 token rows, 162.6 GB of release files (ZSTD 19) and 241.3 GB of run output. The 173 GB of the C1 row is an older estimate.
+
+User decisions of 2026-10-25:
+
+- C1 (host): Zenodo. About 4 records of 50 GB under one concept DOI, unless Zenodo gives a larger quota. The answer of Zenodo on the quota is open.
+- C2 (web captures): publish everything that a reproduction needs, also the web captures (the fetched third-party pages), each with its URL, its fetch date and its sha256. The pages are third-party content: `THIRD-PARTY.md` needs a licence note for each source. The licence text is not decided here.
+- C3 (commit SHAs): publish the commit SHAs and the tool bundles.
+- C4 (anonymous release): the user's own repositories go out as an anonymous release for the blind review: one anonymous export commit, which the user pushes. Two facts: the Data and Tool track is single-anonymous (MSR-DATA-AND-TOOL-TRACK.md, line 56), and the user still wants the anonymous release.
+
+State of phase A:
+
+- A1-A4: done. On 2026-10-25 the runner kits of the later runs (the merge of the 5,000+ layer, the runs, the merge and the links of the 1,000-4,999 layer, the path-fix rerun and the organisation columns of version 1) were copied into the study repository with the same token rule (192 copies). They come into `pipeline/` at the next sync, after the study commit (REPRODUCE.md section 9). `tools.lock` has the rows of the later tools (cregit 14b8db4, the merge tools, the links kit, the organisation kit, the pseudonymizer).
+- A5: the scan of 2026-10-25 has 0 identifying hits. The old-name kind has 485 files (11,706 occurrences). The copy step checked the new copies against the same patterns: 0 identifying hits (fake test EC2 ids are on the allow list).
+- A6: done for v1. The entries of the 1,000-4,999 layer are in work.
+
+State of phase B:
+
+- B1: stage 1 is done for both layers (v1-raw: 3,544 files; x1k-raw: 7,209 files). Stage 2 (the pseudonyms, with the organisation columns in one write) waits for the final database (v4.8), the final commit of the pseudonymizer and the salt.
+- B2, B3, B4 and B6: open.
+- B5: no machine runs. The stopped machine of batch 2 (the big EC2) and the 4 EBS volumes of machine A wait for the user's direction. The final cost is not recorded.
+
 ## Decisions that the user owns
 
 - B3: the yes to run the sample on the big EC2.
-- B5: the stop or termination of each instance.
-- C1: the dataset host.
-- C2: the web captures.
-- C3: the commit SHAs during the review.
+- B5: the stop or termination of each instance, and of the 4 volumes of machine A.
+- C1: decided 2026-10-25 (Zenodo, split records); the quota answer is open.
+- C2: decided 2026-10-25 (publish the web captures); the licence note of each source is open.
+- C3: decided 2026-10-25 (publish the SHAs and the bundles).
+- C4: decided 2026-10-25 (an anonymous export commit; the user pushes it).

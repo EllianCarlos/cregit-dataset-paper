@@ -9,6 +9,13 @@ Dataset v1 has 3,548 projects: 3,497 from run layer 1 and its supplements, 50 fr
 hosts (batch 25) and 1 GitLab near miss (batch 26). `pipeline/SELECTION-STAGES.md` gives
 the rules.
 
+The release (user decision, 2026-10-23) is one dataset of 10,753 projects in two commit
+layers: the 5,000+ layer (5,000 or more commits, the v1 build: 3,544 files) and the
+1,000-4,999 layer (1,000 to 4,999 commits: 7,209 files). It has 32,626,028,860 token rows.
+The release files are 162.6 GB (ZSTD 19). The run output was 241.3 GB. Sections 1-4.5 give
+the build of the 5,000+ layer. Section 4.6 gives the runs of the 1,000-4,999 layer, section
+4.7 the path-fix rerun, and section 5 the merge, the links and the open steps.
+
 ## 1. The environment
 
 The dataset build ran cregit in its devenv shell. `flake.nix` gives the same packages:
@@ -102,7 +109,7 @@ the system.
 
 | Command | What it checks | Result on 2026-10-14 |
 |---|---|---|
-| `make sync-check` | Each file under `pipeline/` and `tools/` has the git blob id of `sync/sources.tsv`, or the sha256 of `sync/untracked.tsv`. | `OK: 879 files match sources.tsv, 104 files match untracked.tsv` |
+| `make sync-check` | Each file under `pipeline/` and `tools/` has the git blob id of `sync/sources.tsv`, or the sha256 of `sync/untracked.tsv`. | `OK: 879 files match sources.tsv, 104 files match untracked.tsv`; on 2026-10-25: `OK: 1319 files match sources.tsv, 104 files match untracked.tsv` (before the sync of the later kits, section 4.4) |
 | `make stage-hashes` | The stage outputs match the sha256 that each stage recorded (section 3 and 4). | `OK: the stage outputs match their recorded sha256` |
 | `make test` | The tests of the copied scripts (in the dev shell). | S5: 10 passed, 10 skipped. S6: 25 passed. S7: 96 passed, 3 skipped. |
 
@@ -129,6 +136,11 @@ files are the files of the selection. They do not prove that a new run gives the
 | S4 v4 frame | S4 outputs, the DP8L audit | `s4-filter/funnel.py --near-miss`, `s4-filter/supplement_batch.py N [V]` | `frame.v4.csv`, `frame_status.v4.csv`, `supplement.v4.csv` | copy: `30954b26b3117296c2b672859f4b119dc755dc97546a15280d86f897efb57f30`, `28a67d7046d2259d660a72057f0e5676f26ac3e1f80b5befe729850df555304b`, `311af7c5dc3282ca21a03a3a99452c1389713ab31ae90f5ba6aff2270dce16e9` | none | UNKNOWN |
 | S5 evidence | frame, pool, rosters, company pages, org profiles | `s5-evidence/build_evidence.py [--frame F ...] [--pool P ...] [--out evidence.csv] [--counts counts.txt]` | `s5-evidence/evidence.csv` | copy: `53fa6cce5b94335f6de6e9db1d710b1d80f7074d8842e9c1d30597cb93805146` | none | UNKNOWN |
 | S6 labels | `evidence.csv`, frame | `s6-labels/build_labels.py [--evidence ../s5-evidence/evidence.csv] [--frame F ...]`; GitLab rows: `s7-run/labels_batch25.py`, `s7-run/labels_batch26.py` | `s6-labels/labels.csv`, `s7-run/labels.batch25.csv`, `s7-run/labels.batch26.csv` | copy: `042a6f7eff21573fd62abef3aeab7b1cb3d897be4ad09d8248b073f31ac424f0`, `82fefe2b81d70f227a9f433a7c5b0a5d87092b896cd9e5b7ad52a6176b6075e8`, `6c8a1b98c2439df835c533e66e60de28cc92b85f9e3985cc63ce953cd1b38127` | none | under 1 s (test run) |
+
+Web captures (user decision, 2026-10-25): the release publishes the fetched third-party pages
+and files that the stages read (`rosters/raw/`, `sources/company-pages/raw/`, the Spinellis
+tarball), each with its URL, its fetch date and its sha256. They are third-party content, so
+`THIRD-PARTY.md` gives a licence note for each source. This repository does not copy them.
 
 `make stage-hashes` checks every value in this table that is not marked "copy".
 `make select` prints "not ready": the offline replay of S4-S6 is not wired into one command yet.
@@ -218,6 +230,19 @@ the source sha256 of each copy. 225 copies are verbatim. 210 copies have tokens
 home paths). `python3 -I pipeline/s7-run/runner/render.py --check` checks the copies.
 With your values in `runner/runner.env`, `render.py --out DIR` gives files that you can run.
 
+The kits of the later runs (2026-10-16 to 2026-10-24) were copied into the study repository
+on 2026-10-25 with the same rule: `runner/dataset-v1/` (the merge of the 5,000+ layer),
+`runner/dataset-x1k/` (the runs, the merge and the links of the 1,000-4,999 layer),
+`runner/dataset-pathfix/` (the path-fix rerun) and `runner/dataset-v0-org/` (the organisation
+columns of version 1). That adds 192 copies: 75 verbatim and 117 with tokens, so 300 verbatim
+and 327 with tokens in total. The new tokens are the EC2 ids of the later machines and the four
+subnets by availability zone (`runner.env.example`). The copy step checked each new copy: the
+copy with the values put back is equal to the original, and no identifying pattern of the scan
+is left (the only hits are fake EC2 ids of 4 test files; `sync/anonymity-allow.tsv` lists them).
+The copy step did not read the environment file of machine A (`dataset-x1k/scripts/a/vols.env`,
+the volume ids); it is not copied. These copies come into `pipeline/` at the next sync, after
+the study commit (section 9).
+
 `make build` prints "not ready": the full build needs an AWS account, a bucket and many
 machine-days. Use `make rebuild-one` for one project.
 
@@ -259,11 +284,168 @@ The gate shows that a rerun is byte-identical when the commit, the flags and the
 the same: the libexpat gate file has the same sha256 on each machine. A rerun with other
 `--workers`, `--blame-jobs` or `--memory-limit` values was not compared (UNKNOWN).
 
-## 5. Merge
+### 4.6 The runs of the 1,000-4,999 layer (2026-10-17 to 2026-10-23)
+
+The kit is `pipeline/s7-run/runner/dataset-x1k/` (after the next sync). Its `README.md` is the
+runbook: each step, each user decision and the log of each machine.
+
+Inputs. The frame has 7,215 projects of frame v4 with 1,000 to 4,999 commits. The study
+repository builds the inputs in `x1k/` (`build_x1k.py`, `run_build.sh`): the manifest
+`manifest.x1k.tsv`, the 4 part manifests, the parts, the sidecar `project_meta.x1k.json` and the
+final sidecar `project_meta.x1k.final.json` (sha256
+`1520c5f4d8909b3625c73bdea3cc08f23fced0a77f3722ec0809acd80de96f35`). The stage of the kit
+(`stage/SHA256SUMS`) has the same sha256 values. These inputs are not in the copy rules yet
+(section 8).
+
+The code path is the code path of the v1 batches 23-26: ctp ca113e3 (no patch), cregit
+57551d7, the srcML build of section 1 (libsrcml `dea4467b...`) and the libexpat gate
+`14eb5d72...`. The flags are the flags of the v1 parts, with `--disk-floor-gb 300` and 5 or 6
+workers for each part:
+
+```
+--retries 3 --skip-html --latest --tokenizer-worker --blame-jobs 4 --memory-limit 16GB
+--min-free-mem-gb 24 --disk-floor-gb 300
+```
+
+The runs, in order:
+
+1. The first machine (dataset-x1k-a, from 2026-10-17 15:48 UTC) ran ctp with the patch
+   `stage/ctp-no-firm.patch` (no firm step). The spot reclaim of 2026-10-18 22:02 UTC stopped
+   it after 1,377 rows. The relaunch ran these rows again, so no file of the dataset comes from
+   this run.
+2. Machine B: two machines (dataset-x1k-b1 and dataset-x1k-b2, 2026-10-19/20) ran 7,204 rows
+   in 8 parts. The deal is fixed: the heavy rows first, longest first. Steps: `L1-launch-b.sh`,
+   then through `scripts/ssm.sh`: `scripts/R1-setup.sh`, `scripts/R2-gate.sh` (4 x "CHECK
+   OK": the libexpat file of each part is `14eb5d72...`), `scripts/w6/R3-install-b.sh`,
+   `scripts/w6/R4-start-b.sh`. Output: `done-full/<name>/` with `OK` last. At the end, 7,198
+   rows had `OK`. 6 rows failed: 4 had no C, C++, Java or Rust file at the pinned commit, and 2
+   failed on the cregit path defects (section 4.7).
+3. Machine A: the 11 long rows, one worker each, on 4 EBS volumes (`L0-volumes.sh`,
+   `L1-launch-a.sh`, `L2-attach.sh`, then `scripts/a/R1-setup.sh` to `scripts/a/R4-start.sh`).
+   Each row has its own blame jobs and memory limit, and `--workers 1 --retries 10
+   --disk-floor-gb 50` (`README.md`, "Rows, slots and flags"). After a spot reclaim, the run
+   script starts ctp again with `--from-step` (the resume rule of the runbook). A local test of
+   the resume rule gave the gate file `14eb5d72...` byte for byte. Machine A had four machines
+   in turn (`dataset-x1k-long-a`). For aws-sdk-rust, `scripts/a/R10-retry-rust.sh` set
+   `--retries 30`, because each restart counts as a failed attempt.
+4. The extra machines. `rust-split/` (spot, 5 parts) and `java-split/` (2 on-demand machines)
+   ran the blame step of aws-sdk-rust and aws-sdk-java with the blame code of 57551d7 and gave
+   the `.blame` files back to machine A. For aws-sdk-java: 65,087 `.blame` files, and a byte
+   gate of 30 of 30 files on both machines.
+5. The path-fix rerun (section 4.7) gave the 2 rows with the path defects.
+
+Result: 7,215 rows in the frame, 6 rows out of scope (no C, C++, Java or Rust file at the
+pinned commit: greta, loaders.gl, semantic-router, Librelancer, neuro-book and
+blue_archive_auto_script), 7,209 files. The last row (aws-sdk-rust, 293,153,594 rows) ended on
+2026-10-23 at 16:53:50 UTC. 367 files in 98 projects fell back to the plain blame (machine A
+229 files in 6 projects, machine B 138 in 92, the path-fix rows 0, the extra machines 0).
+
+Cost: the runbook gives estimates (machine B about US$120). The final cost is not recorded.
+
+### 4.7 The path-fix rerun (2026-10-20)
+
+The kit is `pipeline/s7-run/runner/dataset-pathfix/` (after the next sync). cregit 14b8db4 is
+57551d7 plus the fix of two defects of the blame step: a path that git quotes (a non-ASCII byte,
+a quote, a backslash, a tab or a newline) and a path that starts with "-" (`tools.lock`, row
+14b8db4). A scan of all trees found 36 projects with lost source bytes (18 in each layer).
+
+- The rerun ran 35 rows on one machine (dataset-pathfix-b1): 17 rows of the 5,000+ layer and 18
+  rows of the 1,000-4,999 layer. By the user's decision, `alibaba__AliSQL` did not run again
+  (a LIMITATIONS line).
+- Each row used the commit of its first run: `stage/inputs/seeds.tsv` writes the state of
+  `--latest` before the start, so ctp reuses that commit.
+- The gate stayed `14eb5d72...` (local gate of 2026-10-20 and the R2 gate of the machine).
+- End: 2026-10-20 23:25 UTC, 35 of 35 rows with `OK` in `done-pathfix/`.
+
+The merge of the 1,000-4,999 layer takes `done-pathfix/` before `done-full/` (section 5.2).
+For the 17 rows of the 5,000+ layer, see section 5.6.
+
+## 5. Merge, links and the open steps
 
 `pipeline/s7-run/prelim_merge.py` builds a preliminary DuckDB view over the run
 directories. It is not the final merge. It reads local paths of the run machines.
-`make merge` prints "not ready": the final merge script is not written yet.
+`make merge` prints "not ready". The merges ran on EC2 through the kits below, and one local
+entry point is not written (section 8). The message of the target is older than these kits.
+
+Both merges use the same two tools (`tools.lock`, rows merge-tool): `final_merge.py` (sha256
+`acede0d8...`) and `rewrite_meta_columns.py` (sha256 `365867b0...`), from study commit
+17bc439. For each project, `final_merge.py` copies the run file and checks its sha256. Then
+`rewrite_meta_columns.py` writes the 11 metadata columns from the final sidecar (ZSTD 19, 1 M-row
+groups, Parquet V2) and compares every other column row by row. Then `validate_schema.py` of
+ctp ca113e3 (sha256 `2efe32c3...`) checks the column contract, and the file goes to the
+destination. Each done project gets a row in `results.tsv`, so a second start continues. At
+the end the destination gets `SHA256SUMS`, `results.tsv` and the sidecar.
+
+### 5.1 The merge of the 5,000+ layer (v1-raw, 2026-10-16/17)
+
+- Kit: `pipeline/s7-run/runner/dataset-v1/`. `build_inputs.py` writes `inputs.tsv`: one row for
+  each project (the run, the cregit commit, the token rows, the bytes, the S3 key and the sha256
+  of the run file).
+- Sidecar: `project_meta.v1.final.json` (sha256
+  `4023295abc589a5eb0f4124e0aa76000402bd2492755e62f50af03121f661946`, 3,548 keys).
+- Command: `M1-start-merge.sh` (and the later variants `M1b`, `M1c`) through `ssm.sh` on spot a.
+  The scripts check the sha256 of the tools, the sidecar and `inputs.tsv` before the start.
+- Output: `dataset-v1/raw/`, 3,544 files, 23,692,479,892 token rows, about 127 GB.
+
+### 5.2 The merge of the 1,000-4,999 layer (x1k-raw, 2026-10-23)
+
+- Kit: `pipeline/s7-run/runner/dataset-x1k/x2/`. `build_inputs_x1k.py` writes the input list
+  from `done-full/`, the rows of machine A and `done-pathfix/`. A row of the path-fix list
+  without `done-pathfix/<name>/OK` is held back.
+- Steps: `L1-launch-x2.sh`, then through `ssm-x2.sh`: `R1-x2-setup.sh` (checks the sha256 of the
+  tools, of the sidecar `1520c5f4...` and of `validate_schema.py`), `R2-x2-inputs.sh`,
+  `M1-x2-start.sh`; `M2-x2-check.sh` and `D1-x2-fail.sh` are read-only probes.
+- Pass 1 on dataset-x1k-raw-1. Pass 2 (the 4 slow rows: Retro68, metashell, aws-sdk-java,
+  aws-sdk-rust) on dataset-x1k-raw-2, done at 19:31 UTC.
+- Output: `dataset-x1k/raw/`, 7,209 of 7,209 files, 0 failed, 8.93 B token rows, 36.81 GB
+  (55.09 GB in), with `SHA256SUMS`, `results.tsv` and `rewrite.tsv`.
+
+### 5.3 The links of both layers (2026-10-24)
+
+- Kit: `pipeline/s7-run/runner/dataset-x1k/x3/`; the tools are in `x3/stage/` (`tools.lock`, row
+  links-kit; SHA256SUMS sha256 `7dba806bb9e3...`). The links need the address column, so they
+  were built on the machine: `extract_domains_v1.py` makes the per-author domain cache from the
+  raw files, and `build_links.py` maps the domains and the namespaces to the organisations of
+  `companies.v4.6.duckdb`. The addresses do not leave the machine.
+- Steps: `S0-x3-stage.sh` (local), `U1-upload-x3.sh` (the user), `L1-launch-x3.sh`, then through
+  `ssm-x3.sh`: `R1-x3-setup.sh`, `M1-x3-start.sh`; `M2-x3-check.sh`; `F1-x3-fetch.sh` fetches the
+  outputs without addresses.
+- Gate: a run with the v1 cache only gave links-v4.6 byte for byte (mapping `2fb053cd1ee7`).
+  The caches match the inputs: 3,544 files and 23,692,479,892 tokens (5,000+ layer), 7,209 files
+  and 8,933,548,968 tokens (1,000-4,999 layer), 32,626,028,860 tokens in total.
+- Output: the merged links (label v4.6, mapping `98f23158debd`): 10,763 projects (the frame
+  keys) and 13,157 domain links. Each row of v1 is unchanged. Machine dataset-x1k-links-1
+  (i4i.8xlarge spot) took 18 minutes.
+
+### 5.4 The organisation columns of version 1 (first write, 2026-10-21)
+
+- Kit: `pipeline/s7-run/runner/dataset-v0-org/` (`README.md` is the runbook); tools in `stage/`
+  (`tools.lock`, row org-kit): `run_v0.py` runs `build_v0.py` on each v1-raw file with
+  links-v4.5.
+- Output: `dataset-v0-org/parquet/`, 3,544 files, 125.83 GB, ctp schema 2 (71 columns).
+- This write is not the final one: the release needs one write with the final database and the
+  merged links of both layers (section 5.5).
+
+### 5.5 Open steps
+
+1. Organisation database v4.8: the version after v4.7, with the review of the new domains and
+   namespaces of both layers and the user check. Then the links again, the error model and the
+   organisation tables (`build_organisations.py tables`).
+2. One write of the organisation columns and the pseudonyms over all 10,753 files (one fused
+   write; estimate about 8.5-9.5 h on 96 vCPU). It needs the final database, the final commit of
+   `pseudonymize.py` (`tools.lock`, row pseudonymizer OPEN), the salt transfer, and the user's
+   yes for the machine. The registry (real identity to pseudonym) stays private.
+3. The release package: copy the files to `parquet/` and the tables to `organisations/`, run
+   `build_organisations.py views`, then `fill_release.py manifest`, `checksums` and `check`; fill
+   `data/SHA256SUMS`; the licence note for each source in `THIRD-PARTY.md`; the Zenodo records.
+4. `make verify` and `make rebuild-one` after the release (sections 4.5 and 6).
+
+### 5.6 Open question: the path-fix rows of the 5,000+ layer
+
+The input list of the v1 merge (`dataset-v1/inputs.tsv`, 2026-10-16) has no row with cregit
+14b8db4: it is older than the path-fix rerun. The path-fix runbook says that these 17 rows
+take the `done-pathfix/` key in `inputs.tsv`. This repository has no record that v1-raw or
+`dataset-v0-org/` has the path-fix files. The one write of step 5.5.2 must take them.
 
 ## 6. Validate
 
@@ -283,6 +465,12 @@ directories. It is not the final merge. It reads local paths of the run machines
 | Run time of each selection stage | Not recorded in this repository. |
 | Byte identity of a rerun with other worker, blame-job or memory flags | Not measured. |
 | Equality of "95cdc88 run plus the trailer post-fix" and "a run on 1f17663 or later" | Not measured on all projects. |
+| The slickGitLog, persons and remapCommits jars on the machines of the 1,000-4,999 layer and of the path-fix rerun | The machines are terminated. Their gate and their ledgers record only the blobExec jar. |
+| The final cost of the build, the runs of the 1,000-4,999 layer and the release steps | Not recorded (PLAN.md, item B5). Section 4.4 and the runbooks give estimates. |
+
+Checked again on 2026-10-25, still UNKNOWN: the gate of 157cf8b (the only libexpat file of
+that run has no ledger, and the gate procedure did not make it) and the three jar rows (the
+ledgers record only `blobexec_jar_sha256`). No file fills them.
 
 Found on 2026-10-14 (no longer UNKNOWN):
 
@@ -300,11 +488,19 @@ Found on 2026-10-14 (no longer UNKNOWN):
   with the dataset. Then finish steps 4-6 of `rebuild-one`.
 - Write one entry point for `make build` over the runner scripts of `pipeline/s7-run/runner/`.
   Now each batch has its own scripts.
-- Write the final merge, and the offline replay of S4-S6 (`make select`).
-- Decide on the web captures that are not copied: `rosters/raw/` (except the ASF
-  `projects.json` that S5 reads) and `sources/company-pages/raw/`, and the Spinellis
-  dataset tarball (Zenodo record 3742962, `sources/spinellis-2020/FETCH.tsv` gives its
-  MD5). They are third-party pages and files, about 250 MB.
+- Write one local entry point for `make merge` over the merge kits (section 5), and the
+  offline replay of S4-S6 (`make select`).
+- The steps of section 5.5: database v4.8, the one write of the organisation columns and the
+  pseudonyms, and the release package.
+- Sync the later kits into `pipeline/` after the study commit (section 9).
+- Add the inputs of the 1,000-4,999 layer (study `x1k/`) to `sync/rules.tsv`. First fix the
+  identifying text of `x1k/README.md` and `x1k/run_build.sh` at the source (a home path, the
+  bucket and EC2 ids).
+- The web captures (user decision, 2026-10-25): publish them with the release, each with its
+  URL, its fetch date and its sha256: `rosters/raw/` (except the ASF `projects.json` that S5
+  reads), `sources/company-pages/raw/`, and the Spinellis dataset tarball (Zenodo record
+  3742962, `sources/spinellis-2020/FETCH.tsv` gives its MD5). They are third-party pages and
+  files, about 250 MB. `THIRD-PARTY.md` needs a licence note for each source.
 - Work through `ANONYMIZATION-TODO.md`: the deferred hits (after the build ends, and at the
   export) and the kind census-name.
 
@@ -319,6 +515,13 @@ sync/anonymity-scan.sh                       # write ANONYMIZATION-TODO.md again
 
 `sync/rules.tsv` selects the files. `sync/sources.local.conf` (local only) gives the local
 clone of each source.
+
+The copies of the later kits (section 4.4) are in the working tree of the study repository on
+2026-10-25, not in a commit. `sync/sync-from-sources.sh` reads a commit only. So after the user
+commits them: run `sync/make-sources-list.sh study <that commit>`, review the diff of
+`sync/sources.tsv` (about 192 new rows under `pipeline/s7-run/runner/dataset-*/`, plus the
+other study files that changed since e748945), then `sync/sync-from-sources.sh` and
+`sync/anonymity-scan.sh`. `rules.tsv` never copies an environment file (`*.env`).
 `sync/anonymity-allow.tsv` lists the scan hits that are not identifying text (checked by hand).
 `sync/anonymity-deferred.tsv` lists the hits that wait: files that active jobs run until the
 dataset build ends, and pinned tool copies to redact at the export.

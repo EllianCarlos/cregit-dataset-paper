@@ -53,10 +53,12 @@ validate:
 stage-hashes:
 	@scripts/check-stage-hashes.sh
 
+# The runner copies (pipeline/s7-run/runner/) are not run here: their tests need the run kit
+# layout and the rendered tokens.
 test:
 	@if [ -z "$${CREGIT_PYTHON:-}" ]; then echo "not ready: CREGIT_PYTHON is not set (run in the dev shell: nix develop)" >&2; exit 3; fi
 	@for d in pipeline/s5-evidence pipeline/s6-labels pipeline/s7-run; do \
-	  echo "== $$d"; (cd $$d && PYTHONDONTWRITEBYTECODE=1 "$$CREGIT_PYTHON" -I -m pytest -q -p no:cacheprovider .); \
+	  echo "== $$d"; (cd $$d && PYTHONDONTWRITEBYTECODE=1 "$$CREGIT_PYTHON" -I -m pytest -q -p no:cacheprovider --ignore=runner .); \
 	done
 
 sync-check:
