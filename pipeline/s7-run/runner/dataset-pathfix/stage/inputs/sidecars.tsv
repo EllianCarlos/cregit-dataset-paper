@@ -1,0 +1,4 @@
+part	file	sha256	path
+1	project_meta.v1.final.json	4023295abc589a5eb0f4124e0aa76000402bd2492755e62f50af03121f661946	${RUNNER_HOME}/Projects/${RUNNER_STUDY_REPO}/2026.2-estudos-pesquisa-sistemas/dataset-selection/s7-run/project_meta.v1.final.json
+2	project_meta.x1k.json	4ae4ad9f37bb56d96fd17e533eb651d58e8374ed6ee8584f73e75007e6e3b31e	${RUNNER_HOME}/Projects/${RUNNER_STUDY_REPO}/2026.2-estudos-pesquisa-sistemas/dataset-selection/x1k/project_meta.x1k.json
+3	project_meta.v1.final.json	4023295abc589a5eb0f4124e0aa76000402bd2492755e62f50af03121f661946	${RUNNER_HOME}/Projects/${RUNNER_STUDY_REPO}/2026.2-estudos-pesquisa-sistemas/dataset-selection/s7-run/project_meta.v1.final.json

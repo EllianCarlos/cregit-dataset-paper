@@ -61,6 +61,9 @@ OUT_ROOT = HOME / "Projects/cregit-workspace/census-cloud-fixed"
 RUNS = ("batch1rest", "batch2", "batch3", "batch3L", "batch4", "batch5", "batch5L", "batch6",
         "batch6L")
 OLD_CREGIT = "95cdc88"
+# 9ccead6 is 95cdc88 plus the -C100 time limit (blameRepo only), so its footer columns have the same
+# defect (mongodb__mongo, batch6 a1; added 2026-10-16).
+FIXABLE = (OLD_CREGIT, "9ccead6", "noledger")
 TRANSIENT = ("clone_failed", "error", "no_persons_db", "input_mismatch")
 MANIFESTS = ("manifest.batch1rest.tsv", "manifest.batch2.tsv", "manifest.batch3.tsv",
              "manifest.batch4.tsv", "manifest.batch5.tsv", "manifest.batch6.tsv")
@@ -102,7 +105,7 @@ def inputs(cloud: Path) -> list[dict]:
     local = {p.name.removesuffix("-dataset.parquet") for p in LOCAL.rglob("*-dataset.parquet")}
     out, seen = [], set()
     for line in (cloud / "verified.tsv").read_text(encoding="utf-8").splitlines():
-        _, rel, sha = line.split("\t")
+        _, rel, sha = line.split("\t")[:3]  # a note in a 4th field must not stop the run
         run = rel.split("/")[0]
         name = rel.rsplit("/", 1)[1]
         if run not in RUNS or rel in seen:
@@ -113,7 +116,7 @@ def inputs(cloud: Path) -> list[dict]:
         cregit = ledger_cregit(done, name)
         if name in local or not src.is_file():
             continue
-        if cregit not in (OLD_CREGIT, "noledger"):
+        if cregit not in FIXABLE:
             continue
         persons = done / f"{name}-persons.db"
         out.append(dict(project=name, run=run, rel=rel, sha=sha, src=src, cregit=cregit,

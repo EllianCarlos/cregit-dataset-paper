@@ -1,18 +1,31 @@
 #!/usr/bin/env python3
 """Write the final sidecar: the enriched sidecar plus source, the S6 label columns and the S5 roster names.
-Usage: final_meta.py [--sidecar S ...] --out project_meta.layer1.final.json
-       [--labels ../s6-labels/labels.csv] [--evidence ../s5-evidence/evidence.csv]
+Usage: final_meta.py [--sidecar S ...] --out project_meta.v1.final.json
+       [--labels L ...] [--evidence ../s5-evidence/evidence.csv]
        [--frame F ...] [--pool P ...] [--license-values CSV ...]
 
-The inputs cover dataset version 1, that is batches 1-22 (3,379 projects; 2026-10-11). Each
-option that takes several files replaces its default list; give it once for each file.
+The inputs cover dataset version 1, that is batches 1-23, 25 and 26 (3,548 projects;
+2026-10-16; batch 24 has no new key). The run of 2026-10-11 covered batches 1-22 (3,379 projects)
+and wrote project_meta.layer1.final.json. Each option that takes several files replaces its
+default list; give it once for each file.
   --sidecar         project_meta.layer1.enriched.json (batches 1-20), project_meta.batch21.json,
-                    project_meta.batch22.json. A key must not repeat; the output keeps this order.
-  --frame           ../s4-filter/frame.csv (batches 1-20), frame.batch21.csv, frame.batch22.csv
-  --pool            ../s2-pool/pool.csv, ../s2-pool/v2/pool.batch22.csv. A key in two pool files
-                    must have the same values in both.
+                    project_meta.batch22.json, project_meta.batch23.json (118 keys, with the 8 L
+                    rows; project_meta.batch23L.json repeats these 8 keys, so it is not an input),
+                    project_meta.batch25.json, project_meta.batch26.json. A key must not repeat;
+                    the output keeps this order.
+  --labels          ../s6-labels/labels.csv (batches 1-23), labels.batch25.csv,
+                    labels.batch26.csv. A key must not repeat. A label file with no label_date
+                    column (batches 25 and 26) gives no label_date: the value of the sidecar
+                    record stays, and it must not be blank (choice of 2026-10-16: the label CSVs of
+                    batches 25 and 26 do not change).
+  --frame           ../s4-filter/frame.csv (batches 1-20), frame.batch21.csv, frame.batch22.csv,
+                    frame.batch23.csv, frame.batch25.csv, frame.batch26.csv
+  --pool            ../s2-pool/pool.csv (it also holds the rows of batch 23),
+                    ../s2-pool/v2/pool.batch22.csv, pool.batch25.csv, pool.batch26.csv. A key in
+                    two pool files must have the same values in both.
   --license-values  ../s4-filter/dp8l-audit/licenses.csv (batch 21) and
-                    ../s4-filter/supplement22.licenses.csv (batch 22): the license values that
+                    ../s4-filter/supplement22.licenses.csv, supplement23.licenses.csv,
+                    supplement25.licenses.csv, supplement26.licenses.csv: the license values that
                     build_run.sh supplement gave to the rows whose pool license is blank
                     (enrich_meta.apply_license_values, the same rule)
 
@@ -38,8 +51,8 @@ Two host rules (decisions of the user, 2026-10-11). They use the host of the fra
                 owner from the slug (git/<name> gives git) or the host (<name> alone), and neither
                 names the owner. HOST_OWNER holds the rule.
 
-Checks, or nothing is written: every sidecar key is in labels.csv and labels.csv has no other
-key; pool_key agrees; the input fields that this fills are '' or already hold the same value;
+Checks, or nothing is written: every sidecar key is in the label files and the label files have
+no other key; pool_key agrees; the input fields that this fills are '' or already hold the same value;
 every other field and the key order stay, except the fields that a host rule changes. --out
 refuses an existing file."""
 from __future__ import annotations
@@ -63,11 +76,14 @@ ROSTER_TYPES = {"roster", "fiscal_sponsor", "roster_affiliated", "company_roster
 NEW_FIELDS = (enrich_meta.SOURCE,) + tuple(LABEL_FIELDS) + ("roster_name", "roster_lang")
 SEL = HERE.parent
 SIDECARS = [HERE / f for f in ("project_meta.layer1.enriched.json", "project_meta.batch21.json",
-                               "project_meta.batch22.json")]
-FRAMES = [SEL / "s4-filter" / "frame.csv", HERE / "frame.batch21.csv", HERE / "frame.batch22.csv"]
-POOLS = [SEL / "s2-pool" / "pool.csv", SEL / "s2-pool" / "v2" / "pool.batch22.csv"]
-LICENSES = [SEL / "s4-filter" / "dp8l-audit" / "licenses.csv",
-            SEL / "s4-filter" / "supplement22.licenses.csv"]
+                               "project_meta.batch22.json", "project_meta.batch23.json",
+                               "project_meta.batch25.json", "project_meta.batch26.json")]
+LABELS = [SEL / "s6-labels" / "labels.csv", HERE / "labels.batch25.csv", HERE / "labels.batch26.csv"]
+FRAMES = [SEL / "s4-filter" / "frame.csv"] + [HERE / f"frame.batch{b}.csv" for b in (21, 22, 23, 25, 26)]
+POOLS = [SEL / "s2-pool" / "pool.csv"] + [SEL / "s2-pool" / "v2" / f"pool.batch{b}.csv"
+                                          for b in (22, 25, 26)]
+LICENSES = [SEL / "s4-filter" / "dp8l-audit" / "licenses.csv"] + [
+    SEL / "s4-filter" / f"supplement{b}.licenses.csv" for b in (22, 23, 25, 26)]
 
 
 NOT_GITHUB_LICENSE = "NOASSERTION"
@@ -134,7 +150,12 @@ def finalize(meta: dict, labels: dict[str, dict], rosters: dict[str, dict],
             problems.append(f"{name}: labels.csv pool_key {lab['pool_key']} is not the frame's")
             continue
         new = dict(rec)
-        vals = {f: lab[c] for f, c in LABEL_FIELDS.items()}
+        vals = {f: lab[c] for f, c in LABEL_FIELDS.items() if c in lab}
+        if "label_date" not in lab:   # a label file with no label_date column: keep the sidecar's
+            if not rec.get("label_date"):
+                problems.append(f"{name}: no label_date in the label file or in the sidecar")
+                continue
+            vals["label_date"] = rec["label_date"]
         vals.update(rosters.get(name, {"roster_name": "", "roster_lang": ""}))
         for f, v in vals.items():
             if f not in rec:
@@ -150,7 +171,8 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--sidecar", type=Path, action="append")
     ap.add_argument("--out", type=Path, required=True)
-    ap.add_argument("--labels", type=Path, default=HERE.parent / "s6-labels" / "labels.csv")
+    ap.add_argument("--labels", type=Path, action="append",
+                    help="a label CSV; give it once for each file (default: the three of LABELS)")
     ap.add_argument("--evidence", type=Path, default=HERE.parent / "s5-evidence" / "evidence.csv")
     ap.add_argument("--frame", type=Path, action="append")
     ap.add_argument("--pool", type=Path, action="append")
@@ -178,8 +200,15 @@ def main(argv: list[str] | None = None) -> int:
         problems += enrich_meta.apply_license_values(pool, p)
     sourced, more = enrich_meta.enrich(meta, frame, pool)
     problems += more
-    with args.labels.open(newline="", encoding="utf-8") as fh:
-        labels = {r["project"]: r for r in csv.DictReader(fh)}
+    labels, n_labels = {}, 0
+    for path in args.labels or LABELS:
+        with path.open(newline="", encoding="utf-8") as fh:
+            rows = list(csv.DictReader(fh))
+        n_labels += len(rows)
+        labels.update((r["project"], r) for r in rows)
+    if len(labels) != n_labels:
+        print(f"FAIL {n_labels - len(labels)} keys repeat in the label files", file=sys.stderr)
+        return 1
     final, more = finalize(sourced, labels, roster_columns(args.evidence), frame)
     problems += more
     by_rule: dict[str, set[str]] = {}

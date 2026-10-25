@@ -2,14 +2,19 @@
 
 Run: 2026-10-09 (`label_date` 2026-10-09), for the 3,265 projects of run layer 1 (batches
 1-20). Run again on 2026-10-11 (`label_date` 2026-10-11) for the 3,379 projects of version 1
-of the projects dataset: the 3,265 and the 114 projects of batches 21 and 22. Input:
+of the projects dataset: the 3,265 and the 114 projects of batches 21 and 22. Run again on
+2026-10-16 (`label_date` 2026-10-16) for the 3,497 projects of version 1: the 3,379 and the
+118 projects of batch 23 (`../s7-run/frame.batch23.csv`, the DP8L v4 near-miss rows). Input:
 `../s5-evidence/evidence.csv` only, and the frames for `size_class` and `language`. The rules
-are in `../SELECTION-STAGES.md` section 7. The rules did not change on 2026-10-11.
+are in `../SELECTION-STAGES.md` section 7. The rules did not change on 2026-10-11 or on
+2026-10-16.
 
 ```
-python3 build_labels.py --date 2026-10-11 --prior labels.20261009.csv   # writes labels.csv and counts.txt
+python3 build_labels.py --date 2026-10-16 --prior labels.20261011.csv   # writes labels.csv and counts.txt
 python3 -m pytest -q test_build_labels.py
 ```
+
+The run of 2026-10-11 was `build_labels.py --date 2026-10-11 --prior labels.20261009.csv`.
 
 `labels.20261009.csv` is the `labels.csv` of 2026-10-09 (3,265 rows). `--prior` keeps its
 `label_date` for each project whose row has the same values in all the other columns. The
@@ -17,6 +22,11 @@ other rows get `--date`. The user kept this rule on 2026-10-11. All 3,265 rows o
 (the first 3,265 rows, `label_date` 2026-10-09). The 114 new rows have `label_date`
 2026-10-11. The default frames are those of `../s5-evidence/build_evidence.py`; `--frame`
 replaces them.
+
+`labels.20261011.csv` is the `labels.csv` of 2026-10-11 (3,379 rows), kept. It is the `--prior`
+of the run of 2026-10-16. All 3,379 rows of 2026-10-11 are the same in the new `labels.csv` (the
+first 3,379 rows, with their `label_date` 2026-10-09 or 2026-10-11). The 118 new rows have
+`label_date` 2026-10-16.
 
 ## 1. Rules
 
@@ -64,7 +74,45 @@ rows for each `label_date`.
 
 ## 3. Counts
 
-The 3,379 projects of version 1 (2026-10-11):
+The 3,497 projects of version 1 (2026-10-16):
+
+| Label | L | M | S | Total |
+| --- | ---: | ---: | ---: | ---: |
+| foundation | 9 | 71 | 357 | 437 |
+| company | 15 | 57 | 163 | 235 |
+| contested | 2 | 9 | 64 | 75 |
+| government | 0 | 0 | 0 | 0 |
+| fiscal-sponsor | 1 | 18 | 19 | 38 |
+| personal | 6 | 16 | 374 | 396 |
+| community | 0 | 0 | 0 | 0 |
+| unknown | 57 | 316 | 1,943 | 2,316 |
+| **Total** | 90 | 487 | 2,920 | 3,497 |
+
+The 118 projects of batch 23 (included above):
+
+| Label | L | M | S | Total |
+| --- | ---: | ---: | ---: | ---: |
+| foundation | 1 | 0 | 10 | 11 |
+| company | 0 | 1 | 5 | 6 |
+| contested | 0 | 0 | 0 | 0 |
+| fiscal-sponsor | 0 | 0 | 0 | 0 |
+| personal | 0 | 0 | 15 | 15 |
+| unknown | 7 | 16 | 63 | 86 |
+| **Total** | 8 | 17 | 93 | 118 |
+
+- `foundation`: 7 on `roster:asf` (3 of them also on `roster:asf-incubator`), 2 on
+  `roster:eclipse`, NetBSD/src (`roster:netbsd`) and rust-lang/this-week-in-rust
+  (`roster:rust-foundation`).
+- `company`: NVIDIA/nvtexlive and mongodb/docs on `company_org`, nfs-ganesha/nfs-ganesha on
+  the Red Hat table alone, and 3 on `company_pool:spinellis` alone (digi-embedded/meta-digi,
+  gwtproject/gwt, usdot-fhwa-stol/carma-platform). 3 of these labels come from one rule-based
+  source only (see case L7).
+- `unknown`: 83 have only `owner_kind:org`. 3 also have a fact that sets no label
+  (`company_org_candidate` xilinx and Zimbra, `roster_affiliated:numfocus` for
+  igraph/rigraph).
+- No project of batch 23 has case L2, L3 or L4.
+
+The 3,379 projects of batches 1-22 (2026-10-11; no row changed on 2026-10-16):
 
 | Label | L | M | S | Total |
 | --- | ---: | ---: | ---: | ---: |
@@ -113,7 +161,7 @@ The 3,265 projects of batches 1-20 (2026-10-09; no row changed on 2026-10-11):
 | unknown | 50 | 288 | 1,867 | 2,205 |
 | **Total** | 79 | 446 | 2,740 | 3,265 |
 
-The breakdowns below are for the 3,265 projects. `counts.txt` gives them for the 3,379.
+The breakdowns below are for the 3,265 projects. `counts.txt` gives them for the 3,497.
 
 - `company`: 90 rest on `company_org` alone, 35 on `company_org` and
   `company_pool:spinellis`, **55 on `company_pool:spinellis` alone** (the decision of
@@ -153,3 +201,12 @@ table. The user decision changed 61 labels: 34 `unknown` to `company`, 26 `found
 - **L6. GNU (2026-10-11).** The 33 GNU projects get `foundation`, because the GNU roster files
   give `org_kind` `foundation` (S5 case C8). **Decision of the user, 2026-10-11: keep
   `foundation`.**
+- **L7. Company labels from one rule-based source (batch 23, 2026-10-16).** Three batch 23
+  labels are `company` on one source that a rule reads, and no other fact supports them:
+  usdot-fhwa-stol/carma-platform (`company_pool:spinellis`, company "Leidos Holdings, Inc.";
+  the org is in `org_links.csv` only as a candidate), gwtproject/gwt (`company_pool:spinellis`,
+  company "Alphabet Inc."; the org is only a candidate) and nfs-ganesha/nfs-ganesha (the Red Hat
+  table alone). The rules give these labels. Decision of the user (2026-10-16): keep the rule
+  result for all three, so that one method applies to all of v1, and document the case here.
+  A user of the data who wants only labels with two or more facts can filter these three by
+  their `fact` value.

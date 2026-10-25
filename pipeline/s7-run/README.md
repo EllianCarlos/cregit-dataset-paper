@@ -33,7 +33,7 @@ The names below stand for local and account values:
 | `runs-20261009.md` | Resume point (see "State at 17:35 UTC" at its end). What runs where (batch 1 here, batch 2 on EC2 on-demand, batch 3 on spot + the batch 2 instance), how to watch and stop each run, the decisions with their rationale, and the open points. |
 | `step2-speed-20261009.md` | The step 2 speed-ups (alternates, SQLite batching and cache, zlib 1, JDK SHA-1, no bitmap): Parquet identical on 4 projects, curl step 2 CPU -39%. |
 | `enrich_meta.py` | Fills `license`, `owner_type`, `archived`, `fork` and (since 2026-10-09 20:15 UTC) `source` (the `pool.csv` column `origins`, as it is) in a `project_meta` sidecar from `../s2-pool/pool.csv` (join: manifest name → frame row → `pool_key`). `bash build_run.sh batch N` (N = 6..20) runs it in place, so batches 7–20 get `source`; batch 6 has `source` = ''. Batches 1–5 have new `project_meta.*.enriched.json` files. |
-| `final_meta.py` | Writes `project_meta.layer1.final.json` (not in git; sha256 in `project_meta.layer1.final.json.sha256`): the sidecars of dataset version 1 plus `source`, the S6 label columns (`stratum`, `fact`, `contested`, `label_date`, from `../s6-labels/labels.csv`) and `roster_name`, `roster_lang` (from `../s5-evidence/evidence.csv`). Since 2026-10-11 it covers 3,379 projects: the layer 1 enriched sidecar (batches 1-20, 3,265) and `project_meta.batch21.json` (81) and `project_meta.batch22.json` (33), in this order. The sidecar of 2026-10-09 (3,265 projects) is kept as `project_meta.layer1.final.20261009.json` (not in git; sha256 in `project_meta.layer1.final.20261009.json.sha256`). Its 3,265 rows are the first rows of the new sidecar. Two host rules (user decisions of 2026-10-11) then apply: a project that is not on GitHub and has a blank `license` gets `NOASSERTION` (36 old rows), and a project on git.savannah.gnu.org gets the owner `gnu` (25 batch 22 rows). The sidecar before these rules (sha256 c988c37a) is kept as `project_meta.layer1.final.20261011a.json` (not in git; sha256 in its `.sha256` file). |
+| `final_meta.py` | Writes `project_meta.layer1.final.json` (not in git; sha256 in `project_meta.layer1.final.json.sha256`): the sidecars of dataset version 1 plus `source`, the S6 label columns (`stratum`, `fact`, `contested`, `label_date`, from `../s6-labels/labels.csv`) and `roster_name`, `roster_lang` (from `../s5-evidence/evidence.csv`). Since 2026-10-11 it covers 3,379 projects: the layer 1 enriched sidecar (batches 1-20, 3,265) and `project_meta.batch21.json` (81) and `project_meta.batch22.json` (33), in this order. The sidecar of 2026-10-09 (3,265 projects) is kept as `project_meta.layer1.final.20261009.json` (not in git; sha256 in `project_meta.layer1.final.20261009.json.sha256`). Its 3,265 rows are the first rows of the new sidecar. Two host rules (user decisions of 2026-10-11) then apply: a project that is not on GitHub and has a blank `license` gets `NOASSERTION` (36 old rows), and a project on git.savannah.gnu.org gets the owner `gnu` (25 batch 22 rows). The sidecar before these rules (sha256 c988c37a) is kept as `project_meta.layer1.final.20261011a.json` (not in git; sha256 in its `.sha256` file). Since 2026-10-16 the default inputs cover all 3,548 projects of v1, and the output is a new file: `project_meta.v1.final.json` (not in git; sha256 4023295a in `project_meta.v1.final.json.sha256`). The inputs add `project_meta.batch23.json` (118), `project_meta.batch25.json` (50) and `project_meta.batch26.json` (1), their frames, `../s2-pool/v2/pool.batch25.csv` and `pool.batch26.csv`, and `../s4-filter/supplement23.licenses.csv`, `supplement25.licenses.csv` and `supplement26.licenses.csv`. `--labels` takes several files: `../s6-labels/labels.csv`, `labels.batch25.csv`, `labels.batch26.csv`. The label files of batches 25 and 26 have no `label_date` column, so these rows keep the `label_date` of their sidecar (2026-10-14). The 3,379 rows of `project_meta.layer1.final.json` are the first rows of the v1 sidecar, with all fields the same. `project_meta.layer1.final.json` and its `.sha256` file do not change: the inputs of 2026-10-11 still give it byte for byte (a test checks this). |
 | `rewrite_meta_columns.py` | Fills the 11 sidecar columns that changed after the run (`--fields` to choose fewer) in one finished Parquet from a sidecar (DuckDB `SELECT * REPLACE`), then checks the other columns row by row. Use the final sidecar. `--report` appends a TSV row. Same CLI as `rewrite_footer_columns.py`, so the two run one after the other. Not applied to census files yet. |
 | `rewrite_footer_columns.py`, `test_rewrite_footer_columns.py` | Recomputes the 15 `footer_*` columns of one finished Parquet from the original commits (the trailer fix of cregit 1f17663), then checks every row. See "Trailer post-fix of the 95cdc88 batches". |
 | `footer_fix_batches.py` | Runs `rewrite_footer_columns.py` on each finished Parquet of the 95cdc88 runs, at most 2 at a time. Writes a parallel tree and a manifest; skips the done ones. See "Trailer post-fix of the 95cdc88 batches". |
@@ -127,6 +127,14 @@ The names below stand for local and account values:
   continue. No process was killed. Resume with SIGCONT after the space comes back; then remove the
   guard STOP files. Script `~/s3-work/ec2-L7-20/scripts/space-pause-20261013.sh`, log
   `/data/logs/space-pause-20261013.log`. Details: runs-20261009.md, update 07:40 UTC 2026-10-13.
+- 2026-10-15 15:39 UTC (big EC2): the machine powered itself off after the L7-20b finalize, as built.
+  liferay ended (join 15:37); all 10 queues of the big EC2 have `final/DONE` in S3. No restart: no
+  work is left there. Lost with the instance store: `/data/logs` and the liferay helper log. The
+  instance is stopped, not terminated (the user decides). Details: runs-20261009.md, update 15:50 UTC.
+- 2026-10-15 20:02 UTC (spot b): the watchdog relaunched spot b (restart 4 of 10)
+  after the old one ended its work: BRL-CAD (batch15b1, excluded) still counted as remaining. Fix: the
+  skip list `census-watchdog/settled.tsv` in `restart_spot.sh --remaining`; spot b now counts 0. The new
+  spot b is held (NO_SHUTDOWN) for plan B. Details: runs-20261009.md, update 21:15 UTC.
 - Open check: stella-emu__stella was running at the crash and finished after the
   restart; its cleanup deleted the memo and repos, so zero-length memo entries
   (possible on xfs after a crash) can no longer be ruled out. A rerun is cheap.
@@ -330,7 +338,7 @@ The user decided on 2026-10-11 at about 19:00 UTC: "Yes, add them". The runbooks
 - **L rows.** `manifest.batch23L.tsv`: NetBSD/src, openbsd/src, checkedc/checkedc-clang, WebKit/WebKit, Xilinx/hls-llvm-project, openbsd/ports, alpinelinux/aports, archlinuxcn/repo. They run as census L23 on the big EC2, in LPT order (`manifest.L23.tsv`, built on the instance), 4 workers, own loop XFS `/bL23`.
 - **Clone check.** `../clone-failures-20261009/probe_rows.py` (read-only: `git ls-remote` and `gh api repos/<slug>/commits/<oid>`, one call at a time): 118 of 118 resolve, and 118 of 118 pinned commits exist on GitHub. The head moved after the snapshot for 64 rows. Output: `../clone-failures-20261009/probes/20261011T2007Z-batch23/`.
 - **Code.** ctp ca113e3, cregit 57551d7 (the blame time limit), bundle `cregit-57551d7.bundle` (sha256 18b1bf1c…, in S3 since 20:05 UTC), libexpat gate 14eb5d72….
-- **S5/S6 inputs (not run).** `build_evidence.py` and `build_labels.py`: add `s7-run/frame.batch23.csv` to `FRAMES`. `build_evidence.py`: the pool rows are in `s2-pool/pool.csv` already (`v2/pool.batch23.csv` holds the same 118 rows; it is optional). `final_meta.py`: add `project_meta.batch23.json` to `--sidecar`, `frame.batch23.csv` to `--frame`, `../s4-filter/supplement23.licenses.csv` to `--license-values` (and `v2/pool.batch23.csv` to `--pool` if wanted; a key in two pool files must have the same values, and it does).
+- **S5/S6 (run on 2026-10-16).** `build_evidence.py` and `build_labels.py` have `frame.batch23.csv` in `FRAMES`. The pool rows are in `s2-pool/pool.csv` (`v2/pool.batch23.csv` holds the same 118 rows), so no pool file was added. S5: 3,497 projects, 4,656 fact rows (145 of batch 23); the old `evidence.csv` is kept as `../s5-evidence/evidence.20261011.csv`. S6: `build_labels.py --date 2026-10-16 --prior labels.20261011.csv` (the old `labels.csv`, kept). The 3,379 old rows do not change. The 118 new rows: unknown 86, personal 15, foundation 11, company 6 (`label_date` 2026-10-16). `final_meta.py` has `project_meta.batch23.json`, `frame.batch23.csv` and `../s4-filter/supplement23.licenses.csv` in its defaults (with batches 25 and 26; see `final_meta.py` above). Open for the user: 3 company labels from one rule-based source (`../s6-labels/method.md` case L7).
 - **Order of the start.** The user runs `~/s3-work/upload-batch23.sh` (Claude's S3 uploads are denied). After `ALL OK`: the feed.tsv line (`S1-feed-line.sh`), `s23-enqueue.sh` on spot b only, then the L23 steps L1 to L3 and `W1-watch-entries.sh`.
 
 ## L1r: batch 1 L rerun on the big EC2 (2026-10-12, installed, started 20:04 UTC)
@@ -365,7 +373,9 @@ $CREGIT_PROJECTS/cregit-workspace/census-local-a/ctp/.venv/bin/python -I prelim_
 - Tables: `projects`, `candidates`, `frame` (3,497 v1 projects); views `frame_status`, `tokens`.
 - First build (13:50 UTC): 2,842 projects, 14,374,917,935 token rows; 652 pending, 3 excluded.
 - Not applied yet: the 11-column metadata rewrite (`rewrite_meta_columns.py`). Take the project
-  metadata from `project_meta.layer1.final.json` until then.
+  metadata from `project_meta.layer1.final.json` until then. (2026-10-16: `project_meta.v1.final.json`
+  holds all 3,548 v1 projects, also those of batches 23, 25 and 26; it is a `--sidecar` for
+  `rewrite_meta_columns.py`.)
 
 ## Trailer post-fix of the 95cdc88 batches (2026-10-11)
 
@@ -457,3 +467,61 @@ User decision 2026-10-14 ~16:40 UTC, verbatim: "yes to mutt" (the DP8L v4 near-m
 - **Part.** `parts_batch26.py`: part a1, 1 worker, spot a, 0.1 h predicted (inferred). The derive gives sha256 ok. `SHA256SUMS` gets 8 lines (the `project_meta.batch26.json` line holds the sha256 after the label fill).
 - **Tooling.** `feed.next.tsv` has the batch26 line (57551d7); `prelim_merge.py` FRAME has `project_meta.batch26.json` and RUN_CREGIT `batch26` (v1 = 3,548); `fetch_done.sh` fetches batch 7-26; `../report/build_status_html.py` reads `pool.batch26.csv`.
 - **Order of the start.** The user runs `~/s3-work/upload-batch26.sh` (ALL OK); then `S1-feed-line.sh`, then `s26-enqueue.sh` on spot a only.
+
+## Dataset v1-raw: the final merge, stage 1 (2026-10-16)
+
+The dataset build ended for v1: 3,544 projects are in the preliminary merge (23,692,479,892 token
+rows, 186.2 GB). Not in v1: kitao__pyxel (pending; the owner account is suspended) and the 3
+excluded rows. The last project, asuswrt-merlin.ng, comes from a fast second firm step on spot a
+(`~/s3-work/firm-fast-20261016/`, source `local-e`); the slow ctp run checks it later.
+
+Decisions of the user (2026-10-16), also in `runs-20261009.md`:
+- Two stages. Stage 1 is v1-raw: the 11 metadata columns from the v1 sidecar and the v1 encoding,
+  with the real names and e-mail addresses. It stays private (S3 backup). Stage 2 is v1-public:
+  the pseudonymized files, made from v1-raw after the anonymizer rework.
+- Encoding v1: ZSTD level 19, `ROW_GROUP_SIZE 1000000`, `PARQUET_VERSION V2`
+  (`rewrite_meta_columns.py --encoding v1`). Tests on two files: 70-77% of the run size, the same
+  values in the same order.
+- The Savannah owner is `gnu` (the host rule in `rewrite_meta_columns.py`).
+- Batch 23 has S5/S6 labels (offline run; `s6-labels/method.md` case L7 for three
+  single-source company labels, kept by the user).
+- mongodb__mongo (cregit 9ccead6) has the footer post-fix (`footer_fix_batches.py` accepts 9ccead6;
+  `footer-fix-again.timer` is stopped).
+
+Files:
+- `project_meta.v1.final.json` (git-ignored; pin `project_meta.v1.final.json.sha256`, 4023295a…):
+  3,548 keys. `final_meta.py` writes it. The old `project_meta.layer1.final.json` (49e13f06…)
+  stays.
+- `final_merge.py` (tests `test_final_merge.py`): per project, largest first, copy the chosen run
+  file, check its sha256, `rewrite_meta_columns.py --encoding v1`, `validate_schema.py` of ctp
+  ca113e3 (the version on ctp `corpus-freeze-and-tests` refuses the column order of the runs),
+  check the rows, copy to DEST, one row in `results.tsv`. A second start continues; `OUT/STOP`
+  stops new projects. At the end: `SHA256SUMS`, `results.tsv` and the sidecar go to DEST.
+- `~/s3-work/dataset-v1/` (outside git): `build_inputs.py` writes `inputs.tsv` (one row per
+  project: the chosen file, its S3 key, its sha256) and `upload.tsv` (the 1,002 files that exist
+  only on this machine). The user uploads with `U1-upload-inputs.sh` and `U2-upload-tools.sh`.
+  On spot a: `M1-start-merge.sh` (unit `v1raw-merge`, output `/data1/v1raw/out` and
+  `s3://…/dataset-v1/raw/`), `M2-check.sh` (progress). Run them with
+  `cd ~/s3-work/ec2-batch23/scripts && I=<instance id> bash ssm.sh <script>`.
+- Spot a has `NO_SHUTDOWN` since 2026-10-16 19:12 UTC. Remove it after the S3 backup of v1-raw.
+
+Open for stage 2: the anonymizer rework (salted branch `feat/pseudonymise-identity-columns`, a
+registry table in place of SQL `MAP` literals, one fused write, the false failures, private
+reports), and the transfer of the salt (the user decides; Claude never sees the salt).
+
+## Dataset v0 with the organisation columns (runbook prepared 2026-10-19, not run)
+
+The runbook with every command is `~/s3-work/dataset-v0-org/README.md`. In short:
+- The v0 write runs again with the organisation columns of `s8-companies/LINK_COLUMNS_DESIGN.md`
+  (approved 2026-10-19): ctp schema 2 = the 67 columns of v1-raw without `firm_raw`, `firm` and
+  `firm_source`, then `firm_based_on_namespace`, `firm_based_on_domain`,
+  `project_enterprise_driven`, `project_enterprise_basis`, and three footer entries
+  (`ctp_schema_version`, `organisations_version`, `organisations_mapping_sha256`).
+- Inputs: v1-raw from `s3://.../dataset-v1/raw/`, links of database v4.2 (`build_links.py`; the
+  v4.1 links are a dry run). Output: `s3://.../dataset-v0-org/` (the old `dataset-v0/` stays).
+- Machine: one i4i.24xlarge spot in us-west-2 (as spot a). Unit `v0-org`, two passes: the 10 files
+  with 195 M rows or more with 10 jobs x 56 GB, then the other 3,534 files with 88 jobs x 5 GB
+  (`run_v0.py --min-rows/--max-rows`). Estimate: about 5.5-6 h, about 15 USD at the spot price.
+- Local test (2026-10-19, the workspace folder `companies/v0-local-test-v4.1/`): 5 small
+  projects through `final_merge.py` and `run_v0.py`: the 71 columns, the footer, 0 rows that differ
+  from the join prototype's method, 0 ids outside `organisations`.

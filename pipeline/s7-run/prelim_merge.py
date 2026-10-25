@@ -9,11 +9,13 @@ files in place. Run it again to add the projects that arrived since (census-fetc
 
 Sources, one candidate per project directory <owner>__<repo>:
   local-a/b/c/d      census-local-{a,b,c,d}/<wl>[/<part>]/done/<p>/ (reruns; OK needed)
+  local-e            census-local-e/batch13/a1/done/<p>/ (asuswrt-merlin.ng: the fast firm run of 2026-10-16 on
+                     spot a, ~/s3-work/firm-fast-20261016/; check.txt EQUAL needed, no ledger)
   fixed              census-cloud-fixed/<rel>/  (95cdc88 runs after the trailer post-fix; status ok)
   cloud              census-cloud/<run>/.../done/<p>/  (only with .checked: sha256 equal to OK)
   batch1-local       census-2026-10/<p>/  (cregit 157cf8b, old srcML: must be retokenized)
 One project, several candidates: the lowest rank wins, then the newest file.
-  rank 0 local-a/b/c/d, rank 1 cloud with cregit 1f17663/57551d7 or fixed,
+  rank 0 local-a/b/c/d/e, rank 1 cloud with cregit 1f17663/57551d7 or fixed,
   rank 2 cloud 95cdc88 without the post-fix, rank 3 batch1-local.
 Excluded (user decisions): discovery-artifact-manager, freeswitch, BRL-CAD.
 
@@ -46,6 +48,7 @@ RUN_CREGIT = {"L7-20": "1f17663", "L22": "1f17663", "L7-20b": "1f17663", "L23": 
               "L1r": "57551d7",
               "batch24": "57551d7", "batch25": "57551d7", "batch26": "57551d7"}  # runbooks; done/ has no ledger
 # (batch24/25/26: fed, has one)
+LOCAL_CREGIT = {"local-e": "57551d7"}  # local-e has no ledger; batch13 a1 ran cregit 57551d7 (status_all.sh)
 
 
 def cregit_of(d: Path) -> str:
@@ -73,14 +76,17 @@ def parquet_in(d: Path):
 
 def scan():
     cands = []
-    for lx in ("local-a", "local-b", "local-c", "local-d"):  # local-c: the batch 1 rerun (2026-10-12);
-        # local-d: connectionlens with cregit 23e4ccb (2026-10-14)
+    for lx in ("local-a", "local-b", "local-c", "local-d", "local-e"):  # local-c: the batch 1 rerun (2026-10-12);
+        # local-d: connectionlens with cregit 23e4ccb (2026-10-14); local-e: the fast firm run of asuswrt (2026-10-16)
         root = W / f"census-{lx}"
         for d in [*root.glob("*/done/*"), *root.glob("*/*/done/*")]:
             p = parquet_in(d)
-            if p and (d / "OK").is_file():
+            ok = (d / "OK").is_file() or (lx == "local-e" and (d / "check.txt").is_file()
+                                          and "EQUAL" in (d / "check.txt").read_text())
+            if p and ok:
                 cands.append(dict(project=d.name, source=lx, run=str(d.relative_to(root).parent.parent),
-                                  path=str(p), cregit=cregit_of(d), trailer_fixed=True, rank=0))
+                                  path=str(p), cregit=cregit_of(d) or LOCAL_CREGIT.get(lx, ""),
+                                  trailer_fixed=True, rank=0))
     fx = W / "census-cloud-fixed"
     ok = {}
     if (fx / "manifest.tsv").is_file():
@@ -99,12 +105,14 @@ def scan():
                               cregit=(r.get("cregit") or "95cdc88").replace("noledger", "95cdc88"),
                               trailer_fixed=True, rank=1))
     cc = W / "census-cloud"
-    for chk in cc.glob("**/done/*/.checked"):
+    # final/projects/<p>/: a queue's finalize copy, checked against final/SHA256SUMS (liferay, 2026-10-16:
+    # the big EC2 powered off before its backup pass copied it to done/)
+    for chk in [*cc.glob("**/done/*/.checked"), *cc.glob("*/final/projects/*/.checked")]:
         d = chk.parent
         p = parquet_in(d)
         if not p:
             continue
-        run = str(d.relative_to(cc)).split("/done/")[0]
+        run = str(d.relative_to(cc)).split("/done/")[0].split("/final/projects/")[0]
         top = run.split("/")[0]
         c = cregit_of(d) or RUN_CREGIT.get(top) or ("95cdc88" if top in OLD_RUNS else "")
         new = c in ("1f17663", "57551d7")

@@ -1,4 +1,4 @@
-"""Tests for build_labels.py (S6, 2026-10-09; batches 21-22 added 2026-10-11). Run: python3 -m pytest -q test_build_labels.py"""
+"""Tests for build_labels.py (S6, 2026-10-09; batches 21-22 added 2026-10-11; batch 23 added 2026-10-16). Run: python3 -m pytest -q test_build_labels.py"""
 from __future__ import annotations
 
 import csv
@@ -11,8 +11,9 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 import build_labels as bl  # noqa: E402
 
-PRIOR = HERE / "labels.20261009.csv"   # the 3,265 labels of 2026-10-09 (batches 1-20)
-NEW_DATE = "2026-10-11"                 # the run that added batches 21 and 22
+FIRST = HERE / "labels.20261009.csv"   # the 3,265 labels of 2026-10-09 (batches 1-20)
+PRIOR = HERE / "labels.20261011.csv"   # the 3,379 labels of 2026-10-11 (batches 1-22)
+NEW_DATE = "2026-10-16"                 # the run that added batch 23
 ORG = ("owner_kind", "owner_kind:org")
 USER = ("owner_kind", "owner_kind:user")
 ROSTER = ("roster", "roster:asf")
@@ -75,17 +76,20 @@ def test_the_committed_labels_are_what_the_script_writes(tmp_path):
     assert out.read_bytes() == (HERE / "labels.csv").read_bytes()
     assert counts.read_bytes() == (HERE / "counts.txt").read_bytes()
     rows = list(csv.DictReader(out.open()))
-    assert len(rows) == 3379 and len({r["project"] for r in rows}) == 3379
+    assert len(rows) == 3497 and len({r["project"] for r in rows}) == 3497
     assert all(r["label"] in bl.LABELS for r in rows)
     assert all(bool(r["contested"]) == (r["label"] == "contested") for r in rows)
     assert all(bool(r["label_basis"]) == (r["label"] != "unknown") for r in rows)
 
 
-def test_the_rows_of_2026_10_09_do_not_change():
+def test_the_rows_of_2026_10_09_and_2026_10_11_do_not_change():
+    first = list(csv.DictReader(FIRST.open()))
     old = list(csv.DictReader(PRIOR.open()))
     new = list(csv.DictReader((HERE / "labels.csv").open()))
-    assert len(old) == 3265 and new[:3265] == old
-    assert {r["label_date"] for r in new[3265:]} == {NEW_DATE}
+    assert len(first) == 3265 and new[:3265] == first
+    assert len(old) == 3379 and new[:3379] == old
+    assert {r["label_date"] for r in new[3265:3379]} == {"2026-10-11"}
+    assert {r["label_date"] for r in new[3379:]} == {NEW_DATE}
 
 
 def test_the_new_rows():
@@ -94,6 +98,11 @@ def test_the_new_rows():
     assert new["git.busybox.net__busybox"]["label"] == "fiscal-sponsor"
     assert new["NetBSD__pkgsrc"]["label"] == "foundation"
     assert new["KDE__kwin"]["label"] == "contested"
+    # batch 23
+    assert new["NetBSD__src"]["label"] == "foundation"
+    assert new["apache__cayenne"]["label_basis"] == "roster:asf;roster:asf-incubator"
+    assert new["NVIDIA__nvtexlive"]["label"] == "company"
+    assert new["igraph__rigraph"]["label"] == "unknown"   # NumFOCUS "affiliated" sets no label
 
 
 def write_inputs(d, label_date="2026-10-09"):

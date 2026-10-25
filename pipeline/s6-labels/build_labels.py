@@ -4,8 +4,8 @@ Usage: build_labels.py [--evidence ../s5-evidence/evidence.csv] [--frame F ...]
        [--date YYYY-MM-DD] [--prior OLD.csv] [--out labels.csv] [--counts counts.txt]
 
 The frames are the projects, in order (default: dataset version 1, the frames of
-s5-evidence/build_evidence.py: frame.layer1.csv, frame.batch21.csv and frame.batch22.csv of
-s7-run). --frame replaces them; give it once for each frame.
+s5-evidence/build_evidence.py: frame.layer1.csv, frame.batch21.csv, frame.batch22.csv and
+frame.batch23.csv of s7-run). --frame replaces them; give it once for each frame.
 
 label_date is the date when the label got its present value. --date gives it to each row.
 --prior OLD.csv (added 2026-10-11) keeps the label_date of OLD.csv for each project whose row in
@@ -51,7 +51,8 @@ ROOT = HERE.parent
 sys.path.insert(0, str(ROOT / "s7-run"))
 from enrich_meta import project_name  # noqa: E402
 
-FRAMES = [ROOT / "s7-run" / f for f in ("frame.layer1.csv", "frame.batch21.csv", "frame.batch22.csv")]
+FRAMES = [ROOT / "s7-run" / f for f in ("frame.layer1.csv", "frame.batch21.csv", "frame.batch22.csv",
+                                        "frame.batch23.csv")]
 
 LABELS = ("foundation", "company", "contested", "government", "fiscal-sponsor", "personal",
           "community", "unknown")
@@ -110,7 +111,7 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--evidence", type=Path, default=ROOT / "s5-evidence" / "evidence.csv")
     ap.add_argument("--frame", type=Path, action="append",
-                    help="a frame CSV; give it once for each frame (default: the three of FRAMES)")
+                    help="a frame CSV; give it once for each frame (default: the four of FRAMES)")
     ap.add_argument("--date", default=dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d"),
                     help="the label date (default: today, UTC)")
     ap.add_argument("--prior", type=Path, help="an older labels.csv: keep its label_date for "

@@ -1,44 +1,44 @@
-frame: s7-run/frame.layer1.csv, s7-run/frame.batch21.csv, s7-run/frame.batch22.csv
-projects: 3379
-fact rows: 4511
+frame: s7-run/frame.layer1.csv, s7-run/frame.batch21.csv, s7-run/frame.batch22.csv, s7-run/frame.batch23.csv
+projects: 3497
+fact rows: 4656
 
 fact_type: rows, projects
-  company_org: 188, 130
-  company_org_candidate: 136, 136
-  company_pool: 102, 102
+  company_org: 191, 132
+  company_org_candidate: 141, 141
+  company_pool: 105, 105
   company_roster: 7, 7
-  company_roster_org: 104, 104
+  company_roster_org: 105, 105
   fiscal_sponsor: 40, 40
-  owner_kind: 3309, 3309
-  roster: 538, 462
-  roster_affiliated: 12, 12
+  owner_kind: 3427, 3427
+  roster: 552, 473
+  roster_affiliated: 13, 13
   roster_org: 75, 67
 
 fact: projects
-  owner_kind:org: 2926
-  owner_kind:user: 383
-  roster:asf: 125
-  company_roster_org:redhat: 104
-  company_pool:spinellis: 102
-  roster:eclipse: 84
+  owner_kind:org: 3029
+  owner_kind:user: 398
+  roster:asf: 132
+  company_pool:spinellis: 105
+  company_roster_org:redhat: 105
+  roster:eclipse: 86
   roster:kde: 73
+  roster:asf-incubator: 67
   roster_org:lf: 65
-  roster:asf-incubator: 64
   roster:gnome: 53
   roster:gnu: 33
   company_org_candidate:google: 27
   roster:lf: 27
   company_org:Microsoft: 24
   fiscal_sponsor:numfocus: 18
-  roster:rust-foundation: 15
+  roster:rust-foundation: 16
   roster:cncf: 14
   roster:osgeo: 14
+  roster_affiliated:numfocus: 13
+  company_org:NVIDIA: 12
   fiscal_sponsor:sfc: 12
-  roster_affiliated:numfocus: 12
-  company_org:NVIDIA: 11
   company_org:analogdevicesinc: 11
+  company_org_candidate:xilinx: 11
   company_org:tencent: 10
-  company_org_candidate:xilinx: 10
   fiscal_sponsor:spi: 10
   company_org:Oracle: 9
   company_org:corretto: 8
@@ -47,12 +47,12 @@ fact: projects
   roster:lfai: 7
   company_org:aws: 6
   company_org_candidate:PaddlePaddle: 6
+  company_org_candidate:digi-embedded: 6
   company_org:GoogleCloudPlatform: 5
-  company_org_candidate:digi-embedded: 5
+  company_org:mongodb: 5
   company_org_candidate:dotnet: 5
   company_org_candidate:graalvm: 5
   roster:lfnetworking: 5
-  company_org:mongodb: 4
   company_org_candidate:googleapis: 4
   company_org_candidate:samsung: 4
   roster:openjs: 4
@@ -85,6 +85,7 @@ fact: projects
   company_org_candidate:telefonicaid: 2
   roster:documentfoundation: 2
   roster:freebsd: 2
+  roster:netbsd: 2
   roster:psf: 2
   roster_org:osgeo: 2
   company_org:Apple: 1
@@ -105,6 +106,7 @@ fact: projects
   company_org_candidate:OpenCV: 1
   company_org_candidate:WebAssembly: 1
   company_org_candidate:Z3Prover: 1
+  company_org_candidate:Zimbra: 1
   company_org_candidate:ampproject: 1
   company_org_candidate:aws-amplify: 1
   company_org_candidate:awsdocs: 1
@@ -116,6 +118,7 @@ fact: projects
   company_org_candidate:firecracker-microvm: 1
   company_org_candidate:flang-compiler: 1
   company_org_candidate:gopro: 1
+  company_org_candidate:gwtproject: 1
   company_org_candidate:juniper: 1
   company_org_candidate:kata-containers: 1
   company_org_candidate:material-components: 1
@@ -131,15 +134,15 @@ fact: projects
   company_org_candidate:spotify: 1
   company_org_candidate:square: 1
   company_org_candidate:twitter: 1
+  company_org_candidate:usdot-fhwa-stol: 1
   company_org_candidate:wiredtiger: 1
   roster:asf-attic: 1
   roster:bytecodealliance: 1
   roster:lfedge: 1
-  roster:netbsd: 1
   roster:obf: 1
   roster:openinfra: 1
   roster_org:lfai: 1
 
-company_org rows by strength: page 95, verified-domain 93
-projects with a fact other than owner_kind: 857
+company_org rows by strength: page 97, verified-domain 94
+projects with a fact other than owner_kind: 877
 projects with no owner_kind (not on GitHub): 70

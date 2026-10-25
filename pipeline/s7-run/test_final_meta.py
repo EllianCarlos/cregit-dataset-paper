@@ -1,4 +1,5 @@
-"""Tests for final_meta.py (2026-10-09; batches 21-22 added 2026-10-11). Run: python3 -m pytest -q test_final_meta.py"""
+"""Tests for final_meta.py (2026-10-09; batches 21-22 added 2026-10-11; batches 23, 25 and 26 added
+2026-10-16). Run: python3 -m pytest -q test_final_meta.py"""
 from __future__ import annotations
 
 import csv
@@ -50,6 +51,15 @@ def test_finalize_problems(labels, meta, needle):
     assert any(needle in p for p in problems)
 
 
+def test_a_label_row_with_no_label_date_keeps_the_sidecar_date():
+    row = {k: v for k, v in lab().items() if k != "label_date"}
+    out, problems = final_meta.finalize({"o__r": rec(label_date="2026-10-14")}, {"o__r": row}, {},
+                                        FRAME)
+    assert problems == [] and out["o__r"]["label_date"] == "2026-10-14"
+    _, problems = final_meta.finalize({"o__r": rec()}, {"o__r": row}, {}, FRAME)
+    assert any("no label_date" in p for p in problems)
+
+
 def test_roster_columns(tmp_path):
     ev = tmp_path / "e.csv"
     cols = ["project", "fact_type", "subject", "name", "language"]
@@ -67,19 +77,31 @@ def test_roster_columns(tmp_path):
 
 
 def test_the_committed_final_sidecar_is_what_the_script_writes(tmp_path):
-    pin = HERE / "project_meta.layer1.final.json.sha256"
+    pin = HERE / "project_meta.v1.final.json.sha256"
     if not (HERE.parent / "s2-pool" / "pool.csv").exists():
         pytest.skip("no s2-pool/pool.csv")
     out = tmp_path / "final.json"
     assert final_meta.main(["--out", str(out)]) == 0
     assert hashlib.sha256(out.read_bytes()).hexdigest() == pin.read_text().split()[0]
     m = json.loads(out.read_text())
-    labels = {r["project"]: r for r in csv.DictReader((HERE.parent / "s6-labels" / "labels.csv").open())}
+    labels = {r["project"]: r for p in final_meta.LABELS for r in csv.DictReader(p.open())}
     assert set(m) == set(labels)
     for k, r in m.items():
         assert r["stratum"] == labels[k]["label"] and r["fact"] == labels[k]["label_basis"]
         assert r["source"]
-    assert len(m) == 3379
+    assert len(m) == 3548
+
+
+def test_the_inputs_of_2026_10_11_give_the_old_final_sidecar(tmp_path):
+    """Batches 1-22 with the labels of 2026-10-11 give project_meta.layer1.final.json."""
+    pin = HERE / "project_meta.layer1.final.json.sha256"
+    if not (HERE.parent / "s2-pool" / "pool.csv").exists():
+        pytest.skip("no s2-pool/pool.csv")
+    out = tmp_path / "final.json"
+    args = [a for p in final_meta.SIDECARS[:3] for a in ("--sidecar", str(p))]
+    assert final_meta.main(["--out", str(out), "--labels",
+                            str(HERE.parent / "s6-labels" / "labels.20261011.csv")] + args) == 0
+    assert hashlib.sha256(out.read_bytes()).hexdigest() == pin.read_text().split()[0]
 
 
 def test_merge():
@@ -145,12 +167,39 @@ def test_the_new_sidecar_keeps_the_old_rows():
     assert all(r["stratum"] and r["label_date"] == "2026-10-11" and r["source"] for r in added)
 
 
-def test_the_new_sidecar_follows_the_host_rules():
-    new = HERE / "project_meta.layer1.final.json"
+def test_the_v1_sidecar_keeps_the_rows_of_2026_10_11():
+    old, new = HERE / "project_meta.layer1.final.json", HERE / "project_meta.v1.final.json"
+    if not (old.exists() and new.exists()):
+        pytest.skip("no final sidecars")
+    o, n = json.loads(old.read_text()), json.loads(new.read_text())
+    assert list(n)[:len(o)] == list(o)
+    assert all(n[k] == o[k] for k in o)
+    dates = {"23": "2026-10-16", "25": "2026-10-14", "26": "2026-10-14"}   # 25, 26: the sidecar's date
+    added = list(n)[len(o):]
+    assert len(added) == 169
+    for b, date in dates.items():
+        keys = json.loads((HERE / f"project_meta.batch{b}.json").read_text())
+        assert all(n[k]["stratum"] and n[k]["label_date"] == date and n[k]["source"] for k in keys)
+    assert sum(len(json.loads((HERE / f"project_meta.batch{b}.json").read_text())) for b in dates) \
+        == len(added)
+
+
+@pytest.mark.parametrize("name, n_detected", [("project_meta.layer1.final.json", 0),
+                                              ("project_meta.v1.final.json", 11)])
+def test_the_new_sidecar_follows_the_host_rules(name, n_detected):
+    """A row that is not on GitHub has NOASSERTION, or the license that the supplement found.
+    Batch 25 (2026-10-14): s4-filter/supplement25.licenses.csv found a license in 11 GitLab rows."""
+    new = HERE / name
     if not new.exists():
         pytest.skip("no final sidecar")
     n = json.loads(new.read_text())
-    assert all(r["license"] == "NOASSERTION" for r in n.values() if "github.com/" not in r["clone_url"])
+    with (HERE.parent / "s4-filter" / "supplement25.licenses.csv").open(newline="") as fh:
+        found = {r["pool_key"]: r["license"] for r in csv.DictReader(fh) if r["license"] != "NOASSERTION"}
+    other = {k: r for k, r in n.items() if "github.com/" not in r["clone_url"]}
+    detected = {k: r for k, r in other.items() if r["license"] != "NOASSERTION"}
+    assert len(detected) == n_detected
+    for k, r in detected.items():
+        assert r["license"] and found.get("url:" + r["clone_url"].removesuffix(".git")) == r["license"], k
     sav = [r for k, r in n.items() if k.startswith("git.savannah.gnu.org__")]
     assert len(sav) == 25 and all(r["owner"] == "gnu" for r in sav)
 

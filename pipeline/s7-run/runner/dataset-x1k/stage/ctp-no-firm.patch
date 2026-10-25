@@ -1,0 +1,276 @@
+diff --git a/ctp.py b/ctp.py
+index 276cfc8..06b0dd1 100755
+--- a/ctp.py
++++ b/ctp.py
+@@ -1,6 +1,7 @@
+ #!/usr/bin/env python3
+ """ctp — cregit-token-pipeline runner: runs cregit over every project in manifest.tsv.
+ Per project: pipeline -> firm -> validate -> stamp; a validated project is skipped.
++--no-firm leaves the firm step out: pipeline -> validate (cregit's 67 columns) -> stamp.
+ Ledgers: metrics.tsv (one row per phase attempt), runs.log, state/<name>/logs (never overwritten)."""
+ 
+ from __future__ import annotations
+@@ -545,6 +546,13 @@ _FIRM_VALUE_FLAGS = (("memory_limit", "--memory-limit"), ("duckdb_threads", "--t
+ def project_phases(project: dict, opts: dict, workdir: Path, stamp: Path) -> list[tuple]:
+     """(phase, argv) in run order: cregit writes 67 columns, firm adds 3, validate gates 70."""
+     parquet = str(workdir / f"{project['name']}-dataset.parquet")
++    if opts.get("no_firm"):
++        # --no-firm: stop after the runner; validate gates cregit's 67 columns only.
++        return [
++            ("pipeline", build_pipeline_args(project, opts, workdir)),
++            ("validate", ["python3", str(CORPUS / "validate.py"), parquet, str(stamp),
++                          "--cregit-only"]),
++        ]
+     return [
+         ("pipeline", build_pipeline_args(project, opts, workdir)),
+         ("firm", ["python3", str(CORPUS / "firm_attribution.py"), parquet,
+@@ -807,7 +815,8 @@ def drop_derived(name: str, workdir: Path) -> tuple[list[str], list[str]]:
+ 
+ 
+ def build_steps(ctx: ProjectRun, workdir: Path, stamp: Path) -> bool:
+-    """clone (when pinned), pipeline, firm, validate. True when the project validated."""
++    """clone (when pinned), pipeline, firm (not with --no-firm), validate. True when the
++    project validated."""
+     name = ctx.name
+ 
+     def after_clone(rc: int):
+@@ -872,8 +881,9 @@ def build_steps(ctx: ProjectRun, workdir: Path, stamp: Path) -> bool:
+                 after_pipeline_resumed) != 0:
+         return False
+     # firm adds the 3 firm columns to cregit's 67; validate gates the 70.
++    # With --no-firm there is no firm phase, and validate gates the 67.
+     later = dict(project_phases(ctx.project, _OPTS, workdir, stamp))
+-    if run_step(ctx, "firm", later["firm"]) != 0:
++    if "firm" in later and run_step(ctx, "firm", later["firm"]) != 0:
+         return False
+     return run_step(ctx, "validate", later["validate"], after_validate) == 0
+ 
+@@ -1290,6 +1300,15 @@ def resolve_anonymizer(path: str) -> str:
+     return str(Path(path).resolve())
+ 
+ 
++def refuse_no_firm_conflicts(args: argparse.Namespace) -> None:
++    if not getattr(args, "no_firm", False):
++        return
++    for flag, attr in (("--join", "join"), ("--anonymize", "anonymize")):
++        if getattr(args, attr, False):
++            sys.exit(f"--no-firm leaves the 3 firm columns out, so the Parquet does not "
++                     f"pass the 70-column schema gate of {flag}. Run without one of them.")
++
++
+ def refuse_cleanup_conflicts(args: argparse.Namespace) -> None:
+     if getattr(args, "drop_html", False) and not getattr(args, "cleanup", False):
+         sys.exit("--drop-html deletes html/ in the cleanup step. Add --cleanup, or use "
+@@ -1299,6 +1318,7 @@ def refuse_cleanup_conflicts(args: argparse.Namespace) -> None:
+ def run_options(args: argparse.Namespace) -> dict:
+     """The checked options run_project reads through _OPTS. Exits on a refusal."""
+     refuse_cleanup_conflicts(args)
++    refuse_no_firm_conflicts(args)
+     anonymize = resolve_anonymizer(getattr(args, "anonymize", "") or "")
+     mask_widened, retokenize = preflight_runner_flags(args)
+     project_meta = resolve_project_meta(args.project_meta) if args.project_meta else ""
+@@ -1321,6 +1341,7 @@ def run_options(args: argparse.Namespace) -> dict:
+                 manifest=str((CORPUS / args.manifest).resolve()),
+                 cleanup=bool(getattr(args, "cleanup", False)),
+                 drop_html=bool(getattr(args, "drop_html", False)),
++                no_firm=bool(getattr(args, "no_firm", False)),
+                 anonymize=anonymize)
+ 
+ 
+@@ -1690,7 +1711,8 @@ def cmd_census(args: argparse.Namespace) -> int:
+         say(f"WARNING: {unpinned} of {len(projects)} projects are unpinned: each runs the "
+             "remote HEAD of its clone day, and the ledger says so")
+ 
+-    args.join, args.cleanup = True, True
++    # --no-firm: no join, whose schema gate wants the 70 columns.
++    args.join, args.cleanup = not getattr(args, "no_firm", False), True
+     _OPTS.update(run_options(args))
+     _OPTS.update(own_session=True, min_free_mem_gb=args.min_free_mem_gb, auto_resume=True,
+                  latest=bool(getattr(args, "latest", False)))
+@@ -1937,6 +1959,10 @@ def add_project_options(p: argparse.ArgumentParser) -> None:
+     p.add_argument("--drop-html", action="store_true",
+                        help="with --cleanup, delete html/ too. Off by default: an open "
+                             "decision")
++    p.add_argument("--no-firm", action="store_true",
++                       help="stop after the runner: skip the firm step and validate "
++                            "cregit's 67 columns (the stamp says columns=cregit). For a "
++                            "test run; not with --join or --anonymize")
+     p.add_argument("--anonymize", metavar="SCRIPT", default="",
+                        help="run `python3 SCRIPT <workdir>/anon <parquet>` after the "
+                             "schema check. Off by default: an open decision")
+diff --git a/tests/test_ctp.py b/tests/test_ctp.py
+index ee12050..9c47f2c 100644
+--- a/tests/test_ctp.py
++++ b/tests/test_ctp.py
+@@ -632,6 +632,44 @@ def test_a_failed_firm_phase_fails_the_project_unstamped(sandbox, monkeypatch, j
+     assert not (sandbox.out / "jq" / "jq.validated").exists()
+ 
+ 
++def test_no_firm_skips_the_firm_phase_and_gates_the_cregit_columns(sandbox, runner, jq):
++    """--no-firm (a test run up to the runner's Parquet): no firm phase, and validate
++    gates cregit's 67 columns, so the project still validates and is skipped later."""
++    ctp._OPTS.update(no_firm=True)
++    assert ctp.run_project(jq) == "done"
++    assert [c.phase for c in runner.calls] == ["pipeline", "validate"]
++    assert runner.argv("validate") == [
++        "python3", str(sandbox.root / "validate.py"),
++        str(sandbox.out / "jq" / "jq-dataset.parquet"),
++        str(sandbox.out / "jq" / "jq.validated"), "--cregit-only",
++    ]
++
++
++def test_run_options_carry_no_firm_off_by_default(sandbox, runner_script):
++    runner_script()
++    assert ctp.run_options(run_args())["no_firm"] is False
++    assert ctp.run_options(run_args(no_firm=True))["no_firm"] is True
++
++
++@pytest.mark.parametrize("over", [
++    pytest.param(dict(join=True), id="join"),
++    pytest.param(dict(anonymize="/some/anon.py"), id="anonymize"),
++])
++def test_no_firm_is_refused_with_the_70_column_publish_steps(sandbox, runner_script, over):
++    runner_script()
++    with pytest.raises(SystemExit, match="--no-firm"):
++        ctp.run_options(run_args(no_firm=True, **over))
++
++
++def test_no_firm_is_a_census_option_off_by_default(monkeypatch):
++    seen = []
++    monkeypatch.setattr(ctp, "cmd_census", lambda args: seen.append(args.no_firm) or 0)
++    for extra in ([], ["--no-firm"]):
++        monkeypatch.setattr(ctp.sys, "argv", ["ctp.py", "census", *extra])
++        ctp.main()
++    assert seen == [False, True]
++
++
+ # --------------------------------------------------------------------------- #
+ # metrics ledger
+ # --------------------------------------------------------------------------- #
+@@ -2587,6 +2625,13 @@ def test_cmd_census_runs_end_to_end_options(census_ready, fake_projects, no_gate
+     assert rows[0]["command"] == "census" and rows[-1]["step"] == "run-end"
+ 
+ 
++def test_cmd_census_with_no_firm_cleans_up_but_does_not_join(
++        census_ready, fake_projects, no_gates):
++    fake_projects()
++    assert ctp.cmd_census(census_args(no_firm=True)) == 0
++    assert ctp._OPTS["no_firm"] and not ctp._OPTS["join"] and ctp._OPTS["cleanup"]
++
++
+ def test_cmd_census_exits_3_when_stopped_cleanly(census_ready, fake_projects, no_gates):
+     stop = census_ready.root / "STOP"
+     fake_projects(hook=lambda name: stop.touch())
+diff --git a/tests/test_validate.py b/tests/test_validate.py
+index 3b34215..9a4f84d 100644
+--- a/tests/test_validate.py
++++ b/tests/test_validate.py
+@@ -12,7 +12,7 @@ from pathlib import Path
+ import pytest
+ 
+ import validate
+-from validate_schema import EXPECTED_COLUMNS
++from validate_schema import CREGIT_COLUMNS, EXPECTED_COLUMNS
+ 
+ 
+ # --------------------------------------------------------------------------- #
+@@ -119,6 +119,30 @@ def test_a_good_parquet_writes_the_completion_stamp(invoke, parquet, stamp):
+     assert stamp.read_text() == f"rows=4321\nbytes={parquet.stat().st_size}\n"
+ 
+ 
++def test_cregit_only_gates_the_67_cregit_columns_and_says_so_in_the_stamp(
++        invoke, parquet, stamp):
++    """ctp --no-firm: the Parquet has no firm columns; the stamp names the narrower gate."""
++    invoke(parquet, stamp, "--cregit-only", sql=FakeSql(count=12, columns=CREGIT_COLUMNS))
++    assert stamp.read_text() == (f"rows=12\nbytes={parquet.stat().st_size}\n"
++                                 "columns=cregit\n")
++
++
++def test_cregit_only_rejects_a_parquet_with_the_firm_columns(invoke, parquet, stamp, capsys):
++    with pytest.raises(SystemExit) as exc:
++        invoke(parquet, stamp, "--cregit-only", sql=FakeSql(columns=EXPECTED_COLUMNS))
++    assert exc.value.code == 1
++    assert "schema drift" in capsys.readouterr().err
++    assert not stamp.exists()
++
++
++def test_the_full_gate_still_rejects_a_parquet_without_the_firm_columns(
++        invoke, parquet, stamp):
++    with pytest.raises(SystemExit) as exc:
++        invoke(parquet, stamp, sql=FakeSql(columns=CREGIT_COLUMNS))
++    assert exc.value.code == 1
++    assert not stamp.exists()
++
++
+ def test_the_gate_reports_rows_and_bytes(invoke, parquet, stamp, capsys):
+     """The phase log is the record of what was accepted."""
+     invoke(parquet, stamp)
+@@ -179,6 +203,7 @@ def test_a_missing_parquet_raises_before_any_query(invoke, tmp_path, stamp):
+     pytest.param((), id="no-arguments"),
+     pytest.param(("only-the-parquet",), id="missing-stamp-path"),
+     pytest.param(("parquet", "stamp", "extra"), id="extra-arguments"),
++    pytest.param(("parquet", "stamp", "--cregit-only", "extra"), id="extra-after-cregit-only"),
+ ])
+ def test_a_wrong_invocation_prints_usage_and_exits_two(monkeypatch, capsys, argv):
+     """Usage, and an exit code distinct from a rejected parquet."""
+@@ -241,5 +266,6 @@ def test_no_arguments_under_o_prints_usage_without_a_traceback(tmp_path):
+     done = run_in_subprocess(tmp_path)
+ 
+     assert done.returncode == validate.EXIT_USAGE
+-    assert done.stderr.strip() == "usage: validate.py <dataset.parquet> <stamp-file>"
++    assert done.stderr.strip() == ("usage: validate.py <dataset.parquet> <stamp-file> "
++                                   "[--cregit-only]")
+     assert "Traceback" not in done.stderr
+diff --git a/validate.py b/validate.py
+index c4b3eac..0ec11dd 100755
+--- a/validate.py
++++ b/validate.py
+@@ -1,15 +1,18 @@
+ #!/usr/bin/env python3
+-"""Post-run gate. Usage: validate.py <dataset.parquet> <stamp-file>
++"""Post-run gate. Usage: validate.py <dataset.parquet> <stamp-file> [--cregit-only]
+ Exit 0 writes the stamp (ctp skips the project), 1 rejects, 2 is a usage error.
++--cregit-only gates cregit's 67 columns, for a run without the firm step (ctp --no-firm);
++its stamp has a third line, columns=cregit.
+ Plain `if`s, not `assert` (gone under `python -O`); the path is a bound SQL parameter."""
+ import os
+ import sys
+ 
+ import duckdb
+ 
+-from validate_schema import compare_schema, read_schema
++from validate_schema import CREGIT_COLUMNS, EXPECTED_COLUMNS, compare_schema, read_schema
+ 
+-USAGE = "usage: validate.py <dataset.parquet> <stamp-file>"
++USAGE = "usage: validate.py <dataset.parquet> <stamp-file> [--cregit-only]"
++CREGIT_ONLY = "--cregit-only"
+ MIN_BYTES = 10_000
+ EXIT_REJECTED = 1
+ EXIT_USAGE = 2
+@@ -23,7 +26,8 @@ def reject(reason: str) -> None:
+ 
+ 
+ def main() -> None:
+-    if len(sys.argv) != 3:
++    cregit_only = len(sys.argv) == 4 and sys.argv[3] == CREGIT_ONLY
++    if len(sys.argv) != 3 and not cregit_only:
+         print(USAGE, file=sys.stderr)
+         sys.exit(EXIT_USAGE)
+     parquet, stamp = sys.argv[1], sys.argv[2]
+@@ -36,13 +40,14 @@ def main() -> None:
+     if n <= 0:
+         reject("parquet has zero rows")
+ 
+-    drifts = compare_schema(read_schema(parquet))
++    drifts = compare_schema(read_schema(parquet),
++                            CREGIT_COLUMNS if cregit_only else EXPECTED_COLUMNS)
+     if drifts:
+         reject(f"schema drift ({len(drifts)}): " + "; ".join(map(str, drifts[:3])))
+     print(f"OK rows={n} bytes={size}")
+ 
+     with open(stamp, "w") as f:
+-        f.write(f"rows={n}\nbytes={size}\n")
++        f.write(f"rows={n}\nbytes={size}\n" + ("columns=cregit\n" if cregit_only else ""))
+ 
+ 
+ if __name__ == "__main__":

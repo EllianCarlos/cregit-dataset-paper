@@ -1,0 +1,4 @@
+x1k inputs, built 2026-10-17T01:35:51Z
+manifests/sidecar: ${RUNNER_STUDY_REPO} dataset-selection/x1k (run_build.sh; SHA256SUMS sha256 0932f98fb15a1352), not committed yet
+ctp: ca113e3 + ctp-no-firm.patch (branch feat/census-no-firm, worktree ${RUNNER_PROJECTS_TILDE}/ctp-x1k, uncommitted)
+cregit: 57551d7 (s3 cregit/cregit-57551d7.bundle); gate libexpat 14eb5d72

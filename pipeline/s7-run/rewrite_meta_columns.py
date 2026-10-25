@@ -21,7 +21,11 @@ CLI and touches other columns, so the two can run one after the other on the sam
 
 Refused: a chosen column already holds a non-blank value that is not the sidecar's value;
 clone_url, owner or repo differ from the sidecar (the wrong sidecar or the wrong file); more
-than one repo_name; the sidecar record has no such field. A chosen field that is '' in the
+than one repo_name; the sidecar record has no such field. One host rule (decision of the user,
+2026-10-16): for a clone_url on git.savannah.gnu.org the sidecar owner is gnu (final_meta.py
+HOST_OWNER), but the run wrote git or git.savannah.gnu.org. The tool accepts these two old
+values and writes gnu in the owner column. The OK line and --report name the change. clone_url
+and repo are always checked and never written. A chosen field that is '' in the
 sidecar is written as '' and named in the OK line, so a sidecar that is not the final one shows.
 --report appends one TSV row for each Parquet: time, parquet, key, result, fields, detail.
 Exit 0 written, 1 refused or the comparison failed, 2 usage. Needs the duckdb module."""
@@ -34,6 +38,7 @@ import os
 import shutil
 import sys
 from pathlib import Path
+from urllib.parse import urlsplit
 
 PROVENANCE = ("license", "owner_type", "archived", "fork")
 LABEL = ("stratum", "fact", "contested", "label_date")
@@ -41,6 +46,13 @@ ROSTER = ("roster_name", "roster_lang")
 ALL_FIELDS = ("source",) + LABEL + ROSTER + PROVENANCE
 FIELDS = ALL_FIELDS  # the default of --fields
 CHECKED = ("clone_url", "owner", "repo")
+# COPY options per --encoding. "default" is the encoding of the runs. "v1" is the encoding of the
+# published v1 (user decision, 2026-10-16): about 70-73% of the default size, the same values.
+ENCODINGS = {"default": "FORMAT PARQUET, COMPRESSION ZSTD",
+             "v1": "FORMAT PARQUET, COMPRESSION ZSTD, COMPRESSION_LEVEL 19, ROW_GROUP_SIZE 1000000, "
+                   "PARQUET_VERSION V2"}
+HOST_OWNER = {"git.savannah.gnu.org": "gnu"}  # the same rule as final_meta.HOST_OWNER
+OLD_OWNER = {"git.savannah.gnu.org": {"git", "git.savannah.gnu.org"}}  # what the run wrote
 
 
 def connect(memory_limit: str, threads: int, spill: Path):
@@ -63,6 +75,18 @@ def q(name: str) -> str:
     return '"' + name.replace('"', '""') + '"'
 
 
+def host_owner_ok(record: dict, seen: set) -> bool:
+    """True when the host rule accepts the Parquet owner values in seen."""
+    host = urlsplit(record.get("clone_url", "")).hostname
+    return (host in HOST_OWNER and record.get("owner") == HOST_OWNER[host]
+            and seen <= OLD_OWNER[host] | {HOST_OWNER[host]})
+
+
+def distinct(con, src: Path, f: str) -> set:
+    return {r[0] for r in con.execute(
+        f"SELECT DISTINCT {q(f)} FROM read_parquet($p)", {"p": str(src)}).fetchall()}
+
+
 def refusal(con, src: Path, values: dict, record: dict) -> str | None:
     cols = dict(schema(con, src))
     for f in tuple(values) + CHECKED + ("repo_name",):
@@ -74,20 +98,21 @@ def refusal(con, src: Path, values: dict, record: dict) -> str | None:
         if not seen <= {"", values[f]}:
             return f"{src}: {f} already holds {sorted(map(repr, seen))}, the sidecar says {values[f]!r}"
     for f in CHECKED:
-        seen = {r[0] for r in con.execute(
-            f"SELECT DISTINCT {q(f)} FROM read_parquet($p)", {"p": str(src)}).fetchall()}
+        seen = distinct(con, src, f)
+        if f == "owner" and host_owner_ok(record, seen):
+            continue
         if seen != {record.get(f, "")}:
             return f"{src}: {f} is {sorted(map(repr, seen))}, the sidecar says {record.get(f)!r}"
     return None
 
 
-def rewrite(con, src: Path, dst: Path, values: dict) -> None:
+def rewrite(con, src: Path, dst: Path, values: dict, encoding: str = "default") -> None:
     """One streaming COPY. preserve_insertion_order (DuckDB's default) keeps the row order of a
     plain projection; compare() checks it row by row."""
     replace = ", ".join(f"${f} AS {q(f)}" for f in values)
     con.execute("SET preserve_insertion_order = true")
     con.execute(f"COPY (SELECT * REPLACE ({replace}) FROM read_parquet($src)) "
-                "TO $dst (FORMAT PARQUET, COMPRESSION ZSTD)",
+                f"TO $dst ({ENCODINGS[encoding]})",
                 {"src": str(src), "dst": str(dst), **values})
 
 
@@ -145,6 +170,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--report", type=Path, help="append one TSV row per Parquet")
     ap.add_argument("--memory-limit", default="2GB")
     ap.add_argument("--threads", type=int, default=2)
+    ap.add_argument("--encoding", choices=sorted(ENCODINGS), default="default",
+                    help="COPY options of the output (default: the encoding of the runs)")
     args = ap.parse_args(argv)
 
     src = args.parquet
@@ -158,7 +185,9 @@ def main(argv: list[str] | None = None) -> int:
     if args.out is not None and args.out.exists():
         return fail(f"{args.out} exists")
     dst = args.out if args.out is not None else src.with_name(f".{src.name}.meta-tmp")
-    spill = dst.parent / ".meta-spill"
+    # One spill directory per output: jobs that write into the same directory must not delete
+    # the spill of each other (final_merge.py, 2026-10-16).
+    spill = dst.parent / f".meta-spill-{dst.name}"
     con = connect(args.memory_limit, args.threads, spill)
     try:
         if not key:
@@ -178,9 +207,12 @@ def main(argv: list[str] | None = None) -> int:
         reason = refusal(con, src, values, record)
         if reason:
             return fail(reason)
+        # The refusal check passed. Thus an old owner that is not the sidecar's is a host rule case.
+        old_owner = sorted(distinct(con, src, "owner") - {record["owner"]})
+        written = dict(values, owner=record["owner"]) if old_owner else values
         try:
-            rewrite(con, src, dst, values)
-            problems = compare(con, src, dst, values)
+            rewrite(con, src, dst, written, args.encoding)
+            problems = compare(con, src, dst, written)
         except Exception:
             dst.unlink(missing_ok=True)
             raise
@@ -198,7 +230,9 @@ def main(argv: list[str] | None = None) -> int:
         os.replace(dst, src)
     blank = [f for f in args.fields if values[f] == ""]
     detail = (" ".join(f"{f}={values[f]!r}" for f in args.fields)
-              + (f"; blank in the sidecar: {','.join(blank)}" if blank else ""))
+              + (f"; blank in the sidecar: {','.join(blank)}" if blank else "")
+              + (f"; owner rewritten: {','.join(map(repr, old_owner))} -> {record['owner']!r}"
+                 if old_owner else ""))
     print(f"OK {dst if not args.in_place else src}: {key} {detail}"
           "; the other columns are identical row by row")
     report(args.report, dst if not args.in_place else src, key, "OK", args.fields, detail)

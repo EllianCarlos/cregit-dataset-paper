@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+# P1-install-a.sh, machine A (root, through scripts/a/ssm-a.sh; after E1; made by render.sh from
+# src/P1-install-a.body; idempotent). Installs the pull of the aws-sdk-java split:
+#   /usr/local/lib/java-split/jv_pull.py, /usr/local/bin/jv-pull, /etc/java-split/pull.env,
+#   jv-pull.service (oneshot, root) and jv-pull.timer (OnBootSec=5min, OnUnitActiveSec=10min).
+# R8 (x1k-rebalance.timer) also runs every 10 min. They do not conflict: R8 only reads .blame
+# counts and mtimes; the pulled files keep the mtime of the extra (the time it finished them),
+# so R8's rate of the row counts them as the row's output, which is what the row's end time needs.
+# A restart of the row by jv-pull takes R8's lock (rebalance.lock), so the two never restart at once.
+# The rust-split kit can stay installed: its files are rs-pull.*, /usr/local/lib/rust-split,
+# /etc/rust-split and /data/x1k-long/rust-split; this kit uses jv-pull.* and the java-split names.
+# Each pull restarts only its own row, and both take rebalance.lock (flock -n) for a restart.
+# Then it runs jv-pull once and prints its log block, and the timers of A.
+# Env: AUTO_RESTART (1), STALE_MIN (40), RESTART_MIN (100).
+set -uo pipefail
+IID=$(cat /sys/devices/virtual/dmi/id/board_asset_tag)
+[ "$IID" = ${RUNNER_EC2_X1K_LONG_A4} ] || { echo "ABORT: $IID is not machine A"; exit 1; }
+S=/data/x1k-long/java-split
+LIB=/usr/local/lib/java-split
+AUTO_RESTART=${AUTO_RESTART:-1}; STALE_MIN=${STALE_MIN:-40}; RESTART_MIN=${RESTART_MIN:-100}
+echo "== $(date -u +%FT%TZ) P1 install on $IID"
+[ -s $S/e1/left.tsv ] && [ -s $S/e1/settings.env ] && [ -d $S/e1/parts ] || { echo "ABORT: run E1 first"; exit 1; }
+N=$(sed -n 's/^N=//p' $S/e1/settings.env)
+case $N in ''|*[!0-9]*) echo "ABORT: no N in e1/settings.env"; exit 1 ;; esac
+mkdir -p $LIB /etc/java-split $S/state
+chown ec2-user: $S $S/state
+#%EMBED lib/jv_pull.py $LIB/jv_pull.py 755
+#%EMBED lib/jv-pull.sh /usr/local/bin/jv-pull 755
+mkdir -p $S/state/pull $S/state/status; chown -R ec2-user: $S/state/pull
+printf 'N=%s\nAUTO_RESTART=%s\nSTALE_MIN=%s\nRESTART_MIN=%s\n' "$N" "$AUTO_RESTART" "$STALE_MIN" "$RESTART_MIN" > /etc/java-split/pull.env
+cat > /etc/systemd/system/jv-pull.service <<'EOF_s'
+[Unit]
+Description=java-split pull of aws-sdk-java .blame batches from the extra machines
+Wants=network-online.target
+After=network-online.target
+RequiresMountsFor=/data1 /data3
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/jv-pull
+TimeoutStartSec=3000
+EOF_s
+cat > /etc/systemd/system/jv-pull.timer <<'EOF_t'
+[Unit]
+Description=java-split pull every 10 min
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=10min
+[Install]
+WantedBy=timers.target
+EOF_t
+systemctl daemon-reload
+systemctl enable --now jv-pull.timer >/dev/null 2>&1
+systemctl start jv-pull.service
+echo "pull.env: $(tr '\n' ' ' < /etc/java-split/pull.env)"
+echo "timer: $(systemctl is-active jv-pull.timer); next: $(systemctl list-timers jv-pull.timer --no-legend --no-pager | awk '{print $1, $2, $3}')"
+n=$(grep -n '^== .* jv-pull on' $S/state/pull.log | tail -1 | cut -d: -f1)
+[ -n "$n" ] && tail -n +"$n" $S/state/pull.log | head -30 | sed 's/@//g'
+echo "timers on A:"; systemctl list-timers jv-pull.timer rs-pull.timer x1k-rebalance.timer --all --no-legend --no-pager | sed 's/^/  /'
+echo "P1 install done $(date -u +%FT%TZ)"

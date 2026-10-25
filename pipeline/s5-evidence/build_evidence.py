@@ -8,7 +8,9 @@ Inputs (relative to dataset-selection/):
   s7-run/frame.layer1.csv        the projects (slug, host, repo_url, pool_key): batches 1-20
   s7-run/frame.batch21.csv       batch 21 (2026-10-10): the DP8L supplement and BusyBox
   s7-run/frame.batch22.csv       batch 22 (2026-10-10): the GNU roster v2 supplement
-                                 (--frame replaces the three; give it once for each frame)
+  s7-run/frame.batch23.csv       batch 23 (2026-10-11): the DP8L v4 near-miss rows; their pool
+                                 rows are in s2-pool/pool.csv
+                                 (--frame replaces the four; give it once for each frame)
   s2-pool/pool.csv               origins, input_slugs, owner_type, owner_login, fetched_at
   s2-pool/v2/pool.batch22.csv    the pool rows of batch 22, in the columns of pool.csv
                                  (--pool replaces the two). A key in two pool files must have
@@ -69,7 +71,8 @@ NOT_SPONSORED = {("numfocus", "affiliated")}
 # the later fetch names only the earlier file in origins. So for such a row the join check
 # accepts the later file next to the earlier one, and writes an info line.
 LATER_FETCH = {"rosters/gnu.v2.csv:gnu": "rosters/gnu.csv:gnu"}
-FRAMES = [ROOT / "s7-run" / f for f in ("frame.layer1.csv", "frame.batch21.csv", "frame.batch22.csv")]
+FRAMES = [ROOT / "s7-run" / f for f in ("frame.layer1.csv", "frame.batch21.csv", "frame.batch22.csv",
+                                        "frame.batch23.csv")]
 POOLS = [ROOT / "s2-pool" / "pool.csv", ROOT / "s2-pool" / "v2" / "pool.batch22.csv"]
 
 
@@ -424,7 +427,7 @@ def counts_text(frame_rows: list[dict], facts: list[dict]) -> str:
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--frame", type=Path, action="append",
-                    help="a frame CSV; give it once for each frame (default: the three of FRAMES)")
+                    help="a frame CSV; give it once for each frame (default: the four of FRAMES)")
     ap.add_argument("--pool", type=Path, action="append",
                     help="a pool CSV; give it once for each file (default: the two of POOLS)")
     ap.add_argument("--out", type=Path, default=HERE / "evidence.csv")

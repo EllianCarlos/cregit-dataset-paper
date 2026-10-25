@@ -1,0 +1,178 @@
+#!/usr/bin/env bash
+# S1-setup-start.sh, an extra machine (root, through java-split/ssm-jv.sh, which adds JV_PART and
+# JV_NAME; made by render.sh from src/S1-setup-start.body). Idempotent: a second run only checks.
+#   1. the same packages as R1 of machine A (git python3.12 xfsprogs tar, and zstd);
+#   2. the input of s3://B/dataset-x1k/java-split/input/ (all but the clone) to /jv/in, sha256 checked;
+#   3. the clone: streamed from S3 through sha256 and zstd into /jv/repo (no copy of the tar.zst on
+#      disk); the sha256 must be the one in SHA256SUMS; the repo path string of machine A is a
+#      symlink to it; HEAD and a clean worktree as on A;
+#   4. the cregit tree of the row (cregit.tar.zst) at /jv/cregit-ec2: HEAD 57551d7, clean, the
+#      57551d7 blobs of formatBlame.pl and blameRepoFiles.pl, its build dir on the file system of
+#      /jv/out (formatBlame.pl renames the temp file into the out dir: then the rename is atomic);
+#   5. the tools of the blame environment (blame.env of A's step 7): the same git binary path and
+#      version, the same perl version, the Perl modules of formatBlame.pl;
+#   6. /etc/java-split/jv.env (part, jobs = nproc - 8, capped by memory, margin), the units
+#      jv-upload (loop) and jv-run (gate, then blame, then the end); starts both.
+# Env: JOBS (default nproc - 8), MEM_PER_JOB_GIB (1.5), MARGIN (600: A starts about 1,265 files/h, and a-pos is up to 20 min old), UPLOAD_EVERY (600),
+# GATE_FAIL_HOLD (3600). Output: counts only; each at sign is dropped.
+set -uo pipefail
+# Test hooks (test/t_e1s1.py only): X1K_ASSET, JV_BASE (/jv), JV_ETC (/etc/java-split), JV_LIB, JV_BIN,
+# JV_BUCKET, JV_SUDO ("sudo -u ec2-user", split into words on purpose), SYSTEMCTL, JV_RESERVE_GB (20),
+# JV_TEST (no dnf, no chown, no units).
+IID=$(cat "${X1K_ASSET:-/sys/devices/virtual/dmi/id/board_asset_tag}")
+RS=${JV_BASE:-/jv}; ETC=${JV_ETC:-/etc/java-split}; BIN=${JV_BIN:-/usr/local/bin}; SU=${JV_SUDO-sudo -u ec2-user}
+SYSTEMCTL=${SYSTEMCTL:-systemctl}
+own() { [ -n "${JV_TEST:-}" ] || chown "$@"; }
+case $IID in ${RUNNER_EC2_BIG}|${RUNNER_EC2_SPOT_A6}|${RUNNER_EC2_X1K_A}|${RUNNER_EC2_X1K_LONG_A2}|${RUNNER_EC2_X1K_B1}|${RUNNER_EC2_X1K_B2}|${RUNNER_EC2_X1K_LONG_A4}|${RUNNER_EC2_PATHFIX_B1}|${RUNNER_EC2_V0_ORG_1}|${RUNNER_EC2_X1K_RAW_1}|${RUNNER_EC2_X1K_LONG_A1}|${RUNNER_EC2_X1K_LONG_A3}|${RUNNER_EC2_RUST_SPLIT_1}|${RUNNER_EC2_RUST_SPLIT_2}|${RUNNER_EC2_RUST_SPLIT_3}|${RUNNER_EC2_RUST_SPLIT_4}|${RUNNER_EC2_RUST_SPLIT_5}|${RUNNER_EC2_RUST_SPLIT_1_R1}|${RUNNER_EC2_RUST_SPLIT_2_R1}|${RUNNER_EC2_RUST_SPLIT_3_R1}|${RUNNER_EC2_RUST_SPLIT_5_R1}|${RUNNER_EC2_RUST_SPLIT_2_R2}|${RUNNER_EC2_RUST_SPLIT_4_R1}|${RUNNER_EC2_RUST_SPLIT_5_R2})
+  echo "ABORT: $IID is on the refuse list, not an extra machine"; exit 1 ;; esac
+K=${JV_PART:-}; NAME=${JV_NAME:-}
+case $K in ''|*[!0-9]*) echo "ABORT: JV_PART is not set (run S1 through ssm-jv.sh)"; exit 1 ;; esac
+B=${JV_BUCKET:-s3://${RUNNER_BUCKET}}
+S3=$B/dataset-x1k/java-split
+FB_SHA=788acb9abac05782058c6b0b599b349caf63b85fa49b8375af9240be7bc0b435
+MARGIN=${MARGIN:-600}; UPLOAD_EVERY=${UPLOAD_EVERY:-600}; GATE_FAIL_HOLD=${GATE_FAIL_HOLD:-3600}; MPJ=${MEM_PER_JOB_GIB:-1.5}
+LIB=${JV_LIB:-/usr/local/lib/java-split}
+
+main() {
+echo "== $(date -u +%FT%TZ) S1 on $IID part $K ($NAME): $(nproc) vCPU $(free -g | awk '/Mem:/{print $2}') GiB"
+if $SYSTEMCTL is-active -q jv-run.service; then echo "jv-run is active already: nothing changed"; return 0; fi
+# 1. packages
+[ -n "${JV_TEST:-}" ] || for i in $(seq 1 40); do dnf -y -q install git python3.12 xfsprogs tar zstd >/dev/null 2>&1 && break; echo "dnf busy, retry $i"; sleep 15; done
+command -v zstd > /dev/null || { echo "ABORT: no zstd"; return 1; }
+mkdir -p $RS/in $RS/repo $RS/out/blame $RS/state $RS/logs $RS/batches $RS/gate $RS/control $ETC
+own ec2-user: $RS/out $RS/out/blame $RS/logs $RS/state $RS/control
+echo setup > $RS/state/phase
+# 2. input
+aws s3 cp "$S3/input/" $RS/in/ --recursive --exclude clone.tar.zst --only-show-errors || { echo "ABORT: input download"; return 1; }
+(cd $RS/in && grep -v '  clone.tar.zst$' SHA256SUMS | sha256sum --quiet -c) || { echo "ABORT: input sha256"; return 1; }
+[ -s "$RS/in/parts/part-$K.tsv" ] || { echo "ABORT: no part-$K.tsv in the input"; return 1; }
+get() { sed -n "s/^$1=//p" $RS/in/settings.env | head -1; }
+local REPO CB WANT_CLONE
+REPO=$(get REPO); CB=$(get CLONE_BYTES); WANT_CLONE=$(awk '$2 == "clone.tar.zst" {print $1}' $RS/in/SHA256SUMS)
+[ "$(get N)" -ge "$K" ] || { echo "ABORT: part $K is not in the split (N=$(get N))"; return 1; }
+echo "input: $(wc -l < $RS/in/SHA256SUMS) files ok; E1 $(get E1_TIME); part $K: $(wc -l < "$RS/in/parts/part-$K.tsv") files"
+# 3. clone
+local RB
+RB=$(basename "$REPO")
+if [ ! -e $RS/state/CLONE-OK ]; then
+  local free
+  free=$(df -B1 --output=avail $RS | tail -1)
+  local rsv=${JV_RESERVE_GB:-20}
+  [ "$free" -gt $((CB + CB / 5 + rsv * 1000000000)) ] || { echo "ABORT: $RS has $((free / 1000000000)) GB free; the clone needs $((CB / 1000000000)) GB plus 20 percent plus $rsv GB (relaunch with a larger ROOT_GB)"; return 1; }
+  rm -rf "$RS/repo/$RB" $RS/repo/.x; mkdir -p $RS/repo/.x
+  local F=$RS/state/clone.fifo t0
+  rm -f $F; mkfifo $F
+  sha256sum < $F | cut -d' ' -f1 > $RS/state/clone.sha256 & local s1=$!
+  t0=$(date +%s)
+  aws s3 cp "$S3/input/clone.tar.zst" - --only-show-errors | tee $F | zstd -q -dc | tar -C $RS/repo/.x -xf -
+  local prc=("${PIPESTATUS[@]}")
+  wait $s1; rm -f $F
+  if [ "${prc[*]}" != "0 0 0 0" ] || [ "$(cat $RS/state/clone.sha256)" != "$WANT_CLONE" ]; then
+    rm -rf $RS/repo/.x; echo "ABORT: clone download rc ${prc[*]} or sha256 differs"; return 1
+  fi
+  mv "$RS/repo/.x/$RB" "$RS/repo/$RB" && rmdir $RS/repo/.x || { echo "ABORT: clone layout"; return 1; }
+  touch $RS/state/CLONE-OK
+  echo "clone: $(du -sb "$RS/repo/$RB" | awk '{print int($1 / 1000000)}') MB in $(( $(date +%s) - t0 )) s, sha256 ok"
+fi
+mkdir -p "$(dirname "$REPO")"
+[ -e "$REPO" ] || ln -s "$RS/repo/$RB" "$REPO"
+[ "$(readlink -f "$REPO")" = "$RS/repo/$RB" ] || { echo "ABORT: $REPO is not the clone"; return 1; }
+own ec2-user: "$RS/repo/$RB"
+[ "$(stat -c %U "$RS/repo/$RB/.git/HEAD")" = ec2-user ] || own -R ec2-user: "$RS/repo/$RB"
+[ "$($SU git -C "$REPO" rev-parse HEAD)" = "$(get REPO_HEAD)" ] || { echo "ABORT: HEAD differs from A"; return 1; }
+[ -z "$($SU git -C "$REPO" status --porcelain --untracked-files=no | head -1)" ] || { echo "ABORT: the worktree is not clean"; return 1; }
+echo "repo: HEAD as A, clean worktree, path string of A"
+# 4. cregit
+local CR=$RS/cregit-ec2 CB2
+CB2=$(basename "$(get CREGIT_DIR)")
+if [ ! -d $CR ]; then
+  rm -rf $RS/cregit.x; mkdir -p $RS/cregit.x
+  zstd -q -dc $RS/in/cregit.tar.zst | tar -C $RS/cregit.x -xf - || { echo "ABORT: cregit unpack"; return 1; }
+  mv "$RS/cregit.x/$CB2" $CR && rmdir $RS/cregit.x
+fi
+mkdir -p $CR/blameRepo/build $CR/tokenizeByBlobId/build; own -R ec2-user: $CR
+[ "$($SU git -C $CR rev-parse HEAD)" = "$(get CREGIT_COMMIT)" ] || { echo "ABORT: cregit is not at 57551d7"; return 1; }
+[ -z "$($SU git -C $CR status --porcelain --untracked-files=no)" ] || { echo "ABORT: cregit is dirty"; return 1; }
+[ "$($SU git hash-object $CR/blameRepo/formatBlame.pl)" = "$(get FB_BLOB)" ] || { echo "ABORT: formatBlame.pl blob"; return 1; }
+[ "$($SU git hash-object $CR/blameRepo/blameRepoFiles.pl)" = "$(get BRF_BLOB)" ] || { echo "ABORT: blameRepoFiles.pl blob"; return 1; }
+[ "$(sha256sum $CR/blameRepo/formatBlame.pl | cut -d' ' -f1)" = $FB_SHA ] || { echo "ABORT: formatBlame.pl sha256"; return 1; }
+[ "$(stat -c %d $CR/blameRepo/build)" = "$(stat -c %d $RS/out/blame)" ] || { echo "ABORT: the build dir and the out dir are on different file systems"; return 1; }
+echo "cregit: 57551d7, clean, formatBlame.pl and blameRepoFiles.pl are the 57551d7 blobs; build dir and out dir on one file system"
+# 5. tools
+cp $RS/in/blame.env $ETC/blame.env
+local ENVV GE GV
+mapfile -t ENVV < $ETC/blame.env
+GE=$(get GIT_EXE); GV=$(get GIT_VERSION)
+[ -x "$GE" ] || { echo "ABORT: the git of A ($GE) is not on this machine"; return 1; }
+[ "$("$GE" --version)" = "$GV" ] || { echo "ABORT: $GE is not $GV"; return 1; }
+[ "$($SU env -i "${ENVV[@]}" git --version)" = "$GV" ] || { echo "ABORT: git in the blame PATH is not $GV"; return 1; }
+local gr
+gr=$(readlink -f "$($SU env -i "${ENVV[@]}" bash -c 'command -v git')")
+[ "$gr" = "$(readlink -f "$GE")" ] || echo "WARNING: git in the blame PATH is $gr, A ran $GE (same version)"
+[ "$($SU env -i "${ENVV[@]}" perl -e 'print $^V')" = "$(get PERL_VERSION)" ] || { echo "ABORT: perl in the blame PATH is not $(get PERL_VERSION)"; return 1; }
+$SU env -i "${ENVV[@]}" perl -MFile::Basename -MFile::Path -MFile::Temp -MFile::Copy -MGetopt::Long -MPod::Usage -MFindBin -MPOSIX -MErrno -e 1 \
+  || { echo "ABORT: a Perl module is missing"; return 1; }
+$SU git -C "$REPO" config --list --show-scope 2>/dev/null | grep -v -E '^[a-z]+[[:space:]]+(user|credential|sendemail|safe)\.' | sed 's/@//g' > $RS/state/gitconfig.here
+if ! diff -q $RS/in/gitconfig.txt $RS/state/gitconfig.here > /dev/null; then
+  echo "WARNING: git config differs from A in these keys: $(diff $RS/in/gitconfig.txt $RS/state/gitconfig.here | sed -n 's/^[<>] [a-z]*[[:space:]]*\([^=]*\)=.*/\1/p' | sort -u | tr '\n' ' ')"
+fi
+echo "tools: $GV at the path of A; perl $(get PERL_VERSION); Perl modules ok; CREGIT_C100_LIMIT $(sed -n 's/^CREGIT_C100_LIMIT=//p' $ETC/blame.env | grep . || echo 'not set (3600 s)')"
+# 6. config and units
+local J MEMG MJ
+MEMG=$(awk '/MemTotal/ {print int($2 / 1048576)}' /proc/meminfo)
+J=${JOBS:-$(( $(nproc) - 8 ))}
+MJ=$(awk -v m="$MEMG" -v p="$MPJ" 'BEGIN {print int((m - 16) / p)}')
+[ "$J" -le "$MJ" ] || { echo "jobs $J capped by memory to $MJ ($MEMG GiB, $MPJ GiB per job)"; J=$MJ; }
+[ "$J" -ge 1 ] || { echo "ABORT: jobs $J"; return 1; }
+{ echo "K=$K"; echo "NAME=$NAME"; echo "JOBS=$J"; echo "MARGIN=$MARGIN"; echo "UPLOAD_EVERY=$UPLOAD_EVERY"
+  echo "GATE_FAIL_HOLD=$GATE_FAIL_HOLD"; echo "S3=$S3"; echo "REPO=$REPO"; echo "CREGIT=$CR"; } > $ETC/jv.env
+# Until jv-upload gets control/a-pos.txt from machine A, the A rule uses A's index at E1.
+[ -s $RS/control/apos ] || echo "$(get APOS0) 0" > $RS/control/apos
+mkdir -p $LIB
+#%EMBED lib/jv_blame.pl $LIB/jv_blame.pl 755
+#%EMBED lib/jv_gate.sh $LIB/jv_gate.sh 644
+#%EMBED lib/jv_batch.sh $LIB/jv_batch.sh 644
+#%EMBED lib/jv-run.sh $BIN/jv-run 755
+#%EMBED lib/jv-upload.sh $BIN/jv-upload 755
+mkdir -p $RS/in/gate/a; own -R ec2-user: $RS/in/gate $RS/gate
+if [ -n "${JV_TEST:-}" ]; then echo "JV_TEST: units not written, not started"; return 0; fi
+cat > /etc/systemd/system/jv-upload.service <<'EOF_u'
+[Unit]
+Description=java-split upload loop (batches of finished .blame files to S3, status, control files)
+Wants=network-online.target
+After=network-online.target
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/jv-upload
+Restart=always
+RestartSec=30
+EOF_u
+cat > /etc/systemd/system/jv-run.service <<'EOF_r'
+[Unit]
+Description=java-split blame of one part (gate, blame, end)
+Wants=network-online.target jv-upload.service
+After=network-online.target nix-daemon.service jv-upload.service
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/jv-run
+StandardOutput=append:/jv/logs/run.log
+StandardError=append:/jv/logs/run.log
+Restart=no
+KillMode=control-group
+TimeoutStopSec=60
+OOMPolicy=continue
+LimitNOFILE=1048576
+LimitNPROC=infinity
+EOF_r
+systemctl daemon-reload
+systemctl enable --now jv-upload.service >/dev/null 2>&1
+sleep 5
+"$BIN/jv-upload" --once || echo "WARNING: the first status upload failed"
+systemctl start jv-run.service
+sleep 30
+echo "units: jv-upload $(systemctl is-active jv-upload), jv-run $(systemctl is-active jv-run); phase $(cat $RS/state/phase); jobs $J, margin $MARGIN"
+echo "S1 done $(date -u +%FT%TZ)"
+}
+
+main 2>&1 | sed -u 's/@//g'
+exit "${PIPESTATUS[0]}"

@@ -1,22 +1,22 @@
-projects: 3379; label_date: 2026-10-09 (3265), 2026-10-11 (114)
+projects: 3497; label_date: 2026-10-09 (3265), 2026-10-11 (114), 2026-10-16 (118)
 
 | label | L | M | S | total |
 | --- | ---: | ---: | ---: | ---: |
-| foundation | 8 | 71 | 347 | 426 |
-| company | 15 | 56 | 158 | 229 |
+| foundation | 9 | 71 | 357 | 437 |
+| company | 15 | 57 | 163 | 235 |
 | contested | 2 | 9 | 64 | 75 |
 | government | 0 | 0 | 0 | 0 |
 | fiscal-sponsor | 1 | 18 | 19 | 38 |
-| personal | 6 | 16 | 359 | 381 |
+| personal | 6 | 16 | 374 | 396 |
 | community | 0 | 0 | 0 | 0 |
-| unknown | 50 | 300 | 1880 | 2230 |
-| **total** | 82 | 470 | 2827 | 3379 |
+| unknown | 57 | 316 | 1943 | 2316 |
+| **total** | 90 | 487 | 2920 | 3497 |
 
-company labels that rest on company_pool:spinellis alone: 55
+company labels that rest on company_pool:spinellis alone: 58
 company labels by the kinds of fact in label_basis:
-  company_org: 94
-  company_pool: 55
-  company_roster_org: 35
+  company_org: 96
+  company_pool: 58
+  company_roster_org: 36
   company_org;company_pool: 35
   company_roster: 7
   company_pool;company_roster_org: 2
@@ -30,7 +30,7 @@ contested labels by the kinds of fact in conflict:
   company_roster_org;fiscal_sponsor: 1
   company_pool;roster;roster_org: 1
 unknown labels by the kinds of fact that set no label:
-  owner_kind: 2141
-  company_org_candidate;owner_kind: 78
-  owner_kind;roster_affiliated: 10
+  owner_kind: 2224
+  company_org_candidate;owner_kind: 80
+  owner_kind;roster_affiliated: 11
   roster_affiliated: 1

@@ -1,4 +1,5 @@
-"""Tests for build_evidence.py (S5, 2026-10-09; batches 21-22 added 2026-10-11). Run: python3 -m pytest -q test_build_evidence.py
+"""Tests for build_evidence.py (S5, 2026-10-09; batches 21-22 added 2026-10-11; batch 23 added
+2026-10-16). Run: python3 -m pytest -q test_build_evidence.py
 The real-data tests need s2-pool/pool.csv (xz -d -k s2-pool/pool.csv.xz) and skip without it."""
 from __future__ import annotations
 
@@ -102,9 +103,27 @@ def test_a_kept_org_with_no_page_and_no_verified_domain_is_only_a_candidate(real
 
 def test_the_frames_are_dataset_version_1(real):
     frame = be.load_frame(*be.FRAMES)
-    assert len(frame) == 3379
+    assert len(frame) == 3497
     assert {r["project"] for r in real["rows"]} <= {x["project"] for x in frame}
-    assert real["counts"].read_text().splitlines()[1] == "projects: 3379"
+    assert real["counts"].read_text().splitlines()[1] == "projects: 3497"
+
+
+def test_the_rows_of_2026_10_11_do_not_change(tmp_path):
+    """The three frames of 2026-10-11 (batches 1-22) give the evidence of 2026-10-11 byte for byte."""
+    if not POOL.exists():
+        pytest.skip("no s2-pool/pool.csv")
+    out = tmp_path / "evidence.csv"
+    assert be.main(["--out", str(out), "--counts", str(tmp_path / "c.txt"),
+                    "--checks", str(tmp_path / "k.txt")]
+                   + [a for f in be.FRAMES[:3] for a in ("--frame", str(f))]) == 0
+    assert out.read_bytes() == (HERE / "evidence.20261011.csv").read_bytes()
+
+
+def test_batch_23_rows(real):
+    frame = be.load_frame(ROOT / "s7-run" / "frame.batch23.csv")
+    assert len(frame) == 118
+    for x in frame:   # all on GitHub: one owner_kind each
+        assert sum(r["fact_type"] == "owner_kind" for r in real["by"][x["project"]]) == 1, x["project"]
 
 
 def test_load_frame_refuses_a_name_in_two_frames(tmp_path):
