@@ -6,4 +6,4 @@
 - github_slug is set only for github.com/owner/repo URLs.
 - Counts: 258 projects, 294 rows. Rows per status: graduated 42, incubating 55, sandbox 169, archived 28. Rows with repo_url: 293. Rows with github_slug: 292.
 - Edge cases: Curiefense (archived) has no repo_url. CoHDI's repo_url is the org github.com/CoHDI, so it has no slug.
-- Judgement call: Monocle carries `project: sandbox` only under `extra:`, not at item level, and its description says it is an LF AI & Data Sandbox project. I excluded it under the item-level-key rule. This is why `grep project:` finds 259 lines against 258 projects.
+- Judgment call: Monocle carries `project: sandbox` only under `extra:`, not at item level, and its description says it is an LF AI & Data Sandbox project. I excluded it under the item-level-key rule. This is why `grep project:` finds 259 lines against 258 projects.

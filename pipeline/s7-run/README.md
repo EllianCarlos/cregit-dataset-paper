@@ -174,7 +174,7 @@ Runbook with every command: `~/s3-work/ec2-batch3/README.md`. In short:
   i4i.24xlarge) has 6 parts of 4,4,3,3,3,3 workers; `manifest.batch3a1..a4.tsv` describe run 1's
   4 parts only.
   batch3b keeps one RAID0 with 20 workers. The reason is that step 2 on batch 2 waited on
-  cross-directory `rename()`, which Linux serialises per filesystem (`ec2-load-20261009.md`).
+  cross-directory `rename()`, which Linux serializes per filesystem (`ec2-load-20261009.md`).
   `ab_compare.py` compares step-2 commits/s and projects/hour from `done/`.
 - Watch: `aws s3 cp s3://$RUNNER_BUCKET/<batch2|batch3L|batch3/a|batch3/b>/live/progress.txt -`;
   for batch 2, `steps.txt` shows each running project's cregit step and lists LineageOS first.
@@ -509,14 +509,15 @@ Open for stage 2: the anonymizer rework (salted branch `feat/pseudonymise-identi
 registry table in place of SQL `MAP` literals, one fused write, the false failures, private
 reports), and the transfer of the salt (the user decides; Claude never sees the salt).
 
-## Dataset v0 with the organisation columns (runbook prepared 2026-10-19, not run)
+## Dataset v0 with the organization columns (runbook prepared 2026-10-19, not run)
 
 The runbook with every command is `~/s3-work/dataset-v0-org/README.md`. In short:
-- The v0 write runs again with the organisation columns of `s8-companies/LINK_COLUMNS_DESIGN.md`
+- The v0 write runs again with the organization columns of `s8-companies/LINK_COLUMNS_DESIGN.md`
   (approved 2026-10-19): ctp schema 2 = the 67 columns of v1-raw without `firm_raw`, `firm` and
   `firm_source`, then `firm_based_on_namespace`, `firm_based_on_domain`,
   `project_enterprise_driven`, `project_enterprise_basis`, and three footer entries
-  (`ctp_schema_version`, `organisations_version`, `organisations_mapping_sha256`).
+  (`ctp_schema_version`, `organizations_version`, `organizations_mapping_sha256`; the files of
+  release 1 have the old names `organisations_version` and `organisations_mapping_sha256`).
 - Inputs: v1-raw from `s3://.../dataset-v1/raw/`, links of database v4.2 (`build_links.py`; the
   v4.1 links are a dry run). Output: `s3://.../dataset-v0-org/` (the old `dataset-v0/` stays).
 - Machine: one i4i.24xlarge spot in us-west-2 (as spot a). Unit `v0-org`, two passes: the 10 files
@@ -524,4 +525,4 @@ The runbook with every command is `~/s3-work/dataset-v0-org/README.md`. In short
   (`run_v0.py --min-rows/--max-rows`). Estimate: about 5.5-6 h, about 15 USD at the spot price.
 - Local test (2026-10-19, the workspace folder `companies/v0-local-test-v4.1/`): 5 small
   projects through `final_merge.py` and `run_v0.py`: the 71 columns, the footer, 0 rows that differ
-  from the join prototype's method, 0 ids outside `organisations`.
+  from the join prototype's method, 0 ids outside `organizations`.

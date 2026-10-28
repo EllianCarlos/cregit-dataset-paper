@@ -4,5 +4,5 @@
   - https://www.netbsd.org/docs/guide/en/chap-fetch.html, which gives the canonical CVSROOT anoncvs@anoncvs.NetBSD.org:/cvsroot (modules src, xsrc).
   - anonhg.NetBSD.org (Mercurial conversions), saved for reference.
 - Rows: one per official repository (src, xsrc, pkgsrc). repo_url = the CVSROOT string; the CVS module is in the note. github_slug = NetBSD/<module>, as the wiki names it.
-- Judgement: pkgsrc is included because NetBSD's own wiki lists it among the official repositories.
+- Judgment: pkgsrc is included because NetBSD's own wiki lists it among the official repositories.
 - Counts: 3 projects, 3 rows, 3 with repo_url, 3 with github_slug. GitHub REST calls: 0.

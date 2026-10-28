@@ -19,7 +19,7 @@ a git repository. The copies keep the relative paths of the originals.
 | `dataset-v1/` | The merge of the 5,000+ layer (2026-10-16/17): the input list `inputs.tsv` (one row for each project: the run, the cregit commit, the S3 key and the sha256 of the run file), the upload scripts and the merge start and probe scripts (`M*.sh`). `tools/SOURCE` names the study commit of `final_merge.py` and `rewrite_meta_columns.py`. |
 | `dataset-x1k/` | The runs of the 1,000-4,999 layer (2026-10-17 to 2026-10-23). `README.md` is the runbook. `L*.sh` launch the machines and the volumes; `scripts/` sets up, gates and starts the first machine; `scripts/w5/` and `scripts/w6/` are machine B (two machines); `scripts/a/` is machine A (the 11 long rows, on EBS volumes); `rust-split/` and `java-split/` are the extra machines of the blame of two long rows; `x2/` is the merge of the layer; `x3/` is the links of both layers. |
 | `dataset-pathfix/` | The rerun of the projects of the two cregit path defects with cregit 14b8db4 (prepared 2026-10-20; 36 input rows, 35 run by the user's decision): the bundle stage, the inputs (`stage/inputs/`, with `seeds.tsv`, the commit of the first run of each project) and the machine scripts. |
-| `dataset-v0-org/` | The organisation columns of version 1 (2026-10-21): the stage of the tools and the links, the upload, the machine setup and the start of `run_v0.py`. |
+| `dataset-v0-org/` | The organization columns of version 1 (2026-10-21): the stage of the tools and the links, the upload, the machine setup and the start of `run_v0.py`. |
 
 The four later kits (`dataset-*/`) were added on 2026-10-25. The copy skips the launch
 records (`instances.txt`, `fleet/`), the outputs, the byte-code caches, the data inputs

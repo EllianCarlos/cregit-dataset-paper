@@ -4,8 +4,8 @@
 - Fetches: the Active URL above at 2026-10-05T01:31:48Z (raw/lf/projects_api.json, 1325 records). The same URL without `$filter` at 2026-10-05T01:32:18Z (raw/lf/projects_api_allstatus.json, 1605 records: 1325 Active, 280 Archived). curl only, no GitHub REST calls.
 - Parse: `/usr/bin/python3 raw/lf/parse_lf.py`. One row per record, because the API has one RepositoryURL field per record. Active rows come from the filtered file. Archived rows come from the unfiltered file and carry that URL as source_url.
 - roster_status is the API's `Status` (Active or Archived). The API's `Category` (Sandbox, Incubating, Graduated, SIG, ...) goes in `note` as lfx_category, along with type (Project or Project Group), parent (ParentSlug), legal_parent and lfx_slug.
-- Judgement call: I dropped the 2 `TestRecord=true` records ("Test Project Group IT", "Test Project IT").
-- Judgement call: the API contains every LFX entity, including sub-foundation children (CNCF, LF AI and others), working groups, SIGs, funds and Project Groups. I did not filter these out. Use `note` (type, lfx_category, parent) to subset.
+- Judgment call: I dropped the 2 `TestRecord=true` records ("Test Project Group IT", "Test Project IT").
+- Judgment call: the API contains every LFX entity, including sub-foundation children (CNCF, LF AI and others), working groups, SIGs, funds and Project Groups. I did not filter these out. Use `note` (type, lfx_category, parent) to subset.
 - The website renders only records that have both a Website and a ProjectLogo. I did not apply that display filter. The 24 records with DisplayOnWebsite=false are flagged in `note`.
 - LF Europe: rows whose legal_parent is "Linux Foundation Europe", or whose parent is `lfeurope`, have note "LF Europe" (60 rows). Example: Servo Project (lfx_slug=servo-llc, Active, no RepositoryURL).
 - github_slug is set only when RepositoryURL has the form github.com/owner/repo. 520 rows point at a GitHub org (github.com/owner only); those keep repo_url, leave the slug empty, and carry a note.

@@ -170,6 +170,8 @@ def test_out_refuses_an_existing_file(tmp_path):
 
 
 def test_the_real_batch1_sidecar_joins_fully_and_differs_in_the_four_fields_only():
+    if not (HERE / "project_meta.batch1.json").exists():
+        pytest.skip("no project_meta.batch1.json (git-ignored run output)")
     a = json.loads((HERE / "project_meta.batch1.json").read_text())
     b = json.loads((HERE / "project_meta.batch1.enriched.json").read_text())
     assert list(a) == list(b)

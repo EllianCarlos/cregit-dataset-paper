@@ -5,7 +5,7 @@
 - Other projects: https://openinfra.org/projects/ ("CONFIRMED PROJECTS"), fetched 2026-10-05T01:33:32Z, lists Kata Containers, OpenStack, StarlingX and Zuul. Airship and others are not on the page, so they were not added.
   - Kata Containers: the Code link is https://github.com/kata-containers. Its 36 public repos were listed via GitHub GraphQL.
   - StarlingX: the Code link is https://opendev.org/starlingx. Its 89 repos were listed via https://opendev.org/api/v1/orgs/starlingx/repos.
-  - Zuul: the Code link https://git.zuul-ci.org/ redirects to opendev.org/. zuul-ci.org links opendev.org/zuul/zuul, so the opendev org `zuul` (16 repos) was used. This is a judgement call.
+  - Zuul: the Code link https://git.zuul-ci.org/ redirects to opendev.org/. zuul-ci.org links opendev.org/zuul/zuul, so the opendev org `zuul` (16 repos) was used. This is a judgment call.
   - No GitHub mirror is named for StarlingX or Zuul, so they have no slug.
 - roster_status for these three = "confirmed project" (the page heading).
 - Counts: 59 projects (42 OpenStack teams + 13 SIGs + 1 Technical Committee + 3 other OpenInfra projects), 769 rows, 769 with repo_url, 664 with github_slug. GitHub REST calls: 0. GraphQL: 1.

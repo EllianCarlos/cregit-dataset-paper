@@ -22,4 +22,4 @@ for name, v in meta.items():
 meta_p.write_text(json.dumps(meta, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 with open(H / "labels.batch26.csv", "w", newline="", encoding="utf-8") as fo:
     w = csv.DictWriter(fo, list(out[0]), lineterminator="\n"); w.writeheader(); w.writerows(out)
-print(len(out), "rows labelled unknown")
+print(len(out), "rows labeled unknown")

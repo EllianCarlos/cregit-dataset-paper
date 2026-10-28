@@ -70,6 +70,8 @@ def test_no_label_is_a_residual_community_needs_its_own_fact():
 def test_the_committed_labels_are_what_the_script_writes(tmp_path):
     if not (HERE.parent / "s5-evidence" / "evidence.csv").exists():
         pytest.skip("no S5 evidence")
+    if not (HERE.parent / "s7-run" / "frame.layer1.csv").exists():
+        pytest.skip("no s7-run/frame.layer1.csv (git-ignored; s7-run/build_run.sh writes it)")
     out, counts = tmp_path / "labels.csv", tmp_path / "counts.txt"
     assert bl.main(["--out", str(out), "--counts", str(counts), "--date", NEW_DATE,
                     "--prior", str(PRIOR)]) == 0

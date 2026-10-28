@@ -44,7 +44,7 @@ flowchart TD
     class S4,S5,S6,S7,S8,RUN todo;
 ```
 
-Green: done. Yellow: running. Grey: not started.
+Green: done. Yellow: running. Gray: not started.
 
 | Stage | Reads | Writes | Status |
 | --- | --- | --- | --- |

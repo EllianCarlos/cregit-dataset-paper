@@ -6,5 +6,5 @@
   3. A graduated podling with no such repo gets one row for repositories.json[<podling id>] if that key exists. The note says the repo is now under the TLP or the Attic (188 rows).
   4. Every other podling gets one row with empty repo_url (169 rows). Most are retired podlings, whose repos are no longer in repositories.json.
 - github_slug = apache/<key> for gitbox URLs only. roster_status = whimsy `status` (current / graduated / retired).
-- Judgement: assigning a repo to a podling by name prefix is an inference; the note records it.
+- Judgment: assigning a repo to a podling by name prefix is an inference; the note records it.
 - Counts: 376 projects, 676 rows, 507 with repo_url, 505 with github_slug. GitHub REST calls: 0.

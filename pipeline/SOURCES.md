@@ -25,7 +25,7 @@ source "page read in the author's browser", with the URL and the time.
 One file `rosters/<org>.csv` for each organization. Columns: `org_key,
 org_kind, project, repo_url, github_slug, roster_status, source_url,
 fetched_at, note`. The file `rosters/<org>.method.md` gives the exact URLs, the
-parse rules, the counts and each judgement call. Raw downloads are in
+parse rules, the counts and each judgment call. Raw downloads are in
 `rosters/raw/<org>/`. Scripts are in `rosters/scripts/` and `rosters/raw/`.
 The common rules are in `rosters/SPEC.md`.
 
