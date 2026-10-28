@@ -196,11 +196,16 @@ first line of `OK` is `<sha256>  <name>-dataset.parquet`.
 `tools.lock` gives the cregit commit of each run. In short: batch1rest and batches 2-6 used
 95cdc88 (one batch 6 project used 9ccead6). Batches 7-18 used 1f17663, and from 2026-10-11
 also 57551d7. Batches 19-26, L23 and L1r used 57551d7. One project (local-d) used 23e4ccb.
+On 2026-10-15 the blame script of 4 running copies (google-cloud-java, lean4,
+asuswrt-merlin.ng, liferay-portal) changed to 365a47a; their ledgers name 57551d7
+(liferay-portal: 1f17663). The 1,000-4,999 layer used 57551d7. The path-fix rerun
+(35 projects) and BRL-CAD__brlcad used 14b8db4. Thus seven cregit commits wrote the files of
+the release. Each commit is on a public branch (`tools.lock`, the notes of each row).
 ctp was ca113e3 on every run. srcML was the same build on every run, except the batch 1
 local run (157cf8b). The L1r run reruns the projects of that run.
 
 Each cregit commit has a git bundle in `tools.lock`. The bundles of 9ccead6, 1f17663,
-57551d7 and 23e4ccb need 95cdc88 first (`cregit-ec2.bundle`, a complete bundle). 157cf8b
+57551d7, 23e4ccb, 365a47a and 14b8db4 need 95cdc88 first (`cregit-ec2.bundle`, a complete bundle). 157cf8b
 is an ancestor of 95cdc88, so `cregit-ec2.bundle` holds it. The bundle
 `srcml-543fed6a.bundle` holds the two srcML fork commits (50a63193 and 543fed6a). It needs
 srcML d382719 first (upstream, public). The patch `tools/cregit/nix/srcml-nontermination.patch`
@@ -283,7 +288,7 @@ The bundle path of step 5 was checked on 2026-10-28 with small test bundles only
 `project_meta.v1.final.json` (sha256 `4023295a...`) is in `pipeline/s7-run`; the final
 sidecar of the 1,000-4,999 layer is not synced yet (set `MERGE_SIDECAR`).
 
-Two facts limit the targets:
+These facts limit the targets:
 
 - The trailer post-fix rewrote the `footer_*` columns of the 95cdc88 Parquet files
   (`pipeline/s7-run/rewrite_footer_columns.py`). For these 815 files the merge input is the
@@ -294,6 +299,22 @@ Two facts limit the targets:
   the same: the libexpat gate file has the same sha256 on each machine, and the rebuild of
   2026-10-28 gave the sha256 of the run of 2026-10-13. A rerun with other `--workers`,
   `--blame-jobs` or `--memory-limit` values was not compared (UNKNOWN).
+- Set `TZ=UTC` for the run. slickgitlog writes `author_date` and `committer_date` in the time
+  zone of the JVM, with no UTC offset. The run machines used UTC. Neither devenv nor ctp sets
+  `TZ`, so a run on a machine in another time zone gives other bytes.
+- The fallback to plain blame after 3600 s of `-C100` depends on the machine (its load, the
+  parallel jobs, the restarts). No option makes plain blame for a given list of files, so a
+  rebuild can make another choice for such a file and give other bytes. The blob exclusions of
+  the tokenizer step (600 s of wall time for one blob) can also depend on the load.
+- The tokenizer cache key does not include the language. With parallel workers, the same bytes
+  at `x.h` and `x.cpp` can get the C or the C++ parse, so a rerun is not byte-identical for
+  such files (about 0.0125% of the tokenized blobs in the pilot run; dataset v1 not measured).
+- Some inputs are not pinned. Step 10 of cregit runs `INSTALL sqlite_scanner`, so DuckDB
+  downloads the extension from the network (the build on the run machines is not recorded; the
+  local machine has `f79b1db` for DuckDB 1.5.5). The tools do not set `GIT_CONFIG_NOSYSTEM` or
+  `GIT_CONFIG_GLOBAL`, so the git configuration of the machine can change the blame. The
+  pseudonymizer takes the newest Public Suffix List in `/nix/store` (the release used the list
+  with sha256 prefix `65365c4c9a4a`); this does not touch the targets (a) and (b).
 
 ### 4.6 The runs of the 1,000-4,999 layer (2026-10-17 to 2026-10-23)
 
@@ -497,7 +518,7 @@ So no one can make the published bytes of a file again. `make rebuild-one` uses 
    pseudonym, and the lists keep their length); `person_domain` (a value with no at sign
    becomes `lower(trim(value))`, a value with an at sign follows rule E); it removes
    `firm_raw`, `firm` and `firm_source`, and it adds the 4 organisation columns.
-   `commit_summary` is published as git has it, so it must be equal.
+   The release write does not change `commit_summary`, so it must be equal.
    The pseudonym is a salted hash of the value in lower case (`pseudonymize.py`). So the script
    checks, for each identity column: one value gives one pseudonym; values that are equal in
    lower case give one pseudonym; values that are not equal in lower case give different
