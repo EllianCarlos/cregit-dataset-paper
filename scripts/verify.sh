@@ -11,7 +11,7 @@ dir=${1:-}
 
 rows=$(grep -v -E '^[[:space:]]*(#|$)' "$sums" || true)
 if [ -z "$rows" ]; then
-  echo "not ready: data/SHA256SUMS has no rows yet (it gets filled at the v1 freeze)" >&2
+  echo "not ready: data/SHA256SUMS has no rows (it must hold the project rows of the release root)" >&2
   exit 3
 fi
 if [ -z "$dir" ] || [ ! -d "$dir" ]; then

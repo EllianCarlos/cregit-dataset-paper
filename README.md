@@ -18,9 +18,10 @@ foundation rosters, company organisations and published project lists.
 `pipeline/SELECTION-STAGES.md` gives the rules.
 
 The release adds a second commit layer (user decision, 2026-10-23). It is one dataset of
-10,753 projects: 3,544 files with 5,000 or more commits (the v1 build) and 7,209 files with
-1,000 to 4,999 commits. It has 32,626,028,860 token rows and 162.6 GB of release files
-(ZSTD 19). `REPRODUCE.md` (sections 4.6 to 5) gives the runs, the merge and the links of
+10,754 project files: 3,545 files with 5,000 or more commits (the v1 build and BRL-CAD, a
+later separate write) and 7,209 files with 1,000 to 4,999 commits. It has 32,635,174,618
+token rows and 162,472,453,753 B (162.5 GB) of release files (ZSTD 19), in the release root
+`dataset-release-1` (10,780 files). `REPRODUCE.md` (sections 4.6 to 5) gives the runs, the merge and the links of
 the second layer.
 
 ## Release decisions (user, 2026-10-25)
@@ -60,11 +61,16 @@ output hash, the cost and the time.
 
 ## Two short paths for reviewers
 
-1. `make verify` checks the sha256 of each published file against
-   `data/SHA256SUMS`.
+1. `make verify DATA_DIR=<release root>` checks the sha256 of each published
+   project file against `data/SHA256SUMS`. `make validate DATA_DIR=<release root>`
+   checks the 71 columns of ctp schema 2 and the footer of each file.
 2. `make rebuild-one PROJECT=<owner__repo>` builds the dataset again for one
-   project with the pinned tools. Then it compares the sha256 of the new
-   Parquet file with the published value.
+   project with the pinned tools. The published files have pseudonyms made with
+   a salt that is deleted by design, so no rebuild gives their bytes. The target
+   checks the run output and the file before the pseudonyms against the recorded
+   sha256 values (`data/REBUILD-TARGETS.tsv`). Then it checks that the published
+   file is equal to that file in every column that the pseudonyms do not change
+   (`REPRODUCE.md`, section 6.1).
 
 Both targets need the Nix dev shell: `nix develop`. Then run `make help`.
 `make flake-check` proves that the shell has the tool store paths of the dataset build.
@@ -88,7 +94,8 @@ non-zero status. `REPRODUCE.md` lists what is left.
 | `flake.nix`, `flake.lock` | The pinned environment (Nix). |
 | `Makefile` | The reviewer and stage targets. |
 | `scripts/` | The helper scripts of the Makefile. |
-| `data/SHA256SUMS` | The sha256 of each published file (filled at the v1 freeze). |
+| `data/SHA256SUMS` | The sha256 of each published project file (10,754 rows of the release root). |
+| `data/REBUILD-TARGETS.tsv` | For each project file: the run record and the three target sha256 values of `rebuild-one`. |
 | `ANONYMIZATION-TODO.md` | Identifying text to remove before the anonymous mirror. |
 
 ## How `pipeline/` and `tools/` are made
@@ -97,7 +104,7 @@ non-zero status. `REPRODUCE.md` lists what is left.
 git blob id, the source path and the destination path.
 `sync/sync-from-sources.sh` copies the files again from the recorded commit
 with `git archive`. It does not read a working tree. Then it checks the git
-blob id of each file. `sync/untracked.tsv` lists 104 generated inputs that git does not
+blob id of each file. `sync/untracked.tsv` lists 105 generated inputs that git does not
 track in the source. The script copies each one only when its sha256 is equal to the value
 of a committed checksum file. `sync/sync-from-sources.sh --check` runs the check only.
 It needs no source repository.

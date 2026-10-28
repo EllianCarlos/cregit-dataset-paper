@@ -73,6 +73,12 @@ echo "$files" | grep -v -E '^pipeline/(s[1-6]-[a-z]+|sources|rosters)/.*\.(csv|t
   awk '{ i = index($0, ":"); print substr($0, i + 1) "\t" substr($0, 1, i - 1) }' |
   grep -v -i -E '^[^\t]*(opencensus|uscensus)' >> "$names" || true
 echo "$files" | grep -E -- "$cre" | awk '{ print "(file path)\t" $0 }' >> "$names" || true
+# An identifier can hold identifying text (for example the bucket name with the account id).
+# The report must not copy identifying text, so mask each identifier that a pattern matches.
+idre=$(grep -v '^#' "$pat" | cut -f2 | paste -sd'|')
+mask=$(cut -f1 "$names" | grep -n -E -- "$idre" | cut -d: -f1 | paste -sd, || true)
+awk -F'\t' -v OFS='\t' -v m="$mask" 'BEGIN { n = split(m, a, ","); for (i = 1; i <= n; i++) x[a[i]] = 1 }
+  { if (NR in x) $1 = "(masked: it holds identifying text)"; print }' "$names" > "$names.1" && mv "$names.1" "$names"
 
 {
   echo "# Anonymization to-do list"

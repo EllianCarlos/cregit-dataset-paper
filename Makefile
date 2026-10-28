@@ -19,7 +19,7 @@ PROJECT ?=
 help:
 	@echo "Reviewer targets:"
 	@echo "  make verify                        check the sha256 of the published files (DATA_DIR=$(DATA_DIR))"
-	@echo "  make rebuild-one PROJECT=<name>    build one project again and compare the Parquet sha256"
+	@echo "  make rebuild-one PROJECT=<name>    build one project again and compare it (REPRODUCE.md, section 6.1)"
 	@echo "Stage targets:"
 	@echo "  make select      selection (S1-S6)"
 	@echo "  make build       the dataset build (S7), all projects"
@@ -36,13 +36,13 @@ verify:
 
 rebuild-one:
 	@if [ -z "$(PROJECT)" ]; then echo "usage: make rebuild-one PROJECT=<owner__repo>" >&2; exit 2; fi
-	@scripts/rebuild-one.sh "$(PROJECT)" "$(TOOLS_DIR)"
+	@DATA_DIR="$(DATA_DIR)" scripts/rebuild-one.sh "$(PROJECT)" "$(TOOLS_DIR)"
 
 select:
 	@echo "not ready: S1-S3 read live APIs and web pages (GitHub, GitLab hosts, rosters), and the offline replay of S4-S6 from the copied inputs is not written yet; pipeline/SELECTION-STAGES.md gives the steps" >&2; exit 3
 
 build:
-	@echo "not ready: the full dataset build runs on EC2 for several days (estimate: about US\$$1,600-1,800); the runner scripts of the EC2 machines are not in a source repository yet; use make rebuild-one for one project" >&2; exit 3
+	@echo "not ready: the full dataset build runs on EC2 for several days (estimate: about US\$$1,600-1,800); the runner scripts of the EC2 machines are in pipeline/s7-run/runner/, one kit for each run, with no single entry point; use make rebuild-one for one project" >&2; exit 3
 
 merge:
 	@echo "not ready: the final merge script is not written yet; pipeline/s7-run/prelim_merge.py is a preliminary view over local run directories" >&2; exit 3

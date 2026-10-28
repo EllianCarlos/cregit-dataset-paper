@@ -70,6 +70,28 @@ State of phase B:
 - B2, B3, B4 and B6: open.
 - B5: no machine runs. The stopped machine of batch 2 (the big EC2) and the 4 EBS volumes of machine A wait for the user's direction. The final cost is not recorded.
 
+### Status of B2, B4, C4 and C5 (2026-10-28)
+
+The release root `dataset-release-1` has 10,780 files (162,472,453,753 B; its SHA256SUMS has
+the sha256 `1293050b0c75...`). The rebuild `dataset-release-2` changes only MANIFEST.tsv and
+the documents, so the checks of the project files stay valid.
+
+- B2: `data/SHA256SUMS` has the 10,754 project rows of the release root. The published files
+  are ctp schema 2 (71 columns), so `make validate` now uses `scripts/validate_schema2.py`: the
+  67 cregit columns of the ca113e3 contract, then the 4 organisation columns, the footer keys,
+  the registry and the rows. The release build checked the same contract on all files
+  (`schema.txt`). `make verify` and `make validate` on the real files need the download
+  (162.5 GB): the user runs the check script of the release kit.
+- B4: the target is not the published sha256 (the salt of the pseudonyms is deleted). The rule
+  is in REPRODUCE.md, section 6.1, and the targets of each file are in
+  `data/REBUILD-TARGETS.tsv`. Steps 4-6 of `rebuild-one` are written. Local proof for
+  libexpat: run output `2dcc77fd...`, merge output `e67bf24e...` (the input of the release
+  write), both equal to the records. The column check against the published file waits for the
+  download of that file (1.7 MB).
+- C4: the export is prepared in a local folder, not committed and not pushed. The user makes
+  the one anonymous commit and pushes it.
+- C5: fresh-context agents run on the local export.
+
 ## Decisions that the user owns
 
 - B3: the yes to run the sample on the big EC2.

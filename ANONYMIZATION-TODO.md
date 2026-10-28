@@ -24,7 +24,7 @@ So fix them in the source repository, commit there, and sync again.
 | employer | 0 | 0 |
 | ec2-id | 0 | 0 |
 | source-org | 0 | 0 |
-| census-name | 525 | 12890 occurrences |
+| census-name | 526 | 12891 occurrences |
 
 The table counts the open hits. These hits are not in the table:
 
@@ -263,6 +263,7 @@ File paths that contain "census":
 
 Identifiers and words in file contents (identifier: occurrences, files; more than 4 files gives the count only):
 
+- `(masked: it holds identifying text)`: 2, `pipeline/s7-run/fetch_done.sh`, `pipeline/s7-run/footer_fix_again.sh`
 - `-/b5L/census-2026-10-batch5L`: 2, `pipeline/s7-run/runner/ec2-batch5/scripts/L2-install.sh`, `pipeline/s7-run/runner/ec2-batch5/scripts/remote-L/census-batch5L-finalize`
 - `-/b6L/census-2026-10-batch6L`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/L2a-install.sh`, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-L/census-batch6L-finalize`
 - `-/bL1r/census-2026-10-L1r`: 2, `pipeline/s7-run/runner/ec2-L1r/scripts/L2a2-install.sh`, `pipeline/s7-run/runner/ec2-L1r/scripts/remote-L/census-L1r-finalize`
@@ -283,7 +284,6 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `-census-fed`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-feeder`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-1.sh`
 - `../../../../cregit-workspace/census-2026-10`: 1, `pipeline/s7-run/census.cfg`
 - `.orig-4census`: 2, `pipeline/s7-run/runner/ec2-batch6/README.md`, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-L2.sh`
-- `//cregit-census-905418043997-usw2`: 2, `pipeline/s7-run/fetch_done.sh`, `pipeline/s7-run/footer_fix_again.sh`
 - `//github.com/GoogleCloudPlatform/opencensus-jetty-demo.git`: 3, `pipeline/s7-run/frame.layer5.csv`, `pipeline/s7-run/manifest.layer5.tsv`, `pipeline/s7-run/project_meta.layer5.json`
 - `/Projects/cregit-workspace/census-cloud-fixed`: 932, `pipeline/s7-run/runner/dataset-v1/upload.tsv`
 - `/Projects/cregit-workspace/census-cloud`: 18, `pipeline/s7-run/runner/dataset-pathfix/stage/inputs/seeds.tsv`
@@ -1402,7 +1402,7 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `census_funnel`: 1, `sync/rules.tsv`
 - `census_ready.root`: 1, `pipeline/s7-run/runner/dataset-x1k/stage/ctp-no-firm.patch`
 - `census_ready`: 3, `pipeline/s7-run/runner/dataset-x1k/stage/ctp-no-firm.patch`
-- `census`: 1612, 370 files
+- `census`: 1613, 371 files
 - `censuses`: 77, 59 files
 - `cmd_census`: 2, `pipeline/s7-run/runner/dataset-x1k/stage/ctp-no-firm.patch`
 - `cregit-census-batch3-spot`: 27, 14 files

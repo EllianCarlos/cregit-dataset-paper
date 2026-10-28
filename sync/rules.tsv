@@ -36,7 +36,7 @@ study	include	^s7-run/(manifest|parts)\.[^/]+\.tsv$
 study	include	^s7-run/batch[0-9]+\.ubatch\.tsv$
 study	include	^s7-run/(SHA256SUMS|[^/]+\.sha256)$
 study	include	^s7-run/(build_run|run_batch1|fetch_done|footer_fix_again)\.sh$
-study	include	^s7-run/(build_L7_20|census_funnel|enrich_meta|failed_projects|final_meta|footer_fix_batches|labels_batch25|labels_batch26|one_half|parts_batch26|prelim_merge|rewrite_footer_columns|rewrite_meta_columns|split_batch3|split_batch4|split_batch5|split_batchN|split_run_ledgers)\.py$
+study	include	^s7-run/(build_L7_20|census_funnel|enrich_meta|failed_projects|final_merge|final_meta|footer_fix_batches|labels_batch25|labels_batch26|one_half|parts_batch26|prelim_merge|rewrite_footer_columns|rewrite_meta_columns|split_batch3|split_batch4|split_batch5|split_batchN|split_run_ledgers)\.py$
 study	include	^s7-run/test_[^/]+\.py$
 study	include	^s7-run/(census\.cfg|labels\.batch2[56]\.csv|failed-projects\.(tsv|md)|superseded-20261007\.tsv|README\.md|blame-time-limit\.md|srcml-fix-20261009\.md)$
 study	include	^s7-run/local-[a-d]/(run|gate)\.sh$
