@@ -16,7 +16,7 @@ the token (the cregit token blame), and metadata of the commit and of the projec
 
 The projects are active, licensed C, C++, Java and Rust projects with 5,000 or
 more commits at the snapshot commit. The sources are GitHub, GitLab hosts,
-foundation rosters, company organisations and published project lists.
+foundation rosters, company organizations and published project lists.
 `pipeline/SELECTION-STAGES.md` gives the rules.
 
 The release adds a second commit layer (user decision, 2026-10-23). It is one dataset of
@@ -33,7 +33,7 @@ the second layer.
 - Reproducibility: the release has everything that a reproduction needs, also the web
   captures (the fetched third-party pages), each with its URL, its fetch date and its
   sha256. The pages are third-party content: `THIRD-PARTY.md` of the release gives a
-  licence note for each source (not written yet).
+  license note for each source (not written yet).
 - The commit SHAs (`tools.lock`, `sync/sources.tsv`) and the tool bundles are published.
 - Anonymous release: for the blind review, the user's own repositories go out as an
   anonymous release (one anonymous export commit; the user pushes it). The Data and Tool

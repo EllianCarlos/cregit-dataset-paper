@@ -16,7 +16,7 @@
 #   DATA_DIR     the release root; if it has the published file, step 6 compares the columns.
 #   MIN_FREE_GB  the start floor of free memory for ctp (default 4; a start condition only).
 #
-# The published files went through the release write: the organisation columns and the
+# The published files went through the release write: the organization columns and the
 # pseudonyms of the identity columns, in one write, with a salt. The salt is deleted by design,
 # so no one can make the published bytes again. The rule (REPRODUCE.md, section 6.1):
 #   a. the ctp run gives merge_input_sha256 of data/REBUILD-TARGETS.tsv (the run output);

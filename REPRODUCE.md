@@ -143,7 +143,7 @@ files are the files of the selection. They do not prove that a new run gives the
 Web captures (user decision, 2026-10-25): the release publishes the fetched third-party pages
 and files that the stages read (`rosters/raw/`, `sources/company-pages/raw/`, the Spinellis
 tarball), each with its URL, its fetch date and its sha256. They are third-party content, so
-`THIRD-PARTY.md` gives a licence note for each source. This repository does not copy them.
+`THIRD-PARTY.md` gives a license note for each source. This repository does not copy them.
 
 `make stage-hashes` checks every value in this table that is not marked "copy".
 `make select` prints "not ready": the offline replay of S4-S6 is not wired into one command yet.
@@ -241,7 +241,7 @@ With your values in `runner/runner.env`, `render.py --out DIR` gives files that 
 The kits of the later runs (2026-10-16 to 2026-10-24) were copied into the study repository
 on 2026-10-25 with the same rule: `runner/dataset-v1/` (the merge of the 5,000+ layer),
 `runner/dataset-x1k/` (the runs, the merge and the links of the 1,000-4,999 layer),
-`runner/dataset-pathfix/` (the path-fix rerun) and `runner/dataset-v0-org/` (the organisation
+`runner/dataset-pathfix/` (the path-fix rerun) and `runner/dataset-v0-org/` (the organization
 columns of version 1). That adds 192 copies: 75 verbatim and 117 with tokens, so 300 verbatim
 and 327 with tokens in total. The new tokens are the EC2 ids of the later machines and the four
 subnets by availability zone (`runner.env.example`). The copy step checked each new copy: the
@@ -437,7 +437,7 @@ the end the destination gets `SHA256SUMS`, `results.tsv` and the sidecar.
 - Kit: `pipeline/s7-run/runner/dataset-x1k/x3/`; the tools are in `x3/stage/` (`tools.lock`, row
   links-kit; SHA256SUMS sha256 `7dba806bb9e3...`). The links need the address column, so they
   were built on the machine: `extract_domains_v1.py` makes the per-author domain cache from the
-  raw files, and `build_links.py` maps the domains and the namespaces to the organisations of
+  raw files, and `build_links.py` maps the domains and the namespaces to the organizations of
   `companies.v4.6.duckdb`. The addresses do not leave the machine.
 - Steps: `S0-x3-stage.sh` (local), `U1-upload-x3.sh` (the user), `L1-launch-x3.sh`, then through
   `ssm-x3.sh`: `R1-x3-setup.sh`, `M1-x3-start.sh`; `M2-x3-check.sh`; `F1-x3-fetch.sh` fetches the
@@ -449,7 +449,7 @@ the end the destination gets `SHA256SUMS`, `results.tsv` and the sidecar.
   keys) and 13,157 domain links. Each row of v1 is unchanged. Machine dataset-x1k-links-1
   (i4i.8xlarge spot) took 18 minutes.
 
-### 5.4 The organisation columns of version 1 (first write, 2026-10-21)
+### 5.4 The organization columns of version 1 (first write, 2026-10-21)
 
 - Kit: `pipeline/s7-run/runner/dataset-v0-org/` (`README.md` is the runbook); tools in `stage/`
   (`tools.lock`, row org-kit): `run_v0.py` runs `build_v0.py` on each v1-raw file with
@@ -460,22 +460,29 @@ the end the destination gets `SHA256SUMS`, `results.tsv` and the sidecar.
 
 ### 5.5 Open steps
 
-1. Organisation database v4.8: the version after v4.7, with the review of the new domains and
+1. Organization database v4.8: the version after v4.7, with the review of the new domains and
    namespaces of both layers and the user check. Then the links again, the error model and the
-   organisation tables (`build_organisations.py tables`).
-2. One write of the organisation columns and the pseudonyms over all 10,753 files (one fused
+   organization tables (`build_organizations.py tables`).
+2. One write of the organization columns and the pseudonyms over all 10,753 files (one fused
    write; estimate about 8.5-9.5 h on 96 vCPU). It needs the final database, the final commit of
    `pseudonymize.py` (`tools.lock`: ctp 4be3800, then the hotfix a4b511b), the salt transfer, and the user's
    yes for the machine. The registry (real identity to pseudonym) stays private.
-3. The release package: copy the files to `parquet/` and the tables to `organisations/`, run
-   `build_organisations.py views`, then `fill_release.py manifest`, `checksums` and `check`; fill
-   `data/SHA256SUMS`; the licence note for each source in `THIRD-PARTY.md`; the Zenodo records.
+3. The release package: copy the files to `parquet/` and the tables to `organizations/`, run
+   `build_organizations.py views`, then `fill_release.py manifest`, `checksums` and `check`; fill
+   `data/SHA256SUMS`; the license note for each source in `THIRD-PARTY.md`; the Zenodo records.
 4. `make verify` and `make rebuild-one` after the release (sections 4.5 and 6).
+
+Spelling (the user's decision of 2026-10-28): the tools and the documents use "organization". The
+release root `dataset-release-1` was written before that decision. It has the folder
+`organisations/` (tables `organisations`, `organisation_domains`, `organisation_namespaces`,
+`project_organisations`, column `organisation_id`) and the footer keys `organisations_version` and
+`organisations_mapping_sha256`. `scripts/validate_schema2.py` and `build_organizations.py views`
+accept both spellings.
 
 Status on 2026-10-28: steps 1-3 are done with database v4.9: the one write of 10,753 files,
 BRL-CAD__brlcad in a separate write with the same salt, and the release root
 `dataset-release-1` (10,780 files). `data/SHA256SUMS` has its 10,754 project rows. Still open:
-the final commit of the row pseudonymizer in `tools.lock`, the licence notes of
+the final commit of the row pseudonymizer in `tools.lock`, the license notes of
 `THIRD-PARTY.md`, the Zenodo records and step 4.
 
 ### 5.6 Open question: the path-fix rows of the 5,000+ layer
@@ -491,17 +498,17 @@ take the `done-pathfix/` key in `inputs.tsv`. This repository has no record that
 |---|---|---|
 | Each Parquet file is larger than 10,000 bytes, has rows, and has the 70-column contract. | `tools/ctp/validate.py` (writes `.validated`), `tools/ctp/validate_schema.py` | runs in the build |
 | Each fetched Parquet file has the sha256 of its `OK` file. | `pipeline/s7-run/fetch_done.sh` | runs after the build |
-| Each published file has the column contract of ctp schema 2 (71 columns: the 67 cregit columns of ca113e3, then the 4 organisation columns), the footer keys of the release write, the registry of `pseudonymization.json` and the rows of `MANIFEST.tsv`. | `make validate DATA_DIR=<release root>` (`scripts/validate_schema2.py`) | works; proof on 2026-10-28 with small test files (`scripts/test_release_checks.py`, `make test`: one good root passes; a schema 1 file, a wrong row count, a wrong registry, a file with no registry, a file with no row in `MANIFEST.tsv` and a file that cannot be read fail) and on the published file of libexpat__libexpat (OK). The release build checked the same contract on all 10,754 files (`schema.txt` of the build reports: 71 columns, footer schema 2, v4.9, mapping `7b52a5155e6f`, 32,635,174,618 rows, 0 problems). |
+| Each published file has the column contract of ctp schema 2 (71 columns: the 67 cregit columns of ca113e3, then the 4 organization columns), the footer keys of the release write, the registry of `pseudonymization.json` and the rows of `MANIFEST.tsv`. | `make validate DATA_DIR=<release root>` (`scripts/validate_schema2.py`) | works; proof on 2026-10-28 with small test files (`scripts/test_release_checks.py`, `make test`: one good root passes; a schema 1 file, a wrong row count, a wrong registry, a file with no registry, a file with no row in `MANIFEST.tsv` and a file that cannot be read fail) and on the published file of libexpat__libexpat (OK). The release build checked the same contract on all 10,754 files (`schema.txt` of the build reports: 71 columns, footer schema 2, v4.9, mapping `7b52a5155e6f`, 32,635,174,618 rows, 0 problems). |
 | Each published file has the sha256 of `data/SHA256SUMS`. | `make verify DATA_DIR=<release root>` | ready: `data/SHA256SUMS` has the 10,754 project rows of the release root `dataset-release-1` (its SHA256SUMS: `1293050b0c75...`). The run needs the downloaded files (162.5 GB). |
 
 The 70-column contract of ca113e3 alone refuses every published file: the release write
-replaced the 3 firm columns (`firm_raw`, `firm`, `firm_source`) with the 4 organisation
+replaced the 3 firm columns (`firm_raw`, `firm`, `firm_source`) with the 4 organization
 columns. `scripts/validate_schema2.py` takes the 67 cregit columns from the ca113e3 copy
 `tools/ctp/validate_schema.py` without a change.
 
 ### 6.1 The rule of `rebuild-one`
 
-The published files went through the release write: the organisation columns and the
+The published files went through the release write: the organization columns and the
 pseudonyms of the identity columns, in one write, with a salt. The salt is deleted by design.
 So no one can make the published bytes of a file again. `make rebuild-one` uses this rule:
 
@@ -517,7 +524,7 @@ So no one can make the published bytes of a file again. `make rebuild-one` uses 
    `person_email`) and the 15 `footer_*` lists (each value that is not empty becomes a
    pseudonym, and the lists keep their length); `person_domain` (a value with no at sign
    becomes `lower(trim(value))`, a value with an at sign follows rule E); it removes
-   `firm_raw`, `firm` and `firm_source`, and it adds the 4 organisation columns.
+   `firm_raw`, `firm` and `firm_source`, and it adds the 4 organization columns.
    The release write does not change `commit_summary`, so it must be equal.
    The pseudonym is a salted hash of the value in lower case (`pseudonymize.py`). So the script
    checks, for each identity column: one value gives one pseudonym; values that are equal in
@@ -594,7 +601,7 @@ Found on 2026-10-14 (no longer UNKNOWN):
   Now each batch has its own scripts.
 - Write one local entry point for `make merge` over the merge kits (section 5), and the
   offline replay of S4-S6 (`make select`).
-- The steps of section 5.5: database v4.8, the one write of the organisation columns and the
+- The steps of section 5.5: database v4.8, the one write of the organization columns and the
   pseudonyms, and the release package.
 - Sync the later kits into `pipeline/` after the study commit (section 9).
 - Add the inputs of the 1,000-4,999 layer (study `x1k/`) to `sync/rules.tsv`. First fix the
@@ -604,7 +611,7 @@ Found on 2026-10-14 (no longer UNKNOWN):
   URL, its fetch date and its sha256: `rosters/raw/` (except the ASF `projects.json` that S5
   reads), `sources/company-pages/raw/`, and the Spinellis dataset tarball (Zenodo record
   3742962, `sources/spinellis-2020/FETCH.tsv` gives its MD5). They are third-party pages and
-  files, about 250 MB. `THIRD-PARTY.md` needs a licence note for each source.
+  files, about 250 MB. `THIRD-PARTY.md` needs a license note for each source.
 - Work through `ANONYMIZATION-TODO.md`: the deferred hits (after the build ends, and at the
   export) and the kind census-name.
 

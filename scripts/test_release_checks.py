@@ -35,11 +35,13 @@ REG_A = "a" * 64
 REG_B = "b" * 64
 
 
-def write_release_file(path, rows=3, footer=None, columns=None):
+def write_release_file(path, rows=3, footer=None, columns=None, old_keys=False):
     vs = vs2.load_ca113e3()
-    cols = columns or (tuple(vs.CREGIT_COLUMNS) + vs2.ORGANISATION_COLUMNS)
+    cols = columns or (tuple(vs.CREGIT_COLUMNS) + vs2.ORGANIZATION_COLUMNS)
     sel = ", ".join(f"CAST(NULL AS {t}) AS \"{n}\"" for n, t in cols)
     kv = {**vs2.WANT_FOOTER, vs2.REGISTRY_KEY: REG_A, **(footer or {})}
+    if old_keys:  # the footer of release 1: organisations_version, organisations_mapping_sha256
+        kv = {vs2.OLD_FOOTER_KEYS.get(k, k): v for k, v in kv.items()}
     kvs = ", ".join(f"{k}: {lit(v)}" for k, v in kv.items())
     path.parent.mkdir(parents=True, exist_ok=True)
     duckdb.sql(f"COPY (SELECT {sel} FROM range({rows})) TO {lit(path)} "
@@ -64,6 +66,17 @@ def test_validate_good_root(tmp_path, capsys):
     root = release_root(tmp_path, projects=("p__one", "p__two", "p__three"), named=("p__three",))
     assert vs2.main([str(root), "--jobs", "2"]) == 0
     assert "OK: 3 files" in capsys.readouterr().out
+
+
+def test_validate_accepts_the_old_footer_keys_of_release_1(tmp_path, capsys):
+    root = release_root(tmp_path)
+    write_release_file(root / "parquet" / "p__one-dataset.parquet", old_keys=True)
+    assert vs2.main([str(root)]) == 0
+    assert "OK: 2 files" in capsys.readouterr().out
+    write_release_file(root / "parquet" / "p__one-dataset.parquet", old_keys=True,
+                       footer={"organizations_version": "v4.8"})
+    assert vs2.main([str(root)]) == 1
+    assert "p__one: footer organizations_version is 'v4.8'" in capsys.readouterr().out
 
 
 def test_validate_refuses_a_schema_1_file(tmp_path, capsys):

@@ -3,7 +3,7 @@
 
 Usage: compare_published.py PRE.parquet PUBLISHED.parquet
 
-The published files went through the release write: the organisation columns and the pseudonyms
+The published files went through the release write: the organization columns and the pseudonyms
 of the identity columns, in one write, with a salt that is deleted by design. So a rebuild cannot
 give the published bytes. The rule of rebuild-one is:
 

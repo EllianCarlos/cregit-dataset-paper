@@ -1,7 +1,7 @@
 # REBUILD-TARGETS.tsv: the run record and the sha256 values of each project file of the release.
 # scripts/rebuild-one.sh reads it (steps 4 and 6).
 #
-# The published files went through the release write: the organisation columns and the
+# The published files went through the release write: the organization columns and the
 # pseudonyms of the identity columns, in one write, with a salt. The salt is deleted by design.
 # So no one can make the published bytes again. The rebuild has three targets:
 #   merge_input_sha256    the file that the run gave (merge_input = run), or the file after the
