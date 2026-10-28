@@ -5,9 +5,11 @@ cost and the time. A value with the word "estimate" is an estimate. "UNKNOWN" me
 no record was found. "copy" in a hash column means the sha256 of the copied file in this
 repository, because the stage did not record a value when it ran.
 
-Dataset v1 has 3,548 projects: 3,497 from run layer 1 and its supplements, 50 from GitLab
-hosts (batch 25) and 1 GitLab near miss (batch 26). `pipeline/SELECTION-STAGES.md` gives
-the rules.
+The selection of dataset v1 (S1-S6) gave 3,548 projects: 3,497 from run layer 1 and its
+supplements, 50 from GitLab hosts (batch 25) and 1 GitLab near miss (batch 26).
+`pipeline/SELECTION-STAGES.md` gives the rules. The merge of the 5,000+ layer (section 5.1)
+gave 3,544 files, and BRL-CAD__brlcad came in a later separate write: the 5,000+ layer of the
+release has 3,545 files. 3 selected projects have no file.
 
 The release (user decision, 2026-10-23) is one dataset of 10,754 project files in two
 commit layers: the 5,000+ layer (5,000 or more commits: the v1 build, 3,544 files, and
@@ -255,7 +257,10 @@ steps:
 1. Find the project in the manifests and the sidecars of `pipeline/s7-run`.
 2. Check the tool sources: the ctp bundle and the cregit bundle of the run in `TOOLS_DIR`
    (default `tools/bundles`) against `tools.lock`, or a ctp clone (`CTP_DIR`) and a built
-   cregit tree (`CREGIT_DIR`). ctp runs each cregit step through devenv at the fixed path
+   cregit tree (`CREGIT_DIR`). An incremental cregit bundle (`bundle_requires` is not "-")
+   also needs the bundle of its base commit: the script clones the base bundle and fetches the
+   bundle of the run, as the run machines did. Check the final sidecar of the layer before the
+   ctp run. ctp runs each cregit step through devenv at the fixed path
    `~/.nix-profile/bin/devenv` (`nix profile add .#devenv`, section 1).
 3. Find the published sha256 in `data/SHA256SUMS`.
 4. Find the run record in `data/REBUILD-TARGETS.tsv`: the run commit (the commit that the run
@@ -273,7 +278,8 @@ steps:
 
 Status on 2026-10-28: steps 1-6 are written. Without the bundles (not published yet), step 2
 prints "not ready". With local tools (`CTP_DIR`, `CREGIT_DIR`, `CTP_PYTHON`) the target
-passes (a) and (b) for libexpat__libexpat (section 6.1). The v1 final sidecar
+passes (a) and (b) for libexpat__libexpat, and (c) passes on its published file (section 6.1).
+The bundle path of step 5 was checked on 2026-10-28 with small test bundles only. The v1 final sidecar
 `project_meta.v1.final.json` (sha256 `4023295a...`) is in `pipeline/s7-run`; the final
 sidecar of the 1,000-4,999 layer is not synced yet (set `MERGE_SIDECAR`).
 
@@ -438,7 +444,7 @@ the end the destination gets `SHA256SUMS`, `results.tsv` and the sidecar.
    organisation tables (`build_organisations.py tables`).
 2. One write of the organisation columns and the pseudonyms over all 10,753 files (one fused
    write; estimate about 8.5-9.5 h on 96 vCPU). It needs the final database, the final commit of
-   `pseudonymize.py` (`tools.lock`, row pseudonymizer OPEN), the salt transfer, and the user's
+   `pseudonymize.py` (`tools.lock`: ctp 4be3800, then the hotfix a4b511b), the salt transfer, and the user's
    yes for the machine. The registry (real identity to pseudonym) stays private.
 3. The release package: copy the files to `parquet/` and the tables to `organisations/`, run
    `build_organisations.py views`, then `fill_release.py manifest`, `checksums` and `check`; fill
@@ -464,7 +470,7 @@ take the `done-pathfix/` key in `inputs.tsv`. This repository has no record that
 |---|---|---|
 | Each Parquet file is larger than 10,000 bytes, has rows, and has the 70-column contract. | `tools/ctp/validate.py` (writes `.validated`), `tools/ctp/validate_schema.py` | runs in the build |
 | Each fetched Parquet file has the sha256 of its `OK` file. | `pipeline/s7-run/fetch_done.sh` | runs after the build |
-| Each published file has the column contract of ctp schema 2 (71 columns: the 67 cregit columns of ca113e3, then the 4 organisation columns), the footer keys of the release write, the registry of `pseudonymization.json` and the rows of `MANIFEST.tsv`. | `make validate DATA_DIR=<release root>` (`scripts/validate_schema2.py`) | works; proof on 2026-10-28 with small test files (one good file passes; a schema 1 file, a wrong row count and a wrong registry fail). The release build checked the same contract on all 10,754 files (`schema.txt` of the build reports: 71 columns, footer schema 2, v4.9, mapping `7b52a5155e6f`, 32,635,174,618 rows, 0 problems). |
+| Each published file has the column contract of ctp schema 2 (71 columns: the 67 cregit columns of ca113e3, then the 4 organisation columns), the footer keys of the release write, the registry of `pseudonymization.json` and the rows of `MANIFEST.tsv`. | `make validate DATA_DIR=<release root>` (`scripts/validate_schema2.py`) | works; proof on 2026-10-28 with small test files (`scripts/test_release_checks.py`, `make test`: one good root passes; a schema 1 file, a wrong row count, a wrong registry, a file with no registry, a file with no row in `MANIFEST.tsv` and a file that cannot be read fail) and on the published file of libexpat__libexpat (OK). The release build checked the same contract on all 10,754 files (`schema.txt` of the build reports: 71 columns, footer schema 2, v4.9, mapping `7b52a5155e6f`, 32,635,174,618 rows, 0 problems). |
 | Each published file has the sha256 of `data/SHA256SUMS`. | `make verify DATA_DIR=<release root>` | ready: `data/SHA256SUMS` has the 10,754 project rows of the release root `dataset-release-1` (its SHA256SUMS: `1293050b0c75...`). The run needs the downloaded files (162.5 GB). |
 
 The 70-column contract of ca113e3 alone refuses every published file: the release write
@@ -487,10 +493,17 @@ So no one can make the published bytes of a file again. `make rebuild-one` uses 
    in every column that the release write does not change. `scripts/compare_published.py`
    checks this. The release write changes only: the 7 identity columns (`author_name`,
    `author_email`, `committer_name`, `committer_email`, `personid`, `person_name`,
-   `person_email`) and the 15 `footer_*` lists (each value becomes a pseudonym, one to one in
-   each column, the lists keep their length); `person_domain` only where the value has an at
-   sign; it removes `firm_raw`, `firm` and `firm_source`, and it adds the 4 organisation
-   columns. `commit_summary` is published as git has it, so it must be equal.
+   `person_email`) and the 15 `footer_*` lists (each value that is not empty becomes a
+   pseudonym, and the lists keep their length); `person_domain` (a value with no at sign
+   becomes `lower(trim(value))`, a value with an at sign follows rule E); it removes
+   `firm_raw`, `firm` and `firm_source`, and it adds the 4 organisation columns.
+   `commit_summary` is published as git has it, so it must be equal.
+   The pseudonym is a salted hash of the value in lower case (`pseudonymize.py`). So the script
+   checks, for each identity column: one value gives one pseudonym; values that are equal in
+   lower case give one pseudonym; values that are not equal in lower case give different
+   pseudonyms (not for the 13 trailer text lists: the write parses each trailer line, so two
+   lines that differ only in spaces can give one pseudonym); no value that is not empty stays
+   the same. NULL and the empty value do not change.
 
 The run commit is the commit that the run checked out (the ledger `pinned_sha`). All runs used
 `--latest`, so it is not column 6 of the S7 manifests (the frame commit). The run reads only
@@ -500,8 +513,11 @@ the entry of the project in its `project_meta` sidecar: the script takes a sidec
 Proof on 2026-10-28 (local machine, libexpat__libexpat, ctp ca113e3, cregit 57551d7, run commit
 ac140c2d, duckdb 1.5.5): the ctp run gave `2dcc77fd...85df8dc` (2,198,503 B, equal to the run
 of 2026-10-13), and the merge step gave `e67bf24e...6f8f8` (1,701,870 B, equal to the input of
-the release write). The published file is `6e034dca...c32c3de`. Step 3 needs the published
-file (1,685,462 B); the check is ready to run when it is downloaded.
+the release write). The published file is `6e034dca...c32c3de` (1,685,462 B). Step 3 on
+2026-10-28 (the merge step again from the run file of 2026-10-13, then
+`scripts/compare_published.py` on the downloaded published file): OK, 195,672 rows in the same
+order, 44 columns equal, 22 identity columns follow the pseudonym rule.
+`scripts/test_release_checks.py` (`make test`) checks both scripts on small files.
 
 Limits of the rule:
 
@@ -511,7 +527,10 @@ Limits of the rule:
   (`run_record = rows-only`).
 - 7,209 files of the 1,000-4,999 layer need the run sidecar `project_meta.x1k.json` and the
   final sidecar of the layer (`project_meta.x1k.final.json`) under `pipeline/`. They are not
-  synced yet. The v1 final sidecar is in `pipeline/s7-run` since 2026-10-28.
+  synced yet, and 475 of these projects are in no manifest under `pipeline/s7-run`. The v1
+  final sidecar is in `pipeline/s7-run` since 2026-10-28.
+- Count on 2026-10-28 (steps 1-4 and the sidecar entry, with the files of this repository):
+  2,680 files, all of the 5,000+ layer, get to the ctp run of step 5.
 - 33 files have no entry sha256 of the run sidecar (`run_meta_entry_sha256` is empty): 32 with no
   unique copy of the run sidecar, and BRL-CAD__brlcad (its run summary comes from its own kit).
 - The effect of other worker, blame-job and memory flags on the bytes is not measured

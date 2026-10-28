@@ -27,7 +27,7 @@ help:
 	@echo "  make validate    check the column contract of the published files"
 	@echo "Repository checks:"
 	@echo "  make stage-hashes check the copied stage outputs against their recorded sha256"
-	@echo "  make test        run the tests of the copied scripts"
+	@echo "  make test        run the tests of the copied scripts and of scripts/"
 	@echo "  make sync-check  check the copied files against sync/sources.tsv and sync/untracked.tsv"
 	@echo "  make flake-check run nix flake check (the tool identity check on x86_64-linux)"
 
@@ -45,7 +45,7 @@ build:
 	@echo "not ready: the full dataset build runs on EC2 for several days (estimate: about US\$$1,600-1,800); the runner scripts of the EC2 machines are in pipeline/s7-run/runner/, one kit for each run, with no single entry point; use make rebuild-one for one project" >&2; exit 3
 
 merge:
-	@echo "not ready: the final merge script is not written yet; pipeline/s7-run/prelim_merge.py is a preliminary view over local run directories" >&2; exit 3
+	@echo "not ready: the layer merge (pipeline/s7-run/final_merge.py) reads the run files from private storage, and the release write needs the salt, which is deleted by design; make rebuild-one does the merge step for one project" >&2; exit 3
 
 validate:
 	@scripts/validate.sh "$(DATA_DIR)"
@@ -57,7 +57,7 @@ stage-hashes:
 # layout and the rendered tokens.
 test:
 	@if [ -z "$${CREGIT_PYTHON:-}" ]; then echo "not ready: CREGIT_PYTHON is not set (run in the dev shell: nix develop)" >&2; exit 3; fi
-	@for d in pipeline/s5-evidence pipeline/s6-labels pipeline/s7-run; do \
+	@for d in pipeline/s5-evidence pipeline/s6-labels pipeline/s7-run scripts; do \
 	  echo "== $$d"; (cd $$d && PYTHONDONTWRITEBYTECODE=1 "$$CREGIT_PYTHON" -I -m pytest -q -p no:cacheprovider --ignore=runner .); \
 	done
 

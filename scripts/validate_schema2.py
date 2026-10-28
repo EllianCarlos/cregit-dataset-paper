@@ -15,8 +15,11 @@ For each file the script checks:
   1. the 71 columns: the names, the types and the order (compare_schema of ca113e3);
   2. the footer keys: ctp_schema_version = 2, organisations_version = v4.9,
      organisations_mapping_sha256 = the mapping of the release, pseudonymization_version = 2,
-     pseudonymization_registry_sha256 = the registry of the file in pseudonymization.json;
-  3. the number of rows = the rows column of MANIFEST.tsv (when MANIFEST.tsv is present).
+     pseudonymization_registry_sha256 = the registry of the file in pseudonymization.json
+     (when pseudonymization.json is present: each file must have a registry there);
+  3. the number of rows = the rows column of MANIFEST.tsv (when MANIFEST.tsv is present: each
+     file must have a row, and each row must have a file).
+A file that the script cannot read is a problem, not a stop.
 It reads only the Parquet metadata. It needs duckdb (the dev shell: CREGIT_PYTHON).
 Exit 0: all files pass. Exit 1: one or more problems (each problem is printed). Exit 2: usage.
 Exit 3: not ready (no project file under DATA_DIR).
@@ -61,11 +64,12 @@ def load_ca113e3():
     return mod
 
 
-def registries(root: Path) -> tuple[str | None, dict[str, str]]:
-    """(the registry of every file that no row names, {project: registry}) of pseudonymization.json."""
+def registries(root: Path) -> tuple[bool, str | None, dict[str, str]]:
+    """(the file is present, the registry of every file that no row names, {project: registry})
+    of pseudonymization.json."""
     path = root / "pseudonymization.json"
     if not path.is_file():
-        return None, {}
+        return False, None, {}
     default, named = None, {}
     for row in json.loads(path.read_text(encoding="utf-8")).get("registries", []):
         projects = row.get("projects")
@@ -73,7 +77,7 @@ def registries(root: Path) -> tuple[str | None, dict[str, str]]:
             named.update({p: row["registry_sha256"] for p in projects})
         else:
             default = row["registry_sha256"]
-    return default, named
+    return True, default, named
 
 
 def manifest_rows(root: Path) -> dict[str, int]:
@@ -89,6 +93,7 @@ def check_file(vs, contract, path: Path, want_registry: str | None, want_rows: i
 
     problems = []
     name = path.name[: -len(SUFFIX)]
+    rows = 0
     con = duckdb.connect()
     try:
         actual = [(r[0], r[1]) for r in con.execute(
@@ -106,6 +111,8 @@ def check_file(vs, contract, path: Path, want_registry: str | None, want_rows: i
                            [str(path)]).fetchone()[0]
         if want_rows is not None and rows != want_rows:
             problems.append(f"{name}: {rows} rows, MANIFEST.tsv has {want_rows}")
+    except duckdb.Error as exc:
+        problems.append(f"{name}: cannot read the file ({type(exc).__name__})")
     finally:
         con.close()
     return problems, int(rows or 0)
@@ -124,7 +131,7 @@ def main(argv: list[str] | None = None) -> int:
     vs = load_ca113e3()
     contract = tuple(vs.CREGIT_COLUMNS) + ORGANISATION_COLUMNS
     assert len(contract) == 71, len(contract)
-    default_registry, named_registry = registries(root)
+    has_registry, default_registry, named_registry = registries(root)
     rows_of = manifest_rows(root)
     problems: list[str] = []
     total = 0
@@ -132,7 +139,12 @@ def main(argv: list[str] | None = None) -> int:
     def one(path: Path):
         name = path.name[: -len(SUFFIX)]
         reg = named_registry.get(name, default_registry)
-        return check_file(vs, contract, path, reg, rows_of.get(name) if rows_of else None)
+        found, rows = check_file(vs, contract, path, reg, rows_of.get(name) if rows_of else None)
+        if has_registry and reg is None:
+            found.append(f"{name}: pseudonymization.json gives no registry for this file")
+        if rows_of and name not in rows_of:
+            found.append(f"{name}: a file with no row in MANIFEST.tsv")
+        return found, rows
 
     with ThreadPoolExecutor(max_workers=max(1, args.jobs)) as pool:
         for found, rows in pool.map(one, files):
@@ -143,7 +155,7 @@ def main(argv: list[str] | None = None) -> int:
         problems += [f"{p}: in MANIFEST.tsv, no file" for p in missing]
     for p in problems:
         print(p)
-    checks = "columns, footer" + (", registry" if default_registry or named_registry else "") + (
+    checks = "columns, footer" + (", registry" if has_registry else "") + (
         ", rows of MANIFEST.tsv" if rows_of else "")
     if problems:
         print(f"FAIL: {len(problems)} problems in {len(files)} files ({checks})")

@@ -30,7 +30,8 @@
 # Steps:
 #   1. Find the project in the S7 manifests and in the project_meta sidecars.
 #   2. Check the tool sources: the ctp and cregit bundles of the run (sha256 and size of
-#      tools.lock), or CTP_DIR and CREGIT_DIR.
+#      tools.lock; an incremental cregit bundle also needs the bundle of its base commit,
+#      column bundle_requires), or CTP_DIR and CREGIT_DIR. Check the final sidecar of the layer.
 #   3. Find the published sha256 of the project file in data/SHA256SUMS.
 #   4. Find the run record of the published file in data/REBUILD-TARGETS.tsv: the run commit
 #      (the commit that the run checked out; the runs used --latest, so this is not column 6 of
@@ -48,6 +49,8 @@ s7="$root/pipeline/s7-run"
 notready() { echo "not ready: $*" >&2; exit 3; }
 [ -n "$project" ] || { echo "usage: make rebuild-one PROJECT=<owner__repo>" >&2; exit 2; }
 work=${WORK_DIR:-$root/work/rebuild-$project}
+# An absolute path: step 5 runs ctp in "$work/ctp" with paths under "$work".
+mkdir -p "$work" && work=$(cd "$work" && pwd)
 
 # 1. Manifest rows (the run manifests, not the .order files) and the sidecar.
 echo "== 1. inputs of $project"
@@ -94,10 +97,29 @@ check_bundle() {  # tool commit -> path of the checked bundle
   [ "$got" = "$bsha" ] && [ "$size" = "$bbytes" ] || notready "$tools/$f has sha256 $got and $size B, tools.lock gives $bsha and $bbytes B"
   echo "OK $f" >&2; echo "$tools/$f"
 }
-ctp_src=${CTP_DIR:-}; cregit_src=${CREGIT_DIR:-}
+ctp_src=${CTP_DIR:-}; cregit_src=${CREGIT_DIR:-}; cregit_base=""
 [ -n "$ctp_src" ] || ctp_src=$(check_bundle ctp "$ctp_commit")
-if [ -z "$cregit_src" ]; then cregit_bundle=$(check_bundle cregit "$cregit_commit"); fi
+if [ -z "$cregit_src" ]; then
+  cregit_bundle=$(check_bundle cregit "$cregit_commit")
+  # An incremental bundle (bundle_requires, column 7) needs its base commit first, as on the
+  # run machines: clone the base bundle, then fetch the bundle of the run.
+  req=$(lock cregit "$cregit_commit" | cut -f7)
+  case "$req" in
+    -|"") ;;
+    *) cregit_base=$(check_bundle cregit "$req") ;;
+  esac
+fi
 [ -x "$HOME/.nix-profile/bin/devenv" ] || notready "ctp runs each cregit step with $HOME/.nix-profile/bin/devenv; install it: nix profile add .#devenv"
+
+# The final sidecar of the layer (step 6). Check it before the ctp run, which can take hours.
+case "$layer" in
+  v1) ms="$s7/project_meta.v1.final.json"; ms_want=4023295abc589a5eb0f4124e0aa76000402bd2492755e62f50af03121f661946 ;;
+  x1k) ms="$root/pipeline/x1k/project_meta.x1k.final.json"; ms_want=1520c5f4d8909b3625c73bdea3cc08f23fced0a77f3722ec0809acd80de96f35 ;;
+  *) notready "no merge sidecar for layer $layer" ;;
+esac
+ms=${MERGE_SIDECAR:-$ms}
+[ -f "$ms" ] || notready "the final sidecar of layer $layer is not in this repository ($ms); set MERGE_SIDECAR"
+[ "$(sha256sum < "$ms" | cut -d' ' -f1)" = "$ms_want" ] || notready "$ms does not have the sha256 of the final sidecar of layer $layer ($ms_want)"
 
 echo "== 5. run ctp in $work"
 mkdir -p "$work"
@@ -107,9 +129,18 @@ git -C "$work/ctp" checkout -q "$ctp_commit"
 [ "$(git -C "$work/ctp" rev-parse HEAD)" = "$ctp_commit" ] || { echo "FAIL: ctp is not at $ctp_commit" >&2; exit 1; }
 if [ -n "$cregit_src" ]; then
   cp -a "$cregit_src" "$work/cregit"
+  git -C "$work/cregit" rev-parse -q --verify HEAD > /dev/null ||
+    notready "CREGIT_DIR is not a git tree (the script checks its commit)"
 else
-  git clone -q "$cregit_bundle" "$work/cregit"
-  git -C "$work/cregit" checkout -q "$cregit_commit"
+  if [ -n "$cregit_base" ]; then
+    git clone -q "$cregit_base" "$work/cregit"
+    git -C "$work/cregit" fetch -q "$cregit_bundle" '+refs/heads/*:refs/remotes/fed-bundle/*'
+  else
+    git clone -q "$cregit_bundle" "$work/cregit"
+  fi
+  git -C "$work/cregit" cat-file -e "$cregit_commit^{commit}" 2> /dev/null ||
+    notready "the cregit bundles of tools.lock do not give the commit $cregit_commit"
+  git -C "$work/cregit" checkout -q --detach "$cregit_commit"
   # The build of the run machines (pipeline/s7-run/runner/ec2-batch2/scripts/03-build.sh).
   (cd "$work/cregit" && "$HOME/.nix-profile/bin/devenv" shell -- bash -c \
     './run_pipeline_process.sh --build-only && make -C tokenize/srcMLtoken') > "$work/cregit-build.log" 2>&1 ||
@@ -117,7 +148,7 @@ else
 fi
 [ "$(git -C "$work/cregit" rev-parse HEAD)" = "$cregit_commit" ] || { echo "FAIL: cregit is not at $cregit_commit" >&2; exit 1; }
 jar="$work/cregit/blobExec/target/scala-2.13/blobExec-0.1.0-assembly.jar"
-jar_want=$(lock blobexec-jar blobExec-0.1.0-assembly.jar | grep -o -E 'jar sha256 [0-9a-f]{64}' | cut -d' ' -f3)
+jar_want=$(lock blobexec-jar blobExec-0.1.0-assembly.jar | grep -o -E 'jar sha256 [0-9a-f]{64}' | cut -d' ' -f3 || true)
 [ -f "$jar" ] || notready "the cregit tree has no blobExec jar"
 jar_got=$(sha256sum < "$jar" | cut -d' ' -f1)
 echo "blobExec jar: $jar_got ($([ "$jar_got" = "$jar_want" ] && echo "the value of tools.lock" || echo "NOT the value of tools.lock: $jar_want"))"
@@ -162,14 +193,6 @@ echo "== 6. compare"
 fail=0
 got=$(sha256sum < "$out" | cut -d' ' -f1)
 if [ "$got" = "$merge_sha" ]; then echo "OK   a. run output $got"; else echo "FAIL a. run output $got, want $merge_sha"; fail=1; fi
-case "$layer" in
-  v1) ms="$s7/project_meta.v1.final.json"; ms_want=4023295abc589a5eb0f4124e0aa76000402bd2492755e62f50af03121f661946 ;;
-  x1k) ms="$root/pipeline/x1k/project_meta.x1k.final.json"; ms_want=1520c5f4d8909b3625c73bdea3cc08f23fced0a77f3722ec0809acd80de96f35 ;;
-  *) notready "no merge sidecar for layer $layer" ;;
-esac
-ms=${MERGE_SIDECAR:-$ms}
-[ -f "$ms" ] || notready "the final sidecar of layer $layer is not in this repository ($ms); set MERGE_SIDECAR"
-[ "$(sha256sum < "$ms" | cut -d' ' -f1)" = "$ms_want" ] || notready "$ms does not have the sha256 of the final sidecar of layer $layer ($ms_want)"
 merged="$work/$project.merged.parquet"
 PYTHONDONTWRITEBYTECODE=1 "$py" -I "$s7/rewrite_meta_columns.py" "$out" --sidecar "$ms" --key "$project" \
   --out "$merged" --encoding v1 --threads 2 --memory-limit 4GB > "$work/merge.log" 2>&1 ||

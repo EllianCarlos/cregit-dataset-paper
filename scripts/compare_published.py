@@ -16,14 +16,20 @@ This script checks part 2. The release write changes only these columns:
   - the identity columns: author_name, author_email, committer_name, committer_email, personid,
     person_name, person_email (each value becomes a pseudonym), and the 15 footer_* lists (each
     element becomes a pseudonym; the list keeps its length);
-  - person_domain: only a value with an at sign can change (rule E: the first valid domain after
-    an at sign, else empty);
+  - person_domain: a value with no at sign becomes lower(trim(value)); a value with an at sign
+    follows rule E (the first valid domain after an at sign, else empty);
   - firm_raw, firm, firm_source: removed (ctp schema 2);
   - firm_based_on_namespace, firm_based_on_domain, project_enterprise_driven,
     project_enterprise_basis: added (ctp schema 2).
-For the identity columns the script checks that the change is one to one in each column: one
-value before gives one pseudonym, and one pseudonym comes from one value. commit_summary is
-published as git has it, so it is in the equal set.
+The pseudonym of a value is a salted hash of the value in lower case (pseudonymize.py of the
+release), and NULL and the empty value do not change. So for each identity column the script
+checks: one value gives one pseudonym; values that are equal in lower case give one pseudonym;
+values that are not equal in lower case give different pseudonyms (for the 7 identity columns
+and for footer_personids and footer_person_names); no value that is not empty stays the same.
+The 13 trailer text lists keep only the first two checks and the last one: the write parses
+each trailer line, so two lines that differ only in spaces or in the text after the address
+can give one pseudonym. NULL counts as a value. commit_summary is published as git has it, so
+it is in the equal set.
 
 The script prints counts and column names only, never a value. It needs duckdb.
 Exit 0: the rule holds. Exit 1: a check failed. Exit 2: usage.
@@ -40,6 +46,9 @@ LISTS = ("footer_signed_off_by", "footer_co_authored_by", "footer_co_developed_b
          "footer_suggested_by", "footer_based_on_patch_by", "footer_helped_by",
          "footer_mentored_by", "footer_assisted_by", "footer_thanks_to", "footer_personids",
          "footer_person_names")
+# The lists whose elements get the pseudonym of a name or a person id (a hash of the lower-case
+# element). The other lists are the trailer text lists.
+LIST_OF_NAMES = ("footer_personids", "footer_person_names")
 PARTIAL = ("person_domain",)
 REMOVED = ("firm_raw", "firm", "firm_source")
 ADDED = ("firm_based_on_namespace", "firm_based_on_domain", "project_enterprise_driven",
@@ -49,6 +58,15 @@ KEY = ("file_path", "token_index")
 
 def q(name: str) -> str:
     return '"' + name.replace('"', '""') + '"'
+
+
+def lit(text: str) -> str:
+    return "'" + text.replace("'", "''") + "'"
+
+
+def distinct(expr: str, src: str = "j") -> str:
+    """SQL: the number of distinct values of expr, NULL included (count(DISTINCT) skips NULL)."""
+    return f"(SELECT count(*) FROM (SELECT DISTINCT {expr} FROM {src}))"
 
 
 def main(argv: list[str]) -> int:
@@ -84,8 +102,8 @@ def main(argv: list[str]) -> int:
         fail("the row counts are not equal")
         return 1
 
-    con.execute(f"CREATE TEMP VIEW a AS SELECT * FROM read_parquet('{pre}')")
-    con.execute(f"CREATE TEMP VIEW b AS SELECT * FROM read_parquet('{pub}')")
+    con.execute(f"CREATE TEMP VIEW a AS SELECT * FROM read_parquet({lit(pre)})")
+    con.execute(f"CREATE TEMP VIEW b AS SELECT * FROM read_parquet({lit(pub)})")
     common = [c for c in a_cols if c in b_cols]
     sel = ", ".join([f"a.{q(c)} AS {q('a_' + c)}" for c in common] +
                     [f"b.{q(c)} AS {q('b_' + c)}" for c in common] +
@@ -114,26 +132,35 @@ def main(argv: list[str]) -> int:
         a, b = q("a_" + c), q("b_" + c)
         no_at, with_at, changed_n = con.execute(
             f"SELECT count(*) FILTER (WHERE NOT coalesce(contains({a}, '{AT}'), false) "
-            f"AND {a} IS DISTINCT FROM {b}), count(*) FILTER (WHERE contains({a}, '{AT}')), "
+            f"AND lower(trim({a})) IS DISTINCT FROM {b}), "
+            f"count(*) FILTER (WHERE contains({a}, '{AT}')), "
             f"count(*) FILTER (WHERE contains({a}, '{AT}') AND {a} IS DISTINCT FROM {b}) FROM j"
         ).fetchone()
-        print(f"domain   {c:<26} rows that differ with no at sign: {no_at}; "
+        print(f"domain   {c:<26} rows with no at sign that are not lower(trim(value)): {no_at}; "
               f"rows with an at sign: {with_at} ({changed_n} changed)")
         if no_at:
-            fail(f"{c}: {no_at} rows with no at sign differ")
+            fail(f"{c}: {no_at} rows with no at sign are not lower(trim(value))")
+
+    def mapping(c: str, a: str, b: str, src: str, by_lower: bool) -> None:
+        """The checks of one identity column: a and b are the SQL values before and after."""
+        n_from, n_to, pairs, n_low, pairs_low, same = con.execute(
+            f"SELECT {distinct(a, src)}, {distinct(b, src)}, {distinct(f'{a}, {b}', src)}, "
+            f"{distinct(f'lower({a})', src)}, {distinct(f'lower({a}), {b}', src)}, "
+            f"(SELECT count(*) FROM {src} WHERE {a} = {b} AND {a} <> '')").fetchone()
+        print(f"pseudo   {c:<26} values {n_from}, lower-case values {n_low}, pseudonyms {n_to}, "
+              f"rows with an unchanged value that is not empty: {same}")
+        if pairs != n_from:
+            fail(f"{c}: one value gives more than one pseudonym")
+        if pairs_low != n_low:
+            fail(f"{c}: values that are equal in lower case give more than one pseudonym")
+        if by_lower and n_to != n_low:
+            fail(f"{c}: values that are not equal in lower case give one pseudonym")
+        if same:
+            fail(f"{c}: {same} rows keep a value that is not empty")
 
     for c in SCALAR:
-        if c not in common:
-            continue
-        a, b = q("a_" + c), q("b_" + c)
-        pairs, n_from, n_to, same = con.execute(
-            f"SELECT (SELECT count(*) FROM (SELECT DISTINCT {a}, {b} FROM j)), "
-            f"count(DISTINCT {a}), count(DISTINCT {b}), "
-            f"count(*) FILTER (WHERE {a} = {b} AND {a} <> '') FROM j").fetchone()
-        print(f"pseudo   {c:<26} values {n_from}, pseudonyms {n_to}, pairs {pairs}, "
-              f"rows with an unchanged value that is not empty: {same}")
-        if not (pairs == n_from == n_to):
-            fail(f"{c}: the change is not one to one")
+        if c in common:
+            mapping(c, q("a_" + c), q("b_" + c), "j", True)
 
     for c in LISTS:
         if c not in common:
@@ -141,17 +168,12 @@ def main(argv: list[str]) -> int:
         a, b = q("a_" + c), q("b_" + c)
         bad_len = con.execute(
             f"SELECT count(*) FROM j WHERE len({a}) IS DISTINCT FROM len({b})").fetchone()[0]
-        pairs, n_from, n_to = con.execute(
-            f"WITH e AS (SELECT unnest({a}) AS u, unnest({b}) AS v FROM j "
-            f"WHERE len({a}) = len({b}) AND len({a}) > 0) "
-            f"SELECT (SELECT count(*) FROM (SELECT DISTINCT u, v FROM e)), "
-            f"count(DISTINCT u), count(DISTINCT v) FROM e").fetchone()
-        print(f"pseudo   {c:<26} rows with another list length: {bad_len}; elements {n_from}, "
-              f"pseudonyms {n_to}, pairs {pairs}")
+        print(f"pseudo   {c:<26} rows with another list length: {bad_len}")
         if bad_len:
             fail(f"{c}: {bad_len} rows have another list length")
-        if not (pairs == n_from == n_to):
-            fail(f"{c}: the change is not one to one")
+        con.execute(f"CREATE OR REPLACE TEMP TABLE e AS SELECT unnest({a}) AS u, unnest({b}) AS v "
+                    f"FROM j WHERE len({a}) = len({b}) AND len({a}) > 0")
+        mapping(c, "u", "v", "e", c in LIST_OF_NAMES)
 
     for c in ADDED:
         if c in b_cols:
@@ -162,7 +184,7 @@ def main(argv: list[str]) -> int:
         return 1
     print(f"OK: the published file has the {n_b} rows of the rebuilt file, in the same order; "
           f"{len(equal_cols)} columns are equal, {len([c for c in SCALAR + LISTS if c in common])} "
-          f"identity columns change one to one, person_domain changes only with an at sign")
+          f"identity columns follow the pseudonym rule, person_domain follows its rule")
     return 0
 
 

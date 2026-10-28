@@ -7,10 +7,12 @@ build the dataset again for one project with the same tools.
 
 ## The dataset
 
-Dataset v1 has one row for each token of the source code of 3,548 software
-projects. For each token, a row gives the author of the commit that last
-changed the token (the cregit token blame), and metadata of the commit and of
-the project.
+Dataset v1 has one row for each token of the source code of software projects.
+The selection (S1-S6) gave 3,548 projects (the keys of the final v1 sidecar). The
+build and the merge (S7) gave 3,544 files, and BRL-CAD came in a later separate
+write: the 5,000+ layer of the release has 3,545 files. 3 selected projects have
+no file. For each token, a row gives the author of the commit that last changed
+the token (the cregit token blame), and metadata of the commit and of the project.
 
 The projects are active, licensed C, C++, Java and Rust projects with 5,000 or
 more commits at the snapshot commit. The sources are GitHub, GitLab hosts,
