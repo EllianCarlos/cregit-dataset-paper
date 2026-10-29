@@ -9,6 +9,10 @@
 #
 # Methodology documents.
 study	include	^(SELECTION-STAGES|S3-MEASUREMENT|SOURCES)\.md$
+# The pilot run of September 2026: a frozen record of the ctp files of the pilot (s0-pilot/README.md).
+study	include	^s0-pilot/
+# The work note of the second machine names a host. It stays in the study repository.
+study	exclude	^s0-pilot/runner/gcj-reblame/handoff\.md$
 # S1: sources and rosters (the scripts, the lists, the method notes).
 study	include	^s1-search/(search\.py|segments\.jsonl|repos\.jsonl\.(xz|sha256))$
 study	include	^rosters/[^/]+\.(csv|md)$

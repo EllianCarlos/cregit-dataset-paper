@@ -1,0 +1,16 @@
+# Corpus manifest (TSV): name	url	category	file_filter	size_class
+# generated 2026-09-14 by select_corpus.py sample — 200 projects drawn, target 200, seed 20261110
+# Stratified by (stratum, language, size_class): a floor of 2 per cell, then largest-remainder proportional.
+zephyrproject-rtos__zephyr	https://github.com/zephyrproject-rtos/zephyr.git	community	(?i)\.(c|c\+\+|cc|cp|cpp|cxx|h|h\+\+|hh|hpp|hxx|java|rs|tcc)$	L
+ceph__ceph	https://github.com/ceph/ceph.git	foundation	(?i)\.(c|c\+\+|cc|cp|cpp|cxx|h|h\+\+|hh|hpp|hxx|java|rs|tcc)$	L
+wine-mirror__wine	https://github.com/wine-mirror/wine.git	community	(?i)\.(c|c\+\+|cc|cp|cpp|cxx|h|h\+\+|hh|hpp|hxx|java|rs|tcc)$	L
+mariadb__server	https://github.com/MariaDB/server.git	company-owned	(?i)\.(c|c\+\+|cc|cp|cpp|cxx|h|h\+\+|hh|hpp|hxx|java|rs|tcc)$	L
+blender__blender	https://github.com/blender/blender.git	community	(?i)\.(c|c\+\+|cc|cp|cpp|cxx|h|h\+\+|hh|hpp|hxx|java|rs|tcc)$	L
+percona__percona-xtrabackup	https://github.com/percona/percona-xtrabackup.git	company-owned	(?i)\.(c|c\+\+|cc|cp|cpp|cxx|h|h\+\+|hh|hpp|hxx|java|rs|tcc)$	L
+microsoft__wsl2-linux-kernel	https://github.com/microsoft/WSL2-Linux-Kernel.git	company-owned	(?i)\.(c|c\+\+|cc|cp|cpp|cxx|h|h\+\+|hh|hpp|hxx|java|rs|tcc)$	L
+texasinstruments__ti-linux-kernel	https://github.com/TexasInstruments/ti-linux-kernel.git	company-owned	(?i)\.(c|c\+\+|cc|cp|cpp|cxx|h|h\+\+|hh|hpp|hxx|java|rs|tcc)$	L
+gcc-mirror__gcc	https://github.com/gcc-mirror/gcc.git	community	(?i)\.(c|c\+\+|cc|cp|cpp|cxx|h|h\+\+|hh|hpp|hxx|java|rs|tcc)$	L
+rust-lang__rust	https://github.com/rust-lang/rust.git	foundation	(?i)\.(c|c\+\+|cc|cp|cpp|cxx|h|h\+\+|hh|hpp|hxx|java|rs|tcc)$	L
+jetbrains__intellij-community	https://github.com/JetBrains/intellij-community.git	company-owned	(?i)\.(c|c\+\+|cc|cp|cpp|cxx|h|h\+\+|hh|hpp|hxx|java|rs|tcc)$	L
+sap__sapmachine	https://github.com/SAP/SapMachine.git	company-owned	(?i)\.(c|c\+\+|cc|cp|cpp|cxx|h|h\+\+|hh|hpp|hxx|java|rs|tcc)$	L
+tencent__tencentkona-21	https://github.com/Tencent/TencentKona-21.git	company-owned	(?i)\.(c|c\+\+|cc|cp|cpp|cxx|h|h\+\+|hh|hpp|hxx|java|rs|tcc)$	M

@@ -24,11 +24,11 @@ So fix them in the source repository, commit there, and sync again.
 | employer | 0 | 0 |
 | ec2-id | 0 | 0 |
 | source-org | 0 | 0 |
-| census-name | 526 | 12891 occurrences |
+| census-name | 528 | 12906 occurrences |
 
 The table counts the open hits. These hits are not in the table:
 
-- Allowed (sync/anonymity-allow.tsv, checked by hand, not identifying): 17 lines.
+- Allowed (sync/anonymity-allow.tsv, checked by hand, not identifying): 19 lines.
 - Deferred (sync/anonymity-deferred.tsv): 7 lines. The section "Deferred" lists them.
 
 Kind census-name: identifiers and words that contain "census". The repository says
@@ -284,7 +284,11 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `-census-fed`: 2, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-feeder`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-1.sh`
 - `../../../../cregit-workspace/census-2026-10`: 1, `pipeline/s7-run/census.cfg`
 - `.orig-4census`: 2, `pipeline/s7-run/runner/ec2-batch6/README.md`, `pipeline/s7-run/runner/ec2-batch6/scripts/gen-L2.sh`
+- `/.../mojibake-census`: 2, `LIMITATIONS.md`
+- `/.../sep-25-presentation/mojibake-census`: 1, `LIMITATIONS.md`
 - `//github.com/GoogleCloudPlatform/opencensus-jetty-demo.git`: 3, `pipeline/s7-run/frame.layer5.csv`, `pipeline/s7-run/manifest.layer5.tsv`, `pipeline/s7-run/project_meta.layer5.json`
+- `//github.com/censusreporter/censusreporter.git`: 1, `pipeline/s0-pilot/candidates.csv`
+- `//github.com/uscensusbureau`: 1, `pipeline/s0-pilot/candidates.csv`
 - `/Projects/cregit-workspace/census-cloud-fixed`: 932, `pipeline/s7-run/runner/dataset-v1/upload.tsv`
 - `/Projects/cregit-workspace/census-cloud`: 18, `pipeline/s7-run/runner/dataset-pathfix/stage/inputs/seeds.tsv`
 - `/Projects/cregit-workspace/census-local-a`: 19, `pipeline/s7-run/runner/dataset-v1/upload.tsv`
@@ -1335,7 +1339,7 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `census-batch6L.service`: 74, 40 files
 - `census-batch6L`: 35, 19 files
 - `census-batchNL-wait`: 3, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-derive`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`, `pipeline/s7-run/split_batchN.py`
-- `census-cloud-fixed`: 13, `pipeline/s7-run/README.md`, `pipeline/s7-run/footer_fix_again.sh`, `pipeline/s7-run/prelim_merge.py`, `pipeline/s7-run/runner/dataset-v1/build_inputs.py`
+- `census-cloud-fixed`: 14, 5 files
 - `census-cloud`: 8, `pipeline/s7-run/footer_fix_batches.py`, `pipeline/s7-run/prelim_merge.py`, `pipeline/s7-run/runner/dataset-v1/build_inputs.py`
 - `census-fed-`: 5, `pipeline/s7-run/runner/ec2-batch23/scripts/p3-spot-probe.sh`, `pipeline/s7-run/runner/ec2-batch6/README.md`, `pipeline/s7-run/runner/ec2-batch6/scripts/remote-spot/census-fed-common`, `pipeline/s7-run/runner/ec2-batch6/scripts/s6-files-0.sh`
 - `census-fed-check.`: 3, `pipeline/s7-run/local-b/gate.sh`, `pipeline/s7-run/local-c/gate.sh`, `pipeline/s7-run/local-d/gate.sh`
@@ -1402,8 +1406,9 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `census_funnel`: 1, `sync/rules.tsv`
 - `census_ready.root`: 1, `pipeline/s7-run/runner/dataset-x1k/stage/ctp-no-firm.patch`
 - `census_ready`: 3, `pipeline/s7-run/runner/dataset-x1k/stage/ctp-no-firm.patch`
-- `census`: 1613, 371 files
+- `census`: 1619, 372 files
 - `censuses`: 77, 59 files
+- `censusreporter`: 3, `pipeline/s0-pilot/candidates.csv`
 - `cmd_census`: 2, `pipeline/s7-run/runner/dataset-x1k/stage/ctp-no-firm.patch`
 - `cregit-census-batch3-spot`: 27, 14 files
 - `cregit-census-batch3`: 10, 5 files

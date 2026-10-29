@@ -308,7 +308,8 @@ These facts limit the targets:
   the tokenizer step (600 s of wall time for one blob) can also depend on the load.
 - The tokenizer cache key does not include the language. With parallel workers, the same bytes
   at `x.h` and `x.cpp` can get the C or the C++ parse, so a rerun is not byte-identical for
-  such files (about 0.0125% of the tokenized blobs in the pilot run; dataset v1 not measured).
+  such files (about 0.0125% of the tokenized blobs in the pilot run, `pipeline/s0-pilot/`;
+  dataset v1 not measured).
 - Some inputs are not pinned. Step 10 of cregit runs `INSTALL sqlite_scanner`, so DuckDB
   downloads the extension from the network (the build on the run machines is not recorded; the
   local machine has `f79b1db` for DuckDB 1.5.5). The tools do not set `GIT_CONFIG_NOSYSTEM` or

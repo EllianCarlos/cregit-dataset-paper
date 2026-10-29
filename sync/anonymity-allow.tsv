@@ -14,3 +14,4 @@ ec2-id	pipeline/s7-run/runner/dataset-x1k/x2/test/T1-x2-inputs.sh	i-0[0abcd]{15,
 ec2-id	pipeline/s7-run/runner/dataset-x1k/rust-split/test/t_e1s1.py	i-0[0abcd]{15,16}[12]?([^0-9a-f]|$)	a fake EC2 id of a test (no real machine)
 ec2-id	pipeline/s7-run/runner/dataset-x1k/java-split/test/t_e1s1.py	i-0[0abcd]{15,16}[12]?([^0-9a-f]|$)	a fake EC2 id of a test (no real machine)
 ec2-id	pipeline/s7-run/runner/dataset-x1k/java-split/test/t_l1.py	i-0[0abcd]{15,16}[12]?([^0-9a-f]|$)	a fake EC2 id of a test (no real machine)
+employer	pipeline/s0-pilot/candidates.csv	^(cncf-landscape|cohort),community,F1_pool:[a-z-]+,,2026-09-14,m[a-z]+js,(m[a-z]+|pandora),	project data: a GitHub organization and two repository names in the old pool
