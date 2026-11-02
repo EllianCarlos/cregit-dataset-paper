@@ -14,7 +14,7 @@ These items do not need the end of the build. They do not touch a running job.
 | A3 | EC2 ctp venv packages not recorded | Run a read-only `pip freeze` on one spot through SSM. Record it in `tools/ctp/`. | The venv row in `tools.lock` lists all packages. |
 | A4 | The flake has no devenv command and no cregit jars | Pin the jars as fixed-output files by sha256 (from the bundles). Add the devenv command to the dev shell. Do not change ctp. | `nix flake check` passes. `nix develop` gives every tool that `rebuild-one` calls. |
 | A5 | Anonymization hits in the source repositories | Fix them at the source: home paths, AWS profile, bucket, EC2 ids, the study repository name and the cachix cache name. Check the 9 employer hits by hand. Then sync and scan again. | The scan shows 0 hits, except kind census-name. |
-| A6 | LIMITATIONS items | Add the in-place `formatBlame.pl` swap of 2026-10-11 (about 26 running copies), the plain-blame files, the exclusions, pyxel, the later GitLab snapshot, the GitLab rule differences and the cregit versions. | The list is in the ctp `docs/LIMITATIONS.md`, and it is copied here. |
+| A6 | LIMITATIONS items | Add the in-place `formatBlame.pl` swap of 2026-10-11 (about 26 running copies), the plain-blame files, the exclusions, pyxel, the later GitLab snapshot, the GitLab rule differences and the cregit versions. | The list is in `LIMITATIONS.md` of this repository. It moved here whole from the ctp `docs/LIMITATIONS.md` on 2026-10-29 (ctp `17f1766`). |
 
 ## Phase B: when the dataset build ends
 
