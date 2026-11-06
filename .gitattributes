@@ -1,2 +1,7 @@
 # Keep the exact bytes of every copied file. Git must not change line ends.
 * -text
+
+# The sample data files go to Git LFS (user decision 2026-11-05). LFS also keeps the exact bytes.
+sample/data/parquet/*.parquet filter=lfs diff=lfs merge=lfs -text
+sample/data/organizations/*.parquet filter=lfs diff=lfs merge=lfs -text
+sample/data/organizations/*.duckdb filter=lfs diff=lfs merge=lfs -text
