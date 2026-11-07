@@ -133,3 +133,14 @@ State:
 | `data/SHA256SUMS`, `data/REBUILD-TARGETS.tsv` | Open: they need the final `SHA256SUMS` of pass 3. |
 | `make validate` for schema 3 | Open: `tools/fill_release.py check` of the root checks schema 3 now. |
 | DOI, the anonymous export, the independent check | Open. |
+
+## Status of the release: TOM 1.0.0 is published (2026-11-07, evening)
+
+| Item | State |
+|---|---|
+| Pass 3 | Done. Root `SHA256SUMS` `820f6e8233d8...`; Hugging Face revision `bc7543affd2e` (the DataCite version of the DOI). |
+| Pass 4 (the DOI pass) | Done. Documents only: DOI 10.57967/hf/11505, the date, 3 documents removed (limitations, provenance, release notes: now in the paper). Final revision `e81b554deb9b`; final `SHA256SUMS` `b7141d088461...` (8,475 rows). |
+| `data/SHA256SUMS`, `data/REBUILD-TARGETS.tsv` | Done: the final root (8,475 rows) and the 8,449 projects of TOM. |
+| `make validate` for schema 3 | Done: it runs `fill_release.py check`; `SCHEMA=2` keeps the check of the source root. |
+| Version 1.1.0 | Open: the company pass after 2026-11-10. |
+| Open | The anonymous export, the independent check, a push of the commits of the passes and of the direct write. |

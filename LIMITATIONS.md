@@ -74,10 +74,12 @@ not run. The fallback depends on the load of the machine (REPRODUCE.md, section 
 that is not pinned). All other rows agree. libexpat agrees in every column. Detect:
 `steps/release-passes/schema3-proof/`.
 
-**This repository does not have the checksums of the final root yet.** Pass 3 had not ended when
-the TOM files of this repository were written. `data/SHA256SUMS` and `data/REBUILD-TARGETS.tsv`
-hold the rows of the source root. `make verify` on the root of TOM fails until they are updated.
-`make validate` checks ctp schema 2; `tools/fill_release.py check` of the root checks schema 3.
+**`rebuild-one` reaches TOM only through the source root.** The release passes ran on the
+files after the release write, so the rebuild target of a file of TOM is a column rule, not a
+sha256: `scripts/compare_published.py` allows the 18 dropped columns, the rename and the fills of
+pass 2. `data/REBUILD-TARGETS.tsv` gives both the sha256 in the source root and the sha256 in
+TOM. The release has no file of the limitations or the provenance since the DOI pass: the paper,
+this file and `REPRODUCE.md` give them.
 
 ---
 

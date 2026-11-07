@@ -21,6 +21,12 @@ This script checks part 2. The release write changes only these columns:
   - firm_raw, firm, firm_source: removed (ctp schema 2);
   - firm_based_on_namespace, firm_based_on_domain, project_enterprise_driven,
     project_enterprise_basis: added (ctp schema 2).
+The published file of TOM 1.0.0 (ctp schema 3, 53 columns; the column has `audit_frame_file`)
+also went through the release passes (steps/release-passes/). Then the script also allows:
+  - the 18 columns that the passes dropped (TOM_DROPPED);
+  - the rename provenance_status -> audit_frame_file (the values stay);
+  - the fills of pass 2: language (old value empty) and license (old value NOASSERTION). A row
+    of these two columns may differ only where the old value is the empty value.
 The pseudonym of a value is a salted hash of the value in lower case (pseudonymize.py of the
 release), and NULL and the empty value do not change. So for each identity column the script
 checks: one value gives one pseudonym; values that are equal in lower case give one pseudonym;
@@ -54,6 +60,14 @@ REMOVED = ("firm_raw", "firm", "firm_source")
 ADDED = ("firm_based_on_namespace", "firm_based_on_domain", "project_enterprise_driven",
          "project_enterprise_basis")
 KEY = ("file_path", "token_index")
+# The release passes of TOM 1.0.0: dropped columns, the rename and the fills of pass 2.
+TOM_MARK = "audit_frame_file"
+TOM_DROPPED = ("size_kb", "file_mask", "manifest_category", "fact", "history_cluster",
+               "history_shared_with", "history_relation", "history_includes", "history_first",
+               "history_created", "person_name", "person_email", "footer_person_names",
+               "cregit_commit_sha", "repo_tag", "archived", "fork", "roster_lang")
+TOM_RENAMED = {"provenance_status": "audit_frame_file"}
+TOM_FILLS = {"language": ("",), "license": ("NOASSERTION",)}
 
 
 def q(name: str) -> str:
@@ -80,19 +94,27 @@ def main(argv: list[str]) -> int:
     cols = lambda p: [r[0] for r in con.execute(
         "DESCRIBE SELECT * FROM read_parquet(?)", [p]).fetchall()]
     a_cols, b_cols = cols(pre), cols(pub)
+    tom = TOM_MARK in b_cols and TOM_MARK not in a_cols
+    a_sel = ", ".join(f"{q(c)} AS {q(TOM_RENAMED.get(c, c) if tom else c)}" for c in a_cols)
+    if tom:
+        a_cols = [TOM_RENAMED.get(c, c) for c in a_cols]
+        print("schema   the published file is ctp schema 3 (TOM): the drops, the rename and the "
+              "fills of the release passes are allowed")
+    removed = REMOVED + (TOM_DROPPED if tom else ())
+    fills = TOM_FILLS if tom else {}
     fails: list[str] = []
 
     def fail(text: str) -> None:
         fails.append(text)
         print("FAIL " + text)
 
-    lost = [c for c in a_cols if c not in b_cols and c not in REMOVED]
+    lost = [c for c in a_cols if c not in b_cols and c not in removed]
     new = [c for c in b_cols if c not in a_cols and c not in ADDED]
     if lost:
         fail(f"columns of the rebuilt file that the published file does not have: {lost}")
     if new:
         fail(f"columns of the published file that the rebuilt file does not have: {new}")
-    for c in REMOVED:
+    for c in removed:
         print(f"removed  {c:<26} {'(in the rebuilt file)' if c in a_cols else '(not in either file)'}")
 
     n_a = con.execute("SELECT count(*) FROM read_parquet(?)", [pre]).fetchone()[0]
@@ -102,7 +124,7 @@ def main(argv: list[str]) -> int:
         fail("the row counts are not equal")
         return 1
 
-    con.execute(f"CREATE TEMP VIEW a AS SELECT * FROM read_parquet({lit(pre)})")
+    con.execute(f"CREATE TEMP VIEW a AS SELECT {a_sel} FROM read_parquet({lit(pre)})")
     con.execute(f"CREATE TEMP VIEW b AS SELECT * FROM read_parquet({lit(pub)})")
     common = [c for c in a_cols if c in b_cols]
     sel = ", ".join([f"a.{q(c)} AS {q('a_' + c)}" for c in common] +
@@ -116,7 +138,7 @@ def main(argv: list[str]) -> int:
         fail("the rows are not in the same order")
         return 1
 
-    changed = set(SCALAR) | set(LISTS) | set(PARTIAL)
+    changed = set(SCALAR) | set(LISTS) | set(PARTIAL) | set(fills)
     equal_cols = [c for c in common if c not in changed]
     diffs = con.execute("SELECT " + ", ".join(
         f"count(*) FILTER (WHERE {q('a_' + c)} IS DISTINCT FROM {q('b_' + c)})"
@@ -125,6 +147,18 @@ def main(argv: list[str]) -> int:
         print(f"equal    {c:<26} rows that differ: {d}")
         if d:
             fail(f"{c}: {d} rows differ")
+
+    for c, olds in fills.items():
+        if c not in common:
+            continue
+        a, b = q("a_" + c), q("b_" + c)
+        olds_sql = ", ".join(lit(o) for o in olds)
+        bad, filled = con.execute(
+            f"SELECT count(*) FILTER (WHERE {a} IS DISTINCT FROM {b} AND coalesce({a}, '') NOT IN ({olds_sql})), "
+            f"count(*) FILTER (WHERE {a} IS DISTINCT FROM {b}) FROM j").fetchone()
+        print(f"fill     {c:<26} rows with a filled value: {filled}; rows that differ in another way: {bad}")
+        if bad:
+            fail(f"{c}: {bad} rows differ and their old value is not a value that pass 2 fills")
 
     for c in PARTIAL:
         if c not in common:

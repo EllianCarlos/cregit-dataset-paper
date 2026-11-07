@@ -19,7 +19,12 @@ project lists (`pipeline/SELECTION-STAGES.md`). A project stays in TOM when its 
 programming language at the pinned commit is C, C++, Java or Rust, by tokei code lines
 (`steps/language-selection/tokei/`).
 
-Host: Hugging Face, `elliancarlos/token-on-me` (public), DOI 10.57967/hf/11505. The organization
+Host: Hugging Face, `elliancarlos/token-on-me` (public), DOI 10.57967/hf/11505. The final
+revision is `e81b554deb9b` (the documents with the DOI). The DataCite version of the DOI names
+revision `bc7543affd2e`, which has the same project files. The release has 12 documents. The
+limitations and the provenance are now in the paper and in this repository (`LIMITATIONS.md`,
+`REPRODUCE.md`): the release no longer has `docs/LIMITATIONS.md`, `docs/PROVENANCE.md` and
+`docs/RELEASE-NOTES.md`. The organization
 database ships in the same dataset, in the folder `organizations/`: https://huggingface.co/datasets/elliancarlos/token-on-me.
 The README of the release says that a copy of the organization database is also archived on
 Zenodo.
@@ -31,7 +36,7 @@ Zenodo.
 2. The steps after the build (`steps/`): the organization columns and the pseudonyms in one
    write, the root build, the re-encode. The result is the source root of the release passes:
    10,754 project files, ctp schema 2, 71 columns.
-3. Three release passes (`steps/release-passes/`):
+3. Four release passes (`steps/release-passes/`):
    - Pass 1 keeps the 8,447 projects of the tokei rule, drops 10 columns, renames
      `provenance_status` to `audit_frame_file` (61 columns) and writes the side table
      `project_facts`.
@@ -40,9 +45,11 @@ Zenodo.
      `project_languages` and `project_labels`.
    - Pass 3 proves a rule on every row, drops 8 more columns (53 columns) and moves
      `roster_lang` to `project_facts`.
+   - Pass 4 (the DOI pass) changes documents only: the DOI, the date, 3 removed documents.
 4. ctp now writes the 53-column schema in a normal run, with no later pass (ctp branch
    `feat/schema-3-run`, cregit fork branch `feat/schema-3`). A rebuild of 2 projects gives the
-   output of the passes (`steps/release-passes/schema3-proof/`, with one open difference).
+   output of the passes (`steps/release-passes/schema3-proof/`), except one file where the
+   blame time limit of the busy rebuild host made cregit use plain blame.
 
 ## The error of the organization columns
 
@@ -97,20 +104,18 @@ output hash, the cost and the time.
 
 ## Two short paths for reviewers
 
-1. `make verify DATA_DIR=<root>` checks the sha256 of each project file against
-   `data/SHA256SUMS`. `python3 -I tools/fill_release.py check --root <root>` (the tool in the
-   root of TOM) checks the 53 columns, the footer keys and the tables of each file.
-   `make validate DATA_DIR=<root>` checks ctp schema 2 (the source root of the passes).
+1. `make verify DATA_DIR=<root>` checks the sha256 of each file of the root against
+   `data/SHA256SUMS` (the 8,475 rows of the final root). `make validate DATA_DIR=<root>` runs
+   `fill_release.py check` (the same file as `tools/fill_release.py` of the root): the 53
+   columns, the footer keys and the tables of each file. `SCHEMA=2` checks the source root of
+   the passes (71 columns).
 2. `make rebuild-one PROJECT=<owner__repo>` builds the dataset again for one
    project with the pinned tools. The published files have pseudonyms made with
    a salt that is deleted by design, so no rebuild gives their bytes. The target
    checks the run output and the file before the pseudonyms against the recorded
    sha256 values (`data/REBUILD-TARGETS.tsv`). Then it checks that the published
-   file is equal to that file in every column that the pseudonyms do not change
-   (`REPRODUCE.md`, section 6.1).
-
-`data/SHA256SUMS` and `data/REBUILD-TARGETS.tsv` still hold the rows of the source root
-(10,754 project files). The rows of the final root of TOM come when pass 3 ends.
+   file of TOM is equal to that file in every column that the pseudonyms and the release
+   passes do not change (`REPRODUCE.md`, section 6.1).
 
 Both targets need the Nix dev shell: `nix develop`. Then run `make help`.
 `make flake-check` proves that the shell has the tool store paths of the dataset build.
@@ -125,7 +130,7 @@ with a non-zero status. `REPRODUCE.md` lists what is left.
 | Path | Contents |
 |---|---|
 | `pipeline/` | Copies of the paper scripts and their inputs. Do not edit them here. |
-| `steps/` | The steps after the build that made the published files (the organization columns, the final write, the root build, the re-encode, the three release passes of TOM), and the evidence behind the error, language and Linux numbers. One folder for each step, each with a README (`steps/README.md`). |
+| `steps/` | The steps after the build that made the published files (the organization columns, the final write, the root build, the re-encode, the four release passes of TOM), and the evidence behind the error, language and Linux numbers. One folder for each step, each with a README (`steps/README.md`). |
 | `tools/ctp/`, `tools/cregit/` | Copies of some files of the pinned ctp and cregit commits (the column contract, the validation, the Nix files of srcML). |
 | `tools/ctp-venv/` | The package lists of the ctp Python environment on each machine type. |
 | `tools/jars/` | The jar content check (`jar_content_sha256.py`). The flake pins the jars by sha256. |
@@ -134,8 +139,8 @@ with a non-zero status. `REPRODUCE.md` lists what is left.
 | `flake.nix`, `flake.lock` | The pinned environment (Nix). |
 | `Makefile` | The reviewer and stage targets. |
 | `scripts/` | The helper scripts of the Makefile. |
-| `data/SHA256SUMS` | The sha256 of each project file of the source root of the release passes (10,754 rows). The rows of the final root of TOM come when pass 3 ends. |
-| `data/REBUILD-TARGETS.tsv` | For each project file: the run record and the three target sha256 values of `rebuild-one`. |
+| `data/SHA256SUMS` | The sha256 of each file of the final root of TOM (8,475 rows: 8,449 project files and the other files). |
+| `data/REBUILD-TARGETS.tsv` | For each project file of TOM: the run record, the target sha256 values of `rebuild-one` and the sha256 in the source root. |
 | `ANONYMIZATION-TODO.md` | Identifying text to remove before the anonymous mirror. |
 
 ## How `pipeline/` and `tools/` are made

@@ -24,7 +24,7 @@ help:
 	@echo "  make select      selection (S1-S6)"
 	@echo "  make build       the dataset build (S7), all projects"
 	@echo "  make merge       join the per-project files"
-	@echo "  make validate    check the column contract of the published files"
+	@echo "  make validate    check the 53 columns of TOM (SCHEMA=2: the source root, 71 columns)"
 	@echo "Repository checks:"
 	@echo "  make stage-hashes check the copied stage outputs and the release pass kits against their recorded sha256"
 	@echo "  make test        run the tests of the copied scripts and of scripts/"

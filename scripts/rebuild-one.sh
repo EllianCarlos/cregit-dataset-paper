@@ -21,8 +21,10 @@
 # so no one can make the published bytes again. The rule (REPRODUCE.md, section 6.1):
 #   a. the ctp run gives merge_input_sha256 of data/REBUILD-TARGETS.tsv (the run output);
 #   b. the layer merge of that file gives pre_pseudonym_sha256 (the input of the release write);
-#   c. the published file is equal to the file of b in every column that the release write does
-#      not change, with the same rows in the same order (scripts/compare_published.py).
+#   c. the published file of TOM is equal to the file of b in every column that the release
+#      write and the release passes do not change, with the same rows in the same order
+#      (scripts/compare_published.py; the passes drop 18 columns, rename one and fill language
+#      and license).
 #
 # The script checks the inputs step by step. At the first step that is not ready, it prints
 # "not ready: <reason>" and exits with status 3. A sha256 that is not equal gives exit 1.
@@ -77,13 +79,13 @@ echo "== 4. run record (data/REBUILD-TARGETS.tsv)"
 rec=$(grep -v '^#' "$root/data/REBUILD-TARGETS.tsv" | awk -F'\t' -v OFS='\037' -v p="$project" '$1 == p { $1 = $1; print }' | head -n 1)
 [ -n "$rec" ] || notready "data/REBUILD-TARGETS.tsv has no row for $project"
 IFS=$'\037' read -r _p layer run_record run_commit frame_commit cregit_commit ctp_commit \
-  merge_input merge_sha pre_sha pub_sha run_sidecar entry_sha note <<< "$rec"
+  merge_input merge_sha pre_sha src_sha pub_sha run_sidecar entry_sha note <<< "$rec"
 echo "layer $layer, run record $run_record, run commit $run_commit (frame $frame_commit)"
 echo "cregit $cregit_commit, ctp $ctp_commit; merge input: $merge_input"
-echo "targets: run output ${merge_sha:-none}, before the pseudonyms $pre_sha, published $pub_sha"
+echo "targets: run output ${merge_sha:-none}, before the pseudonyms $pre_sha, source root $src_sha, published (TOM) $pub_sha"
 [ "$pub_sha" = "$want" ] || { echo "FAIL: data/REBUILD-TARGETS.tsv and data/SHA256SUMS give other published values" >&2; exit 1; }
 [ "$run_record" = proven ] || notready "the run record of $project matches by rows only ($note)"
-[ "$merge_input" = run ] || notready "the merge input of $project is not the run output ($merge_input): this script does not run the trailer post-fix step yet (9,922 of the 10,754 files have merge input = run)"
+[ "$merge_input" = run ] || notready "the merge input of $project is not the run output ($merge_input): this script does not run the trailer post-fix step yet (7,775 of the 8,449 files of TOM have merge input = run)"
 
 echo "== 2. tool sources"
 lock() { grep -v '^#' "$root/tools.lock" | awk -F'\t' -v t="$1" -v c="$2" '$1 == t && $3 == c' | head -n 1; }
