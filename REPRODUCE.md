@@ -540,7 +540,9 @@ The direct write: ctp branch `feat/schema-3-run` (`a9f0bed`) with the cregit for
 `steps/release-passes/schema3-proof/` compares a rebuild of `libexpat__libexpat` and
 `emscripten-core__emscripten` with the output of the passes. libexpat agrees in every column (the
 pseudonym columns as a one-to-one map). emscripten agrees except in one source file (402,039 of
-11,299,416 rows have another last commit). `rebuild-one` (section 4.5) still runs the build tools
+11,299,416 rows have another last commit): on the busy rebuild host its `-C100` blame took more
+than 3,600 s and cregit fell back to plain blame (section 4.5); the release run used cregit
+`1f17663`, with no time limit. `rebuild-one` (section 4.5) still runs the build tools
 of the source root and compares with the source root.
 
 Open, until pass 3 ends: the sha256 of its `SHA256SUMS`, the bytes of the root, and the rows of

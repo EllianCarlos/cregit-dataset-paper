@@ -62,11 +62,17 @@ it was audited, and the error figure includes them. The audit gives no figure fo
 domains. `docs/ERROR.md` of the release gives the method. The answers are not public (they name
 domains). Version 1.1.0 (planned after 2026-11-10) adds companies to the organization database.
 
-**The direct write of the 53-column schema is proven on 2 projects only, and one file differs.**
+**The direct write of the 53-column schema is proven on 2 projects only, and one file differs (a blame fallback).**
 A rebuild of `emscripten-core__emscripten` with ctp `feat/schema-3-run` agrees with TOM in the
 columns, the rows and the footer keys. But `system/include/compat/arm_neon.h` (402,039 of
-11,299,416 rows, 3.56%) has another last commit on its rows. The cause is not known. All other
-rows agree. libexpat agrees in every column. Detect: `steps/release-passes/schema3-proof/`.
+11,299,416 rows, 3.56%) has another last commit on its rows. The cause: the rebuild ran on a busy
+host, the `-C100` blame of that file took more than 3,600 s, and cregit fell back to plain blame
+(the pipeline log of the rebuild has `PLAIN-BLAME system/include/compat/arm_neon.h after 3600 s
+of -C100`). The release run of this project used cregit `1f17663`, which has no time limit. A
+re-blame of the file with a high limit (`CREGIT_C100_LIMIT`) should give the rows of TOM; it was
+not run. The fallback depends on the load of the machine (REPRODUCE.md, section 4.5: an input
+that is not pinned). All other rows agree. libexpat agrees in every column. Detect:
+`steps/release-passes/schema3-proof/`.
 
 **This repository does not have the checksums of the final root yet.** Pass 3 had not ended when
 the TOM files of this repository were written. `data/SHA256SUMS` and `data/REBUILD-TARGETS.tsv`

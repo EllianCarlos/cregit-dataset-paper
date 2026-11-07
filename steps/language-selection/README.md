@@ -42,7 +42,10 @@ keep list and these 2.
 
 `tokei/RESULTS.md` differs from the file of the run (`5475d05d31e9`) in 4 places: the paths of
 the run host and of the local work folders, the name of the source root, and two tables that had
-one column for each run batch (only the column with all rows stays). Not copied:
+one column for each run batch (only the column with all rows stays).
+`tokei/savannah-https-retry.jsonl` differs from the file of the run (`d37b5b504fdd`) in one
+field: the run batch field of each line is removed; the other fields and the line order stay
+(copy `d8201d1feeb6`). Not copied:
 `tokei/measure.jsonl` (11 MB, one line per project), `tokei/projects.tsv` (1.7 MB),
 `tokei/summary.json`, `tokei/final.json`, the comparison of the 30 test projects and the logs.
 `measure.py run` and `measure.py report` make them again. `pinned/measure.jsonl` and `pinned/rows.json` (the raw measures and the per-project rows

@@ -37,8 +37,12 @@ names `../pass-1/tom.conf`. `compare_tom.py` (`12a2039ba0e9`) and `diff_by_file.
   and the same footer key-values except the registry hash. One source file differs:
   `system/include/compat/arm_neon.h` (402,039 rows, 3.56%) has another last commit
   (`original_commit_sha`) on its rows. On all other rows, the 34 columns that are not identity
-  columns are equal, and every identity column is a bijection. The cause of the difference in
-  that one file is not known.
+  columns are equal, and every identity column is a bijection. The cause: the rebuild ran on a
+  busy host, the `-C100` blame of that file took more than 3,600 s, and cregit fell back to plain
+  blame (the pipeline log of the rebuild: `PLAIN-BLAME system/include/compat/arm_neon.h after
+  3600 s of -C100`). The release run of this project used cregit `1f17663`, which has no time
+  limit. A re-blame of the file with a high limit (`CREGIT_C100_LIMIT`) should match TOM; it was
+  not run.
 - `project_facts.parquet` of the run: 0 rows for the 2 projects.
 
 The runs took place from 15:38 to 16:58 UTC. In that time, both branches got the 53-column
