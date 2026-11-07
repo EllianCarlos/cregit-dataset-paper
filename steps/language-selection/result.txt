@@ -1,0 +1,19 @@
+projects 10754, measured 10703, tokens 32,635,174,618
+sanity: measured with share >= 5%: 10703
+rule	layer	projects kept	of	tokens kept	share of tokens
+share >= 5% (DP3, now)	v1	3,494	3,494	23,611,472,776	100.0%
+share >= 5% (DP3, now)	x1k	7,209	7,209	8,933,548,968	100.0%
+share >= 5% (DP3, now)	all	10,703	10,703	32,545,021,744	100.0%
+share >= 30%	v1	2,967	3,494	21,843,762,953	92.5%
+share >= 30%	x1k	6,077	7,209	8,178,030,614	91.5%
+share >= 30%	all	9,044	10,703	30,021,793,567	92.2%
+share >= 50%	v1	2,633	3,494	20,152,623,985	85.4%
+share >= 50%	x1k	5,469	7,209	7,710,016,433	86.3%
+share >= 50%	all	8,102	10,703	27,862,640,418	85.6%
+largest language is a target	v1	2,765	3,494	21,190,519,227	89.7%
+largest language is a target	x1k	5,746	7,209	8,340,488,803	93.4%
+largest language is a target	all	8,511	10,703	29,531,008,030	90.7%
+target group > any other language	v1	2,841	3,494	22,357,110,667	94.7%
+target group > any other language	x1k	5,827	7,209	8,503,989,349	95.2%
+target group > any other language	all	8,668	10,703	30,861,100,016	94.8%
+largest language of the dropped projects (largest language is a target): [('JavaScript', 487), ('Python', 478), ('Kotlin', 172), ('Go', 114), ('C#/Smalltalk', 92), ('Limbo/M/MATLAB/MUF/Mercury/Objective-C/Wolfram Language', 69), ('Swift', 64), ('Dart', 57), ('Shell', 54), ('Scala', 53)]

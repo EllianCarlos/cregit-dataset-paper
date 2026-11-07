@@ -1,0 +1,21 @@
+project	layer	has_file	rows	pinned_commit	share_pinned	share_frame	largest_pinned
+googleapis__discovery-artifact-manager	v1	no	0	bb221e1f67161c059cd3780eccce6118c37da22c	0.000000	0.717148	Python
+vllm-project__semantic-router	x1k	no	0	c9b65d59aae54621f6d0831a661b407edc823adb	0.000000	0.071634	Go
+visgl__loaders.gl	x1k	no	0	6773abca212dc20c07ae243d5f47c56b6bd174d5	0.000000	0.160732	nesC
+notnotype__neuro-book	x1k	no	0	532ebb8a09c430003c24cd69cdbdc856a14a4737	0.000000	0.059987	JavaScript
+pur1fying__blue_archive_auto_script	x1k	no	0	0d57f4725b7c063a4b66235b61b2517248154fa0	0.000000	0.187371	Python
+Librelancer__Librelancer	x1k	no	0	c113747dbcca92eadae09e569f7383a338460c83	0.000000	0.212635	
+greta-dev__greta	x1k	no	0	c656bd5917ea53bb0f11c53d2cafca780924ec22	0.000000	0.509299	R/Rebol/Rez
+riclolsen__json-scada	x1k	yes	13227	d48acdfdeee6cdeb9ed96d4bf96a036c89256f46	0.003802	0.133557	JavaScript
+ciribob__DCS-SimpleRadioStandalone	x1k	yes	6497	d01f540ce5e363e9ac841775c8f7e2253138cd81	0.016603	0.084822	C#/Smalltalk
+Nain57__Smart-AutoClicker	x1k	yes	15798	cf4cdcee9bfaf8ab14f4538ed7a9c0476ff23260	0.020211	0.497703	Kotlin
+KDE__kdeconnect-android	x1k	yes	5165	d9510469bb3ac5dadc9e9a99e38b693f7431aaff	0.021938	0.206292	Kotlin
+aws-samples__appmod-blueprints	x1k	yes	7420	f705ad4d7435991fd2f3e5549e40a480ede5f8b6	0.040517	0.057410	Python
+CherryHQ__cherry-studio-app	x1k	yes	595376	1fed76db64528a72af33c2d6ddb966c3109ed0b7	0.041164	0.311642	Swift
+wyskoj__midis2jam2	x1k	yes	14565	d29ff5f66378ffd2598a5cbe79fb65a434fd2c4f	0.042464	0.052198	Kotlin
+edrlab__thorium-reader	x1k	yes	1547	2e908e33632fddeb609fa8b0e518c895dd63ce0f	0.046787	0.056016	JavaScript
+home-assistant__addons	x1k	yes	93	fda27782cc38d556fee607894aad75fabd306df9	0.047337	0.058531	Shell
+vlang__vinix	x1k	yes	653201	390d8e9570b43aeace405e6d86e00adfc3e73b9b	0.048665	0.156215	Rocq Prover/V/Verilog
+hyperledger-cacti__cacti	x1k	yes	99764	ff50264a1973f0b9e4414db50fe1d6001ee2ff4a	0.049715	0.052972	JavaScript
+AutoDarkMode__Windows-Auto-Night-Mode	x1k	yes	9906	b3feef99646a53df88df24eeff29f4a2025e5518	0.049724	0.050165	C#/Smalltalk
+samuelclay__NewsBlur	v1	yes	223297	b01e041ba33f6506ad7bb701b8d89256645d40b1	0.049955	0.051765	Python

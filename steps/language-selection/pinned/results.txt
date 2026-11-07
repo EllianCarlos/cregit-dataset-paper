@@ -1,0 +1,94 @@
+input rows 10763: v1 without file 3, v1 with file 3545, x1k without file 6, x1k with file 7209
+pinned commit != frame commit: 6699
+method: tree 6545, s3 tree 3827, clone 198, s3 clone 191, clone (default branch, deepened) 1, clone (GitHub mirror) 1
+measured at the pinned commit: 10760; not measured: 3
+  not measured: abgox__PSCompletions (x1k, file yes): tree: 404
+  not measured: dust-tt__dust (v1, file yes): tree: 404
+  not measured: milisp__codexia (x1k, file yes): tree: 404
+
+== variant linguist (pinned commit) ==
+rule	layer	projects kept	of measured	token rows kept	of token rows (measured)	share of token rows
+share >= 5% (DP3)	v1	3,545	3,547	23,699,697,909	23,699,921,206	100.0%
+share >= 5% (DP3)	x1k	7,195	7,213	8,931,764,843	8,933,187,402	100.0%
+share >= 5% (DP3)	all	10,740	10,760	32,631,462,752	32,633,108,608	100.0%
+share >= 30%	v1	3,012	3,547	21,758,436,663	23,699,921,206	91.8%
+share >= 30%	x1k	6,075	7,213	8,197,543,713	8,933,187,402	91.8%
+share >= 30%	all	9,087	10,760	29,955,980,376	32,633,108,608	91.8%
+share >= 50%	v1	2,677	3,547	20,229,421,843	23,699,921,206	85.4%
+share >= 50%	x1k	5,471	7,213	7,717,029,894	8,933,187,402	86.4%
+share >= 50%	all	8,148	10,760	27,946,451,737	32,633,108,608	85.6%
+largest language is C, C++, Java or Rust	v1	2,812	3,547	21,273,492,134	23,699,921,206	89.8%
+largest language is C, C++, Java or Rust	x1k	5,744	7,213	8,338,834,127	8,933,187,402	93.3%
+largest language is C, C++, Java or Rust	all	8,556	10,760	29,612,326,261	32,633,108,608	90.7%
+target group > any other single language	v1	2,887	3,547	22,438,509,909	23,699,921,206	94.7%
+target group > any other single language	x1k	5,823	7,213	8,494,733,871	8,933,187,402	95.1%
+target group > any other single language	all	8,710	10,760	30,933,243,780	32,633,108,608	94.8%
+share < 5% at the pinned commit (linguist): 20 projects (v1 2, x1k 18; with a file 13, token rows 1,645,856)
+largest language of the projects that fail 'largest language is C, C++, Java or Rust': [('JavaScript', 491), ('Python', 479), ('Kotlin', 173), ('Go', 115), ('C#/Smalltalk', 92), ('Limbo/M/MATLAB/MUF/Mercury/Objective-C/Wolfram Language', 68), ('Swift', 65), ('Dart', 56), ('Scala', 53), ('Shell', 52)]
+
+== variant with_ts (pinned commit) ==
+rule	layer	projects kept	of measured	token rows kept	of token rows (measured)	share of token rows
+share >= 5% (DP3)	v1	3,478	3,547	23,692,340,245	23,699,921,206	100.0%
+share >= 5% (DP3)	x1k	7,064	7,213	8,927,082,568	8,933,187,402	99.9%
+share >= 5% (DP3)	all	10,542	10,760	32,619,422,813	32,633,108,608	100.0%
+share >= 30%	v1	2,906	3,547	21,633,121,089	23,699,921,206	91.3%
+share >= 30%	x1k	5,868	7,213	8,129,466,611	8,933,187,402	91.0%
+share >= 30%	all	8,774	10,760	29,762,587,700	32,633,108,608	91.2%
+share >= 50%	v1	2,546	3,547	19,931,901,316	23,699,921,206	84.1%
+share >= 50%	x1k	5,210	7,213	7,574,784,877	8,933,187,402	84.8%
+share >= 50%	all	7,756	10,760	27,506,686,193	32,633,108,608	84.3%
+largest language is C, C++, Java or Rust	v1	2,673	3,547	21,031,403,823	23,699,921,206	88.7%
+largest language is C, C++, Java or Rust	x1k	5,483	7,213	8,232,738,157	8,933,187,402	92.2%
+largest language is C, C++, Java or Rust	all	8,156	10,760	29,264,141,980	32,633,108,608	89.7%
+target group > any other single language	v1	2,762	3,547	22,229,456,764	23,699,921,206	93.8%
+target group > any other single language	x1k	5,578	7,213	8,405,964,741	8,933,187,402	94.1%
+target group > any other single language	all	8,340	10,760	30,635,421,505	32,633,108,608	93.9%
+share < 5% at the pinned commit (with_ts): 218 projects (v1 69, x1k 149; with a file 211, token rows 13,685,795)
+largest language of the projects that fail 'largest language is C, C++, Java or Rust': [('TypeScript', 610), ('Python', 454), ('JavaScript', 355), ('Kotlin', 167), ('Go', 107), ('C#/Smalltalk', 87), ('Limbo/M/MATLAB/MUF/Mercury/Objective-C/Wolfram Language', 64), ('Swift', 55), ('Dart', 53), ('Scala', 52)]
+
+== variant linguist, frame commit, manifest rows (check against ../result*.txt) ==
+share >= 5% (DP3)	all	10,754	10,754	32,635,174,618	100.0%
+share >= 30%	all	9,090	10,754	30,104,957,762	92.2%
+share >= 50%	all	8,147	10,754	27,942,843,038	85.6%
+largest language is C, C++, Java or Rust	all	8,511	10,703	29,531,008,030	90.7%
+target group > any other single language	all	8,668	10,703	30,861,100,016	94.8%
+
+== variant with_ts, frame commit, manifest rows (check against ../result*.txt) ==
+share >= 5% (DP3)	all	10,499	10,703	32,530,926,950	100.0%
+share >= 30%	all	8,732	10,703	29,838,134,341	91.7%
+share >= 50%	all	7,707	10,703	27,402,863,305	84.2%
+largest language is C, C++, Java or Rust	all	8,108	10,703	29,178,178,665	89.7%
+target group > any other single language	all	8,294	10,703	30,559,643,655	93.9%
+
+== frame commit vs pinned commit (projects measured at both) ==
+variant	rule	layer	both measured	same result	kept at frame, dropped at pinned	dropped at frame, kept at pinned
+linguist	share >= 5% (DP3)	v1	3,547	3,545	2	0
+linguist	share >= 5% (DP3)	x1k	7,213	7,195	18	0
+linguist	share >= 5% (DP3)	all	10,760	10,740	20	0
+linguist	share >= 30%	v1	3,547	3,540	5	2
+linguist	share >= 30%	x1k	7,213	7,188	13	12
+linguist	share >= 30%	all	10,760	10,728	18	14
+linguist	share >= 50%	v1	3,547	3,542	4	1
+linguist	share >= 50%	x1k	7,213	7,186	12	15
+linguist	share >= 50%	all	10,760	10,728	16	16
+linguist	largest language is C, C++, Java or Rust	v1	3,496	3,493	2	1
+linguist	largest language is C, C++, Java or Rust	x1k	7,213	7,194	10	9
+linguist	largest language is C, C++, Java or Rust	all	10,709	10,687	12	10
+linguist	target group > any other single language	v1	3,496	3,494	2	0
+linguist	target group > any other single language	x1k	7,213	7,188	14	11
+linguist	target group > any other single language	all	10,709	10,682	16	11
+with_ts	share >= 5% (DP3)	v1	3,496	3,493	2	1
+with_ts	share >= 5% (DP3)	x1k	7,213	7,195	15	3
+with_ts	share >= 5% (DP3)	all	10,709	10,688	17	4
+with_ts	share >= 30%	v1	3,496	3,488	6	2
+with_ts	share >= 30%	x1k	7,213	7,186	15	12
+with_ts	share >= 30%	all	10,709	10,674	21	14
+with_ts	share >= 50%	v1	3,496	3,491	3	2
+with_ts	share >= 50%	x1k	7,213	7,179	16	18
+with_ts	share >= 50%	all	10,709	10,670	19	20
+with_ts	largest language is C, C++, Java or Rust	v1	3,496	3,493	2	1
+with_ts	largest language is C, C++, Java or Rust	x1k	7,213	7,191	11	11
+with_ts	largest language is C, C++, Java or Rust	all	10,709	10,684	13	12
+with_ts	target group > any other single language	v1	3,496	3,494	2	0
+with_ts	target group > any other single language	x1k	7,213	7,184	15	14
+with_ts	target group > any other single language	all	10,709	10,678	17	14
