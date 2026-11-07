@@ -18,7 +18,7 @@ no salt and no personal domain table.
 | `rename-kv/make_input_sums.py` | `08244b8842ed` | Writes the `SHA256SUMS` of the renamed files from the rename log. |
 | `analysis/resolve_run_records.py`, `analysis/ledger_sha_match.py`, `analysis/diff_fields.py` | `cbad3d786683`, `0729387ee833`, `03142f8a8ac3` | Find the run record of the project files that had no clear record in the ledgers, by the sha256 of the run file (the run commits of `MANIFEST.tsv`). |
 | `measure/measure.py` | `b52306afa9d9` | Counts four findings of the tool review on the release files (counts only, no network). |
-| `fill-release/tools/fill_release.py` | `faf4daac5640` | Writes `MANIFEST.tsv` and `SHA256SUMS` of the root and runs its checks (schema, footer, organization tables, manifest, at sign, forbidden words, marker lines). The same file is `tools/fill_release.py` of this root. The root of TOM has the 53-column version (`../release-passes/fill-release/`). |
+| `fill-release/tools/fill_release.py` | `cc969818903e` | Writes `MANIFEST.tsv` and `SHA256SUMS` of the root and runs its checks (schema, footer, organization tables, manifest, at sign, forbidden words, marker lines). The file that ran (`faf4daac5640`) is `tools/fill_release.py` of this root; the copy differs only in the SPDX header (MIT to Apache-2.0, 2026-11-07). The root of TOM has the 53-column version (`../release-passes/fill-release/`). |
 | `test/`, `measure/test/`, `fill-release/test/` | | The tests (fake data). |
 
 
@@ -30,7 +30,7 @@ no salt and no personal domain table.
 | `rename-kv/*.py` | The rename of 2026-10-28, on the run host. | The run recorded no hash. `rename_kv_keys.py` changed on 2026-10-29, after the rename. |
 | `analysis/*.py` | The ledger review of 2026-10-28, on the run host. | The run recorded no hash. |
 | `measure/measure.py` | The measure of the tool review findings, 2026-10-28. | `cf6b45ade3ba`. The copy differs in one line: the default output folder is `MEASURE_OUT_BASE` (default `measure-out`) instead of a folder under the home directory. |
-| `fill-release/tools/fill_release.py` | All root builds since 2026-10-28, on the root build machine. | `faf4daac5640`, byte for byte (the staged lists of these builds). |
+| `fill-release/tools/fill_release.py` | All root builds since 2026-10-28, on the root build machine. | `faf4daac5640` (the staged lists of these builds). The copy differs in one line: on 2026-11-07, after the runs, its SPDX header changed from MIT to Apache-2.0; the code is otherwise identical. |
 | `build_organisations.py` | The organization tables (`../organizations/`). | |
 
 The kit of the published root build staged `release_tools.py`, the release documents, the

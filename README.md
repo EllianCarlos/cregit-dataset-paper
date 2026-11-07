@@ -19,8 +19,10 @@ project lists (`pipeline/SELECTION-STAGES.md`). A project stays in TOM when its 
 programming language at the pinned commit is C, C++, Java or Rust, by tokei code lines
 (`steps/language-selection/tokei/`).
 
-Host: Hugging Face, `elliancarlos/token-on-me` (public). The DOI is not made yet. The README of
-the release says that a copy of the organization database is also archived on Zenodo.
+Host: Hugging Face, `elliancarlos/token-on-me` (public), DOI 10.57967/hf/11505. The organization
+database ships in the same dataset, in the folder `organizations/`: https://huggingface.co/datasets/elliancarlos/token-on-me.
+The README of the release says that a copy of the organization database is also archived on
+Zenodo.
 
 ## How TOM was made
 

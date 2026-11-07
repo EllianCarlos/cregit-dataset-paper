@@ -78,7 +78,8 @@ row of `tools.lock`). The docstring of each script gives all its options.
   the accounts of the dataset, some of them personal, so they stay private. The database
   build needs them.
 - The database itself. The release has the public part of it: the tables of
-  `organizations/` in the release root.
+  `organizations/` in the release root. They ship in the same dataset on Hugging Face:
+  https://huggingface.co/datasets/elliancarlos/token-on-me, folder `organizations/` (DOI 10.57967/hf/11505).
 - The domain caches and the link tables of the run. The link tables name personal domains.
 
 ## Tests

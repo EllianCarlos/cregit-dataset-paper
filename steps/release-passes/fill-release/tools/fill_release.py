@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# SPDX-License-Identifier: MIT
+# SPDX-License-Identifier: Apache-2.0
 # Copyright (c) 2026 Ellian Carlos Costa, Arthur Pilone Maia da Silva, David Tadokoro and Paulo Meirelles
 """Fill and check the release package of the dataset Token on Me (TOM).
 

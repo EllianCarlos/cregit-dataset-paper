@@ -489,7 +489,8 @@ the final commit of the row pseudonymizer in `tools.lock`, the license notes of
 
 Status on 2026-11-07: the root of the re-encoded files is the source root of the release passes
 (section 5.7). The host is Hugging Face, not Zenodo records. `THIRD-PARTY.md` of the release
-gives each source and its terms.
+gives each source and its terms. The organization database ships in the same dataset, in the
+folder `organizations/`: https://huggingface.co/datasets/elliancarlos/token-on-me (DOI 10.57967/hf/11505).
 
 ### 5.6 Open question: the path-fix rows of the 5,000+ layer
 
@@ -514,7 +515,9 @@ Each pass stops at the first failed check, before the uploads. The column tools 
 `parquet_rename.py` and `parquet_rename_check.py` of ctp (`467677c8` for pass 1, `e9c7656e` for
 passes 2 and 3): they copy the kept column chunks byte for byte, and they prove each output file
 against its input. The release tool `tools/fill_release.py` of the TOM root is
-`steps/release-passes/fill-release/tools/fill_release.py` (sha256 `b0f7a935dc9e`).
+`steps/release-passes/fill-release/tools/fill_release.py` (sha256 `b0f7a935dc9e` in the run). On
+2026-11-07, after the run, the SPDX header of the copy changed from MIT to Apache-2.0 (copy sha256
+`11374939743e`); the code is otherwise identical.
 
 Inputs:
 
