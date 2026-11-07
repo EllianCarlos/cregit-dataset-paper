@@ -1,0 +1,6 @@
+# patches.tsv: line replacements of copied files (sync-from-sources.sh). One row for each file.
+# Columns (tab-separated): dest_path, line number, sha256 of the file after the replacement, new line.
+# The replaced lines named the private study repository in a default path. The script options
+# (--ds, --sidecar) give the real path.
+steps/organizations/study/s8-companies/build_companies.py	50	be92e9127f477d3009b619dd5a473c283e9c4237d6642621cdb553c3adb7b819	DS_DEFAULT = HOME / "STUDY-REPOSITORY/dataset-selection"
+steps/organizations/study/s8-companies/build_links.py	81	9bce7f249fc7311bab1b432692bc4a6e546016b1412e9a116257fc3533392bc9	DS = HOME / "STUDY-REPOSITORY/dataset-selection"

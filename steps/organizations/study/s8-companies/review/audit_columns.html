@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>S8 column audit</title>
+<!--
+S8 column audit (2026-10-26): a stratified sample of each organisation column of the dataset (database
+v4.9, the final links). One copy of this page serves each part: the namespace column (mount col-ns)
+and the author e-mail domain column (mount col-dom). The part comes from data/meta.json. The answers
+give the measured error of each column for the error model (at least 440 decided answers per part).
+The source of the page is s8-companies/review/audit_columns.html; audit_columns.py build copies it.
+Off the record: the part folders are not in git (the items name personal domains). Code only, no
+library, no remote file. The page saves every answer to the server's answers.csv (and to
+localStorage as a backup). A carried answer is an earlier answer of yours to the same question; the
+tag "carried" shows it. A change of the answer makes it your new answer.
+Keys: 1 = right, 2 = wrong, 3 = unsure, u = clear, c = correct class, p = wrong part (domain page),
+o = correct organisation, n = note (Enter = save; Esc = leave the field), j/k = next/previous, t = next tab.
+-->
+<style>
+  :root { --bg:#fafafa; --fg:#222; --muted:#777; --line:#ddd; --ok:#1a7f37; --bad:#cf222e; --un:#6e7781; --cy:#0969da; --sel:#e6f0ff; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:13px/1.4 system-ui, sans-serif; color:var(--fg); background:var(--bg); height:100vh; display:flex; flex-direction:column; }
+  header { padding:6px 10px; border-bottom:1px solid var(--line); display:flex; gap:12px; align-items:center; flex-wrap:wrap; background:#fff; }
+  header h1 { font-size:15px; margin:0 6px 0 0; }
+  .tabs button.on { background:#24292f; color:#fff; border-color:#24292f; }
+  select, input, button { font:inherit; }
+  button { padding:3px 8px; border:1px solid #bbb; border-radius:4px; background:#fff; cursor:pointer; }
+  button:hover { background:#f0f0f0; }
+  .stat { font-size:12px; } #saved { color:var(--ok); font-size:12px; } #saved.err { color:var(--bad); }
+  .bar { width:120px; height:8px; background:#eee; border-radius:4px; overflow:hidden; display:inline-block; vertical-align:middle; }
+  .bar > div { height:100%; background:var(--ok); width:0; }
+  .filters { padding:5px 10px; border-bottom:1px solid var(--line); background:#f6f8fa; display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  .tab { flex:1; min-height:0; display:none; } .tab.on { display:flex; }
+  #tabSum { overflow:auto; padding:10px 20px; display:none; } #tabSum.on { display:block; }
+  .split { flex:1; display:flex; min-height:0; }
+  #list { width:330px; overflow:auto; border-right:1px solid var(--line); background:#fff; }
+  #list div { padding:2px 8px; border-bottom:1px solid #f0f0f0; cursor:pointer; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size:12px; }
+  #list div.cur { background:var(--sel); font-weight:600; } #list div .r { color:var(--muted); display:inline-block; width:46px; }
+  #card { flex:1; overflow:auto; padding:10px 18px 0; min-width:0; display:flex; flex-direction:column; } #cardBody { flex:1; }
+  h2 { font-size:21px; margin:2px 0 4px; word-break:break-all; } h3 { font-size:12px; margin:12px 0 4px; color:#444; text-transform:uppercase; letter-spacing:.04em; }
+  .q { font-size:14px; margin:6px 0 2px; padding:6px 10px; background:#fff8c5; border:1px solid #eedc82; border-radius:4px; }
+  .val { font-size:15px; margin:4px 0; padding:6px 10px; background:#fff; border:1px solid var(--line); border-radius:4px; }
+  .tag { display:inline-block; padding:0 6px; border-radius:8px; font-size:11px; border:1px solid var(--line); margin-right:4px; background:#fff; }
+  .v-right { background:#dafbe1; color:var(--ok); border-color:var(--ok); } .v-wrong { background:#ffebe9; color:var(--bad); border-color:var(--bad); }
+  .v-unsure { background:#eaeef2; color:var(--un); border-color:var(--un); } .carried { background:#ddf4ff; color:var(--cy); border-color:var(--cy); }
+  .muted { color:var(--muted); }
+  .kv { display:grid; grid-template-columns:200px 1fr; gap:1px 10px; } .kv div:nth-child(odd) { color:var(--muted); } .kv div { word-break:break-word; }
+  .keys { position:sticky; bottom:0; background:#fff; border-top:1px solid var(--line); padding:7px 0; display:flex; gap:6px; flex-wrap:wrap; align-items:center; margin-top:10px; }
+  .keys button { font-size:14px; padding:5px 11px; } .keys kbd { font-weight:700; margin-right:4px; }
+  .keys button.on-right { background:#dafbe1; } .keys button.on-wrong { background:#ffebe9; } .keys button.on-unsure { background:#eaeef2; }
+  .fix { display:flex; gap:6px; align-items:center; flex-wrap:wrap; width:100%; padding-top:4px; } .fix.off { opacity:.45; }
+  #corg, #note { width:280px; padding:3px 5px; }
+  table.t { border-collapse:collapse; margin:6px 0 14px; } table.t th, table.t td { padding:2px 8px; border-bottom:1px solid #eee; font-size:12px; text-align:right; }
+  table.t th:first-child, table.t td:first-child { text-align:left; }
+  ul.src { margin:2px 0 0 18px; padding:0; } ul.src li { margin:1px 0; word-break:break-all; }
+</style>
+</head>
+<body>
+<header>
+  <h1 id="h1">S8 column audit</h1>
+  <span class="tabs"><button data-tab="tabItems" class="on">Items</button><button data-tab="tabSum">Progress</button></span>
+  <span class="stat" id="stat"></span>
+  <span id="saved" style="margin-left:auto"></span>
+</header>
+<section id="tabItems" class="tab on" style="flex-direction:column">
+  <div class="filters">
+    <label>stratum <select id="fStratum"><option value="">all</option></select></label>
+    <label><input type="checkbox" id="fOpen"> only items with no complete answer</label>
+    <label><input type="checkbox" id="fCarried"> only carried answers</label>
+    <span class="muted" id="fCount"></span>
+  </div>
+  <div class="split">
+    <div id="list"></div>
+    <div id="card"><div id="cardBody"></div>
+      <div class="keys">
+        <button data-v="right"><kbd>1</kbd>right</button>
+        <button data-v="wrong"><kbd>2</kbd>wrong</button>
+        <button data-v="unsure"><kbd>3</kbd>unsure</button>
+        <button data-v=""><kbd>u</kbd>clear</button>
+        <button id="prev"><kbd>k</kbd>previous</button><button id="next"><kbd>j</kbd>next</button>
+        <div class="fix" id="fix">
+          <label><kbd>c</kbd> correct class <select id="cclass"></select></label>
+          <label id="wpartL"><kbd>p</kbd> what is wrong <select id="wpart">
+            <option value="organisation">the organisation</option>
+            <option value="kind">only the kind (the organisation is right)</option>
+          </select></label>
+          <label><kbd>o</kbd> correct organisation <input id="corg" placeholder="an id of the database or a name"></label>
+          <label><kbd>n</kbd> note <input id="note" placeholder="why (optional)"></label>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="tabSum" class="tab"><div id="sum"></div></section>
+<script>
+"use strict";
+const AT = String.fromCharCode(64);
+const COLS = ["item_id", "part", "type", "title", "verdict", "correct_class", "wrong_part", "correct_org", "note", "carried", "answered_utc", "items_sha256"];
+const CLASS_TEXT = {
+  "company": "organisation: company or consultancy",
+  "other-organisation": "organisation: another kind (university, government, foundation, project organisation, ...)",
+  "independent": "independent: a person (personal account or personal domain)",
+  "free-provider": "free-provider: anybody can get an address there",
+  "none": "none: not the mail domain of anybody",
+  "project": "project: the account of the project itself, with no owner organisation",
+  "unknown": "unknown: the owner cannot be found"};
+let items = [], meta = {}, ans = {}, view = [], cur = 0, LS = "s8-audit-columns";
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+const fmt = (n) => Number(n || 0).toLocaleString("en-US");
+const dash = '<span class="muted">-</span>';
+function parseCsv(text) {
+  const rows = []; let row = [], f = "", q = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (q) { if (c === '"') { if (text[i + 1] === '"') { f += '"'; i++; } else q = false; } else f += c; }
+    else if (c === '"') q = true; else if (c === ",") { row.push(f); f = ""; }
+    else if (c === "\n") { row.push(f); rows.push(row); row = []; f = ""; } else if (c !== "\r") f += c;
+  }
+  if (f || row.length) { row.push(f); rows.push(row); }
+  if (!rows.length) return [];
+  const h = rows[0];
+  return rows.slice(1).filter((r) => r.length > 1).map((r) => Object.fromEntries(h.map((k, i) => [k, r[i] || ""])));
+}
+const cell = (v) => { v = String(v == null ? "" : v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
+function toCsv() {
+  const out = [COLS.join(",")];
+  for (const id of Object.keys(ans).sort()) { const a = ans[id]; if (!a.verdict && !a.note && !a.correct_class && !a.correct_org) continue; out.push(COLS.map((c) => cell(a[c])).join(",")); }
+  return out.join("\n") + "\n";
+}
+let timer = null;
+function save() {
+  localStorage.setItem(LS, JSON.stringify(ans));
+  clearTimeout(timer);
+  timer = setTimeout(async () => {
+    try {
+      const r = await fetch("answers.csv", {method: "POST", headers: {"Content-Type": "text/csv"}, body: toCsv()});
+      if (!r.ok) throw new Error(r.status + " " + (await r.text()));
+      const j = await r.json(); $("saved").textContent = "saved " + j.saved + " at " + j.utc; $("saved").className = "";
+    } catch (e) { $("saved").textContent = "NOT saved on the server (kept in this browser): " + e; $("saved").className = "err"; }
+  }, 300);
+}
+function complete(a) { return !!(a && a.verdict && (a.verdict !== "wrong" || (meta.classes || []).includes(a.correct_class))); }
+function setAnswer(v, keepMove) {
+  const it = view[cur]; if (!it) return;
+  const note = $("note").value, corg = $("corg").value, cclass = $("cclass").value, wpart = $("wpart").value;
+  if (note.includes(AT) || corg.includes(AT)) { $("saved").textContent = "a field may not hold an at sign: not kept"; $("saved").className = "err"; $("note").value = ""; $("corg").value = ""; return; }
+  const old = ans[it.item_id] || {};
+  const a = {item_id: it.item_id, part: meta.part, type: it.type, title: it.title, verdict: v,
+             correct_class: v === "wrong" ? cclass : "", wrong_part: v === "wrong" && meta.part === "dom" ? wpart : "",
+             correct_org: v === "wrong" ? corg : "", note: note, carried: "",
+             answered_utc: new Date().toISOString().replace(/\.\d+Z$/, "Z"), items_sha256: meta.items_sha256 || ""};
+  // An unchanged carried answer (only a move through the fields) stays carried.
+  if (old.carried && old.verdict === a.verdict && (old.correct_class || "") === a.correct_class && (old.note || "") === a.note &&
+      (old.correct_org || "") === a.correct_org && (old.wrong_part || "") === a.wrong_part) { a.carried = old.carried; a.answered_utc = old.answered_utc; }
+  ans[it.item_id] = a;
+  save(); renderList(); renderStat();
+  if (v === "wrong" && !cclass) { renderCard(); $("cclass").focus(); return; }
+  if (v && !keepMove) move(1); else renderCard();
+}
+function move(d) { if (!view.length) return; cur = Math.max(0, Math.min(view.length - 1, cur + d)); renderList(); renderCard(); }
+function applyFilter() {
+  const s = $("fStratum").value, open = $("fOpen").checked, car = $("fCarried").checked;
+  view = items.filter((i) => (!s || i.stratum === s) && (!open || !complete(ans[i.item_id])) && (!car || (ans[i.item_id] || {}).carried));
+  cur = Math.min(cur, Math.max(0, view.length - 1)); $("fCount").textContent = view.length + " of " + items.length + " items";
+  renderList(); renderCard();
+}
+function renderList() {
+  $("list").innerHTML = view.map((i, n) => {
+    const a = ans[i.item_id] || {}, v = a.verdict;
+    return '<div data-n="' + n + '" class="' + (n === cur ? "cur" : "") + '"><span class="r">' + i.item_id + "</span>" +
+      (v ? '<span class="tag v-' + v + '">' + v + (v === "wrong" && !complete(a) ? " (no class)" : "") + "</span>" : "") +
+      (a.carried ? '<span class="tag carried">carried</span>' : "") + esc(i.title) + "</div>";
+  }).join("");
+  const c = $("list").querySelector(".cur"); if (c) c.scrollIntoView({block: "nearest"});
+}
+function link(u) { return '<a href="' + esc(u) + '" target="_blank" rel="noopener noreferrer">' + esc(u) + "</a>"; }
+const kv = (rows) => '<div class="kv">' + rows.map(([k, v]) => "<div>" + esc(k) + "</div><div>" + (v == null || v === "" ? dash : v) + "</div>").join("") + "</div>";
+function orgBlock(o) {
+  if (!o || !o.id) return '<p class="muted">no organisation row</p>';
+  return kv([["organisation id", esc(o.id)], ["name", esc(o.name)], ["legal name", esc(o.legal_name)], ["kind", esc(o.kind)],
+    ["parent", o.parent ? esc(o.parent_name || "") + " (" + esc(o.parent) + ")" : ""], ["country", esc(o.country)],
+    ["website", o.website ? link(/^https?:/.test(o.website) ? o.website : "https://" + o.website) : ""],
+    ["Wikidata", o.wikidata ? link("https://www.wikidata.org/wiki/" + o.wikidata) : ""],
+    ["kind basis", esc((o.kind_basis || "") + (o.kind_basis_pointer ? " (" + o.kind_basis_pointer + ")" : ""))], ["review status", esc(o.review_status)]]);
+}
+function dnsBlock(d) {
+  if (!d || !Object.keys(d).length) return '<p class="muted">no DNS record</p>';
+  const j = (v) => Array.isArray(v) ? esc(v.join(", ")) : esc(v);
+  return kv([["web: final host, status", esc((d.web_final_host || "-") + ", " + (d.web_status == null ? "-" : d.web_status))],
+    ["mail servers (MX)", j(d.mx)], ["SPF includes", j(d.spf_include)], ["DMARC policy, report domains", esc((d.dmarc_p || "-") + "; " + ((d.dmarc_rua || []).join(", ") || "-"))],
+    ["certificate: organisation, name", esc((d.cert_subject_o || "-") + ", " + (d.cert_subject_cn || "-"))], ["certificate: other names", j(d.san_first20)], ["www alias (CNAME)", j(d.www_cname)]]);
+}
+function nsCard(it) {
+  const o = it.organisation || {}, p = it.profile || {};
+  const url = "https://" + it.host + "/" + it.namespace;
+  return '<div class="q">Is <b>' + esc(o.name || o.id) + "</b> the <b>owner</b> of the namespace " + esc(it.title) + "? The namespace column gives this organisation to each project of the namespace. " +
+    "Answer <b>right</b>, or <b>wrong</b> with the correct class (another organisation: write it; a person; the project itself; unknown), or <b>unsure</b>.</div>" +
+    '<div class="val">column value: <b>' + esc(o.name || o.id) + "</b> (" + esc(o.id) + ", " + esc(o.kind) + ")</div>" +
+    "<h3>The organisation in the database</h3>" + orgBlock(o) +
+    "<h3>The namespace rows of the database</h3>" + (it.ns_rows.length ? '<table class="t"><tr><th>organisation</th><th>relation</th><th>evidence</th><th>verified</th><th>source</th></tr>' +
+      it.ns_rows.map((r) => "<tr><td>" + esc(r.name || r.organisation) + " (" + esc(r.organisation) + ")</td><td>" + esc(r.relation) + "</td><td>" + esc(r.evidence) + "</td><td>" + (r.verified ? "yes" : "no") + "</td><td>" + esc(r.source_pointer) + "</td></tr>").join("") + "</table>" : '<p class="muted">none</p>') +
+    "<h3>The account profile (stored by an earlier round)</h3>" + (p.source ? kv([["type", esc(p.type)], ["name", esc(p.name)], ["website", p.websiteUrl ? link(p.websiteUrl) : ""],
+      ["description", esc(p.description)], ["verified domain", p.isVerified == null ? "" : (p.isVerified ? "yes" : "no")], ["created", esc(p.createdAt)], ["repositories (first 8)", esc((p.repos || []).join(", "))], ["file", esc(p.source)]]) : '<p class="muted">no stored profile: open the namespace page</p>') +
+    "<h3>The namespace in the dataset</h3>" + kv([["open the namespace", link(url)], ["projects, tokens", fmt(it.projects) + ", " + fmt(it.tokens)],
+      ["projects (largest 8)", it.top_projects.map((x) => link("https://" + it.host + "/" + x.replace("__", "/"))).join(" ; ")],
+      ["model term", esc(it.term) + (it.ptr ? " (" + esc(it.ptr) + ")" : "")], ["sampling", it.stratum === "00 largest by tokens (certainty)" ? "taken with certainty" : "simple random sample, inclusion " + (100 * it.pi).toPrecision(3) + "%"]]);
+}
+function domCard(it) {
+  const v = it.value || {}, pr = it.proposal || {};
+  return '<div class="q">Is the value of the domain column right for authors with an address at <b>' + esc(it.domain) + "</b>? " +
+    "Answer <b>right</b>, or <b>wrong</b> with the correct class and what is wrong (the organisation, or only its kind), or <b>unsure</b>.</div>" +
+    '<div class="val">column value: <b>' + esc(v.name || v.id) + "</b>" + (v.id ? " (" + esc(v.id) + ", " + esc(v.kind) + ")" : "") +
+    (it.state === "unmatched" ? ' <span class="muted">(the domain has no organisation row, so the column gives independent)</span>' : "") + "</div>" +
+    (it.state === "linked" ? "<h3>The organisation in the database</h3>" + orgBlock(v) +
+      "<h3>The link</h3>" + kv([["match", esc(it.match) + (it.matched_domain && it.matched_domain !== it.domain ? " (row of " + esc(it.matched_domain) + ")" : "")], ["confidence", esc(it.confidence)], ["source", esc(it.link_source)]]) : "") +
+    (pr.name || pr.kind ? "<h3>The AI proposal (not in the database)</h3>" + kv([["name", esc(pr.name)], ["kind", esc(pr.kind)], ["parent", esc(pr.parent_name)], ["certainty", esc(pr.certainty)], ["reason", esc(pr.reason)]]) : "") +
+    "<h3>The domain rows of the database</h3>" + (it.db_rows.length ? '<table class="t"><tr><th>organisation</th><th>role</th><th>confidence</th><th>source</th></tr>' +
+      it.db_rows.map((r) => "<tr><td>" + esc(r.name || r.organisation) + " (" + esc(r.organisation) + ")</td><td>" + esc(r.role) + "</td><td>" + esc(r.confidence) + "</td><td>" + esc(r.source) + " " + esc(r.source_pointer) + "</td></tr>").join("") + "</table>" : '<p class="muted">none</p>') +
+    "<h3>The domain in the dataset</h3>" + kv([["tokens (5,000+ layer; 1,000-4,999 layer)", fmt(it.tokens_v1) + "; " + fmt(it.tokens_x1k)], ["dataset projects", fmt(it.n_projects)],
+      ["top project", it.top_project ? link("https://github.com/" + it.top_project.replace("__", "/")) + ' <span class="muted">(the link assumes GitHub)</span>' : ""],
+      ["sampling", it.unit === "certainty" ? "taken with certainty" : "probability proportional to tokens, inclusion " + (100 * it.pi).toPrecision(3) + "%"],
+      ["open the domain", link("https://" + it.domain) + " ; " + link("https://web.archive.org/web/*/" + it.domain)]]) +
+    "<h3>DNS record</h3>" + dnsBlock(it.dns);
+}
+function renderCard() {
+  const it = view[cur];
+  if (!it) { $("cardBody").innerHTML = '<p class="muted">No item.</p>'; return; }
+  const a = ans[it.item_id] || {};
+  $("note").value = a.note || ""; $("corg").value = a.correct_org || ""; $("cclass").value = a.correct_class || ""; $("wpart").value = a.wrong_part || "organisation";
+  $("fix").className = "fix" + (a.verdict === "wrong" ? "" : " off");
+  document.querySelectorAll(".keys button[data-v]").forEach((b) => { b.className = b.dataset.v && b.dataset.v === a.verdict ? "on-" + a.verdict : ""; });
+  $("cardBody").innerHTML = '<div class="muted">' + it.item_id + " of " + items.length + " &middot; stratum " + esc(it.stratum) + "</div>" +
+    "<h2>" + esc(it.title) + "</h2>" + '<span class="tag">' + esc(it.type) + '</span><span class="tag">' + fmt(it.tokens) + " tokens</span>" +
+    (a.verdict ? '<span class="tag v-' + a.verdict + '">' + a.verdict + "</span>" : "") +
+    (a.carried ? '<span class="tag carried">carried from ' + esc(a.carried) + "</span>" : "") +
+    (meta.part === "ns" ? nsCard(it) : domCard(it));
+}
+function renderStat() {
+  const n = items.length, done = items.filter((i) => complete(ans[i.item_id])).length;
+  const decided = items.filter((i) => { const a = ans[i.item_id]; return complete(a) && a.verdict !== "unsure"; }).length;
+  $("stat").innerHTML = "<b>" + done + "</b> of " + n + " answered (" + decided + " decided; the model needs " + (meta.use_min || 440) + ') <span class="bar"><div style="width:' + (n ? 100 * done / n : 0) + '%"></div></span>';
+  const strata = [...new Set(items.map((i) => i.stratum))].sort();
+  const vs = ["right", "wrong", "unsure", ""];
+  $("sum").innerHTML = '<table class="t"><tr><th>stratum</th><th>items</th>' + vs.map((v) => "<th>" + (v || "no answer") + "</th>").join("") + "<th>carried</th><th>tokens</th></tr>" +
+    strata.map((s) => { const its = items.filter((i) => i.stratum === s);
+      return "<tr><td>" + esc(s) + "</td><td>" + its.length + "</td>" + vs.map((v) => "<td>" + its.filter((i) => ((ans[i.item_id] || {}).verdict || "") === v).length + "</td>").join("") +
+        "<td>" + its.filter((i) => (ans[i.item_id] || {}).carried).length + "</td><td>" + fmt(its.reduce((t, i) => t + i.tokens, 0)) + "</td></tr>"; }).join("") + "</table>" +
+    '<p class="muted">Data made ' + esc(meta.generated_utc) + "; items sha256 " + esc((meta.items_sha256 || "").slice(0, 12)) + "; " + esc(meta.carried_added || 0) + " answers carried from earlier audits at build. Answers go to answers.csv in the page folder.</p>" +
+    "<h3>Wrong or unsure</h3><ul>" + items.filter((i) => ["wrong", "unsure"].includes((ans[i.item_id] || {}).verdict)).map((i) => { const a = ans[i.item_id];
+      return "<li>" + i.item_id + " " + esc(i.title) + ": <b>" + a.verdict + "</b> " + esc(a.correct_class ? "(" + a.correct_class + (a.wrong_part === "kind" ? ", only the kind" : "") + (a.correct_org ? ": " + a.correct_org : "") + ")" : a.verdict === "wrong" ? "(no class yet)" : "") + " " + esc(a.note) + "</li>"; }).join("") + "</ul>";
+}
+document.addEventListener("keydown", (e) => {
+  if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT") {
+    if (e.key === "Enter") { const a = ans[(view[cur] || {}).item_id] || {}; setAnswer(a.verdict || "", true); e.target.blur(); }
+    if (e.key === "Escape") e.target.blur();
+    return;
+  }
+  const k = e.key;
+  if (k === "1") setAnswer("right"); else if (k === "2") setAnswer("wrong");
+  else if (k === "3") setAnswer("unsure"); else if (k === "u") setAnswer("");
+  else if (k === "j") move(1); else if (k === "k") move(-1);
+  else if (k === "n") { e.preventDefault(); $("note").focus(); }
+  else if (k === "o") { e.preventDefault(); $("corg").focus(); }
+  else if (k === "c") { e.preventDefault(); $("cclass").focus(); }
+  else if (k === "p" && meta.part === "dom") { e.preventDefault(); $("wpart").focus(); }
+  else if (k === "t") { const b = document.querySelector(".tabs button:not(.on)"); if (b) b.click(); }
+});
+$("cclass").addEventListener("change", () => setAnswer("wrong", true));
+$("wpart").addEventListener("change", () => { const a = ans[(view[cur] || {}).item_id] || {}; if (a.verdict === "wrong") setAnswer("wrong", true); });
+$("corg").addEventListener("change", () => { const a = ans[(view[cur] || {}).item_id] || {}; if (a.verdict === "wrong") setAnswer("wrong", true); });
+$("note").addEventListener("change", () => { const a = ans[(view[cur] || {}).item_id] || {}; setAnswer(a.verdict || "", true); });
+document.querySelectorAll(".keys button[data-v]").forEach((b) => b.addEventListener("click", () => setAnswer(b.dataset.v)));
+$("prev").addEventListener("click", () => move(-1)); $("next").addEventListener("click", () => move(1));
+$("list").addEventListener("click", (e) => { const d = e.target.closest("div[data-n]"); if (d) { cur = +d.dataset.n; renderList(); renderCard(); } });
+$("fStratum").addEventListener("change", applyFilter); $("fOpen").addEventListener("change", applyFilter); $("fCarried").addEventListener("change", applyFilter);
+document.querySelectorAll(".tabs button").forEach((b) => b.addEventListener("click", () => {
+  document.querySelectorAll(".tabs button").forEach((x) => x.classList.toggle("on", x === b));
+  document.querySelectorAll(".tab").forEach((t) => t.classList.toggle("on", t.id === b.dataset.tab));
+  renderStat();
+}));
+(async () => {
+  items = await (await fetch("data/items.json", {cache: "no-store"})).json();
+  meta = await (await fetch("data/meta.json", {cache: "no-store"})).json();
+  LS = "s8-audit-columns-" + meta.part;
+  document.title = "S8 column audit: " + meta.title; $("h1").textContent = "S8 column audit: " + meta.title;
+  $("cclass").innerHTML = '<option value="">(choose, for wrong)</option>' + (meta.classes || []).map((c) => '<option value="' + esc(c) + '">' + esc(CLASS_TEXT[c] || c) + "</option>").join("");
+  $("wpartL").style.display = meta.part === "dom" ? "" : "none";
+  for (const r of parseCsv(await (await fetch("answers.csv", {cache: "no-store"})).text())) ans[r.item_id] = r;
+  const local = JSON.parse(localStorage.getItem(LS) || "{}");
+  for (const [id, a] of Object.entries(local)) if (!ans[id] || (a.answered_utc || "") > (ans[id].answered_utc || "")) ans[id] = a;
+  for (const s of [...new Set(items.map((i) => i.stratum))].sort()) $("fStratum").insertAdjacentHTML("beforeend", '<option value="' + esc(s) + '">' + esc(s) + "</option>");
+  applyFilter(); renderStat();
+})();
+</script>
+</body>
+</html>

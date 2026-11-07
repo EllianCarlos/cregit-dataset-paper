@@ -1,0 +1,24 @@
+company_id,parent_company_id,university_id,basis
+argonne-national-laboratory,us-department-of-energy,,Round 6 note: a US DOE national laboratory (DOE not in the index).
+brookhaven-national-laboratory,us-department-of-energy,,Round 6 note: owned by the US DOE.
+fermilab,us-department-of-energy,,Round 6 note: a US DOE national laboratory.
+lawrence-berkeley-national-laboratory,us-department-of-energy,university-of-california,"Round 6 note: owned by the US DOE and operated by the University of California; V4_TODO: the system id, not UC Berkeley."
+lawrence-livermore-national-laboratory,us-department-of-energy,university-of-california,Round 6 note: a DOE/NNSA laboratory operated by a partnership of the University of California system and others.
+los-alamos-national-laboratory,us-department-of-energy,university-of-california,Round 6 note: owned by the DOE/NNSA and operated by Triad National Security (University of California and others).
+oak-ridge-national-laboratory,us-department-of-energy,,Round 6 note: a US DOE national laboratory.
+thomas-jefferson-national-accelerator-facility,us-department-of-energy,,Round 6 note: a US DOE national laboratory.
+desy,federal-ministry-of-education-and-research,,Round 6 note: a Helmholtz centre funded by the German federal government (90%).
+forschungszentrum-julich,federal-ministry-of-education-and-research,,Round 6 note: a Helmholtz centre owned by the German federal government (90%).
+german-cancer-research-center,federal-ministry-of-education-and-research,,Round 6 note: funded by the German federal government (90%).
+gfz-german-research-centre-for-geosciences,federal-ministry-of-education-and-research,,Round 6 note: a Helmholtz centre funded by the German federal government (90%).
+gsi-helmholtz-centre-for-heavy-ion-research,federal-ministry-of-education-and-research,,Round 6 note: a Helmholtz centre funded by the German federal government; no single main university.
+simula-research-laboratory,norwegian-ministry-of-education-and-research,,Round 6 note: owned by the Norwegian state through the Ministry of Education and Research.
+florida-institute-for-human-and-machine-cognition,state-of-florida,university-of-west-florida,Round 6 note: a state research institute established at the University of West Florida.
+zuse-institute-berlin,state-of-berlin,,Round 6 note: a statutory research institute of the State of Berlin; no single main university.
+computer-vision-center,generalitat-de-catalunya,,Round 6 note: set up by the Generalitat de Catalunya and the UAB.
+bc-cancer-genome-sciences-centre,provincial-health-services-authority,,Round 6 note: part of BC Cancer (PHSA).
+idiap-research-institute,swiss-confederation,,Round 6 note: the Swiss Confederation funds it as an institute of national importance.
+kek,mext,sokendai,Round 6 note: an Inter-University Research Institute Corporation under MEXT; its staff teach the SOKENDAI PhD school.
+montreal-clinical-research-institute,government-of-quebec,,Round 6 note: core funding from two Quebec ministries.
+naturalis-biodiversity-center,dutch-ministry-of-education-culture-and-science,leiden-university,Round 6 note: funded by the Dutch education ministry; main tie Leiden University.
+mit-lincoln-laboratory,us-department-of-defense,,Round 6 note: a DoD federally funded R&D centre that MIT operates.

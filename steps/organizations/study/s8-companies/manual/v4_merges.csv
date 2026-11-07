@@ -1,0 +1,14 @@
+merge_id,into_id,kept_name,decided_by,reason
+massachusetts-institute-of-technology,mit,,claude-main,"V4_TODO rule 3: duplicate ids; mit is the accepted id (round 5, conflict on mit.edu)."
+institute-of-software-chinese-academy-of-sciences,iscas,,claude-main,V4_TODO rule 3: the three ISCAS ids (round 6 answer).
+institute-of-software-chinese-academy-of-science,iscas,,claude-main,V4_TODO rule 3: the three ISCAS ids.
+huawei,huawei-technologies,,claude-main,V4_TODO rule 3 (round 5 answer).
+freie-universitat-berlin,free-university-of-berlin,,claude-main,V4_TODO rule 3; round 4d moves domains to free-university-of-berlin.
+650-industries,expo,,claude-main,V4_TODO rule 3: 650 Industries is the legal name of Expo.
+tieto,tietoevry,Tietoevry,claude-main,"V4_TODO rule 3: Tieto merged with EVRY in 2019; kept name Tietoevry. Rounds 3 and 5 merged each id into the other."
+progress-software-corp-ma,progress-software,,claude-main,"V4_TODO rule 3: kept the usual name Progress Software. Rounds 3 and 5 merged each id into the other."
+ctrip-com-international,trip-com-group,Trip.com Group,claude-main,"Rounds 3 and 5 merged each id into the other (a cycle); keep trip-com-group, the current name Trip.com Group (the user, 2026-10-18)."
+akeo-consulting,independent,,claude-main,"Round 5 gave kind independent without a merge; K3: an independent developer domain belongs to the independent pseudo-organisation (the user, 2026-10-18)."
+metux-it-service,independent,,claude-main,"Round 5 gave kind independent without a merge; K3: an independent developer domain belongs to the independent pseudo-organisation (the user, 2026-10-18)."
+selenic,independent,,claude-main,"Round 5 gave kind independent without a merge; K3: an independent developer domain belongs to the independent pseudo-organisation (the user, 2026-10-18)."
+iomesh,beijing-zhiling-haina-technology,,claude-main,"Round 8 names check: IOMesh is the storage product of SmartX (Beijing Zhiling Haina Technology); a product of a company is the company."

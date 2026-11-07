@@ -88,6 +88,7 @@ non-zero status. `REPRODUCE.md` lists what is left.
 | Path | Contents |
 |---|---|
 | `pipeline/` | Copies of the paper scripts and their inputs. Do not edit them here. |
+| `steps/` | The steps after the build that made the published files (the organization columns, the final write, the release root, the re-encode), and the evidence behind the error, language and Linux numbers. One folder for each step, each with a README (`steps/README.md`). |
 | `tools/ctp/`, `tools/cregit/` | Copies of some files of the pinned ctp and cregit commits (the column contract, the validation, the Nix files of srcML). |
 | `tools/ctp-venv/` | The package lists of the ctp Python environment on each machine type. |
 | `tools/jars/` | The jar content check (`jar_content_sha256.py`). The flake pins the jars by sha256. |
@@ -110,3 +111,7 @@ blob id of each file. `sync/untracked.tsv` lists 105 generated inputs that git d
 track in the source. The script copies each one only when its sha256 is equal to the value
 of a committed checksum file. `sync/sync-from-sources.sh --check` runs the check only.
 It needs no source repository.
+`sync/patches.tsv` lists the copied files with one replaced line (a default path that named the
+private study repository). The copy step checks the git blob id of the file that ran before the
+replacement; the check compares the sha256 after it. The source id `study-s8` copies the files of
+the organization step at their own study commit into `steps/organizations/study/`.

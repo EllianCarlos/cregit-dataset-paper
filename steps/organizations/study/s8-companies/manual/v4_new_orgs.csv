@@ -1,0 +1,54 @@
+company_id,name,kind,sna_sector,country,parent_company_id,domains,aliases,decided_by,reason
+hewlett-packard-enterprise,Hewlett Packard Enterprise,company,S.11,US,,hpe.com;labs.hpe.com;*.hpe.com,"Hewlett Packard Enterprise Co,",user,"The user (chat, 2026-10-17): hpe.com is Hewlett Packard Enterprise, separate from HP Inc. since the split of 2015; the domains move from hp."
+chromium,Chromium,project,,,google,chromium.org,,user,"The user (D8, 2026-10-18): Chromium is a project; Google is its main interested entity."
+us-department-of-energy,United States Department of Energy,government,S.13,US,,,,claude-main,"Round 6 notes: the government body of the DOE national laboratories (Argonne, Brookhaven, Fermilab, LBNL, LLNL, Los Alamos, Oak Ridge, Jefferson Lab)."
+us-department-of-defense,United States Department of Defense,government,S.13,US,,,,claude-main,"Round 6 notes: MIT Lincoln Laboratory is a DoD federally funded R&D centre."
+federal-ministry-of-education-and-research,Federal Ministry of Education and Research (BMBF),government,S.13,DE,,,,claude-main,"Round 6 notes: the German federal research ministry funds about 90% of the Helmholtz centres (DESY, Juelich, DKFZ, GFZ, GSI). It was renamed the Federal Ministry of Research, Technology and Space in 2025."
+norwegian-ministry-of-education-and-research,Norwegian Ministry of Education and Research,government,S.13,NO,,,,claude-main,Round 6 notes: the owner of Simula Research Laboratory.
+state-of-florida,State of Florida,government,S.13,US,,,,claude-main,Round 6 notes: IHMC is a state research institute created by Florida statute 1004.447.
+state-of-berlin,State of Berlin,government,S.13,DE,,,,claude-main,Round 6 notes: Zuse Institute Berlin is a statutory research institute of the State of Berlin.
+generalitat-de-catalunya,Generalitat de Catalunya,government,S.13,ES,,,,claude-main,Round 6 notes: the Generalitat set up the Computer Vision Center with the UAB.
+provincial-health-services-authority,Provincial Health Services Authority (British Columbia),government,S.13,CA,,,,claude-main,"Round 6 notes: BC Cancer, of which the Genome Sciences Centre is part, is an agency of the PHSA."
+swiss-confederation,Swiss Confederation,government,S.13,CH,,,,claude-main,Round 6 notes: the Confederation funds Idiap as an institute of national importance.
+mext,"Ministry of Education, Culture, Sports, Science and Technology (MEXT)",government,S.13,JP,,,,claude-main,Round 6 notes: KEK is an Inter-University Research Institute Corporation under MEXT.
+government-of-quebec,Government of Quebec,government,S.13,CA,,,,claude-main,Round 6 notes: two Quebec ministries (economy and innovation; health) give the core funding of the IRCM.
+dutch-ministry-of-education-culture-and-science,"Ministry of Education, Culture and Science (Netherlands)",government,S.13,NL,,,,claude-main,Round 6 notes: the ministry funds Naturalis Biodiversity Center.
+university-of-california,University of California,academic,S.13,US,,,,claude-main,"Round 6 notes and V4_TODO: the University of California system runs LBNL and is a member of the operators of LLNL and Los Alamos; only its campuses had ids."
+university-of-west-florida,University of West Florida,academic,S.13,US,,,,claude-main,Round 6 notes: IHMC was established at the University of West Florida.
+sokendai,"The Graduate University for Advanced Studies, SOKENDAI",academic,S.13,JP,,,,claude-main,Round 6 notes: KEK staff teach its PhD School of High Energy Accelerator Science.
+leiden-university,Leiden University,academic,S.13,NL,,,,claude-main,Round 6 notes: the main university tie of Naturalis.
+adeo,Adeo,company,S.11,,,,,user,"named as parent or buyer; the user, 2026-10-18"
+arhs-group,Arhs Group,company,S.11,,,,,user,"named as parent or buyer; the user, 2026-10-18"
+bce-inc,BCE Inc.,company,S.11,,,,,user,"named as parent or buyer; the user, 2026-10-18"
+monotype,Monotype,company,S.11,,,,,user,"named as parent or buyer; the user, 2026-10-18"
+telenor,Telenor,company,S.11,,,,,user,"named as parent or buyer; the user, 2026-10-18"
+unitedhealth-group,UnitedHealth Group,company,S.11,,,,,user,"named as parent or buyer; the user, 2026-10-18"
+ebsco-information-services,EBSCO Information Services,company,S.11,US,,ebsco.com,,claude-review-v8,"Round 8 (domain-of-rejected-organisation): ebsco.com is EBSCO Information Services, its own firm, not AWS (section 3 another firm's domain; knowledge)."
+manipal-academy-of-higher-education,Manipal Academy of Higher Education,academic,,IN,,learner.manipal.edu,,claude-review-v8,Round 8 (domain-of-rejected-organisation): Student mail of Manipal Academy of Higher Education stays with the university (precedent round 4 student domains); not JPMorgan.
+topia,Topia,company,S.11,,,topia.com,,claude-review-v8,"Round 8 (domain-of-rejected-organisation): topia.com is Topia, a global mobility software firm, not the DVLA (section 3 another firm's domain; knowledge)."
+accipiter-radar-technologies,Accipiter Radar Technologies,company,S.11,CA,,accipiterradar.com,,claude-review-v8,"Round 8 (withheld-person-like-name): accipiterradar.com is Accipiter Radar Technologies, a Canadian radar firm (knowledge)."
+appgeo,AppGeo,consultancy,S.11,US,,appgeo.com,,claude-review-v8,"Round 8 (withheld-person-like-name): appgeo.com is AppGeo (Applied Geographics), a Boston GIS consultancy (K9; knowledge)."
+arcbees,Arcbees,company,S.11,CA,,arcbees.com,,claude-review-v8,"Round 8 (withheld-person-like-name): arcbees.com is Arcbees, a Quebec software firm (knowledge)."
+barcelona-school-of-economics,Barcelona School of Economics,academic,,ES,,barcelonagse.eu,,claude-review-v8,"Round 8 (withheld-person-like-name): barcelonagse.eu is the Barcelona School of Economics, formerly Barcelona GSE, a research and graduate school (K5; knowledge)."
+checkr,Checkr,company,S.11,US,,checkr.com,,claude-review-v8,"Round 8 (withheld-person-like-name): checkr.com is Checkr, a US background-check software firm (knowledge)."
+digital-research-alliance-of-canada,Digital Research Alliance of Canada,nonprofit,S.15,CA,,computecanada.ca,,claude-review-v8,"Round 8 (withheld-person-like-name): Compute Canada was the national research computing body, succeeded in 2022 by the Digital Research Alliance of Canada; former name is the current organisation (K7; knowledge)."
+devoteam,Devoteam,consultancy,S.11,FR,,d2si.io,,claude-review-v8,"Round 8 (withheld-person-like-name): ACQUIRED: D2SI, a French cloud consultancy bought by Devoteam in 2018, brand gone; the buyer is not in the index (precedent acquired firms; knowledge)."
+digitas,Digitas,consultancy,S.11,US,,digitaslbi.fr,,claude-review-v8,Round 8 (withheld-person-like-name): DigitasLBi is a former name of the Publicis agency Digitas (Publicis not in the index); basis: knowledge.
+dollar-shave-club,Dollar Shave Club,company,S.11,US,,dollarshaveclub.com,,claude-review-v8,"Round 8 (withheld-person-like-name): Dollar Shave Club still trades under its own brand (owned by Unilever, then Nexus Capital, neither in the index); basis: knowledge."
+empire-life,Empire Life,company,S.11,CA,,empire.ca,,claude-review-v8,Round 8 (withheld-person-like-name): empire.ca is the domain of the Canadian insurer Empire Life (S.12); basis: knowledge.
+fashion-metric,Fashion Metric,company,S.11,US,,fashionmetric.com,,claude-review-v8,Round 8 (withheld-person-like-name): Fashion Metric was a US apparel-sizing start-up; basis: knowledge.
+shogun,Shogun,company,S.11,US,,getshogun.com,,claude-review-v8,Round 8 (withheld-person-like-name): Shogun is a US e-commerce page-builder start-up; basis: knowledge.
+met-office,Met Office,government,S.13,GB,,informaticslab.co.uk,,claude-review-v8,"Round 8 (withheld-person-like-name): Informatics Lab is a unit of the UK Met Office, a government body; a lab domain goes to its body; basis: knowledge."
+intimate-merger,Intimate Merger,company,S.11,JP,,intimatemerger.com,,claude-review-v8,Round 8 (withheld-person-like-name): Intimate Merger is a listed Japanese data-platform firm; basis: knowledge.
+intrepid,Intrepid,consultancy,S.11,US,,intrepid.io,,claude-review-v8,Round 8 (withheld-person-like-name): Intrepid is a Boston mobile and digital agency (K9); a later acquisition is not confirmed; basis: knowledge.
+josh-software,Josh Software,consultancy,S.11,IN,,joshsoftware.com,,claude-review-v8,Round 8 (withheld-person-like-name): Josh Software is an Indian software services firm (K9); basis: knowledge.
+koru-kids,Koru Kids,company,S.11,GB,,korukids.co.uk,,claude-review-v8,Round 8 (withheld-person-like-name): Koru Kids is a UK childcare start-up; basis: knowledge.
+money-forward,Money Forward,company,S.11,JP,,moneyforward.co.jp,,claude-review-v8,Round 8 (withheld-person-like-name): Money Forward is a listed Japanese fintech firm; basis: knowledge.
+officine-pixel,Officine Pixel,consultancy,S.11,IT,,officinepixel.com,,claude-review-v8,Round 8 (withheld-person-like-name): Officine Pixel is an Italian web agency (K9); basis: knowledge.
+packt-publishing,Packt Publishing,company,S.11,GB,,packtpub.com,,claude-review-v8,Round 8 (withheld-person-like-name): Packt is a UK technical publisher; basis: knowledge.
+perfect-memory,Perfect Memory,company,S.11,FR,,perfect-memory.com,,claude-review-v8,Round 8 (withheld-person-like-name): Perfect Memory is a French media-data software firm; basis: knowledge.
+validity,Validity,company,S.11,US,,returnpath.com,,claude-review-v8,"Round 8 (withheld-person-like-name): ACQUIRED: Return Path; bought by Validity in 2019, brand gone, so the domain stays with the buyer; basis: knowledge."
+servicetitan,ServiceTitan,company,S.11,US,,servicetitan.com,,claude-review-v8,Round 8 (withheld-person-like-name): ServiceTitan is a US software firm; basis: knowledge.
+source-auditor,Source Auditor,consultancy,S.11,US,,sourceauditor.com,,claude-review-v8,"Round 8 (withheld-person-like-name): Source Auditor Inc. is a registered US licence-compliance services firm, not a personal domain; basis: knowledge."
+sparkfabrik,SparkFabrik,consultancy,S.11,IT,,sparkfabrik.com,,claude-review-v8,Round 8 (withheld-person-like-name): SparkFabrik is an Italian cloud and web services firm (K9); basis: knowledge.
+higher-logic,Higher Logic,company,S.11,US,,vanillaforums.com,,claude-review-v8,"Round 8 (withheld-person-like-name): ACQUIRED: Vanilla Forums; bought by Higher Logic in 2021, the firm brand is gone (product only), so the domain stays with the buyer; basis: knowledge."

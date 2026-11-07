@@ -80,3 +80,18 @@ ctp	include	^docs/E2E\.md$
 cregit	dest	tools/cregit/
 cregit	include	^nix/(srcml\.nix|srcml-nontermination\.patch)$
 cregit	include	^devenv\.(nix|yaml|lock)$
+#
+# The organization step (S8 of the study) at the study commit whose files made the published
+# files: the organization database v4.9, the links, the column write, the release tables and the
+# error model (steps/organizations/README.md). The study repository has later commits of these
+# files (a spelling rename), so this source has its own id and its own commit.
+study-s8	dest	steps/organizations/study/
+study-s8	include	^s8-companies/(build_companies|build_companies_v4|build_v0|run_v0|build_links|extract_domains_v1|link_format|build_organisations|error_model)\.py$
+study-s8	include	^s8-companies/test_(build_companies|build_companies_v4|build_v0|run_v0|build_links|extract_domains_v1|link_format|build_organisations|error_model)\.py$
+study-s8	include	^s8-companies/manual/[^/]+\.csv$
+study-s8	include	^s8-companies/proposals/(README\.md|top_unmatched\.v[12]\.csv)$
+study-s8	include	^s8-companies/ERROR_MODEL\.md$
+study-s8	include	^s8-companies/review/((DEFINITIONS|AUDIT_SAMPLE)\.md|audit_columns\.html)$
+study-s8	include	^s8-companies/review/(test_)?(audit_columns|audit_columns_sample|audit_columns_serve|audit_tail|audit_tail_sample|audit_analysis)\.py$
+# run_v0.py imports final_merge.py from ../s7-run.
+study-s8	include	^s7-run/final_merge\.py$

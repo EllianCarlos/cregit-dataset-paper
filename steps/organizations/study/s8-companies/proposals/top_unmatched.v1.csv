@@ -1,0 +1,601 @@
+domain,name,kind,kind_basis,parent_name,certainty,reason
+asuswrt-merlin.net,Asuswrt-Merlin,project,manual-review,,medium,firmware project domain kept by one developer
+lostrealm.ca,(Independent),independent,manual-review,,low,"one author, one project; looks like a personal domain"
+yandex-team.com,Yandex,company,manual-review,,high,staff mail domain of Yandex
+edg.com,Edison Design Group,company,manual-review,,high,C++ front-end vendor; company domain
+hslu.ch,Lucerne University of Applied Sciences and Arts,academic,manual-review,,high,Swiss university of applied sciences
+ytsaurus.tech,YTsaurus,company,manual-review,Yandex,high,YTsaurus is a Yandex product
+informatik.uni-freiburg.de,University of Freiburg,academic,manual-review,,high,computer science department of the University of Freiburg
+semgrep.com,Semgrep,company,manual-review,,high,static analysis company
+ydb.tech,YDB,company,manual-review,Yandex,high,YDB is a Yandex database product
+thomsonreuters.com,Thomson Reuters,company,manual-review,,high,media and information company
+zuster.org,(Independent),independent,manual-review,,medium,personal domain of one developer
+eiffel.com,Eiffel Software,company,manual-review,,high,company behind the Eiffel language tools
+glandium.org,(Independent),independent,manual-review,,high,personal domain of one Mozilla developer
+llnl.gov,Lawrence Livermore National Laboratory,government,gov-or-edu-domain,,high,US national laboratory of the Department of Energy
+tildearrow.org,(Independent),independent,manual-review,,medium,personal domain of one developer
+dragonflybsd.org,DragonFly BSD,project,manual-review,,high,DragonFly BSD project mail domain
+koefferlein.de,(Independent),independent,manual-review,,medium,personal domain of one developer
+miktex.org,MiKTeX,project,manual-review,,high,MiKTeX project domain
+openoffice.org,OpenOffice.org,project,manual-review,,high,"OpenOffice.org project mail domain; Sun, Oracle, then Apache held it"
+wilsonl.in,(Independent),independent,manual-review,,medium,personal domain of one developer
+nondot.org,(Independent),independent,manual-review,,high,personal domain of one LLVM developer
+paul.cx,(Independent),independent,manual-review,,medium,personal domain of one developer
+winuae.net,WinUAE,project,manual-review,,high,WinUAE emulator project domain
+openmpt.org,OpenMPT,project,manual-review,,high,OpenMPT tracker project domain
+marcnuri.com,(Independent),independent,manual-review,,medium,personal domain of one developer
+hpi.de,Hasso Plattner Institute,academic,manual-review,,high,German university institute for digital engineering
+lighttransport.com,Light Transport Entertainment,company,manual-review,,medium,Japanese graphics software company
+blender.org,Blender Foundation,foundation,manual-review,,high,Blender Foundation domain
+ziglang.org,Zig Software Foundation,foundation,manual-review,,high,Zig language domain; the Zig Software Foundation runs it
+wilfred.me.uk,(Independent),independent,manual-review,,medium,personal domain of one developer
+jarredsumner.com,(Independent),independent,manual-review,,medium,personal domain of one developer
+offis.de,OFFIS,academic,manual-review,,high,OFFIS institute for informatics in Oldenburg
+mythtv.org,MythTV,project,manual-review,,high,MythTV project mail domain
+warmcat.com,(Independent),independent,manual-review,,medium,personal domain of one developer
+wolfssl.com,wolfSSL,company,manual-review,,high,embedded TLS library company
+cimne.upc.edu,CIMNE,academic,gov-or-edu-domain,,high,research centre at the Polytechnic University of Catalonia
+localai.io,LocalAI,project,manual-review,,medium,LocalAI project domain
+buildwithfern.com,Fern,company,manual-review,,high,API tooling startup
+sss.pgh.pa.us,(Independent),independent,manual-review,,high,personal domain of one PostgreSQL developer
+berkeley.edu,"University of California, Berkeley",academic,gov-or-edu-domain,,high,university domain
+smedbergs.us,(Independent),independent,manual-review,,medium,family or personal domain of one developer
+mppmu.mpg.de,Max Planck Institute for Physics,academic,manual-review,Max Planck Society,high,Max Planck institute in Munich
+koconnor.net,(Independent),independent,manual-review,,medium,personal domain of one developer
+cjdsellers.io,(Independent),independent,manual-review,,medium,personal domain of one developer
+hskupin.info,(Independent),independent,manual-review,,medium,personal domain of one developer
+mountifield.org,(Independent),independent,manual-review,,medium,personal domain of one developer
+colostate.edu,Colorado State University,academic,gov-or-edu-domain,,high,university domain
+lst.de,(Independent),independent,manual-review,,medium,personal domain of one Linux kernel developer
+mit.edu,Massachusetts Institute of Technology,academic,gov-or-edu-domain,,high,university domain
+aerys.in,Aerys,company,manual-review,,low,French 3D engine company; domain match not sure
+korobeynikov.info,(Independent),independent,manual-review,,medium,personal domain of one LLVM developer
+baldurk.org,(Independent),independent,manual-review,,medium,personal domain of one developer
+parlanenz.com,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+joemattiello.com,(Independent),independent,manual-review,,medium,personal domain of one developer
+ipxe.org,iPXE,project,manual-review,,high,iPXE project domain
+berlin.de,BerlinOnline,free-provider,manual-review,,low,city portal of Berlin; offered public webmail
+ringwald.ch,(Independent),independent,manual-review,,medium,personal domain of one developer
+qcad.org,RibbonSoft,company,manual-review,,medium,QCAD product domain of RibbonSoft
+willink.me.uk,(Independent),independent,manual-review,,medium,personal domain of one developer
+metafoo.co.uk,(Independent),independent,manual-review,,medium,personal domain of one Clang developer
+grosser.es,(Independent),independent,manual-review,,medium,personal domain of one LLVM developer
+mustun.com,(Independent),independent,manual-review,,low,"one author, one project; looks personal"
+jesup.org,(Independent),independent,manual-review,,medium,personal domain of one developer
+skippinet.com.au,(Independent),independent,manual-review,,medium,personal domain of one developer
+pocock.pro,(Independent),independent,manual-review,,medium,personal domain of one developer
+notam02.no,Notam,nonprofit,manual-review,,medium,Norwegian centre for music technology
+castus.tv,Castus,company,manual-review,,low,US broadcast software company; match not sure
+frentix.com,frentix,company,manual-review,,high,Swiss company behind OpenOLAT
+9track.net,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+rhomobile.com,Rhomobile,company,manual-review,Motorola Solutions,high,mobile framework company; Motorola Solutions bought it in 2011
+kolibrios.org,KolibriOS,project,manual-review,,high,KolibriOS project domain
+ornl.gov,Oak Ridge National Laboratory,government,gov-or-edu-domain,,high,US national laboratory of the Department of Energy
+maps4print.com,,,,,unknown,not known
+10gen.com,MongoDB,company,manual-review,,high,former name of MongoDB Inc.
+mcs.anl.gov,Argonne National Laboratory,government,gov-or-edu-domain,,high,mathematics and computer science division of Argonne
+lcad.inf.ufes.br,Federal University of Espirito Santo,academic,manual-review,,high,computing lab of a Brazilian federal university
+ncbi.nlm.nih.gov,National Center for Biotechnology Information,government,gov-or-edu-domain,National Institutes of Health,high,NCBI is part of the US National Library of Medicine
+bigladdersoftware.com,Big Ladder Software,company,manual-review,,high,building energy software company
+evolveum.com,Evolveum,company,manual-review,,high,company behind midPoint
+streamhpc.com,StreamHPC,consultancy,manual-review,,medium,GPU and HPC software consultancy
+cfx.re,Cfx.re,company,manual-review,Rockstar Games,medium,FiveM developer; Rockstar Games bought it in 2023
+nereid.pl,(Independent),independent,manual-review,,medium,personal domain of one developer
+hdfgroup.org,The HDF Group,nonprofit,manual-review,,high,non-profit that maintains HDF5
+uoregon.edu,University of Oregon,academic,gov-or-edu-domain,,high,university domain
+metasfresh.com,metasfresh,company,manual-review,metas GmbH,medium,ERP product of metas GmbH
+netxms.org,NetXMS,company,manual-review,Raden Solutions,medium,monitoring product of Raden Solutions
+math.tamu.edu,Texas A&M University,academic,gov-or-edu-domain,,high,mathematics department domain
+freefriends.org,(Independent),independent,manual-review,,medium,personal domain of one GNU developer
+jaist.ac.jp,Japan Advanced Institute of Science and Technology,academic,gov-or-edu-domain,,high,Japanese graduate university
+isc.org,Internet Systems Consortium,nonprofit,manual-review,,high,non-profit behind BIND and Kea
+9465.net,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+lindenbergsoftware.com,Lindenberg Software,company,manual-review,,low,small software firm of one developer
+clisp.org,GNU CLISP,project,manual-review,,high,CLISP project domain
+pkgsrc.org,pkgsrc,project,manual-review,The NetBSD Foundation,high,pkgsrc developer addresses; NetBSD Foundation runs pkgsrc
+crisal.io,(Independent),independent,manual-review,,medium,personal domain of one developer
+vastheman.com,(Independent),independent,manual-review,,medium,personal domain of one developer
+dfinity.org,DFINITY Foundation,foundation,manual-review,,high,Swiss non-profit foundation behind the Internet Computer
+openlinksw.com,OpenLink Software,company,manual-review,,high,company behind Virtuoso
+kyomu.43-1.org,(Independent),independent,manual-review,,low,subdomain of a shared host; looks personal
+fivem.net,Cfx.re,company,manual-review,Rockstar Games,medium,FiveM product domain of Cfx.re
+postgresql.org,PostgreSQL Global Development Group,project,manual-review,,high,PostgreSQL project mail domain
+gridgain.com,GridGain Systems,company,manual-review,,high,in-memory computing company
+pepe.search.yandex.net,Yandex,company,manual-review,,high,internal host of Yandex search
+rtems.org,RTEMS,project,manual-review,,high,RTEMS project mail domain
+ga2.so-net.ne.jp,So-net,free-provider,manual-review,Sony,medium,consumer ISP mail of So-net
+meinersbur.de,(Independent),independent,manual-review,,medium,personal domain of one LLVM developer
+turso.tech,Turso,company,manual-review,,high,database company
+gareus.org,(Independent),independent,manual-review,,medium,personal domain of one audio developer
+bananium.fr,(Independent),independent,manual-review,,medium,personal domain of one developer
+ruhr-uni-bochum.de,Ruhr University Bochum,academic,manual-review,,high,university domain
+nuttx.org,NuttX,project,manual-review,,medium,NuttX project domain before Apache
+hsivonen.fi,(Independent),independent,manual-review,,medium,personal domain of one Mozilla developer
+miranda.im,Miranda IM,project,manual-review,,medium,Miranda IM project domain
+collabora.co.uk,Collabora,consultancy,manual-review,,high,open-source consultancy
+utexas.edu,University of Texas at Austin,academic,gov-or-edu-domain,,high,university domain
+embedded-brains.de,embedded brains,company,manual-review,,high,German embedded software company
+aarongiles.com,(Independent),independent,manual-review,,medium,personal domain of one developer
+actuate.com,Actuate,company,manual-review,OpenText,high,BIRT company; OpenText bought it in 2015
+neotechnology.com,Neo4j,company,manual-review,,high,former name of Neo4j Inc.
+dre.vanderbilt.edu,Vanderbilt University,academic,gov-or-edu-domain,,high,research group domain of Vanderbilt
+nod-labs.com,Nod.ai,company,manual-review,AMD,high,ML compiler company; AMD bought it in 2023
+jumptrading.com,Jump Trading,company,manual-review,,high,trading firm
+klingt.org,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+efcs.ca,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+alum.mit.edu,MIT Alumni Association,free-provider,manual-review,,medium,alumni forwarding addresses; not an employer
+itemis.de,itemis,company,manual-review,,high,German software company
+krassnigg.de,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+spatialys.com,Spatialys,consultancy,manual-review,,medium,geospatial consultancy of one GDAL developer
+embecosm.com,Embecosm,consultancy,manual-review,,high,compiler consultancy
+appinf.com,Applied Informatics,company,manual-review,,high,company behind POCO
+postman.com,Postman,company,manual-review,,high,API platform company
+wolfpond.org,(Independent),independent,manual-review,,medium,personal domain of one developer
+nowina.lu,Nowina Solutions,company,manual-review,,medium,Luxembourg e-signature software company
+figat.pl,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+adafruit.com,Adafruit Industries,company,manual-review,,high,electronics company
+graviteesource.com,GraviteeSource,company,manual-review,,high,API management company
+vivaldi.net,Vivaldi Technologies,free-provider,manual-review,,medium,community webmail of Vivaldi; anybody can register
+metas.de,metas GmbH,company,manual-review,,medium,German ERP company
+yugabyte.com,Yugabyte,company,manual-review,,high,database company
+openttd.org,OpenTTD,project,manual-review,,high,OpenTTD project domain
+luelo.dev,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+scylladb.com,ScyllaDB,company,manual-review,,high,database company
+alkacon.com,Alkacon Software,company,manual-review,,high,company behind OpenCms
+unicode.org,Unicode Consortium,nonprofit,manual-review,,high,non-profit standards body
+w1.fi,(Independent),independent,manual-review,,medium,personal domain of one wireless developer
+minigui.org,MiniGUI,company,manual-review,FMSoft,medium,GUI product of FMSoft
+trash.net,(Independent),independent,manual-review,,medium,personal domain of one Linux developer
+derickrethans.nl,(Independent),independent,manual-review,,medium,personal domain of one PHP developer
+codewhale.net,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+ainc.de,,,,,unknown,not known
+bitkeeper.com,BitMover,company,manual-review,,high,BitKeeper product domain of BitMover
+niden.net,(Independent),independent,manual-review,,medium,personal domain of one developer
+dotcms.com,dotCMS,company,manual-review,,high,CMS company
+c-ware.de,,,,,unknown,not known
+lexo.cool,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+queze.net,(Independent),independent,manual-review,,medium,personal domain of one Mozilla developer
+kochan.io,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+urbackup.org,UrBackup,project,manual-review,,high,UrBackup project domain
+nostrum.com,(Independent),independent,manual-review,,low,small personal or family domain
+softwareradiosystems.com,Software Radio Systems,company,manual-review,,high,company behind srsRAN
+vaadin.com,Vaadin,company,manual-review,,high,web framework company
+visionengravers.com,Vision Engravers,company,manual-review,,low,engraving equipment firm; match not sure
+alexrp.com,(Independent),independent,manual-review,,medium,personal domain of one developer
+juce.com,JUCE,company,manual-review,PACE Anti-Piracy,medium,JUCE framework; PACE owns it since 2020
+winscp.net,WinSCP,project,manual-review,,high,WinSCP project domain
+marino.st,,,,,unknown,not known
+geomatys.com,Geomatys,company,manual-review,,high,French geospatial company
+imtek.uni-freiburg.de,University of Freiburg,academic,manual-review,,high,microsystems department of the University of Freiburg
+phusion.nl,Phusion,company,manual-review,,high,company behind Passenger
+erlang.org,Erlang/OTP,company,manual-review,Ericsson,medium,Erlang/OTP domain; Ericsson owns Erlang
+zib.de,Zuse Institute Berlin,academic,manual-review,,high,research institute for applied mathematics
+ihmc.us,Florida Institute for Human and Machine Cognition,academic,manual-review,,high,non-profit research institute
+noemail.net,,,,,unknown,"placeholder domain, not an organisation"
+tau-technologies.com,,,,,unknown,not known
+numworks.com,NumWorks,company,manual-review,,high,calculator company
+pqrs.org,(Independent),independent,manual-review,,medium,personal domain of one developer
+anl.gov,Argonne National Laboratory,government,gov-or-edu-domain,,high,US national laboratory of the Department of Energy
+inl.gov,Idaho National Laboratory,government,gov-or-edu-domain,,high,US national laboratory of the Department of Energy
+oilshell.org,Oils,project,manual-review,,high,Oil shell project domain
+tinyhumans.ai,Tiny Humans,company,manual-review,,low,AI startup; not sure
+webtide.com,Webtide,company,manual-review,,high,Jetty services company
+redpanda.com,Redpanda Data,company,manual-review,,high,streaming data company
+consensys.net,ConsenSys,company,manual-review,,high,Ethereum software company
+gimp.org,GIMP,project,manual-review,,high,GIMP project mail domain
+monsoon.(none),,,,,unknown,"placeholder host name, not an organisation"
+aaronballman.com,(Independent),independent,manual-review,,medium,personal domain of one Clang developer
+thingsboard.io,ThingsBoard,company,manual-review,,high,IoT platform company
+teluu.com,Teluu,company,manual-review,,high,company behind PJSIP
+zed.dev,Zed Industries,company,manual-review,,high,company behind the Zed editor
+esc-net.de,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+pj64-emu.com,Project64,project,manual-review,,high,Project64 emulator project domain
+seerose.net,(Independent),independent,manual-review,,low,small personal domain
+beam-mw.com,Beam,company,manual-review,,medium,Beam cryptocurrency developer company
+differentk.fyi,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+gradle.com,Gradle,company,manual-review,,high,build tool company
+nopcode.org,(Independent),independent,manual-review,,medium,personal domain of one radare developer
+brave.com,Brave Software,company,manual-review,,high,browser company
+dkfz-heidelberg.de,German Cancer Research Center,academic,manual-review,,high,DKFZ research centre in Heidelberg
+d-toybox.com,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+adriansieber.com,(Independent),independent,manual-review,,medium,personal domain of one developer
+e-evolution.com,e-Evolution,consultancy,manual-review,,medium,ERP consultancy behind ADempiere work
+netscape.com,Netscape Communications,company,manual-review,AOL,high,browser company; AOL bought it in 1999
+webkit.org,WebKit,project,manual-review,,high,WebKit project mail domain
+endrift.com,(Independent),independent,manual-review,,medium,personal domain of one emulator developer
+wezfurlong.org,(Independent),independent,manual-review,,medium,personal domain of one PHP developer
+google.com%408db76d5a-ed1c-0410-87a9-c151d255dfc7,Google,company,manual-review,,medium,git-svn id of a Google SVN repository; '%40' replaces the at sign
+intellij.com,JetBrains,company,manual-review,,high,former IntelliJ Software domain of JetBrains
+catgit.com,,,,,unknown,not known
+artifex.com,Artifex Software,company,manual-review,,high,company behind Ghostscript and MuPDF
+stillwater-sc.com,Stillwater Supercomputing,company,manual-review,,medium,numerical computing company
+zdoom.fake,,,,,unknown,"placeholder domain, not an organisation"
+wallix.com,WALLIX,company,manual-review,,high,French cybersecurity company
+iterate.ch,iterate,company,manual-review,,high,Swiss company behind Cyberduck
+zabbix.com,Zabbix,company,manual-review,,high,monitoring software company
+redking.me.uk,(Independent),independent,manual-review,,medium,personal domain of one developer
+nowhere.fake,,,,,unknown,"placeholder domain, not an organisation"
+eng.it,Engineering Ingegneria Informatica,company,manual-review,,high,Italian IT services company
+nomadic-labs.com,Nomadic Labs,company,manual-review,,high,Tezos software company
+stenci.la,Stencila,company,manual-review,,medium,research document software company
+apollo.backplane.com,(Independent),independent,manual-review,,medium,personal host of one BSD developer
+usgs.gov,United States Geological Survey,government,gov-or-edu-domain,,high,US federal agency
+getmangos.com,MaNGOS,project,manual-review,,high,MaNGOS project mail domain
+hawaii.edu,University of Hawaii,academic,gov-or-edu-domain,,high,university domain
+timeplus.io,Timeplus,company,manual-review,,high,streaming database company
+spice.ai,Spice AI,company,manual-review,,high,AI data platform company
+gamedev.sk,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+codeplay.com,Codeplay Software,company,manual-review,Intel,high,compiler company; Intel bought it in 2022
+dlib.net,dlib,project,manual-review,,high,dlib library project domain
+digium.com,Digium,company,manual-review,Sangoma,high,Asterisk company; Sangoma bought it in 2018
+openssl.org,OpenSSL Foundation,foundation,manual-review,,medium,OpenSSL project domain; the OpenSSL bodies hold it
+urclocks.com,,,,,unknown,not known
+sny.no,(Independent),independent,manual-review,,medium,personal domain of one developer
+belledonne-communications.com,Belledonne Communications,company,manual-review,,high,French VoIP software company
+opennms.org,OpenNMS,company,manual-review,The OpenNMS Group,medium,OpenNMS project domain of The OpenNMS Group
+mailb.org,mailbox.org,free-provider,manual-review,,medium,short domain of the mailbox.org mail service
+culture.gouv.fr,French Ministry of Culture,government,gov-or-edu-domain,,high,French government ministry
+swirldslabs.com,Swirlds Labs,company,manual-review,,high,Hedera software company
+nullri.ch,(Independent),independent,manual-review,,medium,personal domain of one developer
+doctorentertainment.com,Doctor Entertainment,company,manual-review,,low,Swedish game company; match not sure
+askmonty.org,Monty Program,company,manual-review,MariaDB,high,MariaDB company; merged into MariaDB Corporation
+plutext.org,Plutext,company,manual-review,,medium,company behind docx4j
+ilight.com,,,,,unknown,not known
+pcc.me.uk,(Independent),independent,manual-review,,medium,personal domain of one LLVM developer
+tu-dortmund.de,TU Dortmund University,academic,manual-review,,high,university domain
+mystenlabs.com,Mysten Labs,company,manual-review,,high,Sui blockchain company
+srb2.org,Sonic Robo Blast 2,project,manual-review,,high,SRB2 game project domain
+tri.global,Toyota Research Institute,company,manual-review,Toyota,high,research company of Toyota
+mudita.com,Mudita,company,manual-review,,high,Polish phone maker
+private.com,,,,,unknown,"placeholder domain, not an organisation"
+wxwidgets.org,wxWidgets,project,manual-review,,high,wxWidgets project domain
+iscas.ac.cn,"Institute of Software, Chinese Academy of Sciences",academic,gov-or-edu-domain,Chinese Academy of Sciences,high,research institute of the Chinese Academy of Sciences
+nasa.gov,NASA,government,gov-or-edu-domain,,high,US federal space agency
+opensips.org,OpenSIPS,project,manual-review,,medium,OpenSIPS project domain
+me.by,,,,,unknown,not known
+netscape.net,Netscape WebMail,free-provider,manual-review,AOL,high,free webmail of Netscape and AOL
+eagle.fgcu.edu,Florida Gulf Coast University,academic,gov-or-edu-domain,,high,student mail domain of FGCU
+kuix.de,(Independent),independent,manual-review,,medium,personal domain of one developer
+honzamrazek.cz,(Independent),independent,manual-review,,medium,personal domain of one developer
+digia.com,Digia,company,manual-review,,high,Finnish IT company; owned Qt 2012 to 2016
+pinc-software.de,pinc Software,company,manual-review,,low,small software firm of one developer
+git.imagemagick.org,ImageMagick,project,manual-review,ImageMagick Studio,medium,ImageMagick project git host
+prusa3d.com,Prusa Research,company,manual-review,,high,3D printer maker
+syenar.net,,,,,unknown,not known
+bosch-si.com,Bosch Software Innovations,company,manual-review,Bosch,high,software subsidiary of Bosch
+openchrom.net,OpenChrom,project,manual-review,Lablicate,medium,OpenChrom project domain
+kallisti.com,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+filigran.io,Filigran,company,manual-review,,high,company behind OpenCTI
+thelayzells.com,(Independent),independent,manual-review,,medium,family domain of one developer
+arntzen-software.no,Arntzen Software,consultancy,manual-review,,medium,graphics consultancy of one developer
+vt.edu,Virginia Tech,academic,gov-or-edu-domain,,high,university domain
+fnal.gov,Fermi National Accelerator Laboratory,government,gov-or-edu-domain,,high,US national laboratory of the Department of Energy
+poettering.net,(Independent),independent,manual-review,,high,personal domain of one systemd developer
+onlinehome.de,IONOS,free-provider,manual-review,United Internet,low,customer mail domain of 1and1 hosting
+lepi.org,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+gse.nl,,,,,unknown,not known
+linuxaudiosystems.com,Linux Audio Systems,consultancy,manual-review,,low,audio software business of one developer
+cocos2d-x.org,Cocos2d-x,project,manual-review,Chukong Technologies,medium,Cocos2d-x project domain
+domemtech.com,,,,,unknown,not known
+moddable.tech,Moddable Tech,company,manual-review,,high,embedded JavaScript company
+id.uzh.ch,University of Zurich,academic,manual-review,,high,IT services domain of the University of Zurich
+mirtes.cz,(Independent),independent,manual-review,,medium,personal domain of one developer
+macro.com,Macro,company,manual-review,,low,document software startup; match not sure
+mohanathas.com,(Independent),independent,manual-review,,medium,personal domain of one developer
+flim.org,(Independent),independent,manual-review,,low,small personal domain
+readyset.io,ReadySet,company,manual-review,,high,database cache company
+jdoerfert.de,(Independent),independent,manual-review,,medium,personal domain of one LLVM developer
+bowtieddevil.com,(Independent),independent,manual-review,,low,small personal domain
+infocomm.com,,,,,unknown,not known
+oregonstate.edu,Oregon State University,academic,gov-or-edu-domain,,high,university domain
+accesssoftek.com,Access Softek,company,manual-review,,high,software company with LLVM work
+mines-paris.org,Mines Paris alumni association,free-provider,manual-review,,low,alumni mail domain; not an employer
+dl6er.de,(Independent),independent,manual-review,,medium,personal radio call-sign domain of one developer
+quadbyte.net,,,,,unknown,not known
+fenecon.de,FENECON,company,manual-review,,high,German energy storage company
+eggert.org,(Independent),independent,manual-review,,medium,personal domain of one GNU developer
+ggasoftware.com,GGA Software Services,company,manual-review,,medium,software services company
+fuk.kindai.ac.jp,Kindai University,academic,gov-or-edu-domain,,high,Japanese university domain
+feldera.com,Feldera,company,manual-review,,high,incremental compute company
+artelnics.com,Artelnics,company,manual-review,,high,Spanish machine learning company
+stellar.org,Stellar Development Foundation,foundation,manual-review,,high,non-profit foundation behind Stellar
+duallab.com,Dual Lab,company,manual-review,,low,software company; not sure
+zrythm.org,Zrythm,project,manual-review,,high,Zrythm project domain
+racket-lang.org,Racket,project,manual-review,,high,Racket project mail domain
+webb-johnson.net,(Independent),independent,manual-review,,medium,personal domain of one developer
+onedev.io,OneDev,project,manual-review,,medium,OneDev project domain
+fs-uae.net,FS-UAE,project,manual-review,,high,FS-UAE emulator project domain
+beniston.com,(Independent),independent,manual-review,,medium,personal domain of one developer
+momjian.us,(Independent),independent,manual-review,,high,personal domain of one PostgreSQL developer
+yvess-macbook-pro.local,,,,,unknown,"placeholder host name, not an organisation"
+kalrayinc.com,Kalray,company,manual-review,,high,French processor company
+gmail.com%4001922e74-a4c3-11dd-a5cd-697bfd0a0cef,Gmail,free-provider,manual-review,Google,high,git-svn id with Gmail; '%40' replaces the at sign
+can.ac,,,,,unknown,not known
+huggingface.co,Hugging Face,company,manual-review,,high,machine learning company
+sirix.io,SirixDB,project,manual-review,,medium,SirixDB project domain
+rivai.ai,RivAI,company,manual-review,,low,Chinese RISC-V company; not sure
+eclipsesource.com,EclipseSource,company,manual-review,,high,Eclipse services company
+hashcat.net,hashcat,project,manual-review,,high,hashcat project domain
+labri.fr,LaBRI,academic,manual-review,,high,computer science lab in Bordeaux
+rerun.io,Rerun,company,manual-review,,high,data visualisation company
+cs.ucla.edu,"University of California, Los Angeles",academic,gov-or-edu-domain,,high,computer science department of UCLA
+techemail.com,,,,,unknown,not known
+libsdl.org,SDL,project,manual-review,,high,SDL project domain
+vercel.com,Vercel,company,manual-review,,high,web platform company
+raphael-mack.de,(Independent),independent,manual-review,,medium,personal domain of one developer
+cyberbotics.com,Cyberbotics,company,manual-review,,high,Swiss company behind Webots
+team-mediaportal.com,MediaPortal,project,manual-review,,high,MediaPortal project domain
+shane.gg,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+pandora.be,Telenet,free-provider,manual-review,,medium,consumer ISP mail domain in Belgium
+rawmaterialsoftware.com,Raw Material Software,company,manual-review,,medium,original company of JUCE
+frafos.com,FRAFOS,company,manual-review,,high,German VoIP company
+zeroc.com,ZeroC,company,manual-review,,high,company behind Ice
+devlieghere.com,(Independent),independent,manual-review,,medium,personal domain of one LLVM developer
+linux-fr.org,LinuxFr.org,project,manual-review,,low,French Linux community site; mail use not sure
+strongswan.org,strongSwan,project,manual-review,,high,strongSwan project domain
+graylog.com,Graylog,company,manual-review,,high,log management company
+fhahn.com,(Independent),independent,manual-review,,medium,personal domain of one LLVM developer
+pentaho.com,Pentaho,company,manual-review,Hitachi Vantara,high,BI company; Hitachi bought it in 2015
+parity.io,Parity Technologies,company,manual-review,,high,blockchain software company
+telegram.org,Telegram,company,manual-review,,high,messaging company
+streamcomputing.eu,StreamHPC,consultancy,manual-review,,medium,former name of StreamHPC
+basistech.com,Basis Technology,company,manual-review,,high,text analytics company
+jahia.com,Jahia Solutions,company,manual-review,,high,Swiss CMS company
+jku.at,Johannes Kepler University Linz,academic,manual-review,,high,university domain
+ozemail.com.au,OzEmail,free-provider,manual-review,TPG Telecom,medium,consumer ISP mail domain in Australia
+mousebirdconsulting.com,mousebird consulting,consultancy,manual-review,,medium,mapping software consultancy
+estuary.dev,Estuary,company,manual-review,,high,data integration company
+appsmith.com,Appsmith,company,manual-review,,high,low-code company
+eisentraut.org,(Independent),independent,manual-review,,medium,personal domain of one PostgreSQL developer
+elie.net,(Independent),independent,manual-review,,medium,personal domain of one developer
+schedmd.com,SchedMD,company,manual-review,,high,company behind Slurm
+tianshilei.me,(Independent),independent,manual-review,,medium,personal domain of one developer
+drmccoy.de,(Independent),independent,manual-review,,medium,personal domain of one developer
+eschertech.com,Escher Technologies,company,manual-review,,medium,formal methods software company
+bugenzhao.com,(Independent),independent,manual-review,,medium,personal domain of one developer
+ikarustech.com,,,,,unknown,not known
+u.washington.edu,University of Washington,academic,gov-or-edu-domain,,high,university domain
+anysphere.co,Anysphere,company,manual-review,,high,company behind Cursor
+arcadedata.com,Arcade Data,company,manual-review,,high,company behind ArcadeDB
+wazuh.com,Wazuh,company,manual-review,,high,security platform company
+cgf.cx,(Independent),independent,manual-review,,medium,personal domain of one Cygwin developer
+gingerbill.org,(Independent),independent,manual-review,,medium,personal domain of one language developer
+acadia.inc,,,,,unknown,not known
+centricular.com,Centricular,consultancy,manual-review,,high,GStreamer consultancy
+lists.sourceforge.net,SourceForge,free-provider,manual-review,,medium,SourceForge mailing lists; any project can host them
+attnam.com,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+codenameone.com,Codename One,company,manual-review,,high,mobile framework company
+highsecure.ru,,,,,unknown,not known
+axelor.com,Axelor,company,manual-review,,high,French ERP company
+vector35.com,Vector 35,company,manual-review,,high,company behind Binary Ninja
+openscenegraph.com,OpenSceneGraph,project,manual-review,,medium,OpenSceneGraph project domain
+zend.com,Zend Technologies,company,manual-review,Perforce,high,PHP company; Perforce bought it via Rogue Wave
+ddvtech.com,DDVTech,company,manual-review,,high,company behind MistServer
+sipspectrum.com,,,,,unknown,not known
+redisson.pro,Redisson,company,manual-review,,medium,commercial domain of Redisson
+occamlabs.de,,,,,unknown,not known
+lowrisc.org,lowRISC,nonprofit,manual-review,,high,UK not-for-profit community interest company
+trycua.com,Cua,company,manual-review,,medium,AI agent startup
+tasktop.com,Tasktop,company,manual-review,Planview,high,software company; Planview bought it in 2022
+threebuttes.com,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+voskuil.org,(Independent),independent,manual-review,,medium,personal domain of one developer
+aegisub.org,Aegisub,project,manual-review,,high,Aegisub project domain
+morgner.de,(Independent),independent,manual-review,,low,small personal domain
+ml-pa.com,,,,,unknown,not known
+ll.mit.edu,MIT Lincoln Laboratory,academic,gov-or-edu-domain,Massachusetts Institute of Technology,high,federally funded research lab run by MIT
+klaussilveira.com,(Independent),independent,manual-review,,medium,personal domain of one developer
+icculus.org,icculus.org,free-provider,manual-review,,low,hosting for open-source developers; accounts for many people
+appleseedhq.net,appleseed,project,manual-review,,high,appleseed renderer project domain
+hirschkaefer.de,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+suborbital.org.uk,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+bytedesk.com,Bytedesk,company,manual-review,,medium,customer service software company
+eprosima.com,eProsima,company,manual-review,,high,Spanish DDS middleware company
+ettus.com,Ettus Research,company,manual-review,Emerson,high,SDR company of NI; Emerson owns NI
+ongres.com,OnGres,company,manual-review,,high,PostgreSQL services company
+maskray.me,(Independent),independent,manual-review,,high,personal domain of one LLVM developer
+dominicclifton.name,(Independent),independent,manual-review,,medium,personal domain of one developer
+crapouillou.net,(Independent),independent,manual-review,,medium,personal domain of one Linux developer
+rotateright.com,RotateRight,company,manual-review,,medium,profiler software company
+agar.ca,(Independent),independent,manual-review,,low,small personal domain
+g.harvard.edu,Harvard University,academic,gov-or-edu-domain,,high,graduate student mail domain of Harvard
+neo4j.com,Neo4j,company,manual-review,,high,graph database company
+longsight.com,Longsight,company,manual-review,,high,Sakai services company
+cs-ware.de,,,,,unknown,not known
+adacore.com,AdaCore,company,manual-review,,high,Ada tools company
+ociweb.com,Object Computing,company,manual-review,,high,former domain of Object Computing Inc.
+hughsie.com,(Independent),independent,manual-review,,high,personal domain of one GNOME developer
+supnik.org,(Independent),independent,manual-review,,high,personal domain of one SIMH developer
+primarydata.com,Primary Data,company,manual-review,,high,storage software company
+prusa3d.cz,Prusa Research,company,manual-review,,high,Czech domain of Prusa Research
+highfidelity.io,High Fidelity,company,manual-review,,high,virtual worlds company
+compnerd.org,(Independent),independent,manual-review,,medium,personal domain of one Swift developer
+ulb.be,Universite libre de Bruxelles,academic,manual-review,,high,Belgian university domain
+philkrones.com,(Independent),independent,manual-review,,medium,personal domain of one developer
+know.bi,know.bi,consultancy,manual-review,,medium,Belgian BI consultancy
+larrygritz.com,(Independent),independent,manual-review,,medium,personal domain of one graphics developer
+404wolf.com,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+microsemi.com,Microsemi,company,manual-review,Microchip Technology,high,chip maker; Microchip bought it in 2018
+mne-cpp.org,MNE-CPP,project,manual-review,,high,MNE-CPP project domain
+openframeworks.cc,openFrameworks,project,manual-review,,high,openFrameworks project domain
+epbk.cz,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+mitel.com,Mitel,company,manual-review,,high,telecom company
+opennms.com,The OpenNMS Group,company,manual-review,,high,company behind OpenNMS
+geo-solutions.it,GeoSolutions,company,manual-review,,high,Italian geospatial company
+functori.com,Functori,company,manual-review,,high,French Tezos software company
+mediaarea.net,MediaArea,company,manual-review,,high,company behind MediaInfo
+eqrion.net,(Independent),independent,manual-review,,medium,personal domain of one Mozilla developer
+users.noreply.gitlab.com,GitLab noreply,free-provider,manual-review,GitLab,high,GitLab noreply addresses; not an employer
+flashtux.org,(Independent),independent,manual-review,,medium,personal domain of one developer
+kdemail.net,KDE e.V.,nonprofit,manual-review,,medium,mail alias service for KDE contributors
+mirdita.de,(Independent),independent,manual-review,,medium,personal domain of one developer
+cask.co,Cask Data,company,manual-review,Google,high,data company; Google bought it in 2018
+bareos.com,Bareos,company,manual-review,,high,German backup software company
+couchbase.com,Couchbase,company,manual-review,,high,database company
+expensify.com,Expensify,company,manual-review,,high,expense software company
+gerbino.co,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+metzlerbros.de,(Independent),independent,manual-review,,medium,family domain of one developer
+steinerberg.com,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+homerow.net,(Independent),independent,manual-review,,medium,personal domain of one developer
+starfivetech.com,StarFive Technology,company,manual-review,,high,RISC-V chip company
+webrtc.org%404adac7df-926f-26a2-2b94-8c16560cd09d,WebRTC,company,manual-review,Google,medium,git-svn id of the WebRTC repository; '%40' replaces the at sign
+pensando.io,Pensando Systems,company,manual-review,AMD,high,networking company; AMD bought it in 2022
+nih.gov,National Institutes of Health,government,gov-or-edu-domain,,high,US federal agency
+akto.io,Akto,company,manual-review,,high,API security company
+theqtcompany.com,The Qt Company,company,manual-review,Qt Group,high,Qt company domain
+oes.ch,,,,,unknown,not known
+hub.org,Hub.Org Networking Services,company,manual-review,,low,hosting firm of one PostgreSQL developer
+ocallahan.org,(Independent),independent,manual-review,,high,personal domain of one Mozilla developer
+enonic.com,Enonic,company,manual-review,,high,Norwegian CMS company
+gentics.com,Gentics Software,company,manual-review,,high,Austrian CMS company
+cardforge.org,Forge,project,manual-review,,high,Forge card game project domain
+sebbas.org,(Independent),independent,manual-review,,medium,personal domain of one developer
+ip-10-140-20-78.ec2.internal,,,,,unknown,"placeholder cloud host name, not an organisation"
+ucar.edu,University Corporation for Atmospheric Research,academic,gov-or-edu-domain,,high,university consortium that runs NCAR
+orx-project.org,orx,project,manual-review,,high,orx game engine project domain
+uni-konstanz.de,University of Konstanz,academic,manual-review,,high,university domain
+proxysql.com,ProxySQL,company,manual-review,,high,company behind ProxySQL
+rowland.harvard.edu,Rowland Institute at Harvard,academic,gov-or-edu-domain,Harvard University,high,research institute of Harvard
+wellbelove.co.uk,(Independent),independent,manual-review,,low,family domain; looks personal
+benyossef.com,(Independent),independent,manual-review,,medium,personal domain of one Linux developer
+attotech.com,,,,,unknown,not known
+altera.com,Altera,company,manual-review,,high,FPGA company; Intel held it 2015 to 2025
+arrayfire.com,ArrayFire,company,manual-review,,high,GPU software company
+aspia.ru,Aspia,project,manual-review,,low,remote desktop project domain of one developer
+ntop.org,ntop,company,manual-review,,medium,network monitoring company and project
+shaftnet.org,(Independent),independent,manual-review,,medium,personal domain of one developer
+jitsi.org,Jitsi,company,manual-review,8x8,medium,Jitsi project domain; 8x8 owns Jitsi
+intentionet.com,Intentionet,company,manual-review,,high,company behind Batfish
+2pi.dk,(Independent),independent,manual-review,,medium,personal domain of one developer
+frm2.tum.de,Technical University of Munich,academic,manual-review,,high,FRM II neutron source of TUM
+randombit.net,(Independent),independent,manual-review,,medium,personal domain of one crypto developer
+noaa.gov,NOAA,government,gov-or-edu-domain,,high,US federal agency
+1wt.eu,(Independent),independent,manual-review,,high,personal domain of one HAProxy developer
+raspberrypi.com,Raspberry Pi Holdings,company,manual-review,,high,single-board computer company
+uchicago.edu,University of Chicago,academic,gov-or-edu-domain,,high,university domain
+netbeans.org,NetBeans,project,manual-review,,medium,NetBeans project mail domain
+caseif.net,(Independent),independent,manual-review,,medium,personal domain of one developer
+toaruos.org,ToaruOS,project,manual-review,,medium,ToaruOS project domain of one developer
+moderne.io,Moderne,company,manual-review,,high,code refactoring company
+manticoresearch.com,Manticore Software,company,manual-review,,high,search engine company
+pantheon.tech,PANTHEON.tech,company,manual-review,,high,Slovak network software company
+mail.i2p,I2P,free-provider,manual-review,,medium,mail service inside the I2P network; anybody can use it
+altmuehlnet.de,altmuehlnet,free-provider,manual-review,,low,regional ISP mail domain in Germany
+scribus.info,Scribus,project,manual-review,,high,Scribus project domain
+rtme.net,,,,,unknown,not known
+tapdata.io,Tapdata,company,manual-review,,high,data integration company
+openclinica.com,OpenClinica,company,manual-review,,high,clinical trial software company
+zemos.net,(Independent),independent,manual-review,,medium,personal domain of one developer
+gnupg.org,GnuPG,project,manual-review,,high,GnuPG project domain
+alliedtelesis.co.nz,Allied Telesis,company,manual-review,,high,network equipment company
+tbi.univie.ac.at,University of Vienna,academic,gov-or-edu-domain,,high,theoretical biochemistry institute of the University of Vienna
+gnome-db.org,GNOME-DB,project,manual-review,,high,GNOME-DB project domain
+nchain.com,nChain,company,manual-review,,high,blockchain company
+mysema.com,Mysema,company,manual-review,,medium,Finnish company behind Querydsl
+peqtgc.com,,,,,unknown,not known
+svn.icu-project.org,ICU,project,manual-review,Unicode Consortium,high,ICU project SVN host
+caiaq.de,(Independent),independent,manual-review,,medium,personal domain of one Linux developer
+windmill.dev,Windmill Labs,company,manual-review,,high,developer platform company
+rbri.de,(Independent),independent,manual-review,,low,small personal or one-person business domain
+zstack.io,ZStack,company,manual-review,,high,Chinese cloud software company
+objectcomputing.com,Object Computing,company,manual-review,,high,software company
+metaklass.org,(Independent),independent,manual-review,,low,small personal domain
+alliedmods.net,AlliedModders,project,manual-review,,high,AlliedModders community project domain
+apollographql.com,Apollo Graph,company,manual-review,,high,GraphQL company
+wildfiregames.com,Wildfire Games,project,manual-review,,high,volunteer game studio behind 0 A.D.; not a company
+plvision.eu,PLVision,company,manual-review,,high,network software company
+certik.us,(Independent),independent,manual-review,,medium,personal domain of one developer
+jpixl.net,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+hopsworks.ai,Hopsworks,company,manual-review,,high,feature store company
+gw.udmsearch.izhnet.ru,,,,,unknown,not known
+freimer.com,(Independent),independent,manual-review,,low,small personal domain
+marek.ca,(Independent),independent,manual-review,,medium,personal domain of one developer
+slint.dev,SixtyFPS,company,manual-review,,high,company behind Slint
+xoppa.nl,(Independent),independent,manual-review,,medium,personal domain of one developer
+anyfinetworks.com,Anyfi Networks,company,manual-review,,high,Swedish Wi-Fi software company
+elektrobit.com,Elektrobit,company,manual-review,Continental,high,automotive software company of Continental
+csgroup.eu,CS Group,company,manual-review,,high,French IT and defence company
+fi.rohmeurope.com,ROHM Semiconductor,company,manual-review,ROHM,high,Finnish unit of ROHM Semiconductor Europe
+tutao.de,Tutao,company,manual-review,,high,German company behind Tuta mail
+sent.at,(Independent),independent,manual-review,,low,small personal domain
+thezero.org,(Independent),independent,manual-review,,low,small personal domain
+iuse.se,,,,,unknown,not known
+usit.uio.no,University of Oslo,academic,manual-review,,high,IT centre of the University of Oslo
+nesnausk.org,(Independent),independent,manual-review,,medium,personal domain of one graphics developer
+labath.sk,(Independent),independent,manual-review,,medium,personal domain of one LLVM developer
+aosc.io,AOSC,project,manual-review,,high,AOSC OS community project domain
+nickg.me.uk,(Independent),independent,manual-review,,medium,personal domain of one developer
+faraday-tech.com,Faraday Technology,company,manual-review,,high,Taiwanese chip design company
+macchiato.com,(Independent),independent,manual-review,,medium,personal domain of one Unicode developer
+khirnov.net,(Independent),independent,manual-review,,medium,personal domain of one FFmpeg developer
+mess.org,MESS,project,manual-review,,medium,MESS emulator project domain
+klayout.de,KLayout,project,manual-review,,high,KLayout project domain
+anarazel.de,(Independent),independent,manual-review,,high,personal domain of one PostgreSQL developer
+acz.org,(Independent),independent,manual-review,,low,small personal domain
+sourmilk.net,(Independent),independent,manual-review,,medium,personal domain of one developer
+precisioninno.com,Precision Innovations,company,manual-review,,medium,EDA services company
+maximintegrated.com,Maxim Integrated,company,manual-review,Analog Devices,high,chip maker; Analog Devices bought it in 2021
+zerotier.com,ZeroTier,company,manual-review,,high,network software company
+siol.net,Telekom Slovenije,free-provider,manual-review,,medium,consumer ISP mail domain in Slovenia
+hzdr.de,Helmholtz-Zentrum Dresden-Rossendorf,academic,manual-review,,high,German research centre
+monkeh.net,(Independent),independent,manual-review,,low,small personal domain
+modular.com,Modular,company,manual-review,,high,AI infrastructure company
+ccpgames.com,CCP Games,company,manual-review,Pearl Abyss,high,game company; Pearl Abyss bought it in 2018
+fh-wels.at,University of Applied Sciences Upper Austria,academic,manual-review,,high,Wels campus of FH Upper Austria
+ied.unipr.it,University of Parma,academic,manual-review,,high,engineering department of the University of Parma
+cloud.ionos.com,IONOS,company,manual-review,United Internet,high,cloud unit domain of IONOS
+doomretro.com,DOOM Retro,project,manual-review,,medium,source port project of one developer
+rokeby.ie,(Independent),independent,manual-review,,low,small personal domain
+alvh.no-ip.org,(Independent),independent,manual-review,,medium,dynamic DNS host of one developer
+cerno.tech,Cerno,consultancy,manual-review,,high,French embedded Linux consultancy
+elchris.org,(Independent),independent,manual-review,,low,small personal domain
+illinois.edu,University of Illinois Urbana-Champaign,academic,gov-or-edu-domain,,high,university domain
+ghibli.jp,Studio Ghibli,company,manual-review,,low,animation studio domain; use in this dataset not sure
+unidata.ucar.edu,University Corporation for Atmospheric Research,academic,gov-or-edu-domain,,high,Unidata program of UCAR
+meilisearch.com,Meilisearch,company,manual-review,,high,search engine company
+zilliz.com,Zilliz,company,manual-review,,high,company behind Milvus
+rdx.works,RDX Works,company,manual-review,,high,company behind Radix
+ralfj.de,(Independent),independent,manual-review,,medium,personal domain of one Rust developer
+arkshine.me,(Independent),independent,manual-review,,medium,personal domain of one developer
+haproxy.com,HAProxy Technologies,company,manual-review,,high,load balancer company
+forissier.org,(Independent),independent,manual-review,,medium,personal domain of one developer
+erwincoumans.com,(Independent),independent,manual-review,,medium,personal domain of one physics engine developer
+klayout.org,KLayout,project,manual-review,,high,KLayout project domain
+wohlnet.ru,,,,,unknown,not known
+oarcorp.com,OAR Corporation,company,manual-review,,high,company behind RTEMS
+userver.tech,userver,company,manual-review,Yandex,high,userver framework is a Yandex product
+zebra.com,Zebra Technologies,company,manual-review,,high,barcode and mobile device company
+keep.pt,KEEP SOLUTIONS,company,manual-review,,high,Portuguese digital preservation company
+apryse.com,Apryse,company,manual-review,,high,document SDK company
+fingolfin.org,(Independent),independent,manual-review,,medium,personal domain of one developer
+gpac.io,GPAC,project,manual-review,,medium,GPAC multimedia project domain
+baikal.ru,Baikal Electronics,company,manual-review,,low,Russian chip company; match not sure
+klinikum-brandenburg.de,Klinikum Brandenburg,company,manual-review,,low,municipal hospital company; sector not sure
+robdangero.us,(Independent),independent,manual-review,,medium,personal domain of one developer
+colo1.dotcms.com,dotCMS,company,manual-review,,high,host of the dotCMS company domain
+dbs.ifi.lmu.de,LMU Munich,academic,manual-review,,high,database group of LMU Munich
+stefanlau.com,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+nortal.com,Nortal,company,manual-review,,high,Estonian IT services company
+rogerbinns.com,(Independent),independent,manual-review,,medium,personal domain of one developer
+sholland.org,(Independent),independent,manual-review,,medium,personal domain of one Linux developer
+texas.net,Texas.Net,free-provider,manual-review,,medium,consumer ISP mail domain in Texas
+cleverelephant.ca,(Independent),independent,manual-review,,medium,personal domain of one PostGIS developer
+limechain.tech,LimeChain,company,manual-review,,high,Bulgarian blockchain company
+c-s.fr,CS Group,company,manual-review,,high,former domain of CS Communication et Systemes
+convex.dev,Convex,company,manual-review,,high,backend platform company
+dust.tt,Dust,company,manual-review,,high,AI assistant company
+audiveris.org,Audiveris,project,manual-review,,high,Audiveris project domain
+norbit.de,,,,,unknown,not known
+sbx320.net,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+ohlidal.cz,(Independent),independent,manual-review,,medium,personal domain of one developer
+i-love.sakura.ne.jp,Sakura Internet,free-provider,manual-review,,medium,shared hosting subdomain of Sakura Internet
+popoloski.com,(Independent),independent,manual-review,,medium,personal domain of one developer
+poole.ch,(Independent),independent,manual-review,,low,small personal domain
+afutuh.com,(Independent),independent,manual-review,,low,one author; looks like a personal domain
+zytor.com,(Independent),independent,manual-review,,high,personal domain of one Linux developer
+tvbox22.(none),,,,,unknown,"placeholder host name, not an organisation"
+sysoev.ru,(Independent),independent,manual-review,,high,personal domain of one nginx developer
+etsalapatis.com,(Independent),independent,manual-review,,medium,personal domain of one developer
+parkeon.com,Parkeon,company,manual-review,,high,"French parking systems company, now Flowbird"
+fogelti.me,(Independent),independent,manual-review,,medium,personal domain of one developer
+xtra.com.au,Xtra,free-provider,manual-review,,low,looks like a consumer ISP mail domain
+vectorized.io,Redpanda Data,company,manual-review,,high,former name of Redpanda Data

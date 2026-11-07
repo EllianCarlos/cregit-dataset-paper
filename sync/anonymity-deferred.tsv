@@ -9,3 +9,11 @@
 *	pipeline/s7-run/footer_fix_batches.py	after build end	An active user timer or service runs it from the study working tree (footer_fix_again.sh and the unit footer-fix call it)
 *	s7-run/step_monitor.py (not copied)	after build end	An active user timer or service runs it from the study working tree (census-step-monitor.service)
 source-org	tools/cregit/devenv.nix	fix at export	A copy of the cregit fork at the pinned commit (the cachix cache name); do not change the copy
+home-path	steps/organizations/study/s8-companies/ERROR_MODEL.md	fix at export	A copy of the organization step at the study commit that ran (a work folder path in a comment or a default); do not change the copy
+home-path	steps/organizations/study/s8-companies/build_companies.py	fix at export	A copy of the organization step at the study commit that ran (a work folder path in a comment or a default); do not change the copy
+home-path	steps/organizations/study/s8-companies/build_links.py	fix at export	A copy of the organization step at the study commit that ran (a work folder path in a comment or a default); do not change the copy
+home-path	steps/organizations/study/s8-companies/error_model.py	fix at export	A copy of the organization step at the study commit that ran (a work folder path in a comment or a default); do not change the copy
+home-path	steps/organizations/study/s8-companies/extract_domains_v1.py	fix at export	A copy of the organization step at the study commit that ran (a work folder path in a comment or a default); do not change the copy
+home-path	steps/organizations/study/s8-companies/proposals/README.md	fix at export	A copy of the organization step at the study commit that ran (a work folder path in a comment or a default); do not change the copy
+home-path	steps/organizations/study/s8-companies/review/AUDIT_SAMPLE.md	fix at export	A copy of the organization step at the study commit that ran (a work folder path in a comment or a default); do not change the copy
+home-path	steps/organizations/study/s8-companies/test_build_v0.py	fix at export	A copy of the organization step at the study commit that ran (a work folder path in a comment or a default); do not change the copy
