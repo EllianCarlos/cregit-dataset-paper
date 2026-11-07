@@ -1,0 +1,8 @@
+part,measure,central_pct,all_unsure_right_pct,all_unsure_wrong_pct,u_pct,ci95_pct,weight_covered_pct
+ns,wrong_projects,0.0,0.0,0.0,1.617,0.0 to 5.57,100.0
+ns,wrong_tokens,0.0,0.0,0.0,2.074,0.0 to 7.524,100.0
+dom,wrong_tokens,2.815,1.189,4.441,1.029,1.153 to 5.069,100.0
+dom,kind_tokens,1.724,0.098,3.351,1.01,0.135 to 3.884,100.0
+dom,company_tokens,35.479,33.853,37.105,1.282,32.933 to 38.016,100.0
+dom,wrong_tokens_linked_share,1.298,0.269,2.327,0.718,0.19 to 3.045,100.0
+dom,wrong_tokens_unmatched_share,1.517,0.92,2.114,0.352,0.921 to 2.116,100.0

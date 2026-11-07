@@ -1,0 +1,5 @@
+user_error,q_user_pct,E_linked_pct,E_dataset_pct,company_share_E1E4_pct
+0: the user is the reference by definition,0.0,0.125,1.905,33.291
+reversal rate 3 of 196 (main),1.531,0.158,1.936,33.241
+"reversals + withdrawn decisions, 5 of 196",2.551,0.18,1.956,33.208
+old type B term: uniform 0 to 2% (mean 1%),1.0,0.147,1.925,33.258

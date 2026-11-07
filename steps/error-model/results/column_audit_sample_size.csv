@@ -1,0 +1,7 @@
+part,n,basis,margin_p50_pct,observed_p_pct,margin_observed_pct,ci95_half_width_pct
+ns,766,now,3.541,0.0,0.0,2.785
+ns,440,target 440,4.672,0.0,0.0,
+ns,800,target 800,3.465,0.0,0.0,
+dom,442,now,4.661,2.815,1.542,1.958
+dom,440,target 440,4.672,2.815,1.545,
+dom,800,target 800,3.465,2.815,1.146,

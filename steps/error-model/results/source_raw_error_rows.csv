@@ -1,0 +1,8 @@
+group,rows,changed,moved,dropped,to_pseudo,share_pct,wilson_lo_pct,wilson_hi_pct
+G1 gitdm curated,930,38,26,12,8,4.086,2.991,5.559
+G2 cncf-gitdm multi,206,23,13,10,10,11.165,7.556,16.196
+G3 cncf-gitdm single,2603,1697,1059,638,985,65.194,63.343,67.0
+G4 Spinellis 2020,113,0,0,0,0,0.0,0.0,3.288
+G5 AI firm-domains,1016,19,11,8,10,1.87,1.2,2.902
+G6 AI proposal v1,458,2,1,1,0,0.437,0.12,1.578
+G7 AI proposal v2,3820,20,14,6,11,0.524,0.339,0.807

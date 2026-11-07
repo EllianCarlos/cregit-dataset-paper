@@ -1,0 +1,4 @@
+layer,origin,check_page,check_items,right,wrong,unsure,n_decided,q_central,q_basis,cp95,decide_items,decide_answered,links,link_tokens,owns_projects
+v4.7,r10,audit-v47,677,662,7,8,669,0.01119,Jeffreys (k + 0.5) / (n + 1),0.00422 to 0.02144,97,97,2880,670706655,2394
+v4.8,r11,audit-v48,193,193,0,0,193,0.00258,Jeffreys (k + 0.5) / (n + 1),0.0 to 0.01893,8,8,0,0,1921
+v4.9,r12,audit-v49,0,0,0,0,0,0.00794,no answer yet: q_r9,,2,2,94,37788623,1

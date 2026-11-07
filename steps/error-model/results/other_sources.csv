@@ -1,0 +1,6 @@
+source,tokens,share_pct,domains,company_share_of_proposals_pct,organisation_share_of_proposals_pct
+"no real domain (blank, no dot, a git-svn id), now unknown",926807900,2.841,,,
+"no row, now independent: real domain with an AI proposal (low certainty)",318097725,0.975,1965,13.632,15.934
+"no row, now independent: real domain, no proposal (tail)",1080048822,3.31,74485,,
+suffix matches,119762992,0.367,,,
+partner addresses under a company domain (corp-partner),1805420,0.006,,,

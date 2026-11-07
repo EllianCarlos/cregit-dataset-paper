@@ -1,0 +1,13 @@
+rule,links,tokens,share_of_linked_pct,error_tokens,error_pct
+same row as v4.1,12119,29116519849,96.091,36421791,0.125
+"same row as v4.1, v4.4 merge (+ q_r9)",49,23501965,0.078,210899,0.897
+"same row as v4.1, v4.2 merge",10,15440870,0.051,130468,0.845
+"same row as v4.1, other id change",3,364306016,1.202,361938,0.099
+v4.2 row (user audited),18,5393198,0.018,89447,1.659
+v4.4 row (round 9),11,1148961,0.004,9118,0.794
+other new or changed row,914,63759151,0.21,2816570,4.418
+dropped,491,157334555,,0,
+v4.7 row (round 10),2880,670706655,2.213,7533629,1.123
+v4.7 row (user decision: the AI could not decide),1,59847,0.0,916,1.531
+v4.9 row (round 12),94,37788623,0.125,300595,0.795
+v4.9 row (user decision: the AI could not decide),20,2449278,0.008,37750,1.541

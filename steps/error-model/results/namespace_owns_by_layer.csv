@@ -1,0 +1,21 @@
+owner_kind,layer,changed_from_v3,projects,tokens,share_of_owns_projects_pct
+company,v4.1 or earlier,False,1086,5927240659,14.239
+company,v4.1 or earlier,True,360,3727016667,4.72
+company,v4.3 namespace rework,False,27,65299279,0.354
+company,v4.3 namespace rework,True,11,275991661,0.144
+company,v4.4 round 9,False,4,1226342,0.052
+company,v4.7 round 10,False,705,1216968448,9.243
+company,v4.8 round 11,False,54,31433828,0.708
+company,v4.8 round 11,True,255,1959311750,3.343
+company,v4.9 round 12,False,2,3635580,0.026
+foundation-or-other,v4.1 or earlier,False,1360,2900726765,17.831
+foundation-or-other,v4.1 or earlier,True,214,1392611173,2.806
+foundation-or-other,v4.3 namespace rework,False,55,49246728,0.721
+foundation-or-other,v4.3 namespace rework,True,141,737867579,1.849
+foundation-or-other,v4.4 round 9,False,22,9346062,0.288
+foundation-or-other,v4.4 round 9,True,19,77846194,0.249
+foundation-or-other,v4.7 round 10,False,1689,2130790071,22.145
+foundation-or-other,v4.8 round 11,False,273,244478943,3.579
+foundation-or-other,v4.8 round 11,True,1339,5943547677,17.556
+foundation-or-other,v4.9 round 12,False,4,4678892,0.052
+foundation-or-other,v4.9 round 12,True,7,68654318,0.092

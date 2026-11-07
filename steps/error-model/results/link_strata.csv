@@ -1,0 +1,141 @@
+group,origin,band,match,tokens,token_share_pct,error_pct,error_tokens,error_share_of_all_pct
+G1 gitdm curated,source,B1 >=1M,exact,17769782164,54.465,0.079,14097325,0.0432
+G10 user or manual,user,B1 >=1M,exact,586261303,1.797,1.531,8973387,0.0275
+G11 other,r10,B1 >=1M,exact,424059450,1.3,1.119,4746934,0.0145
+G3 cncf-gitdm single,source,B1 >=1M,exact,247296790,0.758,1.226,3032288,0.0093
+G11 other,r10,B2 10k-1M,exact,240888503,0.738,1.119,2696513,0.0083
+G1 gitdm curated,source,B1 >=1M,suffix,58854547,0.18,3.635,2139590,0.0066
+G5 AI firm-domains,source,B1 >=1M,exact,4270999685,13.091,0.042,1791901,0.0055
+G8 AI review (rounds 3-5),r5,B1 >=1M,exact,228083469,0.699,0.487,1110244,0.0034
+G6 AI proposal v1,source,B1 >=1M,exact,3284268804,10.066,0.033,1068094,0.0033
+G1 gitdm curated,user,B1 >=1M,exact,53993436,0.165,1.531,826430,0.0025
+G9 AI link check,r8,B1 >=1M,exact,13273408,0.041,5.615,745298,0.0023
+G5 AI firm-domains,source,B1 >=1M,suffix,17506526,0.054,3.641,637400,0.002
+G1 gitdm curated,source,B2 10k-1M,suffix,16926398,0.052,3.659,619359,0.0019
+G3 cncf-gitdm single,source,B2 10k-1M,exact,33598105,0.103,1.753,589038,0.0018
+G1 gitdm curated,source,B2 10k-1M,exact,63358228,0.194,0.818,518304,0.0016
+G8 AI review (rounds 3-5),r5,B2 10k-1M,exact,99767552,0.306,0.493,492189,0.0015
+G2 cncf-gitdm multi,source,B1 >=1M,exact,811547672,2.487,0.043,347116,0.0011
+G7 AI proposal v2,source,B2 10k-1M,suffix,9224044,0.028,3.608,332823,0.001
+G7 AI proposal v2,source,B1 >=1M,exact,326908254,1.002,0.093,303258,0.0009
+G5 AI firm-domains,source,B2 10k-1M,suffix,7183212,0.022,3.634,261007,0.0008
+G5 AI firm-domains,r7,B1 >=1M,exact,5526558,0.017,4.638,256349,0.0008
+G11 other,r12,B1 >=1M,exact,30322598,0.093,0.794,240655,0.0007
+G1 gitdm curated,AB,B1 >=1M,exact,139245973,0.427,0.118,164846,0.0005
+G5 AI firm-domains,source,B2 10k-1M,exact,200152073,0.613,0.075,150512,0.0005
+G7 AI proposal v2,source,B2 10k-1M,exact,583625456,1.789,0.022,126762,0.0004
+G6 AI proposal v1,source,B1 >=1M,suffix,2776856,0.009,3.597,99881,0.0003
+G7 AI proposal v2,r7,B1 >=1M,exact,2150877,0.007,4.638,99768,0.0003
+G2 cncf-gitdm multi,user,B1 >=1M,exact,6171362,0.019,1.531,94459,0.0003
+G9 AI link check,r8,B2 10k-1M,exact,1636174,0.005,5.615,91870,0.0003
+G3 cncf-gitdm single,r7,B2 10k-1M,exact,1935951,0.006,4.638,89799,0.0003
+G8 AI review (rounds 3-5),AB,B2 10k-1M,exact,61503924,0.189,0.118,72811,0.0002
+G8 AI review (rounds 3-5),user,B1 >=1M,exact,4563073,0.014,1.531,69842,0.0002
+G7 AI proposal v2,r7,B2 10k-1M,exact,1476963,0.005,4.639,68508,0.0002
+G1 gitdm curated,r4d,B1 >=1M,exact,205798683,0.631,0.031,63359,0.0002
+G11 other,r12,B2 10k-1M,exact,7368888,0.023,0.794,58483,0.0002
+G3 cncf-gitdm single,source,B3 <10k,exact,541176,0.002,10.63,57525,0.0002
+G11 other,r10,B3 <10k,exact,5034422,0.015,1.119,56355,0.0002
+G3 cncf-gitdm single,r4d,B1 >=1M,exact,177534670,0.544,0.031,54657,0.0002
+G4 Spinellis 2020,source,B1 >=1M,exact,142478123,0.437,0.036,51546,0.0002
+G1 gitdm curated,source,B3 <10k,suffix,1421698,0.004,3.621,51481,0.0002
+G6 AI proposal v1,source,B2 10k-1M,suffix,1208699,0.004,3.748,45302,0.0001
+G8 AI review (rounds 3-5),AB,B1 >=1M,exact,34330562,0.105,0.118,40642,0.0001
+G11 other,r10,B2 10k-1M,suffix,666392,0.002,4.675,31154,0.0001
+G7 AI proposal v2,source,B3 <10k,suffix,824481,0.003,3.609,29755,0.0001
+G3 cncf-gitdm single,r5,B1 >=1M,exact,6022777,0.018,0.487,29317,0.0001
+G9 AI link check,r7,B2 10k-1M,exact,536256,0.002,4.638,24874,0.0001
+G5 AI firm-domains,source,B3 <10k,suffix,686479,0.002,3.601,24717,0.0001
+G1 gitdm curated,r5,B2 10k-1M,suffix,563266,0.002,4.065,22897,0.0001
+G3 cncf-gitdm single,r5,B2 10k-1M,exact,4357513,0.013,0.487,21211,0.0001
+G11 other,user,B2 10k-1M,exact,1316345,0.004,1.531,20148,0.0001
+G1 gitdm curated,r5,B1 >=1M,exact,3989513,0.012,0.487,19419,0.0001
+G2 cncf-gitdm multi,source,B2 10k-1M,exact,13313811,0.041,0.132,17634,0.0001
+G11 other,user,B1 >=1M,exact,1151386,0.004,1.531,17623,0.0001
+G5 AI firm-domains,r7,B2 10k-1M,exact,375586,0.001,4.638,17421,0.0001
+G4 Spinellis 2020,source,B2 10k-1M,suffix,479039,0.001,3.604,17264,0.0001
+G1 gitdm curated,r7,B2 10k-1M,suffix,209556,0.001,8.068,16906,0.0001
+G2 cncf-gitdm multi,AB,B1 >=1M,exact,13088233,0.04,0.118,15494,0.0
+G1 gitdm curated,r5,B2 10k-1M,exact,3022605,0.009,0.487,14713,0.0
+G9 AI link check,r8,B2 10k-1M,suffix,137549,0.0,9.009,12391,0.0
+G7 AI proposal v2,user,B2 10k-1M,exact,635309,0.002,1.531,9724,0.0
+G11 other,user,B2 10k-1M,suffix,189634,0.001,5.071,9617,0.0
+G8 AI review (rounds 3-5),r5,B2 10k-1M,suffix,186177,0.001,4.065,7568,0.0
+G3 cncf-gitdm single,r7,B3 <10k,exact,138628,0.0,4.639,6430,0.0
+G1 gitdm curated,r7,B2 10k-1M,exact,138082,0.0,4.639,6404,0.0
+G2 cncf-gitdm multi,AB,B2 10k-1M,suffix,158863,0.0,3.71,5893,0.0
+G9 AI link check,r8,B3 <10k,exact,94371,0.0,5.615,5298,0.0
+G6 AI proposal v1,source,B3 <10k,suffix,144751,0.0,3.599,5209,0.0
+G3 cncf-gitdm single,AB,B1 >=1M,exact,4242537,0.013,0.118,5022,0.0
+G1 gitdm curated,r4f,B1 >=1M,exact,14690074,0.045,0.031,4522,0.0
+G5 AI firm-domains,r9,B2 10k-1M,exact,569517,0.002,0.794,4519,0.0
+G2 cncf-gitdm multi,r5,B2 10k-1M,exact,920134,0.003,0.487,4478,0.0
+G8 AI review (rounds 3-5),r9,B2 10k-1M,exact,561795,0.002,0.794,4458,0.0
+G3 cncf-gitdm single,AB,B2 10k-1M,exact,3379484,0.01,0.118,4000,0.0
+G1 gitdm curated,source,B3 <10k,exact,321172,0.001,0.917,2945,0.0
+G1 gitdm curated,r5,B3 <10k,suffix,69547,0.0,4.065,2827,0.0
+G3 cncf-gitdm single,r4d,B2 10k-1M,exact,8827470,0.027,0.031,2717,0.0
+G11 other,r10,B3 <10k,suffix,56942,0.0,4.675,2662,0.0
+G4 Spinellis 2020,source,B2 10k-1M,exact,9671981,0.03,0.023,2205,0.0
+G8 AI review (rounds 3-5),AB,B3 <10k,exact,1855643,0.006,0.118,2196,0.0
+G8 AI review (rounds 3-5),r5,B3 <10k,exact,428601,0.001,0.487,2086,0.0
+G6 AI proposal v1,AB,B1 >=1M,exact,1619452,0.005,0.118,1917,0.0
+G1 gitdm curated,AB,B2 10k-1M,exact,1378219,0.004,0.118,1631,0.0
+G7 AI proposal v2,source,B3 <10k,exact,3085542,0.009,0.05,1543,0.0
+G8 AI review (rounds 3-5),r5,B3 <10k,suffix,34981,0.0,4.065,1422,0.0
+G9 AI link check,r7,B3 <10k,exact,28181,0.0,4.638,1307,0.0
+G4 Spinellis 2020,source,B3 <10k,suffix,35653,0.0,3.619,1290,0.0
+G1 gitdm curated,AB,B2 10k-1M,suffix,33810,0.0,3.71,1254,0.0
+G2 cncf-gitdm multi,source,B2 10k-1M,suffix,34238,0.0,3.646,1248,0.0
+G2 cncf-gitdm multi,source,B3 <10k,suffix,28831,0.0,3.636,1048,0.0
+G9 AI link check,r4f,B1 >=1M,exact,3402578,0.01,0.031,1047,0.0
+G9 AI link check,r8,B3 <10k,suffix,10408,0.0,9.009,937,0.0
+G2 cncf-gitdm multi,r4d,B1 >=1M,exact,2881918,0.009,0.031,887,0.0
+G11 other,r12,B3 <10k,suffix,19231,0.0,4.361,838,0.0
+G2 cncf-gitdm multi,r5,B2 10k-1M,suffix,19765,0.0,4.065,803,0.0
+G11 other,user,B3 <10k,suffix,12577,0.0,5.071,637,0.0
+G7 AI proposal v2,r4f,B1 >=1M,exact,2044002,0.006,0.031,629,0.0
+G11 other,r12,B3 <10k,exact,77906,0.0,0.794,618,0.0
+G2 cncf-gitdm multi,source,B3 <10k,exact,134355,0.0,0.422,567,0.0
+G2 cncf-gitdm multi,AB,B3 <10k,suffix,14787,0.0,3.71,548,0.0
+G8 AI review (rounds 3-5),AB,B2 10k-1M,suffix,14720,0.0,3.71,546,0.0
+G11 other,user,B3 <10k,exact,33999,0.0,1.531,520,0.0
+G9 AI link check,r4f,B2 10k-1M,exact,1559416,0.005,0.031,480,0.0
+G1 gitdm curated,r4f,B3 <10k,suffix,12529,0.0,3.626,454,0.0
+G5 AI firm-domains,r4f,B2 10k-1M,exact,1429298,0.004,0.031,440,0.0
+G5 AI firm-domains,r4f,B1 >=1M,exact,1078483,0.003,0.031,332,0.0
+G1 gitdm curated,r4d,B2 10k-1M,exact,781793,0.002,0.031,240,0.0
+G3 cncf-gitdm single,user,B2 10k-1M,exact,14984,0.0,1.531,229,0.0
+G7 AI proposal v2,r4f,B2 10k-1M,exact,697451,0.002,0.031,214,0.0
+G1 gitdm curated,AB,B3 <10k,suffix,5436,0.0,3.71,201,0.0
+G8 AI review (rounds 3-5),AB,B3 <10k,suffix,5065,0.0,3.71,187,0.0
+G8 AI review (rounds 3-5),r7,B3 <10k,exact,3214,0.0,4.639,149,0.0
+G1 gitdm curated,r7,B3 <10k,suffix,1617,0.0,8.068,130,0.0
+G3 cncf-gitdm single,r4f,B2 10k-1M,exact,407471,0.001,0.031,125,0.0
+G1 gitdm curated,r4f,B2 10k-1M,exact,316067,0.001,0.031,97,0.0
+G5 AI firm-domains,r4d,B2 10k-1M,exact,307923,0.001,0.031,94,0.0
+G7 AI proposal v2,r9,B2 10k-1M,exact,11780,0.0,0.794,93,0.0
+G2 cncf-gitdm multi,r4d,B2 10k-1M,exact,298934,0.001,0.031,92,0.0
+G7 AI proposal v2,AB,B2 10k-1M,exact,68141,0.0,0.118,80,0.0
+G2 cncf-gitdm multi,r4f,B2 10k-1M,exact,215915,0.001,0.031,66,0.0
+G2 cncf-gitdm multi,r4d,B3 <10k,suffix,1773,0.0,3.626,64,0.0
+G5 AI firm-domains,source,B3 <10k,exact,66880,0.0,0.093,62,0.0
+G7 AI proposal v2,r7,B3 <10k,exact,1332,0.0,4.638,61,0.0
+G4 Spinellis 2020,source,B3 <10k,exact,102775,0.0,0.054,55,0.0
+G5 AI firm-domains,r4f,B3 <10k,suffix,1500,0.0,3.626,54,0.0
+G10 user or manual,user,B3 <10k,suffix,844,0.0,5.071,42,0.0
+G8 AI review (rounds 3-5),r9,B3 <10k,exact,4885,0.0,0.794,38,0.0
+G3 cncf-gitdm single,r5,B3 <10k,exact,7333,0.0,0.487,35,0.0
+G3 cncf-gitdm single,r4d,B3 <10k,exact,65830,0.0,0.031,20,0.0
+G1 gitdm curated,r4d,B3 <10k,suffix,549,0.0,3.626,19,0.0
+G3 cncf-gitdm single,r10,B3 <10k,exact,946,0.0,1.119,10,0.0
+G9 AI link check,r4d,B2 10k-1M,exact,27494,0.0,0.031,8,0.0
+G1 gitdm curated,r9,B3 <10k,exact,982,0.0,0.794,7,0.0
+G3 cncf-gitdm single,user,B3 <10k,exact,494,0.0,1.531,7,0.0
+G3 cncf-gitdm single,AB,B3 <10k,exact,6180,0.0,0.118,7,0.0
+G9 AI link check,r4d,B3 <10k,exact,15302,0.0,0.031,4,0.0
+G10 user or manual,user,B3 <10k,exact,109,0.0,1.531,1,0.0
+G2 cncf-gitdm multi,r5,B3 <10k,suffix,21,0.0,4.065,0,0.0
+G7 AI proposal v2,r4d,B3 <10k,exact,703,0.0,0.031,0,0.0
+G2 cncf-gitdm multi,r4f,B3 <10k,suffix,1,0.0,3.626,0,0.0
+G7 AI proposal v2,r9,B3 <10k,exact,2,0.0,0.794,0,0.0

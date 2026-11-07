@@ -1,0 +1,17 @@
+relation,evidence,owner_kind,projects,tokens,zero_own_share,zero_own_pct,zero_wilson_hi_pct,own_share_ge10_pct,changed_v3_v41,owner_reviewed,projects_v1
+candidate,spinellis,company,16,725042,5,31.25,55.596,50.0,0,16,0
+none,-,-,3116,5857105761,0,0.0,0.123,0.0,0,0,0
+owns,account-profile,company,1058,3553866888,466,44.045,47.053,41.588,266,1049,266
+owns,account-profile,foundation-or-other,3549,9266456464,2858,80.53,81.799,13.75,1506,3541,1506
+owns,company-page,company,107,445622290,3,2.804,7.921,85.981,0,107,38
+owns,name-match,company,75,370487955,2,2.667,9.211,68.0,53,74,53
+owns,name-match,foundation-or-other,176,935606673,8,4.545,8.712,66.477,139,176,139
+owns,roster,company,23,165696736,3,13.043,32.127,60.87,1,23,8
+owns,roster,foundation-or-other,1242,2789239495,300,24.155,26.612,51.771,6,1242,408
+owns,spinellis,company,234,1696547666,7,2.991,6.045,82.479,85,234,85
+owns,verified-domain,company,744,5048997322,34,4.57,6.318,76.21,32,744,341
+owns,verified-domain,foundation-or-other,72,119380339,14,19.444,30.033,73.611,5,72,38
+owns,website-domain,company,263,1926905357,3,1.141,3.299,81.749,189,263,189
+owns,website-domain,foundation-or-other,84,449111431,6,7.143,14.72,76.19,64,84,64
+participates,roster,company,3,199642,0,0.0,56.15,66.667,0,3,0
+participates,roster,foundation-or-other,1,79799,1,100.0,100.0,0.0,0,1,0

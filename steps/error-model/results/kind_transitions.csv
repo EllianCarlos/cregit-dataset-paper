@@ -1,0 +1,11 @@
+detected,shown_company,true_company,count
+link,False,False,97
+link,False,,26
+link,False,True,3
+link,True,False,145
+link,True,,466
+link,True,True,29
+org,False,False,278
+org,False,True,9
+org,True,False,263
+org,True,True,272

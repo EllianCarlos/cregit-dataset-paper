@@ -1,0 +1,5 @@
+variant,strata_from_the_audit,decided_answers,wrong_answers,E_linked_pct,E_all_pct,E_dataset_pct,E_linked_U_pct,E_dataset_U_pct,E_dataset_mc95
+model only (no audit value),(none),0,0,0.158,0.147,1.936,0.14,0.526,1.442 to 2.465
+main: measured values of the domain strata that pass the rule (complete stratum),(none),0,0,0.158,0.147,1.936,0.14,0.526,1.442 to 2.465
+"update: every stratum with an answer, Beta posterior with the model value as prior",D01 D02 D03 D07 D08 D11 D12,12,0,0.158,0.147,1.935,0.116,0.52,1.424 to 2.424
+"measured values of every stratum with an answer (Jeffreys, no prior; partial strata)",D01 D02 D03 D07 D08 D11 D12,12,0,8.322,7.729,9.518,15.835,14.706,2.136 to 28.611

@@ -1,0 +1,7 @@
+items,weight,n,agree,form_only,rho_min,rho_max,A_right,B_right,both_wrong,a_err_pct,b_err_pct,agreed_wrong_rho0_pct,agreed_wrong_rho0.25_pct,agreed_wrong_rho0.5_pct,agreed_wrong_rho1_pct
+all,items,8681,6171,1206,0.0,0.7103,511,752,41,9.264,6.487,0.151,3.613,11.524,nan
+all,tokens,8681,6171,1206,0.0171,0.7727,511,752,41,8.049,4.327,0.0,2.312,7.721,nan
+company,items,4176,2698,898,0.0111,0.7361,193,364,23,9.267,5.172,0.0,2.896,9.681,nan
+company,tokens,4176,2698,898,0.0124,0.7714,193,364,23,7.779,4.592,0.0,2.382,7.847,nan
+conflict,items,4505,3473,308,0.0,0.687,318,388,18,9.34,7.786,0.39,4.285,13.322,nan
+conflict,tokens,4505,3473,308,0.0213,0.7737,318,388,18,8.268,4.11,0.0,2.25,7.609,nan

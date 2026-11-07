@@ -1,0 +1,9 @@
+line,component,type,value_pct,u_pct,U_k2_pct,mc95
+1,observed company-kind share (v4.9; a token with no row counts as independent or unknown),-,33.326,0.0,,
+2,E1 + E4: link and kind residual errors (Monte Carlo),B from process counts,-0.087,0.037,,
+3,share corrected for E1 + E4 only,combined,33.239,0.037,0.073,33.152 to 33.296
+4,"E2: companies among the unmatched real domains (now independent), company share measured by the tail audit (PPS sample)",B,1.101,0.231,,0.684 to 1.575
+5,dataset value: line 3 + line 4 (Monte Carlo),combined,34.339,0.233,0.467,33.917 to 34.806
+6,"sensitivity: unmatched real domains, company share uniform 0 to 1 (hard bounds)",B,2.143,1.237,,
+7,line 3 + line 6,combined,35.381,1.238,2.475,hard bounds 33.152 to 37.581
+8,check: Rogan-Gladen with the Se and Sp of the central values,check,34.348,0.0,,"direct central value 34.348; Se 0.96731, Sp 0.99846"

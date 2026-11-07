@@ -1,0 +1,4 @@
+reason,rows
+"candidate row, the organisation wrote 10% or more of the tokens",8
+"owns row, company owner with no token from its own domains",518
+"owns row, owner or relation changed from v3 to v4.9",1720

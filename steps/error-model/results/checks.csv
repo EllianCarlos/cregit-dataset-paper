@@ -1,0 +1,6 @@
+check,rows_seen,keep,move,drop,change_pct,wilson_lo_pct,wilson_hi_pct,tokens_seen,change_tokens_pct,reversed_by_rule_corrections,reversed_share_of_raw_changes_pct,note
+r4d,959,396,99,464,58.707,55.562,61.782,882971273,46.481,0,0.0,
+r4f,3454,3386,48,20,1.969,1.556,2.488,13412999471,0.163,3,4.225,
+r7,10876,9722,942,212,10.611,10.046,11.203,22310616393,0.069,118,9.277,
+r8,172,0,172,0,100.0,97.815,100.0,13953499,100.0,0,0.0,"the file holds only the domain answers of 801 conflicts, so every row is a change"
+user (chat),6,4,2,0,33.333,,,396228535,,,,the user's domain decisions

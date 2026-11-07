@@ -1,0 +1,27 @@
+parameter,value
+"se of one AI link check, removal estimate (r4d/r4f then r7)",0.9706
+"se of one AI review, capture-recapture (rounds 3, 4; min of p_A, p_B)",0.865
+q4: wrong share of r4d/r4f moves (r7 changed k of n),0 of 145
+q7 upper bound: r7 changes reversed by rule corrections,0.0928
+suffix: r7 changes on subdomain rows,31 of 875
+"conflict items: agreed answers wrong, rho = 0 (two-rater)",0.0039
+"company items: agreed answers wrong, rho = 0 (two-rater)",0.0
+user calibration: user decisions that differ from the AI suggestion,10 of 186
+"AI round 9 (one web check per fact), user check sample: wrong of decided answers (the round 9 error q_r9; also a cross-check of the single-review error)",1 of 62 as answered (95% Clopper-Pearson 0.0004 to 0.0866); 0 of 62 after the relation rename (rule of three upper 0.0484); 2 unsure not counted
+"q_r9: error of a link or organisation row that round 9 set, and of a v4.4 merge (Jeffreys on the count after the rename; central (k + 0.5) / (n + 1))",0.00794
+rho_cal: rho at which the mean single-review error equals the Wilson upper bound of the user calibration,0.1667
+"rho (correlation of the errors of two AI reviews), type B",uniform 0 to 0.1667
+"agreed answers wrong at rho_cal: conflict items, company items","0.02689, 0.01669"
+phi: share of real disagreements on organisation items that involve the kind,171 of 580
+user or manual decision wrong: the user's reversal rate r = k / N (items decided twice with different answers),"3 of 196: r 0.01531, u 0.00877 (binomial rate, u = sqrt(r(1-r)/N))"
+"user reversals: detail (history snapshots read; decisions withdrawn with no new answer, not in k; final-audit sheets with a definite answer, and of them changed)","7 snapshots; 2 withdrawn; 1693 sheets, 0 changed"
+unmatched with a proposal: company share of the proposed kinds (tokens),0.1363
+"unmatched with a proposal: organisation share of the proposed kinds (tokens; not independent, not free-provider, not blank)",0.1593
+"organisations among the unmatched real domains, type B",uniform 0 to 0.3187 (the company draw x 1.1689)
+"Monte Carlo draws, seed","2000, 20261018"
+later AI layer r10 (v4.7): wrong of decided answers of its check sample,7 of 669; q 0.01119 (Jeffreys); 95% Clopper-Pearson 0.0042 to 0.0214
+later AI layer r11 (v4.8): wrong of decided answers of its check sample,0 of 193; q 0.00258 (Jeffreys); 95% Clopper-Pearson 0.0 to 0.0189
+later AI layer r12 (v4.9): wrong of decided answers of its check sample,no answer yet; q = q_r9 = 0.00794
+kind error of the user or curated path: q_user x phi,0.00452
+"audit values: rule, strata used",complete stratum; none yet
+organisations among the unmatched real domains: the tail audit,"used: organisation rate 0.41738, company rate 0.25822 (Jeffreys); 95% Clopper-Pearson 0.2941 to 0.5457"

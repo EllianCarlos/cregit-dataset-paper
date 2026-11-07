@@ -1,0 +1,5 @@
+variant,company_rate_pct,organisation_rate_pct,E_unmatched_pct,E_dataset_pct,company_share_pct
+main: a blank kind is no organisation; 0 to 2 x the proposal rate,13.632,15.934,0.683,0.83,33.825
+blank kinds have the mix of the answered proposals; 0 to 2 x that rate,26.003,30.394,1.302,1.449,34.355
+hard bounds: 0 to 1 (mean 0.5),50.0,50.0,2.143,2.29,35.384
+measured: the tail audit (PPS sample; Jeffreys central values; used),25.822,41.738,1.789,1.936,34.348

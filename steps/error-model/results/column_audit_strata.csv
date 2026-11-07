@@ -1,0 +1,39 @@
+part,measure,stratum,units,n,decided,unsure,open,carried,weight,rate_central_pct
+ns,wrong_projects,00 largest by tokens (certainty),60,60,60,0,0,3,1303,0.0
+ns,wrong_projects,"class account-profile, company",3,3,3,0,0,0,9,0.0
+ns,wrong_projects,"class account-profile, foundation-or-other",130,101,101,0,0,1,234,0.0
+ns,wrong_projects,"class company-page, company",14,14,14,0,0,3,84,0.0
+ns,wrong_projects,"class name-match, company",46,15,15,0,0,2,75,0.0
+ns,wrong_projects,"class name-match, foundation-or-other",120,75,75,0,0,7,174,0.0
+ns,wrong_projects,"class roster, company",2,2,2,0,0,0,3,0.0
+ns,wrong_projects,"class roster, foundation-or-other",199,58,58,0,0,4,537,0.0
+ns,wrong_projects,"class spinellis, company",44,17,17,0,0,0,113,0.0
+ns,wrong_projects,"class verified-domain, company",172,62,62,0,0,3,414,0.0
+ns,wrong_projects,"class verified-domain, foundation-or-other",27,21,19,0,2,2,72,0.0
+ns,wrong_projects,"class website-domain, company",159,25,24,0,1,1,231,0.0
+ns,wrong_projects,"class website-domain, foundation-or-other",57,34,29,0,5,1,78,0.0
+ns,wrong_projects,round 10 layer,2114,217,201,0,16,19,2392,0.0
+ns,wrong_projects,round 11 layer,1475,83,79,0,4,9,1895,0.0
+ns,wrong_projects,round 12 layer or user decision,13,13,7,0,6,0,13,0.0
+ns,wrong_tokens,00 largest by tokens (certainty),60,60,60,0,0,3,12380845751,0.0
+ns,wrong_tokens,"class account-profile, company",3,3,3,0,0,0,12227093,0.0
+ns,wrong_tokens,"class account-profile, foundation-or-other",130,101,101,0,0,1,703622847,0.0
+ns,wrong_tokens,"class company-page, company",14,14,14,0,0,3,226861590,0.0
+ns,wrong_tokens,"class name-match, company",46,15,15,0,0,2,370487955,0.0
+ns,wrong_tokens,"class name-match, foundation-or-other",120,75,75,0,0,7,798204142,0.0
+ns,wrong_tokens,"class roster, company",2,2,2,0,0,0,3036570,0.0
+ns,wrong_tokens,"class roster, foundation-or-other",199,58,58,0,0,4,923399120,0.0
+ns,wrong_tokens,"class spinellis, company",44,17,17,0,0,0,211970377,0.0
+ns,wrong_tokens,"class verified-domain, company",172,62,62,0,0,3,989537420,0.0
+ns,wrong_tokens,"class verified-domain, foundation-or-other",27,21,19,0,2,2,119380339,0.0
+ns,wrong_tokens,"class website-domain, company",159,25,24,0,1,1,747046051,0.0
+ns,wrong_tokens,"class website-domain, foundation-or-other",57,34,29,0,5,1,224849253,0.0
+ns,wrong_tokens,round 10 layer,2114,217,201,0,16,19,3150704658,0.0
+ns,wrong_tokens,round 11 layer,1475,83,79,0,4,9,5828776660,0.0
+ns,wrong_tokens,round 12 layer or user decision,13,13,7,0,6,0,76968790,0.0
+dom,wrong_tokens,00 largest by tokens (certainty),60,60,60,0,0,0,21201838402,0.0
+dom,wrong_tokens,linked exact curated,3570,87,86,1,0,3,2948904982,0.529
+dom,wrong_tokens,linked exact other confidence,8602,141,127,14,0,1,6030568037,6.37
+dom,wrong_tokens,linked suffix,3884,40,33,7,0,0,119762992,9.782
+dom,wrong_tokens,unmatched tail,74485,387,82,40,265,8,1080048822,34.603
+dom,wrong_tokens,unmatched with an AI proposal,1965,85,54,31,0,2,318097725,33.68

@@ -1,0 +1,3 @@
+pair,rows,pass1_changes,kept,kept_seen_by_r7,pass2_changes,pass2_share_pct,removal_p,removal_N0,residual_errors,moves_seen_by_r7,moves_r7_changed
+r4d then r7,959,563,396,269,3,1.115,0.9947,566.02,0.02,97,0
+r4f then r7,3454,68,3386,3126,2,0.064,0.9706,70.06,0.06,48,0

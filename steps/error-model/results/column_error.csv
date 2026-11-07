@@ -1,0 +1,7 @@
+measure,value_pct,u_pct,U_k2_pct,mc95_lo_pct,mc95_hi_pct
+"dataset: error of firm_based_on_domain, all tokens (a token with no row is independent or unknown; central)",1.936,0.263,0.526,1.442,2.465
+"of this: link errors (rows of the database), share of all tokens",0.147,0.065,0.13,0.073,0.319
+"of this: organisations among the unmatched real domains, share of all tokens",1.789,0.255,0.509,1.288,2.265
+"link errors, share of the linked tokens (central)",0.158,0.07,0.14,0.079,0.344
+"Monte Carlo mean, dataset, all tokens",1.938,0.263,0.526,1.442,2.465
+"Monte Carlo mean, linked tokens",0.164,0.07,0.14,0.079,0.344
