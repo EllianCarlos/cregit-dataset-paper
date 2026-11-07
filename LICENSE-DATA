@@ -3,41 +3,46 @@ Copyright 2026 Ellian Carlos Costa, Arthur Pilone Maia da Silva, David Tadokoro 
 The documents, tables, lists, figures and other data files that the authors made are under
 the Creative Commons Attribution 4.0 International license (CC BY 4.0), below.
 The code is under the Apache License, Version 2.0 (LICENSE).
-Third-party files keep their own terms:
+The copies of ctp (cregit-token-pipeline) and the cregit fork are under GPL-3.0-or-later:
+tools/ctp/, tools/cregit/, the parquet_rename*.py files of steps/release-passes/pass-1/ and
+pass-2/, and pipeline/s7-run/runner/dataset-x1k/stage/ctp-no-firm.patch.
 
-- tools/ctp/, the parquet_rename*.py files of steps/release-passes/pass-1/ and pass-2/, and
-  pipeline/s7-run/runner/dataset-x1k/stage/ctp-no-firm.patch: copies of and a patch to ctp
-  (cregit-token-pipeline), GPL-3.0-or-later.
-- tools/cregit/: copies of the cregit fork (commit 57551d7, tools.lock), GPL-3.0-or-later.
-- pipeline/s3-measure/languages.yml: GitHub Linguist (commit 538da05f), MIT License,
+Third-party files with open licenses:
+- pipeline/sources/spinellis-2020/companies.csv and org_links.csv: adapted from Spinellis et
+  al. (2020), "Enterprise-Driven Open Source Software", Zenodo,
+  https://doi.org/10.5281/zenodo.3742962, CC BY 4.0. The authors took the domains, the
+  companies and the GitHub organizations.
+- pipeline/sources/spinellis-2020/zenodo-record-3742962.json: Zenodo record metadata, CC0 1.0.
+- pipeline/sources/cncf-landscape/landscape_repos.csv: rows of the CNCF landscape,
+  https://github.com/cncf/landscape, CC BY 4.0.
+- steps/linux-validation/ (sources-raw.md, source_tables.csv, comparison_*.csv,
+  main_table.*, paper-snippet.tex, RESULTS.md): tables from LWN.net articles,
+  Copyright Eklektix, Inc., CC BY-SA 4.0 (sources-raw.md names each article).
+- pipeline/s3-measure/languages.yml: GitHub Linguist, MIT License,
   Copyright (c) 2017 GitHub, Inc.
 - pipeline/rosters/raw/asf/projects.json: projects.apache.org, Apache License 2.0,
   The Apache Software Foundation.
-- pipeline/sources/spinellis-2020/companies.csv and org_links.csv: adapted from Spinellis et
-  al. (2020), "Enterprise-Driven Open Source Software", https://doi.org/10.5281/zenodo.3742962,
-  CC BY 4.0 (the authors took the domains, the companies and the GitHub organizations).
-- pipeline/sources/spinellis-2020/zenodo-record-3742962.json: Zenodo record metadata, CC0 1.0.
-- pipeline/sources/cncf-landscape/landscape_repos.csv: rows of the CNCF landscape
-  (https://github.com/cncf/landscape), CC BY 4.0 (the alternative license of landscape.yml).
-- pipeline/s2-pool/v2/pages/: web pages and their HTTP headers (URLs in fetch.tsv). The project
-  and git pages of savannah.gnu.org and www.gnu.org/software/anubis/: Free Software Foundation,
-  verbatim copying permitted with the notice preserved; www.gnu.org/software/automake/: CC BY-ND 4.0;
-  the other pages: the terms of their web site apply.
-- pipeline/sources/company-pages/browser/*.txt: transcriptions of company web pages (URLs in
-  done.tsv and done_websites.tsv): the terms of each web site apply.
-- pipeline/s4-filter/dp8l-audit/raw/spdx/: the SPDX License List data (spdx/license-list-data
-  v3.29.0): the terms of its source apply.
+
+The use of some copied third-party files can be limited by their sources:
+- pipeline/s2-pool/v2/pages/ (URLs in fetch.tsv): Savannah pages of the projects 3dldf, a2ps,
+  acm, alive, apl, aris, artanis, auctex, autoconf, autoconf-archive, autogen, automake, avl,
+  barcode, bash, bayonne, bison, c-intro-and-ref, ccd2cue, cflow and cgicc, and the Savannah
+  page UsingGit; gnu.org pages of anubis and automake; pages of Carvel, CCADB, CNTT, FAIR
+  Package Manager, OACA, OSGeo4W, rasdaman, Score and bioweka (SourceForge).
+- pipeline/sources/company-pages/browser/*.txt (URLs in done.tsv and done_websites.tsv): pages
+  of Advanced Micro Devices, Akamai, Allstate, Analog Devices, Aurora Mobile, Avnet, Ball, Box,
+  Despegar, EPAM Systems, Etsy, GoDaddy, Groupon, Hewlett Packard Enterprise, Home Depot,
+  Instructure, Lenovo, Marvell, MicroStrategy, NetApp, Nokia, Oracle, Orange, PayPal,
+  Salesforce, SurveyMonkey (SVMK), T-Mobile US, trivago, Upwork and Wix.com.
+- steps/linux-validation/ (the same files): the tables of the Linux Foundation reports "2020
+  Linux Kernel History Report" and "2017 Linux Kernel Development Report".
+- pipeline/s4-filter/dp8l-audit/raw/spdx/: the SPDX License List data (spdx/license-list-data).
 - pipeline/s4-filter/dp8l-audit/raw/readme.jsonl.xz, package_blobs.jsonl.xz and
-  manual_checks.jsonl.xz: files of the projects read with the GitHub API: the license of each
-  project applies.
-- steps/linux-validation/ (sources-raw.md, source_tables.csv, comparison_*.csv, main_table.*,
-  paper-snippet.tex, RESULTS.md): tables copied from LWN.net articles (Eklektix, Inc.,
-  CC BY-SA 4.0) and from Linux Foundation reports (the terms of the Linux Foundation apply).
-- sample/data/parquet/: the text of each project (source_text, token_value, file_path,
-  commit_summary, trailers) keeps the license of its project (column license).
-- Facts read from the GitHub and GitLab APIs, Wikidata (CC0 1.0), GLEIF (CC0), SEC EDGAR
-  (public), cncf/gitdm and foundation rosters are in the data of the authors; their terms are
-  in THIRD-PARTY.md of the release (https://huggingface.co/datasets/elliancarlos/token-on-me).
+  manual_checks.jsonl.xz: files of the projects named in the records, read with the GitHub API.
+- sample/data/parquet/: the text of each project (column license gives its license).
+THIRD-PARTY.md of the release (https://huggingface.co/datasets/elliancarlos/token-on-me) gives
+the sources of the facts in the data of the authors (GitHub, GitLab, Wikidata, GLEIF, SEC
+EDGAR, cncf/gitdm, the foundation rosters) and their terms.
 
 -----------------------------------------------------------------------
 

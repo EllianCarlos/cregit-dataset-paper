@@ -143,7 +143,8 @@ files are the files of the selection. They do not prove that a new run gives the
 Web captures (user decision, 2026-10-25): the release publishes the fetched third-party pages
 and files that the stages read (`rosters/raw/`, `sources/company-pages/raw/`, the Spinellis
 tarball), each with its URL, its fetch date and its sha256. They are third-party content, so
-`THIRD-PARTY.md` gives a license note for each source. This repository does not copy them.
+`THIRD-PARTY.md` gives a license note for each source. This repository holds copies of some
+third-party files and web pages: `LICENSE-DATA` lists them.
 
 `make stage-hashes` checks every value in this table that is not marked "copy".
 `make select` prints "not ready": the offline replay of S4-S6 is not wired into one command yet.

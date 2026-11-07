@@ -65,7 +65,8 @@ database and writes the organization columns again. That pass makes version 1.1.
 
 - Host: Hugging Face (2026-11-07), public from the start.
 - Third-party sources: `THIRD-PARTY.md` of the release gives each source and its license or
-  terms. The release and this repository do not publish copies of third-party web pages.
+  terms. This repository holds copies of some third-party files and web pages: `LICENSE-DATA`
+  lists them.
 - The commit SHAs (`tools.lock`, `sync/sources.tsv`) and the tool bundles are published.
 - Anonymous release: for the blind review, the user's own repositories go out as an
   anonymous release (one anonymous export commit; the user pushes it).
