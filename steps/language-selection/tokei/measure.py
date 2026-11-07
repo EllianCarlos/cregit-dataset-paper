@@ -50,7 +50,8 @@ VENDOR_DIRS = {"vendor", "vendored", "third_party", "third-party", "thirdparty",
 TARGET = ("C", "C++", "Java", "Rust")
 MERGE = {"C Header": "C", "C++ Header": "C++"}
 DROPPED = {"dust-tt__dust", "abgox__PSCompletions", "milisp__codexia"}
-GITHUB_MIRROR = {"git.libreoffice.org__libvisio": "https://github.com/LibreOffice/libvisio.git"}
+GITHUB_MIRROR = {"git.libreoffice.org__libvisio": "https://github.com/LibreOffice/libvisio.git",
+                 "git.libreoffice.org__libetonyek": "https://github.com/LibreOffice/libetonyek.git"}
 DEEPEN = {"git.busybox.net__busybox"}  # the host refuses a fetch by SHA
 QT_TS = (b"<?xml", b"<!DOCTYPE TS", b"<TS")
 
@@ -267,22 +268,28 @@ def clean_err(s, tmp):
     return s.replace(str(tmp), "<tmp>").strip()[-300:]
 
 
+def deepen(url, sha, host, w):
+    """For a host that refuses a fetch by SHA: fetch the default branch with growing depth until the pinned
+    commit is present (the busybox workaround of pinned.py)."""
+    with HOST_LOCKS[host]:
+        depth = 1
+        while depth <= 4096:
+            f = git(["fetch", "-q", "--no-tags", "--depth", str(depth), url, "HEAD"], cwd=w)
+            if f.returncode:
+                return None, clean_err(f.stderr, w), {}
+            if git(["cat-file", "-e", sha + "^{commit}"], cwd=w).returncode == 0:
+                return f"default branch fetched with depth {depth} (host refuses a fetch by SHA)", None, \
+                    {"fetch_depth": depth}
+            depth *= 2
+        return None, "pinned commit not within depth 4096 of the default branch", {}
+
+
 def fetch(r, w):  # w: the bare git dir
     """Fetch the pinned commit into w (depth 1). Returns (method, error, extra)."""
     url, sha, host = r["url"], r["pinned_commit"], r["host"]
     p = r["project"]
     if p in DEEPEN:
-        with HOST_LOCKS[host]:
-            depth = 1
-            while depth <= 4096:
-                f = git(["fetch", "-q", "--no-tags", "--depth", str(depth), url, "HEAD"], cwd=w)
-                if f.returncode:
-                    return None, clean_err(f.stderr, w), {}
-                if git(["cat-file", "-e", sha + "^{commit}"], cwd=w).returncode == 0:
-                    return f"default branch fetched with depth {depth} (host refuses a fetch by SHA)", None, \
-                        {"fetch_depth": depth}
-                depth *= 2
-            return None, "pinned commit not within depth 4096 of the default branch", {}
+        return deepen(url, sha, host, w)
     err = None
     for attempt in range(4):
         with HOST_LOCKS[host] if host != "github.com" else contextlib.nullcontext():
@@ -295,7 +302,8 @@ def fetch(r, w):  # w: the bare git dir
                 m += f" (attempt {attempt + 1})"
             return m, None, {}
         err = clean_err(f.stderr, w)
-        if "not found" in err.lower() and "repository" in err.lower():
+        if ("not found" in err.lower() and "repository" in err.lower()) or "could not read Username" in err \
+                or "unadvertised object" in err:
             break
         time.sleep(30 * (attempt + 1) if ("429" in err or "500" in err or "502" in err or "503" in err) else 5)
     return None, err, {}
@@ -458,7 +466,7 @@ def measure_one(r, prog, inflight):
                         measured_at=now())
         pack = du(g)
         inflight[r["project"]] = pack
-        commit = r["pinned_commit"] if r["project"] in DEEPEN else \
+        commit = r["pinned_commit"] if "fetch_depth" in extra else \
             git(["rev-parse", "FETCH_HEAD"], cwd=g).stdout.strip()
         w.mkdir()
         st = extract(g, commit, w)
@@ -642,6 +650,66 @@ def summary(inp, last, man):
     log("wrote summary.json")
 
 
+FETCH_CHECK = {  # 2026-11-07, after the two retries: what the host says now
+    "github.com": "GitHub API answers 404 for the repository",
+    "git.savannah.gnu.org": "the pinned commit is no longer a branch tip and the host refuses a fetch by SHA",
+}
+
+
+def size_class(commits):
+    c = int(commits)
+    for lim, name in ((1500, "SS"), (2500, "S"), (5000, "M"), (15000, "L"), (50000, "XL")):
+        if c < lim:
+            return name
+    return "XXL"
+
+
+def cmd_final(a):
+    """After the run and the two retries: drop the rows that still fail, write fetch-failed.tsv, projects.keep.txt
+    and the extra summary numbers."""
+    inp = inputs()
+    last = done_set()
+    man = manifest()
+    failed = sorted(p for p in inp if not last.get(p, {}).get("final"))
+    with open(HERE / "fetch-failed.tsv", "w") as f:
+        f.write("project\trepo_url\tpinned_commit\terror\tcheck\n")
+        for p in failed:
+            r, d = inp[p], last.get(p, {})
+            err = re.sub(r"\S+@\S+", "<removed>", (d.get("error") or "").replace("\n", " "))
+            f.write(f"{p}\t{r['repo_url']}\t{r['pinned_commit']}\t{err}\t{FETCH_CHECK.get(r['host'], '')}\n")
+    if failed:
+        with open(OUT, "a") as f:
+            for p in failed:
+                d = dict(last.get(p, {}), project=p, status="dropped: fetch failed", final=True, measured_at=now())
+                f.write(json.dumps(d) + "\n")
+    last = done_set()
+    keep = sorted(p for p, d in last.items() if d.get("status") == "ok" and d.get("rule") and p not in DROPPED)
+    stems = []
+    for p in keep:
+        if p in man:
+            stems.append(Path(man[p]["path"]).name[: -len("-dataset.parquet")])
+    with open(HERE / "projects.keep.txt", "w") as f:
+        f.write("".join(x + "\n" for x in stems))
+    ok = [p for p, d in last.items() if d.get("status") == "ok"]
+    ex = {}
+    for thr in (0.30, 0.50):
+        k = [p for p in ok if (last[p].get("target_share") or 0) >= thr]
+        kf = [p for p in k if p in man]
+        ex[f"share>={thr:.2f}"] = dict(projects=len(k), with_file=len(kf),
+                                       token_rows=sum(int(man[p]["rows"]) for p in kf),
+                                       bytes=sum(int(man[p]["bytes"]) for p in kf))
+    kf = [p for p in keep if p in man]
+    ex["rule"] = dict(projects=len(keep), with_file=len(kf), parquet_files=len(stems),
+                      token_rows=sum(int(man[p]["rows"]) for p in kf), bytes=sum(int(man[p]["bytes"]) for p in kf),
+                      size_class=dict(collections.Counter(size_class(man[p]["commits"]) for p in kf)),
+                      manifest_size_class=dict(collections.Counter(man[p]["size_class"] for p in kf)),
+                      by_layer=dict(collections.Counter(man[p]["layer"] for p in kf)))
+    ex["fetch_failed_dropped"] = failed
+    with open(HERE / "final.json", "w") as f:
+        json.dump(ex, f, indent=1)
+    log(f"{len(failed)} fetch-failed rows dropped; projects.keep.txt: {len(stems)} stems; final.json written")
+
+
 def main():
     ap = argparse.ArgumentParser()
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -657,9 +725,11 @@ def main():
     r.add_argument("--out", default="measure.jsonl")
     r.add_argument("--stop-file", default="STOP")
     sub.add_parser("report")
+    sub.add_parser("final")
     a = ap.parse_args()
     {"langs": lambda: cmd_langs(), "sample": lambda: cmd_sample(), "run": lambda: cmd_run(a),
-     "report": lambda: cmd_report(a)}[a.cmd]()
+     "report": lambda: cmd_report(a),
+     "final": lambda: cmd_final(a)}[a.cmd]()
 
 
 if __name__ == "__main__":
