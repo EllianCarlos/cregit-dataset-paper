@@ -1,0 +1,23 @@
+files with a different commit: 1 rows: 402039
+  system/include/compat/arm_neon.h: 402039
+rows of the first file: 920432
+rows outside system/include/compat/arm_neon.h with any of the 34 non-identity columns different: 0
+  outside: author_email               distinct 405 / 405, pairs 405, bijection True
+  outside: author_name                distinct 383 / 383, pairs 383, bijection True
+  outside: committer_email            distinct 112 / 112, pairs 112, bijection True
+  outside: committer_name             distinct 110 / 110, pairs 110, bijection True
+  outside: footer_acked_by            distinct 0 / 0, pairs 0, bijection True
+  outside: footer_assisted_by         distinct 0 / 0, pairs 0, bijection True
+  outside: footer_based_on_patch_by   distinct 0 / 0, pairs 0, bijection True
+  outside: footer_co_authored_by      distinct 27 / 27, pairs 27, bijection True
+  outside: footer_co_developed_by     distinct 0 / 0, pairs 0, bijection True
+  outside: footer_helped_by           distinct 0 / 0, pairs 0, bijection True
+  outside: footer_mentored_by         distinct 0 / 0, pairs 0, bijection True
+  outside: footer_personids           distinct 16 / 16, pairs 16, bijection True
+  outside: footer_reported_by         distinct 0 / 0, pairs 0, bijection True
+  outside: footer_reviewed_by         distinct 0 / 0, pairs 0, bijection True
+  outside: footer_signed_off_by       distinct 3 / 3, pairs 3, bijection True
+  outside: footer_suggested_by        distinct 0 / 0, pairs 0, bijection True
+  outside: footer_tested_by           distinct 0 / 0, pairs 0, bijection True
+  outside: footer_thanks_to           distinct 0 / 0, pairs 0, bijection True
+  outside: personid                   distinct 376 / 376, pairs 376, bijection True

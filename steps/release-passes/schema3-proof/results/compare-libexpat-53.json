@@ -1,0 +1,447 @@
+{
+ "schema_equal": true,
+ "columns": 53,
+ "rows": {
+  "rebuilt": 195672,
+  "tom": 195672
+ },
+ "kv_equal": [
+  "ctp_schema_version",
+  "organizations_mapping_sha256",
+  "organizations_version",
+  "pseudonymization_version"
+ ],
+ "kv_differ": [
+  "pseudonymization_registry_sha256"
+ ],
+ "per_column": [
+  {
+   "column": "repo_name",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "clone_url",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "audit_frame_file",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "source",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "stratum",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "contested",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "label_date",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "owner",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "repo",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "roster_name",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "language",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "commits",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "size_class",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "stars",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "pushed_at",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "license",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "owner_type",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "file_path",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "655f209495888f4c",
+   "hash_tom": "655f209495888f4c"
+  },
+  {
+   "column": "token_index",
+   "type": "BIGINT",
+   "rows_differ": 0,
+   "hash_rebuilt": "dd206a20c1e9f017",
+   "hash_tom": "dd206a20c1e9f017"
+  },
+  {
+   "column": "source_line",
+   "type": "BIGINT",
+   "rows_differ": 0,
+   "hash_rebuilt": "50fef9c080aa73f3",
+   "hash_tom": "50fef9c080aa73f3"
+  },
+  {
+   "column": "source_col",
+   "type": "BIGINT",
+   "rows_differ": 0,
+   "hash_rebuilt": "11a30501fac9ebc2",
+   "hash_tom": "11a30501fac9ebc2"
+  },
+  {
+   "column": "source_text",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "c48716270a5d7c26",
+   "hash_tom": "c48716270a5d7c26"
+  },
+  {
+   "column": "token_type",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "ae91760e8eb9343a",
+   "hash_tom": "ae91760e8eb9343a"
+  },
+  {
+   "column": "token_value",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "d2c18e972dd8574a",
+   "hash_tom": "d2c18e972dd8574a"
+  },
+  {
+   "column": "is_structural",
+   "type": "BIGINT",
+   "rows_differ": 0,
+   "hash_rebuilt": "73aeb8fcdd7c9efd",
+   "hash_tom": "73aeb8fcdd7c9efd"
+  },
+  {
+   "column": "original_commit_sha",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "e9ab63987b4000b0",
+   "hash_tom": "e9ab63987b4000b0"
+  },
+  {
+   "column": "author_name",
+   "type": "VARCHAR",
+   "rows_differ": 195672,
+   "hash_rebuilt": "5237fd8efe658e15",
+   "hash_tom": "37f02a34a7cd4e0e",
+   "distinct_rebuilt": 81,
+   "distinct_tom": 81,
+   "pairs": 81,
+   "bijection": true
+  },
+  {
+   "column": "author_email",
+   "type": "VARCHAR",
+   "rows_differ": 195672,
+   "hash_rebuilt": "b70226ea923e18dd",
+   "hash_tom": "9fbcec861a16947e",
+   "distinct_rebuilt": 81,
+   "distinct_tom": 81,
+   "pairs": 81,
+   "bijection": true
+  },
+  {
+   "column": "author_date",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "68dcb1bc3353eadd",
+   "hash_tom": "68dcb1bc3353eadd"
+  },
+  {
+   "column": "committer_name",
+   "type": "VARCHAR",
+   "rows_differ": 195672,
+   "hash_rebuilt": "22bacd943361fb16",
+   "hash_tom": "5b07842e8e60dd8a",
+   "distinct_rebuilt": 52,
+   "distinct_tom": 52,
+   "pairs": 52,
+   "bijection": true
+  },
+  {
+   "column": "committer_email",
+   "type": "VARCHAR",
+   "rows_differ": 195672,
+   "hash_rebuilt": "be0e30f13250b17d",
+   "hash_tom": "afedc070c357492d",
+   "distinct_rebuilt": 54,
+   "distinct_tom": 54,
+   "pairs": 54,
+   "bijection": true
+  },
+  {
+   "column": "committer_date",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "8ecdf4d5c12c99da",
+   "hash_tom": "8ecdf4d5c12c99da"
+  },
+  {
+   "column": "commit_summary",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "b4a836f5d35f341b",
+   "hash_tom": "b4a836f5d35f341b"
+  },
+  {
+   "column": "personid",
+   "type": "VARCHAR",
+   "rows_differ": 195672,
+   "hash_rebuilt": "55a302f52cec0f23",
+   "hash_tom": "4b36a2ea7a2c17da",
+   "distinct_rebuilt": 77,
+   "distinct_tom": 77,
+   "pairs": 77,
+   "bijection": true
+  },
+  {
+   "column": "person_domain",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "ffaf3f61b05cb452",
+   "hash_tom": "ffaf3f61b05cb452"
+  },
+  {
+   "column": "footer_signed_off_by",
+   "type": "VARCHAR[]",
+   "rows_differ": 1502,
+   "hash_rebuilt": "c57cc46a9768383c",
+   "hash_tom": "6d4e8ffd32a9d860",
+   "distinct_rebuilt": 4,
+   "distinct_tom": 4,
+   "pairs": 4,
+   "bijection": true,
+   "length_differ": 0
+  },
+  {
+   "column": "footer_co_authored_by",
+   "type": "VARCHAR[]",
+   "rows_differ": 2692,
+   "hash_rebuilt": "533627470398a7fd",
+   "hash_tom": "9b6a3bc7a9df508f",
+   "distinct_rebuilt": 9,
+   "distinct_tom": 9,
+   "pairs": 9,
+   "bijection": true,
+   "length_differ": 0
+  },
+  {
+   "column": "footer_co_developed_by",
+   "type": "VARCHAR[]",
+   "rows_differ": 0,
+   "hash_rebuilt": "c88b006159727b3e",
+   "hash_tom": "c88b006159727b3e"
+  },
+  {
+   "column": "footer_reviewed_by",
+   "type": "VARCHAR[]",
+   "rows_differ": 0,
+   "hash_rebuilt": "c88b006159727b3e",
+   "hash_tom": "c88b006159727b3e"
+  },
+  {
+   "column": "footer_acked_by",
+   "type": "VARCHAR[]",
+   "rows_differ": 0,
+   "hash_rebuilt": "c88b006159727b3e",
+   "hash_tom": "c88b006159727b3e"
+  },
+  {
+   "column": "footer_tested_by",
+   "type": "VARCHAR[]",
+   "rows_differ": 0,
+   "hash_rebuilt": "c88b006159727b3e",
+   "hash_tom": "c88b006159727b3e"
+  },
+  {
+   "column": "footer_reported_by",
+   "type": "VARCHAR[]",
+   "rows_differ": 254,
+   "hash_rebuilt": "c129787fe0c287da",
+   "hash_tom": "3c7b387280ff4bd1",
+   "distinct_rebuilt": 4,
+   "distinct_tom": 4,
+   "pairs": 4,
+   "bijection": true,
+   "length_differ": 0
+  },
+  {
+   "column": "footer_suggested_by",
+   "type": "VARCHAR[]",
+   "rows_differ": 1027,
+   "hash_rebuilt": "d366e65a1d08deaa",
+   "hash_tom": "5602ce3dde22a303",
+   "distinct_rebuilt": 1,
+   "distinct_tom": 1,
+   "pairs": 1,
+   "bijection": true,
+   "length_differ": 0
+  },
+  {
+   "column": "footer_based_on_patch_by",
+   "type": "VARCHAR[]",
+   "rows_differ": 0,
+   "hash_rebuilt": "c88b006159727b3e",
+   "hash_tom": "c88b006159727b3e"
+  },
+  {
+   "column": "footer_helped_by",
+   "type": "VARCHAR[]",
+   "rows_differ": 0,
+   "hash_rebuilt": "c88b006159727b3e",
+   "hash_tom": "c88b006159727b3e"
+  },
+  {
+   "column": "footer_mentored_by",
+   "type": "VARCHAR[]",
+   "rows_differ": 0,
+   "hash_rebuilt": "c88b006159727b3e",
+   "hash_tom": "c88b006159727b3e"
+  },
+  {
+   "column": "footer_assisted_by",
+   "type": "VARCHAR[]",
+   "rows_differ": 0,
+   "hash_rebuilt": "c88b006159727b3e",
+   "hash_tom": "c88b006159727b3e"
+  },
+  {
+   "column": "footer_thanks_to",
+   "type": "VARCHAR[]",
+   "rows_differ": 0,
+   "hash_rebuilt": "c88b006159727b3e",
+   "hash_tom": "c88b006159727b3e"
+  },
+  {
+   "column": "footer_personids",
+   "type": "VARCHAR[]",
+   "rows_differ": 4900,
+   "hash_rebuilt": "fbded7a04eee576f",
+   "hash_tom": "39bdf8ef50c20378",
+   "distinct_rebuilt": 11,
+   "distinct_tom": 11,
+   "pairs": 11,
+   "bijection": true,
+   "length_differ": 0
+  },
+  {
+   "column": "firm_based_on_namespace",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "firm_based_on_domain",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "d603390054c24289",
+   "hash_tom": "d603390054c24289"
+  },
+  {
+   "column": "project_enterprise_driven",
+   "type": "BOOLEAN",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  },
+  {
+   "column": "project_enterprise_basis",
+   "type": "VARCHAR",
+   "rows_differ": 0,
+   "hash_rebuilt": "32d7089d3dbc7e2d",
+   "hash_tom": "32d7089d3dbc7e2d"
+  }
+ ],
+ "tom_columns": 61,
+ "absent_in_rebuilt": [
+  "roster_lang",
+  "archived",
+  "fork",
+  "cregit_commit_sha",
+  "person_name",
+  "person_email",
+  "repo_tag",
+  "footer_person_names"
+ ],
+ "extra_in_rebuilt": []
+}
