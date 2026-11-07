@@ -1,0 +1,84 @@
+pass	staged_path	staged_sha256	copy	copy_sha256	note
+pass-1	docs/CHANGELOG.md	97705ff01ed0940222eacac2837fb8a4d764eac791c718a697a6e6a0d373fce1	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-1	docs/CITATION.cff	ab23e17f8543c18018e09507065f449d2b0ffd103094ffd61025c9c623c0d56d	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-1	docs/LICENSE.md	b257211d0de6e7d9b751ad787a3bb469cf2aa88479f0645e1b9b31c95cd40c19	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-1	docs/README.md	cb6dc23f13a646ad1cb9a28c9b7cf7c4233ccc05750cfc0b58cd2ecf6c41ff87	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-1	docs/THIRD-PARTY.md	f3574073277dee23894ac8c1bffe561bb015b5acfef75ba217116e0728c0a10c	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-1	docs/docs/COLUMNS.md	490c7fa2224ac60442e62afd9f6b53783b65173eb2a2e4d449066ed5ceca6961	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-1	docs/docs/ERROR.md	dc8eab76cdcd2b4d6662b2620455e1d4e5c079a0ee6b09c3f3d4c67ccb7ff3e4	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-1	docs/docs/LIMITATIONS.md	b62d6d00c97d1e49283d32437537f9b4e4386010eba4853926c41ca61f5901f0	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-1	docs/docs/ORGANIZATIONS.md	21b4da69d6bb0d2aed0886bd201d42981a87e8e745b9568cccec2aa9e1361635	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-1	docs/docs/PRIVACY.md	413ba836a1b7b5945999fb8b917c5c9bf610867ed72f5c72778255ea352c4f14	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-1	docs/docs/PROVENANCE.md	2de3c5420646149bf78ca69c9bcc5789a98c12919049eaa1e69c8e7d07d0ca5f	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-1	docs/docs/RELEASE-NOTES.md	b9dc13f55db7b76e67936bb7668c9fde88d6cdeab8c954186bb6bcc9bbb52c89	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-1	docs/docs/SCHEMA.md	230c4d5f0274c69dce064dbc25e7b1aae88f961c1ba335522e25d8723d0a2761	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-1	docs/docs/tools.lock	ece154b188912a763aa48ebbd7d766f7b2ca23b62ee40dbab7ece0aa7f1fb0d2	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-1	docs/tools/fill_release.py	3d988f54da703791c5c65b293dc35929337fcaedf43a0bea7a9ab335b672c081	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-1	hf_tools.py	a1cfa3f74e90858607badafec2d183fe1c7496c7b4eb7b10e8966446ae22828c	steps/release-passes/pass-1/hf_tools.py	a1cfa3f74e90858607badafec2d183fe1c7496c7b4eb7b10e8966446ae22828c	
+pass-1	keep/projects.keep.txt	d971a204c1a488c6de282dceef27355531214ccd816e2c94d5ce897afbd1cfd4	steps/language-selection/tokei/projects.keep.txt	d971a204c1a488c6de282dceef27355531214ccd816e2c94d5ce897afbd1cfd4	
+pass-1	parquet_rename.py	2653a3b2b6f8aa73492eaf85ec2ef61994a23f54f715bd60cf54550759621ce6	steps/release-passes/pass-1/parquet_rename.py	2653a3b2b6f8aa73492eaf85ec2ef61994a23f54f715bd60cf54550759621ce6	
+pass-1	parquet_rename_check.py	3d1a354fdefe10dec2a088e868800a346f44a4d5fa60f1eab38752c3b3c2c642	steps/release-passes/pass-1/parquet_rename_check.py	3d1a354fdefe10dec2a088e868800a346f44a4d5fa60f1eab38752c3b3c2c642	
+pass-1	release_tools.py	68791baf80cfd32f2d13acbcb69389d0e058b0ac3af1bf7d8917da53691ac81e	steps/release-root/release_tools.py	68791baf80cfd32f2d13acbcb69389d0e058b0ac3af1bf7d8917da53691ac81e	
+pass-1	source.SHA256SUMS	d35e913a0121a188857afef834c3eb11729a4e86e95335b0d0d5e165dbb48964	-	-	the SHA256SUMS of the source root
+pass-1	tom.conf	41c8d6e8968d3c19cb3031fa53cebf390b53135e2093a9397a45d67128e62048	steps/release-passes/pass-1/tom.conf	79892dd5455e4dda3ac28d9e38f42669864dfa5f263d71598a47b109607310cd	bucket name replaced by BUCKET_NAME
+pass-1	tom_run.sh	74f70e0f5ea2f2cc324d796439c44ee9b5d9a3bc4a182421effbd55ce5fb9be7	steps/release-passes/pass-1/tom_run.sh	74f70e0f5ea2f2cc324d796439c44ee9b5d9a3bc4a182421effbd55ce5fb9be7	
+pass-1	tom_start.sh	cb376da8482e67d3a8fe560d85c279660454380e6da805423d1354945e28a7ef	steps/release-passes/pass-1/tom_start.sh	5466a7930df082817a3d4e2f43d79c9cf1a35e4ad7658e46dbfbeba06447db8a	bucket name replaced by BUCKET_NAME
+pass-1	tom_tools.py	9273ce33fcbafd8efa4f01ab6ffcceaa24ad708f34fb338fa1c3e1a275050457	steps/release-passes/pass-1/tom_tools.py	9273ce33fcbafd8efa4f01ab6ffcceaa24ad708f34fb338fa1c3e1a275050457	
+pass-1	SHA256SUMS	7b1187384ebb669e64b67ced1b773bcb6def4ac91e3242c99b52113c8c13b684	steps/release-passes/pass-1/SHA256SUMS	7b1187384ebb669e64b67ced1b773bcb6def4ac91e3242c99b52113c8c13b684	the staged list (WANT_SUMS of the run)
+pass-2	docs/CHANGELOG.md	eacf8d9a2189b2ecf5ce5010e50a54abc0f794c90108485075ca1d2d5e8de13e	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-2	docs/CITATION.cff	6c4a280fb6e692d13b2d961d775519410dd237be27175796606131c0f118e76f	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-2	docs/LICENSE.md	b8a04d96700f7cd800279d8844687c3fadb429b9bfe2064889eff6806e2788e5	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-2	docs/README.md	c6c9406ba863558a1e8c98b7b9ff8b242d2cb87891e4338204cf831a2e0bf1ae	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-2	docs/THIRD-PARTY.md	4e8da48f12ca5e01a205044bb3c442a7b41b36955814afe3a3e0ce368f0b6ef3	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-2	docs/docs/COLUMNS.md	9c3b112334947686ea8a870a876ed265aade98e6f572903f448323a267e336ca	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-2	docs/docs/ERROR.md	2db8a2e73ba029515b4faf7ef192f0775066263aaa2ce0b98197fbfeba39b873	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-2	docs/docs/LIMITATIONS.md	89d616e7adb4fad0dcebea976dd9a92243086fbcc1368bbe7cf9fe54544a5eba	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-2	docs/docs/ORGANIZATIONS.md	140d781c8140e79399a3958433bc7d934926e0d53a7be0d4dda8e9f86cb02140	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-2	docs/docs/PRIVACY.md	413ba836a1b7b5945999fb8b917c5c9bf610867ed72f5c72778255ea352c4f14	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-2	docs/docs/PROVENANCE.md	11bae65488211528cce8f0f8797dcc39af6e79a4b0f0a20d91bb00d5ffad8f11	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-2	docs/docs/RELEASE-NOTES.md	61d7fd1281e2c5e7fd0a9b6db61da30b43bc92de0f7db643942129637f357b27	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-2	docs/docs/SCHEMA.md	49f19c7ef8a5b89cf08e334b9e18419495ae87c5721df87e276ccd54ea631dd2	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-2	docs/docs/tools.lock	090547e3b3580e52163e7730d63e9319fd7127a88e2a382c2614274e69d9305f	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-2	docs/tools/fill_release.py	a95e1097d8ad9cb311a0ea04ceebaa0d1040a1df0917fe9622a849d361817b64	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-2	hf_tools.py	a1cfa3f74e90858607badafec2d183fe1c7496c7b4eb7b10e8966446ae22828c	steps/release-passes/pass-1/hf_tools.py	a1cfa3f74e90858607badafec2d183fe1c7496c7b4eb7b10e8966446ae22828c	
+pass-2	inputs/fills.tsv	2878e5437457c82f31bbcc3f2c7bf1290a94566412bf0b5638b5421f2cfc60f8	steps/release-passes/pass-2/inputs/fills.tsv	2878e5437457c82f31bbcc3f2c7bf1290a94566412bf0b5638b5421f2cfc60f8	
+pass-2	inputs/prepare.json	adf322c1bb6d30e62d5836aa87cb9219451186d272e60044b0b413561598c219	steps/release-passes/pass-2/inputs/prepare.json	adf322c1bb6d30e62d5836aa87cb9219451186d272e60044b0b413561598c219	
+pass-2	inputs/project_labels.parquet	d4e15f5a7a684a17280ed34061cf1ad27da6645a42f5c751f2c249d9c3e63e99	-	-	side table: the pass copies it byte for byte to organizations/ of its root; pass 3 keeps it
+pass-2	inputs/project_languages.parquet	f88f12f6017edd3854e8bee07247c9c1ff3e1d7882cbf5d4b7cf1eaf6201e6e8	-	-	side table: the pass copies it byte for byte to organizations/ of its root; pass 3 keeps it
+pass-2	keep/projects.keep.txt	d971a204c1a488c6de282dceef27355531214ccd816e2c94d5ce897afbd1cfd4	steps/language-selection/tokei/projects.keep.txt	d971a204c1a488c6de282dceef27355531214ccd816e2c94d5ce897afbd1cfd4	
+pass-2	parquet_rename.py	8062b67603bbc808b47c9cf6d854d41ac4cb2c66e28c921e5459a127bc8aa269	steps/release-passes/pass-2/parquet_rename.py	8062b67603bbc808b47c9cf6d854d41ac4cb2c66e28c921e5459a127bc8aa269	
+pass-2	parquet_rename_check.py	985e127f96da8d57fb52c209c4b7dfd759cac860c42c2cc1dbbbe52b4471687f	steps/release-passes/pass-2/parquet_rename_check.py	985e127f96da8d57fb52c209c4b7dfd759cac860c42c2cc1dbbbe52b4471687f	
+pass-2	release_tools.py	68791baf80cfd32f2d13acbcb69389d0e058b0ac3af1bf7d8917da53691ac81e	steps/release-root/release_tools.py	68791baf80cfd32f2d13acbcb69389d0e058b0ac3af1bf7d8917da53691ac81e	
+pass-2	source.SHA256SUMS	d35e913a0121a188857afef834c3eb11729a4e86e95335b0d0d5e165dbb48964	-	-	the SHA256SUMS of the source root
+pass-2	tom2.conf	2d11f128f1fea5e58d18eab1184b74df1792aef8edfd4c85f5de7831bbb4998a	steps/release-passes/pass-2/tom2.conf	a79f400c4079d13f4ce9bb24daf1fa360b74d26aae28598921e91ef2a2aa082e	bucket name replaced by BUCKET_NAME
+pass-2	tom2_run.sh	3a3690d80d6009ff55b00cbc072f18fd333e5af7ffe42c05a032d66d3ed62807	steps/release-passes/pass-2/tom2_run.sh	3a3690d80d6009ff55b00cbc072f18fd333e5af7ffe42c05a032d66d3ed62807	
+pass-2	tom2_start.sh	6d732496cfc89a1e4d7cb5b9ec05b50b2d0d0bf93dd77bd0f4b94c5c1667ada4	steps/release-passes/pass-2/tom2_start.sh	e16963078cc8c0b82de9d685aef3637a82e4bcae0cc3bb706689b9b6c6ba4ee3	bucket name replaced by BUCKET_NAME
+pass-2	tom2_tools.py	1fea81b3b4c14a2817fc0cf0d234d69af2b344c9967e404823c64e5ef9fbd651	steps/release-passes/pass-2/tom2_tools.py	1fea81b3b4c14a2817fc0cf0d234d69af2b344c9967e404823c64e5ef9fbd651	
+pass-2	tom_tools.py	9273ce33fcbafd8efa4f01ab6ffcceaa24ad708f34fb338fa1c3e1a275050457	steps/release-passes/pass-1/tom_tools.py	9273ce33fcbafd8efa4f01ab6ffcceaa24ad708f34fb338fa1c3e1a275050457	
+pass-2	SHA256SUMS	d4e286a5ca6c0799e24dd0d915e8058baf8bf62e89204418eda74469daf17cf4	steps/release-passes/pass-2/SHA256SUMS	d4e286a5ca6c0799e24dd0d915e8058baf8bf62e89204418eda74469daf17cf4	the staged list (WANT_SUMS of the run)
+pass-3	docs/CHANGELOG.md	37441102263f4bcb921411d0e9526ceecdcdf07ac3e1d57a1d0b59cfadafff1d	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-3	docs/CITATION.cff	6c4a280fb6e692d13b2d961d775519410dd237be27175796606131c0f118e76f	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-3	docs/LICENSE.md	830a3d013869f53dc5798a17af014fec73ecb2ad5977b73c02fab42c49b82be2	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-3	docs/README.md	ea8ea70077edcb02f7e5483088f23445323d7c36bacabe69752e380d2627d538	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-3	docs/THIRD-PARTY.md	4e8da48f12ca5e01a205044bb3c442a7b41b36955814afe3a3e0ce368f0b6ef3	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-3	docs/docs/COLUMNS.md	e7a302116176d6ed7b8cb42beb9a3c86442a1941482d48f5992fccfa10374f78	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-3	docs/docs/ERROR.md	b234a19182c68c32831372f380c8e3b002702556ca906246f43dd0c9b6591e47	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-3	docs/docs/LIMITATIONS.md	09631d6ca3042c2c45e70957fe82967d54d2ccdd150b60f4033ba576d44ff2d9	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-3	docs/docs/ORGANIZATIONS.md	7a362e5a708561a97d49c7a7999d73d122d9d7a47614d19b9d6f938938e38cce	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-3	docs/docs/PRIVACY.md	f5f81f22707922f58b61cbc36afa32439d19187af9baa3622a6a686f6a39d143	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-3	docs/docs/PROVENANCE.md	91fdc75cd62c1e4fb274be0747a4a23c0c94fad57fededdf06e64626f01f2c79	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-3	docs/docs/RELEASE-NOTES.md	243b22129dafee553299975af12bfbb909655cce839d7e7c80f603a5afdb6a6d	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-3	docs/docs/SCHEMA.md	8c93580f5b78c6f98be8c01c24dd191637eed41f762f89d52554ce6213ec832a	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-3	docs/docs/tools.lock	eec0efddb827f0b7bafc13c0a0a6c83e3ceb6d862b1e004e3fe12ca92cce6f19	-	-	release document with its placeholders: the pass writes the filled copy into its root
+pass-3	docs/tools/fill_release.py	b0f7a935dc9eaf332b9b43fcf00e4342854f442a162f4696d9bebd7e2d481768	steps/release-passes/fill-release/tools/fill_release.py	b0f7a935dc9eaf332b9b43fcf00e4342854f442a162f4696d9bebd7e2d481768	
+pass-3	hf_tools.py	a1cfa3f74e90858607badafec2d183fe1c7496c7b4eb7b10e8966446ae22828c	steps/release-passes/pass-1/hf_tools.py	a1cfa3f74e90858607badafec2d183fe1c7496c7b4eb7b10e8966446ae22828c	
+pass-3	parquet_rename.py	8062b67603bbc808b47c9cf6d854d41ac4cb2c66e28c921e5459a127bc8aa269	steps/release-passes/pass-2/parquet_rename.py	8062b67603bbc808b47c9cf6d854d41ac4cb2c66e28c921e5459a127bc8aa269	
+pass-3	parquet_rename_check.py	985e127f96da8d57fb52c209c4b7dfd759cac860c42c2cc1dbbbe52b4471687f	steps/release-passes/pass-2/parquet_rename_check.py	985e127f96da8d57fb52c209c4b7dfd759cac860c42c2cc1dbbbe52b4471687f	
+pass-3	release_tools.py	68791baf80cfd32f2d13acbcb69389d0e058b0ac3af1bf7d8917da53691ac81e	steps/release-root/release_tools.py	68791baf80cfd32f2d13acbcb69389d0e058b0ac3af1bf7d8917da53691ac81e	
+pass-3	tom2_tools.py	1fea81b3b4c14a2817fc0cf0d234d69af2b344c9967e404823c64e5ef9fbd651	steps/release-passes/pass-2/tom2_tools.py	1fea81b3b4c14a2817fc0cf0d234d69af2b344c9967e404823c64e5ef9fbd651	
+pass-3	tom3.conf	cce1231ee5e83c671e21e8c86dfef3bfec5573b9c12b2cce4ae12066530a64f7	steps/release-passes/pass-3/tom3.conf	a22232120c1754555fc922e8e8c82207db00af549bd9dd13b35b8e52ad90e084	bucket name replaced by BUCKET_NAME
+pass-3	tom3_run.sh	8afb93e213fcd737f7a78ed2f146af8261362b36ed3e345800431a46bea26838	steps/release-passes/pass-3/tom3_run.sh	8afb93e213fcd737f7a78ed2f146af8261362b36ed3e345800431a46bea26838	
+pass-3	tom3_start.sh	a81578324101cb9a0705a97d133720eb421e62338d13263b2705b7be5cf3f794	steps/release-passes/pass-3/tom3_start.sh	4a49bf99357402cb6af5095bbbcc2c3258a1da1c9c84fa8a00b3e493f6c50165	bucket name replaced by BUCKET_NAME
+pass-3	tom3_tools.py	43ca83821414117825efd0f392e69255dbd10931eb3e3563bfca1b975d1d2868	steps/release-passes/pass-3/tom3_tools.py	43ca83821414117825efd0f392e69255dbd10931eb3e3563bfca1b975d1d2868	
+pass-3	tom_tools.py	9273ce33fcbafd8efa4f01ab6ffcceaa24ad708f34fb338fa1c3e1a275050457	steps/release-passes/pass-1/tom_tools.py	9273ce33fcbafd8efa4f01ab6ffcceaa24ad708f34fb338fa1c3e1a275050457	
+pass-3	SHA256SUMS	e142c5a982ad0fc1ef5431d2aa7daf9670765491ae6a2d6689986ea39a599201	steps/release-passes/pass-3/SHA256SUMS	e142c5a982ad0fc1ef5431d2aa7daf9670765491ae6a2d6689986ea39a599201	the staged list (WANT_SUMS of the run)

@@ -1,6 +1,7 @@
 # The release root
 
-This step assembles the release root of the dataset (version 1.0.0) and checks it: the
+This step assembles a root of the dataset and checks it. Its last build (on the re-encoded files)
+is the source root of the release passes of TOM 1.0.0 (`../release-passes/`). The root has the
 10,754 project files, the organization tables in `organizations/`, the documents,
 `MANIFEST.tsv`, `SHA256SUMS`, `ledgers.parquet` (the cleaned run ledger rows of each file),
 `links.json`, `pseudonymization.json` and `tools/fill_release.py`. The root has no registry,
@@ -17,7 +18,7 @@ no salt and no personal domain table.
 | `rename-kv/make_input_sums.py` | `08244b8842ed` | Writes the `SHA256SUMS` of the renamed files from the rename log. |
 | `analysis/resolve_run_records.py`, `analysis/ledger_sha_match.py`, `analysis/diff_fields.py` | `cbad3d786683`, `0729387ee833`, `03142f8a8ac3` | Find the run record of the project files that had no clear record in the ledgers, by the sha256 of the run file (the run commits of `MANIFEST.tsv`). |
 | `measure/measure.py` | `b52306afa9d9` | Counts four findings of the tool review on the release files (counts only, no network). |
-| `fill-release/tools/fill_release.py` | `faf4daac5640` | Writes `MANIFEST.tsv` and `SHA256SUMS` of the root and runs its checks (schema, footer, organization tables, manifest, at sign, forbidden words, marker lines). The same file is `tools/fill_release.py` of the release root. |
+| `fill-release/tools/fill_release.py` | `faf4daac5640` | Writes `MANIFEST.tsv` and `SHA256SUMS` of the root and runs its checks (schema, footer, organization tables, manifest, at sign, forbidden words, marker lines). The same file is `tools/fill_release.py` of this root. The root of TOM has the 53-column version (`../release-passes/fill-release/`). |
 | `test/`, `measure/test/`, `fill-release/test/` | | The tests (fake data). |
 
 

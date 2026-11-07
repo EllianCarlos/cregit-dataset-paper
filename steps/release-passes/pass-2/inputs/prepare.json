@@ -1,0 +1,33 @@
+{
+ "add": [
+  "git.savannah.gnu.org__denemo",
+  "git.savannah.gnu.org__gnubg"
+ ],
+ "add_languages": {
+  "git.savannah.gnu.org__denemo": "C",
+  "git.savannah.gnu.org__gnubg": "C"
+ },
+ "files_both": 125,
+ "files_with_fills": 185,
+ "fills": 310,
+ "keep": 8447,
+ "keep2": 8449,
+ "label_columns": [
+  "project",
+  "stratum",
+  "stratum_all_kinds",
+  "added_fact_all_kinds",
+  "namespace_owner",
+  "namespace_owner_kind",
+  "basis"
+ ],
+ "language_fills": 161,
+ "language_values": [
+  "C",
+  "C++",
+  "Java"
+ ],
+ "license_fills": 149,
+ "project_labels_rows": 8449,
+ "project_languages_rows": 8449
+}

@@ -1,0 +1,311 @@
+project	column	old	new	basis
+gcc.gnu.org__git__gcc	language		C	tokei language_tokei_linguist
+gcc.gnu.org__git__gcc	license	NOASSERTION	GPL-2.0;LGPL-2.1	licensee 98 (licensee-98-partial)
+git.busybox.net__busybox	language		C	tokei language_tokei_linguist
+git.gnunet.org__libextractor	language		C	tokei language_tokei_linguist
+git.gnunet.org__libextractor	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.gnunet.org__libmicrohttpd	language		C	tokei language_tokei_linguist
+git.libreoffice.org__libetonyek	language		C++	tokei language_tokei_linguist
+git.libreoffice.org__libetonyek	license	NOASSERTION	MPL-2.0	licensee 98 (licensee-98)
+git.libreoffice.org__libvisio	language		C++	tokei language_tokei_linguist
+git.libreoffice.org__libvisio	license	NOASSERTION	MPL-2.0	licensee 98 (licensee-98)
+git.openwrt.org__openwrt__openwrt	language		C	tokei language_tokei_linguist
+git.osgeo.org__gitea__postgis__postgis	language		C	tokei language_tokei_linguist
+git.osgeo.org__gitea__postgis__postgis	license	NOASSERTION	GPL-2.0	licensee 98 (licensee-98-partial)
+git.savannah.gnu.org__denemo	language		C	tokei language_tokei_linguist (savannah https retry)
+git.savannah.gnu.org__denemo	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98-partial)
+git.savannah.gnu.org__git__3dldf	language		C++	tokei language_tokei_linguist
+git.savannah.gnu.org__git__3dldf	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__anubis	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__anubis	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__bison	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__bison	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__classpath	language		Java	tokei language_tokei_linguist
+git.savannah.gnu.org__git__classpath	license	NOASSERTION	GPL-2.0	licensee 98 (licensee-98-partial)
+git.savannah.gnu.org__git__coreutils	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__coreutils	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__cssc	language		C++	tokei language_tokei_linguist
+git.savannah.gnu.org__git__cssc	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98-partial)
+git.savannah.gnu.org__git__diffutils	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__diffutils	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__findutils	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__findutils	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__freedink	language		C++	tokei language_tokei_linguist
+git.savannah.gnu.org__git__freedink	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__freeipmi	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__freeipmi	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__gama	language		C++	tokei language_tokei_linguist
+git.savannah.gnu.org__git__gama	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__gawk	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__gawk	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__gettext	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__gettext	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__gnash	language		C++	tokei language_tokei_linguist
+git.savannah.gnu.org__git__gnash	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__gnuastro	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__gnuastro	license	NOASSERTION	GFDL-1.3;GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__gnulib	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__grep	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__grep	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__groff	language		C++	tokei language_tokei_linguist
+git.savannah.gnu.org__git__groff	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__grub	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__grub	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__gsasl	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__gsasl	license	NOASSERTION	GPL-3.0;LGPL-2.1	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__gsl	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__gsl	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__gss	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__gss	license	NOASSERTION	GPL-3.0;LGPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__guile	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__guile	license	NOASSERTION	GPL-3.0;LGPL-3.0	licensee 98 (licensee-98-partial)
+git.savannah.gnu.org__git__guile-sdl	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__guile-sdl	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__inetutils	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__inetutils	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__libcdio	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__libcdio	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__liberty-eiffel	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__liberty-eiffel	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__libffcall	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__libffcall	license	NOASSERTION	GPL-2.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__libiconv	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__libiconv	license	NOASSERTION	GPL-3.0;LGPL-2.1	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__libidn	language		Java	tokei language_tokei_linguist
+git.savannah.gnu.org__git__libidn	license	NOASSERTION	GPL-3.0;LGPL-2.1;LGPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__libredwg	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__libredwg	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__mailutils	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__mailutils	license	NOASSERTION	GPL-3.0;LGPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__make	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__make	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__mes	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__mes	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__nano	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__nano	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98-partial)
+git.savannah.gnu.org__git__parted	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__parted	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__pspp	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__pspp	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__radius	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__radius	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__recutils	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__recutils	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__screen	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__screen	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__serveez	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__serveez	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__shishi	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__shishi	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__sipwitch	language		C++	tokei language_tokei_linguist
+git.savannah.gnu.org__git__sipwitch	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__smalltalk	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__smalltalk	license	NOASSERTION	GFDL-1.3;GPL-2.0;LGPL-2.1	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__tar	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__tar	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__wget	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__wget	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.savannah.gnu.org__git__xboard	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__git__xboard	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98-partial)
+git.savannah.gnu.org__gnubg	language		C	tokei language_tokei_linguist (savannah https retry)
+git.savannah.gnu.org__gnubg	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98-partial)
+git.savannah.gnu.org__poke	language		C	tokei language_tokei_linguist
+git.savannah.gnu.org__poke	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+git.themanaworld.org__mana__mana	language		C++	tokei language_tokei_linguist
+git.themanaworld.org__mana__mana	license	NOASSERTION	GPL-2.0	licensee 98 (licensee-98)
+git.themanaworld.org__mana__verse	license	NOASSERTION	GPL-2.0	licensee 98 (licensee-98)
+git.themanaworld.org__ml__serverdata	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+gitlab.archlinux.org__pacman__pacman	license	NOASSERTION	GPL-2.0	licensee 98 (licensee-98)
+gitlab.com__distant-horizons-team__distant-horizons	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98-partial)
+gitlab.com__gnutls__gnutls	language		C	tokei language_tokei_linguist
+gitlab.com__gnutls__gnutls	license	NOASSERTION	GPL-3.0;LGPL-2.1	licensee 98 (licensee-98)
+gitlab.com__gnutls__libtasn1	language		C	tokei language_tokei_linguist
+gitlab.com__gnutls__libtasn1	license	NOASSERTION	GPL-3.0;LGPL-2.1	licensee 98 (licensee-98)
+gitlab.com__graphviz__graphviz	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98)
+gitlab.com__lfortran__lfortran	language		C++	tokei language_tokei_linguist
+gitlab.com__libssh__libssh-mirror	language		C	tokei language_tokei_linguist
+gitlab.com__nsnam__ns-3-dev	language		C++	tokei language_tokei_linguist
+gitlab.com__petsc__petsc	language		C	tokei language_tokei_linguist
+gitlab.com__sfcgal__sfcgal	language		C++	tokei language_tokei_linguist
+gitlab.com__tnl-project__tnl	language		C	tokei language_tokei_linguist
+gitlab.com__tnl-project__tnl	license	NOASSERTION	MIT	licensee 98 (licensee-98)
+gitlab.com__veloren__veloren	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98-partial)
+gitlab.eclipse.org__eclipse__aidge__aidge	language		C++	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__aidge__aidge	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98)
+gitlab.eclipse.org__eclipse__aidge__aidge_backend_cpu	language		C++	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__aidge__aidge_backend_cpu	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98)
+gitlab.eclipse.org__eclipse__aidge__aidge_core	language		C++	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__aidge__aidge_core	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98)
+gitlab.eclipse.org__eclipse__app4mc__org.eclipse.app4mc	language		Java	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__app4mc__org.eclipse.app4mc	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98)
+gitlab.eclipse.org__eclipse__bpmn2-modeler__org.eclipse.bpmn2-modeler	language		Java	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__chess__chess	language		Java	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__chess__chess	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98)
+gitlab.eclipse.org__eclipse__ease__ease	language		Java	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__ease__ease	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98)
+gitlab.eclipse.org__eclipse__escet__escet	language		Java	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__escet__escet	license	NOASSERTION	MIT	licensee 98 (licensee-98)
+gitlab.eclipse.org__eclipse__etrice__etrice	language		Java	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__etrice__etrice	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98)
+gitlab.eclipse.org__eclipse__graphiti__graphiti	language		Java	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__ice__ice	language		Java	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__ice__ice	license	NOASSERTION	EPL-1.0	licensee 98 (licensee-98)
+gitlab.eclipse.org__eclipse__mdmbl__org.eclipse.mdm	language		Java	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__mdmbl__org.eclipse.mdm	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98)
+gitlab.eclipse.org__eclipse__objectteams__objectteams	language		Java	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__objectteams__objectteams	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98)
+gitlab.eclipse.org__eclipse__openk-usermodules__org.eclipse.openk-usermodules.gridFailureInformation.backend	language		Java	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__openk-usermodules__org.eclipse.openk-usermodules.gridFailureInformation.backend	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98)
+gitlab.eclipse.org__eclipse__openpass__opSimulation	language		C++	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__openpass__opSimulation	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98)
+gitlab.eclipse.org__eclipse__papyrus__org.eclipse.papyrus-classic	language		Java	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__papyrus__org.eclipse.papyrus-classic	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98)
+gitlab.eclipse.org__eclipse__sphinx__org.eclipse.sphinx	language		Java	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__sphinx__org.eclipse.sphinx	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98)
+gitlab.eclipse.org__eclipse__statet__statet	language		Java	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__subversive__subversive	language		Java	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__subversive__subversive	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98)
+gitlab.eclipse.org__eclipse__tcf__tcf	language		Java	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__tcf__tcf	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98)
+gitlab.eclipse.org__eclipse__teneo__org.eclipse.emf.teneo	language		Java	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__teneo__org.eclipse.emf.teneo	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98)
+gitlab.eclipse.org__eclipse__titan__titan.EclipsePlug-ins	language		Java	tokei language_tokei_linguist
+gitlab.eclipse.org__eclipse__titan__titan.EclipsePlug-ins	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98-partial)
+gitlab.eclipse.org__olivierbichler__aidge	language		C	tokei language_tokei_linguist
+gitlab.eclipse.org__olivierbichler__aidge	license	NOASSERTION	EPL-2.0	licensee 98 (licensee-98)
+gitlab.freedesktop.org__SyncEvolution__syncevolution	license	NOASSERTION	GPL-2.0;LGPL-2.1	licensee 98 (licensee-98-partial)
+gitlab.freedesktop.org__cairo__cairo	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98-partial)
+gitlab.freedesktop.org__gstreamer__gst-plugins-rs	license	NOASSERTION	Apache-2.0;MIT;MPL-2.0	licensee 98 (licensee-98)
+gitlab.freedesktop.org__mobile-broadband__ModemManager	license	NOASSERTION	GPL-2.0;LGPL-2.1	licensee 98 (licensee-98)
+gitlab.freedesktop.org__poppler__poppler	license	NOASSERTION	GPL-2.0	licensee 98 (licensee-98)
+gitlab.freedesktop.org__telepathy__telepathy-qt	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98)
+gitlab.freedesktop.org__wlroots__wlroots	license	NOASSERTION	MIT	licensee 98 (licensee-98)
+gitlab.freedesktop.org__xorg__app__compiz	language		C	tokei language_tokei_linguist
+gitlab.freedesktop.org__xorg__app__compiz	license	NOASSERTION	GPL-2.0;LGPL-2.1	licensee 98 (licensee-98-partial)
+gitlab.freedesktop.org__xorg__driver__xf86-input-synaptics	language		C	tokei language_tokei_linguist
+gitlab.freedesktop.org__xorg__driver__xf86-input-synaptics	license	NOASSERTION	MIT	licensee 98 (licensee-98)
+gitlab.freedesktop.org__xorg__driver__xf86-video-ati	language		C	tokei language_tokei_linguist
+gitlab.freedesktop.org__xorg__driver__xf86-video-intel	language		C	tokei language_tokei_linguist
+gitlab.freedesktop.org__xorg__driver__xf86-video-mach64	language		C	tokei language_tokei_linguist
+gitlab.freedesktop.org__xorg__driver__xf86-video-nouveau	language		C	tokei language_tokei_linguist
+gitlab.freedesktop.org__xorg__driver__xf86-video-r128	language		C	tokei language_tokei_linguist
+gitlab.freedesktop.org__xorg__driver__xf86-video-radeonhd	language		C	tokei language_tokei_linguist
+gitlab.freedesktop.org__xorg__lib__libx11	language		C	tokei language_tokei_linguist
+gitlab.freedesktop.org__xorg__lib__libxkbcommon	language		C	tokei language_tokei_linguist
+gitlab.freedesktop.org__xorg__proto__xorgproto	language		C	tokei language_tokei_linguist
+gitlab.freedesktop.org__xorg__proto__xorgproto	license	NOASSERTION	BSD-2-Clause;MIT	licensee 98 (licensee-98-partial)
+gitlab.freedesktop.org__xorg__test__xorg-integration-tests	language		C++	tokei language_tokei_linguist
+gitlab.freedesktop.org__xorg__test__xorg-integration-tests	license	NOASSERTION	MIT	licensee 98 (licensee-98)
+gitlab.freedesktop.org__xorg__xserver	language		C	tokei language_tokei_linguist
+gitlab.freedesktop.org__xorg__xserver-xprint	language		C	tokei language_tokei_linguist
+gitlab.gnome.org__GNOME__dia	language		C	tokei language_tokei_linguist
+gitlab.gnome.org__GNOME__dia	license	NOASSERTION	GPL-2.0	licensee 98 (licensee-98)
+gitlab.gnome.org__GNOME__gnumeric	language		C	tokei language_tokei_linguist
+gitlab.gnome.org__GNOME__gnumeric	license	NOASSERTION	GPL-2.0;GPL-3.0	licensee 98 (licensee-98-partial)
+gitlab.gnome.org__World__AbiWord	license	NOASSERTION	GPL-2.0	licensee 98 (licensee-98-partial)
+gitlab.gnome.org__World__Phosh__phosh	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+gitlab.gnome.org__World__gedit__gedit	license	NOASSERTION	GPL-2.0	licensee 98 (licensee-98)
+gitlab.inria.fr__MoReFEM__CoreLibrary__MoReFEM	license	NOASSERTION	LGPL-3.0	licensee 98 (licensee-98)
+gitlab.inria.fr__aevol__aevol	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+gitlab.inria.fr__cedar__connectionlens	license	NOASSERTION	MIT	licensee 98 (licensee-98)
+gitlab.inria.fr__gazelle__public__core__test-management	license	NOASSERTION	Apache-2.0	licensee 98 (licensee-98)
+gitlab.inria.fr__mpfr__mpfr	language		C	tokei language_tokei_linguist
+gitlab.inria.fr__mpfr__mpfr	license	NOASSERTION	GPL-3.0;LGPL-3.0	licensee 98 (licensee-98)
+gitlab.inria.fr__simgrid__simgrid	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98-partial)
+gitlab.inria.fr__starpu__starpu	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98)
+gitlab.inria.fr__tapenade__tapenade	license	NOASSERTION	MIT	licensee 98 (licensee-98)
+gitlab.winehq.org__wine__vkd3d	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98-partial)
+gitlab.winehq.org__wine__wine	language		C	tokei language_tokei_linguist
+gitlab.winehq.org__wine__wine	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98-partial)
+invent.kde.org__graphics__digikam	language		C++	tokei language_tokei_linguist
+invent.kde.org__historical__amarok-history	language		C++	tokei language_tokei_linguist
+invent.kde.org__historical__amarok-history	license	NOASSERTION	GPL-2.0;LGPL-2.1	licensee 98 (licensee-98-partial)
+invent.kde.org__historical__calligra-history	language		C++	tokei language_tokei_linguist
+invent.kde.org__historical__calligra-history	license	NOASSERTION	GPL-2.0	licensee 98 (licensee-98-partial)
+invent.kde.org__historical__kde1-kdebase	language		C++	tokei language_tokei_linguist
+invent.kde.org__historical__kde1-kdegames	language		C++	tokei language_tokei_linguist
+invent.kde.org__historical__kde1-kdegraphics	language		C	tokei language_tokei_linguist
+invent.kde.org__historical__kde1-kdelibs	language		C++	tokei language_tokei_linguist
+invent.kde.org__historical__kde1-kdemultimedia	language		C	tokei language_tokei_linguist
+invent.kde.org__historical__kde1-kdenetwork	language		C++	tokei language_tokei_linguist
+invent.kde.org__historical__kde1-kdeutils	language		C++	tokei language_tokei_linguist
+invent.kde.org__multimedia__kscd	language		C++	tokei language_tokei_linguist
+invent.kde.org__multimedia__kscd	license	NOASSERTION	GPL-2.0	licensee 98 (licensee-98)
+invent.kde.org__network__kwooty	language		C++	tokei language_tokei_linguist
+invent.kde.org__network__kwooty	license	NOASSERTION	GPL-2.0	licensee 98 (licensee-98)
+invent.kde.org__plasma-mobile__plasma-maliit-plugins	language		C++	tokei language_tokei_linguist
+invent.kde.org__teams__kde-turkey__teknik-isler__klettres	language		C++	tokei language_tokei_linguist
+invent.kde.org__teams__kde-turkey__teknik-isler__ktouch	language		C++	tokei language_tokei_linguist
+invent.kde.org__teams__kde-turkey__teknik-isler__parley	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__android-qt	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__android-qt	license	NOASSERTION	GFDL-1.3	licensee 98 (licensee-98-partial)
+invent.kde.org__unmaintained__android-qt-creator	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__android-qt-creator	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98)
+invent.kde.org__unmaintained__android-qt-mobility	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__android-qt-mobility	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98)
+invent.kde.org__unmaintained__android-qt5-qtbase	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__android-qt5-qtbase	license	NOASSERTION	GFDL-1.3;GPL-3.0	licensee 98 (licensee-98-partial)
+invent.kde.org__unmaintained__bangarang	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__bangarang	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98-partial)
+invent.kde.org__unmaintained__blogilo	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__blogilo	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98-partial)
+invent.kde.org__unmaintained__cocoon	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__cocoon	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98)
+invent.kde.org__unmaintained__gluon	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__gluon	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98)
+invent.kde.org__unmaintained__gpgmepp-legacy	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__gpgmepp-legacy	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98)
+invent.kde.org__unmaintained__homerun	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__homerun	license	NOASSERTION	BSD-2-Clause;GPL-2.0;LGPL-2.1	licensee 98 (licensee-98-partial)
+invent.kde.org__unmaintained__jovie	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__kde-baseapps	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__kde-baseapps	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98-partial)
+invent.kde.org__unmaintained__kde-runtime	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__kde-runtime	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98-partial)
+invent.kde.org__unmaintained__kdelibs	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__kdelibs	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98-partial)
+invent.kde.org__unmaintained__kdepim	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__kdepim	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98-partial)
+invent.kde.org__unmaintained__kdepimlibs	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__kdepimlibs	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98-partial)
+invent.kde.org__unmaintained__koffice	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__koffice	license	NOASSERTION	GPL-2.0	licensee 98 (licensee-98-partial)
+invent.kde.org__unmaintained__kppp	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__kppp	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98-partial)
+invent.kde.org__unmaintained__krecipes	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__krecipes	license	NOASSERTION	GPL-2.0;LGPL-2.1	licensee 98 (licensee-98)
+invent.kde.org__unmaintained__kremotecontrol	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__kremotecontrol	license	NOASSERTION	GPL-2.0;LGPL-2.1	licensee 98 (licensee-98)
+invent.kde.org__unmaintained__libkdeedu	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__libkdeedu	license	NOASSERTION	GPL-2.0	licensee 98 (licensee-98-partial)
+invent.kde.org__unmaintained__nepomuk-core	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__nepomuk-core	license	NOASSERTION	GPL-2.0;GPL-3.0;LGPL-2.1;LGPL-3.0	licensee 98 (licensee-98-partial)
+invent.kde.org__unmaintained__networkmanagement	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__networkmanagement	license	NOASSERTION	GPL-2.0;LGPL-2.1	licensee 98 (licensee-98)
+invent.kde.org__unmaintained__phonon-directshow	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__phonon-directshow	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98)
+invent.kde.org__unmaintained__phonon-mmf	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__phonon-mmf	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98)
+invent.kde.org__unmaintained__phonon-waveout	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__phonon-waveout	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98)
+invent.kde.org__unmaintained__phonon-xine	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__phonon-xine	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98)
+invent.kde.org__unmaintained__plasma-mediacenter	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__plasma-mediacenter	license	NOASSERTION	GPL-2.0;LGPL-2.1	licensee 98 (licensee-98-partial)
+invent.kde.org__unmaintained__plasmate	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__plasmate	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98-partial)
+invent.kde.org__unmaintained__rekonq	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__rekonq	license	NOASSERTION	GPL-3.0	licensee 98 (licensee-98-partial)
+invent.kde.org__unmaintained__sflphone-kde	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__sflphone-kde	license	NOASSERTION	GPL-2.0	licensee 98 (licensee-98)
+invent.kde.org__unmaintained__simon	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__simon	license	NOASSERTION	GPL-2.0	licensee 98 (licensee-98-partial)
+invent.kde.org__unmaintained__soprano	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__superkaramba	language		C++	tokei language_tokei_linguist
+invent.kde.org__unmaintained__superkaramba	license	NOASSERTION	GPL-2.0;LGPL-2.1	licensee 98 (licensee-98)
+opendev.org__starlingx__metal	language		C++	tokei language_tokei_linguist
+opendev.org__starlingx__metal	license	NOASSERTION	Apache-2.0	licensee 98 (licensee-98)
+sourceware.org__git__binutils-gdb	language		C	tokei language_tokei_linguist
+sourceware.org__git__binutils-gdb	license	NOASSERTION	GPL-2.0	licensee 98 (licensee-98-partial)
+sourceware.org__git__glibc	language		C	tokei language_tokei_linguist
+sourceware.org__git__glibc	license	NOASSERTION	LGPL-2.1	licensee 98 (licensee-98-partial)

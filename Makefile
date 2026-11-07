@@ -1,4 +1,4 @@
-# Makefile of the cregit token dataset v1.
+# Makefile of the dataset Token on Me (TOM) 1.0.0 and of its build.
 #
 # Run the targets in the dev shell: nix develop, then make <target>.
 # A target that cannot work yet prints "not ready: <reason>" and exits with a non-zero status.
@@ -26,7 +26,7 @@ help:
 	@echo "  make merge       join the per-project files"
 	@echo "  make validate    check the column contract of the published files"
 	@echo "Repository checks:"
-	@echo "  make stage-hashes check the copied stage outputs against their recorded sha256"
+	@echo "  make stage-hashes check the copied stage outputs and the release pass kits against their recorded sha256"
 	@echo "  make test        run the tests of the copied scripts and of scripts/"
 	@echo "  make sync-check  check the copied files against sync/sources.tsv and sync/untracked.tsv"
 	@echo "  make flake-check run nix flake check (the tool identity check on x86_64-linux)"
@@ -52,6 +52,7 @@ validate:
 
 stage-hashes:
 	@scripts/check-stage-hashes.sh
+	@steps/release-passes/check-kits.sh
 
 # The runner copies (pipeline/s7-run/runner/) are not run here: their tests need the run kit
 # layout and the rendered tokens.
@@ -65,7 +66,7 @@ test:
 	@# status 5 of pytest (no test ran: all of a folder skipped) counts as a pass.
 	@h=$$(mktemp -d); trap 'rm -r "$$h"' EXIT; \
 	for t in steps/organizations/study/s8-companies:. steps/final-write:test steps/final-write/added-project:test \
-	         steps/release-root:"test measure/test fill-release/test"; do \
+	         steps/release-root:"test measure/test fill-release/test" steps/release-passes/fill-release:test; do \
 	  d=$${t%%:*}; echo "== $$d"; (cd $$d && HOME=$$h PYTHONDONTWRITEBYTECODE=1 "$$CREGIT_PYTHON" -I -m pytest -q -p no:cacheprovider $${t#*:}) || \
 	    [ $$? -eq 5 ]; \
 	done
