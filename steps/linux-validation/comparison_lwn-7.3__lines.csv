@@ -1,0 +1,18 @@
+source,table,employer,organization_ids,value,percent,tokens_all,tokens_all_rank,tokens_all_kernel_org_apart,tokens_all_kernel_org_apart_rank,tokens_all_no_pregit,tokens_all_no_pregit_rank,tokens_all_no_pregit_no_amd_headers,tokens_all_no_pregit_no_amd_headers_rank,tokens_in_window,tokens_in_window_rank,tokens_in_window_no_amd_headers,tokens_in_window_no_amd_headers_rank,tokens_in_window_kernel_org_apart,tokens_in_window_kernel_org_apart_rank,commits_in_window,commits_in_window_rank,commits_in_window_kernel_org_apart,commits_in_window_kernel_org_apart_rank,source_rank
+lwn-7.3,lines,AMD,amd,225173,22.300,16.331,1,16.331,1,17.522,1,5.995,2,29.402,1,20.840,1,29.402,1,5.729,1,5.729,1,1
+lwn-7.3,lines,Qualcomm,qualcomm,61771,6.100,2.996,4,2.996,4,3.215,4,3.664,4,6.394,3,7.169,3,6.394,3,3.633,4,3.633,4,2
+lwn-7.3,lines,Google,google,56977,5.600,1.271,8,1.271,8,1.364,8,1.555,8,2.006,7,2.249,7,2.006,7,3.813,3,3.813,3,3
+lwn-7.3,lines,NXP Semiconductors,nxp,45506,4.500,0.885,10,0.885,10,0.949,10,1.082,10,7.063,2,7.919,2,7.063,2,0.946,8,0.946,8,4
+lwn-7.3,lines,Intel,intel,44774,4.400,6.969,2,6.969,2,7.478,2,8.523,1,3.335,4,3.740,4,3.335,4,5.418,2,5.418,2,5
+lwn-7.3,lines,Red Hat,red-hat,38420,3.800,3.765,3,3.765,3,4.039,3,4.604,3,1.368,8,1.534,8,1.368,8,2.364,5,2.364,5,6
+lwn-7.3,lines,Meta,meta,27768,2.700,0.663,12,0.663,12,0.711,12,0.811,12,0.105,13,0.117,13,0.105,13,0.367,11,0.367,11,7
+lwn-7.3,lines,IBM,ibm,20441,2.000,1.501,7,1.501,7,1.611,7,1.836,7,0.908,10,1.018,10,0.908,10,2.246,6,2.246,6,8
+lwn-7.3,lines,NVIDIA,nvidia,16737,1.700,1.570,6,1.570,6,1.685,6,1.920,6,1.297,9,1.454,9,1.297,9,2.084,7,2.084,7,9
+lwn-7.3,lines,Realtek,realtek-semiconductor,15731,1.600,2.495,5,2.495,5,2.677,5,3.051,5,2.248,6,2.521,6,2.248,6,0.858,9,0.858,9,10
+lwn-7.3,lines,Amutable,amutable,14873,1.500,0.001,17,0.001,17,0.001,17,0.001,17,0.000,16,0.000,16,0.000,16,0.012,16,0.012,16,11
+lwn-7.3,lines,Morse Micro,morse-micro,13949,1.400,0.041,16,0.041,16,0.043,16,0.050,16,2.443,5,2.740,5,2.443,5,0.050,14,0.050,14,12
+lwn-7.3,lines,HP Enterprise,hp,13698,1.400,0.190,14,0.190,14,0.204,14,0.232,14,0.000,17,0.000,17,0.000,17,0.006,17,0.006,17,12
+lwn-7.3,lines,Renesas Electronics,renesas,11756,1.200,0.733,11,0.733,11,0.787,11,0.897,11,0.297,12,0.333,12,0.297,12,0.765,10,0.765,10,14
+lwn-7.3,lines,Cloudflare,cloudflare,10070,1.000,0.044,15,0.044,15,0.047,15,0.054,15,0.001,15,0.001,15,0.001,15,0.031,15,0.031,15,15
+lwn-7.3,lines,Collabora,collabora,8405,0.800,0.524,13,0.524,13,0.563,13,0.641,13,0.749,11,0.839,11,0.749,11,0.367,11,0.367,11,16
+lwn-7.3,lines,Samsung,samsung,8399,0.800,0.936,9,0.936,9,1.004,9,1.145,9,0.047,14,0.053,14,0.047,14,0.124,13,0.124,13,16

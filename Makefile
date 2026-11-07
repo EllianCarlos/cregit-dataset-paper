@@ -60,6 +60,15 @@ test:
 	@for d in pipeline/s5-evidence pipeline/s6-labels pipeline/s7-run scripts; do \
 	  echo "== $$d"; (cd $$d && PYTHONDONTWRITEBYTECODE=1 "$$CREGIT_PYTHON" -I -m pytest -q -p no:cacheprovider --ignore=runner .); \
 	done
+	@# The tests of steps/ run with an empty home folder: the tests that read local inputs
+	@# (a pseudonymizer checkout, the work folders of the run host) skip (steps/README.md). Exit
+	@# status 5 of pytest (no test ran: all of a folder skipped) counts as a pass.
+	@h=$$(mktemp -d); trap 'rm -r "$$h"' EXIT; \
+	for t in steps/organizations/study/s8-companies:. steps/final-write:test steps/final-write/added-project:test \
+	         steps/release-root:"test measure/test"; do \
+	  d=$${t%%:*}; echo "== $$d"; (cd $$d && HOME=$$h PYTHONDONTWRITEBYTECODE=1 "$$CREGIT_PYTHON" -I -m pytest -q -p no:cacheprovider $${t#*:}) || \
+	    [ $$? -eq 5 ]; \
+	done
 
 sync-check:
 	@sync/sync-from-sources.sh --check

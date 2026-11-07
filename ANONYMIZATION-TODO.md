@@ -24,12 +24,12 @@ So fix them in the source repository, commit there, and sync again.
 | employer | 0 | 0 |
 | ec2-id | 0 | 0 |
 | source-org | 0 | 0 |
-| census-name | 528 | 12906 occurrences |
+| census-name | 531 | 12915 occurrences |
 
 The table counts the open hits. These hits are not in the table:
 
-- Allowed (sync/anonymity-allow.tsv, checked by hand, not identifying): 19 lines.
-- Deferred (sync/anonymity-deferred.tsv): 7 lines. The section "Deferred" lists them.
+- Allowed (sync/anonymity-allow.tsv, checked by hand, not identifying): 22 lines.
+- Deferred (sync/anonymity-deferred.tsv): 28 lines. The section "Deferred" lists them.
 
 Kind census-name: identifiers and words that contain "census". The repository says
 "dataset" (stages: selection, build, merge, validate). Rename them later in one pass,
@@ -54,6 +54,14 @@ Do not fix these hits now. Column "when" of sync/anonymity-deferred.tsv tells wh
 - `pipeline/s7-run/footer_fix_batches.py` (kind *): after build end. An active user timer or service runs it from the study working tree (footer_fix_again.sh and the unit footer-fix call it). Hit lines now: 0.
 - `s7-run/step_monitor.py (not copied)` (kind *): after build end. An active user timer or service runs it from the study working tree (census-step-monitor.service). Hit lines now: 0.
 - `tools/cregit/devenv.nix` (kind source-org): fix at export. A copy of the cregit fork at the pinned commit (the cachix cache name); do not change the copy. Hit lines now: 1.
+- `steps/organizations/study/s8-companies/ERROR_MODEL.md` (kind home-path): fix at export. A copy of the organization step at the study commit that ran (a work folder path in a comment or a default); do not change the copy. Hit lines now: 3.
+- `steps/organizations/study/s8-companies/build_companies.py` (kind home-path): fix at export. A copy of the organization step at the study commit that ran (a work folder path in a comment or a default); do not change the copy. Hit lines now: 2.
+- `steps/organizations/study/s8-companies/build_links.py` (kind home-path): fix at export. A copy of the organization step at the study commit that ran (a work folder path in a comment or a default); do not change the copy. Hit lines now: 1.
+- `steps/organizations/study/s8-companies/error_model.py` (kind home-path): fix at export. A copy of the organization step at the study commit that ran (a work folder path in a comment or a default); do not change the copy. Hit lines now: 1.
+- `steps/organizations/study/s8-companies/extract_domains_v1.py` (kind home-path): fix at export. A copy of the organization step at the study commit that ran (a work folder path in a comment or a default); do not change the copy. Hit lines now: 1.
+- `steps/organizations/study/s8-companies/proposals/README.md` (kind home-path): fix at export. A copy of the organization step at the study commit that ran (a work folder path in a comment or a default); do not change the copy. Hit lines now: 3.
+- `steps/organizations/study/s8-companies/review/AUDIT_SAMPLE.md` (kind home-path): fix at export. A copy of the organization step at the study commit that ran (a work folder path in a comment or a default); do not change the copy. Hit lines now: 9.
+- `steps/organizations/study/s8-companies/test_build_v0.py` (kind home-path): fix at export. A copy of the organization step at the study commit that ran (a work folder path in a comment or a default); do not change the copy. Hit lines now: 1.
 
 ## Hits
 
@@ -291,7 +299,7 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `//github.com/uscensusbureau`: 1, `pipeline/s0-pilot/candidates.csv`
 - `/Projects/cregit-workspace/census-cloud-fixed`: 932, `pipeline/s7-run/runner/dataset-v1/upload.tsv`
 - `/Projects/cregit-workspace/census-cloud`: 18, `pipeline/s7-run/runner/dataset-pathfix/stage/inputs/seeds.tsv`
-- `/Projects/cregit-workspace/census-local-a`: 19, `pipeline/s7-run/runner/dataset-v1/upload.tsv`
+- `/Projects/cregit-workspace/census-local-a`: 26, `pipeline/s7-run/runner/dataset-v1/upload.tsv`, `steps/organizations/study/s8-companies/ERROR_MODEL.md`, `steps/organizations/study/s8-companies/review/AUDIT_SAMPLE.md`
 - `/Projects/cregit-workspace/census-local-b`: 1, `pipeline/s7-run/runner/dataset-v1/upload.tsv`
 - `/Projects/cregit-workspace/census-local-c`: 49, `pipeline/s7-run/runner/dataset-v1/upload.tsv`
 - `/Projects/cregit-workspace/census-local-d`: 1, `pipeline/s7-run/runner/dataset-v1/upload.tsv`
@@ -1406,7 +1414,8 @@ Identifiers and words in file contents (identifier: occurrences, files; more tha
 - `census_funnel`: 1, `sync/rules.tsv`
 - `census_ready.root`: 1, `pipeline/s7-run/runner/dataset-x1k/stage/ctp-no-firm.patch`
 - `census_ready`: 3, `pipeline/s7-run/runner/dataset-x1k/stage/ctp-no-firm.patch`
-- `census`: 1619, 372 files
+- `census`: 1620, 373 files
+- `censuses.`: 1, `steps/organizations/study/s8-companies/ERROR_MODEL.md`
 - `censuses`: 77, 59 files
 - `censusreporter`: 3, `pipeline/s0-pilot/candidates.csv`
 - `cmd_census`: 2, `pipeline/s7-run/runner/dataset-x1k/stage/ctp-no-firm.patch`

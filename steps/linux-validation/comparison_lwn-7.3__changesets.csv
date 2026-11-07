@@ -1,0 +1,17 @@
+source,table,employer,organization_ids,value,percent,tokens_all,tokens_all_rank,tokens_all_kernel_org_apart,tokens_all_kernel_org_apart_rank,tokens_all_no_pregit,tokens_all_no_pregit_rank,tokens_all_no_pregit_no_amd_headers,tokens_all_no_pregit_no_amd_headers_rank,tokens_in_window,tokens_in_window_rank,tokens_in_window_no_amd_headers,tokens_in_window_no_amd_headers_rank,tokens_in_window_kernel_org_apart,tokens_in_window_kernel_org_apart_rank,commits_in_window,commits_in_window_rank,commits_in_window_kernel_org_apart,commits_in_window_kernel_org_apart_rank,source_rank
+lwn-7.3,changesets,AMD,amd,1186,6.300,16.331,1,16.331,1,17.522,1,5.995,2,29.402,1,20.840,1,29.402,1,5.729,1,5.729,1,1
+lwn-7.3,changesets,Intel,intel,1179,6.300,6.969,2,6.969,2,7.478,2,8.523,1,3.335,4,3.740,4,3.335,4,5.418,2,5.418,2,1
+lwn-7.3,changesets,Google,google,1138,6.100,1.271,7,1.271,7,1.364,7,1.555,7,2.006,5,2.249,5,2.006,5,3.813,3,3.813,3,3
+lwn-7.3,changesets,Qualcomm,qualcomm,1115,5.900,2.996,4,2.996,4,3.215,4,3.664,4,6.394,3,7.169,3,6.394,3,3.633,5,3.633,5,4
+lwn-7.3,changesets,Red Hat,red-hat,837,4.500,3.765,3,3.765,3,4.039,3,4.604,3,1.368,6,1.534,6,1.368,6,2.364,6,2.364,6,5
+lwn-7.3,changesets,Kylinsoft,kylinsoft,624,3.300,0.031,15,0.031,15,0.033,15,0.038,15,0.460,9,0.516,9,0.460,9,3.782,4,3.782,4,6
+lwn-7.3,changesets,Meta,meta,524,2.800,0.663,13,0.663,13,0.711,13,0.811,13,0.105,14,0.117,14,0.105,14,0.367,14,0.367,14,7
+lwn-7.3,changesets,IBM,ibm,472,2.500,1.501,6,1.501,6,1.611,6,1.836,6,0.908,8,1.018,8,0.908,8,2.246,7,2.246,7,8
+lwn-7.3,changesets,NVIDIA,nvidia,400,2.100,1.570,5,1.570,5,1.685,5,1.920,5,1.297,7,1.454,7,1.297,7,2.084,8,2.084,8,9
+lwn-7.3,changesets,SUSE,suse,363,1.900,1.176,8,1.176,8,1.262,8,1.438,8,0.315,10,0.354,10,0.315,10,1.754,9,1.754,9,10
+lwn-7.3,changesets,Oracle,oracle,271,1.400,0.962,9,0.962,9,1.032,9,1.177,9,0.040,15,0.045,15,0.040,15,0.292,15,0.292,15,11
+lwn-7.3,changesets,Renesas Electronics,renesas,240,1.300,0.733,11,0.733,11,0.787,11,0.897,11,0.297,11,0.333,11,0.297,11,0.765,12,0.765,12,12
+lwn-7.3,changesets,NXP Semiconductors,nxp,237,1.300,0.885,10,0.885,10,0.949,10,1.082,10,7.063,2,7.919,2,7.063,2,0.946,10,0.946,10,12
+lwn-7.3,changesets,Arm,arm,234,1.200,0.592,14,0.592,14,0.635,14,0.724,14,0.185,13,0.208,13,0.185,13,0.678,13,0.678,13,14
+lwn-7.3,changesets,Amutable,amutable,216,1.200,0.001,16,0.001,16,0.001,16,0.001,16,0.000,16,0.000,16,0.000,16,0.012,16,0.012,16,14
+lwn-7.3,changesets,Huawei Technologies,huawei-technologies,174,0.900,0.719,12,0.719,12,0.771,12,0.879,12,0.204,12,0.229,12,0.204,12,0.840,11,0.840,11,16

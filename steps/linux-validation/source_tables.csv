@@ -1,0 +1,141 @@
+source,table,employer,organization_ids,value,percent
+lwn-7.3,changesets,(Unknown),,3851,20.5
+lwn-7.3,changesets,AMD,amd,1186,6.3
+lwn-7.3,changesets,Intel,intel,1179,6.3
+lwn-7.3,changesets,Google,google,1138,6.1
+lwn-7.3,changesets,Qualcomm,qualcomm,1115,5.9
+lwn-7.3,changesets,Red Hat,red-hat,837,4.5
+lwn-7.3,changesets,(None),,679,3.6
+lwn-7.3,changesets,Kylinsoft,kylinsoft,624,3.3
+lwn-7.3,changesets,Meta,meta,524,2.8
+lwn-7.3,changesets,IBM,ibm,472,2.5
+lwn-7.3,changesets,NVIDIA,nvidia,400,2.1
+lwn-7.3,changesets,SUSE,suse,363,1.9
+lwn-7.3,changesets,(Consultant),,303,1.6
+lwn-7.3,changesets,Oracle,oracle,271,1.4
+lwn-7.3,changesets,(Academia),,268,1.4
+lwn-7.3,changesets,Renesas Electronics,renesas,240,1.3
+lwn-7.3,changesets,NXP Semiconductors,nxp,237,1.3
+lwn-7.3,changesets,Arm,arm,234,1.2
+lwn-7.3,changesets,Amutable,amutable,216,1.2
+lwn-7.3,changesets,Huawei Technologies,huawei-technologies,174,0.9
+lwn-7.3,lines,AMD,amd,225173,22.3
+lwn-7.3,lines,(Unknown),,144387,14.3
+lwn-7.3,lines,Qualcomm,qualcomm,61771,6.1
+lwn-7.3,lines,Google,google,56977,5.6
+lwn-7.3,lines,NXP Semiconductors,nxp,45506,4.5
+lwn-7.3,lines,Intel,intel,44774,4.4
+lwn-7.3,lines,Red Hat,red-hat,38420,3.8
+lwn-7.3,lines,(None),,32075,3.2
+lwn-7.3,lines,Meta,meta,27768,2.7
+lwn-7.3,lines,IBM,ibm,20441,2.0
+lwn-7.3,lines,NVIDIA,nvidia,16737,1.7
+lwn-7.3,lines,Realtek,realtek-semiconductor,15731,1.6
+lwn-7.3,lines,Amutable,amutable,14873,1.5
+lwn-7.3,lines,Morse Micro,morse-micro,13949,1.4
+lwn-7.3,lines,HP Enterprise,hp,13698,1.4
+lwn-7.3,lines,Renesas Electronics,renesas,11756,1.2
+lwn-7.3,lines,(Consultant),,11405,1.1
+lwn-7.3,lines,Cloudflare,cloudflare,10070,1.0
+lwn-7.3,lines,Collabora,collabora,8405,0.8
+lwn-7.3,lines,Samsung,samsung,8399,0.8
+lwn-6.13-6.18,changesets,Intel,intel,8813,11.0
+lwn-6.13-6.18,changesets,(Unknown),,6796,8.5
+lwn-6.13-6.18,changesets,Google,google,6037,7.5
+lwn-6.13-6.18,changesets,Red Hat,red-hat,5181,6.5
+lwn-6.13-6.18,changesets,(None),,4257,5.3
+lwn-6.13-6.18,changesets,AMD,amd,4098,5.1
+lwn-6.13-6.18,changesets,Linaro,linaro,3701,4.6
+lwn-6.13-6.18,changesets,SUSE,suse,2750,3.4
+lwn-6.13-6.18,changesets,Meta,meta,2744,3.4
+lwn-6.13-6.18,changesets,Qualcomm,qualcomm,2532,3.2
+lwn-6.13-6.18,changesets,Huawei Technologies,huawei-technologies,1917,2.4
+lwn-6.13-6.18,changesets,Oracle,oracle,1886,2.4
+lwn-6.13-6.18,changesets,NVIDIA,nvidia,1882,2.4
+lwn-6.13-6.18,changesets,Renesas Electronics,renesas,1858,2.3
+lwn-6.13-6.18,changesets,Arm,arm,1547,1.9
+lwn-6.13-6.18,changesets,IBM,ibm,1345,1.7
+lwn-6.13-6.18,changesets,(Consultant),,1252,1.6
+lwn-6.13-6.18,changesets,NXP Semiconductors,nxp,1218,1.5
+lwn-6.13-6.18,changesets,Linutronix,linutronix,1149,1.4
+lwn-6.13-6.18,changesets,Microsoft,microsoft,887,1.1
+lwn-6.13-6.18,lines,Intel,intel,434943,10.2
+lwn-6.13-6.18,lines,(Unknown),,383181,9.0
+lwn-6.13-6.18,lines,Google,google,309767,7.2
+lwn-6.13-6.18,lines,AMD,amd,277384,6.5
+lwn-6.13-6.18,lines,Qualcomm,qualcomm,235450,5.5
+lwn-6.13-6.18,lines,Red Hat,red-hat,215725,5.0
+lwn-6.13-6.18,lines,(None),,176686,4.1
+lwn-6.13-6.18,lines,SUSE,suse,133567,3.1
+lwn-6.13-6.18,lines,Linaro,linaro,129946,3.0
+lwn-6.13-6.18,lines,Linux Foundation,linux-foundation,129058,3.0
+lwn-6.13-6.18,lines,Meta,meta,124927,2.9
+lwn-6.13-6.18,lines,NVIDIA,nvidia,107931,2.5
+lwn-6.13-6.18,lines,IBM,ibm,96906,2.3
+lwn-6.13-6.18,lines,Huawei Technologies,huawei-technologies,82132,1.9
+lwn-6.13-6.18,lines,Arm,arm,77217,1.8
+lwn-6.13-6.18,lines,Emerson,emerson-electric+national-instruments-corp-de,76919,1.8
+lwn-6.13-6.18,lines,Collabora,collabora,64629,1.5
+lwn-6.13-6.18,lines,NXP Semiconductors,nxp,62549,1.5
+lwn-6.13-6.18,lines,Oracle,oracle,60553,1.4
+lwn-6.13-6.18,lines,Renesas Electronics,renesas,52732,1.2
+lwn-6.7-6.12,changesets,Intel,intel,11356,13.1
+lwn-6.7-6.12,changesets,(None),,6881,7.9
+lwn-6.7-6.12,changesets,Google,google,5920,6.8
+lwn-6.7-6.12,changesets,(Unknown),,5668,6.5
+lwn-6.7-6.12,changesets,AMD,amd,5233,6.0
+lwn-6.7-6.12,changesets,Linaro,linaro,5112,5.9
+lwn-6.7-6.12,changesets,Red Hat,red-hat,4863,5.6
+lwn-6.7-6.12,changesets,Huawei Technologies,huawei-technologies,2459,2.8
+lwn-6.7-6.12,changesets,SUSE,suse,2319,2.7
+lwn-6.7-6.12,changesets,Meta,meta,2207,2.5
+lwn-6.7-6.12,changesets,Oracle,oracle,1986,2.3
+lwn-6.7-6.12,changesets,Pengutronix,pengutronix,1871,2.2
+lwn-6.7-6.12,changesets,Qualcomm,qualcomm,1792,2.1
+lwn-6.7-6.12,changesets,NVIDIA,nvidia,1713,2.0
+lwn-6.7-6.12,changesets,IBM,ibm,1612,1.9
+lwn-6.7-6.12,changesets,Renesas Electronics,renesas,1574,1.8
+lwn-6.7-6.12,changesets,(Consultant),,1227,1.4
+lwn-6.7-6.12,changesets,Arm,arm,1178,1.4
+lwn-6.7-6.12,changesets,NXP Semiconductors,nxp,916,1.1
+lwn-6.7-6.12,changesets,Texas Instruments,texas-instruments,781,0.9
+lwn-6.7-6.12,lines,AMD,amd,918483,18.1
+lwn-6.7-6.12,lines,Intel,intel,540531,10.6
+lwn-6.7-6.12,lines,Google,google,378278,7.4
+lwn-6.7-6.12,lines,(None),,352401,6.9
+lwn-6.7-6.12,lines,Linaro,linaro,314793,6.2
+lwn-6.7-6.12,lines,Red Hat,red-hat,308732,6.1
+lwn-6.7-6.12,lines,(Unknown),,292949,5.8
+lwn-6.7-6.12,lines,Meta,meta,150897,3.0
+lwn-6.7-6.12,lines,Oracle,oracle,136086,2.7
+lwn-6.7-6.12,lines,Qualcomm,qualcomm,108629,2.1
+lwn-6.7-6.12,lines,NVIDIA,nvidia,94799,1.9
+lwn-6.7-6.12,lines,SUSE,suse,86590,1.7
+lwn-6.7-6.12,lines,Realtek,realtek-semiconductor,78260,1.5
+lwn-6.7-6.12,lines,Emerson,emerson-electric+national-instruments-corp-de,63036,1.2
+lwn-6.7-6.12,lines,IBM,ibm,61320,1.2
+lwn-6.7-6.12,lines,Collabora,collabora,58147,1.1
+lwn-6.7-6.12,lines,Renesas Electronics,renesas,56839,1.1
+lwn-6.7-6.12,lines,Huawei Technologies,huawei-technologies,50113,1.0
+lwn-6.7-6.12,lines,NXP Semiconductors,nxp,41451,0.8
+lwn-6.7-6.12,lines,Microsoft,microsoft,38985,0.8
+lf-2020,commits,None,,93225,11.95
+lf-2020,commits,Intel,intel,78068,10.01
+lf-2020,commits,Red Hat,red-hat,69443,8.90
+lf-2020,commits,(Unknown),,31919,4.09
+lf-2020,commits,IBM,ibm,29538,3.79
+lf-2020,commits,SUSE,suse,27239,3.49
+lf-2020,commits,Linaro,linaro,24740,3.17
+lf-2020,commits,(Consultant),,23081,2.96
+lf-2020,commits,Google,google,21779,2.79
+lf-2020,commits,Samsung,samsung,20160,2.58
+lf-2020,commits,AMD,amd,17781,2.28
+lf-2020,commits,Renesas Electronics,renesas,15542,1.99
+lf-2020,commits,Texas Instruments,texas-instruments,13855,1.78
+lf-2020,commits,Oracle,oracle,13295,1.70
+lf-2020,commits,Broadcom,broadcom,9572,1.23
+lf-2020,commits,Huawei Technologies,huawei-technologies,9379,1.20
+lf-2020,commits,Mellanox,mellanox,9267,1.19
+lf-2020,commits,NXP Semiconductors,nxp,9223,1.18
+lf-2020,commits,Arm,arm,7646,0.98
+lf-2020,commits,Linux Foundation,linux-foundation,6109,0.78

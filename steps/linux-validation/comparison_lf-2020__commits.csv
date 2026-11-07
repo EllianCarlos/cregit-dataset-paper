@@ -1,0 +1,18 @@
+source,table,employer,organization_ids,value,percent,tokens_all,tokens_all_rank,tokens_all_kernel_org_apart,tokens_all_kernel_org_apart_rank,tokens_all_no_pregit,tokens_all_no_pregit_rank,tokens_all_no_pregit_no_amd_headers,tokens_all_no_pregit_no_amd_headers_rank,tokens_in_window,tokens_in_window_rank,tokens_in_window_no_amd_headers,tokens_in_window_no_amd_headers_rank,tokens_in_window_kernel_org_apart,tokens_in_window_kernel_org_apart_rank,commits_in_window,commits_in_window_rank,commits_in_window_kernel_org_apart,commits_in_window_kernel_org_apart_rank,source_rank
+lf-2020,commits,Intel,intel,78068,10.010,6.969,2,6.969,2,7.478,2,8.523,1,7.529,2,8.166,1,7.529,2,9.050,1,9.050,1,1
+lf-2020,commits,Red Hat,red-hat,69443,8.900,3.765,3,3.765,3,4.039,3,4.604,3,5.324,3,5.774,2,5.324,3,6.854,2,6.854,2,2
+lf-2020,commits,IBM,ibm,29538,3.790,1.501,6,1.501,5,1.611,6,1.836,6,2.045,6,2.218,6,2.045,6,2.801,4,2.801,4,3
+lf-2020,commits,SUSE,suse,27239,3.490,1.176,9,1.176,8,1.262,9,1.438,9,1.281,10,1.389,10,1.281,10,3.042,3,3.042,3,4
+lf-2020,commits,Linaro,linaro,24740,3.170,2.127,5,2.127,4,2.282,5,2.601,5,2.061,5,2.236,5,2.061,5,2.318,7,2.318,6,5
+lf-2020,commits,Google,google,21779,2.790,1.271,8,1.271,7,1.364,8,1.555,8,0.893,14,0.968,14,0.893,13,1.572,12,1.572,11,6
+lf-2020,commits,Samsung,samsung,20160,2.580,0.936,13,0.936,12,1.004,13,1.145,13,1.571,8,1.704,8,1.571,8,1.770,8,1.770,7,7
+lf-2020,commits,AMD,amd,17781,2.280,16.331,1,16.331,1,17.522,1,5.995,2,12.034,1,4.599,3,12.034,1,2.620,6,2.620,5,8
+lf-2020,commits,Renesas Electronics,renesas,15542,1.990,0.733,15,0.733,14,0.787,15,0.897,15,0.927,13,1.005,13,0.927,12,0.731,16,0.731,15,9
+lf-2020,commits,Texas Instruments,texas-instruments,13855,1.780,1.021,10,1.021,9,1.095,10,1.249,10,1.555,9,1.687,9,1.555,9,1.604,11,1.604,10,10
+lf-2020,commits,Oracle,oracle,13295,1.700,0.962,12,0.962,11,1.032,12,1.177,12,0.961,12,1.042,12,0.961,11,1.719,9,1.719,8,11
+lf-2020,commits,Broadcom,broadcom,9572,1.230,1.426,7,1.426,6,1.530,7,1.744,7,2.211,4,2.398,4,2.211,4,1.029,15,1.029,14,12
+lf-2020,commits,Huawei Technologies,huawei-technologies,9379,1.200,0.719,16,0.719,15,0.771,16,0.879,16,0.614,16,0.666,16,0.614,15,1.064,14,1.064,13,13
+lf-2020,commits,Mellanox,mellanox,9267,1.190,0.997,11,0.997,10,1.070,11,1.219,11,1.739,7,1.886,7,1.739,7,1.696,10,1.696,9,14
+lf-2020,commits,NXP Semiconductors,nxp,9223,1.180,0.885,14,0.885,13,0.949,14,1.082,14,0.595,17,0.646,17,0.595,16,0.428,17,0.428,17,15
+lf-2020,commits,Arm,arm,7646,0.980,0.592,17,0.592,16,0.635,17,0.724,17,0.728,15,0.789,15,0.728,14,1.080,13,1.080,12,16
+lf-2020,commits,Linux Foundation,linux-foundation,6109,0.780,3.618,4,0.162,17,3.881,4,4.424,4,1.216,11,1.319,11,0.152,17,2.651,5,0.565,16,17

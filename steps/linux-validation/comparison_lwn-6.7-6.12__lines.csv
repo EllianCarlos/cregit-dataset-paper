@@ -1,0 +1,19 @@
+source,table,employer,organization_ids,value,percent,tokens_all,tokens_all_rank,tokens_all_kernel_org_apart,tokens_all_kernel_org_apart_rank,tokens_all_no_pregit,tokens_all_no_pregit_rank,tokens_all_no_pregit_no_amd_headers,tokens_all_no_pregit_no_amd_headers_rank,tokens_in_window,tokens_in_window_rank,tokens_in_window_no_amd_headers,tokens_in_window_no_amd_headers_rank,tokens_in_window_kernel_org_apart,tokens_in_window_kernel_org_apart_rank,commits_in_window,commits_in_window_rank,commits_in_window_kernel_org_apart,commits_in_window_kernel_org_apart_rank,source_rank
+lwn-6.7-6.12,lines,AMD,amd,918483,18.100,16.331,1,16.331,1,17.522,1,5.995,2,20.972,1,9.876,2,20.972,1,5.881,2,5.881,2,1
+lwn-6.7-6.12,lines,Intel,intel,540531,10.600,6.969,2,6.969,2,7.478,2,8.523,1,10.801,2,12.318,1,10.801,2,14.901,1,14.901,1,2
+lwn-6.7-6.12,lines,Google,google,378278,7.400,1.271,9,1.271,9,1.364,9,1.555,9,1.937,8,2.208,8,1.937,8,3.987,3,3.987,3,3
+lwn-6.7-6.12,lines,Linaro,linaro,314793,6.200,2.127,6,2.127,6,2.282,6,2.601,6,3.083,6,3.516,6,3.083,6,3.340,5,3.340,5,4
+lwn-6.7-6.12,lines,Red Hat,red-hat,308732,6.100,3.765,3,3.765,3,4.039,3,4.604,3,4.013,4,4.576,4,4.013,4,3.974,4,3.974,4,5
+lwn-6.7-6.12,lines,Meta,meta,150897,3.000,0.663,15,0.663,15,0.711,15,0.811,15,0.932,10,1.063,10,0.932,10,0.489,16,0.489,16,6
+lwn-6.7-6.12,lines,Oracle,oracle,136086,2.700,0.962,11,0.962,11,1.032,11,1.177,11,0.727,16,0.830,16,0.727,16,1.150,11,1.150,11,7
+lwn-6.7-6.12,lines,Qualcomm,qualcomm,108629,2.100,2.996,4,2.996,4,3.215,4,3.664,4,4.860,3,5.542,3,4.860,3,2.132,9,2.132,9,8
+lwn-6.7-6.12,lines,NVIDIA,nvidia,94799,1.900,1.570,7,1.570,7,1.685,7,1.920,7,2.043,7,2.330,7,2.043,7,2.153,8,2.153,8,9
+lwn-6.7-6.12,lines,SUSE,suse,86590,1.700,1.176,10,1.176,10,1.262,10,1.438,10,0.797,13,0.909,13,0.797,13,2.871,6,2.871,6,10
+lwn-6.7-6.12,lines,Realtek,realtek-semiconductor,78260,1.500,2.495,5,2.495,5,2.677,5,3.051,5,3.548,5,4.047,5,3.548,5,0.887,13,0.887,13,11
+lwn-6.7-6.12,lines,Emerson,emerson-electric+national-instruments-corp-de,63036,1.200,0.013,18,0.013,18,0.014,18,0.016,18,0.000,18,0.000,18,0.000,18,0.000,18,0.000,18,12
+lwn-6.7-6.12,lines,IBM,ibm,61320,1.200,1.501,8,1.501,8,1.611,8,1.836,8,0.788,14,0.899,14,0.788,14,1.575,10,1.575,10,12
+lwn-6.7-6.12,lines,Collabora,collabora,58147,1.100,0.524,16,0.524,16,0.563,16,0.641,16,1.319,9,1.505,9,1.319,9,0.686,15,0.686,15,14
+lwn-6.7-6.12,lines,Renesas Electronics,renesas,56839,1.100,0.733,13,0.733,13,0.787,13,0.897,13,0.853,12,0.972,12,0.853,12,0.933,12,0.933,12,14
+lwn-6.7-6.12,lines,Huawei Technologies,huawei-technologies,50113,1.000,0.719,14,0.719,14,0.771,14,0.879,14,0.881,11,1.004,11,0.881,11,2.727,7,2.727,7,16
+lwn-6.7-6.12,lines,NXP Semiconductors,nxp,41451,0.800,0.885,12,0.885,12,0.949,12,1.082,12,0.785,15,0.896,15,0.785,15,0.840,14,0.840,14,17
+lwn-6.7-6.12,lines,Microsoft,microsoft,38985,0.800,0.266,17,0.266,17,0.286,17,0.326,17,0.316,17,0.360,17,0.316,17,0.425,17,0.425,17,17

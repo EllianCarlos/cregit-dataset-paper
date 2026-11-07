@@ -1,0 +1,5 @@
+source,start,end,note
+lwn-7.3,2026-06-28,2026-10-13,"v7.2..v7.3; committer day from about v7.2-rc1 (v7.1 + 14 days) to the pinned commit (v7.3-rc7, 2026-10-12)"
+lwn-6.13-6.18,2024-09-29,2025-11-30,"v6.12..v6.18; committer day from v6.12-rc1 to v6.18"
+lwn-6.7-6.12,2023-09-10,2024-11-17,"v6.6..v6.12; committer day from v6.6-rc1 to v6.12"
+lf-2020,2007-01-01,2020-01-01,"commits 2007-2019; committer day in 2007-2019"

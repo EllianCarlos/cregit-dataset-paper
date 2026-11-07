@@ -1,0 +1,18 @@
+source,table,employer,organization_ids,value,percent,tokens_all,tokens_all_rank,tokens_all_kernel_org_apart,tokens_all_kernel_org_apart_rank,tokens_all_no_pregit,tokens_all_no_pregit_rank,tokens_all_no_pregit_no_amd_headers,tokens_all_no_pregit_no_amd_headers_rank,tokens_in_window,tokens_in_window_rank,tokens_in_window_no_amd_headers,tokens_in_window_no_amd_headers_rank,tokens_in_window_kernel_org_apart,tokens_in_window_kernel_org_apart_rank,commits_in_window,commits_in_window_rank,commits_in_window_kernel_org_apart,commits_in_window_kernel_org_apart_rank,source_rank
+lwn-6.7-6.12,changesets,Intel,intel,11356,13.100,6.969,2,6.969,2,7.478,2,8.523,1,10.801,2,12.318,1,10.801,2,14.901,1,14.901,1,1
+lwn-6.7-6.12,changesets,Google,google,5920,6.800,1.271,8,1.271,8,1.364,8,1.555,8,1.937,7,2.208,7,1.937,7,3.987,3,3.987,3,2
+lwn-6.7-6.12,changesets,AMD,amd,5233,6.000,16.331,1,16.331,1,17.522,1,5.995,2,20.972,1,9.876,2,20.972,1,5.881,2,5.881,2,3
+lwn-6.7-6.12,changesets,Linaro,linaro,5112,5.900,2.127,5,2.127,5,2.282,5,2.601,5,3.083,5,3.516,5,3.083,5,3.340,5,3.340,5,4
+lwn-6.7-6.12,changesets,Red Hat,red-hat,4863,5.600,3.765,3,3.765,3,4.039,3,4.604,3,4.013,4,4.576,4,4.013,4,3.974,4,3.974,4,5
+lwn-6.7-6.12,changesets,Huawei Technologies,huawei-technologies,2459,2.800,0.719,14,0.719,14,0.771,14,0.879,14,0.881,9,1.004,9,0.881,9,2.727,7,2.727,7,6
+lwn-6.7-6.12,changesets,SUSE,suse,2319,2.700,1.176,9,1.176,9,1.262,9,1.438,9,0.797,11,0.909,11,0.797,11,2.871,6,2.871,6,7
+lwn-6.7-6.12,changesets,Meta,meta,2207,2.500,0.663,15,0.663,15,0.711,15,0.811,15,0.932,8,1.063,8,0.932,8,0.489,16,0.489,16,8
+lwn-6.7-6.12,changesets,Oracle,oracle,1986,2.300,0.962,11,0.962,11,1.032,11,1.177,11,0.727,14,0.830,14,0.727,14,1.150,12,1.150,12,9
+lwn-6.7-6.12,changesets,Pengutronix,pengutronix,1871,2.200,0.389,17,0.389,17,0.418,17,0.476,17,0.458,17,0.523,17,0.458,17,2.437,8,2.437,8,10
+lwn-6.7-6.12,changesets,Qualcomm,qualcomm,1792,2.100,2.996,4,2.996,4,3.215,4,3.664,4,4.860,3,5.542,3,4.860,3,2.132,10,2.132,10,11
+lwn-6.7-6.12,changesets,NVIDIA,nvidia,1713,2.000,1.570,6,1.570,6,1.685,6,1.920,6,2.043,6,2.330,6,2.043,6,2.153,9,2.153,9,12
+lwn-6.7-6.12,changesets,IBM,ibm,1612,1.900,1.501,7,1.501,7,1.611,7,1.836,7,0.788,12,0.899,12,0.788,12,1.575,11,1.575,11,13
+lwn-6.7-6.12,changesets,Renesas Electronics,renesas,1574,1.800,0.733,13,0.733,13,0.787,13,0.897,13,0.853,10,0.972,10,0.853,10,0.933,14,0.933,14,14
+lwn-6.7-6.12,changesets,Arm,arm,1178,1.400,0.592,16,0.592,16,0.635,16,0.724,16,0.508,15,0.579,15,0.508,15,1.148,13,1.148,13,15
+lwn-6.7-6.12,changesets,NXP Semiconductors,nxp,916,1.100,0.885,12,0.885,12,0.949,12,1.082,12,0.785,13,0.896,13,0.785,13,0.840,15,0.840,15,16
+lwn-6.7-6.12,changesets,Texas Instruments,texas-instruments,781,0.900,1.021,10,1.021,10,1.095,10,1.249,10,0.507,16,0.578,16,0.507,16,0.488,17,0.488,17,17

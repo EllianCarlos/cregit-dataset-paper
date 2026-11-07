@@ -1,0 +1,1003 @@
+organization_id,name,kind,is_company,parent_company_id,tokens,tokens_without_amd_register_headers
+amd,AMD,company,true,,26459455,7943126
+independent,(Independent),independent,false,,14362491,14362491
+free-provider,(Free e-mail provider),free-provider,false,,13826503,13826040
+intel,Intel,company,true,,11291485,11291485
+pre-git-import,(Pre-git import),project,false,,11017810,11017810
+red-hat,Red Hat,company,true,ibm,6099742,6099742
+linux-foundation,Linux Foundation,foundation,false,,5861206,5861206
+qualcomm,Qualcomm,company,true,,4854561,4854561
+realtek-semiconductor,Realtek Semiconductor,company,true,,4042268,4042268
+linaro,Linaro,nonprofit,false,,3445976,3445976
+nvidia,NVIDIA,company,true,,2544175,2544175
+ibm,IBM,company,true,,2432686,2432686
+broadcom,Broadcom,company,true,,2310695,2310695
+mediatek,MediaTek,company,true,,2131964,2131964
+google,Google,company,true,,2059895,2059895
+suse,SUSE,company,true,,1905648,1905648
+texas-instruments,Texas Instruments,company,true,,1654219,1654219
+mellanox,Mellanox,company,true,nvidia,1615023,1615023
+oracle,Oracle,company,true,,1558822,1558822
+samsung,Samsung,company,true,,1516352,1516352
+nxp,NXP,company,true,,1433694,1433694
+cirrus-logic,Cirrus Logic,company,true,,1426188,1426188
+marvell,Marvell,company,true,,1323558,1323558
+microchip-technology,Microchip Technology,company,true,,1255420,1255420
+bootlin,Bootlin,consultancy,true,,1229784,1229784
+renesas,Renesas,company,true,,1188227,1188227
+huawei-technologies,Huawei Technologies,company,true,,1164720,1164720
+meta,Meta,company,true,,1073955,1073955
+arm,ARM,company,true,,959119,959119
+collabora,Collabora,consultancy,true,,849744,849744
+cavium,Cavium,company,true,marvell,846474,846474
+stmicroelectronics,STMicroelectronics,company,true,,834344,834344
+qlogic,QLogic,company,true,cavium,831741,831741
+cisco,Cisco,company,true,,763940,763940
+ideas-on-board,Ideas on Board,consultancy,true,,763059,763059
+baylibre,BayLibre,consultancy,true,,720188,720188
+pengutronix,Pengutronix,consultancy,true,,630839,630839
+chelsio,Chelsio,company,true,,623796,623796
+freescale,Freescale,company,true,nxp,617474,617474
+chromium,Chromium,project,false,google,587799,587799
+xilinx,Xilinx,company,true,amd,571366,571366
+analog-devices,Analog Devices,company,true,,520530,520530
+rockchip,Rockchip,company,true,,517934,517934
+nokia,Nokia,company,true,,505082,505082
+linutronix,Linutronix,consultancy,true,intel,473613,473613
+vmware,VMware,company,true,broadcom,458185,458185
+microsoft,Microsoft,company,true,,431526,431526
+emulex,Emulex,company,true,broadcom,385214,385214
+brocade,Brocade,company,true,broadcom,327111,327111
+netronome,Netronome,company,true,,316871,316871
+hp,HP,company,true,,307773,307773
+imagination-technologies,Imagination Technologies,company,true,,305856,305856
+habana-labs,Habana Labs,company,true,intel,299409,299409
+synopsys,Synopsys,company,true,,295891,295891
+sony,Sony,company,true,,284819,284819
+loongson,Loongson,company,true,,284538,284538
+samba,Samba,project,false,,254494,254494
+alibaba,Alibaba,company,true,,247647,247647
+canonical,Canonical,company,true,,243799,243799
+openwrt,OpenWrt,project,false,software-freedom-conservancy,228711,228711
+amlogic,Amlogic,company,true,,214430,214430
+cadence,Cadence,company,true,,202667,202667
+lio,LIO,project,false,datera,200936,200936
+hisilicon,HiSilicon,company,true,huawei-technologies,200236,200236
+linuxtv,LinuxTV,project,false,,198998,198998
+somainline,SoMainline,project,false,,192120,192120
+netfilter,netfilter,project,false,,188916,188916
+steeleye,SteelEye,company,true,,188152,188152
+amazon,Amazon,company,true,,185817,185817
+western-digital,Western Digital,company,true,,185552,185552
+university-of-michigan,University of Michigan,academic,false,,179538,179538
+socionext,Socionext,company,true,,178410,178410
+netapp,NetApp,company,true,,178056,178056
+denx-software-engineering,DENX Software Engineering,consultancy,true,,167070,167070
+glider,Glider,consultancy,true,,165892,165892
+st-ericsson,ST-Ericsson,company,true,,163181,163181
+arm-linux,ARM Linux,project,false,,158301,158301
+vision-engraving-and-routing-systems,Vision Engraving & Routing Systems,company,true,,157093,157093
+linbit-ha-solutions,LINBIT HA-Solutions,company,true,,154063,154063
+paragon-software,Paragon Software,company,true,,149370,149370
+dreamhost,DreamHost,company,true,,148204,148204
+fujitsu,Fujitsu,company,true,,148112,148112
+ericsson,Ericsson,company,true,,145627,145627
+realsil,Realsil,company,true,realtek-semiconductor,142004,142004
+synaptics,Synaptics,company,true,,137414,137414
+atomide,Atomide,company,true,,136672,136672
+unisoc,UNISOC,company,true,,127116,127116
+ntt,NTT,company,true,,122731,122731
+montavista,MontaVista,company,true,,122304,122304
+citrix,Citrix,company,true,cloud-software-group,120039,120039
+linux-sh,Linux-SH,project,false,,117101,117101
+hauppauge,Hauppauge,company,true,,115543,115543
+cogent-embedded,Cogent Embedded,consultancy,true,,113714,113714
+tietoevry,Tietoevry,company,true,,110845,110845
+parallels,Parallels,company,true,,108405,108405
+richtek,Richtek,company,true,mediatek,105331,105331
+parrot,Parrot,company,true,,104643,104643
+appliedmicro,AppliedMicro,company,true,,103234,103234
+wizery,Wizery,consultancy,true,,103060,103060
+gentoo-linux,Gentoo Linux,foundation,false,,97580,97580
+eotvos-lorand-university,Eötvös Loránd University,academic,false,,97439,97439
+nuvoton,Nuvoton,company,true,,94637,94637
+igalia,Igalia,consultancy,true,,91094,91094
+arista-networks,Arista Networks,company,true,,89799,89799
+beijing-wangxun-technology,Beijing WangXun Technology,company,true,,89714,89714
+netup,NetUP,company,true,,88438,88438
+wind-river,Wind River,company,true,,88120,88120
+mm-solutions,MM Solutions,company,true,,86605,86605
+creative-labs,Creative Labs,company,true,,83935,83935
+altera,Altera,company,true,,82916,82916
+fairphone,Fairphone,company,true,,82308,82308
+ventana-micro-systems,Ventana Micro Systems,company,true,,79495,79495
+ragnatech,Ragnatech,consultancy,true,,79418,79418
+aspeed,ASPEED,company,true,,79198,79198
+open-grid-computing,Open Grid Computing,company,true,,78316,78316
+cs-group,CS Group,consultancy,true,sopra-steria-group,78208,78208
+bytedance,ByteDance,company,true,,77950,77950
+linux-m68k,Linux/m68k,project,false,,76294,76294
+linuxfr-org,LinuxFr.org,nonprofit,false,,74911,74911
+cloudflare,Cloudflare,company,true,,71503,71503
+axis-communications,Axis Communications,company,true,canon,71132,71132
+primary-data,Primary Data,company,true,,71062,71062
+leap-io,Leap IO,company,true,,69308,69308
+siemens,Siemens,company,true,,67474,67474
+audioscience,AudioScience,company,true,,65701,65701
+morse-micro,Morse Micro,company,true,,65645,65645
+starfive-technology,StarFive Technology,company,true,,65512,65512
+aosc,AOSC,project,false,,65285,65285
+pensando-systems,Pensando Systems,company,true,amd,63585,63585
+anyfi-networks,Anyfi Networks,company,true,,63343,63343
+allied-telesis,Allied Telesis,company,true,,60057,60057
+atto,ATTO,company,true,,59523,59523
+savoir-faire-linux,Savoir-faire Linux,consultancy,true,,59450,59450
+ionos,IONOS,company,true,,59141,59141
+wigner-research-centre-for-physics,Wigner Research Centre for Physics,government,false,,58935,58935
+cerno,Cerno,consultancy,true,,58784,58784
+metzler-brothers,Metzler Brothers,company,true,,58678,58678
+harvard-university,Harvard University,academic,false,,58283,58283
+plvision,PLVision,consultancy,true,,57447,57447
+dell,Dell,company,true,,57395,57395
+awinic,Awinic,company,true,,57124,57124
+gaisler-research,Frontgrade Gaisler,company,true,,55391,55391
+secretlab,Secret Lab Technologies,consultancy,true,,54862,54862
+oki-semiconductor,LAPIS Technology,company,true,rohm-semiconductor,54304,54304
+university-of-cambridge,University of Cambridge,academic,false,,54211,54211
+lg-electronics,LG Electronics,company,true,,53942,53942
+quantenna-communications,Quantenna Communications,company,true,,53887,53887
+rohm-semiconductor,ROHM Semiconductor,company,true,,53364,53364
+mev-limited,MEV Limited,consultancy,true,,53233,53233
+sifive,SiFive,company,true,,53184,53184
+tdk-invensense,TDK,company,true,,52933,52933
+cherry,Cherry,company,true,,52137,52137
+chips-and-media,Chips&Media,company,true,,51753,51753
+code-construct,Code Construct,consultancy,true,,51520,51520
+kylinsoft,Kylinsoft,company,true,,50329,50329
+cozybit,cozybit,consultancy,true,,50243,50243
+igel,IGEL,company,true,,49974,49974
+avionic-design,Avionic Design,company,true,,49900,49900
+freebox,Freebox,company,true,,47974,47974
+university-of-wisconsin-madison,University of Wisconsin-Madison,academic,false,,47637,47637
+italian-linux-society,Italian Linux Society,nonprofit,false,,46949,46949
+secunet,secunet,company,true,giesecke-plus-devrient,46617,46617
+infineon-technologies,Infineon Technologies,company,true,,43821,43821
+semihalf-embedded-systems,Semihalf,consultancy,true,,43419,43419
+faraday-technology,Faraday Technology,company,true,,42915,42915
+sang-engineering,Sang Engineering,consultancy,true,,42890,42890
+debian,Debian,project,false,,42593,42593
+silicon-labs,Silicon Labs,company,true,,42484,42484
+bluecherry,Bluecherry,company,true,,41579,41579
+amarula-solutions,Amarula Solutions,consultancy,true,,41296,41296
+toshiba,Toshiba,company,true,,41238,41238
+kpit-cummins,KPIT Technologies,consultancy,true,,41027,41027
+raspberry-pi-holdings,Raspberry Pi Ltd,company,true,,40926,40926
+openvpn,OpenVPN,company,true,,40581,40581
+mit,MIT,academic,false,,40092,40092
+jolla,Jolla,company,true,,39278,39278
+madwifi,MadWifi,project,false,,39181,39181
+vyatta,Vyatta,company,true,ciena,38378,38378
+corigine,Corigine,company,true,,38128,38128
+annapurna-labs,Annapurna Labs,company,true,amazon,37389,37389
+usagi,USAGI,project,false,wide-project,37131,37131
+omnibond-systems,Omnibond Systems,company,true,,37080,37080
+hitachi,Hitachi,company,true,,35729,35729
+uclinux,uClinux,project,false,,35684,35684
+mame,MAME,project,false,,35443,35443
+sun,Sun,company,true,oracle,35318,35318
+endless-mobile,Endless Mobile,company,true,,34011,34011
+vista-silicon,Vista Silicon,company,true,,33286,33286
+topic-embedded,Topic Embedded,consultancy,true,,33240,33240
+digiteq-automotive,Digiteq Automotive,company,true,volkswagen,32735,32735
+via,VIA Technologies,company,true,,32588,32588
+eswin-computing,ESWIN Computing,company,true,,32483,32483
+hammerspace,Hammerspace,company,true,,32376,32376
+axentia-technologies,Axentia Technologies,consultancy,true,,32060,32060
+indt,INdT,nonprofit,false,,31574,31574
+peak-system-technik,PEAK-System Technik,company,true,,31411,31411
+the-hague-university-of-applied-sciences,The Hague University of Applied Sciences,academic,false,,30616,30616
+katalix-systems,Katalix Systems,company,true,,30437,30437
+areca,Areca,company,true,,30232,30232
+nec,NEC,company,true,,29921,29921
+solid-boot-ltd,Solid Boot,company,true,,29642,29642
+efficios,EfficiOS,consultancy,true,,29481,29481
+x-org-foundation,X.Org Foundation,foundation,false,,29442,29442
+micron,Micron,company,true,,29357,29357
+epam-systems,EPAM Systems,company,true,,29083,29083
+ge-fanuc,GE Fanuc,company,true,emerson-electric,28928,28928
+iscas,ISCAS,academic,false,,28823,28823
+cix-technology,CIX Technology,company,true,,28539,28539
+tencent,Tencent,company,true,,28515,28515
+opentext,OpenText,company,true,,27979,27979
+etersoft,Etersoft,company,true,,27602,27602
+allwinner-technology,Allwinner Technology,company,true,,27307,27307
+sberdevices,SberDevices,company,true,sberbank,27294,27294
+digigram,Digigram,company,true,,26759,26759
+sandisk,SanDisk,company,true,,26344,26344
+mips,MIPS,company,true,,25858,25858
+codeweavers,CodeWeavers,company,true,,25483,25483
+everest-semiconductor,Everest Semiconductor,company,true,,25330,25330
+lwn-net,LWN.net,company,true,,25272,25272
+endava,Endava,consultancy,true,,25132,25132
+virtuozzo,Virtuozzo,company,true,,25076,25076
+gateworks,Gateworks,company,true,,24493,24493
+animal-creek-technologies,Animal Creek Technologies,consultancy,true,,24259,24259
+edgeble-ai,Edgeble AI,company,true,,23915,23915
+kernkonzept,Kernkonzept,company,true,,23660,23660
+datera,Datera,company,true,,22861,22861
+calxeda,Calxeda,company,true,,22543,22543
+mojatatu-networks,Mojatatu Networks,company,true,,22327,22327
+ampere-computing,Ampere Computing,company,true,,22231,22231
+eukrea,Eukrea,company,true,,22189,22189
+moscow-institute-of-physics-and-technology,Moscow Institute of Physics and Technology,academic,false,,21648,21648
+analogix-semiconductor,Analogix Semiconductor,company,true,,21301,21301
+bang-and-olufsen,Bang & Olufsen,company,true,,21155,21155
+lightbits-labs,Lightbits Labs,company,true,,21022,21022
+kvaser,Kvaser,company,true,,21007,21007
+myricom,Myricom,company,true,,20902,20902
+iron-device,Iron Device,company,true,,20505,20505
+tornos,Lemote,company,true,,20266,20266
+elan-microelectronics,Elan Microelectronics,company,true,,20123,20123
+national-instruments-corp-de,National Instruments,company,true,emerson-electric,19703,19703
+university-of-washington,University of Washington,academic,false,,19489,19489
+mandriva,Mandriva,company,true,,19339,19339
+datto,Datto,company,true,,19241,19241
+konsulko-group,Konsulko Group,consultancy,true,,19083,19083
+akamai-technologies,Akamai Technologies,company,true,,19067,19067
+simtec,Simtec,company,true,,18562,18562
+i2se,I2SE,company,true,,18525,18525
+genesys-logic,Genesys Logic,company,true,,18444,18444
+compulab,CompuLab,company,true,,18411,18411
+national-security-agency,National Security Agency,government,false,us-department-of-defense,18058,18058
+zte,ZTE,company,true,,17630,17630
+ingics-technology,INGICS Technology,company,true,,17361,17361
+vanguardiasur,VanguardiaSur,consultancy,true,,17309,17309
+fraunhofer,Fraunhofer,academic,false,,17124,17124
+abilis-systems,Abilis Systems,company,true,,17087,17087
+cambridge-greys,Cambridge Greys,consultancy,true,,17074,17074
+opensynergy,OpenSynergy,company,true,qualcomm,17041,17041
+6wind,6WIND,company,true,,16891,16891
+ite-tech,ITE Tech,company,true,,16805,16805
+isovalent,Isovalent,company,true,cisco,16647,16647
+tkos,Tkos,consultancy,true,,16605,16605
+pure-storage,Pure Storage,company,true,,16534,16534
+linux-vserver,Linux-VServer,project,false,,16148,16148
+overkiz,Overkiz,company,true,,16145,16145
+purism,Purism,company,true,,16045,16045
+auburn-university,Auburn University,academic,false,,16023,16023
+applied-micro-circuits-corporation,Applied Micro Circuits Corporation,company,true,,15798,15798
+tower-technologies,Tower Technologies,company,true,,15576,15576
+south-pole-ab,South Pole AB,consultancy,true,,15506,15506
+chemnitz-university-of-technology,Chemnitz University of Technology,academic,false,,15482,15482
+university-of-virginia,University of Virginia,academic,false,,15463,15463
+salutedevices,SaluteDevices,company,true,sberbank,15118,15118
+heinrich-heine-university-dusseldorf,Heinrich Heine University Düsseldorf,academic,false,,15034,15034
+luxoft,Luxoft,consultancy,true,dxc-technology,14963,14963
+sensoray,Sensoray,company,true,,14871,14871
+tukaani-project,Tukaani Project,project,false,,14698,14698
+california-institute-of-technology,California Institute of Technology,academic,false,,14658,14658
+alt-linux,ALT Linux,project,false,,14654,14654
+university-of-liege,University of Liege,academic,false,,14470,14470
+codethink,Codethink,consultancy,true,,14450,14450
+9elements,9elements,consultancy,true,,14401,14401
+timesys,Timesys,company,true,,14393,14393
+gridpoint,GridPoint,company,true,,14285,14285
+wolfvision,WolfVision,company,true,,14096,14096
+volkswagen,Volkswagen,company,true,,14070,14070
+graz-university-of-technology,Graz University of Technology,academic,false,,13850,13850
+elan-digital-systems,Elan Digital Systems,company,true,,13629,13629
+candela,Candela Technologies,company,true,,13524,13524
+ant-group,Ant Group,company,true,,13428,13428
+esd-electronics,ESD Electronics,company,true,,13355,13355
+sartura,Sartura,consultancy,true,,13306,13306
+arrikto,Arrikto,company,true,,13304,13304
+profusion,ProFUSION,consultancy,true,,13225,13225
+olpc,One Laptop per Child,nonprofit,false,,13146,13146
+baikal-electronics,Baikal Electronics,company,true,,13132,13132
+tenstorrent,Tenstorrent,company,true,,12958,12958
+keba,KEBA,company,true,,12833,12833
+panasas,Panasas,company,true,,12687,12687
+men-mikro-elektronik,MEN Mikro Elektronik,company,true,,12525,12525
+yandex,Yandex,company,true,,12409,12409
+toradex,Toradex,company,true,,12349,12349
+lemonage,Lemonage,company,true,,12299,12299
+mocean-laboratories,Mocean Laboratories,company,true,,12184,12184
+uplogix,Uplogix,company,true,,11959,11959
+andes,Andes Technology,company,true,,11906,11906
+unsw-sydney,UNSW Sydney,academic,false,,11856,11856
+yadro,YADRO,company,true,,11768,11768
+extreme-engineering-solutions,Extreme Engineering Solutions,company,true,,11658,11658
+melexis,Melexis,company,true,,11655,11655
+virtual-open-systems,Virtual Open Systems,company,true,,11556,11556
+purelifi,pureLiFi,company,true,,11391,11391
+protonic-holland,Protonic Holland,company,true,,11321,11321
+waseda-university,Waseda University,academic,false,,11304,11304
+lenovo,Lenovo,company,true,,11288,11288
+sanpeople,SANPeople,company,true,,11234,11234
+labn-consulting,LabN Consulting,consultancy,true,,11177,11177
+secure-computing,Secure Computing,company,true,,11159,11159
+geanix,Geanix,consultancy,true,,11088,11088
+university-of-sao-paulo,University of São Paulo,academic,false,,11080,11080
+highpoint-technologies,HighPoint Technologies,company,true,,10901,10901
+bosch,Bosch,company,true,,10752,10752
+pa-risc-linux,PA-RISC Linux,project,false,,10569,10569
+uniontech-software-technology,UnionTech Software Technology,company,true,,10399,10399
+labri,LaBRI,academic,false,university-of-bordeaux,10344,10344
+university-of-helsinki,University of Helsinki,academic,false,,10242,10242
+ivitera,IVITERA,company,true,,10179,10179
+czech-technical-university-in-prague,Czech Technical University in Prague,academic,false,,10099,10099
+golden-deli-comp,Golden Delicious Computers,company,true,,9884,9884
+obsidian-research,Obsidian Research,company,true,,9874,9874
+university-of-limerick,University of Limerick,academic,false,,9800,9800
+artec-design,Artec Design,consultancy,true,,9783,9783
+bull-sas,Bull SAS,company,true,french-state,9518,9518
+gnu-project,GNU Project,foundation,false,,9493,9493
+university-of-hamburg,University of Hamburg,academic,false,,9485,9485
+solidrun,SolidRun,company,true,,9423,9423
+istituto-italiano-di-tecnologia,Istituto Italiano di Tecnologia,academic,false,,9313,9313
+paris-saclay-university,Paris-Saclay University,academic,false,,8813,8813
+coraid,Coraid,company,true,,8806,8806
+ddn-storage,DDN Storage,company,true,,8771,8771
+university-of-naples-federico-ii,University of Naples Federico II,academic,false,,8734,8734
+bluewater-systems,Bluewater Systems,company,true,,8709,8709
+lund-university,Lund University,academic,false,,8645,8645
+bmw,BMW,company,true,,8580,8580
+polytechnic-university-of-turin,Polytechnic University of Turin,academic,false,,8428,8428
+mirantis,Mirantis,company,true,,8427,8427
+sierra-wireless,Sierra Wireless,company,true,semtech,8398,8398
+asix-electronics,ASIX Electronics,company,true,,8348,8348
+va-linux-systems-japan,VA Linux Systems Japan,company,true,,8240,8240
+real-time-remedies,Real-Time Remedies,company,true,,8165,8165
+wacom,Wacom,company,true,,8047,8047
+kosagi,Kosagi,company,true,,8029,8029
+telargo,Telargo,company,true,,8023,8023
+strongswan,strongSwan,project,false,secunet,7965,7965
+macq-electronique,Macq Electronique,company,true,,7829,7829
+fastly,Fastly,company,true,,7720,7720
+isp-ras,ISP RAS,academic,false,,7172,7172
+seco,SECO,company,true,,7132,7132
+m-and-n-solutions,M&N Solutions,company,true,,7117,7117
+neratec-solutions,Neratec Solutions,company,true,,7011,7011
+epfl,EPFL,academic,false,,7003,7003
+ridgerun,RidgeRun,consultancy,true,,6971,6971
+adaptec,Adaptec,company,true,microchip-technology,6837,6837
+jusst,Jusst,company,true,,6836,6836
+carnegie-mellon-university,Carnegie Mellon University,academic,false,,6757,6757
+logfs,LogFS,project,false,,6702,6702
+university-of-queensland,University of Queensland,academic,false,,6666,6666
+kungliga-tekniska-hogskolan,Kungliga Tekniska högskolan,academic,false,,6625,6625
+xiaomi,Xiaomi,company,true,,6599,6599
+charles-university,Charles University,academic,false,,6574,6574
+kontron,Kontron,company,true,,6387,6387
+cosmosbay-vectis,Cosmosbay~Vectis,company,true,,6344,6344
+prevas,Prevas,consultancy,true,,6312,6312
+unknown,(Unknown: no real e-mail domain),unknown,false,,6177,6177
+sony-interactive-entertainment,Sony Interactive Entertainment,company,true,sony,6169,6169
+irish-linux-users-group,Irish Linux Users Group,nonprofit,false,,6075,6075
+cc-computer-consultants,CC Computer Consultants,consultancy,true,,5927,5927
+mit-lincoln-laboratory,MIT Lincoln Laboratory,public-research,false,us-department-of-defense,5857,5857
+cern,CERN,government,false,,5765,5765
+cybernetics,Cybernetics,company,true,,5759,5759
+thundersoft,ThunderSoft,company,true,,5718,5718
+globallogic,GlobalLogic,consultancy,true,hitachi,5687,5687
+essensium-mind,Essensium/Mind,consultancy,true,,5610,5610
+ama-capital-management,AMA Capital Management,company,true,,5550,5550
+avl,AVL,company,true,,5516,5516
+logitech,Logitech,company,true,,5482,5482
+cjdns,cjdns,project,false,,5369,5369
+tessares,Tessares,company,true,,5356,5356
+tripeaks,Tripeaks,company,true,,5339,5339
+free-software-foundation-europe,Free Software Foundation Europe,foundation,false,,5279,5279
+delft-university-of-technology,Delft University of Technology,academic,false,,5270,5270
+university-of-szeged,University of Szeged,academic,false,,5171,5171
+hale-electronic,HALE electronic,company,true,,5067,5067
+openwall,Openwall,project,false,,5064,5064
+ka-ro-electronics,Ka-Ro electronics,company,true,,5047,5047
+baidu,Baidu,company,true,,5025,5025
+sorbonne-university,Sorbonne University,academic,false,,4977,4977
+ecole-nationale-de-l-aviation-civile,École nationale de l'aviation civile,academic,false,,4862,4862
+spacemit,SpacemiT,company,true,,4822,4822
+digi-international,Digi International,company,true,,4803,4803
+nasa,NASA,government,false,,4800,4800
+technische-universitat-berlin,Technische Universität Berlin,academic,false,,4795,4795
+squashfs,Squashfs,project,false,,4600,4600
+lineageos,LineageOS,project,false,,4486,4486
+deep-root-systems,Deep Root Systems,consultancy,true,,4451,4451
+polytechnique-montreal,Polytechnique Montréal,academic,false,,4246,4246
+vaisala,Vaisala,company,true,,4202,4202
+cornelis-networks,Cornelis Networks,company,true,,4192,4192
+raytheon,Raytheon,company,true,rtx,4187,4187
+phytec-messtechnik,PHYTEC Messtechnik,company,true,,4153,4153
+rochester-institute-of-technology,Rochester Institute of Technology,academic,false,,4136,4136
+develer,Develer,consultancy,true,,4015,4015
+rdc-semiconductor,RDC Semiconductor,company,true,,3969,3969
+mucse,MUCSE,company,true,,3968,3968
+politecnico-di-milano,Politecnico di Milano,academic,false,,3924,3924
+daynix-computing,Daynix Computing,consultancy,true,,3918,3918
+miracle-linux,Miracle Linux,company,true,,3893,3893
+omicron-electronics,OMICRON Electronics,company,true,,3878,3878
+stustanet,StuStaNet,nonprofit,false,,3876,3876
+instituto-superior-tecnico,Instituto Superior Técnico,academic,false,,3860,3860
+general-electric,General Electric,company,true,,3855,3855
+system76,System76,company,true,,3824,3824
+flowbird,Flowbird,company,true,,3816,3816
+cohesity,Cohesity,company,true,,3734,3734
+boundary-devices,Boundary Devices,company,true,,3717,3717
+freebsd-foundation,FreeBSD Foundation,foundation,false,,3542,3542
+softing,Softing,company,true,,3499,3499
+enea-ab,ENEA AB,company,true,,3471,3471
+cognizant,Cognizant,consultancy,true,,3452,3452
+promise-technology,Promise Technology,company,true,,3415,3415
+linumiz,Linumiz,consultancy,true,,3404,3404
+mpc-data,MPC Data,company,true,,3336,3336
+til-technologies,TIL Technologies,company,true,,3318,3318
+technion-israel-institute-of-technology,Technion - Israel Institute of Technology,academic,false,,3302,3302
+china-mobile,China Mobile,company,true,,3224,3224
+inspur,Inspur,company,true,,3223,3223
+national-institute-of-technology-karnataka,National Institute of Technology Karnataka,academic,false,,3218,3218
+ettus-research,Ettus Research,company,true,national-instruments-corp-de,3207,3207
+friedrich-alexander-universitat-erlangen-nurnberg,Friedrich-Alexander-Universität Erlangen-Nürnberg,academic,false,,3144,3144
+capella-microsystems,Capella Microsystems,company,true,,3113,3113
+wytron,Wytron,company,true,,3091,3091
+strace,strace,project,false,,3032,3032
+rwth-aachen,RWTH Aachen,academic,false,,3030,3030
+university-of-pennsylvania,University of Pennsylvania,academic,false,,3028,3028
+zhejiang-university,Zhejiang University,academic,false,,2944,2944
+svgalib,svgalib,project,false,,2842,2842
+tuxera,Tuxera,company,true,,2782,2782
+apple,Apple,company,true,,2778,2778
+inria,Inria,academic,false,,2741,2741
+motorola,Motorola,company,true,lenovo,2647,2647
+trail-of-bits,Trail of Bits,consultancy,true,,2640,2640
+adtran,Adtran,company,true,,2623,2623
+collins-aerospace,Collins Aerospace,company,true,rtx,2561,2561
+unbit,Unbit,company,true,,2538,2538
+advansee,Advansee,company,true,,2515,2515
+pennsylvania-state-university,Pennsylvania State University,academic,false,,2510,2510
+pika-technologies,PIKA Technologies,company,true,,2479,2479
+endrelia,Endrelia,company,true,,2475,2475
+easystack,EasyStack,company,true,,2437,2437
+naver,NAVER,company,true,,2427,2427
+net-insight,Net Insight,company,true,,2391,2391
+tdt,TDT,company,true,,2372,2372
+unicamp,Universidade Estadual de Campinas (Unicamp),academic,false,,2362,2362
+geomatys,Geomatys,company,true,,2345,2345
+american-megatrends,American Megatrends,company,true,,2316,2316
+whamcloud,Whamcloud,company,true,ddn-storage,2266,2266
+university-of-maine-system,University of Maine System,academic,false,,2225,2225
+antmicro,Antmicro,consultancy,true,,2195,2195
+ruhr-university-bochum,Ruhr University Bochum,academic,false,,2134,2134
+university-of-copenhagen,University of Copenhagen,academic,false,,2096,2096
+one-identity,One Identity,company,true,quest,2071,2071
+university-of-oslo,University of Oslo,academic,false,,2051,2051
+lawrence-berkeley-national-laboratory,Lawrence Berkeley National Laboratory,public-research,false,us-department-of-energy,2018,2018
+innosys,InnoSys,company,true,,2011,2011
+bitwagon-software,BitWagon Software,company,true,,1991,1991
+harris-corporation,Harris Corporation,company,true,,1979,1979
+kalray,Kalray,company,true,,1940,1940
+oak-ridge-national-laboratory,Oak Ridge National Laboratory,public-research,false,us-department-of-energy,1871,1871
+mandelbit,Mandelbit,company,true,,1839,1839
+juniper-networks,Juniper Networks,company,true,hp,1835,1835
+cluster-computing,Cluster Computing,company,true,,1767,1767
+trinnov-audio,Trinnov Audio,company,true,,1758,1758
+technische-universitat-ilmenau,Technische Universität Ilmenau,academic,false,,1697,1697
+cse-semaphore,CSE Semaphore,company,true,,1696,1696
+kdab,KDAB,consultancy,true,,1673,1673
+fedora-project,Fedora Project,project,false,red-hat,1652,1652
+kaspersky,Kaspersky,company,true,,1641,1641
+sophos,Sophos,company,true,,1632,1632
+orange,Orange,company,true,,1629,1629
+bmw-car-it,BMW Car IT,company,true,bmw,1627,1627
+3mdeb,3mdeb,consultancy,true,,1583,1583
+seagate,Seagate,company,true,,1574,1574
+prodrive-technologies,Prodrive Technologies,company,true,,1564,1564
+emerson-electric,Emerson Electric,company,true,,1553,1553
+amutable,Amutable,company,true,,1547,1547
+grinn,Grinn,consultancy,true,,1545,1545
+cesnet,CESNET,nonprofit,false,,1535,1535
+avtrex,Avtrex,company,true,,1529,1529
+invisible-things-lab,Invisible Things Lab,company,true,,1513,1513
+boeing,Boeing,company,true,,1508,1508
+china-telecom,China Telecom,company,true,,1477,1477
+columbia-university,Columbia University,academic,false,,1475,1475
+toptica-photonics,TOPTICA Photonics,company,true,,1463,1463
+university-of-minnesota,University of Minnesota,academic,false,,1417,1417
+dti2-desarrollo-de-la-tecnologia-de-las-comunicaciones,DTI2 - Desarrollo de la tecnologia de las comunicaciones,company,true,,1413,1413
+rutgers-university,Rutgers University,academic,false,,1408,1408
+netflix,Netflix,company,true,,1403,1403
+tsinghua-university,Tsinghua University,academic,false,,1382,1382
+clemson-university,Clemson University,academic,false,,1374,1374
+avnet,Avnet,company,true,,1363,1363
+integra-sources,Integra Sources,consultancy,true,,1357,1357
+taskit,taskit,company,true,,1333,1333
+realtek,Realtek,company,true,,1303,1303
+oktet-labs,OKTET Labs,consultancy,true,,1273,1273
+lulea-university-of-technology,Luleå University of Technology,academic,false,,1253,1253
+transmode-systems,Transmode Systems,company,true,,1245,1245
+vrull,VRULL,consultancy,true,,1243,1243
+winbond-electronics,Winbond Electronics,company,true,,1231,1231
+olimex,Olimex,company,true,,1208,1208
+open-mobile-platform,Open Mobile Platform,company,true,,1203,1203
+tu-wien,TU Wien,academic,false,,1198,1198
+scylladb,ScyllaDB,company,true,,1192,1192
+nexthop-ai,NextHop AI,company,true,,1158,1158
+wide-project,WIDE Project,academic,false,,1149,1149
+university-of-illinois-urbana-champaign,University of Illinois Urbana-Champaign,academic,false,,1127,1127
+ku-leuven,KU Leuven,academic,false,,1101,1101
+vrije-universiteit-amsterdam,Vrije Universiteit Amsterdam,academic,false,,1097,1097
+hes-so-valais-wallis,HES-SO Valais Wallis,academic,false,,1096,1096
+tresys,Tresys,company,true,,1073,1073
+microchip-k2l,K2L,company,true,microchip-technology,1064,1064
+china-electronics-cloud,China Electronics Cloud,company,true,,1057,1057
+arizona-state-university,Arizona State University,academic,false,,1056,1056
+max-planck-society,Max Planck Society,academic,false,,1032,1032
+verizon,Verizon,company,true,,1019,1019
+openai,OpenAI,company,true,,1007,1007
+university-of-aberdeen,University of Aberdeen,academic,false,,982,982
+ustc,University of Science and Technology of China,academic,false,,977,977
+tu-dresden,TU Dresden,academic,false,,970,970
+wiwynn,Wiwynn,company,true,,915,915
+inventec,Inventec,company,true,,898,898
+didi-global,DiDi Global,company,true,,894,894
+block,Block,company,true,,874,874
+bielefeld-university,Bielefeld University,academic,false,,871,871
+sirius,Sirius,company,true,,857,857
+raphnet-technologies,raphnet technologies,company,true,,850,850
+arch-linux,Arch Linux,project,false,software-in-the-public-interest,829,829
+stratus-technologies,Stratus Technologies,company,true,,827,827
+emcraft-systems,EmCraft Systems,company,true,,823,823
+traverse-technologies,Traverse Technologies,company,true,,820,820
+addi-data-gmbh,ADDI-DATA,company,true,,818,818
+new-h3c-technologies,New H3C Technologies,company,true,,815,815
+elettra,Elettra,government,false,,815,815
+jmicron-com,JMicron,company,true,,810,810
+eth-zurich,ETH Zürich,academic,false,,808,808
+hitachi-vantara,Hitachi Vantara,company,true,hitachi,808,808
+inl,INL,company,true,,806,806
+nanyang-technological-university,Nanyang Technological University,academic,false,,802,802
+lawrence-livermore-national-laboratory,Lawrence Livermore National Laboratory,public-research,false,us-department-of-energy,779,779
+cea,CEA,government,false,,777,777
+ad-fin,AD/FIN,company,true,,775,775
+iot-bzh,IoT.bzh,company,true,,765,765
+onelan,ONELAN,company,true,,764,764
+wabtec-railway-electronics,Wabtec,company,true,,751,751
+indiana-university,Indiana University,academic,false,,748,748
+endless-os-foundation,Endless Access,foundation,false,,744,744
+kuaishou,Kuaishou,company,true,,721,721
+codecoup,Codecoup,consultancy,true,,708,708
+thinktube,Thinktube,company,true,,707,707
+valve,Valve,company,true,,705,705
+korea-university,Korea University,academic,false,,683,683
+nutanix,Nutanix,company,true,,677,677
+north-carolina-state-university,North Carolina State University,academic,false,,675,675
+appear-tv,Appear TV,company,true,,657,657
+spectralink,Spectralink,company,true,,644,644
+london-internet-exchange,London Internet Exchange,nonprofit,false,,632,632
+digitalocean,DigitalOcean,company,true,,629,629
+karlstad-universitet,Karlstad University,academic,false,,626,626
+centrum-wiskunde-and-informatica,Centrum Wiskunde & Informatica,academic,false,,624,624
+kismet,Kismet,project,false,,620,620
+quanta-computer,Quanta Computer,company,true,,616,616
+tu-dortmund-university,TU Dortmund University,academic,false,,608,608
+gwdg,GWDG,academic,false,,606,606
+trinity-college-dublin,Trinity College Dublin,academic,false,,592,592
+pathscale,PathScale,company,true,,558,558
+nortel,Nortel,company,true,,546,546
+viveris-technologies,Viveris Technologies,consultancy,true,,530,530
+huazhong-university-of-science-and-technology,Huazhong University of Science and Technology,academic,false,,528,528
+nebula,Nebula,company,true,,513,513
+technical-university-of-munich,Technical University of Munich,academic,false,,505,505
+haltian,Haltian,company,true,,494,494
+us-navy,US Navy,government,false,,491,491
+free-university-of-berlin,Free University of Berlin,academic,false,,486,486
+criteo,Criteo,company,true,,484,484
+gigaio,GigaIO,company,true,,480,480
+hv-sistemas,HV Sistemas,company,true,,475,475
+verismo,Verismo,company,true,,446,446
+university-of-pittsburgh,University of Pittsburgh,academic,false,,442,442
+puresoftware,PureSoftware,consultancy,true,,438,438
+astra-linux-group,Astra Linux Group,company,true,,435,435
+peking-university,Peking University,academic,false,,432,432
+two-sigma,Two Sigma,company,true,,431,431
+comx-networks,ComX Networks,company,true,,430,430
+proxmox-server-solutions,Proxmox Server Solutions,company,true,,426,426
+htec-group,HTEC Group,consultancy,true,,426,426
+northwestern-university,Northwestern University,academic,false,,424,424
+movial,Movial,consultancy,true,,423,423
+newoldbits-consulting,NewOldBits Consulting,consultancy,true,,420,420
+garmin,Garmin,company,true,,410,410
+emutex,Emutex,consultancy,true,,384,384
+panasonic,Panasonic,company,true,,381,381
+imt-atlantique,IMT Atlantique,academic,false,,379,379
+virginia-tech,Virginia Tech,academic,false,,372,372
+desy,DESY,public-research,false,federal-ministry-of-education-and-research,370,370
+sapienza-university-of-rome,Sapienza University of Rome,academic,false,,370,370
+nomad-global-solutions,Nomad Global Solutions,company,true,,370,370
+ntt-comware,NTT Comware,company,true,,357,357
+indian-institute-of-technology-roorkee,Indian Institute of Technology Roorkee,academic,false,,356,356
+neterion,Neterion,company,true,,347,347
+epita,Epita,company,true,,338,338
+teenage-engineering,teenage engineering,company,true,,338,338
+nanjing-university,Nanjing University,academic,false,,331,331
+microgate-systems,MicroGate Systems,company,true,,320,320
+university-of-manchester,University of Manchester,academic,false,,318,318
+sant-anna-school-of-advanced-studies,Sant'Anna School of Advanced Studies,academic,false,,317,317
+diebold-nixdorf,Diebold Nixdorf,company,true,,311,311
+codelabs,codelabs,company,true,,309,309
+apache-software-foundation,Apache Software Foundation,foundation,false,,304,304
+foundries-io,Foundries.io,company,true,qualcomm,301,301
+sysgo,SYSGO,company,true,thales,300,300
+gsi-helmholtz-centre-for-heavy-ion-research,GSI Helmholtz Centre for Heavy Ion Research,government,false,federal-ministry-of-education-and-research,297,297
+embedded-labworks,Embedded Labworks,consultancy,true,,287,287
+nexedi,Nexedi,company,true,,285,285
+university-of-waterloo,University of Waterloo,academic,false,,279,279
+university-of-california-riverside,"University of California, Riverside",academic,false,university-of-california,278,278
+red54,Red54,company,true,,277,277
+lippert-embedded-computers-gmbh,LiPPERT Embedded Computers GmbH,company,true,,275,275
+cs2c,China Standard Software,company,true,,272,272
+rohde-and-schwarz,Rohde & Schwarz,company,true,,267,267
+cyberus-technology,Cyberus Technology,company,true,,254,254
+osnabruck-university,Osnabrück University,academic,false,,254,254
+concurrent-computer-corporation,Concurrent Computer Corporation,company,true,,252,252
+intra2net-ag,Intra2net,company,true,,249,249
+opensuse,openSUSE,project,false,suse,248,248
+ultimaker,UltiMaker,company,true,,241,241
+kynesim,Kynesim,consultancy,true,,233,233
+sigma-chemnitz,SIGMA Chemnitz,company,true,,229,229
+kde-e-v,KDE,foundation,false,,229,229
+digia,Digia,company,true,,220,220
+guntermann-and-drunck,Guntermann & Drunck,company,true,,216,216
+visteon,Visteon,company,true,,213,213
+jane-street,Jane Street,company,true,,211,211
+fudan-university,Fudan University,academic,false,,211,211
+raymarine,Raymarine,company,true,,210,210
+science-fiction-technologies,Science Fiction Technologies,company,true,,208,208
+frequentis,Frequentis,company,true,,205,205
+docker,Docker,company,true,,204,204
+georgia-institute-of-technology,Georgia Institute of Technology,academic,false,,199,199
+sandia-national-laboratories,Sandia National Laboratories,government,false,us-department-of-energy,197,197
+palo-alto-networks,Palo Alto Networks,company,true,,194,194
+novatel-wireless,Inseego,company,true,,192,192
+thales,Thales,company,true,,179,179
+at-and-t,AT&T,company,true,,176,176
+university-of-georgia,University of Georgia,academic,false,,176,176
+smile,Smile,consultancy,true,,171,171
+htc-america,HTC,company,true,,171,171
+spotify,Spotify,company,true,,167,167
+uhu-linux,UHU-Linux,company,true,,163,163
+syntacore,Syntacore,company,true,yadro,160,160
+shanghai-jiao-tong-university,Shanghai Jiao Tong University,academic,false,,160,160
+weaveworks,Weaveworks,company,true,,159,159
+raithlin,Raithlin,consultancy,true,,158,158
+university-of-california-berkeley,"University of California, Berkeley",academic,false,university-of-california,157,157
+boston-university,Boston University,academic,false,,155,155
+supercomputing-systems,Supercomputing Systems,consultancy,true,,154,154
+niif-institute,NIIF Institute,government,false,,152,152
+wiz,Wiz,company,true,google,149,149
+the-tor-project,The Tor Project,foundation,false,,145,145
+armis,Armis,company,true,,145,145
+heidelberg-university,Heidelberg University,academic,false,,144,144
+symas-corporation,Symas Corporation,company,true,,144,144
+twitter,X Corp.,company,true,,142,142
+iram,IRAM,government,false,,142,142
+seoul-national-university,Seoul National University,academic,false,,142,142
+terascala,Terascala,company,true,,141,141
+new-york-university,New York University,academic,false,,141,141
+edera,Edera,company,true,,140,140
+stanford-university,Stanford University,academic,false,,136,136
+elektrobit,Elektrobit,company,true,continental,136,136
+openmoko,OpenMoko,company,true,,130,130
+mendix,Mendix,company,true,siemens,127,127
+crunchy-data,Crunchy Data,company,true,snowflake,127,127
+ieee-computer-society,IEEE Computer Society,nonprofit,false,,127,127
+calsoft,Calsoft,consultancy,true,,124,124
+cray,Cray,company,true,hp,123,123
+technica-engineering,Technica Engineering,company,true,,122,122
+johnson-controls,Johnson Controls,company,true,,122,122
+delmic,DELMIC,company,true,,121,121
+van-mierlo-ingenieursbureau,Van Mierlo Ingenieursbureau,consultancy,true,,119,119
+viasat,Viasat,company,true,,117,117
+github,GitHub,company,true,microsoft,114,114
+codasip,Codasip,company,true,,112,112
+taudac,taudac,company,true,,112,112
+xpeng,XPeng,company,true,,111,111
+embecosm,Embecosm,consultancy,true,,109,109
+telecom-service,Telecom-Service,company,true,,108,108
+aurora-innovation,Aurora Innovation,company,true,,105,105
+softathome,SoftAtHome,company,true,,104,104
+rockwell,Rockwell Automation,company,true,,100,100
+beijing-zhiling-haina-technology,SmartX,company,true,,98,98
+seeed-studio,Seeed Studio,company,true,,96,96
+inmon,InMon,company,true,,95,95
+the-netbsd-foundation,The NetBSD Foundation,foundation,false,,92,92
+speed-logic,Three-Speed Logic,consultancy,true,,88,88
+frida,Frida,project,false,,88,88
+upv,Universitat Politècnica de València,academic,false,,87,87
+cybozu,Cybozu,company,true,,87,87
+simula-research-laboratory,Simula Research Laboratory,public-research,false,norwegian-ministry-of-education-and-research,86,86
+university-of-california-san-diego,"University of California, San Diego",academic,false,university-of-california,86,86
+alif-semiconductor,Alif Semiconductor,company,true,,84,84
+xfusion-digital-technologies,xFusion Digital Technologies,company,true,,82,82
+netease,NetEase,company,true,,81,81
+hyderabad,Techveda,consultancy,true,,81,81
+unitedstack,UnitedStack,company,true,,78,78
+total-knowledge,Total Knowledge,company,true,,78,78
+datacom,Datacom,company,true,,76,76
+wipro,Wipro,consultancy,true,,73,73
+masaryk-university,Masaryk University,academic,false,,72,72
+namesys,NameSys,company,true,,69,69
+ciena,Ciena,company,true,,68,68
+vivecode,Vivecode,company,true,,67,67
+aiven,Aiven,company,true,,67,67
+indian-institute-of-technology-kanpur,Indian Institute of Technology Kanpur,academic,false,,66,66
+dataart-solutions-inc-dba-devicehive,DataArt,consultancy,true,,66,66
+code-synthesis,Code Synthesis,company,true,,66,66
+paderborn-university,Paderborn University,academic,false,,65,65
+dave-s-r-l,Dave S.r.l.,company,true,,65,65
+harvey-mudd-college,Harvey Mudd College,academic,false,,65,65
+promwad,Promwad,consultancy,true,,64,64
+ipb-uk-ltd,ipb (uk) Ltd.,company,true,,63,63
+gnutls,GnuTLS,project,false,,63,63
+purdue-university,Purdue University,academic,false,,61,61
+ilande,ILande,consultancy,true,,61,61
+missing-link-electronics,Missing Link Electronics,company,true,,61,61
+umea-university,Umeå University,academic,false,,60,60
+university-of-electronic-science-and-technology-of-china,University of Electronic Science and Technology of China,academic,false,,60,60
+zadara-storage,Zadara Storage,company,true,,57,57
+university-college-london,University College London,academic,false,,57,57
+maynooth-university,Maynooth University,academic,false,,57,57
+vpop-net,vpop.net,company,true,,56,56
+openbsd,OpenBSD,project,false,,54,54
+university-of-california-irvine,"University of California, Irvine",academic,false,university-of-california,54,54
+university-of-tennessee-knoxville,"University of Tennessee, Knoxville",academic,false,,53,53
+pikron-s-r-o,PiKRON,company,true,,53,53
+memblaze,Memblaze,company,true,,52,52
+juliahub,JuliaHub,company,true,,52,52
+ajou-university,Ajou University,academic,false,,52,52
+fixstars-technologies,Fixstars,company,true,,51,51
+b-and-r-industrial-automation,B&R Industrial Automation,company,true,abb,51,51
+portland-state-university,Portland State University,academic,false,,50,50
+lexmark-international,Lexmark International,company,true,,50,50
+australian-national-university,Australian National University,academic,false,,49,49
+beijing-university-of-posts-and-telecommunications,Beijing University of Posts and Telecommunications,academic,false,,49,49
+xerox,Xerox,company,true,,49,49
+o-s-systems-softwares-ltda,O.S. Systems,consultancy,true,,48,48
+sangoma-technologies,Sangoma Technologies,company,true,,48,48
+university-of-toronto,University of Toronto,academic,false,,47,47
+bay,Bay,company,true,,47,47
+centaur-technology,Centaur Technology,company,true,via,45,45
+crans,Crans,nonprofit,false,,45,45
+bellsoft,BellSoft,company,true,,45,45
+cloudbear,CloudBEAR,company,true,,43,43
+nordic-semiconductor-asa,Nordic Semiconductor,company,true,,42,42
+diamond-light-source,Diamond Light Source,government,false,,42,42
+uipath,UiPath,company,true,,41,41
+unikie,Unikie,company,true,,38,38
+university-of-freiburg,University of Freiburg,academic,false,,38,38
+jd-com,JD.com,company,true,,38,38
+yunify-services,QingCloud,company,true,,36,36
+winhong,winhong,company,true,,36,36
+verisign-inc-ca,Verisign,company,true,,36,36
+information-sciences-institute,Information Sciences Institute,academic,false,university-of-southern-california,36,36
+university-of-southampton,University of Southampton,academic,false,,36,36
+university-of-tokyo,University of Tokyo,academic,false,,36,36
+kingsoft,Kingsoft,company,true,,35,35
+spidernet-services,SpiderNet Services,company,true,,35,35
+proofpoint,Proofpoint,company,true,,35,35
+johns-hopkins-university,Johns Hopkins University,academic,false,,35,35
+university-of-southern-california,University of Southern California,academic,false,,34,34
+university-of-edinburgh,University of Edinburgh,academic,false,,34,34
+unisys,Unisys,company,true,,34,34
+unicontrol-systemtechnik,Unicontrol Systemtechnik,company,true,,34,34
+roku,Roku,company,true,,33,33
+university-of-north-carolina-at-chapel-hill,University of North Carolina at Chapel Hill,academic,false,,33,33
+linux-org-tw,linux.org.tw,project,false,,31,31
+zilogic-systems,Zilogic Systems,consultancy,true,,31,31
+princeton-university,Princeton University,academic,false,,31,31
+universidade-federal-de-sao-carlos,Universidade Federal de São Carlos,academic,false,,31,31
+capgemini,Capgemini,consultancy,true,,30,30
+dius,DiUS,consultancy,true,,30,30
+semtech,Semtech,company,true,,29,29
+internet-archive,Internet Archive,nonprofit,false,,29,29
+tianjin-university,Tianjin University,academic,false,,28,28
+xiph-org-foundation,Xiph.Org Foundation,foundation,false,,27,27
+symantec,Symantec,company,true,broadcom,26,26
+viavi-solutions,Viavi Solutions,company,true,,26,26
+the-qt-company,The Qt Company,company,true,,24,24
+mathworks,MathWorks,company,true,,24,24
+chargestorm,ChargeStorm,company,true,,24,24
+engflow,EngFlow,company,true,,24,24
+telstra,Telstra,company,true,,23,23
+aconex,Aconex,company,true,oracle,23,23
+eero,Eero,company,true,amazon,23,23
+meituan-dianping,Meituan Dianping,company,true,,23,23
+eci-telecom,ECI Telecom,company,true,,22,22
+ksp,KSP,project,false,,22,22
+edesix-ltd,Edesix Ltd,company,true,motorola-solutions,21,21
+continental,Continental,company,true,,21,21
+stratoscale,Stratoscale,company,true,,21,21
+mixxx,Mixxx,foundation,false,,20,20
+savant-systems,Savant Systems,company,true,,20,20
+triplepoint,TriplePoint,company,true,,19,19
+f5-networks,F5 Networks,company,true,,19,19
+arduino,Arduino,company,true,,19,19
+rice-university,Rice University,academic,false,,19,19
+hong-kong-university-of-science-and-technology,Hong Kong University of Science and Technology,academic,false,,19,19
+stony-brook-university,Stony Brook University,academic,false,,19,19
+hound-technology-inc-dba-honeycomb,Honeycomb,company,true,,18,18
+university-of-texas-at-austin,University of Texas at Austin,academic,false,,18,18
+beihang-university,Beihang University,academic,false,,18,18
+offcode,Offcode,consultancy,true,,18,18
+escient,Escient,company,true,,18,18
+itochu,ITOCHU Techno-Solutions,consultancy,true,,18,18
+hermes-softlab,HERMES SoftLab,company,true,comtrade,17,17
+basler-vision-technologies,Basler,company,true,,17,17
+bachmann-electronic,Bachmann electronic,company,true,,17,17
+tintri,Tintri,company,true,ddn-storage,17,17
+cdi-cz,CDI.CZ,company,true,,17,17
+palosanto-solutions,PaloSanto Solutions,company,true,,16,16
+cnrs,CNRS,academic,false,,16,16
+pixar,Pixar,company,true,disney,16,16
+qnx-software-systems,QNX Software Systems,company,true,blackberry,16,16
+karlsruhe-institute-of-technology,Karlsruhe Institute of Technology,academic,false,,14,14
+realsense,RealSense,company,true,,14,14
+eaton,Eaton,company,true,,14,14
+oar-corporation,OAR Corporation,consultancy,true,,14,14
+sdg-systems,SDG Systems,company,true,,14,14
+sensetime,SenseTime,company,true,,14,14
+university-of-florida,University of Florida,academic,false,,14,14
+gandi-net,Gandi,company,true,,13,13
+infor,Infor,company,true,,13,13
+gnome-foundation,GNOME Foundation,foundation,false,,13,13
+imag,IMAG,academic,false,,13,13
+neo-technologies,NEO-Technologies,company,true,,13,13
+elastisys,Elastisys,company,true,,13,13
+chinanetcenter,ChinaNetCenter,company,true,,13,13
+preferred-networks,Preferred Networks,company,true,,13,13
+tampere-university,Tampere University,academic,false,,13,13
+polytechnic-university-of-catalonia,Polytechnic University of Catalonia,academic,false,,12,12
+lanedo,Lanedo,consultancy,true,,12,12
+willow-garage,Willow Garage,company,true,,12,12
+python-software-foundation,Python Software Foundation,foundation,false,,12,12
+lifl,LIFL,academic,false,university-of-lille,12,12
+norwegian-university-of-science-and-technology,Norwegian University of Science and Technology,academic,false,,12,12
+sun-yat-sen-university,Sun Yat-sen University,academic,false,,12,12
+indian-institute-of-technology-jodhpur,Indian Institute of Technology Jodhpur,academic,false,,11,11
+tttech-industrial-automation,TTTech Industrial Automation,company,true,,11,11
+wallix,WALLIX,company,true,,11,11
+linuxant,Linuxant,company,true,,11,11
+data61,Data61,government,false,csiro,11,11
+iowa-state-university,Iowa State University,academic,false,,11,11
+northeastern-university,Northeastern University,academic,false,,11,11
+temple-university,Temple University,academic,false,,11,11
+anthropic,Anthropic,company,true,,10,10
+warsaw-university-of-technology,Warsaw University of Technology,academic,false,,10,10
+milkymist,Milkymist,project,false,m-labs,10,10
+university-of-chinese-academy-of-sciences,University of Chinese Academy of Sciences,academic,false,,10,10
+octaforge,OctaForge,project,false,,10,10
+sernet,SerNet,consultancy,true,,10,10
+carnet,CARNet,government,false,,9,9
+cesar,CESAR,company,true,,9,9
+das-labor,Das Labor,nonprofit,false,,9,9
+ashoka-university,Ashoka University,academic,false,,9,9
+internet-initiative-japan,Internet Initiative Japan,company,true,,9,9
+louisiana-state-university,Louisiana State University,academic,false,,9,9
+mcgill-university,McGill University,academic,false,,9,9
+university-of-twente,University of Twente,academic,false,,8,8
+gna,Gna!,project,false,,8,8
+brontes-technologies,Brontes Technologies,company,true,,8,8
+wuhan-university-of-technology,Wuhan University of Technology,academic,false,,8,8
+laird,Ezurio,company,true,,8,8
+rt-rk,RT-RK,consultancy,true,,8,8
+japan-advanced-institute-of-science-and-technology,Japan Advanced Institute of Science and Technology,academic,false,,8,8
+spinetix,SpinetiX,company,true,,8,8
+accton,Accton,company,true,,7,7
+cloudbase-solutions,Cloudbase Solutions,company,true,,7,7
+odyssee-systemes,Odyssée Systèmes,company,true,,7,7
+humboldt-university-of-berlin,Humboldt University of Berlin,academic,false,,7,7
+sdl,SDL,project,false,,7,7
+university-of-alberta,University of Alberta,academic,false,,7,7
+university-of-massachusetts,University of Massachusetts,academic,false,,7,7
+nias-digital,Nias Digital,company,true,,7,7
+sagem-defense-securite,Sagem,company,true,,7,7
+volvo-cars,Volvo Cars,company,true,,6,6
+universite-de-sherbrooke,Université de Sherbrooke,academic,false,,6,6
+modio,Modio,company,true,,6,6
+national-institutes-of-health,National Institutes of Health,government,false,,6,6
+bluehost,Bluehost,company,true,,6,6
+max-planck-institute-for-astrophysics,Max Planck Institute for Astrophysics,academic,false,max-planck-society,6,6
+delphix,Delphix,company,true,perforce-software,6,6
+zendesk,Zendesk,company,true,,6,6
+cm4all,CM4all,company,true,ionos,6,6
+cornell-university,Cornell University,academic,false,,6,6
+haproxy-technologies,HAProxy Technologies,company,true,,5,5
+joyent,Joyent,company,true,samsung,5,5
+university-of-turin,University of Turin,academic,false,,5,5
+university-of-gottingen,University of Göttingen,academic,false,,5,5
+ixsystems,iXsystems,company,true,,5,5
+t-systems,T-Systems,company,true,deutsche-telekom,5,5
+ncode,nCode,company,true,,5,5
+forschungszentrum-julich,Forschungszentrum Jülich,public-research,false,federal-ministry-of-education-and-research,5,5
+centricular,Centricular,consultancy,true,,4,4
+chalmers-university-of-technology,Chalmers University of Technology,academic,false,,4,4
+irobot,iRobot,company,true,,4,4
+university-of-california-davis,"University of California, Davis",academic,false,university-of-california,4,4
+catalyst-it,Catalyst IT,consultancy,true,,4,4
+aalborg-university,Aalborg University,academic,false,,4,4
+one-com,One.com,company,true,,4,4
+national-university-of-singapore,National University of Singapore,academic,false,,4,4
+urbackup,UrBackup,project,false,,4,4
+vivint,Vivint,company,true,,4,4
+university-of-york,University of York,academic,false,,4,4
+university-of-california-los-angeles,"University of California, Los Angeles",academic,false,university-of-california,4,4
+national-taiwan-university,National Taiwan University,academic,false,,4,4
+amadeus,Amadeus,company,true,,4,4
+university-of-basel,University of Basel,academic,false,,3,3
+university-of-bergen,University of Bergen,academic,false,,3,3
+endocode,Endocode,consultancy,true,,3,3
+motorola-solutions,Motorola Solutions,company,true,,3,3
+runtime-verification,Runtime Verification,company,true,,3,3
+anchorfree,AnchorFree,company,true,,3,3
+inovex,inovex,consultancy,true,,3,3
+e-s-r-labs,E.S.R.Labs,company,true,accenture,3,3
+schlumberger-limited-nv,SLB,company,true,,3,3
+fds-team,FDS-Team,project,false,,3,3
+yahoo,Yahoo,company,true,,3,3
+mageia,Mageia,foundation,false,,3,3
+universidad-rey-juan-carlos,Universidad Rey Juan Carlos,academic,false,,3,3
+university-of-iceland,University of Iceland,academic,false,,3,3
+stackit,STACKIT,company,true,,3,3
+lunarg,LunarG,company,true,,3,3
+university-of-munster,University of Münster,academic,false,,3,3
+proton-ag,Proton AG,company,true,,3,3
+wuhan-university,Wuhan University,academic,false,,3,3
+tier-iv,TIER IV,company,true,,3,3
+wilcox-technologies,Wilcox Technologies,company,true,,2,2
+stackhpc,StackHPC,consultancy,true,,2,2
+national-university-of-defense-technology,National University of Defense Technology,academic,false,,2,2
+fermilab,Fermilab,public-research,false,us-department-of-energy,2,2
+avaya,Avaya,company,true,,2,2
+marcapo,Marcapo,company,true,,2,2
+seznam-cz,Seznam.cz,company,true,,2,2
+vernier-software-and-technology,Vernier Software and Technology,company,true,,2,2
+new-jersey-institute-of-technology,New Jersey Institute of Technology,academic,false,,2,2
+rensselaer-polytechnic-institute,Rensselaer Polytechnic Institute,academic,false,,2,2
+instituto-de-telecomunicacoes,Instituto de Telecomunicacoes,academic,false,,2,2
+storm-reply-roma,Reply,consultancy,true,,2,2
+ruijie-networks,Ruijie Networks,company,true,,2,2
+ecole-normale-superieure-de-lyon,École normale supérieure de Lyon,academic,false,,2,2
+rehivetech,RehiveTech,company,true,,2,2
+intellitree-solutions,IntelliTree Solutions,company,true,,2,2
+national-institute-of-advanced-industrial-science-and-technology,National Institute of Advanced Industrial Science and Technology,government,false,,2,2
+mozilla,Mozilla,company,true,,2,2
+alpine-linux,Alpine Linux,project,false,,2,2
+corelight,Corelight,company,true,,2,2
+brno-university-of-technology,Brno University of Technology,academic,false,,2,2
+ecole-normale-superieure,École normale supérieure,academic,false,,2,2
+mitre,MITRE,nonprofit,false,,2,2
+sip-express-router,SIP Express Router,project,false,,1,1
+netmonk-creative-media,NetMonk Creative Media,company,true,,1,1
+eviden,Eviden,company,true,atos,1,1
+zebra-technologies,Zebra Technologies,company,true,,1,1
+aalto-university,Aalto University,academic,false,,1,1
+kakao,Kakao,company,true,,1,1
+road,ROAD,company,true,,1,1
+clearcode,ClearCode,consultancy,true,,1,1
+grnet,GRNET,government,false,,1,1
+free-software-initiative-of-japan,Free Software Initiative of Japan,nonprofit,false,,1,1
+fzi,FZI,academic,false,,1,1
+iiit-delhi,IIIT Delhi,academic,false,,1,1
+barracuda-networks,Barracuda Networks,company,true,,1,1
+atos,Atos,consultancy,true,,1,1
+shanghai-qiniu-information-technology,Qiniu,company,true,,1,1
+astrosoft,Astrosoft,company,true,,1,1
+china-unicom,China Unicom,company,true,,1,1
+johannes-kepler-university-linz,Johannes Kepler University Linz,academic,false,,1,1
+asymptotic,Asymptotic,consultancy,true,,1,1
+brookhaven-national-laboratory,Brookhaven National Laboratory,public-research,false,us-department-of-energy,1,1
+dt-dream,DtDream,company,true,,1,1
+void-linux,Void Linux,project,false,,1,1
+ulm-university,Ulm University,academic,false,,1,1
+university-of-colorado-boulder,University of Colorado Boulder,academic,false,,1,1
+deere,Deere,company,true,,1,1
+ultimate-linux-solutions,Ultimate Linux Solutions,consultancy,true,,1,1
