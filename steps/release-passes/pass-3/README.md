@@ -1,9 +1,11 @@
 # Pass 3: the proof on every row and the drop of 8 columns
 
-Pass 3 makes the final root of TOM 1.0.0 from the root of pass 2 (8,449 project files, 61
-columns). It runs on one cloud machine (i4i.8xlarge). **It had not ended when these files were
-copied (2026-11-07).** Its final `SHA256SUMS` and the files of `../../../data/` come in a later
-commit.
+Pass 3 made the third root of TOM 1.0.0 from the root of pass 2 (8,449 project files, 61
+columns). It ran on 2026-11-07 on one cloud machine (i4i.8xlarge) and ended DONE. Its root:
+`SHA256SUMS` sha256 `820f6e8233d8...`; 8,449 project files with 53 columns, 115,391,496,638
+bytes and 30,408,388,202 token rows. Hugging Face revision `bc7543affd2e` (the DataCite
+version of the DOI). Pass 4 (`../pass-4-doi/`) changed only documents after it, so its project
+files are the files of TOM (`../../../data/SHA256SUMS`).
 
 ## What it does
 

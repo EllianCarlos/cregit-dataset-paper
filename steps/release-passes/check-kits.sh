@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# check-kits.sh: check the copies of the three release pass kits against the staged lists.
+# check-kits.sh: check the copies of the four release pass kits against the staged lists.
 #
 # Usage: steps/release-passes/check-kits.sh
-# - Each row of pass-N/SHA256SUMS (the staged list of the run) must have a row in KITS.tsv with
+# - Each row of PASS/SHA256SUMS (the staged list of the run) must have a row in KITS.tsv with
 #   the same sha256, and KITS.tsv must have no other row for that pass.
 # - Each copy of KITS.tsv must have its copy_sha256. A copy must have the staged sha256, except
 #   the rows whose note says which value was replaced.
-# - pass-N/SHA256SUMS must have the sha256 of the staged list (the row SHA256SUMS of KITS.tsv).
+# - PASS/SHA256SUMS must have the sha256 of the staged list (the row SHA256SUMS of KITS.tsv).
 # It needs no network and no data outside this repository.
 set -euo pipefail
 
@@ -14,8 +14,7 @@ here=$(cd "$(dirname "$0")" && pwd)
 top=$(cd "$here/../.." && pwd)
 kits=$here/KITS.tsv
 fail=0
-for n in 1 2 3; do
-  p=pass-$n
+for p in pass-1 pass-2 pass-3 pass-4-doi; do
   want=$(awk -F'\t' -v p="$p" '$1 == p && $2 != "SHA256SUMS" { print $3 "  " $2 }' "$kits" | sort)
   got=$(sort "$here/$p/SHA256SUMS")
   if [ "$want" = "$got" ]; then
