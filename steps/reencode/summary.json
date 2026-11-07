@@ -1,0 +1,49 @@
+{
+ "complete": true,
+ "cpu_s": 848486.5,
+ "failures": [],
+ "failures_total": 0,
+ "files": 10754,
+ "in_sha256_mismatch": 0,
+ "in_sha256_not_pinned_value": [],
+ "in_sha256_pinned": 10754,
+ "logged": 10754,
+ "max_peak_rss_bytes": 6494359552,
+ "max_total_s": 13592.82,
+ "missing": 0,
+ "missing_first": [],
+ "ok_in_bytes": 162466431130,
+ "ok_out_bytes": 137087040565,
+ "ok_rows": 32635174618,
+ "ratio": 0.8438,
+ "read_batch": {
+  "262144": 10753,
+  "32768": 1
+ },
+ "read_batch_not_default": [
+  "LibreOffice__core-dataset.parquet"
+ ],
+ "reencode_sha256": {
+  "06f2f1c00dfb69de0245c9455a0790ab1dd8d5957816270bf43c6a79e12a3a30": 10753,
+  "99b7596b280621a03e04fa94bc7edfc7f30b785470cf59a5730bb9014aebf253": 1
+ },
+ "run": {
+  "end_utc": "2026-11-06T16:41:50Z",
+  "jobs": 64,
+  "skipped": 10753,
+  "stopped": false,
+  "this_run": {
+   "OK": 1
+  },
+  "wall_s": 735
+ },
+ "settings_sha256": [
+  "e98a53aed2038837fae2cf20d9de407729517f9290faaa44ab33c3762c9fcfbb"
+ ],
+ "status": {
+  "OK": 10754
+ },
+ "versions": [
+  "{\"duckdb\": \"1.5.5\", \"pyarrow\": \"26.0.1\", \"python\": \"3.12.14\"}"
+ ]
+}
