@@ -482,7 +482,8 @@ accept both spellings.
 
 Status on 2026-10-28: steps 1-3 are done with database v4.9: the one write of 10,753 files,
 BRL-CAD__brlcad in a separate write with the same salt, and the release root
-`dataset-release-1` (10,780 files). `data/SHA256SUMS` has its 10,754 project rows. Still open:
+`dataset-release-1` (10,780 files). `data/SHA256SUMS` now has the 10,754 project rows of the
+published root of the re-encoded files (`steps/reencode/`). Still open:
 the final commit of the row pseudonymizer in `tools.lock`, the license notes of
 `THIRD-PARTY.md`, the Zenodo records and step 4.
 
@@ -500,7 +501,7 @@ take the `done-pathfix/` key in `inputs.tsv`. This repository has no record that
 | Each Parquet file is larger than 10,000 bytes, has rows, and has the 70-column contract. | `tools/ctp/validate.py` (writes `.validated`), `tools/ctp/validate_schema.py` | runs in the build |
 | Each fetched Parquet file has the sha256 of its `OK` file. | `pipeline/s7-run/fetch_done.sh` | runs after the build |
 | Each published file has the column contract of ctp schema 2 (71 columns: the 67 cregit columns of ca113e3, then the 4 organization columns), the footer keys of the release write, the registry of `pseudonymization.json` and the rows of `MANIFEST.tsv`. | `make validate DATA_DIR=<release root>` (`scripts/validate_schema2.py`) | works; proof on 2026-10-28 with small test files (`scripts/test_release_checks.py`, `make test`: one good root passes; a schema 1 file, a wrong row count, a wrong registry, a file with no registry, a file with no row in `MANIFEST.tsv` and a file that cannot be read fail) and on the published file of libexpat__libexpat (OK). The release build checked the same contract on all 10,754 files (`schema.txt` of the build reports: 71 columns, footer schema 2, v4.9, mapping `7b52a5155e6f`, 32,635,174,618 rows, 0 problems). |
-| Each published file has the sha256 of `data/SHA256SUMS`. | `make verify DATA_DIR=<release root>` | ready: `data/SHA256SUMS` has the 10,754 project rows of the release root `dataset-release-1` (its SHA256SUMS: `1293050b0c75...`). The run needs the downloaded files (162.5 GB). |
+| Each published file has the sha256 of `data/SHA256SUMS`. | `make verify DATA_DIR=<release root>` | ready: `data/SHA256SUMS` has the 10,754 project rows of the published release root (the re-encoded files, `steps/reencode/`; its SHA256SUMS: `d35e913a0121...`). The run needs the downloaded files (137.1 GB). |
 
 The 70-column contract of ca113e3 alone refuses every published file: the release write
 replaced the 3 firm columns (`firm_raw`, `firm`, `firm_source`) with the 4 organization

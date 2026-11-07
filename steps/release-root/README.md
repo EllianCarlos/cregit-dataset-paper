@@ -17,11 +17,9 @@ no salt and no personal domain table.
 | `rename-kv/make_input_sums.py` | `08244b8842ed` | Writes the `SHA256SUMS` of the renamed files from the rename log. |
 | `analysis/resolve_run_records.py`, `analysis/ledger_sha_match.py`, `analysis/diff_fields.py` | `cbad3d786683`, `0729387ee833`, `03142f8a8ac3` | Find the run record of the project files that had no clear record in the ledgers, by the sha256 of the run file (the run commits of `MANIFEST.tsv`). |
 | `measure/measure.py` | `b52306afa9d9` | Counts four findings of the tool review on the release files (counts only, no network). |
-| `test/`, `measure/test/` | | The tests (fake data). |
+| `fill-release/tools/fill_release.py` | `faf4daac5640` | Writes `MANIFEST.tsv` and `SHA256SUMS` of the root and runs its checks (schema, footer, organization tables, manifest, at sign, forbidden words, marker lines). The same file is `tools/fill_release.py` of the release root. |
+| `test/`, `measure/test/`, `fill-release/test/` | | The tests (fake data). |
 
-`tools/fill_release.py` of the release root (sha256 `faf4daac5640`) writes `MANIFEST.tsv` and
-`SHA256SUMS` and runs the checks of the root. It is not copied here: its header holds the
-names of the authors. Take it from the release root.
 
 ## The runs
 
@@ -31,6 +29,7 @@ names of the authors. Take it from the release root.
 | `rename-kv/*.py` | The rename of 2026-10-28, on the run host. | The run recorded no hash. `rename_kv_keys.py` changed on 2026-10-29, after the rename. |
 | `analysis/*.py` | The ledger review of 2026-10-28, on the run host. | The run recorded no hash. |
 | `measure/measure.py` | The measure of the tool review findings, 2026-10-28. | `cf6b45ade3ba`. The copy differs in one line: the default output folder is `MEASURE_OUT_BASE` (default `measure-out`) instead of a folder under the home directory. |
+| `fill-release/tools/fill_release.py` | All root builds since 2026-10-28, on the root build machine. | `faf4daac5640`, byte for byte (the staged lists of these builds). |
 | `build_organisations.py` | The organization tables (`../organizations/`). | |
 
 The kit of the published root build staged `release_tools.py`, the release documents, the
@@ -50,9 +49,9 @@ python3 -I release_tools.py pseudo-merge --a WRITE_A/pseudonymization.json --b W
   --a-files 10753 --b-projects PROJECT --want-a SHA_A --want-b SHA_B --out R/pseudonymization.json
 python3 -I release_tools.py schema --root R --fill-release R/tools/fill_release.py \
   --pseudonymization R/pseudonymization.json --mapping MAPPING_SHA256 --ov v4.9 --expect 10754 --out schema.tsv
-python3 -I R/tools/fill_release.py manifest --root R --layers layers.tsv --ledgers LEDGERS
-python3 -I R/tools/fill_release.py checksums --root R
-python3 -I R/tools/fill_release.py check --root R
+python3 -I fill-release/tools/fill_release.py manifest --root R --layers layers.tsv --ledgers LEDGERS
+python3 -I fill-release/tools/fill_release.py checksums --root R
+python3 -I fill-release/tools/fill_release.py check --root R
 python3 -I release_tools.py sums-compare --root R --a WRITE_A --b WRITE_B --input IN
 python3 -I release_tools.py guard --root R --names names.txt
 python3 -I release_tools.py no-at --root R
@@ -65,11 +64,10 @@ The docstring of `release_tools.py` gives every step and option.
 
 ```sh
 cd steps/release-root
-FILL_RELEASE=R/tools/fill_release.py COMPANIES_DB=companies.v4.9.duckdb \
-  python3 -I -m pytest -q -p no:cacheprovider test measure/test
+COMPANIES_DB=companies.v4.9.duckdb python3 -I -m pytest -q -p no:cacheprovider test measure/test fill-release/test
 ```
 
-`test/fake.py` reads `fill_release.py` and the organization database from these variables,
-and `build_v0.py` from `../organizations/study/s8-companies/` (`BUILD_V0_DIR` overrides it).
-On 2026-11-07 in the dev shell: 74 passed with both inputs; without them the tests of
-`release_tools.py` skip and the 16 tests of `measure.py` pass.
+`test/fake.py` reads the organization database from `COMPANIES_DB`, `fill_release.py` from
+`fill-release/tools/` (`FILL_RELEASE` overrides it) and `build_v0.py` from
+`../organizations/study/s8-companies/` (`BUILD_V0_DIR` overrides it). Without
+`COMPANIES_DB` the tests of `release_tools.py` skip.

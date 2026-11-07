@@ -21,7 +21,7 @@ import release_tools as RT  # noqa: E402
 import fake  # noqa: E402
 
 if not (fake.FILL_RELEASE.is_file() and fake.DB.is_file()):
-    pytest.skip("set FILL_RELEASE and COMPANIES_DB (see ../README.md)", allow_module_level=True)
+    pytest.skip("set COMPANIES_DB (see ../README.md)", allow_module_level=True)
 
 AT = chr(64)
 A_PROJECTS = [("alpha__one", 7, "v1"), ("confluentinc__schema-registry", 5, "x1k"), ("gamma__three", 3, "pf17"),

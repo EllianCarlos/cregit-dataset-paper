@@ -17,3 +17,4 @@ ec2-id	pipeline/s7-run/runner/dataset-x1k/java-split/test/t_l1.py	i-0[0abcd]{15,
 employer	pipeline/s0-pilot/candidates.csv	^(cncf-landscape|cohort),community,F1_pool:[a-z-]+,,2026-09-14,m[a-z]+js,(m[a-z]+|pandora),	project data: a GitHub organization and two repository names in the old pool
 ec2-id	steps/release-root/test/fake.py	i-0123[4-9]+abcdef0	a fake EC2 id of a test of the ledger cleaner (no real machine)
 ec2-id	steps/release-root/test/test_release_tools.py	i-0123[4-9]+abcdef0	a fake EC2 id of a test of the ledger cleaner (no real machine)
+user-name	steps/release-root/fill-release/tools/fill_release.py	^# Copyright \(c\) 2026 	the authors of the release tool, as in the release root; the review is single-anonymous (user decision, 2026-11-07)

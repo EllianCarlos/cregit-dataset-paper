@@ -1,0 +1,58 @@
+% Linux kernel validation of the organization column (needs booktabs; cites paper-snippet.bib).
+% Numbers from linux-validation-20261107/RESULTS.md.
+\paragraph{External check on the Linux kernel.}
+We compare the organization shares of the Linux kernel (pinned at v7.3-rc7) with the employer
+statistics that LWN.net publishes for each release~\cite{corbet2026dev73,corbet2025dev618} and
+with the cumulative 2007--2019 table of the Linux Foundation~\cite{stewart2020history}. These
+sources credit each commit to the employer of its author through gitdm, a map of address domains
+that the editors complete by hand~\cite{corbet2007who}. No public source splits the code alive in
+the tree by employer, so we match periods by the committer date of the blamed commit
+(Table~\ref{tab:linux-validation}). Over the employers that each source lists, the Spearman
+correlation is $\rho=0.84$ ($n=16$, permutation $p<0.001$) between our surviving commits and
+LWN's changesets for 7.3, $\rho=0.73$ ($n=17$, $p=0.001$) between our alive tokens and LWN's lines
+changed for 7.3, and $\rho=0.65$ ($n=17$, $p=0.005$) between our surviving commits and the Linux
+Foundation's commits for 2007--2019. The mean absolute differences over each source's top~10 are
+1.2, 2.2 and 0.9 percentage points. The share without an organization is close: 16.9\% of our
+7.3 tokens against 18.6\% of LWN's lines, where LWN counts its (Unknown), (None) and (Consultant)
+rows. The remaining gaps have known causes. First, lines changed count deletions, which leave no
+alive tokens. Second, AMD's generated register headers are 11.4\% of the alive code tokens. Third,
+the address rule: the project domain \texttt{kernel.org}, which the dataset maps to the Linux
+Foundation, carries 8.1\% of the 7.3 tokens. LWN credits these maintainers to their employers by
+hand, which likely explains our low shares for Google and Meta.
+
+% For a two-column layout, use table* or keep \footnotesize.
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\caption{Linux kernel: shares (\%) by organization in the dataset (ours) and in independent
+employer statistics. Ours counts the code tokens alive at v7.3-rc7, or the commits that still own
+an alive token, whose committer date falls in the source period. The sources count all
+changesets, lines changed or commits of the period. n.l.: not in the source's top~20.}
+\label{tab:linux-validation}
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+ & \multicolumn{1}{c}{All} & \multicolumn{4}{c}{7.3 cycle} & \multicolumn{2}{c}{2007--2019} \\
+\cmidrule(lr){2-2}\cmidrule(lr){3-6}\cmidrule(l){7-8}
+ & Ours & Ours & LWN & Ours & LWN & Ours & LF \\
+Organization & tokens & tokens & lines & commits & changesets & commits & commits \\
+\midrule
+AMD              & 16.3 & 29.4 & 22.3 & 5.7  & 6.3  & 2.6 & 2.3  \\
+Intel            & 7.0  & 3.3  & 4.4  & 5.4  & 6.3  & 9.0 & 10.0 \\
+Red Hat          & 3.8  & 1.4  & 3.8  & 2.4  & 4.5  & 6.9 & 8.9  \\
+Linux Foundation & 3.6  & 8.1  & n.l. & 12.6 & n.l. & 2.7 & 0.8  \\
+Qualcomm         & 3.0  & 6.4  & 6.1  & 3.6  & 5.9  & 1.5 & n.l. \\
+Realtek          & 2.5  & 2.2  & 1.6  & 0.9  & n.l. & 0.2 & n.l. \\
+Linaro           & 2.1  & 0.1  & n.l. & 0.3  & n.l. & 2.3 & 3.2  \\
+NVIDIA           & 1.6  & 1.3  & 1.7  & 2.1  & 2.1  & 0.8 & n.l. \\
+IBM              & 1.5  & 0.9  & 2.0  & 2.2  & 2.5  & 2.8 & 3.8  \\
+Broadcom         & 1.4  & 0.2  & n.l. & 0.3  & n.l. & 1.0 & 1.2  \\
+Google           & 1.3  & 2.0  & 5.6  & 3.8  & 6.1  & 1.6 & 2.8  \\
+Meta             & 0.7  & 0.1  & 2.7  & 0.4  & 2.8  & 0.4 & n.l. \\
+\midrule
+No organization  & 17.4 & 16.9 & 18.6 & 34.7 & 27.1 & 28.5 & 19.0 \\
+\midrule
+Spearman $\rho$ (listed) & & \multicolumn{2}{c}{0.73 ($n=17$)} & \multicolumn{2}{c}{0.84 ($n=16$)} & \multicolumn{2}{c}{0.65 ($n=17$)} \\
+\bottomrule
+\end{tabular}
+\end{table}

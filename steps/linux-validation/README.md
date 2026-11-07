@@ -18,13 +18,17 @@ are the files that ran, byte for byte: `extract_linux_orgs.py` `59cd87516902`, `
 `24f76f0eaa86`, `make_tables.py` `7c3ec54cbc86`. The uncompressed `linux_org_day.csv` has
 sha256 `94f2f8e08a246012ce394b163ed064bd7c7cd30b1569c8e09b163024ef5c49b9`.
 
-Another session was still working on this folder when these files were copied. The copy has
-the files that existed then. Not copied: the written results (`RESULTS.md`), the raw extract
-of the sources (`sources-raw.md`) and a draft paper snippet, because they name the author of
-the cited articles. `source_tables.csv` and `source_windows.csv` hold the numbers of the
-sources; the sources are the LWN.net articles "Development statistics for the 7.3 kernel",
-"Some 6.18 development statistics", "Development statistics for 6.12", the method article
-"Who wrote 2.6.20?", and the Linux Foundation kernel history report of 2020.
+The written results:
+
+| File | What it is |
+|---|---|
+| `RESULTS.md` | The method and the results: the file, the pinned commit, the windows, the tables and the reasons for the differences of level. |
+| `sources-raw.md` | The raw extract of the sources: each employer table as published, with its article, date and period. Developer tables were left out. |
+| `paper-snippet.tex`, `paper-snippet.bib` | A draft table and the references for the paper. |
+
+The sources are the LWN.net development statistics articles (7.3, 6.18, 6.12 and the method
+article "Who wrote 2.6.20?") and the Linux Foundation kernel history report of 2020;
+`RESULTS.md` and `paper-snippet.bib` give the full references.
 
 ## How to run
 

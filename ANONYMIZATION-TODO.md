@@ -28,7 +28,7 @@ So fix them in the source repository, commit there, and sync again.
 
 The table counts the open hits. These hits are not in the table:
 
-- Allowed (sync/anonymity-allow.tsv, checked by hand, not identifying): 22 lines.
+- Allowed (sync/anonymity-allow.tsv, checked by hand, not identifying): 23 lines.
 - Deferred (sync/anonymity-deferred.tsv): 28 lines. The section "Deferred" lists them.
 
 Kind census-name: identifiers and words that contain "census". The repository says

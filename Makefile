@@ -65,7 +65,7 @@ test:
 	@# status 5 of pytest (no test ran: all of a folder skipped) counts as a pass.
 	@h=$$(mktemp -d); trap 'rm -r "$$h"' EXIT; \
 	for t in steps/organizations/study/s8-companies:. steps/final-write:test steps/final-write/added-project:test \
-	         steps/release-root:"test measure/test"; do \
+	         steps/release-root:"test measure/test fill-release/test"; do \
 	  d=$${t%%:*}; echo "== $$d"; (cd $$d && HOME=$$h PYTHONDONTWRITEBYTECODE=1 "$$CREGIT_PYTHON" -I -m pytest -q -p no:cacheprovider $${t#*:}) || \
 	    [ $$? -eq 5 ]; \
 	done

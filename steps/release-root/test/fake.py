@@ -25,9 +25,9 @@ from pathlib import Path
 
 import duckdb
 
-# FILL_RELEASE: tools/fill_release.py of the release root. COMPANIES_DB: the organization database v4.9.
+# FILL_RELEASE: fill_release.py (default: the copy in ../fill-release/). COMPANIES_DB: the organization database v4.9.
 # BUILD_V0_DIR: the folder of build_v0.py (default: the copy of the organization step in this repository).
-FILL_RELEASE = Path(os.environ.get("FILL_RELEASE", "FILL_RELEASE-is-not-set"))
+FILL_RELEASE = Path(os.environ.get("FILL_RELEASE", Path(__file__).resolve().parents[1] / "fill-release/tools/fill_release.py"))
 BUILD_V0_DIR = Path(os.environ.get("BUILD_V0_DIR", Path(__file__).resolve().parents[2] / "organizations/study/s8-companies"))
 DB = Path(os.environ.get("COMPANIES_DB", "COMPANIES_DB-is-not-set"))
 MAPPING_FAKE = "7b" * 32
