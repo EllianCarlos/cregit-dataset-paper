@@ -1,23 +1,23 @@
-# How to reproduce the cregit token dataset v1
+# How to reproduce Token on Me (TOM) 1.0.0
 
 This file gives, for each stage, the inputs, the command, the expected output hash, the
 cost and the time. A value with the word "estimate" is an estimate. "UNKNOWN" means that
 no record was found. "copy" in a hash column means the sha256 of the copied file in this
 repository, because the stage did not record a value when it ran.
 
-The selection of dataset v1 (S1-S6) gave 3,548 projects: 3,497 from run layer 1 and its
-supplements, 50 from GitLab hosts (batch 25) and 1 GitLab near miss (batch 26).
-`pipeline/SELECTION-STAGES.md` gives the rules. The merge of the 5,000+ layer (section 5.1)
-gave 3,544 files, and BRL-CAD__brlcad came in a later separate write: the 5,000+ layer of the
-release has 3,545 files. 3 selected projects have no file.
+TOM 1.0.0 has 8,449 project files (ctp schema 3, 53 columns) and 30,408,388,202 token rows. It
+is on Hugging Face (`elliancarlos/token-on-me`). Three release passes made it from the source
+root (10,754 project files, ctp schema 2, 71 columns): section 5.7. Sections 1 to 5.6 give the
+selection, the build and the steps that made the source root. Their text keeps the names of the
+build runs.
 
-The release (user decision, 2026-10-23) is one dataset of 10,754 project files in two
-commit layers: the 5,000+ layer (5,000 or more commits: the v1 build, 3,544 files, and
-BRL-CAD, 1 file of a later separate write) and the 1,000-4,999 layer (1,000 to 4,999 commits:
-7,209 files). It has 32,635,174,618 token rows. The release files are 162,472,453,753 B
-(162.5 GB, ZSTD 19) in the release root `dataset-release-1`. The run output was 241.3 GB. Sections 1-4.5 give
-the build of the 5,000+ layer. Section 4.6 gives the runs of the 1,000-4,999 layer, section
-4.7 the path-fix rerun, and section 5 the merge, the links and the open steps.
+The source root has 10,754 project files and 32,635,174,618 token rows, from two builds: the
+projects with 5,000 or more commits (3,544 files of the selection S1-S6 and BRL-CAD__brlcad, 1
+file of a later separate write; 3 selected projects have no file) and the projects with 1,000 to
+4,999 commits (7,209 files). `pipeline/SELECTION-STAGES.md` gives the rules. The run output was
+241.3 GB. Sections 1-4.5 give the build of the projects with 5,000 or more commits, section 4.6
+the runs of the projects with 1,000 to 4,999 commits, section 4.7 the path-fix rerun, and
+section 5 the merge, the links, the root and the release passes.
 
 ## 1. The environment
 
@@ -487,12 +487,64 @@ published root of the re-encoded files (`steps/reencode/`). Still open:
 the final commit of the row pseudonymizer in `tools.lock`, the license notes of
 `THIRD-PARTY.md`, the Zenodo records and step 4.
 
+Status on 2026-11-07: the root of the re-encoded files is the source root of the release passes
+(section 5.7). The host is Hugging Face, not Zenodo records. `THIRD-PARTY.md` of the release
+gives each source and its terms.
+
 ### 5.6 Open question: the path-fix rows of the 5,000+ layer
 
 The input list of the v1 merge (`dataset-v1/inputs.tsv`, 2026-10-16) has no row with cregit
 14b8db4: it is older than the path-fix rerun. The path-fix runbook says that these 17 rows
 take the `done-pathfix/` key in `inputs.tsv`. This repository has no record that v1-raw or
 `dataset-v0-org/` has the path-fix files. The one write of step 5.5.2 must take them.
+
+### 5.7 The release passes of TOM 1.0.0 (2026-11-07)
+
+`steps/release-passes/` has the kit of each pass (the configuration, the driver, the tools, the
+staged `SHA256SUMS`) and a README for each pass. `steps/release-passes/KITS.tsv` gives the
+sha256 of each staged file and of its copy. `make stage-hashes` checks the copies.
+
+| Pass | Input | Change | Output | Run |
+|---|---|---|---|---|
+| 1 | the source root (`SHA256SUMS` `d35e913a0121...`) | the 8,447 projects of the tokei keep list; 10 columns dropped, `provenance_status` renamed to `audit_frame_file`, `ctp_schema_version` 3; `project_facts` | 8,447 files, 61 columns, 30,406,900,014 rows | 2026-11-07, one i4i.8xlarge machine, DONE; Hugging Face revision `4c592c54affb` |
+| 2 | the root of pass 1 | 2 Savannah projects added; 161 language fills, 149 license fills (183 files changed, 2 new); side tables `project_languages`, `project_labels` | 8,449 files, 61 columns, 30,408,388,202 rows | 2026-11-07, one m6id.2xlarge machine, DONE 17:04 UTC; Hugging Face revision `e3cda53fb51f` |
+| 3 | the root of pass 2 | a proof on every row, then 8 columns dropped; `roster_lang` to `project_facts` (fact type `roster_language`, 135 projects) | 8,449 files, 53 columns, 30,408,388,202 rows | started 2026-11-07, one i4i.8xlarge machine; **not ended when this section was written** |
+
+Each pass stops at the first failed check, before the uploads. The column tools are
+`parquet_rename.py` and `parquet_rename_check.py` of ctp (`467677c8` for pass 1, `e9c7656e` for
+passes 2 and 3): they copy the kept column chunks byte for byte, and they prove each output file
+against its input. The release tool `tools/fill_release.py` of the TOM root is
+`steps/release-passes/fill-release/tools/fill_release.py` (sha256 `b0f7a935dc9e`).
+
+Inputs:
+
+- The keep list: `steps/language-selection/tokei/projects.keep.txt` (8,447 lines, sha256
+  `d971a204c1a4`). The rule: the largest programming language at the pinned commit is C, C++,
+  Java or Rust, by tokei 14.0.0 code lines.
+- The 2 added projects: the tokei measure over the HTTPS host of Savannah
+  (`steps/language-selection/tokei/savannah-https-retry.jsonl`).
+- The fills and the side tables: `steps/release-passes/value-fixes/` (the scripts and the fill
+  tables) and `steps/release-passes/pass-2/inputs/fills.tsv` (310 fills).
+- The release documents of each stage. They are not here; the final documents are in the root.
+
+To run a pass again: put the files of the kit in one tools folder (the README of each pass lists
+them), put the values of the run into the configuration file (`BUCKET` is now the placeholder
+`BUCKET_NAME`), and start it with `TOM_LOCAL=1` and a local input root for a run with no upload.
+The kit scripts that launched and watched the machines are not here.
+
+Cost and time: not recorded in this repository. The kits estimated 3-6 h for pass 1, 40-90 min
+for pass 2 and 50-90 min for pass 3.
+
+The direct write: ctp branch `feat/schema-3-run` (`a9f0bed`) with the cregit fork branch
+`feat/schema-3` (`8d60a8f`) writes the 53 columns and `project_facts.parquet` in a normal run.
+`steps/release-passes/schema3-proof/` compares a rebuild of `libexpat__libexpat` and
+`emscripten-core__emscripten` with the output of the passes. libexpat agrees in every column (the
+pseudonym columns as a one-to-one map). emscripten agrees except in one source file (402,039 of
+11,299,416 rows have another last commit). `rebuild-one` (section 4.5) still runs the build tools
+of the source root and compares with the source root.
+
+Open, until pass 3 ends: the sha256 of its `SHA256SUMS`, the bytes of the root, and the rows of
+`data/SHA256SUMS` and `data/REBUILD-TARGETS.tsv` for the 8,449 files of TOM.
 
 ## 6. Validate
 
@@ -501,6 +553,7 @@ take the `done-pathfix/` key in `inputs.tsv`. This repository has no record that
 | Each Parquet file is larger than 10,000 bytes, has rows, and has the 70-column contract. | `tools/ctp/validate.py` (writes `.validated`), `tools/ctp/validate_schema.py` | runs in the build |
 | Each fetched Parquet file has the sha256 of its `OK` file. | `pipeline/s7-run/fetch_done.sh` | runs after the build |
 | Each published file has the column contract of ctp schema 2 (71 columns: the 67 cregit columns of ca113e3, then the 4 organization columns), the footer keys of the release write, the registry of `pseudonymization.json` and the rows of `MANIFEST.tsv`. | `make validate DATA_DIR=<release root>` (`scripts/validate_schema2.py`) | works; proof on 2026-10-28 with small test files (`scripts/test_release_checks.py`, `make test`: one good root passes; a schema 1 file, a wrong row count, a wrong registry, a file with no registry, a file with no row in `MANIFEST.tsv` and a file that cannot be read fail) and on the published file of libexpat__libexpat (OK). The release build checked the same contract on all 10,754 files (`schema.txt` of the build reports: 71 columns, footer schema 2, v4.9, mapping `7b52a5155e6f`, 32,635,174,618 rows, 0 problems). |
+| Each project file of TOM has ctp schema 3 (53 columns), the footer keys, and the rows of `MANIFEST.tsv`; the organization tables and the text rules. | `python3 -I tools/fill_release.py check --root <root>` (the tool in the root; the copy is `steps/release-passes/fill-release/tools/fill_release.py`) | the release passes ran it before each upload; `make test` runs its tests on fake data. `make validate` checks schema 2 only. |
 | Each published file has the sha256 of `data/SHA256SUMS`. | `make verify DATA_DIR=<release root>` | ready: `data/SHA256SUMS` has the 10,754 project rows of the published release root (the re-encoded files, `steps/reencode/`; its SHA256SUMS: `d35e913a0121...`). The run needs the downloaded files (137.1 GB). |
 
 The 70-column contract of ca113e3 alone refuses every published file: the release write
@@ -593,6 +646,13 @@ Found on 2026-10-14 (no longer UNKNOWN):
 - The packages of the ctp venv on EC2: `tools/ctp-venv/`.
 
 ## 8. Left for later
+
+- When pass 3 ends (section 5.7): the rows of `data/SHA256SUMS` and `data/REBUILD-TARGETS.tsv`
+  for the 8,449 project files of TOM, and a `make validate` for ctp schema 3.
+- Publish the commits of the release passes and of the direct write: ctp `467677c8`,
+  `e9c7656e` and `a9f0bed`, and the cregit fork `8d60a8f` (on no public remote when copied).
+- The queries that counted the numbers of the TOM documents are not here: they read the work
+  folders of the run host.
 
 - Add the rows of the other release files to `data/SHA256SUMS` from the SHA256SUMS of
   `dataset-release-2` (the project rows are there since 2026-10-28).

@@ -11,6 +11,70 @@ magnitude says so rather than guessing.
 
 ---
 
+## Token on Me (TOM) 1.0.0 (added 2026-11-07)
+
+The entries of this section are about the published files of TOM. The entries after it are
+about the build and the source root of the release passes (10,754 project files, 71 columns).
+Where they name a column that TOM does not have, they do not apply to the files of TOM.
+
+**TOM is a subset of the build, by a language rule at the pinned commit.** A project stays when
+its largest programming language at the pinned commit is C, C++, Java or Rust, by tokei 14.0.0
+code lines (`steps/language-selection/tokei/RESULTS.md`). TOM has 8,449 of the 10,754 project
+files of the source root. 10 inputs were not measured: 3 repositories are gone, and the pinned
+commits of 7 could not be fetched. A later fetch over the HTTPS host of Savannah measured 2 of
+the 7 (`git.savannah.gnu.org__denemo`, `git.savannah.gnu.org__gnubg`); pass 2 added them. The 5
+other inputs (GitHub answers 404) and the 3 gone repositories are not in TOM. Detect: the keep
+list `steps/language-selection/tokei/projects.keep.txt` and `project_languages` of the release.
+The rule uses code lines, but the selection of the build used code bytes by extension (the entry
+"the code-size rule of the selection counts bytes by extension" below).
+
+**161 `language` values and 149 `license` values of TOM are fills, not host values.** The host
+gave no language for 161 projects (all outside GitHub). Pass 2 put the tokei language there, after
+the Linguist name map (`language_tokei_linguist`); all 161 are C, C++ or Java. Pass 2 also put
+the licensee value at confidence 98 into 149 projects outside GitHub with `NOASSERTION` (several
+values are joined with `;`). Detect: `steps/release-passes/pass-2/inputs/fills.tsv`
+(one row for each fill, with its basis). The other projects with `NOASSERTION` keep it: the
+projects outside GitHub with no licensee value at confidence 98, and the GitHub projects (on the
+keep list, 376 GitHub projects with `NOASSERTION` have more than one root license file; they were
+not scanned).
+
+**TOM drops 18 columns of the source root.** Pass 1 dropped `size_kb`, `file_mask`,
+`manifest_category`, `fact` and the 6 `history_*` columns, and renamed `provenance_status` to
+`audit_frame_file`. Pass 3 dropped `person_name`, `person_email`, `footer_person_names`,
+`cregit_commit_sha`, `repo_tag`, `archived`, `fork` and `roster_lang`. Each drop was checked on
+the data before the drop: the dropped columns of pass 1 (except `fact`) held one known value in
+every row group;
+pass 3 proved its rules on every row of every file (`steps/release-passes/pass-3/README.md`).
+`fact` and `roster_lang` moved to the side table `project_facts` (fact type `roster_language`
+for `roster_lang`, 135 projects). The other dropped values can be computed from kept columns
+(`personid`, `author_email`, `footer_personids`, `original_commit_sha`) or were constant.
+
+**The error of the domain column is a measured share of tokens, with a wide interval.** The
+domain audit on TOM has 514 decided answers (437 right, 77 wrong). The error of
+`firm_based_on_domain` is 2.921% of the tokens of TOM (95% interval 1.465% to 4.904%). The share
+of tokens of company kinds, corrected, is 34.993% (95% interval 32.67% to 37.27%). The sample is
+systematic with a probability proportional to the run tokens, the estimator is the Hajek ratio,
+and the answered part of the random-order tail counts as a two-phase sample. 45 domains of the
+tail that are drawn with certainty have no decided answer; the estimate gives them the rate of
+the answered part of the tail. The audit found 14 wrong domain rows of the organization database
+(about 0.037% of the tokens of TOM). Version 1.0.0 does not correct them: the database stays as
+it was audited, and the error figure includes them. The audit gives no figure for a count of
+domains. `docs/ERROR.md` of the release gives the method. The answers are not public (they name
+domains). Version 1.1.0 (planned after 2026-11-10) adds companies to the organization database.
+
+**The direct write of the 53-column schema is proven on 2 projects only, and one file differs.**
+A rebuild of `emscripten-core__emscripten` with ctp `feat/schema-3-run` agrees with TOM in the
+columns, the rows and the footer keys. But `system/include/compat/arm_neon.h` (402,039 of
+11,299,416 rows, 3.56%) has another last commit on its rows. The cause is not known. All other
+rows agree. libexpat agrees in every column. Detect: `steps/release-passes/schema3-proof/`.
+
+**This repository does not have the checksums of the final root yet.** Pass 3 had not ended when
+the TOM files of this repository were written. `data/SHA256SUMS` and `data/REBUILD-TARGETS.tsv`
+hold the rows of the source root. `make verify` on the root of TOM fails until they are updated.
+`make validate` checks ctp schema 2; `tools/fill_release.py check` of the root checks schema 3.
+
+---
+
 **Pilot run only (stock srcML): one drawn project is excluded: `tencent__tencentkona-21`.** It was
 selected by the sampling procedure and it is not published. Two independent reasons,
 both measured:

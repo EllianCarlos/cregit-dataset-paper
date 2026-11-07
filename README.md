@@ -1,43 +1,72 @@
-# cregit token dataset, v1
+# Token on Me (TOM) 1.0.0: the replication package
 
-This repository holds the scripts, the input lists and the tool pins of the
-cregit token dataset, version 1. It supports a Data and Tool paper.
+This repository holds the scripts, the input lists and the tool pins of the dataset
+"Token on Me" (TOM), version 1.0.0. It supports a Data and Tool paper.
 Its goal is reproducibility: a reader can check each published file, and can
 build the dataset again for one project with the same tools.
 
 ## The dataset
 
-Dataset v1 has one row for each token of the source code of software projects.
-The selection (S1-S6) gave 3,548 projects (the keys of the final v1 sidecar). The
-build and the merge (S7) gave 3,544 files, and BRL-CAD came in a later separate
-write: the 5,000+ layer of the release has 3,545 files. 3 selected projects have
-no file. For each token, a row gives the author of the commit that last changed
-the token (the cregit token blame), and metadata of the commit and of the project.
+TOM has one row for each token of the source code of 8,449 software projects:
+30,408,388,202 token rows in 8,449 project files (Parquet, ctp schema 3, 53 columns). For each
+token, a row gives the author of the commit that last changed the token (the cregit token
+blame), metadata of the commit and of the project, and the organization columns. Identities
+are pseudonyms.
 
-The projects are active, licensed C, C++, Java and Rust projects with 5,000 or
-more commits at the snapshot commit. The sources are GitHub, GitLab hosts,
-foundation rosters, company organizations and published project lists.
-`pipeline/SELECTION-STAGES.md` gives the rules.
+The projects are active, licensed projects with 1,000 or more commits at the snapshot commit.
+The sources are GitHub, GitLab hosts, foundation rosters, company organizations and published
+project lists (`pipeline/SELECTION-STAGES.md`). A project stays in TOM when its largest
+programming language at the pinned commit is C, C++, Java or Rust, by tokei code lines
+(`steps/language-selection/tokei/`).
 
-The release adds a second commit layer (user decision, 2026-10-23). It is one dataset of
-10,754 project files: 3,545 files with 5,000 or more commits (the v1 build and BRL-CAD, a
-later separate write) and 7,209 files with 1,000 to 4,999 commits. It has 32,635,174,618
-token rows and 162,472,453,753 B (162.5 GB) of release files (ZSTD 19), in the release root
-`dataset-release-1` (10,780 files). `REPRODUCE.md` (sections 4.6 to 5) gives the runs, the merge and the links of
-the second layer.
+Host: Hugging Face, `elliancarlos/token-on-me` (public). The DOI is not made yet. The README of
+the release says that a copy of the organization database is also archived on Zenodo.
 
-## Release decisions (user, 2026-10-25)
+## How TOM was made
 
-- Host: Zenodo. About 4 records of 50 GB under one concept DOI, unless Zenodo gives a
-  larger quota (the answer is open). The record ids come here when they exist.
-- Reproducibility: the release has everything that a reproduction needs, also the web
-  captures (the fetched third-party pages), each with its URL, its fetch date and its
-  sha256. The pages are third-party content: `THIRD-PARTY.md` of the release gives a
-  license note for each source (not written yet).
+1. Selection (S1-S6) and build (S7): ctp ran cregit on each project and wrote one Parquet file
+   for each project.
+2. The steps after the build (`steps/`): the organization columns and the pseudonyms in one
+   write, the root build, the re-encode. The result is the source root of the release passes:
+   10,754 project files, ctp schema 2, 71 columns.
+3. Three release passes (`steps/release-passes/`):
+   - Pass 1 keeps the 8,447 projects of the tokei rule, drops 10 columns, renames
+     `provenance_status` to `audit_frame_file` (61 columns) and writes the side table
+     `project_facts`.
+   - Pass 2 adds 2 Savannah projects (8,449), fills 161 empty `language` cells (tokei) and 149
+     `license` cells (licensee at confidence 98, outside GitHub), and adds the side tables
+     `project_languages` and `project_labels`.
+   - Pass 3 proves a rule on every row, drops 8 more columns (53 columns) and moves
+     `roster_lang` to `project_facts`.
+4. ctp now writes the 53-column schema in a normal run, with no later pass (ctp branch
+   `feat/schema-3-run`, cregit fork branch `feat/schema-3`). A rebuild of 2 projects gives the
+   output of the passes (`steps/release-passes/schema3-proof/`, with one open difference).
+
+## The error of the organization columns
+
+The domain audit on TOM has 514 decided answers. The sample is systematic, with a probability
+proportional to the run tokens of each domain. The estimator is the Hajek ratio. The answered
+part of the random-order tail counts as a two-phase sample. Results (share of the tokens of TOM):
+
+- The error of `firm_based_on_domain`: 2.921% (95% interval 1.465% to 4.904%).
+- The share of tokens of company kinds, corrected: 34.993% (95% interval 32.67% to 37.27%).
+
+`docs/ERROR.md` of the release gives the method and all figures. The audit answers name domains,
+so they are not here.
+
+## Plan: version 1.1.0
+
+After the paper deadline (2026-11-10), a company pass adds companies to the organization
+database and writes the organization columns again. That pass makes version 1.1.0.
+
+## Release decisions (user)
+
+- Host: Hugging Face (2026-11-07), public from the start.
+- Third-party sources: `THIRD-PARTY.md` of the release gives each source and its license or
+  terms. The release and this repository do not publish copies of third-party web pages.
 - The commit SHAs (`tools.lock`, `sync/sources.tsv`) and the tool bundles are published.
 - Anonymous release: for the blind review, the user's own repositories go out as an
-  anonymous release (one anonymous export commit; the user pushes it). The Data and Tool
-  track itself is single-anonymous, but the user still wants the anonymous release.
+  anonymous release (one anonymous export commit; the user pushes it).
 
 The dataset build used three tools:
 
@@ -56,16 +85,19 @@ bundle that the dataset build ran.
 | Selection (S1-S6) | Find the candidate projects, measure them, filter them, label them. | `pipeline/s1-search` .. `pipeline/s6-labels` |
 | Build (S7) | Run ctp for each project in batches. One Parquet file for each project. | `pipeline/s7-run` |
 | Merge | Join the per-project files into the published files. | `pipeline/s7-run/prelim_merge.py` (preliminary) |
-| Validate | Check each file against its recorded sha256 and the column contract. | `make verify`, `pipeline/s7-run/fetch_done.sh` |
+| Steps after the build | The organization columns and the pseudonyms, the root, the re-encode. | `steps/` |
+| Release passes | The subset of the tokei rule, the column changes, the fills, the side tables, the uploads. | `steps/release-passes/` |
+| Validate | Check each file against its recorded sha256 and the column contract. | `make verify`, `tools/fill_release.py check`, `pipeline/s7-run/fetch_done.sh` |
 
 `REPRODUCE.md` gives, for each stage, the inputs, the command, the expected
 output hash, the cost and the time.
 
 ## Two short paths for reviewers
 
-1. `make verify DATA_DIR=<release root>` checks the sha256 of each published
-   project file against `data/SHA256SUMS`. `make validate DATA_DIR=<release root>`
-   checks the 71 columns of ctp schema 2 and the footer of each file.
+1. `make verify DATA_DIR=<root>` checks the sha256 of each project file against
+   `data/SHA256SUMS`. `python3 -I tools/fill_release.py check --root <root>` (the tool in the
+   root of TOM) checks the 53 columns, the footer keys and the tables of each file.
+   `make validate DATA_DIR=<root>` checks ctp schema 2 (the source root of the passes).
 2. `make rebuild-one PROJECT=<owner__repo>` builds the dataset again for one
    project with the pinned tools. The published files have pseudonyms made with
    a salt that is deleted by design, so no rebuild gives their bytes. The target
@@ -74,21 +106,23 @@ output hash, the cost and the time.
    file is equal to that file in every column that the pseudonyms do not change
    (`REPRODUCE.md`, section 6.1).
 
+`data/SHA256SUMS` and `data/REBUILD-TARGETS.tsv` still hold the rows of the source root
+(10,754 project files). The rows of the final root of TOM come when pass 3 ends.
+
 Both targets need the Nix dev shell: `nix develop`. Then run `make help`.
 `make flake-check` proves that the shell has the tool store paths of the dataset build.
 
 ## Status of this version
 
-This is the first version of the repository. Some parts are not ready. Each
-target that is not ready prints `not ready: <reason>` and exits with a
-non-zero status. `REPRODUCE.md` lists what is left.
+Some parts are not ready. Each target that is not ready prints `not ready: <reason>` and exits
+with a non-zero status. `REPRODUCE.md` lists what is left.
 
 ## Layout
 
 | Path | Contents |
 |---|---|
 | `pipeline/` | Copies of the paper scripts and their inputs. Do not edit them here. |
-| `steps/` | The steps after the build that made the published files (the organization columns, the final write, the release root, the re-encode), and the evidence behind the error, language and Linux numbers. One folder for each step, each with a README (`steps/README.md`). |
+| `steps/` | The steps after the build that made the published files (the organization columns, the final write, the root build, the re-encode, the three release passes of TOM), and the evidence behind the error, language and Linux numbers. One folder for each step, each with a README (`steps/README.md`). |
 | `tools/ctp/`, `tools/cregit/` | Copies of some files of the pinned ctp and cregit commits (the column contract, the validation, the Nix files of srcML). |
 | `tools/ctp-venv/` | The package lists of the ctp Python environment on each machine type. |
 | `tools/jars/` | The jar content check (`jar_content_sha256.py`). The flake pins the jars by sha256. |
@@ -97,7 +131,7 @@ non-zero status. `REPRODUCE.md` lists what is left.
 | `flake.nix`, `flake.lock` | The pinned environment (Nix). |
 | `Makefile` | The reviewer and stage targets. |
 | `scripts/` | The helper scripts of the Makefile. |
-| `data/SHA256SUMS` | The sha256 of each published project file (10,754 rows of the release root). |
+| `data/SHA256SUMS` | The sha256 of each project file of the source root of the release passes (10,754 rows). The rows of the final root of TOM come when pass 3 ends. |
 | `data/REBUILD-TARGETS.tsv` | For each project file: the run record and the three target sha256 values of `rebuild-one`. |
 | `ANONYMIZATION-TODO.md` | Identifying text to remove before the anonymous mirror. |
 

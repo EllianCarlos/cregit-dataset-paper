@@ -100,3 +100,36 @@ the documents, so the checks of the project files stay valid.
 - C2: decided 2026-10-25 (publish the web captures); the licence note of each source is open.
 - C3: decided 2026-10-25 (publish the SHAs and the bundles).
 - C4: decided 2026-10-25 (an anonymous export commit; the user pushes it).
+
+## Status of the release: Token on Me (TOM) 1.0.0 (2026-11-07)
+
+The release is now the dataset "Token on Me" (TOM), version 1.0.0: 8,449 project files, ctp
+schema 3, 53 columns, 30,408,388,202 token rows. Three release passes made it from the root of
+the re-encoded files (`steps/release-passes/`, REPRODUCE.md section 5.7).
+
+User decisions of 2026-11-07:
+
+- Selection: a project stays when its largest programming language at the pinned commit is C,
+  C++, Java or Rust, by tokei code lines. The keep list has 8,447 projects; 2 Savannah projects
+  came back after a fetch over HTTPS.
+- Host: Hugging Face (`elliancarlos/token-on-me`), public from the start. This replaces the
+  Zenodo records of the earlier hosting decision.
+- Columns: 18 columns of the source root are dropped (10 in pass 1, 8 in pass 3), one is
+  renamed, `fact` and `roster_lang` move to the side table `project_facts`. Pass 2 fills 161
+  `language` values (tokei) and 149 `license` values (licensee at confidence 98, outside GitHub).
+- The domain audit gives the published error (514 decided answers): 2.921% of the tokens of TOM
+  (95% interval 1.465% to 4.904%); company share 34.993% (32.67% to 37.27%). The 14 wrong domain
+  rows that the audit found stay in 1.0.0 and are documented.
+- Version 1.1.0: a company pass after the paper deadline (2026-11-10).
+
+State:
+
+| Item | State |
+|---|---|
+| Pass 1 | Done. Hugging Face revision `4c592c54affb`. |
+| Pass 2 | Done (17:04 UTC). Hugging Face revision `e3cda53fb51f`. |
+| Pass 3 | Runs now. Its final root is not ready. |
+| ctp direct write of schema 3 | ctp `feat/schema-3-run` `a9f0bed`, cregit fork `feat/schema-3` `8d60a8f`. Proof on 2 projects: libexpat agrees; emscripten differs in one source file (LIMITATIONS.md). Not pushed. |
+| `data/SHA256SUMS`, `data/REBUILD-TARGETS.tsv` | Open: they need the final `SHA256SUMS` of pass 3. |
+| `make validate` for schema 3 | Open: `tools/fill_release.py check` of the root checks schema 3 now. |
+| DOI, the anonymous export, the independent check | Open. |
