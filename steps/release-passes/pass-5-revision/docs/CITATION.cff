@@ -1,0 +1,58 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+type: dataset
+title: "Token on Me (TOM)"
+version: "1.0.0"
+date-released: "2026-11-07"
+doi: "10.57967/hf/11505"
+url: "https://huggingface.co/datasets/elliancarlos/token-on-me"
+repository: "https://huggingface.co/datasets/elliancarlos/token-on-me"
+license: CC-BY-4.0
+authors:
+  - family-names: "Costa"
+    given-names: "Ellian Carlos"
+    affiliation: "Instituto de Matemática, Estatística e Ciência da Computação (IME-USP), Universidade de São Paulo"
+    orcid: "https://orcid.org/0009-0004-9135-8207"
+  - family-names: "Pilone Maia da Silva"
+    given-names: "Arthur"
+    affiliation: "Instituto de Matemática, Estatística e Ciência da Computação (IME-USP), Universidade de São Paulo"
+    orcid: "https://orcid.org/0009-0004-3899-4087"
+  - family-names: "Tadokoro"
+    given-names: "David"
+    affiliation: "Instituto de Matemática, Estatística e Ciência da Computação (IME-USP), Universidade de São Paulo"
+    orcid: "https://orcid.org/0009-0000-4639-1578"
+  - family-names: "Meirelles"
+    given-names: "Paulo"
+    affiliation: "Instituto de Matemática, Estatística e Ciência da Computação (IME-USP), Universidade de São Paulo"
+    orcid: "https://orcid.org/0000-0002-8923-2814"
+abstract: >-
+  Token on Me (TOM) gives the token-level authorship of the code of [[tom: projects]]
+  free and open-source projects with 1,000 commits or more whose largest
+  programming language is C, C++, Java or Rust ([[tom: rows]] token rows). cregit
+  makes the attribution with git blame at the token level. The identities are
+  pseudonymized. Organization columns give the organization of the address of
+  each author and of the account of each project, and the organization tables
+  are part of the dataset.
+keywords:
+  - mining software repositories
+  - authorship
+  - cregit
+  - open source
+  - organizations
+references:
+  - type: data
+    title: "Enterprise-Driven Open Source Software"
+    doi: "10.5281/zenodo.3742962"
+    license: CC-BY-4.0
+    authors:
+      - family-names: Spinellis
+        given-names: Diomidis
+      - family-names: Kotti
+        given-names: Zoe
+      - family-names: Kravvaritis
+        given-names: Konstantinos
+      - family-names: Theodorou
+        given-names: Georgios
+      - family-names: Louridas
+        given-names: Panos
+    year: 2020

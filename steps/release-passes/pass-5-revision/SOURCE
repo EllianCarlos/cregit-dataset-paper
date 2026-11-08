@@ -1,0 +1,4 @@
+kit dataset-tom-5 2026-11-08T21:51:11Z: tools 460498626575;
+ctp value tool e9c7656e59c1; license pass 0f9b8ad; TOM-4 SHA256SUMS b7141d088461;
+inputs: 149 new projects, audit flag present;
+docs 13 files, 27 placeholder keys, DOI 10.57967/hf/11505, date 2026-11-07

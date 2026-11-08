@@ -11,7 +11,7 @@ run used it, how to run it, and what is not here.
 | `final-write/` | The one write of each project file: the organization columns and the pseudonyms. | yes |
 | `release-root/` | The release root: the project files, the organization tables, the documents, `MANIFEST.tsv`, `SHA256SUMS` and `ledgers.parquet`. | yes |
 | `reencode/` | The record of the re-encode of the project files with pyarrow (the bytes change, the data does not). | yes |
-| `release-passes/` | The four release passes of TOM 1.0.0: the subset of the tokei rule, the column changes (71 -> 61 -> 53 columns), the value fills, the side tables, the DOI pass, the uploads to Hugging Face. Also `tools/fill_release.py` of the TOM root, the value-fix scripts and the proof of the direct 53-column write. | yes |
+| `release-passes/` | The four release passes of TOM 1.0.0 and the staged kit of the revision (pass 5): the subset of the tokei rule, the column changes (71 -> 61 -> 53 columns), the value fills, the side tables, the DOI pass, the uploads to Hugging Face. Also `tools/fill_release.py` of the TOM root, the value-fix scripts and the proof of the direct 53-column write. | yes |
 | `selection-funnel/` | The selection funnel of the revision of TOM 1.0.0: the tokei rule, GitLab in the pool, the copy check, the 149 new projects. | yes (the project list) |
 | `new-projects/` | The run of the 149 new projects of the revision with the tool chain of TOM (the kit, the gate, the defects of the kit found in the run). | yes (the new project files) |
 | `license-pass/` | The license scan of the revision (ScanCode and fixed rules), the column values, the side table `project_licenses` and the hand check of 100 new values. | yes (the `license` values) |

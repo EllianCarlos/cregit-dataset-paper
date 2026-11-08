@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# check-kits.sh: check the copies of the four release pass kits against the staged lists.
+# check-kits.sh: check the copies of the release pass kits against the staged lists.
 #
 # Usage: steps/release-passes/check-kits.sh
 # - Each row of PASS/SHA256SUMS (the staged list of the run) must have a row in KITS.tsv with
@@ -14,7 +14,7 @@ here=$(cd "$(dirname "$0")" && pwd)
 top=$(cd "$here/../.." && pwd)
 kits=$here/KITS.tsv
 fail=0
-for p in pass-1 pass-2 pass-3 pass-4-doi; do
+for p in pass-1 pass-2 pass-3 pass-4-doi pass-5-revision; do
   want=$(awk -F'\t' -v p="$p" '$1 == p && $2 != "SHA256SUMS" { print $3 "  " $2 }' "$kits" | sort)
   got=$(sort "$here/$p/SHA256SUMS")
   if [ "$want" = "$got" ]; then
