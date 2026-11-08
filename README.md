@@ -142,6 +142,7 @@ with a non-zero status. `REPRODUCE.md` lists what is left.
 | `scripts/` | The helper scripts of the Makefile. |
 | `data/SHA256SUMS` | The sha256 of each file of the final root of TOM (8,475 rows: 8,449 project files and the other files). |
 | `data/REBUILD-TARGETS.tsv` | For each project file of TOM: the run record, the target sha256 values of `rebuild-one` and the sha256 in the source root. |
+| `HUMAN-CHECKS.md` | For each step: what is automatic or AI-proposed, what a human checked, and the measured result. |
 | `ANONYMIZATION-TODO.md` | Identifying text to remove before the anonymous mirror. |
 
 ## How `pipeline/` and `tools/` are made
