@@ -583,7 +583,7 @@ separate run made its file after the final write (user decision 2026-10-26).
   v1 sidecar, as for every other file of the layer. Thus `clone_url` is
   `https://github.com/BRL-CAD/brlcad.git`, but the run fetched from `git.brlcad.org`. The
   ledger of the run records the URL that the run used.
-* **Organization columns and pseudonyms.** The file has the same database (v4.9) and the
+* **Organization columns and pseudonyms.** The file has the same database (organization database 1.0.0, build tag v4.9) and the
   same salt as the other 10,753 files, so a person has the same pseudonym in all files. The
   footer of this file names registry B: the registry of the final write plus the identities
   of this file. The other files name the registry of the final write. Each pseudonym has

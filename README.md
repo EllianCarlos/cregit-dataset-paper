@@ -25,9 +25,10 @@ revision `bc7543affd2e`, which has the same project files. The release has 12 do
 limitations and the provenance are now in the paper and in this repository (`LIMITATIONS.md`,
 `REPRODUCE.md`): the release no longer has `docs/LIMITATIONS.md`, `docs/PROVENANCE.md` and
 `docs/RELEASE-NOTES.md`. The organization
-database ships in the same dataset, in the folder `organizations/`: https://huggingface.co/datasets/elliancarlos/token-on-me.
-The README of the release says that a copy of the organization database is also archived on
-Zenodo.
+database 1.0.0 ships in the same dataset, in the folder `organizations/`: https://huggingface.co/datasets/elliancarlos/token-on-me.
+It is also published on Zenodo: cite the concept DOI 10.5281/zenodo.23744044 (version DOI
+10.5281/zenodo.23744045). Its build tag is `v4.9`; the footer key `organizations_version` keeps
+`v4.9`.
 
 ## How TOM was made
 

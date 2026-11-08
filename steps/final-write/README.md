@@ -2,7 +2,7 @@
 
 The final write made each published project file in one pass: it added the 4 organization
 columns (ctp schema 2) and replaced the identity values by pseudonyms. Inputs: the merged
-project files of the build and the final organization database (v4.9). The pseudonymizer is
+project files of the build and the organization database 1.0.0 (build tag `v4.9`). The pseudonymizer is
 `pseudonymize.py` of ctp (pull request #10, the pseudonymizer rows of `tools.lock`; the run
 ended with commit `a4b511b`). It stays in ctp and is not copied here.
 

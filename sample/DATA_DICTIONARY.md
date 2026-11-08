@@ -164,7 +164,7 @@ Each project file has five key-value entries in its Parquet footer, in this orde
 | Key | Value in the sample |
 |---|---|
 | `ctp_schema_version` | `2` |
-| `organizations_version` | `v4.9` (the version of the organization database that gave the ids) |
+| `organizations_version` | `v4.9` (the build tag of the organization database 1.0.0 that gave the ids) |
 | `organizations_mapping_sha256` | `7b52a5155e6f9af60541d5cdfaf6ef6566679a1281497ab274decadb50debe62` (the sha256 of the mapping from domains and namespaces to ids; equal to `mapping_sha256` in `release_info`) |
 | `pseudonymization_version` | `2` (the pseudonym scheme) |
 | `pseudonymization_registry_sha256` | `ca284a4e1b9f...` (the sha256 of the private registry that the write checked the pseudonyms against; the file of `BRL-CAD__brlcad`, not in the sample, has another value) |

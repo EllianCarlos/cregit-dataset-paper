@@ -483,7 +483,7 @@ release root `dataset-release-1` was written before that decision. It has the fo
 `organisations_mapping_sha256`. `scripts/validate_schema2.py` and `build_organizations.py views`
 accept both spellings.
 
-Status on 2026-10-28: steps 1-3 are done with database v4.9: the one write of 10,753 files,
+Status on 2026-10-28: steps 1-3 are done with the organization database 1.0.0 (build tag v4.9): the one write of 10,753 files,
 BRL-CAD__brlcad in a separate write with the same salt, and the release root
 `dataset-release-1` (10,780 files). `data/SHA256SUMS` now has the 10,754 project rows of the
 published root of the re-encoded files (`steps/reencode/`). Still open:

@@ -7,7 +7,7 @@ run used it, how to run it, and what is not here.
 
 | Folder | What it does | Changes the published files |
 |---|---|---|
-| `organizations/` | The organization database (v4.9), the domain and namespace links, the column write, the organization tables of the release, and the error model. | yes |
+| `organizations/` | The organization database 1.0.0 (build tag `v4.9`), the domain and namespace links, the column write, the organization tables of the release, and the error model. | yes |
 | `final-write/` | The one write of each project file: the organization columns and the pseudonyms. | yes |
 | `release-root/` | The release root: the project files, the organization tables, the documents, `MANIFEST.tsv`, `SHA256SUMS` and `ledgers.parquet`. | yes |
 | `reencode/` | The record of the re-encode of the project files with pyarrow (the bytes change, the data does not). | yes |

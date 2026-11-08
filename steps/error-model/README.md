@@ -1,7 +1,7 @@
 # The error model and the column audit
 
 `docs/ERROR.md` of the release gives the error of the organization columns. Its numbers come
-from the final error model with the column audit (2026-10-28, database v4.9, the final links
+from the final error model with the column audit (2026-10-28, organization database 1.0.0 with build tag v4.9, the final links
 of all project files). This folder holds the result tables of that run. The scripts are in
 `../organizations/study/s8-companies/` (study commit `561edc9fdc32`).
 

@@ -2,7 +2,10 @@
 
 This step gives each token row its organization columns (`firm_based_on_namespace`,
 `firm_based_on_domain`, `project_enterprise_driven`, `project_enterprise_basis`) and gives
-the release its organization tables and its error numbers. The files are in
+the release its organization tables and its error numbers. The database is the organization
+database 1.0.0 (build tag `v4.9`; the footer key `organizations_version` keeps `v4.9`). It ships in the
+folder `organizations/` of TOM, and it is also published on Zenodo: concept DOI
+`10.5281/zenodo.23744044` (cite this one), version DOI `10.5281/zenodo.23744045`. The files are in
 `study/s8-companies/` (the folder `s8-companies` of the study repository) and
 `study/s7-run/final_merge.py` (a module that `run_v0.py` imports). They are copies at study
 commit `561edc9fdc32` (`sync/sources.tsv`, source id `study-s8`). Do not edit them here.
@@ -28,7 +31,7 @@ column audit. The tests import them.
 
 | Part | Run | Version that ran |
 |---|---|---|
-| Database v4.9 | One build on 2026-10-25, 12 minutes before study commit `c63013a`, which has the same files as `561edc9`. Database sha256 `000831924310`. | The run recorded no hash of the scripts. |
+| Database 1.0.0 (build tag `v4.9`) | One build on 2026-10-25, 12 minutes before study commit `c63013a`, which has the same files as `561edc9`. Database sha256 `000831924310`. | The run recorded no hash of the scripts. |
 | Domains, links, column write | The final write (`../final-write/`). Its staged tool list (`SHA256SUMS` sha256 `ec7bf7277f0a`) gives `build_v0.py` `540c2d67fd2a`, `run_v0.py` `107219e5e288`, `build_links.py` `0ba2cb695dee`, `extract_domains_v1.py` `f5166a3a42fa`, `final_merge.py` `acede0d85493`. | These files, byte for byte, except the one replaced line of `build_links.py` (below). |
 | Release tables | The first build of the release root, with the final error model. Its staged list gives `build_organisations.py` `fb964892318f`. The later root builds took these tables from their input and only renamed them (`../release-root/`). | This file, byte for byte. |
 | Error model and column audit | The final model of 2026-10-28 (`../error-model/`). | The run recorded no hash. The model ran on the working copy 15 minutes before study commit `79543bc`; `561edc9` has the same files. |
