@@ -1,0 +1,2604 @@
+[
+ {
+  "project": "mendersoftware__mender",
+  "commit": "5ec7acd7654b33f58ac4c8d33bd7b806cd7f127a",
+  "repo": "https://github.com/mendersoftware/mender/tree/5ec7acd7654b33f58ac4c8d33bd7b806cd7f127a",
+  "value": "Apache-2.0",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "Apache-2.0",
+    "use": "license text",
+    "view": "https://github.com/mendersoftware/mender/blob/5ec7acd7654b33f58ac4c8d33bd7b806cd7f127a/LICENSE",
+    "raw": "https://raw.githubusercontent.com/mendersoftware/mender/5ec7acd7654b33f58ac4c8d33bd7b806cd7f127a/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "flame__blis",
+  "commit": "a8037cfc4330030c726efaec1ffeb1f93d468aa3",
+  "repo": "https://github.com/flame/blis/tree/a8037cfc4330030c726efaec1ffeb1f93d468aa3",
+  "value": "BSD-3-Clause",
+  "confidence": "medium",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "medium/text",
+  "stratum_size": 225,
+  "stratum_n": 15,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "BSD-3-Clause",
+    "use": "license text",
+    "view": "https://github.com/flame/blis/blob/a8037cfc4330030c726efaec1ffeb1f93d468aa3/LICENSE",
+    "raw": "https://raw.githubusercontent.com/flame/blis/a8037cfc4330030c726efaec1ffeb1f93d468aa3/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "monero-project__monero",
+  "commit": "24272e4a3b2e812cc2a569d95b177ecef4b91e46",
+  "repo": "https://github.com/monero-project/monero/tree/24272e4a3b2e812cc2a569d95b177ecef4b91e46",
+  "value": "BSD-3-Clause AND MIT",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "BSD-3-Clause",
+    "use": "license text",
+    "view": "https://github.com/monero-project/monero/blob/24272e4a3b2e812cc2a569d95b177ecef4b91e46/LICENSE",
+    "raw": "https://raw.githubusercontent.com/monero-project/monero/24272e4a3b2e812cc2a569d95b177ecef4b91e46/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "KDE__kitinerary",
+  "commit": "0f942406a6610692f9b6a12d895ca34e68bb8eb1",
+  "repo": "https://github.com/KDE/kitinerary/tree/0f942406a6610692f9b6a12d895ca34e68bb8eb1",
+  "value": "CC0-1.0",
+  "confidence": "high",
+  "evidence_kind": "text+notice",
+  "version_choice": "n/a",
+  "stratum": "high/text+notice",
+  "stratum_size": 184,
+  "stratum_n": 13,
+  "other": [
+   "BSD-2-Clause",
+   "BSD-3-Clause",
+   "LGPL-2.0",
+   "ODbL-1.0"
+  ],
+  "files": [
+   {
+    "path": "README.md.license",
+    "role": "readme",
+    "says": "CC0-1.0",
+    "use": "chooses",
+    "view": "https://github.com/KDE/kitinerary/blob/0f942406a6610692f9b6a12d895ca34e68bb8eb1/README.md.license",
+    "raw": "https://raw.githubusercontent.com/KDE/kitinerary/0f942406a6610692f9b6a12d895ca34e68bb8eb1/README.md.license"
+   },
+   {
+    "path": "LICENSES/CC0-1.0.txt",
+    "role": "reuse",
+    "says": "CC0-1.0",
+    "use": "license text",
+    "view": "https://github.com/KDE/kitinerary/blob/0f942406a6610692f9b6a12d895ca34e68bb8eb1/LICENSES/CC0-1.0.txt",
+    "raw": "https://raw.githubusercontent.com/KDE/kitinerary/0f942406a6610692f9b6a12d895ca34e68bb8eb1/LICENSES/CC0-1.0.txt"
+   }
+  ]
+ },
+ {
+  "project": "stepcode__stepcode",
+  "commit": "24783b448511b8f6bce2829286a3f00015430236",
+  "repo": "https://github.com/stepcode/stepcode/tree/24783b448511b8f6bce2829286a3f00015430236",
+  "value": "BSD-3-Clause",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "BSD-3-Clause",
+    "use": "license text",
+    "view": "https://github.com/stepcode/stepcode/blob/24783b448511b8f6bce2829286a3f00015430236/COPYING",
+    "raw": "https://raw.githubusercontent.com/stepcode/stepcode/24783b448511b8f6bce2829286a3f00015430236/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "LuaJIT__LuaJIT",
+  "commit": "dd3b24369ddfaa83c78cd6fdd91d157c8968ec8d",
+  "repo": "https://github.com/LuaJIT/LuaJIT/tree/dd3b24369ddfaa83c78cd6fdd91d157c8968ec8d",
+  "value": "MIT",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYRIGHT",
+    "role": "primary",
+    "says": "MIT",
+    "use": "license text",
+    "view": "https://github.com/LuaJIT/LuaJIT/blob/dd3b24369ddfaa83c78cd6fdd91d157c8968ec8d/COPYRIGHT",
+    "raw": "https://raw.githubusercontent.com/LuaJIT/LuaJIT/dd3b24369ddfaa83c78cd6fdd91d157c8968ec8d/COPYRIGHT"
+   }
+  ]
+ },
+ {
+  "project": "lxc__lxc",
+  "commit": "61d8ba0a959264dc0d281589526c1391f4406366",
+  "repo": "https://github.com/lxc/lxc/tree/61d8ba0a959264dc0d281589526c1391f4406366",
+  "value": "LGPL-2.1-or-later",
+  "confidence": "high",
+  "evidence_kind": "text+notice",
+  "version_choice": "or-later",
+  "stratum": "high/text+notice",
+  "stratum_size": 184,
+  "stratum_n": 13,
+  "other": [
+   "GPL-2.0"
+  ],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "license-file-notice",
+    "says": "LGPL-2.1-or-later",
+    "use": "chooses",
+    "view": "https://github.com/lxc/lxc/blob/61d8ba0a959264dc0d281589526c1391f4406366/COPYING",
+    "raw": "https://raw.githubusercontent.com/lxc/lxc/61d8ba0a959264dc0d281589526c1391f4406366/COPYING"
+   },
+   {
+    "path": "LICENSE.LGPL2.1",
+    "role": "alt",
+    "says": "LGPL-2.1-only",
+    "use": "license text",
+    "view": "https://github.com/lxc/lxc/blob/61d8ba0a959264dc0d281589526c1391f4406366/LICENSE.LGPL2.1",
+    "raw": "https://raw.githubusercontent.com/lxc/lxc/61d8ba0a959264dc0d281589526c1391f4406366/LICENSE.LGPL2.1"
+   }
+  ]
+ },
+ {
+  "project": "itext__itext-pdfhtml-java",
+  "commit": "bf5d33e19a2353a045d14b0cd93a5908f14846a3",
+  "repo": "https://github.com/itext/itext-pdfhtml-java/tree/bf5d33e19a2353a045d14b0cd93a5908f14846a3",
+  "value": "AGPL-3.0-or-later",
+  "confidence": "medium",
+  "evidence_kind": "license-file-notice",
+  "version_choice": "or-later",
+  "stratum": "medium/license-file-notice",
+  "stratum_size": 119,
+  "stratum_n": 9,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE.md",
+    "role": "primary",
+    "says": "AGPL-3.0-or-later",
+    "use": "license text",
+    "view": "https://github.com/itext/itext-pdfhtml-java/blob/bf5d33e19a2353a045d14b0cd93a5908f14846a3/LICENSE.md",
+    "raw": "https://raw.githubusercontent.com/itext/itext-pdfhtml-java/bf5d33e19a2353a045d14b0cd93a5908f14846a3/LICENSE.md"
+   }
+  ]
+ },
+ {
+  "project": "Yubico__libfido2",
+  "commit": "b6e26454b5c94800b9130d4c628b9a8381572c1e",
+  "repo": "https://github.com/Yubico/libfido2/tree/b6e26454b5c94800b9130d4c628b9a8381572c1e",
+  "value": "BSD-2-Clause",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "BSD-2-Clause",
+    "use": "license text",
+    "view": "https://github.com/Yubico/libfido2/blob/b6e26454b5c94800b9130d4c628b9a8381572c1e/LICENSE",
+    "raw": "https://raw.githubusercontent.com/Yubico/libfido2/b6e26454b5c94800b9130d4c628b9a8381572c1e/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "kaj__rsass",
+  "commit": "6de9e51648fb51d76ec5fbe2970a3c74249a6112",
+  "repo": "https://github.com/kaj/rsass/tree/6de9e51648fb51d76ec5fbe2970a3c74249a6112",
+  "value": "MIT",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "MIT",
+    "use": "license text",
+    "view": "https://github.com/kaj/rsass/blob/6de9e51648fb51d76ec5fbe2970a3c74249a6112/LICENSE",
+    "raw": "https://raw.githubusercontent.com/kaj/rsass/6de9e51648fb51d76ec5fbe2970a3c74249a6112/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "structr__structr",
+  "commit": "fd8b1755bc0669e91507a5af929617eb3806b5f5",
+  "repo": "https://github.com/structr/structr/tree/fd8b1755bc0669e91507a5af929617eb3806b5f5",
+  "value": "AGPL-3.0 OR GPL-3.0 OR AGPL-3.0 OR GPL-3.0",
+  "confidence": "high",
+  "evidence_kind": "text+notice",
+  "version_choice": "mixed",
+  "stratum": "high/text+notice",
+  "stratum_size": 184,
+  "stratum_n": 13,
+  "other": [],
+  "files": [
+   {
+    "path": "README.md",
+    "role": "readme",
+    "says": "AGPL-3.0-only OR GPL-3.0-only OR AGPL-3.0-or-later OR GPL-3.0-or-later",
+    "use": "chooses",
+    "view": "https://github.com/structr/structr/blob/fd8b1755bc0669e91507a5af929617eb3806b5f5/README.md",
+    "raw": "https://raw.githubusercontent.com/structr/structr/fd8b1755bc0669e91507a5af929617eb3806b5f5/README.md"
+   },
+   {
+    "path": "LICENSE-AGPL-3.0",
+    "role": "alt",
+    "says": "AGPL-3.0-only",
+    "use": "license text",
+    "view": "https://github.com/structr/structr/blob/fd8b1755bc0669e91507a5af929617eb3806b5f5/LICENSE-AGPL-3.0",
+    "raw": "https://raw.githubusercontent.com/structr/structr/fd8b1755bc0669e91507a5af929617eb3806b5f5/LICENSE-AGPL-3.0"
+   },
+   {
+    "path": "LICENSE-GPL-3.0",
+    "role": "alt",
+    "says": "GPL-3.0-only",
+    "use": "license text",
+    "view": "https://github.com/structr/structr/blob/fd8b1755bc0669e91507a5af929617eb3806b5f5/LICENSE-GPL-3.0",
+    "raw": "https://raw.githubusercontent.com/structr/structr/fd8b1755bc0669e91507a5af929617eb3806b5f5/LICENSE-GPL-3.0"
+   }
+  ]
+ },
+ {
+  "project": "WagicProject__wagic",
+  "commit": "f71bffd65739f83a920d5ba2209e396afcc9b9d8",
+  "repo": "https://github.com/WagicProject/wagic/tree/f71bffd65739f83a920d5ba2209e396afcc9b9d8",
+  "value": "BSD-3-Clause",
+  "confidence": "medium",
+  "evidence_kind": "license-file-notice",
+  "version_choice": "n/a",
+  "stratum": "medium/license-file-notice",
+  "stratum_size": 119,
+  "stratum_n": 9,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "BSD-3-Clause",
+    "use": "license text",
+    "view": "https://github.com/WagicProject/wagic/blob/f71bffd65739f83a920d5ba2209e396afcc9b9d8/LICENSE",
+    "raw": "https://raw.githubusercontent.com/WagicProject/wagic/f71bffd65739f83a920d5ba2209e396afcc9b9d8/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "gwsw__less",
+  "commit": "7f46e9ff46216f3e560cd1f41ddf3b36b11eec0e",
+  "repo": "https://github.com/gwsw/less/tree/7f46e9ff46216f3e560cd1f41ddf3b36b11eec0e",
+  "value": "GPL-3.0-or-later OR BSD-2-Clause",
+  "confidence": "high",
+  "evidence_kind": "text+notice",
+  "version_choice": "or-later",
+  "stratum": "high/text+notice",
+  "stratum_size": 184,
+  "stratum_n": 13,
+  "other": [],
+  "files": [
+   {
+    "path": "README",
+    "role": "readme",
+    "says": "GPL-3.0-or-later OR BSD-2-Clause",
+    "use": "chooses",
+    "view": "https://github.com/gwsw/less/blob/7f46e9ff46216f3e560cd1f41ddf3b36b11eec0e/README",
+    "raw": "https://raw.githubusercontent.com/gwsw/less/7f46e9ff46216f3e560cd1f41ddf3b36b11eec0e/README"
+   },
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "GPL-3.0-only",
+    "use": "license text",
+    "view": "https://github.com/gwsw/less/blob/7f46e9ff46216f3e560cd1f41ddf3b36b11eec0e/COPYING",
+    "raw": "https://raw.githubusercontent.com/gwsw/less/7f46e9ff46216f3e560cd1f41ddf3b36b11eec0e/COPYING"
+   },
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "BSD-2-Clause",
+    "use": "license text",
+    "view": "https://github.com/gwsw/less/blob/7f46e9ff46216f3e560cd1f41ddf3b36b11eec0e/LICENSE",
+    "raw": "https://raw.githubusercontent.com/gwsw/less/7f46e9ff46216f3e560cd1f41ddf3b36b11eec0e/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "alibaba__AliSQL",
+  "commit": "9e121f27d404cad6cdb1cc695eab4276469adace",
+  "repo": "https://github.com/alibaba/AliSQL/tree/9e121f27d404cad6cdb1cc695eab4276469adace",
+  "value": "GPL-2.0",
+  "confidence": "medium",
+  "evidence_kind": "text",
+  "version_choice": "mixed",
+  "stratum": "medium/text",
+  "stratum_size": 225,
+  "stratum_n": 15,
+  "other": [
+   "LGPL-2.1",
+   "BSL-1.0",
+   "curl",
+   "BSD-Attribution-HPND-disclaimer",
+   "RSA-MD",
+   "dtoa",
+   "BSD-3-Clause",
+   "BSD-2-Clause",
+   "LicenseRef-scancode-other-permissive",
+   "Zlib",
+   "MIT",
+   "LicenseRef-scancode-protobuf",
+   "LicenseRef-scancode-unicode",
+   "ICU",
+   "NAIST-2003",
+   "LicenseRef-scancode-public-domain",
+   "LicenseRef-scancode-generic-export-compliance",
+   "OpenVision",
+   "HPND-export2-US",
+   "LicenseRef-scancode-brian-gladman-3-clause",
+   "LicenseRef-scancode-michigan-disclaimer",
+   "FSFULLRWD",
+   "OLDAP-2.8",
+   "BSD-2-Clause-first-lines",
+   "MIT-CMU",
+   "CMU-Mach-nodoc",
+   "LicenseRef-scancode-mit-old-style",
+   "HPND-export-US-acknowledgement",
+   "BSD-4-Clause-UC",
+   "BSD-4-Clause",
+   "ISC",
+   "LicenseRef-scancode-rsa-md4",
+   "LicenseRef-scancode-rsa-1990",
+   "HPND-export-US-modify",
+   "BSD-3-Clause-Clear",
+   "JSON",
+   "Unicode-TOU",
+   "Artistic-1.0-Perl",
+   "Apache-2.0"
+  ],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "GPL-2.0-only",
+    "use": "license text",
+    "view": "https://github.com/alibaba/AliSQL/blob/9e121f27d404cad6cdb1cc695eab4276469adace/LICENSE",
+    "raw": "https://raw.githubusercontent.com/alibaba/AliSQL/9e121f27d404cad6cdb1cc695eab4276469adace/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "OpenNMS__opennms",
+  "commit": "0b2803b968162bfdc1d32484f98a90d8dd9e8183",
+  "repo": "https://github.com/OpenNMS/opennms/tree/0b2803b968162bfdc1d32484f98a90d8dd9e8183",
+  "value": "AGPL-3.0-or-later",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "or-later",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "AGPL-3.0-only",
+    "use": "license text",
+    "view": "https://github.com/OpenNMS/opennms/blob/0b2803b968162bfdc1d32484f98a90d8dd9e8183/COPYING",
+    "raw": "https://raw.githubusercontent.com/OpenNMS/opennms/0b2803b968162bfdc1d32484f98a90d8dd9e8183/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "OSGeo__PROJ",
+  "commit": "e75fbeda10e0c7309b837a9ce87508d4521cfa0d",
+  "repo": "https://github.com/OSGeo/PROJ/tree/e75fbeda10e0c7309b837a9ce87508d4521cfa0d",
+  "value": "MIT",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "MIT",
+    "use": "license text",
+    "view": "https://github.com/OSGeo/PROJ/blob/e75fbeda10e0c7309b837a9ce87508d4521cfa0d/COPYING",
+    "raw": "https://raw.githubusercontent.com/OSGeo/PROJ/e75fbeda10e0c7309b837a9ce87508d4521cfa0d/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "softdevteam__grmtools",
+  "commit": "8ce095a386c84392bf6d7bf98bf813d06c87b708",
+  "repo": "https://github.com/softdevteam/grmtools/tree/8ce095a386c84392bf6d7bf98bf813d06c87b708",
+  "value": "Apache-2.0 OR MIT",
+  "confidence": "high",
+  "evidence_kind": "text+notice",
+  "version_choice": "n/a",
+  "stratum": "high/text+notice",
+  "stratum_size": 184,
+  "stratum_n": 13,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYRIGHT",
+    "role": "license-file-notice",
+    "says": "Apache-2.0 OR MIT",
+    "use": "chooses",
+    "view": "https://github.com/softdevteam/grmtools/blob/8ce095a386c84392bf6d7bf98bf813d06c87b708/COPYRIGHT",
+    "raw": "https://raw.githubusercontent.com/softdevteam/grmtools/8ce095a386c84392bf6d7bf98bf813d06c87b708/COPYRIGHT"
+   },
+   {
+    "path": "LICENSE-APACHE",
+    "role": "alt",
+    "says": "Apache-2.0",
+    "use": "license text",
+    "view": "https://github.com/softdevteam/grmtools/blob/8ce095a386c84392bf6d7bf98bf813d06c87b708/LICENSE-APACHE",
+    "raw": "https://raw.githubusercontent.com/softdevteam/grmtools/8ce095a386c84392bf6d7bf98bf813d06c87b708/LICENSE-APACHE"
+   },
+   {
+    "path": "LICENSE-MIT",
+    "role": "alt",
+    "says": "MIT",
+    "use": "license text",
+    "view": "https://github.com/softdevteam/grmtools/blob/8ce095a386c84392bf6d7bf98bf813d06c87b708/LICENSE-MIT",
+    "raw": "https://raw.githubusercontent.com/softdevteam/grmtools/8ce095a386c84392bf6d7bf98bf813d06c87b708/LICENSE-MIT"
+   }
+  ]
+ },
+ {
+  "project": "kmscon__kmscon",
+  "commit": "6c03eb4982aa1f56a719c09c16a955c68f839ba4",
+  "repo": "https://github.com/kmscon/kmscon/tree/6c03eb4982aa1f56a719c09c16a955c68f839ba4",
+  "value": "MIT AND OFL-1.1",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "MIT",
+    "use": "license text",
+    "view": "https://github.com/kmscon/kmscon/blob/6c03eb4982aa1f56a719c09c16a955c68f839ba4/COPYING",
+    "raw": "https://raw.githubusercontent.com/kmscon/kmscon/6c03eb4982aa1f56a719c09c16a955c68f839ba4/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "axelor__axelor-open-suite",
+  "commit": "f8345ec00e9ad15db523ba0b8eb9f97f667b2e2c",
+  "repo": "https://github.com/axelor/axelor-open-suite/tree/f8345ec00e9ad15db523ba0b8eb9f97f667b2e2c",
+  "value": "AGPL-3.0-or-later",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "or-later",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "AGPL-3.0-only",
+    "use": "license text",
+    "view": "https://github.com/axelor/axelor-open-suite/blob/f8345ec00e9ad15db523ba0b8eb9f97f667b2e2c/LICENSE",
+    "raw": "https://raw.githubusercontent.com/axelor/axelor-open-suite/f8345ec00e9ad15db523ba0b8eb9f97f667b2e2c/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "OpenTTD__OpenTTD",
+  "commit": "d48d693d7ff09b643846e23a5f033cf3582ab27f",
+  "repo": "https://github.com/OpenTTD/OpenTTD/tree/d48d693d7ff09b643846e23a5f033cf3582ab27f",
+  "value": "GPL-2.0-only",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "only",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYING.md",
+    "role": "primary",
+    "says": "GPL-2.0-only",
+    "use": "license text",
+    "view": "https://github.com/OpenTTD/OpenTTD/blob/d48d693d7ff09b643846e23a5f033cf3582ab27f/COPYING.md",
+    "raw": "https://raw.githubusercontent.com/OpenTTD/OpenTTD/d48d693d7ff09b643846e23a5f033cf3582ab27f/COPYING.md"
+   }
+  ]
+ },
+ {
+  "project": "tenacityteam__tenacity",
+  "commit": "ff6268c2b3c97ee6765b92bf9b42c14f7c4d0556",
+  "repo": "https://github.com/tenacityteam/tenacity/tree/ff6268c2b3c97ee6765b92bf9b42c14f7c4d0556",
+  "value": "GPL-2.0-only",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "only",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE.txt",
+    "role": "primary",
+    "says": "GPL-2.0-only",
+    "use": "license text",
+    "view": "https://github.com/tenacityteam/tenacity/blob/ff6268c2b3c97ee6765b92bf9b42c14f7c4d0556/LICENSE.txt",
+    "raw": "https://raw.githubusercontent.com/tenacityteam/tenacity/ff6268c2b3c97ee6765b92bf9b42c14f7c4d0556/LICENSE.txt"
+   }
+  ]
+ },
+ {
+  "project": "xiph__speex",
+  "commit": "05895229896dc942d453446eba6f9f5ddcf95422",
+  "repo": "https://github.com/xiph/speex/tree/05895229896dc942d453446eba6f9f5ddcf95422",
+  "value": "BSD-3-Clause",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "BSD-3-Clause",
+    "use": "license text",
+    "view": "https://github.com/xiph/speex/blob/05895229896dc942d453446eba6f9f5ddcf95422/COPYING",
+    "raw": "https://raw.githubusercontent.com/xiph/speex/05895229896dc942d453446eba6f9f5ddcf95422/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "Nasiko-Labs__nasiko",
+  "commit": "50b0a34e394503fad466d637300f8e32361f71a3",
+  "repo": "https://github.com/Nasiko-Labs/nasiko/tree/50b0a34e394503fad466d637300f8e32361f71a3",
+  "value": "Apache-2.0",
+  "confidence": "medium",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "medium/text",
+  "stratum_size": 225,
+  "stratum_n": 15,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "Apache-2.0",
+    "use": "license text",
+    "view": "https://github.com/Nasiko-Labs/nasiko/blob/50b0a34e394503fad466d637300f8e32361f71a3/LICENSE",
+    "raw": "https://raw.githubusercontent.com/Nasiko-Labs/nasiko/50b0a34e394503fad466d637300f8e32361f71a3/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "tianocore__edk2-platforms",
+  "commit": "1c500d13a653cf0f556ecf7ce703c12874247efc",
+  "repo": "https://github.com/tianocore/edk2-platforms/tree/1c500d13a653cf0f556ecf7ce703c12874247efc",
+  "value": "BSD-2-Clause-Patent",
+  "confidence": "high",
+  "evidence_kind": "text+notice",
+  "version_choice": "n/a",
+  "stratum": "high/text+notice",
+  "stratum_size": 184,
+  "stratum_n": 13,
+  "other": [
+   "BSD-2-Clause",
+   "LicenseRef-scancode-public-domain"
+  ],
+  "files": [
+   {
+    "path": "Readme.md",
+    "role": "readme",
+    "says": "BSD-2-Clause-Patent",
+    "use": "chooses",
+    "view": "https://github.com/tianocore/edk2-platforms/blob/1c500d13a653cf0f556ecf7ce703c12874247efc/Readme.md",
+    "raw": "https://raw.githubusercontent.com/tianocore/edk2-platforms/1c500d13a653cf0f556ecf7ce703c12874247efc/Readme.md"
+   },
+   {
+    "path": "License.txt",
+    "role": "primary",
+    "says": "BSD-2-Clause-Patent",
+    "use": "license text",
+    "view": "https://github.com/tianocore/edk2-platforms/blob/1c500d13a653cf0f556ecf7ce703c12874247efc/License.txt",
+    "raw": "https://raw.githubusercontent.com/tianocore/edk2-platforms/1c500d13a653cf0f556ecf7ce703c12874247efc/License.txt"
+   }
+  ]
+ },
+ {
+  "project": "gitlab.freedesktop.org__telepathy__telepathy-glib",
+  "commit": "72412c944b771f3214ddc40fa9dea82cea3a5651",
+  "repo": "https://gitlab.freedesktop.org/telepathy/telepathy-glib/-/tree/72412c944b771f3214ddc40fa9dea82cea3a5651",
+  "value": "LGPL-2.1-or-later",
+  "confidence": "medium",
+  "evidence_kind": "text",
+  "version_choice": "or-later",
+  "stratum": "medium/text",
+  "stratum_size": 225,
+  "stratum_n": 15,
+  "other": [
+   "Zlib",
+   "BSD-2-Clause"
+  ],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "LGPL-2.1-only",
+    "use": "license text",
+    "view": "https://gitlab.freedesktop.org/telepathy/telepathy-glib/-/blob/72412c944b771f3214ddc40fa9dea82cea3a5651/COPYING",
+    "raw": "https://gitlab.freedesktop.org/telepathy/telepathy-glib/-/raw/72412c944b771f3214ddc40fa9dea82cea3a5651/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "pmodels__mpich",
+  "commit": "cd0a4270556ef65d3e993577d23ec4954a94ee12",
+  "repo": "https://github.com/pmodels/mpich/tree/cd0a4270556ef65d3e993577d23ec4954a94ee12",
+  "value": "mpich2",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYRIGHT",
+    "role": "primary",
+    "says": "mpich2",
+    "use": "license text",
+    "view": "https://github.com/pmodels/mpich/blob/cd0a4270556ef65d3e993577d23ec4954a94ee12/COPYRIGHT",
+    "raw": "https://raw.githubusercontent.com/pmodels/mpich/cd0a4270556ef65d3e993577d23ec4954a94ee12/COPYRIGHT"
+   }
+  ]
+ },
+ {
+  "project": "laruence__yaf",
+  "commit": "eafa56fb9b77173d62dde98f1bdfb63b4f4d0790",
+  "repo": "https://github.com/laruence/yaf/tree/eafa56fb9b77173d62dde98f1bdfb63b4f4d0790",
+  "value": "PHP-3.01",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "PHP-3.01",
+    "use": "license text",
+    "view": "https://github.com/laruence/yaf/blob/eafa56fb9b77173d62dde98f1bdfb63b4f4d0790/LICENSE",
+    "raw": "https://raw.githubusercontent.com/laruence/yaf/eafa56fb9b77173d62dde98f1bdfb63b4f4d0790/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "GNOME__gnome-online-accounts",
+  "commit": "911f093ab55a367bc34373f5f78c9f83a8378045",
+  "repo": "https://github.com/GNOME/gnome-online-accounts/tree/911f093ab55a367bc34373f5f78c9f83a8378045",
+  "value": "LGPL-2.0",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "mixed",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "LGPL-2.0-only",
+    "use": "license text",
+    "view": "https://github.com/GNOME/gnome-online-accounts/blob/911f093ab55a367bc34373f5f78c9f83a8378045/COPYING",
+    "raw": "https://raw.githubusercontent.com/GNOME/gnome-online-accounts/911f093ab55a367bc34373f5f78c9f83a8378045/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "DrTimothyAldenDavis__GraphBLAS",
+  "commit": "afbe9aaefe5df7632ca82b478d65d0f6c1e14db0",
+  "repo": "https://github.com/DrTimothyAldenDavis/GraphBLAS/tree/afbe9aaefe5df7632ca82b478d65d0f6c1e14db0",
+  "value": "BSD-2-Clause AND BSD-3-Clause",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "BSD-2-Clause",
+    "use": "license text",
+    "view": "https://github.com/DrTimothyAldenDavis/GraphBLAS/blob/afbe9aaefe5df7632ca82b478d65d0f6c1e14db0/LICENSE",
+    "raw": "https://raw.githubusercontent.com/DrTimothyAldenDavis/GraphBLAS/afbe9aaefe5df7632ca82b478d65d0f6c1e14db0/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "moononournation__Arduino_GFX",
+  "commit": "c2e39350ff09c3720702bd3f050cb581fa45a8e9",
+  "repo": "https://github.com/moononournation/Arduino_GFX/tree/c2e39350ff09c3720702bd3f050cb581fa45a8e9",
+  "value": "BSD-2-Clause",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "license.txt",
+    "role": "primary",
+    "says": "BSD-2-Clause",
+    "use": "license text",
+    "view": "https://github.com/moononournation/Arduino_GFX/blob/c2e39350ff09c3720702bd3f050cb581fa45a8e9/license.txt",
+    "raw": "https://raw.githubusercontent.com/moononournation/Arduino_GFX/c2e39350ff09c3720702bd3f050cb581fa45a8e9/license.txt"
+   }
+  ]
+ },
+ {
+  "project": "pkgconf__pkgconf",
+  "commit": "4b6fcd4e5baf03d5cb4797e46976cb69756ad865",
+  "repo": "https://github.com/pkgconf/pkgconf/tree/4b6fcd4e5baf03d5cb4797e46976cb69756ad865",
+  "value": "pkgconf",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "pkgconf",
+    "use": "license text",
+    "view": "https://github.com/pkgconf/pkgconf/blob/4b6fcd4e5baf03d5cb4797e46976cb69756ad865/COPYING",
+    "raw": "https://raw.githubusercontent.com/pkgconf/pkgconf/4b6fcd4e5baf03d5cb4797e46976cb69756ad865/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "kamailio__kamailio",
+  "commit": "c8d38fa650715f25244ce36bdd985219e684878f",
+  "repo": "https://github.com/kamailio/kamailio/tree/c8d38fa650715f25244ce36bdd985219e684878f",
+  "value": "GPL-2.0-only",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "only",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "GPL-2.0-only",
+    "use": "license text",
+    "view": "https://github.com/kamailio/kamailio/blob/c8d38fa650715f25244ce36bdd985219e684878f/COPYING",
+    "raw": "https://raw.githubusercontent.com/kamailio/kamailio/c8d38fa650715f25244ce36bdd985219e684878f/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "apache__jackrabbit-filevault",
+  "commit": "a551900ff67e1ec51f086bf331b02dbeaf769dba",
+  "repo": "https://github.com/apache/jackrabbit-filevault/tree/a551900ff67e1ec51f086bf331b02dbeaf769dba",
+  "value": "Apache-2.0",
+  "confidence": "medium",
+  "evidence_kind": "manifest",
+  "version_choice": "n/a",
+  "stratum": "medium/manifest",
+  "stratum_size": 41,
+  "stratum_n": 4,
+  "other": [],
+  "files": [
+   {
+    "path": "pom.xml",
+    "role": "manifest",
+    "says": "Apache-2.0",
+    "use": "declares",
+    "view": "https://github.com/apache/jackrabbit-filevault/blob/a551900ff67e1ec51f086bf331b02dbeaf769dba/pom.xml",
+    "raw": "https://raw.githubusercontent.com/apache/jackrabbit-filevault/a551900ff67e1ec51f086bf331b02dbeaf769dba/pom.xml"
+   }
+  ]
+ },
+ {
+  "project": "OpenAEV-Platform__openaev",
+  "commit": "1f84cbf6a5475f33f82fb62b9a0a476541d34b84",
+  "repo": "https://github.com/OpenAEV-Platform/openaev/tree/1f84cbf6a5475f33f82fb62b9a0a476541d34b84",
+  "value": "Apache-2.0",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "Apache-2.0",
+    "use": "license text",
+    "view": "https://github.com/OpenAEV-Platform/openaev/blob/1f84cbf6a5475f33f82fb62b9a0a476541d34b84/LICENSE",
+    "raw": "https://raw.githubusercontent.com/OpenAEV-Platform/openaev/1f84cbf6a5475f33f82fb62b9a0a476541d34b84/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "Xilinx__u-boot-xlnx",
+  "commit": "68b065eb2ff46dd7005a72b85411fb5ece5486bf",
+  "repo": "https://github.com/Xilinx/u-boot-xlnx/tree/68b065eb2ff46dd7005a72b85411fb5ece5486bf",
+  "value": "GPL-2.0-or-later",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "or-later",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "GPL-2.0-only",
+    "use": "license text",
+    "view": "https://github.com/Xilinx/u-boot-xlnx/blob/68b065eb2ff46dd7005a72b85411fb5ece5486bf/COPYING",
+    "raw": "https://raw.githubusercontent.com/Xilinx/u-boot-xlnx/68b065eb2ff46dd7005a72b85411fb5ece5486bf/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "sonic-net__sonic-sairedis",
+  "commit": "f416fe163324d44e8a1e745c9238d68a136f2cf4",
+  "repo": "https://github.com/sonic-net/sonic-sairedis/tree/f416fe163324d44e8a1e745c9238d68a136f2cf4",
+  "value": "Apache-2.0",
+  "confidence": "medium",
+  "evidence_kind": "license-file-notice",
+  "version_choice": "n/a",
+  "stratum": "medium/license-file-notice",
+  "stratum_size": 119,
+  "stratum_n": 9,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "Apache-2.0",
+    "use": "license text",
+    "view": "https://github.com/sonic-net/sonic-sairedis/blob/f416fe163324d44e8a1e745c9238d68a136f2cf4/LICENSE",
+    "raw": "https://raw.githubusercontent.com/sonic-net/sonic-sairedis/f416fe163324d44e8a1e745c9238d68a136f2cf4/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "sonos__dinghy",
+  "commit": "0b018107e004ee1c1b834a1104588ff1dcbb6d76",
+  "repo": "https://github.com/sonos/dinghy/tree/0b018107e004ee1c1b834a1104588ff1dcbb6d76",
+  "value": "Apache-2.0 OR MIT",
+  "confidence": "high",
+  "evidence_kind": "text+notice",
+  "version_choice": "n/a",
+  "stratum": "high/text+notice",
+  "stratum_size": 184,
+  "stratum_n": 13,
+  "other": [],
+  "files": [
+   {
+    "path": "README.md",
+    "role": "readme",
+    "says": "Apache-2.0 OR MIT",
+    "use": "chooses",
+    "view": "https://github.com/sonos/dinghy/blob/0b018107e004ee1c1b834a1104588ff1dcbb6d76/README.md",
+    "raw": "https://raw.githubusercontent.com/sonos/dinghy/0b018107e004ee1c1b834a1104588ff1dcbb6d76/README.md"
+   },
+   {
+    "path": "LICENSE-APACHE",
+    "role": "alt",
+    "says": "Apache-2.0",
+    "use": "license text",
+    "view": "https://github.com/sonos/dinghy/blob/0b018107e004ee1c1b834a1104588ff1dcbb6d76/LICENSE-APACHE",
+    "raw": "https://raw.githubusercontent.com/sonos/dinghy/0b018107e004ee1c1b834a1104588ff1dcbb6d76/LICENSE-APACHE"
+   },
+   {
+    "path": "LICENSE-MIT",
+    "role": "alt",
+    "says": "MIT",
+    "use": "license text",
+    "view": "https://github.com/sonos/dinghy/blob/0b018107e004ee1c1b834a1104588ff1dcbb6d76/LICENSE-MIT",
+    "raw": "https://raw.githubusercontent.com/sonos/dinghy/0b018107e004ee1c1b834a1104588ff1dcbb6d76/LICENSE-MIT"
+   }
+  ]
+ },
+ {
+  "project": "opensagres__xdocreport",
+  "commit": "625c947734ca25d504b3217e33d3f5275b4e0ae6",
+  "repo": "https://github.com/opensagres/xdocreport/tree/625c947734ca25d504b3217e33d3f5275b4e0ae6",
+  "value": "MIT",
+  "confidence": "medium",
+  "evidence_kind": "manifest",
+  "version_choice": "n/a",
+  "stratum": "medium/manifest",
+  "stratum_size": 41,
+  "stratum_n": 4,
+  "other": [],
+  "files": [
+   {
+    "path": "pom.xml",
+    "role": "manifest",
+    "says": "MIT",
+    "use": "declares",
+    "view": "https://github.com/opensagres/xdocreport/blob/625c947734ca25d504b3217e33d3f5275b4e0ae6/pom.xml",
+    "raw": "https://raw.githubusercontent.com/opensagres/xdocreport/625c947734ca25d504b3217e33d3f5275b4e0ae6/pom.xml"
+   }
+  ]
+ },
+ {
+  "project": "ta4j__ta4j",
+  "commit": "e7ddaa51f9216c2fa44656f3e03a627c2d499511",
+  "repo": "https://github.com/ta4j/ta4j/tree/e7ddaa51f9216c2fa44656f3e03a627c2d499511",
+  "value": "MIT",
+  "confidence": "medium",
+  "evidence_kind": "license-file-notice",
+  "version_choice": "n/a",
+  "stratum": "medium/license-file-notice",
+  "stratum_size": 119,
+  "stratum_n": 9,
+  "other": [],
+  "files": [
+   {
+    "path": "license-header.txt",
+    "role": "secondary",
+    "says": "MIT",
+    "use": "license text",
+    "view": "https://github.com/ta4j/ta4j/blob/e7ddaa51f9216c2fa44656f3e03a627c2d499511/license-header.txt",
+    "raw": "https://raw.githubusercontent.com/ta4j/ta4j/e7ddaa51f9216c2fa44656f3e03a627c2d499511/license-header.txt"
+   }
+  ]
+ },
+ {
+  "project": "openresty__luajit2",
+  "commit": "f6a9b2a6f0386bac736655703e90f1ef534bfbdc",
+  "repo": "https://github.com/openresty/luajit2/tree/f6a9b2a6f0386bac736655703e90f1ef534bfbdc",
+  "value": "MIT",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYRIGHT",
+    "role": "primary",
+    "says": "MIT",
+    "use": "license text",
+    "view": "https://github.com/openresty/luajit2/blob/f6a9b2a6f0386bac736655703e90f1ef534bfbdc/COPYRIGHT",
+    "raw": "https://raw.githubusercontent.com/openresty/luajit2/f6a9b2a6f0386bac736655703e90f1ef534bfbdc/COPYRIGHT"
+   }
+  ]
+ },
+ {
+  "project": "GPUOpen-Tools__GPU-Reshape",
+  "commit": "e1d747a5660d38dfbcad5f987c68fe2da8db2733",
+  "repo": "https://github.com/GPUOpen-Tools/GPU-Reshape/tree/e1d747a5660d38dfbcad5f987c68fe2da8db2733",
+  "value": "MIT",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "License.md",
+    "role": "primary",
+    "says": "MIT",
+    "use": "license text",
+    "view": "https://github.com/GPUOpen-Tools/GPU-Reshape/blob/e1d747a5660d38dfbcad5f987c68fe2da8db2733/License.md",
+    "raw": "https://raw.githubusercontent.com/GPUOpen-Tools/GPU-Reshape/e1d747a5660d38dfbcad5f987c68fe2da8db2733/License.md"
+   }
+  ]
+ },
+ {
+  "project": "KDE__konsole",
+  "commit": "26160259632e512ae3ffcbbc988e071d8dc19a96",
+  "repo": "https://github.com/KDE/konsole/tree/26160259632e512ae3ffcbbc988e071d8dc19a96",
+  "value": "GFDL-1.2 AND GPL-2.0 AND LGPL-2.0-only",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "several",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [
+   "CC0-1.0",
+   "GPL-3.0",
+   "LGPL-2.1",
+   "LGPL-3.0",
+   "LicenseRef-scancode-kde-accepted-gpl",
+   "LicenseRef-scancode-kde-accepted-lgpl",
+   "MIT"
+  ],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "GPL-2.0-only WITH Linux-syscall-note",
+    "use": "license text",
+    "view": "https://github.com/KDE/konsole/blob/26160259632e512ae3ffcbbc988e071d8dc19a96/COPYING",
+    "raw": "https://raw.githubusercontent.com/KDE/konsole/26160259632e512ae3ffcbbc988e071d8dc19a96/COPYING"
+   },
+   {
+    "path": "COPYING.DOC",
+    "role": "alt",
+    "says": "GFDL-1.2-only",
+    "use": "license text",
+    "view": "https://github.com/KDE/konsole/blob/26160259632e512ae3ffcbbc988e071d8dc19a96/COPYING.DOC",
+    "raw": "https://raw.githubusercontent.com/KDE/konsole/26160259632e512ae3ffcbbc988e071d8dc19a96/COPYING.DOC"
+   },
+   {
+    "path": "COPYING.LIB",
+    "role": "alt",
+    "says": "LGPL-2.0-only",
+    "use": "license text",
+    "view": "https://github.com/KDE/konsole/blob/26160259632e512ae3ffcbbc988e071d8dc19a96/COPYING.LIB",
+    "raw": "https://raw.githubusercontent.com/KDE/konsole/26160259632e512ae3ffcbbc988e071d8dc19a96/COPYING.LIB"
+   }
+  ]
+ },
+ {
+  "project": "gitbutlerapp__grit",
+  "commit": "c50d9e6b352139b44852eda3f90efdd9c4d296a8",
+  "repo": "https://github.com/gitbutlerapp/grit/tree/c50d9e6b352139b44852eda3f90efdd9c4d296a8",
+  "value": "MIT",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "MIT",
+    "use": "license text",
+    "view": "https://github.com/gitbutlerapp/grit/blob/c50d9e6b352139b44852eda3f90efdd9c4d296a8/LICENSE",
+    "raw": "https://raw.githubusercontent.com/gitbutlerapp/grit/c50d9e6b352139b44852eda3f90efdd9c4d296a8/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "gitlab.freedesktop.org__xorg__driver__xf86-video-ati",
+  "commit": "f317c8908e8759df49bff8a78a8adee2266a036e",
+  "repo": "https://gitlab.freedesktop.org/xorg/driver/xf86-video-ati/-/tree/f317c8908e8759df49bff8a78a8adee2266a036e",
+  "value": "HPND-sell-variant",
+  "confidence": "medium",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "medium/text",
+  "stratum_size": 225,
+  "stratum_n": 15,
+  "other": [
+   "LicenseRef-scancode-xfree86-1.0",
+   "MIT"
+  ],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "HPND-sell-variant",
+    "use": "license text",
+    "view": "https://gitlab.freedesktop.org/xorg/driver/xf86-video-ati/-/blob/f317c8908e8759df49bff8a78a8adee2266a036e/COPYING",
+    "raw": "https://gitlab.freedesktop.org/xorg/driver/xf86-video-ati/-/raw/f317c8908e8759df49bff8a78a8adee2266a036e/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "smackers__smack",
+  "commit": "0a64471206645c250164e8df6027f5a5193e5e85",
+  "repo": "https://github.com/smackers/smack/tree/0a64471206645c250164e8df6027f5a5193e5e85",
+  "value": "MIT",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "MIT",
+    "use": "license text",
+    "view": "https://github.com/smackers/smack/blob/0a64471206645c250164e8df6027f5a5193e5e85/LICENSE",
+    "raw": "https://raw.githubusercontent.com/smackers/smack/0a64471206645c250164e8df6027f5a5193e5e85/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "livegrep__livegrep",
+  "commit": "923d5ad71dfe60900e6c2017b2fa4a5ff902ad71",
+  "repo": "https://github.com/livegrep/livegrep/tree/923d5ad71dfe60900e6c2017b2fa4a5ff902ad71",
+  "value": "BSD-2-Clause-Views",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "BSD-2-Clause-Views",
+    "use": "license text",
+    "view": "https://github.com/livegrep/livegrep/blob/923d5ad71dfe60900e6c2017b2fa4a5ff902ad71/COPYING",
+    "raw": "https://raw.githubusercontent.com/livegrep/livegrep/923d5ad71dfe60900e6c2017b2fa4a5ff902ad71/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "jeremyletang__rust-sfml",
+  "commit": "27d273c0e8c7fb273c97a2815b51d7b5657e2aa5",
+  "repo": "https://github.com/jeremyletang/rust-sfml/tree/27d273c0e8c7fb273c97a2815b51d7b5657e2aa5",
+  "value": "Zlib",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE.txt",
+    "role": "primary",
+    "says": "Zlib",
+    "use": "license text",
+    "view": "https://github.com/jeremyletang/rust-sfml/blob/27d273c0e8c7fb273c97a2815b51d7b5657e2aa5/LICENSE.txt",
+    "raw": "https://raw.githubusercontent.com/jeremyletang/rust-sfml/27d273c0e8c7fb273c97a2815b51d7b5657e2aa5/LICENSE.txt"
+   }
+  ]
+ },
+ {
+  "project": "meganz__MEGAcmd",
+  "commit": "6505327a5a7a0e94f26f611f83b024aeeb63582c",
+  "repo": "https://github.com/meganz/MEGAcmd/tree/6505327a5a7a0e94f26f611f83b024aeeb63582c",
+  "value": "BSD-2-Clause",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "BSD-2-Clause",
+    "use": "license text",
+    "view": "https://github.com/meganz/MEGAcmd/blob/6505327a5a7a0e94f26f611f83b024aeeb63582c/LICENSE",
+    "raw": "https://raw.githubusercontent.com/meganz/MEGAcmd/6505327a5a7a0e94f26f611f83b024aeeb63582c/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "ChaiScript__ChaiScript",
+  "commit": "f635b51e3f8e95868210edfc66fdbd8e475710f5",
+  "repo": "https://github.com/ChaiScript/ChaiScript/tree/f635b51e3f8e95868210edfc66fdbd8e475710f5",
+  "value": "BSD-3-Clause",
+  "confidence": "medium",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "medium/text",
+  "stratum_size": 225,
+  "stratum_n": 15,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "BSD-3-Clause",
+    "use": "license text",
+    "view": "https://github.com/ChaiScript/ChaiScript/blob/f635b51e3f8e95868210edfc66fdbd8e475710f5/LICENSE",
+    "raw": "https://raw.githubusercontent.com/ChaiScript/ChaiScript/f635b51e3f8e95868210edfc66fdbd8e475710f5/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "KDE__libkeduvocdocument",
+  "commit": "566b64f29946a8c5d0866aacb015c21073fdd138",
+  "repo": "https://github.com/KDE/libkeduvocdocument/tree/566b64f29946a8c5d0866aacb015c21073fdd138",
+  "value": "BSD-1-Clause AND GFDL-1.2-or-later AND GPL-2.0-or-later",
+  "confidence": "high",
+  "evidence_kind": "reuse",
+  "version_choice": "or-later",
+  "stratum": "high/reuse",
+  "stratum_size": 4,
+  "stratum_n": 1,
+  "other": [
+   "BSD-3-Clause"
+  ],
+  "files": [
+   {
+    "path": "LICENSES/BSD-1-Clause.txt",
+    "role": "reuse",
+    "says": "BSD-1-Clause",
+    "use": "license text",
+    "view": "https://github.com/KDE/libkeduvocdocument/blob/566b64f29946a8c5d0866aacb015c21073fdd138/LICENSES/BSD-1-Clause.txt",
+    "raw": "https://raw.githubusercontent.com/KDE/libkeduvocdocument/566b64f29946a8c5d0866aacb015c21073fdd138/LICENSES/BSD-1-Clause.txt"
+   },
+   {
+    "path": "LICENSES/GFDL-1.2-or-later.txt",
+    "role": "reuse",
+    "says": "GFDL-1.2-or-later",
+    "use": "license text",
+    "view": "https://github.com/KDE/libkeduvocdocument/blob/566b64f29946a8c5d0866aacb015c21073fdd138/LICENSES/GFDL-1.2-or-later.txt",
+    "raw": "https://raw.githubusercontent.com/KDE/libkeduvocdocument/566b64f29946a8c5d0866aacb015c21073fdd138/LICENSES/GFDL-1.2-or-later.txt"
+   },
+   {
+    "path": "LICENSES/GPL-2.0-or-later.txt",
+    "role": "reuse",
+    "says": "GPL-2.0-or-later",
+    "use": "license text",
+    "view": "https://github.com/KDE/libkeduvocdocument/blob/566b64f29946a8c5d0866aacb015c21073fdd138/LICENSES/GPL-2.0-or-later.txt",
+    "raw": "https://raw.githubusercontent.com/KDE/libkeduvocdocument/566b64f29946a8c5d0866aacb015c21073fdd138/LICENSES/GPL-2.0-or-later.txt"
+   }
+  ]
+ },
+ {
+  "project": "coin-or__Clp",
+  "commit": "93909279012ba3dcffbc04442c9baa71c9779449",
+  "repo": "https://github.com/coin-or/Clp/tree/93909279012ba3dcffbc04442c9baa71c9779449",
+  "value": "EPL-2.0",
+  "confidence": "medium",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "medium/text",
+  "stratum_size": 225,
+  "stratum_n": 15,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "EPL-2.0",
+    "use": "license text",
+    "view": "https://github.com/coin-or/Clp/blob/93909279012ba3dcffbc04442c9baa71c9779449/LICENSE",
+    "raw": "https://raw.githubusercontent.com/coin-or/Clp/93909279012ba3dcffbc04442c9baa71c9779449/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "hpcc-systems__HPCC-Platform",
+  "commit": "ae429e0578961f5a01fa34ef8232e81a24d396e9",
+  "repo": "https://github.com/hpcc-systems/HPCC-Platform/tree/ae429e0578961f5a01fa34ef8232e81a24d396e9",
+  "value": "Apache-2.0",
+  "confidence": "medium",
+  "evidence_kind": "license-file-notice",
+  "version_choice": "n/a",
+  "stratum": "medium/license-file-notice",
+  "stratum_size": 119,
+  "stratum_n": 9,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE.txt",
+    "role": "primary",
+    "says": "Apache-2.0",
+    "use": "license text",
+    "view": "https://github.com/hpcc-systems/HPCC-Platform/blob/ae429e0578961f5a01fa34ef8232e81a24d396e9/LICENSE.txt",
+    "raw": "https://raw.githubusercontent.com/hpcc-systems/HPCC-Platform/ae429e0578961f5a01fa34ef8232e81a24d396e9/LICENSE.txt"
+   }
+  ]
+ },
+ {
+  "project": "gitlab.com__muttmua__mutt",
+  "commit": "844fcfe7861631359ee789e4231d322144a1bd3b",
+  "repo": "https://gitlab.com/muttmua/mutt/-/tree/844fcfe7861631359ee789e4231d322144a1bd3b",
+  "value": "GPL-2.0-or-later",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "or-later",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "GPL",
+    "role": "named",
+    "says": "GPL-2.0-only",
+    "use": "license text",
+    "view": "https://gitlab.com/muttmua/mutt/-/blob/844fcfe7861631359ee789e4231d322144a1bd3b/GPL",
+    "raw": "https://gitlab.com/muttmua/mutt/-/raw/844fcfe7861631359ee789e4231d322144a1bd3b/GPL"
+   }
+  ]
+ },
+ {
+  "project": "SpigotMC__BungeeCord",
+  "commit": "c2f28c7572afbc0211ecb82f437526ca4ef0b11a",
+  "repo": "https://github.com/SpigotMC/BungeeCord/tree/c2f28c7572afbc0211ecb82f437526ca4ef0b11a",
+  "value": "BSD-3-Clause",
+  "confidence": "medium",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "medium/text",
+  "stratum_size": 225,
+  "stratum_n": 15,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "BSD-3-Clause",
+    "use": "license text",
+    "view": "https://github.com/SpigotMC/BungeeCord/blob/c2f28c7572afbc0211ecb82f437526ca4ef0b11a/LICENSE",
+    "raw": "https://raw.githubusercontent.com/SpigotMC/BungeeCord/c2f28c7572afbc0211ecb82f437526ca4ef0b11a/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "qltysh__qlty",
+  "commit": "7ee5141c209be39713d34bdb492e84b7db1f7a87",
+  "repo": "https://github.com/qltysh/qlty/tree/7ee5141c209be39713d34bdb492e84b7db1f7a87",
+  "value": "BUSL-1.1",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE.md",
+    "role": "primary",
+    "says": "BUSL-1.1",
+    "use": "license text",
+    "view": "https://github.com/qltysh/qlty/blob/7ee5141c209be39713d34bdb492e84b7db1f7a87/LICENSE.md",
+    "raw": "https://raw.githubusercontent.com/qltysh/qlty/7ee5141c209be39713d34bdb492e84b7db1f7a87/LICENSE.md"
+   }
+  ]
+ },
+ {
+  "project": "dovecot__pigeonhole",
+  "commit": "3417ab72a35154509101e8d9874166bf5e14397a",
+  "repo": "https://github.com/dovecot/pigeonhole/tree/3417ab72a35154509101e8d9874166bf5e14397a",
+  "value": "LGPL-2.1-only",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "only",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYING.LGPL",
+    "role": "alt",
+    "says": "LGPL-2.1-only",
+    "use": "license text",
+    "view": "https://github.com/dovecot/pigeonhole/blob/3417ab72a35154509101e8d9874166bf5e14397a/COPYING.LGPL",
+    "raw": "https://raw.githubusercontent.com/dovecot/pigeonhole/3417ab72a35154509101e8d9874166bf5e14397a/COPYING.LGPL"
+   }
+  ]
+ },
+ {
+  "project": "ctt-gob-es__clienteafirma",
+  "commit": "0d7f3cf01fb65d2be5b245622d2c8f490f36e718",
+  "repo": "https://github.com/ctt-gob-es/clienteafirma/tree/0d7f3cf01fb65d2be5b245622d2c8f490f36e718",
+  "value": "GPL-2.0-or-later",
+  "confidence": "medium",
+  "evidence_kind": "manifest",
+  "version_choice": "or-later",
+  "stratum": "medium/manifest",
+  "stratum_size": 41,
+  "stratum_n": 4,
+  "other": [],
+  "files": [
+   {
+    "path": "pom.xml",
+    "role": "manifest",
+    "says": "GPL-2.0-only",
+    "use": "declares",
+    "view": "https://github.com/ctt-gob-es/clienteafirma/blob/0d7f3cf01fb65d2be5b245622d2c8f490f36e718/pom.xml",
+    "raw": "https://raw.githubusercontent.com/ctt-gob-es/clienteafirma/0d7f3cf01fb65d2be5b245622d2c8f490f36e718/pom.xml"
+   }
+  ]
+ },
+ {
+  "project": "Sketchware-Pro__Sketchware-Pro",
+  "commit": "07dd619da227db7023ccc6816a1a1f4b7986337d",
+  "repo": "https://github.com/Sketchware-Pro/Sketchware-Pro/tree/07dd619da227db7023ccc6816a1a1f4b7986337d",
+  "value": "GPL-3.0-only",
+  "confidence": "medium",
+  "evidence_kind": "license-file-notice",
+  "version_choice": "only",
+  "stratum": "medium/license-file-notice",
+  "stratum_size": 119,
+  "stratum_n": 9,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE.md",
+    "role": "primary",
+    "says": "GPL-3.0-only",
+    "use": "license text",
+    "view": "https://github.com/Sketchware-Pro/Sketchware-Pro/blob/07dd619da227db7023ccc6816a1a1f4b7986337d/LICENSE.md",
+    "raw": "https://raw.githubusercontent.com/Sketchware-Pro/Sketchware-Pro/07dd619da227db7023ccc6816a1a1f4b7986337d/LICENSE.md"
+   }
+  ]
+ },
+ {
+  "project": "standardese__standardese",
+  "commit": "a30579383c83c840e01cb0e853fbfa0a632fa1a1",
+  "repo": "https://github.com/standardese/standardese/tree/a30579383c83c840e01cb0e853fbfa0a632fa1a1",
+  "value": "MIT",
+  "confidence": "medium",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "medium/text",
+  "stratum_size": 225,
+  "stratum_n": 15,
+  "other": [
+   "Zlib",
+   "BSD-2-Clause",
+   "NCSA"
+  ],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "MIT",
+    "use": "license text",
+    "view": "https://github.com/standardese/standardese/blob/a30579383c83c840e01cb0e853fbfa0a632fa1a1/LICENSE",
+    "raw": "https://raw.githubusercontent.com/standardese/standardese/a30579383c83c840e01cb0e853fbfa0a632fa1a1/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "regolith-labs__ore",
+  "commit": "48c203bd75db3cc45105ec29d8f8db719e5a2263",
+  "repo": "https://github.com/regolith-labs/ore/tree/48c203bd75db3cc45105ec29d8f8db719e5a2263",
+  "value": "Apache-2.0",
+  "confidence": "medium",
+  "evidence_kind": "manifest",
+  "version_choice": "n/a",
+  "stratum": "medium/manifest",
+  "stratum_size": 41,
+  "stratum_n": 4,
+  "other": [],
+  "files": [
+   {
+    "path": "Cargo.toml",
+    "role": "manifest",
+    "says": "Apache-2.0",
+    "use": "declares",
+    "view": "https://github.com/regolith-labs/ore/blob/48c203bd75db3cc45105ec29d8f8db719e5a2263/Cargo.toml",
+    "raw": "https://raw.githubusercontent.com/regolith-labs/ore/48c203bd75db3cc45105ec29d8f8db719e5a2263/Cargo.toml"
+   }
+  ]
+ },
+ {
+  "project": "MiniZinc__libminizinc",
+  "commit": "a872c75197426a9e510134ae1af521c51360b3a6",
+  "repo": "https://github.com/MiniZinc/libminizinc/tree/a872c75197426a9e510134ae1af521c51360b3a6",
+  "value": "MPL-2.0",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE.txt",
+    "role": "primary",
+    "says": "MPL-2.0",
+    "use": "license text",
+    "view": "https://github.com/MiniZinc/libminizinc/blob/a872c75197426a9e510134ae1af521c51360b3a6/LICENSE.txt",
+    "raw": "https://raw.githubusercontent.com/MiniZinc/libminizinc/a872c75197426a9e510134ae1af521c51360b3a6/LICENSE.txt"
+   }
+  ]
+ },
+ {
+  "project": "jacoco__jacoco",
+  "commit": "64d0ef7a0bd19ae0716da7b0e3545c377f561003",
+  "repo": "https://github.com/jacoco/jacoco/tree/64d0ef7a0bd19ae0716da7b0e3545c377f561003",
+  "value": "EPL-2.0",
+  "confidence": "medium",
+  "evidence_kind": "license-file-notice",
+  "version_choice": "n/a",
+  "stratum": "medium/license-file-notice",
+  "stratum_size": 119,
+  "stratum_n": 9,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE.md",
+    "role": "primary",
+    "says": "EPL-2.0",
+    "use": "license text",
+    "view": "https://github.com/jacoco/jacoco/blob/64d0ef7a0bd19ae0716da7b0e3545c377f561003/LICENSE.md",
+    "raw": "https://raw.githubusercontent.com/jacoco/jacoco/64d0ef7a0bd19ae0716da7b0e3545c377f561003/LICENSE.md"
+   }
+  ]
+ },
+ {
+  "project": "joe-scotto__scottokeebs",
+  "commit": "3be1ea0efeda4a2a7b0132384312d49ca146969b",
+  "repo": "https://github.com/joe-scotto/scottokeebs/tree/3be1ea0efeda4a2a7b0132384312d49ca146969b",
+  "value": "CC-BY-NC-SA-4.0",
+  "confidence": "medium",
+  "evidence_kind": "license-file-notice",
+  "version_choice": "n/a",
+  "stratum": "medium/license-file-notice",
+  "stratum_size": 119,
+  "stratum_n": 9,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE.md",
+    "role": "primary",
+    "says": "CC-BY-NC-SA-4.0",
+    "use": "license text",
+    "view": "https://github.com/joe-scotto/scottokeebs/blob/3be1ea0efeda4a2a7b0132384312d49ca146969b/LICENSE.md",
+    "raw": "https://raw.githubusercontent.com/joe-scotto/scottokeebs/3be1ea0efeda4a2a7b0132384312d49ca146969b/LICENSE.md"
+   }
+  ]
+ },
+ {
+  "project": "beagleboard__linux",
+  "commit": "e771677c937da5808f7b6c1f0e4a97ec1a84f8a8",
+  "repo": "https://github.com/beagleboard/linux/tree/e771677c937da5808f7b6c1f0e4a97ec1a84f8a8",
+  "value": "GPL-2.0 WITH Linux-syscall-note",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "mixed",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "GPL-2.0-only WITH Linux-syscall-note",
+    "use": "license text",
+    "view": "https://github.com/beagleboard/linux/blob/e771677c937da5808f7b6c1f0e4a97ec1a84f8a8/COPYING",
+    "raw": "https://raw.githubusercontent.com/beagleboard/linux/e771677c937da5808f7b6c1f0e4a97ec1a84f8a8/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "crosstool-ng__crosstool-ng",
+  "commit": "6ad730a900b247c21063be9329c682cbc887e3ba",
+  "repo": "https://github.com/crosstool-ng/crosstool-ng/tree/6ad730a900b247c21063be9329c682cbc887e3ba",
+  "value": "CC-BY-4.0 OR CC-BY-3.0",
+  "confidence": "medium",
+  "evidence_kind": "text+notice",
+  "version_choice": "n/a",
+  "stratum": "medium/text+notice",
+  "stratum_size": 56,
+  "stratum_n": 4,
+  "other": [
+   "GPL-2.0",
+   "LGPL-2.1",
+   "LGPL-2.0"
+  ],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "license-file-notice",
+    "says": "CC-BY-4.0 OR CC-BY-3.0",
+    "use": "chooses",
+    "view": "https://github.com/crosstool-ng/crosstool-ng/blob/6ad730a900b247c21063be9329c682cbc887e3ba/COPYING",
+    "raw": "https://raw.githubusercontent.com/crosstool-ng/crosstool-ng/6ad730a900b247c21063be9329c682cbc887e3ba/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "linux-rdma__rdma-core",
+  "commit": "bd3282a1cf1025c7869a8664c2d54266a4dded44",
+  "repo": "https://github.com/linux-rdma/rdma-core/tree/bd3282a1cf1025c7869a8664c2d54266a4dded44",
+  "value": "GPL-2.0-only",
+  "confidence": "medium",
+  "evidence_kind": "text",
+  "version_choice": "only",
+  "stratum": "medium/text",
+  "stratum_size": 225,
+  "stratum_n": 15,
+  "other": [
+   "BSD-2-Clause",
+   "Linux-OpenIB"
+  ],
+  "files": [
+   {
+    "path": "COPYING.GPL2",
+    "role": "alt",
+    "says": "GPL-2.0-only",
+    "use": "license text",
+    "view": "https://github.com/linux-rdma/rdma-core/blob/bd3282a1cf1025c7869a8664c2d54266a4dded44/COPYING.GPL2",
+    "raw": "https://raw.githubusercontent.com/linux-rdma/rdma-core/bd3282a1cf1025c7869a8664c2d54266a4dded44/COPYING.GPL2"
+   }
+  ]
+ },
+ {
+  "project": "LancePutnam__Gamma",
+  "commit": "88a443ba1d706ffcc4d780d47eef1fb8b847c02b",
+  "repo": "https://github.com/LancePutnam/Gamma/tree/88a443ba1d706ffcc4d780d47eef1fb8b847c02b",
+  "value": "MIT",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "MIT",
+    "use": "license text",
+    "view": "https://github.com/LancePutnam/Gamma/blob/88a443ba1d706ffcc4d780d47eef1fb8b847c02b/LICENSE",
+    "raw": "https://raw.githubusercontent.com/LancePutnam/Gamma/88a443ba1d706ffcc4d780d47eef1fb8b847c02b/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "eclipse-mosquitto__mosquitto",
+  "commit": "83f2620f0b955b89aadce32cceb96a8e81950f5e",
+  "repo": "https://github.com/eclipse-mosquitto/mosquitto/tree/83f2620f0b955b89aadce32cceb96a8e81950f5e",
+  "value": "EPL-2.0 OR BSD-3-Clause",
+  "confidence": "high",
+  "evidence_kind": "text+notice",
+  "version_choice": "n/a",
+  "stratum": "high/text+notice",
+  "stratum_size": 184,
+  "stratum_n": 13,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE.txt",
+    "role": "license-file-notice",
+    "says": "EPL-2.0 OR BSD-3-Clause",
+    "use": "chooses",
+    "view": "https://github.com/eclipse-mosquitto/mosquitto/blob/83f2620f0b955b89aadce32cceb96a8e81950f5e/LICENSE.txt",
+    "raw": "https://raw.githubusercontent.com/eclipse-mosquitto/mosquitto/83f2620f0b955b89aadce32cceb96a8e81950f5e/LICENSE.txt"
+   }
+  ]
+ },
+ {
+  "project": "ignatov__intellij-erlang",
+  "commit": "895d70d934b0fb07f5a33b65c825203b2714e345",
+  "repo": "https://github.com/ignatov/intellij-erlang/tree/895d70d934b0fb07f5a33b65c825203b2714e345",
+  "value": "Apache-2.0",
+  "confidence": "medium",
+  "evidence_kind": "license-file-notice",
+  "version_choice": "n/a",
+  "stratum": "medium/license-file-notice",
+  "stratum_size": 119,
+  "stratum_n": 9,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENCE",
+    "role": "primary",
+    "says": "Apache-2.0",
+    "use": "license text",
+    "view": "https://github.com/ignatov/intellij-erlang/blob/895d70d934b0fb07f5a33b65c825203b2714e345/LICENCE",
+    "raw": "https://raw.githubusercontent.com/ignatov/intellij-erlang/895d70d934b0fb07f5a33b65c825203b2714e345/LICENCE"
+   }
+  ]
+ },
+ {
+  "project": "jolibrain__deepdetect",
+  "commit": "a1c574cc54b49bc5706c84c12b68c2ba7cfd072b",
+  "repo": "https://github.com/jolibrain/deepdetect/tree/a1c574cc54b49bc5706c84c12b68c2ba7cfd072b",
+  "value": "LGPL-3.0-or-later",
+  "confidence": "medium",
+  "evidence_kind": "text",
+  "version_choice": "or-later",
+  "stratum": "medium/text",
+  "stratum_size": 225,
+  "stratum_n": 15,
+  "other": [
+   "BSD-2-Clause",
+   "BSD-3-Clause",
+   "JSON",
+   "MIT"
+  ],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "LGPL-3.0-only",
+    "use": "license text",
+    "view": "https://github.com/jolibrain/deepdetect/blob/a1c574cc54b49bc5706c84c12b68c2ba7cfd072b/COPYING",
+    "raw": "https://raw.githubusercontent.com/jolibrain/deepdetect/a1c574cc54b49bc5706c84c12b68c2ba7cfd072b/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "BlockchainCommons__Learning-Bitcoin-from-the-Command-Line",
+  "commit": "8ea3dadc7ae5e3b62b7d6e329724c85f19102ae4",
+  "repo": "https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line/tree/8ea3dadc7ae5e3b62b7d6e329724c85f19102ae4",
+  "value": "CC-BY-4.0",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE-CC-BY-4.0.md",
+    "role": "alt",
+    "says": "CC-BY-4.0",
+    "use": "license text",
+    "view": "https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line/blob/8ea3dadc7ae5e3b62b7d6e329724c85f19102ae4/LICENSE-CC-BY-4.0.md",
+    "raw": "https://raw.githubusercontent.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line/8ea3dadc7ae5e3b62b7d6e329724c85f19102ae4/LICENSE-CC-BY-4.0.md"
+   }
+  ]
+ },
+ {
+  "project": "dstndstn__astrometry.net",
+  "commit": "d20a0503739e74b02418cde2e7d65013dadac579",
+  "repo": "https://github.com/dstndstn/astrometry.net/tree/d20a0503739e74b02418cde2e7d65013dadac579",
+  "value": "BSD-3-Clause",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "BSD-3-Clause",
+    "use": "license text",
+    "view": "https://github.com/dstndstn/astrometry.net/blob/d20a0503739e74b02418cde2e7d65013dadac579/LICENSE",
+    "raw": "https://raw.githubusercontent.com/dstndstn/astrometry.net/d20a0503739e74b02418cde2e7d65013dadac579/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "Stiffstream__restinio",
+  "commit": "4dd29c63dcb3c962ac0402b7237f1388780c2266",
+  "repo": "https://github.com/Stiffstream/restinio/tree/4dd29c63dcb3c962ac0402b7237f1388780c2266",
+  "value": "BSD-3-Clause",
+  "confidence": "high",
+  "evidence_kind": "text+notice",
+  "version_choice": "n/a",
+  "stratum": "high/text+notice",
+  "stratum_size": 184,
+  "stratum_n": 13,
+  "other": [
+   "Zlib",
+   "BSL-1.0",
+   "MIT"
+  ],
+  "files": [
+   {
+    "path": "README.md",
+    "role": "readme",
+    "says": "BSD-3-Clause",
+    "use": "chooses",
+    "view": "https://github.com/Stiffstream/restinio/blob/4dd29c63dcb3c962ac0402b7237f1388780c2266/README.md",
+    "raw": "https://raw.githubusercontent.com/Stiffstream/restinio/4dd29c63dcb3c962ac0402b7237f1388780c2266/README.md"
+   },
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "BSD-3-Clause",
+    "use": "license text",
+    "view": "https://github.com/Stiffstream/restinio/blob/4dd29c63dcb3c962ac0402b7237f1388780c2266/LICENSE",
+    "raw": "https://raw.githubusercontent.com/Stiffstream/restinio/4dd29c63dcb3c962ac0402b7237f1388780c2266/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "stella-cv__stella_vslam",
+  "commit": "e445b5452535e781fdf6777ec33a06f5f8f5e416",
+  "repo": "https://github.com/stella-cv/stella_vslam/tree/e445b5452535e781fdf6777ec33a06f5f8f5e416",
+  "value": "BSD-2-Clause",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE.fork",
+    "role": "secondary",
+    "says": "BSD-2-Clause",
+    "use": "license text",
+    "view": "https://github.com/stella-cv/stella_vslam/blob/e445b5452535e781fdf6777ec33a06f5f8f5e416/LICENSE.fork",
+    "raw": "https://raw.githubusercontent.com/stella-cv/stella_vslam/e445b5452535e781fdf6777ec33a06f5f8f5e416/LICENSE.fork"
+   }
+  ]
+ },
+ {
+  "project": "Xilinx__qemu",
+  "commit": "59fb95c62a25821b5bd8fc594af5b7a6bdaef4dd",
+  "repo": "https://github.com/Xilinx/qemu/tree/59fb95c62a25821b5bd8fc594af5b7a6bdaef4dd",
+  "value": "GPL-2.0",
+  "confidence": "medium",
+  "evidence_kind": "text+notice",
+  "version_choice": "mixed",
+  "stratum": "medium/text+notice",
+  "stratum_size": 56,
+  "stratum_n": 4,
+  "other": [
+   "LGPL-2.1"
+  ],
+  "files": [
+   {
+    "path": "README.rst",
+    "role": "readme",
+    "says": "GPL-2.0-only",
+    "use": "chooses",
+    "view": "https://github.com/Xilinx/qemu/blob/59fb95c62a25821b5bd8fc594af5b7a6bdaef4dd/README.rst",
+    "raw": "https://raw.githubusercontent.com/Xilinx/qemu/59fb95c62a25821b5bd8fc594af5b7a6bdaef4dd/README.rst"
+   },
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "GPL-2.0-only",
+    "use": "license text",
+    "view": "https://github.com/Xilinx/qemu/blob/59fb95c62a25821b5bd8fc594af5b7a6bdaef4dd/COPYING",
+    "raw": "https://raw.githubusercontent.com/Xilinx/qemu/59fb95c62a25821b5bd8fc594af5b7a6bdaef4dd/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "jobrunr__jobrunr",
+  "commit": "783682b2cc28fe48ffeb09e5e3f8ec1e9882e6de",
+  "repo": "https://github.com/jobrunr/jobrunr/tree/783682b2cc28fe48ffeb09e5e3f8ec1e9882e6de",
+  "value": "LGPL-3.0-or-later",
+  "confidence": "medium",
+  "evidence_kind": "text+notice",
+  "version_choice": "or-later",
+  "stratum": "medium/text+notice",
+  "stratum_size": 56,
+  "stratum_n": 4,
+  "other": [
+   "LicenseRef-scancode-commercial-license"
+  ],
+  "files": [
+   {
+    "path": "README.md",
+    "role": "readme",
+    "says": "LGPL-3.0-only",
+    "use": "chooses",
+    "view": "https://github.com/jobrunr/jobrunr/blob/783682b2cc28fe48ffeb09e5e3f8ec1e9882e6de/README.md",
+    "raw": "https://raw.githubusercontent.com/jobrunr/jobrunr/783682b2cc28fe48ffeb09e5e3f8ec1e9882e6de/README.md"
+   },
+   {
+    "path": "License-lgpl.md",
+    "role": "alt",
+    "says": "LGPL-3.0-only",
+    "use": "license text",
+    "view": "https://github.com/jobrunr/jobrunr/blob/783682b2cc28fe48ffeb09e5e3f8ec1e9882e6de/License-lgpl.md",
+    "raw": "https://raw.githubusercontent.com/jobrunr/jobrunr/783682b2cc28fe48ffeb09e5e3f8ec1e9882e6de/License-lgpl.md"
+   }
+  ]
+ },
+ {
+  "project": "ablab__spades",
+  "commit": "e617eb81d76616c2003765d55b169ff216fd5a32",
+  "repo": "https://github.com/ablab/spades/tree/e617eb81d76616c2003765d55b169ff216fd5a32",
+  "value": "GPL-2.0-only",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "only",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "GPLv2.txt",
+    "role": "named",
+    "says": "GPL-2.0-only",
+    "use": "license text",
+    "view": "https://github.com/ablab/spades/blob/e617eb81d76616c2003765d55b169ff216fd5a32/GPLv2.txt",
+    "raw": "https://raw.githubusercontent.com/ablab/spades/e617eb81d76616c2003765d55b169ff216fd5a32/GPLv2.txt"
+   }
+  ]
+ },
+ {
+  "project": "X11Libre__xserver",
+  "commit": "79dee7378eb6581c2fb26d67f86ef594b0aa373e",
+  "repo": "https://github.com/X11Libre/xserver/tree/79dee7378eb6581c2fb26d67f86ef594b0aa373e",
+  "value": "MIT",
+  "confidence": "medium",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "medium/text",
+  "stratum_size": 225,
+  "stratum_n": 15,
+  "other": [
+   "X11",
+   "HPND-sell-variant",
+   "HPND",
+   "LicenseRef-scancode-other-permissive",
+   "MIT-open-group",
+   "LicenseRef-scancode-mit-old-style",
+   "DEC-3-Clause",
+   "SGI-B-2.0",
+   "LicenseRef-scancode-xfree86-1.0",
+   "Adobe-Display-PostScript",
+   "ISC",
+   "ICU",
+   "BSD-3-Clause",
+   "HPND-sell-MIT-disclaimer-xserver",
+   "BSD-2-Clause"
+  ],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "MIT",
+    "use": "license text",
+    "view": "https://github.com/X11Libre/xserver/blob/79dee7378eb6581c2fb26d67f86ef594b0aa373e/COPYING",
+    "raw": "https://raw.githubusercontent.com/X11Libre/xserver/79dee7378eb6581c2fb26d67f86ef594b0aa373e/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "apache__openmeetings",
+  "commit": "b91cf1f1197cf58ac73b158e0637a26b7ca8ad3d",
+  "repo": "https://github.com/apache/openmeetings/tree/b91cf1f1197cf58ac73b158e0637a26b7ca8ad3d",
+  "value": "Apache-2.0",
+  "confidence": "medium",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "medium/text",
+  "stratum_size": 225,
+  "stratum_n": 15,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "Apache-2.0",
+    "use": "license text",
+    "view": "https://github.com/apache/openmeetings/blob/b91cf1f1197cf58ac73b158e0637a26b7ca8ad3d/LICENSE",
+    "raw": "https://raw.githubusercontent.com/apache/openmeetings/b91cf1f1197cf58ac73b158e0637a26b7ca8ad3d/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "immunant__c2rust",
+  "commit": "1104af0d22c44bc175ddbd578c9a9398b269b901",
+  "repo": "https://github.com/immunant/c2rust/tree/1104af0d22c44bc175ddbd578c9a9398b269b901",
+  "value": "BSD-3-Clause",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "BSD-3-Clause",
+    "use": "license text",
+    "view": "https://github.com/immunant/c2rust/blob/1104af0d22c44bc175ddbd578c9a9398b269b901/LICENSE",
+    "raw": "https://raw.githubusercontent.com/immunant/c2rust/1104af0d22c44bc175ddbd578c9a9398b269b901/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "root-project__root",
+  "commit": "c573405f39619b7f375f0fab6fcf95ec81a37b32",
+  "repo": "https://github.com/root-project/root/tree/c573405f39619b7f375f0fab6fcf95ec81a37b32",
+  "value": "LGPL-2.1",
+  "confidence": "medium",
+  "evidence_kind": "text",
+  "version_choice": "mixed",
+  "stratum": "medium/text",
+  "stratum_size": 225,
+  "stratum_n": 15,
+  "other": [],
+  "files": [
+   {
+    "path": "LGPL2_1.txt",
+    "role": "named",
+    "says": "LGPL-2.1-only",
+    "use": "license text",
+    "view": "https://github.com/root-project/root/blob/c573405f39619b7f375f0fab6fcf95ec81a37b32/LGPL2_1.txt",
+    "raw": "https://raw.githubusercontent.com/root-project/root/c573405f39619b7f375f0fab6fcf95ec81a37b32/LGPL2_1.txt"
+   }
+  ]
+ },
+ {
+  "project": "invent.kde.org__unmaintained__jovie",
+  "commit": "e42e431f0a8ad40816603605560feba1b260df53",
+  "repo": "https://invent.kde.org/unmaintained/jovie/-/tree/e42e431f0a8ad40816603605560feba1b260df53",
+  "value": "GFDL-1.2 AND GPL-2.0-or-later",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "several",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "GPL-2.0-only WITH Linux-syscall-note",
+    "use": "license text",
+    "view": "https://invent.kde.org/unmaintained/jovie/-/blob/e42e431f0a8ad40816603605560feba1b260df53/COPYING",
+    "raw": "https://invent.kde.org/unmaintained/jovie/-/raw/e42e431f0a8ad40816603605560feba1b260df53/COPYING"
+   },
+   {
+    "path": "COPYING.DOC",
+    "role": "alt",
+    "says": "GFDL-1.2-only",
+    "use": "license text",
+    "view": "https://invent.kde.org/unmaintained/jovie/-/blob/e42e431f0a8ad40816603605560feba1b260df53/COPYING.DOC",
+    "raw": "https://invent.kde.org/unmaintained/jovie/-/raw/e42e431f0a8ad40816603605560feba1b260df53/COPYING.DOC"
+   }
+  ]
+ },
+ {
+  "project": "lighttpd__lighttpd2",
+  "commit": "519b4eb04b171028c45653d332572c59b0422e5f",
+  "repo": "https://github.com/lighttpd/lighttpd2/tree/519b4eb04b171028c45653d332572c59b0422e5f",
+  "value": "MIT",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "MIT",
+    "use": "license text",
+    "view": "https://github.com/lighttpd/lighttpd2/blob/519b4eb04b171028c45653d332572c59b0422e5f/COPYING",
+    "raw": "https://raw.githubusercontent.com/lighttpd/lighttpd2/519b4eb04b171028c45653d332572c59b0422e5f/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "graalvm__native-build-tools",
+  "commit": "fc5de64e7379a59effd83e7020ec29ced18d79c3",
+  "repo": "https://github.com/graalvm/native-build-tools/tree/fc5de64e7379a59effd83e7020ec29ced18d79c3",
+  "value": "UPL-1.0",
+  "confidence": "medium",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "medium/text",
+  "stratum_size": 225,
+  "stratum_n": 15,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "UPL-1.0",
+    "use": "license text",
+    "view": "https://github.com/graalvm/native-build-tools/blob/fc5de64e7379a59effd83e7020ec29ced18d79c3/LICENSE",
+    "raw": "https://raw.githubusercontent.com/graalvm/native-build-tools/fc5de64e7379a59effd83e7020ec29ced18d79c3/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "mean00__avidemux2",
+  "commit": "56bad81710866753d3c00318fbf9f9dd31647218",
+  "repo": "https://github.com/mean00/avidemux2/tree/56bad81710866753d3c00318fbf9f9dd31647218",
+  "value": "GPL-2.0-only",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "only",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "GPL-2.0-only",
+    "use": "license text",
+    "view": "https://github.com/mean00/avidemux2/blob/56bad81710866753d3c00318fbf9f9dd31647218/COPYING",
+    "raw": "https://raw.githubusercontent.com/mean00/avidemux2/56bad81710866753d3c00318fbf9f9dd31647218/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "rhboot__shim",
+  "commit": "4dc4a1bf85542706d345230eb72a0e52d6f0c452",
+  "repo": "https://github.com/rhboot/shim/tree/4dc4a1bf85542706d345230eb72a0e52d6f0c452",
+  "value": "BSD-2-Clause",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYRIGHT",
+    "role": "primary",
+    "says": "BSD-2-Clause",
+    "use": "license text",
+    "view": "https://github.com/rhboot/shim/blob/4dc4a1bf85542706d345230eb72a0e52d6f0c452/COPYRIGHT",
+    "raw": "https://raw.githubusercontent.com/rhboot/shim/4dc4a1bf85542706d345230eb72a0e52d6f0c452/COPYRIGHT"
+   }
+  ]
+ },
+ {
+  "project": "gitlab.freedesktop.org__drm__igt-gpu-tools",
+  "commit": "aada5ae74aa135d2b448e25ec417f4f0dee9439c",
+  "repo": "https://gitlab.freedesktop.org/drm/igt-gpu-tools/-/tree/aada5ae74aa135d2b448e25ec417f4f0dee9439c",
+  "value": "ISC",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "ISC",
+    "use": "license text",
+    "view": "https://gitlab.freedesktop.org/drm/igt-gpu-tools/-/blob/aada5ae74aa135d2b448e25ec417f4f0dee9439c/COPYING",
+    "raw": "https://gitlab.freedesktop.org/drm/igt-gpu-tools/-/raw/aada5ae74aa135d2b448e25ec417f4f0dee9439c/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "jakartaee__concurrency",
+  "commit": "f2ae584acb65229ddad957f89ea85d6b2f54be74",
+  "repo": "https://github.com/jakartaee/concurrency/tree/f2ae584acb65229ddad957f89ea85d6b2f54be74",
+  "value": "EPL-2.0 OR GPL-2.0-only WITH Classpath-exception-2.0",
+  "confidence": "high",
+  "evidence_kind": "text+notice",
+  "version_choice": "only",
+  "stratum": "high/text+notice",
+  "stratum_size": 184,
+  "stratum_n": 13,
+  "other": [],
+  "files": [
+   {
+    "path": "pom.xml",
+    "role": "manifest",
+    "says": "EPL-2.0 OR GPL-2.0-only WITH Classpath-exception-2.0",
+    "use": "chooses",
+    "view": "https://github.com/jakartaee/concurrency/blob/f2ae584acb65229ddad957f89ea85d6b2f54be74/pom.xml",
+    "raw": "https://raw.githubusercontent.com/jakartaee/concurrency/f2ae584acb65229ddad957f89ea85d6b2f54be74/pom.xml"
+   },
+   {
+    "path": "LICENSE.md",
+    "role": "primary",
+    "says": "EPL-2.0",
+    "use": "license text",
+    "view": "https://github.com/jakartaee/concurrency/blob/f2ae584acb65229ddad957f89ea85d6b2f54be74/LICENSE.md",
+    "raw": "https://raw.githubusercontent.com/jakartaee/concurrency/f2ae584acb65229ddad957f89ea85d6b2f54be74/LICENSE.md"
+   }
+  ]
+ },
+ {
+  "project": "krahets__hello-algo",
+  "commit": "350f483801b2badb95180047aa82cadb825852a2",
+  "repo": "https://github.com/krahets/hello-algo/tree/350f483801b2badb95180047aa82cadb825852a2",
+  "value": "CC-BY-NC-SA-4.0",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "CC-BY-NC-SA-4.0",
+    "use": "license text",
+    "view": "https://github.com/krahets/hello-algo/blob/350f483801b2badb95180047aa82cadb825852a2/LICENSE",
+    "raw": "https://raw.githubusercontent.com/krahets/hello-algo/350f483801b2badb95180047aa82cadb825852a2/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "stoatchat__stoatchat",
+  "commit": "4b9047bfd556ebb825ab56b0bb7fb8bf1b056b95",
+  "repo": "https://github.com/stoatchat/stoatchat/tree/4b9047bfd556ebb825ab56b0bb7fb8bf1b056b95",
+  "value": "AGPL-3.0",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "mixed",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "AGPL-3.0-only",
+    "use": "license text",
+    "view": "https://github.com/stoatchat/stoatchat/blob/4b9047bfd556ebb825ab56b0bb7fb8bf1b056b95/LICENSE",
+    "raw": "https://raw.githubusercontent.com/stoatchat/stoatchat/4b9047bfd556ebb825ab56b0bb7fb8bf1b056b95/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "openmrs__openmrs-core",
+  "commit": "5eb8cba2e30befeaec8ab7892dff14ac7dcc9d87",
+  "repo": "https://github.com/openmrs/openmrs-core/tree/5eb8cba2e30befeaec8ab7892dff14ac7dcc9d87",
+  "value": "MPL-2.0",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "MPL-2.0",
+    "use": "license text",
+    "view": "https://github.com/openmrs/openmrs-core/blob/5eb8cba2e30befeaec8ab7892dff14ac7dcc9d87/LICENSE",
+    "raw": "https://raw.githubusercontent.com/openmrs/openmrs-core/5eb8cba2e30befeaec8ab7892dff14ac7dcc9d87/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "bndtools__bnd",
+  "commit": "94eac84b2a237297c93a7f2bb413c966cf37a734",
+  "repo": "https://github.com/bndtools/bnd/tree/94eac84b2a237297c93a7f2bb413c966cf37a734",
+  "value": "Apache-2.0 OR EPL-2.0",
+  "confidence": "high",
+  "evidence_kind": "text+notice",
+  "version_choice": "n/a",
+  "stratum": "high/text+notice",
+  "stratum_size": 184,
+  "stratum_n": 13,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "license-file-or",
+    "says": "Apache-2.0 OR EPL-2.0",
+    "use": "chooses",
+    "view": "https://github.com/bndtools/bnd/blob/94eac84b2a237297c93a7f2bb413c966cf37a734/LICENSE",
+    "raw": "https://raw.githubusercontent.com/bndtools/bnd/94eac84b2a237297c93a7f2bb413c966cf37a734/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "jnr__jnr-ffi",
+  "commit": "39ae9390be88ed16244efd03a78a90346a89f442",
+  "repo": "https://github.com/jnr/jnr-ffi/tree/39ae9390be88ed16244efd03a78a90346a89f442",
+  "value": "Apache-2.0",
+  "confidence": "high",
+  "evidence_kind": "text+notice",
+  "version_choice": "n/a",
+  "stratum": "high/text+notice",
+  "stratum_size": 184,
+  "stratum_n": 13,
+  "other": [
+   "LGPL-3.0"
+  ],
+  "files": [
+   {
+    "path": "pom.xml",
+    "role": "manifest",
+    "says": "Apache-2.0",
+    "use": "chooses",
+    "view": "https://github.com/jnr/jnr-ffi/blob/39ae9390be88ed16244efd03a78a90346a89f442/pom.xml",
+    "raw": "https://raw.githubusercontent.com/jnr/jnr-ffi/39ae9390be88ed16244efd03a78a90346a89f442/pom.xml"
+   },
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "Apache-2.0",
+    "use": "license text",
+    "view": "https://github.com/jnr/jnr-ffi/blob/39ae9390be88ed16244efd03a78a90346a89f442/LICENSE",
+    "raw": "https://raw.githubusercontent.com/jnr/jnr-ffi/39ae9390be88ed16244efd03a78a90346a89f442/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "pure-data__pure-data",
+  "commit": "f3497d41dd28d4ec1906a0601ff4c0a661c3e5d9",
+  "repo": "https://github.com/pure-data/pure-data/tree/f3497d41dd28d4ec1906a0601ff4c0a661c3e5d9",
+  "value": "BSD-3-Clause",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE.txt",
+    "role": "primary",
+    "says": "BSD-3-Clause",
+    "use": "license text",
+    "view": "https://github.com/pure-data/pure-data/blob/f3497d41dd28d4ec1906a0601ff4c0a661c3e5d9/LICENSE.txt",
+    "raw": "https://raw.githubusercontent.com/pure-data/pure-data/f3497d41dd28d4ec1906a0601ff4c0a661c3e5d9/LICENSE.txt"
+   }
+  ]
+ },
+ {
+  "project": "GNOME__gnumeric",
+  "commit": "5d556a736fa37b64ffb672d6fa9fad042f9fab07",
+  "repo": "https://github.com/GNOME/gnumeric/tree/5d556a736fa37b64ffb672d6fa9fad042f9fab07",
+  "value": "GPL-3.0-only",
+  "confidence": "high",
+  "evidence_kind": "text+notice",
+  "version_choice": "only",
+  "stratum": "high/text+notice",
+  "stratum_size": 184,
+  "stratum_n": 13,
+  "other": [
+   "GPL-2.0"
+  ],
+  "files": [
+   {
+    "path": "README",
+    "role": "readme",
+    "says": "GPL-3.0-only",
+    "use": "chooses",
+    "view": "https://github.com/GNOME/gnumeric/blob/5d556a736fa37b64ffb672d6fa9fad042f9fab07/README",
+    "raw": "https://raw.githubusercontent.com/GNOME/gnumeric/5d556a736fa37b64ffb672d6fa9fad042f9fab07/README"
+   },
+   {
+    "path": "COPYING-gpl3",
+    "role": "alt",
+    "says": "GPL-3.0-only",
+    "use": "license text",
+    "view": "https://github.com/GNOME/gnumeric/blob/5d556a736fa37b64ffb672d6fa9fad042f9fab07/COPYING-gpl3",
+    "raw": "https://raw.githubusercontent.com/GNOME/gnumeric/5d556a736fa37b64ffb672d6fa9fad042f9fab07/COPYING-gpl3"
+   }
+  ]
+ },
+ {
+  "project": "gitlab.freedesktop.org__mesa__piglit",
+  "commit": "f9524192f9e8d8970a23bc6f3226358531cb82a1",
+  "repo": "https://gitlab.freedesktop.org/mesa/piglit/-/tree/f9524192f9e8d8970a23bc6f3226358531cb82a1",
+  "value": "BSD-3-Clause AND MIT",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "COPYING",
+    "role": "primary",
+    "says": "MIT",
+    "use": "license text",
+    "view": "https://gitlab.freedesktop.org/mesa/piglit/-/blob/f9524192f9e8d8970a23bc6f3226358531cb82a1/COPYING",
+    "raw": "https://gitlab.freedesktop.org/mesa/piglit/-/raw/f9524192f9e8d8970a23bc6f3226358531cb82a1/COPYING"
+   }
+  ]
+ },
+ {
+  "project": "libnice__libnice",
+  "commit": "340219ebae148991d17cd2e73aefee15f002591c",
+  "repo": "https://github.com/libnice/libnice/tree/340219ebae148991d17cd2e73aefee15f002591c",
+  "value": "LGPL-2.1 OR MPL-1.1",
+  "confidence": "medium",
+  "evidence_kind": "text+notice",
+  "version_choice": "mixed",
+  "stratum": "medium/text+notice",
+  "stratum_size": 56,
+  "stratum_n": 4,
+  "other": [],
+  "files": [
+   {
+    "path": "README",
+    "role": "readme",
+    "says": "LGPL-2.1-or-later OR MPL-1.1",
+    "use": "chooses",
+    "view": "https://github.com/libnice/libnice/blob/340219ebae148991d17cd2e73aefee15f002591c/README",
+    "raw": "https://raw.githubusercontent.com/libnice/libnice/340219ebae148991d17cd2e73aefee15f002591c/README"
+   },
+   {
+    "path": "COPYING.LGPL",
+    "role": "alt",
+    "says": "LGPL-2.1-only",
+    "use": "license text",
+    "view": "https://github.com/libnice/libnice/blob/340219ebae148991d17cd2e73aefee15f002591c/COPYING.LGPL",
+    "raw": "https://raw.githubusercontent.com/libnice/libnice/340219ebae148991d17cd2e73aefee15f002591c/COPYING.LGPL"
+   },
+   {
+    "path": "COPYING.MPL",
+    "role": "alt",
+    "says": "MPL-1.1",
+    "use": "license text",
+    "view": "https://github.com/libnice/libnice/blob/340219ebae148991d17cd2e73aefee15f002591c/COPYING.MPL",
+    "raw": "https://raw.githubusercontent.com/libnice/libnice/340219ebae148991d17cd2e73aefee15f002591c/COPYING.MPL"
+   }
+  ]
+ },
+ {
+  "project": "S2E__s2e",
+  "commit": "7357771f35bcc72b2a289b5efad160bee37dbe91",
+  "repo": "https://github.com/S2E/s2e/tree/7357771f35bcc72b2a289b5efad160bee37dbe91",
+  "value": "MIT",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "MIT",
+    "use": "license text",
+    "view": "https://github.com/S2E/s2e/blob/7357771f35bcc72b2a289b5efad160bee37dbe91/LICENSE",
+    "raw": "https://raw.githubusercontent.com/S2E/s2e/7357771f35bcc72b2a289b5efad160bee37dbe91/LICENSE"
+   }
+  ]
+ },
+ {
+  "project": "musescore__MuseScore",
+  "commit": "78f0c2195f2505a1374eda52f13644d2a35838d2",
+  "repo": "https://github.com/musescore/MuseScore/tree/78f0c2195f2505a1374eda52f13644d2a35838d2",
+  "value": "GPL-3.0-only",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "only",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE.txt",
+    "role": "primary",
+    "says": "GPL-3.0-only",
+    "use": "license text",
+    "view": "https://github.com/musescore/MuseScore/blob/78f0c2195f2505a1374eda52f13644d2a35838d2/LICENSE.txt",
+    "raw": "https://raw.githubusercontent.com/musescore/MuseScore/78f0c2195f2505a1374eda52f13644d2a35838d2/LICENSE.txt"
+   }
+  ]
+ },
+ {
+  "project": "symengine__symengine",
+  "commit": "c65c833669ddbbf6653c080eef5eceb0915719d2",
+  "repo": "https://github.com/symengine/symengine/tree/c65c833669ddbbf6653c080eef5eceb0915719d2",
+  "value": "BSD-3-Clause AND MIT",
+  "confidence": "high",
+  "evidence_kind": "text",
+  "version_choice": "n/a",
+  "stratum": "high/text",
+  "stratum_size": 826,
+  "stratum_n": 54,
+  "other": [],
+  "files": [
+   {
+    "path": "LICENSE",
+    "role": "primary",
+    "says": "MIT",
+    "use": "license text",
+    "view": "https://github.com/symengine/symengine/blob/c65c833669ddbbf6653c080eef5eceb0915719d2/LICENSE",
+    "raw": "https://raw.githubusercontent.com/symengine/symengine/c65c833669ddbbf6653c080eef5eceb0915719d2/LICENSE"
+   }
+  ]
+ }
+]

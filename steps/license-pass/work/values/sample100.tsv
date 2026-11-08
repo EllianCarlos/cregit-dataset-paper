@@ -1,0 +1,101 @@
+project	clone_url	commit	new	confidence	evidence_kind	version_choice	evidence_files	stratum	stratum_size	stratum_n
+mendersoftware__mender	https://github.com/mendersoftware/mender.git	5ec7acd7654b33f58ac4c8d33bd7b806cd7f127a	Apache-2.0	high	text	n/a	LICENSE	high/text	826	54
+flame__blis	https://github.com/flame/blis.git	a8037cfc4330030c726efaec1ffeb1f93d468aa3	BSD-3-Clause	medium	text	n/a	LICENSE	medium/text	225	15
+monero-project__monero	https://github.com/monero-project/monero.git	24272e4a3b2e812cc2a569d95b177ecef4b91e46	BSD-3-Clause AND MIT	high	text	n/a	LICENSE	high/text	826	54
+KDE__kitinerary	https://github.com/KDE/kitinerary.git	0f942406a6610692f9b6a12d895ca34e68bb8eb1	CC0-1.0	high	text+notice	n/a	LICENSES/CC0-1.0.txt;README.md.license	high/text+notice	184	13
+stepcode__stepcode	https://github.com/stepcode/stepcode.git	24783b448511b8f6bce2829286a3f00015430236	BSD-3-Clause	high	text	n/a	COPYING	high/text	826	54
+LuaJIT__LuaJIT	https://github.com/LuaJIT/LuaJIT.git	dd3b24369ddfaa83c78cd6fdd91d157c8968ec8d	MIT	high	text	n/a	COPYRIGHT	high/text	826	54
+lxc__lxc	https://github.com/lxc/lxc.git	61d8ba0a959264dc0d281589526c1391f4406366	LGPL-2.1-or-later	high	text+notice	or-later	COPYING;LICENSE.LGPL2.1	high/text+notice	184	13
+itext__itext-pdfhtml-java	https://github.com/itext/itext-pdfhtml-java.git	bf5d33e19a2353a045d14b0cd93a5908f14846a3	AGPL-3.0-or-later	medium	license-file-notice	or-later	LICENSE.md	medium/license-file-notice	119	9
+Yubico__libfido2	https://github.com/Yubico/libfido2.git	b6e26454b5c94800b9130d4c628b9a8381572c1e	BSD-2-Clause	high	text	n/a	LICENSE	high/text	826	54
+kaj__rsass	https://github.com/kaj/rsass.git	6de9e51648fb51d76ec5fbe2970a3c74249a6112	MIT	high	text	n/a	LICENSE	high/text	826	54
+structr__structr	https://github.com/structr/structr.git	fd8b1755bc0669e91507a5af929617eb3806b5f5	AGPL-3.0 OR GPL-3.0 OR AGPL-3.0 OR GPL-3.0	high	text+notice	mixed	LICENSE-AGPL-3.0;LICENSE-GPL-3.0;README.md	high/text+notice	184	13
+WagicProject__wagic	https://github.com/WagicProject/wagic.git	f71bffd65739f83a920d5ba2209e396afcc9b9d8	BSD-3-Clause	medium	license-file-notice	n/a	LICENSE	medium/license-file-notice	119	9
+gwsw__less	https://github.com/gwsw/less.git	7f46e9ff46216f3e560cd1f41ddf3b36b11eec0e	GPL-3.0-or-later OR BSD-2-Clause	high	text+notice	or-later	COPYING;LICENSE;README	high/text+notice	184	13
+alibaba__AliSQL	https://github.com/alibaba/AliSQL.git	9e121f27d404cad6cdb1cc695eab4276469adace	GPL-2.0	medium	text	mixed	LICENSE	medium/text	225	15
+OpenNMS__opennms	https://github.com/OpenNMS/opennms.git	0b2803b968162bfdc1d32484f98a90d8dd9e8183	AGPL-3.0-or-later	high	text	or-later	COPYING	high/text	826	54
+OSGeo__PROJ	https://github.com/OSGeo/PROJ.git	e75fbeda10e0c7309b837a9ce87508d4521cfa0d	MIT	high	text	n/a	COPYING	high/text	826	54
+softdevteam__grmtools	https://github.com/softdevteam/grmtools.git	8ce095a386c84392bf6d7bf98bf813d06c87b708	Apache-2.0 OR MIT	high	text+notice	n/a	COPYRIGHT;LICENSE-APACHE;LICENSE-MIT	high/text+notice	184	13
+kmscon__kmscon	https://github.com/kmscon/kmscon.git	6c03eb4982aa1f56a719c09c16a955c68f839ba4	MIT AND OFL-1.1	high	text	n/a	COPYING	high/text	826	54
+axelor__axelor-open-suite	https://github.com/axelor/axelor-open-suite.git	f8345ec00e9ad15db523ba0b8eb9f97f667b2e2c	AGPL-3.0-or-later	high	text	or-later	LICENSE	high/text	826	54
+OpenTTD__OpenTTD	https://github.com/OpenTTD/OpenTTD.git	d48d693d7ff09b643846e23a5f033cf3582ab27f	GPL-2.0-only	high	text	only	COPYING.md	high/text	826	54
+tenacityteam__tenacity	https://github.com/tenacityteam/tenacity.git	ff6268c2b3c97ee6765b92bf9b42c14f7c4d0556	GPL-2.0-only	high	text	only	LICENSE.txt	high/text	826	54
+xiph__speex	https://github.com/xiph/speex.git	05895229896dc942d453446eba6f9f5ddcf95422	BSD-3-Clause	high	text	n/a	COPYING	high/text	826	54
+Nasiko-Labs__nasiko	https://github.com/Nasiko-Labs/nasiko.git	50b0a34e394503fad466d637300f8e32361f71a3	Apache-2.0	medium	text	n/a	LICENSE	medium/text	225	15
+tianocore__edk2-platforms	https://github.com/tianocore/edk2-platforms.git	1c500d13a653cf0f556ecf7ce703c12874247efc	BSD-2-Clause-Patent	high	text+notice	n/a	License.txt;Readme.md	high/text+notice	184	13
+gitlab.freedesktop.org__telepathy__telepathy-glib	https://gitlab.freedesktop.org/telepathy/telepathy-glib	72412c944b771f3214ddc40fa9dea82cea3a5651	LGPL-2.1-or-later	medium	text	or-later	COPYING	medium/text	225	15
+pmodels__mpich	https://github.com/pmodels/mpich.git	cd0a4270556ef65d3e993577d23ec4954a94ee12	mpich2	high	text	n/a	COPYRIGHT	high/text	826	54
+laruence__yaf	https://github.com/laruence/yaf.git	eafa56fb9b77173d62dde98f1bdfb63b4f4d0790	PHP-3.01	high	text	n/a	LICENSE	high/text	826	54
+GNOME__gnome-online-accounts	https://github.com/GNOME/gnome-online-accounts.git	911f093ab55a367bc34373f5f78c9f83a8378045	LGPL-2.0	high	text	mixed	COPYING	high/text	826	54
+DrTimothyAldenDavis__GraphBLAS	https://github.com/DrTimothyAldenDavis/GraphBLAS.git	afbe9aaefe5df7632ca82b478d65d0f6c1e14db0	BSD-2-Clause AND BSD-3-Clause	high	text	n/a	LICENSE	high/text	826	54
+moononournation__Arduino_GFX	https://github.com/moononournation/Arduino_GFX.git	c2e39350ff09c3720702bd3f050cb581fa45a8e9	BSD-2-Clause	high	text	n/a	license.txt	high/text	826	54
+pkgconf__pkgconf	https://github.com/pkgconf/pkgconf.git	4b6fcd4e5baf03d5cb4797e46976cb69756ad865	pkgconf	high	text	n/a	COPYING	high/text	826	54
+kamailio__kamailio	https://github.com/kamailio/kamailio.git	c8d38fa650715f25244ce36bdd985219e684878f	GPL-2.0-only	high	text	only	COPYING	high/text	826	54
+apache__jackrabbit-filevault	https://github.com/apache/jackrabbit-filevault.git	a551900ff67e1ec51f086bf331b02dbeaf769dba	Apache-2.0	medium	manifest	n/a	pom.xml	medium/manifest	41	4
+OpenAEV-Platform__openaev	https://github.com/OpenAEV-Platform/openaev.git	1f84cbf6a5475f33f82fb62b9a0a476541d34b84	Apache-2.0	high	text	n/a	LICENSE	high/text	826	54
+Xilinx__u-boot-xlnx	https://github.com/Xilinx/u-boot-xlnx.git	68b065eb2ff46dd7005a72b85411fb5ece5486bf	GPL-2.0-or-later	high	text	or-later	COPYING	high/text	826	54
+sonic-net__sonic-sairedis	https://github.com/sonic-net/sonic-sairedis.git	f416fe163324d44e8a1e745c9238d68a136f2cf4	Apache-2.0	medium	license-file-notice	n/a	LICENSE	medium/license-file-notice	119	9
+sonos__dinghy	https://github.com/sonos/dinghy.git	0b018107e004ee1c1b834a1104588ff1dcbb6d76	Apache-2.0 OR MIT	high	text+notice	n/a	LICENSE-APACHE;LICENSE-MIT;README.md	high/text+notice	184	13
+opensagres__xdocreport	https://github.com/opensagres/xdocreport.git	625c947734ca25d504b3217e33d3f5275b4e0ae6	MIT	medium	manifest	n/a	pom.xml	medium/manifest	41	4
+ta4j__ta4j	https://github.com/ta4j/ta4j.git	e7ddaa51f9216c2fa44656f3e03a627c2d499511	MIT	medium	license-file-notice	n/a	license-header.txt	medium/license-file-notice	119	9
+openresty__luajit2	https://github.com/openresty/luajit2.git	f6a9b2a6f0386bac736655703e90f1ef534bfbdc	MIT	high	text	n/a	COPYRIGHT	high/text	826	54
+GPUOpen-Tools__GPU-Reshape	https://github.com/GPUOpen-Tools/GPU-Reshape.git	e1d747a5660d38dfbcad5f987c68fe2da8db2733	MIT	high	text	n/a	License.md	high/text	826	54
+KDE__konsole	https://github.com/KDE/konsole.git	26160259632e512ae3ffcbbc988e071d8dc19a96	GFDL-1.2 AND GPL-2.0 AND LGPL-2.0-only	high	text	several	COPYING;COPYING.DOC;COPYING.LIB	high/text	826	54
+gitbutlerapp__grit	https://github.com/gitbutlerapp/grit.git	c50d9e6b352139b44852eda3f90efdd9c4d296a8	MIT	high	text	n/a	LICENSE	high/text	826	54
+gitlab.freedesktop.org__xorg__driver__xf86-video-ati	https://gitlab.freedesktop.org/xorg/driver/xf86-video-ati	f317c8908e8759df49bff8a78a8adee2266a036e	HPND-sell-variant	medium	text	n/a	COPYING	medium/text	225	15
+smackers__smack	https://github.com/smackers/smack.git	0a64471206645c250164e8df6027f5a5193e5e85	MIT	high	text	n/a	LICENSE	high/text	826	54
+livegrep__livegrep	https://github.com/livegrep/livegrep.git	923d5ad71dfe60900e6c2017b2fa4a5ff902ad71	BSD-2-Clause-Views	high	text	n/a	COPYING	high/text	826	54
+jeremyletang__rust-sfml	https://github.com/jeremyletang/rust-sfml.git	27d273c0e8c7fb273c97a2815b51d7b5657e2aa5	Zlib	high	text	n/a	LICENSE.txt	high/text	826	54
+meganz__MEGAcmd	https://github.com/meganz/MEGAcmd.git	6505327a5a7a0e94f26f611f83b024aeeb63582c	BSD-2-Clause	high	text	n/a	LICENSE	high/text	826	54
+ChaiScript__ChaiScript	https://github.com/ChaiScript/ChaiScript.git	f635b51e3f8e95868210edfc66fdbd8e475710f5	BSD-3-Clause	medium	text	n/a	LICENSE	medium/text	225	15
+KDE__libkeduvocdocument	https://github.com/KDE/libkeduvocdocument.git	566b64f29946a8c5d0866aacb015c21073fdd138	BSD-1-Clause AND GFDL-1.2-or-later AND GPL-2.0-or-later	high	reuse	or-later	LICENSES/BSD-1-Clause.txt;LICENSES/GFDL-1.2-or-later.txt;LICENSES/GPL-2.0-or-later.txt	high/reuse	4	1
+coin-or__Clp	https://github.com/coin-or/Clp.git	93909279012ba3dcffbc04442c9baa71c9779449	EPL-2.0	medium	text	n/a	LICENSE	medium/text	225	15
+hpcc-systems__HPCC-Platform	https://github.com/hpcc-systems/HPCC-Platform.git	ae429e0578961f5a01fa34ef8232e81a24d396e9	Apache-2.0	medium	license-file-notice	n/a	LICENSE.txt	medium/license-file-notice	119	9
+gitlab.com__muttmua__mutt	https://gitlab.com/muttmua/mutt	844fcfe7861631359ee789e4231d322144a1bd3b	GPL-2.0-or-later	high	text	or-later	GPL	high/text	826	54
+SpigotMC__BungeeCord	https://github.com/SpigotMC/BungeeCord.git	c2f28c7572afbc0211ecb82f437526ca4ef0b11a	BSD-3-Clause	medium	text	n/a	LICENSE	medium/text	225	15
+qltysh__qlty	https://github.com/qltysh/qlty.git	7ee5141c209be39713d34bdb492e84b7db1f7a87	BUSL-1.1	high	text	n/a	LICENSE.md	high/text	826	54
+dovecot__pigeonhole	https://github.com/dovecot/pigeonhole.git	3417ab72a35154509101e8d9874166bf5e14397a	LGPL-2.1-only	high	text	only	COPYING.LGPL	high/text	826	54
+ctt-gob-es__clienteafirma	https://github.com/ctt-gob-es/clienteafirma.git	0d7f3cf01fb65d2be5b245622d2c8f490f36e718	GPL-2.0-or-later	medium	manifest	or-later	pom.xml	medium/manifest	41	4
+Sketchware-Pro__Sketchware-Pro	https://github.com/Sketchware-Pro/Sketchware-Pro.git	07dd619da227db7023ccc6816a1a1f4b7986337d	GPL-3.0-only	medium	license-file-notice	only	LICENSE.md	medium/license-file-notice	119	9
+standardese__standardese	https://github.com/standardese/standardese.git	a30579383c83c840e01cb0e853fbfa0a632fa1a1	MIT	medium	text	n/a	LICENSE	medium/text	225	15
+regolith-labs__ore	https://github.com/regolith-labs/ore.git	48c203bd75db3cc45105ec29d8f8db719e5a2263	Apache-2.0	medium	manifest	n/a	Cargo.toml	medium/manifest	41	4
+MiniZinc__libminizinc	https://github.com/MiniZinc/libminizinc.git	a872c75197426a9e510134ae1af521c51360b3a6	MPL-2.0	high	text	n/a	LICENSE.txt	high/text	826	54
+jacoco__jacoco	https://github.com/jacoco/jacoco.git	64d0ef7a0bd19ae0716da7b0e3545c377f561003	EPL-2.0	medium	license-file-notice	n/a	LICENSE.md	medium/license-file-notice	119	9
+joe-scotto__scottokeebs	https://github.com/joe-scotto/scottokeebs.git	3be1ea0efeda4a2a7b0132384312d49ca146969b	CC-BY-NC-SA-4.0	medium	license-file-notice	n/a	LICENSE.md	medium/license-file-notice	119	9
+beagleboard__linux	https://github.com/beagleboard/linux.git	e771677c937da5808f7b6c1f0e4a97ec1a84f8a8	GPL-2.0 WITH Linux-syscall-note	high	text	mixed	COPYING	high/text	826	54
+crosstool-ng__crosstool-ng	https://github.com/crosstool-ng/crosstool-ng.git	6ad730a900b247c21063be9329c682cbc887e3ba	CC-BY-4.0 OR CC-BY-3.0	medium	text+notice	n/a	COPYING	medium/text+notice	56	4
+linux-rdma__rdma-core	https://github.com/linux-rdma/rdma-core.git	bd3282a1cf1025c7869a8664c2d54266a4dded44	GPL-2.0-only	medium	text	only	COPYING.GPL2	medium/text	225	15
+LancePutnam__Gamma	https://github.com/LancePutnam/Gamma.git	88a443ba1d706ffcc4d780d47eef1fb8b847c02b	MIT	high	text	n/a	LICENSE	high/text	826	54
+eclipse-mosquitto__mosquitto	https://github.com/eclipse-mosquitto/mosquitto.git	83f2620f0b955b89aadce32cceb96a8e81950f5e	EPL-2.0 OR BSD-3-Clause	high	text+notice	n/a	LICENSE.txt	high/text+notice	184	13
+ignatov__intellij-erlang	https://github.com/ignatov/intellij-erlang.git	895d70d934b0fb07f5a33b65c825203b2714e345	Apache-2.0	medium	license-file-notice	n/a	LICENCE	medium/license-file-notice	119	9
+jolibrain__deepdetect	https://github.com/jolibrain/deepdetect.git	a1c574cc54b49bc5706c84c12b68c2ba7cfd072b	LGPL-3.0-or-later	medium	text	or-later	COPYING	medium/text	225	15
+BlockchainCommons__Learning-Bitcoin-from-the-Command-Line	https://github.com/BlockchainCommons/Learning-Bitcoin-from-the-Command-Line.git	8ea3dadc7ae5e3b62b7d6e329724c85f19102ae4	CC-BY-4.0	high	text	n/a	LICENSE-CC-BY-4.0.md	high/text	826	54
+dstndstn__astrometry.net	https://github.com/dstndstn/astrometry.net.git	d20a0503739e74b02418cde2e7d65013dadac579	BSD-3-Clause	high	text	n/a	LICENSE	high/text	826	54
+Stiffstream__restinio	https://github.com/Stiffstream/restinio.git	4dd29c63dcb3c962ac0402b7237f1388780c2266	BSD-3-Clause	high	text+notice	n/a	LICENSE;README.md	high/text+notice	184	13
+stella-cv__stella_vslam	https://github.com/stella-cv/stella_vslam.git	e445b5452535e781fdf6777ec33a06f5f8f5e416	BSD-2-Clause	high	text	n/a	LICENSE.fork	high/text	826	54
+Xilinx__qemu	https://github.com/Xilinx/qemu.git	59fb95c62a25821b5bd8fc594af5b7a6bdaef4dd	GPL-2.0	medium	text+notice	mixed	COPYING;README.rst	medium/text+notice	56	4
+jobrunr__jobrunr	https://github.com/jobrunr/jobrunr.git	783682b2cc28fe48ffeb09e5e3f8ec1e9882e6de	LGPL-3.0-or-later	medium	text+notice	or-later	License-lgpl.md;README.md	medium/text+notice	56	4
+ablab__spades	https://github.com/ablab/spades.git	e617eb81d76616c2003765d55b169ff216fd5a32	GPL-2.0-only	high	text	only	GPLv2.txt	high/text	826	54
+X11Libre__xserver	https://github.com/X11Libre/xserver.git	79dee7378eb6581c2fb26d67f86ef594b0aa373e	MIT	medium	text	n/a	COPYING	medium/text	225	15
+apache__openmeetings	https://github.com/apache/openmeetings.git	b91cf1f1197cf58ac73b158e0637a26b7ca8ad3d	Apache-2.0	medium	text	n/a	LICENSE	medium/text	225	15
+immunant__c2rust	https://github.com/immunant/c2rust.git	1104af0d22c44bc175ddbd578c9a9398b269b901	BSD-3-Clause	high	text	n/a	LICENSE	high/text	826	54
+root-project__root	https://github.com/root-project/root.git	c573405f39619b7f375f0fab6fcf95ec81a37b32	LGPL-2.1	medium	text	mixed	LGPL2_1.txt	medium/text	225	15
+invent.kde.org__unmaintained__jovie	https://invent.kde.org/unmaintained/jovie	e42e431f0a8ad40816603605560feba1b260df53	GFDL-1.2 AND GPL-2.0-or-later	high	text	several	COPYING;COPYING.DOC	high/text	826	54
+lighttpd__lighttpd2	https://github.com/lighttpd/lighttpd2.git	519b4eb04b171028c45653d332572c59b0422e5f	MIT	high	text	n/a	COPYING	high/text	826	54
+graalvm__native-build-tools	https://github.com/graalvm/native-build-tools.git	fc5de64e7379a59effd83e7020ec29ced18d79c3	UPL-1.0	medium	text	n/a	LICENSE	medium/text	225	15
+mean00__avidemux2	https://github.com/mean00/avidemux2.git	56bad81710866753d3c00318fbf9f9dd31647218	GPL-2.0-only	high	text	only	COPYING	high/text	826	54
+rhboot__shim	https://github.com/rhboot/shim.git	4dc4a1bf85542706d345230eb72a0e52d6f0c452	BSD-2-Clause	high	text	n/a	COPYRIGHT	high/text	826	54
+gitlab.freedesktop.org__drm__igt-gpu-tools	https://gitlab.freedesktop.org/drm/igt-gpu-tools	aada5ae74aa135d2b448e25ec417f4f0dee9439c	ISC	high	text	n/a	COPYING	high/text	826	54
+jakartaee__concurrency	https://github.com/jakartaee/concurrency.git	f2ae584acb65229ddad957f89ea85d6b2f54be74	EPL-2.0 OR GPL-2.0-only WITH Classpath-exception-2.0	high	text+notice	only	LICENSE.md;pom.xml	high/text+notice	184	13
+krahets__hello-algo	https://github.com/krahets/hello-algo.git	350f483801b2badb95180047aa82cadb825852a2	CC-BY-NC-SA-4.0	high	text	n/a	LICENSE	high/text	826	54
+stoatchat__stoatchat	https://github.com/stoatchat/stoatchat.git	4b9047bfd556ebb825ab56b0bb7fb8bf1b056b95	AGPL-3.0	high	text	mixed	LICENSE	high/text	826	54
+openmrs__openmrs-core	https://github.com/openmrs/openmrs-core.git	5eb8cba2e30befeaec8ab7892dff14ac7dcc9d87	MPL-2.0	high	text	n/a	LICENSE	high/text	826	54
+bndtools__bnd	https://github.com/bndtools/bnd.git	94eac84b2a237297c93a7f2bb413c966cf37a734	Apache-2.0 OR EPL-2.0	high	text+notice	n/a	LICENSE	high/text+notice	184	13
+jnr__jnr-ffi	https://github.com/jnr/jnr-ffi.git	39ae9390be88ed16244efd03a78a90346a89f442	Apache-2.0	high	text+notice	n/a	LICENSE;pom.xml	high/text+notice	184	13
+pure-data__pure-data	https://github.com/pure-data/pure-data.git	f3497d41dd28d4ec1906a0601ff4c0a661c3e5d9	BSD-3-Clause	high	text	n/a	LICENSE.txt	high/text	826	54
+GNOME__gnumeric	https://github.com/GNOME/gnumeric.git	5d556a736fa37b64ffb672d6fa9fad042f9fab07	GPL-3.0-only	high	text+notice	only	COPYING-gpl3;README	high/text+notice	184	13
+gitlab.freedesktop.org__mesa__piglit	https://gitlab.freedesktop.org/mesa/piglit	f9524192f9e8d8970a23bc6f3226358531cb82a1	BSD-3-Clause AND MIT	high	text	n/a	COPYING	high/text	826	54
+libnice__libnice	https://github.com/libnice/libnice.git	340219ebae148991d17cd2e73aefee15f002591c	LGPL-2.1 OR MPL-1.1	medium	text+notice	mixed	COPYING.LGPL;COPYING.MPL;README	medium/text+notice	56	4
+S2E__s2e	https://github.com/S2E/s2e.git	7357771f35bcc72b2a289b5efad160bee37dbe91	MIT	high	text	n/a	LICENSE	high/text	826	54
+musescore__MuseScore	https://github.com/musescore/MuseScore.git	78f0c2195f2505a1374eda52f13644d2a35838d2	GPL-3.0-only	high	text	only	LICENSE.txt	high/text	826	54
+symengine__symengine	https://github.com/symengine/symengine.git	c65c833669ddbbf6653c080eef5eceb0915719d2	BSD-3-Clause AND MIT	high	text	n/a	LICENSE	high/text	826	54

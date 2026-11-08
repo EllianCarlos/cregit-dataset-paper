@@ -1,0 +1,18 @@
+| group | TOM had a value | TOM NOASSERTION | total |
+|---|---:|---:|---:|
+| high, published | 5,632 | 1,014 | 6,646 |
+| high, review list | 268 | 105 | 373 |
+| low | 18 | 285 | 303 |
+| medium, published | 251 | 441 | 692 |
+| medium, review list | 119 | 239 | 358 |
+| no pass value | 10 | 67 | 77 |
+| total | 6,298 | 2,151 | 8,449 |
+
+confidence: Counter({'high': 7021, 'medium': 1056, 'low': 303, 'none': 69})
+vs TOM: Counter({'same': 5406, 'new-value': 2086, 'superset': 520, 'same-ids': 153, 'subset': 88, 'overlap': 83, 'both-none': 65, 'different': 44, 'no-value': 4})
+review kinds: Counter({'licenseref': 383, 'disagree': 241, 'long-and': 211, 'and-from-declaration': 157, 'tom-subset': 88, 'tom-overlap': 83, 'tom-different': 44, 'apache-and-mit': 43, 'review-and-from-notice': 37, 'review-two-texts-mit-apache': 34, 'review-notice-drops-root-text': 22, 'tom-value-not-local': 4})
+column: changed 3,524; NOASSERTION 692 (TOM 1.0.0 2,147); source Counter({'pass': 7338, 'none': 692, 'tom-1.0.0': 419})
+';' lists written with AND: 219
+license fills (the value pass input): 3,524
+
+sample: 100 of 1455 new values; strata: high/reuse 1 of 4; high/text 54 of 826; high/text+notice 13 of 184; medium/license-file-notice 9 of 119; medium/manifest 4 of 41; medium/text 15 of 225; medium/text+notice 4 of 56
