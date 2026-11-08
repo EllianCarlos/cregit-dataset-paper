@@ -52,7 +52,7 @@ The user took two decisions on these rules (2026-11-08):
    counts only if it holds the head of the row (then the row is behind it, so the row is the
    copy). A partner that is recorded as a copy never counts. A selected partner always counts.
 
-With decision 2, the shared-history rule on record lost 24 GitLab rows (`data/copy_check_rule2.tsv`,
+With decision 2, the shared-history rule on record no longer removes 24 GitLab rows (`data/copy_check_rule2.tsv`,
 `tools/copycheck/rule2_check.py`). 7 of them went back to the tokei step. 17 of them passed the
 tokei, license and commit steps; they got the copy check of the new projects. 10 of them left
 at the fork step and 7 joined the new projects (`tools/copycheck/extra7.py`).
