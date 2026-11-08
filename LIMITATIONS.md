@@ -60,7 +60,7 @@ the answered part of the tail. The audit found 14 wrong domain rows of the organ
 (about 0.037% of the tokens of TOM). Version 1.0.0 does not correct them: the database stays as
 it was audited, and the error figure includes them. The audit gives no figure for a count of
 domains. `docs/ERROR.md` of the release gives the method. The answers are not public (they name
-domains). Version 1.1.0 (planned after 2026-11-10) adds companies to the organization database.
+domains). The revision of TOM 1.0.0 (2026-11-08) does not correct them either.
 
 **The direct write of the 53-column schema is proven on 2 projects only, and one file differs (a blame fallback).**
 A rebuild of `emscripten-core__emscripten` with ctp `feat/schema-3-run` agrees with TOM in the
@@ -80,6 +80,27 @@ sha256: `scripts/compare_published.py` allows the 18 dropped columns, the rename
 pass 2. `data/REBUILD-TARGETS.tsv` gives both the sha256 in the source root and the sha256 in
 TOM. The release has no file of the limitations or the provenance since the DOI pass: the paper,
 this file and `REPRODUCE.md` give them.
+
+**The token files of TOM 1.0.0 cut 555 tokens at a bare carriage return (added 2026-11-08).** A
+bare carriage return (CR) is a CR character that no LF character follows. The dataset generator of
+cregit read the `.blame` files with universal newlines, so it cut a token with a bare CR at the CR.
+At each cut, `token_index` has a gap. A full scan of the 8,449 project files of TOM 1.0.0 found
+555 cut tokens in 77 source files of 8 projects, of 30,408,388,202 token rows:
+kiro-account-manager (47 files, 517 tokens), rust (8 files, 12 tokens), ferrocene (8 files, 12
+tokens), rustfmt (4 files, 4 tokens), gcc (3 files, 3 tokens), Retro68 (3 files, 3 tokens), gccrs
+(3 files, 3 tokens) and clippy (1 file, 1 token). These project files are not repaired. The 149
+new projects of the revision do not have this defect: their generator (cregit `fbbf42f`,
+`steps/new-projects/`) splits the `.blame` lines on LF only. Detect: a gap in `token_index`
+inside one source file. The release gives the same defect in `docs/LIMITATIONS.md` of the
+revision.
+
+**A `personid` is stable only inside one batch (added 2026-11-08).** By design we do not guarantee
+that the pseudonymization is stable, since the project ran in multiple batches and each batch
+deletes its own salt; a `personid` is stable only inside one batch. Thus one person can have
+different pseudonyms in two project files of different batches. The 149 new projects of the
+revision are one batch with their own salt (`steps/new-projects/`). `pseudonymization.json` of
+the root gives the registry of each batch. The release gives the same rule in
+`docs/LIMITATIONS.md` of the revision.
 
 ---
 
