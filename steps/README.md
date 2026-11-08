@@ -13,6 +13,7 @@ run used it, how to run it, and what is not here.
 | `reencode/` | The record of the re-encode of the project files with pyarrow (the bytes change, the data does not). | yes |
 | `release-passes/` | The four release passes of TOM 1.0.0: the subset of the tokei rule, the column changes (71 -> 61 -> 53 columns), the value fills, the side tables, the DOI pass, the uploads to Hugging Face. Also `tools/fill_release.py` of the TOM root, the value-fix scripts and the proof of the direct 53-column write. | yes |
 | `selection-funnel/` | The selection funnel of the revision of TOM 1.0.0: the tokei rule, GitLab in the pool, the copy check, the 149 new projects. | yes (the project list) |
+| `new-projects/` | The run of the 149 new projects of the revision with the tool chain of TOM (the kit, the gate, the defects of the kit found in the run). | yes (the new project files) |
 | `error-model/` | The numbers of `docs/ERROR.md` of the release. | no |
 | `language-selection/` | The evidence for the language rule of the selection. | no |
 | `linux-validation/` | A comparison of the organization shares of the Linux kernel with published sources. | no |
