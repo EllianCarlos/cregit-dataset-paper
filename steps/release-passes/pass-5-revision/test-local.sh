@@ -45,7 +45,7 @@ runit() {  # $1: run folder, $2: tools folder, $3: new-project folder
   local x=$1 t=$2 nd=$3
   mkdir -p $x
   local scan=(LSC_RESULTS_NEW=$FIX/inputs/results.new.tsv)
-  [ "${SCAN:-0}" = 1 ] && scan=(LSC_TOOLS_JSON=$HOME/Projects/cregit-workspace/license-scancode-1.1.0/local/tools.json LSC_JOBS=1)
+  [ "${SCAN:-0}" = 1 ] && scan=(LSC_TOOLS_JSON=LICENSE-PASS-FOLDER/local/tools.json LSC_JOBS=1)
   env TOM_LOCAL=1 TOM_X=$x TOM_PY=$PY HF_PY=$HF_PY TOM4_DIR=$FIX/tom4-root NEW_DIR=$nd JOBS=1 FOOTER_JOBS=2 "${scan[@]}" \
     bash -c "mkdir -p $x/tools && cp -r $t/. $x/tools/ && bash $x/tools/tom5_start.sh" > $x/start.txt 2>&1 || true
   cat $x/status/run.* 2>/dev/null | head -1

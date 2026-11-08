@@ -20,11 +20,11 @@ import os
 import sys
 from collections import Counter
 
-sys.path.insert(0, os.path.expanduser("~/Projects/ctp-license-scan"))
+sys.path.insert(0, os.path.expanduser("CTP-CHECKOUT"))
 import license_rules as R  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-RESCAN = os.path.expanduser("~/Projects/cregit-workspace/license-rescan-1.1.0/results.tsv")
+RESCAN = os.path.expanduser("WORK-FOLDER/license-rescan/results.tsv")
 
 
 def norm_text(v):

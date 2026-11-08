@@ -17,14 +17,14 @@ from datetime import datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-sys.path.insert(0, os.path.expanduser("~/Projects/ctp-license-scan"))
+sys.path.insert(0, os.path.expanduser("CTP-CHECKOUT"))
 import license_rules as R  # noqa: E402
 from importlib import import_module  # noqa: E402
 C = import_module("30_compare")
 
 RUN = sys.argv[1] if len(sys.argv) > 1 else f"{HERE}/run-license-scancode-1/results"
 FILLS = os.path.expanduser("~/s3-work/dataset-tom-2/stage/inputs/fills.tsv")
-RESCAN = os.path.expanduser("~/Projects/cregit-workspace/license-rescan-1.1.0")
+RESCAN = os.path.expanduser("WORK-FOLDER/license-rescan")
 OUT = f"{HERE}/analysis"
 GNU = re.compile(r"^(A?GPL|LGPL|GFDL)-\d")
 

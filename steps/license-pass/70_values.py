@@ -20,7 +20,7 @@ from collections import Counter, defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
-sys.path.insert(0, os.path.expanduser("~/Projects/ctp-license-scan"))
+sys.path.insert(0, os.path.expanduser("CTP-CHECKOUT"))
 import license_rules as R  # noqa: E402
 from importlib import import_module  # noqa: E402
 C = import_module("30_compare")

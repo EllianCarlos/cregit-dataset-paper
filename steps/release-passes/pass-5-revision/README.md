@@ -83,4 +83,7 @@ folders: `70_values.py`, `AUDIT_OK` and `corrections.tsv` in `../../license-pass
 2, `release_tools.py` and `fill_release.py` as for pass 4. `license_rules.py` and
 `license_scan.py` are the files of ctp `0f9b8ad`. `docs/docs/tools.lock` of the stage has the
 bytes of the staged copy of pass 4, so it is not here again. The copies of `tom5.conf` and
-`tom5_start.sh` differ from the staged files only in the bucket name (`BUCKET_NAME`).
+`tom5_start.sh` differ from the staged files only in the bucket name (`BUCKET_NAME`). The copies of
+`inputs/license/30_compare.py` and `70_values.py` have the placeholders `CTP-CHECKOUT` and
+`WORK-FOLDER` in the place of two default paths of the work host, and `test-local.sh` has
+`LICENSE-PASS-FOLDER` in the place of one.

@@ -65,17 +65,19 @@ the report of the user, and its note says so.
 | `analysis/`, `work/values/`, `work/audit/` | The outputs above. |
 
 The files are copies of the work folder of the pass (never in git). They have the bytes of the
-files that ran, except `work/audit/items.json`: the copy has no field `excerpt`. That field held
+files that ran, with two exceptions. In `60_report.py` and `70_values.py`, the default paths of the
+ctp checkout and of a work folder became the placeholders `CTP-CHECKOUT` and `WORK-FOLDER`. And
+`work/audit/items.json` has no field `excerpt`. That field held
 excerpts of the license files of the projects. `80_audit_items.py` replaced the copyright lines
 with `[line omitted]`, but other lines of a license text can name persons, so the copy drops
 the field. The links `view` and `raw` of each file give the same text at the pinned commit. The
 sha256 of the file that ran is `aa2f480e361d9e900dbb90478b54f816f7a2492a65bba22ca555db9878ced34a`.
 
-| File | sha256 |
+| File | sha256 of the file that ran |
 | --- | --- |
 | `REPORT.md` | `8de52a84a9b3b2868dbbce6e084f79349ac0bb2a02847cf9dc46a3dc46bc54bf` |
-| `60_report.py` | `8dce62a11f01bb489c10a81636db55713d34b02a5cb94a603820c393000453d5` |
-| `70_values.py` | `e8f0cff21eb72994a2b3d42e95aa09d860457c03f847702aafb26b8d27551d43` (the file of the stage of the release kit) |
+| `60_report.py` | `8dce62a11f01bb489c10a81636db55713d34b02a5cb94a603820c393000453d5` (copy: `7240227e75accc71d226bc3cba5dba98f027d986a898d0bb9d654a4afae60807`) |
+| `70_values.py` | `e8f0cff21eb72994a2b3d42e95aa09d860457c03f847702aafb26b8d27551d43`, the file of the stage of the release kit (copy: `dd649d613cb63205e29c4015772f29d344fb4ee84f6db884ee73427944a1f317`) |
 | `80_audit_items.py` | `206095d583ba50ec26901f5f34ec15a39818456f67822cfd629076d571f21233` |
 | `audit_app.py` | `1981dc93493074c6c309b8acbd1b9a85579cfc646ad85ef0b0264960bbaa40fe` |
 | `analysis/compare_tom.tsv` | `a1a7e9de229a965c5755a7ebf3fb14add908593837eadc631c52b80318f61810` |
