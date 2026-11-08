@@ -4,3 +4,4 @@ study	/path/to/study-repo	path/to/dataset-selection
 study-s8	/path/to/study-repo	path/to/dataset-selection
 ctp	/path/to/ctp-clone	
 cregit	/path/to/cregit-fork-clone	
+study-funnel	/path/to/study-repo	path/to/dataset-selection/s4-filter/tokei-funnel

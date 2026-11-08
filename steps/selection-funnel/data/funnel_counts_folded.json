@@ -1,0 +1,248 @@
+{
+ "old": [
+  {
+   "step": "Pool of all sources (GitLab included)",
+   "after": 194572,
+   "removed": null,
+   "gitlab_after": 9784,
+   "gitlab_removed": null
+  },
+  {
+   "step": "Commit on the default branch",
+   "after": 193883,
+   "removed": 689,
+   "gitlab_after": 9730,
+   "gitlab_removed": 54
+  },
+  {
+   "step": "Not archived",
+   "after": 157174,
+   "removed": 36709,
+   "gitlab_after": 9730,
+   "gitlab_removed": 0
+  },
+  {
+   "step": "Not a fork",
+   "after": 151383,
+   "removed": 5791,
+   "gitlab_after": 9710,
+   "gitlab_removed": 20
+  },
+  {
+   "step": "Not a mirror",
+   "after": 151339,
+   "removed": 44,
+   "gitlab_after": 9704,
+   "gitlab_removed": 6
+  },
+  {
+   "step": "Push on or after 2025-04-03 (GitLab: last activity)",
+   "after": 127151,
+   "removed": 24188,
+   "gitlab_after": 9699,
+   "gitlab_removed": 5
+  },
+  {
+   "step": "tokei rule: the largest programming language is C, C++, Java or Rust",
+   "after": 24474,
+   "removed": 102677,
+   "gitlab_after": 1942,
+   "gitlab_removed": 7757
+  },
+  {
+   "step": "License file, or a near miss C, D or E (DP8L v4)",
+   "after": 23070,
+   "removed": 1404,
+   "gitlab_after": 1747,
+   "gitlab_removed": 195
+  },
+  {
+   "step": "1,000 or more commits",
+   "after": 9237,
+   "removed": 13833,
+   "gitlab_after": 790,
+   "gitlab_removed": 957
+  },
+  {
+   "step": "GitLab copy rules: shared history with a pool row, R1, R2, R3 (GitLab only)",
+   "after": 8610,
+   "removed": 627,
+   "gitlab_after": 163,
+   "gitlab_removed": 627
+  },
+  {
+   "step": "Has a project file (TOM 1.0.0 rows; new rows are not run yet)",
+   "after": 8608,
+   "removed": 2,
+   "gitlab_after": 163,
+   "gitlab_removed": 0
+  }
+ ],
+ "new": [
+  {
+   "step": "Pool of all sources",
+   "after": 194572,
+   "removed": null,
+   "gitlab_after": 9784,
+   "gitlab_removed": null
+  },
+  {
+   "step": "Commit on the default branch",
+   "after": 193883,
+   "removed": 689,
+   "gitlab_after": 9730,
+   "gitlab_removed": 54
+  },
+  {
+   "step": "Not archived",
+   "after": 157174,
+   "removed": 36709,
+   "gitlab_after": 9730,
+   "gitlab_removed": 0
+  },
+  {
+   "step": "Not a fork (GitLab: also a fork of a pool project by shared root commit)",
+   "after": 151292,
+   "removed": 5882,
+   "gitlab_after": 9619,
+   "gitlab_removed": 111
+  },
+  {
+   "step": "Not a mirror (GitLab: also a copy of another pool project)",
+   "after": 150210,
+   "removed": 1082,
+   "gitlab_after": 8575,
+   "gitlab_removed": 1044
+  },
+  {
+   "step": "Push on or after 2025-04-03 (GitLab: last activity)",
+   "after": 126022,
+   "removed": 24188,
+   "gitlab_after": 8570,
+   "gitlab_removed": 5
+  },
+  {
+   "step": "tokei rule: the largest programming language is C, C++, Java or Rust",
+   "after": 23745,
+   "removed": 102277,
+   "gitlab_after": 1213,
+   "gitlab_removed": 7357
+  },
+  {
+   "step": "License file, or a near miss C, D or E (DP8L v4)",
+   "after": 22342,
+   "removed": 1403,
+   "gitlab_after": 1019,
+   "gitlab_removed": 194
+  },
+  {
+   "step": "1,000 or more commits",
+   "after": 8600,
+   "removed": 13742,
+   "gitlab_after": 153,
+   "gitlab_removed": 866
+  },
+  {
+   "step": "Has a project file (TOM 1.0.0 rows; new rows are not run yet)",
+   "after": 8598,
+   "removed": 2,
+   "gitlab_after": 153,
+   "gitlab_removed": 0
+  }
+ ],
+ "folded_rule_removals": {
+  "final: back by decision 2 (copy check stays)": 7,
+  "fork: R3 fork of a pool project": 73,
+  "fork: R3 fork of a pool project (copy check of the new projects)": 8,
+  "fork: R3 fork of a pool project (copy check of the rows back by decision 2)": 10,
+  "mirror: r1": 548,
+  "mirror: r2": 2,
+  "mirror: share": 482,
+  "mirror: share (copy check of the new projects)": 7
+ },
+ "gitlab_flag_rows": {
+  "r3": 73,
+  "r2": 2,
+  "r1": 579,
+  "share": 482
+ },
+ "moved_rows": {
+  "Not a mirror -> Not a fork (GitLab: also a fork of a pool project by shared root commit)": 1,
+  "tokei rule: the largest programming language is C, C++, Java or Rust -> Not a fork (GitLab: also a fork of a pool project by shared root commit)": 7,
+  "tokei rule: the largest programming language is C, C++, Java or Rust -> Not a mirror (GitLab: also a copy of another pool project)": 393,
+  "License file, or a near miss C, D or E (DP8L v4) -> Not a mirror (GitLab: also a copy of another pool project)": 1,
+  "1,000 or more commits -> Not a mirror (GitLab: also a copy of another pool project)": 91,
+  "GitLab copy rules: shared history with a pool row, R1, R2, R3 (GitLab only) -> Not a fork (GitLab: also a fork of a pool project by shared root commit)": 75,
+  "GitLab copy rules: shared history with a pool row, R1, R2, R3 (GitLab only) -> Not a mirror (GitLab: also a copy of another pool project)": 545,
+  "GitLab copy rules: shared history with a pool row, R1, R2, R3 (GitLab only) -> None": 7,
+  "None -> Not a fork (GitLab: also a fork of a pool project by shared root commit)": 8,
+  "None -> Not a mirror (GitLab: also a copy of another pool project)": 9
+ },
+ "data_gap": {
+  "fork: no root commit on record": 9441,
+  "mirror: no shared-history check on record": 8411,
+  "mirror: no reading by hand (R2)": 8436,
+  "mirror: no shared-history check, and a pool row of the same name exists": 2616
+ },
+ "data_gap_same_name_by_old_exit": {
+  "tokei rule: the largest programming language is C, C++, Java or Rust": 2272,
+  "1,000 or more commits": 322,
+  "Push on or after 2025-04-03 (GitLab: last activity)": 1,
+  "Not a mirror": 1,
+  "License file, or a near miss C, D or E (DP8L v4)": 20
+ },
+ "tokei_out_new": {
+  "not measured (group N) (pool)": 81413,
+  "largest language is another one (pool)": 12721,
+  "not measured (group N) (GitLab)": 6980,
+  "not measured (pool)": 462,
+  "largest language is another one (GitLab)": 368,
+  "no programming code (pool)": 182,
+  "fetch failed (pool)": 131,
+  "fetch failed (GitLab)": 6,
+  "dropped: fetch failed (pool)": 5,
+  "dropped: repository gone (pool)": 3,
+  "error (pool)": 3,
+  "no programming code (GitLab)": 2,
+  "error (GitLab)": 1
+ },
+ "license_out_new": {
+  "no license file (pool)": 1209,
+  "no license file (GitLab)": 194
+ },
+ "final_old": 8608,
+ "final_new": 8598,
+ "final_same_set": false,
+ "final_tom": 8449,
+ "final_new_projects": 149,
+ "removed_new_projects": [
+  "git.adelielinux.org__community__proot",
+  "gitlab.com__automotivegradelinux__apps__agl-service-can-low-level",
+  "gitlab.freedesktop.org__imagination__linux-firmware",
+  "gitlab.gnome.org__Infrastructure__Mirrors__lorry-mirrors__git_kernel_org__pub__scm__utils__dtc__dtc",
+  "gitlab.gnome.org__Infrastructure__Mirrors__lorry-mirrors__github_com__endlessm__eos-installer",
+  "gitlab.gnome.org__Infrastructure__Mirrors__lorry-mirrors__github_com__hughsie__appstream-glib",
+  "gitlab.gnome.org__Infrastructure__Mirrors__lorry-mirrors__gitlab_freedesktop_org__geoclue__geoclue",
+  "gitlab.gnome.org__Infrastructure__Mirrors__lorry-mirrors__gitlab_freedesktop_org__upower__upower",
+  "gitlab.gnome.org__Infrastructure__Mirrors__lorry-mirrors__gitlab_freedesktop_org__virgl__virglrenderer",
+  "gitlab.inria.fr__WIDE__kAutoAbs__bindgen",
+  "gitlab.inria.fr__benagil__volimem__volimemcached",
+  "gitlab.inria.fr__geoxygene__geoxygene",
+  "gitlab.inria.fr__pallas__benchmarks__chameleon",
+  "gitlab.inria.fr__peer-communication__rust-libp2p",
+  "gitlab.inria.fr__rpiau-phd__zune-image-midstream",
+  "gitlab.inria.fr__tansiv__libvmi-xen",
+  "invent.kde.org__neon__network__kdeconnect"
+ ],
+ "back_by_decision_2": [
+  "gitlab.freedesktop.org__gstreamer__gst-plugins-bad",
+  "gitlab.freedesktop.org__gstreamer__gst-plugins-base",
+  "gitlab.freedesktop.org__gstreamer__gst-plugins-good",
+  "gitlab.freedesktop.org__pulseaudio__pulseaudio",
+  "gitlab.inria.fr__dynres__dyn-procs__openpmix",
+  "gitlab.winehq.org__mono__boringssl",
+  "gitlab.winehq.org__mono__libgdiplus"
+ ],
+ "final_gitlab_tom": 45,
+ "final_gitlab_new": 108
+}

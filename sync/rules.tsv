@@ -32,6 +32,8 @@ study	include	^s3-measure/[^/]+\.(py|sh|xz|sha256|yml|jsonl)$
 study	include	^s3-measure/v2/
 # S4: filter, and the DP8L license audit.
 study	include	^s4-filter/
+# The tokei funnel of the revision has its own source id (study-funnel, below).
+study	exclude	^s4-filter/tokei-funnel/
 # S5 and S6: evidence and labels.
 study	include	^s5-evidence/
 study	include	^s6-labels/
@@ -95,3 +97,10 @@ study-s8	include	^s8-companies/review/((DEFINITIONS|AUDIT_SAMPLE)\.md|audit_colu
 study-s8	include	^s8-companies/review/(test_)?(audit_columns|audit_columns_sample|audit_columns_serve|audit_tail|audit_tail_sample|audit_analysis)\.py$
 # run_v0.py imports final_merge.py from ../s7-run.
 study-s8	include	^s7-run/final_merge\.py$
+# The selection funnel of the revision of TOM 1.0.0 (the tokei rule, GitLab in the pool, the copy check):
+# the data files at their study commit, into steps/selection-funnel/data/. The prefix of this source in
+# sources.local.conf is the folder s4-filter/tokei-funnel. FUNNEL.md (the work note, with older versions of the
+# funnel) stays in the study repository; steps/selection-funnel/README.md gives the funnel.
+study-funnel	dest	steps/selection-funnel/data/
+study-funnel	include	^(added|new_projects|removed|copy_check_evidence|copy_check_rule2|fetch-failed|missing)\.tsv$
+study-funnel	include	^funnel_counts(_folded)?\.json$

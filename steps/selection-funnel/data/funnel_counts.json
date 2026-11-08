@@ -1,0 +1,214 @@
+{
+ "computed": "2026-11-08T07:25+00:00",
+ "steps": [
+  {
+   "step": "Pool of all sources (GitLab included)",
+   "after": 194572,
+   "gitlab": 9784
+  },
+  {
+   "step": "Commit on the default branch",
+   "after": 193883,
+   "gitlab": 9730
+  },
+  {
+   "step": "Not archived",
+   "after": 157174,
+   "gitlab": 9730
+  },
+  {
+   "step": "Not a fork",
+   "after": 151383,
+   "gitlab": 9710
+  },
+  {
+   "step": "Not a mirror",
+   "after": 151339,
+   "gitlab": 9704
+  },
+  {
+   "step": "Push on or after 2025-04-03 (GitLab: last activity)",
+   "after": 127151,
+   "gitlab": 9699
+  },
+  {
+   "step": "tokei rule: the largest programming language is C, C++, Java or Rust",
+   "after": 24474,
+   "gitlab": 1942
+  },
+  {
+   "step": "License file, or a near miss C, D or E (DP8L v4)",
+   "after": 23070,
+   "gitlab": 1747
+  },
+  {
+   "step": "1,000 or more commits",
+   "after": 9237,
+   "gitlab": 790
+  },
+  {
+   "step": "GitLab copy rules: shared history with a pool row, R1, R2, R3 (GitLab only)",
+   "after": 8610,
+   "gitlab": 163
+  },
+  {
+   "step": "Has a project file (TOM 1.0.0 rows; new rows are not run yet)",
+   "after": 8608,
+   "gitlab": 163
+  }
+ ],
+ "gitlab_listed": 31223,
+ "gitlab_not_pool": {
+  "notpool": 20811,
+  "merge": 628
+ },
+ "copy_rules": {
+  "R3 fork": 65,
+  "shares history": 482,
+  "R2 same project": 2,
+  "R1 copy namespace": 78
+ },
+ "final": 8608,
+ "tom": 8449,
+ "added": 159,
+ "added_gitlab": 118,
+ "missing": 0,
+ "pending": 0,
+ "samples": {
+  "GitHub": {
+   "size": 300,
+   "passes": 0,
+   "with_target_lines": 2,
+   "statuses": {
+    "ok": 300
+   }
+  },
+  "GitLab": {
+   "size": 300,
+   "passes": 0,
+   "with_target_lines": 5,
+   "statuses": {
+    "ok": 295,
+    "fetch failed": 5
+   }
+  }
+ },
+ "group_n": {
+  "GitHub": 81413,
+  "GitLab": 7253
+ },
+ "tokei_out": {
+  "not measured (group N) (pool)": 81413,
+  "largest language is another one (pool)": 12721,
+  "not measured (group N) (GitLab)": 7253,
+  "largest language is another one (GitLab)": 495,
+  "not measured (pool)": 462,
+  "no programming code (pool)": 182,
+  "fetch failed (pool)": 131,
+  "fetch failed (GitLab)": 6,
+  "dropped: fetch failed (pool)": 5,
+  "dropped: repository gone (pool)": 3,
+  "error (pool)": 3,
+  "no programming code (GitLab)": 2,
+  "error (GitLab)": 1
+ },
+ "license_out": {
+  "no license file (pool)": 1209,
+  "no license file (GitLab)": 195
+ },
+ "added_by_step": {
+  "funnel v4 step 8: non-vendored tokenizable >= 5% of code bytes (DP3)": 38,
+  "funnel v4 step 6: Linguist lists C, C++, Java or Rust": 2,
+  "funnel v4 step 7: measured at the pinned commit (S3)": 1,
+  "gitlab: < 5,000 commits": 118
+ },
+ "added_by_language": {
+  "C": 73,
+  "C++": 42,
+  "Rust": 25,
+  "Java": 19
+ },
+ "added_hours": 119.14535860881686,
+ "added_longest_hours": 42.73364363503176,
+ "machine_hours": 9.165027585293604,
+ "cost_usd": 34.82710482411569,
+ "hours_model": {
+  "points": 8449,
+  "bins": {
+   "1000-4999": {
+    "edges_mb": [
+     0.43,
+     0.806,
+     1.241,
+     1.787,
+     2.466,
+     3.544,
+     5.166,
+     7.882,
+     15.383
+    ],
+    "rate": {
+     "0": 0.014803664208456243,
+     "1": 2.8965821850110054e-08,
+     "2": 2.1074105688610338e-08,
+     "3": 1.8523810374994228e-08,
+     "4": 1.4423851307909358e-08,
+     "5": 1.3506229213119614e-08,
+     "6": 1.2607350001654637e-08,
+     "7": 1.2443698611240859e-08,
+     "8": 1.2710166133372323e-08,
+     "9": 1.610364851047324e-08
+    }
+   },
+   "ge5000": {
+    "edges_mb": [
+     2.708,
+     4.757,
+     7.0,
+     9.881,
+     13.908,
+     19.253,
+     26.694,
+     42.857,
+     89.131
+    ],
+    "rate": {
+     "0": 0.07894739818109925,
+     "1": 2.5514349067124272e-08,
+     "2": 2.6786244065086267e-08,
+     "3": 2.3104890142901154e-08,
+     "4": 1.9976335661305777e-08,
+     "5": 2.314406059957062e-08,
+     "6": 2.3760994151771395e-08,
+     "7": 2.2708701265859352e-08,
+     "8": 2.422340341541132e-08,
+     "9": 2.8708602226930726e-08
+    }
+   }
+  }
+ },
+ "fetch_failed": 141,
+ "pins": {
+  "not measured (group N)": 81413,
+  "funnel S3 tree measure head_oid (trees.jsonl)": 21909,
+  "TOM 1.0.0 tokei result at the run commit (not measured again)": 10712,
+  "GitLab: not measured (group N)": 7253,
+  "GitLab: GitLab API: default branch commit at the listing time (2026-10-13/14)": 2382,
+  "funnel head_oid (S3 clone)": 1928,
+  "funnel head_oid (pool; the step 6 rows have no S3 tree measure; commits_new.jsonl uses it)": 1025,
+  "not measured (no git commit to fetch)": 462,
+  "GitLab: TOM 1.0.0 tokei result at the run commit (not measured again)": 51,
+  "GitLab: default branch head now (2026-11-08)": 10,
+  "default branch head now": 3,
+  "GitLab: GitLab measure.jsonl head (2026-10-14)": 2,
+  "GitLab: GitLab API: default branch commit at the listing time; the measure failed": 1
+ },
+ "pin_mismatch": [],
+ "head_now_other": [
+  "codeberg.org__libreboot__lbmk",
+  "codeberg.org__MicroBlocks__smallvm",
+  "www.chiark.greenend.org.uk__ucgi__~ianmdlvl__git__adns"
+ ],
+ "gitlab_no_snapshot": 10,
+ "gitlab_pin_mismatch": []
+}
