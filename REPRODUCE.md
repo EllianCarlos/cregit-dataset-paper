@@ -557,6 +557,28 @@ the 8,449 projects of TOM: `published_sha256` is the file of TOM, and the new co
 `source_root_sha256` is the file of the source root. The run commit of each row is equal to
 `run_commit` of `MANIFEST.tsv` of TOM.
 
+### 5.8 The revision of TOM 1.0.0 (2026-11-08, not run yet)
+
+The revision is a new Hugging Face revision of release 1.0.0 in the same repository, with the
+same DOI. It has 8,598 projects: the 8,449 projects of the root of pass 4 and 149 new projects.
+It changes the `license` values to SPDX expressions from a license scan, adds the side table
+`project_licenses`, and changes the documents (a new `docs/LIMITATIONS.md`). The steps:
+
+| Step | Folder | Input | Output | State |
+|---|---|---|---|---|
+| The selection funnel (the tokei rule, GitLab in the pool, the copy check) | `steps/selection-funnel/` | the pool of the selection, the tokei measures | 8,598 projects (149 new: 41 pool, 108 GitLab) | done |
+| The run of the new projects | `steps/new-projects/` | `steps/selection-funnel/data/new_projects.tsv` | one project file for each new project, in the TOM form | machine C DONE; machines A and B in pass 2 when this was written |
+| The license pass | `steps/license-pass/` | the 8,449 projects at their pinned commit | the values of the `license` column; the hand check (0 wrong of 100) | done |
+| Pass 5 (the root of the revision) | `steps/release-passes/pass-5-revision/` | the root of pass 4, the new project files, the license values | the root of the revision and its Hugging Face revision | staged (`fc901a99a7cf...`), not run |
+
+The tools: `tools.lock` (the rows of cregit `c65f1e7` and `fbbf42f`, ctp `a9f0bed`, `c2a8432`,
+`6b6efcf` and `0f9b8ad`, the license scanners, and the kits). To run pass 5 again, use the method
+of section 5.7 with `steps/release-passes/pass-5-revision/test-local.sh` as the model of a local
+run.
+
+`data/SHA256SUMS` and `data/REBUILD-TARGETS.tsv` still describe the root of pass 4. The root of the
+revision and its `SHA256SUMS` come after the run (`steps/release-passes/pass-5-revision/README.md`).
+
 ## 6. Validate
 
 | Check | Where | Status |

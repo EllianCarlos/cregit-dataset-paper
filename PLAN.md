@@ -142,5 +142,16 @@ State:
 | Pass 4 (the DOI pass) | Done. Documents only: DOI 10.57967/hf/11505, the date, 3 documents removed (limitations, provenance, release notes: now in the paper). Final revision `e81b554deb9b`; final `SHA256SUMS` `b7141d088461...` (8,475 rows). |
 | `data/SHA256SUMS`, `data/REBUILD-TARGETS.tsv` | Done: the final root (8,475 rows) and the 8,449 projects of TOM. |
 | `make validate` for schema 3 | Done: it runs `fill_release.py check`; `SCHEMA=2` keeps the check of the source root. |
-| Version 1.1.0 | Open: the company pass after 2026-11-10. |
+| A later company pass | Open: after 2026-11-10. |
 | Open | The anonymous export, the independent check, a push of the commits of the passes and of the direct write. |
+
+## Status of the revision of TOM 1.0.0 (2026-11-08)
+
+| Item | State |
+|---|---|
+| Selection funnel (`steps/selection-funnel/`) | Done: 8,598 projects, 149 new (41 pool, 108 GitLab). |
+| Run of the new projects (`steps/new-projects/`) | Machine C DONE (7 files); machines A and B in pass 2. |
+| License pass (`steps/license-pass/`) | Done: values decided, hand check 0 wrong of 100. |
+| Pass 5 (`steps/release-passes/pass-5-revision/`) | Staged (`fc901a99a7cf...`), not run. |
+| `data/SHA256SUMS`, `data/REBUILD-TARGETS.tsv` | Open: they describe the root of pass 4 until the root of the revision exists. |
+| Organization database 1.0.0 | Done: published on Zenodo (concept DOI 10.5281/zenodo.23744044). |
