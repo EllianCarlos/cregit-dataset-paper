@@ -25,8 +25,11 @@ The published file of TOM 1.0.0 (ctp schema 3, 53 columns; the column has `audit
 also went through the release passes (steps/release-passes/). Then the script also allows:
   - the 18 columns that the passes dropped (TOM_DROPPED);
   - the rename provenance_status -> audit_frame_file (the values stay);
-  - the fills of pass 2: language (old value empty) and license (old value NOASSERTION). A row
-    of these two columns may differ only where the old value is the empty value.
+  - the fill of pass 2: language (old value empty). A row of this column may differ only where
+    the old value is the empty value;
+  - license: pass 2 filled it where the old value was NOASSERTION, and the revision of TOM 1.0.0
+    (pass 5) writes into every row of a file the license value of the license pass. So a row of
+    this column may differ from the rebuilt file, but the published file has one license value.
 The pseudonym of a value is a salted hash of the value in lower case (pseudonymize.py of the
 release), and NULL and the empty value do not change. So for each identity column the script
 checks: one value gives one pseudonym; values that are equal in lower case give one pseudonym;
@@ -60,14 +63,16 @@ REMOVED = ("firm_raw", "firm", "firm_source")
 ADDED = ("firm_based_on_namespace", "firm_based_on_domain", "project_enterprise_driven",
          "project_enterprise_basis")
 KEY = ("file_path", "token_index")
-# The release passes of TOM 1.0.0: dropped columns, the rename and the fills of pass 2.
+# The release passes of TOM 1.0.0: dropped columns, the rename, the fill of pass 2 and the license.
 TOM_MARK = "audit_frame_file"
 TOM_DROPPED = ("size_kb", "file_mask", "manifest_category", "fact", "history_cluster",
                "history_shared_with", "history_relation", "history_includes", "history_first",
                "history_created", "person_name", "person_email", "footer_person_names",
                "cregit_commit_sha", "repo_tag", "archived", "fork", "roster_lang")
 TOM_RENAMED = {"provenance_status": "audit_frame_file"}
-TOM_FILLS = {"language": ("",), "license": ("NOASSERTION",)}
+TOM_FILLS = {"language": ("",)}
+# The columns that a release pass sets to one value for each file (pass 5: the license pass).
+TOM_SET = ("license",)
 
 
 def q(name: str) -> str:
@@ -102,6 +107,7 @@ def main(argv: list[str]) -> int:
               "fills of the release passes are allowed")
     removed = REMOVED + (TOM_DROPPED if tom else ())
     fills = TOM_FILLS if tom else {}
+    sets = TOM_SET if tom else ()
     fails: list[str] = []
 
     def fail(text: str) -> None:
@@ -138,7 +144,7 @@ def main(argv: list[str]) -> int:
         fail("the rows are not in the same order")
         return 1
 
-    changed = set(SCALAR) | set(LISTS) | set(PARTIAL) | set(fills)
+    changed = set(SCALAR) | set(LISTS) | set(PARTIAL) | set(fills) | set(sets)
     equal_cols = [c for c in common if c not in changed]
     diffs = con.execute("SELECT " + ", ".join(
         f"count(*) FILTER (WHERE {q('a_' + c)} IS DISTINCT FROM {q('b_' + c)})"
@@ -159,6 +165,17 @@ def main(argv: list[str]) -> int:
         print(f"fill     {c:<26} rows with a filled value: {filled}; rows that differ in another way: {bad}")
         if bad:
             fail(f"{c}: {bad} rows differ and their old value is not a value that pass 2 fills")
+
+    for c in sets:
+        if c not in common:
+            continue
+        a, b = q("a_" + c), q("b_" + c)
+        diff, values = con.execute(
+            f"SELECT count(*) FILTER (WHERE {a} IS DISTINCT FROM {b}), count(DISTINCT coalesce({b}, '')) "
+            f"FROM j").fetchone()
+        print(f"set      {c:<26} rows with another value: {diff}; values in the published file: {values}")
+        if values > 1:
+            fail(f"{c}: the published file has {values} values, not one value for the file")
 
     for c in PARTIAL:
         if c not in common:

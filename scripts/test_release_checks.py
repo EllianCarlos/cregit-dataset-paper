@@ -203,15 +203,15 @@ def test_compare_usage():
     assert cp.main(["one"]) == 2
 
 
-def write_tom_pair(tmp_path, old_language=""):
+def write_tom_pair(tmp_path, old_language="", old_license="NOASSERTION", new_license="'MIT'"):
     """A pre file of schema 2 and a published file of TOM (schema 3) for the same rows."""
     con = duckdb.connect()
     con.execute(f"CREATE TABLE pre AS SELECT 'a.c' AS file_path, range AS token_index, "
                 f"'frame:x' AS provenance_status, {lit(old_language)} AS language, "
-                f"'NOASSERTION' AS license, 'n' AS repo_tag, 'False' AS fork, "
+                f"{lit(old_license)} AS license, 'n' AS repo_tag, 'False' AS fork, "
                 f"'author 1' AS person_name FROM range(3)")
     con.execute("CREATE TABLE pub AS SELECT 'a.c' AS file_path, range AS token_index, "
-                "'frame:x' AS audit_frame_file, 'C' AS language, 'MIT' AS license FROM range(3)")
+                f"'frame:x' AS audit_frame_file, 'C' AS language, {new_license} AS license FROM range(3)")
     a, b = tmp_path / "pre.parquet", tmp_path / "tom.parquet"
     con.execute(f"COPY pre TO {lit(a)} (FORMAT PARQUET)")
     con.execute(f"COPY pub TO {lit(b)} (FORMAT PARQUET)")
@@ -227,3 +227,14 @@ def test_compare_refuses_a_language_change_that_is_not_a_fill(tmp_path, capsys):
     a, b = write_tom_pair(tmp_path, old_language="C++")
     assert cp.main([a, b]) == 1
     assert "not a value that pass 2 fills" in capsys.readouterr().out
+
+
+def test_compare_accepts_the_license_value_of_the_revision(tmp_path, capsys):
+    a, b = write_tom_pair(tmp_path, old_license="MIT", new_license="'MIT AND Apache-2.0'")
+    assert cp.main([a, b]) == 0, capsys.readouterr().out
+
+
+def test_compare_refuses_two_license_values_in_one_file(tmp_path, capsys):
+    a, b = write_tom_pair(tmp_path, new_license="CASE WHEN range = 0 THEN 'MIT' ELSE 'BSD-3-Clause' END")
+    assert cp.main([a, b]) == 1
+    assert "not one value for the file" in capsys.readouterr().out
