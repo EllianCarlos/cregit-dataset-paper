@@ -143,6 +143,7 @@ with a non-zero status. `REPRODUCE.md` lists what is left.
 | `tools/ctp/`, `tools/cregit/` | Copies of some files of the pinned ctp and cregit commits (the column contract, the validation, the Nix files of srcML). |
 | `tools/ctp-venv/` | The package lists of the ctp Python environment on each machine type. |
 | `tools/jars/` | The jar content check (`jar_content_sha256.py`). The flake pins the jars by sha256. |
+| `queries/join-organizations.sql` | A DuckDB query that joins the project files with the organization database, with the join keys, the unique row key and the checks of the keys. It runs on the release root and on `sample/data`. |
 | `sync/` | The source list and the scripts that copy and check `pipeline/`. |
 | `tools.lock` | The tool versions and bundle hashes. |
 | `flake.nix`, `flake.lock` | The pinned environment (Nix). |
