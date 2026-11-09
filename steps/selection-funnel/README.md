@@ -12,18 +12,26 @@ and it puts the GitLab rows into the pool. No project of TOM 1.0.0 leaves
 | Step | After the step | Removed | GitLab after | GitLab removed |
 | --- | ---: | ---: | ---: | ---: |
 | Pool of all sources | 194,572 |  | 9,784 |  |
-| Commit on the default branch | 193,883 | 689 | 9,730 | 54 |
-| Not archived | 157,174 | 36,709 | 9,730 | 0 |
-| Not a fork (GitLab: also a fork of a pool project by shared root commit) | 151,292 | 5,882 | 9,619 | 111 |
-| Not a mirror (GitLab: also a copy of another pool project) | 150,210 | 1,082 | 8,575 | 1,044 |
-| Push on or after 2025-04-03 (GitLab: last activity) | 126,022 | 24,188 | 8,570 | 5 |
-| tokei rule: the largest programming language is C, C++, Java or Rust | 23,745 | 102,277 | 1,213 | 7,357 |
-| License file, or a near miss C, D or E (DP8L) | 22,342 | 1,403 | 1,019 | 194 |
-| 1,000 or more commits | 8,600 | 13,742 | 153 | 866 |
-| Selected (TOM 1.0.0 projects with a project file, and the new projects) | 8,598 | 2 | 153 | 0 |
+| Commit on the default branch | 193,882 | 690 | 9,730 | 54 |
+| Not archived | 157,173 | 36,709 | 9,730 | 0 |
+| Not a fork (GitLab: also a fork of a pool project by shared root commit) | 151,291 | 5,882 | 9,619 | 111 |
+| Not a mirror (GitLab: also a copy of another pool project) | 150,209 | 1,082 | 8,575 | 1,044 |
+| Push on or after 2025-04-03 (GitLab: last activity) | 126,021 | 24,188 | 8,570 | 5 |
+| tokei rule: the largest programming language is C, C++, Java or Rust | 23,744 | 102,277 | 1,213 | 7,357 |
+| License file, or a near miss C, D or E (DP8L) | 22,341 | 1,403 | 1,019 | 194 |
+| 1,000 or more commits | 8,599 | 13,742 | 153 | 866 |
+| Selected (TOM 1.0.0 projects with a project file, and the new projects) | 8,598 | 1 | 153 | 0 |
 
 The values are in `data/funnel_counts_folded.json` (key `new`). The 8,598 projects are 8,449 of
 TOM 1.0.0 (45 on GitLab hosts) and 149 new projects (108 on GitLab hosts).
+
+A user decision of 2026-11-09 moved kitao/pyxel to the commit step: its repository is not found,
+so it has no commit on the default branch. Before, it left at the last step (no project file).
+Each count from the commit step to the 1,000-commit step became 1 smaller (193,883 to 193,882;
+8,600 to 8,599). The pool, the count of each source and the final set did not change. Only
+signalwire/freeswitch leaves at the last step now. `tools/set_pyxel_exit.py` changed the row of
+kitao/pyxel in the step file of the work folder and the step counts of
+`data/funnel_counts.json`; `tools/fold_copy_rules.py` then wrote `data/funnel_counts_folded.json`.
 
 The tokei rule is in the place of the three Linguist and byte-share steps of the earlier funnel.
 Each rule looks at one project only, so the place changes the counts between the steps, but not
@@ -74,11 +82,12 @@ step, the rule and the evidence), 7 back by decision 2, 149 new projects
 | `data/missing.tsv` | The projects of TOM 1.0.0 that the funnel does not select (none). |
 | `data/funnel_counts.json`, `data/funnel_counts_folded.json` | The counts before and after the folded copy rules. |
 | `tools/fold_copy_rules.py` | Folds the copy rules into the fork and mirror steps and writes the counts. |
+| `tools/set_pyxel_exit.py` | Moves kitao/pyxel to the commit step (2026-11-09) and recomputes the step counts of `data/funnel_counts.json`. |
 | `tools/gitlab_checks.py` | The GitLab commit and shared-history checks of the rows on record. |
 | `tools/copycheck/` | The copy check: `partners.py` (the pairs), `check.py` (the host APIs), `classify.py` (the rules), `rule2_check.py` (decision 2), `extra7.py` (the 7 rows back). |
 
 `data/` comes through the sync (`../../sync/`, source id `study-funnel`, study commit
-`e2d64cc0918d`). `tools/` was never in git: these are copies of the work folder of the funnel.
+`f4d87914582c`). `tools/` was never in git: these are copies of the work folder of the funnel.
 The copies of `fold_copy_rules.py`, `gitlab_checks.py` and `copycheck/partners.py` differ from
 the files that ran in one line: the default path of the study repository became
 `STUDY-REPOSITORY`. The sha256 of the files that ran:
@@ -87,6 +96,7 @@ the files that ran in one line: the default path of the study repository became
 | --- | --- | --- |
 | `fold_copy_rules.py` | `023a074581205b4564e3fea8bd609e753e68bd0a59913254c5e043889611ea8c` | `026a01f6e6da23071c77a9091d076be52f3cdd03b3c8ad0d05adbd44e39882d9` |
 | `gitlab_checks.py` | `978c620ef8731b70a9e827493aea0e970d72b444ca35737e849ea953c8619804` | `c4bba6a0db16cc50051bf2e55882eae22355c89cac55e4313b2235dda9d8e1f0` |
+| `set_pyxel_exit.py` | `4b66efb663d954c494ff5ee91177ed55194649c51d0ff3e27cac7efe7f21eb1d` | the same |
 | `copycheck/check.py` | `aef807e1c11b777bd29de71850e7d9837c205e7e86a5d03a5bb44ab1f134277a` | the same |
 | `copycheck/classify.py` | `e166c9100725cf8664734528feda6dc3376f1e4e2e15364b363b324b1f0c3c6f` | the same |
 | `copycheck/extra7.py` | `100d9a26259fe55e4c86a333351d79c85e09dfe07aa0ba2e92008d894cf9d340` | the same |

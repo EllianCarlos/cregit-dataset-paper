@@ -8,47 +8,47 @@
   },
   {
    "step": "Commit on the default branch",
-   "after": 193883,
+   "after": 193882,
    "gitlab": 9730
   },
   {
    "step": "Not archived",
-   "after": 157174,
+   "after": 157173,
    "gitlab": 9730
   },
   {
    "step": "Not a fork",
-   "after": 151383,
+   "after": 151382,
    "gitlab": 9710
   },
   {
    "step": "Not a mirror",
-   "after": 151339,
+   "after": 151338,
    "gitlab": 9704
   },
   {
    "step": "Push on or after 2025-04-03 (GitLab: last activity)",
-   "after": 127151,
+   "after": 127150,
    "gitlab": 9699
   },
   {
    "step": "tokei rule: the largest programming language is C, C++, Java or Rust",
-   "after": 24474,
+   "after": 24473,
    "gitlab": 1942
   },
   {
    "step": "License file, or a near miss C, D or E (DP8L v4)",
-   "after": 23070,
+   "after": 23069,
    "gitlab": 1747
   },
   {
    "step": "1,000 or more commits",
-   "after": 9237,
+   "after": 9236,
    "gitlab": 790
   },
   {
    "step": "GitLab copy rules: shared history with a pool row, R1, R2, R3 (GitLab only)",
-   "after": 8610,
+   "after": 8609,
    "gitlab": 163
   },
   {
@@ -210,5 +210,6 @@
   "www.chiark.greenend.org.uk__ucgi__~ianmdlvl__git__adns"
  ],
  "gitlab_no_snapshot": 10,
- "gitlab_pin_mismatch": []
+ "gitlab_pin_mismatch": [],
+ "changed": "2026-11-09: kitao/pyxel leaves at the commit step (repository not found); set_pyxel_exit.py recomputed steps"
 }
