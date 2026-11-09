@@ -65,6 +65,26 @@ the check did not run yet:
 - The run refuses to start until each new-project machine has `status/run.DONE` and the stage has
   `inputs/AUDIT_OK`.
 
+## The machine setup (`machine/R1-tom5-setup.sh`) and the run order
+
+The setup script makes the disks, the Python environment and the scanner tools of the license
+pass on the machine. Then it does two smoke tests: ScanCode on one small license file, and a
+value pass of one small file of pass 4. It starts nothing.
+
+A defect of the staged kit, found on the machine: the smoke test of ScanCode used a license file
+with only the first line of the MIT text. ScanCode gave
+`MIT AND LicenseRef-scancode-proprietary-license`, not `MIT`, so the setup stopped. The fix: the
+smoke test now writes the full MIT text. The setup then gave `MIT` and passed. The setup script is
+not in the staged list, so `WANT_SUMS` did not change. `machine/R1-tom5-setup.sh` is the fixed
+script that ran. `../KITS.tsv` (pass `pass-5-machine`) gives its sha256 and the sha256 of the
+copy; the copy has `BUCKET_NAME` in the place of the bucket name and `REFUSED_INSTANCE_IDS` in the
+place of the list of EC2 instances that the setup must refuse. The sha256 of the script before
+the fix is `5caf28822454222a869ab703f18f60957654fc30a39506e058e83365611784c2`.
+
+The run order: put the Hugging Face token into the SSM parameter `/tom/hf-token` (`HF_SSM_PARAM`
+of `tom5.conf`) before you start the run. The step `preflight` looks for the parameter and
+stops the run with an ALERT when it is not there.
+
 ## The integrity check (`integrity/`)
 
 DuckDB and Parquet have no command like `PRAGMA integrity_check` of SQLite.
@@ -165,6 +185,7 @@ another form and stops at the form gate.
 | `docs/` | The staged documents with their placeholders. |
 | `inputs/license/30_compare.py`, `inputs/license/results.tom4.tsv`, `inputs/names.tsv` | Staged inputs: the comparison tool of the license pass, the stored decisions of the scan of the 8,449 projects, the map from the funnel names to the TOM names. |
 | `SHA256SUMS`, `SOURCE` | The staged list (sha256 `fc901a99a7cf03ca72b4ef6af64d2a57a7844de96493116119d499c0d1ae6134`, `WANT_SUMS` of the run) and the stage note. |
+| `machine/R1-tom5-setup.sh` | The setup of the machine (section "The machine setup"), with the fix of the scanner smoke test. |
 | `integrity/integrity_check.py` | The integrity check of a root (section "The integrity check"). `I1-tom5-integrity.sh` pins its sha256 (`WANT_CHECK` `1c9ea571592f...`). |
 | `integrity/I1-tom5-integrity.sh`, `integrity/I2-tom5-integrity-publish.sh`, `integrity/U2-tom5-integrity-upload.sh` | The check on the machine, the publish step of the report, and the upload of the checker by the user. |
 | `integrity/integrity-test-local.sh`, `integrity/test/integrity_fixtures.py` | The local test (8 cases) and the small test roots. |

@@ -25,7 +25,7 @@ The folders of this step:
 | `fill-release/` | `tools/fill_release.py` of the TOM root (53 columns, 9 organization tables) and its test. |
 | `value-fixes/` | The scripts and the tables of the value fixes of pass 2 (language and license fills, side tables). |
 | `schema3-proof/` | The proof that ctp now writes the 53-column schema in a normal run: a rebuild of 2 projects, compared with the output of the passes. |
-| `KITS.tsv`, `check-kits.sh` | For each file of each staged list: the sha256 that ran, the copy in this repository and its sha256. The check script compares them. The rows of a pass name that has no folder (`pass-5-integrity`) are files that came after the stage: the check script compares only their copies. |
+| `KITS.tsv`, `check-kits.sh` | For each file of each staged list: the sha256 that ran, the copy in this repository and its sha256. The check script compares them. The rows of a pass name that has no folder (`pass-5-integrity`, `pass-5-machine`) are files that came after the stage: the check script compares only their copies. |
 
 ## The staged files
 
@@ -70,8 +70,9 @@ Not here:
   script made the disks and the Python environment (pyarrow 26.0.1, DuckDB 1.5.5,
   huggingface_hub 2.4.0, hf-xet 1.8.0, the values of each configuration file), copied the stage
   and ran the smoke test of the configuration (`SMOKE`, `SMOKE_OUT_SHA`).
-  The exception: the scripts of the integrity check of pass 5 are in `pass-5-revision/integrity/`,
-  with placeholders in the place of the run values.
+  The exceptions: the scripts of the integrity check of pass 5 (`pass-5-revision/integrity/`) and
+  the setup script of pass 5 (`pass-5-revision/machine/`), with placeholders in the place of the
+  run values.
 
 ## The column tools
 
