@@ -47,8 +47,8 @@ It is also published on Zenodo: cite the concept DOI 10.5281/zenodo.23744044 (ve
    - Pass 3 proves a rule on every row, drops 8 more columns (53 columns) and moves
      `roster_lang` to `project_facts`.
    - Pass 4 (the DOI pass) changes documents only: the DOI, the date, 3 removed documents.
-   - Pass 5 (staged, not run yet) makes the revision of TOM 1.0.0: the 149 new projects, the
-     license values and the side table `project_licenses` (section "The revision of TOM 1.0.0").
+   - Pass 5 (the run started on 2026-11-09) makes the revision of TOM 1.0.0: the 149 new
+     projects, the license values and the side table `project_licenses` (section "The revision of TOM 1.0.0").
 4. ctp now writes the 53-column schema in a normal run, with no later pass (ctp branch
    `feat/schema-3-run`, cregit fork branch `feat/schema-3`). A rebuild of 2 projects gives the
    output of the passes (`steps/release-passes/schema3-proof/`), except one file where the
@@ -74,8 +74,8 @@ funnel with the tokei rule (`steps/selection-funnel/`), built with the tool chai
 (`steps/new-projects/`). It gives the `license` column SPDX license expressions from a license
 scan (`steps/license-pass/`), adds the side table `organizations/project_licenses.parquet`, and
 changes the documents. TOM keeps its 53 columns. The kit of the root is
-`steps/release-passes/pass-5-revision/`; it has not run yet. Until it runs, `data/` and the
-numbers above describe the root of pass 4. `HUMAN-CHECKS.md` gives the human checks of each step.
+`steps/release-passes/pass-5-revision/`; its run started on 2026-11-09. Until the run ends,
+`data/` and the numbers above describe the root of pass 4. `HUMAN-CHECKS.md` gives the human checks of each step.
 
 ## Release decisions (user)
 

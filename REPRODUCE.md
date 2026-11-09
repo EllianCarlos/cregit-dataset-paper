@@ -557,7 +557,7 @@ the 8,449 projects of TOM: `published_sha256` is the file of TOM, and the new co
 `source_root_sha256` is the file of the source root. The run commit of each row is equal to
 `run_commit` of `MANIFEST.tsv` of TOM.
 
-### 5.8 The revision of TOM 1.0.0 (2026-11-08, not run yet)
+### 5.8 The revision of TOM 1.0.0 (2026-11-08; the run started on 2026-11-09)
 
 The revision is a new Hugging Face revision of release 1.0.0 in the same repository, with the
 same DOI. It has 8,598 projects: the 8,449 projects of the root of pass 4 and 149 new projects.
@@ -567,9 +567,10 @@ It changes the `license` values to SPDX expressions from a license scan, adds th
 | Step | Folder | Input | Output | State |
 |---|---|---|---|---|
 | The selection funnel (the tokei rule, GitLab in the pool, the copy check) | `steps/selection-funnel/` | the pool of the selection, the tokei measures | 8,598 projects (149 new: 41 pool, 108 GitLab) | done |
-| The run of the new projects | `steps/new-projects/` | `steps/selection-funnel/data/new_projects.tsv` | one project file for each new project, in the TOM form | machine C DONE; machines A and B in pass 2 when this was written |
+| The run of the new projects | `steps/new-projects/` | `steps/selection-funnel/data/new_projects.tsv` | one project file for each new project, in the TOM form | done: machines A, B and C ended DONE |
 | The license pass | `steps/license-pass/` | the 8,449 projects at their pinned commit | the values of the `license` column; the hand check (0 wrong of 100) | done |
-| Pass 5 (the root of the revision) | `steps/release-passes/pass-5-revision/` | the root of pass 4, the new project files, the license values | the root of the revision and its Hugging Face revision | staged (`fc901a99a7cf...`), not run |
+| Pass 5 (the root of the revision) | `steps/release-passes/pass-5-revision/` | the root of pass 4, the new project files, the license values | the root of the revision and its Hugging Face revision | staged (`fc901a99a7cf...`); the run started on 2026-11-09 and did not end when this record was written |
+| The integrity check of the root | `steps/release-passes/pass-5-revision/integrity/` | the published root of the revision | `docs/INTEGRITY.md`, `docs/integrity.tsv` and a new `SHA256SUMS` in the root | ready (local test: 8 of 8 cases pass); runs after pass 5 |
 
 The tools: `tools.lock` (the rows of cregit `c65f1e7` and `fbbf42f`, ctp `a9f0bed`, `c2a8432`,
 `6b6efcf` and `0f9b8ad`, the license scanners, and the kits). To run pass 5 again, use the method

@@ -1,7 +1,7 @@
 # The release passes of Token on Me (TOM) 1.0.0
 
 The dataset "Token on Me" (TOM), version 1.0.0, is on Hugging Face
-(`elliancarlos/token-on-me`, public). Four release passes made its root from the source root. A fifth pass, staged and not run yet,
+(`elliancarlos/token-on-me`, public). Four release passes made its root from the source root. A fifth pass (the run started on 2026-11-09)
 makes the revision of TOM 1.0.0 (`pass-5-revision/`).
 The source root has 10,754 project files (ctp schema 2, 71 columns). It is the output of the
 steps `../final-write/`, `../release-root/` and `../reencode/`. Each pass reads the root of the
@@ -15,7 +15,7 @@ uploads.
 | `pass-2/` | the root of pass 1 | Adds `git.savannah.gnu.org__denemo` and `git.savannah.gnu.org__gnubg`. Fills 161 empty `language` cells (tokei) and 149 `license` cells (licensee 9.18.0 at confidence 98, projects outside GitHub). Adds the side tables `project_languages` and `project_labels`. | 8,449 project files, 61 columns, 9 organization tables |
 | `pass-3/` | the root of pass 2 | Proves a rule on every row of every file, then drops 8 more columns (61 -> 53). Moves `roster_lang` to `project_facts` (fact type `roster_language`). | 8,449 project files, 53 columns |
 | `pass-4-doi/` | the root of pass 3 | Documents only: puts the DOI `10.57967/hf/11505` and the date into the documents and removes 3 documents. The project files do not change. | the final root: 8,475 rows in `SHA256SUMS` (`b7141d088461...`) |
-| `pass-5-revision/` | the root of pass 4 and the 149 new project files of `../new-projects/` | Staged, not run yet. Adds the 149 new projects (8,598). Writes the license values of `../license-pass/` (SPDX expressions) and the side table `project_licenses`. New documents. A new revision of the same Hugging Face repository, with the same DOI. | the root of the revision (after the run) |
+| `pass-5-revision/` | the root of pass 4 and the 149 new project files of `../new-projects/` | The run started on 2026-11-09. Adds the 149 new projects (8,598). Writes the license values of `../license-pass/` (SPDX expressions) and the side table `project_licenses`. New documents. A new revision of the same Hugging Face repository, with the same DOI. | the root of the revision (after the run) |
 
 The folders of this step:
 
@@ -39,7 +39,7 @@ The run started only when the sha256 of that list was the value pinned in its st
 | 2 | `d4e286a5ca6c0799e24dd0d915e8058baf8bf62e89204418eda74469daf17cf4` | 2026-11-07 16:48 UTC |
 | 3 | `e142c5a982ad0fc1ef5431d2aa7daf9670765491ae6a2d6689986ea39a599201` | 2026-11-07 18:07 UTC |
 | 4 | `ddbe7134d9e4900c883103a58f6c6342f4bc1f9c1eba62cbdb3cfbd467fba4e7` | 2026-11-07 21:31 UTC |
-| 5 | `fc901a99a7cf03ca72b4ef6af64d2a57a7844de96493116119d499c0d1ae6134` | 2026-11-08 21:51 UTC (not run yet) |
+| 5 | `fc901a99a7cf03ca72b4ef6af64d2a57a7844de96493116119d499c0d1ae6134` | 2026-11-08 21:51 UTC (the run started on 2026-11-09) |
 
 `KITS.tsv` maps each row of each list to its copy. A file that two passes staged with the same
 bytes has one copy: the copy of the first pass that staged it. `release_tools.py` is

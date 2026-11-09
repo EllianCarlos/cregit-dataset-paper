@@ -150,9 +150,10 @@ State:
 | Item | State |
 |---|---|
 | Selection funnel (`steps/selection-funnel/`) | Done: 8,598 projects, 149 new (41 pool, 108 GitLab). |
-| Run of the new projects (`steps/new-projects/`) | Machine C DONE (7 files); machines A and B in pass 2. |
+| Run of the new projects (`steps/new-projects/`) | Done: machines A, B and C ended DONE. |
 | License pass (`steps/license-pass/`) | Done: values decided, hand check 0 wrong of 100. |
-| Pass 5 (`steps/release-passes/pass-5-revision/`) | Staged (`fc901a99a7cf...`), not run. |
+| Pass 5 (`steps/release-passes/pass-5-revision/`) | Staged (`fc901a99a7cf...`); the run started on 2026-11-09 and did not end when this record was written. |
+| Integrity check (`steps/release-passes/pass-5-revision/integrity/`) | Ready: the local test passes (8 of 8 cases). It runs on the machine of pass 5 after the run. |
 | `data/SHA256SUMS`, `data/REBUILD-TARGETS.tsv` | Open: they describe the root of pass 4 until the root of the revision exists. |
 | Organization database 1.0.0 | Done: published on Zenodo (concept DOI 10.5281/zenodo.23744044). |
 

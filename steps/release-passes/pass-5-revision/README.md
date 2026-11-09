@@ -1,4 +1,4 @@
-# Pass 5: the revision of TOM 1.0.0 (staged, not run yet)
+# Pass 5: the revision of TOM 1.0.0 (the run started on 2026-11-09)
 
 Pass 5 makes a new root of TOM 1.0.0 and pushes it to the same Hugging Face repository
 (`elliancarlos/token-on-me`) as a new revision. The release stays 1.0.0 and the DOI stays
@@ -7,9 +7,10 @@ projects of the root of pass 4 and the 149 new projects of `../../selection-funn
 `../../new-projects/`. It gives the `license` column the values of `../../license-pass/` and adds
 the side table `organizations/project_licenses.parquet`. TOM keeps its 53 columns.
 
-**TODO (revision root):** the pass has not run yet. The `SHA256SUMS` of the new root, its
-Hugging Face revision, the row count and the sizes come after the run. Until then
-`../../../data/SHA256SUMS` and `../../../data/REBUILD-TARGETS.tsv` describe the root of pass 4.
+**TODO (revision root):** the run started on 2026-11-09 and did not end when this record was
+written. The `SHA256SUMS` of the new root, its Hugging Face revision, the row count and the sizes
+come after the run. Until then `../../../data/SHA256SUMS` and `../../../data/REBUILD-TARGETS.tsv`
+describe the root of pass 4.
 These values of the integrity check (section "The integrity check") are also pending, because
 the check did not run yet:
 
