@@ -60,13 +60,13 @@ User decisions of 2026-10-25:
 
 State of phase A:
 
-- A1-A4: done. On 2026-10-25 the runner kits of the later runs (the merge of the 5,000+ layer, the runs, the merge and the links of the 1,000-4,999 layer, the path-fix rerun and the organisation columns of version 1) were copied into the study repository with the same token rule (192 copies). They come into `pipeline/` at the next sync, after the study commit (REPRODUCE.md section 9). `tools.lock` has the rows of the later tools (cregit 14b8db4, the merge tools, the links kit, the organisation kit, the pseudonymizer).
+- A1-A4: done. On 2026-10-25 the runner kits of the later runs (the merge of the 5,000+ layer, the runs, the merge and the links of the 1,000-4,999 layer, the path-fix rerun and the organization columns of version 1) were copied into the study repository with the same token rule (192 copies). They come into `pipeline/` at the next sync, after the study commit (REPRODUCE.md section 9). `tools.lock` has the rows of the later tools (cregit 14b8db4, the merge tools, the links kit, the organization kit, the pseudonymizer).
 - A5: the scan of 2026-10-25 has 0 identifying hits. The old-name kind has 485 files (11,706 occurrences). The copy step checked the new copies against the same patterns: 0 identifying hits (fake test EC2 ids are on the allow list).
 - A6: done for v1. The entries of the 1,000-4,999 layer are in work.
 
 State of phase B:
 
-- B1: stage 1 is done for both layers (v1-raw: 3,544 files; x1k-raw: 7,209 files). Stage 2 (the pseudonyms, with the organisation columns in one write) waits for the final database (v4.8), the final commit of the pseudonymizer and the salt.
+- B1: stage 1 is done for both layers (v1-raw: 3,544 files; x1k-raw: 7,209 files). Stage 2 (the pseudonyms, with the organization columns in one write) waits for the final database (v4.8), the final commit of the pseudonymizer and the salt.
 - B2, B3, B4 and B6: open.
 - B5: no machine runs. The stopped machine of batch 2 (the big EC2) and the 4 EBS volumes of machine A wait for the user's direction. The final cost is not recorded.
 
@@ -78,7 +78,7 @@ the documents, so the checks of the project files stay valid.
 
 - B2: `data/SHA256SUMS` has the 10,754 project rows of the release root. The published files
   are ctp schema 2 (71 columns), so `make validate` now uses `scripts/validate_schema2.py`: the
-  67 cregit columns of the ca113e3 contract, then the 4 organisation columns, the footer keys,
+  67 cregit columns of the ca113e3 contract, then the 4 organization columns, the footer keys,
   the registry and the rows. The release build checked the same contract on all files
   (`schema.txt`). `make verify` and `make validate` on the real files need the download
   (162.5 GB): the user runs the check script of the release kit.
