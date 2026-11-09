@@ -1400,10 +1400,17 @@ again, so `git blame -C100` gives every line of that revision to that commit. A 
 the tool review of 2026-10-28 (one revision of a file with 31 lines times out) gave all
 31 lines to the next commit. The causes are the denylist, a blob over 50 MiB, a parser
 crash, a tokenizer error and the tokenizer time limit. Only `pipeline.log` records an
-exclusion (the `EXCLUDED` lines and the counters); the release has no list. The counters
-are 0 in 71 local logs; the logs of the cloud machines were not read. The time limit is
-600 s of wall time with one worker for each processor, so an exclusion can depend on the
-load of the machine.
+exclusion (the `EXCLUDED` lines and the counters); the release has no list. A count of
+2026-11-09 read the logs of the run that made each release file of the 8,598 projects of
+TOM (local and cloud logs; every project has a log). At the run commit, the tokenizer left
+out 59 files in 22 projects at the 600 s limit, and the denylist left out 33 files (2
+OpenJDK langtools tests in 19 projects of the JDK family). Together: 92 files in 41
+projects, 0.0005% of the 17,870,388 source files of TOM. The 149 new projects have none.
+Over the history, 1,024 blob versions in 47 projects timed out; 59 of them are the blobs
+at the run commit. After each of the other versions, the next version of the file takes all
+its lines in the blame. The
+time limit is 600 s of wall time with one worker for each processor, so an exclusion can
+depend on the load of the machine.
 
 **The denylist excludes 12 blobs that the patched srcML can tokenize.**
 `BlobDenylistEntries.scala` (the same file from `157cf8b` to `14b8db4`) lists 8 OpenJDK
