@@ -155,3 +155,24 @@ State:
 | Pass 5 (`steps/release-passes/pass-5-revision/`) | Staged (`fc901a99a7cf...`), not run. |
 | `data/SHA256SUMS`, `data/REBUILD-TARGETS.tsv` | Open: they describe the root of pass 4 until the root of the revision exists. |
 | Organization database 1.0.0 | Done: published on Zenodo (concept DOI 10.5281/zenodo.23744044). |
+
+## Future work: the full-history pilot (2026-11-08)
+
+TOM has the tokens that are alive at the pinned commit of each project. A pilot measured the cost
+of a dataset of every token in the full history of a project. It is not part of TOM 1.0.0 and
+this package has no copy of its kit. One machine built 33 history files (32 projects of a seeded
+sample of TOM and the gate project), and all 33 passed the validation. At the pinned commit, 28 of
+the 32 projects agree with TOM; the causes of the 4 differences are not studied yet.
+
+The kit fixes after the run: the DuckDB memory limit comes from the machine size
+(`MEMORY_LIMIT=auto`: 0.8 x the memory, divided by the projects that run at the same time); the
+history builder sizes its line limit from the longest line of a token file (`token_history`
+`42a4b1e`; the earlier fixed limit of 16 MB stopped 2 projects); a NUL byte in a token file
+(`token_history` `fc8cade`). Open defects of the tools: parallel ctp starts collide on
+`project_facts.parquet`; the start script cannot override the values of the kit configuration; a
+retry of a project that failed late runs from step 1 and stops on its memo (use `--from-step`);
+the blame proof needs a git `safe.directory` for the repositories of the run user; the end marker
+of one step is the marker of the whole run.
+
+**TODO (pilot report):** the report of the pilot (`REPORT.md` of the pilot) is not written yet.
+Add its results and a link here when it exists.
