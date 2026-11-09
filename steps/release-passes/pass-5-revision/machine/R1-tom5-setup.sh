@@ -20,7 +20,7 @@ case "|REFUSED_INSTANCE_IDS|" in
   *"|$IID|"*) echo "ABORT: $IID is not the TOM-5 machine"; exit 1 ;; esac
 B=${TOM_B:-s3://BUCKET_NAME}
 X=${TOM_X:-/data/tom5}; T=$X/tools
-WANT_SUMS=fc901a99a7cf03ca72b4ef6af64d2a57a7844de96493116119d499c0d1ae6134
+WANT_SUMS=da9125463a33d480755cdcb9ec91f6a6fab8292d4e73667785c1d3ed12fb43f6
 SMOKE=libexpat__libexpat-dataset.parquet
 [ "$WANT_SUMS" != none ] || { echo "ABORT: no stage pin (S1 first)"; exit 1; }
 echo "== $(date -u +%FT%TZ) $IID run ${TOM_RUN:-?} $(nproc) vCPU $(free -g | awk '/Mem:/{print $2}') GiB"

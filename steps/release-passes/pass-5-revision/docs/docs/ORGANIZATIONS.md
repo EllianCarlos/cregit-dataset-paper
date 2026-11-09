@@ -14,7 +14,7 @@ foundation, a project, and others. The two `firm_*` columns are suggestions, not
 gives how often a value is wrong.
 
 Row counts of the tables: `organizations` 9,343 (9,340 organizations and the 3 pseudo ids of
-section 2.2), `organization_domains` 10,899, `organization_namespaces` 7,061,
+section 2.2), `organization_domains` 10,930, `organization_namespaces` 7,061,
 `project_organizations` [[tom: project_organizations rows]], `project_facts` [[tom: facts rows]],
 `project_languages` [[tom: project_languages rows]], `project_labels` [[tom: project_labels rows]],
 `project_licenses` [[tom: project_licenses rows]], `link_error` 108, `release_info`

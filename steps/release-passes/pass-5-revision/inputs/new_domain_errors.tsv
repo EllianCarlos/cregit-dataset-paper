@@ -1,0 +1,32 @@
+domain	organization_id	match	matched_domain	confidence	source	review_path	error_stratum	p_error
+bauxite.inria.fr	inria	suffix	inria.fr	curated	gitdm	published or curated list, kept by the checks	source/B3 <10k/organization/suffix	0.03601928260611431
+bx.jp.nec.co.jp	nec	suffix	nec.co.jp	curated	gitdm	published or curated list, kept by the checks	source/B3 <10k/organization/suffix	0.0366927071488653
+cita.utoronto.ca	university-of-toronto	suffix	utoronto.ca	proposed	claude-proposal	AI proposal, kept by the checks	source/B3 <10k/organization/suffix	0.03597613048906734
+crunch1.lip.ens-lyon.fr	ecole-normale-superieure-de-lyon	suffix	ens-lyon.fr	proposed	claude-proposal-v2	AI proposal, kept by the checks	source/B3 <10k/organization/suffix	0.036001638699913796
+cryptic-dragon.jf.intel.com	intel	suffix	intel.com	curated	patch	published or curated list, kept by the checks	source/B3 <10k/organization/suffix	0.03601928260611431
+dhcp-100-2-40.bos.redhat.com	red-hat	suffix	redhat.com	curated	gitdm	published or curated list, kept by the checks	source/B3 <10k/organization/suffix	0.03601928260611431
+dhcp-100-3-19.bos.redhat.com	red-hat	suffix	redhat.com	curated	gitdm	published or curated list, kept by the checks	source/B3 <10k/organization/suffix	0.03601928260611431
+di.ku.dk	university-of-copenhagen	suffix	ku.dk	proposed	claude-proposal-v2	AI proposal, kept by the checks	source/B3 <10k/organization/suffix	0.036001638699913796
+dirt00.ics.hawaii.edu	university-of-hawaii	suffix	hawaii.edu	proposed	claude-proposal-v1	AI proposal, kept by the checks	source/B3 <10k/organization/suffix	0.035985908476836914
+dst02.yandex.ru	free-provider	suffix	yandex.ru	curated	builtin	published or curated list, kept by the checks	source/B3 <10k/free-provider/suffix	0.03678146660410542
+fibocom.corp-partner.google.com	google	suffix	google.com	curated	gitdm	published or curated list, kept by the checks	source/B3 <10k/organization/suffix	0.03601928260611431
+halflap.boston.devel.redhat.com	red-hat	suffix	redhat.com	curated	gitdm	published or curated list, kept by the checks	source/B3 <10k/organization/suffix	0.03601928260611431
+hpgntae-ubiq156.eem.corp.google.com	google	suffix	google.com	curated	gitdm	published or curated list, kept by the checks	source/B3 <10k/organization/suffix	0.03601928260611431
+kaapifixe.inrialpes.fr	inria	suffix	inrialpes.fr	proposed	claude-proposal-v2	AI proposal, kept by the checks	source/B3 <10k/organization/suffix	0.036478380032759605
+kouglof.inria.fr	inria	suffix	inria.fr	curated	gitdm	published or curated list, kept by the checks	source/B3 <10k/organization/suffix	0.03601928260611431
+kouignamann.inria.fr	inria	suffix	inria.fr	curated	gitdm	published or curated list, kept by the checks	source/B3 <10k/organization/suffix	0.03601928260611431
+lnxbranko2.se.axis.com	axis-communications	suffix	axis.com	curated	gitdm	published or curated list, kept by the checks	source/B3 <10k/organization/suffix	0.03601928260611431
+lnxhplap16.se.axis.com	axis-communications	suffix	axis.com	curated	gitdm	published or curated list, kept by the checks	source/B3 <10k/organization/suffix	0.03601928260611431
+nef-devel.inria.fr	inria	suffix	inria.fr	curated	gitdm	published or curated list, kept by the checks	source/B3 <10k/organization/suffix	0.03601928260611431
+oniris.inria.fr	inria	suffix	inria.fr	curated	gitdm	published or curated list, kept by the checks	source/B3 <10k/organization/suffix	0.03601928260611431
+rrz.uni-hamburg.de	university-of-hamburg	suffix	uni-hamburg.de	proposed	claude-proposal-v2	AI proposal, kept by the checks	source/B3 <10k/organization/suffix	0.036001638699913796
+salade.loria.fr	loria	suffix	loria.fr	proposed	claude-proposal-v2	AI proposal, kept by the checks	source/B3 <10k/organization/suffix	0.036001638699913796
+schreiberb.imag.fr	imag	suffix	imag.fr	proposed	claude-proposal-v2	AI proposal, kept by the checks	source/B3 <10k/organization/suffix	0.036001638699913796
+sd070.hel.movial.fi	movial	suffix	movial.fi	curated	gitdm	published or curated list, kept by the checks	source/B3 <10k/organization/suffix	0.03601928260611431
+ten.fsid.cvut.cz	czech-technical-university-in-prague	suffix	cvut.cz	proposed	claude-proposal-v2	AI proposal, kept by the checks	source/B3 <10k/organization/suffix	0.036001638699913796
+terraz-pc.imag.fr	imag	suffix	imag.fr	proposed	claude-proposal-v2	AI proposal, kept by the checks	source/B3 <10k/organization/suffix	0.036001638699913796
+trend.com.tw	trend-micro-incorporated	exact	trend.com.tw	single-developer	cncf-gitdm-single	published or curated list, kept by the checks	source/B3 <10k/organization/exact	0.1131315927725334
+tropezienne.inria.fr	inria	suffix	inria.fr	curated	gitdm	published or curated list, kept by the checks	source/B3 <10k/organization/suffix	0.03601928260611431
+ubu20-hvvm-c.inria.fr	inria	suffix	inria.fr	curated	gitdm	published or curated list, kept by the checks	source/B3 <10k/organization/suffix	0.03601928260611431
+users.norely.github.com	github	suffix	github.com	multi-developer	cncf-gitdm	published or curated list, kept by the checks	source/B3 <10k/organization/suffix	0.03630039341872593
+wireload.net	wireload	exact	wireload.net	single-developer	cncf-gitdm-single	published or curated list, kept by the checks	source/B3 <10k/organization/exact	0.1131315927725334

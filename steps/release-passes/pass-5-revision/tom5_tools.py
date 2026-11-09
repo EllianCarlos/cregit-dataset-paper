@@ -3,6 +3,8 @@ values). It uses tom2_tools.py (footer records, plan, value pass) and tom_tools.
 
   newlist     the 149 new projects: the funnel list, the name map, the removed list and the MANIFEST.new.tsv of each
               new-project machine; 149 in, 0 missing, 0 extra (a removed project of a machine is dropped)
+  footfix     organizations_mapping_sha256 of the new files := the mapping_sha256 of release_info (footer only,
+              parquet_rename.py --set-kv, proved by parquet_rename_check.py); new.resolved.tsv, new.MANIFEST.tsv
   footers     the footer of every project file: TOM-4 files by ranged S3 reads (or a local root), new files local;
               against the merged MANIFEST.tsv (size and rows)
   shape       the Parquet form gate of the new files against a TOM-4 file (columns and order, types, footer keys,
@@ -11,6 +13,9 @@ values). It uses tom2_tools.py (footer records, plan, value pass) and tom_tools.
   lscan-list  the license_scan.py list of the new projects (project, clone_url, run_commit)
   ledger-rows the ledgers.parquet rows of the new projects from the ctp metrics ledger of each machine
   pseudo      pseudonymization.json with the registry of the new batch (from the footers of the new files)
+  domains     the published form of the new domain rows (organization_domains.new.parquet of each new-project
+              machine has the link schema; it moves to organization_domains.linkschema.parquet): organization_id,
+              and review_path, error_stratum, p_error of the error model of TOM 1.0.0 (inputs/new_domain_errors.tsv)
   base        the base root: TOM-4 plus the new projects (MANIFEST.tsv, SHA256SUMS, ledgers.parquet, organizations/
               with the new rows, pseudonymization.json); parquet/ links to the local input files
   manifest    MANIFEST.tsv of the new root (the base rows; bytes and sha256 of the changed files from the ledger)
@@ -157,6 +162,171 @@ def cmd_newlist(a) -> int:
     write_tsv(a.out, [{"project": r["project"], "file": f"{r['project']}{SUFFIX}", "machine": r["machine"],
                        "sha256": r["sha256"], "bytes": r["bytes"], "rows": r["rows"]} for r in rows],
               ["project", "file", "machine", "sha256", "bytes", "rows"])
+    return 0
+
+
+# --------------------------------------------------------------------------------------------------- footfix --
+FOOTFIX_KEY = "organizations_mapping_sha256"
+
+
+def _kv(p) -> tuple:
+    import pyarrow.parquet as pq
+    md = pq.ParquetFile(p).metadata
+    return {k.decode(): v.decode() for k, v in (md.metadata or {}).items()}, md.num_rows, md.num_row_groups
+
+
+def _prefix_sha(p, n) -> str:
+    h = hashlib.sha256()
+    with open(p, "rb") as f:
+        left = n
+        while left:
+            b = f.read(min(8 << 20, left))
+            if not b:
+                break
+            h.update(b)
+            left -= len(b)
+    return h.hexdigest()
+
+
+def _footer_start(p) -> int:
+    size = os.path.getsize(p)
+    with open(p, "rb") as f:
+        f.seek(size - 8)
+        tail = f.read(8)
+    if tail[4:] != b"PAR1":
+        raise SystemExit(f"ABORT: {p}: no PAR1 at the end")
+    return size - 8 - int.from_bytes(tail[:4], "little")
+
+
+def _footfix_one(job) -> dict:
+    import subprocess
+    r, a, want = job
+    f = r["file"]
+    src, out = Path(a.new_files) / f, Path(a.work) / "out" / f
+    rec = {"file": f, "problems": []}
+    kv, rows, rgs = _kv(src)
+    rec["old_value"] = kv.get(FOOTFIX_KEY)
+    if kv.get(FOOTFIX_KEY) == want:
+        rec["status"] = "already"
+        return rec
+    if sha256(src) != r["sha256"] or os.path.getsize(src) != int(r["bytes"]) or rows != int(r["rows"]):
+        rec["problems"].append("the input is not its new.resolved.tsv row (sha256, bytes or rows)")
+        return rec
+    if out.exists():
+        stale = Path(a.work) / "stale"
+        stale.mkdir(exist_ok=True)
+        os.rename(out, stale / f"{f}.{time.strftime('%Y%m%dT%H%M%S')}")
+    setkv = f"{FOOTFIX_KEY}={want}"
+    env = dict(os.environ, PYTHONDONTWRITEBYTECODE="1")
+    p = subprocess.run([sys.executable, "-I", "-B", a.rename_py, str(src), str(out), "--set-kv", setkv],
+                       capture_output=True, text=True, env=env)
+    if p.returncode or not out.exists():
+        rec["problems"].append(f"parquet_rename.py rc {p.returncode}: {p.stderr.strip()[-300:]}")
+        return rec
+    c = subprocess.run([sys.executable, "-I", "-B", a.check_py, "--set-kv", setkv, str(src), str(out)],
+                       capture_output=True, text=True, env=env)
+    try:
+        cj = json.loads((c.stdout.strip().splitlines() or ["{}"])[-1])
+    except json.JSONDecodeError:
+        cj = {}
+    rec["check_ok"] = bool(c.returncode == 0 and cj.get("ok"))
+    if not rec["check_ok"]:
+        rec["problems"].append(f"parquet_rename_check.py rc {c.returncode}: {(c.stdout + c.stderr).strip()[-400:]}")
+    # the same proof once more here: the bytes before the old footer, rows, row groups, the other key-values
+    nkv, nrows, nrgs = _kv(out)
+    fs = _footer_start(src)
+    rec["prefix_same"] = _footer_start(out) == fs and _prefix_sha(src, fs) == _prefix_sha(out, fs)
+    rec["rows_same"] = (nrows, nrgs) == (rows, rgs)
+    rec["other_kv_same"] = ({k: v for k, v in nkv.items() if k != FOOTFIX_KEY} ==
+                            {k: v for k, v in kv.items() if k != FOOTFIX_KEY}) and sorted(nkv) == sorted(kv)
+    rec["new_value_ok"] = nkv.get(FOOTFIX_KEY) == want
+    for k in ("prefix_same", "rows_same", "other_kv_same", "new_value_ok"):
+        if not rec[k]:
+            rec["problems"].append(k)
+    rec.update(status="fixed", old_sha256=r["sha256"], old_bytes=int(r["bytes"]), sha256=sha256(out),
+               bytes=os.path.getsize(out), rows=nrows, row_groups=nrgs, footer_start=fs)
+    return rec
+
+
+def cmd_footfix(a) -> int:
+    """organizations_mapping_sha256 of the new files := the mapping_sha256 of release_info (the TOM 1.0.0 label).
+    Each new-project machine wrote the hash of its own merged links (TOM + its new rows); the values of the files are
+    the values of the release tables. Footer only (parquet_rename.py --set-kv); every file is proved by
+    parquet_rename_check.py and here (the bytes before the footer, rows, row groups, the other key-values). The files
+    change place only when all pass; the old link moves to WORK/before/. new.resolved.tsv and new.MANIFEST.tsv get the
+    new sha256 and bytes (their first form stays as *.before-footfix)."""
+    import pyarrow.parquet as pq
+    ri = {r["key"]: r["value"] for r in pq.read_table(a.release_info).to_pylist()}
+    want = ri.get("mapping_sha256") or ""
+    refkv = _kv(a.ref)[0]
+    if not re.fullmatch(r"[0-9a-f]{64}", want) or refkv.get(FOOTFIX_KEY) != want:
+        say(f"PROBLEM: release_info mapping_sha256 {want[:12]!r} is not the footer value of {Path(a.ref).name} "
+            f"({str(refkv.get(FOOTFIX_KEY))[:12]})")
+        return 1
+    res = read_tsv(a.resolved)
+    man = read_tsv(a.manifest)
+    rcols = ["project", "file", "machine", "sha256", "bytes", "rows"]
+    for path, rows, cols in ((a.resolved, res, rcols), (a.manifest, man, MAN_COLS)):
+        tmp = Path(a.work) / (Path(path).name + ".roundtrip")
+        Path(a.work).mkdir(parents=True, exist_ok=True)
+        write_tsv(tmp, rows, cols)
+        if tmp.read_bytes() != Path(path).read_bytes():
+            say(f"PROBLEM: {Path(path).name} does not round-trip through write_tsv; nothing changed")
+            return 1
+        os.replace(tmp, Path(a.work) / (Path(path).name + ".roundtrip-ok"))
+    (Path(a.work) / "out").mkdir(parents=True, exist_ok=True)
+    (Path(a.work) / "before").mkdir(exist_ok=True)
+    with cf.ThreadPoolExecutor(a.jobs) as ex:
+        recs = list(ex.map(_footfix_one, [(r, a, want) for r in res]))
+    probs = [f"{r['file']}: {x}" for r in recs for x in r["problems"]]
+    already = [r for r in recs if r["status"] == "already"]
+    fixed = [r for r in recs if r["status"] == "fixed"]
+    # an already fixed file must be the one that an earlier run of this step put in place
+    rowmap = {r["file"]: r for r in res}
+    for r in already:
+        p = Path(a.new_files) / r["file"]
+        if sha256(p) != rowmap[r["file"]]["sha256"] or os.path.getsize(p) != int(rowmap[r["file"]]["bytes"]):
+            probs.append(f"{r['file']}: has the label but is not its new.resolved.tsv row")
+    with open(a.log, "a") as fo:
+        for r in recs:
+            fo.write(json.dumps(r, sort_keys=True) + "\n")
+    for x in probs[:40]:
+        say("PROBLEM: " + x)
+    if probs:
+        say(f"footfix: {len(fixed)} to fix, {len(already)} already; problems {len(probs)}; nothing moved")
+        return 1
+    for path in (a.resolved, a.manifest):
+        bk = Path(str(path) + ".before-footfix")
+        if not bk.exists():
+            bk.write_bytes(Path(path).read_bytes())
+    for r in fixed:
+        f = r["file"]
+        os.rename(Path(a.new_files) / f, Path(a.work) / "before" / f)
+        os.rename(Path(a.work) / "out" / f, Path(a.new_files) / f)
+    fx = {r["file"]: r for r in fixed}
+    for row in res:
+        if row["file"] in fx:
+            row["sha256"], row["bytes"] = fx[row["file"]]["sha256"], str(fx[row["file"]]["bytes"])
+    mp = {f"parquet/{r['file']}": r for r in fixed}
+    nman = 0
+    for row in man:
+        if row["path"] in mp:
+            row["sha256"], row["bytes"] = mp[row["path"]]["sha256"], str(mp[row["path"]]["bytes"])
+            nman += 1
+    if nman != len(fixed):
+        say(f"PROBLEM: {nman} new.MANIFEST.tsv rows for {len(fixed)} fixed files")
+        return 1
+    write_tsv(a.resolved, res, rcols)
+    write_tsv(a.manifest, man, MAN_COLS)
+    for row in res:
+        p = Path(a.new_files) / row["file"]
+        if sha256(p) != row["sha256"] or _kv(p)[0].get(FOOTFIX_KEY) != want:
+            say(f"PROBLEM: {row['file']}: after the move, the file is not its row or has not the label")
+            return 1
+    say(f"footfix: {len(res)} new files: {len(fixed)} fixed, {len(already)} already; {FOOTFIX_KEY} = {want[:12]} "
+        f"(release_info); checks ok {sum(r.get('check_ok', False) for r in fixed)} of {len(fixed)}, prefix same "
+        f"{sum(r.get('prefix_same', False) for r in fixed)}, rows same {sum(r.get('rows_same', False) for r in fixed)}, "
+        f"other key-values same {sum(r.get('other_kv_same', False) for r in fixed)}; problems 0")
     return 0
 
 
@@ -447,6 +617,93 @@ def merge_table(old_path, new_paths, out_path, key, only=None):
     back = pq.read_table(out_path)
     assert back.num_rows == merged.num_rows
     return old.num_rows, back.num_rows
+
+
+LINK_COLS = ["domain", "firm_based_on_domain", "organisation_kind", "match", "matched_domain", "confidence", "source"]
+ERR_COLS = ["domain", "organization_id", "match", "matched_domain", "confidence", "source", "review_path",
+            "error_stratum", "p_error"]
+
+
+def cmd_domains(a) -> int:
+    """The published form of the new domain rows: organization_domains.new.parquet of each new-project machine has the
+    link schema (domain_links); it moves to organization_domains.linkschema.parquet and the file of the old name gets
+    the schema of the TOM-4 table: organization_id = firm_based_on_domain (organisation_kind is the kind of the
+    organization in organizations.parquet: it must agree, then it is dropped), and review_path, error_stratum and
+    p_error of the error model of TOM 1.0.0 for the new domain (--errors; domainfix/em_newdomains.py of the kit).
+    A second run checks that the file of the old name is the one it would write."""
+    import pyarrow.parquet as pq
+    t4 = Path(a.tom4) / "organizations"
+    want = pq.read_schema(t4 / "organization_domains.parquet").remove_metadata()
+    errs = {r["domain"]: r for r in read_tsv(a.errors)}
+    con = duck()
+    con.execute("CREATE TABLE e (domain VARCHAR, organization_id VARCHAR, match VARCHAR, matched_domain VARCHAR, "
+                "confidence VARCHAR, source VARCHAR, review_path VARCHAR, error_stratum VARCHAR, p_error DOUBLE)")
+    con.executemany("INSERT INTO e VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                    [[r[c] if c != "p_error" else float(r[c]) for c in ERR_COLS] for r in errs.values()])
+    org, dom = str(t4 / "organizations.parquet"), str(t4 / "organization_domains.parquet")
+    seen = set()
+    for d in a.new_dirs:
+        n, ls = Path(d) / "organization_domains.new.parquet", Path(d) / "organization_domains.linkschema.parquet"
+        if not ls.exists():
+            if not n.exists():
+                continue
+            got = [f.name for f in pq.read_schema(n)]
+            if got != LINK_COLS:
+                raise SystemExit(f"ABORT: {n}: columns {got}, not the link schema (and no {ls.name})")
+            os.rename(n, ls)
+        con.execute(f"CREATE OR REPLACE VIEW l AS SELECT * FROM read_parquet('{ls}')")
+        got = [r[0] for r in con.execute("DESCRIBE l").fetchall()]
+        if got != LINK_COLS:
+            raise SystemExit(f"ABORT: {ls}: columns {got}, not the link schema")
+        nrow = con.execute("SELECT count(*) FROM l").fetchone()[0]
+        bad = {
+            "domains in TOM-4": f"SELECT count(*) FROM l WHERE domain IN (SELECT domain FROM read_parquet('{dom}'))",
+            "domains of another machine": f"SELECT count(*) FROM l WHERE domain IN ({','.join(repr(x) for x in seen) or 'NULL'})",
+            "repeated domains": "SELECT count(*) - count(DISTINCT domain) FROM l",
+            "independent rows": "SELECT count(*) FROM l WHERE firm_based_on_domain = 'independent'",
+            "ids not in organizations": f"SELECT count(*) FROM l WHERE firm_based_on_domain NOT IN "
+                                        f"(SELECT organization_id FROM read_parquet('{org}'))",
+            "kinds not the kind of the organization": f"SELECT count(*) FROM l JOIN read_parquet('{org}') o ON "
+                                                      f"o.organization_id = l.firm_based_on_domain WHERE o.kind IS DISTINCT FROM l.organisation_kind",
+            "domains without an error row": "SELECT count(*) FROM l WHERE domain NOT IN (SELECT domain FROM e)",
+            "error rows with other link values": "SELECT count(*) FROM l JOIN e USING (domain) WHERE "
+                                                 "e.organization_id IS DISTINCT FROM l.firm_based_on_domain OR "
+                                                 "e.match IS DISTINCT FROM l.match OR e.matched_domain IS DISTINCT FROM l.matched_domain OR "
+                                                 "e.confidence IS DISTINCT FROM l.confidence OR e.source IS DISTINCT FROM l.source",
+            "NULL values": "SELECT count(*) FROM l JOIN e USING (domain) WHERE e.review_path IS NULL OR "
+                           "e.error_stratum IS NULL OR e.p_error IS NULL OR l.domain IS NULL OR l.firm_based_on_domain IS NULL",
+        }
+        for what, q in bad.items():
+            k = con.execute(q).fetchone()[0]
+            if k:
+                raise SystemExit(f"ABORT: {ls}: {k} {what}")
+        seen |= {x for (x,) in con.execute("SELECT domain FROM l").fetchall()}
+        sel = ("SELECT l.domain, l.firm_based_on_domain AS organization_id, l.match, l.matched_domain, l.confidence, "
+               "l.source, e.review_path, e.error_stratum, e.p_error FROM l JOIN e USING (domain) ORDER BY l.domain")
+        tmp = n.with_name(f".{n.name}.tmp")
+        con.execute(f"COPY ({sel}) TO '{tmp}' (FORMAT PARQUET, COMPRESSION ZSTD)")
+        if not pq.read_schema(tmp).remove_metadata().equals(want):
+            raise SystemExit(f"ABORT: {tmp}: the schema is not the schema of the TOM-4 table")
+        rows = pq.read_table(tmp).to_pylist()
+        for r in rows:
+            if r["p_error"] != float(errs[r["domain"]]["p_error"]):
+                raise SystemExit(f"ABORT: {tmp}: p_error of {r['domain']} is not the error row")
+        if len(rows) != nrow:
+            raise SystemExit(f"ABORT: {tmp}: {len(rows)} rows, not {nrow}")
+        if n.exists():
+            same = pq.read_table(n).to_pylist() == rows and pq.read_schema(n).remove_metadata().equals(want)
+            os.remove(tmp)
+            if not same:
+                raise SystemExit(f"ABORT: {n} is not the file this step writes ({ls.name} is the input)")
+            say(f"{n}: ok, already in the published form ({nrow} rows)")
+        else:
+            os.replace(tmp, n)
+            say(f"{n}: {nrow} rows in the published form, sha256 {sha256(n)[:12]}; the link form is {ls.name} "
+                f"(sha256 {sha256(ls)[:12]})")
+    if seen != set(errs):
+        raise SystemExit(f"ABORT: {len(seen)} new domains, {len(errs)} error rows")
+    say(f"domains: {len(seen)} new domain rows in the published form of organization_domains")
+    return 0
 
 
 def cmd_base(a) -> int:
@@ -927,6 +1184,11 @@ def main(argv=None) -> int:
         s.add_argument(o, required=True)
     s.add_argument("--run", action="append", required=True, metavar="MACHINE=DIR")
     s.add_argument("--expect", type=int)
+    s = sub.add_parser("footfix")
+    for o in ("--resolved", "--manifest", "--new-files", "--release-info", "--ref", "--rename-py", "--check-py",
+              "--work", "--log"):
+        s.add_argument(o, required=True)
+    s.add_argument("--jobs", type=int, default=8)
     s = sub.add_parser("footers")
     for o in ("--manifest", "--new", "--out-dir", "--local-new"):
         s.add_argument(o, required=True)
@@ -952,6 +1214,10 @@ def main(argv=None) -> int:
     s = sub.add_parser("pseudo")
     for o in ("--tom4", "--footers", "--new", "--out"):
         s.add_argument(o, required=True)
+    s = sub.add_parser("domains")
+    for o in ("--tom4", "--errors"):
+        s.add_argument(o, required=True)
+    s.add_argument("--new-dirs", nargs="+", required=True)
     s = sub.add_parser("base")
     for o in ("--tom4", "--new", "--new-manifest", "--new-ledgers", "--pseudo", "--new-files", "--out"):
         s.add_argument(o, required=True)
@@ -1000,8 +1266,8 @@ def main(argv=None) -> int:
     s.add_argument("--expect", choices=("public", "private"), default="public")
     sub.add_parser("keys")
     a = ap.parse_args(argv)
-    return {"keys": cmd_keys, "newlist": cmd_newlist, "footers": cmd_footers, "shape": cmd_shape, "filevals": cmd_filevals,
-            "lscan-list": cmd_lscan_list, "ledger-rows": cmd_ledger_rows, "pseudo": cmd_pseudo, "base": cmd_base,
+    return {"keys": cmd_keys, "newlist": cmd_newlist, "footfix": cmd_footfix, "footers": cmd_footers, "shape": cmd_shape, "filevals": cmd_filevals,
+            "lscan-list": cmd_lscan_list, "ledger-rows": cmd_ledger_rows, "pseudo": cmd_pseudo, "domains": cmd_domains, "base": cmd_base,
             "manifest": cmd_manifest, "sums": cmd_sums, "view": cmd_view, "tables": cmd_tables, "values": cmd_values,
             "check-root": cmd_check_root, "hf-push": cmd_hf_push}[a.cmd](a)
 

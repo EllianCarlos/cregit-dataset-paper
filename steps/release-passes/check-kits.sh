@@ -7,8 +7,8 @@
 # - Each copy of KITS.tsv must have its copy_sha256. A copy must have the staged sha256, except
 #   the rows whose note says which value was replaced.
 # - PASS/SHA256SUMS must have the sha256 of the staged list (the row SHA256SUMS of KITS.tsv).
-# - A pass name of KITS.tsv that is not in the list below (pass-5-integrity, pass-5-machine) has no
-#   staged list: only its copies are checked.
+# - A pass name of KITS.tsv that is not in the list below (pass-5-integrity, pass-5-machine,
+#   pass-5-domainfix) has no staged list: only its copies are checked.
 # It needs no network and no data outside this repository.
 set -euo pipefail
 

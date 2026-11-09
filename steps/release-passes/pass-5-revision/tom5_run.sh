@@ -11,6 +11,8 @@
 #              each new file against its MANIFEST.new.tsv sha256
 #   shape      the Parquet form gate of every new file against the TOM-4 file SHAPE_REF (53 columns, order, types,
 #              footer key set, writer, codecs, encodings, Bloom filters, row groups)
+#   footfix    organizations_mapping_sha256 of the new files := the mapping_sha256 of the TOM-4 release_info (footer
+#              only, parquet_rename.py --set-kv + parquet_rename_check.py); new.resolved.tsv, new.MANIFEST.tsv
 #   footers    the footer of every project file (TOM-4: ranged S3 reads; new: local) against the merged MANIFEST.tsv
 #   license    refuses without inputs/AUDIT_OK; the license value in each file (footer statistics); the rescan of the
 #              new projects (license_scan.py of LSC_COMMIT); the rule (70_values.py with the file values and the
@@ -19,6 +21,7 @@
 #   pseudo     pseudonymization.json with the registry of the new batch
 #   fetch2     the TOM-4 project files with a license fill (the only TOM-4 project files the pass reads)
 #   base       the base root: TOM-4 + the new projects (MANIFEST, SHA256SUMS, ledgers, organizations/ rows, pseudo)
+#              (first tom5_tools.py domains: the new domain rows in the published schema, log/domains.txt)
 #   plan       tom2_tools.py plan: the kind of each file; the old values must be in the footer statistics
 #   canary     the smallest changed file alone (value pass + check)
 #   pass       the value pass of the other changed files (largest first, JOBS at a time); log/ledger.jsonl
@@ -76,6 +79,25 @@ todo() { [ -z "$FAILED" ] && [ ! -f $ST/$1.DONE ]; }
 done_step() { echo "$1 DONE $(date -u +%FT%TZ)${2:+ $2}" > $ST/$1.DONE; log "step $1 done${2:+: $2}"; put_log; }
 run_to() { local f=$1; shift; $AS "$@" >> $L/$f 2>&1; }
 mkdir_as() { $AS mkdir -p "$@"; }
+# S3 copies by key list (thousands of --include/--exclude patterns make the AWS CLI spend about 1.7 s of CPU per key)
+# cp_keys LOG LIST SRC DST [ARGS]: one `aws s3 cp SRC/name DST/name ARGS` per line of LIST, CPJ (32) at a time
+cp_keys() { local f=$1 list=$2 src=$3 dst=$4; shift 4; [ -s "$list" ] || return 0
+  $AS xargs -a "$list" -d '\n' -r -P "${CPJ:-32}" -I{} aws s3 cp "$src/{}" "$dst/{}" "$@" --only-show-errors >> $L/$f 2>&1; }
+# lsn PREFIX: name (the key after PREFIX), size and ETag of each object, tab-separated, sorted
+lsn() { $AS aws s3api list-objects-v2 --bucket $BKT --prefix "$1" --query 'Contents[].[Key,Size,ETag]' --output text \
+  | awk -F'\t' -v p="$1" 'NF == 3 && index($1, p) == 1 {print substr($1, length(p) + 1) FS $2 FS $3}' | LC_ALL=C sort; }
+# keys_want NAMES SRC: the rows of SRC whose name is not in NAMES; keys_todo WANT HAVE: the names of WANT that HAVE
+# lacks or holds with another size or ETag; keys_diff WANT HAVE: missing, other size, other ETag (three counts)
+# hf_adds ROOT TOM4SUMS CHANGED: CHANGED plus the local files of ROOT (not SHA256SUMS) whose ROOT/SHA256SUMS row
+# differs from TOM4SUMS (or has none there), sorted
+hf_adds() { { cat "$3"; (cd "$1" && find . -type f ! -path ./SHA256SUMS -printf '%P\n') \
+  | awk 'FILENAME == ARGV[1] {t[$2] = $1; next} FILENAME == ARGV[2] {r[$2] = $1; next} ($0 in r) && t[$0] != r[$0]' "$2" "$1/SHA256SUMS" -; } \
+  | LC_ALL=C sort -u; }
+keys_want() { awk -F'\t' 'FILENAME == ARGV[1] {c[$1]; next} !($1 in c)' "$1" "$2"; }
+keys_todo() { awk -F'\t' 'FILENAME == ARGV[1] {w[$1] = $2 FS $3; next} {d[$1] = $2 FS $3}
+  END {for (k in w) if (!(k in d) || d[k] != w[k]) print k}' "$1" "$2" | LC_ALL=C sort; }
+keys_diff() { awk -F'\t' 'FILENAME == ARGV[1] {s[$1] = $2; e[$1] = $3; next} {ds[$1] = $2; de[$1] = $3}
+  END {for (k in s) if (!(k in ds)) m++; else if (ds[k] != s[k]) z++; else if (de[k] != e[k]) x++; print m + 0, z + 0, x + 0}' "$1" "$2"; }
 
 finish() {
   local st=DONE why="all steps ok"
@@ -193,6 +215,18 @@ if todo shape; then
   [ -z "$FAILED" ] && done_step shape "$(tail -1 $L/shape.txt)"
 fi
 
+# ---- footfix: the TOM mapping hash label in the footers of the new files (each new-project machine wrote the hash of
+# its own merged links; the values are the values of the release tables). The old links move to $X/footfix/before/.
+# After shape: the form gate sees the files first and guarantees the key; the label is the only change.
+if todo footfix; then
+  mkdir_as $X/footfix
+  run_to footfix.txt $T5 footfix --resolved $WK/new.resolved.tsv --manifest $WK/new.MANIFEST.tsv --new-files $NF \
+    --release-info $T4/organizations/release_info.parquet --ref $T4/parquet/$SHAPE_REF --rename-py $T/parquet_rename.py \
+    --check-py $T/parquet_rename_check.py --work $X/footfix --log $L/footfix.jsonl --jobs ${FOOTFIX_JOBS:-8} \
+    || fail "the footer label of the new files (log/footfix.txt)"
+  [ -z "$FAILED" ] && { cp $WK/new.resolved.tsv $L/new.resolved.tsv; done_step footfix "$(tail -1 $L/footfix.txt | cut -c1-300)"; }
+fi
+
 # ---- footers (TOM-4 by ranged reads, new files local) against the merged manifest
 if todo footers; then
   mkdir_as $FT
@@ -266,9 +300,21 @@ fi
 if todo fetch2; then
   cut -f1 $FILLS | tail -n +2 | sort -u | grep -vxF -f <(tail -n +2 $WK/new.resolved.tsv | cut -f1) | sed 's/$/-dataset.parquet/' > $WK/fill4.list
   if [ "$LOCAL" != 1 ]; then
-    INC=(); while read -r f; do INC+=(--include "parquet/$f"); done < $WK/fill4.list
     log "download of $(wc -l < $WK/fill4.list) TOM-4 project files with a fill"
-    [ "${#INC[@]}" -gt 0 ] && { run_to fetch2.txt aws s3 sync $T43/ $T4/ --exclude "*" "${INC[@]}" --only-show-errors || fail "download of the changed TOM-4 files"; }
+    if [ -s $WK/fill4.list ]; then
+      # a file already here with the size of the source is kept (the sha256 check below proves every file)
+      lsn "$TOM4_ROOT/parquet/" > $WK/fill4.src.tsv || fail "the TOM-4 listing (fetch2)"
+      (cd $T4/parquet 2>/dev/null && find . -maxdepth 1 -type f -printf '%f\t%s\tx\n') > $WK/fill4.here.tsv
+      LC_ALL=C sort -u $WK/fill4.list > $WK/fill4.names
+      awk -F'\t' 'FILENAME == ARGV[1] {w[$1]; next} $1 in w {print $1 FS $2 FS "x"}' $WK/fill4.names $WK/fill4.src.tsv > $WK/fill4.want.tsv
+      [ -z "$FAILED" ] && [ "$(wc -l < $WK/fill4.want.tsv)" != "$(wc -l < $WK/fill4.names)" ] \
+        && fail "fetch2: $(wc -l < $WK/fill4.want.tsv) of $(wc -l < $WK/fill4.names) files are in the TOM-4 listing"
+      if [ -z "$FAILED" ]; then
+        keys_todo $WK/fill4.want.tsv $WK/fill4.here.tsv > $WK/fill4.todo
+        log "fetch2: $(wc -l < $WK/fill4.todo) files to download, ${CPJ:-32} at a time"
+        cp_keys fetch2.txt $WK/fill4.todo $T43/parquet $T4/parquet || fail "download of the changed TOM-4 files"
+      fi
+    fi
   fi
   if [ -z "$FAILED" ]; then
     (cd $T4 && sed 's#^#parquet/#' $WK/fill4.list | while read -r f; do awk -v f="$f" '$2 == f' SHA256SUMS; done > $WK/fill4.sums && sha256sum --quiet --strict -c $WK/fill4.sums) >> $L/fetch2.txt 2>&1 || fail "a changed TOM-4 file does not check"
@@ -281,7 +327,10 @@ fi
 if todo base; then
   rm -rf $BASE
   NDIRS=(); for m in $NEW_RUNS; do NDIRS+=($ND/$m/results); done
-  run_to base.txt $T5 base --tom4 $T4 --new $WK/new.resolved.tsv --new-manifest $WK/new.MANIFEST.tsv \
+  # the new domain rows: the link schema of the new-project machines -> the published schema (with the error columns)
+  run_to domains.txt $T5 domains --tom4 $T4 --errors $IN/new_domain_errors.tsv --new-dirs "${NDIRS[@]}" \
+    || fail "the new domain rows (log/domains.txt)"
+  [ -z "$FAILED" ] && run_to base.txt $T5 base --tom4 $T4 --new $WK/new.resolved.tsv --new-manifest $WK/new.MANIFEST.tsv \
     --new-ledgers $WK/new.ledgers.parquet --pseudo $WK/pseudonymization.json --new-files $NF --tom4-files $T4/parquet \
     --new-dirs "${NDIRS[@]}" --out $BASE || fail "the base root (log/base.txt)"
   if [ -z "$FAILED" ]; then
@@ -422,11 +471,26 @@ if todo upload; then
     n=$({ $AS aws s3 ls --recursive $D5/root/ 2>/dev/null || true; } | awk '{print $4}' | grep -v "^$DEST/root/parquet/[A-Za-z0-9._-]*-dataset\.parquet$" | wc -l)
     [ "$n" = 0 ] || fail "$D5/root/ holds $n objects outside parquet/ (an earlier copy of the unchanged files can stay)"
     if [ -z "$FAILED" ]; then
-      EXC=(); for f in "$OUT"/*-dataset.parquet; do EXC+=(--exclude "$(basename "$f")"); done
+      for f in "$OUT"/*-dataset.parquet; do basename "$f"; done | LC_ALL=C sort > $WK/cp.changed
       bad=$(ls "$OUT" | grep -v '^[A-Za-z0-9._-]*$' || true)
-      [ -z "$bad" ] || fail "file names with other characters than [A-Za-z0-9._-] (the S3 exclude patterns): $(echo $bad)"
-      log "server-side copy of the unchanged TOM-4 project files (excludes: $(( ${#EXC[@]} / 2 )))"
-      [ -z "$FAILED" ] && { run_to upload.txt aws s3 sync $T43/parquet/ $D5/root/parquet/ "${EXC[@]}" --copy-props metadata-directive --only-show-errors || fail "the S3 copy of the unchanged TOM-4 files"; }
+      [ -z "$bad" ] || fail "file names with other characters than [A-Za-z0-9._-] (the S3 key list): $(echo $bad)"
+      # the unchanged TOM-4 project files: the TOM-4 keys without a changed name; the keys already in the
+      # destination with the TOM-4 size and ETag stay (an earlier copy)
+      [ -z "$FAILED" ] && { lsn "$TOM4_ROOT/parquet/" > $WK/cp.src.tsv || fail "the TOM-4 listing (copy)"; }
+      [ -z "$FAILED" ] && { lsn "$DEST/root/parquet/" > $WK/cp.dst0.tsv || fail "the destination listing (copy)"; }
+      if [ -z "$FAILED" ]; then
+        keys_want $WK/cp.changed $WK/cp.src.tsv > $WK/cp.want.tsv
+        keys_todo $WK/cp.want.tsv $WK/cp.dst0.tsv > $WK/cp.todo
+        log "server-side copy of the unchanged TOM-4 project files: $(wc -l < $WK/cp.want.tsv) keys ($(wc -l < $WK/cp.changed) changed names left out), $(wc -l < $WK/cp.todo) to copy, ${CPJ:-32} at a time"
+        cp_keys upload.txt $WK/cp.todo $T43/parquet $D5/root/parquet --copy-props metadata-directive || fail "the S3 copy of the unchanged TOM-4 files"
+      fi
+      [ -z "$FAILED" ] && { lsn "$DEST/root/parquet/" > $WK/cp.dst1.tsv || fail "the destination listing after the copy"; }
+      if [ -z "$FAILED" ]; then
+        read -r cm cz cx < <(keys_diff $WK/cp.want.tsv $WK/cp.dst1.tsv)
+        echo "copy check: $(wc -l < $WK/cp.want.tsv) unchanged TOM-4 keys; missing $cm, other size $cz, other ETag $cx" | tee -a $L/upload.txt
+        [ "$cm" = 0 ] && [ "$cz" = 0 ] || fail "after the copy: $cm unchanged TOM-4 files missing, $cz with another size"
+        [ "$ETAG_CHECK" != require ] || [ "$cx" = 0 ] || fail "after the copy: $cx unchanged TOM-4 files with another ETag"
+      fi
       while read -r rel; do
         [ -z "$FAILED" ] || break
         run_to upload.txt aws s3 cp $NF/$(basename $rel) $D5/root/$rel --checksum-algorithm SHA256 --only-show-errors || fail "the upload of $rel"
@@ -476,14 +540,18 @@ if [ -z "$FAILED" ] && [ ! -f $ST/hf.DONE ]; then
       fi
       mkdir_as $X/hfnew/parquet
       while read -r rel; do $AS ln -f $NF/$(basename $rel) $X/hfnew/$rel || fail "the Hub copy of $rel"; done < $WK/new_unchanged.list
-      [ -z "$FAILED" ] && { $HAS $H5 hf-push --repo $HF_REPO --root $R --adds $WK/changed.list \
+      # the push list: changed.list (against the base) plus every local root file whose SHA256SUMS row is not its
+      # TOM-4 row (the Hub holds TOM-4; the base already has the new tables, so changed.list misses them)
+      hf_adds $R $T4/SHA256SUMS $WK/changed.list > $WK/hf.adds || fail "the hf push list"
+      [ -z "$FAILED" ] && log "hf push list: $(wc -l < $WK/hf.adds) files ($(wc -l < $WK/changed.list) changed against the base, $(LC_ALL=C comm -13 <(LC_ALL=C sort $WK/changed.list) $WK/hf.adds | wc -l) more that differ from TOM-4) + $(wc -l < $WK/new_unchanged.list) new unchanged"
+      [ -z "$FAILED" ] && { $HAS $H5 hf-push --repo $HF_REPO --root $R --adds $WK/hf.adds \
         --extra-roots "$X/hfnew=$WK/new_unchanged.list" --expect $HF_VISIBILITY --message "$HF_MESSAGE" >> $L/hf.txt 2>&1 || fail "hf push (log/hf.txt)"; }
       [ -z "$FAILED" ] && { $HAS $HT verify --repo $HF_REPO --sums $R/SHA256SUMS --card $R/README.md --out $L/hf-verify.txt \
         --expect $HF_VISIBILITY >> $L/hf.txt 2>&1 || fail "hf verify (log/hf-verify.txt)"; }
     fi
     rm -f $TOK
     [ -e $TOK ] && fail "the token file is still there"
-    [ -z "$FAILED" ] && { echo "hf DONE $(date -u +%FT%TZ) repo $HF_REPO ($HF_VISIBILITY); $(( $(wc -l < $WK/changed.list) + $(wc -l < $WK/new_unchanged.list) )) files pushed; token file deleted" > $ST/hf.DONE; put_log; }
+    [ -z "$FAILED" ] && { echo "hf DONE $(date -u +%FT%TZ) repo $HF_REPO ($HF_VISIBILITY); $(( $(wc -l < $WK/hf.adds) + $(wc -l < $WK/new_unchanged.list) )) files pushed; token file deleted" > $ST/hf.DONE; put_log; }
   fi
 fi
 

@@ -7,6 +7,9 @@ This revision keeps the release name 1.0.0.
 - [[tom: added projects]] projects join the dataset. The dataset now has [[tom: parquet files]]
   project files with [[tom: rows]] token rows. The new files have the same form: 53 columns, ctp
   schema 3.
+- 31 new domains of the new projects get rows in `organizations/organization_domains.parquet`
+  (now 10,930 rows). Their `review_path`, `error_stratum` and `p_error` come from the same error
+  model as the 10,899 earlier rows, which do not change; `link_error` keeps the cells of 1.0.0.
 - The column `license` has new values from a license pass. ScanCode Toolkit 32.5.0 read the key
   license files of each project at its pinned commit. A set of rules gives one SPDX expression for
   each project, with a confidence class. The column takes the pass value when the confidence is
