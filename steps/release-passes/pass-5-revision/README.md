@@ -1,4 +1,4 @@
-# Pass 5: the revision of TOM 1.0.0 (the run started on 2026-11-09)
+# Pass 5: the revision of TOM 1.0.0 (done on 2026-11-09)
 
 Pass 5 makes a new root of TOM 1.0.0 and pushes it to the same Hugging Face repository
 (`elliancarlos/token-on-me`) as a new revision. The release stays 1.0.0 and the DOI stays
@@ -7,18 +7,105 @@ projects of the root of pass 4 and the 149 new projects of `../../selection-funn
 `../../new-projects/`. It gives the `license` column the values of `../../license-pass/` and adds
 the side table `organizations/project_licenses.parquet`. TOM keeps its 53 columns.
 
-**TODO (revision root):** the run started on 2026-11-09 and did not end when this record was
-written. The `SHA256SUMS` of the new root, its Hugging Face revision, the row count and the sizes
-come after the run. Until then `../../../data/SHA256SUMS` and `../../../data/REBUILD-TARGETS.tsv`
-describe the root of pass 4.
-These values of the integrity check (section "The integrity check") are also pending, because
-the check did not run yet:
+## The result (2026-11-09)
 
-- the result line of `docs/INTEGRITY.md` (files, bytes, token rows, views, problems) and the
-  time of the check;
-- the sha256 of `SHA256SUMS` before the publish step (the value of `log/final.status.json`) and
-  after it (the value of `publish.json` of the integrity run);
-- the Hugging Face revision of the commit that adds `docs/INTEGRITY.md` and `docs/integrity.tsv`.
+The run ended DONE at 2026-11-09 17:00 UTC on one m6id.4xlarge machine (16 vCPU), after two
+ALERTs, their fixes and a restart (section "What went wrong and how it was fixed").
+
+| Item | Value |
+| --- | --- |
+| Root | `dataset-release/dataset-v1.0.0-tom-5/root/` of the bucket; 8,627 objects before the publish step of the integrity check, which added 2 files |
+| Project files | 8,598 (8,449 of pass 4 and 149 new), 53 columns, 31,603,701,581 token rows, 116,839,509,483 bytes; the root has about 116.85 GB |
+| `MANIFEST.tsv` | 8,598 rows |
+| `license` | 3,607 files got another value; 703 files have `NOASSERTION` |
+| Side tables | `organization_domains` 10,930 rows (10,899 and 31 new); `project_organizations`, `project_labels`, `project_languages` and `project_licenses` 8,598 rows each |
+| `SHA256SUMS` after the run | sha256 `a453d5f10aa2806af0a97d68e574b5c5fa9bc99c6283d87fbfb6db7b2bd16b80`, 8,626 rows (the value of `log/final.status.json`) |
+| `SHA256SUMS` after the integrity publish | sha256 `ea2052f7ce8b764d4e54a940d71f3fd8d04b827b2db08a4d2dc0c38f7dcbf48d`, 8,628 rows (the old rows and `docs/INTEGRITY.md`, `docs/integrity.tsv`; the value of the publish record of the integrity run). `../../../data/SHA256SUMS` has these rows. |
+| The staged list | sha256 `da9125463a33d480755cdcb9ec91f6a6fab8292d4e73667785c1d3ed12fb43f6` (`SHA256SUMS` of this folder, `WANT_SUMS` of the run that ended DONE) |
+
+The Hugging Face revisions of `elliancarlos/token-on-me` (public):
+
+| Revision | What it has |
+| --- | --- |
+| `e81b554deb9b` | The root of pass 4 (the first revision of TOM 1.0.0). The DOI `10.57967/hf/11505` marks this revision. |
+| `500bd0bb00e8` | 16:47 UTC: the data files of pass 5 without 7 changed files of the root (a mixed state, about 10 minutes; fix 4 below). |
+| `46a123047ef2` | The run DONE: the full root of pass 5. The verify step of the Hub tree passed (8,627 files). |
+| `5e20f9ff2a18fe155f14606da0d61d516baedd6a` | The publish step of the integrity check: `docs/INTEGRITY.md`, `docs/integrity.tsv` and the new `SHA256SUMS`. This is the final revision. |
+
+DOI of the final revision: pending. The user can make a new DOI on Hugging Face for this
+revision; `10.57967/hf/11505` stays the DOI of the first revision.
+
+The integrity check (section "The integrity check") ran on the machine of the pass after the
+run (run `20261109T170212Z`, checker sha256 `1c9ea571592f...`). The report is in
+`integrity/run-20261109T170212Z/` of the pass prefix of the bucket (`INTEGRITY.md`,
+`integrity.tsv`, `integrity.json`, `check.log`) and in the root as `docs/INTEGRITY.md` (2,784
+bytes) and `docs/integrity.tsv` (1,049,926 bytes):
+https://huggingface.co/datasets/elliancarlos/token-on-me/resolve/5e20f9ff2a18fe155f14606da0d61d516baedd6a/docs/INTEGRITY.md
+
+The result line: 8,626 files (8,598 project files, 11 side tables, 1 database, 16 other files),
+116,849,664,000 bytes read, 31,603,701,581 token rows (`MANIFEST.tsv`: 31,603,701,581), 16 views
+counted, page CRC not written in 8,609 files, 0 problems, 6,763 s with 16 jobs. The check read
+the root with `SHA256SUMS` `a453d5f10aa2...`. After the publish step `log/final.status.json`
+keeps this value, and the publish record of the integrity run gives the value before
+(`a453d5f10aa2...`) and after (`ea2052f7ce8b...`).
+
+## What went wrong and how it was fixed
+
+The run stopped twice with an ALERT. Each time the kit was fixed, staged again with a new
+`WANT_SUMS`, uploaded by the user, and the run started again. A second start continues: the
+steps that are DONE and the files with an OK ledger line are not done again. The staged lists in
+order: `fc901a99a7cf...` (the first stage), `3a3921741224...` (fix 1), `6322c1a44dde...` (fix 2),
+`0aaab61a41ab...` (fix 3), `da9125463a33...` (fix 4, the final stage). The files of the kit
+before each fix are not here; the final files are.
+
+1. **The base step: the new domain rows had the internal link schema.** The new-project machines
+   wrote `organization_domains.new.parquet` with the columns of the internal link table
+   (`domain`, `firm_based_on_domain`, `organisation_kind`, ...), not the 9 columns of the
+   published table. The base step found that the schemas were not equal and stopped. Fix: the
+   new step `domains` of `tom5_tools.py` writes the 31 new rows in the published schema
+   (`organization_id` and the error columns `review_path`, `error_stratum`, `p_error`). The
+   error values come from the error model of TOM 1.0.0 (`domainfix/em_newdomains.py`, on the
+   local host, read only, output `inputs/new_domain_errors.tsv`). The script first runs the model
+   on the published inputs and gets the published values again for all 10,899 earlier rows; then
+   it adds the new links and their tokens: no earlier row changes. The documents
+   `CHANGELOG.md` and `ORGANIZATIONS.md` got the new count (10,930 rows).
+2. **The checks step: the footer key `organizations_mapping_sha256` of the 149 new files had
+   values of each machine.** The release check wants the value of TOM in every file. Fix: the
+   new step `footfix` writes the TOM value (`7b52a5...`, the value of `release_info`) into the
+   footers of these files with `parquet_rename.py --set-kv` (footer only; no page is encoded
+   again) and proves each file with `parquet_rename_check.py`. The data of all 1.2 billion rows
+   of the 149 files matched the release tables.
+3. **The upload step: the server-side copy of S3 was very slow.** The copy of the unchanged
+   files of pass 4 used `aws s3 sync` with one `--exclude` pattern for each changed file. With
+   thousands of patterns the AWS CLI used about 1.7 s of CPU for each key. Fix: a copy of each
+   key from a key list, 32 at a time, then a listing of the destination: no key may be missing or
+   have another size, and the step gives the count of other ETags. The
+   download step of the changed files of pass 4 (`fetch2`) got the same fix.
+4. **The hf step: the push list missed 7 changed files.** The list held the files that changed
+   against the base root. The base already had the new `ledgers.parquet`,
+   `pseudonymization.json` and 5 tables of `organizations/`, so these 7 files were not pushed,
+   and for about 10 minutes the public repository had a mixed state (`500bd0bb00e8`). Fix: the
+   push list also has each local file of the root whose `SHA256SUMS` row is not its row of pass 4.
+   One more commit pushed the 7 files (`46a123047ef2`), and the verify step of the Hub tree
+   passed.
+
+Lessons for later kits:
+
+- A step that copies rows from another kit must check their schema against the published table
+  in the local rehearsal, with real files of the other kit, not only with test files.
+- A footer key that holds a hash of shared data must come from one place (the release table),
+  not from each machine. The release check of each footer value must also run on the machines
+  that write the files.
+- Do not give the AWS CLI more than a few `--include` or `--exclude` patterns. Copy from a key
+  list in parallel and check each key in a listing after the copy.
+- The push list to the Hub must come from a comparison of the root with the tree on the Hub (or
+  with the `SHA256SUMS` of the last revision), not from a list of changes against a local step.
+  Push the data files first and verify the whole tree before the run says DONE.
+
+The kit of the new projects (`../../new-projects/`) has the same two root causes (fixes 1 and
+2): its machines wrote the link schema and their own footer value. Its work folder has fixed
+sources (`ta_tools.py`, `ta_run.sh`). They were not staged and did not run end to end, so they
+are not here: `../../new-projects/patched/` has only the patches that ran.
 
 ## What it does
 
@@ -180,13 +267,15 @@ another form and stops at the form gate.
 | File | What it does |
 | --- | --- |
 | `tom5.conf` | The values: the prefixes, the expected counts, the DOI and the date, the job counts, the limits of Hugging Face. |
-| `tom5_start.sh`, `tom5_run.sh` | The start and the driver (steps `preflight`, `fetch`, `newlist`, `shape`, `footers`, `license`, `ledger`, `pseudo`, `fetch2`, `base`, `plan`, `canary`, `pass`, `assemble`, `tables`, `manifest`, `markers`, `checksums`, `view`, `checks`, `upload`, `hf`, `end`). |
-| `tom5_tools.py` | The Python steps of the pass. |
+| `tom5_start.sh`, `tom5_run.sh` | The start and the driver (steps `preflight`, `fetch`, `newlist`, `shape`, `footfix`, `footers`, `license`, `ledger`, `pseudo`, `fetch2`, `base` (first `tom5_tools.py domains`), `plan`, `canary`, `pass`, `assemble`, `tables`, `manifest`, `markers`, `checksums`, `view`, `checks`, `upload`, `hf`, `end`). |
+| `tom5_tools.py` | The Python steps of the pass (with the steps `domains` and `footfix` of fixes 1 and 2). |
 | `test-local.sh` | The local rehearsal (not staged). |
 | `docs/` | The staged documents with their placeholders. |
-| `inputs/license/30_compare.py`, `inputs/license/results.tom4.tsv`, `inputs/names.tsv` | Staged inputs: the comparison tool of the license pass, the stored decisions of the scan of the 8,449 projects, the map from the funnel names to the TOM names. |
-| `SHA256SUMS`, `SOURCE` | The staged list (sha256 `fc901a99a7cf03ca72b4ef6af64d2a57a7844de96493116119d499c0d1ae6134`, `WANT_SUMS` of the run) and the stage note. |
-| `machine/R1-tom5-setup.sh` | The setup of the machine (section "The machine setup"), with the fix of the scanner smoke test. |
+| `inputs/license/30_compare.py`, `inputs/license/results.tom4.tsv`, `inputs/names.tsv`, `inputs/new_domain_errors.tsv` | Staged inputs: the comparison tool of the license pass, the stored decisions of the scan of the 8,449 projects, the map from the funnel names to the TOM names, the 31 new domain rows with their error values (fix 1). |
+| `SHA256SUMS`, `SOURCE` | The final staged list (sha256 `da9125463a33d480755cdcb9ec91f6a6fab8292d4e73667785c1d3ed12fb43f6`, `WANT_SUMS` of the run that ended DONE) and the stage note. The first staged list was `fc901a99a7cf03ca72b4ef6af64d2a57a7844de96493116119d499c0d1ae6134` (section "What went wrong and how it was fixed"). `SOURCE` is the note of the first stage; the fixes did not write it again. |
+| `machine/R1-tom5-setup.sh` | The setup of the machine (section "The machine setup"), with the fix of the scanner smoke test and the final `WANT_SUMS`. |
+| `machine/B1-tom5-run.sh`, `machine/U1-tom5-upload.sh` | The start of the run on the machine (through the remote command script) and the upload of the stage by the user, with the final `WANT_SUMS`. |
+| `domainfix/em_newdomains.py` | The error values of the 31 new domain rows (fix 1); it ran on the local host and wrote `inputs/new_domain_errors.tsv`. |
 | `integrity/integrity_check.py` | The integrity check of a root (section "The integrity check"). `I1-tom5-integrity.sh` pins its sha256 (`WANT_CHECK` `1c9ea571592f...`). |
 | `integrity/I1-tom5-integrity.sh`, `integrity/I2-tom5-integrity-publish.sh`, `integrity/U2-tom5-integrity-upload.sh` | The check on the machine, the publish step of the report, and the upload of the checker by the user. |
 | `integrity/integrity-test-local.sh`, `integrity/test/integrity_fixtures.py` | The local test (8 cases) and the small test roots. |
@@ -210,3 +299,20 @@ have the placeholder `INSTANCE_ID` in the place of the default EC2 instance id. 
 name and the AWS profile. The other files have the bytes of the work folder. Part 2 of the local
 test reads the output of `test-local.sh` (`test/work.*/x1/root/`) and one project file of the test
 root of pass 4, with the default paths of the work host.
+
+The files of `machine/` and `domainfix/` are not in the staged list either. `../KITS.tsv` gives
+them (passes `pass-5-machine` and `pass-5-domainfix`) with the sha256 of the final file in the
+work folder and of the copy. The copies of `R1-tom5-setup.sh` and `B1-tom5-run.sh` have
+`REFUSED_INSTANCE_IDS` in the place of the list of EC2 instances that the scripts must refuse;
+the copies of `R1-tom5-setup.sh` and `U1-tom5-upload.sh` have `BUCKET_NAME` in the place of the
+bucket name; the copy of `U1-tom5-upload.sh` also has `AWS_PROFILE_NAME` and `KIT-FOLDER` in the
+place of the AWS profile and of the kit folder. The copy of `em_newdomains.py` has
+`STUDY-CHECKOUT`, `WORKSPACE-FOLDER` and `WORK-FOLDER` in the place of three default paths of the
+work host. The other scripts of the kit that ran on the local host or sent commands to the
+machine (the stage, the launch, the remote command script, the progress and the hold scripts)
+are not here (`../README.md`).
+
+The local rehearsal (`test-local.sh`) is the file of the first stage. It did not run again end
+to end with the final stage: a run on 2026-11-09 15:48 UTC stopped at the step `domains`, because
+the new-project file of the rehearsal already has the published schema of the domain rows. The
+fixes were proved on the machine by the run that ended DONE and by the integrity check.
