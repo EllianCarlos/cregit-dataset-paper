@@ -23,7 +23,7 @@ programming language at the pinned commit is C, C++, Java or Rust, by tokei code
 
 Host: Hugging Face, `elliancarlos/token-on-me` (public). The final revision is
 `5e20f9ff2a18fe155f14606da0d61d516baedd6a` (pass 5 and its integrity report); its DOI is
-pending. The DOI 10.57967/hf/11505 marks the first revision, `e81b554deb9b` (the documents with
+10.57967/hf/11537 (cite this DOI). The DOI 10.57967/hf/11505 marks the first revision, `e81b554deb9b` (the documents with
 the DOI). The DataCite version of that DOI names revision `bc7543affd2e`, which has the same
 project files as `e81b554deb9b`. The first revision has 12 documents. The
 limitations and the provenance are now in the paper and in this repository (`LIMITATIONS.md`,
@@ -88,6 +88,20 @@ files, 31,603,701,581 token rows and 116,839,509,483 bytes of project files; its
 The final Hugging Face revision is `5e20f9ff2a18`. `data/` and the numbers above now describe
 this root. The 4 fixes of the run and their lessons are in
 `steps/release-passes/pass-5-revision/README.md`.
+The DOI of the final revision is 10.57967/hf/11537 (made on 2026-11-09; the DataCite record
+names version `5e20f9f` and links to 10.57967/hf/11505).
+
+## Archives of the code
+
+Software Heritage archived the 3 code repositories on 2026-11-09:
+
+| repository | snapshot |
+|---|---|
+| cregit (the fork that TOM uses) | `swh:1:snp:09cc8082ed0c5f3c137dac934125769e51773dde` |
+| cregit-token-pipeline (ctp) | `swh:1:snp:f078b912faaf1cc5712d9705ba1dc3776a96e386` |
+| cregit-dataset-paper (this repository, at `7d53970`) | `swh:1:snp:ceb943a3eacfbdefe86ab1c1e9c12e42c78f74b5` |
+
+Open a snapshot at `https://archive.softwareheritage.org/<snapshot>`.
 
 ## Release decisions (user)
 

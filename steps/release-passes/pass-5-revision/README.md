@@ -32,8 +32,8 @@ The Hugging Face revisions of `elliancarlos/token-on-me` (public):
 | `46a123047ef2` | The run DONE: the full root of pass 5. The verify step of the Hub tree passed (8,627 files). |
 | `5e20f9ff2a18fe155f14606da0d61d516baedd6a` | The publish step of the integrity check: `docs/INTEGRITY.md`, `docs/integrity.tsv` and the new `SHA256SUMS`. This is the final revision. |
 
-DOI of the final revision: pending. The user can make a new DOI on Hugging Face for this
-revision; `10.57967/hf/11505` stays the DOI of the first revision.
+DOI of the final revision: `10.57967/hf/11537` (made by the user on Hugging Face on 2026-11-09;
+DataCite version `5e20f9f`). `10.57967/hf/11505` stays the DOI of the first revision.
 
 The integrity check (section "The integrity check") ran on the machine of the pass after the
 run (run `20261109T170212Z`, checker sha256 `1c9ea571592f...`). The report is in
