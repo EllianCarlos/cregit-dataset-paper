@@ -12,8 +12,8 @@ GitLab projects that decision 2 of the funnel brought back). Each machine ran
 copy check; the release keeps the 149 projects of `new_projects.tsv` and drops the files of the
 removed candidates.
 
-Status of this record: machine C ended DONE (7 project files). Machines A and B were in pass 2
-when this record was written. The release kit waits for `status/run.DONE` of each machine.
+Status of this record (2026-11-09): the three machines ended DONE and are stopped. Machine C
+gave 7 project files. The release kit waited for `status/run.DONE` of each machine.
 
 ## The tool chain
 
@@ -72,15 +72,29 @@ staged files plus these patches.
   `patched/compare_tom.py` is the patched file.
 - DuckDB writes its temporary folder `.tmp` into the working directory. The working directory of
   the systemd unit is `/`, which `ec2-user` cannot write, so the links step of machine B
-  stopped. Fix on machines A and B: the folders `/.tmp` and `/data/ta/.tmp`, owned by
-  `ec2-user`.
+  stopped. Fix on machines A and B (`patched/machine/diag-tmpdir.sh`): the folders `/.tmp` and
+  `/data/ta/.tmp`, owned by `ec2-user`. The lesson: a systemd unit runs with the working
+  directory `/` unless the unit sets `WorkingDirectory`, so DuckDB needs a writable `.tmp` folder
+  there or an explicit temp folder.
 - The write of pass 2 (`ta_tools.py write`) ran several files at a time in a ThreadPoolExecutor,
   with DuckDB in the same process. DuckDB stopped with a segmentation fault. Fix on machines A
-  and B: the COPY of each file runs in a subprocess (`patched/ta_tools.py`). Later the parallel
-  schema 3 writes stopped with crashes in libc. Fix: `WRITE_JOBS=1`.
+  and B: the COPY of each file runs in a subprocess (`patched/ta_tools.py`, made by
+  `patched/machine/diag-patch-write.sh`). Later the parallel schema 3 writes (several
+  subprocesses at a time) stopped with crashes in libc. Fix: `WRITE_JOBS=1`. The lesson: parallel
+  DuckDB writes are not reliable here, in threads of one process or in parallel processes. Only
+  one write at a time (`WRITE_JOBS=1`) ran without a crash. The staged `ta.conf` has
+  `WRITE_JOBS=8` (3 for the long projects); a new stage must set 1.
 - An ALERT stops the run and removes the salt of the batch. This is by design. So after an ALERT
-  in pass 2, pass 2 runs again from the start with a new salt (the old outputs of pass 2 are
-  moved aside first).
+  in pass 2, pass 2 runs again in full, with a new salt. A partial pass 2 cannot continue,
+  because the salt of its first files is gone. The reset (`patched/machine/diag-a-pass2-reset.sh`,
+  `patched/machine/diag-b-pass2-reset.sh`) stops the unit and moves `status/pseudo.DONE`,
+  `final53/`, `private/registries/` and `private/write-work/` to names with a time stamp
+  (`mv`, no delete). Then the next start runs the steps from `pseudo`.
+- The re-encode and the check ran one file at a time, in two sequential loops of `ta_run.sh`. On
+  machine A they took hours. Fix on machine A (`patched/machine/diag-patch-par.sh`): the two loops
+  run in parallel, with 16 re-encode jobs (4 threads each) and 8 check jobs (`REENCODE_JOBS`,
+  `CHECK_JOBS`). The patch stops the unit first; the re-encode then starts again from the first
+  file.
 
 ## Files
 
@@ -89,6 +103,7 @@ staged files plus these patches.
 | `kit/ta.conf`, `kit/ta_start.sh`, `kit/ta_run.sh`, `kit/ta_tools.py`, `kit/compare_tom.py`, `kit/drive.py` | The files of the stage of machines A and B (staged list `kit/SHA256SUMS.ab`, sha256 `bb610035fcb7a6c4db47816a8185f009ab7f6aaaca3c570ad58ec4f1809806b8`, note `kit/SOURCE.ab`). |
 | `kit/ta.c.conf`, `kit/ta_run.c.sh` | `ta.conf` and `ta_run.sh` of the stage of machine C (staged list `kit/SHA256SUMS.c`, sha256 `ca22ffbc734bf41ca3a49cd766c287b06f347b53fefedfef83bdcb2a2415d390`, note `kit/SOURCE.c`). The other files of this stage have the bytes of the stage of A and B, except the project lists and the metadata of the projects (`lists/`, `meta/`). |
 | `patched/compare_tom.py`, `patched/ta_tools.py` | The staged files with the patches of the run (above). |
+| `patched/machine/` | The scripts that patched or reset the machines in the run (above): the subprocess write, the parallel re-encode and check, the `.tmp` folders, and the reset of pass 2 on machines A and B. They ran on the machine as root. They hold no run values. |
 
 The copies of `ta.conf`, `ta.c.conf`, `ta_start.sh`, `ta_run.sh` and `ta_run.c.sh` differ from
 the staged files only in the bucket name (`BUCKET_NAME`). The sha256 values:
@@ -102,6 +117,11 @@ the staged files only in the bucket name (`BUCKET_NAME`). The sha256 values:
 | `ta_run.c.sh` | `86773692dc9aed19bbb3db28b324088b536bd3a9f649b62659894485d8808787` (`SHA256SUMS.c`) | `053b8abe04559fa0b9830cb05f723ba939257d73af5302d7b5e10f8d0f5371be` |
 | `patched/compare_tom.py` | - | `a80f256ab34ddf850800e5a4efaec17ec3a9b53c8b79a5df0f1cc9321e8ed860` |
 | `patched/ta_tools.py` | - | `d8b283f44a8ba56956abd62fc1de6ecbabc51128571d6fd73cc78bdd7021d938` |
+| `patched/machine/diag-patch-write.sh` | - | `58d0acecd83f612159bb7aca1d319125e738814bfab466d54fb9f5ca8bc80c93` |
+| `patched/machine/diag-patch-par.sh` | - | `5cf95486cdbf8b4eefc281a6e49c4bbd117e062022c7da16cd124c92d5920598` |
+| `patched/machine/diag-tmpdir.sh` | - | `23e4d51476dcebd65e11e15a20ed3233fe527439b5f9d43d54c3603b0128b2d1` |
+| `patched/machine/diag-a-pass2-reset.sh` | - | `3f57e29b114a835755d2eb5e53e80051ba769366f5ecd8fb1adbfb1aee96fb7c` |
+| `patched/machine/diag-b-pass2-reset.sh` | - | `14adec0ff2c165e73f5bf2e449df59ebda0b38af776a1f069850e5c3b3824ff5` |
 
 `ta_tools.py`, `compare_tom.py` and `drive.py` are the staged files (the same sha256 as the
 staged lists).
@@ -111,8 +131,11 @@ Not here:
 - The other files of the stages: the code bundles of cregit and ctp, the metadata and the link
   tables of the new projects, the organization database, the Nix closure of licensee 9.18.0, the
   pseudonymizer and the re-encode tool. The staged lists name each file with its sha256.
-- The scripts that staged, uploaded, launched, set up, watched, held or patched the machines.
-  They hold the run values (the account, the bucket, the machines).
+- The scripts that staged, uploaded, launched, set up, watched or held the machines. They hold
+  the run values (the account, the bucket, the machines). The patch and reset scripts of
+  `patched/machine/` are the exception: they hold no run values.
+- The patched `ta_run.sh` of machine A. `patched/machine/diag-patch-par.sh` makes it from the
+  staged `ta_run.sh`.
 - The output: the project files and `results/` of each machine are in the storage bucket, under
   `tom-add-159/run/<machine>/`. The private folders (the registries and the full link tables, with
   real identities) never leave the bucket.
