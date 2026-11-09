@@ -5,11 +5,13 @@ cost and the time. A value with the word "estimate" is an estimate. "UNKNOWN" me
 no record was found. "copy" in a hash column means the sha256 of the copied file in this
 repository, because the stage did not record a value when it ran.
 
-TOM 1.0.0 has 8,449 project files (ctp schema 3, 53 columns) and 30,408,388,202 token rows. It
-is on Hugging Face (`elliancarlos/token-on-me`, DOI 10.57967/hf/11505, final revision
-`e81b554deb9b`). Four release passes made it from the source root (10,754 project files, ctp
-schema 2, 71 columns): section 5.7. The final root has 8,475 rows in `SHA256SUMS` (sha256
-`b7141d088461...`, all of them in `data/SHA256SUMS`). Sections 1 to 5.6 give the
+TOM 1.0.0 has 8,598 project files (ctp schema 3, 53 columns) and 31,603,701,581 token rows in
+its final revision. It is on Hugging Face (`elliancarlos/token-on-me`, final revision
+`5e20f9ff2a18`, DOI pending). The first revision (`e81b554deb9b`, DOI 10.57967/hf/11505) had
+8,449 project files and 30,408,388,202 token rows; four release passes made it from the source
+root (10,754 project files, ctp schema 2, 71 columns): section 5.7. Pass 5 made the final
+revision: section 5.8. The final root has 8,628 rows in `SHA256SUMS` (sha256
+`ea2052f7ce8b...`, all of them in `data/SHA256SUMS`). Sections 1 to 5.6 give the
 selection, the build and the steps that made the source root. Their text keeps the names of the
 build runs.
 
@@ -555,9 +557,10 @@ of the source root and compares with the source root.
 `data/SHA256SUMS` has all 8,475 rows of the final `SHA256SUMS`. `data/REBUILD-TARGETS.tsv` has
 the 8,449 projects of TOM: `published_sha256` is the file of TOM, and the new column
 `source_root_sha256` is the file of the source root. The run commit of each row is equal to
-`run_commit` of `MANIFEST.tsv` of TOM.
+`run_commit` of `MANIFEST.tsv` of TOM. (Note of 2026-11-09: section 5.8 changed both files to the
+root of the revision.)
 
-### 5.8 The revision of TOM 1.0.0 (2026-11-08; the run started on 2026-11-09)
+### 5.8 The revision of TOM 1.0.0 (2026-11-08; done on 2026-11-09)
 
 The revision is a new Hugging Face revision of release 1.0.0 in the same repository, with the
 same DOI. It has 8,598 projects: the 8,449 projects of the root of pass 4 and 149 new projects.
@@ -569,16 +572,24 @@ It changes the `license` values to SPDX expressions from a license scan, adds th
 | The selection funnel (the tokei rule, GitLab in the pool, the copy check) | `steps/selection-funnel/` | the pool of the selection, the tokei measures | 8,598 projects (149 new: 41 pool, 108 GitLab) | done |
 | The run of the new projects | `steps/new-projects/` | `steps/selection-funnel/data/new_projects.tsv` | one project file for each new project, in the TOM form | done: machines A, B and C ended DONE |
 | The license pass | `steps/license-pass/` | the 8,449 projects at their pinned commit | the values of the `license` column; the hand check (0 wrong of 100) | done |
-| Pass 5 (the root of the revision) | `steps/release-passes/pass-5-revision/` | the root of pass 4, the new project files, the license values | the root of the revision and its Hugging Face revision | staged (`fc901a99a7cf...`); the run started on 2026-11-09 and did not end when this record was written |
-| The integrity check of the root | `steps/release-passes/pass-5-revision/integrity/` | the published root of the revision | `docs/INTEGRITY.md`, `docs/integrity.tsv` and a new `SHA256SUMS` in the root | ready (local test: 8 of 8 cases pass); runs after pass 5 |
+| Pass 5 (the root of the revision) | `steps/release-passes/pass-5-revision/` | the root of pass 4, the new project files, the license values | the root of the revision and its Hugging Face revision | done: the run ended DONE on 2026-11-09 at 17:00 UTC (final stage `da9125463a33...`, after 4 fixes); 8,598 project files, 31,603,701,581 rows, 116,839,509,483 bytes of project files; Hugging Face revision `46a123047ef2` |
+| The integrity check of the root | `steps/release-passes/pass-5-revision/integrity/` | the published root of the revision | `docs/INTEGRITY.md`, `docs/integrity.tsv` and a new `SHA256SUMS` in the root | done: 8,626 files, 116,849,664,000 bytes, 31,603,701,581 token rows, 16 views, 0 problems (6,763 s); `SHA256SUMS` `a453d5f10aa2...` -> `ea2052f7ce8b...`; final Hugging Face revision `5e20f9ff2a18` |
 
 The tools: `tools.lock` (the rows of cregit `c65f1e7` and `fbbf42f`, ctp `a9f0bed`, `c2a8432`,
 `6b6efcf` and `0f9b8ad`, the license scanners, and the kits). To run pass 5 again, use the method
 of section 5.7 with `steps/release-passes/pass-5-revision/test-local.sh` as the model of a local
 run.
 
-`data/SHA256SUMS` and `data/REBUILD-TARGETS.tsv` still describe the root of pass 4. The root of the
-revision and its `SHA256SUMS` come after the run (`steps/release-passes/pass-5-revision/README.md`).
+`steps/release-passes/pass-5-revision/README.md` gives the result, the Hugging Face revisions and
+the 4 fixes of the run (the published schema of the new domain rows, the footer value
+`organizations_mapping_sha256` of the new files, the S3 copy, the push list of the Hub).
+
+`data/SHA256SUMS` has all 8,628 rows of the final `SHA256SUMS` (`ea2052f7ce8b...`).
+`data/REBUILD-TARGETS.tsv` has the 8,449 projects of the first revision; `published_sha256` is
+now the file of the final root (3,528 of them have new bytes from the value pass of the
+`license` column). The 149 new projects have no row: `rebuild-one` says "not ready" for them.
+`scripts/compare_published.py` allows another `license` value when the published file has one
+value for the file (the value of the license pass).
 
 ## 6. Validate
 
@@ -588,7 +599,7 @@ revision and its `SHA256SUMS` come after the run (`steps/release-passes/pass-5-r
 | Each fetched Parquet file has the sha256 of its `OK` file. | `pipeline/s7-run/fetch_done.sh` | runs after the build |
 | Each file of the source root has the column contract of ctp schema 2 (71 columns: the 67 cregit columns of ca113e3, then the 4 organization columns), the footer keys of the release write, the registry of `pseudonymization.json` and the rows of `MANIFEST.tsv`. | `make validate SCHEMA=2 DATA_DIR=<source root>` (`scripts/validate_schema2.py`) | works; proof on 2026-10-28 with small test files (`scripts/test_release_checks.py`, `make test`: one good root passes; a schema 1 file, a wrong row count, a wrong registry, a file with no registry, a file with no row in `MANIFEST.tsv` and a file that cannot be read fail) and on the published file of libexpat__libexpat (OK). The release build checked the same contract on all 10,754 files (`schema.txt` of the build reports: 71 columns, footer schema 2, v4.9, mapping `7b52a5155e6f`, 32,635,174,618 rows, 0 problems). |
 | Each project file of TOM has ctp schema 3 (53 columns), the footer keys, and the rows of `MANIFEST.tsv`; the organization tables and the text rules. | `make validate DATA_DIR=<root of TOM>` (`steps/release-passes/fill-release/tools/fill_release.py check`, the same file as `tools/fill_release.py` of the root) | the release passes ran it before each upload (pass 4 without `--allow-todo`); `make test` runs its tests on fake data. |
-| Each file of the root of TOM has the sha256 of `data/SHA256SUMS`. | `make verify DATA_DIR=<root of TOM>` | ready: `data/SHA256SUMS` has the 8,475 rows of the final root (`b7141d088461...`). The run needs the downloaded files (8,449 project files, 115.4 GB, and the other files). |
+| Each file of the root of TOM has the sha256 of `data/SHA256SUMS`. | `make verify DATA_DIR=<root of TOM>` | ready: `data/SHA256SUMS` has the 8,628 rows of the final root (`ea2052f7ce8b...`). The run needs the downloaded files (8,598 project files, 116.8 GB, and the other files). |
 
 The 70-column contract of ca113e3 alone refuses every published file: the release write
 replaced the 3 firm columns (`firm_raw`, `firm`, `firm_source`) with the 4 organization
@@ -609,8 +620,9 @@ So no one can make the published bytes of a file again. `make rebuild-one` uses 
 3. The published file has the rows of that file in the same order, and it is equal to that file
    in every column that the release write and the release passes do not change. For a file of
    TOM, the script also allows the 18 columns that the passes dropped, the rename
-   `provenance_status` -> `audit_frame_file`, and the fills of pass 2 (`language` where the old
-   value is empty, `license` where it is `NOASSERTION`). `scripts/compare_published.py`
+   `provenance_status` -> `audit_frame_file`, the fill of `language` of pass 2 (where the old
+   value is empty), and another `license` value when the published file has one value (pass 2
+   filled `NOASSERTION`; pass 5 wrote the value of the license pass). `scripts/compare_published.py`
    checks this. The release write changes only: the 7 identity columns (`author_name`,
    `author_email`, `committer_name`, `committer_email`, `personid`, `person_name`,
    `person_email`) and the 15 `footer_*` lists (each value that is not empty becomes a

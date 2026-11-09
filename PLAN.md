@@ -145,16 +145,17 @@ State:
 | A later company pass | Open: after 2026-11-10. |
 | Open | The anonymous export, the independent check, a push of the commits of the passes and of the direct write. |
 
-## Status of the revision of TOM 1.0.0 (2026-11-08)
+## Status of the revision of TOM 1.0.0 (2026-11-08, updated 2026-11-09)
 
 | Item | State |
 |---|---|
 | Selection funnel (`steps/selection-funnel/`) | Done: 8,598 projects, 149 new (41 pool, 108 GitLab). |
 | Run of the new projects (`steps/new-projects/`) | Done: machines A, B and C ended DONE. |
 | License pass (`steps/license-pass/`) | Done: values decided, hand check 0 wrong of 100. |
-| Pass 5 (`steps/release-passes/pass-5-revision/`) | Staged (`fc901a99a7cf...`); the run started on 2026-11-09 and did not end when this record was written. |
-| Integrity check (`steps/release-passes/pass-5-revision/integrity/`) | Ready: the local test passes (8 of 8 cases). It runs on the machine of pass 5 after the run. |
-| `data/SHA256SUMS`, `data/REBUILD-TARGETS.tsv` | Open: they describe the root of pass 4 until the root of the revision exists. |
+| Pass 5 (`steps/release-passes/pass-5-revision/`) | Done: the run ended DONE on 2026-11-09 at 17:00 UTC (final stage `da9125463a33...`, after 4 fixes; first stage `fc901a99a7cf...`). 8,598 project files, 31,603,701,581 rows. Hugging Face revision `46a123047ef2`. |
+| Integrity check (`steps/release-passes/pass-5-revision/integrity/`) | Done: 8,626 files, 116,849,664,000 bytes, 31,603,701,581 token rows, 0 problems (6,763 s). Published as `docs/INTEGRITY.md` and `docs/integrity.tsv`; `SHA256SUMS` `a453d5f10aa2...` -> `ea2052f7ce8b...` (8,628 rows); final Hugging Face revision `5e20f9ff2a18`. |
+| `data/SHA256SUMS`, `data/REBUILD-TARGETS.tsv` | Done: they describe the final root (8,628 rows; `published_sha256` of the 8,449 earlier projects). The 149 new projects have no rebuild record yet. |
+| DOI of the final revision | Open: DOI pending (the user decides). `10.57967/hf/11505` marks the first revision. |
 | Organization database 1.0.0 | Done: published on Zenodo (concept DOI 10.5281/zenodo.23744044). |
 
 ## Future work: the full-history pilot (2026-11-08)
