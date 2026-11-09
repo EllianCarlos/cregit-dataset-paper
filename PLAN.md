@@ -176,5 +176,20 @@ retry of a project that failed late runs from step 1 and stops on its memo (use 
 the blame proof needs a git `safe.directory` for the repositories of the run user; the end marker
 of one step is the marker of the whole run.
 
-**TODO (pilot report):** the report of the pilot (`REPORT.md` of the pilot) is not written yet.
-Add its results and a link here when it exists.
+The report of the pilot (2026-11-09) is `steps/full-history-pilot/REPORT.md`. Its results:
+
+- 28 of the 32 sample projects are equal to TOM 1.0.0 in all compared columns. In the other 4,
+  1,006,471 rows (0.45% of the 222.4 million alive rows) have another commit; no token value
+  differs and no row is missing. All 4 causes come from the blame step, not from the history
+  columns.
+- A full-history file has 3.1 times the rows of the TOM file (median 3.08) and 2.2 times its
+  bytes (with NULL identity columns). The history step took a median of 0.28 of the time of
+  steps 1 to 9.
+- 8 projects failed in the first run (DuckDB memory, a long CSV line, NUL bytes and bare CRs);
+  all 8 pass after their fixes.
+- The blame tool `repoblame` gives the output of `git blame -C100`, but it is slower on the
+  machine; a release must use git.
+- About 6% of the removed rows have no removing commit (a merge dropped tokens of a side branch).
+- The estimate for a release with history: about 90 billion rows (55 to 170 billion), 250 to 370
+  GB, about 70,000 CPU hours, about US$5,000 on demand (US$1,500 to 7,500). A history add-on that
+  keeps the TOM blame rows can cost much less.

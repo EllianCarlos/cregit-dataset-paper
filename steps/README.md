@@ -18,6 +18,7 @@ run used it, how to run it, and what is not here.
 | `error-model/` | The numbers of `docs/ERROR.md` of the release. | no |
 | `language-selection/` | The evidence for the language rule of the selection. | no |
 | `linux-validation/` | A comparison of the organization shares of the Linux kernel with published sources. | no |
+| `full-history-pilot/` | The report of the full-history pilot (future work, not part of TOM 1.0.0): every token of the full history of 33 projects, the check against TOM and the cost model. | no |
 
 The order of the steps: `organizations/` (database and links), `final-write/`,
 `release-root/`, `reencode/`, then the root build again on the re-encoded files
@@ -25,7 +26,7 @@ The order of the steps: `organizations/` (database and links), `final-write/`,
 release passes. Then `release-passes/`: passes 1 to 3 make the files of TOM 1.0.0, and pass 4 (the DOI pass) the root of the
 first revision (8,449 project files, 53 columns). Pass 5 makes the final revision from that root,
 `new-projects/` and `license-pass/` (8,598 project files). `error-model/`, `language-selection/`
-and `linux-validation/` hold evidence only. The keep list of
+and `linux-validation/` hold evidence only; `full-history-pilot/` is future work. The keep list of
 pass 1 comes from `language-selection/tokei/`.
 
 ## How the files got here
