@@ -93,13 +93,16 @@ names version `5e20f9f` and links to 10.57967/hf/11505).
 
 ## Archives of the code
 
-Software Heritage archived the 3 code repositories on 2026-11-09:
+Software Heritage archived the 3 code repositories. The first save was on 2026-11-09. The second save was on
+2026-11-10, after we pushed the tool commits that the release and its new project depend on (the branches
+`fix/schema-3-bare-cr`, `fix/null-committer`, `feat/license-scan` and `feat/parquet-reencode`, and the tags
+`dataset-build/*`). Use the snapshots of 2026-11-10. They hold all commits that `tools.lock` pins.
 
-| repository | snapshot |
-|---|---|
-| cregit (the fork that TOM uses) | `swh:1:snp:09cc8082ed0c5f3c137dac934125769e51773dde` |
-| cregit-token-pipeline (ctp) | `swh:1:snp:f078b912faaf1cc5712d9705ba1dc3776a96e386` |
-| cregit-dataset-paper (this repository, at `7d53970`) | `swh:1:snp:ceb943a3eacfbdefe86ab1c1e9c12e42c78f74b5` |
+| repository | snapshot of 2026-11-10 | snapshot of 2026-11-09 (older) |
+|---|---|---|
+| cregit (the fork that TOM uses) | `swh:1:snp:db541fc6be6dd1ab6576343edfe398b9cae510cd` | `swh:1:snp:09cc8082ed0c5f3c137dac934125769e51773dde` |
+| cregit-token-pipeline (ctp) | `swh:1:snp:93dde342b861e215d4bbc8c98b969d8fc2ecf816` | `swh:1:snp:f078b912faaf1cc5712d9705ba1dc3776a96e386` |
+| cregit-dataset-paper (this repository; at `40f1314`) | `swh:1:snp:97137dd9c5422289b85cbf73c88785f404cf0d5e` | `swh:1:snp:ceb943a3eacfbdefe86ab1c1e9c12e42c78f74b5` (at `7d53970`) |
 
 Open a snapshot at `https://archive.softwareheritage.org/<snapshot>`.
 
