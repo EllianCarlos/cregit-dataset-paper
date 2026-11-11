@@ -1,0 +1,538 @@
+project	lang	tokens	author_diff	author_diff_wmc	commit_diff
+Rust-GCC__gccrs	C++	18284156	5549635	5328465	8081245
+Rust-GCC__gccrs	C/C++ header	5278256	1227843	1122798	2275496
+Rust-GCC__gccrs	C	22477186	1794906	1366172	3668619
+Rust-GCC__gccrs	other	167009	68134	53832	86441
+Rust-GCC__gccrs	Rust	3089673	18609	13029	29124
+llvm__llvm-project	C++	34814234	15556301	13736480	20221812
+llvm__llvm-project	C	9269111	2467183	2297521	3452209
+llvm__llvm-project	C/C++ header	7122502	1603642	1507607	2142561
+NextAlone__Nnngram	C/C++ header	1265789	241603	204026	296021
+NextAlone__Nnngram	C++	3114325	418393	357480	576414
+NextAlone__Nnngram	C	2062279	442454	60194	717945
+NextAlone__Nnngram	Java	10564043	3785488	2659300	5643734
+wireshark__wireshark	C/C++ header	1692612	833355	810384	1025461
+wireshark__wireshark	C	32524186	15342728	11683987	20887633
+wireshark__wireshark	C++	925420	301575	272696	426724
+OpenNuvoton__NUC970_Linux_Kernel	C	57402843	13914046	11808400	19599016
+OpenNuvoton__NUC970_Linux_Kernel	C/C++ header	9140897	1977418	1520960	2741830
+OpenNuvoton__NUC970_Linux_Kernel	C++	9825	3913	3473	4166
+adoptium__jdk26u	C++	9307398	3234740	3022046	3920275
+adoptium__jdk26u	C	6038095	3773679	322630	3838140
+adoptium__jdk26u	C/C++ header	1178642	183140	155698	212369
+adoptium__jdk26u	Java	40847567	6718745	5615652	9133972
+magefree__mage	Java	17779674	7105936	4789944	8415154
+TencentCloud__tencentcloud-sdk-cpp	C++	44982850	19054015	16582480	26300454
+TencentCloud__tencentcloud-sdk-cpp	C/C++ header	12126414	3050894	1884312	4551169
+eloqdata__eloqsql	Java	16009	0	0	2849
+eloqdata__eloqsql	C++	4886751	1821746	1631476	2564713
+eloqdata__eloqsql	C/C++ header	1361113	345212	314498	525361
+eloqdata__eloqsql	C	5832278	1160410	1152767	1542029
+apache__openoffice	C++	28805132	2579674	1417339	2640535
+apache__openoffice	C/C++ header	333856	59036	44539	59242
+apache__openoffice	C	254475	16039	5190	16103
+apache__openoffice	Java	3241643	424742	150511	471918
+uyuni-project__uyuni	Java	3248467	1237894	1114214	1517077
+aros-development-team__AROS	C	17992756	3186671	1641817	4326801
+aros-development-team__AROS	C/C++ header	20673126	250139	190474	379217
+aros-development-team__AROS	C++	1843434	866	763	6277
+aros-development-team__AROS	Java	3456	0	0	1905
+SakuraEngine__SakuraEngine	C++	8780502	1897468	852948	2557685
+SakuraEngine__SakuraEngine	C/C++ header	10554443	257536	198043	443781
+SakuraEngine__SakuraEngine	C	1544964	81388	71139	160781
+stan-dev__math	C++	17960903	1392206	970305	1852618
+stan-dev__math	C/C++ header	2232244	3454	5074	6442
+stan-dev__math	C	609853	0	0	1117
+rism-digital__verovio	C++	1860685	357903	289970	1136401
+rism-digital__verovio	C/C++ header	278803	66224	59462	142202
+rism-digital__verovio	Java	414	112	67	189
+payara__Payara	Java	5167642	1335065	1012875	1602580
+Squalr__Squally	C	73344	0	0	1085
+Squalr__Squally	C/C++ header	800169	2456	3406	311059
+Squalr__Squally	C++	3130890	6737	6222	2040638
+INAVFlights__inav	C	7522384	671638	483384	830387
+INAVFlights__inav	C/C++ header	5718552	591434	591336	761910
+INAVFlights__inav	C++	18240	4149	2946	6027
+xbmc__xbmc	C/C++ header	882850	284705	246796	426679
+xbmc__xbmc	C++	4108881	1701941	1450910	2175313
+xbmc__xbmc	C	42727	26077	10779	26262
+xbmc__xbmc	Java	3149	94	82	94
+jerryuhoo__Fire	C++	15538904	0	0	1793661
+jerryuhoo__Fire	C/C++ header	224636	0	0	69271
+jerryuhoo__Fire	C	88	0	0	17
+geotools__geotools	Java	9300410	3892906	2683138	4477921
+eclipse-milo__milo	Java	4997991	33298	32240	3741549
+vavr-io__vavr	Java	769083	398657	319843	548884
+Rheosoph__flow-like	C/C++ header	181541	0	0	44453
+Rheosoph__flow-like	C++	4889	0	0	1005
+Rheosoph__flow-like	C	8182	0	0	9
+Rheosoph__flow-like	Java	8901	0	0	103
+Rheosoph__flow-like	Rust	12256237	72112	64835	3160330
+eclipse-platform__eclipse.platform.swt	C	478631	258710	245996	287408
+eclipse-platform__eclipse.platform.swt	C/C++ header	29549	5245	4779	5551
+eclipse-platform__eclipse.platform.swt	C++	30919	10709	9984	11012
+eclipse-platform__eclipse.platform.swt	Java	3238634	1146174	860812	1348642
+LibreDWG__libredwg	C/C++ header	2217876	14647	14211	409569
+LibreDWG__libredwg	C	1260587	85761	76595	892685
+VcDevel__Vc	C/C++ header	227094	1197	1170	142397
+VcDevel__Vc	C++	94353	398	362	51265
+VcDevel__Vc	other	28073	0	0	20113
+xLightsSequencer__xLights	C++	3848548	1015467	816496	1652766
+xLightsSequencer__xLights	C/C++ header	2436603	246145	237978	716166
+xLightsSequencer__xLights	C	9398	0	0	84
+azerothcore__azerothcore-wotlk	C/C++ header	1165097	289991	205655	323182
+azerothcore__azerothcore-wotlk	C++	3487374	1638201	1193093	1828787
+azerothcore__azerothcore-wotlk	C	225236	58586	54062	58604
+nklmilojevic__sofka	Rust	1147778	133549	132805	438043
+embox__embox	Java	134	0	0	0
+embox__embox	C/C++ header	10722970	76369	58200	132322
+embox__embox	C++	888448	3101	2203	6954
+embox__embox	C	1673539	286480	242983	510084
+embox__embox	Rust	26864	0	0	11945
+FDio__vpp	C++	164744	12446	10195	59436
+FDio__vpp	C	4083320	1054115	861192	1730281
+FDio__vpp	C/C++ header	610177	144759	116159	230826
+cube-js__cube	Rust	2148815	458789	463019	896663
+facebook__folly	C/C++ header	1085050	444049	370456	540599
+facebook__folly	C++	2217434	660638	576587	888561
+facebook__folly	C	287	117	98	127
+facebook__folly	Rust	40806	1563	1402	1953
+jmix-framework__jmix	Java	3275510	578252	482104	912065
+skyvers__skyve	Java	3600231	383003	320242	1507843
+mysql__mysql-workbench	C++	4625137	993081	633349	1289234
+mysql__mysql-workbench	C/C++ header	990372	275745	142301	340415
+mysql__mysql-workbench	C	531825	559	166	579
+mysql__mysql-workbench	Java	1303	0	0	0
+libsdl-org__SDL	C	2186721	781941	638709	1140009
+libsdl-org__SDL	C/C++ header	2494571	405563	350843	1220261
+libsdl-org__SDL	C++	51383	12506	9445	19004
+libsdl-org__SDL	Java	28819	8453	9909	12725
+cesanta__mongoose	C	1420962	304254	275440	681458
+cesanta__mongoose	C/C++ header	918029	25217	12574	39291
+zeldaret__mm	C	3614817	1213434	1191262	1418379
+zeldaret__mm	C/C++ header	329197	123014	116931	140881
+zeldaret__mm	C++	103238	20823	15681	33368
+orx__orx	Java	99	0	0	14
+orx__orx	C	845254	29166	23784	326293
+orx__orx	C/C++ header	465449	6693	5936	77507
+orx__orx	C++	417721	18052	14831	233596
+etlegacy__etlegacy	Java	43038	1440	1019	15923
+etlegacy__etlegacy	C	2279306	1220899	768552	1427731
+etlegacy__etlegacy	C/C++ header	200851	85339	50051	95096
+etlegacy__etlegacy	C++	31835	23395	3556	24094
+frostwire__frostwire-jlibtorrent	C++	600697	808	751	42065
+frostwire__frostwire-jlibtorrent	C/C++ header	12951	59	1	365
+frostwire__frostwire-jlibtorrent	Java	278464	6677	5989	92282
+plantuml__plantuml	C	108888	0	0	0
+plantuml__plantuml	C/C++ header	110720	0	0	0
+plantuml__plantuml	Java	2250667	92391	75710	1125028
+anura-engine__anura	C++	1234678	203006	150121	656437
+anura-engine__anura	C/C++ header	20154	80	11	117
+anura-engine__anura	C	1430	0	0	0
+vanhoefm__fragattacks	C	2234307	332033	306447	898920
+vanhoefm__fragattacks	C/C++ header	179170	29126	27694	70885
+vanhoefm__fragattacks	C++	29136	2466	2492	11752
+vanhoefm__fragattacks	Java	7974	71	61	1065
+GNOME__gnumeric	C	1851492	696483	647865	1154921
+GNOME__gnumeric	C/C++ header	75243	30784	28983	47637
+eclipse-sirius__sirius-web	Java	2684467	1069403	909466	1443375
+bloomberg__comdb2	C	3806384	737407	639543	878588
+bloomberg__comdb2	C/C++ header	341370	57933	55506	65861
+bloomberg__comdb2	C++	78624	18023	16272	23637
+bloomberg__comdb2	Java	83977	14400	11612	17109
+apache__jspwiki	Java	477454	55453	51857	286821
+PrimeIntellect-ai__prime-agent	Rust	3857096	2606	4358	266630
+apache__jmeter	Java	1040826	490630	349711	648773
+steemit__steem	C++	2518484	179620	157820	326054
+steemit__steem	C/C++ header	471285	0	0	4535
+steemit__steem	C	86349	11101	11101	11214
+steemit__steem	Java	189178	3683	3683	9966
+apache__fluss	C++	96847	35409	30582	45738
+apache__fluss	C/C++ header	1447	472	452	568
+apache__fluss	Rust	766457	202589	193210	276486
+apache__fluss	Java	2926960	711285	602610	955099
+firebase__firebase-ios-sdk	C++	1460327	565262	541544	640311
+firebase__firebase-ios-sdk	C/C++ header	489727	187940	165506	219947
+firebase__firebase-ios-sdk	C	28452	1485	1386	2045
+openmm__openmm	C++	1572703	129433	112481	682317
+openmm__openmm	C/C++ header	1310676	56263	188664	305114
+openmm__openmm	C	3596	26	26	51
+riebl__vanetza	C	1099078	108012	44694	374441
+riebl__vanetza	C/C++ header	210495	10636	6254	40930
+riebl__vanetza	C++	361706	42289	37114	121643
+vladelaina__Catime	C	482489	596	759	198035
+vladelaina__Catime	C/C++ header	567207	85	99	84408
+HelixDB__helix-db	Rust	4424545	179218	157349	913831
+gitlab.freedesktop.org__mesa__piglit	C	1634802	191754	160656	275555
+gitlab.freedesktop.org__mesa__piglit	C/C++ header	70776	6581	6305	9078
+gitlab.freedesktop.org__mesa__piglit	C++	74004	11638	10387	16145
+gfx-rs__wgpu	Rust	2079997	789992	757748	975489
+firstintent__ccteam	Rust	1667151	447215	430127	665589
+lance-format__lance	C	4103	604	406	662
+lance-format__lance	C++	2919	0	2	369
+lance-format__lance	Rust	6114451	1802133	1886006	2620713
+lance-format__lance	Java	251130	93314	73846	113327
+OpenFeign__querydsl	Java	1139895	903069	407030	968214
+confluentinc__ksql	Java	2575388	1008184	936501	1340952
+microsoft__openvmm	C/C++ header	1943	3	3	3
+microsoft__openvmm	C	361	0	0	0
+microsoft__openvmm	Rust	5024300	861059	817721	1144711
+briar__briar	Java	1073533	330198	305375	622675
+flatpak__flatpak	C	522246	141748	133955	274902
+flatpak__flatpak	C/C++ header	35317	6434	5980	18341
+apache__fory	C++	224429	8316	7287	90654
+apache__fory	C/C++ header	178017	18490	16203	99374
+apache__fory	Java	1961637	112731	107411	869686
+apache__fory	Rust	476317	66100	65825	203996
+jjazzboss__JJazzLab	Java	1290291	30566	29251	541747
+dosemu2__dosemu2	C	1160146	235858	167538	444974
+dosemu2__dosemu2	C/C++ header	129874	17638	15183	34970
+analogdevicesinc__scopy	C++	1030678	309234	225882	529492
+analogdevicesinc__scopy	C/C++ header	148980	25331	15145	50499
+analogdevicesinc__scopy	C	19617	11742	4290	12117
+analogdevicesinc__scopy	Java	1778	0	0	0
+endless-sky__endless-sky	C++	497674	233679	221014	275066
+endless-sky__endless-sky	C/C++ header	83809	30844	28898	37607
+open-telemetry__opentelemetry-java	Java	1144844	380450	341686	585096
+zaproxy__zaproxy	Java	1299763	650090	321532	914174
+OP-TEE__optee_os	C	2570567	545364	394288	902454
+OP-TEE__optee_os	C/C++ header	423778	72400	62736	119279
+unicode-org__icu4x	C/C++ header	45062	18426	16254	24065
+unicode-org__icu4x	C++	329364	161131	126033	226043
+unicode-org__icu4x	C	2638	1451	1396	1630
+unicode-org__icu4x	Rust	2073075	627749	542661	1071201
+rvben__rumdl	Rust	3054126	56198	49201	1383118
+kenzok8__small-package	C	5741629	19399	17381	42128
+kenzok8__small-package	C/C++ header	3828159	1429	969	3553
+kenzok8__small-package	C++	23174	172	171	2619
+Filoppi__Luma-Framework	C	4746772	0	0	1013
+Filoppi__Luma-Framework	C/C++ header	717563	997	981	39055
+Filoppi__Luma-Framework	C++	700379	42201	41032	285375
+foobnix__LibreraReader	C	1788731	1412	1398	58330
+foobnix__LibreraReader	C/C++ header	178958	551	172	3273
+foobnix__LibreraReader	C++	292426	4172	3957	12424
+foobnix__LibreraReader	Java	1019322	5240	4706	328006
+profanity-im__profanity	C	449000	214958	131463	334820
+profanity-im__profanity	C/C++ header	41355	32352	12505	35839
+thymeleaf__thymeleaf	Java	805117	15276	11188	277134
+mousebird-consulting-inc__WhirlyGlobe	C++	817178	230735	102759	361293
+mousebird-consulting-inc__WhirlyGlobe	C/C++ header	865350	36641	27639	219822
+mousebird-consulting-inc__WhirlyGlobe	C	154193	0	0	99
+mousebird-consulting-inc__WhirlyGlobe	Java	142835	36742	30830	48562
+ccrma__chuck	C++	725685	174866	144711	270627
+ccrma__chuck	C/C++ header	118680	22823	18063	31537
+ccrma__chuck	C	363638	37418	30390	60322
+cisco__openh264	C++	626304	312620	204782	468582
+cisco__openh264	C/C++ header	98951	48953	28669	67889
+cisco__openh264	C	49372	4293	3712	10901
+cisco__openh264	Java	2098	1692	419	2087
+adafruit__Adafruit_nRF52_Arduino	C/C++ header	583923	3683	3262	131745
+adafruit__Adafruit_nRF52_Arduino	C++	79259	5170	4709	37100
+adafruit__Adafruit_nRF52_Arduino	C	110303	3241	2337	9067
+TASEmulators__fceux	C++	1203763	233487	166867	557134
+TASEmulators__fceux	C/C++ header	282312	18562	13608	43043
+TASEmulators__fceux	C	157276	428	428	428
+OpenSC__OpenSC	C	1219103	468223	406843	599210
+OpenSC__OpenSC	C/C++ header	118146	18245	25287	24544
+OpenSC__OpenSC	C++	6729	3892	3530	4196
+eclipse-zenoh__zenoh	Rust	1323017	372726	340549	551502
+finos__waltz	Java	1000898	265087	242121	526417
+trustwallet__wallet-core	Rust	627897	61208	44756	129581
+trustwallet__wallet-core	C++	615126	238300	192339	304097
+trustwallet__wallet-core	C/C++ header	132685	43110	33783	50297
+trustwallet__wallet-core	C	227218	71732	40897	72157
+trustwallet__wallet-core	Java	664	98	58	182
+winder__Universal-G-Code-Sender	Java	1219403	157126	129437	458338
+eclipse-viatra__org.eclipse.viatra	Java	776022	245640	167078	442877
+duckdb__duckdb-iceberg	C++	382039	56489	54269	224445
+duckdb__duckdb-iceberg	Java	487	0	0	0
+apache__openmeetings	Java	563287	10531	9995	296129
+moonlight-stream__moonlight-ios	C/C++ header	277043	1708	1520	58960
+moonlight-stream__moonlight-ios	C	465	210	210	262
+pgRouting__pgrouting	C++	128864	31374	25379	71646
+pgRouting__pgrouting	C	40406	12446	10392	23665
+pgRouting__pgrouting	C/C++ header	4890	1182	1012	2158
+spring-cloud__spring-cloud-kubernetes	Java	588614	188688	167134	378226
+Aethersailor__SubConverter-Extended	C++	635866	16849	16828	191788
+Aethersailor__SubConverter-Extended	C/C++ header	320149	29390	35716	96871
+gitlab.inria.fr__rules__integraal	Java	668858	181071	137926	316023
+AFLplusplus__AFLplusplus	Rust	17050	3661	3045	4444
+AFLplusplus__AFLplusplus	Java	392	0	0	0
+AFLplusplus__AFLplusplus	C	465547	130907	105188	213647
+AFLplusplus__AFLplusplus	C++	115972	13266	11776	45077
+AFLplusplus__AFLplusplus	C/C++ header	97505	10565	8832	50950
+lambdaclass__ethrex	Rust	1564825	481775	465487	599661
+Dice-Developer-Team__Dice	C	398335	0	0	316
+Dice-Developer-Team__Dice	C/C++ header	118257	11121	7538	20158
+Dice-Developer-Team__Dice	C++	418457	65424	63055	263882
+ossimlabs__ossim	C++	1881269	168505	98903	241903
+ossimlabs__ossim	C	77996	97	96	97
+ossimlabs__ossim	C/C++ header	371623	25173	17262	30986
+AcademySoftwareFoundation__MaterialX	C/C++ header	350084	27923	26900	90217
+AcademySoftwareFoundation__MaterialX	C++	509125	126780	115860	178854
+AcademySoftwareFoundation__MaterialX	C	116057	6	6	6
+FabricMC__fabric-api	Java	717281	300033	282071	402612
+tablacus__TablacusExplorer	C++	186925	0	0	89096
+tablacus__TablacusExplorer	C/C++ header	13384	0	0	6694
+bitcoin-core__secp256k1	C	742603	203827	483193	229161
+bitcoin-core__secp256k1	C/C++ header	586562	55421	52738	78703
+DioxusLabs__dioxus	Rust	1040867	158657	139177	329154
+diesel-rs__diesel	Rust	1020338	324529	293190	511451
+DynamoRIO__elfutils	C	574705	138943	118149	195346
+DynamoRIO__elfutils	C++	29928	5042	4844	12435
+DynamoRIO__elfutils	C/C++ header	61483	14864	13485	21869
+uclouvain__openjpeg	Java	14457	4382	1558	5722
+uclouvain__openjpeg	C	993466	526964	310364	552662
+uclouvain__openjpeg	C/C++ header	184729	52339	34368	56236
+uclouvain__openjpeg	C++	118750	41633	10783	41638
+AIDASoft__DD4hep	C/C++ header	262464	31800	22191	158173
+AIDASoft__DD4hep	C++	832179	85425	54905	455523
+AIDASoft__DD4hep	C	16646	723	497	7054
+keepassxreboot__keepassxc	C/C++ header	1416603	786807	16584	795074
+keepassxreboot__keepassxc	C	15929	623	557	905
+keepassxreboot__keepassxc	C++	612935	227620	207141	308953
+KDE__korganizer	C++	138330	76521	57222	92516
+KDE__korganizer	C/C++ header	20243	9547	6993	11475
+kube-mods__kubejs	Java	409837	117659	112798	251747
+timescale__timescaledb	C	615432	217843	203479	298818
+timescale__timescaledb	C/C++ header	58968	17937	16022	25412
+hirrolot__metalang99	C	21473	0	0	18336
+hirrolot__metalang99	C/C++ header	25737	0	0	22282
+0xchocolate__flipperzero-wifi-marauder	C	43139	17485	11542	24208
+0xchocolate__flipperzero-wifi-marauder	C/C++ header	3373	1556	687	1946
+Red5__red5-server	Java	575788	5471	4031	184377
+OpenDriver2__REDRIVER2	C/C++ header	438552	1432	3352	13030
+OpenDriver2__REDRIVER2	C	375754	14371	14902	268884
+OpenDriver2__REDRIVER2	C++	16748	2	2	4919
+NEZNAMY__TAB	Java	339050	21469	19493	195533
+firebase__firebase-android-sdk	C	444	0	0	0
+firebase__firebase-android-sdk	C/C++ header	10334	1352	819	1360
+firebase__firebase-android-sdk	C++	6135	1545	1074	1545
+firebase__firebase-android-sdk	Java	1981512	426567	357303	564285
+UniClipboard__UniClipboard	C	1357	0	0	0
+UniClipboard__UniClipboard	C/C++ header	29	0	0	0
+UniClipboard__UniClipboard	Java	1597	0	0	0
+UniClipboard__UniClipboard	Rust	729125	225	202	177928
+mosra__corrade	C++	696750	3725	4058	359811
+mosra__corrade	C/C++ header	168292	817	753	98142
+databendlabs__openraft	Rust	694306	64568	59187	315512
+mezz__JustEnoughItems	Java	678835	55638	55678	330443
+nu774__qaac	other	2485	0	0	317
+nu774__qaac	C++	579463	45	39	83864
+nu774__qaac	C/C++ header	154127	0	0	30546
+nu774__qaac	C	91591	0	0	1082
+jondgoodwin__cone	C	601002	473	578	285687
+jondgoodwin__cone	C/C++ header	33137	811	459	15551
+veraPDF__veraPDF-library	Java	219884	40433	35656	78206
+paulpacifico__shutter-encoder	Java	382871	424	338	85734
+rust-lang__book	Rust	80869	7769	32894	29082
+nisshi-io__nisshi	Rust	1387195	135956	116848	514569
+apache__directory-kerby	C++	579	0	0	0
+apache__directory-kerby	Java	394995	118534	103852	170745
+h2o__quicly	C	174508	8151	8022	106769
+h2o__quicly	C/C++ header	17387	1602	1627	11177
+h2o__quicly	C++	647	464	356	464
+GNOME__gnote	C++	201025	42528	40473	118251
+MyCATApache__Mycat-Server	Java	735685	243690	128505	305177
+PlutoLang__Pluto	C++	862831	164765	139919	250621
+PlutoLang__Pluto	C/C++ header	23891	6869	5885	8942
+mvel__mvel	Java	276144	18942	20687	57218
+Tornaco__Thanox	C++	1748	20	20	271
+Tornaco__Thanox	C/C++ header	82	0	0	17
+Tornaco__Thanox	Java	863861	651	568	66074
+include-what-you-use__include-what-you-use	C++	193821	50790	45065	70785
+include-what-you-use__include-what-you-use	C/C++ header	86334	11362	7221	13582
+include-what-you-use__include-what-you-use	C	3958	236	23	342
+RWS__dxa-web-application-java	Java	251483	76232	64858	126855
+supabase__edge-runtime	Rust	514055	120560	70063	246981
+apache__logging-log4cxx	C++	256419	145188	92977	168542
+apache__logging-log4cxx	C/C++ header	42513	25578	13099	28645
+MethanePowered__MethaneKit	C++	332526	1	1	208531
+MethanePowered__MethaneKit	C/C++ header	75253	0	0	49349
+MethanePowered__MethaneKit	C	6	0	0	0
+shirokhorshid__shirokhorshid-android	Java	111994	28008	20889	44656
+shirokhorshid__shirokhorshid-android	C	640806	0	0	0
+shirokhorshid__shirokhorshid-android	C/C++ header	139366	0	0	0
+stlink-org__stlink	C/C++ header	12121	6685	5687	8805
+stlink-org__stlink	C	94104	63642	43162	73068
+pig-mesh__pig	Java	196767	65511	49213	134769
+emqx__neuron	C/C++ header	61409	14117	11963	23856
+emqx__neuron	C	343548	88109	72608	174753
+emqx__neuron	C++	16748	1162	993	4121
+giuspen__cherrytree	C++	625500	87444	94355	244215
+giuspen__cherrytree	C	82408	29	29	1984
+giuspen__cherrytree	C/C++ header	116129	14191	13320	29030
+jfrog__build-info	Java	274142	106416	89661	127742
+vvaltchev__tilck	C	328467	9263	5715	166656
+vvaltchev__tilck	C/C++ header	113914	3405	3042	50116
+vvaltchev__tilck	C++	53522	245	261	24612
+jtv__libpqxx	C++	186818	8172	7920	125904
+jtv__libpqxx	C/C++ header	14	0	0	0
+Lovrom8__RSMods	C++	605549	157697	156218	226188
+Lovrom8__RSMods	C/C++ header	155772	13287	12245	18987
+elalish__manifold	C++	242594	76715	75386	125905
+elalish__manifold	C/C++ header	70428	15802	14581	32448
+FutureSDR__FutureSDR	C++	3682	0	0	1208
+FutureSDR__FutureSDR	Rust	599800	34984	32197	251246
+tuxera__ntfs-3g	C	504171	132051	116699	186781
+tuxera__ntfs-3g	C/C++ header	26477	4469	4086	6562
+Morwenn__cpp-sort	C++	73238	262	75	38666
+Morwenn__cpp-sort	C/C++ header	460640	292	242	156172
+kruize__autotune	Java	285198	95012	81984	163406
+eddyizm__tempus	Java	286346	96693	85673	145474
+redbadger__crux	Rust	231864	40252	36091	97032
+KDE__subtitlecomposer	C++	196980	58449	46308	92432
+KDE__subtitlecomposer	C/C++ header	45442	20821	12068	26919
+bullhorn__sdk-rest	Java	526326	155349	115198	202479
+KDE__oxygen-gtk	C++	135923	13430	11586	87675
+KDE__oxygen-gtk	C/C++ header	46409	1907	1676	22235
+ptrd__kwik	Java	292916	577	437	163666
+google__automotive-design-compose	Java	735	92	106	117
+google__automotive-design-compose	Rust	143801	38813	36797	50765
+sahib__rmlint	C	143798	49049	39158	83747
+sahib__rmlint	C/C++ header	35980	6456	4986	8832
+PicoPlus-devel__pico-infonesPlus	C++	257655	143	111	24590
+PicoPlus-devel__pico-infonesPlus	C/C++ header	75703	10	10	1394
+PicoPlus-devel__pico-infonesPlus	C	600458	0	0	154474
+OpenShot__libopenshot	C/C++ header	50608	11363	8487	20670
+OpenShot__libopenshot	C++	469468	59102	53034	205728
+usetrmnl__trmnl-firmware	C	758582	0	0	10
+usetrmnl__trmnl-firmware	C/C++ header	77284	15730	14777	16389
+usetrmnl__trmnl-firmware	C++	150664	28616	24768	39707
+Solo5__solo5	C	73213	26480	18647	38984
+Solo5__solo5	C/C++ header	49623	22886	4552	24690
+starship__starship	Rust	313853	133518	108497	148188
+arximboldi__immer	C++	260415	23342	15131	153370
+arximboldi__immer	other	20233	0	0	0
+stevenlovegrove__Pangolin	C++	242561	26084	22760	103625
+stevenlovegrove__Pangolin	C/C++ header	124369	17059	16453	51937
+knowm__XChart	Java	247713	45979	36997	123901
+doukutsu-rs__doukutsu-rs	C++	5	0	0	0
+doukutsu-rs__doukutsu-rs	Rust	663741	181184	166962	307317
+doukutsu-rs__doukutsu-rs	Java	4250	1452	1292	1833
+boostorg__json	C++	252213	51540	48403	125464
+FasterXML__jackson-dataformats-text	Java	261864	29428	24682	81460
+GwtMaterialDesign__gwt-material	Java	214890	58884	51115	114031
+CrowCpp__Crow	C++	44544	18753	18011	20846
+CrowCpp__Crow	C/C++ header	71757	34572	25663	44941
+osgi__org.osgi.framework	C/C++ header	42	0	0	0
+osgi__org.osgi.framework	C	451	0	0	0
+osgi__org.osgi.framework	Java	278437	42590	36452	126453
+quik-sms__quik	Java	161341	14364	9190	15932
+varunu28__LeetCode-Java-Solutions	Java	322079	0	0	94244
+drogonframework__drogon	C/C++ header	123608	41564	28386	67756
+drogonframework__drogon	C++	312153	91854	84297	155978
+drogonframework__drogon	C	1775	0	0	0
+glmark2__glmark2	Java	8365	138	138	2873
+glmark2__glmark2	C/C++ header	249831	24316	8054	27325
+glmark2__glmark2	C	401911	57401	31938	57438
+glmark2__glmark2	C++	109022	14882	12690	36319
+gitlab.inria.fr__pallas__benchmarks__Dyablo	C/C++ header	69985	6463	6344	30574
+gitlab.inria.fr__pallas__benchmarks__Dyablo	C++	85341	5966	4555	29030
+unhappychoice__gittype	Rust	524976	1721	1559	199386
+espanso__espanso	Rust	239391	189563	18669	204096
+espanso__espanso	C/C++ header	7364	4800	1139	4931
+espanso__espanso	C++	118159	22239	9328	22633
+espanso__espanso	C	12679	10392	2530	10392
+gitlab.freedesktop.org__xorg__driver__xf86-video-r128	C/C++ header	10051	1219	1065	1377
+gitlab.freedesktop.org__xorg__driver__xf86-video-r128	C	45245	11180	11511	14831
+riscv__sail-riscv	C	104246	102373	728	102611
+riscv__sail-riscv	C/C++ header	49900	11175	2105	12881
+riscv__sail-riscv	C++	61565	9834	9870	13498
+getomnico__omni	Rust	621658	19336	16333	242505
+sfall-team__sfall	C++	242705	71293	65463	146649
+sfall-team__sfall	C/C++ header	86339	13737	11907	24511
+imixs__imixs-workflow	Java	228522	7198	6634	168600
+rust-rosetta__rust-rosetta	Rust	228878	68028	55574	95171
+apache__johnzon	Java	384433	61651	55548	152481
+flatpak__xdg-desktop-portal	C	171810	54430	46349	79997
+flatpak__xdg-desktop-portal	C/C++ header	6142	1535	1298	3051
+apache__commons-daemon	C	74157	21293	13670	31145
+apache__commons-daemon	C/C++ header	4718	418	354	663
+apache__commons-daemon	Java	12556	5369	3813	6034
+git.savannah.gnu.org__git__mes	C	110250	5403	3956	59784
+git.savannah.gnu.org__git__mes	C/C++ header	17605	1459	949	9213
+nomad__nomad	Rust	225264	70	35	111463
+egraphs-good__egglog	Rust	494298	102062	99884	212001
+amzn__amzn-drivers	C/C++ header	64764	14015	10377	18579
+amzn__amzn-drivers	C	210146	60735	56152	84325
+mjakeman__extension-manager	C	66605	13148	11443	24529
+mjakeman__extension-manager	C/C++ header	5053	585	379	837
+mchalupa__dg	C++	233904	16901	18077	129096
+mchalupa__dg	C/C++ header	130630	12299	8496	81883
+mchalupa__dg	C	14375	11562	2872	11661
+confluentinc__rest-utils	Java	140482	42470	38175	57499
+xland__ScreenCapture	C++	66215	1857	1791	14934
+xland__ScreenCapture	C/C++ header	7642	237	193	1369
+xland__ScreenCapture	C	30465	0	0	0
+GNOME__gnome-robots	Rust	28905	52	61	4823
+openvanilla__openvanilla	C++	12947	1353	1065	2994
+openvanilla__openvanilla	C/C++ header	28437	800	668	2521
+evilsocket__cake	Rust	405483	6921	6011	127581
+evilsocket__cake	C/C++ header	63	0	0	0
+orbitinghail__graft	C/C++ header	24	0	0	3
+orbitinghail__graft	Rust	75802	455	100	38350
+gioblu__PJON	C++	8274	1448	918	2142
+gioblu__PJON	C/C++ header	41695	9021	6754	23015
+laruence__yaf	C	66810	5604	5620	43922
+laruence__yaf	C/C++ header	11104	284	352	4795
+rednblkx__HomeKey-ESP32	C	1452	0	0	25
+rednblkx__HomeKey-ESP32	C/C++ header	806	12	12	259
+rednblkx__HomeKey-ESP32	C++	89940	1426	1365	42900
+gitlab.eclipse.org__eclipse__openk-usermodules__org.eclipse.openk-usermodules.gridFailureInformation.backend	Java	200400	78400	65260	108709
+FuelLabs__sway-applications	Rust	151918	36263	32757	71008
+chaos__pdsh	C	68966	19403	10739	33625
+chaos__pdsh	C/C++ header	3403	718	607	1401
+thp__psmoveapi	C	26584	6276	6140	13661
+thp__psmoveapi	C++	204790	3807	3140	71500
+thp__psmoveapi	C/C++ header	23887	754	698	15927
+oxidecomputer__dropshot	Rust	207478	42563	40478	66487
+okta__okta-auth-java	Java	33052	2629	1536	14354
+gitlab.eclipse.org__eclipsefdn__software-dev__websites__eclipse.org	Java	15820	0	0	0
+ksnip__ksnip	C++	95392	6962	4736	57916
+ksnip__ksnip	C/C++ header	36542	1397	1023	14484
+fr3ts0n__AndrOBD	Java	121888	14523	7132	41465
+invent.kde.org__teams__kde-turkey__teknik-isler__klettres	C++	7172	2993	2950	5436
+invent.kde.org__teams__kde-turkey__teknik-isler__klettres	C/C++ header	908	192	193	449
+saltpi__iPlay	C/C++ header	84484	0	0	68
+saltpi__iPlay	C++	4615	0	0	1066
+saltpi__iPlay	Java	161607	0	0	38333
+baskerville__plato	C	155	0	0	57
+baskerville__plato	Rust	320278	6899	6923	160062
+jtothebell__fake-08	C/C++ header	76211	192	190	14152
+jtothebell__fake-08	C++	165613	4154	3498	66877
+jtothebell__fake-08	C	50568	0	0	12
+jzarnett__ece459	C++	440	0	0	0
+jzarnett__ece459	C	1050	0	0	0
+jzarnett__ece459	C/C++ header	1542	0	0	0
+jzarnett__ece459	Rust	17463	832	1234	4404
+proptest-rs__proptest	Rust	187780	43823	37368	80393
+lumapu__ahoy	C/C++ header	114175	28400	14638	73129
+lumapu__ahoy	C++	15439	1693	1245	6034
+KDE__akonadiconsole	C++	44783	26199	19365	30695
+KDE__akonadiconsole	C/C++ header	5627	2567	2074	2831
+KDE__kdev-valgrind	C++	18157	5530	5356	11089
+KDE__kdev-valgrind	C/C++ header	5003	1082	1089	2615
+rust-ndarray__ndarray-linalg	Rust	103412	19291	17652	62203
+gregkh__usbutils	C/C++ header	21178	16869	16856	17244
+gregkh__usbutils	C	46880	15509	13070	23378
+patrikhuber__eos	C++	87514	4240	3440	52362
+agersant__polaris	Rust	82939	2976	2717	50568
+GNOME__loupe	Rust	83748	7523	6840	42697
+rust-ndarray__ndarray	Rust	279213	90737	84849	155091
+indexmap-rs__indexmap	Rust	101726	16586	22196	42270
+Soundux__Soundux	C/C++ header	4	0	0	0
+Soundux__Soundux	C++	40989	2329	1837	23715
+fosskers__aura	Rust	63224	672	613	37435
+ouch-org__ouch	Rust	57968	22907	21416	30548
+cztomczak__cefpython	C++	19135	1592	1567	6679
+cztomczak__cefpython	C/C++ header	116104	2985	2137	55142
+svenstaro__genact	Rust	23950	5456	4165	15412
+dheijl__swyh-rs	Rust	81697	2849	2663	43525
+aurae-runtime__aurae	Rust	90536	21237	17785	34499
+audulus__rui	Rust	127448	5597	4749	74063
+IBM__spnl	Rust	84381	735	405	33677
+agherzan__meta-raspberrypi	C/C++ header	22	0	0	0
+ZG089__Re-Malwack	C++	3909	0	0	207
+ZG089__Re-Malwack	C/C++ header	2415	0	0	0
+ZG089__Re-Malwack	C	9272	0	0	0

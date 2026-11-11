@@ -158,6 +158,13 @@ output hash, the cost and the time.
 Both targets need the Nix dev shell: `nix develop`. Then run `make help`.
 `make flake-check` proves that the shell has the tool store paths of the dataset build.
 
+## The line method against the token method
+
+`token-vs-line-report.md` compares the line method (`git blame` of the source file) with the token method of
+TOM on a simple random sample of 250 projects of TOM 1.0.0. With plain `git blame`, 19.3% of the tokens (project
+mean; 95% interval 17.3% to 21.3%) have another author than in TOM. The scripts, the draw, the result tables and
+the commands are in `steps/token-vs-line/`.
+
 ## Status of this version
 
 Some parts are not ready. Each target that is not ready prints `not ready: <reason>` and exits
@@ -180,6 +187,7 @@ with a non-zero status. `REPRODUCE.md` lists what is left.
 | `scripts/` | The helper scripts of the Makefile. |
 | `data/SHA256SUMS` | The sha256 of each file of the final root of TOM (8,628 rows: 8,598 project files and the other files). |
 | `data/REBUILD-TARGETS.tsv` | For each of the 8,449 project files of the first revision: the run record, the target sha256 values of `rebuild-one`, the sha256 in the source root and the published sha256 in the final root. |
+| `token-vs-line-report.md` | The report of the run of the line method against the token method on 250 random projects (method, results with and without the cut projects, causes, limits). Its step is `steps/token-vs-line/`. |
 | `HUMAN-CHECKS.md` | For each step: what is automatic or AI-proposed, what a human checked, and the measured result. |
 | `ANONYMIZATION-TODO.md` | Identifying text to remove before the anonymous mirror. |
 

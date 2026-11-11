@@ -1,0 +1,9 @@
+value	projects	mean	mean_lo	mean_hi	median	median_lo	median_hi
+token author diff, line plain %	19	21.92	15.20	29.41	19.78	10.66	26.90
+token author diff, line -w -M -C %	19	17.27	12.48	22.36	17.96	10.71	20.86
+token commit diff, line plain %	19	47.66	42.02	52.95	49.04	44.23	53.36
+token organization diff, line plain %	19	13.14	7.93	19.07	9.93	4.42	17.70
+file top-1 author same %	19	83.85	76.04	90.80	91.43	85.62	93.64
+project author TVD pp	19	13.57	8.91	18.68	8.52	6.85	16.55
+project organization TVD pp	19	6.91	3.89	10.46	5.29	1.01	10.06
+project author Spearman	19	0.87	0.83	0.91	0.86	0.83	0.94

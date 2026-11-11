@@ -1,0 +1,19 @@
+key	value
+run	token-vs-line-1
+start_utc	2026-11-10T16:54:46Z
+end_utc	2026-11-11T06:11:00Z
+elapsed_h	13.271
+cap_h	14
+cap_reached	1
+jobs	60
+limits_s	plain 1800, w 1800, wmc 600
+git	git version 2.50.1
+python	3.12.14
+duckdb	1.5.5
+release_root	dataset-release/dataset-v1.0.0-tom-5/root
+root_sums_sha256	ea2052f7ce8b764d4e54a940d71f3fd8d04b827b2db08a4d2dc0c38f7dcbf48d
+kit_sums_sha256	fcb5325676a472b076a2c825f09494ab003824db44448c4e5b9abfc6cd90afff
+nproc	64
+instance_type	m6id.16xlarge
+repair_utc	2026-11-11T06:20:13Z
+repaired_projects	OpenNuvoton__NUC970_Linux_Kernel unicode-org__icu4x

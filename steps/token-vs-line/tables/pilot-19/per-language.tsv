@@ -1,0 +1,37 @@
+project	lang	tokens	author_diff	author_diff_wmc	commit_diff
+tio__tio	C	31973	7141	6527	17311
+tio__tio	C/C++ header	1482	155	149	684
+lh3__bwa	C	121019	7013	7065	47466
+lh3__bwa	C/C++ header	9967	558	540	3372
+nemuTUI__nemu	C	102556	27958	25569	66036
+nemuTUI__nemu	C/C++ header	8074	1806	1681	4133
+GNOME__evolution-activesync	C	156017	93248	56255	113041
+GNOME__evolution-activesync	C/C++ header	14230	5224	3379	6118
+DK22Pac__plugin-sdk	C++	673174	92707	71563	206664
+DK22Pac__plugin-sdk	C/C++ header	2369593	294220	193043	553989
+DK22Pac__plugin-sdk	C	1592912	144	144	144
+biologist79__ESPuino	C++	87849	51134	40050	55117
+biologist79__ESPuino	C/C++ header	10377	3758	3111	5477
+thliebig__openEMS	C/C++ header	34762	4181	4219	12497
+thliebig__openEMS	C++	153796	18754	16625	84234
+jp7677__dxvk-nvapi	C/C++ header	45502	9768	8756	20084
+jp7677__dxvk-nvapi	C++	260125	38095	30435	142993
+swoole__phpx	C/C++ header	73608	2703	3051	19998
+swoole__phpx	C	114833	0	0	836
+swoole__phpx	C++	275695	13757	12352	93792
+grpc-ecosystem__grpc-spring	Java	108748	25107	21208	44958
+beemdevelopment__Aegis	Java	182107	36013	32707	83556
+eclipse-tm4e__tm4e	Rust	778	0	0	0
+eclipse-tm4e__tm4e	C	352	0	0	0
+eclipse-tm4e__tm4e	C++	378	0	0	0
+eclipse-tm4e__tm4e	Java	293071	96660	72808	152764
+influxdata__influxdb-client-java	Java	565276	57743	29567	277198
+Adyen__adyen-java-api-library	Java	3015188	1223413	951381	1394288
+taiki-e__cargo-llvm-cov	Rust	46518	4966	4989	23577
+taiki-e__cargo-llvm-cov	C	27	0	0	13
+taiki-e__cargo-llvm-cov	C++	39	0	0	23
+dtolnay__proc-macro2	Rust	48047	10018	10024	25732
+ormsgpack__ormsgpack	Rust	51112	7700	7222	21774
+jdrouet__mrml	Rust	154182	1749	1506	71955
+github__copilot-sdk	Rust	871873	356372	248573	435692
+github__copilot-sdk	Java	828336	228131	95608	316393

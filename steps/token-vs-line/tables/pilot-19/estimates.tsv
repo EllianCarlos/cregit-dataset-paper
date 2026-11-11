@@ -1,0 +1,37 @@
+estimate	group	projects	project_mean	low95	high95	weighted	weighted_low95	weighted_high95
+another author, plain line blame	all	19	21.9206	14.0950	29.7462	22.1090	10.6599	35.4678
+another author, line blame -w	all	19	19.2811	13.1912	25.3710	19.7157	8.5625	32.2988
+another author, line blame -w -M -C	all	19	17.2712	11.7638	22.7786	15.9312	7.6302	26.7317
+another commit, plain	all	19	47.6624	41.7057	53.6192	34.9647	23.4166	48.9782
+another commit, -w -M -C	all	19	41.9643	36.3061	47.6225	27.4281	17.9435	41.1475
+another organization, plain	all	19	13.1449	6.9898	19.3000	9.3506	2.6516	17.2169
+another organization, -w -M -C	all	19	10.3114	5.7760	14.8467	6.8762	1.9469	13.4623
+another author, plain line blame	keep	19	21.9206	14.0950	29.7462	22.1090	10.6599	35.4678
+another author, line blame -w	keep	19	19.2811	13.1912	25.3710	19.7157	8.5625	32.2988
+another author, line blame -w -M -C	keep	19	17.2712	11.7638	22.7786	15.9312	7.6302	26.7317
+another commit, plain	keep	19	47.6624	41.7057	53.6192	34.9647	23.4166	48.9782
+another commit, -w -M -C	keep	19	41.9643	36.3061	47.6225	27.4281	17.9435	41.1475
+another organization, plain	keep	19	13.1449	6.9898	19.3000	9.3506	2.6516	17.2169
+another organization, -w -M -C	keep	19	10.3114	5.7760	14.8467	6.8762	1.9469	13.4623
+code lines with tokens from 2 or more authors, %	all	19	17.2175	12.3141	22.1208			
+code lines with tokens from 2 or more authors, %	keep	19	17.2175	12.3141	22.1208			
+files with the same top author (tokens against plain lines), %	all	19	83.8465	75.7059	91.9871			
+files with the same top author (tokens against plain lines), %	keep	19	83.8465	75.7059	91.9871			
+files with the same top-3 author set, plain, %	all	19	58.7374	46.2335	71.2414			
+files with the same top-3 author set, plain, %	keep	19	58.7374	46.2335	71.2414			
+files with the same top author, -w -M -C, %	all	19	90.7526	86.4945	95.0107			
+files with the same top author, -w -M -C, %	keep	19	90.7526	86.4945	95.0107			
+project: author share TVD, plain, pp	all	19	13.5696	8.1003	19.0389			
+project: author share TVD, plain, pp	keep	19	13.5696	8.1003	19.0389			
+project: author share TVD, -w -M -C, pp	all	19	8.4156	5.7570	11.0743			
+project: author share TVD, -w -M -C, pp	keep	19	8.4156	5.7570	11.0743			
+project: author share Spearman, plain	all	19	0.8699	0.8258	0.9139			
+project: author share Spearman, plain	keep	19	0.8699	0.8258	0.9139			
+project: same top author, plain, share of projects	all	19	73.6842	51.9061	95.4623			
+project: same top author, plain, share of projects	keep	19	73.6842	51.9061	95.4623			
+project: organization share TVD, plain, pp	all	19	6.9079	3.2444	10.5713			
+project: organization share TVD, plain, pp	keep	19	6.9079	3.2444	10.5713			
+project: organization share Spearman, plain	all	19	0.9176	0.8510	0.9841			
+project: organization share Spearman, plain	keep	19	0.9176	0.8510	0.9841			
+project: same top organization, share of projects	all	19	94.7368	83.6933	100.0000			
+project: same top organization, share of projects	keep	19	94.7368	83.6933	100.0000			
