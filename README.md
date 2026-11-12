@@ -148,7 +148,9 @@ Open a snapshot at `https://archive.softwareheritage.org/<snapshot>`.
 - Host: Hugging Face (2026-11-07), public from the start.
 - Third-party sources: `THIRD-PARTY.md` of the release gives each source and its license or
   terms. This repository holds copies of some third-party files and web pages: `LICENSE-DATA`
-  lists them.
+  lists them with their terms. The Zenodo record of this package leaves out the raw third-party
+  copies (the `export-ignore` lines of `.gitattributes`, 201 files); they stay in the GitHub
+  repository.
 - The commit SHAs (`tools.lock`, `sync/sources.tsv`) and the tool bundles are published.
 - Anonymous release: for the blind review, the user's own repositories go out as an
   anonymous release (one anonymous export commit; the user pushes it).

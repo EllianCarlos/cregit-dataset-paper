@@ -98,6 +98,8 @@ fi
 
 # Check: git blob id and file mode of every listed file.
 fail=0
+left=0
+source "$root/scripts/left-out.sh"
 tmp=$(mktemp)
 trap 'rm -f "$tmp"' EXIT
 grep -v '^#' "$list" | cut -f3,4,6 > "$tmp"
@@ -105,6 +107,7 @@ grep -v '^#' "$list" | cut -f3,4,6 > "$tmp"
 patched() { [ -f "$plist" ] && awk -F'\t' -v d="$1" '!/^#/ && $1 == d { w = $3; f = 1 } END { if (f) print w; exit !f }' "$plist"; }
 while IFS=$'\t' read -r gmode blob dest; do
   f="$root/$dest"
+  if [ ! -f "$f" ] && left_out "$dest"; then left=$((left + 1)); continue; fi
   if [ ! -f "$f" ]; then echo "MISSING $dest"; fail=1; continue; fi
   if want=$(patched "$dest"); then
     got=$(sha256sum < "$f" | cut -d' ' -f1)
@@ -125,6 +128,7 @@ trap 'rm -f "$tmp" "$utmp"' EXIT
 if [ -f "$ulist" ]; then grep -v '^#' "$ulist" | cut -f4,6 > "$utmp"; fi
 while IFS=$'\t' read -r want dest; do
   f="$root/$dest"
+  if [ ! -f "$f" ] && left_out "$dest"; then left=$((left + 1)); continue; fi
   if [ ! -f "$f" ]; then echo "MISSING $dest"; fail=1; continue; fi
   got=$(sha256sum < "$f" | cut -d' ' -f1)
   if [ "$got" != "$want" ]; then echo "CHANGED $dest (sha256 $got, want $want)"; fail=1; fi
@@ -145,4 +149,5 @@ if [ -n "$extra" ]; then
 fi
 
 n=$(wc -l < "$tmp"); u=$(wc -l < "$utmp")
+[ "$left" -eq 0 ] || echo "SKIP: $left files are not here (left out of the Zenodo zip by .gitattributes; they are in the GitHub repository)"
 if [ "$fail" -eq 0 ]; then echo "OK: $n files match sources.tsv, $u files match untracked.tsv"; else echo "FAIL: see the lines above"; exit 1; fi

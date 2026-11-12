@@ -151,7 +151,11 @@ Web captures (user decision, 2026-10-25): the release publishes the fetched thir
 and files that the stages read (`rosters/raw/`, `sources/company-pages/raw/`, the Spinellis
 tarball), each with its URL, its fetch date and its sha256. They are third-party content, so
 `THIRD-PARTY.md` gives a license note for each source. This repository holds copies of some
-third-party files and web pages: `LICENSE-DATA` lists them.
+third-party files and web pages: `LICENSE-DATA` lists them. The Zenodo record of this package (the zip of
+a git tag) leaves out the raw third-party copies (the captured pages, the GitLab and GitHub API answers and
+the project texts read with the GitHub API; the `export-ignore` lines of `.gitattributes`, 201 files). They
+stay in the GitHub repository. In the zip, `make stage-hashes` and `make sync-check` skip them, and the
+steps that read them (S1, S2, the DP8L audit) need the GitHub repository.
 
 `make stage-hashes` checks every value in this table that is not marked "copy".
 `make select` prints "not ready": the offline replay of S4-S6 is not wired into one command yet.

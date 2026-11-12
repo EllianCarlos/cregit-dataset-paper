@@ -7,6 +7,8 @@ The copies of ctp (cregit-token-pipeline) and the cregit fork are under GPL-3.0-
 tools/ctp/, tools/cregit/, the parquet_rename*.py files of steps/release-passes/pass-1/ and
 pass-2/, and pipeline/s7-run/runner/dataset-x1k/stage/ctp-no-firm.patch.
 
+The third-party files below are not under CC BY 4.0 by the authors. Each group gives its terms.
+
 Third-party files with open licenses:
 - pipeline/sources/spinellis-2020/companies.csv and org_links.csv: adapted from Spinellis et
   al. (2020), "Enterprise-Driven Open Source Software", Zenodo,
@@ -17,32 +19,59 @@ Third-party files with open licenses:
   https://github.com/cncf/landscape, CC BY 4.0.
 - steps/linux-validation/ (sources-raw.md, source_tables.csv, comparison_*.csv,
   main_table.*, paper-snippet.tex, RESULTS.md): tables from LWN.net articles,
-  Copyright Eklektix, Inc., CC BY-SA 4.0 (sources-raw.md names each article).
+  Copyright Eklektix, Inc., CC BY-SA 4.0 (sources-raw.md names each article). These files hold
+  the LWN tables or tables made from them, so they are under CC BY-SA 4.0 (share-alike), not
+  under CC BY 4.0.
 - pipeline/s3-measure/languages.yml: GitHub Linguist, MIT License,
   Copyright (c) 2017 GitHub, Inc.
 - pipeline/rosters/raw/asf/projects.json: projects.apache.org, Apache License 2.0,
   The Apache Software Foundation.
 
-The use of some copied third-party files can be limited by their sources:
-- pipeline/s2-pool/v2/pages/ (URLs in fetch.tsv): Savannah pages of the projects 3dldf, a2ps,
-  acm, alive, apl, aris, artanis, auctex, autoconf, autoconf-archive, autogen, automake, avl,
-  barcode, bash, bayonne, bison, c-intro-and-ref, ccd2cue, cflow and cgicc, and the Savannah
-  page UsingGit; gnu.org pages of anubis and automake; pages of Carvel, CCADB, CNTT, FAIR
-  Package Manager, OACA, OSGeo4W, rasdaman, Score and bioweka (SourceForge).
-- pipeline/sources/company-pages/browser/*.txt (URLs in done.tsv and done_websites.tsv): pages
+Third-party files whose use can be limited by their sources (the terms of each source apply):
+- Captured web pages. pipeline/s2-pool/v2/pages/ (URLs in fetch.tsv): Savannah pages of the
+  projects 3dldf, a2ps, acm, alive, apl, aris, artanis, auctex, autoconf, autoconf-archive,
+  autogen, automake, avl, barcode, bash, bayonne, bison, c-intro-and-ref, ccd2cue, cflow and
+  cgicc, and the Savannah page UsingGit; gnu.org pages of anubis and automake; pages of Carvel,
+  CCADB, CNTT, FAIR Package Manager, OACA, OSGeo4W, rasdaman, Score and bioweka (SourceForge).
+  pipeline/sources/company-pages/browser/*.txt (URLs in done.tsv and done_websites.tsv): pages
   of Advanced Micro Devices, Akamai, Allstate, Analog Devices, Aurora Mobile, Avnet, Ball, Box,
   Despegar, EPAM Systems, Etsy, GoDaddy, Groupon, Hewlett Packard Enterprise, Home Depot,
   Instructure, Lenovo, Marvell, MicroStrategy, NetApp, Nokia, Oracle, Orange, PayPal,
-  Salesforce, SurveyMonkey (SVMK), T-Mobile US, trivago, Upwork and Wix.com.
-- steps/linux-validation/ (the same files): the tables of the Linux Foundation reports "2020
-  Linux Kernel History Report" and "2017 Linux Kernel Development Report".
-- pipeline/s4-filter/dp8l-audit/raw/spdx/: the SPDX License List data (spdx/license-list-data).
-- pipeline/s4-filter/dp8l-audit/raw/readme.jsonl.xz, package_blobs.jsonl.xz and
-  manual_checks.jsonl.xz: files of the projects named in the records, read with the GitHub API.
-- sample/data/parquet/: the text of each project (column license gives its license).
+  Salesforce, SurveyMonkey (SVMK), T-Mobile US, trivago, Upwork and Wix.com. Terms: the terms of
+  each web site.
+- GitLab API answers. pipeline/s2-pool/gitlab/rows/*.jsonl: the project rows of the GitLab hosts
+  of the pool (gitlab.com and the self-hosted GitLab instances that the file names give).
+  Terms: the API terms of each host (for gitlab.com, the GitLab API Terms).
+- GitHub API answers. pipeline/s1-search/repos.jsonl.xz (the search results),
+  pipeline/sources/company-orgs/repos.jsonl.xz and orgs.jsonl (the repository lists of the
+  company organizations), pipeline/s2-pool/resolve.jsonl.xz and resolve_rest.jsonl (the
+  repository look-ups), and the tree listings of pipeline/s4-filter/dp8l-audit/raw/
+  (root_tree, frame_roots, frame_roots_rest, tree_recursive.extract, license_folders,
+  frame_license_folders .jsonl.xz). Terms: the GitHub Terms of Service and the GitHub
+  Acceptable Use Policies (information usage).
+- Texts of project files read with the GitHub API. pipeline/s4-filter/dp8l-audit/raw/
+  readme.jsonl.xz, package_blobs.jsonl.xz and manual_checks.jsonl.xz: README, package and
+  license files of the projects named in the records. Terms: the license of each project.
+- Rosters. pipeline/rosters/*.csv and *.method.md: facts from the web pages of the foundation
+  rosters (each row gives its source URL). Terms: the terms of each web site.
+- cncf/gitdm. The rows of tools/ctp/data/affiliation.merged.csv whose source is gitdm,
+  cncf-gitdm or cncf-gitdm-single come from https://github.com/cncf/gitdm. That repository gives
+  no license for its data (its code is GPL-2.0, src/COPYING). The GPL-3.0-or-later of the ctp
+  copy does not change the terms of these rows.
+- SPDX. pipeline/s4-filter/dp8l-audit/raw/spdx/: the SPDX License List data
+  (https://github.com/spdx/license-list-data, tag v3.29.0). Terms: the terms of the SPDX project.
+- Samples. sample/data/parquet/: the source text of 36 projects. Each file keeps the license of
+  its project (column license; 9 of the 36 have NOASSERTION, no license was found).
 THIRD-PARTY.md of the release (https://huggingface.co/datasets/elliancarlos/token-on-me) gives
 the sources of the facts in the data of the authors (GitHub, GitLab, Wikidata, GLEIF, SEC
 EDGAR, cncf/gitdm, the foundation rosters) and their terms.
+
+The Zenodo record of this package (the zip of a git tag) leaves out the captured web pages,
+the GitLab API answers, the GitHub API answers and the texts of project files read with the
+GitHub API above: the export-ignore lines of .gitattributes give the paths (201 files). These
+files stay in the GitHub repository (https://github.com/EllianCarlos/cregit-dataset-paper). In
+the zip, make stage-hashes and make sync-check skip them. The zip keeps the rosters, the
+cncf/gitdm rows, the SPDX data, the samples and steps/linux-validation/.
 
 -----------------------------------------------------------------------
 

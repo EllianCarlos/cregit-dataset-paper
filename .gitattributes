@@ -5,3 +5,15 @@
 sample/data/parquet/*.parquet filter=lfs diff=lfs merge=lfs -text
 sample/data/organizations/*.parquet filter=lfs diff=lfs merge=lfs -text
 sample/data/organizations/*.duckdb filter=lfs diff=lfs merge=lfs -text
+
+# Left out of the Zenodo zip (git archive) of the replication package (user decision 2026-11-12): the raw
+# third-party copies. They stay in the GitHub repository. LICENSE-DATA names them and their terms.
+/pipeline/s2-pool/v2/pages/** export-ignore
+/pipeline/sources/company-pages/browser/*.txt export-ignore
+/pipeline/s2-pool/gitlab/rows/** export-ignore
+/pipeline/s1-search/repos.jsonl.xz export-ignore
+/pipeline/sources/company-orgs/repos.jsonl.xz export-ignore
+/pipeline/sources/company-orgs/orgs.jsonl export-ignore
+/pipeline/s2-pool/resolve.jsonl.xz export-ignore
+/pipeline/s2-pool/resolve_rest.jsonl export-ignore
+/pipeline/s4-filter/dp8l-audit/raw/*.jsonl.xz export-ignore
