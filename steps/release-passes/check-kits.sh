@@ -8,7 +8,8 @@
 #   the rows whose note says which value was replaced.
 # - PASS/SHA256SUMS must have the sha256 of the staged list (the row SHA256SUMS of KITS.tsv).
 # - A pass name of KITS.tsv that is not in the list below (pass-5-integrity, pass-5-machine,
-#   pass-5-domainfix) has no staged list: only its copies are checked.
+#   pass-5-domainfix, pass-6-machine, pass-6-integrity, pass-6-domainfix, pass-6-run-inputs,
+#   pass-6-project-run) has no checked staged list: only its copies are checked.
 # It needs no network and no data outside this repository.
 set -euo pipefail
 
@@ -16,7 +17,7 @@ here=$(cd "$(dirname "$0")" && pwd)
 top=$(cd "$here/../.." && pwd)
 kits=$here/KITS.tsv
 fail=0
-for p in pass-1 pass-2 pass-3 pass-4-doi pass-5-revision; do
+for p in pass-1 pass-2 pass-3 pass-4-doi pass-5-revision pass-6-freeswitch; do
   want=$(awk -F'\t' -v p="$p" '$1 == p && $2 != "SHA256SUMS" { print $3 "  " $2 }' "$kits" | sort)
   got=$(sort "$here/$p/SHA256SUMS")
   if [ "$want" = "$got" ]; then

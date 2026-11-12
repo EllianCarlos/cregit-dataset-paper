@@ -1,0 +1,33 @@
+{
+ "signalwire__freeswitch": {
+  "clone_url": "https://github.com/signalwire/freeswitch.git",
+  "provenance_status": "frame:frame.layer1.csv@sha256:517a3b8d8567",
+  "source": "search",
+  "stratum": "unknown",
+  "fact": "",
+  "contested": "",
+  "label_date": "2026-10-09",
+  "owner": "signalwire",
+  "repo": "freeswitch",
+  "roster_name": "",
+  "roster_lang": "",
+  "language": "C",
+  "commits": "36204",
+  "size_class": "M",
+  "size_kb": "",
+  "stars": "5207",
+  "pushed_at": "2026-10-02T21:44:53Z",
+  "license": "NOASSERTION",
+  "owner_type": "Organization",
+  "archived": "False",
+  "fork": "False",
+  "history_cluster": "",
+  "history_shared_with": "",
+  "history_relation": "",
+  "history_includes": "",
+  "history_first": "",
+  "history_created": "",
+  "manifest_category": "pending",
+  "file_mask": "(?i)\\.(c|c\\+\\+|cc|cp|cpp|cxx|h|h\\+\\+|hh|hpp|hxx|java|rs|tcc)$"
+ }
+}

@@ -11,7 +11,7 @@ run used it, how to run it, and what is not here.
 | `final-write/` | The one write of each project file: the organization columns and the pseudonyms. | yes |
 | `release-root/` | The release root: the project files, the organization tables, the documents, `MANIFEST.tsv`, `SHA256SUMS` and `ledgers.parquet`. | yes |
 | `reencode/` | The record of the re-encode of the project files with pyarrow (the bytes change, the data does not). | yes |
-| `release-passes/` | The five release passes of TOM 1.0.0 (pass 5 makes the revision, with its integrity check): the subset of the tokei rule, the column changes (71 -> 61 -> 53 columns), the value fills, the side tables, the DOI pass, the uploads to Hugging Face. Also `tools/fill_release.py` of the TOM root, the value-fix scripts and the proof of the direct 53-column write. | yes |
+| `release-passes/` | The five release passes of TOM 1.0.0 (pass 5 makes the revision, with its integrity check) and pass 6, the root of TOM 1.1.0 (the 8,598 files of 1.0.0 and `signalwire__freeswitch`, with its project run): the subset of the tokei rule, the column changes (71 -> 61 -> 53 columns), the value fills, the side tables, the DOI pass, the uploads to Hugging Face. Also `tools/fill_release.py` of the TOM root, the value-fix scripts and the proof of the direct 53-column write. | yes |
 | `selection-funnel/` | The selection funnel of the revision of TOM 1.0.0: the tokei rule, GitLab in the pool, the copy check, the 149 new projects. | yes (the project list) |
 | `new-projects/` | The run of the 149 new projects of the revision with the tool chain of TOM (the kit, the gate, the defects of the kit found in the run). | yes (the new project files) |
 | `license-pass/` | The license scan of the revision (ScanCode and fixed rules), the column values, the side table `project_licenses` and the hand check of 100 new values. | yes (the `license` values) |
@@ -25,7 +25,8 @@ The order of the steps: `organizations/` (database and links), `final-write/`,
 (`release-root/`). That root (10,754 project files, 71 columns) is the source root of the
 release passes. Then `release-passes/`: passes 1 to 3 make the files of TOM 1.0.0, and pass 4 (the DOI pass) the root of the
 first revision (8,449 project files, 53 columns). Pass 5 makes the final revision from that root,
-`new-projects/` and `license-pass/` (8,598 project files). `error-model/`, `language-selection/`
+`new-projects/` and `license-pass/` (8,598 project files). Pass 6 makes TOM 1.1.0 from that root and one
+project run with a fixed cregit (8,599 project files). `error-model/`, `language-selection/`
 and `linux-validation/` hold evidence only; `full-history-pilot/` is future work. The keep list of
 pass 1 comes from `language-selection/tokei/`.
 

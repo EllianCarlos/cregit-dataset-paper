@@ -1,0 +1,4 @@
+kit dataset-tom-6 2026-11-11T02:20:36Z: tools 22d3330ddc52;
+ctp value tool e9c7656e59c1; license pass 0f9b8ad; base SHA256SUMS ea2052f7ce8b;
+inputs: 1 new projects, audit flag and domain error row put by P2;
+docs 13 files, 25 placeholder keys

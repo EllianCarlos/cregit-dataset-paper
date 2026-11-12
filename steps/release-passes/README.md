@@ -1,8 +1,9 @@
-# The release passes of Token on Me (TOM) 1.0.0
+# The release passes of Token on Me (TOM) 1.0.0 and 1.1.0
 
 The dataset "Token on Me" (TOM), version 1.0.0, is on Hugging Face
 (`elliancarlos/token-on-me`, public). Four release passes made its root from the source root. A fifth pass (done on 2026-11-09)
-made the revision of TOM 1.0.0 (`pass-5-revision/`).
+made the revision of TOM 1.0.0 (`pass-5-revision/`). A sixth pass (done on 2026-11-11) made TOM 1.1.0: the 8,598 files of
+that revision and `signalwire__freeswitch` (`pass-6-freeswitch/`).
 The source root has 10,754 project files (ctp schema 2, 71 columns). It is the output of the
 steps `../final-write/`, `../release-root/` and `../reencode/`. Each pass reads the root of the
 step before it, writes a new root and does not change its input. Each pass ran unattended on one
@@ -16,16 +17,17 @@ uploads.
 | `pass-3/` | the root of pass 2 | Proves a rule on every row of every file, then drops 8 more columns (61 -> 53). Moves `roster_lang` to `project_facts` (fact type `roster_language`). | 8,449 project files, 53 columns |
 | `pass-4-doi/` | the root of pass 3 | Documents only: puts the DOI `10.57967/hf/11505` and the date into the documents and removes 3 documents. The project files do not change. | the final root: 8,475 rows in `SHA256SUMS` (`b7141d088461...`) |
 | `pass-5-revision/` | the root of pass 4 and the 149 new project files of `../new-projects/` | Done on 2026-11-09 (17:00 UTC). Adds the 149 new projects (8,598) and their 31 new domain rows. Writes the license values of `../license-pass/` (SPDX expressions) and the side table `project_licenses`. New documents. A new revision of the same Hugging Face repository. Then the integrity check adds `docs/INTEGRITY.md` and `docs/integrity.tsv`. | the root of the revision: 8,598 project files, 53 columns, 31,603,701,581 rows; 8,628 rows in `SHA256SUMS` (`ea2052f7ce8b...`), Hugging Face revision `5e20f9ff2a18` |
+| `pass-6-freeswitch/` | the final root of pass 5 and the project file of `signalwire__freeswitch` (`pass-6-freeswitch/project-run/`, cregit `e1e7d94` and `c879bd3`) | Done on 2026-11-11. Copies the 8,598 project files without a change, adds the new file and its rows of the side tables (1 new domain row), the license value of a hand check (`MPL-1.1`), the documents of 1.1.0, then the integrity check. | TOM 1.1.0: 8,599 project files, 31,610,939,708 rows; 8,629 rows in `SHA256SUMS` (`352111c7ffe8...`) |
 
 The folders of this step:
 
 | Folder | Contents |
 |---|---|
-| `pass-1/`, `pass-2/`, `pass-3/`, `pass-4-doi/`, `pass-5-revision/` | The staged kit of each pass: its configuration, its driver, its Python tools, the staged list `SHA256SUMS` and the stage note `SOURCE`. A README for each pass. |
+| `pass-1/`, `pass-2/`, `pass-3/`, `pass-4-doi/`, `pass-5-revision/`, `pass-6-freeswitch/` | The staged kit of each pass: its configuration, its driver, its Python tools, the staged list `SHA256SUMS` and the stage note `SOURCE`. A README for each pass. |
 | `fill-release/` | `tools/fill_release.py` of the TOM root (53 columns, 9 organization tables) and its test. |
 | `value-fixes/` | The scripts and the tables of the value fixes of pass 2 (language and license fills, side tables). |
 | `schema3-proof/` | The proof that ctp now writes the 53-column schema in a normal run: a rebuild of 2 projects, compared with the output of the passes. |
-| `KITS.tsv`, `check-kits.sh` | For each file of each staged list: the sha256 that ran, the copy in this repository and its sha256. The check script compares them. The rows of a pass name that has no folder (`pass-5-integrity`, `pass-5-machine`, `pass-5-domainfix`) are files that are not in a staged list: the check script compares only their copies. |
+| `KITS.tsv`, `check-kits.sh` | For each file of each staged list: the sha256 that ran, the copy in this repository and its sha256. The check script compares them. The rows of a pass name that has no folder (`pass-5-integrity`, `pass-5-machine`, `pass-5-domainfix`, and `pass-6-machine`, `pass-6-integrity`, `pass-6-domainfix`, `pass-6-run-inputs`, `pass-6-project-run`) are files that are not in a checked staged list: the check script compares only their copies. |
 
 ## The staged files
 
@@ -40,6 +42,7 @@ The run started only when the sha256 of that list was the value pinned in its st
 | 3 | `e142c5a982ad0fc1ef5431d2aa7daf9670765491ae6a2d6689986ea39a599201` | 2026-11-07 18:07 UTC |
 | 4 | `ddbe7134d9e4900c883103a58f6c6342f4bc1f9c1eba62cbdb3cfbd467fba4e7` | 2026-11-07 21:31 UTC |
 | 5 | `da9125463a33d480755cdcb9ec91f6a6fab8292d4e73667785c1d3ed12fb43f6` | the final stage of 2026-11-09, after 4 fixes; the first stage `fc901a99a7cf...` is of 2026-11-08 21:51 UTC (`pass-5-revision/README.md`) |
+| 6 | `086d54a1cedb8a6d6287e17a1f5408cf3c0a3481375c057a0b98be39f297123d` | 2026-11-11 02:20 UTC; the project run of `pass-6-freeswitch/project-run/` has its own list `1f88e9dc2b7c...` (2026-11-10 22:03 UTC) |
 
 `KITS.tsv` maps each row of each list to its copy. A file that two passes staged with the same
 bytes has one copy: the copy of the first pass that staged it. `release_tools.py` is
@@ -49,7 +52,7 @@ bytes has one copy: the copy of the first pass that staged it. `release_tools.py
 same bytes as the copy); pass 3 staged it with the header MIT (line 2 only).
 
 Replaced values: the copies of `tom.conf`, `tom2.conf`, `tom3.conf`, `tom4.conf`, `tom5.conf`,
-`tom_start.sh`, `tom2_start.sh`, `tom3_start.sh`, `tom4_start.sh` and `tom5_start.sh` differ from the staged
+`tom_start.sh`, `tom2_start.sh`, `tom3_start.sh`, `tom4_start.sh`, `tom5_start.sh`, `tom6.conf` and `tom6_start.sh` differ from the staged
 files in one line each. The name of the storage bucket became the placeholder `BUCKET_NAME`. No other byte changed. `KITS.tsv` gives
 the sha256 of the staged file and of the copy.
 
@@ -72,8 +75,9 @@ Not here:
   and ran the smoke test of the configuration (`SMOKE`, `SMOKE_OUT_SHA`).
   The exceptions: the scripts of the integrity check of pass 5 (`pass-5-revision/integrity/`),
   the setup, start and stage upload scripts of pass 5 (`pass-5-revision/machine/`) and the error
-  model script of its new domain rows (`pass-5-revision/domainfix/`), with placeholders in the
-  place of the run values.
+  model script of its new domain rows (`pass-5-revision/domainfix/`), and the same scripts of pass 6
+  (`pass-6-freeswitch/machine/`, `integrity/`, `domainfix/`, and the two jar install scripts of
+  `project-run/machine/`), with placeholders in the place of the run values.
 
 ## The column tools
 

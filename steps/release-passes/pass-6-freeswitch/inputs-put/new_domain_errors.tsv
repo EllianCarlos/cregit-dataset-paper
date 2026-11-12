@@ -1,0 +1,2 @@
+domain	organization_id	match	matched_domain	confidence	source	review_path	error_stratum	p_error
+benbria.ca	benbria	exact	benbria.ca	single-developer	cncf-gitdm-single	published or curated list, kept by the checks	source/B3 <10k/organization/exact	0.1131315927725334
