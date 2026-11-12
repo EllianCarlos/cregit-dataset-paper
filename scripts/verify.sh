@@ -3,10 +3,14 @@
 #
 # Usage: scripts/verify.sh DATA_DIR
 #   DATA_DIR is the directory of the downloaded published files.
+#   SUMS (optional) is the list to check, relative to the repository (default data/SHA256SUMS,
+#   TOM 1.1.0; data/SHA256SUMS-1.0.0 is the list of TOM 1.0.0).
 set -euo pipefail
 
 root=$(cd "$(dirname "$0")/.." && pwd)
-sums="$root/data/SHA256SUMS"
+sums=${SUMS:-data/SHA256SUMS}
+case "$sums" in /*) ;; *) sums="$root/$sums" ;; esac
+[ -f "$sums" ] || { echo "not ready: SUMS='$sums' is not a file" >&2; exit 3; }
 dir=${1:-}
 
 rows=$(grep -v -E '^[[:space:]]*(#|$)' "$sums" || true)
@@ -20,4 +24,4 @@ if [ -z "$dir" ] || [ ! -d "$dir" ]; then
 fi
 cd "$dir"
 echo "$rows" | sha256sum --check --strict -
-echo "OK: $(echo "$rows" | wc -l) files match data/SHA256SUMS"
+echo "OK: $(echo "$rows" | wc -l) files match ${sums#"$root"/}"

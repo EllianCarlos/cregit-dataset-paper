@@ -1,4 +1,4 @@
-# Makefile of the dataset Token on Me (TOM) 1.0.0 and of its build.
+# Makefile of the dataset Token on Me (TOM) 1.1.0 (and 1.0.0) and of its build.
 #
 # Run the targets in the dev shell: nix develop, then make <target>.
 # A target that cannot work yet prints "not ready: <reason>" and exits with a non-zero status.
@@ -10,6 +10,8 @@ SHELL := bash
 
 # The directory of the downloaded published files (the dataset release).
 DATA_DIR ?= data/published
+# The checksum list of make verify (data/SHA256SUMS-1.0.0: the root of TOM 1.0.0).
+SUMS ?= data/SHA256SUMS
 # The directory of the tool bundles of tools.lock.
 TOOLS_DIR ?= tools/bundles
 PROJECT ?=
@@ -18,7 +20,7 @@ PROJECT ?=
 
 help:
 	@echo "Reviewer targets:"
-	@echo "  make verify                        check the sha256 of the published files (DATA_DIR=$(DATA_DIR))"
+	@echo "  make verify                        check the sha256 of the published files (DATA_DIR=$(DATA_DIR), SUMS=$(SUMS))"
 	@echo "  make rebuild-one PROJECT=<name>    build one project again and compare it (REPRODUCE.md, section 6.1)"
 	@echo "Stage targets:"
 	@echo "  make select      selection (S1-S6)"
@@ -32,7 +34,7 @@ help:
 	@echo "  make flake-check run nix flake check (the tool identity check on x86_64-linux)"
 
 verify:
-	@scripts/verify.sh "$(DATA_DIR)"
+	@SUMS="$(SUMS)" scripts/verify.sh "$(DATA_DIR)"
 
 rebuild-one:
 	@if [ -z "$(PROJECT)" ]; then echo "usage: make rebuild-one PROJECT=<owner__repo>" >&2; exit 2; fi

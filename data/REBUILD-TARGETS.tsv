@@ -41,6 +41,9 @@
 # (ea2052f7ce8b..., steps/release-passes/pass-5-revision/): the value pass of the license column gave
 # 3,528 of the 8,449 files new bytes. The 149 new projects of the revision (steps/new-projects/) have
 # no row here: rebuild-one says "not ready" for them.
+# On 2026-11-12 (TOM 1.1.0, root SHA256SUMS 352111c7ffe8..., steps/release-passes/pass-6-freeswitch/)
+# no value changed: the 8,598 project files of 1.0.0 have the same bytes in 1.1.0. The added project
+# signalwire__freeswitch has no row, by the same rule as the 149 new projects.
 project	layer	run_record	run_commit	frame_commit	cregit_commit	ctp_commit	merge_input	merge_input_sha256	pre_pseudonym_sha256	source_root_sha256	published_sha256	run_sidecar	run_meta_entry_sha256	note
 00-Evan__shattered-pixel-dungeon	v1	proven	57a4e06a4caf162446d1c28caa7983f0493fecf0	e9defd0444c96d2fce3de5ec297c3398be8b7c55	57551d7ad82a784615c1490623d72cb9dc994ba1	ca113e362486697b423ac5a90c25b8891740f9ea	run	d2f0191b1c9a307fc34f28668cd4c83834a1404391595ef0eed1afc56381c679	79e0589be7a2adfb627e5fb0bc245559a0d6078861458c8341e9484802e5c2c2	803864712e44cec874bcd73905160e269bd6e2b34999e0b400b22d48ec982e4f	208a1b685627ed8ca512d71a02e98ae96ea38d62f6407231d683d3fa1bbd1589	project_meta.batch11.json	f939a4d0c24509b3a3a3409ef076dcf5562bd4745ec739f9bdae17efed940af4	
 01mf02__jaq	x1k	proven	6b8cbeb73e326950c435a57180742b40a82859cf	6b8cbeb73e326950c435a57180742b40a82859cf	57551d7ad82a784615c1490623d72cb9dc994ba1	ca113e362486697b423ac5a90c25b8891740f9ea	run	5709ea26a609e65f401a2c6c2232147d70be7d572a25b55b9c59819873328700	f1985470d7b4ad888f74da0356649d311173d6d99a9467bb1bd6d678729caa5a	e656e70cb6391aaab7fe4735b8ba845eb2af82dc65d4bdd6555ad8bd172cdb3f	c935313e2f2a4efc1a59fa5cf46744809a9f824b23cf797f7a771756ac03b3e6	project_meta.x1k.json	de0bcb9e34fb4ba5356c5251061c701d2fa94a026f9f4092bc841b8da103523d	

@@ -1,48 +1,55 @@
-# SHA256SUMS: the sha256 of each file of the release root of Token on Me (TOM) 1.0.0.
+# SHA256SUMS: the sha256 of each file of the release root of Token on Me (TOM) 1.1.0.
 #
-# Source: the SHA256SUMS file of the root of the revision of TOM 1.0.0 (8,628 rows, sha256
-# ea2052f7ce8b764d4e54a940d71f3fd8d04b827b2db08a4d2dc0c38f7dcbf48d), the root of pass 5
-# (steps/release-passes/pass-5-revision/) after the publish step of the integrity check. It is on
-# Hugging Face (elliancarlos/token-on-me, revision 5e20f9ff2a18fe155f14606da0d61d516baedd6a). This
-# file has all its rows, unchanged and in the same order: 8,598 project files (parquet/),
-# MANIFEST.tsv, the documents (with docs/INTEGRITY.md and docs/integrity.tsv),
-# tools/fill_release.py, the organization tables, ledgers.parquet, links.json and
-# pseudonymization.json. The root also has its SHA256SUMS file (no row for itself).
-# The first revision of TOM 1.0.0 (the root of pass 4, 8,475 rows, SHA256SUMS sha256
-# b7141d088461944872033563ac6609cb6fe846ec179e6aae6eeed62078186899, Hugging Face revision
-# e81b554deb9b, DOI 10.57967/hf/11505) is in the git history of this file.
+# Source: the SHA256SUMS file of the root of TOM 1.1.0 (8,629 rows, sha256
+# 352111c7ffe83760f3b238bb1daa36b6899a5708d5bd8e31904e4f7fa2f892db, 962,156 bytes), the root of
+# pass 6 (steps/release-passes/pass-6-freeswitch/) after the publish step of the integrity check.
+# It is on Hugging Face (elliancarlos/token-on-me, revision
+# d094988ba30d90b574c8d3b233258f519a9fa86a, DOI 10.57967/hf/11596) and in the Internet Archive
+# item token-on-me-1.1.0. The Zenodo record 10.5281/zenodo.24173700 (the landing record of 1.1.0)
+# has the same SHA256SUMS file. This file has all its rows,
+# unchanged and in the same order: 8,599 project files (parquet/), MANIFEST.tsv, the documents
+# (with docs/INTEGRITY.md and docs/integrity.tsv), tools/fill_release.py, the organization
+# tables, ledgers.parquet, links.json and pseudonymization.json. The root also has its
+# SHA256SUMS file (no row for itself).
+# The 8,598 project rows of TOM 1.0.0 are unchanged. The new row is
+# parquet/signalwire__freeswitch-dataset.parquet. 20 of the 30 other files have new bytes.
+# data/SHA256SUMS-1.0.0 has the rows of the root of TOM 1.0.0 (8,628 rows, sha256
+# ea2052f7ce8b764d4e54a940d71f3fd8d04b827b2db08a4d2dc0c38f7dcbf48d, Hugging Face revision
+# 5e20f9ff2a18, DOI 10.57967/hf/11537). The first revision of TOM 1.0.0 (8,475 rows, SHA256SUMS
+# sha256 b7141d088461944872033563ac6609cb6fe846ec179e6aae6eeed62078186899, Hugging Face
+# revision e81b554deb9b, DOI 10.57967/hf/11505) is in the git history of data/SHA256SUMS.
 #
 # Format: the format of "sha256sum" (64 hex digits, two spaces, the path).
 # The path is relative to the release root (DATA_DIR). "make verify" runs
 # "sha256sum --check" on this file. Lines that start with "#" are comments.
-e3cb0da6408b22d1a4e4735da2aa3a7c0522e5feb31ee9127944299a3b96f0c3  CHANGELOG.md
-92627e4ffb6f5994565ab6ec1753ef215f761ca9f1dacf0f66b68625138987c6  CITATION.cff
+92a46683f0a63c45eb791d34eba0a4d9146f6766edf148a1245593fe58017092  CHANGELOG.md
+a97bb5bb8b79cd9a3dc9e21d7656bf9e1551599180f60039c2bb488c64076aff  CITATION.cff
 8671c541226e36d6f43a58a95f3482028dbae204714cf63bd3d8060d2d3675b4  LICENSE.md
-346a86518443c607bc0f00fd8aee74e535c614de6861f0633e657327857fb356  MANIFEST.tsv
-3fd92cf6ca8ad5405607726d6bdd16513a63bc22c383f58f8a984ee8ff180cd2  README.md
-fe7a625982f9f532bfb5865155b44c77190ae875577cb1c0fc396fb23ed824fe  THIRD-PARTY.md
-a124d99809f93749b2d52299a97641f6c0b3341542f2f765e6cdf865b639e070  docs/COLUMNS.md
+06505e0000712af4b20354a643e26129e35505854d0f4a8e43f22bd18b955413  MANIFEST.tsv
+8931a6fbf512eea5afdeadbb6be7b0220d3d137c9684c7db573bf7cca3c4d1eb  README.md
+bacc6abe53daa3737a79cd15c221d1a27c65b94062d805a3c1c844e289117f80  THIRD-PARTY.md
+9febf169001cb1b3198acc3c3235c9ad5ee0c9c06007b63299c5570c12d87e4e  docs/COLUMNS.md
 0dc6cbc4959be7050ca4f26305e5cde14ea4f60d48bae6c43e34f6d2c380acf8  docs/ERROR.md
-35de7023ae75c1fd6e7e04d3db9d9a25806db0f9f43f29f0a62240d307e362e7  docs/INTEGRITY.md
-e3e950003e2bbf2eb28dfa96c1f863ae003a37164f22d43d26861ff5043e8684  docs/LIMITATIONS.md
-36e54c0f0431a27ca35d53dccfcca90b15af93c27455461c4f2ee945917e6e27  docs/ORGANIZATIONS.md
+6fac682e1125cbbcd9b7b506f43f6cf4401d6643b9586fa3be082e5782515f24  docs/INTEGRITY.md
+b1974b5e38b784dd1a0d3f36996bd69e94321f67bca25b658c73ae44adec8a66  docs/LIMITATIONS.md
+8530170f38f5a9ad9a7bfcad82839dfe24c752096dedaaad4a9810c3db81ed06  docs/ORGANIZATIONS.md
 e92b1886f93927e11ae25dc0059a067ad2afa23eed41456a403182e4cd8dae2e  docs/PRIVACY.md
-2206a3e3507397a20d030a65687ff2ebe65d6b7946a16150fe2715a48dbe6697  docs/SCHEMA.md
-a1f4c840a2afb7fc5be0cde81ea2b1c856f9aa8dc5d263cf7ea3ece0453d18a8  docs/integrity.tsv
+d6aa7a4cb59537ef4f745d7457c0e83b2437662add8b86b82cf03aa1f3812fd4  docs/SCHEMA.md
+b8cac00adf1e156177f9891f4f2b36ec0379d3693bf9010e75cbf5828a0c039d  docs/integrity.tsv
 eec0efddb827f0b7bafc13c0a0a6c83e3ceb6d862b1e004e3fe12ca92cce6f19  docs/tools.lock
-cef814115f103332015409e6fa74f754c56946d7869f27815c81f25b22e68a9b  ledgers.parquet
+c795e8ec6a2dd805b78d691cb0b70e0c39a5ac0df542aecccf8c1cf7585cb52f  ledgers.parquet
 77ea6eb7d0c0e6acf1886bbc0bd5705cf0ab28125685f2ad9d5ff4dd04857904  links.json
-0fb0d62e693fa92e25a55e929f2cfee46241e8c9751a806706cd9178e83696d5  organizations/dataset.duckdb
+74969769202a9aae78cf073ddcd3043ac17ee7589d39dc9e1915bff2ddcc87e8  organizations/dataset.duckdb
 8700a8339fe6a698e23b574fff71423aad56428ec2c0bbf1881c7e82cb594f5e  organizations/link_error.parquet
-fa5b8c8c9d34c6ce3b8149b3ba0c3b4ee8ae395facfa8d258c338218d5b2a498  organizations/organization_domains.parquet
+31c969a7321b2ba2fe949890d55fccb4a93450c609e41b42f7a7dc257b3cc7a0  organizations/organization_domains.parquet
 7280478ed01127e9f3b36dc16862f7e343c67e8d76bb081db8bda3e59a19882a  organizations/organization_namespaces.parquet
 6d6cc3cff062c2cc3bf696d55f17d003aca582481b4fd95b31db6ef77f6cf767  organizations/organizations.parquet
 843f35d15e521dafa2d8fc96908c3b24f4a8a3a07452c6174a784de408324019  organizations/project_facts.parquet
-b6f6d26700700c8ac1faa416ede53a82ff7e9e9a262c7b5b207cafccfa841dee  organizations/project_labels.parquet
-d64361e11a25e2a017fdc57e95bfd55a787eae9b104a574520d4e708a7dbf4df  organizations/project_languages.parquet
-2fba24c466c7a8fef5dccf30cc5d6a499bbb4bd34d58709a067be709f25b3e4f  organizations/project_licenses.parquet
-d0e6b40565ea610c97988de5260d02385d6b80c07bc2ca57f8d16bcfb0d24d9e  organizations/project_organizations.parquet
-b6af44484dc5816518a470c3f6aafef812523583d2a61d5292ca1b2f704767a5  organizations/release_info.parquet
+353785f48d2a840b4c7e4d2e59f1f6aebd90346ca85355deeb7cf5c9bc5efe6e  organizations/project_labels.parquet
+0a45ad0a3c885c627fb02c57abbfc82addf0834cb97cfc874682a5dd9b61ae36  organizations/project_languages.parquet
+097aaca5bf79abc496168f79a71cb6ef87b6c35ada88e98a45acce67b177ce3d  organizations/project_licenses.parquet
+7404b4651c0c6a0aa278a111b6ada83a8f3abeda3df4e30e8b98129485684f9e  organizations/project_organizations.parquet
+e1526b478c7e451c789b1fe8352092d6220e7734ab33e99aa04d910687780c3e  organizations/release_info.parquet
 208a1b685627ed8ca512d71a02e98ae96ea38d62f6407231d683d3fa1bbd1589  parquet/00-Evan__shattered-pixel-dungeon-dataset.parquet
 c935313e2f2a4efc1a59fa5cf46744809a9f824b23cf797f7a771756ac03b3e6  parquet/01mf02__jaq-dataset.parquet
 e15da6f369a4a3627e4799d05686b3e813f648b0447af47d5df8d0bc6af91ce3  parquet/0ldsk00l__nestopia-dataset.parquet
@@ -7598,6 +7605,7 @@ cc281a64c9c228dd3cb007efe3515e8c083de2603bd04f023adb356c560a371f  parquet/sideef
 bd27974b3b31a1d7e51c3a5a9023a1cf0a860eab43b8bbcc01bd7fd3ca8a6b56  parquet/signalapp__Signal-Server-dataset.parquet
 00fb2eb6d17906cc9b1ce176d1fb2d845588526de7930030e2aeb179504634ab  parquet/signalapp__libsignal-dataset.parquet
 ab0479d3641097252fde1981d0188a5ea32462d014d672eb7fd6f88981426485  parquet/signalapp__ringrtc-dataset.parquet
+35048078c9bda6daa7ee5575595375ef105880e81314a6520560a988804e9a69  parquet/signalwire__freeswitch-dataset.parquet
 b84ebfb755e7d3fd1e9d58dba1081918f1aac12cbcd58a86daa926be4ee623d0  parquet/sigp__lighthouse-dataset.parquet
 75396dc190558b9981f2f6be47c2cf035a69e638fc6468b96ba18c101671143c  parquet/sigrokproject__libsigrok-dataset.parquet
 2d2b9e1e04e977d3c73bb2d8c2d99a8074bd3323f659c0c491d6800c41d039d9  parquet/sigrokproject__pulseview-dataset.parquet
@@ -8641,5 +8649,5 @@ d46b47c991e2fbe5b232a89e7bab624e3c55437d5206ad1002fa8d3cbec753c1  parquet/zxing_
 cb226ba302a610cfef36416e1a6a94b2f551e9986aaafc0806e616150e611afe  parquet/zycgit__hasor-old-dataset.parquet
 4966e2403a1d2bd3f573ad02ccace787a611a4d8173bdfa50be1ec7b50bfa9b1  parquet/zynaddsubfx__zynaddsubfx-dataset.parquet
 68d33ebf25883d0ee5ebde7ca07717cb550888fa17b7cecd1f9de0c5ce412d76  parquet/zyycn__codex-proxy-rs-dataset.parquet
-882d0d3f8f441a8b754a733711ca6e7c2de351eab8c5ed41b354d7dc03909847  pseudonymization.json
+df88cda1c574157fb59d4cdc05a71ff8c35ce1e3d7d1198918342e9578b3ea8e  pseudonymization.json
 11374939743edf1a526661f5470b342b52bb7309dabd264410999e431f0d896f  tools/fill_release.py
