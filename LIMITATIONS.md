@@ -11,6 +11,54 @@ magnitude says so rather than guessing.
 
 ---
 
+## Token on Me (TOM) 1.1.0 (added 2026-11-12)
+
+TOM 1.1.0 is TOM 1.0.0 (8,598 project files, the same bytes) plus one project:
+`signalwire__freeswitch`. The entries of the TOM 1.0.0 section below apply to 1.1.0 too.
+
+**`signalwire__freeswitch` is in TOM 1.1.0; 2 of its commits have committer values that the tool
+read by hand.** The build of TOM 1.0.0 had no file for this project: blobExec stopped with a
+`NullPointerException` (`CommitBuilder.getCommitter()` is null) in all attempts (entries "three
+more frame rows have no Parquet" and "9 frame rows have no project file" below). The cause: 2
+commits of the project (`487128950d` and `8574988c3a`) have two `author` headers. JGit then
+returns no committer for the commit. The fix reads the committer (name, e-mail, date) from the
+`committer` header of the commit itself: blobExec at cregit `e1e7d94` (branch
+`fix/null-committer`, tag `dataset-build/cregit-e1e7d94`), slickGitLog and persons at cregit
+`c879bd3` (`tools.lock`). The author columns and the person ids of the file do not depend on the
+fix. The libexpat gate file of the new blobExec jar is byte for byte the gate value `14eb5d72`
+(2,196,248 B). The file has 7,238,127 token rows (28,508,088 B), language C, 36,204 commits, run
+commit `3dee68e8109`. Its persons have their own batch salt, so their ids are not equal to ids of
+other batches (the entry "a `personid` is stable only inside one batch" below). The release step
+is `steps/release-passes/pass-6-freeswitch/`. Detect: the row of the project in `MANIFEST.tsv`
+and in `ledgers.parquet` of the release.
+
+**The license value of `signalwire__freeswitch` comes from a hand check, and `CHANGELOG.md` of
+1.1.0 says other (erratum).** The rules of the license pass gave `NOASSERTION`, because the
+project has bundled files under 7 other licenses. The root LICENSE file at the pinned commit
+`3dee68e8109` has the text of MPL-1.1. The user checked it by hand on 2026-11-11, and the release
+has `MPL-1.1`. `organizations/project_licenses.parquet` records the value with the source `audit`
+and the confidence `checked`. `CHANGELOG.md` of the Hugging Face revision `d094988ba30d` says that
+the value "comes from the same license pass and rules as the earlier values". That text is wrong.
+Three other document texts of 1.1.0 are wrong: `docs/ORGANIZATIONS.md` does not list the source
+`audit` and the confidence `checked` of `project_licenses`; `docs/COLUMNS.md` (column 16) and
+`LICENSE.md` (section 2) do not name the hand check; `docs/ORGANIZATIONS.md` says that 4 tables of
+the Zenodo record of the organization database (10.5281/zenodo.23744045) have the same bytes as
+the tables of TOM, but the correct number is 3 (`organizations`, `organization_namespaces` and
+`link_error`; this error is older than 1.1.0). The data files and the tables are correct. The
+erratum is in the descriptions of the Zenodo record 10.5281/zenodo.24173700 and of the Internet
+Archive item `token-on-me-1.1.0`. The release files keep their bytes, because the DOIs name them.
+The Hugging Face commit `d094988ba30d` (the integrity report of 1.1.0) has the message "TOM
+1.0.0: batch 1 of 1 (3 files)": a fixed text of the upload tool. The message stays in the history
+of the Hub.
+
+**The Zenodo record of the organization database is behind the tables of TOM.** The record
+10.5281/zenodo.23744045 has 10,899 rows in `organization_domains` (the table of the first revision
+of TOM 1.0.0). TOM 1.1.0 has 10,931 rows: 31 domains of the 8,598-project revision and 1 domain of
+`signalwire__freeswitch` (kind company, 5,802 tokens, no audit answer). No row of the record is
+missing in TOM. Use the tables of the release for TOM; the record is the database 1.0.0.
+
+---
+
 ## Token on Me (TOM) 1.0.0 (added 2026-11-07)
 
 The entries of this section are about the published files of TOM. The entries after it are
@@ -184,7 +232,7 @@ repository). The dataset paper repository copies part of them under `pipeline/`.
 | project | frame commit | reason | status (2026-10-14) |
 | --- | --- | --- | --- |
 | `googleapis__discovery-artifact-manager` | `9b6a724` | No in-scope source at the run commit. The run uses the newest head (`--latest`). Head `bb221e1` (2026-10-10) has 1,284 files and 0 C, C++, Java or Rust files, because the project deleted its Java code on 2026-10-07. The frame commit has 559 such files. Blame finds 0 files, and the pipeline stops with "no tokens processed" (4 attempts). | excluded (user decision 2026-10-11) |
-| `signalwire__freeswitch` | `3dee68e` | blobExec stops in step 2 with a `NullPointerException` at `Walker.scala:866` (`CommitBuilder.getCommitter()` is null): it reads a commit with no committer. All 4 attempts gave the same error. A scan of the 40,145 commits found no committer line that breaks git's format, so the cause in blobExec is not known. | excluded (user decision 2026-10-11); tool defect, not fixed |
+| `signalwire__freeswitch` | `3dee68e` | blobExec stops in step 2 with a `NullPointerException` at `Walker.scala:866` (`CommitBuilder.getCommitter()` is null): it reads a commit with no committer. All 4 attempts gave the same error. A scan of the 40,145 commits found no committer line that breaks git's format, so the cause in blobExec is not known. (2026-11-12: the cause is 2 commits with two `author` headers; section "Token on Me (TOM) 1.1.0".) | excluded (user decision 2026-10-11); tool defect, not fixed in TOM 1.0.0; fixed and in TOM 1.1.0 |
 | `BRL-CAD__brlcad` | `27ba3c4` | The repository is gone. `git ls-remote` failed first on 2026-10-11 05:16 UTC, and it gives "Repository not found" on 2026-10-14 17:49 UTC. The user wrote to the owners (2026-10-12). | waits for the owners' answer; without the repository before the v1 freeze, v1 excludes the project |
 
 `discovery-artifact-manager` shows a property of the `--latest` rule. The selection
@@ -548,7 +596,7 @@ status of the release.
 | --- | --- | --- | --- | --- | --- |
 | `kitao__pyxel` | 5,000+ | `50f9bd77` | - | The repository is gone: GitHub disabled the owner's account. | no file in the release |
 | `googleapis__discovery-artifact-manager` | 5,000+ | `9b6a724` | `bb221e1` | Not a failure. The project deleted its Java code on 2026-10-07, after the frame measurement: the frame commit has 559 C, C++, Java or Rust files, the run commit has 0. | code removed after the frame measurement (user decision 2026-10-11) |
-| `signalwire__freeswitch` | 5,000+ | `3dee68e` | - | The only pipeline failure of the 9 rows. blobExec stops in step 2 on a commit with no committer. Tool defect, not fixed. | excluded (user decision 2026-10-11); not fixed in this release (user decision 2026-10-26) |
+| `signalwire__freeswitch` | 5,000+ | `3dee68e` | `3dee68e` (TOM 1.1.0) | The only pipeline failure of the 9 rows. blobExec stops in step 2 on a commit with no committer: 2 commits have two `author` headers, and JGit gives no committer. Fixed in TOM 1.1.0: the tool reads the committer from the `committer` header (blobExec `e1e7d94`, slickGitLog and persons `c879bd3`). | excluded from TOM 1.0.0 (user decisions 2026-10-11 and 2026-10-26); in TOM 1.1.0 (8,599 projects) |
 | `Librelancer__Librelancer` | 1,000-4,999 | `dcbcf80` | `c113747` | Not a failure. After the frame measurement, the project moved its C and C++ code to git submodules: the frame commit has 44 such files, the run commit has 0. The run commit has 4 files (`.gitmodules`, a README, `.gitignore`, `.editorconfig`). The source is in git submodules, and the pipeline does not follow submodules. History: 122 in-scope paths. 4 attempts. | code removed after the frame measurement (user decision 2026-10-20) |
 | `vllm-project__semantic-router` | 1,000-4,999 | `41c0903` | `c9b65d5` | Not a failure. After the frame measurement, the project deleted its C, C++, Java and Rust code: the frame commit has 244 such files, the run commit has 0. 11,665 files (Go, Python, TypeScript), 0 in scope. History: 253 in-scope paths. 4 attempts. | code removed after the frame measurement (user decision 2026-10-20) |
 | `visgl__loaders.gl` | 1,000-4,999 | `81ad3e5` | `6773abc` | Not a failure. After the frame measurement, the project deleted its C, C++, Java and Rust code: the frame commit has 335 such files, the run commit has 0. 6,822 files (TypeScript, JavaScript), 0 in scope. History: 670 in-scope paths. 4 attempts. | code removed after the frame measurement (user decision 2026-10-20) |
@@ -556,7 +604,8 @@ status of the release.
 | `notnotype__neuro-book` | 1,000-4,999 | `6faecf8` | `532ebb8` | Not a failure. After the frame measurement, the project deleted its C, C++, Java and Rust code: the frame commit has 2 such files, the run commit has 0. 8,976 files (TypeScript, Vue, Markdown), 0 in scope. History: 4 in-scope paths. 11 attempts. | code removed after the frame measurement (user decision 2026-10-20) |
 | `pur1fying__blue_archive_auto_script` | 1,000-4,999 | `8a7ff4c` | `0d57f47` | Not a failure. After the frame measurement, the project deleted its C, C++, Java and Rust code: the frame commit has 46 such files, the run commit has 0. 3,788 files (PNG, Python), 0 in scope. History: 46 in-scope paths. 11 attempts. | code removed after the frame measurement (user decision 2026-10-20) |
 
-Only 1 of the 9 rows is a pipeline failure (`signalwire__freeswitch`). 1 repository is gone. The other 7
+Only 1 of the 9 rows is a pipeline failure (`signalwire__freeswitch`; TOM 1.1.0 has its file, so 0 selected
+projects of 1.1.0 failed). 1 repository is gone. The other 7
 rows are not failures: each project had C, C++, Java or Rust files at its frame commit (the commit that the
 selection measured, 2026-09-23 to 2026-10-05), and it deleted them, or moved them to git submodules, before its
 run commit (the newest commit on the run date, 2026-10-10 to 2026-10-20). The file counts come from the GitHub
