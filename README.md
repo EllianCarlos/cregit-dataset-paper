@@ -5,6 +5,12 @@ This repository holds the scripts, the input lists and the tool pins of the data
 Its goal is reproducibility: a reader can check each published file, and can
 build the dataset again for one project with the same tools.
 
+## Cite this package
+
+This package has the DOI 10.5281/zenodo.24177100 (Zenodo record 24177100, version 1.1.0, the zip of a git tag of
+this repository). `CITATION.cff` gives the citation. Cite the dataset with its own DOI: TOM 1.1.0 is
+10.57967/hf/11596, TOM 1.0.0 is 10.57967/hf/11537 (section "The dataset").
+
 ## The dataset
 
 TOM 1.1.0 has one row for each token of the source code of 8,599 software projects:
