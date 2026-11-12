@@ -29,7 +29,8 @@ A user decision of 2026-11-09 moved kitao/pyxel to the commit step: its reposito
 so it has no commit on the default branch. Before, it left at the last step (no project file).
 Each count from the commit step to the 1,000-commit step became 1 smaller (193,883 to 193,882;
 8,600 to 8,599). The pool, the count of each source and the final set did not change. Only
-signalwire/freeswitch leaves at the last step now. `tools/set_pyxel_exit.py` changed the row of
+signalwire/freeswitch leaves at the last step now (TOM 1.1.0 adds it: the TOM box becomes 8,599, equal
+to the 1,000-commit box, and 0 projects fail; `../release-passes/pass-6-freeswitch/`). `tools/set_pyxel_exit.py` changed the row of
 kitao/pyxel in the step file of the work folder and the step counts of
 `data/funnel_counts.json`; `tools/fold_copy_rules.py` then wrote `data/funnel_counts_folded.json`.
 

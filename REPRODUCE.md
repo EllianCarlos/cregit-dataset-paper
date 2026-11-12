@@ -1,4 +1,4 @@
-# How to reproduce Token on Me (TOM) 1.0.0
+# How to reproduce Token on Me (TOM) 1.0.0 and 1.1.0
 
 This file gives, for each stage, the inputs, the command, the expected output hash, the
 cost and the time. A value with the word "estimate" is an estimate. "UNKNOWN" means that
@@ -7,11 +7,14 @@ repository, because the stage did not record a value when it ran.
 
 TOM 1.0.0 has 8,598 project files (ctp schema 3, 53 columns) and 31,603,701,581 token rows in
 its final revision. It is on Hugging Face (`elliancarlos/token-on-me`, final revision
-`5e20f9ff2a18`, DOI pending). The first revision (`e81b554deb9b`, DOI 10.57967/hf/11505) had
+`5e20f9ff2a18`, DOI 10.57967/hf/11537). The first revision (`e81b554deb9b`, DOI 10.57967/hf/11505) had
 8,449 project files and 30,408,388,202 token rows; four release passes made it from the source
 root (10,754 project files, ctp schema 2, 71 columns): section 5.7. Pass 5 made the final
 revision: section 5.8. The final root has 8,628 rows in `SHA256SUMS` (sha256
-`ea2052f7ce8b...`, all of them in `data/SHA256SUMS`). Sections 1 to 5.6 give the
+`ea2052f7ce8b...`, all of them in `data/SHA256SUMS-1.0.0`). TOM 1.1.0 is that root plus one project,
+`signalwire__freeswitch` (8,599 project files, 31,610,939,708 token rows; Hugging Face revision
+`d094988ba30d`, DOI 10.57967/hf/11596; root `SHA256SUMS` `352111c7ffe8...` with 8,629 rows, all of them
+in `data/SHA256SUMS`): section 5.9. Sections 1 to 5.6 give the
 selection, the build and the steps that made the source root. Their text keeps the names of the
 build runs.
 
@@ -584,12 +587,37 @@ run.
 the 4 fixes of the run (the published schema of the new domain rows, the footer value
 `organizations_mapping_sha256` of the new files, the S3 copy, the push list of the Hub).
 
-`data/SHA256SUMS` has all 8,628 rows of the final `SHA256SUMS` (`ea2052f7ce8b...`).
+`data/SHA256SUMS` had all 8,628 rows of the final `SHA256SUMS` (`ea2052f7ce8b...`); since TOM 1.1.0
+they are in `data/SHA256SUMS-1.0.0` (section 5.9).
 `data/REBUILD-TARGETS.tsv` has the 8,449 projects of the first revision; `published_sha256` is
 now the file of the final root (3,528 of them have new bytes from the value pass of the
 `license` column). The 149 new projects have no row: `rebuild-one` says "not ready" for them.
 `scripts/compare_published.py` allows another `license` value when the published file has one
 value for the file (the value of the license pass).
+
+### 5.9 TOM 1.1.0 (2026-11-10 to 2026-11-12)
+
+TOM 1.1.0 is a new version: the final root of TOM 1.0.0 (8,598 project files, the same bytes) plus
+`signalwire__freeswitch`, the one selected project with no file in TOM 1.0.0. It has new DOIs
+(Hugging Face 10.57967/hf/11596; Zenodo version 10.5281/zenodo.24173700, concept
+10.5281/zenodo.24118526). The steps:
+
+| Step | Folder | Input | Output | State |
+|---|---|---|---|---|
+| The fix of the tools | cregit fork, branch `fix/null-committer` (`tools.lock`) | the 2 commits of the project with two `author` headers | blobExec `e1e7d94`, slickGitLog and persons `c879bd3`: the committer comes from the `committer` header when JGit gives none | done; the libexpat gate output of the new blobExec jar is the gate value `14eb5d72` |
+| The project run | `steps/release-passes/pass-6-freeswitch/project-run/` | the kit of the 149 new projects with one project (staged list `1f88e9dc2b7c...`) | one project file in the TOM form: 7,238,127 rows, 28,508,088 bytes | done: attempt 5 ended OK on 2026-11-10 at 23:49 UTC, after two jar repairs (blobExec, then slickGitLog and persons) |
+| Pass 6 (the root of 1.1.0) | `steps/release-passes/pass-6-freeswitch/` | the final root of TOM 1.0.0, the new file, the hand check of its license | the root of 1.1.0 and its Hugging Face revision | done on 2026-11-11 (staged list `086d54a1cedb...`; one stop for the hand check of the license value, then `B2-tom6-run-corrected.sh`); 8,599 project files, 31,610,939,708 rows, 116,868,017,571 bytes of project files |
+| The integrity check of the root | `steps/release-passes/pass-6-freeswitch/integrity/` | the published root of 1.1.0 | `docs/INTEGRITY.md`, `docs/integrity.tsv` and a new `SHA256SUMS` | done: 8,627 files, 116,878,175,989 bytes, 31,610,939,708 token rows, 16 views, 0 problems (6,712 s); `SHA256SUMS` `1ed022bdf37c...` -> `352111c7ffe8...`; final Hugging Face revision `d094988ba30d` |
+| The Internet Archive item and the Zenodo record | (their kits are not here) | the root of 1.1.0 | item `token-on-me-1.1.0` (97 files); Zenodo landing record 10.5281/zenodo.24173700 (documents, checksums, download kit) | done; the erratum of `CHANGELOG.md` is in both descriptions |
+
+The tools: `tools.lock` (the rows of cregit `e1e7d94` and `c879bd3`, the three jars, ctp `a9f0bed` and
+`0f9b8ad`, and the two kits). To run pass 6 again, use the method of section 5.7 and the README of
+`steps/release-passes/pass-6-freeswitch/`.
+
+`data/SHA256SUMS` has all 8,629 rows of the root `SHA256SUMS` of 1.1.0 (`352111c7ffe8...`). The
+8,598 project rows are the rows of TOM 1.0.0 without a change. `data/REBUILD-TARGETS.tsv` does not
+change: its 8,449 `published_sha256` values are the values of the 1.1.0 root. The new project has no
+row: `rebuild-one` says "not ready" for it, as for the 149 new projects.
 
 ## 6. Validate
 
@@ -599,7 +627,7 @@ value for the file (the value of the license pass).
 | Each fetched Parquet file has the sha256 of its `OK` file. | `pipeline/s7-run/fetch_done.sh` | runs after the build |
 | Each file of the source root has the column contract of ctp schema 2 (71 columns: the 67 cregit columns of ca113e3, then the 4 organization columns), the footer keys of the release write, the registry of `pseudonymization.json` and the rows of `MANIFEST.tsv`. | `make validate SCHEMA=2 DATA_DIR=<source root>` (`scripts/validate_schema2.py`) | works; proof on 2026-10-28 with small test files (`scripts/test_release_checks.py`, `make test`: one good root passes; a schema 1 file, a wrong row count, a wrong registry, a file with no registry, a file with no row in `MANIFEST.tsv` and a file that cannot be read fail) and on the published file of libexpat__libexpat (OK). The release build checked the same contract on all 10,754 files (`schema.txt` of the build reports: 71 columns, footer schema 2, v4.9, mapping `7b52a5155e6f`, 32,635,174,618 rows, 0 problems). |
 | Each project file of TOM has ctp schema 3 (53 columns), the footer keys, and the rows of `MANIFEST.tsv`; the organization tables and the text rules. | `make validate DATA_DIR=<root of TOM>` (`steps/release-passes/fill-release/tools/fill_release.py check`, the same file as `tools/fill_release.py` of the root) | the release passes ran it before each upload (pass 4 without `--allow-todo`); `make test` runs its tests on fake data. |
-| Each file of the root of TOM has the sha256 of `data/SHA256SUMS`. | `make verify DATA_DIR=<root of TOM>` | ready: `data/SHA256SUMS` has the 8,628 rows of the final root (`ea2052f7ce8b...`). The run needs the downloaded files (8,598 project files, 116.8 GB, and the other files). |
+| Each file of the root of TOM has the sha256 of `data/SHA256SUMS`. | `make verify DATA_DIR=<root of TOM>` | ready: `data/SHA256SUMS` has the 8,629 rows of the root of TOM 1.1.0 (`352111c7ffe8...`); `SUMS=data/SHA256SUMS-1.0.0` checks the 8,628 rows of the final root of TOM 1.0.0 (`ea2052f7ce8b...`). The run needs the downloaded files (8,599 project files of 1.1.0, 116.9 GB, and the other files). |
 
 The 70-column contract of ca113e3 alone refuses every published file: the release write
 replaced the 3 firm columns (`firm_raw`, `firm`, `firm_source`) with the 4 organization

@@ -155,8 +155,21 @@ State:
 | Pass 5 (`steps/release-passes/pass-5-revision/`) | Done: the run ended DONE on 2026-11-09 at 17:00 UTC (final stage `da9125463a33...`, after 4 fixes; first stage `fc901a99a7cf...`). 8,598 project files, 31,603,701,581 rows. Hugging Face revision `46a123047ef2`. |
 | Integrity check (`steps/release-passes/pass-5-revision/integrity/`) | Done: 8,626 files, 116,849,664,000 bytes, 31,603,701,581 token rows, 0 problems (6,763 s). Published as `docs/INTEGRITY.md` and `docs/integrity.tsv`; `SHA256SUMS` `a453d5f10aa2...` -> `ea2052f7ce8b...` (8,628 rows); final Hugging Face revision `5e20f9ff2a18`. |
 | `data/SHA256SUMS`, `data/REBUILD-TARGETS.tsv` | Done: they describe the final root (8,628 rows; `published_sha256` of the 8,449 earlier projects). The 149 new projects have no rebuild record yet. |
-| DOI of the final revision | Open: DOI pending (the user decides). `10.57967/hf/11505` marks the first revision. |
+| DOI of the final revision | Done: 10.57967/hf/11537 (made on 2026-11-09). `10.57967/hf/11505` marks the first revision. |
 | Organization database 1.0.0 | Done: published on Zenodo (concept DOI 10.5281/zenodo.23744044). |
+
+## Status of TOM 1.1.0 (2026-11-12)
+
+| Item | State |
+|---|---|
+| Fix of `signalwire__freeswitch` (cregit fork, branch `fix/null-committer`) | Done: blobExec `e1e7d94` (tag `dataset-build/cregit-e1e7d94`), slickGitLog and persons `c879bd3`. Open: push `c879bd3` to the public branch and tag it. |
+| Project run (`steps/release-passes/pass-6-freeswitch/project-run/`) | Done on 2026-11-10: 7,238,127 rows, 28,508,088 bytes. |
+| Pass 6 (`steps/release-passes/pass-6-freeswitch/`) | Done on 2026-11-11: 8,599 project files, 31,610,939,708 rows; the 8,598 earlier files keep their bytes. |
+| Integrity check | Done: 0 problems; `SHA256SUMS` `352111c7ffe8...` (8,629 rows). |
+| Hosts and DOIs | Done: Hugging Face `d094988ba30d` (DOI 10.57967/hf/11596), Internet Archive `token-on-me-1.1.0`, Zenodo 10.5281/zenodo.24173700 (concept 10.5281/zenodo.24118526). |
+| Erratum of `CHANGELOG.md` (license of the new project) | Done: in the Zenodo and Internet Archive descriptions. A later Hugging Face documents revision is optional (not run). |
+| `data/SHA256SUMS` | Done: the root of 1.1.0; `data/SHA256SUMS-1.0.0` keeps the root of 1.0.0. `data/REBUILD-TARGETS.tsv` does not change. |
+| A DOI of this replication package | Open: a Zenodo record of a tagged commit of this repository. |
 
 ## Future work: the full-history pilot (2026-11-08)
 

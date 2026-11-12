@@ -115,7 +115,7 @@ Dropped:
 - All input rows: 2,314. That is 2,304 measured rows whose largest language is another one, plus the 10 rows that were not measured.
 - Rows with a release file: 2,307. That is 2,297 measured plus 10 not measured.
 
-Two kept rows have no release file: `kitao__pyxel` (Rust) and `signalwire__freeswitch` (C). `Librelancer__Librelancer` has no programming code at the pinned commit, so it is dropped.
+Two kept rows have no release file: `kitao__pyxel` (Rust) and `signalwire__freeswitch` (C). (TOM 1.1.0 has a file for `signalwire__freeswitch`: `../../release-passes/pass-6-freeswitch/`.) `Librelancer__Librelancer` has no programming code at the pinned commit, so it is dropped.
 
 Kept token rows and bytes (MANIFEST `rows` and `bytes`):
 

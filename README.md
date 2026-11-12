@@ -1,15 +1,16 @@
-# Token on Me (TOM) 1.0.0: the replication package
+# Token on Me (TOM) 1.1.0: the replication package
 
 This repository holds the scripts, the input lists and the tool pins of the dataset
-"Token on Me" (TOM), version 1.0.0. It supports a Data and Tool paper.
+"Token on Me" (TOM), versions 1.0.0 and 1.1.0. It supports a Data and Tool paper.
 Its goal is reproducibility: a reader can check each published file, and can
 build the dataset again for one project with the same tools.
 
 ## The dataset
 
-TOM has one row for each token of the source code of 8,598 software projects:
-31,603,701,581 token rows in 8,598 project files (Parquet, ctp schema 3, 53 columns; the final
-revision, section "The revision of TOM 1.0.0"). The first revision had 8,449 project files and
+TOM 1.1.0 has one row for each token of the source code of 8,599 software projects:
+31,610,939,708 token rows in 8,599 project files (Parquet, ctp schema 3, 53 columns; section
+"TOM 1.1.0"). TOM 1.0.0 has 8,598 project files and 31,603,701,581 token rows in its final
+revision (section "The revision of TOM 1.0.0"); its first revision had 8,449 project files and
 30,408,388,202 token rows. For each
 token, a row gives the author of the commit that last changed the token (the cregit token
 blame), metadata of the commit and of the project, and the organization columns. Identities
@@ -21,9 +22,17 @@ project lists (`pipeline/SELECTION-STAGES.md`). A project stays in TOM when its 
 programming language at the pinned commit is C, C++, Java or Rust, by tokei code lines
 (`steps/language-selection/tokei/`).
 
-Host: Hugging Face, `elliancarlos/token-on-me` (public). The final revision is
+Hosts of TOM 1.1.0: Hugging Face, `elliancarlos/token-on-me` (public), revision
+`d094988ba30d90b574c8d3b233258f519a9fa86a`, DOI 10.57967/hf/11596 (cite this DOI for 1.1.0); the
+Internet Archive item `token-on-me-1.1.0` (https://archive.org/details/token-on-me-1.1.0); the
+Zenodo landing record 10.5281/zenodo.24173700 (documents, checksums and the download kit, not the
+data files). The Zenodo concept DOI 10.5281/zenodo.24118526 always names the newest version: cite it
+to name TOM with no version. Section "TOM 1.1.0" gives the details.
+
+TOM 1.0.0 on Hugging Face: the final revision is
 `5e20f9ff2a18fe155f14606da0d61d516baedd6a` (pass 5 and its integrity report); its DOI is
-10.57967/hf/11537 (cite this DOI). The DOI 10.57967/hf/11505 marks the first revision, `e81b554deb9b` (the documents with
+10.57967/hf/11537 (cite this DOI for 1.0.0). Its Zenodo record is 10.5281/zenodo.24118527 and its
+Internet Archive item is `token-on-me-1.0.0`. The DOI 10.57967/hf/11505 marks the first revision, `e81b554deb9b` (the documents with
 the DOI). The DataCite version of that DOI names revision `bc7543affd2e`, which has the same
 project files as `e81b554deb9b`. The first revision has 12 documents. The
 limitations and the provenance are now in the paper and in this repository (`LIMITATIONS.md`,
@@ -91,12 +100,40 @@ this root. The 4 fixes of the run and their lessons are in
 The DOI of the final revision is 10.57967/hf/11537 (made on 2026-11-09; the DataCite record
 names version `5e20f9f` and links to 10.57967/hf/11505).
 
+## TOM 1.1.0 (2026-11-11)
+
+TOM 1.1.0 is the final revision of TOM 1.0.0 plus one project, `signalwire__freeswitch`. The build
+of TOM 1.0.0 had no file for it: blobExec stopped on 2 commits with two `author` headers, because
+JGit then gives no committer. The fixed tools read the committer from the `committer` header of the
+commit (cregit fork, branch `fix/null-committer`: blobExec `e1e7d94`, slickGitLog and persons
+`c879bd3`). The step is `steps/release-passes/pass-6-freeswitch/` (the project run and the release
+run). `LIMITATIONS.md`, section "Token on Me (TOM) 1.1.0", gives the details.
+
+- 8,599 project files, 31,610,939,708 token rows, 116,868,017,571 bytes of project files, 0 failed
+  projects of the selection. The 8,598 project files of TOM 1.0.0 have the same bytes (sha256) and
+  the same `MANIFEST.tsv` rows. The new file has 7,238,127 rows (28,508,088 bytes), language C,
+  36,204 commits, license `MPL-1.1` (a hand check).
+- The side tables get 1 row each (`project_organizations`, `project_labels`, `project_languages`,
+  `project_licenses`) and 1 domain row (`organization_domains`: 10,931 rows). No earlier row
+  changes.
+- The root `SHA256SUMS` has 8,629 rows (sha256 `352111c7ffe8...`, after the integrity check: 0
+  problems). `data/SHA256SUMS` has these rows; `data/SHA256SUMS-1.0.0` keeps the rows of TOM 1.0.0.
+- Hosts: Hugging Face revision `d094988ba30d` (DOI 10.57967/hf/11596); Internet Archive item
+  `token-on-me-1.1.0` (97 files); Zenodo version DOI 10.5281/zenodo.24173700 (concept DOI
+  10.5281/zenodo.24118526). The organization database stays Zenodo concept DOI
+  10.5281/zenodo.23744044.
+- Erratum: `CHANGELOG.md` of 1.1.0 says that the license of the new project comes from the rules of
+  the license pass. It comes from a hand check. The erratum is in the Zenodo and Internet Archive
+  descriptions; the release files keep their bytes (`LIMITATIONS.md`).
+
 ## Archives of the code
 
 Software Heritage archived the 3 code repositories. The first save was on 2026-11-09. The second save was on
 2026-11-10, after we pushed the tool commits that the release and its new project depend on (the branches
 `fix/schema-3-bare-cr`, `fix/null-committer`, `feat/license-scan` and `feat/parquet-reencode`, and the tags
-`dataset-build/*`). Use the snapshots of 2026-11-10. They hold all commits that `tools.lock` pins.
+`dataset-build/*`). Use the snapshots of 2026-11-10. They hold the commits that `tools.lock` pins, except
+cregit `c879bd3` (slickGitLog and persons of TOM 1.1.0): on 2026-11-12 it is not on the public branch
+`fix/null-committer` yet (its head is `e1e7d94`).
 
 | repository | snapshot of 2026-11-10 | snapshot of 2026-11-09 (older) |
 |---|---|---|
@@ -143,7 +180,8 @@ output hash, the cost and the time.
 ## Two short paths for reviewers
 
 1. `make verify DATA_DIR=<root>` checks the sha256 of each file of the root against
-   `data/SHA256SUMS` (the 8,628 rows of the final root). `make validate DATA_DIR=<root>` runs
+   `data/SHA256SUMS` (the 8,629 rows of the root of TOM 1.1.0). For a download of TOM 1.0.0, add
+   `SUMS=data/SHA256SUMS-1.0.0` (the 8,628 rows of its final root). `make validate DATA_DIR=<root>` runs
    `fill_release.py check` (the same file as `tools/fill_release.py` of the root): the 53
    columns, the footer keys and the tables of each file. `SCHEMA=2` checks the source root of
    the passes (71 columns).
@@ -175,7 +213,7 @@ with a non-zero status. `REPRODUCE.md` lists what is left.
 | Path | Contents |
 |---|---|
 | `pipeline/` | Copies of the paper scripts and their inputs. Do not edit them here. |
-| `steps/` | The steps after the build that made the published files (the organization columns, the final write, the root build, the re-encode, the five release passes of TOM, the selection funnel, the new projects, the license pass and the kit of the revision), and the evidence behind the error, language and Linux numbers. One folder for each step, each with a README (`steps/README.md`). |
+| `steps/` | The steps after the build that made the published files (the organization columns, the final write, the root build, the re-encode, the five release passes of TOM 1.0.0, pass 6 of TOM 1.1.0, the selection funnel, the new projects, the license pass and the kit of the revision), and the evidence behind the error, language and Linux numbers. One folder for each step, each with a README (`steps/README.md`). |
 | `tools/ctp/`, `tools/cregit/` | Copies of some files of the pinned ctp and cregit commits (the column contract, the validation, the Nix files of srcML). |
 | `tools/ctp-venv/` | The package lists of the ctp Python environment on each machine type. |
 | `tools/jars/` | The jar content check (`jar_content_sha256.py`). The flake pins the jars by sha256. |
@@ -185,8 +223,9 @@ with a non-zero status. `REPRODUCE.md` lists what is left.
 | `flake.nix`, `flake.lock` | The pinned environment (Nix). |
 | `Makefile` | The reviewer and stage targets. |
 | `scripts/` | The helper scripts of the Makefile. |
-| `data/SHA256SUMS` | The sha256 of each file of the final root of TOM (8,628 rows: 8,598 project files and the other files). |
-| `data/REBUILD-TARGETS.tsv` | For each of the 8,449 project files of the first revision: the run record, the target sha256 values of `rebuild-one`, the sha256 in the source root and the published sha256 in the final root. |
+| `data/SHA256SUMS` | The sha256 of each file of the root of TOM 1.1.0 (8,629 rows: 8,599 project files and the other files). |
+| `data/SHA256SUMS-1.0.0` | The sha256 of each file of the final root of TOM 1.0.0 (8,628 rows: 8,598 project files and the other files). |
+| `data/REBUILD-TARGETS.tsv` | For each of the 8,449 project files of the first revision: the run record, the target sha256 values of `rebuild-one`, the sha256 in the source root and the published sha256 in the final root (the same in TOM 1.1.0). |
 | `token-vs-line-report.md` | The report of the run of the line method against the token method on 250 random projects (method, results with and without the cut projects, causes, limits). Its step is `steps/token-vs-line/`. |
 | `HUMAN-CHECKS.md` | For each step: what is automatic or AI-proposed, what a human checked, and the measured result. |
 | `ANONYMIZATION-TODO.md` | Identifying text to remove before the anonymous mirror. |
